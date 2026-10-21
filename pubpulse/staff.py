@@ -182,8 +182,33 @@ def merge_people(existing: list[dict], scraped: list[dict], track_sections: list
         elif updated:
             changes["updated"].append(p["slug"])
 
+    # Keep the complete alumni roster for collaboration review. Being first observed
+    # in the previous-staff section does not tell us their actual departure date.
+    for s in scraped:
+        if s["section"] != "previous":
+            continue
+        if s["slug"] in by_slug:
+            p = by_slug[s["slug"]]
+            if p.get("source") == "manual":
+                continue
+            was_active = is_active(p, today)
+            for field in SCRAPED_FIELDS:
+                if s.get(field):
+                    p[field] = s[field]
+            p["section"] = "previous"
+            p.setdefault("former_observed_at", today_s)
+            if was_active:
+                p["active_until"] = today_s
+                changes["deactivated"].append(p["slug"])
+            continue
+        p = {**s, "source": "staff_page", "active_from": None, "active_until": None,
+             "former_observed_at": today_s, "needs_review": True}
+        existing.append(p)
+        by_slug[p["slug"]] = p
+        changes["added"].append(p["slug"])
+
     for p in existing:
-        if p.get("source", "staff_page") != "staff_page" or p.get("active_until"):
+        if p.get("source", "staff_page") != "staff_page" or p.get("active_until") or p.get("section") == "previous":
             continue
         if p["slug"] not in tracked_slugs:
             p["active_until"] = today_s
@@ -191,7 +216,7 @@ def merge_people(existing: list[dict], scraped: list[dict], track_sections: list
                 p["section"] = scraped_by_slug[p["slug"]]["section"]
             changes["deactivated"].append(p["slug"])
 
-    existing.sort(key=lambda p: (p.get("active_until") is not None, (p.get("name") or "").lower()))
+    existing.sort(key=lambda p: (not is_active(p, today), (p.get("name") or "").lower()))
     return existing, changes
 
 
@@ -204,7 +229,7 @@ def add_months(d: date, months: int) -> date:
 
 def is_active(person: dict, today: date | None = None) -> bool:
     """Currently in the group (on the staff page, or a manual entry without an end date)."""
-    if person.get("exclude"):
+    if person.get("exclude") or person.get("section") == "previous":
         return False
     until = person.get("active_until")
     if not until:
@@ -216,9 +241,13 @@ def is_active(person: dict, today: date | None = None) -> bool:
 def tracked_until(person: dict, grace_months: int) -> date | None:
     """Last day on which papers are still collected for a person who left; None while active."""
     until = person.get("active_until")
-    if not until:
-        return None
-    return add_months(date.fromisoformat(str(until)), grace_months)
+    deadlines = []
+    if until:
+        deadlines.append(add_months(date.fromisoformat(str(until)), grace_months))
+    followup = (person.get("former_collaboration") or {}).get("followup_until")
+    if followup:
+        deadlines.append(date.fromisoformat(followup))
+    return max(deadlines) if deadlines else None
 
 
 def is_tracked(person: dict, today: date, grace_months: int) -> bool:
@@ -227,4 +256,5 @@ def is_tracked(person: dict, today: date, grace_months: int) -> bool:
         return False
     if is_active(person, today):
         return True
-    return tracked_until(person, grace_months) >= today
+    deadline = tracked_until(person, grace_months)
+    return deadline is not None and deadline >= today

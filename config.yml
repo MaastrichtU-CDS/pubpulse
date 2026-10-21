@@ -5,8 +5,8 @@ staff_url: https://www.clinicaldatascience.nl/staff
 site_url: https://maastrichtu-cds.github.io/pubpulse/
 repo_url: https://github.com/MaastrichtU-CDS/pubpulse
 
-# Which sections of the staff page to track. Options: current, previous.
-# "previous" adds former staff; their papers are tracked while they are listed.
+# Active sections to track. The previous-staff roster is always retained separately
+# and reviewed for recent collaborations under former_staff below.
 track_sections:
   - current
 
@@ -37,6 +37,11 @@ exclude_types: [supplementary-materials, erratum, paratext]
 # People who disappear from the staff page keep being tracked for this many months (papers in the pipeline),
 # but during that period a paper only counts when it carries a verified group affiliation for them.
 departed_grace_months: 18
+
+# Review every former staff member against current group coauthors. Recent collaborations
+# renew follow-up independently of an unknown or long-past departure date.
+former_staff:
+  recent_collaboration_months: 24
 
 # Be gentle with the staff website: profile pages are re-read only for new people or after this many days,
 # with one request per scrape_delay_seconds. The weekly run normally makes 1-3 requests to the site.
@@ -79,3 +84,4 @@ identifier_discovery:
   max_searches_per_run: 30
   reserve_searches: 60
   refresh_days: 30
+  max_network_profiles: 12

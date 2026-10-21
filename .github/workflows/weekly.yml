@@ -64,6 +64,14 @@ jobs:
           key: author-identifiers-${{ runner.os }}-${{ github.run_id }}
           restore-keys: author-identifiers-${{ runner.os }}-
 
+      - name: Review the former staff collaboration roster
+        if: github.event_name != 'push'
+        run: python -m pubpulse review-former
+
+      - name: Search missing profiles across all former staff
+        if: github.event_name != 'push'
+        run: python -m pubpulse discover-identifiers --former --max-searches 10
+
       - name: Discover missing author profiles using coauthors
         if: github.event_name != 'push'
         run: python -m pubpulse discover-identifiers

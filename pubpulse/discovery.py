@@ -18,7 +18,7 @@ from urllib.parse import parse_qs, urlparse
 import requests
 
 from .scholar import SERPAPI_URL, api_key
-from .staff import is_tracked
+from .staff import is_active, is_tracked
 from .sync import DATA_DIR, OUT_DIR, author_name_key, load_config, load_people, load_publications, public_people, save_people, today_utc
 
 log = logging.getLogger(__name__)
@@ -273,14 +273,14 @@ def assess_orcid(person: dict, candidate: dict, context: dict, accepted_scholar:
     return {"id": candidate["id"], "url": "https://orcid.org/" + candidate["id"], "name": candidate["name"], "affiliations": candidate["affiliations"], "name_match": name_matches, "shared_works": shared, "linked_verified_scholar": linked_scholar, "institution_match": affiliated, "accepted": name_matches and (bool(shared) or linked_scholar)}
 
 
-def discover(people: list[dict], works: list[dict], client, today: date, *, force=False, only=None, refresh_days=30) -> dict:
+def discover(people: list[dict], works: list[dict], client, today: date, *, force=False, only=None, refresh_days=30, target_slugs=None, max_network_profiles=12) -> dict:
     graph = contexts(people, works)
     report = {"checked_at": today.isoformat(), "people": {}, "accepted_orcids": 0, "accepted_scholar": 0}
     by_name = defaultdict(list)
     for person in people:
         key = profile_name(person["name"])
         by_name[(key[0], key[-1]) if key else ()].append(person["slug"])
-    targets = [p for p in people if not p.get("exclude") and (not only or p["slug"] == only) and (not (p.get("orcid") or p.get("orcid_discovered")) or not p.get("scholar_id"))]
+    targets = [p for p in people if not p.get("exclude") and (target_slugs is None or p["slug"] in target_slugs) and (not only or p["slug"] == only) and (not (p.get("orcid") or p.get("orcid_discovered")) or not p.get("scholar_id"))]
     targets.sort(key=lambda p: (p.get("identifier_discovery_checked_at") or "", -len(graph[p["slug"]]["works"]), p["name"]))
     due = []
     for person in targets:
@@ -293,9 +293,9 @@ def discover(people: list[dict], works: list[dict], client, today: date, *, forc
 
     # Walk already known Scholar profiles once: their named coauthor links seed candidates.
     seeds = defaultdict(lambda: defaultdict(set))
-    for anchor in people:
-        if not anchor.get("scholar_id") or anchor.get("exclude"):
-            continue
+    anchors = [p for p in people if p.get("scholar_id") and not p.get("exclude")]
+    anchors.sort(key=lambda p: (not is_active(p, today), -len(graph[p["slug"]]["works"]), p["name"]))
+    for anchor in anchors[:max_network_profiles]:
         try:
             profile = client.scholar_profile(anchor["scholar_id"])
             coauthors = profile.get("co_authors") or []
@@ -407,16 +407,19 @@ def discover(people: list[dict], works: list[dict], client, today: date, *, forc
     return report
 
 
-def run(max_searches=None, only=None, force=False, dry_run=False) -> int:
+def run(max_searches=None, only=None, force=False, dry_run=False, former=False, recent_former=False, reserve_searches=None) -> int:
     logging.basicConfig(level=logging.INFO, format="%(levelname)s %(message)s")
     config, today = load_config(), today_utc()
     settings = config.get("identifier_discovery") or {}
     budget = int(max_searches if max_searches is not None else settings.get("max_searches_per_run", 30))
     client = DiscoveryClient(api_key(), budget, today)
-    client.reserve_quota(int(settings.get("reserve_searches", 60)))
+    client.reserve_quota(int(settings.get("reserve_searches", 60)) if reserve_searches is None else max(0, reserve_searches))
     people, publications = load_people(), load_publications()
-    tracked = [p for p in people if is_tracked(p, today, int(config.get("departed_grace_months", 0)))]
-    report = discover(tracked, publications.get("works", []), client, today, force=force, only=only, refresh_days=int(settings.get("refresh_days", 30)))
+    tracked = [p for p in people if former or recent_former or is_tracked(p, today, int(config.get("departed_grace_months", 0)))]
+    target_slugs = {p["slug"] for p in people if p.get("section") == "previous" or p.get("active_until")} if former or recent_former else None
+    if recent_former:
+        target_slugs = {p["slug"] for p in people if target_slugs and p["slug"] in target_slugs and (p.get("former_collaboration") or {}).get("recent_shared_papers")}
+    report = discover(tracked, publications.get("works", []), client, today, force=force, only=only, refresh_days=int(settings.get("refresh_days", 30)), target_slugs=target_slugs, max_network_profiles=int(settings.get("max_network_profiles", 12)))
     report.update({"searches_used": client.used, "search_budget": client.budget, "coverage": {
         "tracked_people": len(tracked),
         "verified_orcid_profiles": sum(bool(p.get("orcid") or p.get("orcid_discovered")) for p in tracked),

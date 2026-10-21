@@ -141,7 +141,11 @@ def enrich_people_from_works(people: list[dict], works, keywords: list[str]) -> 
     for work in works:
         for slug, profile in (work.get("author_profiles") or {}).items():
             person = by_slug.get(slug)
-            if not person or not affiliation_matches(profile.get("affiliations") or [], keywords):
+            if not person:
+                continue
+            confirmed_orcid = (person.get("orcid") or person.get("orcid_discovered") or "").upper()
+            same_orcid = bool(confirmed_orcid and confirmed_orcid == (profile.get("orcid") or "").upper())
+            if not same_orcid and not affiliation_matches(profile.get("affiliations") or [], keywords):
                 continue
             candidates[slug].append({"work": work["id"], "openalex_id": profile.get("openalex_id"), "orcid": profile.get("orcid")})
     for slug, discoveries in candidates.items():
@@ -322,8 +326,10 @@ def normalise_work(raw: dict, people: list[dict], keywords: list[str] | None = N
     by_name = defaultdict(list)
     by_id: dict[str, str] = {}
     for p in people:
-        if author_name_key(p["name"]):
-            by_name[author_name_key(p["name"])].append(p["slug"])
+        for name in [p["name"], *(p.get("publication_name_aliases") or []), *(p.get("aliases") or [])]:
+            key = author_name_key(name)
+            if key and p["slug"] not in by_name[key]:
+                by_name[key].append(p["slug"])
         for aid in known_author_ids(p):
             by_id[aid] = p["slug"]
     authorships = raw.get("authorships", []) or []
@@ -411,6 +417,8 @@ def fetch_works(
     keywords = keywords or []
     excluded = set(exclude_types if exclude_types is not None else DEFAULT_EXCLUDE_TYPES)
     confidence = {p["slug"]: match_confidence(p) for p in people}
+    current_slugs = {p["slug"] for p in people if is_active(p, today)}
+    current_ids = sorted({aid for p in people if p["slug"] in current_slugs for aid in known_author_ids(p)})
     strict_only = {p["slug"] for p in people if confidence[p["slug"]] == "name" or not is_active(p, today)}
     for p in people:
         if not is_tracked(p, today, grace_months):
@@ -418,12 +426,24 @@ def fetch_works(
         flt = person_filter(p)
         if not flt:
             continue
+        until = p.get("active_until")
+        in_grace = bool(until and tracked_until({"active_until": until}, grace_months) >= today)
+        requires_collaboration = not is_active(p, today) and not in_grace
+        if requires_collaboration and current_ids:
+            # Repeating the author filter means former-author AND (any current-author).
+            # This avoids downloading a former researcher's whole subsequent career.
+            flt += ",authorships.author.id:" + "|".join(current_ids)
         n = 0
         try:
             for raw in client.works(f"{flt},from_publication_date:{since_year}-01-01"):
                 if raw.get("type") in excluded:
                     continue
                 w = normalise_work(raw, people, keywords)
+                if not is_active(p, today) and not current_slugs.intersection(w["group_members"]):
+                    # Ongoing alumni follow-up covers CDS collaborations, not their entire
+                    # later career. A known departure date still permits the original pipeline grace.
+                    if not in_grace:
+                        continue
                 n += 1
                 if p["slug"] not in w["group_members"]:
                     # Filter matched but the authorship carried neither the id nor the ORCID: attribute, status unknown.
@@ -509,8 +529,10 @@ def public_people(people: list[dict], today: date, grace_months: int = 0) -> lis
             "openalex_ids": known_author_ids(p),
             "match": match_confidence(p),
             "active": is_active(p, today),
+            "former": not is_active(p, today),
+            "former_collaboration": p.get("former_collaboration"),
             "tracked": is_tracked(p, today, grace_months),
-            "tracked_until": tracked_until(p, grace_months).isoformat() if not is_active(p, today) else None,
+            "tracked_until": tracked_until(p, grace_months).isoformat() if not is_active(p, today) and tracked_until(p, grace_months) else None,
             "needs_review": bool(p.get("needs_review")) and is_tracked(p, today, grace_months),
         }
         for p in people
@@ -547,6 +569,9 @@ def run(dry_run: bool = False, skip_people: bool = False, config_path: Path = CO
 
     client = OpenAlex(mailto=cfg.get("openalex_mailto"))
     previous = load_publications()
+    from .former import review_former
+    review_months = int((cfg.get("former_staff") or {}).get("recent_collaboration_months", 24))
+    review_former(people, previous.get("works", []), today, review_months)
     enrich_people_from_works(people, previous.get("works", []), cfg.get("author_match_keywords") or keywords)
     unresolved = resolve_people(
         people, client, keywords, today, broad_keywords=cfg.get("author_match_keywords") or keywords,
@@ -566,6 +591,7 @@ def run(dry_run: bool = False, skip_people: bool = False, config_path: Path = CO
     fetched_slugs = {p["slug"] for p in people if is_tracked(p, today, grace) and person_filter(p) and p["name"] not in failed_names}
     works, new_ids = merge_works(previous.get("works", []), fetched, today, fetched_slugs)
     works = apply_overrides(works, overrides)
+    former_report = review_former(people, works, today, review_months)
     new_ids = [i for i in new_ids if i not in overrides["reject"]]
 
     run_record = {
@@ -601,6 +627,8 @@ def run(dry_run: bool = False, skip_people: bool = False, config_path: Path = CO
     out_dir.mkdir(parents=True, exist_ok=True)
     with open(out_dir / "publications.json", "w", encoding="utf-8") as f:
         json.dump(publications, f, ensure_ascii=False, indent=1)
+    with open(out_dir / "former_staff_review.json", "w", encoding="utf-8") as f:
+        json.dump(former_report, f, ensure_ascii=False, indent=1)
     runs = []
     if RUNS_PATH.exists():
         with open(RUNS_PATH, encoding="utf-8") as f:

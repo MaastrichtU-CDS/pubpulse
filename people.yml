@@ -613,7 +613,7 @@ people:
   source: staff_page
   active_from: '2026-10-21'
   active_until: null
-  needs_review: true
+  needs_review: false
   orcid_discovered: 0000-0002-1454-512X
   identifier_evidence:
     orcid:
@@ -654,6 +654,12 @@ people:
       institution_match: false
       accepted: true
   identifier_discovery_checked_at: '2026-10-21'
+  publication_identity_sources:
+  - work: W7131779647
+    openalex_id: A5035477951
+    orcid: 0000-0002-1454-512X
+  publication_author_ids:
+  - A5035477951
 - slug: hannah-piehl
   name: Hannah Piehl
   profile_url: https://www.clinicaldatascience.nl/hannah-piehl
@@ -788,8 +794,7 @@ people:
   - work: W4411338103
     openalex_id: null
     orcid: null
-  publication_author_ids:
-  - A5121326451
+  publication_author_ids: []
   orcid_discovered: 0009-0004-8675-4635
   identifier_evidence:
     orcid:
@@ -1195,6 +1200,12 @@ people:
   openalex_ids:
   - A5022129356
   identifier_discovery_checked_at: '2026-10-21'
+  publication_identity_sources:
+  - work: W7213460943
+    openalex_id: A5022129356
+    orcid: 0000-0003-3602-1885
+  publication_author_ids:
+  - A5022129356
 - slug: meltem-isik
   name: Meltem Isik
   profile_url: https://www.clinicaldatascience.nl/meltem-isik
@@ -1290,8 +1301,7 @@ people:
   - work: W4415710214
     openalex_id: A5100633764
     orcid: 0000-0002-3508-6700
-  publication_author_ids:
-  - A5100633764
+  publication_author_ids: []
   orcid_openalex: 0000-0002-3508-6700
   orcid_discovered: 0000-0001-9028-418X
   identifier_evidence:
@@ -1891,5 +1901,3598 @@ people:
         - yomi-okegunna
       linked_verified_scholar: false
       institution_match: true
+      accepted: true
+  identifier_discovery_checked_at: '2026-10-21'
+- section: previous
+  slug: abhimanyu-anand
+  name: Abhimanyu Anand
+  profile_url: https://www.clinicaldatascience.nl/abhimanyu-anand
+  role: Former intern
+  employer: Maastricht University
+  source: staff_page
+  active_from: null
+  active_until: null
+  former_observed_at: '2026-10-21'
+  needs_review: true
+  former_collaboration:
+    checked_at: '2026-10-21'
+    window_start: '2024-10-21'
+    recent_months: 24
+    shared_papers: 0
+    recent_shared_papers: 0
+    last_collaboration_date: null
+    followup_until: null
+    current_coauthors: []
+- section: previous
+  slug: aiara-lobo-gomes
+  name: Aiara Lobo Gomes
+  profile_url: https://www.clinicaldatascience.nl/aiara-lobo-gomes
+  role: Researcher
+  employer: Maastricht University
+  source: staff_page
+  active_from: null
+  active_until: null
+  former_observed_at: '2026-10-21'
+  needs_review: false
+  former_collaboration:
+    checked_at: '2026-10-21'
+    window_start: '2024-10-21'
+    recent_months: 24
+    shared_papers: 19
+    recent_shared_papers: 16
+    last_collaboration_date: '2026-10-12'
+    followup_until: '2028-10-12'
+    current_coauthors:
+    - ananya-choudhury
+    - andre-dekker
+    - anne-lore-bynens
+    - cecile-wolfs
+    - daniel-slob
+    - ekaterina-akhmad
+    - ivan-zhovannik
+    - jikai-zhou
+    - johan-van-soest
+    - joshi-hogenboom
+    - leonard-wee
+    - petros-kalendralis
+    - rianne-fijten
+    - rutger-van-mierlo
+    - simone-mingels
+    - wenjie-liang
+  publication_identity_sources:
+  - work: W7221757932
+    openalex_id: A5082702576
+    orcid: 0000-0003-4670-6036
+  publication_author_ids:
+  - A5082702576
+  orcid_openalex: 0000-0003-4670-6036
+  orcid_discovered: 0000-0003-4670-6036
+  identifier_evidence:
+    orcid:
+      checked_at: '2026-10-21'
+      id: 0000-0003-4670-6036
+      url: https://orcid.org/0000-0003-4670-6036
+      name: Aiara Lobo Gomes
+      affiliations:
+      - Ruprecht Karls Universität Heidelberg
+      - Universidade de São Paulo
+      - Universidade de São Paulo
+      - Universitätsklinikum Aachen
+      - Maastricht University
+      - Port of Rotterdam Authority
+      - Pontificia Universidad Católica de Chile
+      name_match: true
+      shared_works:
+      - work: W7213226988
+        title: 'From registration to insight: how STRONG AYA transforms registry data to enhance decision-support tools for
+          adolescent and young adult oncology'
+        url: https://doi.org/10.1016/j.esmorw.2026.100764
+        coauthors:
+        - aiara-lobo-gomes
+        - andre-dekker
+        - joshi-hogenboom
+        - leonard-wee
+        - varsha-gouthamchand
+      - work: W7221757932
+        title: 'AI Model Reporting Standards in Health Care: Systematic Review and Consolidation'
+        url: https://doi.org/10.2196/92329
+        coauthors:
+        - aiara-lobo-gomes
+        - andre-dekker
+        - daniel-slob
+        - ekaterina-akhmad
+        - johan-van-soest
+        - simone-mingels
+      - work: W7213458335
+        title: Data Auditing and Quality Assurance in a Federated Learning Consortium; Getting the Best of Both Worlds from
+          Cross-Institutional and In-House Data Quality Inspection
+        url: https://doi.org/10.64898/2026.09.08.26361592
+        coauthors:
+        - aiara-lobo-gomes
+        - andre-dekker
+        - joshi-hogenboom
+        - leonard-wee
+        - varsha-gouthamchand
+      - work: W4415259680
+        title: 'Development of the STRONG-AYA federated learning-based adolescent and young adult cancer information portal:
+          a co-creation process with adolescents and young adults with lived experience of cancer (Preprint)'
+        url: https://doi.org/10.2196/preprints.85870
+        coauthors:
+        - aiara-lobo-gomes
+        - andre-dekker
+        - joshi-hogenboom
+        - leonard-wee
+        - rianne-fijten
+      - work: W4410448008
+        title: 'What to Report? A Systematic Review of Medical AI Reporting Guidelines: Preliminary Results'
+        url: https://doi.org/10.3233/shti250351
+        coauthors:
+        - aiara-lobo-gomes
+        - andre-dekker
+        - daniel-slob
+        - ekaterina-akhmad
+        - johan-van-soest
+      - work: W4404946484
+        title: 'Actionability of Synthetic Data in a Heterogeneous and Rare Health Care Demographic: Adolescents and Young
+          Adults With Cancer'
+        url: https://doi.org/10.1200/cci.24.00056
+        coauthors:
+        - aiara-lobo-gomes
+        - andre-dekker
+        - joshi-hogenboom
+        - leonard-wee
+      linked_verified_scholar: false
+      institution_match: true
+      accepted: true
+  identifier_discovery_checked_at: '2026-10-21'
+- section: previous
+  slug: alberto-traverso
+  name: Alberto Traverso
+  profile_url: https://www.clinicaldatascience.nl/alberto-traverso
+  role: Former researcher
+  employer: Maastro
+  source: staff_page
+  active_from: null
+  active_until: null
+  former_observed_at: '2026-10-21'
+  needs_review: false
+  former_collaboration:
+    checked_at: '2026-10-21'
+    window_start: '2024-10-21'
+    recent_months: 24
+    shared_papers: 16
+    recent_shared_papers: 2
+    last_collaboration_date: '2025-04-21'
+    followup_until: '2027-04-21'
+    current_coauthors:
+    - andre-dekker
+    - johan-van-soest
+  publication_identity_sources:
+  - work: W4405585841
+    openalex_id: A5008606043
+    orcid: 0000-0001-6183-4429
+  publication_author_ids:
+  - A5008606043
+  orcid_openalex: 0000-0001-6183-4429
+  scholar_id: MvWO42oAAAAJ
+  identifier_evidence:
+    scholar:
+      checked_at: '2026-10-21'
+      id: MvWO42oAAAAJ
+      url: https://scholar.google.com/citations?user=MvWO42oAAAAJ
+      name: Alberto Traverso
+      affiliations: IRCCS San Raffaele Hospital
+      name_match: true
+      shared_works:
+      - work: W4391258615
+        title: 'Assessing the role of GPT-4 in thyroid ultrasound diagnosis and treatment recommendations: enhancing interpretability
+          with a chain of thought approach'
+        url: https://doi.org/10.21037/qims-23-1180
+        coauthors:
+        - alberto-traverso
+        - andre-dekker
+        - zhen-zang
+        - zhixiang-wang
+      - work: W4390706463
+        title: 'A federated learning system for precision oncology in Europe: DigiONE'
+        url: https://doi.org/10.1038/s41591-023-02715-8
+        coauthors:
+        - alberto-traverso
+        - andre-dekker
+      - work: W4391106310
+        title: 'A PET/CT radiomics model for predicting distant metastasis in early-stage non–small cell lung cancer patients
+          treated with stereotactic body radiotherapy: a multicentric study'
+        url: https://doi.org/10.1186/s13014-024-02402-z
+        coauthors:
+        - alberto-traverso
+        - andre-dekker
+        - leonard-wee
+        - zhen-zang
+      - work: W4402897784
+        title: Prediction of new-onset atrial fibrillation in patients with non-small cell lung cancer treated with curative-intent
+          conventional radiotherapy
+        url: https://doi.org/10.1016/j.radonc.2024.110544
+        coauthors:
+        - alberto-traverso
+        - andre-dekker
+        - fariba-tohidinezhad
+        - femke-vaassen
+        - hugo-aerts
+        - leonard-nurnberg
+      - work: W4401013932
+        title: A multi-Task Learning based applicable AI model simultaneously predicts stage, histology, grade and LNM for
+          cervical cancer before surgery
+        url: https://doi.org/10.1186/s12905-024-03270-1
+        coauthors:
+        - alberto-traverso
+        - andre-dekker
+        - zhen-zang
+        - zhixiang-wang
+      - work: W4394675050
+        title: Predicting the risk of neurocognitive decline after brain irradiation in adult patients with a primary brain
+          tumor
+        url: https://doi.org/10.1093/neuonc/noae035
+        coauthors:
+        - alberto-traverso
+        - andre-dekker
+        - fariba-tohidinezhad
+        - femke-vaassen
+        - wouter-van-elmpt
+      - work: W4393407981
+        title: 'Optimizing CycleGAN design for CBCT-to-CT translation: insights into 2D vs 3D modeling, patch size, and the
+          need for tailored evaluation metrics'
+        url: https://doi.org/10.1117/12.3007031
+        coauthors:
+        - alberto-traverso
+        - andre-dekker
+        - dennis-bontempi
+        - ibrahim-hadzic
+        - ivan-zhovannik
+        - sure-pai
+      - work: W4405585841
+        title: 'PRE-ACT: Prediction of Radiotherapy side Effects using explainable AI for patient Communication and Treatment
+          modification'
+        url: https://doi.org/10.1016/j.jcpo.2024.100537
+        coauthors:
+        - alberto-traverso
+        - andre-dekker
+        - johan-van-soest
+      - work: W4399466786
+        title: 'Preoperative prediction of high-grade osteosarcoma response to neoadjuvant therapy based on a plain CT radiomics
+          model: A dual-center study'
+        url: https://doi.org/10.1016/j.jbo.2024.100614
+        coauthors:
+        - alberto-traverso
+        - andre-dekker
+        - zhixiang-wang
+      - work: W4393065851
+        title: Development of an explainable AI prediction model for arm lymphoedema following breast cancer surgery and radiotherapy
+        url: https://doi.org/10.1016/j.ejca.2024.113624
+        coauthors:
+        - alberto-traverso
+        - alessio-romita
+        - andre-dekker
+        - fariba-tohidinezhad
+        - johan-van-soest
+      - work: W4402137708
+        title: Predicting axillary lymph node metastasis in breast cancer based on ultrasound radiofrequency time-series analysis
+        url: https://doi.org/10.1177/02841851241268463
+        coauthors:
+        - alberto-traverso
+        - andre-dekker
+        - zhixiang-wang
+      - work: W4396592229
+        title: Development of an ai prediction model for arm lymphoedema following breast cancer surgery and radiotherapy
+        url: https://doi.org/10.1016/j.ejso.2024.108216
+        coauthors:
+        - alberto-traverso
+        - alessio-romita
+        - andre-dekker
+        - fariba-tohidinezhad
+        - johan-van-soest
+      known_coauthors:
+      - ananya-choudhury
+      - andre-dekker
+      - leonard-wee
+      coauthor_profiles:
+      - slug: ananya-choudhury
+        url: https://scholar.google.com/citations?user=O8N8H5QAAAAJ
+      - slug: andre-dekker
+        url: https://scholar.google.com/citations?user=JKOhEfcAAAAJ
+      - slug: leonard-wee
+        url: https://scholar.google.com/citations?user=hlhktjoAAAAJ
+      institution_match: false
+      accepted: true
+    orcid:
+      checked_at: '2026-10-21'
+      id: 0000-0001-6183-4429
+      url: https://orcid.org/0000-0001-6183-4429
+      name: Alberto Traverso
+      affiliations:
+      - Universiteit Maastricht
+      - Politecnico di Torino
+      - University of Turin
+      - University Of Turin
+      - Maastricht University School for Oncology & Developmental Biology
+      - Maastro Clinic
+      - International Association for the Study of Lung Cancer
+      - Associazione italiana fisica medica
+      - European SocieTy for Radiotherapy and Oncology
+      - René Vogels Stichting
+      - ZonMw
+      - ZonMw
+      - American Association of Physicists in Medicine
+      - CERN
+      - H2020 Health
+      - Innovation centre for artificial intelligence
+      - Moffitt Cancer Center
+      - Princess Margaret Cancer Centre
+      - International Association for the Study of Lung Cancer
+      - European SocieTy for Radiotherapy and Oncology
+      - European Society for Medical Oncology
+      - American Society for Radiation Oncology
+      - American Association of Physicists in Medicine
+      - Elsevier BV
+      name_match: true
+      shared_works:
+      - work: W4409690097
+        title: 'Abstract 3372: Building precision oncology via real-world data standardization, privacy preserving infrastructures,
+          and collaboration among IT and clinical experts: The DIGICORE network experience'
+        url: https://doi.org/10.1158/1538-7445.am2025-3372
+        coauthors:
+        - alberto-traverso
+        - andre-dekker
+      - work: W4391106310
+        title: 'A PET/CT radiomics model for predicting distant metastasis in early-stage non–small cell lung cancer patients
+          treated with stereotactic body radiotherapy: a multicentric study'
+        url: https://doi.org/10.1186/s13014-024-02402-z
+        coauthors:
+        - alberto-traverso
+        - andre-dekker
+        - leonard-wee
+        - zhen-zang
+      - work: W4390706463
+        title: 'A federated learning system for precision oncology in Europe: DigiONE'
+        url: https://doi.org/10.1038/s41591-023-02715-8
+        coauthors:
+        - alberto-traverso
+        - andre-dekker
+      - work: W4401013932
+        title: A multi-Task Learning based applicable AI model simultaneously predicts stage, histology, grade and LNM for
+          cervical cancer before surgery
+        url: https://doi.org/10.1186/s12905-024-03270-1
+        coauthors:
+        - alberto-traverso
+        - andre-dekker
+        - zhen-zang
+        - zhixiang-wang
+      - work: W4391258615
+        title: 'Assessing the role of GPT-4 in thyroid ultrasound diagnosis and treatment recommendations: enhancing interpretability
+          with a chain of thought approach'
+        url: https://doi.org/10.21037/qims-23-1180
+        coauthors:
+        - alberto-traverso
+        - andre-dekker
+        - zhen-zang
+        - zhixiang-wang
+      - work: W4393065851
+        title: Development of an explainable AI prediction model for arm lymphoedema following breast cancer surgery and radiotherapy
+        url: https://doi.org/10.1016/j.ejca.2024.113624
+        coauthors:
+        - alberto-traverso
+        - alessio-romita
+        - andre-dekker
+        - fariba-tohidinezhad
+        - johan-van-soest
+      - work: W4393407981
+        title: 'Optimizing CycleGAN design for CBCT-to-CT translation: insights into 2D vs 3D modeling, patch size, and the
+          need for tailored evaluation metrics'
+        url: https://doi.org/10.1117/12.3007031
+        coauthors:
+        - alberto-traverso
+        - andre-dekker
+        - dennis-bontempi
+        - ibrahim-hadzic
+        - ivan-zhovannik
+        - sure-pai
+      - work: W4402137708
+        title: Predicting axillary lymph node metastasis in breast cancer based on ultrasound radiofrequency time-series analysis
+        url: https://doi.org/10.1177/02841851241268463
+        coauthors:
+        - alberto-traverso
+        - andre-dekker
+        - zhixiang-wang
+      - work: W4394675050
+        title: Predicting the risk of neurocognitive decline after brain irradiation in adult patients with a primary brain
+          tumor
+        url: https://doi.org/10.1093/neuonc/noae035
+        coauthors:
+        - alberto-traverso
+        - andre-dekker
+        - fariba-tohidinezhad
+        - femke-vaassen
+        - wouter-van-elmpt
+      - work: W4402897784
+        title: Prediction of new-onset atrial fibrillation in patients with non-small cell lung cancer treated with curative-intent
+          conventional radiotherapy
+        url: https://doi.org/10.1016/j.radonc.2024.110544
+        coauthors:
+        - alberto-traverso
+        - andre-dekker
+        - fariba-tohidinezhad
+        - femke-vaassen
+        - hugo-aerts
+        - leonard-nurnberg
+      - work: W4399466786
+        title: 'Preoperative prediction of high-grade osteosarcoma response to neoadjuvant therapy based on a plain CT radiomics
+          model: A dual-center study'
+        url: https://doi.org/10.1016/j.jbo.2024.100614
+        coauthors:
+        - alberto-traverso
+        - andre-dekker
+        - zhixiang-wang
+      linked_verified_scholar: false
+      institution_match: true
+      accepted: true
+  orcid_discovered: 0000-0001-6183-4429
+  identifier_discovery_checked_at: '2026-10-21'
+- section: previous
+  slug: anke-bruninx
+  name: Anke Bruninx
+  profile_url: https://www.clinicaldatascience.nl/anke-bruninx
+  role: Former PhD Student
+  employer: Maastricht University
+  source: staff_page
+  active_from: null
+  active_until: null
+  former_observed_at: '2026-10-21'
+  needs_review: false
+  former_collaboration:
+    checked_at: '2026-10-21'
+    window_start: '2024-10-21'
+    recent_months: 24
+    shared_papers: 3
+    recent_shared_papers: 3
+    last_collaboration_date: '2025-07-02'
+    followup_until: '2027-07-02'
+    current_coauthors:
+    - andre-dekker
+    - petros-kalendralis
+    - rutger-van-mierlo
+  publication_identity_sources:
+  - work: W4411962851
+    openalex_id: A5064479925
+    orcid: 0000-0002-5916-8735
+  publication_author_ids:
+  - A5064479925
+  orcid_openalex: 0000-0002-5916-8735
+  orcid_discovered: 0000-0002-5916-8735
+  identifier_evidence:
+    orcid:
+      checked_at: '2026-10-21'
+      id: 0000-0002-5916-8735
+      url: https://orcid.org/0000-0002-5916-8735
+      name: Anke Bruninx
+      affiliations: []
+      name_match: true
+      shared_works:
+      - work: W4409360221
+        title: 'Optimizing Cardiovascular Risk Management in Primary Care Using a Personalized eCoach Solution Enhanced by
+          an Artificial Intelligence–Driven Clinical Prediction Model: Protocol from the Coronary Artery Disease Risk Estimation
+          and Early Detection Consortium'
+        url: https://doi.org/10.2196/66068
+        coauthors:
+        - andre-dekker
+        - anke-bruninx
+        - petros-kalendralis
+        - rutger-van-mierlo
+      - work: W4411961075
+        title: Exploring Safety of Down-Titrating Diuretics in Heart Failure Management
+        url: https://doi.org/10.1002/ejhf.3714
+        coauthors:
+        - andre-dekker
+        - anke-bruninx
+      - work: W4411962851
+        title: Development and temporal evaluation of sex-specific models to predict 4-year atherosclerotic cardiovascular
+          disease risk based on age and neighbourhood characteristics in South Limburg, the Netherlands
+        url: https://doi.org/10.1186/s41512-025-00198-4
+        coauthors:
+        - andre-dekker
+        - anke-bruninx
+      linked_verified_scholar: false
+      institution_match: false
+      accepted: true
+  identifier_discovery_checked_at: '2026-10-21'
+- section: previous
+  slug: aria-dianati
+  name: Aria Dianati
+  profile_url: https://www.clinicaldatascience.nl/aria-dianati
+  role: Former PhD student
+  employer: Maastricht University
+  source: staff_page
+  active_from: null
+  active_until: null
+  former_observed_at: '2026-10-21'
+  needs_review: false
+  former_collaboration:
+    checked_at: '2026-10-21'
+    window_start: '2024-10-21'
+    recent_months: 24
+    shared_papers: 1
+    recent_shared_papers: 1
+    last_collaboration_date: '2026-10-03'
+    followup_until: '2028-10-03'
+    current_coauthors:
+    - andre-dekker
+    - leonard-wee
+  publication_identity_sources:
+  - work: W7218933153
+    openalex_id: A5156847246
+    orcid: null
+  publication_author_ids:
+  - A5156847246
+  identifier_discovery_checked_at: '2026-10-21'
+- section: previous
+  slug: ashish-jha
+  name: Ashish Jha
+  profile_url: https://www.clinicaldatascience.nl/Staff/ashish-jha
+  role: Former PhD Student
+  employer: Maastricht University
+  source: staff_page
+  active_from: null
+  active_until: null
+  former_observed_at: '2026-10-21'
+  needs_review: true
+  publication_name_aliases:
+  - Ashish Kumar Jha
+  former_collaboration:
+    checked_at: '2026-10-21'
+    window_start: '2024-10-21'
+    recent_months: 24
+    shared_papers: 4
+    recent_shared_papers: 3
+    last_collaboration_date: '2025-07-04'
+    followup_until: '2027-07-04'
+    current_coauthors:
+    - andre-dekker
+    - johan-van-soest
+    - joshi-hogenboom
+    - leonard-wee
+    - umesh-kumar-baburao-sherkhane
+  publication_identity_sources:
+  - work: W4400874258
+    openalex_id: null
+    orcid: null
+  identifier_discovery_checked_at: '2026-10-21'
+- section: previous
+  slug: audrey-janssen
+  name: Audrey Janssen
+  profile_url: https://www.clinicaldatascience.nl/audrey-janssen
+  role: Former Project Manager
+  employer: Maastro & Maastricht University
+  source: staff_page
+  active_from: null
+  active_until: null
+  former_observed_at: '2026-10-21'
+  needs_review: true
+  former_collaboration:
+    checked_at: '2026-10-21'
+    window_start: '2024-10-21'
+    recent_months: 24
+    shared_papers: 0
+    recent_shared_papers: 0
+    last_collaboration_date: null
+    followup_until: null
+    current_coauthors: []
+- section: previous
+  slug: bas-nijsten
+  name: Bas Nijsten
+  profile_url: https://www.clinicaldatascience.nl/staff/bas-nijsten
+  role: Former PhD student
+  employer: Maastricht University
+  source: staff_page
+  active_from: null
+  active_until: null
+  former_observed_at: '2026-10-21'
+  needs_review: true
+  former_collaboration:
+    checked_at: '2026-10-21'
+    window_start: '2024-10-21'
+    recent_months: 24
+    shared_papers: 0
+    recent_shared_papers: 0
+    last_collaboration_date: null
+    followup_until: null
+    current_coauthors: []
+- section: previous
+  slug: biche-osong
+  name: Biche Osong
+  profile_url: https://www.clinicaldatascience.nl/Staff/biche-osong
+  role: Former PhD student
+  employer: Maastro
+  source: staff_page
+  active_from: null
+  active_until: null
+  former_observed_at: '2026-10-21'
+  needs_review: false
+  former_collaboration:
+    checked_at: '2026-10-21'
+    window_start: '2024-10-21'
+    recent_months: 24
+    shared_papers: 2
+    recent_shared_papers: 1
+    last_collaboration_date: '2025-08-01'
+    followup_until: '2027-08-01'
+    current_coauthors:
+    - andre-dekker
+  publication_identity_sources:
+  - work: W4413055266
+    openalex_id: A5035571354
+    orcid: 0000-0003-1499-0896
+  publication_author_ids:
+  - A5035571354
+  orcid_openalex: 0000-0003-1499-0896
+  scholar_id: w8td4qQAAAAJ
+  identifier_evidence:
+    scholar:
+      checked_at: '2026-10-21'
+      id: w8td4qQAAAAJ
+      url: https://scholar.google.com/citations?user=w8td4qQAAAAJ
+      name: Biche Osong
+      affiliations: Nationwide children hospital
+      name_match: true
+      shared_works:
+      - work: W4413055266
+        title: 'Predicting near‐complete pathological response to (chemo)radiotherapy in patients with rectal cancer: A federated
+          learning study'
+        url: https://doi.org/10.1002/mp.18034
+        coauthors:
+        - andre-dekker
+        - biche-osong
+        - pedro-mateus
+      - work: W4391787579
+        title: The value of PROMs for predicting erectile dysfunction in prostate cancer patients with Bayesian network
+        url: https://doi.org/10.1016/j.tipsro.2024.100234
+        coauthors:
+        - andre-dekker
+        - biche-osong
+        - hajar-hasannejadasl
+        - johan-van-soest
+        - rianne-fijten
+      known_coauthors:
+      - alberto-traverso
+      - ananya-choudhury
+      - andre-dekker
+      - leonard-wee
+      coauthor_profiles:
+      - slug: alberto-traverso
+        url: https://scholar.google.com/citations?user=MvWO42oAAAAJ
+      - slug: ananya-choudhury
+        url: https://scholar.google.com/citations?user=O8N8H5QAAAAJ
+      - slug: andre-dekker
+        url: https://scholar.google.com/citations?user=JKOhEfcAAAAJ
+      - slug: leonard-wee
+        url: https://scholar.google.com/citations?user=hlhktjoAAAAJ
+      institution_match: false
+      accepted: true
+    orcid:
+      checked_at: '2026-10-21'
+      id: 0000-0003-1499-0896
+      url: https://orcid.org/0000-0003-1499-0896
+      name: Biche Osong
+      affiliations:
+      - The Ohio State University
+      - Maastricht University Medical Centre
+      - Universiteit Hasselt
+      - The Ohio State University
+      - Nationwide Children's Hospital
+      - Nationwide Children's Hospital
+      - 'MAASTRO '
+      - Netherlands Society for Radiobiology
+      - ESTRO
+      name_match: true
+      shared_works:
+      - work: W4413055266
+        title: 'Predicting near‐complete pathological response to (chemo)radiotherapy in patients with rectal cancer: A federated
+          learning study'
+        url: https://doi.org/10.1002/mp.18034
+        coauthors:
+        - andre-dekker
+        - biche-osong
+        - pedro-mateus
+      - work: W4391787579
+        title: The value of PROMs for predicting erectile dysfunction in prostate cancer patients with Bayesian network
+        url: https://doi.org/10.1016/j.tipsro.2024.100234
+        coauthors:
+        - andre-dekker
+        - biche-osong
+        - hajar-hasannejadasl
+        - johan-van-soest
+        - rianne-fijten
+      linked_verified_scholar: false
+      institution_match: true
+      accepted: true
+  orcid_discovered: 0000-0003-1499-0896
+  identifier_discovery_checked_at: '2026-10-21'
+- section: previous
+  slug: chaitanya-kulkarni
+  name: Chaitanya Kulkarni
+  profile_url: https://www.clinicaldatascience.nl/chaitanya-kulkarni
+  role: Former PhD student
+  employer: Philips Healthcare, Bengaluru, Karnataka, India
+  source: staff_page
+  active_from: null
+  active_until: null
+  former_observed_at: '2026-10-21'
+  needs_review: true
+  former_collaboration:
+    checked_at: '2026-10-21'
+    window_start: '2024-10-21'
+    recent_months: 24
+    shared_papers: 0
+    recent_shared_papers: 0
+    last_collaboration_date: null
+    followup_until: null
+    current_coauthors: []
+- section: previous
+  slug: chengbing-zeng
+  name: Chengbing Zeng
+  profile_url: https://www.clinicaldatascience.nl/chengbing-zeng
+  role: Former external PhD Student
+  employer: Shantou University Medical College, China
+  source: staff_page
+  active_from: null
+  active_until: null
+  former_observed_at: '2026-10-21'
+  needs_review: true
+  former_collaboration:
+    checked_at: '2026-10-21'
+    window_start: '2024-10-21'
+    recent_months: 24
+    shared_papers: 0
+    recent_shared_papers: 0
+    last_collaboration_date: null
+    followup_until: null
+    current_coauthors: []
+- section: previous
+  slug: chinmay-rao
+  name: Chinmay Rao
+  profile_url: https://www.clinicaldatascience.nl/Staff/chinmay-rao
+  role: Former Intern
+  employer: Maastro
+  source: staff_page
+  active_from: null
+  active_until: null
+  former_observed_at: '2026-10-21'
+  needs_review: true
+  former_collaboration:
+    checked_at: '2026-10-21'
+    window_start: '2024-10-21'
+    recent_months: 24
+    shared_papers: 0
+    recent_shared_papers: 0
+    last_collaboration_date: null
+    followup_until: null
+    current_coauthors: []
+- section: previous
+  slug: chong-zhang
+  name: Chong Zhang
+  profile_url: https://www.clinicaldatascience.nl/chong-zhang
+  role: Former PhD student
+  employer: Maastricht University
+  source: staff_page
+  active_from: null
+  active_until: null
+  former_observed_at: '2026-10-21'
+  needs_review: true
+  former_collaboration:
+    checked_at: '2026-10-21'
+    window_start: '2024-10-21'
+    recent_months: 24
+    shared_papers: 0
+    recent_shared_papers: 0
+    last_collaboration_date: null
+    followup_until: null
+    current_coauthors: []
+- section: previous
+  slug: dennis-bontempi
+  name: Dennis Bontempi
+  profile_url: https://www.clinicaldatascience.nl/dennis-bontempi
+  role: Former PhD student
+  employer: Maastricht University
+  source: staff_page
+  active_from: null
+  active_until: null
+  former_observed_at: '2026-10-21'
+  needs_review: false
+  former_collaboration:
+    checked_at: '2026-10-21'
+    window_start: '2024-10-21'
+    recent_months: 24
+    shared_papers: 5
+    recent_shared_papers: 2
+    last_collaboration_date: '2026-10-01'
+    followup_until: '2028-10-01'
+    current_coauthors:
+    - andre-dekker
+    - leonard-nurnberg
+  publication_identity_sources:
+  - work: W7222957496
+    openalex_id: A5031275715
+    orcid: 0000-0003-0775-5679
+  publication_author_ids:
+  - A5031275715
+  orcid_openalex: 0000-0003-0775-5679
+  orcid_discovered: 0000-0003-0775-5679
+  identifier_evidence:
+    orcid:
+      checked_at: '2026-10-21'
+      id: 0000-0003-0775-5679
+      url: https://orcid.org/0000-0003-0775-5679
+      name: Dennis Bontempi
+      affiliations:
+      - Maastricht University
+      - Mass General Brigham
+      - University of Brescia
+      - University of Lausanne
+      - Universiteit Maastricht
+      - Brigham and Women's Hospital
+      - Università degli Studi di Brescia
+      name_match: true
+      shared_works:
+      - work: W4410197107
+        title: 'FaceAge, a deep learning system to estimate biological age from face photographs to improve prognostication:
+          a model development and validation study'
+        url: https://doi.org/10.1016/j.landig.2025.03.002
+        coauthors:
+        - andre-dekker
+        - dennis-bontempi
+        - hugo-aerts
+        - sure-pai
+        - vasco-prudente
+      - work: W4401546164
+        title: End-to-end reproducible AI pipelines in radiology using the cloud
+        url: https://doi.org/10.1038/s41467-024-51202-2
+        coauthors:
+        - dennis-bontempi
+        - hugo-aerts
+        - leonard-nurnberg
+        - sure-pai
+      - work: W4393407981
+        title: 'Optimizing CycleGAN design for CBCT-to-CT translation: insights into 2D vs 3D modeling, patch size, and the
+          need for tailored evaluation metrics'
+        url: https://doi.org/10.1117/12.3007031
+        coauthors:
+        - alberto-traverso
+        - andre-dekker
+        - dennis-bontempi
+        - ibrahim-hadzic
+        - ivan-zhovannik
+        - sure-pai
+      linked_verified_scholar: false
+      institution_match: true
+      accepted: true
+  identifier_discovery_checked_at: '2026-10-21'
+- section: previous
+  slug: elisabeth-pfaehler
+  name: Elisabeth Pfaehler
+  profile_url: https://www.clinicaldatascience.nl/Staff/elisabeth-pfaehler
+  role: Former visiting Fellow
+  employer: Maastricht University
+  source: staff_page
+  active_from: null
+  active_until: null
+  former_observed_at: '2026-10-21'
+  needs_review: true
+  former_collaboration:
+    checked_at: '2026-10-21'
+    window_start: '2024-10-21'
+    recent_months: 24
+    shared_papers: 0
+    recent_shared_papers: 0
+    last_collaboration_date: null
+    followup_until: null
+    current_coauthors: []
+- section: previous
+  slug: emese-szakaly
+  name: Emese Szakaly
+  profile_url: https://www.clinicaldatascience.nl/Staff/emese-szakaly
+  role: Former Intern
+  employer: Maastro
+  source: staff_page
+  active_from: null
+  active_until: null
+  former_observed_at: '2026-10-21'
+  needs_review: true
+  former_collaboration:
+    checked_at: '2026-10-21'
+    window_start: '2024-10-21'
+    recent_months: 24
+    shared_papers: 0
+    recent_shared_papers: 0
+    last_collaboration_date: null
+    followup_until: null
+    current_coauthors: []
+- section: previous
+  slug: emmanuel-rios
+  name: Emmanuel Rios
+  profile_url: https://www.clinicaldatascience.nl/Staff/emmanuel-rios
+  role: Former PhD Student
+  employer: Maastro
+  source: staff_page
+  active_from: null
+  active_until: null
+  former_observed_at: '2026-10-21'
+  needs_review: true
+  former_collaboration:
+    checked_at: '2026-10-21'
+    window_start: '2024-10-21'
+    recent_months: 24
+    shared_papers: 0
+    recent_shared_papers: 0
+    last_collaboration_date: null
+    followup_until: null
+    current_coauthors: []
+- section: previous
+  slug: erik-roelofs
+  name: Erik Roelofs
+  profile_url: https://www.clinicaldatascience.nl/Staff/erik-roelofs
+  role: Former PhD Student
+  employer: Maastricht University
+  source: staff_page
+  active_from: null
+  active_until: null
+  former_observed_at: '2026-10-21'
+  needs_review: true
+  former_collaboration:
+    checked_at: '2026-10-21'
+    window_start: '2024-10-21'
+    recent_months: 24
+    shared_papers: 0
+    recent_shared_papers: 0
+    last_collaboration_date: null
+    followup_until: null
+    current_coauthors: []
+- section: previous
+  slug: esther-bloemen
+  name: Esther Bloemen
+  profile_url: https://www.clinicaldatascience.nl/staff/esther-bloemen
+  role: Former PhD student
+  employer: Maastro
+  source: staff_page
+  active_from: null
+  active_until: null
+  former_observed_at: '2026-10-21'
+  needs_review: true
+  former_collaboration:
+    checked_at: '2026-10-21'
+    window_start: '2024-10-21'
+    recent_months: 24
+    shared_papers: 0
+    recent_shared_papers: 0
+    last_collaboration_date: null
+    followup_until: null
+    current_coauthors: []
+- section: previous
+  slug: fariba-tohidinezhad
+  name: Fariba Tohidinezhad
+  profile_url: https://www.clinicaldatascience.nl/fariba-tohidinezhad
+  role: Former PhD Student
+  employer: Maastro
+  source: staff_page
+  active_from: null
+  active_until: null
+  former_observed_at: '2026-10-21'
+  needs_review: false
+  former_collaboration:
+    checked_at: '2026-10-21'
+    window_start: '2024-10-21'
+    recent_months: 24
+    shared_papers: 9
+    recent_shared_papers: 3
+    last_collaboration_date: '2026-01-13'
+    followup_until: '2028-01-13'
+    current_coauthors:
+    - andre-dekker
+    - jikai-zhou
+    - petros-kalendralis
+    - wenjie-liang
+  publication_identity_sources:
+  - work: W7123926908
+    openalex_id: A5054496746
+    orcid: 0000-0001-8880-3593
+  publication_author_ids:
+  - A5054496746
+  orcid_openalex: 0000-0001-8880-3593
+  orcid_discovered: 0000-0001-8880-3593
+  identifier_evidence:
+    orcid:
+      checked_at: '2026-10-21'
+      id: 0000-0001-8880-3593
+      url: https://orcid.org/0000-0001-8880-3593
+      name: Fariba Tohidinezhad
+      affiliations:
+      - Erasmus MC
+      - Maastricht University
+      - Maastricht Universitair Medisch Centrum+
+      name_match: true
+      shared_works:
+      - work: W4402897784
+        title: Prediction of new-onset atrial fibrillation in patients with non-small cell lung cancer treated with curative-intent
+          conventional radiotherapy
+        url: https://doi.org/10.1016/j.radonc.2024.110544
+        coauthors:
+        - alberto-traverso
+        - andre-dekker
+        - fariba-tohidinezhad
+        - femke-vaassen
+        - hugo-aerts
+        - leonard-nurnberg
+      - work: W4394675050
+        title: Predicting the risk of neurocognitive decline after brain irradiation in adult patients with a primary brain
+          tumor
+        url: https://doi.org/10.1093/neuonc/noae035
+        coauthors:
+        - alberto-traverso
+        - andre-dekker
+        - fariba-tohidinezhad
+        - femke-vaassen
+        - wouter-van-elmpt
+      - work: W4393065851
+        title: Development of an explainable AI prediction model for arm lymphoedema following breast cancer surgery and radiotherapy
+        url: https://doi.org/10.1016/j.ejca.2024.113624
+        coauthors:
+        - alberto-traverso
+        - alessio-romita
+        - andre-dekker
+        - fariba-tohidinezhad
+        - johan-van-soest
+      linked_verified_scholar: false
+      institution_match: true
+      accepted: true
+  identifier_discovery_checked_at: '2026-10-21'
+- section: previous
+  slug: femke-vaassen
+  name: Femke Vaassen
+  profile_url: https://www.clinicaldatascience.nl/femke-vaassen
+  role: Former PhD student
+  employer: Maastro
+  source: staff_page
+  active_from: null
+  active_until: null
+  former_observed_at: '2026-10-21'
+  needs_review: false
+  former_collaboration:
+    checked_at: '2026-10-21'
+    window_start: '2024-10-21'
+    recent_months: 24
+    shared_papers: 5
+    recent_shared_papers: 0
+    last_collaboration_date: null
+    followup_until: null
+    current_coauthors: []
+  publication_identity_sources:
+  - work: W4402897784
+    openalex_id: A5060701646
+    orcid: 0009-0005-3837-167X
+  publication_author_ids:
+  - A5060701646
+  orcid_openalex: 0009-0005-3837-167X
+  identifier_discovery_checked_at: '2026-10-21'
+- section: previous
+  slug: florian-van-daalen
+  name: Florian van Daalen
+  profile_url: https://www.clinicaldatascience.nl/florian-van-daalen
+  role: Former PhD student
+  employer: Maastricht University
+  source: staff_page
+  active_from: null
+  active_until: null
+  former_observed_at: '2026-10-21'
+  needs_review: false
+  former_collaboration:
+    checked_at: '2026-10-21'
+    window_start: '2024-10-21'
+    recent_months: 24
+    shared_papers: 8
+    recent_shared_papers: 6
+    last_collaboration_date: '2026-02-27'
+    followup_until: '2028-02-27'
+    current_coauthors:
+    - andre-dekker
+    - balu-krishna-sasidharan
+    - hannah-mary-thomas
+    - johan-van-soest
+    - leonard-wee
+    - marine-jacquemin
+    - ralph-brecheisen
+    - rianne-fijten
+  publication_identity_sources:
+  - work: W7131779647
+    openalex_id: A5075346171
+    orcid: 0000-0002-2229-8587
+  publication_author_ids:
+  - A5075346171
+  orcid_openalex: 0000-0002-2229-8587
+  orcid_discovered: 0000-0002-2229-8587
+  identifier_evidence:
+    orcid:
+      checked_at: '2026-10-21'
+      id: 0000-0002-2229-8587
+      url: https://orcid.org/0000-0002-2229-8587
+      name: Florian van Daalen
+      affiliations:
+      - Care and Public Health Research Inst.
+      - Maastricht University
+      name_match: true
+      shared_works:
+      - work: W4414601064
+        title: 'Multinomial Classification Certainty: a new uncertainty metric for multinomial outcome prediction'
+        url: https://doi.org/10.1007/s13748-025-00404-w
+        coauthors:
+        - andre-dekker
+        - florian-van-daalen
+        - leonard-wee
+        - ralph-brecheisen
+      - work: W7131779647
+        title: Decoding Uncertainty Quantification for Oncology—An Illustration Using Radiomics
+        url: https://doi.org/10.3390/diagnostics16050700
+        coauthors:
+        - andre-dekker
+        - balu-krishna-sasidharan
+        - florian-van-daalen
+        - hannah-mary-thomas
+        - leonard-wee
+        - rianne-fijten
+      - work: W4411465141
+        title: A critique of current approaches to privacy in machine learning
+        url: https://doi.org/10.1007/s10676-025-09843-4
+        coauthors:
+        - andre-dekker
+        - florian-van-daalen
+        - johan-van-soest
+        - marine-jacquemin
+      - work: W4412555313
+        title: 'Verticox+: vertically distributed Cox proportional hazards model with improved privacy guarantees'
+        url: https://doi.org/10.1007/s40747-025-02022-4
+        coauthors:
+        - andre-dekker
+        - florian-van-daalen
+      - work: W4407037294
+        title: 'Lung Cancer Detection Using Bayesian Networks: A Retrospective Development and Validation Study on a Danish
+          Population of High‐Risk Individuals'
+        url: https://doi.org/10.1002/cam4.70458
+        coauthors:
+        - florian-van-daalen
+        - leonard-wee
+      - work: W4404828427
+        title: 'A Bayesian Network Approach to Lung Cancer Screening: Assessing the Impact of Data Quantity, Quality, and
+          the Combination of Data from Danish Electronic Health Records'
+        url: https://doi.org/10.3390/cancers16233989
+        coauthors:
+        - florian-van-daalen
+        - leonard-wee
+      - work: W4403702516
+        title: 'A Response to: A Note on "Privacy Preserving n-Party Scalar Product Protocol"'
+        url: https://doi.org/10.48550/arxiv.2409.10057
+        coauthors:
+        - andre-dekker
+        - florian-van-daalen
+      - work: W4395462746
+        title: 'VertiBayes: learning Bayesian network parameters from vertically partitioned data with missing values'
+        url: https://doi.org/10.1007/s40747-024-01424-0
+        coauthors:
+        - andre-dekker
+        - florian-van-daalen
+      linked_verified_scholar: false
+      institution_match: true
+      accepted: true
+  identifier_discovery_checked_at: '2026-10-21'
+- section: previous
+  slug: francesco-cellini
+  name: Francesco Cellini
+  profile_url: https://www.clinicaldatascience.nl/francesco-cellini
+  role: Former external PhD student
+  employer: Campus Bio-Medico, Italy
+  source: staff_page
+  active_from: null
+  active_until: null
+  former_observed_at: '2026-10-21'
+  needs_review: true
+  former_collaboration:
+    checked_at: '2026-10-21'
+    window_start: '2024-10-21'
+    recent_months: 24
+    shared_papers: 0
+    recent_shared_papers: 0
+    last_collaboration_date: null
+    followup_until: null
+    current_coauthors: []
+- section: previous
+  slug: frank-dankers
+  name: Frank Dankers
+  profile_url: https://www.clinicaldatascience.nl/Staff/frank-dankers
+  role: Former PhD Student
+  employer: Maastricht University
+  source: staff_page
+  active_from: null
+  active_until: null
+  former_observed_at: '2026-10-21'
+  needs_review: true
+  former_collaboration:
+    checked_at: '2026-10-21'
+    window_start: '2024-10-21'
+    recent_months: 24
+    shared_papers: 0
+    recent_shared_papers: 0
+    last_collaboration_date: null
+    followup_until: null
+    current_coauthors: []
+- section: previous
+  slug: gabrielle-edgecombe
+  name: Gabrielle Edgecombe
+  profile_url: https://www.clinicaldatascience.nl/gabrielle-edgecombe
+  role: Former intern
+  employer: Maastricht University
+  source: staff_page
+  active_from: null
+  active_until: null
+  former_observed_at: '2026-10-21'
+  needs_review: true
+  former_collaboration:
+    checked_at: '2026-10-21'
+    window_start: '2024-10-21'
+    recent_months: 24
+    shared_papers: 0
+    recent_shared_papers: 0
+    last_collaboration_date: null
+    followup_until: null
+    current_coauthors: []
+- section: previous
+  slug: geert-bosmans
+  name: Geert Bosmans
+  profile_url: https://www.clinicaldatascience.nl/staff/geert-bosmans
+  role: Former PhD Student
+  employer: Maastro
+  source: staff_page
+  active_from: null
+  active_until: null
+  former_observed_at: '2026-10-21'
+  needs_review: false
+  former_collaboration:
+    checked_at: '2026-10-21'
+    window_start: '2024-10-21'
+    recent_months: 24
+    shared_papers: 1
+    recent_shared_papers: 1
+    last_collaboration_date: '2025-12-25'
+    followup_until: '2027-12-25'
+    current_coauthors:
+    - andre-dekker
+    - thijs-ackermans
+  publication_identity_sources:
+  - work: W7117241713
+    openalex_id: A5103491958
+    orcid: null
+  publication_author_ids:
+  - A5103491958
+- section: previous
+  slug: geetha-mahadevaiah
+  name: Geetha Mahadevaiah
+  profile_url: https://www.clinicaldatascience.nl/Staff/geetha-mahadevaiah
+  role: Former PhD Student
+  employer: Maastricht University
+  source: staff_page
+  active_from: null
+  active_until: null
+  former_observed_at: '2026-10-21'
+  needs_review: true
+  former_collaboration:
+    checked_at: '2026-10-21'
+    window_start: '2024-10-21'
+    recent_months: 24
+    shared_papers: 0
+    recent_shared_papers: 0
+    last_collaboration_date: null
+    followup_until: null
+    current_coauthors: []
+- section: previous
+  slug: gijs-frenken
+  name: Gijs Frenken
+  profile_url: https://www.clinicaldatascience.nl/gijs-frenken
+  role: Former intern
+  employer: Maastricht University
+  source: staff_page
+  active_from: null
+  active_until: null
+  former_observed_at: '2026-10-21'
+  needs_review: true
+  former_collaboration:
+    checked_at: '2026-10-21'
+    window_start: '2024-10-21'
+    recent_months: 24
+    shared_papers: 0
+    recent_shared_papers: 0
+    last_collaboration_date: null
+    followup_until: null
+    current_coauthors: []
+- section: previous
+  slug: girma-gilano
+  name: Girma Gilano
+  profile_url: https://www.clinicaldatascience.nl/girma-gilano
+  role: Former external PhD student
+  employer: 'Arba Minch University: Arba Minch, SNNPR, Ehiopia'
+  source: staff_page
+  active_from: null
+  active_until: null
+  former_observed_at: '2026-10-21'
+  needs_review: false
+  former_collaboration:
+    checked_at: '2026-10-21'
+    window_start: '2024-10-21'
+    recent_months: 24
+    shared_papers: 8
+    recent_shared_papers: 5
+    last_collaboration_date: '2026-06-02'
+    followup_until: '2028-06-02'
+    current_coauthors:
+    - andre-dekker
+    - rianne-fijten
+  publication_identity_sources:
+  - work: W4416575024
+    openalex_id: A5041626701
+    orcid: 0000-0002-5847-1425
+  - work: W7110945548
+    openalex_id: null
+    orcid: 0000-0002-5847-1425
+  publication_author_ids:
+  - A5041626701
+  orcid_openalex: 0000-0002-5847-1425
+  orcid_discovered: 0000-0002-5847-1425
+  identifier_evidence:
+    orcid:
+      checked_at: '2026-10-21'
+      id: 0000-0002-5847-1425
+      url: https://orcid.org/0000-0002-5847-1425
+      name: Girma Gilano
+      affiliations:
+      - University of Gondar
+      - Arba Minch University
+      - Arba Minch University
+      - International Federation of Red Cross and Red Crescent Societies
+      name_match: true
+      shared_works:
+      - work: W7163123298
+        title: 'The Effect of Mobile Health Intervention on Prelacteal Feeding Among Mothers in the First Month After Birth
+          in South Ethiopia: A Cluster-Randomized Controlled Trial'
+        url: https://doi.org/10.3390/nu18111795
+        coauthors:
+        - andre-dekker
+        - girma-gilano
+        - rianne-fijten
+      - work: W7110945548
+        title: 'Effect of mHealth on Postpartum Family Planning and Its Associated Factors Among Women in South Ethiopia:
+          A Cluster-Randomized Controlled Trial'
+        url: https://doi.org/10.3390/jcm14248703
+        coauthors:
+        - andre-dekker
+        - girma-gilano
+        - rianne-fijten
+      - work: W4415924457
+        title: 'The Effect of mHealth on Exclusive Breastfeeding and Its Associated Factors Among Women in South Ethiopia:
+          A Cluster Randomized Controlled Trial'
+        url: https://doi.org/10.3390/nu17213477
+        coauthors:
+        - andre-dekker
+        - girma-gilano
+        - rianne-fijten
+      - work: W4391514506
+        title: 'Effect of mobile phone messaging on uptake of maternal and child health service in southern Ethiopia: Protocol
+          for cluster randomized controlled trial'
+        url: https://doi.org/10.1016/j.nutos.2024.02.002
+        coauthors:
+        - andre-dekker
+        - girma-gilano
+        - rianne-fijten
+      - work: W4392012924
+        title: 'The effect of mHealth on childhood vaccination in Africa: A systematic review and meta-analysis'
+        url: https://doi.org/10.1371/journal.pone.0294442
+        coauthors:
+        - andre-dekker
+        - girma-gilano
+        - rianne-fijten
+      - work: W4391657914
+        title: 'The role of mHealth intervention to improve maternal and child health: A provider-based qualitative study
+          in Southern Ethiopia'
+        url: https://doi.org/10.1371/journal.pone.0295539
+        coauthors:
+        - andre-dekker
+        - girma-gilano
+        - rianne-fijten
+      linked_verified_scholar: false
+      institution_match: false
+      accepted: true
+  identifier_discovery_checked_at: '2026-10-21'
+- section: previous
+  slug: glauco-lorenzut
+  name: Glauco Lorenzut
+  profile_url: https://www.clinicaldatascience.nl/Staff/glauco-lorenzut
+  role: Former Intern
+  employer: Maastro
+  source: staff_page
+  active_from: null
+  active_until: null
+  former_observed_at: '2026-10-21'
+  needs_review: true
+  former_collaboration:
+    checked_at: '2026-10-21'
+    window_start: '2024-10-21'
+    recent_months: 24
+    shared_papers: 0
+    recent_shared_papers: 0
+    last_collaboration_date: null
+    followup_until: null
+    current_coauthors: []
+- section: previous
+  slug: gokul-jayakumar
+  name: Gokul Jayakumar
+  profile_url: https://www.clinicaldatascience.nl/gokul-jayakumar
+  role: Former intern
+  employer: Maastricht University
+  source: staff_page
+  active_from: null
+  active_until: null
+  former_observed_at: '2026-10-21'
+  needs_review: true
+  former_collaboration:
+    checked_at: '2026-10-21'
+    window_start: '2024-10-21'
+    recent_months: 24
+    shared_papers: 0
+    recent_shared_papers: 0
+    last_collaboration_date: null
+    followup_until: null
+    current_coauthors: []
+- section: previous
+  slug: haiming-li
+  name: Haiming Li
+  profile_url: https://www.clinicaldatascience.nl/haiming-li
+  role: Former visiting researcher from Fudan University Shanghai Cancer Centre
+  employer: Maastricht University
+  source: staff_page
+  active_from: null
+  active_until: null
+  former_observed_at: '2026-10-21'
+  needs_review: true
+  former_collaboration:
+    checked_at: '2026-10-21'
+    window_start: '2024-10-21'
+    recent_months: 24
+    shared_papers: 0
+    recent_shared_papers: 0
+    last_collaboration_date: null
+    followup_until: null
+    current_coauthors: []
+- section: previous
+  slug: hajar-hasannejadasl
+  name: Hajar Hasannejadasl
+  profile_url: https://www.clinicaldatascience.nl/hajar-hasannejadasl
+  role: Former PhD student
+  employer: Maastro
+  source: staff_page
+  active_from: null
+  active_until: null
+  former_observed_at: '2026-10-21'
+  needs_review: false
+  former_collaboration:
+    checked_at: '2026-10-21'
+    window_start: '2024-10-21'
+    recent_months: 24
+    shared_papers: 2
+    recent_shared_papers: 0
+    last_collaboration_date: null
+    followup_until: null
+    current_coauthors: []
+  publication_identity_sources:
+  - work: W4391787579
+    openalex_id: A5065721496
+    orcid: 0000-0001-5262-7399
+  publication_author_ids:
+  - A5065721496
+  orcid_openalex: 0000-0001-5262-7399
+  orcid_discovered: 0000-0001-5262-7399
+  identifier_evidence:
+    orcid:
+      checked_at: '2026-10-21'
+      id: 0000-0001-5262-7399
+      url: https://orcid.org/0000-0001-5262-7399
+      name: Hajar Hasannejadasl
+      affiliations:
+      - Maastricht University
+      name_match: true
+      shared_works:
+      - work: W4391787579
+        title: The value of PROMs for predicting erectile dysfunction in prostate cancer patients with Bayesian network
+        url: https://doi.org/10.1016/j.tipsro.2024.100234
+        coauthors:
+        - andre-dekker
+        - biche-osong
+        - hajar-hasannejadasl
+        - johan-van-soest
+        - rianne-fijten
+      linked_verified_scholar: false
+      institution_match: true
+      accepted: true
+  identifier_discovery_checked_at: '2026-10-21'
+- section: previous
+  slug: hossein-rahmani
+  name: Hossein Rahmani
+  profile_url: https://www.clinicaldatascience.nl/hossein-rahmani
+  role: Former PhD student
+  employer: Maastricht University
+  source: staff_page
+  active_from: null
+  active_until: null
+  former_observed_at: '2026-10-21'
+  needs_review: false
+  former_collaboration:
+    checked_at: '2026-10-21'
+    window_start: '2024-10-21'
+    recent_months: 24
+    shared_papers: 5
+    recent_shared_papers: 5
+    last_collaboration_date: '2026-08-25'
+    followup_until: '2028-08-25'
+    current_coauthors:
+    - andre-dekker
+    - leroy-volmer
+    - ralph-brecheisen
+  publication_identity_sources:
+  - work: W7204170550
+    openalex_id: A5080786959
+    orcid: 0000-0003-2988-6178
+  publication_author_ids:
+  - A5080786959
+  orcid_openalex: 0000-0003-2988-6178
+  identifier_discovery_checked_at: '2026-10-21'
+- section: previous
+  slug: hugo-aerts
+  name: Hugo Aerts
+  profile_url: https://www.clinicaldatascience.nl/Staff/hugo-aerts
+  role: Former PhD Student
+  employer: Maastricht University
+  source: staff_page
+  active_from: null
+  active_until: null
+  former_observed_at: '2026-10-21'
+  needs_review: false
+  former_collaboration:
+    checked_at: '2026-10-21'
+    window_start: '2024-10-21'
+    recent_months: 24
+    shared_papers: 8
+    recent_shared_papers: 6
+    last_collaboration_date: '2026-10-01'
+    followup_until: '2028-10-01'
+    current_coauthors:
+    - andre-dekker
+    - leonard-nurnberg
+  publication_identity_sources:
+  - work: W7222957496
+    openalex_id: A5001452511
+    orcid: 0000-0002-2122-2003
+  publication_author_ids:
+  - A5001452511
+  orcid_openalex: 0000-0002-2122-2003
+  scholar_id: v7G4QvIAAAAJ
+  identifier_evidence:
+    scholar:
+      checked_at: '2026-10-21'
+      id: v7G4QvIAAAAJ
+      url: https://scholar.google.com/citations?user=v7G4QvIAAAAJ
+      name: Hugo Aerts
+      affiliations: Professor, Harvard | Director, AI in Medicine Program, Mass General Brigham | Professor, MaastrichtU
+      name_match: true
+      shared_works: []
+      known_coauthors:
+      - andre-dekker
+      coauthor_profiles:
+      - slug: andre-dekker
+        url: https://scholar.google.com/citations?user=JKOhEfcAAAAJ
+      institution_match: true
+      accepted: true
+    orcid:
+      checked_at: '2026-10-21'
+      id: 0000-0002-2122-2003
+      url: https://orcid.org/0000-0002-2122-2003
+      name: Hugo Aerts
+      affiliations:
+      - Brigham and Women's Hospital
+      - Harvard Medical School
+      - Dana-Farber Cancer Institute
+      - Maastricht University
+      - National Cancer Institute
+      - National Cancer Institute
+      name_match: true
+      shared_works: []
+      linked_verified_scholar: true
+      institution_match: true
+      accepted: true
+  orcid_discovered: 0000-0002-2122-2003
+  identifier_discovery_checked_at: '2026-10-21'
+- section: previous
+  slug: ibrahim-hadzic
+  name: Ibrahim Hadzic
+  profile_url: https://www.clinicaldatascience.nl/Staff/ibrahim-hadzic
+  role: Former Intern
+  employer: Maastricht University
+  source: staff_page
+  active_from: null
+  active_until: null
+  former_observed_at: '2026-10-21'
+  needs_review: false
+  former_collaboration:
+    checked_at: '2026-10-21'
+    window_start: '2024-10-21'
+    recent_months: 24
+    shared_papers: 1
+    recent_shared_papers: 0
+    last_collaboration_date: null
+    followup_until: null
+    current_coauthors: []
+  publication_identity_sources:
+  - work: W4393407981
+    openalex_id: A5068645252
+    orcid: 0000-0002-8397-5940
+  publication_author_ids:
+  - A5068645252
+  orcid_openalex: 0000-0002-8397-5940
+- section: previous
+  slug: inigo-bermejo-delgado
+  name: Inigo Bermejo Delgado
+  profile_url: https://www.clinicaldatascience.nl/inigo-bermejo-delgado
+  role: Former Assistant Professor
+  employer: Maastricht University
+  source: staff_page
+  active_from: null
+  active_until: null
+  former_observed_at: '2026-10-21'
+  needs_review: true
+  former_collaboration:
+    checked_at: '2026-10-21'
+    window_start: '2024-10-21'
+    recent_months: 24
+    shared_papers: 0
+    recent_shared_papers: 0
+    last_collaboration_date: null
+    followup_until: null
+    current_coauthors: []
+- section: previous
+  slug: jan-super
+  name: Jan Super
+  profile_url: https://www.clinicaldatascience.nl/Staff/jan-super
+  role: Former Intern
+  employer: Maastro
+  source: staff_page
+  active_from: null
+  active_until: null
+  former_observed_at: '2026-10-21'
+  needs_review: true
+  former_collaboration:
+    checked_at: '2026-10-21'
+    window_start: '2024-10-21'
+    recent_months: 24
+    shared_papers: 0
+    recent_shared_papers: 0
+    last_collaboration_date: null
+    followup_until: null
+    current_coauthors: []
+- section: previous
+  slug: jasper-snel
+  name: Jasper Snel
+  profile_url: https://www.clinicaldatascience.nl/Staff/jasper-snel
+  role: Former Software Engineer
+  employer: Maastro
+  source: staff_page
+  active_from: null
+  active_until: null
+  former_observed_at: '2026-10-21'
+  needs_review: true
+  former_collaboration:
+    checked_at: '2026-10-21'
+    window_start: '2024-10-21'
+    recent_months: 24
+    shared_papers: 0
+    recent_shared_papers: 0
+    last_collaboration_date: null
+    followup_until: null
+    current_coauthors: []
+- section: previous
+  slug: jim-bemelen
+  name: Jim Bemelen
+  profile_url: https://www.clinicaldatascience.nl/Staff/jim-bemelen
+  role: Former researcher
+  employer: Maastro
+  source: staff_page
+  active_from: null
+  active_until: null
+  former_observed_at: '2026-10-21'
+  needs_review: true
+  former_collaboration:
+    checked_at: '2026-10-21'
+    window_start: '2024-10-21'
+    recent_months: 24
+    shared_papers: 0
+    recent_shared_papers: 0
+    last_collaboration_date: null
+    followup_until: null
+    current_coauthors: []
+- section: previous
+  slug: jing-jing-you
+  name: Jing Jing You
+  profile_url: https://www.clinicaldatascience.nl/jing-jing-you
+  role: Former visiting researcher from Jinan University in China
+  employer: Maastricht University
+  source: staff_page
+  active_from: null
+  active_until: null
+  former_observed_at: '2026-10-21'
+  needs_review: true
+  former_collaboration:
+    checked_at: '2026-10-21'
+    window_start: '2024-10-21'
+    recent_months: 24
+    shared_papers: 0
+    recent_shared_papers: 0
+    last_collaboration_date: null
+    followup_until: null
+    current_coauthors: []
+- section: previous
+  slug: johannes-petermann
+  name: Johannes Petermann
+  profile_url: https://www.clinicaldatascience.nl/johannes-petermann
+  role: Former Intern
+  employer: Maastricht University
+  source: staff_page
+  active_from: null
+  active_until: null
+  former_observed_at: '2026-10-21'
+  needs_review: true
+  former_collaboration:
+    checked_at: '2026-10-21'
+    window_start: '2024-10-21'
+    recent_months: 24
+    shared_papers: 0
+    recent_shared_papers: 0
+    last_collaboration_date: null
+    followup_until: null
+    current_coauthors: []
+- section: previous
+  slug: julian-posch
+  name: Julian Posch
+  profile_url: https://www.clinicaldatascience.nl/Staff/julian-posch
+  role: Former Intern
+  employer: Maastro
+  source: staff_page
+  active_from: null
+  active_until: null
+  former_observed_at: '2026-10-21'
+  needs_review: true
+  former_collaboration:
+    checked_at: '2026-10-21'
+    window_start: '2024-10-21'
+    recent_months: 24
+    shared_papers: 0
+    recent_shared_papers: 0
+    last_collaboration_date: null
+    followup_until: null
+    current_coauthors: []
+- section: previous
+  slug: junhua-chen
+  name: Junhua Chen
+  profile_url: https://www.clinicaldatascience.nl/Staff/junhua-chen
+  role: Former PhD Student
+  employer: null
+  source: staff_page
+  active_from: null
+  active_until: null
+  former_observed_at: '2026-10-21'
+  needs_review: true
+  former_collaboration:
+    checked_at: '2026-10-21'
+    window_start: '2024-10-21'
+    recent_months: 24
+    shared_papers: 0
+    recent_shared_papers: 0
+    last_collaboration_date: null
+    followup_until: null
+    current_coauthors: []
+- section: previous
+  slug: lerau-seyben
+  name: Lerau Seyben
+  profile_url: https://www.clinicaldatascience.nl/Staff/lerau-seyben
+  role: Former Intern
+  employer: Maastro Clinic
+  source: staff_page
+  active_from: null
+  active_until: null
+  former_observed_at: '2026-10-21'
+  needs_review: true
+  former_collaboration:
+    checked_at: '2026-10-21'
+    window_start: '2024-10-21'
+    recent_months: 24
+    shared_papers: 0
+    recent_shared_papers: 0
+    last_collaboration_date: null
+    followup_until: null
+    current_coauthors: []
+- section: previous
+  slug: lotte-schyns
+  name: Lotte Schyns
+  profile_url: https://www.clinicaldatascience.nl/Staff/lotte-schyns
+  role: Former PhD Student
+  employer: Maastricht University
+  source: staff_page
+  active_from: null
+  active_until: null
+  former_observed_at: '2026-10-21'
+  needs_review: true
+  former_collaboration:
+    checked_at: '2026-10-21'
+    window_start: '2024-10-21'
+    recent_months: 24
+    shared_papers: 0
+    recent_shared_papers: 0
+    last_collaboration_date: null
+    followup_until: null
+    current_coauthors: []
+- section: previous
+  slug: louise-de-almeida-ferreira-fonseca
+  name: Louise de Almeida Ferreira Fonseca
+  profile_url: https://www.clinicaldatascience.nl/Staff/louise-de-almeida-ferreira-fonseca
+  role: Former researcher
+  employer: Maastricht University
+  source: staff_page
+  active_from: null
+  active_until: null
+  former_observed_at: '2026-10-21'
+  needs_review: true
+  former_collaboration:
+    checked_at: '2026-10-21'
+    window_start: '2024-10-21'
+    recent_months: 24
+    shared_papers: 2
+    recent_shared_papers: 2
+    last_collaboration_date: '2025-01-01'
+    followup_until: '2027-01-01'
+    current_coauthors:
+    - andre-dekker
+    - hannah-mary-thomas
+    - leonard-wee
+    - rianne-fijten
+  identifier_discovery_checked_at: '2026-10-21'
+- section: previous
+  slug: luca-pamboer
+  name: Luca Pamboer
+  profile_url: https://www.clinicaldatascience.nl/luca-pamboer
+  role: Former intern
+  employer: MUMC and Maastricht University
+  source: staff_page
+  active_from: null
+  active_until: null
+  former_observed_at: '2026-10-21'
+  needs_review: true
+  former_collaboration:
+    checked_at: '2026-10-21'
+    window_start: '2024-10-21'
+    recent_months: 24
+    shared_papers: 0
+    recent_shared_papers: 0
+    last_collaboration_date: null
+    followup_until: null
+    current_coauthors: []
+- section: previous
+  slug: luis-sanchez-gomez
+  name: Luis Sanchez Gomez
+  profile_url: https://www.clinicaldatascience.nl/luis-sanchez-gomez
+  role: Former researcher
+  employer: Medical Data Works
+  source: staff_page
+  active_from: null
+  active_until: null
+  former_observed_at: '2026-10-21'
+  needs_review: true
+  former_collaboration:
+    checked_at: '2026-10-21'
+    window_start: '2024-10-21'
+    recent_months: 24
+    shared_papers: 2
+    recent_shared_papers: 2
+    last_collaboration_date: '2025-07-29'
+    followup_until: '2027-07-29'
+    current_coauthors:
+    - andre-dekker
+    - johan-van-soest
+    - joshi-hogenboom
+    - leonard-wee
+  publication_identity_sources:
+  - work: W4410447842
+    openalex_id: null
+    orcid: null
+  identifier_discovery_checked_at: '2026-10-21'
+- section: previous
+  slug: maija-utriainen
+  name: Maija Utriainen
+  profile_url: https://www.clinicaldatascience.nl/maija-utriainen
+  role: Former intern
+  employer: Maastricht University
+  source: staff_page
+  active_from: null
+  active_until: null
+  former_observed_at: '2026-10-21'
+  needs_review: true
+  former_collaboration:
+    checked_at: '2026-10-21'
+    window_start: '2024-10-21'
+    recent_months: 24
+    shared_papers: 0
+    recent_shared_papers: 0
+    last_collaboration_date: null
+    followup_until: null
+    current_coauthors: []
+- section: previous
+  slug: maike-imkamp
+  name: Maike Imkamp
+  profile_url: https://www.clinicaldatascience.nl/maike-imkamp
+  role: Former external PhD Student
+  employer: MUMC
+  source: staff_page
+  active_from: null
+  active_until: null
+  former_observed_at: '2026-10-21'
+  needs_review: false
+  former_collaboration:
+    checked_at: '2026-10-21'
+    window_start: '2024-10-21'
+    recent_months: 24
+    shared_papers: 1
+    recent_shared_papers: 1
+    last_collaboration_date: '2025-12-31'
+    followup_until: '2027-12-31'
+    current_coauthors:
+    - leonard-wee
+  publication_identity_sources:
+  - work: W7117708698
+    openalex_id: A5064196553
+    orcid: 0000-0002-3581-7948
+  publication_author_ids:
+  - A5064196553
+  orcid_openalex: 0000-0002-3581-7948
+  orcid_discovered: 0000-0002-3581-7948
+  identifier_evidence:
+    orcid:
+      checked_at: '2026-10-21'
+      id: 0000-0002-3581-7948
+      url: https://orcid.org/0000-0002-3581-7948
+      name: Maike Imkamp
+      affiliations: []
+      name_match: true
+      shared_works:
+      - work: W7117708698
+        title: Vulnerabilities of feature clustering in EIT radiomics
+        url: https://doi.org/10.1016/j.compbiomed.2025.111438
+        coauthors:
+        - leonard-wee
+        - maike-imkamp
+        - vasco-prudente
+      linked_verified_scholar: false
+      institution_match: false
+      accepted: true
+- section: previous
+  slug: manon-cloots
+  name: Manon Cloots
+  profile_url: https://www.clinicaldatascience.nl/manon-cloots
+  role: Former PhD student
+  employer: Maastricht University
+  source: staff_page
+  active_from: null
+  active_until: null
+  former_observed_at: '2026-10-21'
+  needs_review: true
+  former_collaboration:
+    checked_at: '2026-10-21'
+    window_start: '2024-10-21'
+    recent_months: 24
+    shared_papers: 0
+    recent_shared_papers: 0
+    last_collaboration_date: null
+    followup_until: null
+    current_coauthors: []
+- section: previous
+  slug: marie-picquet
+  name: Marie Picquet
+  profile_url: https://www.clinicaldatascience.nl/Staff/marie-picquet
+  role: Former intern
+  employer: Maastricht University
+  source: staff_page
+  active_from: null
+  active_until: null
+  former_observed_at: '2026-10-21'
+  needs_review: true
+  former_collaboration:
+    checked_at: '2026-10-21'
+    window_start: '2024-10-21'
+    recent_months: 24
+    shared_papers: 0
+    recent_shared_papers: 0
+    last_collaboration_date: null
+    followup_until: null
+    current_coauthors: []
+- section: previous
+  slug: martijn-nobel
+  name: Martijn Nobel
+  profile_url: https://www.clinicaldatascience.nl/Staff/martijn-nobel
+  role: Former PhD Student
+  employer: Maastro Clinic
+  source: staff_page
+  active_from: null
+  active_until: null
+  former_observed_at: '2026-10-21'
+  needs_review: true
+  former_collaboration:
+    checked_at: '2026-10-21'
+    window_start: '2024-10-21'
+    recent_months: 24
+    shared_papers: 0
+    recent_shared_papers: 0
+    last_collaboration_date: null
+    followup_until: null
+    current_coauthors: []
+- section: previous
+  slug: mattea-welch
+  name: Mattea Welch
+  profile_url: https://www.clinicaldatascience.nl/Staff/mattea-welch
+  role: Former visiting Fellow
+  employer: Maastro
+  source: staff_page
+  active_from: null
+  active_until: null
+  former_observed_at: '2026-10-21'
+  needs_review: true
+  former_collaboration:
+    checked_at: '2026-10-21'
+    window_start: '2024-10-21'
+    recent_months: 24
+    shared_papers: 1
+    recent_shared_papers: 0
+    last_collaboration_date: null
+    followup_until: null
+    current_coauthors: []
+- section: previous
+  slug: melle-sieswerda
+  name: Melle Sieswerda
+  profile_url: https://www.clinicaldatascience.nl/melle-sieswerda
+  role: Former PhD student
+  employer: Maastricht University, Integraal Kankercentrum Nederland (IKNL)
+  source: staff_page
+  active_from: null
+  active_until: null
+  former_observed_at: '2026-10-21'
+  needs_review: false
+  former_collaboration:
+    checked_at: '2026-10-21'
+    window_start: '2024-10-21'
+    recent_months: 24
+    shared_papers: 1
+    recent_shared_papers: 1
+    last_collaboration_date: '2025-03-16'
+    followup_until: '2027-03-16'
+    current_coauthors:
+    - andre-dekker
+  orcid_discovered: 0000-0003-2025-0771
+  identifier_evidence:
+    orcid:
+      checked_at: '2026-10-21'
+      id: 0000-0003-2025-0771
+      url: https://orcid.org/0000-0003-2025-0771
+      name: Melle Sieswerda
+      affiliations:
+      - Leiden University Medical Center
+      - Delft University of Technology
+      - Netherlands Comprehensive Cancer Organisation
+      - Leids Universitair Medisch Centrum
+      name_match: true
+      shared_works:
+      - work: W4408488651
+        title: 'Data Interoperability in Context: The Importance of Open-Source Implementations When Choosing Open Standards'
+        url: https://doi.org/10.2196/66616
+        coauthors:
+        - andre-dekker
+        - melle-sieswerda
+      linked_verified_scholar: false
+      institution_match: false
+      accepted: true
+  publication_identity_sources:
+  - work: W4408488651
+    openalex_id: A5066831195
+    orcid: 0000-0003-2025-0771
+  publication_author_ids:
+  - A5066831195
+- section: previous
+  slug: michal-kazmierski
+  name: Michal Kazmierski
+  profile_url: https://www.clinicaldatascience.nl/Staff/michal-kazmierski
+  role: Former Intern
+  employer: Maastro
+  source: staff_page
+  active_from: null
+  active_until: null
+  former_observed_at: '2026-10-21'
+  needs_review: true
+  former_collaboration:
+    checked_at: '2026-10-21'
+    window_start: '2024-10-21'
+    recent_months: 24
+    shared_papers: 1
+    recent_shared_papers: 0
+    last_collaboration_date: null
+    followup_until: null
+    current_coauthors: []
+- section: previous
+  slug: michel-saleh
+  name: Michel Saleh
+  profile_url: https://www.clinicaldatascience.nl/michel-saleh
+  role: Former PhD Student
+  employer: Maastricht University
+  source: staff_page
+  active_from: null
+  active_until: null
+  former_observed_at: '2026-10-21'
+  needs_review: true
+  former_collaboration:
+    checked_at: '2026-10-21'
+    window_start: '2024-10-21'
+    recent_months: 24
+    shared_papers: 0
+    recent_shared_papers: 0
+    last_collaboration_date: null
+    followup_until: null
+    current_coauthors: []
+- section: previous
+  slug: miriam-babukhian
+  name: Miriam Babukhian
+  profile_url: https://www.clinicaldatascience.nl/Staff/miriam-babukhian
+  role: Former intern
+  employer: Maastro
+  source: staff_page
+  active_from: null
+  active_until: null
+  former_observed_at: '2026-10-21'
+  needs_review: true
+  former_collaboration:
+    checked_at: '2026-10-21'
+    window_start: '2024-10-21'
+    recent_months: 24
+    shared_papers: 0
+    recent_shared_papers: 0
+    last_collaboration_date: null
+    followup_until: null
+    current_coauthors: []
+- section: previous
+  slug: naziha-el-aissati
+  name: Naziha el Aissati
+  profile_url: https://www.clinicaldatascience.nl/Staff/naziha-el-aissati
+  role: Former Management Assistant
+  employer: Maastro Clinic
+  source: staff_page
+  active_from: null
+  active_until: null
+  former_observed_at: '2026-10-21'
+  needs_review: true
+  former_collaboration:
+    checked_at: '2026-10-21'
+    window_start: '2024-10-21'
+    recent_months: 24
+    shared_papers: 0
+    recent_shared_papers: 0
+    last_collaboration_date: null
+    followup_until: null
+    current_coauthors: []
+- section: previous
+  slug: nibin-moni-george
+  name: Nibin Moni George
+  profile_url: https://www.clinicaldatascience.nl/nibin-moni-george
+  role: Former Data Engineer
+  employer: Maastro
+  source: staff_page
+  active_from: null
+  active_until: null
+  former_observed_at: '2026-10-21'
+  needs_review: true
+  former_collaboration:
+    checked_at: '2026-10-21'
+    window_start: '2024-10-21'
+    recent_months: 24
+    shared_papers: 0
+    recent_shared_papers: 0
+    last_collaboration_date: null
+    followup_until: null
+    current_coauthors: []
+- section: previous
+  slug: pedro-mateus
+  name: Pedro Mateus
+  profile_url: https://www.clinicaldatascience.nl/pedro-mateus
+  role: Former PhD student
+  employer: Maastricht University
+  source: staff_page
+  active_from: null
+  active_until: null
+  former_observed_at: '2026-10-21'
+  needs_review: false
+  publication_name_aliases:
+  - Pedro da Costa Mateus
+  former_collaboration:
+    checked_at: '2026-10-21'
+    window_start: '2024-10-21'
+    recent_months: 24
+    shared_papers: 8
+    recent_shared_papers: 4
+    last_collaboration_date: '2026-01-20'
+    followup_until: '2028-01-20'
+    current_coauthors:
+    - andre-dekker
+  publication_identity_sources:
+  - work: W7127147492
+    openalex_id: A5027554938
+    orcid: 0000-0002-3047-7630
+  - work: W4413055266
+    openalex_id: A5101679672
+    orcid: 0000-0002-3047-7630
+  publication_author_ids:
+  - A5027554938
+  - A5101679672
+  orcid_openalex: 0000-0002-3047-7630
+  scholar_id: XW6OTLQAAAAJ
+  identifier_evidence:
+    scholar:
+      checked_at: '2026-10-21'
+      id: XW6OTLQAAAAJ
+      url: https://scholar.google.com/citations?user=XW6OTLQAAAAJ
+      name: Pedro Mateus
+      affiliations: Maastricht University
+      name_match: true
+      shared_works:
+      - work: W4399030346
+        title: 'Data harmonization and federated learning for multi-cohort dementia research using the OMOP common data model:
+          A Netherlands consortium of dementia cohorts case study'
+        url: https://doi.org/10.1016/j.jbi.2024.104661
+        coauthors:
+        - andre-dekker
+        - pedro-mateus
+      - work: W4391607864
+        title: 'Data Harmonization and Federated Learning for Multi-Cohort Dementia Research Using the OMOP Common Data Model:
+          A Netherlands Consortium of Dementia Cohorts Case Study'
+        url: https://doi.org/10.2139/ssrn.4716052
+        coauthors:
+        - andre-dekker
+        - pedro-mateus
+      - work: W4412748795
+        title: Multi-Cohort Federated Learning Shows Synergy in Mortality Prediction for MRI-Based and Metabolomics-Based
+          Age Scores
+        url: https://doi.org/10.1007/s41666-025-00208-6
+        coauthors:
+        - andre-dekker
+        - pedro-mateus
+      - work: W4413055266
+        title: 'Predicting near‐complete pathological response to (chemo)radiotherapy in patients with rectal cancer: A federated
+          learning study'
+        url: https://doi.org/10.1002/mp.18034
+        coauthors:
+        - andre-dekker
+        - biche-osong
+        - pedro-mateus
+      - work: W4407417813
+        title: 'Identifying pathways to the prevention of dementia: the Netherlands consortium of dementia cohorts'
+        url: https://doi.org/10.1186/s12883-024-03995-4
+        coauthors:
+        - andre-dekker
+        - pedro-mateus
+      - work: W4402595833
+        title: MRI-based and metabolomics-based age scores act synergetically for mortality prediction shown by multi-cohort
+          federated learning
+        url: https://doi.org/10.21203/rs.3.rs-4938500/v1
+        coauthors:
+        - andre-dekker
+        - pedro-mateus
+      - work: W4402954517
+        title: MRI-based and metabolomics-based age scores act synergetically for mortality prediction shown by multi-cohort
+          federated learning
+        url: https://doi.org/10.48550/arxiv.2409.01235
+        coauthors:
+        - andre-dekker
+        - pedro-mateus
+      known_coauthors: []
+      coauthor_profiles: []
+      institution_match: true
+      accepted: true
+    orcid:
+      checked_at: '2026-10-21'
+      id: 0000-0002-3047-7630
+      url: https://orcid.org/0000-0002-3047-7630
+      name: Pedro da Costa Mateus
+      affiliations:
+      - University of Minho
+      - Radboud University Nijmegen Medical Centre
+      - Maastricht University
+      name_match: true
+      shared_works:
+      - work: W4407417813
+        title: 'Identifying pathways to the prevention of dementia: the Netherlands consortium of dementia cohorts'
+        url: https://doi.org/10.1186/s12883-024-03995-4
+        coauthors:
+        - andre-dekker
+        - pedro-mateus
+      - work: W4399030346
+        title: 'Data harmonization and federated learning for multi-cohort dementia research using the OMOP common data model:
+          A Netherlands consortium of dementia cohorts case study'
+        url: https://doi.org/10.1016/j.jbi.2024.104661
+        coauthors:
+        - andre-dekker
+        - pedro-mateus
+      - work: W4391607864
+        title: 'Data Harmonization and Federated Learning for Multi-Cohort Dementia Research Using the OMOP Common Data Model:
+          A Netherlands Consortium of Dementia Cohorts Case Study'
+        url: https://doi.org/10.2139/ssrn.4716052
+        coauthors:
+        - andre-dekker
+        - pedro-mateus
+      linked_verified_scholar: false
+      institution_match: true
+      accepted: true
+  orcid_discovered: 0000-0002-3047-7630
+  identifier_discovery_checked_at: '2026-10-21'
+- section: previous
+  slug: ravindra-patil
+  name: Ravindra Patil
+  profile_url: https://www.clinicaldatascience.nl/Staff/ravindra-patil
+  role: Former PhD Student
+  employer: Maastricht University
+  source: staff_page
+  active_from: null
+  active_until: null
+  former_observed_at: '2026-10-21'
+  needs_review: true
+  former_collaboration:
+    checked_at: '2026-10-21'
+    window_start: '2024-10-21'
+    recent_months: 24
+    shared_papers: 0
+    recent_shared_papers: 0
+    last_collaboration_date: null
+    followup_until: null
+    current_coauthors: []
+- section: previous
+  slug: sanchi-bhalla
+  name: Sanchi Bhalla
+  profile_url: https://www.clinicaldatascience.nl/sanchi-bhalla
+  role: Former intern
+  employer: Maastricht University/Maastro Clinic
+  source: staff_page
+  active_from: null
+  active_until: null
+  former_observed_at: '2026-10-21'
+  needs_review: true
+  former_collaboration:
+    checked_at: '2026-10-21'
+    window_start: '2024-10-21'
+    recent_months: 24
+    shared_papers: 0
+    recent_shared_papers: 0
+    last_collaboration_date: null
+    followup_until: null
+    current_coauthors: []
+- section: previous
+  slug: seok-ho-lee
+  name: Seok Ho Lee
+  profile_url: https://www.clinicaldatascience.nl/Staff/seok-ho-lee
+  role: Former visiting researcher
+  employer: Gachon University School
+  source: staff_page
+  active_from: null
+  active_until: null
+  former_observed_at: '2026-10-21'
+  needs_review: true
+  former_collaboration:
+    checked_at: '2026-10-21'
+    window_start: '2024-10-21'
+    recent_months: 24
+    shared_papers: 0
+    recent_shared_papers: 0
+    last_collaboration_date: null
+    followup_until: null
+    current_coauthors: []
+- section: previous
+  slug: shashank-chakravarthy
+  name: Shashank Chakravarthy
+  profile_url: https://www.clinicaldatascience.nl/shashank-chakravarthy
+  role: Former PhD Student
+  employer: Maastricht University
+  source: staff_page
+  active_from: null
+  active_until: null
+  former_observed_at: '2026-10-21'
+  needs_review: true
+  former_collaboration:
+    checked_at: '2026-10-21'
+    window_start: '2024-10-21'
+    recent_months: 24
+    shared_papers: 0
+    recent_shared_papers: 0
+    last_collaboration_date: null
+    followup_until: null
+    current_coauthors: []
+- section: previous
+  slug: shenlun-chen
+  name: Shenlun Chen
+  profile_url: https://www.clinicaldatascience.nl/shenlun-chen
+  role: Former PhD Student
+  employer: Maastricht University
+  source: staff_page
+  active_from: null
+  active_until: null
+  former_observed_at: '2026-10-21'
+  needs_review: false
+  former_collaboration:
+    checked_at: '2026-10-21'
+    window_start: '2024-10-21'
+    recent_months: 24
+    shared_papers: 3
+    recent_shared_papers: 3
+    last_collaboration_date: '2025-11-19'
+    followup_until: '2027-11-19'
+    current_coauthors:
+    - andre-dekker
+    - leonard-wee
+    - petros-kalendralis
+  publication_identity_sources:
+  - work: W4416373305
+    openalex_id: A5031185572
+    orcid: null
+  publication_author_ids:
+  - A5031185572
+  identifier_discovery_checked_at: '2026-10-21'
+- section: previous
+  slug: siva-teja-kakileti
+  name: Siva Teja Kakileti
+  profile_url: https://www.clinicaldatascience.nl/Staff/siva-teja-kakileti
+  role: Former PhD Student
+  employer: Maastricht University
+  source: staff_page
+  active_from: null
+  active_until: null
+  former_observed_at: '2026-10-21'
+  needs_review: true
+  former_collaboration:
+    checked_at: '2026-10-21'
+    window_start: '2024-10-21'
+    recent_months: 24
+    shared_papers: 0
+    recent_shared_papers: 0
+    last_collaboration_date: null
+    followup_until: null
+    current_coauthors: []
+- section: previous
+  slug: sneha-nair
+  name: Sneha Nair
+  profile_url: https://www.clinicaldatascience.nl/sneha-nair
+  role: Former PhD Student
+  employer: Tata Memorial Centre, Mumbai, Maharashtra, India
+  source: staff_page
+  active_from: null
+  active_until: null
+  former_observed_at: '2026-10-21'
+  needs_review: true
+  former_collaboration:
+    checked_at: '2026-10-21'
+    window_start: '2024-10-21'
+    recent_months: 24
+    shared_papers: 0
+    recent_shared_papers: 0
+    last_collaboration_date: null
+    followup_until: null
+    current_coauthors: []
+- section: previous
+  slug: sonia-potalivo
+  name: Sonia Potalivo
+  profile_url: https://www.clinicaldatascience.nl/Staff/sonia-potalivo
+  role: Former Management Assistant
+  employer: Maastro Clinic
+  source: staff_page
+  active_from: null
+  active_until: null
+  former_observed_at: '2026-10-21'
+  needs_review: true
+  former_collaboration:
+    checked_at: '2026-10-21'
+    window_start: '2024-10-21'
+    recent_months: 24
+    shared_papers: 0
+    recent_shared_papers: 0
+    last_collaboration_date: null
+    followup_until: null
+    current_coauthors: []
+- section: previous
+  slug: steven-petit
+  name: Steven Petit
+  profile_url: https://www.clinicaldatascience.nl/Staff/steven-petit
+  role: Former PhD Student
+  employer: Maastro
+  source: staff_page
+  active_from: null
+  active_until: null
+  former_observed_at: '2026-10-21'
+  needs_review: true
+  former_collaboration:
+    checked_at: '2026-10-21'
+    window_start: '2024-10-21'
+    recent_months: 24
+    shared_papers: 0
+    recent_shared_papers: 0
+    last_collaboration_date: null
+    followup_until: null
+    current_coauthors: []
+- section: previous
+  slug: stuti-nayak
+  name: Stuti Nayak
+  profile_url: https://www.clinicaldatascience.nl/stuti-nayak
+  role: Former Researcher
+  employer: Maastricht University
+  source: staff_page
+  active_from: null
+  active_until: null
+  former_observed_at: '2026-10-21'
+  needs_review: false
+  former_collaboration:
+    checked_at: '2026-10-21'
+    window_start: '2024-10-21'
+    recent_months: 24
+    shared_papers: 1
+    recent_shared_papers: 0
+    last_collaboration_date: null
+    followup_until: null
+    current_coauthors: []
+  publication_identity_sources:
+  - work: W4391065084
+    openalex_id: A5067826352
+    orcid: 0000-0003-1415-4812
+  publication_author_ids:
+  - A5067826352
+  orcid_openalex: 0000-0003-1415-4812
+- section: previous
+  slug: sure-pai
+  name: Suraj Pai
+  profile_url: https://www.clinicaldatascience.nl/Staff/sure-pai
+  role: Former Intern
+  employer: Maastricht University
+  source: staff_page
+  active_from: null
+  active_until: null
+  former_observed_at: '2026-10-21'
+  needs_review: false
+  former_collaboration:
+    checked_at: '2026-10-21'
+    window_start: '2024-10-21'
+    recent_months: 24
+    shared_papers: 7
+    recent_shared_papers: 5
+    last_collaboration_date: '2026-10-01'
+    followup_until: '2028-10-01'
+    current_coauthors:
+    - andre-dekker
+    - leonard-nurnberg
+  publication_identity_sources:
+  - work: W7222957496
+    openalex_id: A5087897590
+    orcid: 0000-0001-8043-2230
+  publication_author_ids:
+  - A5087897590
+  orcid_openalex: 0000-0001-8043-2230
+  orcid_discovered: 0000-0001-8043-2230
+  identifier_evidence:
+    orcid:
+      checked_at: '2026-10-21'
+      id: 0000-0001-8043-2230
+      url: https://orcid.org/0000-0001-8043-2230
+      name: Suraj Pai
+      affiliations:
+      - Harvard University
+      name_match: true
+      shared_works:
+      - work: W4410197107
+        title: 'FaceAge, a deep learning system to estimate biological age from face photographs to improve prognostication:
+          a model development and validation study'
+        url: https://doi.org/10.1016/j.landig.2025.03.002
+        coauthors:
+        - andre-dekker
+        - dennis-bontempi
+        - hugo-aerts
+        - sure-pai
+        - vasco-prudente
+      - work: W4401546164
+        title: End-to-end reproducible AI pipelines in radiology using the cloud
+        url: https://doi.org/10.1038/s41467-024-51202-2
+        coauthors:
+        - dennis-bontempi
+        - hugo-aerts
+        - leonard-nurnberg
+        - sure-pai
+      - work: W4393407981
+        title: 'Optimizing CycleGAN design for CBCT-to-CT translation: insights into 2D vs 3D modeling, patch size, and the
+          need for tailored evaluation metrics'
+        url: https://doi.org/10.1117/12.3007031
+        coauthors:
+        - alberto-traverso
+        - andre-dekker
+        - dennis-bontempi
+        - ibrahim-hadzic
+        - ivan-zhovannik
+        - sure-pai
+      linked_verified_scholar: false
+      institution_match: false
+      accepted: true
+  identifier_discovery_checked_at: '2026-10-21'
+- section: previous
+  slug: swapneel-datta
+  name: Swapneel Datta
+  profile_url: https://www.clinicaldatascience.nl/Staff/swapneel-datta
+  role: Former Intern
+  employer: Maastro
+  source: staff_page
+  active_from: null
+  active_until: null
+  former_observed_at: '2026-10-21'
+  needs_review: true
+  former_collaboration:
+    checked_at: '2026-10-21'
+    window_start: '2024-10-21'
+    recent_months: 24
+    shared_papers: 0
+    recent_shared_papers: 0
+    last_collaboration_date: null
+    followup_until: null
+    current_coauthors: []
+- section: previous
+  slug: thuyila-robinson
+  name: Thuyila Robinson
+  profile_url: https://www.clinicaldatascience.nl/Staff/thuyila-robinson
+  role: Former Intern
+  employer: Maastro
+  source: staff_page
+  active_from: null
+  active_until: null
+  former_observed_at: '2026-10-21'
+  needs_review: true
+  former_collaboration:
+    checked_at: '2026-10-21'
+    window_start: '2024-10-21'
+    recent_months: 24
+    shared_papers: 0
+    recent_shared_papers: 0
+    last_collaboration_date: null
+    followup_until: null
+    current_coauthors: []
+- section: previous
+  slug: tim-lustberg
+  name: Tim Lustberg
+  profile_url: https://www.clinicaldatascience.nl/Staff/tim-lustberg
+  role: Former PhD Student
+  employer: Maastro
+  source: staff_page
+  active_from: null
+  active_until: null
+  former_observed_at: '2026-10-21'
+  needs_review: true
+  former_collaboration:
+    checked_at: '2026-10-21'
+    window_start: '2024-10-21'
+    recent_months: 24
+    shared_papers: 0
+    recent_shared_papers: 0
+    last_collaboration_date: null
+    followup_until: null
+    current_coauthors: []
+- section: previous
+  slug: timo-deist
+  name: Timo Deist
+  profile_url: https://www.clinicaldatascience.nl/Staff/timo-deist
+  role: Former PhD Student
+  employer: Maastricht University
+  source: staff_page
+  active_from: null
+  active_until: null
+  former_observed_at: '2026-10-21'
+  needs_review: true
+  former_collaboration:
+    checked_at: '2026-10-21'
+    window_start: '2024-10-21'
+    recent_months: 24
+    shared_papers: 0
+    recent_shared_papers: 0
+    last_collaboration_date: null
+    followup_until: null
+    current_coauthors: []
+- section: previous
+  slug: tom-sinsel
+  name: Tom Sinsel
+  profile_url: https://www.clinicaldatascience.nl/tom-sinsel
+  role: Former intern
+  employer: Maastricht University
+  source: staff_page
+  active_from: null
+  active_until: null
+  former_observed_at: '2026-10-21'
+  needs_review: true
+  former_collaboration:
+    checked_at: '2026-10-21'
+    window_start: '2024-10-21'
+    recent_months: 24
+    shared_papers: 0
+    recent_shared_papers: 0
+    last_collaboration_date: null
+    followup_until: null
+    current_coauthors: []
+- section: previous
+  slug: tutku-kilicaslan
+  name: Tutku Kılıçaslan
+  profile_url: https://www.clinicaldatascience.nl/Staff/tutku-kilicaslan
+  role: Former Intern
+  employer: Maastro
+  source: staff_page
+  active_from: null
+  active_until: null
+  former_observed_at: '2026-10-21'
+  needs_review: true
+  former_collaboration:
+    checked_at: '2026-10-21'
+    window_start: '2024-10-21'
+    recent_months: 24
+    shared_papers: 0
+    recent_shared_papers: 0
+    last_collaboration_date: null
+    followup_until: null
+    current_coauthors: []
+- section: previous
+  slug: valerie-van-nielen
+  name: Valerie van Nielen
+  profile_url: https://www.clinicaldatascience.nl/valerie-van-nielen
+  role: Former intern
+  employer: Maastricht University
+  source: staff_page
+  active_from: null
+  active_until: null
+  former_observed_at: '2026-10-21'
+  needs_review: true
+  former_collaboration:
+    checked_at: '2026-10-21'
+    window_start: '2024-10-21'
+    recent_months: 24
+    shared_papers: 0
+    recent_shared_papers: 0
+    last_collaboration_date: null
+    followup_until: null
+    current_coauthors: []
+- section: previous
+  slug: varsha-gouthamchand
+  name: Varsha Gouthamchand
+  profile_url: https://www.clinicaldatascience.nl/varsha-gouthamchand
+  role: Former researcher
+  employer: Maastricht University
+  source: staff_page
+  active_from: null
+  active_until: null
+  former_observed_at: '2026-10-21'
+  needs_review: false
+  former_collaboration:
+    checked_at: '2026-10-21'
+    window_start: '2024-10-21'
+    recent_months: 24
+    shared_papers: 13
+    recent_shared_papers: 11
+    last_collaboration_date: '2026-10-07'
+    followup_until: '2028-10-07'
+    current_coauthors:
+    - alessio-romita
+    - ananya-choudhury
+    - andre-dekker
+    - hannah-mary-thomas
+    - johan-van-soest
+    - joshi-hogenboom
+    - leonard-wee
+    - rianne-fijten
+    - tim-hendriks
+    - umesh-kumar-baburao-sherkhane
+  publication_identity_sources:
+  - work: W7220851390
+    openalex_id: A5011282185
+    orcid: 0000-0002-4756-2866
+  publication_author_ids:
+  - A5011282185
+  orcid_openalex: 0000-0002-4756-2866
+  scholar_id: pNwbmZQAAAAJ
+  identifier_evidence:
+    scholar:
+      checked_at: '2026-10-21'
+      id: pNwbmZQAAAAJ
+      url: https://scholar.google.com/citations?user=pNwbmZQAAAAJ
+      name: Varsha Gouthamchand
+      affiliations: PhD Maastricht University
+      name_match: true
+      shared_works:
+      - work: W4393900373
+        title: A distributed feature selection pipeline for survival analysis using radiomics in non-small cell lung cancer
+          patients
+        url: https://doi.org/10.1038/s41598-024-58241-1
+        coauthors:
+        - andre-dekker
+        - leonard-wee
+        - varsha-gouthamchand
+      - work: W4392556699
+        title: Making head and neck cancer clinical data Findable-Accessible-Interoperable-Reusable to support multi-institutional
+          collaboration and federated learning
+        url: https://doi.org/10.1093/bjrai/ubae005
+        coauthors:
+        - ananya-choudhury
+        - andre-dekker
+        - johan-van-soest
+        - leonard-wee
+        - mattea-welch
+        - varsha-gouthamchand
+      - work: W4412449917
+        title: 'Prognostic modeling in head and neck cancer: deep learning or handcrafted radiomics?'
+        url: https://doi.org/10.1093/bjrai/ubaf008
+        coauthors:
+        - andre-dekker
+        - hannah-mary-thomas
+        - leonard-wee
+        - louise-de-almeida-ferreira-fonseca
+        - rianne-fijten
+        - varsha-gouthamchand
+      - work: W7124178724
+        title: 'Knowledge Representation of a Multicenter Adolescent and Young Adult Cancer Infrastructure: Development of
+          the STRONG AYA Knowledge Graph'
+        url: https://doi.org/10.1200/cci-25-00177
+        coauthors:
+        - aiara-lobo-gomes
+        - andre-dekker
+        - johan-van-soest
+        - joshi-hogenboom
+        - leonard-wee
+        - varsha-gouthamchand
+      - work: W7213226988
+        title: 'From registration to insight: how STRONG AYA transforms registry data to enhance decision-support tools for
+          adolescent and young adult oncology'
+        url: https://doi.org/10.1016/j.esmorw.2026.100764
+        coauthors:
+        - aiara-lobo-gomes
+        - andre-dekker
+        - joshi-hogenboom
+        - leonard-wee
+        - varsha-gouthamchand
+      - work: W7161945525
+        title: 'LinkedDicom: Indexing DICOM Metadata Using Semantic Web Technologies'
+        url: https://doi.org/10.3233/shti260404
+        coauthors:
+        - alessio-romita
+        - ananya-choudhury
+        - andre-dekker
+        - johan-van-soest
+        - leonard-wee
+        - tim-hendriks
+        - varsha-gouthamchand
+      - work: W7220851390
+        title: 'Navigating the privacy-accuracy tradeoff: federated survival analysis with binning and differential privacy'
+        url: https://doi.org/10.3389/fams.2026.1917462
+        coauthors:
+        - andre-dekker
+        - johan-van-soest
+        - leonard-wee
+        - varsha-gouthamchand
+      known_coauthors:
+      - ananya-choudhury
+      coauthor_profiles:
+      - slug: ananya-choudhury
+        url: https://scholar.google.com/citations?user=O8N8H5QAAAAJ
+      institution_match: true
+      accepted: true
+    orcid:
+      checked_at: '2026-10-21'
+      id: 0000-0002-4756-2866
+      url: https://orcid.org/0000-0002-4756-2866
+      name: Varsha Gouthamchand
+      affiliations:
+      - Maastricht University
+      - Universiteit Maastricht - Locatiie Randwyck
+      name_match: true
+      shared_works:
+      - work: W7213226988
+        title: 'From registration to insight: how STRONG AYA transforms registry data to enhance decision-support tools for
+          adolescent and young adult oncology'
+        url: https://doi.org/10.1016/j.esmorw.2026.100764
+        coauthors:
+        - aiara-lobo-gomes
+        - andre-dekker
+        - joshi-hogenboom
+        - leonard-wee
+        - varsha-gouthamchand
+      - work: W7161945525
+        title: 'LinkedDicom: Indexing DICOM Metadata Using Semantic Web Technologies'
+        url: https://doi.org/10.3233/shti260404
+        coauthors:
+        - alessio-romita
+        - ananya-choudhury
+        - andre-dekker
+        - johan-van-soest
+        - leonard-wee
+        - tim-hendriks
+        - varsha-gouthamchand
+      - work: W7124178724
+        title: 'Knowledge Representation of a Multicenter Adolescent and Young Adult Cancer Infrastructure: Development of
+          the STRONG AYA Knowledge Graph'
+        url: https://doi.org/10.1200/cci-25-00177
+        coauthors:
+        - aiara-lobo-gomes
+        - andre-dekker
+        - johan-van-soest
+        - joshi-hogenboom
+        - leonard-wee
+        - varsha-gouthamchand
+      - work: W4411034911
+        title: Knowledge representation of a multi-centre adolescent and young adult (AYA) cancer infrastructure; development
+          of the STRONG AYA Knowledge Graph
+        url: https://doi.org/10.1101/2025.06.03.25328788
+        coauthors:
+        - aiara-lobo-gomes
+        - andre-dekker
+        - johan-van-soest
+        - joshi-hogenboom
+        - leonard-wee
+        - varsha-gouthamchand
+      - work: W4407004157
+        title: Federated Prediction Models and External Validation for Radiotherapy Outcomes in Oropharyngeal Cancer using
+          F.A.I.R. Clinical and Radiomics Data
+        url: https://doi.org/10.1101/2025.01.29.25321214
+        coauthors:
+        - andre-dekker
+        - ashish-jha
+        - johan-van-soest
+        - joshi-hogenboom
+        - leonard-wee
+        - umesh-kumar-baburao-sherkhane
+        - varsha-gouthamchand
+      - work: W4412449917
+        title: 'Prognostic modeling in head and neck cancer: deep learning or handcrafted radiomics?'
+        url: https://doi.org/10.1093/bjrai/ubaf008
+        coauthors:
+        - andre-dekker
+        - hannah-mary-thomas
+        - leonard-wee
+        - louise-de-almeida-ferreira-fonseca
+        - rianne-fijten
+        - varsha-gouthamchand
+      - work: W4393900373
+        title: A distributed feature selection pipeline for survival analysis using radiomics in non-small cell lung cancer
+          patients
+        url: https://doi.org/10.1038/s41598-024-58241-1
+        coauthors:
+        - andre-dekker
+        - leonard-wee
+        - varsha-gouthamchand
+      - work: W4403625443
+        title: Performance of Handcrafted Radiomics versus Deep Learning for Prognosticating Head and Neck Squamous Cell Carcinoma
+          – A Systematic Review with Critical Appraisal of Quantitative Imaging Studies
+        url: https://doi.org/10.1101/2024.10.22.24315007
+        coauthors:
+        - andre-dekker
+        - hannah-mary-thomas
+        - leonard-wee
+        - louise-de-almeida-ferreira-fonseca
+        - rianne-fijten
+        - varsha-gouthamchand
+      - work: W7220851390
+        title: 'Navigating the privacy-accuracy tradeoff: federated survival analysis with binning and differential privacy'
+        url: https://doi.org/10.3389/fams.2026.1917462
+        coauthors:
+        - andre-dekker
+        - johan-van-soest
+        - leonard-wee
+        - varsha-gouthamchand
+      - work: W4392556699
+        title: Making head and neck cancer clinical data Findable-Accessible-Interoperable-Reusable to support multi-institutional
+          collaboration and federated learning
+        url: https://doi.org/10.1093/bjrai/ubae005
+        coauthors:
+        - ananya-choudhury
+        - andre-dekker
+        - johan-van-soest
+        - leonard-wee
+        - mattea-welch
+        - varsha-gouthamchand
+      linked_verified_scholar: false
+      institution_match: true
+      accepted: true
+  orcid_discovered: 0000-0002-4756-2866
+  identifier_discovery_checked_at: '2026-10-21'
+- section: previous
+  slug: vasco-prudente
+  name: Vasco Prudente
+  profile_url: https://www.clinicaldatascience.nl/Staff/vasco-prudente
+  role: Former Intern
+  employer: Maastro
+  source: staff_page
+  active_from: null
+  active_until: null
+  former_observed_at: '2026-10-21'
+  needs_review: false
+  former_collaboration:
+    checked_at: '2026-10-21'
+    window_start: '2024-10-21'
+    recent_months: 24
+    shared_papers: 6
+    recent_shared_papers: 6
+    last_collaboration_date: '2026-10-01'
+    followup_until: '2028-10-01'
+    current_coauthors:
+    - andre-dekker
+    - leonard-nurnberg
+    - leonard-wee
+  publication_identity_sources:
+  - work: W7222957496
+    openalex_id: A5092529477
+    orcid: 0000-0003-0623-1259
+  publication_author_ids:
+  - A5092529477
+  orcid_openalex: 0000-0003-0623-1259
+  orcid_discovered: 0000-0003-0623-1259
+  identifier_evidence:
+    orcid:
+      checked_at: '2026-10-21'
+      id: 0000-0003-0623-1259
+      url: https://orcid.org/0000-0003-0623-1259
+      name: Vasco Carneiro Giraldes Prudente
+      affiliations:
+      - Harvard University
+      - Maastricht University
+      - Mass General Brigham
+      - Harvard University
+      - Maastricht University
+      name_match: true
+      shared_works:
+      - work: W7204178963
+        title: Thymic radiation is associated with worse outcomes in patients with NSCLC
+        url: https://doi.org/10.1016/j.annonc.2026.07.001
+        coauthors:
+        - hugo-aerts
+        - leonard-nurnberg
+        - sure-pai
+        - vasco-prudente
+      - work: W7138874906
+        title: Thymic health and immunotherapy outcomes in patients with cancer
+        url: https://doi.org/10.1038/s41586-026-10243-x
+        coauthors:
+        - hugo-aerts
+        - leonard-nurnberg
+        - sure-pai
+        - vasco-prudente
+      - work: W7138973475
+        title: Thymic health consequences in adults
+        url: https://doi.org/10.1038/s41586-026-10242-y
+        coauthors:
+        - hugo-aerts
+        - leonard-nurnberg
+        - sure-pai
+        - vasco-prudente
+      - work: W7117708698
+        title: Vulnerabilities of feature clustering in EIT radiomics
+        url: https://doi.org/10.1016/j.compbiomed.2025.111438
+        coauthors:
+        - leonard-wee
+        - maike-imkamp
+        - vasco-prudente
+      - work: W4410197107
+        title: 'FaceAge, a deep learning system to estimate biological age from face photographs to improve prognostication:
+          a model development and validation study'
+        url: https://doi.org/10.1016/j.landig.2025.03.002
+        coauthors:
+        - andre-dekker
+        - dennis-bontempi
+        - hugo-aerts
+        - sure-pai
+        - vasco-prudente
+      linked_verified_scholar: false
+      institution_match: true
+      accepted: true
+  identifier_discovery_checked_at: '2026-10-21'
+- section: previous
+  slug: vincenzo-forte
+  name: Vincenzo Forte
+  profile_url: https://www.clinicaldatascience.nl/vincenzo-forte
+  role: Former visiting researcher from University Naples in Italy
+  employer: Maastricht University
+  source: staff_page
+  active_from: null
+  active_until: null
+  former_observed_at: '2026-10-21'
+  needs_review: true
+  former_collaboration:
+    checked_at: '2026-10-21'
+    window_start: '2024-10-21'
+    recent_months: 24
+    shared_papers: 0
+    recent_shared_papers: 0
+    last_collaboration_date: null
+    followup_until: null
+    current_coauthors: []
+- section: previous
+  slug: wouter-van-elmpt
+  name: Wouter van Elmpt
+  profile_url: https://www.clinicaldatascience.nl/staff/wouter-van-elmpt
+  role: Former PhD student
+  employer: Maastro
+  source: staff_page
+  active_from: null
+  active_until: null
+  former_observed_at: '2026-10-21'
+  needs_review: false
+  former_collaboration:
+    checked_at: '2026-10-21'
+    window_start: '2024-10-21'
+    recent_months: 24
+    shared_papers: 4
+    recent_shared_papers: 1
+    last_collaboration_date: '2024-12-01'
+    followup_until: '2026-12-01'
+    current_coauthors:
+    - rianne-fijten
+  publication_identity_sources:
+  - work: W4405623126
+    openalex_id: A5057987192
+    orcid: 0000-0001-8820-0784
+  publication_author_ids:
+  - A5057987192
+  orcid_openalex: 0000-0001-8820-0784
+  scholar_id: rJ8_V2EAAAAJ
+  identifier_evidence:
+    scholar:
+      checked_at: '2026-10-21'
+      id: rJ8_V2EAAAAJ
+      url: https://scholar.google.com/citations?user=rJ8_V2EAAAAJ
+      name: Wouter van Elmpt
+      affiliations: Maastricht University Medical Centre
+      name_match: true
+      shared_works: []
+      known_coauthors:
+      - andre-dekker
+      - hugo-aerts
+      - johan-van-soest
+      coauthor_profiles:
+      - slug: andre-dekker
+        url: https://scholar.google.com/citations?user=JKOhEfcAAAAJ
+      - slug: hugo-aerts
+        url: https://scholar.google.com/citations?user=v7G4QvIAAAAJ
+      - slug: johan-van-soest
+        url: https://scholar.google.com/citations?user=zemi8wYAAAAJ
+      institution_match: true
+      accepted: true
+    orcid:
+      checked_at: '2026-10-21'
+      id: 0000-0001-8820-0784
+      url: https://orcid.org/0000-0001-8820-0784
+      name: Wouter van Elmpt
+      affiliations: []
+      name_match: true
+      shared_works:
+      - work: W4405623126
+        title: 'Implementation Strategy for Artificial Intelligence in Radiotherapy: Can Implementation Science Help?'
+        url: https://doi.org/10.1200/cci.24.00101
+        coauthors:
+        - rianne-fijten
+        - wouter-van-elmpt
+      - work: W4394675050
+        title: Predicting the risk of neurocognitive decline after brain irradiation in adult patients with a primary brain
+          tumor
+        url: https://doi.org/10.1093/neuonc/noae035
+        coauthors:
+        - alberto-traverso
+        - andre-dekker
+        - fariba-tohidinezhad
+        - femke-vaassen
+        - wouter-van-elmpt
+      linked_verified_scholar: false
+      institution_match: false
+      accepted: true
+  orcid_discovered: 0000-0001-8820-0784
+  identifier_discovery_checked_at: '2026-10-21'
+- section: previous
+  slug: yanqi-huang
+  name: Yanqi Huang
+  profile_url: https://www.clinicaldatascience.nl/yanqi-huang
+  role: Former visiting postdoctoral researcher from Guangdong Provincial Peoples Hospital in China
+  employer: Maastricht University
+  source: staff_page
+  active_from: null
+  active_until: null
+  former_observed_at: '2026-10-21'
+  needs_review: false
+  former_collaboration:
+    checked_at: '2026-10-21'
+    window_start: '2024-10-21'
+    recent_months: 24
+    shared_papers: 2
+    recent_shared_papers: 1
+    last_collaboration_date: '2025-06-04'
+    followup_until: '2027-06-04'
+    current_coauthors:
+    - leonard-wee
+  publication_identity_sources:
+  - work: W4411020962
+    openalex_id: A5101807244
+    orcid: 0000-0002-0286-3964
+  - work: W4403351431
+    openalex_id: A5143865346
+    orcid: null
+  publication_author_ids:
+  - A5101807244
+  - A5143865346
+  orcid_openalex: 0000-0002-0286-3964
+  identifier_discovery_checked_at: '2026-10-21'
+- section: previous
+  slug: zhen-zang
+  name: Zhen Zhang
+  profile_url: https://www.clinicaldatascience.nl/Staff/zhen-zang
+  role: Former PhD Student
+  employer: Maastricht University
+  source: staff_page
+  active_from: null
+  active_until: null
+  former_observed_at: '2026-10-21'
+  needs_review: false
+  former_collaboration:
+    checked_at: '2026-10-21'
+    window_start: '2024-10-21'
+    recent_months: 24
+    shared_papers: 20
+    recent_shared_papers: 14
+    last_collaboration_date: '2026-07-01'
+    followup_until: '2028-07-01'
+    current_coauthors:
+    - ananya-choudhury
+    - andre-dekker
+    - johan-van-soest
+    - leonard-wee
+    - leroy-volmer
+    - meng-zhou
+    - minghua-li
+    - petros-kalendralis
+  publication_identity_sources:
+  - work: W7167904514
+    openalex_id: A5100390131
+    orcid: 0000-0001-6335-9529
+  publication_author_ids:
+  - A5100390131
+  orcid_openalex: 0000-0001-6335-9529
+  orcid_discovered: 0000-0001-6335-9529
+  identifier_evidence:
+    orcid:
+      checked_at: '2026-10-21'
+      id: 0000-0001-6335-9529
+      url: https://orcid.org/0000-0001-6335-9529
+      name: Zhen Zhang
+      affiliations:
+      - Maastro Clinic
+      name_match: true
+      shared_works:
+      - work: W4414063075
+        title: 'Minimum sample size calculation for radiomics-based binary outcome prediction models: Theoretical framework
+          and practical example'
+        url: https://doi.org/10.1016/j.radonc.2025.111134
+        coauthors:
+        - andre-dekker
+        - leonard-wee
+        - zhen-zang
+        - zhixiang-wang
+      - work: W4408488860
+        title: Voxel-level radiomics and deep learning for predicting pathologic complete response in esophageal squamous
+          cell carcinoma after neoadjuvant immunotherapy and chemotherapy
+        url: https://doi.org/10.1136/jitc-2024-011149
+        coauthors:
+        - andre-dekker
+        - leonard-wee
+        - zhen-zang
+      - work: W4391106310
+        title: 'A PET/CT radiomics model for predicting distant metastasis in early-stage non–small cell lung cancer patients
+          treated with stereotactic body radiotherapy: a multicentric study'
+        url: https://doi.org/10.1186/s13014-024-02402-z
+        coauthors:
+        - alberto-traverso
+        - andre-dekker
+        - leonard-wee
+        - zhen-zang
+      linked_verified_scholar: false
+      institution_match: true
+      accepted: true
+  identifier_discovery_checked_at: '2026-10-21'
+- section: previous
+  slug: zhenwei-shi
+  name: Zhenwei Shi
+  profile_url: https://www.clinicaldatascience.nl/Staff/zhenwei-shi
+  role: Former PhD Student
+  employer: Maastricht University
+  source: staff_page
+  active_from: null
+  active_until: null
+  former_observed_at: '2026-10-21'
+  needs_review: false
+  former_collaboration:
+    checked_at: '2026-10-21'
+    window_start: '2024-10-21'
+    recent_months: 24
+    shared_papers: 8
+    recent_shared_papers: 4
+    last_collaboration_date: '2026-01-06'
+    followup_until: '2028-01-06'
+    current_coauthors:
+    - andre-dekker
+    - leonard-wee
+    - leroy-volmer
+  orcid_discovered: 0000-0003-1305-5935
+  identifier_evidence:
+    orcid:
+      checked_at: '2026-10-21'
+      id: 0000-0003-1305-5935
+      url: https://orcid.org/0000-0003-1305-5935
+      name: Zhenwei Shi
+      affiliations: []
+      name_match: true
+      shared_works:
+      - work: W4408476206
+        title: Data-efficient federated semi-supervised learning framework via pseudo supervision refinement strategy for
+          lung tumor segmentation
+        url: https://doi.org/10.1016/j.bspc.2025.107793
+        coauthors:
+        - andre-dekker
+        - leonard-wee
+        - zhen-zang
+        - zhenwei-shi
+      - work: W4404414512
+        title: Data-Efficient Federated Semi-Supervised Learning Framework Via Pseudo Supervision Refinement Strategy for
+          Lung Tumor Segmentation
+        url: https://doi.org/10.2139/ssrn.5007884
+        coauthors:
+        - andre-dekker
+        - leonard-wee
+        - zhen-zang
+        - zhenwei-shi
+      - work: W4403399336
+        title: Data-Efficient Federated Semi-Supervised Learning Framework Via Pseudo Supervision Refinement Strategy for
+          Lung Tumor Segmentation
+        url: https://doi.org/10.2139/ssrn.4974237
+        coauthors:
+        - andre-dekker
+        - leonard-wee
+        - zhen-zang
+        - zhenwei-shi
+      - work: W4406063103
+        title: Label-efficient transformer-based framework with self-supervised strategies for heterogeneous lung tumor segmentation
+        url: https://doi.org/10.1016/j.eswa.2024.126364
+        coauthors:
+        - andre-dekker
+        - leonard-wee
+        - leroy-volmer
+        - zhenwei-shi
+      - work: W4402246190
+        title: 'Non-invasive multimodal CT deep learning biomarker to predict pathological complete response of non-small
+          cell lung cancer following neoadjuvant immunochemotherapy: a multicenter study'
+        url: https://doi.org/10.1136/jitc-2024-009348
+        coauthors:
+        - andre-dekker
+        - leonard-wee
+        - zhenwei-shi
+      - work: W4390571430
+        title: 'SwinHR: Hemodynamic-powered hierarchical vision transformer for breast tumor segmentation'
+        url: https://doi.org/10.1016/j.compbiomed.2024.107939
+        coauthors:
+        - andre-dekker
+        - leonard-wee
+        - zhenwei-shi
+      linked_verified_scholar: false
+      institution_match: false
+      accepted: true
+    scholar:
+      checked_at: '2026-10-21'
+      id: aeK2yRsAAAAJ
+      url: https://scholar.google.com/citations?user=aeK2yRsAAAAJ
+      name: Zhenwei Shi
+      affiliations: Associate Professor, Guangdong Provincial People’s Hospital (Guangdong Academy of Medical Sciences)
+      name_match: true
+      shared_works:
+      - work: W4390571430
+        title: 'SwinHR: Hemodynamic-powered hierarchical vision transformer for breast tumor segmentation'
+        url: https://doi.org/10.1016/j.compbiomed.2024.107939
+        coauthors:
+        - andre-dekker
+        - leonard-wee
+        - zhenwei-shi
+      - work: W4415507294
+        title: 'AI-derived longitudinal and multi-dimensional CT classifier for non-small cell lung cancer to optimize neoadjuvant
+          chemoimmunotherapy decision: a multicentre retrospective study'
+        url: https://doi.org/10.1016/j.eclinm.2025.103551
+        coauthors:
+        - andre-dekker
+        - leonard-wee
+        - zhenwei-shi
+      - work: W4406063103
+        title: Label-efficient transformer-based framework with self-supervised strategies for heterogeneous lung tumor segmentation
+        url: https://doi.org/10.1016/j.eswa.2024.126364
+        coauthors:
+        - andre-dekker
+        - leonard-wee
+        - leroy-volmer
+        - zhenwei-shi
+      - work: W7118461133
+        title: Automated CT-derived body composition predicts pathologic response to neoadjuvant immunotherapy in non–small
+          cell lung cancer
+        url: https://doi.org/10.1016/j.canlet.2025.218229
+        coauthors:
+        - andre-dekker
+        - leonard-wee
+        - zhenwei-shi
+      - work: W4408476206
+        title: Data-efficient federated semi-supervised learning framework via pseudo supervision refinement strategy for
+          lung tumor segmentation
+        url: https://doi.org/10.1016/j.bspc.2025.107793
+        coauthors:
+        - andre-dekker
+        - leonard-wee
+        - zhen-zang
+        - zhenwei-shi
+      - work: W4404414512
+        title: Data-Efficient Federated Semi-Supervised Learning Framework Via Pseudo Supervision Refinement Strategy for
+          Lung Tumor Segmentation
+        url: https://doi.org/10.2139/ssrn.5007884
+        coauthors:
+        - andre-dekker
+        - leonard-wee
+        - zhen-zang
+        - zhenwei-shi
+      - work: W4403399336
+        title: Data-Efficient Federated Semi-Supervised Learning Framework Via Pseudo Supervision Refinement Strategy for
+          Lung Tumor Segmentation
+        url: https://doi.org/10.2139/ssrn.4974237
+        coauthors:
+        - andre-dekker
+        - leonard-wee
+        - zhen-zang
+        - zhenwei-shi
+      known_coauthors:
+      - alberto-traverso
+      - andre-dekker
+      - hugo-aerts
+      - johan-van-soest
+      - leonard-wee
+      - petros-kalendralis
+      - rianne-fijten
+      coauthor_profiles:
+      - slug: alberto-traverso
+        url: https://scholar.google.com/citations?user=MvWO42oAAAAJ
+      - slug: andre-dekker
+        url: https://scholar.google.com/citations?user=JKOhEfcAAAAJ
+      - slug: hugo-aerts
+        url: https://scholar.google.com/citations?user=v7G4QvIAAAAJ
+      - slug: johan-van-soest
+        url: https://scholar.google.com/citations?user=zemi8wYAAAAJ
+      - slug: leonard-wee
+        url: https://scholar.google.com/citations?user=hlhktjoAAAAJ
+      - slug: petros-kalendralis
+        url: https://scholar.google.com/citations?user=_iOPG9oAAAAJ
+      - slug: rianne-fijten
+        url: https://scholar.google.com/citations?user=_q5Rkg0AAAAJ
+      institution_match: false
+      accepted: true
+  scholar_id: aeK2yRsAAAAJ
+  identifier_discovery_checked_at: '2026-10-21'
+  publication_identity_sources:
+  - work: W7118461133
+    openalex_id: A5122299328
+    orcid: 0000-0003-1305-5935
+  - work: W4415507294
+    openalex_id: A5004657494
+    orcid: 0000-0003-1305-5935
+  publication_author_ids:
+  - A5004657494
+  - A5122299328
+- section: previous
+  slug: zhixiang-wang
+  name: Zhixiang Wang
+  profile_url: https://www.clinicaldatascience.nl/Staff/zhixiang-wang
+  role: Former PhD Student
+  employer: Maastricht University
+  source: staff_page
+  active_from: null
+  active_until: null
+  former_observed_at: '2026-10-21'
+  needs_review: false
+  former_collaboration:
+    checked_at: '2026-10-21'
+    window_start: '2024-10-21'
+    recent_months: 24
+    shared_papers: 7
+    recent_shared_papers: 3
+    last_collaboration_date: '2026-07-01'
+    followup_until: '2028-07-01'
+    current_coauthors:
+    - andre-dekker
+    - leonard-wee
+  publication_identity_sources:
+  - work: W4402137708
+    openalex_id: A5100700403
+    orcid: 0000-0002-4778-7539
+  publication_author_ids:
+  - A5100700403
+  orcid_openalex: 0000-0002-4778-7539
+  orcid_discovered: 0000-0002-4778-7539
+  identifier_evidence:
+    orcid:
+      checked_at: '2026-10-21'
+      id: 0000-0002-4778-7539
+      url: https://orcid.org/0000-0002-4778-7539
+      name: Zhixiang Wang
+      affiliations: []
+      name_match: true
+      shared_works:
+      - work: W4417539109
+        title: Interpretable multimodal radiopathomics model predicting pathological complete response to neoadjuvant chemoimmunotherapy
+          in esophageal squamous cell carcinoma
+        url: https://doi.org/10.1136/jitc-2025-013840
+        coauthors:
+        - andre-dekker
+        - leonard-wee
+        - zhen-zang
+        - zhixiang-wang
+      - work: W4401013932
+        title: A multi-Task Learning based applicable AI model simultaneously predicts stage, histology, grade and LNM for
+          cervical cancer before surgery
+        url: https://doi.org/10.1186/s12905-024-03270-1
+        coauthors:
+        - alberto-traverso
+        - andre-dekker
+        - zhen-zang
+        - zhixiang-wang
+      - work: W4391258615
+        title: 'Assessing the role of GPT-4 in thyroid ultrasound diagnosis and treatment recommendations: enhancing interpretability
+          with a chain of thought approach'
+        url: https://doi.org/10.21037/qims-23-1180
+        coauthors:
+        - alberto-traverso
+        - andre-dekker
+        - zhen-zang
+        - zhixiang-wang
+      - work: W4402137708
+        title: Predicting axillary lymph node metastasis in breast cancer based on ultrasound radiofrequency time-series analysis
+        url: https://doi.org/10.1177/02841851241268463
+        coauthors:
+        - alberto-traverso
+        - andre-dekker
+        - zhixiang-wang
+      - work: W4399466786
+        title: 'Preoperative prediction of high-grade osteosarcoma response to neoadjuvant therapy based on a plain CT radiomics
+          model: A dual-center study'
+        url: https://doi.org/10.1016/j.jbo.2024.100614
+        coauthors:
+        - alberto-traverso
+        - andre-dekker
+        - zhixiang-wang
+      linked_verified_scholar: false
+      institution_match: false
       accepted: true
   identifier_discovery_checked_at: '2026-10-21'

@@ -7,7 +7,7 @@ Weekly overview of publications by the **Clinical Data Science** group (Maastro 
 - **Weekly digest:** every Monday morning by email and in Teams, only when there is something new.
 
 Every Monday a small robot reads the [staff page](https://www.clinicaldatascience.nl/staff), looks up every current
-staff member in [OpenAlex](https://openalex.org) (a free, open catalogue that merges Crossref, PubMed, ORCID and
+staff member and follows recent former-staff collaborations in [OpenAlex](https://openalex.org) (a free, open catalogue that merges Crossref, PubMed, ORCID and
 preprint servers), stores the publications it finds here, refreshes the website and sends the digest.
 
 ## For group members (no technical knowledge needed)
@@ -41,6 +41,25 @@ marked. Usually this means the publisher did not send affiliations to Crossref. 
   work and IDs are retained in `people.yml` under `publication_identity_sources`. Reported ORCIDs remain separate from
   confirmed ORCIDs; conflicting IDs are retained for review and are not used as profile links. Google Scholar profile
   IDs come from explicit profile links, never from a name-based Scholar search URL.
+
+**Former staff and continuing collaborations.**
+All people in the CDS staff page’s *Previous staff* section are kept as former staff, including those whose
+departure date is unknown. Every weekly sync reviews them against the publication collection. A paper with an
+identified current CDS coauthor can establish a unique full-first-and-last-name match and record observed name
+variants. The review covers every former person; no match means *no evidence in this collection*, not that they
+have stopped publishing.
+
+Collaborations in the last 24 months renew follow-up for another 24 months from the latest paper. This is separate
+from the original departure grace period. Follow-up searches collect their papers with current CDS coauthors,
+without importing their entire subsequent career. They remain labelled **Former staff** in the researcher list and
+profile panel; the hero’s member count includes current staff only. The date window is configurable under
+`former_staff.recent_collaboration_months`. Actual departure dates are never inferred from publication dates.
+
+Run `python -m pubpulse review-former` to refresh the audit in `data/former_staff_review.json`. A saved staff-page
+snapshot can be imported with `--staff-snapshot <file>`. `discover-identifiers --former` searches missing profiles
+across all alumni; `--recent-former` prioritises those with recent group collaborations. Both retain source evidence
+and respect the search budget. The weekly workflow runs the roster review and a bounded all-former profile pass
+before the regular identifier and publication syncs. Newly observed collaborations reopen identifier checks.
 
 **Automatic discovery of missing profiles.**
 The scheduled weekly run searches all tracked researchers with a missing ORCID or Google Scholar profile, without
@@ -92,9 +111,10 @@ Go to [Actions → weekly](https://github.com/MaastrichtU-CDS/pubpulse/actions/w
 
 | File | What |
 | --- | --- |
-| `config.yml` | group name, site URL, `since_year`, `track_sections` (`current`, add `previous` for former staff), institution keywords, `affiliation_policy` (`flag` or `require`) |
+| `config.yml` | group name, site URL, `since_year`, `track_sections` for active staff, former-staff collaboration window, institution keywords, `affiliation_policy` (`flag` or `require`) |
 | `overrides.yml` | manual decisions per paper: `confirm:` / `reject:` lists of OpenAlex ids |
 | `people.yml` | refreshed from the staff page on every run. Hand-edited fields that are never overwritten: `openalex_id` (one id, or a list when OpenAlex split a person into several records), `orcid` (when the staff page has none), `exclude: true`, `notes`. To track someone who is not on the staff page, add an entry with `source: manual`. People who disappear from the page get an `active_until` date; they are still tracked for `departed_grace_months` (papers in the pipeline), but only papers with a verified group affiliation count. Their earlier papers stay on the site. |
+| `data/former_staff_review.json` | audit of every former staff member: shared papers, current coauthors, last collaboration, profile identifiers and follow-up status. A person without evidence remains explicitly unconfirmed. |
 
 Edit either file in the GitHub web editor and commit to `main`; the workflow runs automatically on that commit.
 

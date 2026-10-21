@@ -42,6 +42,11 @@ def main(argv: list[str] | None = None) -> int:
     discovery.add_argument("--only", help="slug of one person")
     discovery.add_argument("--force", action="store_true", help="recheck people searched in the last 30 days; cached provider responses still apply")
     discovery.add_argument("--dry-run", action="store_true", help="write proposed matches and evidence to out/ only")
+    discovery.add_argument("--former", action="store_true", help="review all former staff, including those without a known recent collaboration")
+    discovery.add_argument("--recent-former", action="store_true", help="prioritise former staff with recent current-group coauthors")
+    discovery.add_argument("--reserve-searches", type=int, default=None, help="override the quota reserve for a one-off review")
+    former = sub.add_parser("review-former", help="review all former staff for recent collaborations with current group members")
+    former.add_argument("--staff-snapshot", help="import current and former staff from a saved staff-page HTML snapshot")
     sub.add_parser("mark-notified", help="clear the list of unannounced works (data/pending.json) after a successful notification")
 
     i = sub.add_parser("apply-issue", help="apply an 'identifiers' issue form body to people.yml")
@@ -66,7 +71,11 @@ def main(argv: list[str] | None = None) -> int:
     if args.cmd == "discover-identifiers":
         from .discovery import run as discovery_run
 
-        return discovery_run(max_searches=args.max_searches, only=args.only, force=args.force, dry_run=args.dry_run)
+        return discovery_run(max_searches=args.max_searches, only=args.only, force=args.force, dry_run=args.dry_run, former=args.former, recent_former=args.recent_former, reserve_searches=args.reserve_searches)
+    if args.cmd == "review-former":
+        from .former import run as former_run
+
+        return former_run(staff_snapshot=args.staff_snapshot)
     if args.cmd == "send-campaign":
         from .brevo import run as brevo_run
 
