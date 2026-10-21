@@ -34,6 +34,7 @@
     )
       dialog.close();
   });
+  const initialHash = location.hash;
   let data = null;
   let listenersBound = false;
   let state = readHash();
@@ -259,7 +260,7 @@
         const total = (sc.total_missing || 0) + (sc.total_not_attributed || 0);
         box.classList.remove("hidden");
         box.innerHTML =
-          `<details${location.hash === "#scholar" ? " open" : ""}><summary><b>${total} paper${total === 1 ? "" : "s"} on Google Scholar profiles need a look</b> <span class="meta">(checked ${esc(sc.checked_at || "")})</span></summary>` +
+          `<details${initialHash === "#scholar" ? " open" : ""}><summary><b>${total} paper${total === 1 ? "" : "s"} on Google Scholar profiles need a look</b> <span class="meta">(checked ${esc(sc.checked_at || "")})</span></summary>` +
           "<p class=\"meta\">Scholar is only used as a cross-check. “Missing” = on the Scholar profile but not found in OpenAlex for the group; usually the paper lacks the author's ORCID at the publisher, or it is grey literature OpenAlex does not index. “Not linked” = in pubpulse but not attributed to this person.</p>" +
           entries.map((p) => {
             const li = (x, tag) => `<li>${tag}${esc(x.title)}${x.year ? " (" + esc(x.year) + ")" : ""}${x.venue ? " · " + esc(x.venue) : ""}${x.link ? ` <a href="${esc(x.link)}" target="_blank" rel="noopener">Scholar ↗</a>` : ""}</li>`;
