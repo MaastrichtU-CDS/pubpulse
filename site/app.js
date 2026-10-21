@@ -34,6 +34,13 @@
     )
       dialog.close();
   });
+  $("toggle-filters").addEventListener("click", () => {
+    const expanded =
+      $("toggle-filters").getAttribute("aria-expanded") !== "true";
+    $("toggle-filters").setAttribute("aria-expanded", String(expanded));
+    $("filter-toggle-label").textContent = expanded ? "Hide" : "Show";
+    $("filters").classList.toggle("is-open", expanded);
+  });
   const initialHash = location.hash;
   let data = null;
   let listenersBound = false;
@@ -127,6 +134,9 @@
           (data.works.filter((w) => w.is_oa).length / data.works.length) * 100,
         ) + "%"
       : "—";
+    $("coverage-start").textContent = "since " + coverageStart();
+    $("publication-range").textContent =
+      `${data.works.length.toLocaleString("en-GB")} publications · ${coverageStart()} onwards · OpenAlex`;
     configureDigest(data.list || {});
 
     const years = [
@@ -241,7 +251,16 @@
         update();
       });
       window.addEventListener("hashchange", () => {
-        if (["#publications", "#subscribe", "#subscribed", "#unsubscribe", "#scholar"].includes(location.hash)) return;
+        if (
+          [
+            "#publications",
+            "#subscribe",
+            "#subscribed",
+            "#unsubscribe",
+            "#scholar",
+          ].includes(location.hash)
+        )
+          return;
         state = readHash();
         init(data);
       });
@@ -255,19 +274,34 @@
       .then((sc) => {
         if (!sc || !sc.people) return;
         const box = $("scholar");
-        const entries = Object.values(sc.people).filter((p) => (p.missing || []).length || (p.not_attributed || []).length);
+        const entries = Object.values(sc.people).filter(
+          (p) => (p.missing || []).length || (p.not_attributed || []).length,
+        );
         if (!entries.length) return;
         const total = (sc.total_missing || 0) + (sc.total_not_attributed || 0);
         box.classList.remove("hidden");
         box.innerHTML =
           `<details${initialHash === "#scholar" ? " open" : ""}><summary><b>${total} paper${total === 1 ? "" : "s"} on Google Scholar profiles need a look</b> <span class="meta">(checked ${esc(sc.checked_at || "")})</span></summary>` +
-          "<p class=\"meta\">Scholar is only used as a cross-check. “Missing” = on the Scholar profile but not found in OpenAlex for the group; usually the paper lacks the author's ORCID at the publisher, or it is grey literature OpenAlex does not index. “Not linked” = in pubpulse but not attributed to this person.</p>" +
-          entries.map((p) => {
-            const li = (x, tag) => `<li>${tag}${esc(x.title)}${x.year ? " (" + esc(x.year) + ")" : ""}${x.venue ? " · " + esc(x.venue) : ""}${x.link ? ` <a href="${esc(x.link)}" target="_blank" rel="noopener">Scholar ↗</a>` : ""}</li>`;
-            return `<p><b>${esc(p.name)}</b> · ${p.matched} of ${p.checked} since ${esc(sc.since_year)} found</p><ul>` +
-              (p.missing || []).map((x) => li(x, "<span class='badge warn'>missing</span> ")).join("") +
-              (p.not_attributed || []).map((x) => li(x, "<span class='badge oa'>not linked</span> ")).join("") + "</ul>";
-          }).join("") + "</details>";
+          '<p class="meta">Scholar is only used as a cross-check. “Missing” = on the Scholar profile but not found in OpenAlex for the group; usually the paper lacks the author\'s ORCID at the publisher, or it is grey literature OpenAlex does not index. “Not linked” = in pubpulse but not attributed to this person.</p>' +
+          entries
+            .map((p) => {
+              const li = (x, tag) =>
+                `<li>${tag}${esc(x.title)}${x.year ? " (" + esc(x.year) + ")" : ""}${x.venue ? " · " + esc(x.venue) : ""}${x.link ? ` <a href="${esc(x.link)}" target="_blank" rel="noopener">Scholar ↗</a>` : ""}</li>`;
+              return (
+                `<p><b>${esc(p.name)}</b> · ${p.matched} of ${p.checked} since ${esc(sc.since_year)} found</p><ul>` +
+                (p.missing || [])
+                  .map((x) => li(x, "<span class='badge warn'>missing</span> "))
+                  .join("") +
+                (p.not_attributed || [])
+                  .map((x) =>
+                    li(x, "<span class='badge oa'>not linked</span> "),
+                  )
+                  .join("") +
+                "</ul>"
+              );
+            })
+            .join("") +
+          "</details>";
       })
       .catch(() => {});
   }
@@ -294,7 +328,8 @@
       $("join-action").classList.add("hidden");
       form.classList.add("hidden");
       unsubLink.classList.add("hidden");
-      $("digest-note").textContent = "Enter your email, confirm the link we send you, done.";
+      $("digest-note").textContent =
+        "Enter your email, confirm the link we send you, done.";
       $("join-note").textContent =
         "Every digest has an unsubscribe link at the bottom. Your address is stored privately and only used for this digest.";
       const frame = document.createElement("iframe");
@@ -311,7 +346,8 @@
       if (["#subscribe", "#subscribed"].includes(initialHash) && !dialog.open) {
         if (initialHash === "#subscribed") {
           $("join-title").innerHTML = "You're on the list.";
-          $("join-description").textContent = "The next digest arrives on a Monday when there is something new.";
+          $("join-description").textContent =
+            "The next digest arrives on a Monday when there is something new.";
           frame.remove();
           fallback.remove();
         }
@@ -387,7 +423,8 @@
         if (j.ok) $("digest-email").value = "";
       } catch {
         msg.className = "digest-form-msg err";
-        msg.textContent = "Could not reach the subscription service. Please try again later.";
+        msg.textContent =
+          "Could not reach the subscription service. Please try again later.";
       }
       $("digest-submit").disabled = false;
     });
@@ -432,6 +469,68 @@
     );
   }
 
+  function coverageStart() {
+    const configured = Number(data.since_year);
+    if (
+      Number.isInteger(configured) &&
+      configured >= 1800 &&
+      configured <= 2200
+    )
+      return configured;
+    const years = data.works
+      .map((w) => Number(w.year))
+      .filter((year) => Number.isInteger(year) && year >= 1800 && year <= 2200);
+    return years.length ? Math.min(...years) : new Date().getFullYear();
+  }
+
+  function renderYearChart() {
+    const generatedYear =
+      new Date(data.generated).getUTCFullYear() || new Date().getFullYear();
+    const dated = data.works.filter((w) => Number.isInteger(w.year));
+    const lastYear = Math.max(
+      generatedYear,
+      coverageStart(),
+      ...dated.map((w) => w.year),
+    );
+    const years = Array.from(
+      { length: lastYear - coverageStart() + 1 },
+      (_, i) => coverageStart() + i,
+    );
+    const counts = new Map(years.map((year) => [year, 0]));
+    for (const work of dated.filter((w) => matches(w, { ignoreYear: true }))) {
+      counts.set(work.year, (counts.get(work.year) || 0) + 1);
+    }
+    const peak = Math.max(1, ...counts.values());
+    const step = Math.max(1, Math.pow(10, Math.floor(Math.log10(peak))) / 5);
+    const top = Math.max(2, Math.ceil(peak / step) * step);
+    $("chart-axis").innerHTML =
+      `<span>${top}</span><span>${top / 2}</span><span>0</span>`;
+    $("chart-note").textContent = `${generatedYear} is year to date`;
+    $("year-bars").style.setProperty("--year-count", years.length);
+    $("year-bars").innerHTML = years
+      .map((year) => {
+        const count = counts.get(year) || 0;
+        const selected = state.year === String(year);
+        const label = `${year}: ${count} publication${count === 1 ? "" : "s"}${year === generatedYear ? ", year to date" : ""}. ${selected ? "Clear year filter" : "Filter to this year"}.`;
+        return `<button type="button" class="year-column" data-year="${year}" aria-pressed="${selected}" aria-label="${esc(label)}"><span class="year-bar-space"><span class="year-bar" style="height:${(count / top) * 100}%"><span class="year-value">${count}</span></span></span><span class="year-label">${year}${year === generatedYear ? "<small>year to date</small>" : ""}</span></button>`;
+      })
+      .join("");
+    $("year-bars")
+      .querySelectorAll("[data-year]")
+      .forEach((button) =>
+        button.addEventListener("click", () => {
+          state.year =
+            state.year === button.dataset.year ? "" : button.dataset.year;
+          els.year.value = state.year;
+          const year = button.dataset.year;
+          update();
+          $("year-bars")
+            .querySelector(`[data-year="${year}"]`)
+            .focus({ preventScroll: true });
+        }),
+      );
+  }
+
   function inPeriod(w, when) {
     if (!w.publication_date) return false;
     const d = new Date(w.publication_date + "T00:00:00Z");
@@ -441,14 +540,15 @@
     return days ? (now - d) / 86400000 <= days : true;
   }
 
-  function matches(w) {
+  function matches(w, options = {}) {
     if (state.when === "week" && !data.newIds.has(w.id)) return false;
     if (state.when && state.when !== "week" && !inPeriod(w, state.when))
       return false;
     if (state.verify === "verified" && !w.verified) return false;
     if (state.verify === "unverified" && w.verified) return false;
     if (state.oa && !w.is_oa) return false;
-    if (state.year && String(w.year) !== state.year) return false;
+    if (!options.ignoreYear && state.year && String(w.year) !== state.year)
+      return false;
     if (state.type && w.type !== state.type) return false;
     if (state.journal && w.journal !== state.journal) return false;
     if (
@@ -479,7 +579,8 @@
 
   function update() {
     writeHash();
-    let items = data.works.filter(matches);
+    let items = data.works.filter((w) => matches(w));
+    renderYearChart();
     if (state.sort === "cited")
       items.sort((a, b) => (b.cited_by_count || 0) - (a.cited_by_count || 0));
     else if (state.sort === "added")
@@ -493,7 +594,7 @@
         (b.publication_date || "").localeCompare(a.publication_date || ""),
       );
     els.count.textContent =
-      `${items.length} of ${data.works.length} publications` +
+      `${items.length} of ${data.works.length} publications · since ${coverageStart()}` +
       (data.newIds.size ? ` · ${data.newIds.size} new this week` : "");
     els.chips.innerHTML = state.people
       .map(

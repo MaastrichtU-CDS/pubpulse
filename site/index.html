@@ -45,7 +45,7 @@
             >Maastricht University <span aria-hidden="true">↗</span></a
           >
           <button class="button button-small" type="button" data-open-digest>
-            Get the weekly digest <span aria-hidden="true">↗</span>
+            Weekly digest <span aria-hidden="true">↗</span>
           </button>
         </nav>
       </div>
@@ -84,7 +84,12 @@
           <div class="hero-metrics" aria-label="Publication overview">
             <div>
               <strong id="total-publications">—</strong
-              ><span>publications</span>
+              ><span
+                >publications<span
+                  class="metric-note"
+                  id="coverage-start"
+                ></span
+              ></span>
             </div>
             <div>
               <strong id="total-researchers">—</strong
@@ -175,26 +180,29 @@
         <div>
           <p class="eyebrow">CLINICAL DATA SCIENCE MAASTRICHT</p>
           <h2>Publication library</h2>
+          <p class="library-range" id="publication-range">
+            Loading publication coverage…
+          </p>
         </div>
         <p class="updated">
           <span class="status-dot"></span
           ><span id="updated">Loading latest research…</span>
         </p>
       </div>
+      <button
+        class="filter-toggle"
+        id="toggle-filters"
+        type="button"
+        aria-controls="filters"
+        aria-expanded="false"
+      >
+        Filter publications <span id="filter-toggle-label">Show</span>
+      </button>
       <div class="layout">
         <aside class="filters" id="filters" aria-label="Publication filters">
           <div class="filter-heading">
             <h3>Filter publications</h3>
             <button class="link" id="reset" type="button">Reset all</button>
-          </div>
-          <div class="filter search-filter">
-            <label for="q">Search publications</label
-            ><input
-              id="q"
-              type="search"
-              placeholder="Title, author or journal…"
-              autocomplete="off"
-            />
           </div>
           <div class="filter">
             <label for="when">Period</label
@@ -267,6 +275,34 @@
           <div id="scholar" class="attention hidden"></div>
         </aside>
         <section class="results" aria-label="Publications">
+          <section class="publication-chart" aria-labelledby="chart-heading">
+            <div class="chart-heading">
+              <h3 id="chart-heading">Publications by year</h3>
+              <p id="chart-note"></p>
+            </div>
+            <div class="chart-plot">
+              <div id="chart-axis" class="chart-axis" aria-hidden="true"></div>
+              <div
+                id="year-bars"
+                class="year-bars"
+                role="group"
+                aria-label="Filter publications by year"
+              ></div>
+            </div>
+            <p class="chart-caption">
+              Totals follow your search and filters. Select a year to filter the
+              list.
+            </p>
+          </section>
+          <div class="filter search-filter">
+            <label for="q">Search publications</label
+            ><input
+              id="q"
+              type="search"
+              placeholder="Title, author or journal…"
+              autocomplete="off"
+            />
+          </div>
           <div class="results-toolbar">
             <p id="count" role="status" aria-live="polite">
               Loading publications…
@@ -403,13 +439,29 @@
         >Find the CDS team <span aria-hidden="true">↗</span></a
       >
       <form id="digest-form" class="digest-form hidden" autocomplete="on">
-        <label for="digest-email" id="digest-form-label">Your email address</label>
+        <label for="digest-email" id="digest-form-label"
+          >Your email address</label
+        >
         <div class="digest-form-row">
-          <input id="digest-email" type="email" placeholder="name@maastrichtuniversity.nl" required />
-          <button type="submit" class="button button-dark" id="digest-submit">Subscribe</button>
+          <input
+            id="digest-email"
+            type="email"
+            placeholder="name@maastrichtuniversity.nl"
+            required
+          />
+          <button type="submit" class="button button-dark" id="digest-submit">
+            Subscribe
+          </button>
         </div>
-        <p class="digest-form-msg" id="digest-msg" role="status" aria-live="polite"></p>
-        <button type="button" class="link" id="digest-toggle">I want to unsubscribe instead</button>
+        <p
+          class="digest-form-msg"
+          id="digest-msg"
+          role="status"
+          aria-live="polite"
+        ></p>
+        <button type="button" class="link" id="digest-toggle">
+          I want to unsubscribe instead
+        </button>
       </form>
       <p class="join-note" id="join-note">
         Self-service signup is not available yet. To leave the list, contact a
