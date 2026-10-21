@@ -401,6 +401,8 @@ def public_people(people: list[dict], today: date, grace_months: int = 0) -> lis
             "role": p.get("role"),
             "employer": p.get("employer"),
             "orcid": p.get("orcid"),
+            "orcid_openalex": p.get("orcid_openalex"),
+            "scholar_id": p.get("scholar_id"),
             "openalex_ids": manual_ids(p) or list(p.get("openalex_ids") or []),
             "match": match_confidence(p),
             "active": is_active(p, today),

@@ -189,3 +189,21 @@ def test_normalise_work_preserves_full_author_order_and_member_identity():
     assert work["author_positions"][:4] == [1, 2, 4, 5]
     assert len(work["author_members"]) == len(work["authors"]) == len(work["author_positions"])
     assert work["author_members"][:-1] == [None] * 43
+
+
+def test_public_people_includes_known_author_profile_identifiers():
+    from pubpulse.sync import public_people
+
+    people = [
+        {"slug": "known", "name": "Known Author", "orcid": "0000-0003-2548-0330", "scholar_id": "AbCdEfGAAAAJ"},
+        {"slug": "unknown", "name": "Unknown Author"},
+        {"slug": "reported", "name": "Reported Author", "orcid_openalex": "0009-0003-5286-6973"},
+    ]
+    public = {p["slug"]: p for p in public_people(people, date(2026, 10, 21))}
+    assert public["known"]["orcid"] == "0000-0003-2548-0330"
+    assert public["known"]["scholar_id"] == "AbCdEfGAAAAJ"
+    assert public["unknown"]["orcid"] is None
+    assert public["unknown"]["scholar_id"] is None
+
+    assert public["reported"]["orcid"] is None
+    assert public["reported"]["orcid_openalex"] == "0009-0003-5286-6973"
