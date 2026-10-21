@@ -113,7 +113,10 @@
     if (!person) return "";
     const links = [];
     const orcid = String(
-      person.orcid || (!person.needs_review && person.orcid_openalex) || "",
+      person.orcid ||
+        person.orcid_discovered ||
+        (!person.needs_review && person.orcid_openalex) ||
+        "",
     )
       .trim()
       .replace(/^https?:\/\/(?:www\.)?orcid\.org\//i, "")
@@ -134,7 +137,11 @@
           "ORCID",
           orcid,
           "https://orcid.org/" + orcid,
-          person.orcid ? "" : "reported by OpenAlex",
+          person.orcid
+            ? ""
+            : person.orcid_discovered
+              ? "verified using shared publications or coauthors"
+              : "reported by OpenAlex",
         ),
       );
     if (/^[A-Za-z0-9_-]{6,64}$/.test(scholar))

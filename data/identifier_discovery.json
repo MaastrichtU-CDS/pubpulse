@@ -1,0 +1,2734 @@
+{
+ "checked_at": "2026-10-21",
+ "people": {
+  "ralph-brecheisen": {
+   "name": "Ralph Brecheisen",
+   "checked_at": "2026-10-21",
+   "known_coauthors": [
+    "leroy-volmer",
+    "andre-dekker",
+    "leonard-wee",
+    "petros-koutsouvelis"
+   ],
+   "orcid_candidates": [],
+   "scholar_candidates": [],
+   "errors": [],
+   "complete": true,
+   "orcid_decision": "known",
+   "scholar_decision": "not_found",
+   "status": "no_new_confirmed_profile",
+   "identifiers": {
+    "orcid": "0000-0001-9937-2602",
+    "scholar_id": null
+   },
+   "verified_evidence": {}
+  },
+  "anshu-ankolekar": {
+   "name": "Anshu Ankolekar",
+   "checked_at": "2026-10-21",
+   "known_coauthors": [
+    "anniek-van-hienen",
+    "rianne-fijten"
+   ],
+   "orcid_candidates": [],
+   "scholar_candidates": [],
+   "errors": [],
+   "complete": true,
+   "orcid_decision": "known",
+   "scholar_decision": "not_found",
+   "status": "no_new_confirmed_profile",
+   "identifiers": {
+    "orcid": "0000-0001-7681-1254",
+    "scholar_id": null
+   },
+   "verified_evidence": {}
+  },
+  "joshi-hogenboom": {
+   "name": "Joshi Hogenboom",
+   "checked_at": "2026-10-21",
+   "known_coauthors": [
+    "andre-dekker",
+    "leonard-wee",
+    "johan-van-soest",
+    "rianne-fijten",
+    "umesh-kumar-baburao-sherkhane",
+    "ananya-choudhury",
+    "marine-jacquemin"
+   ],
+   "orcid_candidates": [],
+   "scholar_candidates": [],
+   "errors": [
+    "Scholar search deferred: Profile provider request failed"
+   ],
+   "complete": false,
+   "orcid_decision": "known",
+   "scholar_decision": "deferred",
+   "status": "no_new_confirmed_profile",
+   "identifiers": {
+    "orcid": "0000-0003-1278-3295",
+    "scholar_id": null
+   },
+   "verified_evidence": {}
+  },
+  "leroy-volmer": {
+   "name": "Leroy Volmer",
+   "checked_at": "2026-10-21",
+   "known_coauthors": [
+    "andre-dekker",
+    "leonard-wee",
+    "ralph-brecheisen",
+    "petros-koutsouvelis",
+    "ananya-choudhury",
+    "johan-van-soest",
+    "leonard-nurnberg",
+    "rianne-fijten"
+   ],
+   "orcid_candidates": [],
+   "scholar_candidates": [],
+   "errors": [],
+   "complete": true,
+   "orcid_decision": "known",
+   "scholar_decision": "not_found",
+   "status": "no_new_confirmed_profile",
+   "identifiers": {
+    "orcid": "0009-0001-4978-4024",
+    "scholar_id": null
+   },
+   "verified_evidence": {
+    "orcid": {
+     "checked_at": "2026-10-21",
+     "id": "0009-0001-4978-4024",
+     "url": "https://orcid.org/0009-0001-4978-4024",
+     "name": "Leroy Volmer",
+     "affiliations": [],
+     "name_match": true,
+     "shared_works": [
+      {
+       "work": "W7215768157",
+       "title": "Simulating the Radiological Appearance of Focal Cortical Dysplasia in MRI",
+       "url": "https://doi.org/10.64898/2026.10.01.26364470",
+       "coauthors": [
+        "andre-dekker",
+        "leroy-volmer",
+        "petros-koutsouvelis",
+        "ralph-brecheisen"
+       ]
+      },
+      {
+       "work": "W7134240562",
+       "title": "Localizing the epileptogenic zone using deep learning and neuroimaging: A systematic review",
+       "url": "https://doi.org/10.1016/j.seizure.2026.03.002",
+       "coauthors": [
+        "andre-dekker",
+        "leroy-volmer",
+        "petros-koutsouvelis",
+        "ralph-brecheisen"
+       ]
+      },
+      {
+       "work": "W4411541582",
+       "title": "Prospective Registry Study on Thermal Liver Ablation of Primary and Secondary Liver Tumours Named the A-IMAGIO Study",
+       "url": "https://doi.org/10.1007/s00270-025-04093-9",
+       "coauthors": [
+        "leroy-volmer",
+        "ralph-brecheisen"
+       ]
+      },
+      {
+       "work": "W4410559475",
+       "title": "3824 Gross Tumour Volume segmentation by federated deep learning using real-world data of 3500+ lung cancer patients from 20 institutions in countries",
+       "url": "https://doi.org/10.1016/s0167-8140(25)01983-8",
+       "coauthors": [
+        "ananya-choudhury",
+        "andre-dekker",
+        "johan-van-soest",
+        "leonard-wee",
+        "leroy-volmer"
+       ]
+      },
+      {
+       "work": "W4406063103",
+       "title": "Label-efficient transformer-based framework with self-supervised strategies for heterogeneous lung tumor segmentation",
+       "url": "https://doi.org/10.1016/j.eswa.2024.126364",
+       "coauthors": [
+        "andre-dekker",
+        "leonard-wee",
+        "leroy-volmer"
+       ]
+      },
+      {
+       "work": "W4403503010",
+       "title": "Advancing Privacy-Preserving Health Care Analytics and Implementation of the Personal Health Train: Federated Deep Learning Study",
+       "url": "https://doi.org/10.2196/60847",
+       "coauthors": [
+        "ananya-choudhury",
+        "andre-dekker",
+        "johan-van-soest",
+        "leonard-wee",
+        "leroy-volmer",
+        "rianne-fijten"
+       ]
+      },
+      {
+       "work": "W4404553502",
+       "title": "Skeletal muscle is independently associated with grade 3–4 toxicity in advanced stage pancreatic ductal adenocarcinoma patients receiving chemotherapy",
+       "url": "https://doi.org/10.1016/j.clnesp.2024.11.004",
+       "coauthors": [
+        "leonard-wee",
+        "leroy-volmer",
+        "ralph-brecheisen"
+       ]
+      }
+     ],
+     "linked_verified_scholar": false,
+     "institution_match": false,
+     "accepted": true
+    }
+   }
+  },
+  "anniek-van-hienen": {
+   "name": "Anniek van Hienen",
+   "checked_at": "2026-10-21",
+   "known_coauthors": [
+    "rianne-fijten",
+    "johan-van-soest",
+    "madeline-therrien",
+    "hannah-piehl",
+    "andre-dekker",
+    "simone-mingels",
+    "ekaterina-akhmad",
+    "anshu-ankolekar"
+   ],
+   "orcid_candidates": [],
+   "scholar_candidates": [
+    {
+     "id": "ohBKXtcAAAAJ",
+     "url": "https://scholar.google.com/citations?user=ohBKXtcAAAAJ",
+     "name": "Anniek van Hienen",
+     "affiliations": "PhD Candidate shared decision-making in radiation oncology",
+     "name_match": true,
+     "shared_works": [
+      {
+       "work": "W4404657536",
+       "title": "Bridging the care gap: patients’ needs and experiences regarding shared decision-making in radiotherapy",
+       "url": "https://doi.org/10.1016/j.ctro.2024.100897",
+       "coauthors": [
+        "anniek-van-hienen",
+        "rianne-fijten"
+       ]
+      },
+      {
+       "work": "W7118740404",
+       "title": "Understanding Clinicians’ Informational Needs for AI-Driven Clinical Decision Support Systems: Qualitative Interview Study",
+       "url": "https://doi.org/10.2196/85228",
+       "coauthors": [
+        "andre-dekker",
+        "anniek-van-hienen",
+        "ekaterina-akhmad",
+        "hannah-piehl",
+        "johan-van-soest",
+        "madeline-therrien",
+        "rianne-fijten",
+        "simone-mingels"
+       ]
+      },
+      {
+       "work": "W4400453456",
+       "title": "276 Mind the gap: discrepancies between experienced and desired shared decision-making in a Dutch radiotherapy centre",
+       "url": "https://doi.org/10.1136/bmjebm-2024-sdc.275",
+       "coauthors": [
+        "anniek-van-hienen",
+        "rianne-fijten"
+       ]
+      }
+     ],
+     "known_coauthors": [],
+     "institution_match": false,
+     "accepted": true
+    }
+   ],
+   "errors": [],
+   "complete": true,
+   "orcid_decision": "known",
+   "scholar_decision": "accepted",
+   "status": "matched",
+   "identifiers": {
+    "orcid": "0009-0000-9454-6124",
+    "scholar_id": "ohBKXtcAAAAJ"
+   },
+   "verified_evidence": {
+    "scholar": {
+     "checked_at": "2026-10-21",
+     "id": "ohBKXtcAAAAJ",
+     "url": "https://scholar.google.com/citations?user=ohBKXtcAAAAJ",
+     "name": "Anniek van Hienen",
+     "affiliations": "PhD Candidate shared decision-making in radiation oncology",
+     "name_match": true,
+     "shared_works": [
+      {
+       "work": "W4404657536",
+       "title": "Bridging the care gap: patients’ needs and experiences regarding shared decision-making in radiotherapy",
+       "url": "https://doi.org/10.1016/j.ctro.2024.100897",
+       "coauthors": [
+        "anniek-van-hienen",
+        "rianne-fijten"
+       ]
+      },
+      {
+       "work": "W7118740404",
+       "title": "Understanding Clinicians’ Informational Needs for AI-Driven Clinical Decision Support Systems: Qualitative Interview Study",
+       "url": "https://doi.org/10.2196/85228",
+       "coauthors": [
+        "andre-dekker",
+        "anniek-van-hienen",
+        "ekaterina-akhmad",
+        "hannah-piehl",
+        "johan-van-soest",
+        "madeline-therrien",
+        "rianne-fijten",
+        "simone-mingels"
+       ]
+      },
+      {
+       "work": "W4400453456",
+       "title": "276 Mind the gap: discrepancies between experienced and desired shared decision-making in a Dutch radiotherapy centre",
+       "url": "https://doi.org/10.1136/bmjebm-2024-sdc.275",
+       "coauthors": [
+        "anniek-van-hienen",
+        "rianne-fijten"
+       ]
+      }
+     ],
+     "known_coauthors": [],
+     "institution_match": false,
+     "accepted": true
+    }
+   }
+  },
+  "leonard-nurnberg": {
+   "name": "Leonard Nürnberg",
+   "checked_at": "2026-10-21",
+   "known_coauthors": [
+    "andre-dekker",
+    "petros-koutsouvelis",
+    "leroy-volmer"
+   ],
+   "orcid_candidates": [
+    {
+     "id": "0000-0001-6544-4268",
+     "url": "https://orcid.org/0000-0001-6544-4268",
+     "name": "Leonard Nürnberg",
+     "affiliations": [],
+     "name_match": true,
+     "shared_works": [],
+     "linked_verified_scholar": false,
+     "institution_match": false,
+     "accepted": false
+    }
+   ],
+   "scholar_candidates": [],
+   "errors": [
+    "Scholar search deferred: search budget reached or no search key configured"
+   ],
+   "complete": false,
+   "orcid_decision": "insufficient_evidence",
+   "scholar_decision": "deferred",
+   "status": "no_new_confirmed_profile",
+   "identifiers": {
+    "orcid": null,
+    "scholar_id": null
+   },
+   "verified_evidence": {}
+  },
+  "matthijs-sloep": {
+   "name": "Matthijs Sloep",
+   "checked_at": "2026-10-21",
+   "known_coauthors": [],
+   "orcid_candidates": [],
+   "scholar_candidates": [],
+   "errors": [],
+   "complete": true,
+   "orcid_decision": "known",
+   "scholar_decision": "not_found",
+   "status": "no_new_confirmed_profile",
+   "identifiers": {
+    "orcid": "0000-0003-3602-1885",
+    "scholar_id": null
+   },
+   "verified_evidence": {}
+  },
+  "wenjie-liang": {
+   "name": "Wenjie Liang",
+   "checked_at": "2026-10-21",
+   "known_coauthors": [
+    "andre-dekker",
+    "petros-kalendralis",
+    "jikai-zhou",
+    "rutger-van-mierlo",
+    "anne-lore-bynens",
+    "cecile-wolfs",
+    "xuanhe-hou",
+    "leonard-wee",
+    "en-hu"
+   ],
+   "orcid_candidates": [],
+   "scholar_candidates": [
+    {
+     "id": "EEouIeIAAAAJ",
+     "url": "https://scholar.google.com/citations?user=EEouIeIAAAAJ",
+     "name": "Wenfeng Liang",
+     "affiliations": "Institute of Nuclear Physics and Chemistry, China Academy of Engineering Physics",
+     "name_match": false,
+     "shared_works": [],
+     "known_coauthors": [],
+     "institution_match": false,
+     "accepted": false
+    }
+   ],
+   "errors": [],
+   "complete": true,
+   "orcid_decision": "known",
+   "scholar_decision": "insufficient_evidence",
+   "status": "no_new_confirmed_profile",
+   "identifiers": {
+    "orcid": "0009-0000-2890-7825",
+    "scholar_id": null
+   },
+   "verified_evidence": {}
+  },
+  "alessio-romita": {
+   "name": "Alessio Romita",
+   "checked_at": "2026-10-21",
+   "known_coauthors": [
+    "johan-van-soest",
+    "andre-dekker",
+    "ananya-choudhury",
+    "tim-hendriks",
+    "leonard-wee"
+   ],
+   "orcid_candidates": [],
+   "scholar_candidates": [],
+   "errors": [],
+   "complete": true,
+   "orcid_decision": "known",
+   "scholar_decision": "not_found",
+   "status": "no_new_confirmed_profile",
+   "identifiers": {
+    "orcid": "0009-0003-5286-6973",
+    "scholar_id": null
+   },
+   "verified_evidence": {
+    "orcid": {
+     "checked_at": "2026-10-21",
+     "id": "0009-0003-5286-6973",
+     "url": "https://orcid.org/0009-0003-5286-6973",
+     "name": "Alessio Romita",
+     "affiliations": [],
+     "name_match": true,
+     "shared_works": [
+      {
+       "work": "W7161945525",
+       "title": "LinkedDicom: Indexing DICOM Metadata Using Semantic Web Technologies",
+       "url": "https://doi.org/10.3233/shti260404",
+       "coauthors": [
+        "alessio-romita",
+        "ananya-choudhury",
+        "andre-dekker",
+        "johan-van-soest",
+        "leonard-wee",
+        "tim-hendriks"
+       ]
+      }
+     ],
+     "linked_verified_scholar": false,
+     "institution_match": false,
+     "accepted": true
+    }
+   }
+  },
+  "madeline-therrien": {
+   "name": "Madeline Therrien",
+   "checked_at": "2026-10-21",
+   "known_coauthors": [
+    "rianne-fijten",
+    "simone-mingels",
+    "anniek-van-hienen",
+    "johan-van-soest",
+    "hannah-piehl",
+    "andre-dekker",
+    "ekaterina-akhmad"
+   ],
+   "orcid_candidates": [],
+   "scholar_candidates": [],
+   "errors": [],
+   "complete": true,
+   "orcid_decision": "known",
+   "scholar_decision": "not_found",
+   "status": "no_new_confirmed_profile",
+   "identifiers": {
+    "orcid": "0009-0001-0466-0722",
+    "scholar_id": null
+   },
+   "verified_evidence": {
+    "orcid": {
+     "checked_at": "2026-10-21",
+     "id": "0009-0001-0466-0722",
+     "url": "https://orcid.org/0009-0001-0466-0722",
+     "name": "Madeline Therrien",
+     "affiliations": [
+      "Maastricht University",
+      "Maastricht University",
+      "Maastro Clinic",
+      "Maastricht University"
+     ],
+     "name_match": true,
+     "shared_works": [
+      {
+       "work": "W7118740404",
+       "title": "Understanding Clinicians’ Informational Needs for AI-Driven Clinical Decision Support Systems: Qualitative Interview Study",
+       "url": "https://doi.org/10.2196/85228",
+       "coauthors": [
+        "andre-dekker",
+        "anniek-van-hienen",
+        "ekaterina-akhmad",
+        "hannah-piehl",
+        "johan-van-soest",
+        "madeline-therrien",
+        "rianne-fijten",
+        "simone-mingels"
+       ]
+      },
+      {
+       "work": "W7134113797",
+       "title": "In their own words: A qualitative study of patient narratives on daily life after breast cancer radiotherapy",
+       "url": "https://doi.org/10.1016/j.pecinn.2026.100468",
+       "coauthors": [
+        "madeline-therrien",
+        "rianne-fijten",
+        "simone-mingels"
+       ]
+      },
+      {
+       "work": "W4414869539",
+       "title": "Understanding Clinicians’ Informational Needs for AI-driven Clinical Decision Support Systems: Qualitative Interview Study (Preprint)",
+       "url": "https://doi.org/10.2196/preprints.85228",
+       "coauthors": [
+        "andre-dekker",
+        "anniek-van-hienen",
+        "ekaterina-akhmad",
+        "hannah-piehl",
+        "johan-van-soest",
+        "madeline-therrien",
+        "rianne-fijten",
+        "simone-mingels"
+       ]
+      }
+     ],
+     "linked_verified_scholar": false,
+     "institution_match": true,
+     "accepted": true
+    }
+   }
+  },
+  "simone-mingels": {
+   "name": "Simone Mingels",
+   "checked_at": "2026-10-21",
+   "known_coauthors": [
+    "rianne-fijten",
+    "andre-dekker",
+    "madeline-therrien",
+    "johan-van-soest",
+    "ekaterina-akhmad",
+    "anniek-van-hienen",
+    "hannah-piehl",
+    "daniel-slob"
+   ],
+   "orcid_candidates": [],
+   "scholar_candidates": [],
+   "errors": [],
+   "complete": true,
+   "orcid_decision": "known",
+   "scholar_decision": "not_found",
+   "status": "no_new_confirmed_profile",
+   "identifiers": {
+    "orcid": "0009-0000-9848-2391",
+    "scholar_id": null
+   },
+   "verified_evidence": {}
+  },
+  "yomi-okegunna": {
+   "name": "Yomi Okegunna",
+   "checked_at": "2026-10-21",
+   "known_coauthors": [
+    "rianne-fijten",
+    "andre-dekker",
+    "sander-puts",
+    "jiaxu-zhang"
+   ],
+   "orcid_candidates": [],
+   "scholar_candidates": [],
+   "errors": [],
+   "complete": true,
+   "orcid_decision": "known",
+   "scholar_decision": "not_found",
+   "status": "no_new_confirmed_profile",
+   "identifiers": {
+    "orcid": "0009-0004-1105-487X",
+    "scholar_id": null
+   },
+   "verified_evidence": {
+    "orcid": {
+     "checked_at": "2026-10-21",
+     "id": "0009-0004-1105-487X",
+     "url": "https://orcid.org/0009-0004-1105-487X",
+     "name": "Yomi Okegunna",
+     "affiliations": [
+      "Maastricht University Medical Centre",
+      "Maastricht University"
+     ],
+     "name_match": true,
+     "shared_works": [
+      {
+       "work": "W4406702439",
+       "title": "P0956 Predicting Clinical Remission in Crohn’s Disease: A Comparative Study of Expert-Generated and Computer-Generated Bayesian Networks",
+       "url": "https://doi.org/10.1093/ecco-jcc/jjae190.1130",
+       "coauthors": [
+        "andre-dekker",
+        "rianne-fijten",
+        "yomi-okegunna"
+       ]
+      }
+     ],
+     "linked_verified_scholar": false,
+     "institution_match": true,
+     "accepted": true
+    }
+   }
+  },
+  "hannah-mary-thomas": {
+   "name": "Hannah Mary Thomas",
+   "checked_at": "2026-10-21",
+   "known_coauthors": [
+    "andre-dekker",
+    "leonard-wee",
+    "rianne-fijten",
+    "balu-krishna-sasidharan"
+   ],
+   "orcid_candidates": [],
+   "scholar_candidates": [],
+   "errors": [],
+   "complete": true,
+   "orcid_decision": "known",
+   "scholar_decision": "not_found",
+   "status": "no_new_confirmed_profile",
+   "identifiers": {
+    "orcid": "0000-0002-1454-512X",
+    "scholar_id": null
+   },
+   "verified_evidence": {
+    "orcid": {
+     "checked_at": "2026-10-21",
+     "id": "0000-0002-1454-512X",
+     "url": "https://orcid.org/0000-0002-1454-512X",
+     "name": "Hannah Thomas",
+     "affiliations": [],
+     "name_match": true,
+     "shared_works": [
+      {
+       "work": "W7131779647",
+       "title": "Decoding Uncertainty Quantification for Oncology—An Illustration Using Radiomics",
+       "url": "https://doi.org/10.3390/diagnostics16050700",
+       "coauthors": [
+        "andre-dekker",
+        "balu-krishna-sasidharan",
+        "hannah-mary-thomas",
+        "leonard-wee",
+        "rianne-fijten"
+       ]
+      },
+      {
+       "work": "W4412449917",
+       "title": "Prognostic modeling in head and neck cancer: deep learning or handcrafted radiomics?",
+       "url": "https://doi.org/10.1093/bjrai/ubaf008",
+       "coauthors": [
+        "andre-dekker",
+        "hannah-mary-thomas",
+        "leonard-wee",
+        "rianne-fijten"
+       ]
+      },
+      {
+       "work": "W4403625443",
+       "title": "Performance of Handcrafted Radiomics versus Deep Learning for Prognosticating Head and Neck Squamous Cell Carcinoma – A Systematic Review with Critical Appraisal of Quantitative Imaging Studies",
+       "url": "https://doi.org/10.1101/2024.10.22.24315007",
+       "coauthors": [
+        "andre-dekker",
+        "hannah-mary-thomas",
+        "leonard-wee",
+        "rianne-fijten"
+       ]
+      }
+     ],
+     "linked_verified_scholar": false,
+     "institution_match": false,
+     "accepted": true
+    }
+   }
+  },
+  "petros-koutsouvelis": {
+   "name": "Petros Koutsouvelis",
+   "checked_at": "2026-10-21",
+   "known_coauthors": [
+    "leroy-volmer",
+    "andre-dekker",
+    "ralph-brecheisen",
+    "leonard-nurnberg"
+   ],
+   "orcid_candidates": [
+    {
+     "id": "0009-0002-3020-0030",
+     "url": "https://orcid.org/0009-0002-3020-0030",
+     "name": "Petros Koutsouvelis",
+     "affiliations": [
+      "Maastricht University"
+     ],
+     "name_match": true,
+     "shared_works": [
+      {
+       "work": "W7215768157",
+       "title": "Simulating the Radiological Appearance of Focal Cortical Dysplasia in MRI",
+       "url": "https://doi.org/10.64898/2026.10.01.26364470",
+       "coauthors": [
+        "andre-dekker",
+        "leroy-volmer",
+        "petros-koutsouvelis",
+        "ralph-brecheisen"
+       ]
+      },
+      {
+       "work": "W7134240562",
+       "title": "Localizing the epileptogenic zone using deep learning and neuroimaging: A systematic review",
+       "url": "https://doi.org/10.1016/j.seizure.2026.03.002",
+       "coauthors": [
+        "andre-dekker",
+        "leroy-volmer",
+        "petros-koutsouvelis",
+        "ralph-brecheisen"
+       ]
+      }
+     ],
+     "linked_verified_scholar": false,
+     "institution_match": true,
+     "accepted": true
+    }
+   ],
+   "scholar_candidates": [
+    {
+     "id": "5IHSXnkAAAAJ",
+     "url": "https://scholar.google.com/citations?user=5IHSXnkAAAAJ",
+     "name": "Petros Koutsouvelis",
+     "affiliations": "PhD Candidate, Maastricht University",
+     "name_match": true,
+     "shared_works": [
+      {
+       "work": "W7154321941",
+       "title": "Towards Brain MRI Foundation Models for the Clinic: Findings from the FOMO25 Challenge",
+       "url": "https://doi.org/10.48550/arxiv.2604.11679",
+       "coauthors": [
+        "leonard-nurnberg",
+        "leroy-volmer",
+        "petros-koutsouvelis"
+       ]
+      },
+      {
+       "work": "W7134240562",
+       "title": "Localizing the epileptogenic zone using deep learning and neuroimaging: A systematic review",
+       "url": "https://doi.org/10.1016/j.seizure.2026.03.002",
+       "coauthors": [
+        "andre-dekker",
+        "leroy-volmer",
+        "petros-koutsouvelis",
+        "ralph-brecheisen"
+       ]
+      },
+      {
+       "work": "W4416330735",
+       "title": "Large-Scale Modality-Invariant Foundation Models for Brain Mri Analysis: Application to Lesion Segmentation",
+       "url": "https://doi.org/10.1109/isbi61048.2026.11515369",
+       "coauthors": [
+        "leroy-volmer",
+        "petros-koutsouvelis"
+       ]
+      },
+      {
+       "work": "W7215768157",
+       "title": "Simulating the Radiological Appearance of Focal Cortical Dysplasia in MRI",
+       "url": "https://doi.org/10.64898/2026.10.01.26364470",
+       "coauthors": [
+        "andre-dekker",
+        "leroy-volmer",
+        "petros-koutsouvelis",
+        "ralph-brecheisen"
+       ]
+      }
+     ],
+     "known_coauthors": [],
+     "institution_match": true,
+     "accepted": true
+    }
+   ],
+   "errors": [],
+   "complete": true,
+   "orcid_decision": "accepted",
+   "scholar_decision": "accepted",
+   "status": "matched",
+   "identifiers": {
+    "orcid": "0009-0002-3020-0030",
+    "scholar_id": "5IHSXnkAAAAJ"
+   },
+   "verified_evidence": {
+    "scholar": {
+     "checked_at": "2026-10-21",
+     "id": "5IHSXnkAAAAJ",
+     "url": "https://scholar.google.com/citations?user=5IHSXnkAAAAJ",
+     "name": "Petros Koutsouvelis",
+     "affiliations": "PhD Candidate, Maastricht University",
+     "name_match": true,
+     "shared_works": [
+      {
+       "work": "W7154321941",
+       "title": "Towards Brain MRI Foundation Models for the Clinic: Findings from the FOMO25 Challenge",
+       "url": "https://doi.org/10.48550/arxiv.2604.11679",
+       "coauthors": [
+        "leonard-nurnberg",
+        "leroy-volmer",
+        "petros-koutsouvelis"
+       ]
+      },
+      {
+       "work": "W7134240562",
+       "title": "Localizing the epileptogenic zone using deep learning and neuroimaging: A systematic review",
+       "url": "https://doi.org/10.1016/j.seizure.2026.03.002",
+       "coauthors": [
+        "andre-dekker",
+        "leroy-volmer",
+        "petros-koutsouvelis",
+        "ralph-brecheisen"
+       ]
+      },
+      {
+       "work": "W4416330735",
+       "title": "Large-Scale Modality-Invariant Foundation Models for Brain Mri Analysis: Application to Lesion Segmentation",
+       "url": "https://doi.org/10.1109/isbi61048.2026.11515369",
+       "coauthors": [
+        "leroy-volmer",
+        "petros-koutsouvelis"
+       ]
+      },
+      {
+       "work": "W7215768157",
+       "title": "Simulating the Radiological Appearance of Focal Cortical Dysplasia in MRI",
+       "url": "https://doi.org/10.64898/2026.10.01.26364470",
+       "coauthors": [
+        "andre-dekker",
+        "leroy-volmer",
+        "petros-koutsouvelis",
+        "ralph-brecheisen"
+       ]
+      }
+     ],
+     "known_coauthors": [],
+     "institution_match": true,
+     "accepted": true
+    },
+    "orcid": {
+     "checked_at": "2026-10-21",
+     "id": "0009-0002-3020-0030",
+     "url": "https://orcid.org/0009-0002-3020-0030",
+     "name": "Petros Koutsouvelis",
+     "affiliations": [
+      "Maastricht University"
+     ],
+     "name_match": true,
+     "shared_works": [
+      {
+       "work": "W7215768157",
+       "title": "Simulating the Radiological Appearance of Focal Cortical Dysplasia in MRI",
+       "url": "https://doi.org/10.64898/2026.10.01.26364470",
+       "coauthors": [
+        "andre-dekker",
+        "leroy-volmer",
+        "petros-koutsouvelis",
+        "ralph-brecheisen"
+       ]
+      },
+      {
+       "work": "W7134240562",
+       "title": "Localizing the epileptogenic zone using deep learning and neuroimaging: A systematic review",
+       "url": "https://doi.org/10.1016/j.seizure.2026.03.002",
+       "coauthors": [
+        "andre-dekker",
+        "leroy-volmer",
+        "petros-koutsouvelis",
+        "ralph-brecheisen"
+       ]
+      }
+     ],
+     "linked_verified_scholar": false,
+     "institution_match": true,
+     "accepted": true
+    }
+   }
+  },
+  "rutger-van-mierlo": {
+   "name": "Rutger van Mierlo",
+   "checked_at": "2026-10-21",
+   "known_coauthors": [
+    "petros-kalendralis",
+    "andre-dekker",
+    "wenjie-liang",
+    "anne-lore-bynens",
+    "cecile-wolfs"
+   ],
+   "orcid_candidates": [],
+   "scholar_candidates": [],
+   "errors": [],
+   "complete": true,
+   "orcid_decision": "known",
+   "scholar_decision": "not_found",
+   "status": "no_new_confirmed_profile",
+   "identifiers": {
+    "orcid": "0009-0009-4156-5669",
+    "scholar_id": null
+   },
+   "verified_evidence": {}
+  },
+  "ekaterina-akhmad": {
+   "name": "Ekaterina Akhmad",
+   "checked_at": "2026-10-21",
+   "known_coauthors": [
+    "andre-dekker",
+    "johan-van-soest",
+    "simone-mingels",
+    "daniel-slob",
+    "anniek-van-hienen",
+    "madeline-therrien",
+    "rianne-fijten",
+    "hannah-piehl"
+   ],
+   "orcid_candidates": [],
+   "scholar_candidates": [],
+   "errors": [],
+   "complete": true,
+   "orcid_decision": "known",
+   "scholar_decision": "not_found",
+   "status": "no_new_confirmed_profile",
+   "identifiers": {
+    "orcid": "0000-0002-8235-9361",
+    "scholar_id": null
+   },
+   "verified_evidence": {
+    "orcid": {
+     "checked_at": "2026-10-21",
+     "id": "0000-0002-8235-9361",
+     "url": "https://orcid.org/0000-0002-8235-9361",
+     "name": "Ekaterina Akhmad",
+     "affiliations": [
+      "Moscow State Technical University N E Bauman"
+     ],
+     "name_match": true,
+     "shared_works": [
+      {
+       "work": "W7221757932",
+       "title": "AI Model Reporting Standards in Health Care: Systematic Review and Consolidation",
+       "url": "https://doi.org/10.2196/92329",
+       "coauthors": [
+        "andre-dekker",
+        "daniel-slob",
+        "ekaterina-akhmad",
+        "johan-van-soest",
+        "simone-mingels"
+       ]
+      },
+      {
+       "work": "W7118740404",
+       "title": "Understanding Clinicians’ Informational Needs for AI-Driven Clinical Decision Support Systems: Qualitative Interview Study",
+       "url": "https://doi.org/10.2196/85228",
+       "coauthors": [
+        "andre-dekker",
+        "anniek-van-hienen",
+        "ekaterina-akhmad",
+        "hannah-piehl",
+        "johan-van-soest",
+        "madeline-therrien",
+        "rianne-fijten",
+        "simone-mingels"
+       ]
+      },
+      {
+       "work": "W4414869539",
+       "title": "Understanding Clinicians’ Informational Needs for AI-driven Clinical Decision Support Systems: Qualitative Interview Study (Preprint)",
+       "url": "https://doi.org/10.2196/preprints.85228",
+       "coauthors": [
+        "andre-dekker",
+        "anniek-van-hienen",
+        "ekaterina-akhmad",
+        "hannah-piehl",
+        "johan-van-soest",
+        "madeline-therrien",
+        "rianne-fijten",
+        "simone-mingels"
+       ]
+      },
+      {
+       "work": "W4410448008",
+       "title": "What to Report? A Systematic Review of Medical AI Reporting Guidelines: Preliminary Results",
+       "url": "https://doi.org/10.3233/shti250351",
+       "coauthors": [
+        "andre-dekker",
+        "daniel-slob",
+        "ekaterina-akhmad",
+        "johan-van-soest"
+       ]
+      }
+     ],
+     "linked_verified_scholar": false,
+     "institution_match": false,
+     "accepted": true
+    }
+   }
+  },
+  "ivan-zhovannik": {
+   "name": "Ivan Zhovannik",
+   "checked_at": "2026-10-21",
+   "known_coauthors": [
+    "andre-dekker",
+    "anne-lore-bynens"
+   ],
+   "orcid_candidates": [
+    {
+     "id": "0000-0001-5649-6648",
+     "url": "https://orcid.org/0000-0001-5649-6648",
+     "name": "Ivan Zhovannik",
+     "affiliations": [],
+     "name_match": true,
+     "shared_works": [],
+     "linked_verified_scholar": false,
+     "institution_match": false,
+     "accepted": false
+    }
+   ],
+   "scholar_candidates": [],
+   "errors": [],
+   "complete": true,
+   "orcid_decision": "insufficient_evidence",
+   "scholar_decision": "not_found",
+   "status": "no_new_confirmed_profile",
+   "identifiers": {
+    "orcid": null,
+    "scholar_id": null
+   },
+   "verified_evidence": {}
+  },
+  "jikai-zhou": {
+   "name": "Jikai Zhou",
+   "checked_at": "2026-10-21",
+   "known_coauthors": [
+    "petros-kalendralis",
+    "wenjie-liang",
+    "andre-dekker",
+    "xuanhe-hou",
+    "cecile-wolfs"
+   ],
+   "orcid_candidates": [],
+   "scholar_candidates": [
+    {
+     "id": "909UbzMAAAAJ",
+     "url": "https://scholar.google.com/citations?user=909UbzMAAAAJ",
+     "name": "Zikai Zhou",
+     "affiliations": "University of Southern Mississippi",
+     "name_match": false,
+     "shared_works": [],
+     "known_coauthors": [],
+     "institution_match": false,
+     "accepted": false
+    }
+   ],
+   "errors": [],
+   "complete": true,
+   "orcid_decision": "known",
+   "scholar_decision": "insufficient_evidence",
+   "status": "no_new_confirmed_profile",
+   "identifiers": {
+    "orcid": "0009-0004-8675-4635",
+    "scholar_id": null
+   },
+   "verified_evidence": {
+    "orcid": {
+     "checked_at": "2026-10-21",
+     "id": "0009-0004-8675-4635",
+     "url": "https://orcid.org/0009-0004-8675-4635",
+     "name": "Jikai Zhou",
+     "affiliations": [
+      "Maastricht University"
+     ],
+     "name_match": true,
+     "shared_works": [
+      {
+       "work": "W7123926908",
+       "title": "Predicting Overall Survival of NSCLC Patients with Clinical, Radiomics and Deep Learning Features",
+       "url": "https://doi.org/10.1007/s10278-025-01828-5",
+       "coauthors": [
+        "andre-dekker",
+        "jikai-zhou",
+        "petros-kalendralis",
+        "wenjie-liang"
+       ]
+      },
+      {
+       "work": "W4411338103",
+       "title": "Predicting overall survival of NSCLC patients with clinical, radiomics and deep learning features",
+       "url": "https://doi.org/10.1101/2025.06.13.25329594",
+       "coauthors": [
+        "andre-dekker",
+        "jikai-zhou",
+        "petros-kalendralis",
+        "wenjie-liang"
+       ]
+      }
+     ],
+     "linked_verified_scholar": false,
+     "institution_match": true,
+     "accepted": true
+    }
+   }
+  },
+  "anne-lore-bynens": {
+   "name": "Anne-Lore Bynens",
+   "checked_at": "2026-10-21",
+   "known_coauthors": [
+    "rutger-van-mierlo",
+    "andre-dekker",
+    "petros-kalendralis",
+    "wenjie-liang",
+    "cecile-wolfs",
+    "ivan-zhovannik"
+   ],
+   "orcid_candidates": [],
+   "scholar_candidates": [],
+   "errors": [],
+   "complete": true,
+   "orcid_decision": "not_found",
+   "scholar_decision": "not_found",
+   "status": "no_new_confirmed_profile",
+   "identifiers": {
+    "orcid": null,
+    "scholar_id": null
+   },
+   "verified_evidence": {}
+  },
+  "balu-krishna-sasidharan": {
+   "name": "Balu Krishna Sasidharan",
+   "checked_at": "2026-10-21",
+   "known_coauthors": [
+    "andre-dekker",
+    "leonard-wee",
+    "hannah-mary-thomas",
+    "rianne-fijten"
+   ],
+   "orcid_candidates": [
+    {
+     "id": "0000-0002-2814-161X",
+     "url": "https://orcid.org/0000-0002-2814-161X",
+     "name": "Balu Krishna Sasidharan",
+     "affiliations": [
+      "Christian Medical College Vellore Association",
+      "Christian Medical College & Hospital"
+     ],
+     "name_match": true,
+     "shared_works": [],
+     "linked_verified_scholar": false,
+     "institution_match": false,
+     "accepted": false
+    }
+   ],
+   "scholar_candidates": [],
+   "errors": [],
+   "complete": true,
+   "orcid_decision": "insufficient_evidence",
+   "scholar_decision": "not_found",
+   "status": "no_new_confirmed_profile",
+   "identifiers": {
+    "orcid": null,
+    "scholar_id": null
+   },
+   "verified_evidence": {}
+  },
+  "hannah-piehl": {
+   "name": "Hannah Piehl",
+   "checked_at": "2026-10-21",
+   "known_coauthors": [
+    "rianne-fijten",
+    "anniek-van-hienen",
+    "johan-van-soest",
+    "madeline-therrien",
+    "andre-dekker",
+    "simone-mingels",
+    "ekaterina-akhmad"
+   ],
+   "orcid_candidates": [],
+   "scholar_candidates": [],
+   "errors": [],
+   "complete": true,
+   "orcid_decision": "known",
+   "scholar_decision": "not_found",
+   "status": "no_new_confirmed_profile",
+   "identifiers": {
+    "orcid": "0009-0005-1982-3909",
+    "scholar_id": null
+   },
+   "verified_evidence": {
+    "orcid": {
+     "checked_at": "2026-10-21",
+     "id": "0009-0005-1982-3909",
+     "url": "https://orcid.org/0009-0005-1982-3909",
+     "name": "Hannah Piehl",
+     "affiliations": [
+      "Goethe University Frankfurt",
+      "University of Giessen",
+      "Maastricht University",
+      "Maastricht University",
+      "University of Kassel"
+     ],
+     "name_match": true,
+     "shared_works": [
+      {
+       "work": "W7140737867",
+       "title": "Between map and maze: reframing trust in healthcare AI",
+       "url": "https://doi.org/10.1007/s00146-026-02997-9",
+       "coauthors": [
+        "hannah-piehl",
+        "rianne-fijten"
+       ]
+      },
+      {
+       "work": "W7118740404",
+       "title": "Understanding Clinicians’ Informational Needs for AI-Driven Clinical Decision Support Systems: Qualitative Interview Study",
+       "url": "https://doi.org/10.2196/85228",
+       "coauthors": [
+        "andre-dekker",
+        "anniek-van-hienen",
+        "ekaterina-akhmad",
+        "hannah-piehl",
+        "johan-van-soest",
+        "madeline-therrien",
+        "rianne-fijten",
+        "simone-mingels"
+       ]
+      }
+     ],
+     "linked_verified_scholar": false,
+     "institution_match": true,
+     "accepted": true
+    }
+   }
+  },
+  "marine-jacquemin": {
+   "name": "Marine Jacquemin",
+   "checked_at": "2026-10-21",
+   "known_coauthors": [
+    "andre-dekker",
+    "leonard-wee",
+    "joshi-hogenboom",
+    "ananya-choudhury",
+    "rianne-fijten",
+    "johan-van-soest"
+   ],
+   "orcid_candidates": [],
+   "scholar_candidates": [],
+   "errors": [],
+   "complete": true,
+   "orcid_decision": "known",
+   "scholar_decision": "not_found",
+   "status": "no_new_confirmed_profile",
+   "identifiers": {
+    "orcid": "0009-0006-1221-7022",
+    "scholar_id": null
+   },
+   "verified_evidence": {
+    "orcid": {
+     "checked_at": "2026-10-21",
+     "id": "0009-0006-1221-7022",
+     "url": "https://orcid.org/0009-0006-1221-7022",
+     "name": "Marine Jacquemin",
+     "affiliations": [
+      "Maastricht University",
+      "Maastricht University",
+      "Maastricht University"
+     ],
+     "name_match": true,
+     "shared_works": [
+      {
+       "work": "W7143276618",
+       "title": "Operationalizing ethical review protocols for health data access: a scoping review of tools and frameworks (Preprint)",
+       "url": "https://doi.org/10.2196/preprints.96200",
+       "coauthors": [
+        "andre-dekker",
+        "leonard-wee",
+        "marine-jacquemin"
+       ]
+      },
+      {
+       "work": "W4411465141",
+       "title": "A critique of current approaches to privacy in machine learning",
+       "url": "https://doi.org/10.1007/s10676-025-09843-4",
+       "coauthors": [
+        "andre-dekker",
+        "johan-van-soest",
+        "marine-jacquemin"
+       ]
+      }
+     ],
+     "linked_verified_scholar": false,
+     "institution_match": true,
+     "accepted": true
+    }
+   }
+  },
+  "daniel-slob": {
+   "name": "Daniel Slob",
+   "checked_at": "2026-10-21",
+   "known_coauthors": [
+    "andre-dekker",
+    "johan-van-soest",
+    "ekaterina-akhmad",
+    "simone-mingels"
+   ],
+   "orcid_candidates": [],
+   "scholar_candidates": [
+    {
+     "id": "JKOhEfcAAAAJ",
+     "url": "https://scholar.google.com/citations?user=JKOhEfcAAAAJ",
+     "name": "Andre Dekker",
+     "affiliations": "Professor of Clinical Data Science, MAASTRO Clinic, Maastricht University, GROW, Maastricht UMC+",
+     "name_match": false,
+     "shared_works": [],
+     "known_coauthors": [
+      "johan-van-soest",
+      "leonard-wee",
+      "petros-kalendralis",
+      "rianne-fijten"
+     ],
+     "institution_match": true,
+     "accepted": false
+    }
+   ],
+   "errors": [],
+   "complete": true,
+   "orcid_decision": "known",
+   "scholar_decision": "insufficient_evidence",
+   "status": "no_new_confirmed_profile",
+   "identifiers": {
+    "orcid": "0009-0002-2084-5660",
+    "scholar_id": null
+   },
+   "verified_evidence": {
+    "orcid": {
+     "checked_at": "2026-10-21",
+     "id": "0009-0002-2084-5660",
+     "url": "https://orcid.org/0009-0002-2084-5660",
+     "name": "Daniel Slob",
+     "affiliations": [
+      "Maastricht University"
+     ],
+     "name_match": true,
+     "shared_works": [
+      {
+       "work": "W7221757932",
+       "title": "AI Model Reporting Standards in Health Care: Systematic Review and Consolidation",
+       "url": "https://doi.org/10.2196/92329",
+       "coauthors": [
+        "andre-dekker",
+        "daniel-slob",
+        "ekaterina-akhmad",
+        "johan-van-soest",
+        "simone-mingels"
+       ]
+      },
+      {
+       "work": "W4410448008",
+       "title": "What to Report? A Systematic Review of Medical AI Reporting Guidelines: Preliminary Results",
+       "url": "https://doi.org/10.3233/shti250351",
+       "coauthors": [
+        "andre-dekker",
+        "daniel-slob",
+        "ekaterina-akhmad",
+        "johan-van-soest"
+       ]
+      }
+     ],
+     "linked_verified_scholar": false,
+     "institution_match": true,
+     "accepted": true
+    }
+   }
+  },
+  "jiaxu-zhang": {
+   "name": "Jiaxu Zhang",
+   "checked_at": "2026-10-21",
+   "known_coauthors": [
+    "sander-puts",
+    "yomi-okegunna",
+    "rianne-fijten",
+    "andre-dekker"
+   ],
+   "orcid_candidates": [],
+   "scholar_candidates": [
+    {
+     "id": "rr56j-EAAAAJ",
+     "url": "https://scholar.google.com/citations?user=rr56j-EAAAAJ",
+     "name": "Jia Zhang",
+     "affiliations": "Zhongguancun Laboratory",
+     "name_match": false,
+     "shared_works": [],
+     "known_coauthors": [],
+     "institution_match": false,
+     "accepted": false
+    },
+    {
+     "id": "DJZJ8MAAAAAJ",
+     "url": "https://scholar.google.com/citations?user=DJZJ8MAAAAAJ",
+     "name": "Jia Zhang",
+     "affiliations": "PhD, ETH Zurich",
+     "name_match": false,
+     "shared_works": [],
+     "known_coauthors": [],
+     "institution_match": false,
+     "accepted": false
+    }
+   ],
+   "errors": [],
+   "complete": true,
+   "orcid_decision": "not_found",
+   "scholar_decision": "insufficient_evidence",
+   "status": "no_new_confirmed_profile",
+   "identifiers": {
+    "orcid": null,
+    "scholar_id": null
+   },
+   "verified_evidence": {}
+  },
+  "meng-zhou": {
+   "name": "Meng Zhou",
+   "checked_at": "2026-10-21",
+   "known_coauthors": [
+    "andre-dekker",
+    "leonard-wee",
+    "minghua-li"
+   ],
+   "orcid_candidates": [],
+   "scholar_candidates": [],
+   "errors": [],
+   "complete": true,
+   "orcid_decision": "known",
+   "scholar_decision": "not_found",
+   "status": "no_new_confirmed_profile",
+   "identifiers": {
+    "orcid": "0009-0009-9172-9115",
+    "scholar_id": null
+   },
+   "verified_evidence": {
+    "orcid": {
+     "checked_at": "2026-10-21",
+     "id": "0009-0009-9172-9115",
+     "url": "https://orcid.org/0009-0009-9172-9115",
+     "name": "Meng Zhou",
+     "affiliations": [
+      "Maastricht University",
+      "Tianjin Medical University",
+      "Maastricht University"
+     ],
+     "name_match": true,
+     "shared_works": [
+      {
+       "work": "W4415710214",
+       "title": "Malignant pleural mesothelioma classification and survival prediction with CT imaging using ResNet",
+       "url": "https://doi.org/10.1007/s00330-025-12094-y",
+       "coauthors": [
+        "andre-dekker",
+        "leonard-wee",
+        "meng-zhou",
+        "minghua-li"
+       ]
+      },
+      {
+       "work": "W4404373392",
+       "title": "Improved prognostication of overall survival after radiotherapy in lung cancer patients by an interpretable machine learning model integrating lung and tumor radiomics and clinical parameters",
+       "url": "https://doi.org/10.1007/s11547-024-01919-3",
+       "coauthors": [
+        "andre-dekker",
+        "leonard-wee",
+        "meng-zhou"
+       ]
+      }
+     ],
+     "linked_verified_scholar": false,
+     "institution_match": true,
+     "accepted": true
+    }
+   }
+  },
+  "minghua-li": {
+   "name": "Minghua Li",
+   "checked_at": "2026-10-21",
+   "known_coauthors": [
+    "andre-dekker",
+    "leonard-wee",
+    "meng-zhou"
+   ],
+   "orcid_candidates": [],
+   "scholar_candidates": [],
+   "errors": [],
+   "complete": true,
+   "orcid_decision": "known",
+   "scholar_decision": "not_found",
+   "status": "no_new_confirmed_profile",
+   "identifiers": {
+    "orcid": "0000-0001-9028-418X",
+    "scholar_id": null
+   },
+   "verified_evidence": {
+    "orcid": {
+     "checked_at": "2026-10-21",
+     "id": "0000-0001-9028-418X",
+     "url": "https://orcid.org/0000-0001-9028-418X",
+     "name": "Minghua Li",
+     "affiliations": [
+      "Maastricht University",
+      "Maastro Clinic"
+     ],
+     "name_match": true,
+     "shared_works": [
+      {
+       "work": "W4415710214",
+       "title": "Malignant pleural mesothelioma classification and survival prediction with CT imaging using ResNet",
+       "url": "https://doi.org/10.1007/s00330-025-12094-y",
+       "coauthors": [
+        "andre-dekker",
+        "leonard-wee",
+        "meng-zhou",
+        "minghua-li"
+       ]
+      }
+     ],
+     "linked_verified_scholar": false,
+     "institution_match": true,
+     "accepted": true
+    }
+   }
+  },
+  "xuanhe-hou": {
+   "name": "Xuanhe Hou",
+   "checked_at": "2026-10-21",
+   "known_coauthors": [
+    "jikai-zhou",
+    "andre-dekker",
+    "petros-kalendralis",
+    "wenjie-liang",
+    "cecile-wolfs"
+   ],
+   "orcid_candidates": [
+    {
+     "id": "0009-0002-0353-0659",
+     "url": "https://orcid.org/0009-0002-0353-0659",
+     "name": "Xuanhe Hou",
+     "affiliations": [
+      "Maastricht University"
+     ],
+     "name_match": true,
+     "shared_works": [],
+     "linked_verified_scholar": false,
+     "institution_match": true,
+     "accepted": false
+    }
+   ],
+   "scholar_candidates": [
+    {
+     "id": "cbjhowUAAAAJ",
+     "url": "https://scholar.google.com/citations?user=cbjhowUAAAAJ",
+     "name": "Xuan Hou",
+     "affiliations": "Hainan University",
+     "name_match": false,
+     "shared_works": [],
+     "known_coauthors": [],
+     "institution_match": false,
+     "accepted": false
+    }
+   ],
+   "errors": [],
+   "complete": true,
+   "orcid_decision": "insufficient_evidence",
+   "scholar_decision": "insufficient_evidence",
+   "status": "no_new_confirmed_profile",
+   "identifiers": {
+    "orcid": null,
+    "scholar_id": null
+   },
+   "verified_evidence": {}
+  },
+  "en-hu": {
+   "name": "En Hu",
+   "checked_at": "2026-10-21",
+   "known_coauthors": [
+    "andre-dekker",
+    "leonard-wee",
+    "wenjie-liang"
+   ],
+   "orcid_candidates": [],
+   "scholar_candidates": [
+    {
+     "id": "_TH_cIsAAAAJ",
+     "url": "https://scholar.google.com/citations?user=_TH_cIsAAAAJ",
+     "name": "Enwen Hu",
+     "affiliations": "Beijing university of Posts and Telecommunications",
+     "name_match": false,
+     "shared_works": [],
+     "known_coauthors": [],
+     "institution_match": false,
+     "accepted": false
+    }
+   ],
+   "errors": [],
+   "complete": true,
+   "orcid_decision": "known",
+   "scholar_decision": "insufficient_evidence",
+   "status": "no_new_confirmed_profile",
+   "identifiers": {
+    "orcid": "0009-0004-7193-7113",
+    "scholar_id": null
+   },
+   "verified_evidence": {
+    "orcid": {
+     "checked_at": "2026-10-21",
+     "id": "0009-0004-7193-7113",
+     "url": "https://orcid.org/0009-0004-7193-7113",
+     "name": "En Hu",
+     "affiliations": [
+      "Maastricht University"
+     ],
+     "name_match": true,
+     "shared_works": [
+      {
+       "work": "W4416897111",
+       "title": "CCR5 expression and conformational stability as potential cooperative modulators of immune phenotypes and therapy response in breast cancer",
+       "url": "https://doi.org/10.1007/s12672-025-04189-1",
+       "coauthors": [
+        "andre-dekker",
+        "en-hu",
+        "leonard-wee",
+        "wenjie-liang"
+       ]
+      }
+     ],
+     "linked_verified_scholar": false,
+     "institution_match": true,
+     "accepted": true
+    }
+   }
+  },
+  "shreya-anand": {
+   "name": "Shreya Anand",
+   "checked_at": "2026-10-21",
+   "known_coauthors": [
+    "andre-dekker",
+    "leonard-wee"
+   ],
+   "orcid_candidates": [],
+   "scholar_candidates": [
+    {
+     "id": "G-m3P40AAAAJ",
+     "url": "https://scholar.google.com/citations?user=G-m3P40AAAAJ",
+     "name": "Shreya Anand",
+     "affiliations": "Birla Institute of Technology Mesra",
+     "name_match": true,
+     "shared_works": [],
+     "known_coauthors": [],
+     "institution_match": false,
+     "accepted": false
+    }
+   ],
+   "errors": [],
+   "complete": true,
+   "orcid_decision": "not_found",
+   "scholar_decision": "insufficient_evidence",
+   "status": "no_new_confirmed_profile",
+   "identifiers": {
+    "orcid": null,
+    "scholar_id": null
+   },
+   "verified_evidence": {}
+  },
+  "thijs-ackermans": {
+   "name": "Thijs Ackermans",
+   "checked_at": "2026-10-21",
+   "known_coauthors": [
+    "andre-dekker"
+   ],
+   "orcid_candidates": [
+    {
+     "id": "0000-0002-6977-1001",
+     "url": "https://orcid.org/0000-0002-6977-1001",
+     "name": "Thijs Ackermans",
+     "affiliations": [],
+     "name_match": true,
+     "shared_works": [],
+     "linked_verified_scholar": false,
+     "institution_match": false,
+     "accepted": false
+    }
+   ],
+   "scholar_candidates": [
+    {
+     "id": "tUsIXNIAAAAJ",
+     "url": "https://scholar.google.com/citations?user=tUsIXNIAAAAJ",
+     "name": "Thijs Maas",
+     "affiliations": "CEO @ Onramper. Teacher of MBA course on Ethics and Regulation of Digital Innovation at Open",
+     "name_match": false,
+     "shared_works": [],
+     "known_coauthors": [],
+     "institution_match": false,
+     "accepted": false
+    }
+   ],
+   "errors": [],
+   "complete": true,
+   "orcid_decision": "insufficient_evidence",
+   "scholar_decision": "insufficient_evidence",
+   "status": "no_new_confirmed_profile",
+   "identifiers": {
+    "orcid": null,
+    "scholar_id": null
+   },
+   "verified_evidence": {}
+  },
+  "tim-hendriks": {
+   "name": "Tim Hendriks",
+   "checked_at": "2026-10-21",
+   "known_coauthors": [
+    "johan-van-soest",
+    "alessio-romita",
+    "ananya-choudhury",
+    "andre-dekker",
+    "leonard-wee"
+   ],
+   "orcid_candidates": [],
+   "scholar_candidates": [],
+   "errors": [],
+   "complete": true,
+   "orcid_decision": "known",
+   "scholar_decision": "not_found",
+   "status": "no_new_confirmed_profile",
+   "identifiers": {
+    "orcid": "0000-0003-2922-2953",
+    "scholar_id": null
+   },
+   "verified_evidence": {
+    "orcid": {
+     "checked_at": "2026-10-21",
+     "id": "0000-0003-2922-2953",
+     "url": "https://orcid.org/0000-0003-2922-2953",
+     "name": "Tim Hendriks",
+     "affiliations": [
+      "Maastricht University",
+      "Maastricht University"
+     ],
+     "name_match": true,
+     "shared_works": [
+      {
+       "work": "W7161945525",
+       "title": "LinkedDicom: Indexing DICOM Metadata Using Semantic Web Technologies",
+       "url": "https://doi.org/10.3233/shti260404",
+       "coauthors": [
+        "alessio-romita",
+        "ananya-choudhury",
+        "andre-dekker",
+        "johan-van-soest",
+        "leonard-wee",
+        "tim-hendriks"
+       ]
+      }
+     ],
+     "linked_verified_scholar": false,
+     "institution_match": true,
+     "accepted": true
+    }
+   }
+  },
+  "ali-al-zein": {
+   "name": "Ali Al Zein",
+   "checked_at": "2026-10-21",
+   "known_coauthors": [],
+   "orcid_candidates": [
+    {
+     "id": "0000-0003-1003-3626",
+     "url": "https://orcid.org/0000-0003-1003-3626",
+     "name": "ali zein",
+     "affiliations": [],
+     "name_match": true,
+     "shared_works": [],
+     "linked_verified_scholar": false,
+     "institution_match": false,
+     "accepted": false
+    },
+    {
+     "id": "0000-0003-3674-9526",
+     "url": "https://orcid.org/0000-0003-3674-9526",
+     "name": "Ali Zein",
+     "affiliations": [],
+     "name_match": true,
+     "shared_works": [],
+     "linked_verified_scholar": false,
+     "institution_match": false,
+     "accepted": false
+    },
+    {
+     "id": "0000-0003-1725-6865",
+     "url": "https://orcid.org/0000-0003-1725-6865",
+     "name": "Ali Zein",
+     "affiliations": [
+      "Moscow Power Engineering Institute"
+     ],
+     "name_match": true,
+     "shared_works": [],
+     "linked_verified_scholar": false,
+     "institution_match": false,
+     "accepted": false
+    },
+    {
+     "id": "0000-0003-1595-7270",
+     "url": "https://orcid.org/0000-0003-1595-7270",
+     "name": "Ali Zein",
+     "affiliations": [],
+     "name_match": true,
+     "shared_works": [],
+     "linked_verified_scholar": false,
+     "institution_match": false,
+     "accepted": false
+    },
+    {
+     "id": "0009-0009-0770-5680",
+     "url": "https://orcid.org/0009-0009-0770-5680",
+     "name": "Ali Al Zein",
+     "affiliations": [
+      "University of Michigan–Dearborn"
+     ],
+     "name_match": true,
+     "shared_works": [],
+     "linked_verified_scholar": false,
+     "institution_match": false,
+     "accepted": false
+    }
+   ],
+   "scholar_candidates": [],
+   "errors": [
+    "More than five matching ORCID records require review"
+   ],
+   "complete": false,
+   "orcid_decision": "deferred",
+   "scholar_decision": "not_found",
+   "status": "no_new_confirmed_profile",
+   "identifiers": {
+    "orcid": null,
+    "scholar_id": null
+   },
+   "verified_evidence": {}
+  },
+  "ali-zaila": {
+   "name": "Ali Zaila",
+   "checked_at": "2026-10-21",
+   "known_coauthors": [],
+   "orcid_candidates": [
+    {
+     "id": "0000-0002-2480-6311",
+     "url": "https://orcid.org/0000-0002-2480-6311",
+     "name": "Ali Zaila",
+     "affiliations": [
+      "Queensland University of Technology",
+      "King Faisal Specialist Hospital & Research Centre"
+     ],
+     "name_match": true,
+     "shared_works": [],
+     "linked_verified_scholar": false,
+     "institution_match": false,
+     "accepted": false
+    }
+   ],
+   "scholar_candidates": [
+    {
+     "id": "ePAHC1QAAAAJ",
+     "url": "https://scholar.google.com/citations?user=ePAHC1QAAAAJ",
+     "name": "Mohammed Abdelsamea",
+     "affiliations": "Senior Lecturer, Exeter University, UK",
+     "name_match": false,
+     "shared_works": [],
+     "known_coauthors": [],
+     "coauthor_profiles": [],
+     "institution_match": false,
+     "accepted": false
+    },
+    {
+     "id": "ZmHt6K4AAAAJ",
+     "url": "https://scholar.google.com/citations?user=ZmHt6K4AAAAJ",
+     "name": "Kipton Barros",
+     "affiliations": "Los Alamos National Laboratory",
+     "name_match": false,
+     "shared_works": [],
+     "known_coauthors": [],
+     "coauthor_profiles": [],
+     "institution_match": false,
+     "accepted": false
+    },
+    {
+     "id": "LFFk3rkAAAAJ",
+     "url": "https://scholar.google.com/citations?user=LFFk3rkAAAAJ",
+     "name": "O. Anatole von Lilienfeld",
+     "affiliations": "Clark & CIFAR AI chair at University of Toronto/Vector Institute/Chief Editor PRX Intelligence",
+     "name_match": false,
+     "shared_works": [],
+     "known_coauthors": [],
+     "coauthor_profiles": [],
+     "institution_match": false,
+     "accepted": false
+    },
+    {
+     "id": "KtSR8_0AAAAJ",
+     "url": "https://scholar.google.com/citations?user=KtSR8_0AAAAJ",
+     "name": "Jonathan Kelly",
+     "affiliations": "Professor, Institute for Aerospace Studies, University of Toronto",
+     "name_match": false,
+     "shared_works": [],
+     "known_coauthors": [],
+     "coauthor_profiles": [],
+     "institution_match": false,
+     "accepted": false
+    },
+    {
+     "id": "zvXrKpUAAAAJ",
+     "url": "https://scholar.google.com/citations?user=zvXrKpUAAAAJ",
+     "name": "Israel Borokini",
+     "affiliations": "Assistant Professor, Department of Ecology, Montana State University, Bozeman",
+     "name_match": false,
+     "shared_works": [],
+     "known_coauthors": [],
+     "coauthor_profiles": [],
+     "institution_match": false,
+     "accepted": false
+    }
+   ],
+   "errors": [
+    "More than five matching Scholar profiles require review"
+   ],
+   "complete": false,
+   "orcid_decision": "insufficient_evidence",
+   "scholar_decision": "deferred",
+   "status": "no_new_confirmed_profile",
+   "identifiers": {
+    "orcid": null,
+    "scholar_id": null
+   },
+   "verified_evidence": {}
+  },
+  "andrea-pradas-agujetas": {
+   "name": "Andrea Pradas Agujetas",
+   "checked_at": "2026-10-21",
+   "known_coauthors": [],
+   "orcid_candidates": [],
+   "scholar_candidates": [],
+   "errors": [],
+   "complete": true,
+   "orcid_decision": "not_found",
+   "scholar_decision": "not_found",
+   "status": "no_new_confirmed_profile",
+   "identifiers": {
+    "orcid": null,
+    "scholar_id": null
+   },
+   "verified_evidence": {}
+  },
+  "ayesha-qayyum": {
+   "name": "Ayesha Qayyum",
+   "checked_at": "2026-10-21",
+   "known_coauthors": [],
+   "orcid_candidates": [
+    {
+     "id": "0009-0007-1914-5161",
+     "url": "https://orcid.org/0009-0007-1914-5161",
+     "name": "Ayesha Qayyum",
+     "affiliations": [],
+     "name_match": true,
+     "shared_works": [],
+     "linked_verified_scholar": false,
+     "institution_match": false,
+     "accepted": false
+    },
+    {
+     "id": "0009-0000-8257-7185",
+     "url": "https://orcid.org/0009-0000-8257-7185",
+     "name": "Ayesha Qayyum",
+     "affiliations": [],
+     "name_match": true,
+     "shared_works": [],
+     "linked_verified_scholar": false,
+     "institution_match": false,
+     "accepted": false
+    },
+    {
+     "id": "0009-0005-3020-3022",
+     "url": "https://orcid.org/0009-0005-3020-3022",
+     "name": "Ayesha Qayyum",
+     "affiliations": [],
+     "name_match": true,
+     "shared_works": [],
+     "linked_verified_scholar": false,
+     "institution_match": false,
+     "accepted": false
+    },
+    {
+     "id": "0009-0003-6720-6839",
+     "url": "https://orcid.org/0009-0003-6720-6839",
+     "name": "Ayesha Qayyum",
+     "affiliations": [],
+     "name_match": true,
+     "shared_works": [],
+     "linked_verified_scholar": false,
+     "institution_match": false,
+     "accepted": false
+    },
+    {
+     "id": "0009-0002-3321-8623",
+     "url": "https://orcid.org/0009-0002-3321-8623",
+     "name": "Ayesha Qayyum",
+     "affiliations": [
+      "King Edward Medical University"
+     ],
+     "name_match": true,
+     "shared_works": [],
+     "linked_verified_scholar": false,
+     "institution_match": false,
+     "accepted": false
+    }
+   ],
+   "scholar_candidates": [],
+   "errors": [
+    "More than five matching ORCID records require review"
+   ],
+   "complete": false,
+   "orcid_decision": "deferred",
+   "scholar_decision": "not_found",
+   "status": "no_new_confirmed_profile",
+   "identifiers": {
+    "orcid": null,
+    "scholar_id": null
+   },
+   "verified_evidence": {}
+  },
+  "carlos-santiago-rios": {
+   "name": "Carlos Santiago Rios",
+   "checked_at": "2026-10-21",
+   "known_coauthors": [],
+   "orcid_candidates": [
+    {
+     "id": "0000-0002-8017-2632",
+     "url": "https://orcid.org/0000-0002-8017-2632",
+     "name": "Carlos Rios",
+     "affiliations": [],
+     "name_match": true,
+     "shared_works": [],
+     "linked_verified_scholar": false,
+     "institution_match": false,
+     "accepted": false
+    },
+    {
+     "id": "0000-0002-6443-0865",
+     "url": "https://orcid.org/0000-0002-6443-0865",
+     "name": "CARLOS RIOS",
+     "affiliations": [],
+     "name_match": true,
+     "shared_works": [],
+     "linked_verified_scholar": false,
+     "institution_match": false,
+     "accepted": false
+    },
+    {
+     "id": "0000-0003-2631-2267",
+     "url": "https://orcid.org/0000-0003-2631-2267",
+     "name": "carlos rios",
+     "affiliations": [],
+     "name_match": true,
+     "shared_works": [],
+     "linked_verified_scholar": false,
+     "institution_match": false,
+     "accepted": false
+    },
+    {
+     "id": "0000-0002-0855-4484",
+     "url": "https://orcid.org/0000-0002-0855-4484",
+     "name": "Carlos Rios",
+     "affiliations": [],
+     "name_match": true,
+     "shared_works": [],
+     "linked_verified_scholar": false,
+     "institution_match": false,
+     "accepted": false
+    },
+    {
+     "id": "0000-0003-3676-4072",
+     "url": "https://orcid.org/0000-0003-3676-4072",
+     "name": "CARLOS RIOS",
+     "affiliations": [],
+     "name_match": true,
+     "shared_works": [],
+     "linked_verified_scholar": false,
+     "institution_match": false,
+     "accepted": false
+    }
+   ],
+   "scholar_candidates": [],
+   "errors": [
+    "More than five matching ORCID records require review"
+   ],
+   "complete": false,
+   "orcid_decision": "deferred",
+   "scholar_decision": "not_found",
+   "status": "no_new_confirmed_profile",
+   "identifiers": {
+    "orcid": null,
+    "scholar_id": null
+   },
+   "verified_evidence": {}
+  },
+  "ekatarina-kondrateva": {
+   "name": "Ekatarina Kondrateva",
+   "checked_at": "2026-10-21",
+   "known_coauthors": [],
+   "orcid_candidates": [],
+   "scholar_candidates": [],
+   "errors": [],
+   "complete": true,
+   "orcid_decision": "not_found",
+   "scholar_decision": "not_found",
+   "status": "no_new_confirmed_profile",
+   "identifiers": {
+    "orcid": null,
+    "scholar_id": null
+   },
+   "verified_evidence": {}
+  },
+  "elif-sevim": {
+   "name": "Elif Sevim",
+   "checked_at": "2026-10-21",
+   "known_coauthors": [],
+   "orcid_candidates": [
+    {
+     "id": "0000-0001-5376-765X",
+     "url": "https://orcid.org/0000-0001-5376-765X",
+     "name": "Elif Sevim",
+     "affiliations": [],
+     "name_match": true,
+     "shared_works": [],
+     "linked_verified_scholar": false,
+     "institution_match": false,
+     "accepted": false
+    },
+    {
+     "id": "0009-0005-6572-029X",
+     "url": "https://orcid.org/0009-0005-6572-029X",
+     "name": "Elif Sevim",
+     "affiliations": [
+      "T.C. Millî Eğitim Bakanlığı"
+     ],
+     "name_match": true,
+     "shared_works": [],
+     "linked_verified_scholar": false,
+     "institution_match": false,
+     "accepted": false
+    },
+    {
+     "id": "0009-0007-0465-7842",
+     "url": "https://orcid.org/0009-0007-0465-7842",
+     "name": "ELİF SEVİM",
+     "affiliations": [],
+     "name_match": true,
+     "shared_works": [],
+     "linked_verified_scholar": false,
+     "institution_match": false,
+     "accepted": false
+    },
+    {
+     "id": "0000-0002-6455-1333",
+     "url": "https://orcid.org/0000-0002-6455-1333",
+     "name": "Elif Sevim",
+     "affiliations": [
+      "Ahi Evran Üniversitesi"
+     ],
+     "name_match": true,
+     "shared_works": [],
+     "linked_verified_scholar": false,
+     "institution_match": false,
+     "accepted": false
+    },
+    {
+     "id": "0009-0004-5601-2729",
+     "url": "https://orcid.org/0009-0004-5601-2729",
+     "name": "ELİF SEVİM",
+     "affiliations": [
+      "Konya Şehir Hastanesi"
+     ],
+     "name_match": true,
+     "shared_works": [],
+     "linked_verified_scholar": false,
+     "institution_match": false,
+     "accepted": false
+    }
+   ],
+   "scholar_candidates": [],
+   "errors": [
+    "More than five matching ORCID records require review"
+   ],
+   "complete": false,
+   "orcid_decision": "deferred",
+   "scholar_decision": "not_found",
+   "status": "no_new_confirmed_profile",
+   "identifiers": {
+    "orcid": null,
+    "scholar_id": null
+   },
+   "verified_evidence": {}
+  },
+  "farshad-jafarpour": {
+   "name": "Farshad Jafarpour",
+   "checked_at": "2026-10-21",
+   "known_coauthors": [],
+   "orcid_candidates": [
+    {
+     "id": "0000-0001-8420-9829",
+     "url": "https://orcid.org/0000-0001-8420-9829",
+     "name": "farshad jafarpour",
+     "affiliations": [],
+     "name_match": true,
+     "shared_works": [],
+     "linked_verified_scholar": false,
+     "institution_match": false,
+     "accepted": false
+    },
+    {
+     "id": "0009-0009-8295-9955",
+     "url": "https://orcid.org/0009-0009-8295-9955",
+     "name": "Farshad Jafarpour",
+     "affiliations": [
+      "University of Padua",
+      "Magna Graecia University",
+      "Maastricht University",
+      "University of Padova",
+      "Karlsruhe Institute of Technology"
+     ],
+     "name_match": true,
+     "shared_works": [],
+     "linked_verified_scholar": false,
+     "institution_match": true,
+     "accepted": false
+    }
+   ],
+   "scholar_candidates": [],
+   "errors": [],
+   "complete": true,
+   "orcid_decision": "insufficient_evidence",
+   "scholar_decision": "not_found",
+   "status": "no_new_confirmed_profile",
+   "identifiers": {
+    "orcid": null,
+    "scholar_id": null
+   },
+   "verified_evidence": {}
+  },
+  "fiona-zegwaard-gelink": {
+   "name": "Fiona Zegwaard - Gelink",
+   "checked_at": "2026-10-21",
+   "known_coauthors": [],
+   "orcid_candidates": [
+    {
+     "id": "0009-0006-8351-1763",
+     "url": "https://orcid.org/0009-0006-8351-1763",
+     "name": "Fiona Zegwaard-Gelink",
+     "affiliations": [
+      "Maastricht University"
+     ],
+     "name_match": true,
+     "shared_works": [],
+     "linked_verified_scholar": false,
+     "institution_match": true,
+     "accepted": false
+    }
+   ],
+   "scholar_candidates": [],
+   "errors": [],
+   "complete": true,
+   "orcid_decision": "insufficient_evidence",
+   "scholar_decision": "not_found",
+   "status": "no_new_confirmed_profile",
+   "identifiers": {
+    "orcid": null,
+    "scholar_id": null
+   },
+   "verified_evidence": {}
+  },
+  "frederik-behets": {
+   "name": "Frederik Behets",
+   "checked_at": "2026-10-21",
+   "known_coauthors": [],
+   "orcid_candidates": [
+    {
+     "id": "0009-0007-9307-0102",
+     "url": "https://orcid.org/0009-0007-9307-0102",
+     "name": "Frederik Behets",
+     "affiliations": [
+      "Maastricht University",
+      "Maastricht University",
+      "Maastricht University"
+     ],
+     "name_match": true,
+     "shared_works": [],
+     "linked_verified_scholar": false,
+     "institution_match": true,
+     "accepted": false
+    }
+   ],
+   "scholar_candidates": [],
+   "errors": [],
+   "complete": true,
+   "orcid_decision": "insufficient_evidence",
+   "scholar_decision": "not_found",
+   "status": "no_new_confirmed_profile",
+   "identifiers": {
+    "orcid": null,
+    "scholar_id": null
+   },
+   "verified_evidence": {}
+  },
+  "gleb-tsikhanovich": {
+   "name": "Gleb Tsikhanovich",
+   "checked_at": "2026-10-21",
+   "known_coauthors": [],
+   "orcid_candidates": [],
+   "scholar_candidates": [],
+   "errors": [],
+   "complete": true,
+   "orcid_decision": "not_found",
+   "scholar_decision": "not_found",
+   "status": "no_new_confirmed_profile",
+   "identifiers": {
+    "orcid": null,
+    "scholar_id": null
+   },
+   "verified_evidence": {}
+  },
+  "karlien-schmeetz": {
+   "name": "Karlien Schmeetz",
+   "checked_at": "2026-10-21",
+   "known_coauthors": [],
+   "orcid_candidates": [],
+   "scholar_candidates": [],
+   "errors": [],
+   "complete": true,
+   "orcid_decision": "not_found",
+   "scholar_decision": "not_found",
+   "status": "no_new_confirmed_profile",
+   "identifiers": {
+    "orcid": null,
+    "scholar_id": null
+   },
+   "verified_evidence": {}
+  },
+  "martijn-hector": {
+   "name": "Martijn Hector",
+   "checked_at": "2026-10-21",
+   "known_coauthors": [],
+   "orcid_candidates": [],
+   "scholar_candidates": [
+    {
+     "id": "lTH-j4MAAAAJ",
+     "url": "https://scholar.google.com/citations?user=lTH-j4MAAAAJ",
+     "name": "Martijn Hoes",
+     "affiliations": "University of Maastricht",
+     "name_match": false,
+     "shared_works": [],
+     "known_coauthors": [],
+     "institution_match": true,
+     "accepted": false
+    }
+   ],
+   "errors": [],
+   "complete": true,
+   "orcid_decision": "not_found",
+   "scholar_decision": "insufficient_evidence",
+   "status": "no_new_confirmed_profile",
+   "identifiers": {
+    "orcid": null,
+    "scholar_id": null
+   },
+   "verified_evidence": {}
+  },
+  "meltem-isik": {
+   "name": "Meltem Isik",
+   "checked_at": "2026-10-21",
+   "known_coauthors": [],
+   "orcid_candidates": [
+    {
+     "id": "0009-0009-8868-6900",
+     "url": "https://orcid.org/0009-0009-8868-6900",
+     "name": "Meltem Isik",
+     "affiliations": [],
+     "name_match": true,
+     "shared_works": [],
+     "linked_verified_scholar": false,
+     "institution_match": false,
+     "accepted": false
+    },
+    {
+     "id": "0009-0006-1492-1179",
+     "url": "https://orcid.org/0009-0006-1492-1179",
+     "name": "Meltem Isik",
+     "affiliations": [],
+     "name_match": true,
+     "shared_works": [],
+     "linked_verified_scholar": false,
+     "institution_match": false,
+     "accepted": false
+    }
+   ],
+   "scholar_candidates": [],
+   "errors": [],
+   "complete": true,
+   "orcid_decision": "insufficient_evidence",
+   "scholar_decision": "not_found",
+   "status": "no_new_confirmed_profile",
+   "identifiers": {
+    "orcid": null,
+    "scholar_id": null
+   },
+   "verified_evidence": {}
+  },
+  "monique-roos-koekkelkoren": {
+   "name": "Monique Roos-Koekkelkoren",
+   "checked_at": "2026-10-21",
+   "known_coauthors": [],
+   "orcid_candidates": [],
+   "scholar_candidates": [],
+   "errors": [],
+   "complete": true,
+   "orcid_decision": "not_found",
+   "scholar_decision": "not_found",
+   "status": "no_new_confirmed_profile",
+   "identifiers": {
+    "orcid": null,
+    "scholar_id": null
+   },
+   "verified_evidence": {}
+  },
+  "prabash-darshanapriya-galgane-banduge": {
+   "name": "Prabash Darshanapriya Galgane Banduge",
+   "checked_at": "2026-10-21",
+   "known_coauthors": [],
+   "orcid_candidates": [
+    {
+     "id": "0009-0005-7406-9195",
+     "url": "https://orcid.org/0009-0005-7406-9195",
+     "name": "Prabash Banduge",
+     "affiliations": [],
+     "name_match": true,
+     "shared_works": [],
+     "linked_verified_scholar": false,
+     "institution_match": false,
+     "accepted": false
+    }
+   ],
+   "scholar_candidates": [],
+   "errors": [],
+   "complete": true,
+   "orcid_decision": "insufficient_evidence",
+   "scholar_decision": "not_found",
+   "status": "no_new_confirmed_profile",
+   "identifiers": {
+    "orcid": null,
+    "scholar_id": null
+   },
+   "verified_evidence": {}
+  },
+  "tafadzwa-chaunzwa": {
+   "name": "Tafadzwa Chaunzwa",
+   "checked_at": "2026-10-21",
+   "known_coauthors": [],
+   "orcid_candidates": [
+    {
+     "id": "0000-0001-7216-159X",
+     "url": "https://orcid.org/0000-0001-7216-159X",
+     "name": "Tafadzwa Lawrence Chaunzwa",
+     "affiliations": [
+      "Memorial Sloan Kettering Cancer Center",
+      "RADIATION ONCOLOGY INSTITUTE (see ASTRO and ROI grant maker)"
+     ],
+     "name_match": true,
+     "shared_works": [],
+     "linked_verified_scholar": false,
+     "institution_match": false,
+     "accepted": false
+    }
+   ],
+   "scholar_candidates": [],
+   "errors": [],
+   "complete": true,
+   "orcid_decision": "insufficient_evidence",
+   "scholar_decision": "not_found",
+   "status": "no_new_confirmed_profile",
+   "identifiers": {
+    "orcid": null,
+    "scholar_id": null
+   },
+   "verified_evidence": {}
+  },
+  "varnita-mathur": {
+   "name": "Varnita Mathur",
+   "checked_at": "2026-10-21",
+   "known_coauthors": [],
+   "orcid_candidates": [],
+   "scholar_candidates": [],
+   "errors": [],
+   "complete": true,
+   "orcid_decision": "not_found",
+   "scholar_decision": "not_found",
+   "status": "no_new_confirmed_profile",
+   "identifiers": {
+    "orcid": null,
+    "scholar_id": null
+   },
+   "verified_evidence": {}
+  },
+  "vikram-baliga": {
+   "name": "Vikram Baliga",
+   "checked_at": "2026-10-21",
+   "known_coauthors": [],
+   "orcid_candidates": [
+    {
+     "id": "0000-0002-3836-2352",
+     "url": "https://orcid.org/0000-0002-3836-2352",
+     "name": "Vikram Baliga",
+     "affiliations": [
+      "Texas Tech University",
+      "Texas Tech University",
+      "Texas A&M University College Station",
+      "Texas Tech University",
+      "Texas A&M AgriLife",
+      "Texas Tech University"
+     ],
+     "name_match": true,
+     "shared_works": [],
+     "linked_verified_scholar": false,
+     "institution_match": false,
+     "accepted": false
+    },
+    {
+     "id": "0000-0002-1765-7485",
+     "url": "https://orcid.org/0000-0002-1765-7485",
+     "name": "Vikram Baliga",
+     "affiliations": [
+      "Manipal Academy of Higher Education"
+     ],
+     "name_match": true,
+     "shared_works": [],
+     "linked_verified_scholar": false,
+     "institution_match": false,
+     "accepted": false
+    },
+    {
+     "id": "0000-0002-9367-8974",
+     "url": "https://orcid.org/0000-0002-9367-8974",
+     "name": "Vikram Baliga",
+     "affiliations": [
+      "University of California Santa Cruz",
+      "University of California Berkeley",
+      "University of British Columbia",
+      "The University of British Columbia",
+      "The University of British Columbia",
+      "University of California Santa Cruz"
+     ],
+     "name_match": true,
+     "shared_works": [],
+     "linked_verified_scholar": false,
+     "institution_match": false,
+     "accepted": false
+    },
+    {
+     "id": "0000-0003-2291-1430",
+     "url": "https://orcid.org/0000-0003-2291-1430",
+     "name": "Vikram B Baliga",
+     "affiliations": [
+      "Maastricht University",
+      "Maharaja Institute of Technology Mysore",
+      "Maharaja Institute of Technology Mysore",
+      " Aashaya Design Solution"
+     ],
+     "name_match": true,
+     "shared_works": [],
+     "linked_verified_scholar": false,
+     "institution_match": true,
+     "accepted": false
+    }
+   ],
+   "scholar_candidates": [
+    {
+     "id": "sXz0JqQAAAAJ",
+     "url": "https://scholar.google.com/citations?user=sXz0JqQAAAAJ",
+     "name": "Vikram B. Baliga",
+     "affiliations": "Assistant Professor of Teaching, University of British Columbia",
+     "name_match": true,
+     "shared_works": [],
+     "known_coauthors": [],
+     "institution_match": false,
+     "accepted": false
+    }
+   ],
+   "errors": [],
+   "complete": true,
+   "orcid_decision": "insufficient_evidence",
+   "scholar_decision": "insufficient_evidence",
+   "status": "no_new_confirmed_profile",
+   "identifiers": {
+    "orcid": null,
+    "scholar_id": null
+   },
+   "verified_evidence": {}
+  },
+  "yang-yao": {
+   "name": "Yang Yao",
+   "checked_at": "2026-10-21",
+   "known_coauthors": [],
+   "orcid_candidates": [
+    {
+     "id": "0009-0000-2503-8898",
+     "url": "https://orcid.org/0009-0000-2503-8898",
+     "name": "Yang-Yang Yao",
+     "affiliations": [
+      "Second Affiliated Hospital & Yuying Children's Hospital of Wenzhou Medical University"
+     ],
+     "name_match": true,
+     "shared_works": [],
+     "linked_verified_scholar": false,
+     "institution_match": false,
+     "accepted": false
+    },
+    {
+     "id": "0000-0002-1010-3578",
+     "url": "https://orcid.org/0000-0002-1010-3578",
+     "name": "Yang Yao",
+     "affiliations": [],
+     "name_match": true,
+     "shared_works": [],
+     "linked_verified_scholar": false,
+     "institution_match": false,
+     "accepted": false
+    },
+    {
+     "id": "0000-0002-9060-8954",
+     "url": "https://orcid.org/0000-0002-9060-8954",
+     "name": "Yang Yao",
+     "affiliations": [],
+     "name_match": true,
+     "shared_works": [],
+     "linked_verified_scholar": false,
+     "institution_match": false,
+     "accepted": false
+    },
+    {
+     "id": "0000-0001-8230-4160",
+     "url": "https://orcid.org/0000-0001-8230-4160",
+     "name": "yang yao",
+     "affiliations": [],
+     "name_match": true,
+     "shared_works": [],
+     "linked_verified_scholar": false,
+     "institution_match": false,
+     "accepted": false
+    },
+    {
+     "id": "0000-0001-7732-4343",
+     "url": "https://orcid.org/0000-0001-7732-4343",
+     "name": "yang yao",
+     "affiliations": [],
+     "name_match": true,
+     "shared_works": [],
+     "linked_verified_scholar": false,
+     "institution_match": false,
+     "accepted": false
+    }
+   ],
+   "scholar_candidates": [],
+   "errors": [
+    "More than five matching ORCID records require review"
+   ],
+   "complete": false,
+   "orcid_decision": "deferred",
+   "scholar_decision": "not_found",
+   "status": "no_new_confirmed_profile",
+   "identifiers": {
+    "orcid": null,
+    "scholar_id": null
+   },
+   "verified_evidence": {}
+  },
+  "yemu-katanda": {
+   "name": "Yemu Katanda",
+   "checked_at": "2026-10-21",
+   "known_coauthors": [],
+   "orcid_candidates": [
+    {
+     "id": "0009-0009-1898-2106",
+     "url": "https://orcid.org/0009-0009-1898-2106",
+     "name": "Yemu Katanda",
+     "affiliations": [
+      "Maastricht University",
+      "Yale University",
+      "Maastricht University",
+      "Maastricht University"
+     ],
+     "name_match": true,
+     "shared_works": [],
+     "linked_verified_scholar": false,
+     "institution_match": true,
+     "accepted": false
+    }
+   ],
+   "scholar_candidates": [],
+   "errors": [],
+   "complete": true,
+   "orcid_decision": "insufficient_evidence",
+   "scholar_decision": "not_found",
+   "status": "no_new_confirmed_profile",
+   "identifiers": {
+    "orcid": null,
+    "scholar_id": null
+   },
+   "verified_evidence": {}
+  }
+ },
+ "accepted_orcids": 0,
+ "accepted_scholar": 0,
+ "searches_used": 0,
+ "search_budget": 0,
+ "coverage": {
+  "tracked_people": 61,
+  "verified_orcid_profiles": 32,
+  "scholar_profiles": 11,
+  "discovered_orcids": 15,
+  "discovered_scholar_profiles": 2
+ }
+}
