@@ -170,7 +170,15 @@ def merge_people(existing: list[dict], scraped: list[dict], track_sections: list
     return existing, changes
 
 
+def add_months(d: date, months: int) -> date:
+    y, m = divmod(d.month - 1 + months, 12)
+    year, month = d.year + y, m + 1
+    last = [31, 29 if year % 4 == 0 and (year % 100 != 0 or year % 400 == 0) else 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31][month - 1]
+    return date(year, month, min(d.day, last))
+
+
 def is_active(person: dict, today: date | None = None) -> bool:
+    """Currently in the group (on the staff page, or a manual entry without an end date)."""
     if person.get("exclude"):
         return False
     until = person.get("active_until")
@@ -178,3 +186,20 @@ def is_active(person: dict, today: date | None = None) -> bool:
         return True
     today = today or date.today()
     return date.fromisoformat(str(until)) > today
+
+
+def tracked_until(person: dict, grace_months: int) -> date | None:
+    """Last day on which papers are still collected for a person who left; None while active."""
+    until = person.get("active_until")
+    if not until:
+        return None
+    return add_months(date.fromisoformat(str(until)), grace_months)
+
+
+def is_tracked(person: dict, today: date, grace_months: int) -> bool:
+    """Active, or left less than grace_months ago (papers in the pipeline still count, with a verified affiliation)."""
+    if person.get("exclude"):
+        return False
+    if is_active(person, today):
+        return True
+    return tracked_until(person, grace_months) >= today

@@ -34,6 +34,10 @@ affiliation_policy: flag
 # OpenAlex work types that are never shown (supplements, errata, cover pages).
 exclude_types: [supplementary-materials, erratum, paratext]
 
+# People who disappear from the staff page keep being tracked for this many months (papers in the pipeline),
+# but during that period a paper only counts when it carries a verified group affiliation for them.
+departed_grace_months: 18
+
 # Safety net: if the staff page returns fewer people than this, keep the existing list untouched.
 min_people_on_staff_page: 3
 

@@ -103,7 +103,7 @@
       .filter((p) => !q || p.name.toLowerCase().includes(q))
       .sort((a, b) => (b.active - a.active) || (counts[b.slug] || 0) - (counts[a.slug] || 0) || a.name.localeCompare(b.name));
     els.people.innerHTML = people.map((p) => `
-      <label class="${p.active ? "" : "inactive"}" title="${p.active ? "" : "no longer in the group"}">
+      <label class="${p.active ? "" : "inactive"}" title="${p.active ? "" : p.tracked ? "left the group; papers with a group affiliation still counted until " + p.tracked_until : "no longer in the group"}">
         <input type="checkbox" value="${esc(p.slug)}" ${state.people.includes(p.slug) ? "checked" : ""}>
         ${esc(p.name)} <span class="n">${counts[p.slug] || 0}</span>
       </label>`).join("");

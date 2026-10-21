@@ -10,7 +10,7 @@ from pathlib import Path
 import yaml
 
 from .openalex import OpenAlex, abstract_from_inverted_index, author_affiliations, author_current_institutions, short_id
-from .staff import fetch_staff, is_active, merge_people
+from .staff import fetch_staff, is_active, is_tracked, merge_people, tracked_until
 
 log = logging.getLogger(__name__)
 
@@ -114,7 +114,7 @@ def select_author_records(records: list[dict], strict: list[str], broad: list[st
     return records
 
 
-def resolve_people(people: list[dict], client: OpenAlex, keywords: list[str], today: date, broad_keywords: list[str] | None = None) -> list[str]:
+def resolve_people(people: list[dict], client: OpenAlex, keywords: list[str], today: date, broad_keywords: list[str] | None = None, grace_months: int = 0) -> list[str]:
     """Work out which OpenAlex author record(s) each active person corresponds to.
 
     - hand-set openalex_id: used as is
@@ -127,7 +127,7 @@ def resolve_people(people: list[dict], client: OpenAlex, keywords: list[str], to
     unresolved = []
     broad = broad_keywords or keywords
     for p in people:
-        if not is_active(p, today):
+        if not is_tracked(p, today, grace_months):
             continue
         if manual_ids(p):
             p["openalex_ids"] = manual_ids(p)
@@ -249,11 +249,13 @@ def normalise_work(raw: dict, people: list[dict], keywords: list[str] | None = N
 def fetch_works(
     people: list[dict], client: OpenAlex, since_year: int, today: date,
     keywords: list[str] | None = None, policy: str = "flag", exclude_types: list[str] | None = None,
+    grace_months: int = 0,
 ) -> tuple[dict[str, dict], list[str]]:
-    """Return {work_id: normalised work} for all active people, plus a list of per-person errors.
+    """Return {work_id: normalised work} for all tracked people, plus a list of per-person errors.
 
     Rules:
     - a member matched by name only (no ORCID) is attributed a paper only when that authorship is 'verified'
+    - a member who left the group (within the grace period) is attributed a paper only when it is 'verified'
     - policy 'flag' keeps every paper and marks whether any group member has a verified affiliation;
       policy 'require' drops papers without one
     - types in exclude_types are skipped
@@ -263,8 +265,9 @@ def fetch_works(
     keywords = keywords or []
     excluded = set(exclude_types if exclude_types is not None else DEFAULT_EXCLUDE_TYPES)
     confidence = {p["slug"]: match_confidence(p) for p in people}
+    strict_only = {p["slug"] for p in people if confidence[p["slug"]] == "name" or not is_active(p, today)}
     for p in people:
-        if not is_active(p, today):
+        if not is_tracked(p, today, grace_months):
             continue
         flt = person_filter(p)
         if not flt:
@@ -299,7 +302,7 @@ def fetch_works(
     dropped_name, dropped_policy = 0, 0
     for wid in list(works):
         w = works[wid]
-        keep = [m for m in w["group_members"] if confidence.get(m) == "orcid" or w["affiliation_status"].get(m) == "verified"]
+        keep = [m for m in w["group_members"] if m not in strict_only or w["affiliation_status"].get(m) == "verified"]
         if len(keep) != len(w["group_members"]):
             for m in set(w["group_members"]) - set(keep):
                 w["member_affiliations"].pop(m, None)
@@ -314,7 +317,7 @@ def fetch_works(
             works.pop(wid)
             dropped_policy += 1
     if dropped_name:
-        log.info("dropped %d works attributed only to name-matched people without a verified affiliation", dropped_name)
+        log.info("dropped %d works attributed only to name-matched or departed people without a verified affiliation", dropped_name)
     if dropped_policy:
         log.info("affiliation policy 'require': dropped %d unverified works", dropped_policy)
     return works, errors
@@ -345,7 +348,7 @@ def merge_works(existing: list[dict], fetched: dict[str, dict], today: date, fet
     return ordered, new_ids
 
 
-def public_people(people: list[dict], today: date) -> list[dict]:
+def public_people(people: list[dict], today: date, grace_months: int = 0) -> list[dict]:
     return [
         {
             "slug": p["slug"],
@@ -357,7 +360,9 @@ def public_people(people: list[dict], today: date) -> list[dict]:
             "openalex_ids": manual_ids(p) or list(p.get("openalex_ids") or []),
             "match": match_confidence(p),
             "active": is_active(p, today),
-            "needs_review": bool(p.get("needs_review")) and is_active(p, today),
+            "tracked": is_tracked(p, today, grace_months),
+            "tracked_until": tracked_until(p, grace_months).isoformat() if not is_active(p, today) else None,
+            "needs_review": bool(p.get("needs_review")) and is_tracked(p, today, grace_months),
         }
         for p in people
         if not p.get("exclude")
@@ -373,6 +378,7 @@ def run(dry_run: bool = False, skip_people: bool = False, config_path: Path = CO
     people = load_people()
     track_sections = cfg.get("track_sections") or ["current"]
     keywords = cfg.get("institution_keywords", [])
+    grace = int(cfg.get("departed_grace_months", 0))
 
     people_changes: dict = {}
     if not skip_people:
@@ -387,17 +393,18 @@ def run(dry_run: bool = False, skip_people: bool = False, config_path: Path = CO
             people_changes = {"error": str(exc)}
 
     client = OpenAlex(mailto=cfg.get("openalex_mailto"))
-    unresolved = resolve_people(people, client, keywords, today, broad_keywords=cfg.get("author_match_keywords") or keywords)
+    unresolved = resolve_people(people, client, keywords, today, broad_keywords=cfg.get("author_match_keywords") or keywords, grace_months=grace)
     fetched, errors = fetch_works(
         people, client, int(cfg.get("since_year", 2024)), today,
         keywords=keywords, policy=cfg.get("affiliation_policy", "flag"), exclude_types=cfg.get("exclude_types"),
+        grace_months=grace,
     )
 
     previous = load_publications()
     baseline = not previous.get("works")
     overrides = load_overrides()
     failed_names = {e.split(":")[0] for e in errors}
-    fetched_slugs = {p["slug"] for p in people if is_active(p, today) and person_filter(p) and p["name"] not in failed_names}
+    fetched_slugs = {p["slug"] for p in people if is_tracked(p, today, grace) and person_filter(p) and p["name"] not in failed_names}
     works, new_ids = merge_works(previous.get("works", []), fetched, today, fetched_slugs)
     works = apply_overrides(works, overrides)
     new_ids = [i for i in new_ids if i not in overrides["reject"]]
@@ -407,7 +414,7 @@ def run(dry_run: bool = False, skip_people: bool = False, config_path: Path = CO
         "timestamp": datetime.now(timezone.utc).isoformat(timespec="seconds"),
         "baseline": baseline,
         "people_active": sum(1 for p in people if is_active(p, today)),
-        "people_tracked": sum(1 for p in people if is_active(p, today) and person_filter(p)),
+        "people_tracked": sum(1 for p in people if is_tracked(p, today, grace) and person_filter(p)),
         "works_total": len(works),
         "unverified_total": sum(1 for w in works if not w.get("verified")),
         "new_count": 0 if baseline else len(new_ids),
@@ -424,7 +431,7 @@ def run(dry_run: bool = False, skip_people: bool = False, config_path: Path = CO
         "staff_url": cfg.get("staff_url"),
         "since_year": int(cfg.get("since_year", 2024)),
         "last_run": {k: run_record[k] for k in ("date", "baseline", "new_count", "new_ids", "needs_review", "errors")},
-        "people": public_people(people, today),
+        "people": public_people(people, today, grace),
         "works": works,
     }
 

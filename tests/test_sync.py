@@ -126,3 +126,17 @@ def test_select_author_records_prefers_current_group_institution():
 def test_manual_openalex_id_accepts_list():
     assert person_filter({"openalex_id": ["A1", "A2"], "orcid": "x"}) == "authorships.author.id:A1|A2"
     assert person_filter({"openalex_id": "A1", "orcid": "x"}) == "authorships.author.id:A1"
+
+
+def test_departed_person_counts_only_verified_papers():
+    from datetime import date
+    from pubpulse.sync import fetch_works
+
+    people = [{"slug": "gone", "name": "G", "orcid": "0000-0001-0000-0001", "openalex_ids": ["A1"], "active_until": "2026-06-01"}]
+    def auth(aid, insts):
+        return {"author": {"id": f"https://openalex.org/{aid}", "display_name": aid}, "institutions": [{"display_name": i} for i in insts]}
+    client = _FakeClient({"authorships.author.id:A1": [_raw("W1", [auth("A1", ["Maastro Clinic"])]), _raw("W2", [auth("A1", ["Elsewhere"])])]})
+    works, _ = fetch_works(people, client, 2024, date(2026, 10, 21), keywords=KW, grace_months=18)
+    assert set(works) == {"W1"}
+    works, _ = fetch_works(people, client, 2024, date(2028, 10, 21), keywords=KW, grace_months=18)
+    assert works == {}  # grace period over

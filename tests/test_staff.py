@@ -57,3 +57,13 @@ def test_merge_refuses_tiny_scrape():
     existing = [{"slug": "a", "name": "A", "source": "staff_page", "active_until": None}]
     people, changes = merge_people(existing, [_scraped("z")], ["current"], date(2026, 10, 21), min_people=3)
     assert changes["skipped"] is True and people[0]["active_until"] is None
+
+
+def test_grace_period_tracking():
+    from pubpulse.staff import add_months, is_tracked, tracked_until
+    left = {"slug": "x", "name": "X", "active_until": "2026-01-31"}
+    assert add_months(date(2026, 1, 31), 1) == date(2026, 2, 28)
+    assert tracked_until(left, 18) == date(2027, 7, 31)
+    assert is_tracked(left, date(2027, 7, 31), 18) and not is_tracked(left, date(2027, 8, 1), 18)
+    assert not is_active(left, date(2026, 6, 1))
+    assert is_tracked({"slug": "a", "name": "A", "active_until": None}, date(2030, 1, 1), 0)

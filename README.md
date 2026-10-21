@@ -62,7 +62,7 @@ Go to [Actions → weekly](https://github.com/MaastrichtU-CDS/pubpulse/actions/w
 | --- | --- |
 | `config.yml` | group name, site URL, `since_year`, `track_sections` (`current`, add `previous` for former staff), institution keywords, `affiliation_policy` (`flag` or `require`) |
 | `overrides.yml` | manual decisions per paper: `confirm:` / `reject:` lists of OpenAlex ids |
-| `people.yml` | refreshed from the staff page on every run. Hand-edited fields that are never overwritten: `openalex_id` (one id, or a list when OpenAlex split a person into several records), `orcid` (when the staff page has none), `exclude: true`, `notes`. To track someone who is not on the staff page, add an entry with `source: manual`. People who disappear from the page are kept with an `active_until` date so their papers stay on the site. |
+| `people.yml` | refreshed from the staff page on every run. Hand-edited fields that are never overwritten: `openalex_id` (one id, or a list when OpenAlex split a person into several records), `orcid` (when the staff page has none), `exclude: true`, `notes`. To track someone who is not on the staff page, add an entry with `source: manual`. People who disappear from the page get an `active_until` date; they are still tracked for `departed_grace_months` (papers in the pipeline), but only papers with a verified group affiliation count. Their earlier papers stay on the site. |
 
 Edit either file in the GitHub web editor and commit to `main`; the workflow runs automatically on that commit.
 
