@@ -1,10 +1,15 @@
 {
- "generated": "2026-10-21T09:21:05+00:00",
+ "generated": "2026-10-21T09:25:29+00:00",
  "group_name": "Clinical Data Science (Maastro / Maastricht University)",
  "site_url": "https://maastrichtu-cds.github.io/pubpulse/",
  "repo_url": "https://github.com/MaastrichtU-CDS/pubpulse",
  "staff_url": "https://www.clinicaldatascience.nl/staff",
  "since_year": 2024,
+ "list": {
+  "subscribe_url": "",
+  "unsubscribe_url": "",
+  "list_name": ""
+ },
  "last_run": {
   "date": "2026-10-21",
   "baseline": false,
