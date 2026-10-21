@@ -1,20 +1,21 @@
 {
- "generated": "2026-10-21T10:16:23+00:00",
+ "generated": "2026-10-21T10:54:05+00:00",
  "group_name": "Clinical Data Science (Maastro / Maastricht University)",
  "site_url": "https://maastrichtu-cds.github.io/pubpulse/",
  "repo_url": "https://github.com/MaastrichtU-CDS/pubpulse",
  "staff_url": "https://www.clinicaldatascience.nl/staff",
  "since_year": 2024,
  "list": {
-  "subscribe_url": "",
-  "unsubscribe_url": "",
-  "list_name": ""
+  "subscribe_endpoint": "",
+  "list_name": "the pubpulse weekly list"
  },
  "last_run": {
   "date": "2026-10-21",
   "baseline": false,
-  "new_count": 0,
-  "new_ids": [],
+  "new_count": 1,
+  "new_ids": [
+   "W7222957496"
+  ],
   "needs_review": [
    "ali-al-zein",
    "ali-zaila",
@@ -40,6 +41,7 @@
    "minghua-li",
    "monique-roos-koekkelkoren",
    "prabash-darshanapriya-galgane-banduge",
+   "rutger-van-mierlo",
    "shreya-anand",
    "tafadzwa-chaunzwa",
    "thijs-ackermans",
@@ -746,14 +748,12 @@
    "role": "PhD student",
    "employer": "Maastricht University",
    "orcid": null,
-   "openalex_ids": [
-    "A5158398548"
-   ],
+   "openalex_ids": [],
    "match": "name",
    "active": true,
    "tracked": true,
    "tracked_until": null,
-   "needs_review": false
+   "needs_review": true
   },
   {
    "slug": "sander-puts",
@@ -1306,6 +1306,57 @@
    },
    "cited_by_count": 0,
    "abstract": "Abstract Focal cortical dysplasia (FCD) is among the leading causes of drug-resistant focal epilepsy and can be challenging to detect on routine MRI due to the subtle and heterogeneous appearance of lesions. Motivated by the scarcity of clinically representative cohorts, we investigate the feasibility of simulating FCD-like lesions in healthy MRI using a composition of hand-crafted image transformations. We develop Syn-thFCD , a phenomenological FCD simulator, and create 2,164 synthetic examples from healthy controls in the heterogeneous FOMO300k dataset. We then pretrain deep learning (DL) segmentation models on synthetic lesions and fine-tune them on real FCD cases from the University Hospital Bonn (UHB) cohort. Comprehensive evaluations show consistent improvements across simulator presets, with detection-rate gains of up to 18.5 percentage points over training from scratch and 7.4 points over self-supervised pretraining, while achieving state-of-the-art segmentation performance (0.366 DSC) on the challenging held-out UHB benchmark. These findings suggest that simulation-based synthetic data generation can bridge existing radiological knowledge and advances in DL to provide meaningful supervisory signals that could ultimately aid the detection of underrepresented and diagnostically challenging cases.",
+   "verified": true,
+   "first_seen": "2026-10-21"
+  },
+  {
+   "id": "W7222957496",
+   "openalex_url": "https://openalex.org/W7222957496",
+   "doi": "https://doi.org/10.1016/j.landig.2026.101056",
+   "title": "Foundation artificial intelligence models for health recognition by use of face photographs (FAHR-Face): a model development and validation study",
+   "publication_date": "2026-10-01",
+   "year": 2026,
+   "type": "article",
+   "journal": "The Lancet Digital Health",
+   "landing_url": "https://doi.org/10.1016/j.landig.2026.101056",
+   "is_oa": true,
+   "oa_url": "https://www.thelancet.com/pdfs/journals/landig/PIIS2589-7500(26)00079-8.pdf",
+   "authors": [
+    "Fridolin Haugg",
+    "Grace Lee",
+    "John He",
+    "Leonard Nürnberg",
+    "Dennis Bontempi",
+    "Danielle S. Bitterman",
+    "Paul Catalano",
+    "Vasco Prudente",
+    "Dmitrii Glubokov",
+    "Andrew Warrington",
+    "Suraj Pai",
+    "Dirk De Ruysscher",
+    "Christian Guthier",
+    "Benjamin Harris Kann",
+    "Vadim N Gladyshev",
+    "Hugo J.W.L. Aerts",
+    "Raymond H. Mak"
+   ],
+   "author_count": 17,
+   "group_members": [
+    "leonard-nurnberg"
+   ],
+   "member_affiliations": {
+    "leonard-nurnberg": [
+     "Maastricht University Medical Centre",
+     "Maastricht University",
+     "Maastro Clinic",
+     "Department of Radiation Oncology, Mass General Brigham Cancer Institute, Dana-Farber Cancer Institute, Harvard Medical School, Boston, MA, USA; Artificial Intelligence in Medicine Program, Mass General Brigham, Harvard Medical School, Boston, MA, USA; Department of Radiology and Nuclear Medicine, CARIM & GROW, Maastricht University, Maastricht, Netherlands; Department of Radiation Oncology (Maastro), Maastricht University, Maastricht, Netherlands"
+    ]
+   },
+   "affiliation_status": {
+    "leonard-nurnberg": "verified"
+   },
+   "cited_by_count": 0,
+   "abstract": "BACKGROUND: Facial appearance offers a non-invasive window into health. We built Foundation Artificial Intelligence for Health Recognition-Face (FAHR-Face), a foundation model trained on more than 40 million facial photographs and fine-tuned it for two distinct tasks: biological age estimation (FAHR-FaceAge) and survival prediction (FAHR-FaceSurvival). METHODS: FAHR-FaceAge underwent two-stage, age-balanced fine-tuning on ten public image datasets; FAHR-FaceSurvival was fine-tuned on 34 363 photographs of patients with cancer. Model robustness (cosmetic surgery, make-up, pose, and lighting) and independence (attention mapping) were tested. Both models were clinically tested in two independent cancer patient datasets with survival analysed by multivariate Cox models and adjusted for clinical prognostic factors. FINDINGS: For age estimation, FAHR-FaceAge had the lowest mean absolute error of 5·1 years on public datasets, outperforming benchmark models and maintaining accuracy across the full human lifespan. In patients with cancer, FAHR-FaceAge outperformed a previous age estimation model in survival prognostication. FAHR-FaceSurvival showed robust prediction of mortality, and the highest-risk quartile had more than triple the mortality of the lowest (adjusted hazard ratio 3·23; p<0·0001). These findings were validated in the independent cohort and both models showed generalisability across age, sex, race, and cancer subgroups. The two algorithms provided distinct,…",
    "verified": true,
    "first_seen": "2026-10-21"
   },
@@ -3568,7 +3619,7 @@
    "affiliation_status": {
     "leonard-nurnberg": "verified"
    },
-   "cited_by_count": 24,
+   "cited_by_count": 25,
    "abstract": "The thymus is essential for establishing T cell diversity early in life, but undergoes profound involution with age and has therefore traditionally been regarded as largely nonfunctional in adults1,2. Here we propose that preserving thymic functionality is integral to adult health and longevity. We developed a deep learning framework to quantify thymic health from routine radiographic images and evaluated its association with longevity and risk of major age-associated diseases in two large prospective cohorts of asymptomatic adults: the National Lung Screening Trial (n = 25,031) and the Framingham Heart Study (n = 2,581). In both cohorts, thymic health varied markedly across the population. In the National Lung Screening Trial, higher thymic health was consistently associated with lower all-cause mortality, reduced lung cancer incidence and lower cardiovascular mortality over 12 years of follow-up after adjustment for age, sex, smoking and comorbidities. In the independent Framingham Heart Study cohort, higher thymic health was significantly associated with reduced cardiovascular mortality, independent of age, sex and smoking. Thymic health was further linked to systemic inflammation and metabolic dysregulation, and associated with modifiable lifestyle factors including smoking, obesity and physical activity. Together, these findings reposition the thymus as a central regulator of immune-mediated ageing and disease susceptibility in adulthood, highlighting its potential as…",
    "verified": true,
    "first_seen": "2026-10-21"
@@ -8839,7 +8890,7 @@
     "andre-dekker": "verified",
     "leonard-wee": "verified"
    },
-   "cited_by_count": 49,
+   "cited_by_count": 50,
    "abstract": "BACKGROUND: Accurate prediction of pathologic complete response (pCR) following neoadjuvant immunotherapy combined with chemotherapy (nICT) is crucial for tailoring patient care in esophageal squamous cell carcinoma (ESCC). This study aimed to develop and validate a deep learning model using a novel voxel-level radiomics approach to predict pCR based on preoperative CT images. METHODS: In this multicenter, retrospective study, 741 patients with ESCC who underwent nICT followed by radical esophagectomy were enrolled from three institutions. Patients from one center were divided into a training set (469 patients) and an internal validation set (118 patients) while the data from the other two centers was used as external validation sets (120 and 34 patients, respectively). The deep learning model, Vision-Mamba, integrated voxel-level radiomics feature maps and CT images for pCR prediction. Additionally, other commonly used deep learning models, including 3D-ResNet and Vision Transformer, as well as traditional radiomics methods, were developed for comparison. Model performance was evaluated using accuracy, area under the curve (AUC), sensitivity, specificity, and prognostic stratification capabilities. The SHapley Additive exPlanations analysis was employed to interpret the model's predictions. RESULTS: The Vision-Mamba model demonstrated robust predictive performance in the training set (accuracy: 0.89, AUC: 0.91, sensitivity: 0.82, specificity: 0.92) and validation sets…",
    "verified": true,
    "first_seen": "2026-10-21"

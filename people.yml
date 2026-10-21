@@ -715,10 +715,8 @@ people:
   source: staff_page
   active_from: '2026-10-21'
   active_until: null
-  needs_review: false
+  needs_review: true
   orcid_openalex: null
-  openalex_ids:
-  - A5158398548
 - slug: sander-puts
   name: Sander Puts
   profile_url: https://www.clinicaldatascience.nl/sander-puts

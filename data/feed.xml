@@ -4,7 +4,7 @@
 <link href="https://maastrichtu-cds.github.io/pubpulse/"/>
 <link rel="self" href="https://maastrichtu-cds.github.io/pubpulse/feed.xml"/>
 <id>https://maastrichtu-cds.github.io/pubpulse/</id>
-<updated>2026-10-21T10:16:23+00:00</updated>
+<updated>2026-10-21T10:54:05+00:00</updated>
 <entry>
 <title>Construction of personal health knowledge graphs for clinical data harmonization in breast cancer</title>
 <link href="https://doi.org/10.1038/s41523-026-01068-y"/>
@@ -58,6 +58,15 @@ Intratumor heterogeneity (ITH), the coexistence of diverse subclones within a si
 <summary>medRxiv · 2026-10-02 · group authors: Petros Koutsouvelis, Leroy Volmer, Ralph Brecheisen, Andre Dekker
 
 Abstract Focal cortical dysplasia (FCD) is among the leading causes of drug-resistant focal epilepsy and can be challenging to detect on routine MRI due to the subtle and heterogeneous appearance of lesions. Motivated by the scarcity of clinically representative cohorts, we investigate the feasibility of simulating FCD-like lesions in healthy MRI using a composition of hand-crafted image transformations. We develop Syn-thFCD , a phenomenological FCD simulator, and create 2,164 synthetic examples from healthy controls in the heterogeneous FOMO300k dataset. We then pretrain deep learning (DL) segmentation models on synthetic lesions and fine-tune them on real FCD cases from the University Hospital Bonn (UHB) cohort. Comprehensive evaluations show consistent improvements across simulator presets, with detection-rate gains of up to 18.5 percentage points over training from scratch and 7.4 points over self-supervised pretraining, while achieving state-of-the-art segmentation performance (0.366 DSC) on the challenging held-out UHB benchmark. These findings suggest that simulation-based synthetic data generation can bridge existing radiological knowledge and advances in DL to provide meaningful supervisory signals that could ultimately aid the detection of underrepresented and diagnostically challenging cases.</summary>
+</entry>
+<entry>
+<title>Foundation artificial intelligence models for health recognition by use of face photographs (FAHR-Face): a model development and validation study</title>
+<link href="https://doi.org/10.1016/j.landig.2026.101056"/>
+<id>https://openalex.org/W7222957496</id>
+<updated>2026-10-21T00:00:00Z</updated>
+<summary>The Lancet Digital Health · 2026-10-01 · group authors: Leonard Nürnberg
+
+BACKGROUND: Facial appearance offers a non-invasive window into health. We built Foundation Artificial Intelligence for Health Recognition-Face (FAHR-Face), a foundation model trained on more than 40 million facial photographs and fine-tuned it for two distinct tasks: biological age estimation (FAHR-FaceAge) and survival prediction (FAHR-FaceSurvival). METHODS: FAHR-FaceAge underwent two-stage, age-balanced fine-tuning on ten public image datasets; FAHR-FaceSurvival was fine-tuned on 34 363 photographs of patients with cancer. Model robustness (cosmetic surgery, make-up, pose, and lighting) and independence (attention mapping) were tested. Both models were clinically tested in two independent cancer patient datasets with survival analysed by multivariate Cox models and adjusted for clinical prognostic factors. FINDINGS: For age estimation, FAHR-FaceAge had the lowest mean absolute error of 5·1 years on public datasets, outperforming benchmark models and maintaining accuracy across the full human lifespan. In patients with cancer, FAHR-FaceAge outperformed a previous age estimation model in survival prognostication. FAHR-FaceSurvival showed robust prediction of mortality, and the highest-risk quartile had more than triple the mortality of the lowest (adjusted hazard ratio 3·23; p&lt;0·0001). These findings were validated in the independent cohort and both models showed generalisability across age, sex, race, and cancer subgroups. The two algorithms provided distinct,…</summary>
 </entry>
 <entry>
 <title>Unifying Vision and Language: Benchmarking End-to-End Transformer Model Against the ClipCap Framework</title>
@@ -429,14 +438,5 @@ BACKGROUND The European Health Data Space (EHDS) will substantially increase cro
 <summary>AI &amp; Society · 2026-03-26 · group authors: Hannah Piehl, Rianne Fijten
 
 Abstract Artificial intelligence (AI) is often presented as a transformative technology for healthcare, promising to augment clinical decision-making, streamline workflows, and enhance diagnostic precision. Yet its integration into healthcare practice is shaped by the complex and often ambiguous notion of trust . While trust in AI has become a recurring theme across disciplines, there has been little systematic analysis of different conceptualizations of the term. This paper addresses this gap through an interdisciplinary scoping review that examines how trust, trustworthiness, distrust, and mistrust are articulated in literature on AI in healthcare. Drawing on 82 publications (2015–2025) retrieved from six databases (Web of Science, Scopus, PubMed, PhilPapers, SocINDEX, and ACM Digital Library), it maps how trust is defined, measured, or problematized, and identifies the conceptual, epistemological, and disciplinary boundaries that shape these approaches. The analysis puts forward five different conceptualizations: trust as a set of designable principles , trust as an attitude or belief , trust as a binary between cognition/affect or human/technology, trust as a structural mechanism within uncertainty, and trust as a relational process embedded in socio-technical systems. These framings illuminate how trust is treated as an attribute to be engineered, a behavior to be calibrated, or a relation to be cultivated—often removed from clinical practice. Yet, across literature,…</summary>
-</entry>
-<entry>
-<title>Master Plan of the Open Science Community Maastricht</title>
-<link href="https://doi.org/10.5281/zenodo.19735673"/>
-<id>https://openalex.org/W7155562840</id>
-<updated>2026-10-21T00:00:00Z</updated>
-<summary>Research Publications (Maastricht University) · 2026-03-24 · group authors: Rianne Fijten
-
-This document describes the Master Plan of the Open Science Community Maastricht. It was created as part of the OSC Incubator Program in 2025.</summary>
 </entry>
 </feed>
