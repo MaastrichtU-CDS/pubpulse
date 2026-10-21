@@ -12,6 +12,6 @@ Their artwork and colours are unchanged.
 `pubpulse.svg` is the local pulse mark used for the website header logo.
 
 `cds-icon.svg` uses the unmodified white emblem path from `cds.svg` on a square
-Maastricht University navy (`#001c3d`) background. The 32px PNG favicon and 180px
-Apple touch icon are raster exports of this emblem; the touch icon uses a full-bleed
-background so the platform can apply its own corner mask.
+Maastricht University navy (`#001c3d`) background. The PNG exports include a 32px favicon, 152px/167px/180px Apple touch icons,
+and 192px/512px Android icons declared in `site.webmanifest`. The mobile icons use
+a full-bleed background so the platform can apply its own corner mask.
