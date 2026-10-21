@@ -1,0 +1,4520 @@
+{
+ "checked_at": "2026-10-21",
+ "window_start": "2024-10-21",
+ "recent_months": 24,
+ "roster_source": "https://www.clinicaldatascience.nl/staff",
+ "publication_scope": "Coauthored papers in the pubpulse collection; absence is not proof of no recent publications",
+ "people": {
+  "abhimanyu-anand": {
+   "name": "Abhimanyu Anand",
+   "profile_url": "https://www.clinicaldatascience.nl/abhimanyu-anand",
+   "checked_at": "2026-10-21",
+   "window_start": "2024-10-21",
+   "recent_months": 24,
+   "shared_papers": 0,
+   "recent_shared_papers": 0,
+   "last_collaboration_date": null,
+   "followup_until": null,
+   "current_coauthors": [],
+   "status": "no_collaboration_found_in_collection",
+   "orcid": null,
+   "orcid_verified": false,
+   "scholar_id": null,
+   "identifier_evidence": {},
+   "evidence": []
+  },
+  "aiara-lobo-gomes": {
+   "name": "Aiara Lobo Gomes",
+   "profile_url": "https://www.clinicaldatascience.nl/aiara-lobo-gomes",
+   "checked_at": "2026-10-21",
+   "window_start": "2024-10-21",
+   "recent_months": 24,
+   "shared_papers": 19,
+   "recent_shared_papers": 16,
+   "last_collaboration_date": "2026-10-12",
+   "followup_until": "2028-10-12",
+   "current_coauthors": [
+    "ananya-choudhury",
+    "andre-dekker",
+    "anne-lore-bynens",
+    "cecile-wolfs",
+    "daniel-slob",
+    "ekaterina-akhmad",
+    "ivan-zhovannik",
+    "jikai-zhou",
+    "johan-van-soest",
+    "joshi-hogenboom",
+    "leonard-wee",
+    "petros-kalendralis",
+    "rianne-fijten",
+    "rutger-van-mierlo",
+    "simone-mingels",
+    "wenjie-liang"
+   ],
+   "status": "recent_collaboration",
+   "orcid": "0000-0003-4670-6036",
+   "orcid_verified": true,
+   "scholar_id": null,
+   "identifier_evidence": {
+    "orcid": {
+     "checked_at": "2026-10-21",
+     "url": "https://orcid.org/0000-0003-4670-6036",
+     "shared_works": [
+      "W7213226988",
+      "W7221757932",
+      "W7213458335",
+      "W4415259680",
+      "W4410448008",
+      "W4404946484"
+     ],
+     "known_coauthors": []
+    }
+   },
+   "evidence": [
+    {
+     "work": "W7128449036",
+     "title": "Construction of personal health knowledge graphs for clinical data harmonization in breast cancer",
+     "date": "2026-10-12",
+     "url": "https://doi.org/10.1038/s41523-026-01068-y",
+     "current_coauthors": [
+      "andre-dekker",
+      "anne-lore-bynens",
+      "cecile-wolfs",
+      "petros-kalendralis",
+      "rutger-van-mierlo",
+      "wenjie-liang"
+     ],
+     "author_name": "Aiara Lobo Gomes",
+     "author_position": 14,
+     "recent": true
+    },
+    {
+     "work": "W7221757932",
+     "title": "AI Model Reporting Standards in Health Care: Systematic Review and Consolidation",
+     "date": "2026-10-09",
+     "url": "https://doi.org/10.2196/92329",
+     "current_coauthors": [
+      "andre-dekker",
+      "daniel-slob",
+      "ekaterina-akhmad",
+      "johan-van-soest",
+      "simone-mingels"
+     ],
+     "author_name": "Aiara Lobo Gomes",
+     "author_position": 3,
+     "recent": true
+    },
+    {
+     "work": "W7213458335",
+     "title": "Data Auditing and Quality Assurance in a Federated Learning Consortium; Getting the Best of Both Worlds from Cross-Institutional and In-House Data Quality Inspection",
+     "date": "2026-09-17",
+     "url": "https://doi.org/10.64898/2026.09.08.26361592",
+     "current_coauthors": [
+      "andre-dekker",
+      "joshi-hogenboom",
+      "leonard-wee"
+     ],
+     "author_name": "Aiara Lobo Gomes",
+     "author_position": 5,
+     "recent": true
+    },
+    {
+     "work": "W7213226988",
+     "title": "From registration to insight: how STRONG AYA transforms registry data to enhance decision-support tools for adolescent and young adult oncology",
+     "date": "2026-09-15",
+     "url": "https://doi.org/10.1016/j.esmorw.2026.100764",
+     "current_coauthors": [
+      "andre-dekker",
+      "joshi-hogenboom",
+      "leonard-wee"
+     ],
+     "author_name": "Aiara Lobo Gomes",
+     "author_position": 8,
+     "recent": true
+    },
+    {
+     "work": "W7129378262",
+     "title": "Abstract PS1-12-19: Disease natural history and care quality assessment of hormone receptor positive / human epidermal growth factor receptor 2 negative metastatic breast cancer (HR+/HER2- mBC) - an international multicentric study",
+     "date": "2026-02-17",
+     "url": "https://doi.org/10.1158/1557-3265.sabcs25-ps1-12-19",
+     "current_coauthors": [
+      "ananya-choudhury"
+     ],
+     "author_name": "Aiara Lobo Gomes",
+     "author_position": 15,
+     "recent": true
+    },
+    {
+     "work": "W7123926908",
+     "title": "Predicting Overall Survival of NSCLC Patients with Clinical, Radiomics and Deep Learning Features",
+     "date": "2026-01-13",
+     "url": "https://doi.org/10.1007/s10278-025-01828-5",
+     "current_coauthors": [
+      "andre-dekker",
+      "jikai-zhou",
+      "petros-kalendralis",
+      "wenjie-liang"
+     ],
+     "author_name": "Aiara Lobo Gomes",
+     "author_position": 3,
+     "recent": true
+    },
+    {
+     "work": "W7124178724",
+     "title": "Knowledge Representation of a Multicenter Adolescent and Young Adult Cancer Infrastructure: Development of the STRONG AYA Knowledge Graph",
+     "date": "2026-01-01",
+     "url": "https://doi.org/10.1200/cci-25-00177",
+     "current_coauthors": [
+      "andre-dekker",
+      "johan-van-soest",
+      "joshi-hogenboom",
+      "leonard-wee"
+     ],
+     "author_name": "Aiara Lobo Gomes",
+     "author_position": 12,
+     "recent": true
+    },
+    {
+     "work": "W4415259680",
+     "title": "Development of the STRONG-AYA federated learning-based adolescent and young adult cancer information portal: a co-creation process with adolescents and young adults with lived experience of cancer (Preprint)",
+     "date": "2025-10-16",
+     "url": "https://doi.org/10.2196/preprints.85870",
+     "current_coauthors": [
+      "andre-dekker",
+      "joshi-hogenboom",
+      "leonard-wee",
+      "rianne-fijten"
+     ],
+     "author_name": "Aiara Lobo Gomes",
+     "author_position": 7,
+     "recent": true
+    },
+    {
+     "work": "W4411338103",
+     "title": "Predicting overall survival of NSCLC patients with clinical, radiomics and deep learning features",
+     "date": "2025-06-16",
+     "url": "https://doi.org/10.1101/2025.06.13.25329594",
+     "current_coauthors": [
+      "andre-dekker",
+      "jikai-zhou",
+      "petros-kalendralis",
+      "wenjie-liang"
+     ],
+     "author_name": "Aiara Lobo Gomes",
+     "author_position": 3,
+     "recent": true
+    },
+    {
+     "work": "W4411034911",
+     "title": "Knowledge representation of a multi-centre adolescent and young adult (AYA) cancer infrastructure; development of the STRONG AYA Knowledge Graph",
+     "date": "2025-06-03",
+     "url": "https://doi.org/10.1101/2025.06.03.25328788",
+     "current_coauthors": [
+      "andre-dekker",
+      "johan-van-soest",
+      "joshi-hogenboom",
+      "leonard-wee"
+     ],
+     "author_name": "Aiara Lobo Gomes",
+     "author_position": 12,
+     "recent": true
+    },
+    {
+     "work": "W4410448008",
+     "title": "What to Report? A Systematic Review of Medical AI Reporting Guidelines: Preliminary Results",
+     "date": "2025-05-15",
+     "url": "https://doi.org/10.3233/shti250351",
+     "current_coauthors": [
+      "andre-dekker",
+      "daniel-slob",
+      "ekaterina-akhmad",
+      "johan-van-soest"
+     ],
+     "author_name": "Aiara Lobo Gomes",
+     "author_position": 3,
+     "recent": true
+    },
+    {
+     "work": "W4410447703",
+     "title": "From Federated Learning to Publicly Facing Platform; Proof-of-Concept of the STRONG AYA Information Portal",
+     "date": "2025-05-15",
+     "url": "https://doi.org/10.3233/shti250407",
+     "current_coauthors": [
+      "andre-dekker",
+      "joshi-hogenboom",
+      "leonard-wee"
+     ],
+     "author_name": "Aiara Lobo Gomes",
+     "author_position": 2,
+     "recent": true
+    },
+    {
+     "work": "W4410548081",
+     "title": "3356 a personal health knowledge graph for clinical data harmonization in breast cancer radiotherapy patients",
+     "date": "2025-05-01",
+     "url": "https://doi.org/10.1016/s0167-8140(25)01651-2",
+     "current_coauthors": [
+      "andre-dekker",
+      "petros-kalendralis",
+      "rutger-van-mierlo",
+      "wenjie-liang"
+     ],
+     "author_name": "Aiara Lobo Gomes",
+     "author_position": 9,
+     "recent": true
+    },
+    {
+     "work": "W4408980986",
+     "title": "231P: Prognostic factors for survival in unresectable stage III non-small cell lung cancer (NSCLC) receiving chemoradiotherapy (CRT)",
+     "date": "2025-03-01",
+     "url": "https://doi.org/10.1016/s1556-0864(25)00424-1",
+     "current_coauthors": [
+      "petros-kalendralis"
+     ],
+     "author_name": "Aiara Lobo Gomes",
+     "author_position": 7,
+     "recent": true
+    },
+    {
+     "work": "W4407897666",
+     "title": "DINASTY in NSCLC – a multicenter retrospective study on real-world data using federated analysis",
+     "date": "2025-02-23",
+     "url": "https://doi.org/10.1101/2025.02.22.25321981",
+     "current_coauthors": [
+      "anne-lore-bynens",
+      "ivan-zhovannik"
+     ],
+     "author_name": "Aiara Lobo Gomes",
+     "author_position": 13,
+     "recent": true
+    },
+    {
+     "work": "W4404946484",
+     "title": "Actionability of Synthetic Data in a Heterogeneous and Rare Health Care Demographic: Adolescents and Young Adults With Cancer",
+     "date": "2024-12-01",
+     "url": "https://doi.org/10.1200/cci.24.00056",
+     "current_coauthors": [
+      "andre-dekker",
+      "joshi-hogenboom",
+      "leonard-wee"
+     ],
+     "author_name": "Aiara Lobo Gomes",
+     "author_position": 2,
+     "recent": true
+    },
+    {
+     "work": "W4402560604",
+     "title": "1364P Federated analysis of overall survival (OS) by location of metastases (mets) in patients (pts) with metastatic NSCLC (mNSCLC) from the Digital Oncology Network for Europe (DigiONE)",
+     "date": "2024-09-01",
+     "url": "https://doi.org/10.1016/j.annonc.2024.08.1419",
+     "current_coauthors": [
+      "ivan-zhovannik"
+     ],
+     "author_name": "Aiara Lobo Gomes",
+     "author_position": 14,
+     "recent": false
+    },
+    {
+     "work": "W4400977602",
+     "title": "Feasibility of training federated deep learning oropharyngeal primary tumor segmentation models without sharing gradient information",
+     "date": "2024-07-25",
+     "url": "https://doi.org/10.21203/rs.3.rs-4644605/v1",
+     "current_coauthors": [
+      "ananya-choudhury",
+      "andre-dekker",
+      "leonard-wee",
+      "leroy-volmer"
+     ],
+     "author_name": "Aiara Lobo Gomes",
+     "author_position": 3,
+     "recent": false
+    },
+    {
+     "work": "W4392049920",
+     "title": "Getting real about synthetic data ethics",
+     "date": "2024-02-22",
+     "url": "https://doi.org/10.1038/s44319-024-00101-0",
+     "current_coauthors": [
+      "andre-dekker",
+      "joshi-hogenboom",
+      "leonard-wee"
+     ],
+     "author_name": "Aiara Lobo Gomes",
+     "author_position": 5,
+     "recent": false
+    }
+   ]
+  },
+  "alberto-traverso": {
+   "name": "Alberto Traverso",
+   "profile_url": "https://www.clinicaldatascience.nl/alberto-traverso",
+   "checked_at": "2026-10-21",
+   "window_start": "2024-10-21",
+   "recent_months": 24,
+   "shared_papers": 16,
+   "recent_shared_papers": 2,
+   "last_collaboration_date": "2025-04-21",
+   "followup_until": "2027-04-21",
+   "current_coauthors": [
+    "andre-dekker",
+    "johan-van-soest"
+   ],
+   "status": "recent_collaboration",
+   "orcid": "0000-0001-6183-4429",
+   "orcid_verified": true,
+   "scholar_id": "MvWO42oAAAAJ",
+   "identifier_evidence": {
+    "scholar": {
+     "checked_at": "2026-10-21",
+     "url": "https://scholar.google.com/citations?user=MvWO42oAAAAJ",
+     "shared_works": [
+      "W4391258615",
+      "W4390706463",
+      "W4391106310",
+      "W4402897784",
+      "W4401013932",
+      "W4394675050",
+      "W4393407981",
+      "W4405585841",
+      "W4399466786",
+      "W4393065851",
+      "W4402137708",
+      "W4396592229"
+     ],
+     "known_coauthors": [
+      "ananya-choudhury",
+      "andre-dekker",
+      "leonard-wee"
+     ]
+    },
+    "orcid": {
+     "checked_at": "2026-10-21",
+     "url": "https://orcid.org/0000-0001-6183-4429",
+     "shared_works": [
+      "W4409690097",
+      "W4391106310",
+      "W4390706463",
+      "W4401013932",
+      "W4391258615",
+      "W4393065851",
+      "W4393407981",
+      "W4402137708",
+      "W4394675050",
+      "W4402897784",
+      "W4399466786"
+     ],
+     "known_coauthors": []
+    }
+   },
+   "evidence": [
+    {
+     "work": "W4409690097",
+     "title": "Abstract 3372: Building precision oncology via real-world data standardization, privacy preserving infrastructures, and collaboration among IT and clinical experts: The DIGICORE network experience",
+     "date": "2025-04-21",
+     "url": "https://doi.org/10.1158/1538-7445.am2025-3372",
+     "current_coauthors": [
+      "andre-dekker"
+     ],
+     "author_name": "Alberto Traverso",
+     "author_position": 1,
+     "recent": true
+    },
+    {
+     "work": "W4405585841",
+     "title": "PRE-ACT: Prediction of Radiotherapy side Effects using explainable AI for patient Communication and Treatment modification",
+     "date": "2024-12-19",
+     "url": "https://doi.org/10.1016/j.jcpo.2024.100537",
+     "current_coauthors": [
+      "andre-dekker",
+      "johan-van-soest"
+     ],
+     "author_name": "Alberto Traverso",
+     "author_position": 14,
+     "recent": true
+    },
+    {
+     "work": "W4402897784",
+     "title": "Prediction of new-onset atrial fibrillation in patients with non-small cell lung cancer treated with curative-intent conventional radiotherapy",
+     "date": "2024-09-26",
+     "url": "https://doi.org/10.1016/j.radonc.2024.110544",
+     "current_coauthors": [
+      "andre-dekker",
+      "leonard-nurnberg"
+     ],
+     "author_name": "Alberto Traverso",
+     "author_position": 9,
+     "recent": false
+    },
+    {
+     "work": "W4402137708",
+     "title": "Predicting axillary lymph node metastasis in breast cancer based on ultrasound radiofrequency time-series analysis",
+     "date": "2024-09-02",
+     "url": "https://doi.org/10.1177/02841851241268463",
+     "current_coauthors": [
+      "andre-dekker"
+     ],
+     "author_name": "Alberto Traverso",
+     "author_position": 5,
+     "recent": false
+    },
+    {
+     "work": "W4401013932",
+     "title": "A multi-Task Learning based applicable AI model simultaneously predicts stage, histology, grade and LNM for cervical cancer before surgery",
+     "date": "2024-07-26",
+     "url": "https://doi.org/10.1186/s12905-024-03270-1",
+     "current_coauthors": [
+      "andre-dekker"
+     ],
+     "author_name": "Alberto Traverso",
+     "author_position": 11,
+     "recent": false
+    },
+    {
+     "work": "W4399466786",
+     "title": "Preoperative prediction of high-grade osteosarcoma response to neoadjuvant therapy based on a plain CT radiomics model: A dual-center study",
+     "date": "2024-06-09",
+     "url": "https://doi.org/10.1016/j.jbo.2024.100614",
+     "current_coauthors": [
+      "andre-dekker"
+     ],
+     "author_name": "Alberto Traverso",
+     "author_position": 4,
+     "recent": false
+    },
+    {
+     "work": "W4402044888",
+     "title": "1733: Factors associated with cardiac toxicity after radical radiotherapy in patients with lung cancer",
+     "date": "2024-05-01",
+     "url": "https://doi.org/10.1016/s0167-8140(24)02075-9",
+     "current_coauthors": [
+      "andre-dekker",
+      "leonard-nurnberg"
+     ],
+     "author_name": "Alberto Traverso",
+     "author_position": 7,
+     "recent": false
+    },
+    {
+     "work": "W4402037306",
+     "title": "373: Predicting neurocognitive decline after brain irradiation in adult patients with primary brain tumor",
+     "date": "2024-05-01",
+     "url": "https://doi.org/10.1016/s0167-8140(24)01011-9",
+     "current_coauthors": [
+      "andre-dekker"
+     ],
+     "author_name": "Alberto Traverso",
+     "author_position": 10,
+     "recent": false
+    },
+    {
+     "work": "W4396592229",
+     "title": "Development of an ai prediction model for arm lymphoedema following breast cancer surgery and radiotherapy",
+     "date": "2024-05-01",
+     "url": "https://doi.org/10.1016/j.ejso.2024.108216",
+     "current_coauthors": [
+      "alessio-romita",
+      "andre-dekker",
+      "johan-van-soest"
+     ],
+     "author_name": "Alberto Traverso",
+     "author_position": 17,
+     "recent": false
+    },
+    {
+     "work": "W4393407981",
+     "title": "Optimizing CycleGAN design for CBCT-to-CT translation: insights into 2D vs 3D modeling, patch size, and the need for tailored evaluation metrics",
+     "date": "2024-04-02",
+     "url": "https://doi.org/10.1117/12.3007031",
+     "current_coauthors": [
+      "andre-dekker",
+      "ivan-zhovannik"
+     ],
+     "author_name": "Alberto Traverso",
+     "author_position": 10,
+     "recent": false
+    },
+    {
+     "work": "W4394675050",
+     "title": "Predicting the risk of neurocognitive decline after brain irradiation in adult patients with a primary brain tumor",
+     "date": "2024-03-25",
+     "url": "https://doi.org/10.1093/neuonc/noae035",
+     "current_coauthors": [
+      "andre-dekker"
+     ],
+     "author_name": "Alberto Traverso",
+     "author_position": 10,
+     "recent": false
+    },
+    {
+     "work": "W4393065851",
+     "title": "Development of an explainable AI prediction model for arm lymphoedema following breast cancer surgery and radiotherapy",
+     "date": "2024-03-01",
+     "url": "https://doi.org/10.1016/j.ejca.2024.113624",
+     "current_coauthors": [
+      "alessio-romita",
+      "andre-dekker",
+      "johan-van-soest"
+     ],
+     "author_name": "Alberto Traverso",
+     "author_position": 15,
+     "recent": false
+    },
+    {
+     "work": "W4393065168",
+     "title": "Breast cancer patients’ communication needs and wishes for an explainable Artificial Intelligence prediction model for lymphedema",
+     "date": "2024-03-01",
+     "url": "https://doi.org/10.1016/j.ejca.2024.113820",
+     "current_coauthors": [
+      "alessio-romita",
+      "andre-dekker",
+      "johan-van-soest"
+     ],
+     "author_name": "Alberto Traverso",
+     "author_position": 15,
+     "recent": false
+    },
+    {
+     "work": "W4391258615",
+     "title": "Assessing the role of GPT-4 in thyroid ultrasound diagnosis and treatment recommendations: enhancing interpretability with a chain of thought approach",
+     "date": "2024-01-26",
+     "url": "https://doi.org/10.21037/qims-23-1180",
+     "current_coauthors": [
+      "andre-dekker"
+     ],
+     "author_name": "Alberto Traverso",
+     "author_position": 3,
+     "recent": false
+    },
+    {
+     "work": "W4391106310",
+     "title": "A PET/CT radiomics model for predicting distant metastasis in early-stage non–small cell lung cancer patients treated with stereotactic body radiotherapy: a multicentric study",
+     "date": "2024-01-22",
+     "url": "https://doi.org/10.1186/s13014-024-02402-z",
+     "current_coauthors": [
+      "andre-dekker",
+      "leonard-wee"
+     ],
+     "author_name": "Alberto Traverso",
+     "author_position": 18,
+     "recent": false
+    },
+    {
+     "work": "W4390706463",
+     "title": "A federated learning system for precision oncology in Europe: DigiONE",
+     "date": "2024-01-09",
+     "url": "https://doi.org/10.1038/s41591-023-02715-8",
+     "current_coauthors": [
+      "andre-dekker"
+     ],
+     "author_name": "Alberto Traverso",
+     "author_position": 7,
+     "recent": false
+    }
+   ]
+  },
+  "anke-bruninx": {
+   "name": "Anke Bruninx",
+   "profile_url": "https://www.clinicaldatascience.nl/anke-bruninx",
+   "checked_at": "2026-10-21",
+   "window_start": "2024-10-21",
+   "recent_months": 24,
+   "shared_papers": 3,
+   "recent_shared_papers": 3,
+   "last_collaboration_date": "2025-07-02",
+   "followup_until": "2027-07-02",
+   "current_coauthors": [
+    "andre-dekker",
+    "petros-kalendralis",
+    "rutger-van-mierlo"
+   ],
+   "status": "recent_collaboration",
+   "orcid": "0000-0002-5916-8735",
+   "orcid_verified": true,
+   "scholar_id": null,
+   "identifier_evidence": {
+    "orcid": {
+     "checked_at": "2026-10-21",
+     "url": "https://orcid.org/0000-0002-5916-8735",
+     "shared_works": [
+      "W4409360221",
+      "W4411961075",
+      "W4411962851"
+     ],
+     "known_coauthors": []
+    }
+   },
+   "evidence": [
+    {
+     "work": "W4411962851",
+     "title": "Development and temporal evaluation of sex-specific models to predict 4-year atherosclerotic cardiovascular disease risk based on age and neighbourhood characteristics in South Limburg, the Netherlands",
+     "date": "2025-07-02",
+     "url": "https://doi.org/10.1186/s41512-025-00198-4",
+     "current_coauthors": [
+      "andre-dekker"
+     ],
+     "author_name": "Anke Bruninx",
+     "author_position": 1,
+     "recent": true
+    },
+    {
+     "work": "W4411961075",
+     "title": "Exploring Safety of Down-Titrating Diuretics in Heart Failure Management",
+     "date": "2025-07-02",
+     "url": "https://doi.org/10.1002/ejhf.3714",
+     "current_coauthors": [
+      "andre-dekker"
+     ],
+     "author_name": "Anke Bruninx",
+     "author_position": 2,
+     "recent": true
+    },
+    {
+     "work": "W4409360221",
+     "title": "Optimizing Cardiovascular Risk Management in Primary Care Using a Personalized eCoach Solution Enhanced by an Artificial Intelligence–Driven Clinical Prediction Model: Protocol from the Coronary Artery Disease Risk Estimation and Early Detection Consortium",
+     "date": "2025-04-11",
+     "url": "https://doi.org/10.2196/66068",
+     "current_coauthors": [
+      "andre-dekker",
+      "petros-kalendralis",
+      "rutger-van-mierlo"
+     ],
+     "author_name": "Anke Bruninx",
+     "author_position": 4,
+     "recent": true
+    }
+   ]
+  },
+  "aria-dianati": {
+   "name": "Aria Dianati",
+   "profile_url": "https://www.clinicaldatascience.nl/aria-dianati",
+   "checked_at": "2026-10-21",
+   "window_start": "2024-10-21",
+   "recent_months": 24,
+   "shared_papers": 1,
+   "recent_shared_papers": 1,
+   "last_collaboration_date": "2026-10-03",
+   "followup_until": "2028-10-03",
+   "current_coauthors": [
+    "andre-dekker",
+    "leonard-wee"
+   ],
+   "status": "recent_collaboration",
+   "orcid": null,
+   "orcid_verified": false,
+   "scholar_id": null,
+   "identifier_evidence": {},
+   "evidence": [
+    {
+     "work": "W7218933153",
+     "title": "The impact of intratumor heterogeneity on outcome and resistance to therapy in primary breast cancer: a systematic review",
+     "date": "2026-10-03",
+     "url": "https://doi.org/10.1007/s12032-026-03426-z",
+     "current_coauthors": [
+      "andre-dekker",
+      "leonard-wee"
+     ],
+     "author_name": "Aria Dianati",
+     "author_position": 1,
+     "recent": true
+    }
+   ]
+  },
+  "ashish-jha": {
+   "name": "Ashish Jha",
+   "profile_url": "https://www.clinicaldatascience.nl/Staff/ashish-jha",
+   "checked_at": "2026-10-21",
+   "window_start": "2024-10-21",
+   "recent_months": 24,
+   "shared_papers": 4,
+   "recent_shared_papers": 3,
+   "last_collaboration_date": "2025-07-04",
+   "followup_until": "2027-07-04",
+   "current_coauthors": [
+    "andre-dekker",
+    "johan-van-soest",
+    "joshi-hogenboom",
+    "leonard-wee",
+    "umesh-kumar-baburao-sherkhane"
+   ],
+   "status": "recent_collaboration",
+   "orcid": null,
+   "orcid_verified": false,
+   "scholar_id": null,
+   "identifier_evidence": {},
+   "evidence": [
+    {
+     "work": "W4412041683",
+     "title": "Positron emission tomography imaging biomarker and artificial intelligence for the characterization of solitary pulmonary nodule",
+     "date": "2025-07-04",
+     "url": "https://doi.org/10.3389/fnume.2025.1611823",
+     "current_coauthors": [
+      "andre-dekker",
+      "leonard-wee",
+      "umesh-kumar-baburao-sherkhane"
+     ],
+     "author_name": "Ashish Kumar Jha",
+     "author_position": 1,
+     "recent": true
+    },
+    {
+     "work": "W4410560954",
+     "title": "2496 Federated Prediction Models and External Validation for Radiotherapy Outcomes in Head and Neck Cancer using F.A.I.R. Clinical and Radiomics Data",
+     "date": "2025-05-01",
+     "url": "https://doi.org/10.1016/s0167-8140(25)01096-5",
+     "current_coauthors": [
+      "andre-dekker",
+      "johan-van-soest",
+      "joshi-hogenboom",
+      "leonard-wee",
+      "umesh-kumar-baburao-sherkhane"
+     ],
+     "author_name": "Ashish Kumar Jha",
+     "author_position": 7,
+     "recent": true
+    },
+    {
+     "work": "W4407004157",
+     "title": "Federated Prediction Models and External Validation for Radiotherapy Outcomes in Oropharyngeal Cancer using F.A.I.R. Clinical and Radiomics Data",
+     "date": "2025-01-29",
+     "url": "https://doi.org/10.1101/2025.01.29.25321214",
+     "current_coauthors": [
+      "andre-dekker",
+      "johan-van-soest",
+      "joshi-hogenboom",
+      "leonard-wee",
+      "umesh-kumar-baburao-sherkhane"
+     ],
+     "author_name": "Ashish Kumar Jha",
+     "author_position": 7,
+     "recent": true
+    },
+    {
+     "work": "W4400874258",
+     "title": "Transfer learning with BERT and ClinicalBERT models for multiclass classification of radiology imaging reports",
+     "date": "2024-07-22",
+     "url": "https://doi.org/10.21203/rs.3.rs-4443132/v1",
+     "current_coauthors": [
+      "andre-dekker",
+      "leonard-wee",
+      "umesh-kumar-baburao-sherkhane"
+     ],
+     "author_name": "Ashish Kumar Jha",
+     "author_position": 3,
+     "recent": false
+    }
+   ]
+  },
+  "audrey-janssen": {
+   "name": "Audrey Janssen",
+   "profile_url": "https://www.clinicaldatascience.nl/audrey-janssen",
+   "checked_at": "2026-10-21",
+   "window_start": "2024-10-21",
+   "recent_months": 24,
+   "shared_papers": 0,
+   "recent_shared_papers": 0,
+   "last_collaboration_date": null,
+   "followup_until": null,
+   "current_coauthors": [],
+   "status": "no_collaboration_found_in_collection",
+   "orcid": null,
+   "orcid_verified": false,
+   "scholar_id": null,
+   "identifier_evidence": {},
+   "evidence": []
+  },
+  "bas-nijsten": {
+   "name": "Bas Nijsten",
+   "profile_url": "https://www.clinicaldatascience.nl/staff/bas-nijsten",
+   "checked_at": "2026-10-21",
+   "window_start": "2024-10-21",
+   "recent_months": 24,
+   "shared_papers": 0,
+   "recent_shared_papers": 0,
+   "last_collaboration_date": null,
+   "followup_until": null,
+   "current_coauthors": [],
+   "status": "no_collaboration_found_in_collection",
+   "orcid": null,
+   "orcid_verified": false,
+   "scholar_id": null,
+   "identifier_evidence": {},
+   "evidence": []
+  },
+  "biche-osong": {
+   "name": "Biche Osong",
+   "profile_url": "https://www.clinicaldatascience.nl/Staff/biche-osong",
+   "checked_at": "2026-10-21",
+   "window_start": "2024-10-21",
+   "recent_months": 24,
+   "shared_papers": 2,
+   "recent_shared_papers": 1,
+   "last_collaboration_date": "2025-08-01",
+   "followup_until": "2027-08-01",
+   "current_coauthors": [
+    "andre-dekker"
+   ],
+   "status": "recent_collaboration",
+   "orcid": "0000-0003-1499-0896",
+   "orcid_verified": true,
+   "scholar_id": "w8td4qQAAAAJ",
+   "identifier_evidence": {
+    "scholar": {
+     "checked_at": "2026-10-21",
+     "url": "https://scholar.google.com/citations?user=w8td4qQAAAAJ",
+     "shared_works": [
+      "W4413055266",
+      "W4391787579"
+     ],
+     "known_coauthors": [
+      "alberto-traverso",
+      "ananya-choudhury",
+      "andre-dekker",
+      "leonard-wee"
+     ]
+    },
+    "orcid": {
+     "checked_at": "2026-10-21",
+     "url": "https://orcid.org/0000-0003-1499-0896",
+     "shared_works": [
+      "W4413055266",
+      "W4391787579"
+     ],
+     "known_coauthors": []
+    }
+   },
+   "evidence": [
+    {
+     "work": "W4413055266",
+     "title": "Predicting near‐complete pathological response to (chemo)radiotherapy in patients with rectal cancer: A federated learning study",
+     "date": "2025-08-01",
+     "url": "https://doi.org/10.1002/mp.18034",
+     "current_coauthors": [
+      "andre-dekker"
+     ],
+     "author_name": "Biche Osong",
+     "author_position": 9,
+     "recent": true
+    },
+    {
+     "work": "W4391787579",
+     "title": "The value of PROMs for predicting erectile dysfunction in prostate cancer patients with Bayesian network",
+     "date": "2024-02-13",
+     "url": "https://doi.org/10.1016/j.tipsro.2024.100234",
+     "current_coauthors": [
+      "andre-dekker",
+      "johan-van-soest",
+      "rianne-fijten"
+     ],
+     "author_name": "Biche Osong",
+     "author_position": 1,
+     "recent": false
+    }
+   ]
+  },
+  "chaitanya-kulkarni": {
+   "name": "Chaitanya Kulkarni",
+   "profile_url": "https://www.clinicaldatascience.nl/chaitanya-kulkarni",
+   "checked_at": "2026-10-21",
+   "window_start": "2024-10-21",
+   "recent_months": 24,
+   "shared_papers": 0,
+   "recent_shared_papers": 0,
+   "last_collaboration_date": null,
+   "followup_until": null,
+   "current_coauthors": [],
+   "status": "no_collaboration_found_in_collection",
+   "orcid": null,
+   "orcid_verified": false,
+   "scholar_id": null,
+   "identifier_evidence": {},
+   "evidence": []
+  },
+  "chengbing-zeng": {
+   "name": "Chengbing Zeng",
+   "profile_url": "https://www.clinicaldatascience.nl/chengbing-zeng",
+   "checked_at": "2026-10-21",
+   "window_start": "2024-10-21",
+   "recent_months": 24,
+   "shared_papers": 0,
+   "recent_shared_papers": 0,
+   "last_collaboration_date": null,
+   "followup_until": null,
+   "current_coauthors": [],
+   "status": "no_collaboration_found_in_collection",
+   "orcid": null,
+   "orcid_verified": false,
+   "scholar_id": null,
+   "identifier_evidence": {},
+   "evidence": []
+  },
+  "chinmay-rao": {
+   "name": "Chinmay Rao",
+   "profile_url": "https://www.clinicaldatascience.nl/Staff/chinmay-rao",
+   "checked_at": "2026-10-21",
+   "window_start": "2024-10-21",
+   "recent_months": 24,
+   "shared_papers": 0,
+   "recent_shared_papers": 0,
+   "last_collaboration_date": null,
+   "followup_until": null,
+   "current_coauthors": [],
+   "status": "no_collaboration_found_in_collection",
+   "orcid": null,
+   "orcid_verified": false,
+   "scholar_id": null,
+   "identifier_evidence": {},
+   "evidence": []
+  },
+  "chong-zhang": {
+   "name": "Chong Zhang",
+   "profile_url": "https://www.clinicaldatascience.nl/chong-zhang",
+   "checked_at": "2026-10-21",
+   "window_start": "2024-10-21",
+   "recent_months": 24,
+   "shared_papers": 0,
+   "recent_shared_papers": 0,
+   "last_collaboration_date": null,
+   "followup_until": null,
+   "current_coauthors": [],
+   "status": "no_collaboration_found_in_collection",
+   "orcid": null,
+   "orcid_verified": false,
+   "scholar_id": null,
+   "identifier_evidence": {},
+   "evidence": []
+  },
+  "dennis-bontempi": {
+   "name": "Dennis Bontempi",
+   "profile_url": "https://www.clinicaldatascience.nl/dennis-bontempi",
+   "checked_at": "2026-10-21",
+   "window_start": "2024-10-21",
+   "recent_months": 24,
+   "shared_papers": 5,
+   "recent_shared_papers": 2,
+   "last_collaboration_date": "2026-10-01",
+   "followup_until": "2028-10-01",
+   "current_coauthors": [
+    "andre-dekker",
+    "leonard-nurnberg"
+   ],
+   "status": "recent_collaboration",
+   "orcid": "0000-0003-0775-5679",
+   "orcid_verified": true,
+   "scholar_id": null,
+   "identifier_evidence": {
+    "orcid": {
+     "checked_at": "2026-10-21",
+     "url": "https://orcid.org/0000-0003-0775-5679",
+     "shared_works": [
+      "W4410197107",
+      "W4401546164",
+      "W4393407981"
+     ],
+     "known_coauthors": []
+    }
+   },
+   "evidence": [
+    {
+     "work": "W7222957496",
+     "title": "Foundation artificial intelligence models for health recognition by use of face photographs (FAHR-Face): a model development and validation study",
+     "date": "2026-10-01",
+     "url": "https://doi.org/10.1016/j.landig.2026.101056",
+     "current_coauthors": [
+      "leonard-nurnberg"
+     ],
+     "author_name": "Dennis Bontempi",
+     "author_position": 5,
+     "recent": true
+    },
+    {
+     "work": "W4410197107",
+     "title": "FaceAge, a deep learning system to estimate biological age from face photographs to improve prognostication: a model development and validation study",
+     "date": "2025-05-08",
+     "url": "https://doi.org/10.1016/j.landig.2025.03.002",
+     "current_coauthors": [
+      "andre-dekker"
+     ],
+     "author_name": "Dennis Bontempi",
+     "author_position": 1,
+     "recent": true
+    },
+    {
+     "work": "W4401546164",
+     "title": "End-to-end reproducible AI pipelines in radiology using the cloud",
+     "date": "2024-08-13",
+     "url": "https://doi.org/10.1038/s41467-024-51202-2",
+     "current_coauthors": [
+      "leonard-nurnberg"
+     ],
+     "author_name": "Dennis Bontempi",
+     "author_position": 1,
+     "recent": false
+    },
+    {
+     "work": "W4402044888",
+     "title": "1733: Factors associated with cardiac toxicity after radical radiotherapy in patients with lung cancer",
+     "date": "2024-05-01",
+     "url": "https://doi.org/10.1016/s0167-8140(24)02075-9",
+     "current_coauthors": [
+      "andre-dekker",
+      "leonard-nurnberg"
+     ],
+     "author_name": "Dennis Bontempi",
+     "author_position": 4,
+     "recent": false
+    },
+    {
+     "work": "W4393407981",
+     "title": "Optimizing CycleGAN design for CBCT-to-CT translation: insights into 2D vs 3D modeling, patch size, and the need for tailored evaluation metrics",
+     "date": "2024-04-02",
+     "url": "https://doi.org/10.1117/12.3007031",
+     "current_coauthors": [
+      "andre-dekker",
+      "ivan-zhovannik"
+     ],
+     "author_name": "Dennis Bontempi",
+     "author_position": 4,
+     "recent": false
+    }
+   ]
+  },
+  "elisabeth-pfaehler": {
+   "name": "Elisabeth Pfaehler",
+   "profile_url": "https://www.clinicaldatascience.nl/Staff/elisabeth-pfaehler",
+   "checked_at": "2026-10-21",
+   "window_start": "2024-10-21",
+   "recent_months": 24,
+   "shared_papers": 0,
+   "recent_shared_papers": 0,
+   "last_collaboration_date": null,
+   "followup_until": null,
+   "current_coauthors": [],
+   "status": "no_collaboration_found_in_collection",
+   "orcid": null,
+   "orcid_verified": false,
+   "scholar_id": null,
+   "identifier_evidence": {},
+   "evidence": []
+  },
+  "emese-szakaly": {
+   "name": "Emese Szakaly",
+   "profile_url": "https://www.clinicaldatascience.nl/Staff/emese-szakaly",
+   "checked_at": "2026-10-21",
+   "window_start": "2024-10-21",
+   "recent_months": 24,
+   "shared_papers": 0,
+   "recent_shared_papers": 0,
+   "last_collaboration_date": null,
+   "followup_until": null,
+   "current_coauthors": [],
+   "status": "no_collaboration_found_in_collection",
+   "orcid": null,
+   "orcid_verified": false,
+   "scholar_id": null,
+   "identifier_evidence": {},
+   "evidence": []
+  },
+  "emmanuel-rios": {
+   "name": "Emmanuel Rios",
+   "profile_url": "https://www.clinicaldatascience.nl/Staff/emmanuel-rios",
+   "checked_at": "2026-10-21",
+   "window_start": "2024-10-21",
+   "recent_months": 24,
+   "shared_papers": 0,
+   "recent_shared_papers": 0,
+   "last_collaboration_date": null,
+   "followup_until": null,
+   "current_coauthors": [],
+   "status": "no_collaboration_found_in_collection",
+   "orcid": null,
+   "orcid_verified": false,
+   "scholar_id": null,
+   "identifier_evidence": {},
+   "evidence": []
+  },
+  "erik-roelofs": {
+   "name": "Erik Roelofs",
+   "profile_url": "https://www.clinicaldatascience.nl/Staff/erik-roelofs",
+   "checked_at": "2026-10-21",
+   "window_start": "2024-10-21",
+   "recent_months": 24,
+   "shared_papers": 0,
+   "recent_shared_papers": 0,
+   "last_collaboration_date": null,
+   "followup_until": null,
+   "current_coauthors": [],
+   "status": "no_collaboration_found_in_collection",
+   "orcid": null,
+   "orcid_verified": false,
+   "scholar_id": null,
+   "identifier_evidence": {},
+   "evidence": []
+  },
+  "esther-bloemen": {
+   "name": "Esther Bloemen",
+   "profile_url": "https://www.clinicaldatascience.nl/staff/esther-bloemen",
+   "checked_at": "2026-10-21",
+   "window_start": "2024-10-21",
+   "recent_months": 24,
+   "shared_papers": 0,
+   "recent_shared_papers": 0,
+   "last_collaboration_date": null,
+   "followup_until": null,
+   "current_coauthors": [],
+   "status": "no_collaboration_found_in_collection",
+   "orcid": null,
+   "orcid_verified": false,
+   "scholar_id": null,
+   "identifier_evidence": {},
+   "evidence": []
+  },
+  "fariba-tohidinezhad": {
+   "name": "Fariba Tohidinezhad",
+   "profile_url": "https://www.clinicaldatascience.nl/fariba-tohidinezhad",
+   "checked_at": "2026-10-21",
+   "window_start": "2024-10-21",
+   "recent_months": 24,
+   "shared_papers": 9,
+   "recent_shared_papers": 3,
+   "last_collaboration_date": "2026-01-13",
+   "followup_until": "2028-01-13",
+   "current_coauthors": [
+    "andre-dekker",
+    "jikai-zhou",
+    "petros-kalendralis",
+    "wenjie-liang"
+   ],
+   "status": "recent_collaboration",
+   "orcid": "0000-0001-8880-3593",
+   "orcid_verified": true,
+   "scholar_id": null,
+   "identifier_evidence": {
+    "orcid": {
+     "checked_at": "2026-10-21",
+     "url": "https://orcid.org/0000-0001-8880-3593",
+     "shared_works": [
+      "W4402897784",
+      "W4394675050",
+      "W4393065851"
+     ],
+     "known_coauthors": []
+    }
+   },
+   "evidence": [
+    {
+     "work": "W7123926908",
+     "title": "Predicting Overall Survival of NSCLC Patients with Clinical, Radiomics and Deep Learning Features",
+     "date": "2026-01-13",
+     "url": "https://doi.org/10.1007/s10278-025-01828-5",
+     "current_coauthors": [
+      "andre-dekker",
+      "jikai-zhou",
+      "petros-kalendralis",
+      "wenjie-liang"
+     ],
+     "author_name": "Fariba Tohidinezhad",
+     "author_position": 6,
+     "recent": true
+    },
+    {
+     "work": "W4411338103",
+     "title": "Predicting overall survival of NSCLC patients with clinical, radiomics and deep learning features",
+     "date": "2025-06-16",
+     "url": "https://doi.org/10.1101/2025.06.13.25329594",
+     "current_coauthors": [
+      "andre-dekker",
+      "jikai-zhou",
+      "petros-kalendralis",
+      "wenjie-liang"
+     ],
+     "author_name": "Fariba Tohidinezhad",
+     "author_position": 6,
+     "recent": true
+    },
+    {
+     "work": "W4408980986",
+     "title": "231P: Prognostic factors for survival in unresectable stage III non-small cell lung cancer (NSCLC) receiving chemoradiotherapy (CRT)",
+     "date": "2025-03-01",
+     "url": "https://doi.org/10.1016/s1556-0864(25)00424-1",
+     "current_coauthors": [
+      "petros-kalendralis"
+     ],
+     "author_name": "Fariba Tohidinezhad",
+     "author_position": 2,
+     "recent": true
+    },
+    {
+     "work": "W4402897784",
+     "title": "Prediction of new-onset atrial fibrillation in patients with non-small cell lung cancer treated with curative-intent conventional radiotherapy",
+     "date": "2024-09-26",
+     "url": "https://doi.org/10.1016/j.radonc.2024.110544",
+     "current_coauthors": [
+      "andre-dekker",
+      "leonard-nurnberg"
+     ],
+     "author_name": "Fariba Tohidinezhad",
+     "author_position": 1,
+     "recent": false
+    },
+    {
+     "work": "W4402044888",
+     "title": "1733: Factors associated with cardiac toxicity after radical radiotherapy in patients with lung cancer",
+     "date": "2024-05-01",
+     "url": "https://doi.org/10.1016/s0167-8140(24)02075-9",
+     "current_coauthors": [
+      "andre-dekker",
+      "leonard-nurnberg"
+     ],
+     "author_name": "Fariba Tohidinezhad",
+     "author_position": 1,
+     "recent": false
+    },
+    {
+     "work": "W4402037306",
+     "title": "373: Predicting neurocognitive decline after brain irradiation in adult patients with primary brain tumor",
+     "date": "2024-05-01",
+     "url": "https://doi.org/10.1016/s0167-8140(24)01011-9",
+     "current_coauthors": [
+      "andre-dekker"
+     ],
+     "author_name": "Fariba Tohidinezhad",
+     "author_position": 1,
+     "recent": false
+    },
+    {
+     "work": "W4396592229",
+     "title": "Development of an ai prediction model for arm lymphoedema following breast cancer surgery and radiotherapy",
+     "date": "2024-05-01",
+     "url": "https://doi.org/10.1016/j.ejso.2024.108216",
+     "current_coauthors": [
+      "alessio-romita",
+      "andre-dekker",
+      "johan-van-soest"
+     ],
+     "author_name": "Fariba Tohidinezhad",
+     "author_position": 16,
+     "recent": false
+    },
+    {
+     "work": "W4394675050",
+     "title": "Predicting the risk of neurocognitive decline after brain irradiation in adult patients with a primary brain tumor",
+     "date": "2024-03-25",
+     "url": "https://doi.org/10.1093/neuonc/noae035",
+     "current_coauthors": [
+      "andre-dekker"
+     ],
+     "author_name": "Fariba Tohidinezhad",
+     "author_position": 1,
+     "recent": false
+    },
+    {
+     "work": "W4393065851",
+     "title": "Development of an explainable AI prediction model for arm lymphoedema following breast cancer surgery and radiotherapy",
+     "date": "2024-03-01",
+     "url": "https://doi.org/10.1016/j.ejca.2024.113624",
+     "current_coauthors": [
+      "alessio-romita",
+      "andre-dekker",
+      "johan-van-soest"
+     ],
+     "author_name": "Fariba Tohidinezhad",
+     "author_position": 16,
+     "recent": false
+    }
+   ]
+  },
+  "femke-vaassen": {
+   "name": "Femke Vaassen",
+   "profile_url": "https://www.clinicaldatascience.nl/femke-vaassen",
+   "checked_at": "2026-10-21",
+   "window_start": "2024-10-21",
+   "recent_months": 24,
+   "shared_papers": 5,
+   "recent_shared_papers": 0,
+   "last_collaboration_date": null,
+   "followup_until": null,
+   "current_coauthors": [],
+   "status": "historical_collaboration",
+   "orcid": "0009-0005-3837-167X",
+   "orcid_verified": false,
+   "scholar_id": null,
+   "identifier_evidence": {},
+   "evidence": [
+    {
+     "work": "W4402897784",
+     "title": "Prediction of new-onset atrial fibrillation in patients with non-small cell lung cancer treated with curative-intent conventional radiotherapy",
+     "date": "2024-09-26",
+     "url": "https://doi.org/10.1016/j.radonc.2024.110544",
+     "current_coauthors": [
+      "andre-dekker",
+      "leonard-nurnberg"
+     ],
+     "author_name": "Femke Vaassen",
+     "author_position": 3,
+     "recent": false
+    },
+    {
+     "work": "W4402045182",
+     "title": "1753: Deep learning for in vivo EPID dosimetry classification: Relating gamma analysis and DVH metrics",
+     "date": "2024-05-01",
+     "url": "https://doi.org/10.1016/s0167-8140(24)02092-9",
+     "current_coauthors": [
+      "cecile-wolfs"
+     ],
+     "author_name": "Femke Vaassen",
+     "author_position": 1,
+     "recent": false
+    },
+    {
+     "work": "W4402044888",
+     "title": "1733: Factors associated with cardiac toxicity after radical radiotherapy in patients with lung cancer",
+     "date": "2024-05-01",
+     "url": "https://doi.org/10.1016/s0167-8140(24)02075-9",
+     "current_coauthors": [
+      "andre-dekker",
+      "leonard-nurnberg"
+     ],
+     "author_name": "Femke Vaassen",
+     "author_position": 3,
+     "recent": false
+    },
+    {
+     "work": "W4402037306",
+     "title": "373: Predicting neurocognitive decline after brain irradiation in adult patients with primary brain tumor",
+     "date": "2024-05-01",
+     "url": "https://doi.org/10.1016/s0167-8140(24)01011-9",
+     "current_coauthors": [
+      "andre-dekker"
+     ],
+     "author_name": "Femke Vaassen",
+     "author_position": 3,
+     "recent": false
+    },
+    {
+     "work": "W4394675050",
+     "title": "Predicting the risk of neurocognitive decline after brain irradiation in adult patients with a primary brain tumor",
+     "date": "2024-03-25",
+     "url": "https://doi.org/10.1093/neuonc/noae035",
+     "current_coauthors": [
+      "andre-dekker"
+     ],
+     "author_name": "Femke Vaassen",
+     "author_position": 3,
+     "recent": false
+    }
+   ]
+  },
+  "florian-van-daalen": {
+   "name": "Florian van Daalen",
+   "profile_url": "https://www.clinicaldatascience.nl/florian-van-daalen",
+   "checked_at": "2026-10-21",
+   "window_start": "2024-10-21",
+   "recent_months": 24,
+   "shared_papers": 8,
+   "recent_shared_papers": 6,
+   "last_collaboration_date": "2026-02-27",
+   "followup_until": "2028-02-27",
+   "current_coauthors": [
+    "andre-dekker",
+    "balu-krishna-sasidharan",
+    "hannah-mary-thomas",
+    "johan-van-soest",
+    "leonard-wee",
+    "marine-jacquemin",
+    "ralph-brecheisen",
+    "rianne-fijten"
+   ],
+   "status": "recent_collaboration",
+   "orcid": "0000-0002-2229-8587",
+   "orcid_verified": true,
+   "scholar_id": null,
+   "identifier_evidence": {
+    "orcid": {
+     "checked_at": "2026-10-21",
+     "url": "https://orcid.org/0000-0002-2229-8587",
+     "shared_works": [
+      "W4414601064",
+      "W7131779647",
+      "W4411465141",
+      "W4412555313",
+      "W4407037294",
+      "W4404828427",
+      "W4403702516",
+      "W4395462746"
+     ],
+     "known_coauthors": []
+    }
+   },
+   "evidence": [
+    {
+     "work": "W7131779647",
+     "title": "Decoding Uncertainty Quantification for Oncology—An Illustration Using Radiomics",
+     "date": "2026-02-27",
+     "url": "https://doi.org/10.3390/diagnostics16050700",
+     "current_coauthors": [
+      "andre-dekker",
+      "balu-krishna-sasidharan",
+      "hannah-mary-thomas",
+      "leonard-wee",
+      "rianne-fijten"
+     ],
+     "author_name": "Florian van Daalen",
+     "author_position": 1,
+     "recent": true
+    },
+    {
+     "work": "W4414601064",
+     "title": "Multinomial Classification Certainty: a new uncertainty metric for multinomial outcome prediction",
+     "date": "2025-09-29",
+     "url": "https://doi.org/10.1007/s13748-025-00404-w",
+     "current_coauthors": [
+      "andre-dekker",
+      "leonard-wee",
+      "ralph-brecheisen"
+     ],
+     "author_name": "Florian van Daalen",
+     "author_position": 1,
+     "recent": true
+    },
+    {
+     "work": "W4412555313",
+     "title": "Verticox+: vertically distributed Cox proportional hazards model with improved privacy guarantees",
+     "date": "2025-07-17",
+     "url": "https://doi.org/10.1007/s40747-025-02022-4",
+     "current_coauthors": [
+      "andre-dekker"
+     ],
+     "author_name": "Florian van Daalen",
+     "author_position": 1,
+     "recent": true
+    },
+    {
+     "work": "W4411465141",
+     "title": "A critique of current approaches to privacy in machine learning",
+     "date": "2025-06-20",
+     "url": "https://doi.org/10.1007/s10676-025-09843-4",
+     "current_coauthors": [
+      "andre-dekker",
+      "johan-van-soest",
+      "marine-jacquemin"
+     ],
+     "author_name": "Florian van Daalen",
+     "author_position": 1,
+     "recent": true
+    },
+    {
+     "work": "W4407037294",
+     "title": "Lung Cancer Detection Using Bayesian Networks: A Retrospective Development and Validation Study on a Danish Population of High‐Risk Individuals",
+     "date": "2025-01-31",
+     "url": "https://doi.org/10.1002/cam4.70458",
+     "current_coauthors": [
+      "leonard-wee"
+     ],
+     "author_name": "Florian van Daalen",
+     "author_position": 2,
+     "recent": true
+    },
+    {
+     "work": "W4404828427",
+     "title": "A Bayesian Network Approach to Lung Cancer Screening: Assessing the Impact of Data Quantity, Quality, and the Combination of Data from Danish Electronic Health Records",
+     "date": "2024-11-28",
+     "url": "https://doi.org/10.3390/cancers16233989",
+     "current_coauthors": [
+      "leonard-wee"
+     ],
+     "author_name": "Florian van Daalen",
+     "author_position": 1,
+     "recent": true
+    },
+    {
+     "work": "W4403702516",
+     "title": "A Response to: A Note on \"Privacy Preserving n-Party Scalar Product Protocol\"",
+     "date": "2024-09-16",
+     "url": "https://doi.org/10.48550/arxiv.2409.10057",
+     "current_coauthors": [
+      "andre-dekker"
+     ],
+     "author_name": "Florian van Daalen",
+     "author_position": 1,
+     "recent": false
+    },
+    {
+     "work": "W4395462746",
+     "title": "VertiBayes: learning Bayesian network parameters from vertically partitioned data with missing values",
+     "date": "2024-04-25",
+     "url": "https://doi.org/10.1007/s40747-024-01424-0",
+     "current_coauthors": [
+      "andre-dekker"
+     ],
+     "author_name": "Florian van Daalen",
+     "author_position": 1,
+     "recent": false
+    }
+   ]
+  },
+  "francesco-cellini": {
+   "name": "Francesco Cellini",
+   "profile_url": "https://www.clinicaldatascience.nl/francesco-cellini",
+   "checked_at": "2026-10-21",
+   "window_start": "2024-10-21",
+   "recent_months": 24,
+   "shared_papers": 0,
+   "recent_shared_papers": 0,
+   "last_collaboration_date": null,
+   "followup_until": null,
+   "current_coauthors": [],
+   "status": "no_collaboration_found_in_collection",
+   "orcid": null,
+   "orcid_verified": false,
+   "scholar_id": null,
+   "identifier_evidence": {},
+   "evidence": []
+  },
+  "frank-dankers": {
+   "name": "Frank Dankers",
+   "profile_url": "https://www.clinicaldatascience.nl/Staff/frank-dankers",
+   "checked_at": "2026-10-21",
+   "window_start": "2024-10-21",
+   "recent_months": 24,
+   "shared_papers": 0,
+   "recent_shared_papers": 0,
+   "last_collaboration_date": null,
+   "followup_until": null,
+   "current_coauthors": [],
+   "status": "no_collaboration_found_in_collection",
+   "orcid": null,
+   "orcid_verified": false,
+   "scholar_id": null,
+   "identifier_evidence": {},
+   "evidence": []
+  },
+  "gabrielle-edgecombe": {
+   "name": "Gabrielle Edgecombe",
+   "profile_url": "https://www.clinicaldatascience.nl/gabrielle-edgecombe",
+   "checked_at": "2026-10-21",
+   "window_start": "2024-10-21",
+   "recent_months": 24,
+   "shared_papers": 0,
+   "recent_shared_papers": 0,
+   "last_collaboration_date": null,
+   "followup_until": null,
+   "current_coauthors": [],
+   "status": "no_collaboration_found_in_collection",
+   "orcid": null,
+   "orcid_verified": false,
+   "scholar_id": null,
+   "identifier_evidence": {},
+   "evidence": []
+  },
+  "geert-bosmans": {
+   "name": "Geert Bosmans",
+   "profile_url": "https://www.clinicaldatascience.nl/staff/geert-bosmans",
+   "checked_at": "2026-10-21",
+   "window_start": "2024-10-21",
+   "recent_months": 24,
+   "shared_papers": 1,
+   "recent_shared_papers": 1,
+   "last_collaboration_date": "2025-12-25",
+   "followup_until": "2027-12-25",
+   "current_coauthors": [
+    "andre-dekker",
+    "thijs-ackermans"
+   ],
+   "status": "recent_collaboration",
+   "orcid": null,
+   "orcid_verified": false,
+   "scholar_id": null,
+   "identifier_evidence": {},
+   "evidence": [
+    {
+     "work": "W7117241713",
+     "title": "Impact of Proton Therapy Implementation on Processes, Patient Satisfaction, and Technology Use in a Radiation Therapy Department",
+     "date": "2025-12-25",
+     "url": "https://doi.org/10.1016/j.adro.2025.101988",
+     "current_coauthors": [
+      "andre-dekker",
+      "thijs-ackermans"
+     ],
+     "author_name": "Geert Bosmans",
+     "author_position": 5,
+     "recent": true
+    }
+   ]
+  },
+  "geetha-mahadevaiah": {
+   "name": "Geetha Mahadevaiah",
+   "profile_url": "https://www.clinicaldatascience.nl/Staff/geetha-mahadevaiah",
+   "checked_at": "2026-10-21",
+   "window_start": "2024-10-21",
+   "recent_months": 24,
+   "shared_papers": 0,
+   "recent_shared_papers": 0,
+   "last_collaboration_date": null,
+   "followup_until": null,
+   "current_coauthors": [],
+   "status": "no_collaboration_found_in_collection",
+   "orcid": null,
+   "orcid_verified": false,
+   "scholar_id": null,
+   "identifier_evidence": {},
+   "evidence": []
+  },
+  "gijs-frenken": {
+   "name": "Gijs Frenken",
+   "profile_url": "https://www.clinicaldatascience.nl/gijs-frenken",
+   "checked_at": "2026-10-21",
+   "window_start": "2024-10-21",
+   "recent_months": 24,
+   "shared_papers": 0,
+   "recent_shared_papers": 0,
+   "last_collaboration_date": null,
+   "followup_until": null,
+   "current_coauthors": [],
+   "status": "no_collaboration_found_in_collection",
+   "orcid": null,
+   "orcid_verified": false,
+   "scholar_id": null,
+   "identifier_evidence": {},
+   "evidence": []
+  },
+  "girma-gilano": {
+   "name": "Girma Gilano",
+   "profile_url": "https://www.clinicaldatascience.nl/girma-gilano",
+   "checked_at": "2026-10-21",
+   "window_start": "2024-10-21",
+   "recent_months": 24,
+   "shared_papers": 8,
+   "recent_shared_papers": 5,
+   "last_collaboration_date": "2026-06-02",
+   "followup_until": "2028-06-02",
+   "current_coauthors": [
+    "andre-dekker",
+    "rianne-fijten"
+   ],
+   "status": "recent_collaboration",
+   "orcid": "0000-0002-5847-1425",
+   "orcid_verified": true,
+   "scholar_id": null,
+   "identifier_evidence": {
+    "orcid": {
+     "checked_at": "2026-10-21",
+     "url": "https://orcid.org/0000-0002-5847-1425",
+     "shared_works": [
+      "W7163123298",
+      "W7110945548",
+      "W4415924457",
+      "W4391514506",
+      "W4392012924",
+      "W4391657914"
+     ],
+     "known_coauthors": []
+    }
+   },
+   "evidence": [
+    {
+     "work": "W7163123298",
+     "title": "The Effect of Mobile Health Intervention on Prelacteal Feeding Among Mothers in the First Month After Birth in South Ethiopia: A Cluster-Randomized Controlled Trial",
+     "date": "2026-06-02",
+     "url": "https://doi.org/10.3390/nu18111795",
+     "current_coauthors": [
+      "andre-dekker",
+      "rianne-fijten"
+     ],
+     "author_name": "Girma Gilano",
+     "author_position": 1,
+     "recent": true
+    },
+    {
+     "work": "W7110945548",
+     "title": "Effect of mHealth on Postpartum Family Planning and Its Associated Factors Among Women in South Ethiopia: A Cluster-Randomized Controlled Trial",
+     "date": "2025-12-09",
+     "url": "https://doi.org/10.3390/jcm14248703",
+     "current_coauthors": [
+      "andre-dekker",
+      "rianne-fijten"
+     ],
+     "author_name": "Girma Gilano",
+     "author_position": 1,
+     "recent": true
+    },
+    {
+     "work": "W4416575024",
+     "title": "The effect of mHealth on childhood vaccination and its associated factors among South Ethiopian mothers: a cluster randomized controlled trial",
+     "date": "2025-11-24",
+     "url": "https://doi.org/10.1038/s41598-025-25568-2",
+     "current_coauthors": [
+      "andre-dekker",
+      "rianne-fijten"
+     ],
+     "author_name": "Girma Gilano",
+     "author_position": 1,
+     "recent": true
+    },
+    {
+     "work": "W4415924457",
+     "title": "The Effect of mHealth on Exclusive Breastfeeding and Its Associated Factors Among Women in South Ethiopia: A Cluster Randomized Controlled Trial",
+     "date": "2025-11-05",
+     "url": "https://doi.org/10.3390/nu17213477",
+     "current_coauthors": [
+      "andre-dekker",
+      "rianne-fijten"
+     ],
+     "author_name": "Girma Gilano",
+     "author_position": 1,
+     "recent": true
+    },
+    {
+     "work": "W4403636303",
+     "title": "Contextual success and pitfalls of mHealth service for maternal and child health in Africa: An Intervention, Context, Actors, Mechanism, and Outcome (ICAMO) framework guided systematic review of qualitative evidence",
+     "date": "2024-10-22",
+     "url": "https://doi.org/10.1186/s12884-024-06885-2",
+     "current_coauthors": [
+      "andre-dekker",
+      "rianne-fijten"
+     ],
+     "author_name": "Girma Gilano",
+     "author_position": 1,
+     "recent": true
+    },
+    {
+     "work": "W4392012924",
+     "title": "The effect of mHealth on childhood vaccination in Africa: A systematic review and meta-analysis",
+     "date": "2024-02-21",
+     "url": "https://doi.org/10.1371/journal.pone.0294442",
+     "current_coauthors": [
+      "andre-dekker",
+      "rianne-fijten"
+     ],
+     "author_name": "Girma Gilano",
+     "author_position": 1,
+     "recent": false
+    },
+    {
+     "work": "W4391657914",
+     "title": "The role of mHealth intervention to improve maternal and child health: A provider-based qualitative study in Southern Ethiopia",
+     "date": "2024-02-08",
+     "url": "https://doi.org/10.1371/journal.pone.0295539",
+     "current_coauthors": [
+      "andre-dekker",
+      "rianne-fijten"
+     ],
+     "author_name": "Girma Gilano",
+     "author_position": 1,
+     "recent": false
+    },
+    {
+     "work": "W4391514506",
+     "title": "Effect of mobile phone messaging on uptake of maternal and child health service in southern Ethiopia: Protocol for cluster randomized controlled trial",
+     "date": "2024-02-03",
+     "url": "https://doi.org/10.1016/j.nutos.2024.02.002",
+     "current_coauthors": [
+      "andre-dekker",
+      "rianne-fijten"
+     ],
+     "author_name": "Girma Gilano",
+     "author_position": 1,
+     "recent": false
+    }
+   ]
+  },
+  "glauco-lorenzut": {
+   "name": "Glauco Lorenzut",
+   "profile_url": "https://www.clinicaldatascience.nl/Staff/glauco-lorenzut",
+   "checked_at": "2026-10-21",
+   "window_start": "2024-10-21",
+   "recent_months": 24,
+   "shared_papers": 0,
+   "recent_shared_papers": 0,
+   "last_collaboration_date": null,
+   "followup_until": null,
+   "current_coauthors": [],
+   "status": "no_collaboration_found_in_collection",
+   "orcid": null,
+   "orcid_verified": false,
+   "scholar_id": null,
+   "identifier_evidence": {},
+   "evidence": []
+  },
+  "gokul-jayakumar": {
+   "name": "Gokul Jayakumar",
+   "profile_url": "https://www.clinicaldatascience.nl/gokul-jayakumar",
+   "checked_at": "2026-10-21",
+   "window_start": "2024-10-21",
+   "recent_months": 24,
+   "shared_papers": 0,
+   "recent_shared_papers": 0,
+   "last_collaboration_date": null,
+   "followup_until": null,
+   "current_coauthors": [],
+   "status": "no_collaboration_found_in_collection",
+   "orcid": null,
+   "orcid_verified": false,
+   "scholar_id": null,
+   "identifier_evidence": {},
+   "evidence": []
+  },
+  "haiming-li": {
+   "name": "Haiming Li",
+   "profile_url": "https://www.clinicaldatascience.nl/haiming-li",
+   "checked_at": "2026-10-21",
+   "window_start": "2024-10-21",
+   "recent_months": 24,
+   "shared_papers": 0,
+   "recent_shared_papers": 0,
+   "last_collaboration_date": null,
+   "followup_until": null,
+   "current_coauthors": [],
+   "status": "no_collaboration_found_in_collection",
+   "orcid": null,
+   "orcid_verified": false,
+   "scholar_id": null,
+   "identifier_evidence": {},
+   "evidence": []
+  },
+  "hajar-hasannejadasl": {
+   "name": "Hajar Hasannejadasl",
+   "profile_url": "https://www.clinicaldatascience.nl/hajar-hasannejadasl",
+   "checked_at": "2026-10-21",
+   "window_start": "2024-10-21",
+   "recent_months": 24,
+   "shared_papers": 2,
+   "recent_shared_papers": 0,
+   "last_collaboration_date": null,
+   "followup_until": null,
+   "current_coauthors": [],
+   "status": "historical_collaboration",
+   "orcid": "0000-0001-5262-7399",
+   "orcid_verified": true,
+   "scholar_id": null,
+   "identifier_evidence": {
+    "orcid": {
+     "checked_at": "2026-10-21",
+     "url": "https://orcid.org/0000-0001-5262-7399",
+     "shared_works": [
+      "W4391787579"
+     ],
+     "known_coauthors": []
+    }
+   },
+   "evidence": [
+    {
+     "work": "W4402045107",
+     "title": "1782: Patients' perspectives on AI and decision making in cancer care",
+     "date": "2024-05-01",
+     "url": "https://doi.org/10.1016/s0167-8140(24)02116-9",
+     "current_coauthors": [
+      "andre-dekker",
+      "rianne-fijten"
+     ],
+     "author_name": "Hajar Hasannejadasl",
+     "author_position": 2,
+     "recent": false
+    },
+    {
+     "work": "W4391787579",
+     "title": "The value of PROMs for predicting erectile dysfunction in prostate cancer patients with Bayesian network",
+     "date": "2024-02-13",
+     "url": "https://doi.org/10.1016/j.tipsro.2024.100234",
+     "current_coauthors": [
+      "andre-dekker",
+      "johan-van-soest",
+      "rianne-fijten"
+     ],
+     "author_name": "Hajar Hasannejadasl",
+     "author_position": 2,
+     "recent": false
+    }
+   ]
+  },
+  "hossein-rahmani": {
+   "name": "Hossein Rahmani",
+   "profile_url": "https://www.clinicaldatascience.nl/hossein-rahmani",
+   "checked_at": "2026-10-21",
+   "window_start": "2024-10-21",
+   "recent_months": 24,
+   "shared_papers": 5,
+   "recent_shared_papers": 5,
+   "last_collaboration_date": "2026-08-25",
+   "followup_until": "2028-08-25",
+   "current_coauthors": [
+    "andre-dekker",
+    "leroy-volmer",
+    "ralph-brecheisen"
+   ],
+   "status": "recent_collaboration",
+   "orcid": "0000-0003-2988-6178",
+   "orcid_verified": false,
+   "scholar_id": null,
+   "identifier_evidence": {},
+   "evidence": [
+    {
+     "work": "W7204170550",
+     "title": "Comparing the reliability of three software programmes for manual and (semi-)automatic volumetry in healthy livers",
+     "date": "2026-08-25",
+     "url": "https://doi.org/10.4329/wjr.123720",
+     "current_coauthors": [
+      "ralph-brecheisen"
+     ],
+     "author_name": "Hossein Rahmani",
+     "author_position": 4,
+     "recent": true
+    },
+    {
+     "work": "W7160058866",
+     "title": "Comparing the performance of three software programmes for manual and (semi-)automatic liver volumetry",
+     "date": "2026-05-04",
+     "url": "https://doi.org/10.21203/rs.3.rs-9394813/v1",
+     "current_coauthors": [
+      "ralph-brecheisen"
+     ],
+     "author_name": "Hossein Rahmani",
+     "author_position": 4,
+     "recent": true
+    },
+    {
+     "work": "W4416147748",
+     "title": "The influence of AI on surgical and ablative treatments for colorectal liver metastases: a review of the current literature",
+     "date": "2025-11-12",
+     "url": "https://doi.org/10.1186/s13244-025-02072-9",
+     "current_coauthors": [
+      "andre-dekker",
+      "leroy-volmer",
+      "ralph-brecheisen"
+     ],
+     "author_name": "Hossein Rahmani",
+     "author_position": 3,
+     "recent": true
+    },
+    {
+     "work": "W4413969900",
+     "title": "Clinical and Imaging-Based Prognostic Models for Recurrence and Local Tumor Progression Following Thermal Ablation of Hepatocellular Carcinoma: A Systematic Review",
+     "date": "2025-08-14",
+     "url": "https://doi.org/10.3390/cancers17162656",
+     "current_coauthors": [
+      "ralph-brecheisen"
+     ],
+     "author_name": "Hossein Rahmani",
+     "author_position": 7,
+     "recent": true
+    },
+    {
+     "work": "W4411541582",
+     "title": "Prospective Registry Study on Thermal Liver Ablation of Primary and Secondary Liver Tumours Named the A-IMAGIO Study",
+     "date": "2025-06-23",
+     "url": "https://doi.org/10.1007/s00270-025-04093-9",
+     "current_coauthors": [
+      "leroy-volmer",
+      "ralph-brecheisen"
+     ],
+     "author_name": "Hossein Rahmani",
+     "author_position": 4,
+     "recent": true
+    }
+   ]
+  },
+  "hugo-aerts": {
+   "name": "Hugo Aerts",
+   "profile_url": "https://www.clinicaldatascience.nl/Staff/hugo-aerts",
+   "checked_at": "2026-10-21",
+   "window_start": "2024-10-21",
+   "recent_months": 24,
+   "shared_papers": 8,
+   "recent_shared_papers": 6,
+   "last_collaboration_date": "2026-10-01",
+   "followup_until": "2028-10-01",
+   "current_coauthors": [
+    "andre-dekker",
+    "leonard-nurnberg"
+   ],
+   "status": "recent_collaboration",
+   "orcid": "0000-0002-2122-2003",
+   "orcid_verified": true,
+   "scholar_id": "v7G4QvIAAAAJ",
+   "identifier_evidence": {
+    "scholar": {
+     "checked_at": "2026-10-21",
+     "url": "https://scholar.google.com/citations?user=v7G4QvIAAAAJ",
+     "shared_works": [],
+     "known_coauthors": [
+      "andre-dekker"
+     ]
+    },
+    "orcid": {
+     "checked_at": "2026-10-21",
+     "url": "https://orcid.org/0000-0002-2122-2003",
+     "shared_works": [],
+     "known_coauthors": []
+    }
+   },
+   "evidence": [
+    {
+     "work": "W7222957496",
+     "title": "Foundation artificial intelligence models for health recognition by use of face photographs (FAHR-Face): a model development and validation study",
+     "date": "2026-10-01",
+     "url": "https://doi.org/10.1016/j.landig.2026.101056",
+     "current_coauthors": [
+      "leonard-nurnberg"
+     ],
+     "author_name": "Hugo J.W.L. Aerts",
+     "author_position": 16,
+     "recent": true
+    },
+    {
+     "work": "W7204178963",
+     "title": "Thymic radiation is associated with worse outcomes in patients with NSCLC",
+     "date": "2026-08-25",
+     "url": "https://doi.org/10.1016/j.annonc.2026.07.001",
+     "current_coauthors": [
+      "leonard-nurnberg"
+     ],
+     "author_name": "Hugo J.W.L. Aerts",
+     "author_position": 24,
+     "recent": true
+    },
+    {
+     "work": "W7138973475",
+     "title": "Thymic health consequences in adults",
+     "date": "2026-03-18",
+     "url": "https://doi.org/10.1038/s41586-026-10242-y",
+     "current_coauthors": [
+      "leonard-nurnberg"
+     ],
+     "author_name": "Hugo J.W.L. Aerts",
+     "author_position": 18,
+     "recent": true
+    },
+    {
+     "work": "W7138874906",
+     "title": "Thymic health and immunotherapy outcomes in patients with cancer",
+     "date": "2026-03-18",
+     "url": "https://doi.org/10.1038/s41586-026-10243-x",
+     "current_coauthors": [
+      "leonard-nurnberg"
+     ],
+     "author_name": "Hugo J.W.L. Aerts",
+     "author_position": 23,
+     "recent": true
+    },
+    {
+     "work": "W4410438194",
+     "title": "AI Opportunistic Coronary Calcium Screening at Veterans Affairs Hospitals",
+     "date": "2025-05-16",
+     "url": "https://doi.org/10.1056/aioa2400937",
+     "current_coauthors": [
+      "leonard-nurnberg"
+     ],
+     "author_name": "Hugo J.W.L. Aerts",
+     "author_position": 17,
+     "recent": true
+    },
+    {
+     "work": "W4410197107",
+     "title": "FaceAge, a deep learning system to estimate biological age from face photographs to improve prognostication: a model development and validation study",
+     "date": "2025-05-08",
+     "url": "https://doi.org/10.1016/j.landig.2025.03.002",
+     "current_coauthors": [
+      "andre-dekker"
+     ],
+     "author_name": "Hugo J.W.L. Aerts",
+     "author_position": 22,
+     "recent": true
+    },
+    {
+     "work": "W4402897784",
+     "title": "Prediction of new-onset atrial fibrillation in patients with non-small cell lung cancer treated with curative-intent conventional radiotherapy",
+     "date": "2024-09-26",
+     "url": "https://doi.org/10.1016/j.radonc.2024.110544",
+     "current_coauthors": [
+      "andre-dekker",
+      "leonard-nurnberg"
+     ],
+     "author_name": "Hugo J.W.L. Aerts",
+     "author_position": 5,
+     "recent": false
+    },
+    {
+     "work": "W4401546164",
+     "title": "End-to-end reproducible AI pipelines in radiology using the cloud",
+     "date": "2024-08-13",
+     "url": "https://doi.org/10.1038/s41467-024-51202-2",
+     "current_coauthors": [
+      "leonard-nurnberg"
+     ],
+     "author_name": "Hugo J.W.L. Aerts",
+     "author_position": 11,
+     "recent": false
+    }
+   ]
+  },
+  "ibrahim-hadzic": {
+   "name": "Ibrahim Hadzic",
+   "profile_url": "https://www.clinicaldatascience.nl/Staff/ibrahim-hadzic",
+   "checked_at": "2026-10-21",
+   "window_start": "2024-10-21",
+   "recent_months": 24,
+   "shared_papers": 1,
+   "recent_shared_papers": 0,
+   "last_collaboration_date": null,
+   "followup_until": null,
+   "current_coauthors": [],
+   "status": "historical_collaboration",
+   "orcid": "0000-0002-8397-5940",
+   "orcid_verified": false,
+   "scholar_id": null,
+   "identifier_evidence": {},
+   "evidence": [
+    {
+     "work": "W4393407981",
+     "title": "Optimizing CycleGAN design for CBCT-to-CT translation: insights into 2D vs 3D modeling, patch size, and the need for tailored evaluation metrics",
+     "date": "2024-04-02",
+     "url": "https://doi.org/10.1117/12.3007031",
+     "current_coauthors": [
+      "andre-dekker",
+      "ivan-zhovannik"
+     ],
+     "author_name": "Ibrahim Hadžić",
+     "author_position": 1,
+     "recent": false
+    }
+   ]
+  },
+  "inigo-bermejo-delgado": {
+   "name": "Inigo Bermejo Delgado",
+   "profile_url": "https://www.clinicaldatascience.nl/inigo-bermejo-delgado",
+   "checked_at": "2026-10-21",
+   "window_start": "2024-10-21",
+   "recent_months": 24,
+   "shared_papers": 0,
+   "recent_shared_papers": 0,
+   "last_collaboration_date": null,
+   "followup_until": null,
+   "current_coauthors": [],
+   "status": "no_collaboration_found_in_collection",
+   "orcid": null,
+   "orcid_verified": false,
+   "scholar_id": null,
+   "identifier_evidence": {},
+   "evidence": []
+  },
+  "jan-super": {
+   "name": "Jan Super",
+   "profile_url": "https://www.clinicaldatascience.nl/Staff/jan-super",
+   "checked_at": "2026-10-21",
+   "window_start": "2024-10-21",
+   "recent_months": 24,
+   "shared_papers": 0,
+   "recent_shared_papers": 0,
+   "last_collaboration_date": null,
+   "followup_until": null,
+   "current_coauthors": [],
+   "status": "no_collaboration_found_in_collection",
+   "orcid": null,
+   "orcid_verified": false,
+   "scholar_id": null,
+   "identifier_evidence": {},
+   "evidence": []
+  },
+  "jasper-snel": {
+   "name": "Jasper Snel",
+   "profile_url": "https://www.clinicaldatascience.nl/Staff/jasper-snel",
+   "checked_at": "2026-10-21",
+   "window_start": "2024-10-21",
+   "recent_months": 24,
+   "shared_papers": 0,
+   "recent_shared_papers": 0,
+   "last_collaboration_date": null,
+   "followup_until": null,
+   "current_coauthors": [],
+   "status": "no_collaboration_found_in_collection",
+   "orcid": null,
+   "orcid_verified": false,
+   "scholar_id": null,
+   "identifier_evidence": {},
+   "evidence": []
+  },
+  "jim-bemelen": {
+   "name": "Jim Bemelen",
+   "profile_url": "https://www.clinicaldatascience.nl/Staff/jim-bemelen",
+   "checked_at": "2026-10-21",
+   "window_start": "2024-10-21",
+   "recent_months": 24,
+   "shared_papers": 0,
+   "recent_shared_papers": 0,
+   "last_collaboration_date": null,
+   "followup_until": null,
+   "current_coauthors": [],
+   "status": "no_collaboration_found_in_collection",
+   "orcid": null,
+   "orcid_verified": false,
+   "scholar_id": null,
+   "identifier_evidence": {},
+   "evidence": []
+  },
+  "jing-jing-you": {
+   "name": "Jing Jing You",
+   "profile_url": "https://www.clinicaldatascience.nl/jing-jing-you",
+   "checked_at": "2026-10-21",
+   "window_start": "2024-10-21",
+   "recent_months": 24,
+   "shared_papers": 0,
+   "recent_shared_papers": 0,
+   "last_collaboration_date": null,
+   "followup_until": null,
+   "current_coauthors": [],
+   "status": "no_collaboration_found_in_collection",
+   "orcid": null,
+   "orcid_verified": false,
+   "scholar_id": null,
+   "identifier_evidence": {},
+   "evidence": []
+  },
+  "johannes-petermann": {
+   "name": "Johannes Petermann",
+   "profile_url": "https://www.clinicaldatascience.nl/johannes-petermann",
+   "checked_at": "2026-10-21",
+   "window_start": "2024-10-21",
+   "recent_months": 24,
+   "shared_papers": 0,
+   "recent_shared_papers": 0,
+   "last_collaboration_date": null,
+   "followup_until": null,
+   "current_coauthors": [],
+   "status": "no_collaboration_found_in_collection",
+   "orcid": null,
+   "orcid_verified": false,
+   "scholar_id": null,
+   "identifier_evidence": {},
+   "evidence": []
+  },
+  "julian-posch": {
+   "name": "Julian Posch",
+   "profile_url": "https://www.clinicaldatascience.nl/Staff/julian-posch",
+   "checked_at": "2026-10-21",
+   "window_start": "2024-10-21",
+   "recent_months": 24,
+   "shared_papers": 0,
+   "recent_shared_papers": 0,
+   "last_collaboration_date": null,
+   "followup_until": null,
+   "current_coauthors": [],
+   "status": "no_collaboration_found_in_collection",
+   "orcid": null,
+   "orcid_verified": false,
+   "scholar_id": null,
+   "identifier_evidence": {},
+   "evidence": []
+  },
+  "junhua-chen": {
+   "name": "Junhua Chen",
+   "profile_url": "https://www.clinicaldatascience.nl/Staff/junhua-chen",
+   "checked_at": "2026-10-21",
+   "window_start": "2024-10-21",
+   "recent_months": 24,
+   "shared_papers": 0,
+   "recent_shared_papers": 0,
+   "last_collaboration_date": null,
+   "followup_until": null,
+   "current_coauthors": [],
+   "status": "no_collaboration_found_in_collection",
+   "orcid": null,
+   "orcid_verified": false,
+   "scholar_id": null,
+   "identifier_evidence": {},
+   "evidence": []
+  },
+  "lerau-seyben": {
+   "name": "Lerau Seyben",
+   "profile_url": "https://www.clinicaldatascience.nl/Staff/lerau-seyben",
+   "checked_at": "2026-10-21",
+   "window_start": "2024-10-21",
+   "recent_months": 24,
+   "shared_papers": 0,
+   "recent_shared_papers": 0,
+   "last_collaboration_date": null,
+   "followup_until": null,
+   "current_coauthors": [],
+   "status": "no_collaboration_found_in_collection",
+   "orcid": null,
+   "orcid_verified": false,
+   "scholar_id": null,
+   "identifier_evidence": {},
+   "evidence": []
+  },
+  "lotte-schyns": {
+   "name": "Lotte Schyns",
+   "profile_url": "https://www.clinicaldatascience.nl/Staff/lotte-schyns",
+   "checked_at": "2026-10-21",
+   "window_start": "2024-10-21",
+   "recent_months": 24,
+   "shared_papers": 0,
+   "recent_shared_papers": 0,
+   "last_collaboration_date": null,
+   "followup_until": null,
+   "current_coauthors": [],
+   "status": "no_collaboration_found_in_collection",
+   "orcid": null,
+   "orcid_verified": false,
+   "scholar_id": null,
+   "identifier_evidence": {},
+   "evidence": []
+  },
+  "louise-de-almeida-ferreira-fonseca": {
+   "name": "Louise de Almeida Ferreira Fonseca",
+   "profile_url": "https://www.clinicaldatascience.nl/Staff/louise-de-almeida-ferreira-fonseca",
+   "checked_at": "2026-10-21",
+   "window_start": "2024-10-21",
+   "recent_months": 24,
+   "shared_papers": 2,
+   "recent_shared_papers": 2,
+   "last_collaboration_date": "2025-01-01",
+   "followup_until": "2027-01-01",
+   "current_coauthors": [
+    "andre-dekker",
+    "hannah-mary-thomas",
+    "leonard-wee",
+    "rianne-fijten"
+   ],
+   "status": "recent_collaboration",
+   "orcid": null,
+   "orcid_verified": false,
+   "scholar_id": null,
+   "identifier_evidence": {},
+   "evidence": [
+    {
+     "work": "W4412449917",
+     "title": "Prognostic modeling in head and neck cancer: deep learning or handcrafted radiomics?",
+     "date": "2025-01-01",
+     "url": "https://doi.org/10.1093/bjrai/ubaf008",
+     "current_coauthors": [
+      "andre-dekker",
+      "hannah-mary-thomas",
+      "leonard-wee",
+      "rianne-fijten"
+     ],
+     "author_name": "Louise de Almeida Ferreira Fonseca",
+     "author_position": 2,
+     "recent": true
+    },
+    {
+     "work": "W4403625443",
+     "title": "Performance of Handcrafted Radiomics versus Deep Learning for Prognosticating Head and Neck Squamous Cell Carcinoma – A Systematic Review with Critical Appraisal of Quantitative Imaging Studies",
+     "date": "2024-10-22",
+     "url": "https://doi.org/10.1101/2024.10.22.24315007",
+     "current_coauthors": [
+      "andre-dekker",
+      "hannah-mary-thomas",
+      "leonard-wee",
+      "rianne-fijten"
+     ],
+     "author_name": "Louise de Almeida Ferreira Fonseca",
+     "author_position": 2,
+     "recent": true
+    }
+   ]
+  },
+  "luca-pamboer": {
+   "name": "Luca Pamboer",
+   "profile_url": "https://www.clinicaldatascience.nl/luca-pamboer",
+   "checked_at": "2026-10-21",
+   "window_start": "2024-10-21",
+   "recent_months": 24,
+   "shared_papers": 0,
+   "recent_shared_papers": 0,
+   "last_collaboration_date": null,
+   "followup_until": null,
+   "current_coauthors": [],
+   "status": "no_collaboration_found_in_collection",
+   "orcid": null,
+   "orcid_verified": false,
+   "scholar_id": null,
+   "identifier_evidence": {},
+   "evidence": []
+  },
+  "luis-sanchez-gomez": {
+   "name": "Luis Sanchez Gomez",
+   "profile_url": "https://www.clinicaldatascience.nl/luis-sanchez-gomez",
+   "checked_at": "2026-10-21",
+   "window_start": "2024-10-21",
+   "recent_months": 24,
+   "shared_papers": 2,
+   "recent_shared_papers": 2,
+   "last_collaboration_date": "2025-07-29",
+   "followup_until": "2027-07-29",
+   "current_coauthors": [
+    "andre-dekker",
+    "johan-van-soest",
+    "joshi-hogenboom",
+    "leonard-wee"
+   ],
+   "status": "recent_collaboration",
+   "orcid": null,
+   "orcid_verified": false,
+   "scholar_id": null,
+   "identifier_evidence": {},
+   "evidence": [
+    {
+     "work": "W7204787670",
+     "title": "STRONG AYA Algorithm Review Guidelines",
+     "date": "2025-07-29",
+     "url": "https://doi.org/10.5281/zenodo.22206390",
+     "current_coauthors": [
+      "joshi-hogenboom",
+      "leonard-wee"
+     ],
+     "author_name": "Luis Sanchez Gomez",
+     "author_position": 4,
+     "recent": true
+    },
+    {
+     "work": "W4410447842",
+     "title": "A Governance Framework for Federated Learning Projects in Healthcare",
+     "date": "2025-05-15",
+     "url": "https://doi.org/10.3233/shti250324",
+     "current_coauthors": [
+      "andre-dekker",
+      "johan-van-soest",
+      "leonard-wee"
+     ],
+     "author_name": "Luis Sanchez Gomez",
+     "author_position": 2,
+     "recent": true
+    }
+   ]
+  },
+  "maija-utriainen": {
+   "name": "Maija Utriainen",
+   "profile_url": "https://www.clinicaldatascience.nl/maija-utriainen",
+   "checked_at": "2026-10-21",
+   "window_start": "2024-10-21",
+   "recent_months": 24,
+   "shared_papers": 0,
+   "recent_shared_papers": 0,
+   "last_collaboration_date": null,
+   "followup_until": null,
+   "current_coauthors": [],
+   "status": "no_collaboration_found_in_collection",
+   "orcid": null,
+   "orcid_verified": false,
+   "scholar_id": null,
+   "identifier_evidence": {},
+   "evidence": []
+  },
+  "maike-imkamp": {
+   "name": "Maike Imkamp",
+   "profile_url": "https://www.clinicaldatascience.nl/maike-imkamp",
+   "checked_at": "2026-10-21",
+   "window_start": "2024-10-21",
+   "recent_months": 24,
+   "shared_papers": 1,
+   "recent_shared_papers": 1,
+   "last_collaboration_date": "2025-12-31",
+   "followup_until": "2027-12-31",
+   "current_coauthors": [
+    "leonard-wee"
+   ],
+   "status": "recent_collaboration",
+   "orcid": "0000-0002-3581-7948",
+   "orcid_verified": true,
+   "scholar_id": null,
+   "identifier_evidence": {
+    "orcid": {
+     "checked_at": "2026-10-21",
+     "url": "https://orcid.org/0000-0002-3581-7948",
+     "shared_works": [
+      "W7117708698"
+     ],
+     "known_coauthors": []
+    }
+   },
+   "evidence": [
+    {
+     "work": "W7117708698",
+     "title": "Vulnerabilities of feature clustering in EIT radiomics",
+     "date": "2025-12-31",
+     "url": "https://doi.org/10.1016/j.compbiomed.2025.111438",
+     "current_coauthors": [
+      "leonard-wee"
+     ],
+     "author_name": "Maike S.V. Imkamp",
+     "author_position": 1,
+     "recent": true
+    }
+   ]
+  },
+  "manon-cloots": {
+   "name": "Manon Cloots",
+   "profile_url": "https://www.clinicaldatascience.nl/manon-cloots",
+   "checked_at": "2026-10-21",
+   "window_start": "2024-10-21",
+   "recent_months": 24,
+   "shared_papers": 0,
+   "recent_shared_papers": 0,
+   "last_collaboration_date": null,
+   "followup_until": null,
+   "current_coauthors": [],
+   "status": "no_collaboration_found_in_collection",
+   "orcid": null,
+   "orcid_verified": false,
+   "scholar_id": null,
+   "identifier_evidence": {},
+   "evidence": []
+  },
+  "marie-picquet": {
+   "name": "Marie Picquet",
+   "profile_url": "https://www.clinicaldatascience.nl/Staff/marie-picquet",
+   "checked_at": "2026-10-21",
+   "window_start": "2024-10-21",
+   "recent_months": 24,
+   "shared_papers": 0,
+   "recent_shared_papers": 0,
+   "last_collaboration_date": null,
+   "followup_until": null,
+   "current_coauthors": [],
+   "status": "no_collaboration_found_in_collection",
+   "orcid": null,
+   "orcid_verified": false,
+   "scholar_id": null,
+   "identifier_evidence": {},
+   "evidence": []
+  },
+  "martijn-nobel": {
+   "name": "Martijn Nobel",
+   "profile_url": "https://www.clinicaldatascience.nl/Staff/martijn-nobel",
+   "checked_at": "2026-10-21",
+   "window_start": "2024-10-21",
+   "recent_months": 24,
+   "shared_papers": 0,
+   "recent_shared_papers": 0,
+   "last_collaboration_date": null,
+   "followup_until": null,
+   "current_coauthors": [],
+   "status": "no_collaboration_found_in_collection",
+   "orcid": null,
+   "orcid_verified": false,
+   "scholar_id": null,
+   "identifier_evidence": {},
+   "evidence": []
+  },
+  "mattea-welch": {
+   "name": "Mattea Welch",
+   "profile_url": "https://www.clinicaldatascience.nl/Staff/mattea-welch",
+   "checked_at": "2026-10-21",
+   "window_start": "2024-10-21",
+   "recent_months": 24,
+   "shared_papers": 1,
+   "recent_shared_papers": 0,
+   "last_collaboration_date": null,
+   "followup_until": null,
+   "current_coauthors": [],
+   "status": "historical_collaboration",
+   "orcid": null,
+   "orcid_verified": false,
+   "scholar_id": null,
+   "identifier_evidence": {},
+   "evidence": [
+    {
+     "work": "W4392556699",
+     "title": "Making head and neck cancer clinical data Findable-Accessible-Interoperable-Reusable to support multi-institutional collaboration and federated learning",
+     "date": "2024-01-01",
+     "url": "https://doi.org/10.1093/bjrai/ubae005",
+     "current_coauthors": [
+      "ananya-choudhury",
+      "andre-dekker",
+      "johan-van-soest",
+      "leonard-wee"
+     ],
+     "author_name": "Mattea  L. Welch",
+     "author_position": 5,
+     "recent": false
+    }
+   ]
+  },
+  "melle-sieswerda": {
+   "name": "Melle Sieswerda",
+   "profile_url": "https://www.clinicaldatascience.nl/melle-sieswerda",
+   "checked_at": "2026-10-21",
+   "window_start": "2024-10-21",
+   "recent_months": 24,
+   "shared_papers": 1,
+   "recent_shared_papers": 1,
+   "last_collaboration_date": "2025-03-16",
+   "followup_until": "2027-03-16",
+   "current_coauthors": [
+    "andre-dekker"
+   ],
+   "status": "recent_collaboration",
+   "orcid": "0000-0003-2025-0771",
+   "orcid_verified": true,
+   "scholar_id": null,
+   "identifier_evidence": {
+    "orcid": {
+     "checked_at": "2026-10-21",
+     "url": "https://orcid.org/0000-0003-2025-0771",
+     "shared_works": [
+      "W4408488651"
+     ],
+     "known_coauthors": []
+    }
+   },
+   "evidence": [
+    {
+     "work": "W4408488651",
+     "title": "Data Interoperability in Context: The Importance of Open-Source Implementations When Choosing Open Standards",
+     "date": "2025-03-16",
+     "url": "https://doi.org/10.2196/66616",
+     "current_coauthors": [
+      "andre-dekker"
+     ],
+     "author_name": "Melle S. Sieswerda",
+     "author_position": 4,
+     "recent": true
+    }
+   ]
+  },
+  "michal-kazmierski": {
+   "name": "Michal Kazmierski",
+   "profile_url": "https://www.clinicaldatascience.nl/Staff/michal-kazmierski",
+   "checked_at": "2026-10-21",
+   "window_start": "2024-10-21",
+   "recent_months": 24,
+   "shared_papers": 1,
+   "recent_shared_papers": 0,
+   "last_collaboration_date": null,
+   "followup_until": null,
+   "current_coauthors": [],
+   "status": "historical_collaboration",
+   "orcid": null,
+   "orcid_verified": false,
+   "scholar_id": null,
+   "identifier_evidence": {},
+   "evidence": [
+    {
+     "work": "W4402574379",
+     "title": "External validation of a deep learning model for automatic segmentation of skeletal muscle and adipose tissue on abdominal CT images",
+     "date": "2024-09-16",
+     "url": "https://doi.org/10.1093/bjr/tqae191",
+     "current_coauthors": [
+      "andre-dekker",
+      "leonard-wee",
+      "leroy-volmer",
+      "ralph-brecheisen"
+     ],
+     "author_name": "Michal Kazmierski",
+     "author_position": 31,
+     "recent": false
+    }
+   ]
+  },
+  "michel-saleh": {
+   "name": "Michel Saleh",
+   "profile_url": "https://www.clinicaldatascience.nl/michel-saleh",
+   "checked_at": "2026-10-21",
+   "window_start": "2024-10-21",
+   "recent_months": 24,
+   "shared_papers": 0,
+   "recent_shared_papers": 0,
+   "last_collaboration_date": null,
+   "followup_until": null,
+   "current_coauthors": [],
+   "status": "no_collaboration_found_in_collection",
+   "orcid": null,
+   "orcid_verified": false,
+   "scholar_id": null,
+   "identifier_evidence": {},
+   "evidence": []
+  },
+  "miriam-babukhian": {
+   "name": "Miriam Babukhian",
+   "profile_url": "https://www.clinicaldatascience.nl/Staff/miriam-babukhian",
+   "checked_at": "2026-10-21",
+   "window_start": "2024-10-21",
+   "recent_months": 24,
+   "shared_papers": 0,
+   "recent_shared_papers": 0,
+   "last_collaboration_date": null,
+   "followup_until": null,
+   "current_coauthors": [],
+   "status": "no_collaboration_found_in_collection",
+   "orcid": null,
+   "orcid_verified": false,
+   "scholar_id": null,
+   "identifier_evidence": {},
+   "evidence": []
+  },
+  "naziha-el-aissati": {
+   "name": "Naziha el Aissati",
+   "profile_url": "https://www.clinicaldatascience.nl/Staff/naziha-el-aissati",
+   "checked_at": "2026-10-21",
+   "window_start": "2024-10-21",
+   "recent_months": 24,
+   "shared_papers": 0,
+   "recent_shared_papers": 0,
+   "last_collaboration_date": null,
+   "followup_until": null,
+   "current_coauthors": [],
+   "status": "no_collaboration_found_in_collection",
+   "orcid": null,
+   "orcid_verified": false,
+   "scholar_id": null,
+   "identifier_evidence": {},
+   "evidence": []
+  },
+  "nibin-moni-george": {
+   "name": "Nibin Moni George",
+   "profile_url": "https://www.clinicaldatascience.nl/nibin-moni-george",
+   "checked_at": "2026-10-21",
+   "window_start": "2024-10-21",
+   "recent_months": 24,
+   "shared_papers": 0,
+   "recent_shared_papers": 0,
+   "last_collaboration_date": null,
+   "followup_until": null,
+   "current_coauthors": [],
+   "status": "no_collaboration_found_in_collection",
+   "orcid": null,
+   "orcid_verified": false,
+   "scholar_id": null,
+   "identifier_evidence": {},
+   "evidence": []
+  },
+  "pedro-mateus": {
+   "name": "Pedro Mateus",
+   "profile_url": "https://www.clinicaldatascience.nl/pedro-mateus",
+   "checked_at": "2026-10-21",
+   "window_start": "2024-10-21",
+   "recent_months": 24,
+   "shared_papers": 8,
+   "recent_shared_papers": 4,
+   "last_collaboration_date": "2026-01-20",
+   "followup_until": "2028-01-20",
+   "current_coauthors": [
+    "andre-dekker"
+   ],
+   "status": "recent_collaboration",
+   "orcid": "0000-0002-3047-7630",
+   "orcid_verified": true,
+   "scholar_id": "XW6OTLQAAAAJ",
+   "identifier_evidence": {
+    "scholar": {
+     "checked_at": "2026-10-21",
+     "url": "https://scholar.google.com/citations?user=XW6OTLQAAAAJ",
+     "shared_works": [
+      "W4399030346",
+      "W4391607864",
+      "W4412748795",
+      "W4413055266",
+      "W4407417813",
+      "W4402595833",
+      "W4402954517"
+     ],
+     "known_coauthors": []
+    },
+    "orcid": {
+     "checked_at": "2026-10-21",
+     "url": "https://orcid.org/0000-0002-3047-7630",
+     "shared_works": [
+      "W4407417813",
+      "W4399030346",
+      "W4391607864"
+     ],
+     "known_coauthors": []
+    }
+   },
+   "evidence": [
+    {
+     "work": "W7127147492",
+     "title": "Scripts and mappings to harmonise dementia cohorts into the OMOP Common Data Model",
+     "date": "2026-01-20",
+     "url": "https://doi.org/10.5281/zenodo.18316378",
+     "current_coauthors": [
+      "andre-dekker"
+     ],
+     "author_name": "Pedro da Costa Mateus",
+     "author_position": 1,
+     "recent": true
+    },
+    {
+     "work": "W4413055266",
+     "title": "Predicting near‐complete pathological response to (chemo)radiotherapy in patients with rectal cancer: A federated learning study",
+     "date": "2025-08-01",
+     "url": "https://doi.org/10.1002/mp.18034",
+     "current_coauthors": [
+      "andre-dekker"
+     ],
+     "author_name": "Pedro Mateus",
+     "author_position": 1,
+     "recent": true
+    },
+    {
+     "work": "W4412748795",
+     "title": "Multi-Cohort Federated Learning Shows Synergy in Mortality Prediction for MRI-Based and Metabolomics-Based Age Scores",
+     "date": "2025-07-30",
+     "url": "https://doi.org/10.1007/s41666-025-00208-6",
+     "current_coauthors": [
+      "andre-dekker"
+     ],
+     "author_name": "Pedro Mateus",
+     "author_position": 1,
+     "recent": true
+    },
+    {
+     "work": "W4407417813",
+     "title": "Identifying pathways to the prevention of dementia: the Netherlands consortium of dementia cohorts",
+     "date": "2025-02-12",
+     "url": "https://doi.org/10.1186/s12883-024-03995-4",
+     "current_coauthors": [
+      "andre-dekker"
+     ],
+     "author_name": "Pedro Mateus",
+     "author_position": 5,
+     "recent": true
+    },
+    {
+     "work": "W4402595833",
+     "title": "MRI-based and metabolomics-based age scores act synergetically for mortality prediction shown by multi-cohort federated learning",
+     "date": "2024-09-17",
+     "url": "https://doi.org/10.21203/rs.3.rs-4938500/v1",
+     "current_coauthors": [
+      "andre-dekker"
+     ],
+     "author_name": "Pedro Mateus",
+     "author_position": 2,
+     "recent": false
+    },
+    {
+     "work": "W4402954517",
+     "title": "MRI-based and metabolomics-based age scores act synergetically for mortality prediction shown by multi-cohort federated learning",
+     "date": "2024-09-02",
+     "url": "https://doi.org/10.48550/arxiv.2409.01235",
+     "current_coauthors": [
+      "andre-dekker"
+     ],
+     "author_name": "Pedro Mateus",
+     "author_position": 1,
+     "recent": false
+    },
+    {
+     "work": "W4399030346",
+     "title": "Data harmonization and federated learning for multi-cohort dementia research using the OMOP common data model: A Netherlands consortium of dementia cohorts case study",
+     "date": "2024-05-26",
+     "url": "https://doi.org/10.1016/j.jbi.2024.104661",
+     "current_coauthors": [
+      "andre-dekker"
+     ],
+     "author_name": "Pedro Mateus",
+     "author_position": 1,
+     "recent": false
+    },
+    {
+     "work": "W4391607864",
+     "title": "Data Harmonization and Federated Learning for Multi-Cohort Dementia Research Using the OMOP Common Data Model: A Netherlands Consortium of Dementia Cohorts Case Study",
+     "date": "2024-01-01",
+     "url": "https://doi.org/10.2139/ssrn.4716052",
+     "current_coauthors": [
+      "andre-dekker"
+     ],
+     "author_name": "Pedro da Costa Mateus",
+     "author_position": 1,
+     "recent": false
+    }
+   ]
+  },
+  "ravindra-patil": {
+   "name": "Ravindra Patil",
+   "profile_url": "https://www.clinicaldatascience.nl/Staff/ravindra-patil",
+   "checked_at": "2026-10-21",
+   "window_start": "2024-10-21",
+   "recent_months": 24,
+   "shared_papers": 0,
+   "recent_shared_papers": 0,
+   "last_collaboration_date": null,
+   "followup_until": null,
+   "current_coauthors": [],
+   "status": "no_collaboration_found_in_collection",
+   "orcid": null,
+   "orcid_verified": false,
+   "scholar_id": null,
+   "identifier_evidence": {},
+   "evidence": []
+  },
+  "sanchi-bhalla": {
+   "name": "Sanchi Bhalla",
+   "profile_url": "https://www.clinicaldatascience.nl/sanchi-bhalla",
+   "checked_at": "2026-10-21",
+   "window_start": "2024-10-21",
+   "recent_months": 24,
+   "shared_papers": 0,
+   "recent_shared_papers": 0,
+   "last_collaboration_date": null,
+   "followup_until": null,
+   "current_coauthors": [],
+   "status": "no_collaboration_found_in_collection",
+   "orcid": null,
+   "orcid_verified": false,
+   "scholar_id": null,
+   "identifier_evidence": {},
+   "evidence": []
+  },
+  "seok-ho-lee": {
+   "name": "Seok Ho Lee",
+   "profile_url": "https://www.clinicaldatascience.nl/Staff/seok-ho-lee",
+   "checked_at": "2026-10-21",
+   "window_start": "2024-10-21",
+   "recent_months": 24,
+   "shared_papers": 0,
+   "recent_shared_papers": 0,
+   "last_collaboration_date": null,
+   "followup_until": null,
+   "current_coauthors": [],
+   "status": "no_collaboration_found_in_collection",
+   "orcid": null,
+   "orcid_verified": false,
+   "scholar_id": null,
+   "identifier_evidence": {},
+   "evidence": []
+  },
+  "shashank-chakravarthy": {
+   "name": "Shashank Chakravarthy",
+   "profile_url": "https://www.clinicaldatascience.nl/shashank-chakravarthy",
+   "checked_at": "2026-10-21",
+   "window_start": "2024-10-21",
+   "recent_months": 24,
+   "shared_papers": 0,
+   "recent_shared_papers": 0,
+   "last_collaboration_date": null,
+   "followup_until": null,
+   "current_coauthors": [],
+   "status": "no_collaboration_found_in_collection",
+   "orcid": null,
+   "orcid_verified": false,
+   "scholar_id": null,
+   "identifier_evidence": {},
+   "evidence": []
+  },
+  "shenlun-chen": {
+   "name": "Shenlun Chen",
+   "profile_url": "https://www.clinicaldatascience.nl/shenlun-chen",
+   "checked_at": "2026-10-21",
+   "window_start": "2024-10-21",
+   "recent_months": 24,
+   "shared_papers": 3,
+   "recent_shared_papers": 3,
+   "last_collaboration_date": "2025-11-19",
+   "followup_until": "2027-11-19",
+   "current_coauthors": [
+    "andre-dekker",
+    "leonard-wee",
+    "petros-kalendralis"
+   ],
+   "status": "recent_collaboration",
+   "orcid": null,
+   "orcid_verified": false,
+   "scholar_id": null,
+   "identifier_evidence": {},
+   "evidence": [
+    {
+     "work": "W4416373305",
+     "title": "PET/CT-based deep learning model predicts distant metastasis after SBRT for early-stage NSCLC: A multicenter study",
+     "date": "2025-11-19",
+     "url": "https://doi.org/10.1016/j.compmedimag.2025.102663",
+     "current_coauthors": [
+      "andre-dekker",
+      "leonard-wee",
+      "petros-kalendralis"
+     ],
+     "author_name": "Shenlun Chen",
+     "author_position": 2,
+     "recent": true
+    },
+    {
+     "work": "W4416344141",
+     "title": "Automatically quantifying spatial heterogeneity of immune and tumor hypoxia environment and predicting disease-free survival for patients with rectal cancer",
+     "date": "2025-11-18",
+     "url": "https://doi.org/10.1007/s00262-025-04235-5",
+     "current_coauthors": [
+      "andre-dekker",
+      "leonard-wee",
+      "petros-kalendralis"
+     ],
+     "author_name": "Shenlun Chen",
+     "author_position": 1,
+     "recent": true
+    },
+    {
+     "work": "W4414530902",
+     "title": "Variational autoencoder-based deep learning and radiomics for predicting pathologic complete response to neoadjuvant chemoimmunotherapy in locally advanced oesophageal squamous cell carcinoma",
+     "date": "2025-09-25",
+     "url": "https://doi.org/10.1093/bjr/tqaf239",
+     "current_coauthors": [
+      "andre-dekker",
+      "leonard-wee",
+      "petros-kalendralis"
+     ],
+     "author_name": "Shenlun Chen",
+     "author_position": 2,
+     "recent": true
+    }
+   ]
+  },
+  "siva-teja-kakileti": {
+   "name": "Siva Teja Kakileti",
+   "profile_url": "https://www.clinicaldatascience.nl/Staff/siva-teja-kakileti",
+   "checked_at": "2026-10-21",
+   "window_start": "2024-10-21",
+   "recent_months": 24,
+   "shared_papers": 0,
+   "recent_shared_papers": 0,
+   "last_collaboration_date": null,
+   "followup_until": null,
+   "current_coauthors": [],
+   "status": "no_collaboration_found_in_collection",
+   "orcid": null,
+   "orcid_verified": false,
+   "scholar_id": null,
+   "identifier_evidence": {},
+   "evidence": []
+  },
+  "sneha-nair": {
+   "name": "Sneha Nair",
+   "profile_url": "https://www.clinicaldatascience.nl/sneha-nair",
+   "checked_at": "2026-10-21",
+   "window_start": "2024-10-21",
+   "recent_months": 24,
+   "shared_papers": 0,
+   "recent_shared_papers": 0,
+   "last_collaboration_date": null,
+   "followup_until": null,
+   "current_coauthors": [],
+   "status": "no_collaboration_found_in_collection",
+   "orcid": null,
+   "orcid_verified": false,
+   "scholar_id": null,
+   "identifier_evidence": {},
+   "evidence": []
+  },
+  "sonia-potalivo": {
+   "name": "Sonia Potalivo",
+   "profile_url": "https://www.clinicaldatascience.nl/Staff/sonia-potalivo",
+   "checked_at": "2026-10-21",
+   "window_start": "2024-10-21",
+   "recent_months": 24,
+   "shared_papers": 0,
+   "recent_shared_papers": 0,
+   "last_collaboration_date": null,
+   "followup_until": null,
+   "current_coauthors": [],
+   "status": "no_collaboration_found_in_collection",
+   "orcid": null,
+   "orcid_verified": false,
+   "scholar_id": null,
+   "identifier_evidence": {},
+   "evidence": []
+  },
+  "steven-petit": {
+   "name": "Steven Petit",
+   "profile_url": "https://www.clinicaldatascience.nl/Staff/steven-petit",
+   "checked_at": "2026-10-21",
+   "window_start": "2024-10-21",
+   "recent_months": 24,
+   "shared_papers": 0,
+   "recent_shared_papers": 0,
+   "last_collaboration_date": null,
+   "followup_until": null,
+   "current_coauthors": [],
+   "status": "no_collaboration_found_in_collection",
+   "orcid": null,
+   "orcid_verified": false,
+   "scholar_id": null,
+   "identifier_evidence": {},
+   "evidence": []
+  },
+  "stuti-nayak": {
+   "name": "Stuti Nayak",
+   "profile_url": "https://www.clinicaldatascience.nl/stuti-nayak",
+   "checked_at": "2026-10-21",
+   "window_start": "2024-10-21",
+   "recent_months": 24,
+   "shared_papers": 1,
+   "recent_shared_papers": 0,
+   "last_collaboration_date": null,
+   "followup_until": null,
+   "current_coauthors": [],
+   "status": "historical_collaboration",
+   "orcid": "0000-0003-1415-4812",
+   "orcid_verified": false,
+   "scholar_id": null,
+   "identifier_evidence": {},
+   "evidence": [
+    {
+     "work": "W4391065084",
+     "title": "Natural language processing in oncology",
+     "date": "2024-01-01",
+     "url": "https://doi.org/10.1016/b978-0-12-822000-9.00004-5",
+     "current_coauthors": [
+      "andre-dekker",
+      "sander-puts"
+     ],
+     "author_name": "Stuti Nayak",
+     "author_position": 3,
+     "recent": false
+    }
+   ]
+  },
+  "sure-pai": {
+   "name": "Suraj Pai",
+   "profile_url": "https://www.clinicaldatascience.nl/Staff/sure-pai",
+   "checked_at": "2026-10-21",
+   "window_start": "2024-10-21",
+   "recent_months": 24,
+   "shared_papers": 7,
+   "recent_shared_papers": 5,
+   "last_collaboration_date": "2026-10-01",
+   "followup_until": "2028-10-01",
+   "current_coauthors": [
+    "andre-dekker",
+    "leonard-nurnberg"
+   ],
+   "status": "recent_collaboration",
+   "orcid": "0000-0001-8043-2230",
+   "orcid_verified": true,
+   "scholar_id": null,
+   "identifier_evidence": {
+    "orcid": {
+     "checked_at": "2026-10-21",
+     "url": "https://orcid.org/0000-0001-8043-2230",
+     "shared_works": [
+      "W4410197107",
+      "W4401546164",
+      "W4393407981"
+     ],
+     "known_coauthors": []
+    }
+   },
+   "evidence": [
+    {
+     "work": "W7222957496",
+     "title": "Foundation artificial intelligence models for health recognition by use of face photographs (FAHR-Face): a model development and validation study",
+     "date": "2026-10-01",
+     "url": "https://doi.org/10.1016/j.landig.2026.101056",
+     "current_coauthors": [
+      "leonard-nurnberg"
+     ],
+     "author_name": "Suraj Pai",
+     "author_position": 11,
+     "recent": true
+    },
+    {
+     "work": "W7204178963",
+     "title": "Thymic radiation is associated with worse outcomes in patients with NSCLC",
+     "date": "2026-08-25",
+     "url": "https://doi.org/10.1016/j.annonc.2026.07.001",
+     "current_coauthors": [
+      "leonard-nurnberg"
+     ],
+     "author_name": "Suraj Pai",
+     "author_position": 3,
+     "recent": true
+    },
+    {
+     "work": "W7138973475",
+     "title": "Thymic health consequences in adults",
+     "date": "2026-03-18",
+     "url": "https://doi.org/10.1038/s41586-026-10242-y",
+     "current_coauthors": [
+      "leonard-nurnberg"
+     ],
+     "author_name": "Suraj Pai",
+     "author_position": 3,
+     "recent": true
+    },
+    {
+     "work": "W7138874906",
+     "title": "Thymic health and immunotherapy outcomes in patients with cancer",
+     "date": "2026-03-18",
+     "url": "https://doi.org/10.1038/s41586-026-10243-x",
+     "current_coauthors": [
+      "leonard-nurnberg"
+     ],
+     "author_name": "Suraj Pai",
+     "author_position": 3,
+     "recent": true
+    },
+    {
+     "work": "W4410197107",
+     "title": "FaceAge, a deep learning system to estimate biological age from face photographs to improve prognostication: a model development and validation study",
+     "date": "2025-05-08",
+     "url": "https://doi.org/10.1016/j.landig.2025.03.002",
+     "current_coauthors": [
+      "andre-dekker"
+     ],
+     "author_name": "Suraj Pai",
+     "author_position": 11,
+     "recent": true
+    },
+    {
+     "work": "W4401546164",
+     "title": "End-to-end reproducible AI pipelines in radiology using the cloud",
+     "date": "2024-08-13",
+     "url": "https://doi.org/10.1038/s41467-024-51202-2",
+     "current_coauthors": [
+      "leonard-nurnberg"
+     ],
+     "author_name": "Suraj Pai",
+     "author_position": 3,
+     "recent": false
+    },
+    {
+     "work": "W4393407981",
+     "title": "Optimizing CycleGAN design for CBCT-to-CT translation: insights into 2D vs 3D modeling, patch size, and the need for tailored evaluation metrics",
+     "date": "2024-04-02",
+     "url": "https://doi.org/10.1117/12.3007031",
+     "current_coauthors": [
+      "andre-dekker",
+      "ivan-zhovannik"
+     ],
+     "author_name": "Suraj Pai",
+     "author_position": 2,
+     "recent": false
+    }
+   ]
+  },
+  "swapneel-datta": {
+   "name": "Swapneel Datta",
+   "profile_url": "https://www.clinicaldatascience.nl/Staff/swapneel-datta",
+   "checked_at": "2026-10-21",
+   "window_start": "2024-10-21",
+   "recent_months": 24,
+   "shared_papers": 0,
+   "recent_shared_papers": 0,
+   "last_collaboration_date": null,
+   "followup_until": null,
+   "current_coauthors": [],
+   "status": "no_collaboration_found_in_collection",
+   "orcid": null,
+   "orcid_verified": false,
+   "scholar_id": null,
+   "identifier_evidence": {},
+   "evidence": []
+  },
+  "thuyila-robinson": {
+   "name": "Thuyila Robinson",
+   "profile_url": "https://www.clinicaldatascience.nl/Staff/thuyila-robinson",
+   "checked_at": "2026-10-21",
+   "window_start": "2024-10-21",
+   "recent_months": 24,
+   "shared_papers": 0,
+   "recent_shared_papers": 0,
+   "last_collaboration_date": null,
+   "followup_until": null,
+   "current_coauthors": [],
+   "status": "no_collaboration_found_in_collection",
+   "orcid": null,
+   "orcid_verified": false,
+   "scholar_id": null,
+   "identifier_evidence": {},
+   "evidence": []
+  },
+  "tim-lustberg": {
+   "name": "Tim Lustberg",
+   "profile_url": "https://www.clinicaldatascience.nl/Staff/tim-lustberg",
+   "checked_at": "2026-10-21",
+   "window_start": "2024-10-21",
+   "recent_months": 24,
+   "shared_papers": 0,
+   "recent_shared_papers": 0,
+   "last_collaboration_date": null,
+   "followup_until": null,
+   "current_coauthors": [],
+   "status": "no_collaboration_found_in_collection",
+   "orcid": null,
+   "orcid_verified": false,
+   "scholar_id": null,
+   "identifier_evidence": {},
+   "evidence": []
+  },
+  "timo-deist": {
+   "name": "Timo Deist",
+   "profile_url": "https://www.clinicaldatascience.nl/Staff/timo-deist",
+   "checked_at": "2026-10-21",
+   "window_start": "2024-10-21",
+   "recent_months": 24,
+   "shared_papers": 0,
+   "recent_shared_papers": 0,
+   "last_collaboration_date": null,
+   "followup_until": null,
+   "current_coauthors": [],
+   "status": "no_collaboration_found_in_collection",
+   "orcid": null,
+   "orcid_verified": false,
+   "scholar_id": null,
+   "identifier_evidence": {},
+   "evidence": []
+  },
+  "tom-sinsel": {
+   "name": "Tom Sinsel",
+   "profile_url": "https://www.clinicaldatascience.nl/tom-sinsel",
+   "checked_at": "2026-10-21",
+   "window_start": "2024-10-21",
+   "recent_months": 24,
+   "shared_papers": 0,
+   "recent_shared_papers": 0,
+   "last_collaboration_date": null,
+   "followup_until": null,
+   "current_coauthors": [],
+   "status": "no_collaboration_found_in_collection",
+   "orcid": null,
+   "orcid_verified": false,
+   "scholar_id": null,
+   "identifier_evidence": {},
+   "evidence": []
+  },
+  "tutku-kilicaslan": {
+   "name": "Tutku Kılıçaslan",
+   "profile_url": "https://www.clinicaldatascience.nl/Staff/tutku-kilicaslan",
+   "checked_at": "2026-10-21",
+   "window_start": "2024-10-21",
+   "recent_months": 24,
+   "shared_papers": 0,
+   "recent_shared_papers": 0,
+   "last_collaboration_date": null,
+   "followup_until": null,
+   "current_coauthors": [],
+   "status": "no_collaboration_found_in_collection",
+   "orcid": null,
+   "orcid_verified": false,
+   "scholar_id": null,
+   "identifier_evidence": {},
+   "evidence": []
+  },
+  "valerie-van-nielen": {
+   "name": "Valerie van Nielen",
+   "profile_url": "https://www.clinicaldatascience.nl/valerie-van-nielen",
+   "checked_at": "2026-10-21",
+   "window_start": "2024-10-21",
+   "recent_months": 24,
+   "shared_papers": 0,
+   "recent_shared_papers": 0,
+   "last_collaboration_date": null,
+   "followup_until": null,
+   "current_coauthors": [],
+   "status": "no_collaboration_found_in_collection",
+   "orcid": null,
+   "orcid_verified": false,
+   "scholar_id": null,
+   "identifier_evidence": {},
+   "evidence": []
+  },
+  "varsha-gouthamchand": {
+   "name": "Varsha Gouthamchand",
+   "profile_url": "https://www.clinicaldatascience.nl/varsha-gouthamchand",
+   "checked_at": "2026-10-21",
+   "window_start": "2024-10-21",
+   "recent_months": 24,
+   "shared_papers": 13,
+   "recent_shared_papers": 11,
+   "last_collaboration_date": "2026-10-07",
+   "followup_until": "2028-10-07",
+   "current_coauthors": [
+    "alessio-romita",
+    "ananya-choudhury",
+    "andre-dekker",
+    "hannah-mary-thomas",
+    "johan-van-soest",
+    "joshi-hogenboom",
+    "leonard-wee",
+    "rianne-fijten",
+    "tim-hendriks",
+    "umesh-kumar-baburao-sherkhane"
+   ],
+   "status": "recent_collaboration",
+   "orcid": "0000-0002-4756-2866",
+   "orcid_verified": true,
+   "scholar_id": "pNwbmZQAAAAJ",
+   "identifier_evidence": {
+    "scholar": {
+     "checked_at": "2026-10-21",
+     "url": "https://scholar.google.com/citations?user=pNwbmZQAAAAJ",
+     "shared_works": [
+      "W4393900373",
+      "W4392556699",
+      "W4412449917",
+      "W7124178724",
+      "W7213226988",
+      "W7161945525",
+      "W7220851390"
+     ],
+     "known_coauthors": [
+      "ananya-choudhury"
+     ]
+    },
+    "orcid": {
+     "checked_at": "2026-10-21",
+     "url": "https://orcid.org/0000-0002-4756-2866",
+     "shared_works": [
+      "W7213226988",
+      "W7161945525",
+      "W7124178724",
+      "W4411034911",
+      "W4407004157",
+      "W4412449917",
+      "W4393900373",
+      "W4403625443",
+      "W7220851390",
+      "W4392556699"
+     ],
+     "known_coauthors": []
+    }
+   },
+   "evidence": [
+    {
+     "work": "W7220851390",
+     "title": "Navigating the privacy-accuracy tradeoff: federated survival analysis with binning and differential privacy",
+     "date": "2026-10-07",
+     "url": "https://doi.org/10.3389/fams.2026.1917462",
+     "current_coauthors": [
+      "andre-dekker",
+      "johan-van-soest",
+      "leonard-wee"
+     ],
+     "author_name": "Varsha Gouthamchand",
+     "author_position": 1,
+     "recent": true
+    },
+    {
+     "work": "W7213458335",
+     "title": "Data Auditing and Quality Assurance in a Federated Learning Consortium; Getting the Best of Both Worlds from Cross-Institutional and In-House Data Quality Inspection",
+     "date": "2026-09-17",
+     "url": "https://doi.org/10.64898/2026.09.08.26361592",
+     "current_coauthors": [
+      "andre-dekker",
+      "joshi-hogenboom",
+      "leonard-wee"
+     ],
+     "author_name": "Varsha Gouthamchand",
+     "author_position": 11,
+     "recent": true
+    },
+    {
+     "work": "W7213226988",
+     "title": "From registration to insight: how STRONG AYA transforms registry data to enhance decision-support tools for adolescent and young adult oncology",
+     "date": "2026-09-15",
+     "url": "https://doi.org/10.1016/j.esmorw.2026.100764",
+     "current_coauthors": [
+      "andre-dekker",
+      "joshi-hogenboom",
+      "leonard-wee"
+     ],
+     "author_name": "Varsha Gouthamchand",
+     "author_position": 5,
+     "recent": true
+    },
+    {
+     "work": "W7161945525",
+     "title": "LinkedDicom: Indexing DICOM Metadata Using Semantic Web Technologies",
+     "date": "2026-05-21",
+     "url": "https://doi.org/10.3233/shti260404",
+     "current_coauthors": [
+      "alessio-romita",
+      "ananya-choudhury",
+      "andre-dekker",
+      "johan-van-soest",
+      "leonard-wee",
+      "tim-hendriks"
+     ],
+     "author_name": "Varsha Gouthamchand",
+     "author_position": 7,
+     "recent": true
+    },
+    {
+     "work": "W7129378262",
+     "title": "Abstract PS1-12-19: Disease natural history and care quality assessment of hormone receptor positive / human epidermal growth factor receptor 2 negative metastatic breast cancer (HR+/HER2- mBC) - an international multicentric study",
+     "date": "2026-02-17",
+     "url": "https://doi.org/10.1158/1557-3265.sabcs25-ps1-12-19",
+     "current_coauthors": [
+      "ananya-choudhury"
+     ],
+     "author_name": "Varsha Gouthamchand",
+     "author_position": 11,
+     "recent": true
+    },
+    {
+     "work": "W7124178724",
+     "title": "Knowledge Representation of a Multicenter Adolescent and Young Adult Cancer Infrastructure: Development of the STRONG AYA Knowledge Graph",
+     "date": "2026-01-01",
+     "url": "https://doi.org/10.1200/cci-25-00177",
+     "current_coauthors": [
+      "andre-dekker",
+      "johan-van-soest",
+      "joshi-hogenboom",
+      "leonard-wee"
+     ],
+     "author_name": "Varsha Gouthamchand",
+     "author_position": 2,
+     "recent": true
+    },
+    {
+     "work": "W4411034911",
+     "title": "Knowledge representation of a multi-centre adolescent and young adult (AYA) cancer infrastructure; development of the STRONG AYA Knowledge Graph",
+     "date": "2025-06-03",
+     "url": "https://doi.org/10.1101/2025.06.03.25328788",
+     "current_coauthors": [
+      "andre-dekker",
+      "johan-van-soest",
+      "joshi-hogenboom",
+      "leonard-wee"
+     ],
+     "author_name": "Varsha Gouthamchand",
+     "author_position": 2,
+     "recent": true
+    },
+    {
+     "work": "W4410560954",
+     "title": "2496 Federated Prediction Models and External Validation for Radiotherapy Outcomes in Head and Neck Cancer using F.A.I.R. Clinical and Radiomics Data",
+     "date": "2025-05-01",
+     "url": "https://doi.org/10.1016/s0167-8140(25)01096-5",
+     "current_coauthors": [
+      "andre-dekker",
+      "johan-van-soest",
+      "joshi-hogenboom",
+      "leonard-wee",
+      "umesh-kumar-baburao-sherkhane"
+     ],
+     "author_name": "Varsha Gouthamchand",
+     "author_position": 1,
+     "recent": true
+    },
+    {
+     "work": "W4407004157",
+     "title": "Federated Prediction Models and External Validation for Radiotherapy Outcomes in Oropharyngeal Cancer using F.A.I.R. Clinical and Radiomics Data",
+     "date": "2025-01-29",
+     "url": "https://doi.org/10.1101/2025.01.29.25321214",
+     "current_coauthors": [
+      "andre-dekker",
+      "johan-van-soest",
+      "joshi-hogenboom",
+      "leonard-wee",
+      "umesh-kumar-baburao-sherkhane"
+     ],
+     "author_name": "Varsha Gouthamchand",
+     "author_position": 1,
+     "recent": true
+    },
+    {
+     "work": "W4412449917",
+     "title": "Prognostic modeling in head and neck cancer: deep learning or handcrafted radiomics?",
+     "date": "2025-01-01",
+     "url": "https://doi.org/10.1093/bjrai/ubaf008",
+     "current_coauthors": [
+      "andre-dekker",
+      "hannah-mary-thomas",
+      "leonard-wee",
+      "rianne-fijten"
+     ],
+     "author_name": "Varsha Gouthamchand",
+     "author_position": 1,
+     "recent": true
+    },
+    {
+     "work": "W4403625443",
+     "title": "Performance of Handcrafted Radiomics versus Deep Learning for Prognosticating Head and Neck Squamous Cell Carcinoma – A Systematic Review with Critical Appraisal of Quantitative Imaging Studies",
+     "date": "2024-10-22",
+     "url": "https://doi.org/10.1101/2024.10.22.24315007",
+     "current_coauthors": [
+      "andre-dekker",
+      "hannah-mary-thomas",
+      "leonard-wee",
+      "rianne-fijten"
+     ],
+     "author_name": "Varsha Gouthamchand",
+     "author_position": 1,
+     "recent": true
+    },
+    {
+     "work": "W4393900373",
+     "title": "A distributed feature selection pipeline for survival analysis using radiomics in non-small cell lung cancer patients",
+     "date": "2024-04-03",
+     "url": "https://doi.org/10.1038/s41598-024-58241-1",
+     "current_coauthors": [
+      "andre-dekker",
+      "leonard-wee"
+     ],
+     "author_name": "Varsha Gouthamchand",
+     "author_position": 2,
+     "recent": false
+    },
+    {
+     "work": "W4392556699",
+     "title": "Making head and neck cancer clinical data Findable-Accessible-Interoperable-Reusable to support multi-institutional collaboration and federated learning",
+     "date": "2024-01-01",
+     "url": "https://doi.org/10.1093/bjrai/ubae005",
+     "current_coauthors": [
+      "ananya-choudhury",
+      "andre-dekker",
+      "johan-van-soest",
+      "leonard-wee"
+     ],
+     "author_name": "Varsha Gouthamchand",
+     "author_position": 1,
+     "recent": false
+    }
+   ]
+  },
+  "vasco-prudente": {
+   "name": "Vasco Prudente",
+   "profile_url": "https://www.clinicaldatascience.nl/Staff/vasco-prudente",
+   "checked_at": "2026-10-21",
+   "window_start": "2024-10-21",
+   "recent_months": 24,
+   "shared_papers": 6,
+   "recent_shared_papers": 6,
+   "last_collaboration_date": "2026-10-01",
+   "followup_until": "2028-10-01",
+   "current_coauthors": [
+    "andre-dekker",
+    "leonard-nurnberg",
+    "leonard-wee"
+   ],
+   "status": "recent_collaboration",
+   "orcid": "0000-0003-0623-1259",
+   "orcid_verified": true,
+   "scholar_id": null,
+   "identifier_evidence": {
+    "orcid": {
+     "checked_at": "2026-10-21",
+     "url": "https://orcid.org/0000-0003-0623-1259",
+     "shared_works": [
+      "W7204178963",
+      "W7138874906",
+      "W7138973475",
+      "W7117708698",
+      "W4410197107"
+     ],
+     "known_coauthors": []
+    }
+   },
+   "evidence": [
+    {
+     "work": "W7222957496",
+     "title": "Foundation artificial intelligence models for health recognition by use of face photographs (FAHR-Face): a model development and validation study",
+     "date": "2026-10-01",
+     "url": "https://doi.org/10.1016/j.landig.2026.101056",
+     "current_coauthors": [
+      "leonard-nurnberg"
+     ],
+     "author_name": "Vasco Prudente",
+     "author_position": 8,
+     "recent": true
+    },
+    {
+     "work": "W7204178963",
+     "title": "Thymic radiation is associated with worse outcomes in patients with NSCLC",
+     "date": "2026-08-25",
+     "url": "https://doi.org/10.1016/j.annonc.2026.07.001",
+     "current_coauthors": [
+      "leonard-nurnberg"
+     ],
+     "author_name": "Vasco Prudente",
+     "author_position": 1,
+     "recent": true
+    },
+    {
+     "work": "W7138973475",
+     "title": "Thymic health consequences in adults",
+     "date": "2026-03-18",
+     "url": "https://doi.org/10.1038/s41586-026-10242-y",
+     "current_coauthors": [
+      "leonard-nurnberg"
+     ],
+     "author_name": "Vasco Prudente",
+     "author_position": 2,
+     "recent": true
+    },
+    {
+     "work": "W7138874906",
+     "title": "Thymic health and immunotherapy outcomes in patients with cancer",
+     "date": "2026-03-18",
+     "url": "https://doi.org/10.1038/s41586-026-10243-x",
+     "current_coauthors": [
+      "leonard-nurnberg"
+     ],
+     "author_name": "Vasco Prudente",
+     "author_position": 2,
+     "recent": true
+    },
+    {
+     "work": "W7117708698",
+     "title": "Vulnerabilities of feature clustering in EIT radiomics",
+     "date": "2025-12-31",
+     "url": "https://doi.org/10.1016/j.compbiomed.2025.111438",
+     "current_coauthors": [
+      "leonard-wee"
+     ],
+     "author_name": "Vasco Prudente",
+     "author_position": 2,
+     "recent": true
+    },
+    {
+     "work": "W4410197107",
+     "title": "FaceAge, a deep learning system to estimate biological age from face photographs to improve prognostication: a model development and validation study",
+     "date": "2025-05-08",
+     "url": "https://doi.org/10.1016/j.landig.2025.03.002",
+     "current_coauthors": [
+      "andre-dekker"
+     ],
+     "author_name": "Vasco Prudente",
+     "author_position": 10,
+     "recent": true
+    }
+   ]
+  },
+  "vincenzo-forte": {
+   "name": "Vincenzo Forte",
+   "profile_url": "https://www.clinicaldatascience.nl/vincenzo-forte",
+   "checked_at": "2026-10-21",
+   "window_start": "2024-10-21",
+   "recent_months": 24,
+   "shared_papers": 0,
+   "recent_shared_papers": 0,
+   "last_collaboration_date": null,
+   "followup_until": null,
+   "current_coauthors": [],
+   "status": "no_collaboration_found_in_collection",
+   "orcid": null,
+   "orcid_verified": false,
+   "scholar_id": null,
+   "identifier_evidence": {},
+   "evidence": []
+  },
+  "wouter-van-elmpt": {
+   "name": "Wouter van Elmpt",
+   "profile_url": "https://www.clinicaldatascience.nl/staff/wouter-van-elmpt",
+   "checked_at": "2026-10-21",
+   "window_start": "2024-10-21",
+   "recent_months": 24,
+   "shared_papers": 4,
+   "recent_shared_papers": 1,
+   "last_collaboration_date": "2024-12-01",
+   "followup_until": "2026-12-01",
+   "current_coauthors": [
+    "rianne-fijten"
+   ],
+   "status": "recent_collaboration",
+   "orcid": "0000-0001-8820-0784",
+   "orcid_verified": true,
+   "scholar_id": "rJ8_V2EAAAAJ",
+   "identifier_evidence": {
+    "scholar": {
+     "checked_at": "2026-10-21",
+     "url": "https://scholar.google.com/citations?user=rJ8_V2EAAAAJ",
+     "shared_works": [],
+     "known_coauthors": [
+      "andre-dekker",
+      "hugo-aerts",
+      "johan-van-soest"
+     ]
+    },
+    "orcid": {
+     "checked_at": "2026-10-21",
+     "url": "https://orcid.org/0000-0001-8820-0784",
+     "shared_works": [
+      "W4405623126",
+      "W4394675050"
+     ],
+     "known_coauthors": []
+    }
+   },
+   "evidence": [
+    {
+     "work": "W4405623126",
+     "title": "Implementation Strategy for Artificial Intelligence in Radiotherapy: Can Implementation Science Help?",
+     "date": "2024-12-01",
+     "url": "https://doi.org/10.1200/cci.24.00101",
+     "current_coauthors": [
+      "rianne-fijten"
+     ],
+     "author_name": "Wouter van Elmpt",
+     "author_position": 4,
+     "recent": true
+    },
+    {
+     "work": "W4402037835",
+     "title": "304: A research-based implementation strategy for AI in radiotherapy: can implementation science help?",
+     "date": "2024-05-01",
+     "url": "https://doi.org/10.1016/s0167-8140(24)00969-1",
+     "current_coauthors": [
+      "rianne-fijten"
+     ],
+     "author_name": "Wouter van Elmpt",
+     "author_position": 4,
+     "recent": false
+    },
+    {
+     "work": "W4402037306",
+     "title": "373: Predicting neurocognitive decline after brain irradiation in adult patients with primary brain tumor",
+     "date": "2024-05-01",
+     "url": "https://doi.org/10.1016/s0167-8140(24)01011-9",
+     "current_coauthors": [
+      "andre-dekker"
+     ],
+     "author_name": "Wouter van Elmpt",
+     "author_position": 6,
+     "recent": false
+    },
+    {
+     "work": "W4394675050",
+     "title": "Predicting the risk of neurocognitive decline after brain irradiation in adult patients with a primary brain tumor",
+     "date": "2024-03-25",
+     "url": "https://doi.org/10.1093/neuonc/noae035",
+     "current_coauthors": [
+      "andre-dekker"
+     ],
+     "author_name": "Wouter van Elmpt",
+     "author_position": 6,
+     "recent": false
+    }
+   ]
+  },
+  "yanqi-huang": {
+   "name": "Yanqi Huang",
+   "profile_url": "https://www.clinicaldatascience.nl/yanqi-huang",
+   "checked_at": "2026-10-21",
+   "window_start": "2024-10-21",
+   "recent_months": 24,
+   "shared_papers": 2,
+   "recent_shared_papers": 1,
+   "last_collaboration_date": "2025-06-04",
+   "followup_until": "2027-06-04",
+   "current_coauthors": [
+    "leonard-wee"
+   ],
+   "status": "recent_collaboration",
+   "orcid": "0000-0002-0286-3964",
+   "orcid_verified": false,
+   "scholar_id": null,
+   "identifier_evidence": {},
+   "evidence": [
+    {
+     "work": "W4411020962",
+     "title": "Enhanced risk stratification for stage II colorectal cancer using deep learning-based CT classifier and pathological markers to optimize adjuvant therapy decision",
+     "date": "2025-06-04",
+     "url": "https://doi.org/10.1016/j.annonc.2025.05.537",
+     "current_coauthors": [
+      "leonard-wee"
+     ],
+     "author_name": "Yanqi Huang",
+     "author_position": 1,
+     "recent": true
+    },
+    {
+     "work": "W4403351431",
+     "title": "Integrated analysis of radiomics, RNA, and clinicopathologic phenotype reveals biological basis of prognostic risk stratification in colorectal cancer",
+     "date": "2024-10-12",
+     "url": "https://doi.org/10.1016/j.scib.2024.10.005",
+     "current_coauthors": [
+      "andre-dekker",
+      "leonard-wee"
+     ],
+     "author_name": "Yanqi Huang",
+     "author_position": 2,
+     "recent": false
+    }
+   ]
+  },
+  "zhen-zang": {
+   "name": "Zhen Zhang",
+   "profile_url": "https://www.clinicaldatascience.nl/Staff/zhen-zang",
+   "checked_at": "2026-10-21",
+   "window_start": "2024-10-21",
+   "recent_months": 24,
+   "shared_papers": 20,
+   "recent_shared_papers": 14,
+   "last_collaboration_date": "2026-07-01",
+   "followup_until": "2028-07-01",
+   "current_coauthors": [
+    "ananya-choudhury",
+    "andre-dekker",
+    "johan-van-soest",
+    "leonard-wee",
+    "leroy-volmer",
+    "meng-zhou",
+    "minghua-li",
+    "petros-kalendralis"
+   ],
+   "status": "recent_collaboration",
+   "orcid": "0000-0001-6335-9529",
+   "orcid_verified": true,
+   "scholar_id": null,
+   "identifier_evidence": {
+    "orcid": {
+     "checked_at": "2026-10-21",
+     "url": "https://orcid.org/0000-0001-6335-9529",
+     "shared_works": [
+      "W4414063075",
+      "W4408488860",
+      "W4391106310"
+     ],
+     "known_coauthors": []
+    }
+   },
+   "evidence": [
+    {
+     "work": "W7167904514",
+     "title": "Center-specific Federated Learning for Radiation Pneumonitis: A Cross-Center Adaptive Alternating Framework",
+     "date": "2026-07-01",
+     "url": "https://doi.org/10.1016/j.ijrobp.2026.06.3083",
+     "current_coauthors": [
+      "andre-dekker",
+      "leonard-wee"
+     ],
+     "author_name": "Zhen Zhang",
+     "author_position": 17,
+     "recent": true
+    },
+    {
+     "work": "W7151557672",
+     "title": "Adapting federated radiomics models for radiation pneumonitis prediction in patients receiving thoracic radiotherapy with immunotherapy",
+     "date": "2026-04-07",
+     "url": "https://doi.org/10.3389/fimmu.2026.1793039",
+     "current_coauthors": [
+      "andre-dekker",
+      "leonard-wee"
+     ],
+     "author_name": "Zhen Zhang",
+     "author_position": 4,
+     "recent": true
+    },
+    {
+     "work": "W7133359853",
+     "title": "Cross-dataset adaptation of voxel-level deep radiomics for predicting survival in inoperable locally advanced NSCLC treated with immunotherapy",
+     "date": "2026-03-03",
+     "url": "https://doi.org/10.3389/fimmu.2026.1787518",
+     "current_coauthors": [
+      "andre-dekker",
+      "leonard-wee"
+     ],
+     "author_name": "Zhen Zhang",
+     "author_position": 5,
+     "recent": true
+    },
+    {
+     "work": "W4417539109",
+     "title": "Interpretable multimodal radiopathomics model predicting pathological complete response to neoadjuvant chemoimmunotherapy in esophageal squamous cell carcinoma",
+     "date": "2025-12-01",
+     "url": "https://doi.org/10.1136/jitc-2025-013840",
+     "current_coauthors": [
+      "andre-dekker",
+      "leonard-wee"
+     ],
+     "author_name": "Zhen Zhang",
+     "author_position": 16,
+     "recent": true
+    },
+    {
+     "work": "W4416373305",
+     "title": "PET/CT-based deep learning model predicts distant metastasis after SBRT for early-stage NSCLC: A multicenter study",
+     "date": "2025-11-19",
+     "url": "https://doi.org/10.1016/j.compmedimag.2025.102663",
+     "current_coauthors": [
+      "andre-dekker",
+      "leonard-wee",
+      "petros-kalendralis"
+     ],
+     "author_name": "Zhen Zhang",
+     "author_position": 14,
+     "recent": true
+    },
+    {
+     "work": "W4415710214",
+     "title": "Malignant pleural mesothelioma classification and survival prediction with CT imaging using ResNet",
+     "date": "2025-10-30",
+     "url": "https://doi.org/10.1007/s00330-025-12094-y",
+     "current_coauthors": [
+      "andre-dekker",
+      "leonard-wee",
+      "meng-zhou",
+      "minghua-li"
+     ],
+     "author_name": "Zhen Zhang",
+     "author_position": 4,
+     "recent": true
+    },
+    {
+     "work": "W4414063075",
+     "title": "Minimum sample size calculation for radiomics-based binary outcome prediction models: Theoretical framework and practical example",
+     "date": "2025-09-08",
+     "url": "https://doi.org/10.1016/j.radonc.2025.111134",
+     "current_coauthors": [
+      "andre-dekker",
+      "leonard-wee"
+     ],
+     "author_name": "Zhen Zhang",
+     "author_position": 6,
+     "recent": true
+    },
+    {
+     "work": "W7209907262",
+     "title": "Gross Tumour Volume segmentation by federated deep learning using real-world data of 3500+ lung cancer patients from 20 institutions in 10 countries",
+     "date": "2025-05-01",
+     "url": "https://openalex.org/W7209907262",
+     "current_coauthors": [
+      "ananya-choudhury",
+      "andre-dekker",
+      "johan-van-soest",
+      "leonard-wee",
+      "leroy-volmer"
+     ],
+     "author_name": "Zhen Zhang",
+     "author_position": 22,
+     "recent": true
+    },
+    {
+     "work": "W4410560532",
+     "title": "2555 Automated Tumor Segmentation Within Atelectasis Regions in CT Images Using nnUNet: Enhancing Diagnostic Accuracy and Radiotherapy Planning",
+     "date": "2025-05-01",
+     "url": "https://doi.org/10.1016/s0167-8140(25)01135-1",
+     "current_coauthors": [
+      "andre-dekker",
+      "leonard-wee",
+      "minghua-li"
+     ],
+     "author_name": "Zhen Zhang",
+     "author_position": 6,
+     "recent": true
+    },
+    {
+     "work": "W4410559475",
+     "title": "3824 Gross Tumour Volume segmentation by federated deep learning using real-world data of 3500+ lung cancer patients from 20 institutions in countries",
+     "date": "2025-05-01",
+     "url": "https://doi.org/10.1016/s0167-8140(25)01983-8",
+     "current_coauthors": [
+      "ananya-choudhury",
+      "andre-dekker",
+      "johan-van-soest",
+      "leonard-wee",
+      "leroy-volmer"
+     ],
+     "author_name": "Zhen Zhang",
+     "author_position": 22,
+     "recent": true
+    },
+    {
+     "work": "W4408476206",
+     "title": "Data-efficient federated semi-supervised learning framework via pseudo supervision refinement strategy for lung tumor segmentation",
+     "date": "2025-03-15",
+     "url": "https://doi.org/10.1016/j.bspc.2025.107793",
+     "current_coauthors": [
+      "andre-dekker",
+      "leonard-wee"
+     ],
+     "author_name": "Zhen Zhang",
+     "author_position": 3,
+     "recent": true
+    },
+    {
+     "work": "W4408488860",
+     "title": "Voxel-level radiomics and deep learning for predicting pathologic complete response in esophageal squamous cell carcinoma after neoadjuvant immunotherapy and chemotherapy",
+     "date": "2025-03-01",
+     "url": "https://doi.org/10.1136/jitc-2024-011149",
+     "current_coauthors": [
+      "andre-dekker",
+      "leonard-wee"
+     ],
+     "author_name": "Zhen Zhang",
+     "author_position": 1,
+     "recent": true
+    },
+    {
+     "work": "W4406527698",
+     "title": "Whole lung radiomic features are associated with overall survival in patients with locally advanced non-small cell lung cancer treated with definitive radiotherapy",
+     "date": "2025-01-17",
+     "url": "https://doi.org/10.1186/s13014-025-02583-1",
+     "current_coauthors": [
+      "andre-dekker",
+      "leonard-wee"
+     ],
+     "author_name": "Zhen Zhang",
+     "author_position": 2,
+     "recent": true
+    },
+    {
+     "work": "W4404373392",
+     "title": "Improved prognostication of overall survival after radiotherapy in lung cancer patients by an interpretable machine learning model integrating lung and tumor radiomics and clinical parameters",
+     "date": "2024-11-14",
+     "url": "https://doi.org/10.1007/s11547-024-01919-3",
+     "current_coauthors": [
+      "andre-dekker",
+      "leonard-wee",
+      "meng-zhou"
+     ],
+     "author_name": "Zhen Zhang",
+     "author_position": 11,
+     "recent": true
+    },
+    {
+     "work": "W4401013932",
+     "title": "A multi-Task Learning based applicable AI model simultaneously predicts stage, histology, grade and LNM for cervical cancer before surgery",
+     "date": "2024-07-26",
+     "url": "https://doi.org/10.1186/s12905-024-03270-1",
+     "current_coauthors": [
+      "andre-dekker"
+     ],
+     "author_name": "Zhen Zhang",
+     "author_position": 9,
+     "recent": false
+    },
+    {
+     "work": "W4402037750",
+     "title": "819: Development of an explainable AI Model for OS prediction in LA-NSCLC patients receiving RT",
+     "date": "2024-05-01",
+     "url": "https://doi.org/10.1016/s0167-8140(24)01347-1",
+     "current_coauthors": [
+      "andre-dekker"
+     ],
+     "author_name": "Zhen Zhang",
+     "author_position": 1,
+     "recent": false
+    },
+    {
+     "work": "W4391258615",
+     "title": "Assessing the role of GPT-4 in thyroid ultrasound diagnosis and treatment recommendations: enhancing interpretability with a chain of thought approach",
+     "date": "2024-01-26",
+     "url": "https://doi.org/10.21037/qims-23-1180",
+     "current_coauthors": [
+      "andre-dekker"
+     ],
+     "author_name": "Zhen Zhang",
+     "author_position": 2,
+     "recent": false
+    },
+    {
+     "work": "W4391106310",
+     "title": "A PET/CT radiomics model for predicting distant metastasis in early-stage non–small cell lung cancer patients treated with stereotactic body radiotherapy: a multicentric study",
+     "date": "2024-01-22",
+     "url": "https://doi.org/10.1186/s13014-024-02402-z",
+     "current_coauthors": [
+      "andre-dekker",
+      "leonard-wee"
+     ],
+     "author_name": "Zhen Zhang",
+     "author_position": 2,
+     "recent": false
+    },
+    {
+     "work": "W4404414512",
+     "title": "Data-Efficient Federated Semi-Supervised Learning Framework Via Pseudo Supervision Refinement Strategy for Lung Tumor Segmentation",
+     "date": "2024-01-01",
+     "url": "https://doi.org/10.2139/ssrn.5007884",
+     "current_coauthors": [
+      "andre-dekker",
+      "leonard-wee"
+     ],
+     "author_name": "Zhen Zhang",
+     "author_position": 4,
+     "recent": false
+    },
+    {
+     "work": "W4403399336",
+     "title": "Data-Efficient Federated Semi-Supervised Learning Framework Via Pseudo Supervision Refinement Strategy for Lung Tumor Segmentation",
+     "date": "2024-01-01",
+     "url": "https://doi.org/10.2139/ssrn.4974237",
+     "current_coauthors": [
+      "andre-dekker",
+      "leonard-wee"
+     ],
+     "author_name": "Zhen Zhang",
+     "author_position": 4,
+     "recent": false
+    }
+   ]
+  },
+  "zhenwei-shi": {
+   "name": "Zhenwei Shi",
+   "profile_url": "https://www.clinicaldatascience.nl/Staff/zhenwei-shi",
+   "checked_at": "2026-10-21",
+   "window_start": "2024-10-21",
+   "recent_months": 24,
+   "shared_papers": 8,
+   "recent_shared_papers": 4,
+   "last_collaboration_date": "2026-01-06",
+   "followup_until": "2028-01-06",
+   "current_coauthors": [
+    "andre-dekker",
+    "leonard-wee",
+    "leroy-volmer"
+   ],
+   "status": "recent_collaboration",
+   "orcid": "0000-0003-1305-5935",
+   "orcid_verified": true,
+   "scholar_id": "aeK2yRsAAAAJ",
+   "identifier_evidence": {
+    "orcid": {
+     "checked_at": "2026-10-21",
+     "url": "https://orcid.org/0000-0003-1305-5935",
+     "shared_works": [
+      "W4408476206",
+      "W4404414512",
+      "W4403399336",
+      "W4406063103",
+      "W4402246190",
+      "W4390571430"
+     ],
+     "known_coauthors": []
+    },
+    "scholar": {
+     "checked_at": "2026-10-21",
+     "url": "https://scholar.google.com/citations?user=aeK2yRsAAAAJ",
+     "shared_works": [
+      "W4390571430",
+      "W4415507294",
+      "W4406063103",
+      "W7118461133",
+      "W4408476206",
+      "W4404414512",
+      "W4403399336"
+     ],
+     "known_coauthors": [
+      "alberto-traverso",
+      "andre-dekker",
+      "hugo-aerts",
+      "johan-van-soest",
+      "leonard-wee",
+      "petros-kalendralis",
+      "rianne-fijten"
+     ]
+    }
+   },
+   "evidence": [
+    {
+     "work": "W7118461133",
+     "title": "Automated CT-derived body composition predicts pathologic response to neoadjuvant immunotherapy in non–small cell lung cancer",
+     "date": "2026-01-06",
+     "url": "https://doi.org/10.1016/j.canlet.2025.218229",
+     "current_coauthors": [
+      "andre-dekker",
+      "leonard-wee"
+     ],
+     "author_name": "Zhenwei Shi",
+     "author_position": 18,
+     "recent": true
+    },
+    {
+     "work": "W4415507294",
+     "title": "AI-derived longitudinal and multi-dimensional CT classifier for non-small cell lung cancer to optimize neoadjuvant chemoimmunotherapy decision: a multicentre retrospective study",
+     "date": "2025-10-07",
+     "url": "https://doi.org/10.1016/j.eclinm.2025.103551",
+     "current_coauthors": [
+      "andre-dekker",
+      "leonard-wee"
+     ],
+     "author_name": "Zhenwei Shi",
+     "author_position": 19,
+     "recent": true
+    },
+    {
+     "work": "W4408476206",
+     "title": "Data-efficient federated semi-supervised learning framework via pseudo supervision refinement strategy for lung tumor segmentation",
+     "date": "2025-03-15",
+     "url": "https://doi.org/10.1016/j.bspc.2025.107793",
+     "current_coauthors": [
+      "andre-dekker",
+      "leonard-wee"
+     ],
+     "author_name": "Zhenwei Shi",
+     "author_position": 12,
+     "recent": true
+    },
+    {
+     "work": "W4406063103",
+     "title": "Label-efficient transformer-based framework with self-supervised strategies for heterogeneous lung tumor segmentation",
+     "date": "2025-01-04",
+     "url": "https://doi.org/10.1016/j.eswa.2024.126364",
+     "current_coauthors": [
+      "andre-dekker",
+      "leonard-wee",
+      "leroy-volmer"
+     ],
+     "author_name": "Zhenwei Shi",
+     "author_position": 14,
+     "recent": true
+    },
+    {
+     "work": "W4402246190",
+     "title": "Non-invasive multimodal CT deep learning biomarker to predict pathological complete response of non-small cell lung cancer following neoadjuvant immunochemotherapy: a multicenter study",
+     "date": "2024-09-01",
+     "url": "https://doi.org/10.1136/jitc-2024-009348",
+     "current_coauthors": [
+      "andre-dekker",
+      "leonard-wee"
+     ],
+     "author_name": "Zhenwei Shi",
+     "author_position": 13,
+     "recent": false
+    },
+    {
+     "work": "W4390571430",
+     "title": "SwinHR: Hemodynamic-powered hierarchical vision transformer for breast tumor segmentation",
+     "date": "2024-01-03",
+     "url": "https://doi.org/10.1016/j.compbiomed.2024.107939",
+     "current_coauthors": [
+      "andre-dekker",
+      "leonard-wee"
+     ],
+     "author_name": "Zhenwei Shi",
+     "author_position": 19,
+     "recent": false
+    },
+    {
+     "work": "W4404414512",
+     "title": "Data-Efficient Federated Semi-Supervised Learning Framework Via Pseudo Supervision Refinement Strategy for Lung Tumor Segmentation",
+     "date": "2024-01-01",
+     "url": "https://doi.org/10.2139/ssrn.5007884",
+     "current_coauthors": [
+      "andre-dekker",
+      "leonard-wee"
+     ],
+     "author_name": "Zhenwei Shi",
+     "author_position": 1,
+     "recent": false
+    },
+    {
+     "work": "W4403399336",
+     "title": "Data-Efficient Federated Semi-Supervised Learning Framework Via Pseudo Supervision Refinement Strategy for Lung Tumor Segmentation",
+     "date": "2024-01-01",
+     "url": "https://doi.org/10.2139/ssrn.4974237",
+     "current_coauthors": [
+      "andre-dekker",
+      "leonard-wee"
+     ],
+     "author_name": "Zhenwei Shi",
+     "author_position": 1,
+     "recent": false
+    }
+   ]
+  },
+  "zhixiang-wang": {
+   "name": "Zhixiang Wang",
+   "profile_url": "https://www.clinicaldatascience.nl/Staff/zhixiang-wang",
+   "checked_at": "2026-10-21",
+   "window_start": "2024-10-21",
+   "recent_months": 24,
+   "shared_papers": 7,
+   "recent_shared_papers": 3,
+   "last_collaboration_date": "2026-07-01",
+   "followup_until": "2028-07-01",
+   "current_coauthors": [
+    "andre-dekker",
+    "leonard-wee"
+   ],
+   "status": "recent_collaboration",
+   "orcid": "0000-0002-4778-7539",
+   "orcid_verified": true,
+   "scholar_id": null,
+   "identifier_evidence": {
+    "orcid": {
+     "checked_at": "2026-10-21",
+     "url": "https://orcid.org/0000-0002-4778-7539",
+     "shared_works": [
+      "W4417539109",
+      "W4401013932",
+      "W4391258615",
+      "W4402137708",
+      "W4399466786"
+     ],
+     "known_coauthors": []
+    }
+   },
+   "evidence": [
+    {
+     "work": "W7167904514",
+     "title": "Center-specific Federated Learning for Radiation Pneumonitis: A Cross-Center Adaptive Alternating Framework",
+     "date": "2026-07-01",
+     "url": "https://doi.org/10.1016/j.ijrobp.2026.06.3083",
+     "current_coauthors": [
+      "andre-dekker",
+      "leonard-wee"
+     ],
+     "author_name": "Zhixiang Wang",
+     "author_position": 2,
+     "recent": true
+    },
+    {
+     "work": "W4417539109",
+     "title": "Interpretable multimodal radiopathomics model predicting pathological complete response to neoadjuvant chemoimmunotherapy in esophageal squamous cell carcinoma",
+     "date": "2025-12-01",
+     "url": "https://doi.org/10.1136/jitc-2025-013840",
+     "current_coauthors": [
+      "andre-dekker",
+      "leonard-wee"
+     ],
+     "author_name": "Zhixiang Wang",
+     "author_position": 5,
+     "recent": true
+    },
+    {
+     "work": "W4414063075",
+     "title": "Minimum sample size calculation for radiomics-based binary outcome prediction models: Theoretical framework and practical example",
+     "date": "2025-09-08",
+     "url": "https://doi.org/10.1016/j.radonc.2025.111134",
+     "current_coauthors": [
+      "andre-dekker",
+      "leonard-wee"
+     ],
+     "author_name": "Zhixiang Wang",
+     "author_position": 3,
+     "recent": true
+    },
+    {
+     "work": "W4402137708",
+     "title": "Predicting axillary lymph node metastasis in breast cancer based on ultrasound radiofrequency time-series analysis",
+     "date": "2024-09-02",
+     "url": "https://doi.org/10.1177/02841851241268463",
+     "current_coauthors": [
+      "andre-dekker"
+     ],
+     "author_name": "Zhixiang Wang",
+     "author_position": 7,
+     "recent": false
+    },
+    {
+     "work": "W4401013932",
+     "title": "A multi-Task Learning based applicable AI model simultaneously predicts stage, histology, grade and LNM for cervical cancer before surgery",
+     "date": "2024-07-26",
+     "url": "https://doi.org/10.1186/s12905-024-03270-1",
+     "current_coauthors": [
+      "andre-dekker"
+     ],
+     "author_name": "Zhixiang Wang",
+     "author_position": 1,
+     "recent": false
+    },
+    {
+     "work": "W4399466786",
+     "title": "Preoperative prediction of high-grade osteosarcoma response to neoadjuvant therapy based on a plain CT radiomics model: A dual-center study",
+     "date": "2024-06-09",
+     "url": "https://doi.org/10.1016/j.jbo.2024.100614",
+     "current_coauthors": [
+      "andre-dekker"
+     ],
+     "author_name": "Zhixiang Wang",
+     "author_position": 8,
+     "recent": false
+    },
+    {
+     "work": "W4391258615",
+     "title": "Assessing the role of GPT-4 in thyroid ultrasound diagnosis and treatment recommendations: enhancing interpretability with a chain of thought approach",
+     "date": "2024-01-26",
+     "url": "https://doi.org/10.21037/qims-23-1180",
+     "current_coauthors": [
+      "andre-dekker"
+     ],
+     "author_name": "Zhixiang Wang",
+     "author_position": 1,
+     "recent": false
+    }
+   ]
+  }
+ },
+ "former_staff_reviewed": 88,
+ "with_collaborations": 33,
+ "with_recent_collaborations": 27
+}

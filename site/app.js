@@ -221,8 +221,9 @@
       data.repo_url || "https://github.com/MaastrichtU-CDS/pubpulse";
     $("total-publications").textContent =
       data.works.length.toLocaleString("en-GB");
-    $("total-researchers").textContent =
-      data.people.length.toLocaleString("en-GB");
+    $("total-researchers").textContent = data.people
+      .filter((person) => person.active)
+      .length.toLocaleString("en-GB");
     $("total-open").textContent = data.works.length
       ? Math.round(
           (data.works.filter((w) => w.is_oa).length / data.works.length) * 100,
@@ -588,6 +589,7 @@
       for (const s of workMembers(w)) counts[s] = (counts[s] || 0) + 1;
     const q = els.peopleQ.value.trim().toLowerCase();
     const people = data.people
+      .filter((p) => p.active || counts[p.slug] || q)
       .filter((p) => !q || p.name.toLowerCase().includes(q))
       .sort(
         (a, b) =>
@@ -598,9 +600,9 @@
     els.people.innerHTML = people
       .map(
         (p) => `
-      <div class="person-row"><label class="${p.active ? "" : "inactive"}" title="${p.active ? "" : p.tracked ? "left the group; papers with a group affiliation still counted until " + p.tracked_until : "no longer in the group"}">
+      <div class="person-row"><label class="${p.active ? "" : "inactive"}" title="${p.active ? "" : p.former_collaboration?.recent_shared_papers ? "Former staff · recent publications with current CDS coauthors" : "Former staff"}">
         <input type="checkbox" value="${esc(p.slug)}" ${state.people.includes(p.slug) ? "checked" : ""}>
-        ${esc(p.name)} <span class="n">${counts[p.slug] || 0}</span>
+        <span>${esc(p.name)}${p.active ? "" : '<small class="former-label">Former</small>'}</span> <span class="n">${counts[p.slug] || 0}</span>
       </label></div>`,
       )
       .join("");
@@ -628,7 +630,14 @@
             const description = [person.role, person.employer]
               .filter(Boolean)
               .join(" · ");
-            return `<article class="researcher-profile"><div class="profile-heading"><h4>${esc(person.name)}</h4><button class="profile-remove" type="button" data-slug="${esc(person.slug)}" aria-label="Remove ${esc(person.name)} from the author filter" title="Remove author filter">×</button></div>${description ? `<p class="profile-description">${esc(description)}</p>` : ""}<div class="profile-footer"><p>${count} ${count === 1 ? "publication" : "publications"} in this collection</p>${authorProfileLinks(person)}</div></article>`;
+            const collaboration = person.former_collaboration;
+            const status = person.active
+              ? ""
+              : `<p class="profile-status">Former staff${collaboration?.recent_shared_papers ? " · recent CDS collaborator" : ""}</p>`;
+            const recent = collaboration?.last_collaboration_date
+              ? `<p class="profile-collaboration">${collaboration.recent_shared_papers} shared ${collaboration.recent_shared_papers === 1 ? "paper" : "papers"} with current CDS members in the last ${collaboration.recent_months || 24} months · latest ${esc(new Date(collaboration.last_collaboration_date + "T12:00:00Z").toLocaleDateString("en-GB", { day: "numeric", month: "short", year: "numeric" }))}</p>`
+              : "";
+            return `<article class="researcher-profile"><div class="profile-heading"><h4>${esc(person.name)}</h4><button class="profile-remove" type="button" data-slug="${esc(person.slug)}" aria-label="Remove ${esc(person.name)} from the author filter" title="Remove author filter">×</button></div>${status}${description ? `<p class="profile-description">${esc(description)}</p>` : ""}${recent}<div class="profile-footer"><p>${count} ${count === 1 ? "publication" : "publications"} in this collection</p>${authorProfileLinks(person)}</div></article>`;
           })
           .join("")}</div>`
       : "";
@@ -829,7 +838,7 @@
           : groupNames.get(normalizeName(name));
         const position = w.author_positions?.[index] || index + 1;
         if (!slug || !data.peopleBySlug[slug]) return esc(name);
-        return `<strong class="cds-author" title="${esc(nameOf(slug))} · CDS author · position ${position} of ${authorCount}">${esc(name)}<span class="author-position" aria-label="position ${position} of ${authorCount}">${position}/${authorCount}</span></strong>`;
+        return `<strong class="cds-author" title="${esc(nameOf(slug))} · ${data.peopleBySlug[slug].active ? "CDS author" : "Former CDS staff"} · position ${position} of ${authorCount}">${esc(name)}<span class="author-position" aria-label="position ${position} of ${authorCount}">${position}/${authorCount}</span></strong>`;
       })
       .join(", ");
     const incomplete = w.authors.length < authorCount;
