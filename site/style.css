@@ -817,9 +817,45 @@ button.link:hover {
 }
 .authors-full {
   color: #607087;
-  font-size: 12px;
-  line-height: 1.7;
+  font-size: 13px;
+  line-height: 1.9;
   margin-top: 3px;
+  overflow-wrap: anywhere;
+}
+.author-legend {
+  margin: 0 0 14px;
+  font-size: 12px;
+  color: var(--muted);
+}
+.author-list-label {
+  font-weight: 600;
+  color: var(--muted);
+}
+.cds-author {
+  color: var(--navy);
+  font-weight: 700;
+  background: var(--accent-soft);
+  border-radius: 3px;
+  padding: 1px 3px;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+}
+.author-position {
+  display: inline-block;
+  margin-left: 5px;
+  padding: 0 4px;
+  border-radius: 3px;
+  background: #d9edf9;
+  color: #0e416e;
+  font-size: 11px;
+  line-height: 1.7;
+  font-weight: 600;
+  white-space: nowrap;
+  vertical-align: baseline;
+}
+.author-list-note {
+  font-size: 12px;
+  color: var(--muted);
 }
 details {
   margin-top: 12px;

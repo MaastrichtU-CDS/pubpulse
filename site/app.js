@@ -698,10 +698,30 @@
         return `<button class="link" data-person="${esc(s)}" title="${esc(affs || "no affiliation recorded by OpenAlex")}"><b>${esc(nameOf(s))}</b>${mark}</button>`;
       })
       .join(", ");
-    const others =
-      w.authors.length > 12
-        ? w.authors.slice(0, 12).join(", ") + ` … (${w.author_count} authors)`
-        : w.authors.join(", ");
+    const authorCount = w.author_count || w.authors.length;
+    const normalizeName = (name) =>
+      String(name)
+        .normalize("NFKD")
+        .replace(/\p{M}/gu, "")
+        .toLowerCase()
+        .replace(/[^\p{L}\p{N}]/gu, "");
+    const groupNames = new Map();
+    for (const slug of w.group_members) {
+      const name = normalizeName(nameOf(slug));
+      if (groupNames.has(name)) groupNames.set(name, null);
+      else groupNames.set(name, slug);
+    }
+    const authors = w.authors
+      .map((name, index) => {
+        const slug = Array.isArray(w.author_members)
+          ? w.author_members[index]
+          : groupNames.get(normalizeName(name));
+        const position = w.author_positions?.[index] || index + 1;
+        if (!slug || !w.group_members.includes(slug)) return esc(name);
+        return `<strong class="cds-author" title="${esc(nameOf(slug))} · CDS author · position ${position} of ${authorCount}">${esc(name)}<span class="author-position" aria-label="position ${position} of ${authorCount}">${position}/${authorCount}</span></strong>`;
+      })
+      .join(", ");
+    const incomplete = w.authors.length < authorCount;
     const meta = [
       w.publication_date,
       fmtType(w.type),
@@ -715,7 +735,7 @@
       <h3><a href="${esc(link)}" target="_blank" rel="noopener">${esc(w.title)}</a></h3>
       <div class="meta">${meta}</div>
       <div class="authors">Group: ${members}</div>
-      <div class="authors authors-full">${esc(others)}</div>
+      <div class="authors authors-full"><span class="author-list-label">Authors (${authorCount}):</span> ${authors}${incomplete ? ` <span class="author-list-note">· ${w.authors.length} names available in OpenAlex</span>` : ""}</div>
       ${w.abstract ? `<details><summary>Abstract</summary><p>${esc(w.abstract)}</p></details>` : ""}
       <div class="links">${w.doi ? `<a href="${esc(w.doi)}" target="_blank" rel="noopener">DOI ↗</a>` : ""}${w.oa_url ? `<a href="${esc(w.oa_url)}" target="_blank" rel="noopener">Full text ↗</a>` : ""}<a href="${esc(w.openalex_url)}" target="_blank" rel="noopener">OpenAlex ↗</a><span class="meta work-id" title="use this id in overrides.yml">${esc(w.id)}</span></div>
     </li>`;
