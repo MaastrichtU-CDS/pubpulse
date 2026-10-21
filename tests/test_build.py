@@ -66,13 +66,13 @@ def test_site_build_uses_current_mailing_list_settings(tmp_path, monkeypatch):
 
     # A config-only change must work without fetching publications again.
     for digest in [
-        {"subscribe_url": "https://example.org/join", "unsubscribe_url": "https://example.org/leave", "list_name": "CDS digest"},
+        {"subscribe_endpoint": "", "subscribe_form_url": "https://example.org/join", "list_name": "CDS digest"},
         {},
     ]:
         monkeypatch.setattr(build, "load_config", lambda: {**CFG, "digest": digest})
         build.run()
         result = json.loads((build.DIST_DIR / "data" / "publications.json").read_text())
-        assert result["list"] == {key: digest.get(key, "") for key in ("subscribe_url", "unsubscribe_url", "list_name")}
+        assert result["list"] == {key: digest.get(key, "") for key in ("subscribe_endpoint", "subscribe_form_url", "list_name")}
         assert result["works"] == pubs["works"]
         assert (build.DIST_DIR / "assets" / "pubpulse.svg").exists()
     assert pubs["list"]["subscribe_url"] == "https://example.org/old-list"
