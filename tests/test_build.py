@@ -83,3 +83,18 @@ def test_new_works_includes_pending_from_earlier_runs():
     pubs = _pubs(1)
     assert [w["id"] for w in new_works(pubs)] == ["W0"]
     assert sorted(w["id"] for w in new_works(pubs, ["W3", "W4", "W999"])) == ["W0", "W3", "W4"]
+
+
+def test_site_build_cache_busts_assets(tmp_path, monkeypatch):
+    import shutil
+    from pubpulse import build
+    site = tmp_path / "site"; shutil.copytree(build.SITE_DIR, site)
+    data = tmp_path / "data"; data.mkdir()
+    (data / "publications.json").write_text(json.dumps({"works": [], "people": [], "last_run": None}))
+    monkeypatch.setattr(build, "SITE_DIR", site); monkeypatch.setattr(build, "DATA_DIR", data)
+    monkeypatch.setattr(build, "DIST_DIR", tmp_path / "dist"); monkeypatch.setattr(build, "OUT_DIR", tmp_path / "out")
+    monkeypatch.setattr(build, "load_publications", lambda: {"works": [], "people": [], "last_run": None})
+    monkeypatch.setattr(build, "load_config", lambda: CFG)
+    build.run()
+    html = (build.DIST_DIR / "index.html").read_text()
+    assert 'src="app.js?v=' in html and 'href="style.css?v=' in html

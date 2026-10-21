@@ -225,6 +225,15 @@ def run(config_path: Path | None = None) -> dict:
         json.dumps(site_pubs, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
     )
     shutil.copy(DATA_DIR / "feed.xml", DIST_DIR / "feed.xml")
+    # Cache-busting: browsers and GitHub Pages cache app.js/style.css for a while; a content hash in the URL
+    # makes every deploy pick up the new files immediately.
+    import hashlib
+    index = DIST_DIR / "index.html"
+    html_text = index.read_text(encoding="utf-8")
+    for asset in ("app.js", "style.css"):
+        digest_hex = hashlib.sha1((DIST_DIR / asset).read_bytes()).hexdigest()[:10]
+        html_text = html_text.replace(f'"{asset}"', f'"{asset}?v={digest_hex}"')
+    index.write_text(html_text, encoding="utf-8")
     if (DATA_DIR / "scholar_check.json").exists():
         shutil.copy(DATA_DIR / "scholar_check.json", DIST_DIR / "data" / "scholar_check.json")
     (DIST_DIR / ".nojekyll").write_text("")
