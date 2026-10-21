@@ -112,5 +112,57 @@
    "skipped": false
   },
   "errors": []
+ },
+ {
+  "date": "2026-10-21",
+  "timestamp": "2026-10-21T08:45:24+00:00",
+  "baseline": false,
+  "people_active": 61,
+  "people_tracked": 30,
+  "works_total": 295,
+  "unverified_total": 72,
+  "new_count": 0,
+  "new_ids": [],
+  "needs_review": [
+   "ali-al-zein",
+   "ali-zaila",
+   "andrea-pradas-agujetas",
+   "ayesha-qayyum",
+   "balu-krishna-sasidharan",
+   "carlos-santiago-rios",
+   "daniel-slob",
+   "ekatarina-kondrateva",
+   "ekaterina-akhmad",
+   "elif-sevim",
+   "en-hu",
+   "farshad-jafarpour",
+   "fiona-zegwaard-gelink",
+   "frederik-behets",
+   "gleb-tsikhanovich",
+   "hannah-mary-thomas",
+   "jiaxu-zhang",
+   "karlien-schmeetz",
+   "martijn-hector",
+   "meltem-isik",
+   "meng-zhou",
+   "minghua-li",
+   "monique-roos-koekkelkoren",
+   "prabash-darshanapriya-galgane-banduge",
+   "shreya-anand",
+   "tafadzwa-chaunzwa",
+   "thijs-ackermans",
+   "varnita-mathur",
+   "vikram-baliga",
+   "yang-yao",
+   "yemu-katanda"
+  ],
+  "people_changes": {
+   "added": [],
+   "deactivated": [],
+   "reactivated": [],
+   "updated": [],
+   "skipped": false
+  },
+  "errors": []
  }
 ]
