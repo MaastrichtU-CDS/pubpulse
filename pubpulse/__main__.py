@@ -31,7 +31,8 @@ def main(argv: list[str] | None = None) -> int:
 
     sub.add_parser("build", help="build dist/ (website), data/feed.xml and out/ (digest email, Teams card)")
 
-    sub.add_parser("send-digest", help="email out/digest.* to the subscriber list (and DIGEST_TO) via Gmail SMTP")
+    sub.add_parser("send-digest", help="email out/digest.* to DIGEST_TO (and an Apps Script list, if configured) via SMTP")
+    sub.add_parser("send-campaign", help="send out/digest.html as a Brevo campaign to the Brevo subscriber list")
 
     sc = sub.add_parser("scholar-check", help="compare Google Scholar profiles (via SerpAPI) with pubpulse; writes data/scholar_check.json")
     sc.add_argument("--max-searches", type=int, default=None)
@@ -57,6 +58,10 @@ def main(argv: list[str] | None = None) -> int:
         from .scholar import run as scholar_run
 
         return scholar_run(max_searches=args.max_searches, only=args.only)
+    if args.cmd == "send-campaign":
+        from .brevo import run as brevo_run
+
+        return brevo_run()
     if args.cmd == "send-digest":
         from .mailer import run as mail_run
 

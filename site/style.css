@@ -1237,3 +1237,5 @@ dialog .dialog-rss {
 .digest-form-msg.ok { color: var(--new); }
 .digest-form-msg.err { color: var(--warn); }
 .digest-form .link { font-size: 13px; }
+
+.signup-frame { width: 100%; min-height: 420px; border: 0; border-radius: 10px; background: var(--panel); margin: 10px 0 4px; }

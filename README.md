@@ -83,6 +83,7 @@ Edit either file in the GitHub web editor and commit to `main`; the workflow run
 | `GMAIL_APP_PASSWORD` | a Gmail [app password](https://myaccount.google.com/apppasswords) (needs 2-step verification on that account) |
 | `DIGEST_TO` | optional fixed recipient(s), comma separated, in addition to the subscriber list |
 | `SUBSCRIBERS_KEY` | the SECRET printed by the Apps Script `setup` (see mailing list section) |
+| `BREVO_API_KEY` | Brevo API key: subscriber list + weekly campaign (see mailing list section) |
 | `SMTP_HOST`, `SMTP_PORT`, `SMTP_USER`, `SMTP_PASSWORD`, `SMTP_FROM` | optional: any other SMTP relay instead of Gmail (e.g. Brevo free tier: `smtp-relay.brevo.com`, port 587, your Brevo login + SMTP key, a verified sender address) |
 | `TEAMS_WEBHOOK_URL` | URL from a Teams *Workflows* flow "Post to a channel when a webhook request is received" |
 
@@ -90,25 +91,26 @@ A notification channel whose secret is missing is simply skipped; the site and f
 
 ### Mailing list with subscribe / unsubscribe (website form)
 
-The website has a subscribe form (email + button). Addresses are stored **privately** in a Google Sheet under the
-pubpulse Gmail account, handled by a small Google Apps Script web app ([appsscript/Code.gs](appsscript/Code.gs)).
-Flow: subscribe → confirmation mail → click → subscribed. Every digest carries a personal unsubscribe link, and the
-form also offers "unsubscribe instead" (it mails an unsubscribe link, so nobody can remove someone else).
-The weekly job fetches the confirmed list with a secret and sends one mail per subscriber over Gmail SMTP.
+Self-service, no maintainer involved. The list lives in **Brevo** (the same account that sends the mail):
 
-One-time setup (about 5 minutes, logged in as the pubpulse Gmail account):
+- **Sign-up form** on the website (inside the "Get the weekly digest" dialog): Brevo's hosted form with double opt-in.
+- **Unsubscribe**: Brevo puts an unsubscribe link at the bottom of every digest, because the digest is sent as a Brevo
+  *campaign* to the list "pubpulse weekly" (created automatically on the first send).
+- **Fixed recipients** (optional, `DIGEST_TO`) still get the digest over plain SMTP.
 
-1. Open https://script.google.com → *New project* → replace the code with `appsscript/Code.gs` → save.
-2. *Run → setup* (grant the permissions it asks for) → *View → Logs*: copy the **SECRET** it prints.
-3. *Deploy → New deployment → type: Web app → Execute as: Me → Who has access: Anyone → Deploy*. Copy the web app URL.
-4. GitHub → Settings → Secrets: add `SUBSCRIBERS_KEY` = the SECRET.
-5. `config.yml` → `digest.subscribe_endpoint:` = the web app URL. Commit; the form appears on the site.
+One-time setup in Brevo (about 5 minutes):
 
-Optional: restrict sign-ups to UM/Maastro addresses by filling `ALLOWED_DOMAINS` in `Code.gs` (then *Deploy →
-Manage deployments → edit → New version*). The Sheet link is printed by *setup*; you can look at or edit the list there.
+1. *Settings → SMTP & API → API keys → Generate a new API key* → GitHub secret `BREVO_API_KEY` (and `.env` locally).
+2. *Contacts → Forms → Create a subscription form*: field "Email" only; in *List* choose (or create) **pubpulse weekly**;
+   switch on **double opt-in**; finish. Under *Share* copy the **form link**.
+3. `config.yml` → `digest.subscribe_form_url:` = that link. Commit; the form appears in the website dialog.
+4. Make sure the sender address (`SMTP_FROM`) is a *verified sender* in Brevo (*Senders & IP*).
 
-`DIGEST_TO` (optional) adds fixed recipients, e.g. a distribution list, on top of the subscribers. To test delivery
-without waiting for a new paper: *Actions → weekly → Run workflow* and tick *force_notify*.
+Note: Brevo's free plan adds a small Brevo footer to campaigns and allows 300 mails a day; new accounts may be asked
+to validate before the first larger campaign. (An alternative backend, Google Apps Script + Sheet in
+[appsscript/Code.gs](appsscript/Code.gs), is kept for reference and selected with `digest.subscribe_endpoint`.)
+
+To test delivery without waiting for a new paper: *Actions → weekly → Run workflow* and tick *force_notify*.
 
 ### Google Scholar cross-check (monthly)
 

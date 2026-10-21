@@ -56,8 +56,14 @@ digest:
   # The website form posts to it; the weekly job fetches the confirmed list with the SUBSCRIBERS_KEY secret and
   # sends one mail per subscriber with a personal unsubscribe link. Empty = no form, mail only to DIGEST_TO.
   subscribe_endpoint: ""
+  # Brevo route (recommended): a hosted sign-up form with double opt-in, contacts in a private Brevo list, the weekly
+  # digest sent as a Brevo campaign (unsubscribe link handled by Brevo). Needs secret BREVO_API_KEY.
+  # subscribe_form_url = the form's "share" link from Brevo → Contacts → Forms (shown inside the website dialog).
+  subscribe_form_url: ""
+  brevo_list_name: "pubpulse weekly"
   list_name: "the pubpulse weekly list"
   from_name: "pubpulse"
+  reply_to: "s.puts@maastrichtuniversity.nl"
 
 feed:
   max_items: 50

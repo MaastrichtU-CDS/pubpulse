@@ -476,7 +476,7 @@ def run(dry_run: bool = False, skip_people: bool = False, config_path: Path = CO
         "repo_url": cfg.get("repo_url"),
         "staff_url": cfg.get("staff_url"),
         "since_year": int(cfg.get("since_year", 2024)),
-        "list": {k: (cfg.get("digest") or {}).get(k) or "" for k in ("subscribe_endpoint", "list_name")},
+        "list": {k: (cfg.get("digest") or {}).get(k) or "" for k in ("subscribe_endpoint", "subscribe_form_url", "list_name")},
         "last_run": {k: run_record[k] for k in ("date", "baseline", "new_count", "new_ids", "needs_review", "errors")},
         "people": public_people(people, today, grace),
         "works": works,

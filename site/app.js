@@ -285,8 +285,31 @@
 
   function configureDigest(list) {
     const endpoint = safeLink(list.subscribe_endpoint);
+    const formUrl = safeLink(list.subscribe_form_url);
     const unsubLink = $("unsubscribe-link");
     const form = $("digest-form");
+    if (formUrl) {
+      // Hosted sign-up form (Brevo): double opt-in and the unsubscribe link in every mail are handled there.
+      $("join-steps").classList.add("hidden");
+      $("join-action").classList.add("hidden");
+      form.classList.add("hidden");
+      unsubLink.classList.add("hidden");
+      $("digest-note").textContent = "Enter your email, confirm the link we send you, done.";
+      $("join-note").textContent =
+        "Every digest has an unsubscribe link at the bottom. Your address is stored privately and only used for this digest.";
+      const frame = document.createElement("iframe");
+      frame.className = "signup-frame";
+      frame.src = formUrl;
+      frame.title = "Subscribe to the weekly digest";
+      frame.loading = "lazy";
+      frame.setAttribute("allowfullscreen", "");
+      $("join-note").before(frame);
+      const fallback = document.createElement("p");
+      fallback.className = "join-note";
+      fallback.innerHTML = `Form not showing? <a href="${esc(formUrl)}" target="_blank" rel="noopener">Open it in a new tab ↗</a>`;
+      $("join-note").before(fallback);
+      return;
+    }
     if (!endpoint) {
       unsubLink.classList.add("hidden");
       form.classList.add("hidden");

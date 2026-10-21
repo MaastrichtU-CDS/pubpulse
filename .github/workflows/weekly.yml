@@ -45,6 +45,7 @@ jobs:
       SMTP_FROM: ${{ secrets.SMTP_FROM }}
       DIGEST_TO: ${{ secrets.DIGEST_TO }}
       SUBSCRIBERS_KEY: ${{ secrets.SUBSCRIBERS_KEY }}
+      BREVO_API_KEY: ${{ secrets.BREVO_API_KEY }}
       TEAMS_WEBHOOK_URL: ${{ secrets.TEAMS_WEBHOOK_URL }}
     steps:
       - uses: actions/checkout@v4
@@ -102,9 +103,14 @@ jobs:
       - id: deploy
         uses: actions/deploy-pages@v4
 
-      - name: Email digest (Gmail SMTP, one mail per subscriber)
+      - name: Email digest to the Brevo subscriber list (campaign)
         id: email
-        if: (steps.digest.outputs.new_count != '0' || inputs.force_notify) && (env.GMAIL_USER != '' || env.SMTP_HOST != '')
+        if: (steps.digest.outputs.new_count != '0' || inputs.force_notify) && env.BREVO_API_KEY != ''
+        run: python -m pubpulse send-campaign
+
+      - name: Email digest to fixed recipients (SMTP, DIGEST_TO)
+        id: email_fixed
+        if: "!cancelled() && (steps.digest.outputs.new_count != '0' || inputs.force_notify) && env.DIGEST_TO != '' && (env.GMAIL_USER != '' || env.SMTP_HOST != '')"
         run: python -m pubpulse send-digest
 
       - name: Post digest to Teams
@@ -117,8 +123,8 @@ jobs:
       - name: Record what has been announced
         # Runs when the email was sent or no email is configured; skipped when sending failed, so the next run
         # announces the same papers again instead of losing them.
-        if: "!cancelled() && steps.email.outcome != 'failure' && steps.digest.outputs.new_count != '0'"
+        if: "!cancelled() && steps.email.outcome != 'failure' && steps.email_fixed.outcome != 'failure' && steps.digest.outputs.new_count != '0'"
         run: |
           python -m pubpulse mark-notified
-          git add data/pending.json
+          git add data/pending.json data/brevo_list.json 2>/dev/null || git add data/pending.json
           git commit -m "pubpulse: announced through $(date -u +%Y-%m-%d)" && git push || echo "nothing to record"

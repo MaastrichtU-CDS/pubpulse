@@ -20,3 +20,8 @@ def test_digest_contains_unsubscribe_placeholder():
     pubs = {"generated": "", "people": [], "works": [], "last_run": {"date": "2026-10-21", "baseline": False, "new_ids": [], "needs_review": [], "errors": []}}
     d = build_digest(pubs, {"site_url": "https://s/", "digest": {}})
     assert "{{UNSUBSCRIBE_URL}}" in d["html"] and "{{UNSUBSCRIBE_URL}}" in d["text"]
+
+
+def test_brevo_campaign_html_uses_brevo_unsubscribe_tag():
+    from pubpulse.brevo import campaign_html
+    assert campaign_html('<a href="{{UNSUBSCRIBE_URL}}">u</a>') == '<a href="{{ unsubscribe }}">u</a>'
