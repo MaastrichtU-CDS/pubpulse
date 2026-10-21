@@ -1,0 +1,40 @@
+# pubpulse configuration. Plain settings, no secrets. Secrets live in GitHub → Settings → Secrets.
+
+group_name: Clinical Data Science (Maastro / Maastricht University)
+staff_url: https://www.clinicaldatascience.nl/staff
+site_url: https://maastrichtu-cds.github.io/pubpulse/
+repo_url: https://github.com/MaastrichtU-CDS/pubpulse
+
+# Which sections of the staff page to track. Options: current, previous.
+# "previous" adds former staff; their papers are tracked while they are listed.
+track_sections:
+  - current
+
+# Only publications from this year onwards are fetched and shown.
+since_year: 2024
+
+# OpenAlex "polite pool" contact address (faster, more reliable API access). Not used for anything else.
+openalex_mailto: s.puts@maastrichtuniversity.nl
+
+# Affiliation verification. For every publication, each group member's authorship (as recorded by OpenAlex) is
+# checked for an institution containing one of these words. The site and digest mark papers without a verified
+# affiliation. The same words decide whether a person without ORCID may be auto-matched in OpenAlex.
+# Official strings: "Maastro, Maastricht Radiation Oncology Institute" and "Department of Radiation Oncology, GROW Research
+# Institute for Oncology and Reproduction, Maastricht University Medical Centre+". Matching is case-insensitive substring.
+institution_keywords: [maastro, maastricht, mumc, grow research institute]
+# flag    = keep all papers, show a "not verified" marker (recommended: ORCID matches with missing affiliation data stay visible)
+# require = drop papers where no group member has a verified affiliation
+affiliation_policy: flag
+
+# OpenAlex work types that are never shown (supplements, errata, cover pages).
+exclude_types: [supplementary-materials, erratum, paratext]
+
+# Safety net: if the staff page returns fewer people than this, keep the existing list untouched.
+min_people_on_staff_page: 3
+
+digest:
+  subject_prefix: "pubpulse"
+  teams_max_items: 10
+
+feed:
+  max_items: 50

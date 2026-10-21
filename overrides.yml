@@ -1,0 +1,8 @@
+# Manual checks for individual papers. Use the OpenAlex id (W…) shown under each paper on the website.
+# Edit on GitHub and commit; the next run applies it.
+
+# Papers that DO belong to the group although OpenAlex recorded no group affiliation (shown as "unverified").
+confirm: []
+
+# Papers that do NOT belong to the group (wrong person with the same name, work from another job, …).
+reject: []

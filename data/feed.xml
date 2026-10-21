@@ -1,0 +1,440 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+<title>Clinical Data Science (Maastro / Maastricht University) — new publications</title>
+<link href="https://maastrichtu-cds.github.io/pubpulse/"/>
+<link rel="self" href="https://maastrichtu-cds.github.io/pubpulse/feed.xml"/>
+<id>https://maastrichtu-cds.github.io/pubpulse/</id>
+<updated>2026-10-21T08:42:16+00:00</updated>
+<entry>
+<title>Construction of personal health knowledge graphs for clinical data harmonization in breast cancer</title>
+<link href="https://doi.org/10.1038/s41523-026-01068-y"/>
+<id>https://openalex.org/W7128449036</id>
+<updated>2026-10-21T00:00:00Z</updated>
+<summary>npj Breast Cancer · 2026-10-12 · group authors: Anne-Lore Bynens, Cecile Wolfs, Andre Dekker, Petros Kalendralis
+
+Abstract Background Personal health data contain valuable information for breast cancer management. Integration of heterogeneous data and maintenance of clinical registries are time-consuming and labor-intensive. We aimed to leverage an Artificial Intelligence (AI)-powered virtual assistant supporting semi-automated curation, including data quality enhancement, and publishing of personal health data. Identifiable data of breast cancer patients can be transformed into interoperable personal health knowledge graphs for secondary use. Methods With patient-informed consent, breast cancer patient data were extracted from the hospital systems and ingested into the virtual assistant. Data items were mapped and transformed into target concepts within a knowledge graph compliant with a reference ontology. Integrated classic and AI tools were used to support transformation of individual patients' data into a personal health knowledge graph (PHKG). Each graph was assessed by a Shapes Constraint Language (SHACL)-based validator to ensure the data quality. An RDF Query Language (SPARQL) query was executed on top of validated PHKGs from multiple patients to extract the relevant data elements and generate a local breast cancer registry, interoperable with registries generated in the same way across three different hospitals. Results The first version of the AI-powered virtual assistant prototype was developed and deployed in our hospital, as well as in two other hospitals in Austria and…</summary>
+</entry>
+<entry>
+<title>AI Model Reporting Standards in Health Care: Systematic Review and Consolidation</title>
+<link href="https://doi.org/10.2196/92329"/>
+<id>https://openalex.org/W7221757932</id>
+<updated>2026-10-21T00:00:00Z</updated>
+<summary>JMIR AI · 2026-10-09 · group authors: Simone Mingels, Andre Dekker, Johan van Soest
+
+Background: AI technologies are currently experiencing significant growth in development and use in health care. The AI model lifecycle includes several stages, all of which should be adequately described. Reporting standards are commonly used for this purpose. However, the plain-text structure of these standards prevents transparent machine-readability of this information. Objective: This systematic review aims to investigate AI model reporting standards from clinical databases and technical documents published since 2016. Methods: The methodological systematic review was conducted according to the PRISMA (Preferred Reporting Items for Systematic Reviews and Meta-Analyses) 2020 guidelines. The inclusion criteria of this systematic review were papers published from 2016 to April 2026 in English and in a peer-reviewed journal with open access. We aimed to include standards for different data types (structured, images, and text-based). The exclusion criteria were specific medical domain, incomplete reports, and reviews. The following libraries have been consulted: Scopus and Web of Science, MEDLINE and Embase, the IEEE Xplore digital library, and the ACM Digital Library. We applied an Automated Systematic Review software tool (Utrecht University) to find relevant papers after records retrieval. Two reviewers (EA, DS) screened relevant papers independently and invited a third reviewer (JvS) to reach a consensus. All included papers were analyzed to extract relevant lifecycle…</summary>
+</entry>
+<entry>
+<title>Navigating the privacy-accuracy tradeoff: federated survival analysis with binning and differential privacy</title>
+<link href="https://doi.org/10.3389/fams.2026.1917462"/>
+<id>https://openalex.org/W7220851390</id>
+<updated>2026-10-21T00:00:00Z</updated>
+<summary>Frontiers in Applied Mathematics and Statistics · 2026-10-07 · group authors: Johan van Soest, Andre Dekker, Leonard Wee
+
+Abstract Federated learning (FL) offers a decentralized approach to model training, allowing for data-driven insights while safeguarding patient privacy across institutions. In the Personal Health Train (PHT) paradigm, it is local model gradients from each institution, aggregated over a sample size of its own patients that are transmitted to a central server to be globally merged, rather than transmitting the patient data itself. However, certain attacks on a PHT infrastructure may risk compromising sensitive data. This study delves into the privacy-accuracy tradeoff in federated Cox Proportional Hazards (CoxPH) models for survival analysis by assessing two Privacy-Enhancing Techniques (PETs) added on top of the PHT approach. In one, we implemented a Discretized Cox model by grouping event times into finite bins to hide individual time-to-event data points. In another, we explored Local Differential Privacy by introducing noise to local model gradients. Our results demonstrate that both strategies can effectively mitigate privacy risks without significantly compromising numerical accuracy, reflected in only small variations of hazard ratios and cumulative baseline hazard curves. Our findings highlight the potential for enhancing privacy-preserving survival analysis within a PHT implementation and suggest practical solutions for multi-institutional research while mitigating the risk of re-identification attacks.</summary>
+</entry>
+<entry>
+<title>STRATA-FIT: Protocol for a European multicenter real-world cohort study and clinical pilot trial on personalized management of difficult-to-treat rheumatoid arthritis (Preprint)</title>
+<link href="https://doi.org/10.2196/preprints.113359"/>
+<id>https://openalex.org/W7220661096</id>
+<updated>2026-10-21T00:00:00Z</updated>
+<summary> · 2026-10-05 · group authors: Andre Dekker
+
+BACKGROUND Difficult-to-treat (D2T) rheumatoid arthritis (RA) remains a major clinical challenge, with limited tools to personalize management strategies in routine care. OBJECTIVE The STRATA-FIT project aims to develop and validate computational models to identify and stratify D2T RA into clinically meaningful phenotypes, predict which patients are at high risk of developing D2T RA, and evaluate a patient-tailored treatment strategy supported by an artificial intelligence (AI)-based decision aid. METHODS STRATA-FIT (Stratification of Rheumatoid Arthritis: compuTational models to personalize mAnagement strategies for difFIcult-to-Treat disease) is a European multicenter real-world (RW) cohort study using a federated learning (FL) approach complemented with a prospective cross-over clinical pilot study evaluating the developed personalized treatment strategies for D2T RA patients compared to usual care. Six expert rheumatology centers across Europe (Netherlands, Portugal, Germany, Sweden, Austria, Hungary) will contribute to the cohort, using data from electronic health records (EHRs) and two established RA registries. Approximately 14,000 RA patients with up to 15 years of follow-up are included in the RW cohort, while 263 patients with D2T RA will be enrolled in the prospective clinical pilot study. RESULTS For the RW cohort, the primary outcome is identification and phenotypic stratification of D2T RA according to the EULAR definition. For the clinical pilot study, the…</summary>
+</entry>
+<entry>
+<title>The impact of intratumor heterogeneity on outcome and resistance to therapy in primary breast cancer: a systematic review</title>
+<link href="https://doi.org/10.1007/s12032-026-03426-z"/>
+<id>https://openalex.org/W7218933153</id>
+<updated>2026-10-21T00:00:00Z</updated>
+<summary>Medical Oncology · 2026-10-03 · group authors: Andre Dekker, Leonard Wee
+
+Intratumor heterogeneity (ITH), the coexistence of diverse subclones within a single tumor, may pose a major challenge to effective chemotherapy in breast cancer. This cellular diversity contributes to treatment failure, residual disease, and early relapse by enabling tumor adaptation and therapeutic resistance. Although increasingly recognized as a critical feature of breast cancer biology, it remains under-investigated and has not yet been integrated into routine clinical care. This review synthesizes current evidence on the role of ITH in chemotherapy resistance in primary breast cancer. Following PRISMA guidelines, we searched MEDLINE via PubMed, Web of Science, and Scopus through June 2026. Twelve studies met the inclusion criteria. Data were extracted on tumor subtypes, study design, ITH assessment modality (genomic, transcriptomic, radiomic, or immunologic), sampling method, treatment type, and outcomes. Among the 12 included studies, covering triple-negative, HER2-positive, and mixed breast cancer cohorts, high or increasing ITH, assessed using molecular or imaging-based methods, was associated with reduced sensitivity to chemotherapy. Proposed mechanisms underlying resistance included clonal selection, transcriptional plasticity, immune exclusion, and phenotypic drift. Radiomic and MRI-derived features may provide additional predictive value beyond molecular classifiers, and integrated radiomic-genomic models outperformed either modality alone in identifying…</summary>
+</entry>
+<entry>
+<title>Simulating the Radiological Appearance of Focal Cortical Dysplasia in MRI</title>
+<link href="https://doi.org/10.64898/2026.10.01.26364470"/>
+<id>https://openalex.org/W7215768157</id>
+<updated>2026-10-21T00:00:00Z</updated>
+<summary>medRxiv · 2026-10-02 · group authors: Petros Koutsouvelis, Leroy Volmer, Ralph Brecheisen, Andre Dekker
+
+Abstract Focal cortical dysplasia (FCD) is among the leading causes of drug-resistant focal epilepsy and can be challenging to detect on routine MRI due to the subtle and heterogeneous appearance of lesions. Motivated by the scarcity of clinically representative cohorts, we investigate the feasibility of simulating FCD-like lesions in healthy MRI using a composition of hand-crafted image transformations. We develop Syn-thFCD , a phenomenological FCD simulator, and create 2,164 synthetic examples from healthy controls in the heterogeneous FOMO300k dataset. We then pretrain deep learning (DL) segmentation models on synthetic lesions and fine-tune them on real FCD cases from the University Hospital Bonn (UHB) cohort. Comprehensive evaluations show consistent improvements across simulator presets, with detection-rate gains of up to 18.5 percentage points over training from scratch and 7.4 points over self-supervised pretraining, while achieving state-of-the-art segmentation performance (0.366 DSC) on the challenging held-out UHB benchmark. These findings suggest that simulation-based synthetic data generation can bridge existing radiological knowledge and advances in DL to provide meaningful supervisory signals that could ultimately aid the detection of underrepresented and diagnostically challenging cases.</summary>
+</entry>
+<entry>
+<title>Unifying Vision and Language: Benchmarking End-to-End Transformer Model Against the ClipCap Framework</title>
+<link href="https://doi.org/10.64898/2026.09.24.26363914"/>
+<id>https://openalex.org/W7214534901</id>
+<updated>2026-10-21T00:00:00Z</updated>
+<summary>medRxiv · 2026-09-27 · group authors: Andre Dekker, Leonard Wee
+
+Abstract Background and purpose Accurate identification of cardiac MRI volume orientations is essential for reliable image interpretation and for enabling downstream automated analysis pipelines. However, orientation labels and commonly assigned manually, making the process time-consuming and prone to variability. Recent advances in vision-language models offers new opportunities for automated label generation by jointly modeling visual and semantic information. Methods In this study, we systematically compare a conventional end-to-end transformer-based captioning model with a CLIPCap architecture for automated cardiac MRI view labelling. Both models were evaluated on a dataset of 1184 de-identified cardiac MR images spanning across six clinically relevant orientations: short axis, two-, three-, four-chamber views, left and right ventricular outflow tract views. The caption transformer was trained from scratch, whereas CLIPCap leveraged pretrained CLIP image embeddings combined with lightweight mapping network and a frozen language model. Results Experimental results demonstrate a substantial performance advantage from CLIPCap, which achieved an overall accuracy of 98% compared to 68% for the caption transformer. CLIPCap consistently delivered high precision and recall across all orientation classes, including those of high clinical importance, while the end-to-end transformer exhibited unstable performance and complete failure in certain views. Conclusion These findings…</summary>
+</entry>
+<entry>
+<title>CancerWatch: accelerating Europe’s cancer intelligence</title>
+<link href="https://doi.org/10.2340/1651-226x.2026.46506"/>
+<id>https://openalex.org/W7213460943</id>
+<updated>2026-10-21T00:00:00Z</updated>
+<summary>Acta Oncologica · 2026-09-17 · group authors: Matthijs Sloep
+
+CancerWatch: strengthening Europe's cancer intelligenceCancer remains one of Europe's most pressing public health challenges, with 2.7 million new cases and 1.3 million deaths estimated each year [1].By 2050, cancer incidence and mortality are projected to rise by 20.4% and 34.6% respectively, while per-capita cancer spending across the EU27 is forecast to increase by 59% in real terms over the same period [2, 3].Population ageing, persistent inequalities and rising costs are expected to increase pressure on European health systems [4,5].Assessing this growing burden and evaluating the effectiveness of cancer control therefore require timely, comparable and robust population-based evidence.In 2021, the European Commission launched Europe's Beating Cancer Plan (EBCP), supported by €4 billion to strengthen cancer control [6].Its four action areas cover prevention, early detection, diagnosis and treatment, and quality of life of all patients and survivors.However, a recent assessment by the European Court of Auditors found that the EBCP monitoring framework lacks quantified targets, milestones and indicators, highlighting the need for harmonised and comparable population-based data to assess progress and impact [7]. Population-based cancer registries: a foundation for cancer intelligencePopulation-based cancer registries (PBCRs) provide systematic, continuous and standardised real-world evidence on cancer across Europe.Their cancer collection draws on multiple data sources,…</summary>
+</entry>
+<entry>
+<title>Data Auditing and Quality Assurance in a Federated Learning Consortium; Getting the Best of Both Worlds from Cross-Institutional and In-House Data Quality Inspection</title>
+<link href="https://doi.org/10.64898/2026.09.08.26361592"/>
+<id>https://openalex.org/W7213458335</id>
+<updated>2026-10-21T00:00:00Z</updated>
+<summary>medRxiv · 2026-09-17 · group authors: Joshi Hogenboom, Andre Dekker, Leonard Wee
+
+Abstract Introduction Rare and heterogeneous disease research increasingly relies on privacy-enhancing technologies such as federated learning (FL) to enable cross-institutional collaboration across fragmented datasets. However, data quality assurance in FL can be limited, as individual-level data may not be directly accessible. While schema-dependent inspection offers a partial solution, it requires standardised schemas or resource-intensive frameworks, hindering scalability and collaboration. To address these challenges, we implemented two complementary dashboards and evaluated their interplay. Methodology We adapted a recognised data quality control framework for re-use of electronic health record (EHR) data using breast cancer records from Centre Léon Bérard into two dashboards: (1) an in-house dashboard for intra-clinic quality assessment, and (2) a federated dashboard for inter-clinic quality assessment. Artificial inconsistencies were introduced into distributed datasets mirroring the inhouse source to evaluate detection capabilities. Results The in-house dashboard provided granularity and reliability, pinpointing individual-level inconsistencies, while the federated dashboard enabled cross-institutional pattern detection – trade-offs inherent to their designs. The federated system revealed ecosystem-wide trends inaccessible to single-institution tools, whereas the in-house dashboard provided local validation and thoroughness. Discussion Our findings confirm a…</summary>
+</entry>
+<entry>
+<title>From registration to insight: how STRONG AYA transforms registry data to enhance decision-support tools for adolescent and young adult oncology</title>
+<link href="https://doi.org/10.1016/j.esmorw.2026.100764"/>
+<id>https://openalex.org/W7213226988</id>
+<updated>2026-10-21T00:00:00Z</updated>
+<summary>ESMO Real World Data and Digital Oncology · 2026-09-15 · group authors: Joshi Hogenboom, Andre Dekker, Leonard Wee
+
+Background: Population-based cancer registries (PBCR) are important for monitoring trends in cancer epidemiology, facilitating the implementation of effective cancer services. Adolescents and young adults (AYAs) with cancer are a group of patients with a unique set of needs. The utility of PBCR in AYAs is limited by the lack of AYA-specific data items. STRONG AYA, an international multidisciplinary consortium, is addressing this through federated learning (FL) methodology and novel data visualisation concepts. A Core Outcome Set has been developed to measure outcomes of importance through clinical data and patient-reported outcomes (PROs). We describe how data from the Yorkshire Specialist Register of Cancer in Children and Young People (YSRCCYP), a PBCR in the UK, is being used within the STRONG AYA and how the subsequent analyses can guide patient consultation through a proof of concept. Methods: Data from the YSRCCYP were imported into an open-source privacy-enhancing FL infrastructure, from which FL analyses are carried out along with data provided by other consortium members. The results are extracted into the PROMPT software (in-house software developed by the University of Leeds and Leeds Teaching Hospitals NHS Trust) and integrated into patient electronic health care records. Results: Health care professionals can view the results of individual PROs at various time points and in comparison to summary analyses carried out within the STRONG AYA infrastructure.…</summary>
+</entry>
+<entry>
+<title>Dose-volume predictors of post-radiation xerostomia in head and neck cancer: A systematic review</title>
+<link href="https://doi.org/10.1016/j.ctro.2026.101282"/>
+<id>https://openalex.org/W7210292216</id>
+<updated>2026-10-21T00:00:00Z</updated>
+<summary>Clinical and Translational Radiation Oncology · 2026-09-06 · group authors: Jikai Zhou, Xuanhe Hou, Andre Dekker, Cecile Wolfs, Petros Kalendralis
+
+Background and purpose: Radiation-induced xerostomia remains a major toxicity after radiotherapy for head and neck cancer (HNC). Although QUANTEC-based parotid dose constraints are widely applied, increasing evidence suggests that additional salivary and oral structures may contribute to xerostomia risk. This systematic review aimed to summarize contemporary evidence on dose-volume predictors of post-radiotherapy xerostomia in HNC. Materials and methods: This PRISMA-based systematic review was registered in PROSPERO (CRD42024519338). PubMed, Embase, Cochrane Library, and Web of Science were searched for studies published between January 2013 and August 2025. Studies evaluating dose-volume predictors of xerostomia in adult HNC patients treated with curative-intent radiotherapy were included. Results: Fifty-one studies involving 10,789 patients were included. Most patients received intensity-modulated radiotherapy. Contralateral parotid gland mean dose (Dmean) was the most consistently validated predictor of xerostomia and was supported by moderate-certainty evidence. Multiple studies reported increased risk of moderate-to-severe xerostomia when contralateral parotid Dmean exceeded 24-26 Gy, whereas Dmean below 20 Gy was associated with better salivary preservation. Bilateral parotid Dmean around 26 Gy was also reported. However, support for specific numerical planning thresholds remained limited. Dosimetric parameters of the submandibular glands and oral cavity were also…</summary>
+</entry>
+<entry>
+<title>MRI radiomics-based predictive modeling for risk stratification and prognostication in oral tongue carcinoma</title>
+<link href="https://doi.org/10.3389/fonc.2026.1901400"/>
+<id>https://openalex.org/W7207779766</id>
+<updated>2026-10-21T00:00:00Z</updated>
+<summary>Frontiers in Oncology · 2026-09-03 · group authors: Umesh Kumar Baburao Sherkhane
+
+Introduction: This study aims to predict recurrence-free survival (RFS) and overall survival (OS), to stratify risk using radiomics, radiology semantic, clinical, and pathology models-individually and in combination-derived from pre-treatment magnetic resonance imaging (MRI), post-operative histopathology, age, and adjuvant therapy details in oral tongue squamous cell carcinoma (OTSCC), and to correlate National Comprehensive Cancer Network (NCCN) low + intermediate- and high-risk groups with the risk stratification provided by the radiomics models. The secondary objectives included predicting post-operative perineural invasion (PNI), metastatic lymph nodes, and pathological extranodal extension (pENE). Methods: This retrospective cohort study included 219 treatment-naive OTSCC patients who underwent pre-treatment MRI (January 2021-December 2022) with 2-year follow-up. Radiomics features were extracted from T1-weighted, T2-weighted, and contrast-enhanced T1-weighted (T1c) sequences. Lasso-Cox and DeepSurv models were evaluated for RFS and OS prediction, while random forest and logistic regression models were assessed for PNI, metastatic lymph nodes, and pENE prediction. Radiomics, radiology semantic, clinical, and pathology models were evaluated individually and in combination. Risk stratification was evaluated using the log-rank test. Results: Among 219 patients (mean age 46.99 ± 10.94 years), Lasso-Cox outperformed DeepSurv for RFS and OS prediction. The radiomics…</summary>
+</entry>
+<entry>
+<title>Every cancer patient counts: strengthening European population-based cancer registries to improve cancer control</title>
+<link href="https://doi.org/10.1016/j.lanepe.2026.101855"/>
+<id>https://openalex.org/W7207744302</id>
+<updated>2026-10-21T00:00:00Z</updated>
+<summary>The Lancet Regional Health - Europe · 2026-09-03 · group authors: Matthijs Sloep</summary>
+</entry>
+<entry>
+<title>Spatiotemporal AI Morphometry for Early Recurrence Assessment in Rectal Cancer After Neoadjuvant Chemoradiotherapy: A Multi-Model Ablation Study</title>
+<link href="https://doi.org/10.1016/j.ijrobp.2026.06.453"/>
+<id>https://openalex.org/W7214349590</id>
+<updated>2026-10-21T00:00:00Z</updated>
+<summary>International Journal of Radiation Oncology*Biology*Physics · 2026-09-01 · group authors: Andre Dekker, Petros Kalendralis, Leonard Wee</summary>
+</entry>
+<entry>
+<title>QUANTIFYING INTER-INSTITUTIONAL VARIABILITY IN RADIOTHERAPY CLINICALWORKFLOWS USING NATURAL LANGUAGE PROCESSING AND VECTOR EMBEDDINGS</title>
+<link href="https://doi.org/10.1016/j.ejmp.2026.106097"/>
+<id>https://openalex.org/W7214123401</id>
+<updated>2026-10-21T00:00:00Z</updated>
+<summary>Physica Medica · 2026-09-01 · group authors: Petros Kalendralis, Andre Dekker</summary>
+</entry>
+<entry>
+<title>A JOINT EFOMP/ESTRO/ESR/EANM SURVEY ON THE INFLUENCE OF THE EU MEDICAL DEVICE REGULATION 2017/745 ON IN-HOUSE DEVELOPMENT OF MEDICAL DEVICE SOFTWARE AS RELEVANT FOR THE MEDICAL PHYSICS PROFESSION</title>
+<link href="https://doi.org/10.1016/j.ejmp.2026.106127"/>
+<id>https://openalex.org/W7214084622</id>
+<updated>2026-10-21T00:00:00Z</updated>
+<summary>Physica Medica · 2026-09-01 · group authors: Andre Dekker</summary>
+</entry>
+<entry>
+<title>HI-ROC PROJECT: TARGETING HYPOXIA WITH HEAVY IONS TO GAIN CONTROL OF RADIORESISTANT CANCERS</title>
+<link href="https://doi.org/10.1016/j.ijpt.2026.101350"/>
+<id>https://openalex.org/W7213285668</id>
+<updated>2026-10-21T00:00:00Z</updated>
+<summary>International Journal of Particle Therapy · 2026-09-01 · group authors: Andre Dekker, Petros Kalendralis
+
+statements were evaluated through a two-round anonymous voting process, with consensus predefined as agreement by at least 75% of voters.Results: A total of 60 statements were evaluated, achieving consensus for all reviewed items.Fifty statements (83%) were rated as appropriate for proton therapy use, eight (13%) as uncertain and two (3%) as inappropriate.Following expert discussion, several statements were reformulated or merged to improve consistency and clinical applicability.The final recommendations address paediatric and adult indications, tumour site-specific scenarios and clinical situations in which proton therapy is most likely to provide meaningful benefit within the current Spanish setting, taking into account limited access to facilities.Conclusions: This SEOR-SPROMP multidisciplinary consensus provides structured, evidence-informed clinical recommendations for proton therapy use in Spain, complementing national health system indications.The RAND/UCLA methodology enabled robust multidisciplinary agreement while reflecting real-world access constraints.These recommendations support equitable patient selection, streamline referral processes and provide a framework for the future expansion of proton therapy services.</summary>
+</entry>
+<entry>
+<title>Thymic radiation is associated with worse outcomes in patients with NSCLC</title>
+<link href="https://doi.org/10.1016/j.annonc.2026.07.001"/>
+<id>https://openalex.org/W7204178963</id>
+<updated>2026-10-21T00:00:00Z</updated>
+<summary>Annals of Oncology · 2026-08-25 · group authors: Leonard Nürnberg
+
+BACKGROUND: Emerging evidence indicates the functional importance of the thymus in adult health and may influence oncological outcomes, yet current radiotherapy (RT) practice does not consider the thymus as an organ of interest. Because RT may incidentally expose the thymus to radiation, we hypothesized that thymic radiation dose is negatively associated with major clinical outcomes. PATIENTS AND METHODS: This multicohort analysis included 1107 patients with non-small-cell lung cancer (NSCLC), including the phase III RTOG-0617 trial (n = 460) and two independent real-world cohorts of patients treated with chemoradiotherapy alone (n = 422; HARVARD-CRT) or in combination with consolidation immunotherapy (n = 225; HARVARD-DURVA). We quantified thymic function using a deep learning system that assessed thymic radiographic characteristics as a proxy for thymic function. Mean thymic dose (MTD) was used to measure thymic radiation exposure. RESULTS: Incidental thymic irradiation was associated with increased risk of distant metastases after confounding adjustments. Concretely, a 1-Gy increase in MTD was associated with an increased distant metastasis risk of 1.57%-4.21% [RTOG-0617: adjusted hazard ratio (aHR) 1.29, P = 0.0028; HARVARD-CRT: aHR 1.33, P = 0.011; HARVARD-DURVA: aHR 1.95, P = 0.007]. In thymic health (TH)-stratified analysis, patients with preserved TH before RT appeared to be at particularly greater risk, whereas no associations emerged in patients with impaired TH.…</summary>
+</entry>
+<entry>
+<title>Comparing the reliability of three software programmes for manual and (semi-)automatic volumetry in healthy livers</title>
+<link href="https://doi.org/10.4329/wjr.123720"/>
+<id>https://openalex.org/W7204170550</id>
+<updated>2026-10-21T00:00:00Z</updated>
+<summary>World Journal of Radiology · 2026-08-25 · group authors: Ralph Brecheisen
+
+BACKGROUND Multiple software programs are available for manual or (semi-)automated liver segmentation. Although manual segmentation has traditionally been the standard, it is time-intensive and susceptible to inter-observer variability. Conversely, (semi-)automated approaches have been shown to reduce segmentation time, but the availability and use of different software tools can introduce variability in liver volumetry outcomes. AIM To evaluate the reliability of three segmentation software programs (Synapse 3D (Fujifilm), OsiriX® (Pixmea), and Syngo.via (Siemens Healthineers)) for liver volumetry. METHODS Patients (≥ 18 years) with abdominal computed tomography images without liver pathology were included. Total liver volume (TLV) and segment II/III volume – a surrogate for the future liver remnant (FLR) – were measured. Two blinded independent researchers performed volumetric assessments. The intraclass correlation coefficient (ICC) was calculated for interobserver variability for the first 30 scans between both researchers. This was also performed for intra-observer variability between the software programs in 200 randomly selected patients (52.5% male; mean age: 63.5 years). RESULTS Mean TLV’s reported by Synapse 3D, Syngo.via and OsiriX® were 1705 ± 462 mL, 1672 ± 463 mL, and 1627 ± 449 mL, respectively. Mean segment II/III volumes reported were 304 ± 115 mL, 282 ± 109 mL, and 277 ± 108 mL, respectively. The highest interobserver agreement (n = 30) was for TLV with…</summary>
+</entry>
+<entry>
+<title>Exploring self-supervised deep sparse autoencoders for robust feature selection in radiomics analysis</title>
+<link href="https://doi.org/10.1038/s41598-026-62420-7"/>
+<id>https://openalex.org/W7170077899</id>
+<updated>2026-10-21T00:00:00Z</updated>
+<summary>Scientific Reports · 2026-07-22 · group authors: Andre Dekker
+
+While considerable effort has been devoted to examining how variations in study protocols, acquisition settings, and annotations influence radiomics features, the role of feature selection (FS) methods largely remains unexplored. This study investigates a self-supervised deep sparse autoencoder ensemble (ensembleAE) and a novel Bayesian variant (bayesianAE) for radiomics FS in a small, class-imbalanced framework. Using a cohort of 100 prostate cancer patients under active surveillance, these models were benchmarked against eight classical FS methods. FS stability was assessed both globally and locally in a soft data-perturbation setting. While global stability measured consistency in overall feature ranking, local stability quantified the agreement in selecting top-ranked feature subsets. Among classical methods, wrappers were the least stable, whereas the filter-based Wilcoxon test (WLCX) exhibited high local stability and performance with moderate global stability. Conversely, bayesianAE demonstrated the highest global stability while matching WLCX in local stability and performance. Furthermore, although bayesianAE yielded local stability comparable to that of ensembleAE, it outperformed the latter in terms of global stability with a significantly lower computational burden (95 × faster and consumes 84% less memory). These findings position bayesianAE as a robust alternative to classical FS methods that could support the development of reproducible radiomics signatures.</summary>
+</entry>
+<entry>
+<title>Associated Output</title>
+<link href="https://doi.org/10.17605/osf.io/3px7e"/>
+<id>https://openalex.org/W7168088179</id>
+<updated>2026-10-21T00:00:00Z</updated>
+<summary> · 2026-07-12 · group authors: Anniek van Hienen, Rianne Fijten
+
+Output associated with the parent project. Will be updated</summary>
+</entry>
+<entry>
+<title>Prognostic host phenotypes based on body composition and systemic inflammation predict survival in patients with resected pancreatic and periampullary cancer</title>
+<link href="https://doi.org/10.1016/j.ejca.2026.116933"/>
+<id>https://openalex.org/W7167832811</id>
+<updated>2026-10-21T00:00:00Z</updated>
+<summary>European Journal of Cancer · 2026-07-09 · group authors: Ralph Brecheisen, Leonard Wee
+
+INTRODUCTION: Most present-day survival-models of patients with cancer do not account for tumor-host interactions. We hypothesized that host phenotypes based on systemic inflammation and body composition are prognostic of overall survival (OS) in patients with pancreatic ductal adenocarcinoma (PDAC). METHODS: We performed a post-hoc analysis of the nationwide PORSCH-trial, including all patients undergoing pancreatoduodenectomy for PDAC. Primary outcome was OS. Body composition analysis was performed using automatic segmentation (Mosamatic™) of preoperative abdominal computed tomography scans. Low muscle mass and myosteatosis were defined using log-rank stratification of sex-standardized Z-values of skeletal muscle index and radiation attenuation, respectively. Patients were clustered in eight host phenotypes based on combinations of adverse host factors: [1] low muscle mass, [2] myosteatosis, [3] systemic inflammation (C-reactive protein &gt;6mg/L). Their association with OS was tested using multivariable-adjusted Cox-proportional hazard-analysis. Distinct combinations of adverse host factors were stratified into low-, intermediate-, and high-risk phenotypes according to k-means clustering based on log hazard-ratio's. RESULTS: 549 patients were included. The high-risk phenotype, characterized by the presence of all adverse host factors, showed lower median OS than intermediate ([1], [2], [1 +2], [1 +3], [2 +3]) and low-risk ([3]; none) phenotypes (13.0 months [95%CI…</summary>
+</entry>
+<entry>
+<title>Center-specific Federated Learning for Radiation Pneumonitis: A Cross-Center Adaptive Alternating Framework</title>
+<link href="https://doi.org/10.1016/j.ijrobp.2026.06.3083"/>
+<id>https://openalex.org/W7167904514</id>
+<updated>2026-10-21T00:00:00Z</updated>
+<summary>International Journal of Radiation Oncology*Biology*Physics · 2026-07-01 · group authors: Andre Dekker, Leonard Wee</summary>
+</entry>
+<entry>
+<title>Outcomes after (chemo)radiotherapy for anal cancer – A nationwide cohort study</title>
+<link href="https://doi.org/10.1016/j.ctro.2026.101163"/>
+<id>https://openalex.org/W7150748203</id>
+<updated>2026-10-21T00:00:00Z</updated>
+<summary>University of Groningen research database (University of Groningen / Centre for Information Technology) · 2026-07-01 · group authors: Leonard Wee
+
+Introduction: Due to the rarity of anal cancer, real-world data on treatment outcomes are scarce. However, its incidence is increasing in the Netherlands with &gt; 300 new cases and 70 deaths yearly. Standard of care consists of chemoradiotherapy (CRT) or radiotherapy alone (RT). The primary objective of our nationwide study was two-fold; to evaluate real-world outcomes after curatively intended CRT/RT for anal squamous cell carcinoma (ASCC), and to create a large, high-quality dataset as a national benchmark to guide future prospective research. Material and methods: Data were collected retrospectively from 16 Dutch institutions treating ASCC between 2015 and 2018. Primary endpoint was locoregional recurrence free survival (LRFS). Secondary endpoints were overall survival (OS), disease specific survival (DSS), colostomy free survival (CFS), complete response (CR) and toxicity. Results: A total of 462 patients were analysed. Most patients received CRT (85%), with mitomycin-capecitabine as a radiosensitizer in 86% of cases. After median follow-up of 5 years, LRFS for all patients was 80% at 3 years and 78% at 5 years. In total 82% of patients had reached CR, with a median interval to define CR of 3 months. At 3 years, OS, DSS and CFS were 78%, 86% and 88%, respectively. Conclusion: These real-world data demonstrate that curatively intended CRT/RT for ASCC results in LRFS of 80% at 3 years. Organ preservation outcomes were favourable with a CFS of 88% at 3 years. These findings…</summary>
+</entry>
+<entry>
+<title>Validation of Deep-Learning Models for Autosegmentation of Brain Metastases</title>
+<link href="https://doi.org/10.3233/shti260947"/>
+<id>https://openalex.org/W7167038328</id>
+<updated>2026-10-21T00:00:00Z</updated>
+<summary>Studies in health technology and informatics · 2026-06-29 · group authors: Wenjie Liang, Jikai Zhou, Petros Kalendralis
+
+Targeted radiotherapy planning for treating brain metastases is labor-intensive and time-consuming. nnU-Net and MedNeXt are deep-learning frameworks widely explored in automated brain tumor segmentation. This study aimed to validate four pre-trained deep learning models based on nnU-Net and MedNeXt for brain metastases segmentation by using an external cohort of 243 patients with pre-treatment T1-weighted contrast-enhanced 3D brain MRI. Models trained on combined data achieved better performance metrics, while nnU-Net models slightly outperformed MedNeXt models. Further validation with follow-up images is ongoing to evaluate advanced performance.</summary>
+</entry>
+<entry>
+<title>SMART: structured, meaningful, auditable, responsible, and transparent documentation for clinical AI</title>
+<link href="https://doi.org/10.1093/jamia/ocag117"/>
+<id>https://openalex.org/W7203783252</id>
+<updated>2026-10-21T00:00:00Z</updated>
+<summary>Journal of the American Medical Informatics Association · 2026-06-22 · group authors: Anshu Ankolekar
+
+OBJECTIVE: Clinical AI systems and models increasingly need traceable documentation that makes intended use, performance evidence, transparency, and lifecycle status explicit, yet existing model cards, datasheets, reporting guidelines, and other documentation approaches do not consistently bring together structured clinical fields, vocabulary-linked cohort descriptions, structured performance reporting, and governed documentation history. We introduce Structured, Meaningful, Auditable, Responsible, and Transparent (SMART), a framework that adapts the model card concept into structured, lifecycle-aware documentation with OMOP integration, role-based lifecycle governance, and a blockchain-backed audit trail for verifying documentation integrity and lifecycle history. MATERIALS AND METHODS: Following a design-science-informed approach, we analyzed documentation requirements, reviewed existing approaches, implemented SMART through open-source packages and smart contracts, and evaluated it using example SMART model cards, an illustrative COPD exacerbation risk-prediction documentation case study, and blockchain-governed lifecycle experiments. RESULTS: The design process resulted in the SMART framework in which documentation provisions are reflected across Schema, Lifecycle, and Chain (ie, Blockchain) components. Evaluation showed that, in multi-party settings, documentation history remains independently verifiable because lifecycle actions are role-attributed and linked to…</summary>
+</entry>
+<entry>
+<title>Variability in the distribution of intermuscular adipose tissue in the Netherlands</title>
+<link href="https://doi.org/10.1016/j.nutos.2026.100691"/>
+<id>https://openalex.org/W7165119927</id>
+<updated>2026-10-21T00:00:00Z</updated>
+<summary>Clinical Nutrition Open Science · 2026-06-18 · group authors: Leonard Wee
+
+Background &amp; aims Intermuscular adipose tissue (IMAT) is increasingly investigated as a body composition parameter and marker of muscle quality. However, the representativeness of single-slice CT assessment for IMAT quantification remains unclear. This study investigated the spatial distribution of IMAT within the abdominal musculature across multiple vertebral levels to evaluate the reliability of single-slice IMAT assessment. Method Trauma patients admitted to a single level-I trauma centre between 2015 and 2021 who underwent contrast-enhanced abdominal CT imaging on admission were screened. Patients with conditions known to influence body composition were excluded. A stratified exploratory cohort of 35 patients was selected based on age, BMI, and sex. Sixteen transverse CT slices ranging from the upper border of lumbar vertebra 1 (L1) to the upper border of sacral vertebra 1 (S1) were segmented. IMAT and skeletal muscle surface areas were analysed in the rectus abdominis, psoas major, and erector spinae musculature. Results Age ranged from 18 to 79 years (mean 50.5 ± 17.5 years) and BMI ranged from 18.7 to 42.9 kg/m 2 (mean 27.3 ± 4.9 kg/m 2 ). Substantial inter- and intra-patient variability in IMAT distribution was observed. IMAT surface area ranged from 0.07 to 24.32 cm 2 and IMAT ratios ranged from 0% to 34%. IMAT ratio showed a strong positive correlation with age (r=0.767, P &lt;0.001), whereas no significant correlation with BMI was observed. Comparison of vertebral…</summary>
+</entry>
+<entry>
+<title>Artificial intelligence (AI)-powered imaging for objective psoriasis severity assessment at home: Feasibility and reliability in a randomized clinical trial</title>
+<link href="https://doi.org/10.1016/j.jaad.2026.06.047"/>
+<id>https://openalex.org/W7164753874</id>
+<updated>2026-10-21T00:00:00Z</updated>
+<summary>Journal of the American Academy of Dermatology · 2026-06-14 · group authors: Leonard Wee
+
+Artificial intelligence (AI)-powered imaging for objective psoriasis severity assessment at home: Feasibility and reliability in a randomized clinical trial Key Message: Patient-captured smartphone images analyzed by AI, reliably detect and quantify treatment-related changes consistent with physician scoring.</summary>
+</entry>
+<entry>
+<title>Beyond classical models: LLM-driven survival analysis for breast cancer prognosis using European cancer registry data</title>
+<link href="https://doi.org/10.1186/s12911-026-03619-6"/>
+<id>https://openalex.org/W7164664321</id>
+<updated>2026-10-21T00:00:00Z</updated>
+<summary>BMC Medical Informatics and Decision Making · 2026-06-13 · group authors: Matthijs Sloep
+
+BACKGROUND: Survival analysis is a fundamental tool in clinical prognosis, yet traditional statistical models often struggle to capture complex, high-dimensional relationships in modern healthcare data. Recent advances in Large Language Models (LLMs) offer new opportunities for flexible and context-aware modeling. At the same time, access to real-world clinical data remains restricted due to privacy constraints, motivating the use of synthetic datasets as a privacy-preserving alternative for model development and evaluation. METHODS: We propose a survival analysis framework based on fine-tuned LLMs, evaluated on a large-scale synthetic breast cancer dataset derived from European cancer registry data. A synthetic dataset emulating a national population-based cancer registry and comprising 60,000 breast cancer patients was used following feature engineering and data imputation. We compared traditional survival analysis methods, including Cox regression and gradient boosting, with a range of fine-tuned LLMs representing encoder-only, decoder-only, and encoder-decoder architectures. Model performance was evaluated using standard survival analysis metrics accounting for censoring. To assess generalizability, the best-performing models were deployed on a real-world cohort of 183,304 patients from Dutch cancer registries. RESULTS: The proposed LLM-based models demonstrate competitive performance across multiple survival metrics, with consistent differences observed across model…</summary>
+</entry>
+<entry>
+<title>MHub.ai: A Standardized Platform for Reproducible AI Research in Medical Imaging</title>
+<link href="https://doi.org/10.21203/rs.3.rs-9480032/v1"/>
+<id>https://openalex.org/W7163985399</id>
+<updated>2026-10-21T00:00:00Z</updated>
+<summary>Research Square · 2026-06-09 · group authors: Leonard Nürnberg</summary>
+</entry>
+<entry>
+<title>Strengthening IT Performance in Healthcare Through Digital Transformation: A Case Study</title>
+<link href="https://doi.org/10.1111/isj.70049"/>
+<id>https://openalex.org/W7163696873</id>
+<updated>2026-10-21T00:00:00Z</updated>
+<summary>Information Systems Journal · 2026-06-05 · group authors: Andre Dekker
+
+ABSTRACT Healthcare organisations are increasingly pursuing digital transformation (DT) but often struggle to achieve meaningful progress. Traditional IT operating models (ITOMs), defining how IT delivers value through structure, governance and technology, frequently lack the agility and maturity required for DT. Consultancy‐led diagnostics and intervention plans also tend to fall short during execution and often overlook structural evaluations. This practitioner paper presents a scientifically grounded, practice‐oriented approach to executing DT initiatives, based on a longitudinal case study at a leading Dutch radiotherapy clinic. In this case, the DT initiative focused on structural interventions within the ITOM, including its governance, sourcing, organisational structures and skills. The DT programme emphasised structural changes in day‐to‐day IT governance and decision‐making process within the ITOM, while digital maturity, user satisfaction and IT cost indicators were used as outcome measures embedded in governance cycles to support continuous learning and prioritisation over time. A distinctive feature of this approach is its explicit integration of human factors through co‐creation between IT and clinical leaders, multidisciplinary collaboration and adaptive governance. The methodology operationalises psychological and relational dynamics as early execution enablers rather than treating them as downstream effects of technical change. Ownership of digital…</summary>
+</entry>
+<entry>
+<title>The Effect of Mobile Health Intervention on Prelacteal Feeding Among Mothers in the First Month After Birth in South Ethiopia: A Cluster-Randomized Controlled Trial</title>
+<link href="https://doi.org/10.3390/nu18111795"/>
+<id>https://openalex.org/W7163123298</id>
+<updated>2026-10-21T00:00:00Z</updated>
+<summary>Nutrients · 2026-06-02 · group authors: Andre Dekker, Rianne Fijten
+
+Introduction: Prelacteal feeding, the practice of giving newborns substances other than breast milk within the first few days of life, remains a common yet harmful practice in many low- and middle-income countries, including Ethiopia. No evidence in Ethiopia indicates that mHealth can help improve prelacteal feeding. This study aimed to evaluate the effect of mobile health (mHealth) intervention on reducing prelacteal feeding practices and improving antenatal care (ANC) and postnatal care (PNC) utilization among mothers in South Ethiopia. Methods: A cluster-randomized controlled trial (CRT) was conducted in rural areas of South Ethiopia. A total of 20 clusters were selected using simple random sampling for intervention (mHealth) and control groups, each containing 340 women. Mothers in the intervention group received automated weekly SMS messages and reminders on exclusive breastfeeding, prelacteal feeding risks, ANC, and PNC. Mothers were only selected if they could read, write, and use mobile phones. Results: The mHealth intervention significantly reduced prelacteal feeding practice (AOR = 0.19, 95% CI: 0.06–0.58); p &lt; 0.05). Higher ANC visits related to decreased prelacteal feeding (AOR = 0.28, 95% CI: 0.21–0.39; p &lt; 0.001). The log count of ANC visit increased by 0.14 among intervention groups (IRR = 1.15, 95% CI: 1.06–1.25; p &lt; 0.001). The PNC time was delayed 2.05 days among controls (β = −2.05, 95% CI: −2.66–−1.42; p &lt; 0.001). Maternal and partner education,…</summary>
+</entry>
+<entry>
+<title>Predicting ICU in-hospital mortality from text-encoded structured EHR data using adaptive transformer layer fusion</title>
+<link href="https://doi.org/10.1016/j.isci.2026.116135"/>
+<id>https://openalex.org/W7163517376</id>
+<updated>2026-10-21T00:00:00Z</updated>
+<summary>iScience · 2026-06-01 · group authors: Xuanhe Hou
+
+Early identification of ICU patients at high mortality risk is essential for triage and timely intervention. We present adaptive layer fusion with intelligent attention (ALFIA), a modular architecture that jointly trains low-rank adaptation (LoRA) adapters and an adaptive layer-weighting mechanism to fuse multi-layer semantic features from a pretrained transformer backbone. ALFIA operates on text-encoded representations of the structured EHR data , in which tabular clinical variables (demographics, vital signs, laboratory values, and severity scores) are converted into standardized natural-language descriptions rather than processed as free-text clinical notes. Evaluated on the CriticalWindow-24 benchmark with MIMIC-IV and eICU cohorts, ALFIA achieves strong AUPRC while maintaining a balanced precision-recall profile. The learned embeddings can be further combined with gradient boosting (ALFIA-boost) or neural networks (ALFIA-nn) for additional gains. These findings demonstrate that text-encoded structured EHR data can support practical, generalizable early-warning models for ICU mortality risk stratification.</summary>
+</entry>
+<entry>
+<title>Patient characteristics of non-participants and reasons for non-participation in cardiac (tele)rehabilitation—a prospective analysis</title>
+<link href="https://doi.org/10.3389/fresc.2026.1844025"/>
+<id>https://openalex.org/W7162143175</id>
+<updated>2026-10-21T00:00:00Z</updated>
+<summary>Frontiers in Rehabilitation Sciences · 2026-05-22 · group authors: Petros Kalendralis
+
+Introduction Low participation in cardiac rehabilitation after acute myocardial infarction remains problematic. Cardiac telerehabilitation has emerged as a strategy to improve the uptake by addressing clinical, interpersonal, logistical, and healthcare system-related barriers. In this study, our aim is to determine which patient-related characteristics could lead to non-participation in cardiac rehabilitation, as well as to the reasons for non-participation. Methods In our study, the REHAB + study, cardiac telerehabilitation was implemented in routine clinical practice. In this sub analysis, observational data were collected between November 2021 and 2024 after its implementation in Zuyderland medical center, the Netherlands. After enrolment, patients could choose to participate in center-based cardiac rehabilitation, cardiac telerehabilitation, or were non-participants. Results A total of 328 patients with recent acute myocardial infarction were included. Two hundred (61%) patients participated in center-based cardiac rehabilitation, 64 (20%) in cardiac telerehabilitation, and 64 (20%) were non-participants. Non-participants were older (69 ± 11 years) than participants in center-based cardiac rehabilitation (64 ± 10 years) or cardiac telerehabilitation (61 ± 10 years) ( p &lt; 0.001 ). There were fewer smokers in the cardiac telerehabilitation group (18%), than center-based cardiac rehabilitation (35%) or non-participation (38%). The most common reason for non-participation…</summary>
+</entry>
+<entry>
+<title>The Essential Components and Critical Conditions for Success in a Learning Health System in Oncology</title>
+<link href="https://doi.org/10.3233/shti260729"/>
+<id>https://openalex.org/W7166677609</id>
+<updated>2026-10-21T00:00:00Z</updated>
+<summary>Studies in health technology and informatics · 2026-05-21 · group authors: Matthijs Sloep
+
+Building on previous research and implementations, this study identifies the essential structural and functional components required to develop a Learning Health System (LHS) for oncology in the Netherlands. Drawing on work related to the Netherlands Cancer Registry (NCR), we systematically mapped our studies onto the LHS framework to examine component coverage and integration. Medical informatics advances LHS development by enabling structured data capture, computable guideline representation, continues real-world data analysis, and data-driven guideline refinement. In the Netherlands, strong integration with the NCR provides a robust foundation for continuous learning, moving the vision of a fast, data-driven health system closer to reality. Our findings show that while the methodological and technical foundations of LHS components are well established, integration gaps remain. The next step is engaging multidisciplinary learning communities, supported by clear governance, to enable continuous learning, and sustained improvement in oncology care.</summary>
+</entry>
+<entry>
+<title>Uncovering Topics in Dutch Patient Messages in Inflammatory Bowel Disease: A Comparative Study of Embedding Models for Neural Topic Modeling</title>
+<link href="https://doi.org/10.3233/shti260350"/>
+<id>https://openalex.org/W7161960653</id>
+<updated>2026-10-21T00:00:00Z</updated>
+<summary>Studies in health technology and informatics · 2026-05-21 · group authors: Sander Puts, Yomi Okegunna, Andre Dekker, Rianne Fijten
+
+This study applied natural language processing to identify common topics in 12,054 Dutch patient-provider messages in inflammatory bowel disease. Using the BERTopic framework, three embedding models were evaluated with topic diversity, Cv coherence, and topic assignment proportion. A lightweight Dutch-specific embedding model (RobBERT) outperformed two larger multilingual models (MPNet Sentence Transformer and QWEN3-embedding-8B). We identified 120 sentence-level topics covering medical and administrative themes. Results showed that 22% of messages did not require specialist attention, highlighting the potential of neural topic models for automated triage in digital IBD care.</summary>
+</entry>
+<entry>
+<title>LinkedDicom: Indexing DICOM Metadata Using Semantic Web Technologies</title>
+<link href="https://doi.org/10.3233/shti260404"/>
+<id>https://openalex.org/W7161945525</id>
+<updated>2026-10-21T00:00:00Z</updated>
+<summary>Studies in health technology and informatics · 2026-05-21 · group authors: Johan van Soest, Ananya Choudhury, Alessio Romita, Leonard Wee, Andre Dekker
+
+The Digital Imaging and Communications in Medicine (DICOM) standard contains rich metadata describing patients, studies, series, and imaging instances, yet archiving systems typically store only a limited subset of these elements. For research purposes, integration of imaging metadata with clinical and experimental data is essential. To address this, we developed LinkedDicom, a lightweight Python package for converting DICOM metadata into Resource Description Framework (RDF) triples and querying using Semantic Web technologies. Building on lessons learned from our earlier Semantic DICOM (SeDI) toolkit, LinkedDicom was designed to be resource-efficient, and flexible to use in various scenarios. We evaluated the package on a publicly available head and neck cancer dataset and measured query performance time in various scenarios (using an SPARQL endpoint and per-patient file storage), demonstrating that on-disk storage with selective in-memory analysis provides a flexible alternative to resource-intensive live databases. Our findings show that LinkedDicom enables efficient, scalable, and FAIR-compliant representation of imaging metadata for research, with practical trade-offs between database-driven and on-demand querying.</summary>
+</entry>
+<entry>
+<title>Report on the status of posting results</title>
+<link href="https://doi.org/10.5281/zenodo.20340069"/>
+<id>https://openalex.org/W7162117453</id>
+<updated>2026-10-21T00:00:00Z</updated>
+<summary>Zenodo (CERN European Organization for Nuclear Research) · 2026-05-19 · group authors: Petros Kalendralis
+
+Deliverable D1.12 reports on the status of AIDAVA's Open Science compliance as of Month 41 (January 2026), documenting how the consortium has deposited, described and made accessible its scientific publications, research datasets and other project outputs in accordance with Horizon Europe Open Access obligations and FAIR principles. A final update on these activities will be included in D6.11 Update of Report on dissemination and communication activities 2 due in Month 48. Scientific publications. The consortium has significantly exceeded its contractual KPI of 15 peer-reviewed publications: as of M41, AIDAVA researchers have produced 25 peer-reviewed publications and 8 preprints, with 24 papers indexed in Scopus and 14 in PubMed Central. Cumulative citations exceed 1,000 in Google Scholar (613 in Scopus), and the project h-index has risen from 6 at M36 to 8 at M41. All public deliverables (23 in total) are deposited on Zenodo and mirrored on OpenAIRE, ensuring long-term traceability and broad visibility. Research data. AIDAVA applies the principle of "as open as possible, as close as necessary" to its two categories of research data. Pseudonymised and annotated clinical text corpora in Dutch (MUMC+), German (MUG) and Estonian (NEMC) — used for NLP model training — are managed under strict data transfer agreements and will be deleted or archived in de-identified label-only form at project end. Fully identifiable patient data (PHKGs, FHIR IPS, SMART scores) remain within the…</summary>
+</entry>
+<entry>
+<title>Comparing the performance of three software programmes for manual and (semi-)automatic liver volumetry</title>
+<link href="https://doi.org/10.21203/rs.3.rs-9394813/v1"/>
+<id>https://openalex.org/W7160058866</id>
+<updated>2026-10-21T00:00:00Z</updated>
+<summary>Research Square · 2026-05-04 · group authors: Ralph Brecheisen</summary>
+</entry>
+<entry>
+<title>Limburg Open Science Communities</title>
+<link href="https://osf.io/4x8q5"/>
+<id>https://openalex.org/W7160365937</id>
+<updated>2026-10-21T00:00:00Z</updated>
+<summary>OSF Preprints (OSF Preprints) · 2026-05-03 · group authors: Rianne Fijten</summary>
+</entry>
+<entry>
+<title>Preoperative body composition parameters are associated with postoperative outcomes in patients with Crohn's disease</title>
+<link href="https://dspace.library.uu.nl/handle/1874/484904"/>
+<id>https://openalex.org/W7164119891</id>
+<updated>2026-10-21T00:00:00Z</updated>
+<summary>Utrecht University Repository (Utrecht University) · 2026-05-01 · group authors: Ralph Brecheisen
+
+Background &amp; Aims: Preoperative body composition is a potential modifiable risk factor for poor postoperative outcomes in Crohn's disease (CD). This study aimed to investigate the association of preoperative body composition parameters with postoperative complications and endoscopic postoperative recurrence (ePOR) in patients with CD following ileocolic (re-)resection (ICR). Methods: Patients with CD (≥16 years) scheduled for ICR with preoperative abdominal imaging (&lt;12 months) (n = 227) were identified from a prospective, multicenter cohort study. Cross-sectional surface area normalized for body height (ie, index) and lipid content in sketelal muscle mass (SM) and subcutaneous and visceral adipose tissue (SAT/VAT) were analyzed on imaging. Associations with postoperative complications (Clavien-Dindo I-IV), moderate-to-severe complications (Clavien-Dindo ≥II), infectious complications, and ePOR (modified Rutgeerts’ score ≥i2b) were explored. Results: High lipid content in SM (ie, myosteatosis) was associated with overall postoperative (adjusted odds ratio [aOR], 3.09; 95% confidence interval [CI], 1.36–7.00), moderate-to-severe (aOR, 2.66; 95% CI, 1.24–5.68), and infectious complications (aOR, 2.44; 95% CI, 1.10–5.40). Low preoperative SAT index was protective against postoperative complications (aOR, 0.38; 95% CI, 0.16–0.88). Low lipid content in VAT was associated with postoperative infectious complications (aOR, 4.31; 95% CI, 1.11–16.71), whereas high lipid content in…</summary>
+</entry>
+<entry>
+<title>Coronary artery calcification assessment in National Lung Screening Trial CT images (DeepCAC2)</title>
+<link href="https://doi.org/10.5281/zenodo.19946682"/>
+<id>https://openalex.org/W7159687092</id>
+<updated>2026-10-21T00:00:00Z</updated>
+<summary>Zenodo (CERN European Organization for Nuclear Research) · 2026-05-01 · group authors: Leonard Nürnberg
+
+Overview The dataset of AI derived CACS for the entire NLST dataset includes the segmentation of the heart and CAC, the computed CACS, and the derived risk for 26,228 subjects across a total of 127,776 CT scans. The segmentations are provided in DICOM SEG format, which contains both the heart and CAC segmentations predicted by our deep learning algorithm. The CACS and risk score are provided as key-value pairs in a complementary JSON file with three keys: “Predicted Agatston Score”, which stores the CACS value; “Predicted Risk Group”, which contains the classified risk; and “SeriesInstanceUID”, which links to the original CT scan series. The data is organized in a folder structure where the first-level folder is the patient ID, and the second-level folder is the image’s series instance UID, which contains the cac.seg.dcm segmentation file and the DeepCAC.report.json file. Files in this record: The dataset is compressed using Zstandard and has an uncompressed size of ~160GB. The sha256 checksum of the compressed file is 54a6da8a7c23ab3fa5f62107278805dd927825e66557839f76c2357848cb5955 An export of the archives files is available in `DeepCAC2_NLST.txt`. The `DeepCAC2_NLST_10_cases_example` folder provides 10 extracted examples, compressed as ZIP archive which some readers may find more convenient. The `DeepCAC2_NLST_scores.csv` file contains the aggreagated scores over all individual `DeepCAC.report.json` files.</summary>
+</entry>
+<entry>
+<title>Coronary artery calcification assessment in National Lung Screening Trial CT images (DeepCAC2)</title>
+<link href="https://doi.org/10.5281/zenodo.19946683"/>
+<id>https://openalex.org/W7159593355</id>
+<updated>2026-10-21T00:00:00Z</updated>
+<summary>Zenodo (CERN European Organization for Nuclear Research) · 2026-05-01 · group authors: Leonard Nürnberg
+
+Overview The dataset of AI derived CACS for the entire NLST dataset includes the segmentation of the heart and CAC, the computed CACS, and the derived risk for 26,228 subjects across a total of 127,776 CT scans. The segmentations are provided in DICOM SEG format, which contains both the heart and CAC segmentations predicted by our deep learning algorithm. The CACS and risk score are provided as key-value pairs in a complementary JSON file with three keys: “Predicted Agatston Score”, which stores the CACS value; “Predicted Risk Group”, which contains the classified risk; and “SeriesInstanceUID”, which links to the original CT scan series. The data is organized in a folder structure where the first-level folder is the patient ID, and the second-level folder is the image’s series instance UID, which contains the cac.seg.dcm segmentation file and the DeepCAC.report.json file. Files in this record: The dataset is compressed using Zstandard and has an uncompressed size of ~160GB. The sha256 checksum of the compressed file is 54a6da8a7c23ab3fa5f62107278805dd927825e66557839f76c2357848cb5955 An export of the archives files is available in `DeepCAC2_NLST.txt`. The `DeepCAC2_NLST_10_cases_example` folder provides 10 extracted examples, compressed as ZIP archive which some readers may find more convenient. The `DeepCAC2_NLST_scores.csv` file contains the aggreagated scores over all individual `DeepCAC.report.json` files.</summary>
+</entry>
+<entry>
+<title>Dutch Metaphor Extraction from Cancer Patients’ Interviews and Forum Data Using LLMs and Human in the Loop</title>
+<link href="https://doi.org/10.63317/2fxa2v4tn93y"/>
+<id>https://openalex.org/W4416157627</id>
+<updated>2026-10-21T00:00:00Z</updated>
+<summary>Language Resources and Evaluation Conference (LREC) · 2026-05-01 · group authors: Sander Puts
+
+Metaphors play an important role in communication between cancer patients and clinicians.In this work, we present the first study on automated extraction of Dutch metaphors from cancer patient interviews and online forum data using large language models (LLMs) and human validation.We develop a human-in-the-loop extraction framework combining structured prompting, automatic verification, and expert linguistic evaluation.We evaluate multiple open-source LLMs and prompting strategies, including chain-of-thought and knowledge-guided prompting.Our approach resulted in the HealthQuote.NL dataset, containing 130 validated metaphors.We analyse common model errors, including hallucination and confusion with idioms, and show that refined prompting achieved 63.2% precision.This work provides both a novel dataset and an extraction framework to support patient-centred healthcare communication and future metaphor research.We share our prompts and resources at https://github.com/4dpicture/HealthQuote.</summary>
+</entry>
+<entry>
+<title>Development of a clinico-genomic AI prediction model for arm lymphoedema following breast cancer surgery and radiotherapy – the PRE-ACT study</title>
+<link href="https://doi.org/10.1016/j.ejso.2026.111688"/>
+<id>https://openalex.org/W7160026377</id>
+<updated>2026-10-21T00:00:00Z</updated>
+<summary>European Journal of Surgical Oncology · 2026-04-30 · group authors: Alessio Romita, Andre Dekker, Johan van Soest</summary>
+</entry>
+<entry>
+<title>Reproducibility Test Data for DeepCAC2 MHub.ai Model</title>
+<link href="https://doi.org/10.5281/zenodo.19921180"/>
+<id>https://openalex.org/W7159034911</id>
+<updated>2026-10-21T00:00:00Z</updated>
+<summary>Zenodo (CERN European Organization for Nuclear Research) · 2026-04-30 · group authors: Leonard Nürnberg
+
+This dataset provides test data for the DeepCAC2 model integrated within the MHub platform, a robust solution for deploying, managing, and testing deep learning models tailored for medical imaging. Dataset Composition: Sample Folder: Contains the input data utilized for testing the model’s functionality. Reference Folder: Contains the corresponding output provided by the original model contributor. Test.yml File: This file includes the original contributor’s test setup, which has been accepted by the MHub team. Sample Data Source: The sample images used in this dataset are sourced from public datasets available through the Imaging Data Commons (IDC), a repository that provides access to a wide range of medical imaging data. This ensures that the test cases reflect real-world clinical scenarios, facilitating robust validation of model performance. Purpose and Utility: The primary objective of this dataset is to enable the rigorous testing and validation of model performance within MHub workflows. To assess the performance of a model, users can process the sample data and compare the resulting output to the reference data. Additionally, users may inspect the sample and reference data independently to better understand the input-output structure that defines each model’s workflow. This dataset streamlines the process of model validation. By providing a standardized testing framework, the dataset facilitates reproducible results and accelerates the development of reliable AI…</summary>
+</entry>
+<entry>
+<title>Reproducibility Test Data for DeepCAC2 MHub.ai Model</title>
+<link href="https://doi.org/10.5281/zenodo.19921179"/>
+<id>https://openalex.org/W7158936484</id>
+<updated>2026-10-21T00:00:00Z</updated>
+<summary>Zenodo (CERN European Organization for Nuclear Research) · 2026-04-30 · group authors: Leonard Nürnberg
+
+This dataset provides test data for the DeepCAC2 model integrated within the MHub platform, a robust solution for deploying, managing, and testing deep learning models tailored for medical imaging. Dataset Composition: Sample Folder: Contains the input data utilized for testing the model’s functionality. Reference Folder: Contains the corresponding output provided by the original model contributor. Test.yml File: This file includes the original contributor’s test setup, which has been accepted by the MHub team. Sample Data Source: The sample images used in this dataset are sourced from public datasets available through the Imaging Data Commons (IDC), a repository that provides access to a wide range of medical imaging data. This ensures that the test cases reflect real-world clinical scenarios, facilitating robust validation of model performance. Purpose and Utility: The primary objective of this dataset is to enable the rigorous testing and validation of model performance within MHub workflows. To assess the performance of a model, users can process the sample data and compare the resulting output to the reference data. Additionally, users may inspect the sample and reference data independently to better understand the input-output structure that defines each model’s workflow. This dataset streamlines the process of model validation. By providing a standardized testing framework, the dataset facilitates reproducible results and accelerates the development of reliable AI…</summary>
+</entry>
+<entry>
+<title>Reproducibility Test Data for DeepCAC2 MHub.ai Model</title>
+<link href="https://doi.org/10.5281/zenodo.19921552"/>
+<id>https://openalex.org/W7158653853</id>
+<updated>2026-10-21T00:00:00Z</updated>
+<summary>Zenodo (CERN European Organization for Nuclear Research) · 2026-04-30 · group authors: Leonard Nürnberg
+
+This dataset provides test data for the DeepCAC2 model integrated within the MHub platform, a robust solution for deploying, managing, and testing deep learning models tailored for medical imaging. Dataset Composition: Sample Folder: Contains the input data utilized for testing the model’s functionality. Reference Folder: Contains the corresponding output provided by the original model contributor. Test.yml File: This file includes the original contributor’s test setup, which has been accepted by the MHub team. Sample Data Source: The sample images used in this dataset are sourced from public datasets available through the Imaging Data Commons (IDC), a repository that provides access to a wide range of medical imaging data. This ensures that the test cases reflect real-world clinical scenarios, facilitating robust validation of model performance. Purpose and Utility: The primary objective of this dataset is to enable the rigorous testing and validation of model performance within MHub workflows. To assess the performance of a model, users can process the sample data and compare the resulting output to the reference data. Additionally, users may inspect the sample and reference data independently to better understand the input-output structure that defines each model’s workflow. This dataset streamlines the process of model validation. By providing a standardized testing framework, the dataset facilitates reproducible results and accelerates the development of reliable AI…</summary>
+</entry>
+<entry>
+<title>Towards Brain MRI Foundation Models for the Clinic: Findings from the FOMO25 Challenge</title>
+<link href="https://doi.org/10.48550/arxiv.2604.11679"/>
+<id>https://openalex.org/W7154321941</id>
+<updated>2026-10-21T00:00:00Z</updated>
+<summary>arXiv (Cornell University) · 2026-04-13 · group authors: Petros Koutsouvelis, Leroy Volmer
+
+Clinical deployment of automated brain MRI analysis faces a fundamental challenge: clinical data is heterogeneous and noisy, and high-quality labels are prohibitively costly to obtain. Self-supervised learning (SSL) can address this by leveraging the vast amounts of unlabeled data produced in clinical workflows to train robust \textit{foundation models} that adapt out-of-domain with minimal supervision. However, the development of foundation models for brain MRI has been limited by small pretraining datasets and in-domain benchmarking focused on high-quality, research-grade data. To address this gap, we organized the FOMO25 challenge as a satellite event at MICCAI 2025. FOMO25 provided participants with a large pretraining dataset, FOMO60K, and evaluated models on data sourced directly from clinical workflows in few-shot and out-of-domain settings. Tasks covered infarct classification, meningioma segmentation, and brain age regression, and considered both models trained on FOMO60K (method track) and any data (open track). Nineteen foundation models from sixteen teams were evaluated using a standardized containerized pipeline. Results show that (a) self-supervised pretraining improves generalization on clinical data under domain shift, with the strongest models trained \textit{out-of-domain} surpassing supervised baselines trained \textit{in-domain}. (b) No single pretraining objective benefits all tasks: MAE favors segmentation, hybrid reconstruction-contrastive objectives…</summary>
+</entry>
+<entry>
+<title>Large-Scale Modality-Invariant Foundation Models for Brain Mri Analysis: Application to Lesion Segmentation</title>
+<link href="https://doi.org/10.1109/isbi61048.2026.11515369"/>
+<id>https://openalex.org/W4416330735</id>
+<updated>2026-10-21T00:00:00Z</updated>
+<summary>IEEE International Symposium on Biomedical Imaging (ISBI) · 2026-04-08 · group authors: Petros Koutsouvelis, Leroy Volmer
+
+The field of computer vision is undergoing a paradigm shift toward large-scale foundation model pre-training via selfsupervised learning (SSL). Leveraging large volumes of unlabeled brain MRI data, such models can learn anatomical priors that improve few-shot performance in diverse neuroimaging tasks. However, most SSL frameworks are tailored to natural images, and their adaptation to capture multi-modal MRI information remains underexplored. This work proposes a modality-invariant representation learning setup and evaluates its effectiveness in stroke and epilepsy lesion segmentation, following large-scale pre-training. Experimental results suggest that despite successful cross-modality alignment, lesion segmentation primarily benefits from preserving fine-grained modality-specific features. Model checkpoints and code are made publicly available.11https://github.com/BraveDistribution/UMBRA/ tree/main</summary>
+</entry>
+</feed>

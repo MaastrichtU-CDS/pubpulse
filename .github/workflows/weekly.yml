@@ -1,0 +1,113 @@
+name: weekly
+
+on:
+  schedule:
+    - cron: "0 6 * * 1"          # Mondays 06:00 UTC (07:00/08:00 Amsterdam)
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - people.yml
+      - config.yml
+      - overrides.yml
+      - "pubpulse/**"
+      - "site/**"
+      - .github/workflows/weekly.yml
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pubpulse-weekly
+  cancel-in-progress: false
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    env:
+      OPENALEX_API_KEY: ${{ secrets.OPENALEX_API_KEY }}
+      GMAIL_USER: ${{ secrets.GMAIL_USER }}
+      GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
+      DIGEST_TO: ${{ secrets.DIGEST_TO }}
+      TEAMS_WEBHOOK_URL: ${{ secrets.TEAMS_WEBHOOK_URL }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - run: pip install -r requirements.txt
+
+      - name: Sync people and publications from OpenAlex
+        run: python -m pubpulse sync
+
+      - name: Build site, feed and digest
+        run: python -m pubpulse build
+
+      - name: Commit updated data
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add people.yml data/
+          if git diff --cached --quiet; then
+            echo "no data changes"
+          else
+            git commit -m "pubpulse: weekly sync $(date -u +%Y-%m-%d)"
+            git push
+          fi
+
+      - name: Read digest outputs
+        id: digest
+        run: |
+          echo "new_count=$(cat out/new_count.txt)" >> "$GITHUB_OUTPUT"
+          echo "subject=$(cat out/subject.txt)" >> "$GITHUB_OUTPUT"
+          {
+            echo "## pubpulse run"
+            echo
+            echo "New publications this run: **$(cat out/new_count.txt)**"
+            echo
+            echo '```'
+            cat out/digest.txt
+            echo '```'
+          } >> "$GITHUB_STEP_SUMMARY"
+
+      - uses: actions/configure-pages@v5
+        with:
+          enablement: true
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+
+      - id: deploy
+        uses: actions/deploy-pages@v4
+
+      - name: Email digest (Gmail SMTP)
+        if: steps.digest.outputs.new_count != '0' && env.GMAIL_USER != '' && env.DIGEST_TO != ''
+        continue-on-error: true
+        uses: dawidd6/action-send-mail@v3
+        with:
+          server_address: smtp.gmail.com
+          server_port: 465
+          secure: true
+          username: ${{ env.GMAIL_USER }}
+          password: ${{ env.GMAIL_APP_PASSWORD }}
+          from: pubpulse <${{ env.GMAIL_USER }}>
+          to: ${{ env.DIGEST_TO }}
+          subject: ${{ steps.digest.outputs.subject }}
+          html_body: file://out/digest.html
+          body: file://out/digest.txt
+
+      - name: Post digest to Teams
+        if: steps.digest.outputs.new_count != '0' && env.TEAMS_WEBHOOK_URL != ''
+        continue-on-error: true
+        run: |
+          curl --fail --silent --show-error -X POST -H "Content-Type: application/json" \
+            --data @out/teams.json "$TEAMS_WEBHOOK_URL"

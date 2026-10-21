@@ -1,0 +1,12 @@
+[project]
+name = "pubpulse"
+version = "0.1.0"
+description = "Weekly publication tracker for the Clinical Data Science group (Maastro / Maastricht University)"
+requires-python = ">=3.11"
+dependencies = ["requests>=2.31", "PyYAML>=6.0"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>pubpulse · publications</title>
+<link rel="stylesheet" href="style.css">
+<link rel="alternate" type="application/atom+xml" title="New publications" href="feed.xml">
+</head>
+<body>
+<header class="top">
+  <div class="wrap">
+    <h1><span class="logo">pubpulse</span> <span id="group-name"></span></h1>
+    <p class="sub">Weekly overview of publications by group members, from <a href="https://openalex.org" target="_blank" rel="noopener">OpenAlex</a>.
+      <span id="updated"></span> · <a href="feed.xml">RSS feed</a> · <a id="repo-link" href="#" target="_blank" rel="noopener">source</a></p>
+  </div>
+</header>
+
+<main class="wrap layout">
+  <aside class="filters" id="filters">
+    <div class="filter">
+      <label for="q">Search</label>
+      <input id="q" type="search" placeholder="title, author, journal…" autocomplete="off">
+    </div>
+    <div class="filter row">
+      <label class="check"><input type="checkbox" id="only-new"> New this week</label>
+      <label class="check"><input type="checkbox" id="only-oa"> Open access</label>
+    </div>
+    <div class="filter">
+      <label for="year">Year</label>
+      <select id="year"><option value="">All years</option></select>
+    </div>
+    <div class="filter">
+      <label for="type">Type</label>
+      <select id="type"><option value="">All types</option></select>
+    </div>
+    <div class="filter">
+      <label for="journal">Journal / source</label>
+      <select id="journal"><option value="">All sources</option></select>
+    </div>
+    <div class="filter">
+      <label for="verify">Group affiliation</label>
+      <select id="verify">
+        <option value="">All papers</option>
+        <option value="verified">Verified only</option>
+        <option value="unverified">Unverified only (needs a check)</option>
+      </select>
+    </div>
+    <div class="filter">
+      <label for="sort">Sort</label>
+      <select id="sort">
+        <option value="date">Newest first</option>
+        <option value="added">Recently added</option>
+        <option value="cited">Most cited</option>
+      </select>
+    </div>
+    <div class="filter">
+      <div class="label-row"><label>People</label> <button class="link" id="clear-people" type="button">clear</button></div>
+      <input id="people-q" type="search" placeholder="filter names…" class="small" autocomplete="off">
+      <div id="people" class="people"></div>
+    </div>
+    <div id="attention" class="attention hidden"></div>
+    <button class="link" id="reset" type="button">Reset all filters</button>
+  </aside>
+
+  <section class="results">
+    <div class="stats"><span id="count"></span> <span id="active-chips"></span></div>
+    <ol id="list" class="list"></ol>
+    <p id="empty" class="empty hidden">No publications match these filters.</p>
+  </section>
+</main>
+
+<footer class="wrap foot">
+  <p>Data: OpenAlex (CC0). Group affiliation is checked per author against the affiliations OpenAlex records for that paper; papers without a verified group affiliation are marked <span class="badge warn">unverified</span>.
+  Missing a paper? Make sure it carries the author's ORCID at the publisher, or add it to the ORCID record.</p>
+</footer>
+<script src="app.js"></script>
+</body>
+</html>
