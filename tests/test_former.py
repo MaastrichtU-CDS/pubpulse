@@ -52,6 +52,23 @@ def test_name_matches_require_a_current_coauthor_and_unique_first_last_names():
     assert report["with_recent_collaborations"] == 0
 
 
+def test_each_new_collaboration_renews_former_staff_followup():
+    roster = people()
+    review_former(roster, [work()], TODAY)
+    person = roster[1]
+    previous_deadline = tracked_until(person, 18)
+    later = date(2028, 10, 8)
+    assert not is_tracked(person, later, 18)
+
+    review_former(roster, [work(), work("W2", "2028-09-01")], later)
+
+    assert tracked_until(person, 18) == date(2030, 9, 1)
+    assert tracked_until(person, 18) > previous_deadline
+    assert is_tracked(person, later, 18)
+    assert not is_active(person, later)
+    assert person["former_collaboration"]["recent_shared_papers"] == 1
+
+
 def test_future_papers_do_not_extend_followup_and_cutoff_is_inclusive():
     roster = people()
     report = review_former(roster, [work("W1", "2026-11-01"), work("W2", "2024-10-21")], TODAY)
