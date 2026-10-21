@@ -169,3 +169,23 @@ def test_resolve_keeps_state_on_api_errors_and_caches():
     assert Count.calls == 0 and fresh[0]["openalex_ids"] == ["A1"]          # cached
     resolve_people(fresh, Count(), ["maastro"], date(2026, 12, 21), max_age_days=30)
     assert Count.calls == 1 and fresh[0]["openalex_ids"] == ["A9"]          # refreshed after 30 days
+
+
+def test_normalise_work_preserves_full_author_order_and_member_identity():
+    authorships = [
+        {"author": {"id": f"https://openalex.org/A{10000 + i}", "display_name": f"External Author {i}"}}
+        for i in range(45)
+    ]
+    # An unnamed record still occupies its original authorship position.
+    authorships[2]["author"].pop("display_name")
+    # Match by identity even when the indexed name uses initials, beyond the old 40-name cutoff.
+    authorships[44]["author"] = {"id": "https://openalex.org/A5000000001", "display_name": "S. P."}
+    work = normalise_work(_raw(authorships=authorships), PEOPLE, KW)
+    assert work["author_count"] == 45
+    assert len(work["authors"]) == 44
+    assert work["authors"][-1] == "S. P."
+    assert work["author_members"][-1] == "sp"
+    assert work["author_positions"][-1] == 45
+    assert work["author_positions"][:4] == [1, 2, 4, 5]
+    assert len(work["author_members"]) == len(work["authors"]) == len(work["author_positions"])
+    assert work["author_members"][:-1] == [None] * 43

@@ -244,15 +244,18 @@ def normalise_work(raw: dict, people: list[dict], keywords: list[str] | None = N
     for p in people:
         for aid in manual_ids(p) + list(p.get("openalex_ids") or []):
             by_id[aid] = p["slug"]
-    authors, members, member_affiliations, status = [], [], {}, {}
-    for a in raw.get("authorships", []) or []:
+    authors, author_members, author_positions = [], [], []
+    members, member_affiliations, status = [], {}, {}
+    for position, a in enumerate(raw.get("authorships", []) or [], start=1):
         author = a.get("author") or {}
         name = author.get("display_name")
-        if name:
-            authors.append(name)
         orcid = short_id(author.get("orcid"))
         aid = short_id(author.get("id"))
         slug = (aid and by_id.get(aid)) or (orcid and by_orcid.get(orcid.upper()))
+        if name:
+            authors.append(name)
+            author_members.append(slug or None)
+            author_positions.append(position)
         if slug and slug not in members:
             members.append(slug)
             affs = [i.get("display_name") for i in (a.get("institutions") or [])]
@@ -275,8 +278,10 @@ def normalise_work(raw: dict, people: list[dict], keywords: list[str] | None = N
         "landing_url": loc.get("landing_page_url"),
         "is_oa": bool(oa.get("is_oa")),
         "oa_url": oa.get("oa_url"),
-        "authors": authors[:40],
-        "author_count": len(authors),
+        "authors": authors,
+        "author_members": author_members,
+        "author_positions": author_positions,
+        "author_count": len(raw.get("authorships") or []),
         "group_members": members,
         "member_affiliations": member_affiliations,
         "affiliation_status": status,
