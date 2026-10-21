@@ -229,11 +229,13 @@ def run(config_path: Path | None = None) -> dict:
     # makes every deploy pick up the new files immediately.
     import hashlib
     index = DIST_DIR / "index.html"
-    html_text = index.read_text(encoding="utf-8")
+    html_text = index.read_text(encoding="utf-8") if index.exists() else ""
     for asset in ("app.js", "style.css"):
-        digest_hex = hashlib.sha1((DIST_DIR / asset).read_bytes()).hexdigest()[:10]
-        html_text = html_text.replace(f'"{asset}"', f'"{asset}?v={digest_hex}"')
-    index.write_text(html_text, encoding="utf-8")
+        if (DIST_DIR / asset).exists():
+            digest_hex = hashlib.sha1((DIST_DIR / asset).read_bytes()).hexdigest()[:10]
+            html_text = html_text.replace(f'"{asset}"', f'"{asset}?v={digest_hex}"')
+    if index.exists():
+        index.write_text(html_text, encoding="utf-8")
     if (DATA_DIR / "scholar_check.json").exists():
         shutil.copy(DATA_DIR / "scholar_check.json", DIST_DIR / "data" / "scholar_check.json")
     (DIST_DIR / ".nojekyll").write_text("")

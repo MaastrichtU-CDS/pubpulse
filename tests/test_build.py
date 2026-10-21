@@ -86,6 +86,7 @@ def test_new_works_includes_pending_from_earlier_runs():
 
 
 def test_site_build_cache_busts_assets(tmp_path, monkeypatch):
+    import json
     import shutil
     from pubpulse import build
     site = tmp_path / "site"; shutil.copytree(build.SITE_DIR, site)
