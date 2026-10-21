@@ -71,7 +71,11 @@
     if (state.when) p.set("when", state.when);
     if (state.verify) p.set("verify", state.verify);
     if (state.oa) p.set("oa", "1");
-    if (!p.toString() && location.hash === "#publications") return;
+    if (
+      !p.toString() &&
+      ["#publications", "#coverage-notes"].includes(location.hash)
+    )
+      return;
     history.replaceState(
       null,
       "",
@@ -175,14 +179,14 @@
     renderPeople();
 
     const review = data.people.filter((p) => p.needs_review);
-    if (review.length) {
-      els.attention.classList.remove("hidden");
-      els.attention.innerHTML =
-        `<details><summary><b>${review.length} ${review.length === 1 ? "person" : "people"} not matched yet</b></summary>` +
-        "No ORCID on the staff profile and no OpenAlex author with a group affiliation: " +
-        review.map((p) => esc(p.name)).join(", ") +
-        ". Their papers are not tracked until an ORCID is added to the staff profile.</details>";
-    }
+    els.attention.classList.toggle("hidden", !review.length);
+    els.attention.innerHTML = review.length
+      ? `<details><summary><span class="coverage-label">Author coverage</span><span class="coverage-status">${review.length} staff ${review.length === 1 ? "profile" : "profiles"} without a confirmed match</span></summary>` +
+        `<p>An OpenAlex author record could not be confirmed for ${review.length} staff ${review.length === 1 ? "profile" : "profiles"}. Publications by these researchers may therefore be absent from this collection.</p>` +
+        "<p>Author matching uses ORCID identifiers and institutional affiliations to distinguish researchers with similar names.</p>" +
+        `<p class="coverage-detail"><strong>Profiles without a confirmed match:</strong> ${review.map((p) => esc(p.name)).join(", ")}.</p></details>`
+      : "";
+    updateCoverageVisibility();
 
     loadScholarCheck();
 
@@ -258,6 +262,7 @@
             "#subscribed",
             "#unsubscribe",
             "#scholar",
+            "#coverage-notes",
           ].includes(location.hash)
         )
           return;
@@ -266,6 +271,15 @@
       });
     }
     update();
+  }
+
+  function updateCoverageVisibility() {
+    const notes = $("coverage-notes");
+    const hidden = [...notes.querySelectorAll(".coverage-note")].every((note) =>
+      note.classList.contains("hidden"),
+    );
+    notes.classList.toggle("hidden", hidden);
+    $("coverage-link").classList.toggle("hidden", hidden);
   }
 
   function loadScholarCheck() {
@@ -277,31 +291,70 @@
         const entries = Object.values(sc.people).filter(
           (p) => (p.missing || []).length || (p.not_attributed || []).length,
         );
-        if (!entries.length) return;
-        const total = (sc.total_missing || 0) + (sc.total_not_attributed || 0);
-        box.classList.remove("hidden");
+        box.classList.toggle("hidden", !entries.length);
+        if (!entries.length) {
+          box.innerHTML = "";
+          updateCoverageVisibility();
+          return;
+        }
+        // Entries are counted per profile; a paper can appear on more than one profile.
+        const outside = entries.reduce(
+          (n, p) => n + (p.missing || []).length,
+          0,
+        );
+        const attribution = entries.reduce(
+          (n, p) => n + (p.not_attributed || []).length,
+          0,
+        );
+        const total = outside + attribution;
+        const date = new Date(sc.checked_at);
+        const checked = Number.isNaN(date.getTime())
+          ? "Comparison date unavailable"
+          : "Compared " +
+            date.toLocaleDateString("en-GB", {
+              day: "numeric",
+              month: "long",
+              year: "numeric",
+              timeZone: "UTC",
+            });
+        const overview =
+          [
+            outside
+              ? `${outside} profile ${outside === 1 ? "entry is" : "entries are"} not represented in this collection`
+              : "",
+            attribution
+              ? `${attribution} ${attribution === 1 ? "entry has" : "entries have"} a different author attribution`
+              : "",
+          ]
+            .filter(Boolean)
+            .join("; ") + ".";
         box.innerHTML =
-          `<details${initialHash === "#scholar" ? " open" : ""}><summary><b>${total} paper${total === 1 ? "" : "s"} on Google Scholar profiles need a look</b> <span class="meta">(checked ${esc(sc.checked_at || "")})</span></summary>` +
-          '<p class="meta">Scholar is only used as a cross-check. “Missing” = on the Scholar profile but not found in OpenAlex for the group; usually the paper lacks the author\'s ORCID at the publisher, or it is grey literature OpenAlex does not index. “Not linked” = in pubpulse but not attributed to this person.</p>' +
+          `<details${initialHash === "#scholar" ? " open" : ""}><summary><span class="coverage-label">Google Scholar comparison</span><span class="coverage-status">${total} profile ${total === 1 ? "difference" : "differences"}</span></summary>` +
+          `<p class="coverage-date">${esc(checked)}${sc.since_year ? " · Publications since " + esc(sc.since_year) : ""}</p>` +
+          `<p>${esc(overview)} Counts are per researcher profile, so the same paper may appear more than once.</p>` +
+          "<p>Differences can reflect indexing coverage, update delays or author attribution. They do not necessarily indicate missing group publications. This comparison is informational and does not change the library’s publication count.</p>" +
           entries
             .map((p) => {
-              const li = (x, tag) =>
-                `<li>${tag}${esc(x.title)}${x.year ? " (" + esc(x.year) + ")" : ""}${x.venue ? " · " + esc(x.venue) : ""}${x.link ? ` <a href="${esc(x.link)}" target="_blank" rel="noopener">Scholar ↗</a>` : ""}</li>`;
+              const differenceCount =
+                (p.missing || []).length + (p.not_attributed || []).length;
+              const item = (paper, label) => {
+                const link = safeLink(paper.link);
+                return `<li><span class="coverage-tag">${label}</span> ${esc(paper.title)}${paper.year ? " (" + esc(paper.year) + ")" : ""}${paper.venue ? " · " + esc(paper.venue) : ""}${link ? ` <a href="${esc(link)}" target="_blank" rel="noopener">View record ↗</a>` : ""}</li>`;
+              };
               return (
-                `<p><b>${esc(p.name)}</b> · ${p.matched} of ${p.checked} since ${esc(sc.since_year)} found</p><ul>` +
+                `<details class="coverage-person"><summary>${esc(p.name)}<span>${differenceCount} ${differenceCount === 1 ? "difference" : "differences"}</span></summary><p>${esc(p.matched)} of ${esc(p.checked)} profile entries matched${sc.since_year ? " since " + esc(sc.since_year) : ""}.</p><ul>` +
                 (p.missing || [])
-                  .map((x) => li(x, "<span class='badge warn'>missing</span> "))
+                  .map((paper) => item(paper, "Not in collection"))
                   .join("") +
                 (p.not_attributed || [])
-                  .map((x) =>
-                    li(x, "<span class='badge oa'>not linked</span> "),
-                  )
+                  .map((paper) => item(paper, "Author attribution differs"))
                   .join("") +
-                "</ul>"
+                "</ul></details>"
               );
             })
             .join("") +
           "</details>";
+        updateCoverageVisibility();
       })
       .catch(() => {});
   }

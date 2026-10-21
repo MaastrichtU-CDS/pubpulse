@@ -180,8 +180,11 @@
         <div>
           <p class="eyebrow">CLINICAL DATA SCIENCE MAASTRICHT</p>
           <h2>Publication library</h2>
-          <p class="library-range" id="publication-range">
-            Loading publication coverage…
+          <p class="library-range">
+            <span id="publication-range">Loading publication coverage…</span>
+            <a id="coverage-link" class="hidden" href="#coverage-notes"
+              >About coverage</a
+            >
           </p>
         </div>
         <p class="updated">
@@ -246,7 +249,7 @@
               <option value="">All papers</option>
               <option value="verified">Verified only</option>
               <option value="unverified">
-                Unverified only (needs a check)
+                Affiliation not verified
               </option>
             </select>
           </div>
@@ -271,8 +274,6 @@
               aria-label="Filter by group member"
             ></div>
           </div>
-          <div id="attention" class="attention hidden"></div>
-          <div id="scholar" class="attention hidden"></div>
         </aside>
         <section class="results" aria-label="Publications">
           <section class="publication-chart" aria-labelledby="chart-heading">
@@ -333,6 +334,21 @@
           >
         </section>
       </div>
+      <section
+        class="coverage-notes hidden"
+        id="coverage-notes"
+        aria-labelledby="coverage-heading"
+      >
+        <h3 id="coverage-heading">Data sources &amp; coverage</h3>
+        <p class="coverage-intro">
+          Publication records come from OpenAlex. These notes explain author
+          matching and differences with Google Scholar.
+        </p>
+        <div class="coverage-grid">
+          <div id="attention" class="coverage-note hidden"></div>
+          <div id="scholar" class="coverage-note hidden"></div>
+        </div>
+      </section>
     </main>
 
     <section class="follow-strip">
