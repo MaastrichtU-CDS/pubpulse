@@ -44,6 +44,11 @@ min_people_on_staff_page: 3
 digest:
   subject_prefix: "pubpulse"
   teams_max_items: 10
+  # Self-service mailing list (e.g. a Google Group or a Microsoft 365 group). pubpulse sends ONE mail to the group
+  # address (secret DIGEST_TO); members subscribe/unsubscribe themselves via these links. Leave empty to hide.
+  subscribe_url: ""
+  unsubscribe_url: ""
+  list_name: ""
 
 feed:
   max_items: 50

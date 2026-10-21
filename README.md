@@ -83,9 +83,21 @@ Edit either file in the GitHub web editor and commit to `main`; the workflow run
 
 A notification channel whose secret is missing is simply skipped; the site and feed always update.
 
-Mailing-list tips: use a dedicated Gmail account (not a personal one) as sender; if `DIGEST_TO` is a Maastro/UM
-distribution list, ask its owner to allow that external sender address, otherwise Exchange rejects the mail. To test
-delivery without waiting for a new paper: *Actions → weekly → Run workflow* and tick *force_notify*.
+### Mailing list with subscribe / unsubscribe
+
+pubpulse sends one mail per week to a single address (`DIGEST_TO`). Make that address a self-service group so people
+join and leave on their own; then put the group's join/leave links in `config.yml` under `digest:` and they appear on
+the website header and in every email footer.
+
+- **Google Group** (simplest, works with the Gmail sender): create a group at https://groups.google.com, set
+  *Who can join* to "Anyone on the web can ask to join" (or "can join"), allow posting by the sender account (add it as
+  a member), use `<group>@googlegroups.com` as `DIGEST_TO`. Subscribe link: `https://groups.google.com/g/<group>`;
+  unsubscribe: members can leave on that page or email `<group>+unsubscribe@googlegroups.com`.
+- **Microsoft 365 group / UM distribution list** (if IT prefers in-house): the owner enables self-service join in
+  Outlook and allows the external sender address, otherwise Exchange rejects the mail.
+
+Use a dedicated Gmail account (not a personal one) as sender. To test delivery without waiting for a new paper:
+*Actions → weekly → Run workflow* and tick *force_notify*.
 
 ### How a run works
 

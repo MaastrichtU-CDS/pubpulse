@@ -53,6 +53,9 @@
     $("group-name").textContent = data.group_name || "";
     $("updated").textContent = "Updated " + (data.generated || "").slice(0, 10);
     $("repo-link").href = data.repo_url || "#";
+    const list = data.list || {};
+    $("list-links").innerHTML = (list.subscribe_url ? `<a href="${esc(list.subscribe_url)}" target="_blank" rel="noopener"><b>Get the weekly email</b></a> · ` : "") +
+      (list.unsubscribe_url ? `<a href="${esc(list.unsubscribe_url)}" target="_blank" rel="noopener">unsubscribe</a> · ` : "");
 
     const years = [...new Set(data.works.map((w) => w.year).filter(Boolean))].sort((a, b) => b - a);
     fillSelect(els.year, years.map((y) => [String(y), String(y)]), state.year);
