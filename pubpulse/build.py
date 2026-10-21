@@ -124,9 +124,11 @@ def build_digest(pubs: dict, cfg: dict) -> dict:
     if errors:
         body.append('<p style="font-size:13px;color:#a00">Errors during this run: ' + html.escape("; ".join(errors)) + "</p>")
     dg = cfg.get("digest") or {}
-    unsub = f' · <a href="{html.escape(dg["unsubscribe_url"])}" style="color:#999">Unsubscribe</a>' if dg.get("unsubscribe_url") else ""
-    sub = f' · <a href="{html.escape(dg["subscribe_url"])}" style="color:#999">Subscribe</a>' if dg.get("subscribe_url") else ""
-    body.append(f'<p style="font-size:12px;color:#999">Sent automatically by pubpulse to {html.escape(dg.get("list_name") or "the group list")}. Data: OpenAlex.{sub}{unsub}</p></div>')
+    body.append(
+        f'<p style="font-size:12px;color:#999">Sent automatically by pubpulse to {html.escape(dg.get("list_name") or "the group list")}. '
+        f'Data: OpenAlex. · <a href="{{{{UNSUBSCRIBE_URL}}}}" style="color:#999">Unsubscribe</a> · '
+        f'<a href="{html.escape(site)}" style="color:#999">Subscribe someone else</a></p></div>'
+    )
     html_body = "\n".join(body)
 
     text_lines = [f"{group}: {n} new publication(s) this week", ""]
@@ -139,8 +141,7 @@ def build_digest(pubs: dict, cfg: dict) -> dict:
         text_lines += ["", f"{unverified_new} of these have no group affiliation recorded: {site}#when=week&verify=unverified"]
     if review:
         text_lines += ["", "Needs attention (no ORCID/OpenAlex match): " + ", ".join(review)]
-    if dg.get("unsubscribe_url"):
-        text_lines += ["", f"Unsubscribe: {dg['unsubscribe_url']}"]
+    text_lines += ["", "Unsubscribe: {{UNSUBSCRIBE_URL}}"]
 
     teams_max = int((cfg.get("digest") or {}).get("teams_max_items", 10))
     card_body = [

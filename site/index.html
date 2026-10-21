@@ -401,6 +401,15 @@
         rel="noopener"
         >Find the CDS team <span aria-hidden="true">↗</span></a
       >
+      <form id="digest-form" class="digest-form hidden" autocomplete="on">
+        <label for="digest-email" id="digest-form-label">Your email address</label>
+        <div class="digest-form-row">
+          <input id="digest-email" type="email" placeholder="name@maastrichtuniversity.nl" required />
+          <button type="submit" class="button button-dark" id="digest-submit">Subscribe</button>
+        </div>
+        <p class="digest-form-msg" id="digest-msg" role="status" aria-live="polite"></p>
+        <button type="button" class="link" id="digest-toggle">I want to unsubscribe instead</button>
+      </form>
       <p class="join-note" id="join-note">
         Self-service signup is not available yet. To leave the list, contact a
         group maintainer.

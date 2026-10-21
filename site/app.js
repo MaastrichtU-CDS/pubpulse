@@ -238,7 +238,7 @@
         update();
       });
       window.addEventListener("hashchange", () => {
-        if (location.hash === "#publications") return;
+        if (["#publications", "#subscribe", "#unsubscribe"].includes(location.hash)) return;
         state = readHash();
         init(data);
       });
@@ -258,27 +258,88 @@
   }
 
   function configureDigest(list) {
-    const subscribe = safeLink(list.subscribe_url);
-    const unsubscribe = safeLink(list.unsubscribe_url);
+    const endpoint = safeLink(list.subscribe_endpoint);
     const unsubLink = $("unsubscribe-link");
-    unsubLink.classList.toggle("hidden", !unsubscribe);
-    if (unsubscribe) unsubLink.href = unsubscribe;
-    if (!subscribe) return;
+    const form = $("digest-form");
+    if (!endpoint) {
+      unsubLink.classList.add("hidden");
+      form.classList.add("hidden");
+      return;
+    }
+    let mode = "subscribe";
+    const msg = $("digest-msg");
+    const renderMode = () => {
+      $("digest-form-label").textContent =
+        mode === "subscribe" ? "Your email address" : "Email address to remove";
+      $("digest-submit").textContent =
+        mode === "subscribe" ? "Subscribe" : "Send me an unsubscribe link";
+      $("digest-toggle").textContent =
+        mode === "subscribe"
+          ? "I want to unsubscribe instead"
+          : "Back to subscribing";
+      $("join-title").innerHTML =
+        mode === "subscribe"
+          ? "Your next good read<br />starts here."
+          : "Leaving the list?";
+      msg.textContent = "";
+      msg.className = "digest-form-msg";
+    };
+    $("join-steps").classList.add("hidden");
+    $("join-action").classList.add("hidden");
+    form.classList.remove("hidden");
     $("digest-note").textContent =
-      "Join online. " +
-      (unsubscribe
-        ? "Unsubscribe whenever you like."
-        : "One email a week, only when there are new papers.");
-    $("join-steps").innerHTML =
-      `<li><span>01</span><div><strong>Open the mailing-list page</strong><p>Use the button below to visit ${esc(list.list_name || "the CDS mailing list")} and follow its instructions to join or request membership.</p></div></li><li><span>02</span><div><strong>Confirm your membership</strong><p>Complete any confirmation from the list provider. Once you’re a member, look out for the next Monday digest.</p></div></li>`;
-    $("join-action").href = subscribe;
-    $("join-action").innerHTML =
-      'Join the mailing list <span aria-hidden="true">↗</span>';
+      "Enter your email, confirm the link we send you, done. Unsubscribe whenever you like.";
     $("join-note").textContent =
-      "Signup is managed by the mailing-list provider. " +
-      (unsubscribe
-        ? "Use the unsubscribe link in the footer to leave."
-        : "Contact a group maintainer if you need help joining or leaving.");
+      "We send a confirmation link first. Your address is stored privately and only used for this digest.";
+    unsubLink.classList.remove("hidden");
+    unsubLink.removeAttribute("target");
+    unsubLink.href = "#unsubscribe";
+    unsubLink.addEventListener("click", (ev) => {
+      ev.preventDefault();
+      mode = "unsubscribe";
+      renderMode();
+      dialog.showModal();
+    });
+    $("digest-toggle").addEventListener("click", () => {
+      mode = mode === "subscribe" ? "unsubscribe" : "subscribe";
+      renderMode();
+    });
+    document.querySelectorAll("[data-open-digest]").forEach((b) =>
+      b.addEventListener("click", () => {
+        mode = "subscribe";
+        renderMode();
+      }),
+    );
+    form.addEventListener("submit", async (ev) => {
+      ev.preventDefault();
+      const email = $("digest-email").value.trim();
+      $("digest-submit").disabled = true;
+      msg.className = "digest-form-msg";
+      msg.textContent = "One moment…";
+      try {
+        const r = await fetch(endpoint, {
+          method: "POST",
+          redirect: "follow",
+          headers: { "Content-Type": "text/plain;charset=utf-8" },
+          body: JSON.stringify({ action: mode, email }),
+        });
+        const j = await r.json();
+        msg.className = "digest-form-msg " + (j.ok ? "ok" : "err");
+        msg.textContent = j.ok ? j.message : j.error || "Something went wrong.";
+        if (j.ok) $("digest-email").value = "";
+      } catch {
+        msg.className = "digest-form-msg err";
+        msg.textContent = "Could not reach the subscription service. Please try again later.";
+      }
+      $("digest-submit").disabled = false;
+    });
+    renderMode();
+    const hash = location.hash.replace("#", "");
+    if (hash === "unsubscribe" || hash === "subscribe") {
+      mode = hash;
+      renderMode();
+      if (!dialog.open) dialog.showModal();
+    }
   }
 
   function renderPeople() {

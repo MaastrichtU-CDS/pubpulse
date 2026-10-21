@@ -31,6 +31,8 @@ def main(argv: list[str] | None = None) -> int:
 
     sub.add_parser("build", help="build dist/ (website), data/feed.xml and out/ (digest email, Teams card)")
 
+    sub.add_parser("send-digest", help="email out/digest.* to the subscriber list (and DIGEST_TO) via Gmail SMTP")
+
     i = sub.add_parser("apply-issue", help="apply an 'identifiers' issue form body to people.yml")
     i.add_argument("--body-file", required=True)
     i.add_argument("--result-file", default="out/issue_result.md")
@@ -40,6 +42,10 @@ def main(argv: list[str] | None = None) -> int:
     a.add_argument("--skip-people", action="store_true")
 
     args = parser.parse_args(argv)
+    if args.cmd == "send-digest":
+        from .mailer import run as mail_run
+
+        return mail_run()
     if args.cmd == "apply-issue":
         from .issues import apply_identifiers, parse_issue_body
         from .sync import load_people, save_people

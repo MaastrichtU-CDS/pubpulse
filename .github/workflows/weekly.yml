@@ -39,6 +39,7 @@ jobs:
       GMAIL_USER: ${{ secrets.GMAIL_USER }}
       GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
       DIGEST_TO: ${{ secrets.DIGEST_TO }}
+      SUBSCRIBERS_KEY: ${{ secrets.SUBSCRIBERS_KEY }}
       TEAMS_WEBHOOK_URL: ${{ secrets.TEAMS_WEBHOOK_URL }}
     steps:
       - uses: actions/checkout@v4
@@ -94,20 +95,9 @@ jobs:
       - id: deploy
         uses: actions/deploy-pages@v4
 
-      - name: Email digest (Gmail SMTP)
-        if: (steps.digest.outputs.new_count != '0' || inputs.force_notify) && env.GMAIL_USER != '' && env.DIGEST_TO != ''
-        uses: dawidd6/action-send-mail@v3
-        with:
-          server_address: smtp.gmail.com
-          server_port: 465
-          secure: true
-          username: ${{ env.GMAIL_USER }}
-          password: ${{ env.GMAIL_APP_PASSWORD }}
-          from: pubpulse <${{ env.GMAIL_USER }}>
-          to: ${{ env.DIGEST_TO }}
-          subject: ${{ steps.digest.outputs.subject }}
-          html_body: file://out/digest.html
-          body: file://out/digest.txt
+      - name: Email digest (Gmail SMTP, one mail per subscriber)
+        if: (steps.digest.outputs.new_count != '0' || inputs.force_notify) && env.GMAIL_USER != ''
+        run: python -m pubpulse send-digest
 
       - name: Post digest to Teams
         if: "!cancelled() && (steps.digest.outputs.new_count != '0' || inputs.force_notify) && env.TEAMS_WEBHOOK_URL != ''"

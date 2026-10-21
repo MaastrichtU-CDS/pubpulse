@@ -44,11 +44,12 @@ min_people_on_staff_page: 3
 digest:
   subject_prefix: "pubpulse"
   teams_max_items: 10
-  # Self-service mailing list (e.g. a Google Group or a Microsoft 365 group). pubpulse sends ONE mail to the group
-  # address (secret DIGEST_TO); members subscribe/unsubscribe themselves via these links. Leave empty to show instructions for joining via a group maintainer.
-  subscribe_url: ""
-  unsubscribe_url: ""
-  list_name: ""
+  # Subscriber list: URL of the Apps Script web app (appsscript/Code.gs) deployed under the pubpulse Gmail account.
+  # The website form posts to it; the weekly job fetches the confirmed list with the SUBSCRIBERS_KEY secret and
+  # sends one mail per subscriber with a personal unsubscribe link. Empty = no form, mail only to DIGEST_TO.
+  subscribe_endpoint: ""
+  list_name: "the pubpulse weekly list"
+  from_name: "pubpulse"
 
 feed:
   max_items: 50

@@ -81,28 +81,33 @@ Edit either file in the GitHub web editor and commit to `main`; the workflow run
 | `OPENALEX_API_KEY` | free key from https://openalex.org/settings/api. Strongly recommended: without it OpenAlex shares one small daily budget per IP address (GitHub's runners share addresses) |
 | `GMAIL_USER` | Gmail address the digest is sent from |
 | `GMAIL_APP_PASSWORD` | a Gmail [app password](https://myaccount.google.com/apppasswords) (needs 2-step verification on that account) |
-| `DIGEST_TO` | recipient(s), comma separated (a group distribution list works well) |
+| `DIGEST_TO` | optional fixed recipient(s), comma separated, in addition to the subscriber list |
+| `SUBSCRIBERS_KEY` | the SECRET printed by the Apps Script `setup` (see mailing list section) |
 | `TEAMS_WEBHOOK_URL` | URL from a Teams *Workflows* flow "Post to a channel when a webhook request is received" |
 
 A notification channel whose secret is missing is simply skipped; the site and feed always update.
 
-### Mailing list with subscribe / unsubscribe
+### Mailing list with subscribe / unsubscribe (website form)
 
-pubpulse sends one mail per week to a single address (`DIGEST_TO`). Make that address a self-service group so people
-join and leave on their own; then put the group's join/leave links in `config.yml` under `digest:` and they appear on
-the website’s prominent digest card, signup instructions and email footer. Building the site picks up changed
-mailing-list settings immediately; an OpenAlex sync is not required. Empty signup settings show honest instructions
-to contact a group maintainer instead of a nonfunctional email form.
+The website has a subscribe form (email + button). Addresses are stored **privately** in a Google Sheet under the
+pubpulse Gmail account, handled by a small Google Apps Script web app ([appsscript/Code.gs](appsscript/Code.gs)).
+Flow: subscribe → confirmation mail → click → subscribed. Every digest carries a personal unsubscribe link, and the
+form also offers "unsubscribe instead" (it mails an unsubscribe link, so nobody can remove someone else).
+The weekly job fetches the confirmed list with a secret and sends one mail per subscriber over Gmail SMTP.
 
-- **Google Group** (simplest, works with the Gmail sender): create a group at https://groups.google.com, set
-  *Who can join* to "Anyone on the web can ask to join" (or "can join"), allow posting by the sender account (add it as
-  a member), use `<group>@googlegroups.com` as `DIGEST_TO`. Subscribe link: `https://groups.google.com/g/<group>`;
-  unsubscribe: members can leave on that page or email `<group>+unsubscribe@googlegroups.com`.
-- **Microsoft 365 group / UM distribution list** (if IT prefers in-house): the owner enables self-service join in
-  Outlook and allows the external sender address, otherwise Exchange rejects the mail.
+One-time setup (about 5 minutes, logged in as the pubpulse Gmail account):
 
-Use a dedicated Gmail account (not a personal one) as sender. To test delivery without waiting for a new paper:
-*Actions → weekly → Run workflow* and tick *force_notify*.
+1. Open https://script.google.com → *New project* → replace the code with `appsscript/Code.gs` → save.
+2. *Run → setup* (grant the permissions it asks for) → *View → Logs*: copy the **SECRET** it prints.
+3. *Deploy → New deployment → type: Web app → Execute as: Me → Who has access: Anyone → Deploy*. Copy the web app URL.
+4. GitHub → Settings → Secrets: add `SUBSCRIBERS_KEY` = the SECRET.
+5. `config.yml` → `digest.subscribe_endpoint:` = the web app URL. Commit; the form appears on the site.
+
+Optional: restrict sign-ups to UM/Maastro addresses by filling `ALLOWED_DOMAINS` in `Code.gs` (then *Deploy →
+Manage deployments → edit → New version*). The Sheet link is printed by *setup*; you can look at or edit the list there.
+
+`DIGEST_TO` (optional) adds fixed recipients, e.g. a distribution list, on top of the subscribers. To test delivery
+without waiting for a new paper: *Actions → weekly → Run workflow* and tick *force_notify*.
 
 ### How a run works
 
