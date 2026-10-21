@@ -68,7 +68,9 @@
    "active": true,
    "tracked": true,
    "tracked_until": null,
-   "needs_review": false
+   "needs_review": false,
+   "scholar_id": null,
+   "orcid_openalex": "0009-0003-5286-6973"
   },
   {
    "slug": "ali-al-zein",
@@ -82,7 +84,9 @@
    "active": true,
    "tracked": true,
    "tracked_until": null,
-   "needs_review": true
+   "needs_review": true,
+   "scholar_id": null,
+   "orcid_openalex": null
   },
   {
    "slug": "ali-zaila",
@@ -96,7 +100,9 @@
    "active": true,
    "tracked": true,
    "tracked_until": null,
-   "needs_review": true
+   "needs_review": true,
+   "scholar_id": null,
+   "orcid_openalex": null
   },
   {
    "slug": "ananya-choudhury",
@@ -112,7 +118,9 @@
    "active": true,
    "tracked": true,
    "tracked_until": null,
-   "needs_review": false
+   "needs_review": false,
+   "scholar_id": "O8N8H5QAAAAJ",
+   "orcid_openalex": null
   },
   {
    "slug": "andre-dekker",
@@ -128,7 +136,9 @@
    "active": true,
    "tracked": true,
    "tracked_until": null,
-   "needs_review": false
+   "needs_review": false,
+   "scholar_id": "JKOhEfcAAAAJ",
+   "orcid_openalex": null
   },
   {
    "slug": "andrea-pradas-agujetas",
@@ -142,7 +152,9 @@
    "active": true,
    "tracked": true,
    "tracked_until": null,
-   "needs_review": true
+   "needs_review": true,
+   "scholar_id": null,
+   "orcid_openalex": null
   },
   {
    "slug": "anne-lore-bynens",
@@ -158,7 +170,9 @@
    "active": true,
    "tracked": true,
    "tracked_until": null,
-   "needs_review": false
+   "needs_review": false,
+   "scholar_id": null,
+   "orcid_openalex": null
   },
   {
    "slug": "anniek-van-hienen",
@@ -174,7 +188,9 @@
    "active": true,
    "tracked": true,
    "tracked_until": null,
-   "needs_review": false
+   "needs_review": false,
+   "scholar_id": null,
+   "orcid_openalex": null
   },
   {
    "slug": "anshu-ankolekar",
@@ -190,7 +206,9 @@
    "active": true,
    "tracked": true,
    "tracked_until": null,
-   "needs_review": false
+   "needs_review": false,
+   "scholar_id": null,
+   "orcid_openalex": null
   },
   {
    "slug": "ayesha-qayyum",
@@ -204,7 +222,9 @@
    "active": true,
    "tracked": true,
    "tracked_until": null,
-   "needs_review": true
+   "needs_review": true,
+   "scholar_id": null,
+   "orcid_openalex": null
   },
   {
    "slug": "balu-krishna-sasidharan",
@@ -218,7 +238,9 @@
    "active": true,
    "tracked": true,
    "tracked_until": null,
-   "needs_review": true
+   "needs_review": true,
+   "scholar_id": null,
+   "orcid_openalex": null
   },
   {
    "slug": "carlos-santiago-rios",
@@ -232,7 +254,9 @@
    "active": true,
    "tracked": true,
    "tracked_until": null,
-   "needs_review": true
+   "needs_review": true,
+   "scholar_id": null,
+   "orcid_openalex": null
   },
   {
    "slug": "cecile-wolfs",
@@ -248,7 +272,9 @@
    "active": true,
    "tracked": true,
    "tracked_until": null,
-   "needs_review": false
+   "needs_review": false,
+   "scholar_id": "yq78swYAAAAJ",
+   "orcid_openalex": null
   },
   {
    "slug": "daniel-slob",
@@ -262,7 +288,9 @@
    "active": true,
    "tracked": true,
    "tracked_until": null,
-   "needs_review": true
+   "needs_review": true,
+   "scholar_id": null,
+   "orcid_openalex": null
   },
   {
    "slug": "ekatarina-kondrateva",
@@ -276,7 +304,9 @@
    "active": true,
    "tracked": true,
    "tracked_until": null,
-   "needs_review": true
+   "needs_review": true,
+   "scholar_id": null,
+   "orcid_openalex": null
   },
   {
    "slug": "ekaterina-akhmad",
@@ -290,7 +320,9 @@
    "active": true,
    "tracked": true,
    "tracked_until": null,
-   "needs_review": true
+   "needs_review": true,
+   "scholar_id": null,
+   "orcid_openalex": null
   },
   {
    "slug": "elif-sevim",
@@ -304,7 +336,9 @@
    "active": true,
    "tracked": true,
    "tracked_until": null,
-   "needs_review": true
+   "needs_review": true,
+   "scholar_id": null,
+   "orcid_openalex": null
   },
   {
    "slug": "en-hu",
@@ -318,7 +352,9 @@
    "active": true,
    "tracked": true,
    "tracked_until": null,
-   "needs_review": true
+   "needs_review": true,
+   "scholar_id": null,
+   "orcid_openalex": null
   },
   {
    "slug": "farshad-jafarpour",
@@ -332,7 +368,9 @@
    "active": true,
    "tracked": true,
    "tracked_until": null,
-   "needs_review": true
+   "needs_review": true,
+   "scholar_id": null,
+   "orcid_openalex": null
   },
   {
    "slug": "fiona-zegwaard-gelink",
@@ -346,7 +384,9 @@
    "active": true,
    "tracked": true,
    "tracked_until": null,
-   "needs_review": true
+   "needs_review": true,
+   "scholar_id": null,
+   "orcid_openalex": null
   },
   {
    "slug": "frederik-behets",
@@ -360,7 +400,9 @@
    "active": true,
    "tracked": true,
    "tracked_until": null,
-   "needs_review": true
+   "needs_review": true,
+   "scholar_id": null,
+   "orcid_openalex": null
   },
   {
    "slug": "gleb-tsikhanovich",
@@ -374,7 +416,9 @@
    "active": true,
    "tracked": true,
    "tracked_until": null,
-   "needs_review": true
+   "needs_review": true,
+   "scholar_id": null,
+   "orcid_openalex": null
   },
   {
    "slug": "hannah-mary-thomas",
@@ -388,7 +432,9 @@
    "active": true,
    "tracked": true,
    "tracked_until": null,
-   "needs_review": true
+   "needs_review": true,
+   "scholar_id": null,
+   "orcid_openalex": null
   },
   {
    "slug": "hannah-piehl",
@@ -404,7 +450,9 @@
    "active": true,
    "tracked": true,
    "tracked_until": null,
-   "needs_review": false
+   "needs_review": false,
+   "scholar_id": null,
+   "orcid_openalex": "0009-0005-1982-3909"
   },
   {
    "slug": "ivan-zhovannik",
@@ -420,7 +468,9 @@
    "active": true,
    "tracked": true,
    "tracked_until": null,
-   "needs_review": false
+   "needs_review": false,
+   "scholar_id": null,
+   "orcid_openalex": "0000-0001-5649-6648"
   },
   {
    "slug": "jiaxu-zhang",
@@ -434,7 +484,9 @@
    "active": true,
    "tracked": true,
    "tracked_until": null,
-   "needs_review": true
+   "needs_review": true,
+   "scholar_id": null,
+   "orcid_openalex": null
   },
   {
    "slug": "jikai-zhou",
@@ -450,7 +502,9 @@
    "active": true,
    "tracked": true,
    "tracked_until": null,
-   "needs_review": false
+   "needs_review": false,
+   "scholar_id": null,
+   "orcid_openalex": "0000-0002-5192-4532"
   },
   {
    "slug": "johan-van-soest",
@@ -466,7 +520,9 @@
    "active": true,
    "tracked": true,
    "tracked_until": null,
-   "needs_review": false
+   "needs_review": false,
+   "scholar_id": "zemi8wYAAAAJ",
+   "orcid_openalex": null
   },
   {
    "slug": "joshi-hogenboom",
@@ -482,7 +538,9 @@
    "active": true,
    "tracked": true,
    "tracked_until": null,
-   "needs_review": false
+   "needs_review": false,
+   "scholar_id": null,
+   "orcid_openalex": null
   },
   {
    "slug": "karlien-schmeetz",
@@ -496,7 +554,9 @@
    "active": true,
    "tracked": true,
    "tracked_until": null,
-   "needs_review": true
+   "needs_review": true,
+   "scholar_id": null,
+   "orcid_openalex": null
   },
   {
    "slug": "leonard-nurnberg",
@@ -512,7 +572,9 @@
    "active": true,
    "tracked": true,
    "tracked_until": null,
-   "needs_review": false
+   "needs_review": false,
+   "scholar_id": null,
+   "orcid_openalex": "0000-0001-6544-4268"
   },
   {
    "slug": "leonard-wee",
@@ -528,7 +590,9 @@
    "active": true,
    "tracked": true,
    "tracked_until": null,
-   "needs_review": false
+   "needs_review": false,
+   "scholar_id": "hlhktjoAAAAJ",
+   "orcid_openalex": null
   },
   {
    "slug": "leroy-volmer",
@@ -544,7 +608,9 @@
    "active": true,
    "tracked": true,
    "tracked_until": null,
-   "needs_review": false
+   "needs_review": false,
+   "scholar_id": null,
+   "orcid_openalex": "0009-0001-4978-4024"
   },
   {
    "slug": "madeline-therrien",
@@ -560,7 +626,9 @@
    "active": true,
    "tracked": true,
    "tracked_until": null,
-   "needs_review": false
+   "needs_review": false,
+   "scholar_id": null,
+   "orcid_openalex": "0009-0001-0466-0722"
   },
   {
    "slug": "marine-jacquemin",
@@ -576,7 +644,9 @@
    "active": true,
    "tracked": true,
    "tracked_until": null,
-   "needs_review": false
+   "needs_review": false,
+   "scholar_id": null,
+   "orcid_openalex": "0009-0006-1221-7022"
   },
   {
    "slug": "martijn-hector",
@@ -590,7 +660,9 @@
    "active": true,
    "tracked": true,
    "tracked_until": null,
-   "needs_review": true
+   "needs_review": true,
+   "scholar_id": null,
+   "orcid_openalex": null
   },
   {
    "slug": "matthijs-sloep",
@@ -606,7 +678,9 @@
    "active": true,
    "tracked": true,
    "tracked_until": null,
-   "needs_review": false
+   "needs_review": false,
+   "scholar_id": null,
+   "orcid_openalex": null
   },
   {
    "slug": "meltem-isik",
@@ -620,7 +694,9 @@
    "active": true,
    "tracked": true,
    "tracked_until": null,
-   "needs_review": true
+   "needs_review": true,
+   "scholar_id": null,
+   "orcid_openalex": null
   },
   {
    "slug": "meng-zhou",
@@ -634,7 +710,9 @@
    "active": true,
    "tracked": true,
    "tracked_until": null,
-   "needs_review": true
+   "needs_review": true,
+   "scholar_id": null,
+   "orcid_openalex": null
   },
   {
    "slug": "minghua-li",
@@ -648,7 +726,9 @@
    "active": true,
    "tracked": true,
    "tracked_until": null,
-   "needs_review": true
+   "needs_review": true,
+   "scholar_id": null,
+   "orcid_openalex": null
   },
   {
    "slug": "monique-roos-koekkelkoren",
@@ -662,7 +742,9 @@
    "active": true,
    "tracked": true,
    "tracked_until": null,
-   "needs_review": true
+   "needs_review": true,
+   "scholar_id": null,
+   "orcid_openalex": null
   },
   {
    "slug": "petros-kalendralis",
@@ -678,7 +760,9 @@
    "active": true,
    "tracked": true,
    "tracked_until": null,
-   "needs_review": false
+   "needs_review": false,
+   "scholar_id": "_iOPG9oAAAAJ",
+   "orcid_openalex": null
   },
   {
    "slug": "petros-koutsouvelis",
@@ -694,7 +778,9 @@
    "active": true,
    "tracked": true,
    "tracked_until": null,
-   "needs_review": false
+   "needs_review": false,
+   "scholar_id": null,
+   "orcid_openalex": "0009-0002-3020-0030"
   },
   {
    "slug": "prabash-darshanapriya-galgane-banduge",
@@ -708,7 +794,9 @@
    "active": true,
    "tracked": true,
    "tracked_until": null,
-   "needs_review": true
+   "needs_review": true,
+   "scholar_id": null,
+   "orcid_openalex": null
   },
   {
    "slug": "ralph-brecheisen",
@@ -724,7 +812,9 @@
    "active": true,
    "tracked": true,
    "tracked_until": null,
-   "needs_review": false
+   "needs_review": false,
+   "scholar_id": null,
+   "orcid_openalex": null
   },
   {
    "slug": "rianne-fijten",
@@ -740,7 +830,9 @@
    "active": true,
    "tracked": true,
    "tracked_until": null,
-   "needs_review": false
+   "needs_review": false,
+   "scholar_id": "_q5Rkg0AAAAJ",
+   "orcid_openalex": null
   },
   {
    "slug": "rutger-van-mierlo",
@@ -754,7 +846,9 @@
    "active": true,
    "tracked": true,
    "tracked_until": null,
-   "needs_review": true
+   "needs_review": true,
+   "scholar_id": null,
+   "orcid_openalex": null
   },
   {
    "slug": "sander-puts",
@@ -770,7 +864,9 @@
    "active": true,
    "tracked": true,
    "tracked_until": null,
-   "needs_review": false
+   "needs_review": false,
+   "scholar_id": "NxRF8PIAAAAJ",
+   "orcid_openalex": null
   },
   {
    "slug": "shreya-anand",
@@ -784,7 +880,9 @@
    "active": true,
    "tracked": true,
    "tracked_until": null,
-   "needs_review": true
+   "needs_review": true,
+   "scholar_id": null,
+   "orcid_openalex": null
   },
   {
    "slug": "simone-mingels",
@@ -800,7 +898,9 @@
    "active": true,
    "tracked": true,
    "tracked_until": null,
-   "needs_review": false
+   "needs_review": false,
+   "scholar_id": null,
+   "orcid_openalex": null
   },
   {
    "slug": "tafadzwa-chaunzwa",
@@ -814,7 +914,9 @@
    "active": true,
    "tracked": true,
    "tracked_until": null,
-   "needs_review": true
+   "needs_review": true,
+   "scholar_id": null,
+   "orcid_openalex": null
   },
   {
    "slug": "thijs-ackermans",
@@ -828,7 +930,9 @@
    "active": true,
    "tracked": true,
    "tracked_until": null,
-   "needs_review": true
+   "needs_review": true,
+   "scholar_id": null,
+   "orcid_openalex": null
   },
   {
    "slug": "tim-hendriks",
@@ -844,7 +948,9 @@
    "active": true,
    "tracked": true,
    "tracked_until": null,
-   "needs_review": false
+   "needs_review": false,
+   "scholar_id": null,
+   "orcid_openalex": "0000-0003-2922-2953"
   },
   {
    "slug": "umesh-kumar-baburao-sherkhane",
@@ -860,7 +966,9 @@
    "active": true,
    "tracked": true,
    "tracked_until": null,
-   "needs_review": false
+   "needs_review": false,
+   "scholar_id": "7xCEnUoAAAAJ",
+   "orcid_openalex": null
   },
   {
    "slug": "varnita-mathur",
@@ -874,7 +982,9 @@
    "active": true,
    "tracked": true,
    "tracked_until": null,
-   "needs_review": true
+   "needs_review": true,
+   "scholar_id": null,
+   "orcid_openalex": null
   },
   {
    "slug": "vikram-baliga",
@@ -888,7 +998,9 @@
    "active": true,
    "tracked": true,
    "tracked_until": null,
-   "needs_review": true
+   "needs_review": true,
+   "scholar_id": null,
+   "orcid_openalex": null
   },
   {
    "slug": "wenjie-liang",
@@ -904,7 +1016,9 @@
    "active": true,
    "tracked": true,
    "tracked_until": null,
-   "needs_review": false
+   "needs_review": false,
+   "scholar_id": null,
+   "orcid_openalex": "0000-0002-2741-8285"
   },
   {
    "slug": "xuanhe-hou",
@@ -920,7 +1034,9 @@
    "active": true,
    "tracked": true,
    "tracked_until": null,
-   "needs_review": false
+   "needs_review": false,
+   "scholar_id": null,
+   "orcid_openalex": null
   },
   {
    "slug": "yang-yao",
@@ -934,7 +1050,9 @@
    "active": true,
    "tracked": true,
    "tracked_until": null,
-   "needs_review": true
+   "needs_review": true,
+   "scholar_id": null,
+   "orcid_openalex": null
   },
   {
    "slug": "yemu-katanda",
@@ -948,7 +1066,9 @@
    "active": true,
    "tracked": true,
    "tracked_until": null,
-   "needs_review": true
+   "needs_review": true,
+   "scholar_id": null,
+   "orcid_openalex": null
   },
   {
    "slug": "yomi-okegunna",
@@ -964,7 +1084,9 @@
    "active": true,
    "tracked": true,
    "tracked_until": null,
-   "needs_review": false
+   "needs_review": false,
+   "scholar_id": null,
+   "orcid_openalex": null
   }
  ],
  "works": [

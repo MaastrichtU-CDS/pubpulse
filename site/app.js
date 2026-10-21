@@ -98,6 +98,42 @@
   const nameOf = (slug) => (data.peopleBySlug[slug] || {}).name || slug;
   const fmtType = (t) => (t || "").replace(/-/g, " ");
 
+  function authorProfileLinks(person) {
+    if (!person) return "";
+    const links = [];
+    const orcid = String(
+      person.orcid || (!person.needs_review && person.orcid_openalex) || "",
+    )
+      .trim()
+      .replace(/^https?:\/\/(?:www\.)?orcid\.org\//i, "")
+      .replace(/\/$/, "")
+      .toUpperCase();
+    const scholar = String(person.scholar_id || "").trim();
+    const profileLink = (provider, id, url, note = "") =>
+      `<a href="${esc(url)}" target="_blank" rel="noopener" aria-label="${esc(person.name)} on ${provider}: ${esc(id)}${note ? " (" + esc(note) + ")" : ""}" title="${provider}: ${esc(id)}${note ? " · " + esc(note) : ""}"><span class="profile-provider">${provider}</span><span class="profile-id">${esc(id)}</span><span aria-hidden="true">↗</span></a>`;
+    if (/^\d{4}-\d{4}-\d{4}-\d{3}[\dX]$/.test(orcid))
+      links.push(
+        profileLink(
+          "ORCID",
+          orcid,
+          "https://orcid.org/" + orcid,
+          person.orcid ? "" : "reported by OpenAlex",
+        ),
+      );
+    if (/^[A-Za-z0-9_-]{6,64}$/.test(scholar))
+      links.push(
+        profileLink(
+          "Google Scholar",
+          scholar,
+          "https://scholar.google.com/citations?user=" +
+            encodeURIComponent(scholar),
+        ),
+      );
+    return links.length
+      ? `<span class="author-profile-links">${links.join("")}</span>`
+      : "";
+  }
+
   function fillSelect(el, values, current) {
     const first = el.options[0];
     el.innerHTML = "";
@@ -538,10 +574,10 @@
     els.people.innerHTML = people
       .map(
         (p) => `
-      <label class="${p.active ? "" : "inactive"}" title="${p.active ? "" : p.tracked ? "left the group; papers with a group affiliation still counted until " + p.tracked_until : "no longer in the group"}">
+      <div class="person-row"><label class="${p.active ? "" : "inactive"}" title="${p.active ? "" : p.tracked ? "left the group; papers with a group affiliation still counted until " + p.tracked_until : "no longer in the group"}">
         <input type="checkbox" value="${esc(p.slug)}" ${state.people.includes(p.slug) ? "checked" : ""}>
         ${esc(p.name)} <span class="n">${counts[p.slug] || 0}</span>
-      </label>`,
+      </label>${authorProfileLinks(p)}</div>`,
       )
       .join("");
     els.people.querySelectorAll("input").forEach((cb) =>
@@ -728,9 +764,9 @@
             : st === "mismatch"
               ? " <span class='badge warn' title='other affiliation on this paper'>other affil.</span>"
               : " <span class='badge warn' title='no affiliation recorded by OpenAlex'>no affil.</span>";
-        return `<button class="link" data-person="${esc(s)}" title="${esc(affs || "no affiliation recorded by OpenAlex")}"><b>${esc(nameOf(s))}</b>${mark}</button>`;
+        return `<li><button class="link" data-person="${esc(s)}" title="${esc(affs || "no affiliation recorded by OpenAlex")}"><b>${esc(nameOf(s))}</b>${mark}</button>${authorProfileLinks(data.peopleBySlug[s])}</li>`;
       })
-      .join(", ");
+      .join("");
     const authorCount = w.author_count || w.authors.length;
     const normalizeName = (name) =>
       String(name)
@@ -767,7 +803,7 @@
       <div class="publication-top"><span class="journal-name">${esc(w.journal || "Research publication")}</span><span class="badges">${isNew ? '<span class="badge new">new</span>' : ""}${w.manual === "confirmed" ? '<span class="badge oa">confirmed</span>' : w.verified ? "" : '<span class="badge warn">unverified</span>'}${w.is_oa ? '<span class="badge oa">open access</span>' : ""}</span></div>
       <h3><a href="${esc(link)}" target="_blank" rel="noopener">${esc(w.title)}</a></h3>
       <div class="meta">${meta}</div>
-      <div class="authors">Group: ${members}</div>
+      <div class="authors group-authors"><span class="group-author-label">CDS authors</span><ul class="group-author-list">${members}</ul></div>
       <div class="authors authors-full"><span class="author-list-label">Authors (${authorCount}):</span> ${authors}${incomplete ? ` <span class="author-list-note">· ${w.authors.length} names available in OpenAlex</span>` : ""}</div>
       ${w.abstract ? `<details><summary>Abstract</summary><p>${esc(w.abstract)}</p></details>` : ""}
       <div class="links">${w.doi ? `<a href="${esc(w.doi)}" target="_blank" rel="noopener">DOI ↗</a>` : ""}${w.oa_url ? `<a href="${esc(w.oa_url)}" target="_blank" rel="noopener">Full text ↗</a>` : ""}<a href="${esc(w.openalex_url)}" target="_blank" rel="noopener">OpenAlex ↗</a><span class="meta work-id" title="use this id in overrides.yml">${esc(w.id)}</span></div>
