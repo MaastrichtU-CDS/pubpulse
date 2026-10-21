@@ -196,7 +196,14 @@ def run(config_path: Path | None = None) -> dict:
         shutil.rmtree(DIST_DIR)
     shutil.copytree(SITE_DIR, DIST_DIR)
     (DIST_DIR / "data").mkdir()
-    shutil.copy(DATA_DIR / "publications.json", DIST_DIR / "data" / "publications.json")
+    # Mailing-list settings may change between syncs; publish the current configuration.
+    site_pubs = {
+        **pubs,
+        "list": {k: (cfg.get("digest") or {}).get(k) or "" for k in ("subscribe_url", "unsubscribe_url", "list_name")},
+    }
+    (DIST_DIR / "data" / "publications.json").write_text(
+        json.dumps(site_pubs, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
+    )
     shutil.copy(DATA_DIR / "feed.xml", DIST_DIR / "feed.xml")
     (DIST_DIR / ".nojekyll").write_text("")
     print(f"built dist/ ({len(pubs.get('works', []))} works), out/digest.html, out/teams.json; new this run: {digest['new_count']}")

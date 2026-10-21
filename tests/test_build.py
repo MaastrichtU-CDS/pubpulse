@@ -42,3 +42,37 @@ def test_digest_baseline_sends_nothing():
     pubs = _pubs(5)
     pubs["last_run"]["baseline"] = True
     assert build_digest(pubs, CFG)["new_count"] == 0
+
+
+def test_site_build_uses_current_mailing_list_settings(tmp_path, monkeypatch):
+    import json
+    from pubpulse import build
+
+    site = tmp_path / "site"
+    site.mkdir()
+    (site / "index.html").write_text("<!doctype html><title>pubpulse</title>")
+    assets = site / "assets"
+    assets.mkdir()
+    (assets / "pubpulse.svg").write_text('<svg xmlns="http://www.w3.org/2000/svg"/>')
+    data = tmp_path / "data"
+    data.mkdir()
+    pubs = _pubs(0)
+    pubs["list"] = {"subscribe_url": "https://example.org/old-list"}
+    monkeypatch.setattr(build, "SITE_DIR", site)
+    monkeypatch.setattr(build, "DATA_DIR", data)
+    monkeypatch.setattr(build, "DIST_DIR", tmp_path / "dist")
+    monkeypatch.setattr(build, "OUT_DIR", tmp_path / "out")
+    monkeypatch.setattr(build, "load_publications", lambda: pubs)
+
+    # A config-only change must work without fetching publications again.
+    for digest in [
+        {"subscribe_url": "https://example.org/join", "unsubscribe_url": "https://example.org/leave", "list_name": "CDS digest"},
+        {},
+    ]:
+        monkeypatch.setattr(build, "load_config", lambda: {**CFG, "digest": digest})
+        build.run()
+        result = json.loads((build.DIST_DIR / "data" / "publications.json").read_text())
+        assert result["list"] == {key: digest.get(key, "") for key in ("subscribe_url", "unsubscribe_url", "list_name")}
+        assert result["works"] == pubs["works"]
+        assert (build.DIST_DIR / "assets" / "pubpulse.svg").exists()
+    assert pubs["list"]["subscribe_url"] == "https://example.org/old-list"

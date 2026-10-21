@@ -1,89 +1,391 @@
 <!doctype html>
 <html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>pubpulse · publications</title>
-<link rel="stylesheet" href="style.css">
-<link rel="alternate" type="application/atom+xml" title="New publications" href="feed.xml">
-</head>
-<body>
-<header class="top">
-  <div class="wrap">
-    <h1><span class="logo">pubpulse</span> <span id="group-name"></span></h1>
-    <p class="sub">Weekly overview of publications by group members, from <a href="https://openalex.org" target="_blank" rel="noopener">OpenAlex</a>.
-      <span id="updated"></span> · <span id="list-links"></span><a href="feed.xml">RSS feed</a> · <a id="repo-link" href="#" target="_blank" rel="noopener">source</a></p>
-  </div>
-</header>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#102d38" />
+    <meta
+      name="description"
+      content="Discover the latest publications from Clinical Data Science at Maastro, Maastricht University and Maastricht UMC+. Explore the research and follow the weekly digest."
+    />
+    <title>pubpulse · Clinical Data Science publications</title>
+    <link rel="icon" type="image/svg+xml" href="assets/pubpulse.svg" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="alternate"
+      type="application/atom+xml"
+      title="New publications"
+      href="feed.xml"
+    />
+  </head>
+  <body>
+    <a class="skip-link" href="#publications">Skip to publications</a>
+    <header class="top">
+      <div class="wrap nav">
+        <a class="brand" href="./" aria-label="pubpulse home"
+          ><img src="assets/pubpulse.svg" width="36" height="36" alt="" /><span
+            >pub<span class="brand-light">pulse</span
+            ><small>CLINICAL DATA SCIENCE</small></span
+          ></a
+        >
+        <nav aria-label="Main navigation">
+          <a href="#publications">Publications</a>
+          <a
+            href="https://www.clinicaldatascience.nl/"
+            target="_blank"
+            rel="noopener"
+            class="about-link"
+            >About CDS <span aria-hidden="true">↗</span></a
+          >
+          <button class="button button-small" type="button" data-open-digest>
+            Get the weekly digest <span aria-hidden="true">↗</span>
+          </button>
+        </nav>
+      </div>
+    </header>
 
-<main class="wrap layout">
-  <aside class="filters" id="filters">
-    <div class="filter">
-      <label for="q">Search</label>
-      <input id="q" type="search" placeholder="title, author, journal…" autocomplete="off">
-    </div>
-    <div class="filter">
-      <label for="when">Period</label>
-      <select id="when">
-        <option value="">Any time</option>
-        <option value="week">New this week (added by the last run)</option>
-        <option value="30d">Published in the last 30 days</option>
-        <option value="90d">Published in the last 90 days</option>
-        <option value="12m">Published in the last 12 months</option>
-        <option value="year">Published this year</option>
-      </select>
-    </div>
-    <div class="filter row">
-      <label class="check"><input type="checkbox" id="only-oa"> Open access</label>
-    </div>
-    <div class="filter">
-      <label for="year">Year</label>
-      <select id="year"><option value="">All years</option></select>
-    </div>
-    <div class="filter">
-      <label for="type">Type</label>
-      <select id="type"><option value="">All types</option></select>
-    </div>
-    <div class="filter">
-      <label for="journal">Journal / source</label>
-      <select id="journal"><option value="">All sources</option></select>
-    </div>
-    <div class="filter">
-      <label for="verify">Group affiliation</label>
-      <select id="verify">
-        <option value="">All papers</option>
-        <option value="verified">Verified only</option>
-        <option value="unverified">Unverified only (needs a check)</option>
-      </select>
-    </div>
-    <div class="filter">
-      <label for="sort">Sort</label>
-      <select id="sort">
-        <option value="date">Newest first</option>
-        <option value="added">Recently added</option>
-        <option value="cited">Most cited</option>
-      </select>
-    </div>
-    <div class="filter">
-      <div class="label-row"><label>People</label> <button class="link" id="clear-people" type="button">clear</button></div>
-      <input id="people-q" type="search" placeholder="filter names…" class="small" autocomplete="off">
-      <div id="people" class="people"></div>
-    </div>
-    <div id="attention" class="attention hidden"></div>
-    <button class="link" id="reset" type="button">Reset all filters</button>
-  </aside>
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="wrap hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">
+            <span class="status-dot"></span> THE CLINICAL DATA SCIENCE RESEARCH
+            DIGEST
+          </p>
+          <h1 id="hero-title">
+            Research moves forward.<br /><em>Stay in the loop.</em>
+          </h1>
+          <p class="hero-description">
+            The latest publications from our people, all in one place. Explore
+            the work shaping clinical data science at Maastro and Maastricht.
+          </p>
+          <a class="text-link" href="#publications"
+            >Explore the publications <span aria-hidden="true">↓</span></a
+          >
+          <div class="hero-metrics" aria-label="Publication overview">
+            <div>
+              <strong id="total-publications">—</strong
+              ><span>publications</span>
+            </div>
+            <div>
+              <strong id="total-researchers">—</strong
+              ><span>group members</span>
+            </div>
+            <div>
+              <strong id="total-open">—</strong><span>open access</span>
+            </div>
+          </div>
+        </div>
+        <aside class="digest-card" aria-labelledby="digest-heading">
+          <div class="digest-card-top">
+            <span class="envelope" aria-hidden="true"
+              ><svg viewBox="0 0 32 32" fill="none">
+                <rect x="4" y="7" width="24" height="18" rx="3" />
+                <path d="m5 9 11 8L27 9M5 24l8-9m14 9-8-9" /></svg></span
+            ><span class="edition">YOUR MONDAY READING LIST</span>
+          </div>
+          <h2 id="digest-heading">
+            A little less searching.<br /><em>A little more discovery.</em>
+          </h2>
+          <p>
+            New papers from the CDS group, delivered to your inbox in one weekly
+            email.
+          </p>
+          <ul class="digest-benefits">
+            <li>Every Monday, when there’s something new</li>
+            <li>Direct links to papers and full text</li>
+            <li>One digest. No daily notifications.</li>
+          </ul>
+          <button type="button" class="button button-dark" data-open-digest>
+            Join the mailing list <span aria-hidden="true">↗</span>
+          </button>
+          <p class="digest-note" id="digest-note">
+            Ask a group maintainer to add you to the list.
+          </p>
+          <div class="digest-alternative">
+            Prefer a feed reader?
+            <a href="feed.xml"
+              >Follow via RSS <span aria-hidden="true">↗</span></a
+            >
+          </div>
+        </aside>
+      </div>
+      <div
+        class="wrap institutions"
+        aria-label="Clinical Data Science institutions"
+      >
+        <a
+          href="https://www.clinicaldatascience.nl/"
+          target="_blank"
+          rel="noopener"
+          class="cds-logo"
+          ><img
+            src="assets/cds.svg"
+            alt="Clinical Data Science"
+            width="150"
+            height="75"
+        /></a>
+        <span class="institution-divider" aria-hidden="true"></span>
+        <a href="https://www.maastro.nl/" target="_blank" rel="noopener"
+          ><img src="assets/maastro.svg" alt="Maastro" width="114" height="24"
+        /></a>
+        <a
+          href="https://www.maastrichtuniversity.nl/"
+          target="_blank"
+          rel="noopener"
+          ><img
+            src="assets/maastricht-university.svg"
+            alt="Maastricht University"
+            width="256"
+            height="39"
+        /></a>
+        <a href="https://www.mumc.nl/" target="_blank" rel="noopener"
+          ><img
+            src="assets/maastricht-umc.svg"
+            alt="Maastricht UMC+"
+            width="204"
+            height="37"
+        /></a>
+      </div>
+    </section>
 
-  <section class="results">
-    <div class="stats"><span id="count"></span> <span id="active-chips"></span></div>
-    <ol id="list" class="list"></ol>
-    <p id="empty" class="empty hidden">No publications match these filters.</p>
-  </section>
-</main>
+    <main class="wrap library" id="publications" tabindex="-1">
+      <div class="library-heading">
+        <div>
+          <p class="eyebrow">THE PUBLICATION LIBRARY</p>
+          <h2>Ideas into impact.</h2>
+        </div>
+        <p class="updated">
+          <span class="status-dot"></span
+          ><span id="updated">Loading latest research…</span>
+        </p>
+      </div>
+      <div class="layout">
+        <aside class="filters" id="filters" aria-label="Publication filters">
+          <div class="filter-heading">
+            <h3>Refine your reading</h3>
+            <button class="link" id="reset" type="button">Reset all</button>
+          </div>
+          <div class="filter search-filter">
+            <label for="q">Search publications</label
+            ><input
+              id="q"
+              type="search"
+              placeholder="Title, author or journal…"
+              autocomplete="off"
+            />
+          </div>
+          <div class="filter">
+            <label for="when">Period</label
+            ><select id="when">
+              <option value="">Any time</option>
+              <option value="week">New in the latest update</option>
+              <option value="30d">Published in the last 30 days</option>
+              <option value="90d">Published in the last 90 days</option>
+              <option value="12m">Published in the last 12 months</option>
+              <option value="year">Published this year</option>
+            </select>
+          </div>
+          <div class="filter row">
+            <label class="check"
+              ><input type="checkbox" id="only-oa" /> Open access only</label
+            >
+          </div>
+          <div class="filter-pair">
+            <div class="filter">
+              <label for="year">Year</label
+              ><select id="year">
+                <option value="">All years</option>
+              </select>
+            </div>
+            <div class="filter">
+              <label for="type">Type</label
+              ><select id="type">
+                <option value="">All types</option>
+              </select>
+            </div>
+          </div>
+          <div class="filter">
+            <label for="journal">Journal / source</label
+            ><select id="journal">
+              <option value="">All sources</option>
+            </select>
+          </div>
+          <div class="filter">
+            <label for="verify">Group affiliation</label
+            ><select id="verify">
+              <option value="">All papers</option>
+              <option value="verified">Verified only</option>
+              <option value="unverified">
+                Unverified only (needs a check)
+              </option>
+            </select>
+          </div>
+          <div class="filter people-filter">
+            <div class="label-row">
+              <label for="people-q">Group members</label
+              ><button class="link" id="clear-people" type="button">
+                Clear
+              </button>
+            </div>
+            <input
+              id="people-q"
+              type="search"
+              placeholder="Find a researcher…"
+              class="small"
+              autocomplete="off"
+            />
+            <div
+              id="people"
+              class="people"
+              role="group"
+              aria-label="Filter by group member"
+            ></div>
+          </div>
+          <div id="attention" class="attention hidden"></div>
+        </aside>
+        <section class="results" aria-label="Publications">
+          <div class="results-toolbar">
+            <p id="count" role="status" aria-live="polite">
+              Loading publications…
+            </p>
+            <div class="sort-control">
+              <label for="sort">Sort by</label
+              ><select id="sort">
+                <option value="date">Newest first</option>
+                <option value="added">Recently added</option>
+                <option value="cited">Most cited</option>
+              </select>
+            </div>
+          </div>
+          <div id="active-chips" class="active-chips"></div>
+          <ol id="list" class="list"></ol>
+          <div id="empty" class="empty hidden">
+            <h3>No papers found, yet.</h3>
+            <p>
+              Try a different search or reset the filters to explore all
+              publications.
+            </p>
+          </div>
+          <noscript
+            ><p>
+              Enable JavaScript to search and filter publications, or
+              <a href="feed.xml">browse the RSS feed</a>.
+            </p></noscript
+          >
+        </section>
+      </div>
+    </main>
 
-<footer class="wrap foot">
-  <p>Data: OpenAlex (CC0). Group affiliation is checked per author against the affiliations OpenAlex records for that paper; papers without a verified group affiliation are marked <span class="badge warn">unverified</span>.
-  Missing a paper? Make sure it carries the author's ORCID at the publisher, or add it to the ORCID record.</p>
-</footer>
-<script src="app.js"></script>
-</body>
+    <section class="follow-strip">
+      <div class="wrap follow-inner">
+        <div>
+          <p class="eyebrow">KEEP YOUR CURIOSITY CURRENT</p>
+          <h2>The next paper could spark your next idea.</h2>
+          <p>Let the weekly CDS digest bring the latest research to you.</p>
+        </div>
+        <button class="button button-dark" type="button" data-open-digest>
+          Get the weekly digest <span aria-hidden="true">↗</span>
+        </button>
+      </div>
+    </section>
+    <footer class="wrap foot">
+      <div class="foot-top">
+        <a class="brand" href="./"
+          ><img src="assets/pubpulse.svg" width="30" height="30" alt="" /><span
+            >pub<span class="brand-light">pulse</span></span
+          ></a
+        >
+        <p id="group-name">
+          Clinical Data Science · Maastro / Maastricht University
+        </p>
+        <div class="footer-links">
+          <a href="feed.xml">RSS feed ↗</a
+          ><a
+            id="repo-link"
+            href="https://github.com/MaastrichtU-CDS/pubpulse"
+            target="_blank"
+            rel="noopener"
+            >View source ↗</a
+          ><a
+            id="unsubscribe-link"
+            class="hidden"
+            target="_blank"
+            rel="noopener"
+            >Unsubscribe ↗</a
+          >
+        </div>
+      </div>
+      <p class="data-note">
+        Publication data from
+        <a href="https://openalex.org" target="_blank" rel="noopener"
+          >OpenAlex</a
+        >
+        (CC0). Group affiliations are checked per author; papers without a
+        verified group affiliation are marked
+        <span class="badge warn">unverified</span>. Missing a paper? Make sure
+        the publisher has the author’s ORCID, or add the paper to the ORCID
+        record.
+      </p>
+    </footer>
+
+    <dialog
+      id="digest-dialog"
+      aria-labelledby="join-title"
+      aria-describedby="join-description"
+    >
+      <button
+        type="button"
+        class="dialog-close"
+        id="close-digest"
+        aria-label="Close mailing list instructions"
+      >
+        ×
+      </button>
+      <span class="dialog-icon" aria-hidden="true">↗</span>
+      <p class="eyebrow">THE PUBPULSE WEEKLY DIGEST</p>
+      <h2 id="join-title">Your next good read<br />starts here.</h2>
+      <p id="join-description">
+        Get new Clinical Data Science papers in one email, every Monday when
+        there is something new.
+      </p>
+      <ol class="join-steps" id="join-steps">
+        <li>
+          <span>01</span>
+          <div>
+            <strong>Ask a CDS group maintainer</strong>
+            <p>
+              Request to join the pubpulse weekly mailing list and share the
+              email address you want to use.
+            </p>
+          </div>
+        </li>
+        <li>
+          <span>02</span>
+          <div>
+            <strong>Look out for the next digest</strong>
+            <p>
+              Once you’ve been added, new papers arrive in your inbox on
+              Mondays. No email is sent when there’s nothing new.
+            </p>
+          </div>
+        </li>
+      </ol>
+      <a
+        class="button button-dark"
+        id="join-action"
+        href="https://www.clinicaldatascience.nl/staff"
+        target="_blank"
+        rel="noopener"
+        >Find the CDS team <span aria-hidden="true">↗</span></a
+      >
+      <p class="join-note" id="join-note">
+        Self-service signup is not available yet. To leave the list, contact a
+        group maintainer.
+      </p>
+      <p class="dialog-rss">
+        You can also <a href="feed.xml">follow publications via RSS</a>.
+      </p>
+    </dialog>
+    <script src="app.js"></script>
+  </body>
 </html>

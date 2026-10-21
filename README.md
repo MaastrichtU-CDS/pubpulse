@@ -48,7 +48,10 @@ Reject it in `overrides.yml` (see above). If it keeps happening, ask a maintaine
 `people.yml`, or add your ORCID to the staff profile.
 
 **I want the digest / to stop it.**
-The digest goes to one group address. Ask a maintainer to change the `DIGEST_TO` secret.
+On the website, choose **Join the mailing list** or **Get the weekly digest**. If self-service signup is
+configured, follow the link and complete the list provider’s joining steps. Otherwise, ask a CDS group maintainer to
+add your email address to the group mailing list. The digest arrives on Mondays, only when there are new papers.
+To leave, use the website’s **Unsubscribe** link when available, or contact a maintainer.
 
 **Can I follow the RSS feed?**
 Yes, but not in most Outlooks any more: the new Outlook for Windows and Outlook for Mac have no RSS support; only
@@ -87,7 +90,9 @@ A notification channel whose secret is missing is simply skipped; the site and f
 
 pubpulse sends one mail per week to a single address (`DIGEST_TO`). Make that address a self-service group so people
 join and leave on their own; then put the group's join/leave links in `config.yml` under `digest:` and they appear on
-the website header and in every email footer.
+the website’s prominent digest card, signup instructions and email footer. Building the site picks up changed
+mailing-list settings immediately; an OpenAlex sync is not required. Empty signup settings show honest instructions
+to contact a group maintainer instead of a nonfunctional email form.
 
 - **Google Group** (simplest, works with the Gmail sender): create a group at https://groups.google.com, set
   *Who can join* to "Anyone on the web can ask to join" (or "can join"), allow posting by the sender account (add it as
