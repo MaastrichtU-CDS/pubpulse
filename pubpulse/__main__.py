@@ -32,6 +32,10 @@ def main(argv: list[str] | None = None) -> int:
     sub.add_parser("build", help="build dist/ (website), data/feed.xml and out/ (digest email, Teams card)")
 
     sub.add_parser("send-digest", help="email out/digest.* to the subscriber list (and DIGEST_TO) via Gmail SMTP")
+
+    sc = sub.add_parser("scholar-check", help="compare Google Scholar profiles (via SerpAPI) with pubpulse; writes data/scholar_check.json")
+    sc.add_argument("--max-searches", type=int, default=None)
+    sc.add_argument("--only", help="slug of one person")
     sub.add_parser("mark-notified", help="clear the list of unannounced works (data/pending.json) after a successful notification")
 
     i = sub.add_parser("apply-issue", help="apply an 'identifiers' issue form body to people.yml")
@@ -49,6 +53,10 @@ def main(argv: list[str] | None = None) -> int:
         save_pending([])
         print("pending list cleared")
         return 0
+    if args.cmd == "scholar-check":
+        from .scholar import run as scholar_run
+
+        return scholar_run(max_searches=args.max_searches, only=args.only)
     if args.cmd == "send-digest":
         from .mailer import run as mail_run
 

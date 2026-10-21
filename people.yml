@@ -69,6 +69,7 @@ people:
   needs_review: false
   openalex_ids:
   - A5024986698
+  scholar_checked_at: '2026-10-21'
 - slug: andre-dekker
   name: Andre Dekker
   profile_url: https://www.clinicaldatascience.nl/andre-dekker
@@ -86,6 +87,7 @@ people:
   needs_review: false
   openalex_ids:
   - A5013513157
+  scholar_checked_at: '2026-10-21'
 - slug: andrea-pradas-agujetas
   name: Andrea Pradas Agujetas
   profile_url: https://www.clinicaldatascience.nl/andrea-pradas-agujetas
@@ -215,6 +217,7 @@ people:
   needs_review: false
   openalex_ids:
   - A5068696493
+  scholar_checked_at: '2026-10-21'
 - slug: daniel-slob
   name: Daniel Slob
   profile_url: https://www.clinicaldatascience.nl/daniel-slob
@@ -451,6 +454,7 @@ people:
   needs_review: false
   openalex_ids:
   - A5034589930
+  scholar_checked_at: '2026-10-21'
 - slug: joshi-hogenboom
   name: Joshi Hogenboom
   profile_url: https://www.clinicaldatascience.nl/joshi-hogenboom
@@ -518,6 +522,7 @@ people:
   needs_review: false
   openalex_ids:
   - A5004688031
+  scholar_checked_at: '2026-10-21'
 - slug: leroy-volmer
   name: Leroy Volmer
   profile_url: https://www.clinicaldatascience.nl/leroy-volmer
@@ -681,6 +686,7 @@ people:
   needs_review: false
   openalex_ids:
   - A5068572381
+  scholar_checked_at: '2026-10-21'
 - slug: petros-koutsouvelis
   name: Petros Koutsouvelis
   profile_url: https://www.clinicaldatascience.nl/Staff/petros-koutsouvelis
@@ -748,6 +754,7 @@ people:
   needs_review: false
   openalex_ids:
   - A5081642553
+  scholar_checked_at: '2026-10-21'
 - slug: rutger-van-mierlo
   name: Rutger van Mierlo
   profile_url: https://www.clinicaldatascience.nl/rutger-van-mierlo
@@ -781,6 +788,7 @@ people:
   needs_review: false
   openalex_ids:
   - A5089485363
+  scholar_checked_at: '2026-10-21'
 - slug: shreya-anand
   name: Shreya Anand
   profile_url: https://www.clinicaldatascience.nl/shreya-anand
@@ -879,6 +887,7 @@ people:
   needs_review: false
   openalex_ids:
   - A5036827029
+  scholar_checked_at: '2026-10-21'
 - slug: varnita-mathur
   name: Varnita Mathur
   profile_url: https://www.clinicaldatascience.nl/varnita-mathur

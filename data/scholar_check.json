@@ -1,0 +1,1930 @@
+{
+ "checked_at": "2026-10-21",
+ "since_year": 2024,
+ "people": {
+  "ananya-choudhury": {
+   "checked": 6,
+   "matched": 6,
+   "not_attributed": [],
+   "missing": [],
+   "name": "Ananya Choudhury",
+   "scholar_id": "O8N8H5QAAAAJ",
+   "profile_total": 24,
+   "checked_at": "2026-10-21",
+   "articles": [
+    {
+     "title": "Advancing privacy-preserving health care analytics and implementation of the personal health train: Federated deep learning study",
+     "year": 2025,
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=O8N8H5QAAAAJ&pagesize=100&citation_for_view=O8N8H5QAAAAJ:lgwcVrK6X84C",
+     "venue": "Jmir Ai 4 (1), e60847, 2025",
+     "cited_by": 55
+    },
+    {
+     "title": "Making head and neck cancer clinical data Findable-Accessible-Interoperable-Reusable to support multi-institutional collaboration and federated learning",
+     "year": 2024,
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=O8N8H5QAAAAJ&pagesize=100&citation_for_view=O8N8H5QAAAAJ:wMgC3FpKEyYC",
+     "venue": "BJR| Artificial Intelligence 1 (1), ubae005, 2024",
+     "cited_by": 8
+    },
+    {
+     "title": "Colorectal cancer health and care quality indicators in a federated setting using the personal health train",
+     "year": 2024,
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=O8N8H5QAAAAJ&pagesize=100&citation_for_view=O8N8H5QAAAAJ:buQ7SEKw-1sC",
+     "venue": "BMC Medical Informatics and Decision Making 24 (1), 121, 2024",
+     "cited_by": 7
+    },
+    {
+     "title": "An international multi-centre study to develop and validate federated learning-based prognostic models for anal cancer",
+     "year": 2026,
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=O8N8H5QAAAAJ&pagesize=100&citation_for_view=O8N8H5QAAAAJ:jgBuDB5drN8C",
+     "venue": "Nature Communications 17 (1), 3956, 2026",
+     "cited_by": 1
+    },
+    {
+     "title": "Feasibility of training federated deep learning oropharyngeal primary tumor segmentation models without sharing gradient information",
+     "year": 2024,
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=O8N8H5QAAAAJ&pagesize=100&citation_for_view=O8N8H5QAAAAJ:48xauSegjOkC",
+     "venue": null,
+     "cited_by": 1
+    },
+    {
+     "title": "Gross Tumour Volume segmentation by federated deep learning using real-world data of 3500+ lung cancer patients from 20 institutions in 10 countries",
+     "year": 2025,
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=O8N8H5QAAAAJ&pagesize=100&citation_for_view=O8N8H5QAAAAJ:ubry08Y2EpUC",
+     "venue": "Radiotherapy and Oncology 206 (Supplement 1), S2546-S2548, 2025",
+     "cited_by": null
+    }
+   ]
+  },
+  "andre-dekker": {
+   "checked": 38,
+   "matched": 36,
+   "not_attributed": [],
+   "missing": [
+    {
+     "title": "Artificial intelligence research in radiation oncology: a practical guide for the clinician on concepts and methods",
+     "year": 2024,
+     "venue": "BJR| Open 6 (1), tzae039, 2024",
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=JKOhEfcAAAAJ&cstart=200&pagesize=100&citation_for_view=JKOhEfcAAAAJ:rDsFeusoTZkC"
+    },
+    {
+     "title": "Real‐time auto‐segmentation of the ureter in video sequences of gynaecological laparoscopic surgery",
+     "year": 2024,
+     "venue": "The International Journal of Medical Robotics and Computer Assisted Surgery …, 2024",
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=JKOhEfcAAAAJ&cstart=200&pagesize=100&citation_for_view=JKOhEfcAAAAJ:QeguYG95ZbAC"
+    }
+   ],
+   "name": "Andre Dekker",
+   "scholar_id": "JKOhEfcAAAAJ",
+   "profile_total": 300,
+   "checked_at": "2026-10-21",
+   "articles": [
+    {
+     "title": "Non-invasive multimodal CT deep learning biomarker to predict pathological complete response of non-small cell lung cancer following neoadjuvant immunochemotherapy: a …",
+     "year": 2024,
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=JKOhEfcAAAAJ&pagesize=100&citation_for_view=JKOhEfcAAAAJ:J6OZcwVsj5AC",
+     "venue": "Journal for immunotherapy of cancer 12 (9), e009348, 2024",
+     "cited_by": 84
+    },
+    {
+     "title": "Voxel-level radiomics and deep learning for predicting pathologic complete response in esophageal squamous cell carcinoma after neoadjuvant immunotherapy and chemotherapy",
+     "year": 2025,
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=JKOhEfcAAAAJ&pagesize=100&citation_for_view=JKOhEfcAAAAJ:J-ba04ztB30C",
+     "venue": "Journal for immunotherapy of cancer 13 (3), e011149, 2025",
+     "cited_by": 72
+    },
+    {
+     "title": "FaceAge, a deep learning system to estimate biological age from face photographs to improve prognostication: a model development and validation study",
+     "year": 2025,
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=JKOhEfcAAAAJ&cstart=100&pagesize=100&citation_for_view=JKOhEfcAAAAJ:V63Ir2N1OTwC",
+     "venue": "The Lancet Digital Health 7 (6), 2025",
+     "cited_by": 62
+    },
+    {
+     "title": "Assessing the role of GPT-4 in thyroid ultrasound diagnosis and treatment recommendations: enhancing interpretability with a chain of thought approach",
+     "year": 2024,
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=JKOhEfcAAAAJ&cstart=100&pagesize=100&citation_for_view=JKOhEfcAAAAJ:F9HO9s0W2bwC",
+     "venue": "Quantitative Imaging in Medicine and Surgery 14 (2), 1602, 2024",
+     "cited_by": 59
+    },
+    {
+     "title": "Advancing privacy-preserving health care analytics and implementation of the personal health train: Federated deep learning study",
+     "year": 2025,
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=JKOhEfcAAAAJ&cstart=100&pagesize=100&citation_for_view=JKOhEfcAAAAJ:MnogvFdIBdwC",
+     "venue": "Jmir Ai 4 (1), e60847, 2025",
+     "cited_by": 55
+    },
+    {
+     "title": "Getting real about synthetic data ethics: Are AI ethics principles a good starting point for synthetic data ethics?",
+     "year": 2024,
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=JKOhEfcAAAAJ&cstart=100&pagesize=100&citation_for_view=JKOhEfcAAAAJ:4tNoA7Af41QC",
+     "venue": "EMBO reports 25 (5), 2152, 2024",
+     "cited_by": 46
+    },
+    {
+     "title": "Data harmonization and federated learning for multi-cohort dementia research using the OMOP common data model: a Netherlands consortium of dementia cohorts case study",
+     "year": 2024,
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=JKOhEfcAAAAJ&cstart=100&pagesize=100&citation_for_view=JKOhEfcAAAAJ:LlXTz_FrCmAC",
+     "venue": "Journal of biomedical informatics 155, 104661, 2024",
+     "cited_by": 38
+    },
+    {
+     "title": "A federated learning system for precision oncology in Europe: DigiONE",
+     "year": 2024,
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=JKOhEfcAAAAJ&cstart=100&pagesize=100&citation_for_view=JKOhEfcAAAAJ:oFn-K-OQSCAC",
+     "venue": "nature medicine 30 (2), 334-337, 2024",
+     "cited_by": 31
+    },
+    {
+     "title": "SwinHR: Hemodynamic-powered hierarchical vision transformer for breast tumor segmentation",
+     "year": 2024,
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=JKOhEfcAAAAJ&cstart=100&pagesize=100&citation_for_view=JKOhEfcAAAAJ:mJbmKSuM8toC",
+     "venue": "Computers in biology and medicine 169, 107939, 2024",
+     "cited_by": 28
+    },
+    {
+     "title": "Developing an ICD-10 coding assistant: pilot study using RoBERTa and GPT-4 for term extraction and description-based code selection",
+     "year": 2025,
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=JKOhEfcAAAAJ&cstart=100&pagesize=100&citation_for_view=JKOhEfcAAAAJ:-BKJ5vZJwzMC",
+     "venue": "JMIR formative research 9, e60095, 2025",
+     "cited_by": 27
+    },
+    {
+     "title": "External validation of a deep learning model for automatic segmentation of skeletal muscle and adipose tissue on abdominal CT images",
+     "year": 2024,
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=JKOhEfcAAAAJ&cstart=100&pagesize=100&citation_for_view=JKOhEfcAAAAJ:qYOp8iumCsAC",
+     "venue": "British Journal of Radiology 97 (1164), 2015-2023, 2024",
+     "cited_by": 27
+    },
+    {
+     "title": "Data interoperability in context: the importance of open-source implementations when choosing open standards",
+     "year": 2025,
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=JKOhEfcAAAAJ&cstart=100&pagesize=100&citation_for_view=JKOhEfcAAAAJ:SEKBqlyTJecC",
+     "venue": "Journal of Medical Internet Research 27, e66616, 2025",
+     "cited_by": 24
+    },
+    {
+     "title": "Development and validation of multicentre study on novel Artificial Intelligence-based Cardiovascular Risk Score (AICVD)",
+     "year": 2024,
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=JKOhEfcAAAAJ&cstart=100&pagesize=100&citation_for_view=JKOhEfcAAAAJ:dhpJJ7xvgBgC",
+     "venue": "Family medicine and community health 12 (Suppl 1), e002340, 2024",
+     "cited_by": 24
+    },
+    {
+     "title": "AI-derived longitudinal and multi-dimensional CT classifier for non-small cell lung cancer to optimize neoadjuvant chemoimmunotherapy decision: a multicentre retrospective study",
+     "year": 2025,
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=JKOhEfcAAAAJ&cstart=100&pagesize=100&citation_for_view=JKOhEfcAAAAJ:OlbiQ0ttILcC",
+     "venue": "EClinicalMedicine 89, 2025",
+     "cited_by": 23
+    },
+    {
+     "title": "Improved prognostication of overall survival after radiotherapy in lung cancer patients by an interpretable machine learning model integrating lung and tumor radiomics and …",
+     "year": 2025,
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=JKOhEfcAAAAJ&cstart=200&pagesize=100&citation_for_view=JKOhEfcAAAAJ:gnsKu8c89wgC",
+     "venue": "La radiologia medica 130 (1), 96-109, 2025",
+     "cited_by": 22
+    },
+    {
+     "title": "An overview of real-world data infrastructure for cancer research",
+     "year": 2025,
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=JKOhEfcAAAAJ&cstart=200&pagesize=100&citation_for_view=JKOhEfcAAAAJ:e9bUPLv0EjcC",
+     "venue": "Clinical Oncology 38, 103545, 2025",
+     "cited_by": 21
+    },
+    {
+     "title": "The effect of mHealth on childhood vaccination in Africa: A systematic review and meta-analysis",
+     "year": 2024,
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=JKOhEfcAAAAJ&cstart=200&pagesize=100&citation_for_view=JKOhEfcAAAAJ:8JTMrWI6FdcC",
+     "venue": "PLoS One 19 (2), e0294442, 2024",
+     "cited_by": 21
+    },
+    {
+     "title": "Federated learning survival model and potential radiotherapy decision support impact assessment for non–small cell lung cancer using real-world data",
+     "year": 2024,
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=JKOhEfcAAAAJ&cstart=200&pagesize=100&citation_for_view=JKOhEfcAAAAJ:tFzHCjejgA0C",
+     "venue": "Clinical Oncology 36 (7), e197-e208, 2024",
+     "cited_by": 19
+    },
+    {
+     "title": "A PET/CT radiomics model for predicting distant metastasis in early-stage non–small cell lung cancer patients treated with stereotactic body radiotherapy: a multicentric study",
+     "year": 2024,
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=JKOhEfcAAAAJ&cstart=200&pagesize=100&citation_for_view=JKOhEfcAAAAJ:oXKBmVzQOggC",
+     "venue": "Radiation Oncology 19 (1), 10, 2024",
+     "cited_by": 19
+    },
+    {
+     "title": "Prediction of new-onset atrial fibrillation in patients with non-small cell lung cancer treated with curative-intent conventional radiotherapy",
+     "year": 2024,
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=JKOhEfcAAAAJ&cstart=200&pagesize=100&citation_for_view=JKOhEfcAAAAJ:wgKq3sYidysC",
+     "venue": "Radiotherapy and Oncology 201, 110544, 2024",
+     "cited_by": 18
+    },
+    {
+     "title": "A multi-Task Learning based applicable AI model simultaneously predicts stage, histology, grade and LNM for cervical cancer before surgery",
+     "year": 2024,
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=JKOhEfcAAAAJ&cstart=200&pagesize=100&citation_for_view=JKOhEfcAAAAJ:Pqt4MY__2vwC",
+     "venue": "BMC Women's Health 24 (1), 425, 2024",
+     "cited_by": 18
+    },
+    {
+     "title": "Label-efficient transformer-based framework with self-supervised strategies for heterogeneous lung tumor segmentation",
+     "year": 2025,
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=JKOhEfcAAAAJ&cstart=200&pagesize=100&citation_for_view=JKOhEfcAAAAJ:M8meJADSprsC",
+     "venue": "Expert Systems with Applications 269, 126364, 2025",
+     "cited_by": 16
+    },
+    {
+     "title": "Effect of mobile phone messaging on uptake of maternal and child health service in southern Ethiopia: Protocol for cluster randomized controlled trial",
+     "year": 2024,
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=JKOhEfcAAAAJ&cstart=200&pagesize=100&citation_for_view=JKOhEfcAAAAJ:gkldIfsazJcC",
+     "venue": "Clinical Nutrition Open Science 54, 89-99, 2024",
+     "cited_by": 15
+    },
+    {
+     "title": "Integrated analysis of radiomics, RNA, and clinicopathologic phenotype reveals biological basis of prognostic risk stratification in colorectal cancer",
+     "year": 2024,
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=JKOhEfcAAAAJ&cstart=200&pagesize=100&citation_for_view=JKOhEfcAAAAJ:Kv9jytqXTosC",
+     "venue": "Science bulletin 69 (23), 3666-3671, 2024",
+     "cited_by": 14
+    },
+    {
+     "title": "Predicting the risk of neurocognitive decline after brain irradiation in adult patients with a primary brain tumor",
+     "year": 2024,
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=JKOhEfcAAAAJ&cstart=200&pagesize=100&citation_for_view=JKOhEfcAAAAJ:9CGX2owmTHMC",
+     "venue": "Neuro-oncology 26 (8), 1467-1478, 2024",
+     "cited_by": 14
+    },
+    {
+     "title": "VertiBayes: learning Bayesian network parameters from vertically partitioned data with missing values: F. van Daalen et al.",
+     "year": 2024,
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=JKOhEfcAAAAJ&cstart=200&pagesize=100&citation_for_view=JKOhEfcAAAAJ:3BvdIg-l-ZAC",
+     "venue": "Complex & Intelligent Systems 10 (4), 5317-5329, 2024",
+     "cited_by": 14
+    },
+    {
+     "title": "Artificial intelligence research in radiation oncology: a practical guide for the clinician on concepts and methods",
+     "year": 2024,
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=JKOhEfcAAAAJ&cstart=200&pagesize=100&citation_for_view=JKOhEfcAAAAJ:rDsFeusoTZkC",
+     "venue": "BJR| Open 6 (1), tzae039, 2024",
+     "cited_by": 14
+    },
+    {
+     "title": "Real‐time auto‐segmentation of the ureter in video sequences of gynaecological laparoscopic surgery",
+     "year": 2024,
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=JKOhEfcAAAAJ&cstart=200&pagesize=100&citation_for_view=JKOhEfcAAAAJ:QeguYG95ZbAC",
+     "venue": "The International Journal of Medical Robotics and Computer Assisted Surgery …, 2024",
+     "cited_by": 13
+    },
+    {
+     "title": "Contextual success and pitfalls of mHealth service for maternal and child health in Africa: An Intervention, Context, Actors, Mechanism, and Outcome (ICAMO) framework guided …",
+     "year": 2024,
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=JKOhEfcAAAAJ&cstart=200&pagesize=100&citation_for_view=JKOhEfcAAAAJ:zfsRRabFVBUC",
+     "venue": "BMC pregnancy and childbirth 24 (1), 690, 2024",
+     "cited_by": 12
+    },
+    {
+     "title": "A distributed feature selection pipeline for survival analysis using radiomics in non-small cell lung cancer patients",
+     "year": 2024,
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=JKOhEfcAAAAJ&cstart=200&pagesize=100&citation_for_view=JKOhEfcAAAAJ:6Zm5LS9gQ5UC",
+     "venue": "Scientific Reports 14 (1), 7814, 2024",
+     "cited_by": 12
+    },
+    {
+     "title": "Artificial intelligence in breast cancer radiotherapy: Insights from the Toolbox Consortium Delphi study",
+     "year": 2025,
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=JKOhEfcAAAAJ&cstart=200&pagesize=100&citation_for_view=JKOhEfcAAAAJ:S0CDQJw8Yr4C",
+     "venue": "The Breast, 104537, 2025",
+     "cited_by": 10
+    },
+    {
+     "title": "Interpretable multimodal radiopathomics model predicting pathological complete response to neoadjuvant chemoimmunotherapy in esophageal squamous cell carcinoma",
+     "year": 2025,
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=JKOhEfcAAAAJ&cstart=200&pagesize=100&citation_for_view=JKOhEfcAAAAJ:3jqAvCjcdfEC",
+     "venue": "Journal for Immunotherapy of Cancer 13 (12), e013840, 2025",
+     "cited_by": 9
+    },
+    {
+     "title": "The effect of mHealth on exclusive breastfeeding and its associated factors among women in South Ethiopia: a cluster randomized controlled trial",
+     "year": 2025,
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=JKOhEfcAAAAJ&cstart=200&pagesize=100&citation_for_view=JKOhEfcAAAAJ:uoeYKOKFegwC",
+     "venue": "Nutrients 17 (21), 3477, 2025",
+     "cited_by": 9
+    },
+    {
+     "title": "Whole lung radiomic features are associated with overall survival in patients with locally advanced non-small cell lung cancer treated with definitive radiotherapy",
+     "year": 2025,
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=JKOhEfcAAAAJ&cstart=200&pagesize=100&citation_for_view=JKOhEfcAAAAJ:jtOrAYjvdewC",
+     "venue": "Radiation Oncology 20 (1), 9, 2025",
+     "cited_by": 9
+    },
+    {
+     "title": "A critique of current approaches to privacy in machine learning: F. van Daalen et al.",
+     "year": 2025,
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=JKOhEfcAAAAJ&cstart=200&pagesize=100&citation_for_view=JKOhEfcAAAAJ:AkvegQHRDQ8C",
+     "venue": "Ethics and Information Technology 27 (3), 32, 2025",
+     "cited_by": 8
+    },
+    {
+     "title": "Actionability of synthetic data in a heterogeneous and rare health care demographic: Adolescents and young adults with cancer",
+     "year": 2024,
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=JKOhEfcAAAAJ&cstart=200&pagesize=100&citation_for_view=JKOhEfcAAAAJ:Yw6v6SrDvuUC",
+     "venue": "JCO clinical cancer informatics 8, e2400056, 2024",
+     "cited_by": 8
+    },
+    {
+     "title": "The role of mHealth intervention to improve maternal and child health: A provider-based qualitative study in Southern Ethiopia",
+     "year": 2024,
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=JKOhEfcAAAAJ&cstart=200&pagesize=100&citation_for_view=JKOhEfcAAAAJ:wlzmIqt2EaEC",
+     "venue": "PloS one 19 (2), e0295539, 2024",
+     "cited_by": 8
+    },
+    {
+     "title": "Making head and neck cancer clinical data Findable-Accessible-Interoperable-Reusable to support multi-institutional collaboration and federated learning",
+     "year": 2024,
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=JKOhEfcAAAAJ&cstart=200&pagesize=100&citation_for_view=JKOhEfcAAAAJ:k8to_Y4Q4_EC",
+     "venue": "BJR| Artificial Intelligence 1 (1), ubae005, 2024",
+     "cited_by": 8
+    }
+   ]
+  },
+  "cecile-wolfs": {
+   "checked": 15,
+   "matched": 14,
+   "not_attributed": [],
+   "missing": [
+    {
+     "title": "A 3D transfer learning approach for identifying multiple simultaneous errors during radiotherapy",
+     "year": 2024,
+     "venue": "Physics in Medicine & Biology 69 (3), 035002, 2024",
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=yq78swYAAAAJ&pagesize=100&citation_for_view=yq78swYAAAAJ:L8Ckcad2t8MC"
+    }
+   ],
+   "name": "Cecile Wolfs",
+   "scholar_id": "yq78swYAAAAJ",
+   "profile_total": 57,
+   "checked_at": "2026-10-21",
+   "articles": [
+    {
+     "title": "Towards a fully automatic workflow for investigating the dynamics of lung cancer cachexia during radiotherapy using cone beam computed tomography",
+     "year": 2024,
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=yq78swYAAAAJ&pagesize=100&citation_for_view=yq78swYAAAAJ:RHpTSmoSYBkC",
+     "venue": "Physics in Medicine & Biology 69 (20), 205005, 2024",
+     "cited_by": 7
+    },
+    {
+     "title": "Targeted nutritional intervention attenuates experimental lung cancer cachexia",
+     "year": 2024,
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=yq78swYAAAAJ&pagesize=100&citation_for_view=yq78swYAAAAJ:qUcmZB5y_30C",
+     "venue": "Journal of cachexia, sarcopenia and muscle 15 (5), 1664-1676, 2024",
+     "cited_by": 6
+    },
+    {
+     "title": "A 3D transfer learning approach for identifying multiple simultaneous errors during radiotherapy",
+     "year": 2024,
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=yq78swYAAAAJ&pagesize=100&citation_for_view=yq78swYAAAAJ:L8Ckcad2t8MC",
+     "venue": "Physics in Medicine & Biology 69 (3), 035002, 2024",
+     "cited_by": 6
+    },
+    {
+     "title": "Toward a human‐centric co‐design methodology for AI detection of differences between planned and delivered dose in radiotherapy",
+     "year": 2025,
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=yq78swYAAAAJ&pagesize=100&citation_for_view=yq78swYAAAAJ:isC4tDSrTZIC",
+     "venue": "Journal of applied clinical medical physics 26 (6), e70071, 2025",
+     "cited_by": 5
+    },
+    {
+     "title": "Maximizing impact of explainable artificial intelligence in radiotherapy: a critical review",
+     "year": 2026,
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=yq78swYAAAAJ&pagesize=100&citation_for_view=yq78swYAAAAJ:maZDTaKrznsC",
+     "venue": "Physics in Medicine & Biology 71 (3), 03TR01, 2026",
+     "cited_by": 3
+    },
+    {
+     "title": "Turning the attention to time-resolved EPID-images: treatment error classification with transformer multiple instance learning",
+     "year": 2024,
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=yq78swYAAAAJ&pagesize=100&citation_for_view=yq78swYAAAAJ:hC7cP41nSMkC",
+     "venue": "Physics in Medicine & Biology 69 (16), 165030, 2024",
+     "cited_by": 1
+    },
+    {
+     "title": "Construction of personal health knowledge graphs for clinical data harmonization in breast cancer",
+     "year": 2026,
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=yq78swYAAAAJ&pagesize=100&citation_for_view=yq78swYAAAAJ:blknAaTinKkC",
+     "venue": "npj Breast Cancer, 2026",
+     "cited_by": null
+    },
+    {
+     "title": "Dose-volume predictors of post-radiation xerostomia in head and neck cancer: A systematic review",
+     "year": 2026,
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=yq78swYAAAAJ&pagesize=100&citation_for_view=yq78swYAAAAJ:YFjsv_pBGBYC",
+     "venue": "Clinical and Translational Radiation Oncology, 101282, 2026",
+     "cited_by": null
+    },
+    {
+     "title": "Realistic Counterfactual Explanations for Clinical AI-decision Aid on Computed Tomography for Adaptive Radiotherapy",
+     "year": 2026,
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=yq78swYAAAAJ&pagesize=100&citation_for_view=yq78swYAAAAJ:M3NEmzRMIkIC",
+     "venue": null,
+     "cited_by": null
+    },
+    {
+     "title": "3494 Implementation of User-Centric Dashboard to Automatically Monitor the Dynamics of Lung Cancer Cachexia using AI-driven analysis of 3D CBCT images",
+     "year": 2025,
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=yq78swYAAAAJ&pagesize=100&citation_for_view=yq78swYAAAAJ:k_IJM867U9cC",
+     "venue": "Radiotherapy and Oncology 206, S2528-S2531, 2025",
+     "cited_by": null
+    },
+    {
+     "title": "Image-to-Image Translation Based on Deep Generative Modeling for Radiotherapy Synthetic Dataset Creation",
+     "year": 2024,
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=yq78swYAAAAJ&pagesize=100&citation_for_view=yq78swYAAAAJ:j3f4tGmQtD8C",
+     "venue": "arXiv preprint arXiv:2410.01828, 2024",
+     "cited_by": null
+    },
+    {
+     "title": "1545: Introducing a co-creation methodology for the design of an AI-based error detection in radiotherapy",
+     "year": 2024,
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=yq78swYAAAAJ&pagesize=100&citation_for_view=yq78swYAAAAJ:HDshCWvjkbEC",
+     "venue": "Radiotherapy and Oncology 194, S4485-S4488, 2024",
+     "cited_by": null
+    },
+    {
+     "title": "862: Explainable Artificial Intelligence in Radiotherapy: A Systematic review",
+     "year": 2024,
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=yq78swYAAAAJ&pagesize=100&citation_for_view=yq78swYAAAAJ:mB3voiENLucC",
+     "venue": "Radiotherapy and Oncology 194, S4444-S4446, 2024",
+     "cited_by": null
+    },
+    {
+     "title": "1753: Deep learning for in vivo EPID dosimetry classification: Relating gamma analysis and DVH metrics",
+     "year": 2024,
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=yq78swYAAAAJ&pagesize=100&citation_for_view=yq78swYAAAAJ:hFOr9nPyWt4C",
+     "venue": "Radiotherapy and Oncology 194, S4495-S4498, 2024",
+     "cited_by": null
+    },
+    {
+     "title": "Trust in Artificial Intelligence in radiotherapy: A survey",
+     "year": 2024,
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=yq78swYAAAAJ&pagesize=100&citation_for_view=yq78swYAAAAJ:-f6ydRqryjwC",
+     "venue": "Radiotherapy and Oncology 194, S2857-S2860, 2024",
+     "cited_by": null
+    }
+   ]
+  },
+  "johan-van-soest": {
+   "checked": 26,
+   "matched": 24,
+   "not_attributed": [],
+   "missing": [
+    {
+     "title": "FAIVOR–a push-button system for AI validation within the hospital",
+     "year": 2025,
+     "venue": "German Medical Science GMS Publishing House; Düsseldorf, 2025",
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=zemi8wYAAAAJ&pagesize=100&citation_for_view=zemi8wYAAAAJ:foquWX3nUaYC"
+    },
+    {
+     "title": "PRE-ACT",
+     "year": 2024,
+     "venue": "Journal of Cancer 43, 100537, 2024",
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=zemi8wYAAAAJ&cstart=100&pagesize=100&citation_for_view=zemi8wYAAAAJ:_axFR9aDTf0C"
+    }
+   ],
+   "name": "Johan van Soest",
+   "scholar_id": "zemi8wYAAAAJ",
+   "profile_total": 184,
+   "checked_at": "2026-10-21",
+   "articles": [
+    {
+     "title": "Advancing privacy-preserving health care analytics and implementation of the personal health train: Federated deep learning study",
+     "year": 2025,
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=zemi8wYAAAAJ&pagesize=100&citation_for_view=zemi8wYAAAAJ:gsN89kCJA0AC",
+     "venue": "Jmir Ai 4 (1), e60847, 2025",
+     "cited_by": 55
+    },
+    {
+     "title": "An overview of real-world data infrastructure for cancer research",
+     "year": 2025,
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=zemi8wYAAAAJ&pagesize=100&citation_for_view=zemi8wYAAAAJ:zLWjf1WUPmwC",
+     "venue": "Clinical Oncology 38, 103545, 2025",
+     "cited_by": 21
+    },
+    {
+     "title": "A critique of current approaches to privacy in machine learning: F. van Daalen et al.",
+     "year": 2025,
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=zemi8wYAAAAJ&pagesize=100&citation_for_view=zemi8wYAAAAJ:S16KYo8Pm5AC",
+     "venue": "Ethics and Information Technology 27 (3), 32, 2025",
+     "cited_by": 8
+    },
+    {
+     "title": "Making head and neck cancer clinical data Findable-Accessible-Interoperable-Reusable to support multi-institutional collaboration and federated learning",
+     "year": 2024,
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=zemi8wYAAAAJ&pagesize=100&citation_for_view=zemi8wYAAAAJ:uc_IGeMz5qoC",
+     "venue": "BJR| Artificial Intelligence 1 (1), ubae005, 2024",
+     "cited_by": 8
+    },
+    {
+     "title": "Colorectal cancer health and care quality indicators in a federated setting using the personal health train",
+     "year": 2024,
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=zemi8wYAAAAJ&pagesize=100&citation_for_view=zemi8wYAAAAJ:PR6Y55bgFSsC",
+     "venue": "BMC Medical Informatics and Decision Making 24 (1), 121, 2024",
+     "cited_by": 7
+    },
+    {
+     "title": "Operationalizing and digitizing person-centered daily functioning: a case for functionomics",
+     "year": 2024,
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=zemi8wYAAAAJ&pagesize=100&citation_for_view=zemi8wYAAAAJ:dTyEYWd-f8wC",
+     "venue": "BMC Medical Informatics and Decision Making 24 (1), 184, 2024",
+     "cited_by": 6
+    },
+    {
+     "title": "A federated database for obesity research: an IMI-SOPHIA study",
+     "year": 2024,
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=zemi8wYAAAAJ&pagesize=100&citation_for_view=zemi8wYAAAAJ:nrtMV_XWKgEC",
+     "venue": "Life 14 (2), 262, 2024",
+     "cited_by": 6
+    },
+    {
+     "title": "A Governance Framework for Federated Learning Projects in Healthcare",
+     "year": 2025,
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=zemi8wYAAAAJ&pagesize=100&citation_for_view=zemi8wYAAAAJ:M7yex6snE4oC",
+     "venue": "Intelligent Health Systems-From Technology to Data and Knowledge …, 2025",
+     "cited_by": 4
+    },
+    {
+     "title": "PRE-ACT: Prediction of Radiotherapy side Effects using explainable AI for patient Communication and Treatment modification",
+     "year": 2025,
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=zemi8wYAAAAJ&pagesize=100&citation_for_view=zemi8wYAAAAJ:tYavs44e6CUC",
+     "venue": "Journal of Cancer Policy 43, 100537, 2025",
+     "cited_by": 4
+    },
+    {
+     "title": "Understanding Clinicians’ Informational Needs for AI-Driven Clinical Decision Support Systems: Qualitative Interview Study",
+     "year": 2026,
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=zemi8wYAAAAJ&pagesize=100&citation_for_view=zemi8wYAAAAJ:FPJr55Dyh1AC",
+     "venue": "JMIR medical education 12, e85228, 2026",
+     "cited_by": 3
+    },
+    {
+     "title": "Federated prediction models and external validation for radiotherapy outcomes in oropharyngeal cancer using FAIR clinical and radiomics data",
+     "year": 2025,
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=zemi8wYAAAAJ&pagesize=100&citation_for_view=zemi8wYAAAAJ:TIZ-Mc8IlK0C",
+     "venue": "medRxiv, 2025.01. 29.25321214, 2025",
+     "cited_by": 3
+    },
+    {
+     "title": "Development of an explainable AI prediction model for arm lymphoedema following breast cancer surgery and radiotherapy",
+     "year": 2024,
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=zemi8wYAAAAJ&pagesize=100&citation_for_view=zemi8wYAAAAJ:b1wdh0AR-JQC",
+     "venue": "European Journal of Cancer 200, 2024",
+     "cited_by": 3
+    },
+    {
+     "title": "Knowledge Representation of a Multicenter Adolescent and Young Adult Cancer Infrastructure: Development of the STRONG AYA Knowledge Graph",
+     "year": 2026,
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=zemi8wYAAAAJ&pagesize=100&citation_for_view=zemi8wYAAAAJ:e_rmSamDkqQC",
+     "venue": "JCO clinical cancer informatics 10 (1), e2500177, 2026",
+     "cited_by": 2
+    },
+    {
+     "title": "The value of PROMs for predicting erectile dysfunction in prostate cancer patients with Bayesian network",
+     "year": 2024,
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=zemi8wYAAAAJ&pagesize=100&citation_for_view=zemi8wYAAAAJ:XD-gHx7UXLsC",
+     "venue": "Technical innovations & patient support in radiation oncology 31, 100234, 2024",
+     "cited_by": 2
+    },
+    {
+     "title": "Development of an ai prediction model for arm lymphoedema following breast cancer surgery and radiotherapy",
+     "year": 2024,
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=zemi8wYAAAAJ&pagesize=100&citation_for_view=zemi8wYAAAAJ:vDijr-p_gm4C",
+     "venue": "European Journal of Surgical Oncology; Proceedings of the Association of …, 2024",
+     "cited_by": 2
+    },
+    {
+     "title": "FAIVOR–a push-button system for AI validation within the hospital",
+     "year": 2025,
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=zemi8wYAAAAJ&pagesize=100&citation_for_view=zemi8wYAAAAJ:foquWX3nUaYC",
+     "venue": "German Medical Science GMS Publishing House; Düsseldorf, 2025",
+     "cited_by": 1
+    },
+    {
+     "title": "What to Report? A Systematic Review of Medical AI Reporting Guidelines: Preliminary Results",
+     "year": 2025,
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=zemi8wYAAAAJ&cstart=100&pagesize=100&citation_for_view=zemi8wYAAAAJ:kz9GbA2Ns4gC",
+     "venue": "Intelligent Health Systems-From Technology to Data and Knowledge …, 2025",
+     "cited_by": 1
+    },
+    {
+     "title": "AI Model Reporting Standards in Health Care: Systematic Review and Consolidation",
+     "year": 2026,
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=zemi8wYAAAAJ&cstart=100&pagesize=100&citation_for_view=zemi8wYAAAAJ:4fGpz3EwCPoC",
+     "venue": "JMIR AI 5, e92329, 2026",
+     "cited_by": null
+    },
+    {
+     "title": "Navigating the privacy-accuracy tradeoff: federated survival analysis with binning and differential privacy",
+     "year": 2026,
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=zemi8wYAAAAJ&cstart=100&pagesize=100&citation_for_view=zemi8wYAAAAJ:ILKRHgRFtOwC",
+     "venue": "Frontiers in Applied Mathematics and Statistics 12, 1917462, 2026",
+     "cited_by": null
+    },
+    {
+     "title": "LinkedDicom: Indexing DICOM Metadata Using Semantic Web Technologies",
+     "year": 2026,
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=zemi8wYAAAAJ&cstart=100&pagesize=100&citation_for_view=zemi8wYAAAAJ:5qfkUJPXOUwC",
+     "venue": "Opening the Personal Gate between Technology and Health Care: Proceedings of …, 2026",
+     "cited_by": null
+    },
+    {
+     "title": "Development of a clinico-genomic AI prediction model for arm lymphoedema following breast cancer surgery and radiotherapy–the PRE-ACT study",
+     "year": 2026,
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=zemi8wYAAAAJ&cstart=100&pagesize=100&citation_for_view=zemi8wYAAAAJ:hCrLmN-GePgC",
+     "venue": "European Journal of Surgical Oncology 52, 2026",
+     "cited_by": null
+    },
+    {
+     "title": "Gross Tumour Volume segmentation by federated deep learning using real-world data of 3500+ lung cancer patients from 20 institutions in 10 countries",
+     "year": 2025,
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=zemi8wYAAAAJ&cstart=100&pagesize=100&citation_for_view=zemi8wYAAAAJ:-FonjvnnhkoC",
+     "venue": "Radiotherapy and Oncology 206 (Supplement 1), S2546-S2548, 2025",
+     "cited_by": null
+    },
+    {
+     "title": "2496 Federated Prediction Models and External Validation for Radiotherapy Outcomes in Head and Neck Cancer using FAIR Clinical and Radiomics Data",
+     "year": 2025,
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=zemi8wYAAAAJ&cstart=100&pagesize=100&citation_for_view=zemi8wYAAAAJ:WZBGuue-350C",
+     "venue": "Radiotherapy and Oncology 206, S1033-S1034, 2025",
+     "cited_by": null
+    },
+    {
+     "title": "P435: PRE-ACT-01: the prediction of radiotherapy side effects using explainable AI for patient communication and treatment modification-01 trial",
+     "year": 2025,
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=zemi8wYAAAAJ&cstart=100&pagesize=100&citation_for_view=zemi8wYAAAAJ:MLfJN-KU85MC",
+     "venue": "The Breast 80, S170-S171/104247, 2025",
+     "cited_by": null
+    },
+    {
+     "title": "Breast cancer patients’ communication needs and wishes for an explainable Artificial Intelligence prediction model for lymphedema",
+     "year": 2024,
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=zemi8wYAAAAJ&cstart=100&pagesize=100&citation_for_view=zemi8wYAAAAJ:epqYDVWIO7EC",
+     "venue": "European Journal of Cancer 200, 2024",
+     "cited_by": null
+    },
+    {
+     "title": "PRE-ACT",
+     "year": 2024,
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=zemi8wYAAAAJ&cstart=100&pagesize=100&citation_for_view=zemi8wYAAAAJ:_axFR9aDTf0C",
+     "venue": "Journal of Cancer 43, 100537, 2024",
+     "cited_by": null
+    }
+   ]
+  },
+  "leonard-wee": {
+   "checked": 75,
+   "matched": 69,
+   "not_attributed": [],
+   "missing": [
+    {
+     "title": "External validation of a lung cancer-based prediction model for two-year mortality in esophageal cancer patient cohorts",
+     "year": 2024,
+     "venue": "Radiotherapy and Oncology 190, 109979, 2024",
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hlhktjoAAAAJ&pagesize=100&citation_for_view=hlhktjoAAAAJ:HbR8gkJAVGIC"
+    },
+    {
+     "title": "Artificial intelligence research in radiation oncology: a practical guide for the clinician on concepts and methods",
+     "year": 2024,
+     "venue": "BJR| Open 6 (1), tzae039, 2024",
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hlhktjoAAAAJ&pagesize=100&citation_for_view=hlhktjoAAAAJ:WJVC3Jt7v1AC"
+    },
+    {
+     "title": "Comparing the performance of a deep learning-based lung gross tumour volume segmentation algorithm before and after transfer learning in a new hospital",
+     "year": 2024,
+     "venue": "BJR| Open 6 (1), tzad008, 2024",
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hlhktjoAAAAJ&cstart=100&pagesize=100&citation_for_view=hlhktjoAAAAJ:XoXfffV-tXoC"
+    },
+    {
+     "title": "Minimum sample size calculation for radiomics-based binary outcome prediction models: tutorial and practical example based on Riley et al's theoretical framework (vol 212 …",
+     "year": 2026,
+     "venue": "RADIOTHERAPY AND ONCOLOGY 224, 2026",
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hlhktjoAAAAJ&cstart=100&pagesize=100&citation_for_view=hlhktjoAAAAJ:1taIhTC69MYC"
+    },
+    {
+     "title": "Corrigendum to “Minimum sample size calculation for radiomics-based binary outcome prediction models: tutorial and practical example based on Riley et al’s theoretical …",
+     "year": 2026,
+     "venue": "Radiotherapy and Oncology 224, 111771, 2026",
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hlhktjoAAAAJ&cstart=100&pagesize=100&citation_for_view=hlhktjoAAAAJ:PaBasH6fAo0C"
+    },
+    {
+     "title": "Quantitative Assessment Tumor Regression and Spatial Immune Patterns after Ncrt In Rectal Cancer Using a Deep Learning Framework",
+     "year": 2026,
+     "venue": "2026 Joint AAPM| COMP Annual Meeting & Exhibition, 2026",
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hlhktjoAAAAJ&cstart=100&pagesize=100&citation_for_view=hlhktjoAAAAJ:jgBuDB5drN8C"
+    }
+   ],
+   "name": "Leonard Wee",
+   "scholar_id": "hlhktjoAAAAJ",
+   "profile_total": 297,
+   "checked_at": "2026-10-21",
+   "articles": [
+    {
+     "title": "Non-invasive multimodal CT deep learning biomarker to predict pathological complete response of non-small cell lung cancer following neoadjuvant immunochemotherapy: a …",
+     "year": 2024,
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hlhktjoAAAAJ&pagesize=100&citation_for_view=hlhktjoAAAAJ:HtEfBTGE9r8C",
+     "venue": "Journal for immunotherapy of cancer 12 (9), e009348, 2024",
+     "cited_by": 84
+    },
+    {
+     "title": "Voxel-level radiomics and deep learning for predicting pathologic complete response in esophageal squamous cell carcinoma after neoadjuvant immunotherapy and chemotherapy",
+     "year": 2025,
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hlhktjoAAAAJ&pagesize=100&citation_for_view=hlhktjoAAAAJ:ODE9OILHJdcC",
+     "venue": "Journal for immunotherapy of cancer 13 (3), e011149, 2025",
+     "cited_by": 72
+    },
+    {
+     "title": "Advancing privacy-preserving health care analytics and implementation of the personal health train: Federated deep learning study",
+     "year": 2025,
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hlhktjoAAAAJ&pagesize=100&citation_for_view=hlhktjoAAAAJ:bKqednn6t2AC",
+     "venue": "Jmir Ai 4 (1), e60847, 2025",
+     "cited_by": 55
+    },
+    {
+     "title": "Getting real about synthetic data ethics: Are AI ethics principles a good starting point for synthetic data ethics?",
+     "year": 2024,
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hlhktjoAAAAJ&pagesize=100&citation_for_view=hlhktjoAAAAJ:5qfkUJPXOUwC",
+     "venue": "EMBO reports 25 (5), 2152, 2024",
+     "cited_by": 46
+    },
+    {
+     "title": "Enhanced risk stratification for stage II colorectal cancer using deep learning-based CT classifier and pathological markers to optimize adjuvant therapy decision",
+     "year": 2025,
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hlhktjoAAAAJ&pagesize=100&citation_for_view=hlhktjoAAAAJ:GFxP56DSvIMC",
+     "venue": "Annals of Oncology, 2025",
+     "cited_by": 40
+    },
+    {
+     "title": "SwinHR: Hemodynamic-powered hierarchical vision transformer for breast tumor segmentation",
+     "year": 2024,
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hlhktjoAAAAJ&pagesize=100&citation_for_view=hlhktjoAAAAJ:0N-VGjzr574C",
+     "venue": "Computers in biology and medicine 169, 107939, 2024",
+     "cited_by": 28
+    },
+    {
+     "title": "External validation of a deep learning model for automatic segmentation of skeletal muscle and adipose tissue on abdominal CT images",
+     "year": 2024,
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hlhktjoAAAAJ&pagesize=100&citation_for_view=hlhktjoAAAAJ:4hFrxpcac9AC",
+     "venue": "British Journal of Radiology 97 (1164), 2015-2023, 2024",
+     "cited_by": 27
+    },
+    {
+     "title": "AI-derived longitudinal and multi-dimensional CT classifier for non-small cell lung cancer to optimize neoadjuvant chemoimmunotherapy decision: a multicentre retrospective study",
+     "year": 2025,
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hlhktjoAAAAJ&pagesize=100&citation_for_view=hlhktjoAAAAJ:ZzlSgRqYykMC",
+     "venue": "EClinicalMedicine 89, 2025",
+     "cited_by": 23
+    },
+    {
+     "title": "Improved prognostication of overall survival after radiotherapy in lung cancer patients by an interpretable machine learning model integrating lung and tumor radiomics and …",
+     "year": 2025,
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hlhktjoAAAAJ&pagesize=100&citation_for_view=hlhktjoAAAAJ:IRz6iEL74y4C",
+     "venue": "La radiologia medica 130 (1), 96-109, 2025",
+     "cited_by": 22
+    },
+    {
+     "title": "A PET/CT radiomics model for predicting distant metastasis in early-stage non–small cell lung cancer patients treated with stereotactic body radiotherapy: a multicentric study",
+     "year": 2024,
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hlhktjoAAAAJ&pagesize=100&citation_for_view=hlhktjoAAAAJ:FPJr55Dyh1AC",
+     "venue": "Radiation Oncology 19 (1), 10, 2024",
+     "cited_by": 19
+    },
+    {
+     "title": "Label-efficient transformer-based framework with self-supervised strategies for heterogeneous lung tumor segmentation",
+     "year": 2025,
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hlhktjoAAAAJ&pagesize=100&citation_for_view=hlhktjoAAAAJ:HIFyuExEbWQC",
+     "venue": "Expert Systems with Applications 269, 126364, 2025",
+     "cited_by": 16
+    },
+    {
+     "title": "External validation of a lung cancer-based prediction model for two-year mortality in esophageal cancer patient cohorts",
+     "year": 2024,
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hlhktjoAAAAJ&pagesize=100&citation_for_view=hlhktjoAAAAJ:HbR8gkJAVGIC",
+     "venue": "Radiotherapy and Oncology 190, 109979, 2024",
+     "cited_by": 16
+    },
+    {
+     "title": "Integrated analysis of radiomics, RNA, and clinicopathologic phenotype reveals biological basis of prognostic risk stratification in colorectal cancer",
+     "year": 2024,
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hlhktjoAAAAJ&pagesize=100&citation_for_view=hlhktjoAAAAJ:sNmaIFBj_lkC",
+     "venue": "Science bulletin 69 (23), 3666-3671, 2024",
+     "cited_by": 14
+    },
+    {
+     "title": "Artificial intelligence research in radiation oncology: a practical guide for the clinician on concepts and methods",
+     "year": 2024,
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hlhktjoAAAAJ&pagesize=100&citation_for_view=hlhktjoAAAAJ:WJVC3Jt7v1AC",
+     "venue": "BJR| Open 6 (1), tzae039, 2024",
+     "cited_by": 14
+    },
+    {
+     "title": "Improving diagnosis and care for patients with sarcoma: do real-world general practitioners data and prospective data collections have a place next to clinical trials?",
+     "year": 2024,
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hlhktjoAAAAJ&pagesize=100&citation_for_view=hlhktjoAAAAJ:FAceZFleit8C",
+     "venue": "JCO clinical cancer informatics 8, e2400054, 2024",
+     "cited_by": 12
+    },
+    {
+     "title": "A distributed feature selection pipeline for survival analysis using radiomics in non-small cell lung cancer patients",
+     "year": 2024,
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hlhktjoAAAAJ&pagesize=100&citation_for_view=hlhktjoAAAAJ:Ug5p-4gJ2f0C",
+     "venue": "Scientific Reports 14 (1), 7814, 2024",
+     "cited_by": 12
+    },
+    {
+     "title": "Prognostic and predictive biomarkers of oligometastatic NSCLC: new insights and clinical applications",
+     "year": 2024,
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hlhktjoAAAAJ&pagesize=100&citation_for_view=hlhktjoAAAAJ:2VqYfGB8ITEC",
+     "venue": "JTO clinical and research reports 5 (12), 100740, 2024",
+     "cited_by": 11
+    },
+    {
+     "title": "Interpretable multimodal radiopathomics model predicting pathological complete response to neoadjuvant chemoimmunotherapy in esophageal squamous cell carcinoma",
+     "year": 2025,
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hlhktjoAAAAJ&pagesize=100&citation_for_view=hlhktjoAAAAJ:LgRImbQfgY4C",
+     "venue": "Journal for Immunotherapy of Cancer 13 (12), e013840, 2025",
+     "cited_by": 9
+    },
+    {
+     "title": "Whole lung radiomic features are associated with overall survival in patients with locally advanced non-small cell lung cancer treated with definitive radiotherapy",
+     "year": 2025,
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hlhktjoAAAAJ&pagesize=100&citation_for_view=hlhktjoAAAAJ:4vMrXwiscB8C",
+     "venue": "Radiation Oncology 20 (1), 9, 2025",
+     "cited_by": 9
+    },
+    {
+     "title": "Making head and neck cancer clinical data Findable-Accessible-Interoperable-Reusable to support multi-institutional collaboration and federated learning",
+     "year": 2024,
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hlhktjoAAAAJ&pagesize=100&citation_for_view=hlhktjoAAAAJ:rmuvC79q63oC",
+     "venue": "BJR| Artificial Intelligence 1 (1), ubae005, 2024",
+     "cited_by": 8
+    },
+    {
+     "title": "Actionability of Synthetic Data in a Heterogeneous and Rare Health Care Demographic: Adolescents and Young Adults With Cancer",
+     "year": 2024,
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hlhktjoAAAAJ&cstart=100&pagesize=100&citation_for_view=hlhktjoAAAAJ:cWzG1nlazyYC",
+     "venue": "JCO Clinical Cancer Informatics 8, e2400056, 2024",
+     "cited_by": 7
+    },
+    {
+     "title": "Minimum sample size calculation for radiomics-based binary outcome prediction models: Theoretical framework and practical example",
+     "year": 2025,
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hlhktjoAAAAJ&cstart=100&pagesize=100&citation_for_view=hlhktjoAAAAJ:5MTHONV0fEkC",
+     "venue": "Radiotherapy and Oncology, 111134, 2025",
+     "cited_by": 5
+    },
+    {
+     "title": "Adolescent and young adult (AYA) patient involvement and engagement in European health care and research projects: expanding the scope of patient advocacy",
+     "year": 2025,
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hlhktjoAAAAJ&cstart=100&pagesize=100&citation_for_view=hlhktjoAAAAJ:HeT0ZceujKMC",
+     "venue": "ESMO open 10 (3), 104478, 2025",
+     "cited_by": 5
+    },
+    {
+     "title": "Lung Cancer Detection Using Bayesian Networks: A Retrospective Development and Validation Study on a Danish Population of High‐Risk Individuals",
+     "year": 2025,
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hlhktjoAAAAJ&cstart=100&pagesize=100&citation_for_view=hlhktjoAAAAJ:HtS1dXgVpQUC",
+     "venue": "Cancer Medicine 14 (3), e70458, 2025",
+     "cited_by": 5
+    },
+    {
+     "title": "Skeletal muscle is independently associated with grade 3–4 toxicity in advanced stage pancreatic ductal adenocarcinoma patients receiving chemotherapy",
+     "year": 2025,
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hlhktjoAAAAJ&cstart=100&pagesize=100&citation_for_view=hlhktjoAAAAJ:OTTXONDVkokC",
+     "venue": "Clinical Nutrition ESPEN 65, 134-143, 2025",
+     "cited_by": 5
+    },
+    {
+     "title": "Malignant pleural mesothelioma classification and survival prediction with CT imaging using ResNet",
+     "year": 2026,
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hlhktjoAAAAJ&cstart=100&pagesize=100&citation_for_view=hlhktjoAAAAJ:BJbdYPG6LGMC",
+     "venue": "European Radiology 36 (4), 2603-2614, 2026",
+     "cited_by": 4
+    },
+    {
+     "title": "Automated CT-derived body composition predicts pathologic response to neoadjuvant immunotherapy in non–small cell lung cancer",
+     "year": 2026,
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hlhktjoAAAAJ&cstart=100&pagesize=100&citation_for_view=hlhktjoAAAAJ:2tRrZ1ZAMYUC",
+     "venue": "Cancer Letters, 218229, 2026",
+     "cited_by": 4
+    },
+    {
+     "title": "Variational autoencoder-based deep learning and radiomics for predicting pathologic complete response to neoadjuvant chemoimmunotherapy in locally advanced oesophageal squamous …",
+     "year": 2026,
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hlhktjoAAAAJ&cstart=100&pagesize=100&citation_for_view=hlhktjoAAAAJ:5icHVeHT4IsC",
+     "venue": "British Journal of Radiology 99 (1177), 133-142, 2026",
+     "cited_by": 4
+    },
+    {
+     "title": "Data-efficient federated semi-supervised learning framework via pseudo supervision refinement strategy for lung tumor segmentation",
+     "year": 2025,
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hlhktjoAAAAJ&cstart=100&pagesize=100&citation_for_view=hlhktjoAAAAJ:DUooU5lO8OsC",
+     "venue": "Biomedical Signal Processing and Control 107, 107793, 2025",
+     "cited_by": 4
+    },
+    {
+     "title": "A Governance Framework for Federated Learning Projects in Healthcare",
+     "year": 2025,
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hlhktjoAAAAJ&cstart=100&pagesize=100&citation_for_view=hlhktjoAAAAJ:LhH-TYMQEocC",
+     "venue": "Intelligent Health Systems-From Technology to Data and Knowledge …, 2025",
+     "cited_by": 4
+    },
+    {
+     "title": "Prognostic modeling in head and neck cancer: deep learning or handcrafted radiomics?",
+     "year": 2025,
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hlhktjoAAAAJ&cstart=100&pagesize=100&citation_for_view=hlhktjoAAAAJ:u-coK7KVo8oC",
+     "venue": "BJR| Artificial Intelligence 2 (1), ubaf008, 2025",
+     "cited_by": 4
+    },
+    {
+     "title": "A Bayesian network approach to lung cancer screening: Assessing the impact of data quantity, quality, and the combination of data from Danish electronic health records",
+     "year": 2024,
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hlhktjoAAAAJ&cstart=100&pagesize=100&citation_for_view=hlhktjoAAAAJ:IUKN3-7HHlwC",
+     "venue": "Cancers 16 (23), 3989, 2024",
+     "cited_by": 4
+    },
+    {
+     "title": "Comparing the performance of a deep learning-based lung gross tumour volume segmentation algorithm before and after transfer learning in a new hospital",
+     "year": 2024,
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hlhktjoAAAAJ&cstart=100&pagesize=100&citation_for_view=hlhktjoAAAAJ:XoXfffV-tXoC",
+     "venue": "BJR| Open 6 (1), tzad008, 2024",
+     "cited_by": 4
+    },
+    {
+     "title": "Federated prediction models and external validation for radiotherapy outcomes in oropharyngeal cancer using FAIR clinical and radiomics data",
+     "year": 2025,
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hlhktjoAAAAJ&cstart=100&pagesize=100&citation_for_view=hlhktjoAAAAJ:DJbcl8HfkQkC",
+     "venue": "medRxiv, 2025.01. 29.25321214, 2025",
+     "cited_by": 3
+    },
+    {
+     "title": "Prognostic host phenotypes based on body composition and systemic inflammation predict survival in patients with resected pancreatic and periampullary cancer",
+     "year": 2026,
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hlhktjoAAAAJ&cstart=100&pagesize=100&citation_for_view=hlhktjoAAAAJ:QD3KBmkZPeQC",
+     "venue": "European Journal of Cancer, 116933, 2026",
+     "cited_by": 2
+    },
+    {
+     "title": "Knowledge Representation of a Multicenter Adolescent and Young Adult Cancer Infrastructure: Development of the STRONG AYA Knowledge Graph",
+     "year": 2026,
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hlhktjoAAAAJ&cstart=100&pagesize=100&citation_for_view=hlhktjoAAAAJ:Ehil0879vHcC",
+     "venue": "JCO clinical cancer informatics 10 (1), e2500177, 2026",
+     "cited_by": 2
+    },
+    {
+     "title": "Automatically quantifying spatial heterogeneity of immune and tumor hypoxia environment and predicting disease-free survival for patients with rectal cancer",
+     "year": 2025,
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hlhktjoAAAAJ&cstart=100&pagesize=100&citation_for_view=hlhktjoAAAAJ:gVv57TyPmFsC",
+     "venue": "Cancer Immunology, Immunotherapy 74 (12), 380, 2025",
+     "cited_by": 2
+    },
+    {
+     "title": "Subcutaneous Adipose Tissue Radiation Attenuation Is Associated With Increased 1‐Year Mortality in Polytrauma Patients",
+     "year": 2025,
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hlhktjoAAAAJ&cstart=100&pagesize=100&citation_for_view=hlhktjoAAAAJ:artPoR2Yc-kC",
+     "venue": "Journal of cachexia, sarcopenia and muscle 16 (5), e13743, 2025",
+     "cited_by": 2
+    },
+    {
+     "title": "Multinomial Classification Certainty: a new uncertainty metric for multinomial outcome prediction",
+     "year": 2025,
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hlhktjoAAAAJ&cstart=100&pagesize=100&citation_for_view=hlhktjoAAAAJ:gKiMpY-AVTkC",
+     "venue": "Progress in artificial intelligence, 1-13, 2025",
+     "cited_by": 2
+    },
+    {
+     "title": "Positron emission tomography imaging biomarker and artificial intelligence for the characterization of solitary pulmonary nodule",
+     "year": 2025,
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hlhktjoAAAAJ&cstart=100&pagesize=100&citation_for_view=hlhktjoAAAAJ:_OXeSy2IsFwC",
+     "venue": "Frontiers in Nuclear Medicine 5, 1611823, 2025",
+     "cited_by": 2
+    },
+    {
+     "title": "Performance of Handcrafted Radiomics versus Deep Learning for Prognosticating Head and Neck Squamous Cell Carcinoma–A Systematic Review with Critical Appraisal of Quantitative …",
+     "year": 2024,
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hlhktjoAAAAJ&cstart=100&pagesize=100&citation_for_view=hlhktjoAAAAJ:QYdC8u9Cj1oC",
+     "venue": "medRxiv, 2024.10. 22.24315007, 2024",
+     "cited_by": 2
+    },
+    {
+     "title": "Adapting federated radiomics models for radiation pneumonitis prediction in patients receiving thoracic radiotherapy with immunotherapy",
+     "year": 2026,
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hlhktjoAAAAJ&cstart=100&pagesize=100&citation_for_view=hlhktjoAAAAJ:jL-93Qbq4QoC",
+     "venue": "Frontiers in Immunology 17, 1793039, 2026",
+     "cited_by": 1
+    },
+    {
+     "title": "An international multi-centre study to develop and validate federated learning-based prognostic models for anal cancer",
+     "year": 2026,
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hlhktjoAAAAJ&cstart=100&pagesize=100&citation_for_view=hlhktjoAAAAJ:PVgj2kMGcgYC",
+     "venue": "Nature Communications 17 (1), 3956, 2026",
+     "cited_by": 1
+    },
+    {
+     "title": "Vulnerabilities of feature clustering in EIT radiomics",
+     "year": 2026,
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hlhktjoAAAAJ&cstart=100&pagesize=100&citation_for_view=hlhktjoAAAAJ:AHdEip9mkN0C",
+     "venue": "Computers in Biology and Medicine 201, 111438, 2026",
+     "cited_by": 1
+    },
+    {
+     "title": "CCR5 expression and conformational stability as potential cooperative modulators of immune phenotypes and therapy response in breast cancer",
+     "year": 2025,
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hlhktjoAAAAJ&cstart=100&pagesize=100&citation_for_view=hlhktjoAAAAJ:Ak0FvsSvgGUC",
+     "venue": "Discover Oncology 17 (1), 31, 2025",
+     "cited_by": 1
+    },
+    {
+     "title": "PET/CT-based deep learning model predicts distant metastasis after SBRT for early-stage NSCLC: A multicenter study",
+     "year": 2025,
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hlhktjoAAAAJ&cstart=100&pagesize=100&citation_for_view=hlhktjoAAAAJ:Bg7qf7VwUHIC",
+     "venue": "Computerized Medical Imaging and Graphics, 102663, 2025",
+     "cited_by": 1
+    },
+    {
+     "title": "Pragmatic patient choice-driven radical treatment approach (PRAGRAD) for very advanced unresectable oral cavity cancers",
+     "year": 2025,
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hlhktjoAAAAJ&cstart=100&pagesize=100&citation_for_view=hlhktjoAAAAJ:8xutWZnSdmoC",
+     "venue": "International Journal of Radiation Oncology* Biology* Physics, 2025",
+     "cited_by": 1
+    },
+    {
+     "title": "Are quantitative radiomics features comparable to semantic radiology features for pre-operative risk classification of thymic epithelial tumours?",
+     "year": 2025,
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hlhktjoAAAAJ&cstart=100&pagesize=100&citation_for_view=hlhktjoAAAAJ:r_AWSJRzSzQC",
+     "venue": "medRxiv, 2025.04. 26.25326466, 2025",
+     "cited_by": 1
+    },
+    {
+     "title": "Feasibility of training federated deep learning oropharyngeal primary tumor segmentation models without sharing gradient information",
+     "year": 2024,
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hlhktjoAAAAJ&cstart=100&pagesize=100&citation_for_view=hlhktjoAAAAJ:LO7wyVUgiFcC",
+     "venue": null,
+     "cited_by": 1
+    },
+    {
+     "title": "Transfer learning with BERT and ClinicalBERT models for multiclass classification of radiology imaging reports",
+     "year": 2024,
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hlhktjoAAAAJ&cstart=100&pagesize=100&citation_for_view=hlhktjoAAAAJ:8d8msizDQcsC",
+     "venue": null,
+     "cited_by": 1
+    },
+    {
+     "title": "Actionability of Synthetic Data in a Heterogeneous and Rare Healthcare Demographic; Adolescents and Young Adults (AYAs) with Cancer",
+     "year": 2024,
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hlhktjoAAAAJ&cstart=100&pagesize=100&citation_for_view=hlhktjoAAAAJ:mNrWkgRL2YcC",
+     "venue": "medRxiv, 2024.03. 04.24303526, 2024",
+     "cited_by": 1
+    },
+    {
+     "title": "From registration to insight: how STRONG AYA transforms registry data to enhance decision-support tools for adolescent and young adult oncology",
+     "year": 2026,
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hlhktjoAAAAJ&cstart=100&pagesize=100&citation_for_view=hlhktjoAAAAJ:wMgC3FpKEyYC",
+     "venue": "ESMO Real World Data and Digital Oncology 14, 100764, 2026",
+     "cited_by": null
+    },
+    {
+     "title": "Minimum sample size calculation for radiomics-based binary outcome prediction models: tutorial and practical example based on Riley et al's theoretical framework (vol 212 …",
+     "year": 2026,
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hlhktjoAAAAJ&cstart=100&pagesize=100&citation_for_view=hlhktjoAAAAJ:1taIhTC69MYC",
+     "venue": "RADIOTHERAPY AND ONCOLOGY 224, 2026",
+     "cited_by": null
+    },
+    {
+     "title": "Corrigendum to “Minimum sample size calculation for radiomics-based binary outcome prediction models: tutorial and practical example based on Riley et al’s theoretical …",
+     "year": 2026,
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hlhktjoAAAAJ&cstart=100&pagesize=100&citation_for_view=hlhktjoAAAAJ:PaBasH6fAo0C",
+     "venue": "Radiotherapy and Oncology 224, 111771, 2026",
+     "cited_by": null
+    },
+    {
+     "title": "Navigating the privacy-accuracy tradeoff: federated survival analysis with binning and differential privacy",
+     "year": 2026,
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hlhktjoAAAAJ&cstart=100&pagesize=100&citation_for_view=hlhktjoAAAAJ:XvxMoLDsR5gC",
+     "venue": "Frontiers in Applied Mathematics and Statistics 12, 1917462, 2026",
+     "cited_by": null
+    },
+    {
+     "title": "The impact of intratumor heterogeneity on outcome and resistance to therapy in primary breast cancer: a systematic review",
+     "year": 2026,
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hlhktjoAAAAJ&cstart=100&pagesize=100&citation_for_view=hlhktjoAAAAJ:FiytvqdAVhgC",
+     "venue": "Medical Oncology 43 (11), 303, 2026",
+     "cited_by": null
+    },
+    {
+     "title": "Artificial intelligence (AI)-powered imaging for objective psoriasis severity assessment at home: Feasibility and reliability in a randomized clinical trial",
+     "year": 2026,
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hlhktjoAAAAJ&cstart=100&pagesize=100&citation_for_view=hlhktjoAAAAJ:U4n9YNQMCAIC",
+     "venue": "Journal of the American Academy of Dermatology 95 (4), 1182-1184, 2026",
+     "cited_by": null
+    },
+    {
+     "title": "Quantitative Assessment Tumor Regression and Spatial Immune Patterns after Ncrt In Rectal Cancer Using a Deep Learning Framework",
+     "year": 2026,
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hlhktjoAAAAJ&cstart=100&pagesize=100&citation_for_view=hlhktjoAAAAJ:jgBuDB5drN8C",
+     "venue": "2026 Joint AAPM| COMP Annual Meeting & Exhibition, 2026",
+     "cited_by": null
+    },
+    {
+     "title": "Center-specific Federated Learning for Radiation Pneumonitis: A Cross-Center Adaptive Alternating Framework",
+     "year": 2026,
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hlhktjoAAAAJ&cstart=100&pagesize=100&citation_for_view=hlhktjoAAAAJ:BzfGm06jWhQC",
+     "venue": "International Journal of Radiation Oncology* Biology* Physics, 2026",
+     "cited_by": null
+    },
+    {
+     "title": "Variability in the distribution of Intermuscular Adipose Tissue in the Netherlands",
+     "year": 2026,
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hlhktjoAAAAJ&cstart=100&pagesize=100&citation_for_view=hlhktjoAAAAJ:v1_lew4L6wgC",
+     "venue": "Clinical Nutrition Open Science, 100691, 2026",
+     "cited_by": null
+    },
+    {
+     "title": "AI-Powered Imaging for Objective Psoriasis Severity Assessment at Home: Feasibility and Reliability in a Randomized Clinical Trial",
+     "year": 2026,
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hlhktjoAAAAJ&cstart=100&pagesize=100&citation_for_view=hlhktjoAAAAJ:zCSUwVk65WsC",
+     "venue": "Journal of the American Academy of Dermatology, 2026",
+     "cited_by": null
+    },
+    {
+     "title": "LinkedDicom: Indexing DICOM Metadata Using Semantic Web Technologies",
+     "year": 2026,
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hlhktjoAAAAJ&cstart=100&pagesize=100&citation_for_view=hlhktjoAAAAJ:ALROH1vI_8AC",
+     "venue": "Opening the Personal Gate between Technology and Health Care: Proceedings of …, 2026",
+     "cited_by": null
+    },
+    {
+     "title": "Correction: Cross-dataset adaptation of voxel-level deep radiomics for predicting survival in inoperable locally advanced NSCLC treated with immunotherapy",
+     "year": 2026,
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hlhktjoAAAAJ&cstart=100&pagesize=100&citation_for_view=hlhktjoAAAAJ:otzGkya1bYkC",
+     "venue": "Frontiers in Immunology 17, 1842651, 2026",
+     "cited_by": null
+    },
+    {
+     "title": "Outcomes after (chemo) radiotherapy for anal cancer–A nationwide cohort study",
+     "year": 2026,
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hlhktjoAAAAJ&cstart=100&pagesize=100&citation_for_view=hlhktjoAAAAJ:OP4eGU-M3BUC",
+     "venue": "Clinical and translational radiation oncology, 101163, 2026",
+     "cited_by": null
+    },
+    {
+     "title": "124P Assessing the prognostic value of clinical and radiomics features in synchronous oligometastatic NSCLC",
+     "year": 2026,
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hlhktjoAAAAJ&cstart=100&pagesize=100&citation_for_view=hlhktjoAAAAJ:uDGL6kOW6j0C",
+     "venue": "ESMO Open 11, 2026",
+     "cited_by": null
+    },
+    {
+     "title": "Automatically quantifying spatial heterogeneity of immune and tumor hypoxia environment and predicting disease-free survival for patients with rectal cancer (vol 74, 380, 2025)",
+     "year": 2026,
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hlhktjoAAAAJ&cstart=100&pagesize=100&citation_for_view=hlhktjoAAAAJ:buQ7SEKw-1sC",
+     "venue": "CANCER IMMUNOLOGY IMMUNOTHERAPY 75 (4), 2026",
+     "cited_by": null
+    },
+    {
+     "title": "Correction: Automatically quantifying spatial heterogeneity of immune and tumor hypoxia environment and predicting disease-free survival for patients with rectal cancer",
+     "year": 2026,
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hlhktjoAAAAJ&cstart=100&pagesize=100&citation_for_view=hlhktjoAAAAJ:4xDN1ZYqzskC",
+     "venue": "Cancer Immunology, Immunotherapy: CII 75 (4), 113, 2026",
+     "cited_by": null
+    },
+    {
+     "title": "Cross-dataset adaptation of voxel-level deep radiomics for predicting survival in inoperable locally advanced NSCLC treated with immunotherapy",
+     "year": 2026,
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hlhktjoAAAAJ&cstart=100&pagesize=100&citation_for_view=hlhktjoAAAAJ:6yz0xqPARnAC",
+     "venue": "Frontiers in Immunology 17, 1787518, 2026",
+     "cited_by": null
+    },
+    {
+     "title": "Decoding Uncertainty Quantification for Oncology—An Illustration Using Radiomics",
+     "year": 2026,
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hlhktjoAAAAJ&cstart=100&pagesize=100&citation_for_view=hlhktjoAAAAJ:NyGDZy8z5eUC",
+     "venue": "Diagnostics 16 (5), 700, 2026",
+     "cited_by": null
+    },
+    {
+     "title": "Data Auditing and Quality Assurance in a Federated Learning Consortium; Getting the Best of Both Worlds from Cross-Institutional and In-House Data Quality Inspection",
+     "year": 2026,
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hlhktjoAAAAJ&cstart=100&pagesize=100&citation_for_view=hlhktjoAAAAJ:nRpfm8aw39MC",
+     "venue": "medRxiv, 2026.09. 08.26361592, 2026",
+     "cited_by": null
+    },
+    {
+     "title": "Independent validation of the Mosamatic deep learning automated skeletal muscle and adipose tissue segmentation tool in an external Chinese cancer patient cohort",
+     "year": 2026,
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hlhktjoAAAAJ&cstart=100&pagesize=100&citation_for_view=hlhktjoAAAAJ:0CzhzZyukY4C",
+     "venue": "BJR| Artificial Intelligence 3 (1), ubaf021, 2026",
+     "cited_by": null
+    },
+    {
+     "title": "From Federated Learning to Publicly Facing Platform; Proof-of-Concept of the STRONG AYA Information Portal",
+     "year": 2025,
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hlhktjoAAAAJ&cstart=100&pagesize=100&citation_for_view=hlhktjoAAAAJ:yqoGN6RLRZoC",
+     "venue": "Intelligent Health Systems-From Technology to Data and Knowledge …, 2025",
+     "cited_by": null
+    },
+    {
+     "title": "2555 Automated Tumor Segmentation Within Atelectasis Regions in CT Images Using nnUNet: Enhancing Diagnostic Accuracy and Radiotherapy Planning",
+     "year": 2025,
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hlhktjoAAAAJ&cstart=100&pagesize=100&citation_for_view=hlhktjoAAAAJ:nZcligLrVowC",
+     "venue": "Radiotherapy and Oncology 206, S2479-S2480, 2025",
+     "cited_by": null
+    },
+    {
+     "title": "Gross Tumour Volume segmentation by federated deep learning using real-world data of 3500+ lung cancer patients from 20 institutions in 10 countries",
+     "year": 2025,
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hlhktjoAAAAJ&cstart=200&pagesize=100&citation_for_view=hlhktjoAAAAJ:P7Ujq4OLJYoC",
+     "venue": "Radiotherapy and Oncology 206 (Supplement 1), S2546-S2548, 2025",
+     "cited_by": null
+    },
+    {
+     "title": "2496 Federated Prediction Models and External Validation for Radiotherapy Outcomes in Head and Neck Cancer using FAIR Clinical and Radiomics Data",
+     "year": 2025,
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hlhktjoAAAAJ&cstart=200&pagesize=100&citation_for_view=hlhktjoAAAAJ:F9fV5C73w3QC",
+     "venue": "Radiotherapy and Oncology 206, S1033-S1034, 2025",
+     "cited_by": null
+    }
+   ]
+  },
+  "petros-kalendralis": {
+   "checked": 26,
+   "matched": 24,
+   "not_attributed": [],
+   "missing": [
+    {
+     "title": "Quantifying Differences between Clinical Practices Using Natural Language Processing for AI Model Generalization In Radiation Oncology",
+     "year": 2026,
+     "venue": "2026 Joint AAPM| COMP Annual Meeting & Exhibition, 2026",
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=_iOPG9oAAAAJ&pagesize=100&citation_for_view=_iOPG9oAAAAJ:pqnbT2bcN3wC"
+    },
+    {
+     "title": "Quantitative Assessment Tumor Regression and Spatial Immune Patterns after Ncrt In Rectal Cancer Using a Deep Learning Framework",
+     "year": 2026,
+     "venue": "2026 Joint AAPM| COMP Annual Meeting & Exhibition, 2026",
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=_iOPG9oAAAAJ&pagesize=100&citation_for_view=_iOPG9oAAAAJ:M05iB0D1s5AC"
+    }
+   ],
+   "name": "Petros Kalendralis",
+   "scholar_id": "_iOPG9oAAAAJ",
+   "profile_total": 81,
+   "checked_at": "2026-10-21",
+   "articles": [
+    {
+     "title": "Artificial intelligence based data curation: enabling a patient-centric European health data space",
+     "year": 2024,
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=_iOPG9oAAAAJ&pagesize=100&citation_for_view=_iOPG9oAAAAJ:iH-uZ7U-co4C",
+     "venue": "Frontiers in medicine 11, 1365501, 2024",
+     "cited_by": 22
+    },
+    {
+     "title": "Predicting overall survival of NSCLC patients with clinical, radiomics and deep learning features",
+     "year": 2026,
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=_iOPG9oAAAAJ&pagesize=100&citation_for_view=_iOPG9oAAAAJ:GnPB-g6toBAC",
+     "venue": "Journal of Imaging Informatics in Medicine, 1-18, 2026",
+     "cited_by": 4
+    },
+    {
+     "title": "Variational autoencoder-based deep learning and radiomics for predicting pathologic complete response to neoadjuvant chemoimmunotherapy in locally advanced oesophageal squamous …",
+     "year": 2026,
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=_iOPG9oAAAAJ&pagesize=100&citation_for_view=_iOPG9oAAAAJ:RGFaLdJalmkC",
+     "venue": "British Journal of Radiology 99 (1177), 133-142, 2026",
+     "cited_by": 4
+    },
+    {
+     "title": "Optimizing Cardiovascular Risk Management in Primary Care Using a Personalized eCoach Solution Enhanced by an Artificial Intelligence–Driven Clinical Prediction Model: Protocol …",
+     "year": 2025,
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=_iOPG9oAAAAJ&pagesize=100&citation_for_view=_iOPG9oAAAAJ:BqipwSGYUEgC",
+     "venue": "JMIR Research Protocols 14 (1), e66068, 2025",
+     "cited_by": 4
+    },
+    {
+     "title": "Forecasting model for qualitative prediction of the results of patient-specific quality assurance based on planning and complexity metrics and their interrelations. Pilot study",
+     "year": 2024,
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=_iOPG9oAAAAJ&pagesize=100&citation_for_view=_iOPG9oAAAAJ:bEWYMUwI8FkC",
+     "venue": "Reports of Practical Oncology and Radiotherapy 29 (3), 318-328, 2024",
+     "cited_by": 4
+    },
+    {
+     "title": "Automatically quantifying spatial heterogeneity of immune and tumor hypoxia environment and predicting disease-free survival for patients with rectal cancer",
+     "year": 2025,
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=_iOPG9oAAAAJ&pagesize=100&citation_for_view=_iOPG9oAAAAJ:ns9cj8rnVeAC",
+     "venue": "Cancer Immunology, Immunotherapy 74 (12), 380, 2025",
+     "cited_by": 2
+    },
+    {
+     "title": "PET/CT-based deep learning model predicts distant metastasis after SBRT for early-stage NSCLC: A multicenter study",
+     "year": 2025,
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=_iOPG9oAAAAJ&pagesize=100&citation_for_view=_iOPG9oAAAAJ:NaGl4SEjCO4C",
+     "venue": "Computerized Medical Imaging and Graphics, 102663, 2025",
+     "cited_by": 1
+    },
+    {
+     "title": "An AI-powered data curation and publishing virtual assistant: usability and explainability/causability of, and patient interest in the first-generation prototype",
+     "year": 2025,
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=_iOPG9oAAAAJ&pagesize=100&citation_for_view=_iOPG9oAAAAJ:O3NaXMp0MMsC",
+     "venue": "Frontiers in Digital Health 7, 1629413, 2025",
+     "cited_by": 1
+    },
+    {
+     "title": "Construction of personal health knowledge graphs for clinical data harmonization in breast cancer",
+     "year": 2026,
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=_iOPG9oAAAAJ&pagesize=100&citation_for_view=_iOPG9oAAAAJ:RYcK_YlVTxYC",
+     "venue": "npj Breast Cancer, 2026",
+     "cited_by": null
+    },
+    {
+     "title": "Dose-volume predictors of post-radiation xerostomia in head and neck cancer: A systematic review",
+     "year": 2026,
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=_iOPG9oAAAAJ&pagesize=100&citation_for_view=_iOPG9oAAAAJ:HoB7MX3m0LUC",
+     "venue": "Clinical and Translational Radiation Oncology, 101282, 2026",
+     "cited_by": null
+    },
+    {
+     "title": "Spatiotemporal AI Morphometry for Early Recurrence Assessment in Rectal Cancer After Neoadjuvant Chemoradiotherapy: A Multi-Model Ablation Study",
+     "year": 2026,
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=_iOPG9oAAAAJ&pagesize=100&citation_for_view=_iOPG9oAAAAJ:3s1wT3WcHBgC",
+     "venue": "International Journal of Radiation Oncology, Biology, Physics 126 (1), S214, 2026",
+     "cited_by": null
+    },
+    {
+     "title": "QUANTIFYING INTER-INSTITUTIONAL VARIABILITY IN RADIOTHERAPY CLINICALWORKFLOWS USING NATURAL LANGUAGE PROCESSING AND VECTOR EMBEDDINGS",
+     "year": 2026,
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=_iOPG9oAAAAJ&pagesize=100&citation_for_view=_iOPG9oAAAAJ:ZHo1McVdvXMC",
+     "venue": "Physica Medica: European Journal of Medical Physics 149, 2026",
+     "cited_by": null
+    },
+    {
+     "title": "HI-ROC PROJECT: TARGETING HYPOXIA WITH HEAVY IONS TO GAIN CONTROL OF RADIORESISTANT CANCERS",
+     "year": 2026,
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=_iOPG9oAAAAJ&pagesize=100&citation_for_view=_iOPG9oAAAAJ:SeFeTyx0c_EC",
+     "venue": "International Journal of Particle Therapy 21, 101350, 2026",
+     "cited_by": null
+    },
+    {
+     "title": "Quantifying Differences between Clinical Practices Using Natural Language Processing for AI Model Generalization In Radiation Oncology",
+     "year": 2026,
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=_iOPG9oAAAAJ&pagesize=100&citation_for_view=_iOPG9oAAAAJ:pqnbT2bcN3wC",
+     "venue": "2026 Joint AAPM| COMP Annual Meeting & Exhibition, 2026",
+     "cited_by": null
+    },
+    {
+     "title": "Quantitative Assessment Tumor Regression and Spatial Immune Patterns after Ncrt In Rectal Cancer Using a Deep Learning Framework",
+     "year": 2026,
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=_iOPG9oAAAAJ&pagesize=100&citation_for_view=_iOPG9oAAAAJ:M05iB0D1s5AC",
+     "venue": "2026 Joint AAPM| COMP Annual Meeting & Exhibition, 2026",
+     "cited_by": null
+    },
+    {
+     "title": "Validation of Deep-Learning Models for Autosegmentation of Brain Metastases",
+     "year": 2026,
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=_iOPG9oAAAAJ&pagesize=100&citation_for_view=_iOPG9oAAAAJ:g5m5HwL7SMYC",
+     "venue": "Health Sciences Informatics Leads and Empowers the Digital Health …, 2026",
+     "cited_by": null
+    },
+    {
+     "title": "Patient characteristics of non-participants and reasons for non-participation in cardiac (tele) rehabilitation—a prospective analysis",
+     "year": 2026,
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=_iOPG9oAAAAJ&pagesize=100&citation_for_view=_iOPG9oAAAAJ:70eg2SAEIzsC",
+     "venue": "Frontiers in Rehabilitation Sciences 7, 1844025, 2026",
+     "cited_by": null
+    },
+    {
+     "title": "Automatically quantifying spatial heterogeneity of immune and tumor hypoxia environment and predicting disease-free survival for patients with rectal cancer (vol 74, 380, 2025)",
+     "year": 2026,
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=_iOPG9oAAAAJ&pagesize=100&citation_for_view=_iOPG9oAAAAJ:35N4QoGY0k4C",
+     "venue": "CANCER IMMUNOLOGY IMMUNOTHERAPY 75 (4), 2026",
+     "cited_by": null
+    },
+    {
+     "title": "Correction: Automatically quantifying spatial heterogeneity of immune and tumor hypoxia environment and predicting disease-free survival for patients with rectal cancer",
+     "year": 2026,
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=_iOPG9oAAAAJ&pagesize=100&citation_for_view=_iOPG9oAAAAJ:lSLTfruPkqcC",
+     "venue": "Cancer Immunology, Immunotherapy: CII 75 (4), 113, 2026",
+     "cited_by": null
+    },
+    {
+     "title": "Predicting overall survival of NSCLC patients with clinical, radiomics and deep learning",
+     "year": 2026,
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=_iOPG9oAAAAJ&pagesize=100&citation_for_view=_iOPG9oAAAAJ:ldfaerwXgEUC",
+     "venue": "AI in medical imaging for cancer care', 110, 2026",
+     "cited_by": null
+    },
+    {
+     "title": "3356 a personal health knowledge graph for clinical data harmonization in breast cancer radiotherapy patients",
+     "year": 2025,
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=_iOPG9oAAAAJ&pagesize=100&citation_for_view=_iOPG9oAAAAJ:hMod-77fHWUC",
+     "venue": "Radiotherapy and Oncology 206, S2393-S2396, 2025",
+     "cited_by": null
+    },
+    {
+     "title": "231P: Prognostic factors for survival in unresectable stage III non-small cell lung cancer (NSCLC) receiving chemoradiotherapy (CRT)",
+     "year": 2025,
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=_iOPG9oAAAAJ&pagesize=100&citation_for_view=_iOPG9oAAAAJ:blknAaTinKkC",
+     "venue": "Journal of Thoracic Oncology 20 (3), S147, 2025",
+     "cited_by": null
+    },
+    {
+     "title": "PP02. 02 EXTERNALVALIDATION OF AN AI-BASED TOOL FOR THE EARLY DETECTION OF RADIOTHERAPY TREATMENT PLANNING ERRORS–AN UPDATED MULTICENTRIC STUDY",
+     "year": 2024,
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=_iOPG9oAAAAJ&pagesize=100&citation_for_view=_iOPG9oAAAAJ:k_IJM867U9cC",
+     "venue": "Physica Medica 125, 103586, 2024",
+     "cited_by": null
+    },
+    {
+     "title": "932: Forecasting model for qualitative prediction of the results of patient-specific quality assurance.",
+     "year": 2024,
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=_iOPG9oAAAAJ&pagesize=100&citation_for_view=_iOPG9oAAAAJ:isC4tDSrTZIC",
+     "venue": "Radiotherapy and Oncology 194, S4449-S4450, 2024",
+     "cited_by": null
+    },
+    {
+     "title": "External validation of an AI tool for the detection of radiotherapy errors-A multicentric study",
+     "year": 2024,
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=_iOPG9oAAAAJ&pagesize=100&citation_for_view=_iOPG9oAAAAJ:TFP_iSt0sucC",
+     "venue": "Radiotherapy and Oncology 194, S4752-S4753, 2024",
+     "cited_by": null
+    },
+    {
+     "title": "Radiomics:“unlocking the potential of medical images for precision radiation oncology”",
+     "year": 2024,
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=_iOPG9oAAAAJ&pagesize=100&citation_for_view=_iOPG9oAAAAJ:-f6ydRqryjwC",
+     "venue": "Machine Learning and Artificial Intelligence in Radiation Oncology, 73-105, 2024",
+     "cited_by": null
+    }
+   ]
+  },
+  "rianne-fijten": {
+   "checked": 44,
+   "matched": 37,
+   "not_attributed": [],
+   "missing": [
+    {
+     "title": "P0953 Real world effectiveness and safety of filgotinib in Ulcerative Colitis: 1 year follow-up results of the ICC registry",
+     "year": 2025,
+     "venue": "Journal of Crohn's and Colitis 19 (Supplement_1), i1779-i1780, 2025",
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=_q5Rkg0AAAAJ&pagesize=100&citation_for_view=_q5Rkg0AAAAJ:u9iWguZQMMsC"
+    },
+    {
+     "title": "P0786 The short-term efficacy of Filgotinib on antibiotic-dependent/resistant pouchitis in patients with ulcerative colitis",
+     "year": 2025,
+     "venue": "Journal of Crohn's and Colitis 19 (Supplement_1), i1514, 2025",
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=_q5Rkg0AAAAJ&pagesize=100&citation_for_view=_q5Rkg0AAAAJ:UxriW0iASnsC"
+    },
+    {
+     "title": "Patients' Attitudes Towards the Use of AI-Based Decision Aids for Breast Cancer Treatment Decision-Making: A Qualitative Study",
+     "year": 2024,
+     "venue": "Data-driven shared decision making in oncology, 61, 2024",
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=_q5Rkg0AAAAJ&pagesize=100&citation_for_view=_q5Rkg0AAAAJ:M05iB0D1s5AC"
+    },
+    {
+     "title": "AI-driven Prediction of Functional Outcomes for Continence and Sexual Function in Prostate Cancer",
+     "year": 2026,
+     "venue": "ONCOLOGY RESEARCH AND TREATMENT 49, 237-238, 2026",
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=_q5Rkg0AAAAJ&pagesize=100&citation_for_view=_q5Rkg0AAAAJ:5ugPr518TE4C"
+    },
+    {
+     "title": "By-laws of the Open Science Communities the Netherlands (OSC-NL) 2025",
+     "year": 2025,
+     "venue": "Zenodo, 2025",
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=_q5Rkg0AAAAJ&pagesize=100&citation_for_view=_q5Rkg0AAAAJ:fQNAKQ3IYiAC"
+    },
+    {
+     "title": "The road to successful innovation implementation: an implementation protocol in radiotherapy",
+     "year": 2025,
+     "venue": "Driving innovation in radiotherapy with implementation science, 129, 2025",
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=_q5Rkg0AAAAJ&pagesize=100&citation_for_view=_q5Rkg0AAAAJ:1qzjygNMrQYC"
+    },
+    {
+     "title": "Vertrouwen in AI-ondersteunde besluitvorming is cruciaal",
+     "year": 2024,
+     "venue": "ICT en Health 3, 2024",
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=_q5Rkg0AAAAJ&pagesize=100&citation_for_view=_q5Rkg0AAAAJ:uWQEDVKXjbEC"
+    }
+   ],
+   "name": "Rianne Fijten",
+   "scholar_id": "_q5Rkg0AAAAJ",
+   "profile_total": 121,
+   "checked_at": "2026-10-21",
+   "articles": [
+    {
+     "title": "Advancing privacy-preserving health care analytics and implementation of the personal health train: Federated deep learning study",
+     "year": 2025,
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=_q5Rkg0AAAAJ&pagesize=100&citation_for_view=_q5Rkg0AAAAJ:OU6Ihb5iCvQC",
+     "venue": "Jmir Ai 4 (1), e60847, 2025",
+     "cited_by": 55
+    },
+    {
+     "title": "Implementation strategy for artificial intelligence in radiotherapy: can implementation science help?",
+     "year": 2024,
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=_q5Rkg0AAAAJ&pagesize=100&citation_for_view=_q5Rkg0AAAAJ:nb7KW1ujOQ8C",
+     "venue": "JCO Clinical Cancer Informatics 8, e2400101, 2024",
+     "cited_by": 21
+    },
+    {
+     "title": "The effect of mHealth on childhood vaccination in Africa: A systematic review and meta-analysis",
+     "year": 2024,
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=_q5Rkg0AAAAJ&pagesize=100&citation_for_view=_q5Rkg0AAAAJ:pyW8ca7W8N0C",
+     "venue": "PLoS One 19 (2), e0294442, 2024",
+     "cited_by": 21
+    },
+    {
+     "title": "The epistemic cost of opacity: How the use of artificial intelligence undermines the knowledge of medical doctors in high-stakes contexts",
+     "year": 2025,
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=_q5Rkg0AAAAJ&pagesize=100&citation_for_view=_q5Rkg0AAAAJ:KxtntwgDAa4C",
+     "venue": "Philosophy & Technology 38 (1), 5, 2025",
+     "cited_by": 20
+    },
+    {
+     "title": "Effect of mobile phone messaging on uptake of maternal and child health service in southern Ethiopia: Protocol for cluster randomized controlled trial",
+     "year": 2024,
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=_q5Rkg0AAAAJ&pagesize=100&citation_for_view=_q5Rkg0AAAAJ:cFHS6HbyZ2cC",
+     "venue": "Clinical Nutrition Open Science 54, 89-99, 2024",
+     "cited_by": 15
+    },
+    {
+     "title": "Contextual success and pitfalls of mHealth service for maternal and child health in Africa: An Intervention, Context, Actors, Mechanism, and Outcome (ICAMO) framework guided …",
+     "year": 2024,
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=_q5Rkg0AAAAJ&pagesize=100&citation_for_view=_q5Rkg0AAAAJ:1sJd4Hv_s6UC",
+     "venue": "BMC pregnancy and childbirth 24 (1), 690, 2024",
+     "cited_by": 12
+    },
+    {
+     "title": "The effect of mHealth on exclusive breastfeeding and its associated factors among women in South Ethiopia: a cluster randomized controlled trial",
+     "year": 2025,
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=_q5Rkg0AAAAJ&pagesize=100&citation_for_view=_q5Rkg0AAAAJ:8AbLer7MMksC",
+     "venue": "Nutrients 17 (21), 3477, 2025",
+     "cited_by": 9
+    },
+    {
+     "title": "Bridging the care gap: patients’ needs and experiences regarding shared decision-making in radiotherapy",
+     "year": 2025,
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=_q5Rkg0AAAAJ&pagesize=100&citation_for_view=_q5Rkg0AAAAJ:P5F9QuxV20EC",
+     "venue": "Clinical and translational radiation oncology 50, 100897, 2025",
+     "cited_by": 8
+    },
+    {
+     "title": "Towards a European prospective data registry for particle therapy",
+     "year": 2024,
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=_q5Rkg0AAAAJ&pagesize=100&citation_for_view=_q5Rkg0AAAAJ:EUQCXRtRnyEC",
+     "venue": "Radiotherapy and Oncology 196, 110293, 2024",
+     "cited_by": 8
+    },
+    {
+     "title": "The role of mHealth intervention to improve maternal and child health: A provider-based qualitative study in Southern Ethiopia",
+     "year": 2024,
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=_q5Rkg0AAAAJ&pagesize=100&citation_for_view=_q5Rkg0AAAAJ:a0OBvERweLwC",
+     "venue": "PloS one 19 (2), e0295539, 2024",
+     "cited_by": 8
+    },
+    {
+     "title": "Advancing predictive modeling of inflammatory bowel disease (IBD) Flares: A data-driven approach using lifestyle and psychosocial factors from a remote monitoring platform",
+     "year": 2026,
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=_q5Rkg0AAAAJ&pagesize=100&citation_for_view=_q5Rkg0AAAAJ:eflP2zaiRacC",
+     "venue": "Digestive Diseases and Sciences, 1-13, 2026",
+     "cited_by": 4
+    },
+    {
+     "title": "Criteria for establishing a centre of excellence in oncology: a scoping review",
+     "year": 2025,
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=_q5Rkg0AAAAJ&pagesize=100&citation_for_view=_q5Rkg0AAAAJ:sSrBHYA8nusC",
+     "venue": "BMC Health Services Research 25 (1), 981, 2025",
+     "cited_by": 4
+    },
+    {
+     "title": "The road to successful implementation of innovation in radiotherapy: A research-based implementation protocol",
+     "year": 2025,
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=_q5Rkg0AAAAJ&pagesize=100&citation_for_view=_q5Rkg0AAAAJ:738O_yMBCRsC",
+     "venue": "Radiotherapy and Oncology 207, 110874, 2025",
+     "cited_by": 4
+    },
+    {
+     "title": "Prognostic modeling in head and neck cancer: deep learning or handcrafted radiomics?",
+     "year": 2025,
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=_q5Rkg0AAAAJ&pagesize=100&citation_for_view=_q5Rkg0AAAAJ:B3FOqHPlNUQC",
+     "venue": "BJR| Artificial Intelligence 2 (1), ubaf008, 2025",
+     "cited_by": 4
+    },
+    {
+     "title": "Understanding Clinicians’ Informational Needs for AI-Driven Clinical Decision Support Systems: Qualitative Interview Study",
+     "year": 2026,
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=_q5Rkg0AAAAJ&pagesize=100&citation_for_view=_q5Rkg0AAAAJ:BrmTIyaxlBUC",
+     "venue": "JMIR medical education 12, e85228, 2026",
+     "cited_by": 3
+    },
+    {
+     "title": "The effect of mHealth on childhood vaccination and its associated factors among South Ethiopian mothers: a cluster randomized controlled trial",
+     "year": 2025,
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=_q5Rkg0AAAAJ&pagesize=100&citation_for_view=_q5Rkg0AAAAJ:5Ul4iDaHHb8C",
+     "venue": "Scientific Reports 15 (1), 41668, 2025",
+     "cited_by": 3
+    },
+    {
+     "title": "Performance of Handcrafted Radiomics versus Deep Learning for Prognosticating Head and Neck Squamous Cell Carcinoma–A Systematic Review with Critical Appraisal of Quantitative …",
+     "year": 2024,
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=_q5Rkg0AAAAJ&pagesize=100&citation_for_view=_q5Rkg0AAAAJ:CHSYGLWDkRkC",
+     "venue": "medRxiv, 2024.10. 22.24315007, 2024",
+     "cited_by": 2
+    },
+    {
+     "title": "The value of PROMs for predicting erectile dysfunction in prostate cancer patients with Bayesian network",
+     "year": 2024,
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=_q5Rkg0AAAAJ&pagesize=100&citation_for_view=_q5Rkg0AAAAJ:D03iK_w7-QYC",
+     "venue": "Technical innovations & patient support in radiation oncology 31, 100234, 2024",
+     "cited_by": 2
+    },
+    {
+     "title": "In their own words: A qualitative study of patient narratives on daily life after breast cancer radiotherapy",
+     "year": 2026,
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=_q5Rkg0AAAAJ&pagesize=100&citation_for_view=_q5Rkg0AAAAJ:q3oQSFYPqjQC",
+     "venue": "PEC innovation 8, 100468, 2026",
+     "cited_by": 1
+    },
+    {
+     "title": "Decisional needs among patients and physicians in the treatment of chronic myeloid leukaemia: a qualitative analysis in the Netherlands",
+     "year": 2026,
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=_q5Rkg0AAAAJ&pagesize=100&citation_for_view=_q5Rkg0AAAAJ:VOx2b1Wkg3QC",
+     "venue": "BMJ open 16 (1), e112705, 2026",
+     "cited_by": 1
+    },
+    {
+     "title": "Effect of mHealth on Postpartum Family Planning and Its Associated Factors Among Women in South Ethiopia: A Cluster-Randomized Controlled Trial",
+     "year": 2025,
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=_q5Rkg0AAAAJ&pagesize=100&citation_for_view=_q5Rkg0AAAAJ:LPZeul_q3PIC",
+     "venue": "Journal of Clinical Medicine 14 (24), 8703, 2025",
+     "cited_by": 1
+    },
+    {
+     "title": "P0953 Real world effectiveness and safety of filgotinib in Ulcerative Colitis: 1 year follow-up results of the ICC registry",
+     "year": 2025,
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=_q5Rkg0AAAAJ&pagesize=100&citation_for_view=_q5Rkg0AAAAJ:u9iWguZQMMsC",
+     "venue": "Journal of Crohn's and Colitis 19 (Supplement_1), i1779-i1780, 2025",
+     "cited_by": 1
+    },
+    {
+     "title": "P0956 Predicting clinical remission in Crohn’s disease: a comparative study of expert-generated and computer-generated Bayesian networks",
+     "year": 2025,
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=_q5Rkg0AAAAJ&pagesize=100&citation_for_view=_q5Rkg0AAAAJ:SP6oXDckpogC",
+     "venue": "Journal of Crohn's and Colitis 19 (Supplement_1), i1786-i1786, 2025",
+     "cited_by": 1
+    },
+    {
+     "title": "P0786 The short-term efficacy of Filgotinib on antibiotic-dependent/resistant pouchitis in patients with ulcerative colitis",
+     "year": 2025,
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=_q5Rkg0AAAAJ&pagesize=100&citation_for_view=_q5Rkg0AAAAJ:UxriW0iASnsC",
+     "venue": "Journal of Crohn's and Colitis 19 (Supplement_1), i1514, 2025",
+     "cited_by": 1
+    },
+    {
+     "title": "P0083 Decisional needs among patients and physicians in Crohn's disease: A qualitative analysis",
+     "year": 2025,
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=_q5Rkg0AAAAJ&pagesize=100&citation_for_view=_q5Rkg0AAAAJ:dshw04ExmUIC",
+     "venue": "Journal of Crohn's and Colitis 19 (Supplement_1), i450-i450, 2025",
+     "cited_by": 1
+    },
+    {
+     "title": "Patients' Attitudes Towards the Use of AI-Based Decision Aids for Breast Cancer Treatment Decision-Making: A Qualitative Study",
+     "year": 2024,
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=_q5Rkg0AAAAJ&pagesize=100&citation_for_view=_q5Rkg0AAAAJ:M05iB0D1s5AC",
+     "venue": "Data-driven shared decision making in oncology, 61, 2024",
+     "cited_by": 1
+    },
+    {
+     "title": "The Effect of Mobile Health Intervention on Prelacteal Feeding Among Mothers in the First Month After Birth in South Ethiopia: A Cluster-Randomized Controlled Trial",
+     "year": 2026,
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=_q5Rkg0AAAAJ&pagesize=100&citation_for_view=_q5Rkg0AAAAJ:XiVPGOgt02cC",
+     "venue": "Nutrients 18 (11), 1795, 2026",
+     "cited_by": null
+    },
+    {
+     "title": "Uncovering Topics in Dutch Patient Messages in Inflammatory Bowel Disease: A Comparative Study of Embedding Models for Neural Topic Modeling",
+     "year": 2026,
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=_q5Rkg0AAAAJ&pagesize=100&citation_for_view=_q5Rkg0AAAAJ:bnK-pcrLprsC",
+     "venue": "Opening the Personal Gate between Technology and Health Care: Proceedings of …, 2026",
+     "cited_by": null
+    },
+    {
+     "title": "Master Plan of the Open Science Community Maastricht",
+     "year": 2026,
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=_q5Rkg0AAAAJ&pagesize=100&citation_for_view=_q5Rkg0AAAAJ:t6usbXjVLHcC",
+     "venue": null,
+     "cited_by": null
+    },
+    {
+     "title": "Between map and maze: reframing trust in healthcare AI",
+     "year": 2026,
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=_q5Rkg0AAAAJ&pagesize=100&citation_for_view=_q5Rkg0AAAAJ:mvPsJ3kp5DgC",
+     "venue": "AI & society, 1-11, 2026",
+     "cited_by": null
+    },
+    {
+     "title": "Decoding Uncertainty Quantification for Oncology—An Illustration Using Radiomics",
+     "year": 2026,
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=_q5Rkg0AAAAJ&pagesize=100&citation_for_view=_q5Rkg0AAAAJ:D_sINldO8mEC",
+     "venue": "Diagnostics 16 (5), 700, 2026",
+     "cited_by": null
+    },
+    {
+     "title": "AI-driven Prediction of Functional Outcomes for Continence and Sexual Function in Prostate Cancer",
+     "year": 2026,
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=_q5Rkg0AAAAJ&pagesize=100&citation_for_view=_q5Rkg0AAAAJ:5ugPr518TE4C",
+     "venue": "ONCOLOGY RESEARCH AND TREATMENT 49, 237-238, 2026",
+     "cited_by": null
+    },
+    {
+     "title": "By-laws of the Open Science Communities the Netherlands (OSC-NL) 2025",
+     "year": 2025,
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=_q5Rkg0AAAAJ&pagesize=100&citation_for_view=_q5Rkg0AAAAJ:fQNAKQ3IYiAC",
+     "venue": "Zenodo, 2025",
+     "cited_by": null
+    },
+    {
+     "title": "The road to successful implementation of innovation in radiotherapy: a research-based protocol",
+     "year": 2025,
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=_q5Rkg0AAAAJ&pagesize=100&citation_for_view=_q5Rkg0AAAAJ:olpn-zPbct0C",
+     "venue": "RADIOTHERAPY AND ONCOLOGY 206, S2354-S2357, 2025",
+     "cited_by": null
+    },
+    {
+     "title": "3687 More than a number: investigating quality-of-life concerns in breast cancer radiation therapy decisionmaking",
+     "year": 2025,
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=_q5Rkg0AAAAJ&pagesize=100&citation_for_view=_q5Rkg0AAAAJ:K3LRdlH-MEoC",
+     "venue": "Radiotherapy and Oncology 206, S594, 2025",
+     "cited_by": null
+    },
+    {
+     "title": "Criteria for establishing a centre of excellence in oncology: a systematic literature review",
+     "year": 2025,
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=_q5Rkg0AAAAJ&pagesize=100&citation_for_view=_q5Rkg0AAAAJ:J-pR_7NvFogC",
+     "venue": "Driving innovation in radiotherapy with implementation science, 223, 2025",
+     "cited_by": null
+    },
+    {
+     "title": "The road to successful innovation implementation: an implementation protocol in radiotherapy",
+     "year": 2025,
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=_q5Rkg0AAAAJ&pagesize=100&citation_for_view=_q5Rkg0AAAAJ:1qzjygNMrQYC",
+     "venue": "Driving innovation in radiotherapy with implementation science, 129, 2025",
+     "cited_by": null
+    },
+    {
+     "title": "Routinely assessing shared decision-making: A patient-centered, mixed-methods comparison of three instruments",
+     "year": 2025,
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=_q5Rkg0AAAAJ&pagesize=100&citation_for_view=_q5Rkg0AAAAJ:l7t_Zn2s7bgC",
+     "venue": "Tilburg University, School of Economics and Management, 2025",
+     "cited_by": null
+    },
+    {
+     "title": "276 Mind the gap: discrepancies between experienced and desired shared decision-making in a Dutch radiotherapy centre",
+     "year": 2024,
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=_q5Rkg0AAAAJ&pagesize=100&citation_for_view=_q5Rkg0AAAAJ:abG-DnoFyZgC",
+     "venue": "BMJ Evidence-Based Medicine 29 (Suppl 1), A130-A130, 2024",
+     "cited_by": null
+    },
+    {
+     "title": "A research-based implementation strategy for AI in radiotherapy: can implementation science help?",
+     "year": 2024,
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=_q5Rkg0AAAAJ&pagesize=100&citation_for_view=_q5Rkg0AAAAJ:vRqMK49ujn8C",
+     "venue": "Radiotherapy and Oncology 194, S2765-S2768, 2024",
+     "cited_by": null
+    },
+    {
+     "title": "Patients' perspectives on AI and decision making in cancer care",
+     "year": 2024,
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=_q5Rkg0AAAAJ&pagesize=100&citation_for_view=_q5Rkg0AAAAJ:xtRiw3GOFMkC",
+     "venue": "Radiotherapy and Oncology 194, S2931-S2933, 2024",
+     "cited_by": null
+    },
+    {
+     "title": "Patients' needs and experiences regarding shared decision-making in radiotherapy",
+     "year": 2024,
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=_q5Rkg0AAAAJ&pagesize=100&citation_for_view=_q5Rkg0AAAAJ:NhqRSupF_l8C",
+     "venue": "Radiotherapy and Oncology 194 (Supplement 1), S2933-S2934, 2024",
+     "cited_by": null
+    },
+    {
+     "title": "Vertrouwen in AI-ondersteunde besluitvorming is cruciaal",
+     "year": 2024,
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=_q5Rkg0AAAAJ&pagesize=100&citation_for_view=_q5Rkg0AAAAJ:uWQEDVKXjbEC",
+     "venue": "ICT en Health 3, 2024",
+     "cited_by": null
+    },
+    {
+     "title": "Radiomics:“unlocking the potential of medical images for precision radiation oncology”",
+     "year": 2024,
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=_q5Rkg0AAAAJ&pagesize=100&citation_for_view=_q5Rkg0AAAAJ:fPk4N6BV_jEC",
+     "venue": "Machine Learning and Artificial Intelligence in Radiation Oncology, 73-105, 2024",
+     "cited_by": null
+    }
+   ]
+  },
+  "sander-puts": {
+   "checked": 8,
+   "matched": 7,
+   "not_attributed": [],
+   "missing": [
+    {
+     "title": "Pushing the boundaries: Creating a Danish semantic tagger for metaphor analysis of cancer narratives [Abstract]",
+     "year": 2025,
+     "venue": "Corpus Linguistics 2025 (CL2025), Book of Abstracts, Lancaster, UK, 186, 2025",
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=NxRF8PIAAAAJ&pagesize=100&citation_for_view=NxRF8PIAAAAJ:5nxA0vEk-isC"
+    }
+   ],
+   "name": "Sander Puts",
+   "scholar_id": "NxRF8PIAAAAJ",
+   "profile_total": 23,
+   "checked_at": "2026-10-21",
+   "articles": [
+    {
+     "title": "Developing an ICD-10 coding assistant: pilot study using RoBERTa and GPT-4 for term extraction and description-based code selection",
+     "year": 2025,
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=NxRF8PIAAAAJ&pagesize=100&citation_for_view=NxRF8PIAAAAJ:hqOjcs7Dif8C",
+     "venue": "JMIR formative research 9, e60095, 2025",
+     "cited_by": 27
+    },
+    {
+     "title": "Natural language processing algorithm used for staging pulmonary oncology from free-text radiological reports:“Including PET-CT and Validation Towards Clinical Use”",
+     "year": 2024,
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=NxRF8PIAAAAJ&pagesize=100&citation_for_view=NxRF8PIAAAAJ:ufrVoPGSRksC",
+     "venue": "Journal of Imaging Informatics in Medicine 37 (1), 3-12, 2024",
+     "cited_by": 7
+    },
+    {
+     "title": "Dutch Metaphor Extraction from Cancer Patients' Interviews and Forum Data using LLMs and Human in the Loop",
+     "year": 2025,
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=NxRF8PIAAAAJ&pagesize=100&citation_for_view=NxRF8PIAAAAJ:MXK_kJrjxJIC",
+     "venue": "arXiv preprint arXiv:2511.06427, 2025",
+     "cited_by": 4
+    },
+    {
+     "title": "Natural language processing in oncology",
+     "year": 2024,
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=NxRF8PIAAAAJ&pagesize=100&citation_for_view=NxRF8PIAAAAJ:LkGwnXOMwfcC",
+     "venue": "Machine Learning and Artificial Intelligence in Radiation Oncology, 137-161, 2024",
+     "cited_by": 3
+    },
+    {
+     "title": "Uncovering Topics in Dutch Patient Messages in Inflammatory Bowel Disease: A Comparative Study of Embedding Models for Neural Topic Modeling",
+     "year": 2026,
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=NxRF8PIAAAAJ&pagesize=100&citation_for_view=NxRF8PIAAAAJ:3fE2CSJIrl8C",
+     "venue": "Opening the Personal Gate between Technology and Health Care: Proceedings of …, 2026",
+     "cited_by": null
+    },
+    {
+     "title": "P0788 Exploring topics of Dutch Inflammatory Bowel Disease patient messages for improving transmural communication efficiency: A natural language processing approach",
+     "year": 2025,
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=NxRF8PIAAAAJ&pagesize=100&citation_for_view=NxRF8PIAAAAJ:kNdYIx-mwKoC",
+     "venue": "Journal of Crohn's and Colitis 19 (Supplement_1), i1517-i1517, 2025",
+     "cited_by": null
+    },
+    {
+     "title": "Pushing the boundaries: Creating a Danish semantic tagger for metaphor analysis of cancer narratives [Abstract]",
+     "year": 2025,
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=NxRF8PIAAAAJ&pagesize=100&citation_for_view=NxRF8PIAAAAJ:5nxA0vEk-isC",
+     "venue": "Corpus Linguistics 2025 (CL2025), Book of Abstracts, Lancaster, UK, 186, 2025",
+     "cited_by": null
+    },
+    {
+     "title": "Harmonized steps: Orchestrating healthcare transformation with natural language processing",
+     "year": 2024,
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=NxRF8PIAAAAJ&pagesize=100&citation_for_view=NxRF8PIAAAAJ:Se3iqnhoufwC",
+     "venue": null,
+     "cited_by": null
+    }
+   ]
+  },
+  "umesh-kumar-baburao-sherkhane": {
+   "checked": 2,
+   "matched": 2,
+   "not_attributed": [],
+   "missing": [],
+   "name": "Umesh Kumar Baburao Sherkhane",
+   "scholar_id": "7xCEnUoAAAAJ",
+   "profile_total": 20,
+   "checked_at": "2026-10-21",
+   "articles": [
+    {
+     "title": "Positron Emission Tomography Imaging Biomarker and artificial intelligence for the Characterization of Solitary Pulmonary Nodule (SPN)",
+     "year": 2025,
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=7xCEnUoAAAAJ&pagesize=100&citation_for_view=7xCEnUoAAAAJ:hqOjcs7Dif8C",
+     "venue": "Frontiers in Nuclear Medicine 5, 1611823, 2025",
+     "cited_by": 2
+    },
+    {
+     "title": "MRI radiomics-based predictive modeling for risk stratification and prognostication in oral tongue carcinoma",
+     "year": 2026,
+     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=7xCEnUoAAAAJ&pagesize=100&citation_for_view=7xCEnUoAAAAJ:0EnyYjriUFMC",
+     "venue": "Frontiers in Oncology 16, 1901400, 2026",
+     "cited_by": null
+    }
+   ]
+  }
+ },
+ "searches_used": 15,
+ "total_missing": 21,
+ "total_not_attributed": 0
+}

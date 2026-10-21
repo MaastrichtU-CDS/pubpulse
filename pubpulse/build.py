@@ -81,6 +81,17 @@ def _item_html(w: dict, names: dict[str, str]) -> str:
     )
 
 
+def scholar_summary() -> dict | None:
+    path = DATA_DIR / "scholar_check.json"
+    if not path.exists():
+        return None
+    with open(path, encoding="utf-8") as f:
+        r = json.load(f)
+    if not (r.get("total_missing") or r.get("total_not_attributed")):
+        return None
+    return {"checked_at": r.get("checked_at", ""), "missing": r.get("total_missing", 0), "not_attributed": r.get("total_not_attributed", 0)}
+
+
 def build_digest(pubs: dict, cfg: dict, pending_ids: list[str] | None = None) -> dict:
     """Return subject, html, text, teams payload (dict) for the works not announced yet."""
     names = people_names(pubs)
@@ -116,6 +127,13 @@ def build_digest(pubs: dict, cfg: dict, pending_ids: list[str] | None = None) ->
             f'<p style="font-size:13px;color:#8a5a00;border-left:3px solid #e0a800;padding-left:8px">{unverified_new} of these have no '
             f'group affiliation recorded by OpenAlex. <a href="{html.escape(site)}#when=week&amp;verify=unverified">Check them</a> and confirm or '
             "reject them in overrides.yml.</p>"
+        )
+    sc = scholar_summary()
+    if sc:
+        body.append(
+            f'<p style="font-size:13px;color:#8a5a00;border-left:3px solid #e0a800;padding-left:8px">Google Scholar cross-check '
+            f'({html.escape(sc["checked_at"])}): {sc["missing"]} paper(s) on Scholar profiles are not in pubpulse and '
+            f'{sc["not_attributed"]} are in pubpulse but not linked to the person. <a href="{html.escape(site)}#scholar">Details</a>.</p>'
         )
     if review:
         body.append(
@@ -207,6 +225,8 @@ def run(config_path: Path | None = None) -> dict:
         json.dumps(site_pubs, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
     )
     shutil.copy(DATA_DIR / "feed.xml", DIST_DIR / "feed.xml")
+    if (DATA_DIR / "scholar_check.json").exists():
+        shutil.copy(DATA_DIR / "scholar_check.json", DIST_DIR / "data" / "scholar_check.json")
     (DIST_DIR / ".nojekyll").write_text("")
     print(f"built dist/ ({len(pubs.get('works', []))} works), out/digest.html, out/teams.json; new this run: {digest['new_count']}")
     return digest

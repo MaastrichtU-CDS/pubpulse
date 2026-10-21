@@ -173,6 +173,8 @@
         ". Their papers are not tracked until an ORCID is added to the staff profile.</details>";
     }
 
+    loadScholarCheck();
+
     if (!listenersBound) {
       listenersBound = true;
       els.q.addEventListener("input", () => {
@@ -238,12 +240,35 @@
         update();
       });
       window.addEventListener("hashchange", () => {
-        if (["#publications", "#subscribe", "#unsubscribe"].includes(location.hash)) return;
+        if (["#publications", "#subscribe", "#unsubscribe", "#scholar"].includes(location.hash)) return;
         state = readHash();
         init(data);
       });
     }
     update();
+  }
+
+  function loadScholarCheck() {
+    fetch("data/scholar_check.json", { cache: "no-cache" })
+      .then((r) => (r.ok ? r.json() : null))
+      .then((sc) => {
+        if (!sc || !sc.people) return;
+        const box = $("scholar");
+        const entries = Object.values(sc.people).filter((p) => (p.missing || []).length || (p.not_attributed || []).length);
+        if (!entries.length) return;
+        const total = (sc.total_missing || 0) + (sc.total_not_attributed || 0);
+        box.classList.remove("hidden");
+        box.innerHTML =
+          `<details${location.hash === "#scholar" ? " open" : ""}><summary><b>${total} paper${total === 1 ? "" : "s"} on Google Scholar profiles need a look</b> <span class="meta">(checked ${esc(sc.checked_at || "")})</span></summary>` +
+          "<p class=\"meta\">Scholar is only used as a cross-check. “Missing” = on the Scholar profile but not found in OpenAlex for the group; usually the paper lacks the author's ORCID at the publisher, or it is grey literature OpenAlex does not index. “Not linked” = in pubpulse but not attributed to this person.</p>" +
+          entries.map((p) => {
+            const li = (x, tag) => `<li>${tag}${esc(x.title)}${x.year ? " (" + esc(x.year) + ")" : ""}${x.venue ? " · " + esc(x.venue) : ""}${x.link ? ` <a href="${esc(x.link)}" target="_blank" rel="noopener">Scholar ↗</a>` : ""}</li>`;
+            return `<p><b>${esc(p.name)}</b> · ${p.matched} of ${p.checked} since ${esc(sc.since_year)} found</p><ul>` +
+              (p.missing || []).map((x) => li(x, "<span class='badge warn'>missing</span> ")).join("") +
+              (p.not_attributed || []).map((x) => li(x, "<span class='badge oa'>not linked</span> ")).join("") + "</ul>";
+          }).join("") + "</details>";
+      })
+      .catch(() => {});
   }
 
   function safeLink(value) {

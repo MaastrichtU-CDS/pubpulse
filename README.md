@@ -109,6 +109,15 @@ Manage deployments → edit → New version*). The Sheet link is printed by *set
 `DIGEST_TO` (optional) adds fixed recipients, e.g. a distribution list, on top of the subscribers. To test delivery
 without waiting for a new paper: *Actions → weekly → Run workflow* and tick *force_notify*.
 
+### Google Scholar cross-check (monthly)
+
+Scholar has no API and forbids scraping, so pubpulse never imports from it. Once a month (and on demand via
+*Actions → scholar-check*) the profiles of people with a Scholar link on the staff page are read through
+[SerpAPI](https://serpapi.com) (free plan: 250 searches/month; one search per 100 papers per profile) and compared with
+pubpulse. Papers that are on Scholar but not in pubpulse show up on the website and in the digest as "possibly missing",
+with the person's name. Typical causes: the publisher did not send the author's ORCID (fix: add the paper in the ORCID
+record, OpenAlex follows), or grey literature OpenAlex does not index (nothing to do). Secret: `SERPAPI_KEY`.
+
 ### How a run works
 
 ```

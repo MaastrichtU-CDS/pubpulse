@@ -1,0 +1,37 @@
+name: scholar-check
+
+on:
+  schedule:
+    - cron: "30 6 1 * *"       # first day of the month, 06:30 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: pubpulse-weekly        # never run alongside the weekly job (both edit people.yml)
+  cancel-in-progress: false
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    env:
+      SERPAPI_KEY: ${{ secrets.SERPAPI_KEY }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.txt
+      - name: Compare Scholar profiles with pubpulse
+        run: python -m pubpulse scholar-check
+      - name: Commit the report
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/scholar_check.json people.yml
+          git diff --cached --quiet || (git commit -m "pubpulse: Scholar cross-check $(date -u +%Y-%m-%d)" && git push)
+      - name: Refresh the website
+        run: gh workflow run weekly.yml --repo ${{ github.repository }}
+        env:
+          GH_TOKEN: ${{ github.token }}

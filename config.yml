@@ -61,3 +61,8 @@ digest:
 
 feed:
   max_items: 50
+
+# Monthly Google Scholar cross-check (SerpAPI, secret SERPAPI_KEY; free plan = 250 searches/month).
+# Scholar is not a data source: Scholar-only papers are listed as "possibly missing" for a human to check.
+scholar:
+  max_searches_per_run: 60
