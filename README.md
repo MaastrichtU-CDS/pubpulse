@@ -41,6 +41,22 @@ marked. Usually this means the publisher did not send affiliations to Crossref. 
   work and IDs are retained in `people.yml` under `publication_identity_sources`. Reported ORCIDs remain separate from
   confirmed ORCIDs; conflicting IDs are retained for review and are not used as profile links. Google Scholar profile
   IDs come from explicit profile links, never from a name-based Scholar search URL.
+
+**Automatic discovery of missing profiles.**
+The scheduled weekly run searches all tracked researchers with a missing ORCID or Google Scholar profile, without
+person-specific rules. It searches the public ORCID registry (including shared DOI queries for common names), follows
+the full known Scholar coauthor lists and searches the web for actual Scholar profile URLs. When a full-name search
+finds no Scholar profile, a second query uses first/last names and known coauthors. Candidates must have the same
+full first and last name, plus a shared publication with a known CDS coauthor, two known Scholar coauthors, or one
+known Scholar coauthor and matching institution. An ORCID record may also link directly to a verified Scholar profile. Names and affiliations alone
+are insufficient. Multiple supported profiles stay in the report for review.
+
+Run `python -m pubpulse discover-identifiers --dry-run` to inspect proposals in `out/`, or omit `--dry-run` to apply
+verified matches. `--only <slug>`, `--max-searches <n>` and `--force` control a run. Evidence, source URLs, shared papers,
+known coauthors and unresolved candidates are saved in `data/identifier_discovery.json` and accepted evidence in
+`people.yml`. Discovered ORCIDs remain separate from supplied ORCIDs, and do not relax affiliation checks when
+collecting papers. Existing supplied profile IDs are preserved. Negative results and provider responses are cached
+for 30 days. A configurable SerpAPI search cap preserves quota for the monthly publication cross-check.
 - Verified means the authorship on that paper mentions Maastro, Radiation Oncology, GROW or Medical Data Works.
   "Maastricht University" alone is deliberately not enough. Every paper shows, per group author: verified, other
   affiliation, or no affiliation data. Papers with no verified group author are marked *unverified* and wait for the

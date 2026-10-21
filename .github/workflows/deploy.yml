@@ -6,6 +6,7 @@ on:
     branches: [main]
     paths:
       - "site/**"
+      - data/publications.json
       - config.yml
       - .github/workflows/deploy.yml
   workflow_dispatch:

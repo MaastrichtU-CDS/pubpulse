@@ -32,3 +32,10 @@ def test_compare_prefix_match():
     articles[0]["title"] = "Developing an ICD-10 coding assistant: pilot study using RoBERTa and GPT-4"
     r = compare(articles, works, "sp", since_year=2024)
     assert r["matched"] == 1 and not r["missing"]
+
+
+def test_compare_recognises_identified_coauthors_outside_strict_attribution():
+    works = [{"id": "W1", "title": "A clinical collaboration", "group_members": ["other"], "author_members": ["sp", "other"]}]
+    articles = [{"title": "A clinical collaboration", "year": 2026, "link": None, "venue": None}]
+    result = compare(articles, works, "sp", since_year=2024)
+    assert result["matched"] == 1 and not result["not_attributed"]

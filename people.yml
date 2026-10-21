@@ -28,6 +28,30 @@ people:
     orcid: 0009-0003-5286-6973
   publication_author_ids:
   - A5074875800
+  orcid_discovered: 0009-0003-5286-6973
+  identifier_evidence:
+    orcid:
+      checked_at: '2026-10-21'
+      id: 0009-0003-5286-6973
+      url: https://orcid.org/0009-0003-5286-6973
+      name: Alessio Romita
+      affiliations: []
+      name_match: true
+      shared_works:
+      - work: W7161945525
+        title: 'LinkedDicom: Indexing DICOM Metadata Using Semantic Web Technologies'
+        url: https://doi.org/10.3233/shti260404
+        coauthors:
+        - alessio-romita
+        - ananya-choudhury
+        - andre-dekker
+        - johan-van-soest
+        - leonard-wee
+        - tim-hendriks
+      linked_verified_scholar: false
+      institution_match: false
+      accepted: true
+  identifier_discovery_checked_at: '2026-10-21'
 - slug: ali-al-zein
   name: Ali Al Zein
   profile_url: https://www.clinicaldatascience.nl/ali-al-zein
@@ -121,6 +145,7 @@ people:
   active_from: '2026-10-21'
   active_until: null
   needs_review: true
+  identifier_discovery_checked_at: '2026-10-21'
 - slug: anne-lore-bynens
   name: Anne-Lore Bynens
   profile_url: https://www.clinicaldatascience.nl/anne-lore-bynens
@@ -145,6 +170,7 @@ people:
     orcid: null
   publication_author_ids:
   - A5120041081
+  identifier_discovery_checked_at: '2026-10-21'
 - slug: anniek-van-hienen
   name: Anniek van Hienen
   profile_url: https://www.clinicaldatascience.nl/anniek-van-hienen
@@ -152,7 +178,7 @@ people:
   employer: Maastro Clinic
   section: current
   orcid: 0009-0000-9454-6124
-  scholar_id: null
+  scholar_id: ohBKXtcAAAAJ
   cris_url: null
   openalex_id: null
   profile_checked_at: '2026-10-21'
@@ -168,6 +194,45 @@ people:
     orcid: 0009-0000-9454-6124
   publication_author_ids:
   - A5117621657
+  identifier_evidence:
+    scholar:
+      checked_at: '2026-10-21'
+      id: ohBKXtcAAAAJ
+      url: https://scholar.google.com/citations?user=ohBKXtcAAAAJ
+      name: Anniek van Hienen
+      affiliations: PhD Candidate shared decision-making in radiation oncology
+      name_match: true
+      shared_works:
+      - work: W4404657536
+        title: 'Bridging the care gap: patients’ needs and experiences regarding shared decision-making in radiotherapy'
+        url: https://doi.org/10.1016/j.ctro.2024.100897
+        coauthors:
+        - anniek-van-hienen
+        - rianne-fijten
+      - work: W7118740404
+        title: 'Understanding Clinicians’ Informational Needs for AI-Driven Clinical Decision Support Systems: Qualitative
+          Interview Study'
+        url: https://doi.org/10.2196/85228
+        coauthors:
+        - andre-dekker
+        - anniek-van-hienen
+        - ekaterina-akhmad
+        - hannah-piehl
+        - johan-van-soest
+        - madeline-therrien
+        - rianne-fijten
+        - simone-mingels
+      - work: W4400453456
+        title: '276 Mind the gap: discrepancies between experienced and desired shared decision-making in a Dutch radiotherapy
+          centre'
+        url: https://doi.org/10.1136/bmjebm-2024-sdc.275
+        coauthors:
+        - anniek-van-hienen
+        - rianne-fijten
+      known_coauthors: []
+      institution_match: false
+      accepted: true
+  identifier_discovery_checked_at: '2026-10-21'
 - slug: anshu-ankolekar
   name: Anshu Ankolekar
   profile_url: https://www.clinicaldatascience.nl/Staff/anshu-ankolekar
@@ -191,6 +256,7 @@ people:
     orcid: 0000-0001-7681-1254
   publication_author_ids:
   - A5075943046
+  identifier_discovery_checked_at: '2026-10-21'
 - slug: ayesha-qayyum
   name: Ayesha Qayyum
   profile_url: https://www.clinicaldatascience.nl/ayesha-qayyum
@@ -221,6 +287,7 @@ people:
   active_from: '2026-10-21'
   active_until: null
   needs_review: true
+  identifier_discovery_checked_at: '2026-10-21'
 - slug: carlos-santiago-rios
   name: Carlos Santiago Rios
   profile_url: https://www.clinicaldatascience.nl/carlos-santiago-rios
@@ -282,6 +349,38 @@ people:
   publication_author_ids:
   - A5117573348
   orcid_openalex: 0009-0002-2084-5660
+  orcid_discovered: 0009-0002-2084-5660
+  identifier_evidence:
+    orcid:
+      checked_at: '2026-10-21'
+      id: 0009-0002-2084-5660
+      url: https://orcid.org/0009-0002-2084-5660
+      name: Daniel Slob
+      affiliations:
+      - Maastricht University
+      name_match: true
+      shared_works:
+      - work: W7221757932
+        title: 'AI Model Reporting Standards in Health Care: Systematic Review and Consolidation'
+        url: https://doi.org/10.2196/92329
+        coauthors:
+        - andre-dekker
+        - daniel-slob
+        - ekaterina-akhmad
+        - johan-van-soest
+        - simone-mingels
+      - work: W4410448008
+        title: 'What to Report? A Systematic Review of Medical AI Reporting Guidelines: Preliminary Results'
+        url: https://doi.org/10.3233/shti250351
+        coauthors:
+        - andre-dekker
+        - daniel-slob
+        - ekaterina-akhmad
+        - johan-van-soest
+      linked_verified_scholar: false
+      institution_match: true
+      accepted: true
+  identifier_discovery_checked_at: '2026-10-21'
 - slug: ekatarina-kondrateva
   name: Ekatarina Kondrateva
   profile_url: https://www.clinicaldatascience.nl/ekatarina-kondrateva
@@ -297,6 +396,7 @@ people:
   active_from: '2026-10-21'
   active_until: null
   needs_review: true
+  identifier_discovery_checked_at: '2026-10-21'
 - slug: ekaterina-akhmad
   name: Ekaterina Akhmad
   profile_url: https://www.clinicaldatascience.nl/ekaterina-akhmad
@@ -319,6 +419,64 @@ people:
   publication_author_ids:
   - A5073142805
   orcid_openalex: 0000-0002-8235-9361
+  orcid_discovered: 0000-0002-8235-9361
+  identifier_evidence:
+    orcid:
+      checked_at: '2026-10-21'
+      id: 0000-0002-8235-9361
+      url: https://orcid.org/0000-0002-8235-9361
+      name: Ekaterina Akhmad
+      affiliations:
+      - Moscow State Technical University N E Bauman
+      name_match: true
+      shared_works:
+      - work: W7221757932
+        title: 'AI Model Reporting Standards in Health Care: Systematic Review and Consolidation'
+        url: https://doi.org/10.2196/92329
+        coauthors:
+        - andre-dekker
+        - daniel-slob
+        - ekaterina-akhmad
+        - johan-van-soest
+        - simone-mingels
+      - work: W7118740404
+        title: 'Understanding Clinicians’ Informational Needs for AI-Driven Clinical Decision Support Systems: Qualitative
+          Interview Study'
+        url: https://doi.org/10.2196/85228
+        coauthors:
+        - andre-dekker
+        - anniek-van-hienen
+        - ekaterina-akhmad
+        - hannah-piehl
+        - johan-van-soest
+        - madeline-therrien
+        - rianne-fijten
+        - simone-mingels
+      - work: W4414869539
+        title: 'Understanding Clinicians’ Informational Needs for AI-driven Clinical Decision Support Systems: Qualitative
+          Interview Study (Preprint)'
+        url: https://doi.org/10.2196/preprints.85228
+        coauthors:
+        - andre-dekker
+        - anniek-van-hienen
+        - ekaterina-akhmad
+        - hannah-piehl
+        - johan-van-soest
+        - madeline-therrien
+        - rianne-fijten
+        - simone-mingels
+      - work: W4410448008
+        title: 'What to Report? A Systematic Review of Medical AI Reporting Guidelines: Preliminary Results'
+        url: https://doi.org/10.3233/shti250351
+        coauthors:
+        - andre-dekker
+        - daniel-slob
+        - ekaterina-akhmad
+        - johan-van-soest
+      linked_verified_scholar: false
+      institution_match: false
+      accepted: true
+  identifier_discovery_checked_at: '2026-10-21'
 - slug: elif-sevim
   name: Elif Sevim
   profile_url: https://www.clinicaldatascience.nl/elif-sevim
@@ -353,6 +511,30 @@ people:
   - work: W4416897111
     openalex_id: null
     orcid: null
+  orcid_discovered: 0009-0004-7193-7113
+  identifier_evidence:
+    orcid:
+      checked_at: '2026-10-21'
+      id: 0009-0004-7193-7113
+      url: https://orcid.org/0009-0004-7193-7113
+      name: En Hu
+      affiliations:
+      - Maastricht University
+      name_match: true
+      shared_works:
+      - work: W4416897111
+        title: CCR5 expression and conformational stability as potential cooperative modulators of immune phenotypes and therapy
+          response in breast cancer
+        url: https://doi.org/10.1007/s12672-025-04189-1
+        coauthors:
+        - andre-dekker
+        - en-hu
+        - leonard-wee
+        - wenjie-liang
+      linked_verified_scholar: false
+      institution_match: true
+      accepted: true
+  identifier_discovery_checked_at: '2026-10-21'
 - slug: farshad-jafarpour
   name: Farshad Jafarpour
   profile_url: https://www.clinicaldatascience.nl/farshad-jafarpour
@@ -368,6 +550,7 @@ people:
   active_from: '2026-10-21'
   active_until: null
   needs_review: true
+  identifier_discovery_checked_at: '2026-10-21'
 - slug: fiona-zegwaard-gelink
   name: Fiona Zegwaard - Gelink
   profile_url: https://www.clinicaldatascience.nl/fiona-zegwaard-gelink
@@ -383,6 +566,7 @@ people:
   active_from: '2026-10-21'
   active_until: null
   needs_review: true
+  identifier_discovery_checked_at: '2026-10-21'
 - slug: frederik-behets
   name: Frederik Behets
   profile_url: https://www.clinicaldatascience.nl/frederik-behets
@@ -398,6 +582,7 @@ people:
   active_from: '2026-10-21'
   active_until: null
   needs_review: true
+  identifier_discovery_checked_at: '2026-10-21'
 - slug: gleb-tsikhanovich
   name: Gleb Tsikhanovich
   profile_url: https://www.clinicaldatascience.nl/gleb-tsikhanovich
@@ -413,6 +598,7 @@ people:
   active_from: '2026-10-21'
   active_until: null
   needs_review: true
+  identifier_discovery_checked_at: '2026-10-21'
 - slug: hannah-mary-thomas
   name: Hannah Mary Thomas
   profile_url: https://www.clinicaldatascience.nl/hannah-mary-thomas
@@ -428,6 +614,46 @@ people:
   active_from: '2026-10-21'
   active_until: null
   needs_review: true
+  orcid_discovered: 0000-0002-1454-512X
+  identifier_evidence:
+    orcid:
+      checked_at: '2026-10-21'
+      id: 0000-0002-1454-512X
+      url: https://orcid.org/0000-0002-1454-512X
+      name: Hannah Thomas
+      affiliations: []
+      name_match: true
+      shared_works:
+      - work: W7131779647
+        title: Decoding Uncertainty Quantification for Oncology—An Illustration Using Radiomics
+        url: https://doi.org/10.3390/diagnostics16050700
+        coauthors:
+        - andre-dekker
+        - balu-krishna-sasidharan
+        - hannah-mary-thomas
+        - leonard-wee
+        - rianne-fijten
+      - work: W4412449917
+        title: 'Prognostic modeling in head and neck cancer: deep learning or handcrafted radiomics?'
+        url: https://doi.org/10.1093/bjrai/ubaf008
+        coauthors:
+        - andre-dekker
+        - hannah-mary-thomas
+        - leonard-wee
+        - rianne-fijten
+      - work: W4403625443
+        title: Performance of Handcrafted Radiomics versus Deep Learning for Prognosticating Head and Neck Squamous Cell Carcinoma
+          – A Systematic Review with Critical Appraisal of Quantitative Imaging Studies
+        url: https://doi.org/10.1101/2024.10.22.24315007
+        coauthors:
+        - andre-dekker
+        - hannah-mary-thomas
+        - leonard-wee
+        - rianne-fijten
+      linked_verified_scholar: false
+      institution_match: false
+      accepted: true
+  identifier_discovery_checked_at: '2026-10-21'
 - slug: hannah-piehl
   name: Hannah Piehl
   profile_url: https://www.clinicaldatascience.nl/hannah-piehl
@@ -452,6 +678,44 @@ people:
     orcid: 0009-0005-1982-3909
   publication_author_ids:
   - A5091963091
+  orcid_discovered: 0009-0005-1982-3909
+  identifier_evidence:
+    orcid:
+      checked_at: '2026-10-21'
+      id: 0009-0005-1982-3909
+      url: https://orcid.org/0009-0005-1982-3909
+      name: Hannah Piehl
+      affiliations:
+      - Goethe University Frankfurt
+      - University of Giessen
+      - Maastricht University
+      - Maastricht University
+      - University of Kassel
+      name_match: true
+      shared_works:
+      - work: W7140737867
+        title: 'Between map and maze: reframing trust in healthcare AI'
+        url: https://doi.org/10.1007/s00146-026-02997-9
+        coauthors:
+        - hannah-piehl
+        - rianne-fijten
+      - work: W7118740404
+        title: 'Understanding Clinicians’ Informational Needs for AI-Driven Clinical Decision Support Systems: Qualitative
+          Interview Study'
+        url: https://doi.org/10.2196/85228
+        coauthors:
+        - andre-dekker
+        - anniek-van-hienen
+        - ekaterina-akhmad
+        - hannah-piehl
+        - johan-van-soest
+        - madeline-therrien
+        - rianne-fijten
+        - simone-mingels
+      linked_verified_scholar: false
+      institution_match: true
+      accepted: true
+  identifier_discovery_checked_at: '2026-10-21'
 - slug: ivan-zhovannik
   name: Ivan Zhovannik
   profile_url: https://www.clinicaldatascience.nl/ivan-zhovannik
@@ -476,6 +740,7 @@ people:
     orcid: 0000-0001-5649-6648
   publication_author_ids:
   - A5026209957
+  identifier_discovery_checked_at: '2026-10-21'
 - slug: jiaxu-zhang
   name: Jiaxu Zhang
   profile_url: https://www.clinicaldatascience.nl/jiaxu-zhang
@@ -497,6 +762,7 @@ people:
     orcid: null
   publication_author_ids:
   - A5032778263
+  identifier_discovery_checked_at: '2026-10-21'
 - slug: jikai-zhou
   name: Jikai Zhou
   profile_url: https://www.clinicaldatascience.nl/jikai-zhou
@@ -524,6 +790,37 @@ people:
     orcid: null
   publication_author_ids:
   - A5121326451
+  orcid_discovered: 0009-0004-8675-4635
+  identifier_evidence:
+    orcid:
+      checked_at: '2026-10-21'
+      id: 0009-0004-8675-4635
+      url: https://orcid.org/0009-0004-8675-4635
+      name: Jikai Zhou
+      affiliations:
+      - Maastricht University
+      name_match: true
+      shared_works:
+      - work: W7123926908
+        title: Predicting Overall Survival of NSCLC Patients with Clinical, Radiomics and Deep Learning Features
+        url: https://doi.org/10.1007/s10278-025-01828-5
+        coauthors:
+        - andre-dekker
+        - jikai-zhou
+        - petros-kalendralis
+        - wenjie-liang
+      - work: W4411338103
+        title: Predicting overall survival of NSCLC patients with clinical, radiomics and deep learning features
+        url: https://doi.org/10.1101/2025.06.13.25329594
+        coauthors:
+        - andre-dekker
+        - jikai-zhou
+        - petros-kalendralis
+        - wenjie-liang
+      linked_verified_scholar: false
+      institution_match: true
+      accepted: true
+  identifier_discovery_checked_at: '2026-10-21'
 - slug: johan-van-soest
   name: Johan van Soest
   profile_url: https://www.clinicaldatascience.nl/Staff/johan-van-soest
@@ -571,6 +868,7 @@ people:
     orcid: 0000-0003-1278-3295
   publication_author_ids:
   - A5010896466
+  identifier_discovery_checked_at: '2026-10-21'
 - slug: karlien-schmeetz
   name: Karlien Schmeetz
   profile_url: https://www.clinicaldatascience.nl/karlien-schmeetz
@@ -586,6 +884,7 @@ people:
   active_from: '2026-10-21'
   active_until: null
   needs_review: true
+  identifier_discovery_checked_at: '2026-10-21'
 - slug: leonard-nurnberg
   name: Leonard Nürnberg
   profile_url: https://www.clinicaldatascience.nl/leonard-nurnberg
@@ -658,6 +957,79 @@ people:
     orcid: 0009-0001-4978-4024
   publication_author_ids:
   - A5040286621
+  orcid_discovered: 0009-0001-4978-4024
+  identifier_evidence:
+    orcid:
+      checked_at: '2026-10-21'
+      id: 0009-0001-4978-4024
+      url: https://orcid.org/0009-0001-4978-4024
+      name: Leroy Volmer
+      affiliations: []
+      name_match: true
+      shared_works:
+      - work: W7215768157
+        title: Simulating the Radiological Appearance of Focal Cortical Dysplasia in MRI
+        url: https://doi.org/10.64898/2026.10.01.26364470
+        coauthors:
+        - andre-dekker
+        - leroy-volmer
+        - petros-koutsouvelis
+        - ralph-brecheisen
+      - work: W7134240562
+        title: 'Localizing the epileptogenic zone using deep learning and neuroimaging: A systematic review'
+        url: https://doi.org/10.1016/j.seizure.2026.03.002
+        coauthors:
+        - andre-dekker
+        - leroy-volmer
+        - petros-koutsouvelis
+        - ralph-brecheisen
+      - work: W4411541582
+        title: Prospective Registry Study on Thermal Liver Ablation of Primary and Secondary Liver Tumours Named the A-IMAGIO
+          Study
+        url: https://doi.org/10.1007/s00270-025-04093-9
+        coauthors:
+        - leroy-volmer
+        - ralph-brecheisen
+      - work: W4410559475
+        title: 3824 Gross Tumour Volume segmentation by federated deep learning using real-world data of 3500+ lung cancer
+          patients from 20 institutions in countries
+        url: https://doi.org/10.1016/s0167-8140(25)01983-8
+        coauthors:
+        - ananya-choudhury
+        - andre-dekker
+        - johan-van-soest
+        - leonard-wee
+        - leroy-volmer
+      - work: W4406063103
+        title: Label-efficient transformer-based framework with self-supervised strategies for heterogeneous lung tumor segmentation
+        url: https://doi.org/10.1016/j.eswa.2024.126364
+        coauthors:
+        - andre-dekker
+        - leonard-wee
+        - leroy-volmer
+      - work: W4403503010
+        title: 'Advancing Privacy-Preserving Health Care Analytics and Implementation of the Personal Health Train: Federated
+          Deep Learning Study'
+        url: https://doi.org/10.2196/60847
+        coauthors:
+        - ananya-choudhury
+        - andre-dekker
+        - johan-van-soest
+        - leonard-wee
+        - leroy-volmer
+        - rianne-fijten
+      - work: W4404553502
+        title: Skeletal muscle is independently associated with grade 3–4 toxicity in advanced stage pancreatic ductal adenocarcinoma
+          patients receiving chemotherapy
+        url: https://doi.org/10.1016/j.clnesp.2024.11.004
+        coauthors:
+        - leonard-wee
+        - leroy-volmer
+        - ralph-brecheisen
+      linked_verified_scholar: false
+      institution_match: false
+      accepted: true
+  identifier_discovery_checked_at: '2026-10-21'
 - slug: madeline-therrien
   name: Madeline Therrien
   profile_url: https://www.clinicaldatascience.nl/madeline-therrien
@@ -682,6 +1054,57 @@ people:
     orcid: 0009-0001-0466-0722
   publication_author_ids:
   - A5119867254
+  orcid_discovered: 0009-0001-0466-0722
+  identifier_evidence:
+    orcid:
+      checked_at: '2026-10-21'
+      id: 0009-0001-0466-0722
+      url: https://orcid.org/0009-0001-0466-0722
+      name: Madeline Therrien
+      affiliations:
+      - Maastricht University
+      - Maastricht University
+      - Maastro Clinic
+      - Maastricht University
+      name_match: true
+      shared_works:
+      - work: W7118740404
+        title: 'Understanding Clinicians’ Informational Needs for AI-Driven Clinical Decision Support Systems: Qualitative
+          Interview Study'
+        url: https://doi.org/10.2196/85228
+        coauthors:
+        - andre-dekker
+        - anniek-van-hienen
+        - ekaterina-akhmad
+        - hannah-piehl
+        - johan-van-soest
+        - madeline-therrien
+        - rianne-fijten
+        - simone-mingels
+      - work: W7134113797
+        title: 'In their own words: A qualitative study of patient narratives on daily life after breast cancer radiotherapy'
+        url: https://doi.org/10.1016/j.pecinn.2026.100468
+        coauthors:
+        - madeline-therrien
+        - rianne-fijten
+        - simone-mingels
+      - work: W4414869539
+        title: 'Understanding Clinicians’ Informational Needs for AI-driven Clinical Decision Support Systems: Qualitative
+          Interview Study (Preprint)'
+        url: https://doi.org/10.2196/preprints.85228
+        coauthors:
+        - andre-dekker
+        - anniek-van-hienen
+        - ekaterina-akhmad
+        - hannah-piehl
+        - johan-van-soest
+        - madeline-therrien
+        - rianne-fijten
+        - simone-mingels
+      linked_verified_scholar: false
+      institution_match: true
+      accepted: true
+  identifier_discovery_checked_at: '2026-10-21'
 - slug: marine-jacquemin
   name: Marine Jacquemin
   profile_url: https://www.clinicaldatascience.nl/marine-jacquemin
@@ -706,6 +1129,38 @@ people:
     orcid: 0009-0006-1221-7022
   publication_author_ids:
   - A5118451930
+  orcid_discovered: 0009-0006-1221-7022
+  identifier_evidence:
+    orcid:
+      checked_at: '2026-10-21'
+      id: 0009-0006-1221-7022
+      url: https://orcid.org/0009-0006-1221-7022
+      name: Marine Jacquemin
+      affiliations:
+      - Maastricht University
+      - Maastricht University
+      - Maastricht University
+      name_match: true
+      shared_works:
+      - work: W7143276618
+        title: 'Operationalizing ethical review protocols for health data access: a scoping review of tools and frameworks
+          (Preprint)'
+        url: https://doi.org/10.2196/preprints.96200
+        coauthors:
+        - andre-dekker
+        - leonard-wee
+        - marine-jacquemin
+      - work: W4411465141
+        title: A critique of current approaches to privacy in machine learning
+        url: https://doi.org/10.1007/s10676-025-09843-4
+        coauthors:
+        - andre-dekker
+        - johan-van-soest
+        - marine-jacquemin
+      linked_verified_scholar: false
+      institution_match: true
+      accepted: true
+  identifier_discovery_checked_at: '2026-10-21'
 - slug: martijn-hector
   name: Martijn Hector
   profile_url: https://www.clinicaldatascience.nl/martijn-hector
@@ -721,6 +1176,7 @@ people:
   active_from: '2026-10-21'
   active_until: null
   needs_review: true
+  identifier_discovery_checked_at: '2026-10-21'
 - slug: matthijs-sloep
   name: Matthijs Sloep
   profile_url: https://www.clinicaldatascience.nl/matthijs-sloep
@@ -738,6 +1194,7 @@ people:
   needs_review: false
   openalex_ids:
   - A5022129356
+  identifier_discovery_checked_at: '2026-10-21'
 - slug: meltem-isik
   name: Meltem Isik
   profile_url: https://www.clinicaldatascience.nl/meltem-isik
@@ -753,6 +1210,7 @@ people:
   active_from: '2026-10-21'
   active_until: null
   needs_review: true
+  identifier_discovery_checked_at: '2026-10-21'
 - slug: meng-zhou
   name: Meng Zhou
   profile_url: https://www.clinicaldatascience.nl/meng-zhou
@@ -780,6 +1238,39 @@ people:
   orcid_openalex_conflicts:
   - 0000-0002-3498-5034
   - 0009-0007-8541-2782
+  orcid_discovered: 0009-0009-9172-9115
+  identifier_evidence:
+    orcid:
+      checked_at: '2026-10-21'
+      id: 0009-0009-9172-9115
+      url: https://orcid.org/0009-0009-9172-9115
+      name: Meng Zhou
+      affiliations:
+      - Maastricht University
+      - Tianjin Medical University
+      - Maastricht University
+      name_match: true
+      shared_works:
+      - work: W4415710214
+        title: Malignant pleural mesothelioma classification and survival prediction with CT imaging using ResNet
+        url: https://doi.org/10.1007/s00330-025-12094-y
+        coauthors:
+        - andre-dekker
+        - leonard-wee
+        - meng-zhou
+        - minghua-li
+      - work: W4404373392
+        title: Improved prognostication of overall survival after radiotherapy in lung cancer patients by an interpretable
+          machine learning model integrating lung and tumor radiomics and clinical parameters
+        url: https://doi.org/10.1007/s11547-024-01919-3
+        coauthors:
+        - andre-dekker
+        - leonard-wee
+        - meng-zhou
+      linked_verified_scholar: false
+      institution_match: true
+      accepted: true
+  identifier_discovery_checked_at: '2026-10-21'
 - slug: minghua-li
   name: Minghua Li
   profile_url: https://www.clinicaldatascience.nl/minghua-li
@@ -802,6 +1293,30 @@ people:
   publication_author_ids:
   - A5100633764
   orcid_openalex: 0000-0002-3508-6700
+  orcid_discovered: 0000-0001-9028-418X
+  identifier_evidence:
+    orcid:
+      checked_at: '2026-10-21'
+      id: 0000-0001-9028-418X
+      url: https://orcid.org/0000-0001-9028-418X
+      name: Minghua Li
+      affiliations:
+      - Maastricht University
+      - Maastro Clinic
+      name_match: true
+      shared_works:
+      - work: W4415710214
+        title: Malignant pleural mesothelioma classification and survival prediction with CT imaging using ResNet
+        url: https://doi.org/10.1007/s00330-025-12094-y
+        coauthors:
+        - andre-dekker
+        - leonard-wee
+        - meng-zhou
+        - minghua-li
+      linked_verified_scholar: false
+      institution_match: true
+      accepted: true
+  identifier_discovery_checked_at: '2026-10-21'
 - slug: monique-roos-koekkelkoren
   name: Monique Roos-Koekkelkoren
   profile_url: https://www.clinicaldatascience.nl/monique-roos-koekkelkoren
@@ -817,6 +1332,7 @@ people:
   active_from: '2026-10-21'
   active_until: null
   needs_review: true
+  identifier_discovery_checked_at: '2026-10-21'
 - slug: petros-kalendralis
   name: Petros Kalendralis
   profile_url: https://www.clinicaldatascience.nl/Staff/petros-kalendralis
@@ -848,7 +1364,7 @@ people:
   employer: Maastricht University
   section: current
   orcid: null
-  scholar_id: null
+  scholar_id: 5IHSXnkAAAAJ
   cris_url: null
   openalex_id: null
   profile_checked_at: '2026-10-21'
@@ -865,6 +1381,77 @@ people:
     orcid: 0009-0002-3020-0030
   publication_author_ids:
   - A5115011256
+  identifier_evidence:
+    scholar:
+      checked_at: '2026-10-21'
+      id: 5IHSXnkAAAAJ
+      url: https://scholar.google.com/citations?user=5IHSXnkAAAAJ
+      name: Petros Koutsouvelis
+      affiliations: PhD Candidate, Maastricht University
+      name_match: true
+      shared_works:
+      - work: W7154321941
+        title: 'Towards Brain MRI Foundation Models for the Clinic: Findings from the FOMO25 Challenge'
+        url: https://doi.org/10.48550/arxiv.2604.11679
+        coauthors:
+        - leonard-nurnberg
+        - leroy-volmer
+        - petros-koutsouvelis
+      - work: W7134240562
+        title: 'Localizing the epileptogenic zone using deep learning and neuroimaging: A systematic review'
+        url: https://doi.org/10.1016/j.seizure.2026.03.002
+        coauthors:
+        - andre-dekker
+        - leroy-volmer
+        - petros-koutsouvelis
+        - ralph-brecheisen
+      - work: W4416330735
+        title: 'Large-Scale Modality-Invariant Foundation Models for Brain Mri Analysis: Application to Lesion Segmentation'
+        url: https://doi.org/10.1109/isbi61048.2026.11515369
+        coauthors:
+        - leroy-volmer
+        - petros-koutsouvelis
+      - work: W7215768157
+        title: Simulating the Radiological Appearance of Focal Cortical Dysplasia in MRI
+        url: https://doi.org/10.64898/2026.10.01.26364470
+        coauthors:
+        - andre-dekker
+        - leroy-volmer
+        - petros-koutsouvelis
+        - ralph-brecheisen
+      known_coauthors: []
+      institution_match: true
+      accepted: true
+    orcid:
+      checked_at: '2026-10-21'
+      id: 0009-0002-3020-0030
+      url: https://orcid.org/0009-0002-3020-0030
+      name: Petros Koutsouvelis
+      affiliations:
+      - Maastricht University
+      name_match: true
+      shared_works:
+      - work: W7215768157
+        title: Simulating the Radiological Appearance of Focal Cortical Dysplasia in MRI
+        url: https://doi.org/10.64898/2026.10.01.26364470
+        coauthors:
+        - andre-dekker
+        - leroy-volmer
+        - petros-koutsouvelis
+        - ralph-brecheisen
+      - work: W7134240562
+        title: 'Localizing the epileptogenic zone using deep learning and neuroimaging: A systematic review'
+        url: https://doi.org/10.1016/j.seizure.2026.03.002
+        coauthors:
+        - andre-dekker
+        - leroy-volmer
+        - petros-koutsouvelis
+        - ralph-brecheisen
+      linked_verified_scholar: false
+      institution_match: true
+      accepted: true
+  orcid_discovered: 0009-0002-3020-0030
+  identifier_discovery_checked_at: '2026-10-21'
 - slug: prabash-darshanapriya-galgane-banduge
   name: Prabash Darshanapriya Galgane Banduge
   profile_url: https://www.clinicaldatascience.nl/prabash-darshanapriya-galgane-banduge
@@ -880,6 +1467,7 @@ people:
   active_from: '2026-10-21'
   active_until: null
   needs_review: true
+  identifier_discovery_checked_at: '2026-10-21'
 - slug: ralph-brecheisen
   name: Ralph Brecheisen
   profile_url: https://www.clinicaldatascience.nl/ralph-brecheisen
@@ -903,6 +1491,7 @@ people:
     orcid: 0000-0001-9937-2602
   publication_author_ids:
   - A5077645218
+  identifier_discovery_checked_at: '2026-10-21'
 - slug: rianne-fijten
   name: Rianne Fijten
   profile_url: https://www.clinicaldatascience.nl/rianne-fijten
@@ -950,6 +1539,7 @@ people:
     orcid: 0009-0009-4156-5669
   publication_author_ids:
   - A5059773341
+  identifier_discovery_checked_at: '2026-10-21'
 - slug: sander-puts
   name: Sander Puts
   profile_url: https://www.clinicaldatascience.nl/sander-puts
@@ -995,6 +1585,7 @@ people:
     orcid: null
   publication_author_ids:
   - A5153110077
+  identifier_discovery_checked_at: '2026-10-21'
 - slug: simone-mingels
   name: Simone Mingels
   profile_url: https://www.clinicaldatascience.nl/simone-mingels
@@ -1018,6 +1609,7 @@ people:
     orcid: 0009-0000-9848-2391
   publication_author_ids:
   - A5119867252
+  identifier_discovery_checked_at: '2026-10-21'
 - slug: tafadzwa-chaunzwa
   name: Tafadzwa Chaunzwa
   profile_url: https://www.clinicaldatascience.nl/tafadzwa-chaunzwa
@@ -1033,6 +1625,7 @@ people:
   active_from: '2026-10-21'
   active_until: null
   needs_review: true
+  identifier_discovery_checked_at: '2026-10-21'
 - slug: thijs-ackermans
   name: Thijs Ackermans
   profile_url: https://www.clinicaldatascience.nl/thijs-ackermans
@@ -1052,6 +1645,7 @@ people:
   - work: W7117241713
     openalex_id: null
     orcid: null
+  identifier_discovery_checked_at: '2026-10-21'
 - slug: tim-hendriks
   name: Tim Hendriks
   profile_url: https://www.clinicaldatascience.nl/Staff/tim-hendriks
@@ -1079,6 +1673,32 @@ people:
   orcid_openalex_conflicts:
   - 0000-0001-8266-1627
   - 0000-0003-2922-2953
+  orcid_discovered: 0000-0003-2922-2953
+  identifier_evidence:
+    orcid:
+      checked_at: '2026-10-21'
+      id: 0000-0003-2922-2953
+      url: https://orcid.org/0000-0003-2922-2953
+      name: Tim Hendriks
+      affiliations:
+      - Maastricht University
+      - Maastricht University
+      name_match: true
+      shared_works:
+      - work: W7161945525
+        title: 'LinkedDicom: Indexing DICOM Metadata Using Semantic Web Technologies'
+        url: https://doi.org/10.3233/shti260404
+        coauthors:
+        - alessio-romita
+        - ananya-choudhury
+        - andre-dekker
+        - johan-van-soest
+        - leonard-wee
+        - tim-hendriks
+      linked_verified_scholar: false
+      institution_match: true
+      accepted: true
+  identifier_discovery_checked_at: '2026-10-21'
 - slug: umesh-kumar-baburao-sherkhane
   name: Umesh Kumar Baburao Sherkhane
   profile_url: https://www.clinicaldatascience.nl/umesh-kumar-baburao-sherkhane
@@ -1118,6 +1738,7 @@ people:
   active_from: '2026-10-21'
   active_until: null
   needs_review: true
+  identifier_discovery_checked_at: '2026-10-21'
 - slug: vikram-baliga
   name: Vikram Baliga
   profile_url: https://www.clinicaldatascience.nl/vikram-baliga
@@ -1133,6 +1754,7 @@ people:
   active_from: '2026-10-21'
   active_until: null
   needs_review: true
+  identifier_discovery_checked_at: '2026-10-21'
 - slug: wenjie-liang
   name: Wenjie Liang
   profile_url: https://www.clinicaldatascience.nl/wenjie-liang
@@ -1166,6 +1788,7 @@ people:
   publication_author_ids:
   - A5122769882
   - A5150447201
+  identifier_discovery_checked_at: '2026-10-21'
 - slug: xuanhe-hou
   name: Xuanhe Hou
   profile_url: https://www.clinicaldatascience.nl/xuanhe-hou
@@ -1190,6 +1813,7 @@ people:
     orcid: null
   publication_author_ids:
   - A5153266758
+  identifier_discovery_checked_at: '2026-10-21'
 - slug: yang-yao
   name: Yang Yao
   profile_url: https://www.clinicaldatascience.nl/yang-yao
@@ -1220,6 +1844,7 @@ people:
   active_from: '2026-10-21'
   active_until: null
   needs_review: true
+  identifier_discovery_checked_at: '2026-10-21'
 - slug: yomi-okegunna
   name: Yomi Okegunna
   profile_url: https://www.clinicaldatascience.nl/yomi-okegunna
@@ -1244,3 +1869,27 @@ people:
     orcid: null
   publication_author_ids:
   - A5115981268
+  orcid_discovered: 0009-0004-1105-487X
+  identifier_evidence:
+    orcid:
+      checked_at: '2026-10-21'
+      id: 0009-0004-1105-487X
+      url: https://orcid.org/0009-0004-1105-487X
+      name: Yomi Okegunna
+      affiliations:
+      - Maastricht University Medical Centre
+      - Maastricht University
+      name_match: true
+      shared_works:
+      - work: W4406702439
+        title: 'P0956 Predicting Clinical Remission in Crohn’s Disease: A Comparative Study of Expert-Generated and Computer-Generated
+          Bayesian Networks'
+        url: https://doi.org/10.1093/ecco-jcc/jjae190.1130
+        coauthors:
+        - andre-dekker
+        - rianne-fijten
+        - yomi-okegunna
+      linked_verified_scholar: false
+      institution_match: true
+      accepted: true
+  identifier_discovery_checked_at: '2026-10-21'

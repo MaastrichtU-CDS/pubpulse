@@ -122,7 +122,7 @@ def author_name_key(name: str) -> tuple[str, ...]:
 def known_author_ids(person: dict) -> list[str]:
     if manual_ids(person):
         return manual_ids(person)
-    canonical = (person.get("orcid") or "").upper()
+    canonical = (person.get("orcid") or person.get("orcid_discovered") or "").upper()
     conflicting = {
         s.get("openalex_id") for s in person.get("publication_identity_sources") or []
         if canonical and s.get("orcid") and s["orcid"].upper() != canonical
@@ -148,7 +148,7 @@ def enrich_people_from_works(people: list[dict], works, keywords: list[str]) -> 
         person = by_slug[slug]
         sources = person.setdefault("publication_identity_sources", [])
         accepted_ids = set(person.get("publication_author_ids") or [])
-        canonical = (person.get("orcid") or "").upper()
+        canonical = (person.get("orcid") or person.get("orcid_discovered") or "").upper()
         reported = set(person.get("orcid_openalex_conflicts") or [])
         if person.get("orcid_openalex"):
             reported.add(person["orcid_openalex"].upper())
@@ -240,12 +240,13 @@ def resolve_people(
             p["openalex_ids"] = manual_ids(p)
             p["needs_review"] = False
             continue
-        if p.get("orcid"):
+        identity_orcid = p.get("orcid") or p.get("orcid_discovered")
+        if identity_orcid:
             if p.get("openalex_ids") and _fresh(p.get("resolved_at"), today, max_age_days):
                 p["needs_review"] = False
                 continue
             try:
-                records = client.authors_by_orcid(p["orcid"])
+                records = client.authors_by_orcid(identity_orcid)
             except Exception as exc:  # noqa: BLE001
                 log.warning("author lookup by ORCID failed for %s (keeping previous ids): %s", p["name"], exc)
                 continue
@@ -303,8 +304,8 @@ def manual_ids(person: dict) -> list[str]:
 def person_filter(person: dict) -> str | None:
     if known_author_ids(person):
         return "authorships.author.id:" + "|".join(known_author_ids(person))
-    if person.get("orcid"):
-        return f"authorships.author.orcid:{person['orcid']}"
+    if person.get("orcid") or person.get("orcid_discovered"):
+        return f"authorships.author.orcid:{person.get('orcid') or person['orcid_discovered']}"
     return None
 
 
@@ -317,7 +318,7 @@ def normalise_work(raw: dict, people: list[dict], keywords: list[str] | None = N
     'mismatch' (affiliations present, none from the group) or 'unknown' (OpenAlex has no affiliation for it).
     """
     people = [p for p in people if not p.get("exclude")]
-    by_orcid = {p["orcid"].upper(): p["slug"] for p in people if p.get("orcid")}
+    by_orcid = {(p.get("orcid") or p["orcid_discovered"]).upper(): p["slug"] for p in people if p.get("orcid") or p.get("orcid_discovered")}
     by_name = defaultdict(list)
     by_id: dict[str, str] = {}
     for p in people:
@@ -502,6 +503,7 @@ def public_people(people: list[dict], today: date, grace_months: int = 0) -> lis
             "role": p.get("role"),
             "employer": p.get("employer"),
             "orcid": p.get("orcid"),
+            "orcid_discovered": p.get("orcid_discovered"),
             "orcid_openalex": p.get("orcid_openalex"),
             "scholar_id": p.get("scholar_id"),
             "openalex_ids": known_author_ids(p),

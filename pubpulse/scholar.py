@@ -82,7 +82,7 @@ def compare(articles: list[dict], works: list[dict], slug: str, since_year: int,
         item = {"title": a["title"], "year": a["year"], "venue": a["venue"], "link": a["link"]}
         if hit is None:
             result["missing"].append(item)
-        elif slug not in hit.get("group_members", []):
+        elif slug not in set(hit.get("group_members", []) + (hit.get("author_members") or [])):
             result["not_attributed"].append({**item, "pubpulse_id": hit["id"]})
         else:
             result["matched"] += 1

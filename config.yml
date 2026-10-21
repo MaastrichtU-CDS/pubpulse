@@ -72,3 +72,10 @@ feed:
 # Scholar is not a data source: Scholar-only papers are listed as "possibly missing" for a human to check.
 scholar:
   max_searches_per_run: 60
+
+# Search all missing identifiers generically, using ORCID records, shared papers and Scholar coauthor links.
+# ORCID public API calls are free. Scholar requests share the SerpAPI quota with the monthly cross-check.
+identifier_discovery:
+  max_searches_per_run: 30
+  reserve_searches: 60
+  refresh_days: 30

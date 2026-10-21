@@ -37,6 +37,11 @@ def main(argv: list[str] | None = None) -> int:
     sc = sub.add_parser("scholar-check", help="compare Google Scholar profiles (via SerpAPI) with pubpulse; writes data/scholar_check.json")
     sc.add_argument("--max-searches", type=int, default=None)
     sc.add_argument("--only", help="slug of one person")
+    discovery = sub.add_parser("discover-identifiers", help="find missing ORCID and Scholar profiles using shared papers and known coauthors")
+    discovery.add_argument("--max-searches", type=int, default=None)
+    discovery.add_argument("--only", help="slug of one person")
+    discovery.add_argument("--force", action="store_true", help="recheck people searched in the last 30 days; cached provider responses still apply")
+    discovery.add_argument("--dry-run", action="store_true", help="write proposed matches and evidence to out/ only")
     sub.add_parser("mark-notified", help="clear the list of unannounced works (data/pending.json) after a successful notification")
 
     i = sub.add_parser("apply-issue", help="apply an 'identifiers' issue form body to people.yml")
@@ -58,6 +63,10 @@ def main(argv: list[str] | None = None) -> int:
         from .scholar import run as scholar_run
 
         return scholar_run(max_searches=args.max_searches, only=args.only)
+    if args.cmd == "discover-identifiers":
+        from .discovery import run as discovery_run
+
+        return discovery_run(max_searches=args.max_searches, only=args.only, force=args.force, dry_run=args.dry_run)
     if args.cmd == "send-campaign":
         from .brevo import run as brevo_run
 

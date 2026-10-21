@@ -298,3 +298,18 @@ def test_known_coauthor_metadata_survives_strict_collection_rules():
     assert works["W1"]["author_members"] == ["anne", "anchor"]
     assert works["W1"]["author_profiles"]["anne"]["affiliations"] == ["Maastricht University Medical Centre"]
     assert works["W1"]["verified"] is True
+
+
+def test_discovered_orcid_resolves_without_relaxing_collection_confidence():
+    from pubpulse.sync import match_confidence, public_people, resolve_people
+
+    person = {"slug": "discovered", "name": "Discovered Author", "orcid_discovered": "0000-0003-2548-0330"}
+    class Client:
+        def authors_by_orcid(self, identifier):
+            assert identifier == person["orcid_discovered"]
+            return [{"id": "https://openalex.org/A42"}]
+    assert person_filter(person) == "authorships.author.orcid:0000-0003-2548-0330"
+    assert resolve_people([person], Client(), KW, date(2026, 10, 21)) == []
+    assert person_filter(person) == "authorships.author.id:A42"
+    assert match_confidence(person) == "name"
+    assert public_people([person], date(2026, 10, 21))[0]["orcid_discovered"] == person["orcid_discovered"]

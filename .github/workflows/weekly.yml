@@ -34,6 +34,7 @@ jobs:
       url: ${{ steps.deploy.outputs.page_url }}
     env:
       OPENALEX_API_KEY: ${{ secrets.OPENALEX_API_KEY }}
+      SERPAPI_KEY: ${{ secrets.SERPAPI_KEY }}
       GMAIL_USER: ${{ secrets.GMAIL_USER }}
       GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
       SMTP_HOST: ${{ secrets.SMTP_HOST }}
@@ -54,6 +55,18 @@ jobs:
           cache: pip
 
       - run: pip install -r requirements.txt
+
+      - name: Cache public author discovery responses
+        if: github.event_name != 'push'
+        uses: actions/cache@v4
+        with:
+          path: out/identifier-cache.json
+          key: author-identifiers-${{ runner.os }}-${{ github.run_id }}
+          restore-keys: author-identifiers-${{ runner.os }}-
+
+      - name: Discover missing author profiles using coauthors
+        if: github.event_name != 'push'
+        run: python -m pubpulse discover-identifiers
 
       - name: Sync people and publications from OpenAlex
         # Push-triggered runs (config/code edits) do not touch the staff website; only the Monday schedule and
