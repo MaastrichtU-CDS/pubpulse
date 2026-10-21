@@ -48,8 +48,13 @@ Reject it in `overrides.yml` (see above). If it keeps happening, ask a maintaine
 `people.yml`, or add your ORCID to the staff profile.
 
 **I want the digest / to stop it.**
-The digest goes to one group address. Ask a maintainer to change the `DIGEST_TO` secret. You can also subscribe to the
-RSS feed in Outlook: right-click *RSS Feeds* → *Add a New RSS Feed* → paste the feed link above.
+The digest goes to one group address. Ask a maintainer to change the `DIGEST_TO` secret.
+
+**Can I follow the RSS feed?**
+Yes, but not in most Outlooks any more: the new Outlook for Windows and Outlook for Mac have no RSS support; only
+classic Outlook for Windows still has *RSS Feeds → Add a New RSS Feed*. Alternatives: a free reader such as
+NetNewsWire (Mac), Feedly or Inoreader; Thunderbird; or in Teams, *Workflows → "Post to a channel when an RSS feed is
+published"* with the feed link, which posts every new paper to a channel without any secret.
 
 **Refresh now instead of waiting for Monday.**
 Go to [Actions → weekly](https://github.com/MaastrichtU-CDS/pubpulse/actions/workflows/weekly.yml) → *Run workflow*.
