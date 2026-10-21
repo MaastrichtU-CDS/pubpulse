@@ -96,7 +96,6 @@ jobs:
 
       - name: Email digest (Gmail SMTP)
         if: (steps.digest.outputs.new_count != '0' || inputs.force_notify) && env.GMAIL_USER != '' && env.DIGEST_TO != ''
-        continue-on-error: true
         uses: dawidd6/action-send-mail@v3
         with:
           server_address: smtp.gmail.com
@@ -111,7 +110,7 @@ jobs:
           body: file://out/digest.txt
 
       - name: Post digest to Teams
-        if: (steps.digest.outputs.new_count != '0' || inputs.force_notify) && env.TEAMS_WEBHOOK_URL != ''
+        if: "!cancelled() && (steps.digest.outputs.new_count != '0' || inputs.force_notify) && env.TEAMS_WEBHOOK_URL != ''"
         continue-on-error: true
         run: |
           curl --fail --silent --show-error -X POST -H "Content-Type: application/json" \
