@@ -83,6 +83,7 @@ Edit either file in the GitHub web editor and commit to `main`; the workflow run
 | `GMAIL_APP_PASSWORD` | a Gmail [app password](https://myaccount.google.com/apppasswords) (needs 2-step verification on that account) |
 | `DIGEST_TO` | optional fixed recipient(s), comma separated, in addition to the subscriber list |
 | `SUBSCRIBERS_KEY` | the SECRET printed by the Apps Script `setup` (see mailing list section) |
+| `SMTP_HOST`, `SMTP_PORT`, `SMTP_USER`, `SMTP_PASSWORD`, `SMTP_FROM` | optional: any other SMTP relay instead of Gmail (e.g. Brevo free tier: `smtp-relay.brevo.com`, port 587, your Brevo login + SMTP key, a verified sender address) |
 | `TEAMS_WEBHOOK_URL` | URL from a Teams *Workflows* flow "Post to a channel when a webhook request is received" |
 
 A notification channel whose secret is missing is simply skipped; the site and feed always update.

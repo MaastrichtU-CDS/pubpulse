@@ -38,6 +38,11 @@ jobs:
       OPENALEX_API_KEY: ${{ secrets.OPENALEX_API_KEY }}
       GMAIL_USER: ${{ secrets.GMAIL_USER }}
       GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
+      SMTP_HOST: ${{ secrets.SMTP_HOST }}
+      SMTP_PORT: ${{ secrets.SMTP_PORT }}
+      SMTP_USER: ${{ secrets.SMTP_USER }}
+      SMTP_PASSWORD: ${{ secrets.SMTP_PASSWORD }}
+      SMTP_FROM: ${{ secrets.SMTP_FROM }}
       DIGEST_TO: ${{ secrets.DIGEST_TO }}
       SUBSCRIBERS_KEY: ${{ secrets.SUBSCRIBERS_KEY }}
       TEAMS_WEBHOOK_URL: ${{ secrets.TEAMS_WEBHOOK_URL }}
@@ -99,7 +104,7 @@ jobs:
 
       - name: Email digest (Gmail SMTP, one mail per subscriber)
         id: email
-        if: (steps.digest.outputs.new_count != '0' || inputs.force_notify) && env.GMAIL_USER != ''
+        if: (steps.digest.outputs.new_count != '0' || inputs.force_notify) && (env.GMAIL_USER != '' || env.SMTP_HOST != '')
         run: python -m pubpulse send-digest
 
       - name: Post digest to Teams
