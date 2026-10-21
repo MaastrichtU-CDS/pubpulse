@@ -219,7 +219,7 @@ def run(config_path: Path | None = None) -> dict:
     # Mailing-list settings may change between syncs; publish the current configuration.
     site_pubs = {
         **pubs,
-        "list": {k: (cfg.get("digest") or {}).get(k) or "" for k in ("subscribe_url", "unsubscribe_url", "list_name")},
+        "list": {k: (cfg.get("digest") or {}).get(k) or "" for k in ("subscribe_endpoint", "subscribe_form_url", "list_name")},
     }
     (DIST_DIR / "data" / "publications.json").write_text(
         json.dumps(site_pubs, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
