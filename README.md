@@ -23,12 +23,13 @@ marked. Usually this means the publisher did not send affiliations to Crossref. 
 
 **How papers are attributed (and why some are marked).**
 - People with an ORCID: OpenAlex is queried by ORCID. If OpenAlex attached that ORCID to several author records
-  (it sometimes merges namesakes), only the records with a Maastricht/Maastro affiliation are used.
-- People without an ORCID: matched by exact name *and* a group affiliation in OpenAlex. For them a paper only counts
-  when the paper itself carries a group affiliation for that author.
-- Every paper shows, per group author, whether OpenAlex recorded a group affiliation on that paper: verified,
-  mismatch (other institution only) or unknown (no affiliation data). Papers with no verified group author are marked
-  *unverified*. Set `affiliation_policy: require` in `config.yml` to hide them instead.
+  (it sometimes merges namesakes), the record whose current institution is in Maastricht wins.
+- People without an ORCID: matched by exact name *and* a Maastricht/Maastro affiliation on the OpenAlex record. For
+  them a paper only counts when the paper itself carries a verified group affiliation for that author.
+- Verified means the authorship on that paper mentions Maastro, Radiation Oncology, GROW or Medical Data Works.
+  "Maastricht University" alone is deliberately not enough. Every paper shows, per group author: verified, other
+  affiliation, or no affiliation data. Papers with no verified group author are marked *unverified* and wait for the
+  manual check below. Set `affiliation_policy: require` in `config.yml` to hide them instead.
 
 **Manual check of unverified papers.**
 On the website choose *Group affiliation → Unverified only*. For each paper decide: ours or not. Then put its OpenAlex id
@@ -54,7 +55,7 @@ Go to [Actions → weekly](https://github.com/MaastrichtU-CDS/pubpulse/actions/w
 | --- | --- |
 | `config.yml` | group name, site URL, `since_year`, `track_sections` (`current`, add `previous` for former staff), institution keywords, `affiliation_policy` (`flag` or `require`) |
 | `overrides.yml` | manual decisions per paper: `confirm:` / `reject:` lists of OpenAlex ids |
-| `people.yml` | refreshed from the staff page on every run. Hand-edited fields that are never overwritten: `openalex_id`, `orcid` (when the staff page has none), `exclude: true`, `notes`. To track someone who is not on the staff page, add an entry with `source: manual`. People who disappear from the page are kept with an `active_until` date so their papers stay on the site. |
+| `people.yml` | refreshed from the staff page on every run. Hand-edited fields that are never overwritten: `openalex_id` (one id, or a list when OpenAlex split a person into several records), `orcid` (when the staff page has none), `exclude: true`, `notes`. To track someone who is not on the staff page, add an entry with `source: manual`. People who disappear from the page are kept with an `active_until` date so their papers stay on the site. |
 
 Edit either file in the GitHub web editor and commit to `main`; the workflow runs automatically on that commit.
 

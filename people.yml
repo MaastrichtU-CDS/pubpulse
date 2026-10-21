@@ -109,9 +109,9 @@ people:
   active_from: '2026-10-21'
   active_until: null
   needs_review: false
+  orcid_openalex: null
   openalex_ids:
   - A5120041081
-  orcid_openalex: null
 - slug: anniek-van-hienen
   name: Anniek van Hienen
   profile_url: https://www.clinicaldatascience.nl/anniek-van-hienen
@@ -356,9 +356,9 @@ people:
   active_from: '2026-10-21'
   active_until: null
   needs_review: false
+  orcid_openalex: 0009-0005-1982-3909
   openalex_ids:
   - A5091963091
-  orcid_openalex: 0009-0005-1982-3909
 - slug: ivan-zhovannik
   name: Ivan Zhovannik
   profile_url: https://www.clinicaldatascience.nl/ivan-zhovannik
@@ -517,9 +517,9 @@ people:
   active_from: '2026-10-21'
   active_until: null
   needs_review: false
+  orcid_openalex: 0009-0001-0466-0722
   openalex_ids:
   - A5119867254
-  orcid_openalex: 0009-0001-0466-0722
 - slug: marine-jacquemin
   name: Marine Jacquemin
   profile_url: https://www.clinicaldatascience.nl/marine-jacquemin
@@ -534,9 +534,9 @@ people:
   active_from: '2026-10-21'
   active_until: null
   needs_review: false
+  orcid_openalex: 0009-0006-1221-7022
   openalex_ids:
   - A5118451930
-  orcid_openalex: 0009-0006-1221-7022
 - slug: martijn-hector
   name: Martijn Hector
   profile_url: https://www.clinicaldatascience.nl/martijn-hector
@@ -716,9 +716,9 @@ people:
   active_from: '2026-10-21'
   active_until: null
   needs_review: false
+  orcid_openalex: null
   openalex_ids:
   - A5158398548
-  orcid_openalex: null
 - slug: sander-puts
   name: Sander Puts
   profile_url: https://www.clinicaldatascience.nl/sander-puts
@@ -802,13 +802,14 @@ people:
   orcid: null
   scholar_id: null
   cris_url: null
-  openalex_id: null
+  openalex_id: A5136686266
+  notes: pinned 2026-10-21; A5023966304 is a namesake at M4I (mass spectrometry)
   source: staff_page
   active_from: '2026-10-21'
   active_until: null
   needs_review: false
   openalex_ids:
-  - A5023966304
+  - A5136686266
   orcid_openalex: 0000-0003-2922-2953
 - slug: umesh-kumar-baburao-sherkhane
   name: Umesh Kumar Baburao Sherkhane
@@ -885,9 +886,9 @@ people:
   active_from: '2026-10-21'
   active_until: null
   needs_review: false
+  orcid_openalex: null
   openalex_ids:
   - A5153266758
-  orcid_openalex: null
 - slug: yang-yao
   name: Yang Yao
   profile_url: https://www.clinicaldatascience.nl/yang-yao
@@ -930,6 +931,6 @@ people:
   active_from: '2026-10-21'
   active_until: null
   needs_review: false
+  orcid_openalex: null
   openalex_ids:
   - A5115981268
-  orcid_openalex: null

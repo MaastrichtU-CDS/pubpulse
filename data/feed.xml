@@ -4,13 +4,13 @@
 <link href="https://maastrichtu-cds.github.io/pubpulse/"/>
 <link rel="self" href="https://maastrichtu-cds.github.io/pubpulse/feed.xml"/>
 <id>https://maastrichtu-cds.github.io/pubpulse/</id>
-<updated>2026-10-21T08:45:24+00:00</updated>
+<updated>2026-10-21T09:06:21+00:00</updated>
 <entry>
 <title>Construction of personal health knowledge graphs for clinical data harmonization in breast cancer</title>
 <link href="https://doi.org/10.1038/s41523-026-01068-y"/>
 <id>https://openalex.org/W7128449036</id>
 <updated>2026-10-21T00:00:00Z</updated>
-<summary>npj Breast Cancer · 2026-10-12 · group authors: Anne-Lore Bynens, Cecile Wolfs, Andre Dekker, Petros Kalendralis
+<summary>npj Breast Cancer · 2026-10-12 · group authors: Cecile Wolfs, Andre Dekker, Petros Kalendralis
 
 Abstract Background Personal health data contain valuable information for breast cancer management. Integration of heterogeneous data and maintenance of clinical registries are time-consuming and labor-intensive. We aimed to leverage an Artificial Intelligence (AI)-powered virtual assistant supporting semi-automated curation, including data quality enhancement, and publishing of personal health data. Identifiable data of breast cancer patients can be transformed into interoperable personal health knowledge graphs for secondary use. Methods With patient-informed consent, breast cancer patient data were extracted from the hospital systems and ingested into the virtual assistant. Data items were mapped and transformed into target concepts within a knowledge graph compliant with a reference ontology. Integrated classic and AI tools were used to support transformation of individual patients' data into a personal health knowledge graph (PHKG). Each graph was assessed by a Shapes Constraint Language (SHACL)-based validator to ensure the data quality. An RDF Query Language (SPARQL) query was executed on top of validated PHKGs from multiple patients to extract the relevant data elements and generate a local breast cancer registry, interoperable with registries generated in the same way across three different hospitals. Results The first version of the AI-powered virtual assistant prototype was developed and deployed in our hospital, as well as in two other hospitals in Austria and…</summary>
 </entry>
@@ -257,13 +257,6 @@ Artificial intelligence (AI)-powered imaging for objective psoriasis severity as
 BACKGROUND: Survival analysis is a fundamental tool in clinical prognosis, yet traditional statistical models often struggle to capture complex, high-dimensional relationships in modern healthcare data. Recent advances in Large Language Models (LLMs) offer new opportunities for flexible and context-aware modeling. At the same time, access to real-world clinical data remains restricted due to privacy constraints, motivating the use of synthetic datasets as a privacy-preserving alternative for model development and evaluation. METHODS: We propose a survival analysis framework based on fine-tuned LLMs, evaluated on a large-scale synthetic breast cancer dataset derived from European cancer registry data. A synthetic dataset emulating a national population-based cancer registry and comprising 60,000 breast cancer patients was used following feature engineering and data imputation. We compared traditional survival analysis methods, including Cox regression and gradient boosting, with a range of fine-tuned LLMs representing encoder-only, decoder-only, and encoder-decoder architectures. Model performance was evaluated using standard survival analysis metrics accounting for censoring. To assess generalizability, the best-performing models were deployed on a real-world cohort of 183,304 patients from Dutch cancer registries. RESULTS: The proposed LLM-based models demonstrate competitive performance across multiple survival metrics, with consistent differences observed across model…</summary>
 </entry>
 <entry>
-<title>MHub.ai: A Standardized Platform for Reproducible AI Research in Medical Imaging</title>
-<link href="https://doi.org/10.21203/rs.3.rs-9480032/v1"/>
-<id>https://openalex.org/W7163985399</id>
-<updated>2026-10-21T00:00:00Z</updated>
-<summary>Research Square · 2026-06-09 · group authors: Leonard Nürnberg</summary>
-</entry>
-<entry>
 <title>Strengthening IT Performance in Healthcare Through Digital Transformation: A Case Study</title>
 <link href="https://doi.org/10.1111/isj.70049"/>
 <id>https://openalex.org/W7163696873</id>
@@ -322,7 +315,7 @@ This study applied natural language processing to identify common topics in 12,0
 <link href="https://doi.org/10.3233/shti260404"/>
 <id>https://openalex.org/W7161945525</id>
 <updated>2026-10-21T00:00:00Z</updated>
-<summary>Studies in health technology and informatics · 2026-05-21 · group authors: Johan van Soest, Ananya Choudhury, Alessio Romita, Leonard Wee, Andre Dekker
+<summary>Studies in health technology and informatics · 2026-05-21 · group authors: Johan van Soest, Ananya Choudhury, Alessio Romita, Tim Hendriks, Leonard Wee, Andre Dekker
 
 The Digital Imaging and Communications in Medicine (DICOM) standard contains rich metadata describing patients, studies, series, and imaging instances, yet archiving systems typically store only a limited subset of these elements. For research purposes, integration of imaging metadata with clinical and experimental data is essential. To address this, we developed LinkedDicom, a lightweight Python package for converting DICOM metadata into Resource Description Framework (RDF) triples and querying using Semantic Web technologies. Building on lessons learned from our earlier Semantic DICOM (SeDI) toolkit, LinkedDicom was designed to be resource-efficient, and flexible to use in various scenarios. We evaluated the package on a publicly available head and neck cancer dataset and measured query performance time in various scenarios (using an SPARQL endpoint and per-patient file storage), demonstrating that on-disk storage with selective in-memory analysis provides a flexible alternative to resource-intensive live databases. Our findings show that LinkedDicom enables efficient, scalable, and FAIR-compliant representation of imaging metadata for research, with practical trade-offs between database-driven and on-demand querying.</summary>
 </entry>
@@ -359,24 +352,6 @@ Deliverable D1.12 reports on the status of AIDAVA's Open Science compliance as o
 Background &amp; Aims: Preoperative body composition is a potential modifiable risk factor for poor postoperative outcomes in Crohn's disease (CD). This study aimed to investigate the association of preoperative body composition parameters with postoperative complications and endoscopic postoperative recurrence (ePOR) in patients with CD following ileocolic (re-)resection (ICR). Methods: Patients with CD (≥16 years) scheduled for ICR with preoperative abdominal imaging (&lt;12 months) (n = 227) were identified from a prospective, multicenter cohort study. Cross-sectional surface area normalized for body height (ie, index) and lipid content in sketelal muscle mass (SM) and subcutaneous and visceral adipose tissue (SAT/VAT) were analyzed on imaging. Associations with postoperative complications (Clavien-Dindo I-IV), moderate-to-severe complications (Clavien-Dindo ≥II), infectious complications, and ePOR (modified Rutgeerts’ score ≥i2b) were explored. Results: High lipid content in SM (ie, myosteatosis) was associated with overall postoperative (adjusted odds ratio [aOR], 3.09; 95% confidence interval [CI], 1.36–7.00), moderate-to-severe (aOR, 2.66; 95% CI, 1.24–5.68), and infectious complications (aOR, 2.44; 95% CI, 1.10–5.40). Low preoperative SAT index was protective against postoperative complications (aOR, 0.38; 95% CI, 0.16–0.88). Low lipid content in VAT was associated with postoperative infectious complications (aOR, 4.31; 95% CI, 1.11–16.71), whereas high lipid content in…</summary>
 </entry>
 <entry>
-<title>Coronary artery calcification assessment in National Lung Screening Trial CT images (DeepCAC2)</title>
-<link href="https://doi.org/10.5281/zenodo.19946682"/>
-<id>https://openalex.org/W7159687092</id>
-<updated>2026-10-21T00:00:00Z</updated>
-<summary>Zenodo (CERN European Organization for Nuclear Research) · 2026-05-01 · group authors: Leonard Nürnberg
-
-Overview The dataset of AI derived CACS for the entire NLST dataset includes the segmentation of the heart and CAC, the computed CACS, and the derived risk for 26,228 subjects across a total of 127,776 CT scans. The segmentations are provided in DICOM SEG format, which contains both the heart and CAC segmentations predicted by our deep learning algorithm. The CACS and risk score are provided as key-value pairs in a complementary JSON file with three keys: “Predicted Agatston Score”, which stores the CACS value; “Predicted Risk Group”, which contains the classified risk; and “SeriesInstanceUID”, which links to the original CT scan series. The data is organized in a folder structure where the first-level folder is the patient ID, and the second-level folder is the image’s series instance UID, which contains the cac.seg.dcm segmentation file and the DeepCAC.report.json file. Files in this record: The dataset is compressed using Zstandard and has an uncompressed size of ~160GB. The sha256 checksum of the compressed file is 54a6da8a7c23ab3fa5f62107278805dd927825e66557839f76c2357848cb5955 An export of the archives files is available in `DeepCAC2_NLST.txt`. The `DeepCAC2_NLST_10_cases_example` folder provides 10 extracted examples, compressed as ZIP archive which some readers may find more convenient. The `DeepCAC2_NLST_scores.csv` file contains the aggreagated scores over all individual `DeepCAC.report.json` files.</summary>
-</entry>
-<entry>
-<title>Coronary artery calcification assessment in National Lung Screening Trial CT images (DeepCAC2)</title>
-<link href="https://doi.org/10.5281/zenodo.19946683"/>
-<id>https://openalex.org/W7159593355</id>
-<updated>2026-10-21T00:00:00Z</updated>
-<summary>Zenodo (CERN European Organization for Nuclear Research) · 2026-05-01 · group authors: Leonard Nürnberg
-
-Overview The dataset of AI derived CACS for the entire NLST dataset includes the segmentation of the heart and CAC, the computed CACS, and the derived risk for 26,228 subjects across a total of 127,776 CT scans. The segmentations are provided in DICOM SEG format, which contains both the heart and CAC segmentations predicted by our deep learning algorithm. The CACS and risk score are provided as key-value pairs in a complementary JSON file with three keys: “Predicted Agatston Score”, which stores the CACS value; “Predicted Risk Group”, which contains the classified risk; and “SeriesInstanceUID”, which links to the original CT scan series. The data is organized in a folder structure where the first-level folder is the patient ID, and the second-level folder is the image’s series instance UID, which contains the cac.seg.dcm segmentation file and the DeepCAC.report.json file. Files in this record: The dataset is compressed using Zstandard and has an uncompressed size of ~160GB. The sha256 checksum of the compressed file is 54a6da8a7c23ab3fa5f62107278805dd927825e66557839f76c2357848cb5955 An export of the archives files is available in `DeepCAC2_NLST.txt`. The `DeepCAC2_NLST_10_cases_example` folder provides 10 extracted examples, compressed as ZIP archive which some readers may find more convenient. The `DeepCAC2_NLST_scores.csv` file contains the aggreagated scores over all individual `DeepCAC.report.json` files.</summary>
-</entry>
-<entry>
 <title>Dutch Metaphor Extraction from Cancer Patients’ Interviews and Forum Data Using LLMs and Human in the Loop</title>
 <link href="https://doi.org/10.63317/2fxa2v4tn93y"/>
 <id>https://openalex.org/W4416157627</id>
@@ -391,33 +366,6 @@ Metaphors play an important role in communication between cancer patients and cl
 <id>https://openalex.org/W7160026377</id>
 <updated>2026-10-21T00:00:00Z</updated>
 <summary>European Journal of Surgical Oncology · 2026-04-30 · group authors: Alessio Romita, Andre Dekker, Johan van Soest</summary>
-</entry>
-<entry>
-<title>Reproducibility Test Data for DeepCAC2 MHub.ai Model</title>
-<link href="https://doi.org/10.5281/zenodo.19921180"/>
-<id>https://openalex.org/W7159034911</id>
-<updated>2026-10-21T00:00:00Z</updated>
-<summary>Zenodo (CERN European Organization for Nuclear Research) · 2026-04-30 · group authors: Leonard Nürnberg
-
-This dataset provides test data for the DeepCAC2 model integrated within the MHub platform, a robust solution for deploying, managing, and testing deep learning models tailored for medical imaging. Dataset Composition: Sample Folder: Contains the input data utilized for testing the model’s functionality. Reference Folder: Contains the corresponding output provided by the original model contributor. Test.yml File: This file includes the original contributor’s test setup, which has been accepted by the MHub team. Sample Data Source: The sample images used in this dataset are sourced from public datasets available through the Imaging Data Commons (IDC), a repository that provides access to a wide range of medical imaging data. This ensures that the test cases reflect real-world clinical scenarios, facilitating robust validation of model performance. Purpose and Utility: The primary objective of this dataset is to enable the rigorous testing and validation of model performance within MHub workflows. To assess the performance of a model, users can process the sample data and compare the resulting output to the reference data. Additionally, users may inspect the sample and reference data independently to better understand the input-output structure that defines each model’s workflow. This dataset streamlines the process of model validation. By providing a standardized testing framework, the dataset facilitates reproducible results and accelerates the development of reliable AI…</summary>
-</entry>
-<entry>
-<title>Reproducibility Test Data for DeepCAC2 MHub.ai Model</title>
-<link href="https://doi.org/10.5281/zenodo.19921179"/>
-<id>https://openalex.org/W7158936484</id>
-<updated>2026-10-21T00:00:00Z</updated>
-<summary>Zenodo (CERN European Organization for Nuclear Research) · 2026-04-30 · group authors: Leonard Nürnberg
-
-This dataset provides test data for the DeepCAC2 model integrated within the MHub platform, a robust solution for deploying, managing, and testing deep learning models tailored for medical imaging. Dataset Composition: Sample Folder: Contains the input data utilized for testing the model’s functionality. Reference Folder: Contains the corresponding output provided by the original model contributor. Test.yml File: This file includes the original contributor’s test setup, which has been accepted by the MHub team. Sample Data Source: The sample images used in this dataset are sourced from public datasets available through the Imaging Data Commons (IDC), a repository that provides access to a wide range of medical imaging data. This ensures that the test cases reflect real-world clinical scenarios, facilitating robust validation of model performance. Purpose and Utility: The primary objective of this dataset is to enable the rigorous testing and validation of model performance within MHub workflows. To assess the performance of a model, users can process the sample data and compare the resulting output to the reference data. Additionally, users may inspect the sample and reference data independently to better understand the input-output structure that defines each model’s workflow. This dataset streamlines the process of model validation. By providing a standardized testing framework, the dataset facilitates reproducible results and accelerates the development of reliable AI…</summary>
-</entry>
-<entry>
-<title>Reproducibility Test Data for DeepCAC2 MHub.ai Model</title>
-<link href="https://doi.org/10.5281/zenodo.19921552"/>
-<id>https://openalex.org/W7158653853</id>
-<updated>2026-10-21T00:00:00Z</updated>
-<summary>Zenodo (CERN European Organization for Nuclear Research) · 2026-04-30 · group authors: Leonard Nürnberg
-
-This dataset provides test data for the DeepCAC2 model integrated within the MHub platform, a robust solution for deploying, managing, and testing deep learning models tailored for medical imaging. Dataset Composition: Sample Folder: Contains the input data utilized for testing the model’s functionality. Reference Folder: Contains the corresponding output provided by the original model contributor. Test.yml File: This file includes the original contributor’s test setup, which has been accepted by the MHub team. Sample Data Source: The sample images used in this dataset are sourced from public datasets available through the Imaging Data Commons (IDC), a repository that provides access to a wide range of medical imaging data. This ensures that the test cases reflect real-world clinical scenarios, facilitating robust validation of model performance. Purpose and Utility: The primary objective of this dataset is to enable the rigorous testing and validation of model performance within MHub workflows. To assess the performance of a model, users can process the sample data and compare the resulting output to the reference data. Additionally, users may inspect the sample and reference data independently to better understand the input-output structure that defines each model’s workflow. This dataset streamlines the process of model validation. By providing a standardized testing framework, the dataset facilitates reproducible results and accelerates the development of reliable AI…</summary>
 </entry>
 <entry>
 <title>Towards Brain MRI Foundation Models for the Clinic: Findings from the FOMO25 Challenge</title>
@@ -436,5 +384,59 @@ Clinical deployment of automated brain MRI analysis faces a fundamental challeng
 <summary>IEEE International Symposium on Biomedical Imaging (ISBI) · 2026-04-08 · group authors: Petros Koutsouvelis, Leroy Volmer
 
 The field of computer vision is undergoing a paradigm shift toward large-scale foundation model pre-training via selfsupervised learning (SSL). Leveraging large volumes of unlabeled brain MRI data, such models can learn anatomical priors that improve few-shot performance in diverse neuroimaging tasks. However, most SSL frameworks are tailored to natural images, and their adaptation to capture multi-modal MRI information remains underexplored. This work proposes a modality-invariant representation learning setup and evaluates its effectiveness in stroke and epilepsy lesion segmentation, following large-scale pre-training. Experimental results suggest that despite successful cross-modality alignment, lesion segmentation primarily benefits from preserving fine-grained modality-specific features. Model checkpoints and code are made publicly available.11https://github.com/BraveDistribution/UMBRA/ tree/main</summary>
+</entry>
+<entry>
+<title>Adapting federated radiomics models for radiation pneumonitis prediction in patients receiving thoracic radiotherapy with immunotherapy</title>
+<link href="https://doi.org/10.3389/fimmu.2026.1793039"/>
+<id>https://openalex.org/W7151557672</id>
+<updated>2026-10-21T00:00:00Z</updated>
+<summary>Frontiers in Immunology · 2026-04-07 · group authors: Andre Dekker, Leonard Wee
+
+Background and purpose: Radiation pneumonitis (RP) is one of the major dose-limiting toxicities of thoracic radiotherapy. Although multiple studies have attempted to predict RP, robust multicenter model development is often hindered by privacy regulations and data-transfer constraints, and many existing models are primarily derived from radiotherapy-alone populations, limiting applicability to contemporary regimens that incorporate immunotherapy. Therefore, this study aimed to develop an RP prediction model within a federated learning framework, incorporating sequential transfer learning strategies to enable separate risk assessment for radiotherapy patients with and without immunotherapy. Methods: Multicenter cohorts of lung cancer patients treated with definitive thoracic radiotherapy with or without immunotherapy were retrospectively collected and stratified by immunotherapy exposure. Radiomics features were extracted from whole-lung regions on pretreatment planning CT scans to construct RP prediction models. A federated learning framework was first applied to non-immunotherapy patients to learn common features of radiation pneumonitis without sharing raw data. The pretrained federated model was then sequentially transferred to immunotherapy treatment cohorts, with targeted fine-tuning to adapt to treatment specific RP patterns. Model performance was evaluated through internal validation and independent external validation, with SHAP analysis exploring feature importance…</summary>
+</entry>
+<entry>
+<title>OpenAware Navigator</title>
+<link href="https://doi.org/10.53962/tpjy-bs2a"/>
+<id>https://openalex.org/W7147546841</id>
+<updated>2026-10-21T00:00:00Z</updated>
+<summary>ResearchEquals · 2026-04-02 · group authors: Rianne Fijten
+
+The OpenAware navigator can be used by researchers and data management professionals to decide what are best practices for making research open, reproducible, transparent and reusable as much as possible even when there are restrictions for data sharing.</summary>
+</entry>
+<entry>
+<title>The association between preoperative computed tomography -determined muscle characteristics and postoperative recovery in physical functioning and physical performance in patients undergoing gastrointestinal or lung cancer surgery</title>
+<link href="https://doi.org/10.1016/j.clnesp.2026.103130"/>
+<id>https://openalex.org/W7147705841</id>
+<updated>2026-10-21T00:00:00Z</updated>
+<summary>Clinical Nutrition ESPEN · 2026-04-01 · group authors: Ralph Brecheisen
+
+AIM: To investigate the association between preoperative computed tomography (CT) determined low muscle mass and low muscle quality (myosteatosis) on postoperative recovery in physical functioning and physical performance in patients undergoing gastrointestinal or lung cancer surgery. METHODS: A prospective cohort study was conducted using data from the Optimal Physical Recovery After Hospitalization (OPRAH) trial. The study population comprised adult patients scheduled for curative intent gastrointestinal or lung cancer surgery. Physical functioning (patient reported) and physical performance (handgrip strength, 30 s chair stand test, 2-min step test) were measured at multiple time points, up to three months after hospital discharge. Baseline CT scans were used to define low muscle mass and myosteatosis. Mixed-effect modeling evaluated associations between these muscle conditions and longitudinal postoperative recovery of physical functioning and physical performance. RESULTS: Of the 134 enrolled patients, 106 were included in the analysis. Preoperatively assessed low muscle mass was present in 28% of patients, myosteatosis in 58%, and both conditions in 22%. Patients with low muscle mass were younger than those with myosteatosis or with both conditions, but older than patients with adequate muscle status, and had a lower body mass index (BMI). Myosteatosis was more common in men and in patients with gastrointestinal tumors. Neither condition was associated with recovery…</summary>
+</entry>
+<entry>
+<title>Operationalizing ethical review protocols for health data access: a scoping review of tools and frameworks (Preprint)</title>
+<link href="https://doi.org/10.2196/preprints.96200"/>
+<id>https://openalex.org/W7143276618</id>
+<updated>2026-10-21T00:00:00Z</updated>
+<summary> · 2026-03-27 · group authors: Andre Dekker, Leonard Wee
+
+BACKGROUND The European Health Data Space (EHDS) will substantially increase cross-border health data sharing in the EU, tasking Health Data Access Bodies (HDABs) with the legal and ethical assessment of health data access requests. However, ethical evaluation of data access is often criticized as an opaque, inconsistent and difficult to operationalize, relying on list of principles with limited procedural guidance. As data access requests increase, the lack of standardized and actionable ethics review processes risks undermining transparency, consistency, and trust in health data governance. OBJECTIVE This scoping review (ScR) aimed to identify, map and synthesize existing tools and frameworks designed to operationalize ethical evaluation of health data access. It focused on tools moving beyond conceptual reflection by providing standardized, repeatable, or quantifiable processes that support actionable decision-making. METHODS The ScR was conducted in accordance with PRISMA-ScR guidelines, searching both academic databases and grey literature. Search results were imported into Covidence for screening when possible. For sources incompatible with Covidence, screening and data extraction were conducted manually, using Excel sheets. Two reviewers independently screened titles, abstracts and full texts, with disagreements resolved by consensus. To minimize bias, reviewers were aware of each other’s involvement but could not see each other’s decisions during the initial…</summary>
+</entry>
+<entry>
+<title>Between map and maze: reframing trust in healthcare AI</title>
+<link href="https://doi.org/10.1007/s00146-026-02997-9"/>
+<id>https://openalex.org/W7140737867</id>
+<updated>2026-10-21T00:00:00Z</updated>
+<summary>AI &amp; Society · 2026-03-26 · group authors: Hannah Piehl, Rianne Fijten
+
+Abstract Artificial intelligence (AI) is often presented as a transformative technology for healthcare, promising to augment clinical decision-making, streamline workflows, and enhance diagnostic precision. Yet its integration into healthcare practice is shaped by the complex and often ambiguous notion of trust . While trust in AI has become a recurring theme across disciplines, there has been little systematic analysis of different conceptualizations of the term. This paper addresses this gap through an interdisciplinary scoping review that examines how trust, trustworthiness, distrust, and mistrust are articulated in literature on AI in healthcare. Drawing on 82 publications (2015–2025) retrieved from six databases (Web of Science, Scopus, PubMed, PhilPapers, SocINDEX, and ACM Digital Library), it maps how trust is defined, measured, or problematized, and identifies the conceptual, epistemological, and disciplinary boundaries that shape these approaches. The analysis puts forward five different conceptualizations: trust as a set of designable principles , trust as an attitude or belief , trust as a binary between cognition/affect or human/technology, trust as a structural mechanism within uncertainty, and trust as a relational process embedded in socio-technical systems. These framings illuminate how trust is treated as an attribute to be engineered, a behavior to be calibrated, or a relation to be cultivated—often removed from clinical practice. Yet, across literature,…</summary>
+</entry>
+<entry>
+<title>Master Plan of the Open Science Community Maastricht</title>
+<link href="https://doi.org/10.5281/zenodo.19735673"/>
+<id>https://openalex.org/W7155562840</id>
+<updated>2026-10-21T00:00:00Z</updated>
+<summary>Research Publications (Maastricht University) · 2026-03-24 · group authors: Rianne Fijten
+
+This document describes the Master Plan of the Open Science Community Maastricht. It was created as part of the OSC Incubator Program in 2025.</summary>
 </entry>
 </feed>

@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-21T08:45:24+00:00",
+ "generated": "2026-10-21T09:06:21+00:00",
  "group_name": "Clinical Data Science (Maastro / Maastricht University)",
  "site_url": "https://maastrichtu-cds.github.io/pubpulse/",
  "repo_url": "https://github.com/MaastrichtU-CDS/pubpulse",
@@ -7,7 +7,7 @@
  "since_year": 2024,
  "last_run": {
   "date": "2026-10-21",
-  "baseline": false,
+  "baseline": true,
   "new_count": 0,
   "new_ids": [],
   "needs_review": [
@@ -728,9 +728,9 @@
    "employer": "Medical Data Works",
    "orcid": null,
    "openalex_ids": [
-    "A5023966304"
+    "A5136686266"
    ],
-   "match": "name",
+   "match": "orcid",
    "active": true,
    "needs_review": false
   },
@@ -896,16 +896,11 @@
    ],
    "author_count": 46,
    "group_members": [
-    "anne-lore-bynens",
     "cecile-wolfs",
     "andre-dekker",
     "petros-kalendralis"
    ],
    "member_affiliations": {
-    "anne-lore-bynens": [
-     "Maastricht University Medical Centre",
-     "Department of Medical Instrumentation & Information Technology (MIT), Maastricht University Medical Centre, Maastricht, Netherlands"
-    ],
     "cecile-wolfs": [
      "Maastricht University Medical Centre",
      "Department of Radiation Oncology, GROW – School for Oncology and Reproduction, Maastricht University Medical Centre+, Maastricht, the Netherlands",
@@ -923,7 +918,6 @@
     ]
    },
    "affiliation_status": {
-    "anne-lore-bynens": "verified",
     "cecile-wolfs": "verified",
     "andre-dekker": "verified",
     "petros-kalendralis": "verified"
@@ -1836,11 +1830,11 @@
     ]
    },
    "affiliation_status": {
-    "ralph-brecheisen": "verified"
+    "ralph-brecheisen": "mismatch"
    },
    "cited_by_count": 0,
    "abstract": "BACKGROUND Multiple software programs are available for manual or (semi-)automated liver segmentation. Although manual segmentation has traditionally been the standard, it is time-intensive and susceptible to inter-observer variability. Conversely, (semi-)automated approaches have been shown to reduce segmentation time, but the availability and use of different software tools can introduce variability in liver volumetry outcomes. AIM To evaluate the reliability of three segmentation software programs (Synapse 3D (Fujifilm), OsiriX® (Pixmea), and Syngo.via (Siemens Healthineers)) for liver volumetry. METHODS Patients (≥ 18 years) with abdominal computed tomography images without liver pathology were included. Total liver volume (TLV) and segment II/III volume – a surrogate for the future liver remnant (FLR) – were measured. Two blinded independent researchers performed volumetric assessments. The intraclass correlation coefficient (ICC) was calculated for interobserver variability for the first 30 scans between both researchers. This was also performed for intra-observer variability between the software programs in 200 randomly selected patients (52.5% male; mean age: 63.5 years). RESULTS Mean TLV’s reported by Synapse 3D, Syngo.via and OsiriX® were 1705 ± 462 mL, 1672 ± 463 mL, and 1627 ± 449 mL, respectively. Mean segment II/III volumes reported were 304 ± 115 mL, 282 ± 109 mL, and 277 ± 108 mL, respectively. The highest interobserver agreement (n = 30) was for TLV with…",
-   "verified": true,
+   "verified": false,
    "first_seen": "2026-10-21"
   },
   {
@@ -1989,7 +1983,7 @@
     ]
    },
    "affiliation_status": {
-    "ralph-brecheisen": "verified",
+    "ralph-brecheisen": "mismatch",
     "leonard-wee": "verified"
    },
    "cited_by_count": 1,
@@ -2343,59 +2337,6 @@
    "first_seen": "2026-10-21"
   },
   {
-   "id": "W7163985399",
-   "openalex_url": "https://openalex.org/W7163985399",
-   "doi": "https://doi.org/10.21203/rs.3.rs-9480032/v1",
-   "title": "MHub.ai: A Standardized Platform for Reproducible AI Research in Medical Imaging",
-   "publication_date": "2026-06-09",
-   "year": 2026,
-   "type": "preprint",
-   "journal": "Research Square",
-   "landing_url": "https://doi.org/10.21203/rs.3.rs-9480032/v1",
-   "is_oa": true,
-   "oa_url": "https://www.researchsquare.com/article/rs-9480032/latest.pdf",
-   "authors": [
-    "Hugo J.W.L. Aerts",
-    "Leonard Nürnberg",
-    "Dennis Bontempi",
-    "Suraj Pai",
-    "Curtis R. Lisle",
-    "Steve Pieper",
-    "Ron Kikinis",
-    "Sil C. van de Leemput",
-    "Rahul Soni",
-    "Gowtham Murugesan",
-    "Cosmin Ciausu",
-    "Miriam Groeneveld",
-    "Felix J. Dorfner",
-    "Jue Jiang",
-    "Aneesh Rangnekar",
-    "Harini Veeraraghavan",
-    "Joeran S. Bosma",
-    "Keno K. Bressem",
-    "Raymond H. Mak",
-    "Andriy Fedorov"
-   ],
-   "author_count": 20,
-   "group_members": [
-    "leonard-nurnberg"
-   ],
-   "member_affiliations": {
-    "leonard-nurnberg": [
-     "Maastricht University",
-     "Mass General Brigham",
-     "Mass General Brigham | Maastricht University"
-    ]
-   },
-   "affiliation_status": {
-    "leonard-nurnberg": "verified"
-   },
-   "cited_by_count": 0,
-   "abstract": null,
-   "verified": true,
-   "first_seen": "2026-10-21"
-  },
-  {
    "id": "W7163696873",
    "openalex_url": "https://openalex.org/W7163696873",
    "doi": "https://doi.org/10.1111/isj.70049",
@@ -2693,6 +2634,7 @@
     "johan-van-soest",
     "ananya-choudhury",
     "alessio-romita",
+    "tim-hendriks",
     "leonard-wee",
     "andre-dekker"
    ],
@@ -2713,6 +2655,9 @@
     "alessio-romita": [
      "Medical Data Works B.V., Maastricht, The Netherlands"
     ],
+    "tim-hendriks": [
+     "Medical Data Works B.V., Maastricht, The Netherlands"
+    ],
     "leonard-wee": [
      "Maastricht University Medical Centre",
      "Maastro Clinic",
@@ -2731,6 +2676,7 @@
     "johan-van-soest": "verified",
     "ananya-choudhury": "verified",
     "alessio-romita": "verified",
+    "tim-hendriks": "verified",
     "leonard-wee": "verified",
     "andre-dekker": "verified"
    },
@@ -2770,11 +2716,11 @@
     ]
    },
    "affiliation_status": {
-    "petros-kalendralis": "verified"
+    "petros-kalendralis": "mismatch"
    },
    "cited_by_count": 0,
    "abstract": "Deliverable D1.12 reports on the status of AIDAVA's Open Science compliance as of Month 41 (January 2026), documenting how the consortium has deposited, described and made accessible its scientific publications, research datasets and other project outputs in accordance with Horizon Europe Open Access obligations and FAIR principles. A final update on these activities will be included in D6.11 Update of Report on dissemination and communication activities 2 due in Month 48. Scientific publications. The consortium has significantly exceeded its contractual KPI of 15 peer-reviewed publications: as of M41, AIDAVA researchers have produced 25 peer-reviewed publications and 8 preprints, with 24 papers indexed in Scopus and 14 in PubMed Central. Cumulative citations exceed 1,000 in Google Scholar (613 in Scopus), and the project h-index has risen from 6 at M36 to 8 at M41. All public deliverables (23 in total) are deposited on Zenodo and mirrored on OpenAIRE, ensuring long-term traceability and broad visibility. Research data. AIDAVA applies the principle of \"as open as possible, as close as necessary\" to its two categories of research data. Pseudonymised and annotated clinical text corpora in Dutch (MUMC+), German (MUG) and Estonian (NEMC) — used for NLP model training — are managed under strict data transfer agreements and will be deleted or archived in de-identified label-only form at project end. Fully identifiable patient data (PHKGs, FHIR IPS, SMART scores) remain within the…",
-   "verified": true,
+   "verified": false,
    "first_seen": "2026-10-21"
   },
   {
@@ -2811,11 +2757,11 @@
     ]
    },
    "affiliation_status": {
-    "ralph-brecheisen": "verified"
+    "ralph-brecheisen": "mismatch"
    },
    "cited_by_count": 0,
    "abstract": null,
-   "verified": true,
+   "verified": false,
    "first_seen": "2026-10-21"
   },
   {
@@ -2918,80 +2864,6 @@
    "first_seen": "2026-10-21"
   },
   {
-   "id": "W7159687092",
-   "openalex_url": "https://openalex.org/W7159687092",
-   "doi": "https://doi.org/10.5281/zenodo.19946682",
-   "title": "Coronary artery calcification assessment in National Lung Screening Trial CT images (DeepCAC2)",
-   "publication_date": "2026-05-01",
-   "year": 2026,
-   "type": "dataset",
-   "journal": "Zenodo (CERN European Organization for Nuclear Research)",
-   "landing_url": "https://doi.org/10.5281/zenodo.19946682",
-   "is_oa": true,
-   "oa_url": "https://doi.org/10.5281/zenodo.19946682",
-   "authors": [
-    "Leonard Nürnberg"
-   ],
-   "author_count": 1,
-   "group_members": [
-    "leonard-nurnberg"
-   ],
-   "member_affiliations": {
-    "leonard-nurnberg": [
-     "Harvard University",
-     "Maastricht University",
-     "Mass General Brigham",
-     "Mass General Brigham",
-     "Harvard Medical School",
-     "Maastricht University"
-    ]
-   },
-   "affiliation_status": {
-    "leonard-nurnberg": "verified"
-   },
-   "cited_by_count": 0,
-   "abstract": "Overview The dataset of AI derived CACS for the entire NLST dataset includes the segmentation of the heart and CAC, the computed CACS, and the derived risk for 26,228 subjects across a total of 127,776 CT scans. The segmentations are provided in DICOM SEG format, which contains both the heart and CAC segmentations predicted by our deep learning algorithm. The CACS and risk score are provided as key-value pairs in a complementary JSON file with three keys: “Predicted Agatston Score”, which stores the CACS value; “Predicted Risk Group”, which contains the classified risk; and “SeriesInstanceUID”, which links to the original CT scan series. The data is organized in a folder structure where the first-level folder is the patient ID, and the second-level folder is the image’s series instance UID, which contains the cac.seg.dcm segmentation file and the DeepCAC.report.json file. Files in this record: The dataset is compressed using Zstandard and has an uncompressed size of ~160GB. The sha256 checksum of the compressed file is 54a6da8a7c23ab3fa5f62107278805dd927825e66557839f76c2357848cb5955 An export of the archives files is available in `DeepCAC2_NLST.txt`. The `DeepCAC2_NLST_10_cases_example` folder provides 10 extracted examples, compressed as ZIP archive which some readers may find more convenient. The `DeepCAC2_NLST_scores.csv` file contains the aggreagated scores over all individual `DeepCAC.report.json` files.",
-   "verified": true,
-   "first_seen": "2026-10-21"
-  },
-  {
-   "id": "W7159593355",
-   "openalex_url": "https://openalex.org/W7159593355",
-   "doi": "https://doi.org/10.5281/zenodo.19946683",
-   "title": "Coronary artery calcification assessment in National Lung Screening Trial CT images (DeepCAC2)",
-   "publication_date": "2026-05-01",
-   "year": 2026,
-   "type": "dataset",
-   "journal": "Zenodo (CERN European Organization for Nuclear Research)",
-   "landing_url": "https://doi.org/10.5281/zenodo.19946683",
-   "is_oa": true,
-   "oa_url": "https://doi.org/10.5281/zenodo.19946683",
-   "authors": [
-    "Leonard Nürnberg"
-   ],
-   "author_count": 1,
-   "group_members": [
-    "leonard-nurnberg"
-   ],
-   "member_affiliations": {
-    "leonard-nurnberg": [
-     "Harvard University",
-     "Maastricht University",
-     "Mass General Brigham",
-     "Mass General Brigham",
-     "Harvard Medical School",
-     "Maastricht University"
-    ]
-   },
-   "affiliation_status": {
-    "leonard-nurnberg": "verified"
-   },
-   "cited_by_count": 0,
-   "abstract": "Overview The dataset of AI derived CACS for the entire NLST dataset includes the segmentation of the heart and CAC, the computed CACS, and the derived risk for 26,228 subjects across a total of 127,776 CT scans. The segmentations are provided in DICOM SEG format, which contains both the heart and CAC segmentations predicted by our deep learning algorithm. The CACS and risk score are provided as key-value pairs in a complementary JSON file with three keys: “Predicted Agatston Score”, which stores the CACS value; “Predicted Risk Group”, which contains the classified risk; and “SeriesInstanceUID”, which links to the original CT scan series. The data is organized in a folder structure where the first-level folder is the patient ID, and the second-level folder is the image’s series instance UID, which contains the cac.seg.dcm segmentation file and the DeepCAC.report.json file. Files in this record: The dataset is compressed using Zstandard and has an uncompressed size of ~160GB. The sha256 checksum of the compressed file is 54a6da8a7c23ab3fa5f62107278805dd927825e66557839f76c2357848cb5955 An export of the archives files is available in `DeepCAC2_NLST.txt`. The `DeepCAC2_NLST_10_cases_example` folder provides 10 extracted examples, compressed as ZIP archive which some readers may find more convenient. The `DeepCAC2_NLST_scores.csv` file contains the aggreagated scores over all individual `DeepCAC.report.json` files.",
-   "verified": true,
-   "first_seen": "2026-10-21"
-  },
-  {
    "id": "W4416157627",
    "openalex_url": "https://openalex.org/W4416157627",
    "doi": "https://doi.org/10.63317/2fxa2v4tn93y",
@@ -3080,122 +2952,11 @@
    },
    "affiliation_status": {
     "alessio-romita": "verified",
-    "andre-dekker": "verified",
+    "andre-dekker": "mismatch",
     "johan-van-soest": "verified"
    },
    "cited_by_count": 0,
    "abstract": null,
-   "verified": true,
-   "first_seen": "2026-10-21"
-  },
-  {
-   "id": "W7159034911",
-   "openalex_url": "https://openalex.org/W7159034911",
-   "doi": "https://doi.org/10.5281/zenodo.19921180",
-   "title": "Reproducibility Test Data for DeepCAC2 MHub.ai Model",
-   "publication_date": "2026-04-30",
-   "year": 2026,
-   "type": "dataset",
-   "journal": "Zenodo (CERN European Organization for Nuclear Research)",
-   "landing_url": "https://doi.org/10.5281/zenodo.19921180",
-   "is_oa": true,
-   "oa_url": "https://doi.org/10.5281/zenodo.19921180",
-   "authors": [
-    "Leonard Nürnberg"
-   ],
-   "author_count": 1,
-   "group_members": [
-    "leonard-nurnberg"
-   ],
-   "member_affiliations": {
-    "leonard-nurnberg": [
-     "Harvard University",
-     "Maastricht University",
-     "Mass General Brigham",
-     "Mass General Brigham",
-     "Harvard Medical School",
-     "Maastricht University"
-    ]
-   },
-   "affiliation_status": {
-    "leonard-nurnberg": "verified"
-   },
-   "cited_by_count": 0,
-   "abstract": "This dataset provides test data for the DeepCAC2 model integrated within the MHub platform, a robust solution for deploying, managing, and testing deep learning models tailored for medical imaging. Dataset Composition: Sample Folder: Contains the input data utilized for testing the model’s functionality. Reference Folder: Contains the corresponding output provided by the original model contributor. Test.yml File: This file includes the original contributor’s test setup, which has been accepted by the MHub team. Sample Data Source: The sample images used in this dataset are sourced from public datasets available through the Imaging Data Commons (IDC), a repository that provides access to a wide range of medical imaging data. This ensures that the test cases reflect real-world clinical scenarios, facilitating robust validation of model performance. Purpose and Utility: The primary objective of this dataset is to enable the rigorous testing and validation of model performance within MHub workflows. To assess the performance of a model, users can process the sample data and compare the resulting output to the reference data. Additionally, users may inspect the sample and reference data independently to better understand the input-output structure that defines each model’s workflow. This dataset streamlines the process of model validation. By providing a standardized testing framework, the dataset facilitates reproducible results and accelerates the development of reliable AI…",
-   "verified": true,
-   "first_seen": "2026-10-21"
-  },
-  {
-   "id": "W7158936484",
-   "openalex_url": "https://openalex.org/W7158936484",
-   "doi": "https://doi.org/10.5281/zenodo.19921179",
-   "title": "Reproducibility Test Data for DeepCAC2 MHub.ai Model",
-   "publication_date": "2026-04-30",
-   "year": 2026,
-   "type": "dataset",
-   "journal": "Zenodo (CERN European Organization for Nuclear Research)",
-   "landing_url": "https://doi.org/10.5281/zenodo.19921179",
-   "is_oa": true,
-   "oa_url": "https://doi.org/10.5281/zenodo.19921179",
-   "authors": [
-    "Leonard Nürnberg"
-   ],
-   "author_count": 1,
-   "group_members": [
-    "leonard-nurnberg"
-   ],
-   "member_affiliations": {
-    "leonard-nurnberg": [
-     "Harvard University",
-     "Maastricht University",
-     "Mass General Brigham",
-     "Mass General Brigham",
-     "Harvard Medical School",
-     "Maastricht University"
-    ]
-   },
-   "affiliation_status": {
-    "leonard-nurnberg": "verified"
-   },
-   "cited_by_count": 0,
-   "abstract": "This dataset provides test data for the DeepCAC2 model integrated within the MHub platform, a robust solution for deploying, managing, and testing deep learning models tailored for medical imaging. Dataset Composition: Sample Folder: Contains the input data utilized for testing the model’s functionality. Reference Folder: Contains the corresponding output provided by the original model contributor. Test.yml File: This file includes the original contributor’s test setup, which has been accepted by the MHub team. Sample Data Source: The sample images used in this dataset are sourced from public datasets available through the Imaging Data Commons (IDC), a repository that provides access to a wide range of medical imaging data. This ensures that the test cases reflect real-world clinical scenarios, facilitating robust validation of model performance. Purpose and Utility: The primary objective of this dataset is to enable the rigorous testing and validation of model performance within MHub workflows. To assess the performance of a model, users can process the sample data and compare the resulting output to the reference data. Additionally, users may inspect the sample and reference data independently to better understand the input-output structure that defines each model’s workflow. This dataset streamlines the process of model validation. By providing a standardized testing framework, the dataset facilitates reproducible results and accelerates the development of reliable AI…",
-   "verified": true,
-   "first_seen": "2026-10-21"
-  },
-  {
-   "id": "W7158653853",
-   "openalex_url": "https://openalex.org/W7158653853",
-   "doi": "https://doi.org/10.5281/zenodo.19921552",
-   "title": "Reproducibility Test Data for DeepCAC2 MHub.ai Model",
-   "publication_date": "2026-04-30",
-   "year": 2026,
-   "type": "dataset",
-   "journal": "Zenodo (CERN European Organization for Nuclear Research)",
-   "landing_url": "https://doi.org/10.5281/zenodo.19921552",
-   "is_oa": true,
-   "oa_url": "https://doi.org/10.5281/zenodo.19921552",
-   "authors": [
-    "Leonard Nürnberg"
-   ],
-   "author_count": 1,
-   "group_members": [
-    "leonard-nurnberg"
-   ],
-   "member_affiliations": {
-    "leonard-nurnberg": [
-     "Harvard University",
-     "Maastricht University",
-     "Mass General Brigham",
-     "Mass General Brigham",
-     "Harvard Medical School",
-     "Maastricht University"
-    ]
-   },
-   "affiliation_status": {
-    "leonard-nurnberg": "verified"
-   },
-   "cited_by_count": 0,
-   "abstract": "This dataset provides test data for the DeepCAC2 model integrated within the MHub platform, a robust solution for deploying, managing, and testing deep learning models tailored for medical imaging. Dataset Composition: Sample Folder: Contains the input data utilized for testing the model’s functionality. Reference Folder: Contains the corresponding output provided by the original model contributor. Test.yml File: This file includes the original contributor’s test setup, which has been accepted by the MHub team. Sample Data Source: The sample images used in this dataset are sourced from public datasets available through the Imaging Data Commons (IDC), a repository that provides access to a wide range of medical imaging data. This ensures that the test cases reflect real-world clinical scenarios, facilitating robust validation of model performance. Purpose and Utility: The primary objective of this dataset is to enable the rigorous testing and validation of model performance within MHub workflows. To assess the performance of a model, users can process the sample data and compare the resulting output to the reference data. Additionally, users may inspect the sample and reference data independently to better understand the input-output structure that defines each model’s workflow. This dataset streamlines the process of model validation. By providing a standardized testing framework, the dataset facilitates reproducible results and accelerates the development of reliable AI…",
    "verified": true,
    "first_seen": "2026-10-21"
   },
@@ -3438,11 +3199,11 @@
     ]
    },
    "affiliation_status": {
-    "ralph-brecheisen": "verified"
+    "ralph-brecheisen": "mismatch"
    },
    "cited_by_count": 0,
    "abstract": "AIM: To investigate the association between preoperative computed tomography (CT) determined low muscle mass and low muscle quality (myosteatosis) on postoperative recovery in physical functioning and physical performance in patients undergoing gastrointestinal or lung cancer surgery. METHODS: A prospective cohort study was conducted using data from the Optimal Physical Recovery After Hospitalization (OPRAH) trial. The study population comprised adult patients scheduled for curative intent gastrointestinal or lung cancer surgery. Physical functioning (patient reported) and physical performance (handgrip strength, 30 s chair stand test, 2-min step test) were measured at multiple time points, up to three months after hospital discharge. Baseline CT scans were used to define low muscle mass and myosteatosis. Mixed-effect modeling evaluated associations between these muscle conditions and longitudinal postoperative recovery of physical functioning and physical performance. RESULTS: Of the 134 enrolled patients, 106 were included in the analysis. Preoperatively assessed low muscle mass was present in 28% of patients, myosteatosis in 58%, and both conditions in 22%. Patients with low muscle mass were younger than those with myosteatosis or with both conditions, but older than patients with adequate muscle status, and had a lower body mass index (BMI). Myosteatosis was more common in men and in patients with gastrointestinal tumors. Neither condition was associated with recovery…",
-   "verified": true,
+   "verified": false,
    "first_seen": "2026-10-21"
   },
   {
@@ -3592,11 +3353,11 @@
     ]
    },
    "affiliation_status": {
-    "ralph-brecheisen": "verified"
+    "ralph-brecheisen": "mismatch"
    },
    "cited_by_count": 0,
    "abstract": "BACKGROUND: Skeletal muscle mass and radiation attenuation (RA) have been shown to be associated with chemotoxicity and survival in cancer patients. However, little is known about the clinical significance of adipose tissue RA, which has been hypothesized to be associated with tissue inflammation and insulin resistance. We investigated the association between adipose tissue RA, chemotoxicity, and survival in patients with metastatic colorectal cancer (mCRC) by performing a secondary analysis using data from a randomized controlled trial. METHODS: based on stature. Associations between these body composition parameters and overall survival as well as chemotoxicity (NCI-CTCAE v 4.03) were evaluated using univariable and multivariable logistic and Cox regression analysis. Multivariable models evaluated body composition parameters, adjusted for age, sex, and significant clinically relevant covariates. RESULTS: Among the 104 patients in the cohort, 38 were female (36.5%). Mean age was 65.5 ± 9.5 years. 43 patients (41.3%) developed grade 3/4 toxicity. Pre-treatment SAT-RA was independently associated with grade 3/4 toxicities (OR = 0.78, 95% CI 0.62-0.98). Chemotherapy regimens and nutritional support were not associated with chemotoxicity. In the multivariable Cox analysis, SAT-RA (HR = 1.24, 95% CI 1.08-1.43) and SM-RA (HR = 0.74, 95% CI 0.61-0.90) were associated with shorter overall survival. CONCLUSION: Higher SAT-RA and lower SM-RA at baseline were associated with shorter…",
-   "verified": true,
+   "verified": false,
    "first_seen": "2026-10-21"
   },
   {
@@ -3833,11 +3594,11 @@
     ]
    },
    "affiliation_status": {
-    "cecile-wolfs": "verified"
+    "cecile-wolfs": "mismatch"
    },
    "cited_by_count": 0,
    "abstract": "Osi has high intracranial (IC) activity in epidermal growth factor receptor (EGFR)–NSCLC; yet patients (pts) may still develop IC-progressive disease (PD) requiring stereotactic radiotherapy (SRT) or whole-brain radiotherapy (WBRT). The safety of continuing osi during cranial RT, particularly regarding neurotoxicity, remains uncertain and was investigated in this study.",
-   "verified": true,
+   "verified": false,
    "first_seen": "2026-10-21"
   },
   {
@@ -4280,11 +4041,11 @@
     ]
    },
    "affiliation_status": {
-    "leonard-wee": "verified"
+    "leonard-wee": "mismatch"
    },
    "cited_by_count": 1,
    "abstract": "Code repository for AtomCAT 2 multicentre study",
-   "verified": true,
+   "verified": false,
    "first_seen": "2026-10-21"
   },
   {
@@ -4441,12 +4202,12 @@
     ]
    },
    "affiliation_status": {
-    "johan-van-soest": "verified",
-    "joshi-hogenboom": "verified"
+    "johan-van-soest": "mismatch",
+    "joshi-hogenboom": "mismatch"
    },
    "cited_by_count": 0,
    "abstract": null,
-   "verified": true,
+   "verified": false,
    "first_seen": "2026-10-21"
   },
   {
@@ -4752,49 +4513,11 @@
     ]
    },
    "affiliation_status": {
-    "andre-dekker": "verified"
+    "andre-dekker": "mismatch"
    },
    "cited_by_count": 0,
    "abstract": null,
-   "verified": true,
-   "first_seen": "2026-10-21"
-  },
-  {
-   "id": "W7168267980",
-   "openalex_url": "https://openalex.org/W7168267980",
-   "doi": "https://doi.org/10.2139/ssrn.7135689",
-   "title": "Spatial Single Cell Lipid-Transcriptomic Coupling Reveals Metabolic Niches in Glioblastoma",
-   "publication_date": "2026-01-01",
-   "year": 2026,
-   "type": "preprint",
-   "journal": "SSRN Electronic Journal",
-   "landing_url": "https://doi.org/10.2139/ssrn.7135689",
-   "is_oa": true,
-   "oa_url": "https://doi.org/10.2139/ssrn.7135689",
-   "authors": [
-    "Tim Hendriks",
-    "Gert B. Eijkel",
-    "Martinus P. G. Broen",
-    "Ann Hoeben",
-    "Steven De Vleeschouwer",
-    "Ron M. A. Heeren",
-    "Eva Cuypers"
-   ],
-   "author_count": 7,
-   "group_members": [
-    "tim-hendriks"
-   ],
-   "member_affiliations": {
-    "tim-hendriks": [
-     "Maastricht University"
-    ]
-   },
-   "affiliation_status": {
-    "tim-hendriks": "verified"
-   },
-   "cited_by_count": 0,
-   "abstract": null,
-   "verified": true,
+   "verified": false,
    "first_seen": "2026-10-21"
   },
   {
@@ -5140,11 +4863,11 @@
     ]
    },
    "affiliation_status": {
-    "ralph-brecheisen": "verified"
+    "ralph-brecheisen": "mismatch"
    },
    "cited_by_count": 0,
    "abstract": null,
-   "verified": true,
+   "verified": false,
    "first_seen": "2026-10-21"
   },
   {
@@ -5616,45 +5339,6 @@
    "first_seen": "2026-10-21"
   },
   {
-   "id": "W4416840175",
-   "openalex_url": "https://openalex.org/W4416840175",
-   "doi": "https://doi.org/10.1002/rcm.10172",
-   "title": "A Novel Peak‐Shape Aware Approach for Mass Alignment in Mass Spectrometry",
-   "publication_date": "2025-11-30",
-   "year": 2025,
-   "type": "article",
-   "journal": "Rapid Communications in Mass Spectrometry",
-   "landing_url": "https://doi.org/10.1002/rcm.10172",
-   "is_oa": true,
-   "oa_url": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1002/rcm.10172",
-   "authors": [
-    "Thomas Vanhemel",
-    "Melanie Nijs",
-    "Angeliki Birmpili",
-    "Tim Hendriks",
-    "Eva Cuypers",
-    "Bart De Moor"
-   ],
-   "author_count": 6,
-   "group_members": [
-    "tim-hendriks"
-   ],
-   "member_affiliations": {
-    "tim-hendriks": [
-     "Maastricht University",
-     "The Maastricht MultiModal Molecular Imaging (M4I) Institute, Division of Imaging Mass Spectrometry (IMS) Maastricht University  Maastricht the Netherlands",
-     "The Maastricht MultiModal Molecular Imaging (M4I) Institute, Division of Imaging Mass Spectrometry (IMS), Maastricht University, Maastricht, the Netherlands"
-    ]
-   },
-   "affiliation_status": {
-    "tim-hendriks": "verified"
-   },
-   "cited_by_count": 2,
-   "abstract": "RATIONALE: In mass spectrometry measurements, mass shifts may be inadvertently introduced due to instrumental drift and calibration inaccuracies, potentially compromising the accuracy of subsequent data analysis. This work presents a novel, label-free algorithm to improve relative mass alignment between mass spectra. The warping function is modeled as a natural cubic spline, a suitable model for gradual, nonlinear mass shifts. METHODS: The algorithm is validated on a dataset generated from human glioblastoma multiforme samples using matrix-assisted laser desorption/ionization time-of-flight mass spectrometry imaging (MALDI-TOF MSI) and rapid evaporative ionization mass spectrometry (REIMS), and public datasets generated from MALDI-TOF and desorption electrospray ionization (DESI) Orbitrap instruments. RESULTS: The algorithm considerably reduces the mass dispersion of the dataset and improves the similarity to a reference mass spectrum for MALDI-TOF, REIMS and DESI-Orbitrap data. It is demonstrated that the proposed method reliably corrects for severe mass shifts. The algorithm is competitive in speed and mass dispersion reduction compared to MSIWarp, a common method to correct for mass misalignment. CONCLUSIONS: This paper presents a novel algorithm to reduce relative mass misalignment for mass spectrometry, validated on an extensive dataset. Thanks to the use of profile data, the peak shapes contribute to the computation of the warping function, and the warping function is…",
-   "verified": true,
-   "first_seen": "2026-10-21"
-  },
-  {
    "id": "W4416805570",
    "openalex_url": "https://openalex.org/W4416805570",
    "doi": "https://doi.org/10.1088/1361-6560/ae25b2",
@@ -5692,44 +5376,6 @@
    },
    "cited_by_count": 2,
    "abstract": "Abstract Objective. Artificial intelligence (AI) can enable automation, improve treatment accuracy, allow for a more efficient workflow, and improve the cost-effectiveness of radiotherapy (RT). To implement AI in RT, clinicians have expressed a desire to understand the AI outputs. Explainable AI (XAI) methods have been put forward as a solution, but the multidisciplinary nature of RT complicates the application of trustworthy and understandable XAI methods. The objective of this review is to analyze XAI in the RT landscape and understand how XAI can best support the diverse user groups in RT by exploring challenges and opportunities with a critical lens. Approach . We performed a review of XAI in RT, evaluating how explanations are built, validated, and embedded across the RT workflow, with attention to XAI purposes, evaluation and validation, interpretability trade-offs, and RT’s multidisciplinary context. Main results . XAI in RT serves five purposes: (1) knowledge discovery, (2) model verification, (3) model improvement, (4) clinical verification, and (5) clinical justification/actionability. Many studies favor interpretability but neglect fidelity and seldom include user-specific evaluation. Key challenges include stakeholder diversity, evaluation of XAI, cognitive bias, and causality; we also outline opportunities. Significance . By linking XAI purposes to RT tasks and highlighting challenges and opportunities, we provide actionable recommendations and a user-centric…",
-   "verified": true,
-   "first_seen": "2026-10-21"
-  },
-  {
-   "id": "W4416782579",
-   "openalex_url": "https://openalex.org/W4416782579",
-   "doi": "https://doi.org/10.1038/s41598-025-26735-1",
-   "title": "One section, two worlds: single-cell integration of MALDI-MSI and spatial transcriptomics on the same single tissue section",
-   "publication_date": "2025-11-28",
-   "year": 2025,
-   "type": "article",
-   "journal": "Scientific Reports",
-   "landing_url": "https://doi.org/10.1038/s41598-025-26735-1",
-   "is_oa": true,
-   "oa_url": "https://www.nature.com/articles/s41598-025-26735-1.pdf",
-   "authors": [
-    "Tim Hendriks",
-    "Gert B. Eijkel",
-    "Theodoros Visvikis",
-    "Benjamin Balluff",
-    "Ron M. A. Heeren",
-    "Eva Cuypers"
-   ],
-   "author_count": 6,
-   "group_members": [
-    "tim-hendriks"
-   ],
-   "member_affiliations": {
-    "tim-hendriks": [
-     "Maastricht University",
-     "The Maastricht MultiModal Molecular Imaging (M4I) Institute, Division of Imaging Mass Spectrometry (IMS), Maastricht University, 6229 ER, Maastricht, The Netherlands"
-    ]
-   },
-   "affiliation_status": {
-    "tim-hendriks": "verified"
-   },
-   "cited_by_count": 26,
-   "abstract": "Understanding tissue complexity requires spatially resolved multi-omics data at single-cell resolution. Here, we present a workflow integrating high-resolution matrix-assisted laser desorption ionization mass spectrometry imaging (MALDI-MSI) with Xenium spatial transcriptomics (SPT) on a single tissue section. This strategy ensures pixel-scale spatial correspondence between metabolic and transcriptomic features, avoiding misalignment issues of serial sections, where even minor offsets result in sampling different cells. We investigated MALDI-MSI compatibility with downstream SPT revealing that the number of transcripts per cell decreased by ~ 30% after MSI, whilst cell recovery and cell-type assignments are preserved. Validated using mouse brain and demonstrated using human glioblastoma tissues, we achieved pixel-scale modality co-registration, enabling per-cell MALDI spectra extraction aligned with gene expression. Integrated clustering revealed enhanced cell-type resolution and identified metabolic heterogeneity within transcriptionally defined populations. This facilitates precise correlations of a cell's function and its biochemical state, providing a holistic view of cellular function, heterogeneity, and interaction in health and disease. Our workflow provides a scalable path to multi-omic atlases, advancing both data integration and translational research.",
    "verified": true,
    "first_seen": "2026-10-21"
   },
@@ -5953,7 +5599,7 @@
    "affiliation_status": {
     "leroy-volmer": "verified",
     "andre-dekker": "verified",
-    "ralph-brecheisen": "verified"
+    "ralph-brecheisen": "mismatch"
    },
    "cited_by_count": 0,
    "abstract": "OBJECTIVES: Artificial intelligence (AI) has gained increasing interest in supporting clinicians in patient selection, treatment planning, and prognostics. However, the current application of AI in the treatment of colorectal liver metastases (CRLM) is not clearly established and validated. This scoping review assesses the current impact of AI techniques on local therapeutic strategies for CRLM, exploring its benefits, challenges, and future directions. MATERIALS AND METHODS: A comprehensive literature search in PubMed, EMBASE, Web of Science, and SCOPUS was conducted for patients with CRLM undergoing surgery or thermal ablation, along with descriptions of AI tools. Eligible studies were cohort studies or clinical trials. Data extraction focused on treatment strategies, AI techniques, clinical and radiomics parameters, and outcomes. RESULTS: Out of 1464 articles, thirteen met the inclusion criteria. Eight articles regarded thermal liver ablation, and five surgical resection for CRLM. Most studies used traditional machine learning methods, such as support vector machines and random forests, combined with radiomics for predictive model building. While most studies demonstrated high performance, they frequently involved small sample sizes, and machine learning techniques often lacked robustness. CONCLUSIONS: AI shows promising results in improving local treatment strategies for CRLM, but further advancements are required for AI decision support tools. Future research should…",
@@ -6369,7 +6015,7 @@
    },
    "affiliation_status": {
     "leonard-wee": "verified",
-    "ralph-brecheisen": "verified"
+    "ralph-brecheisen": "mismatch"
    },
    "cited_by_count": 2,
    "abstract": "BACKGROUND: Polytrauma patients with an Injury Severity Score (ISS) ≥ 16 have a high mortality rate. Early identification of patients at risk of mortality is key. Different risk stratification models are available; however, body composition on third lumbar computed tomography (L3 CT) is not routinely used. The aim of this study is to determine the effect of CT body composition on 1-year mortality in adult polytrauma patients. METHODS: Body composition analysis (L3 CT) was performed on 593 adult polytrauma patients. The associations with 1-year mortality were assessed using uni- and multivariable logistic regression analysis. As a sensitivity analysis, 1-year mortality was analysed using Kaplan-Meier survival curves, log-rank tests and Cox regression. RESULTS: (±4.07). Comorbidities were present in 327 (55.4%) patients, with an average Charlson Comorbidity Index (CCI) of 2.07 points (±2.1). The mean ISS score was 27.59 (±11.06); 323 (54.5%) patients had an ISS ≥ 25 points. Age, CCI, ISS, skeletal muscle index and skeletal muscle radiation attenuation (OR 1.053, 5.713, 3.711, 0. 563 and 0.533, respectively; p < 0.001), subcutaneous adipose tissue radiation attenuation (SATRA OR 1.253, p = 0.028) and visceral adipose tissue index (OR 1.242, p = 0.038) were significantly associated with 1-year mortality. In multivariable logistic regression, age, ISS and SATRA remained statistically significantly associated with 1-year mortality (OR 1.062, p < 0.001; OR 4.761, p < 0.001; OR…",
@@ -6557,11 +6203,11 @@
     ]
    },
    "affiliation_status": {
-    "ralph-brecheisen": "verified"
+    "ralph-brecheisen": "mismatch"
    },
    "cited_by_count": 6,
    "abstract": "ABSTRACT Background Body composition alterations such as skeletal muscle (SM) loss in cancer patients are associated with poor survival. In turn, immune cell‐driven pathways have been linked to muscle wasting. We aimed to investigate the relationship between body composition, tumour‐infiltrating lymphocytes and survival in patients with advanced lung cancer. Methods We studied 200 patients with advanced lung cancer receiving immunotherapy ( n = 81) or non‐immunotherapy regimens ( n = 119). Body composition including SM index (SMI) at baseline and longitudinal changes were assessed using computed tomography (CT) scans at the third lumbar vertebra. Associations between body composition parameters and overall survival (OS) were evaluated using Cox regression analysis. The median value of SMI, stratified by sex, was used as the cut‐off to define groups with high and low baseline SMI. Stable SMI was defined by any increase or < 2% decrease per 100 days; loss of SMI was defined by ≥ 2% decrease per 100 days. Logistic regression analysis was applied to investigate the association between SMI and peripheral circulating immune cells. Tumour‐infiltrating lymphocytes were identified by immunohistochemistry, and their relationship with SMI was evaluated. Results SMI loss was associated with shorter OS (whole cohort: HR = 2.314, 95% CI = 1.388–3.858, p = 0.001; immunotherapy cohort: HR = 3.028, 95% CI = 1.113–8.236, p = 0.03; non‐immunotherapy cohort: HR = 2.298, 95% CI = 1.191–4.435, p…",
-   "verified": true,
+   "verified": false,
    "first_seen": "2026-10-21"
   },
   {
@@ -6601,11 +6247,11 @@
     ]
    },
    "affiliation_status": {
-    "anshu-ankolekar": "verified"
+    "anshu-ankolekar": "mismatch"
    },
    "cited_by_count": 2,
    "abstract": "Background: Making informed decisions about clinical trial participation can be overwhelming for patients due to the complexity of trial information, potential risks and benefits, and the emotional burden of a recent diagnosis. Patient decision aids (PDAs) simplify this process by providing clear information on treatment options, empowering patients to actively participate in shared decision-making with their doctors. While PDAs have shown promise in various health care contexts, their use in clinical trials, particularly in the form of trial-specific patient decision aids (tPDAs), remains underused. Objective: This study aims to address the challenge of patient comprehension of traditional clinical trial materials. We developed a freely accessible, user-friendly tPDA within the context of the ImmunoSABR phase 2 trial. The tPDA aimed to enhance informed decision-making regarding trial participation. The primary endpoint was usability, quantitatively measured by the System Usability Scale (SUS). Secondary endpoints included time spent on the tPDA, patient satisfaction ratings, and participants' self-reported level of understanding of the trial. Methods: We developed the tPDA following the International Patient Decision Aid Standards and validated it through a structured, 3-phase iterative evaluation process. An initial evaluation was performed with 17 computer scientists who had expertise in biomedical applications, ensuring technical robustness. The content and usability…",
-   "verified": true,
+   "verified": false,
    "first_seen": "2026-10-21"
   },
   {
@@ -6737,11 +6383,11 @@
     ]
    },
    "affiliation_status": {
-    "ralph-brecheisen": "verified"
+    "ralph-brecheisen": "mismatch"
    },
    "cited_by_count": 7,
    "abstract": "Background: Early detection of patients at high risk for recurrence or local tumor progression (LTP) following thermal ablation of hepatocellular carcinoma (HCC) is essential for treatment selection and individualized follow-up. This systematic review aims to assess and compare the performance of prognostic models predicting recurrence or LTP in patients with HCC treated with thermal ablation. Methods: PubMed, Web of Science, Cochrane, and Embase were searched for studies developing models to predict recurrence after thermal ablation in treatment-naïve HCC patients, using imaging and clinical data with reported test set performance. Risk of bias and applicability were assessed by the Prediction model Risk of Bias Assessment Tool. Data on model performance, feature extraction and modeling technique was collected. Results: In total, 16 studies comprising 39 prognostic models were included, all developed using retrospective data from China or Korea. Outcomes included recurrence-free survival, (intrahepatic) early recurrence, LTP, late recurrence and aggressive intrasegmental recurrence. Predictive parameters varied across models addressing identical outcomes. Outcome definitions also differed. Nine models were externally validated. Most studies had a high risk of bias due to methodological limitations. Conclusions: Variability in model development methodology and type of predictors was found. Models that integrated multiple types of predictors consistently outperformed those…",
-   "verified": true,
+   "verified": false,
    "first_seen": "2026-10-21"
   },
   {
@@ -6909,12 +6555,12 @@
     ]
    },
    "affiliation_status": {
-    "leonard-wee": "verified",
-    "joshi-hogenboom": "verified"
+    "leonard-wee": "mismatch",
+    "joshi-hogenboom": "mismatch"
    },
    "cited_by_count": 0,
    "abstract": "This document establishes a quality assurance process for the Vantage6 algorithms used in STRONG-AYA.",
-   "verified": true,
+   "verified": false,
    "first_seen": "2026-10-21"
   },
   {
@@ -6970,11 +6616,11 @@
     ]
    },
    "affiliation_status": {
-    "ralph-brecheisen": "verified"
+    "ralph-brecheisen": "mismatch"
    },
    "cited_by_count": 3,
    "abstract": "BACKGROUND & AIMS: Preoperative body composition is a potential modifiable risk factor for poor postoperative outcomes in Crohn's disease (CD). This study aimed to investigate the association of preoperative body composition parameters with postoperative complications and endoscopic postoperative recurrence (ePOR) in patients with CD following ileocolic (re-)resection (ICR). METHODS: Patients with CD (≥16 years) scheduled for ICR with preoperative abdominal imaging (<12 months) (n = 227) were identified from a prospective, multicenter cohort study. Cross-sectional surface area normalized for body height (ie, index) and lipid content in sketelal muscle mass (SM) and subcutaneous and visceral adipose tissue (SAT/VAT) were analyzed on imaging. Associations with postoperative complications (Clavien-Dindo I-IV), moderate-to-severe complications (Clavien-Dindo ≥II), infectious complications, and ePOR (modified Rutgeerts' score ≥i2b) were explored. RESULTS: High lipid content in SM (ie, myosteatosis) was associated with overall postoperative (adjusted odds ratio [aOR], 3.09; 95% confidence interval [CI], 1.36-7.00), moderate-to-severe (aOR, 2.66; 95% CI, 1.24-5.68), and infectious complications (aOR, 2.44; 95% CI, 1.10-5.40). Low preoperative SAT index was protective against postoperative complications (aOR, 0.38; 95% CI, 0.16-0.88). Low lipid content in VAT was associated with postoperative infectious complications (aOR, 4.31; 95% CI, 1.11-16.71), whereas high lipid content in…",
-   "verified": true,
+   "verified": false,
    "first_seen": "2026-10-21"
   },
   {
@@ -7275,15 +6921,9 @@
    ],
    "author_count": 30,
    "group_members": [
-    "leroy-volmer",
     "ralph-brecheisen"
    ],
    "member_affiliations": {
-    "leroy-volmer": [
-     "Maastricht University Medical Centre",
-     "Maastricht University",
-     "Department of Radiology and Nuclear Medicine, Maastricht University Medical Center+, Maastricht, The Netherlands"
-    ],
     "ralph-brecheisen": [
      "Maastricht University Medical Centre",
      "Maastricht University",
@@ -7291,12 +6931,11 @@
     ]
    },
    "affiliation_status": {
-    "leroy-volmer": "verified",
-    "ralph-brecheisen": "verified"
+    "ralph-brecheisen": "mismatch"
    },
    "cited_by_count": 4,
    "abstract": "PURPOSE: The long-term objective of the Ablation-IMaging and Advanced Guidance for workflow optimization in Interventional Oncology (A-IMAGIO) project is to develop a standardized, accessible, low-complex, high-precision, end-to-end solution for treatment planning, needle guidance, and treatment evaluation for thermal liver ablation. MATERIALS AND METHODS: This is a prospective, international, multicentre, observational registry study. Patients will be included with age ≥ 18 years, diagnosed with primary or secondary liver tumours, and undergoing thermal liver ablation. A detailed dataset of medical history, baseline clinical and imaging parameters, tumour characteristics, ablation technique/parameters, treatment outcomes, periprocedural images, and adverse events, will be collected for all participants. This data will be used to develop AI algorithms for prognostic modelling and quantitative imaging analysis. Additionally, costs associated with thermal liver ablation clinical pathway will be evaluated. EXPECTED GAIN OF KNOWLEDGE: The results of this registry study are expected to provide profound insight in current variability among centres in performing thermal liver ablation, and identify best practices in order to eventually facilitate standardization and universally excellent clinical outcomes. TRIAL REGISTRATION: National Institute of Health Clinical trial database (NCT06179602) https://clinicaltrials.gov/study/NCT06179602 .",
-   "verified": true,
+   "verified": false,
    "first_seen": "2026-10-21"
   },
   {
@@ -7933,11 +7572,11 @@
     ]
    },
    "affiliation_status": {
-    "ralph-brecheisen": "verified"
+    "ralph-brecheisen": "mismatch"
    },
    "cited_by_count": 4,
    "abstract": null,
-   "verified": true,
+   "verified": false,
    "first_seen": "2026-10-21"
   },
   {
@@ -8594,12 +8233,12 @@
     ]
    },
    "affiliation_status": {
-    "leonard-wee": "verified",
-    "andre-dekker": "verified"
+    "leonard-wee": "mismatch",
+    "andre-dekker": "mismatch"
    },
    "cited_by_count": 1,
    "abstract": "Abstract Thymic epithelial tumours (TETs) are rare and exhibit varied behaviour and prognosis based on their histological subtype, as classified by the World Health Organization (WHO). These subtypes are further categorized into low-risk and high-risk groups. Low-risk thymomas generally allow for complete surgical resection without adjuvant therapy, while high-risk types often require multimodal treatment due to their aggressive nature. This study aims to evaluate the role of CT radiomics in discriminating between high- and low-risk TETs. Methods This retrospective study included patients treated in a single hospital in India who underwent surgical resection of TETs from 2010 to 2024. Inclusion criteria were confirmed TET diagnosis, had pre-operative CT scans, and had medical and post-operative histopathological confirmation. Conventional CT (semantic) features were manually extracted from radiology reports, while radiomic features were obtained using PyRadiomics. The data was randomly split for training and a hold-out validation set stratified by class. Three classification models were evaluated, each using clinical, semantic, and radiomic features with LASSO regularization. The performance of the models was assessed using Area under the Receiver Operating Curve (AUC), sensitivity, and specificity on the test set. Results Out of 195 enrolled patients, 132 met inclusion criteria and were divided into training (n = 100) and a validation set (n=32). The clinical model…",
-   "verified": true,
+   "verified": false,
    "first_seen": "2026-10-21"
   },
   {
@@ -8884,11 +8523,11 @@
     ]
    },
    "affiliation_status": {
-    "anshu-ankolekar": "verified"
+    "anshu-ankolekar": "mismatch"
    },
    "cited_by_count": 14,
    "abstract": "BACKGROUND: Digital health technology adoption has accelerated in respiratory care, particularly since the COVID-19 pandemic, supporting various applications from self-management to telerehabilitation. While these technologies have transformed health care delivery, their impact on the patient-provider relationship in specialist respiratory care remains poorly understood. OBJECTIVE: This study aims to systematically review the literature on the impact of digital health technology on the patient-provider relationship in respiratory secondary care settings and to understand the factors that enhance or diminish this relationship. METHODS: In December 2023, we conducted a systematic review following Cochrane methodology, searching MEDLINE, Embase, CINAHL, Cochrane databases, and PsycINFO. We included qualitative, quantitative, and mixed methods studies examining digital health interventions in respiratory secondary care. Trained volunteers from the European Respiratory Society CONNECT Clinical Research Collaboration performed screening and data extraction. We conducted a qualitative meta-synthesis of findings, followed by an abductive quantitative data analysis. A total of 3 stakeholder workshops were held to interpret findings collaboratively with patients and health care professionals. RESULTS: From 15,779 papers screened, 97 met the inclusion criteria (55 qualitative/mixed-methods studies, 42 quantitative studies). Studies covered various respiratory conditions, including…",
-   "verified": true,
+   "verified": false,
    "first_seen": "2026-10-21"
   },
   {
@@ -9079,45 +8718,6 @@
    "first_seen": "2026-10-21"
   },
   {
-   "id": "W4407980886",
-   "openalex_url": "https://openalex.org/W4407980886",
-   "doi": "https://doi.org/10.1021/acschemneuro.4c00463",
-   "title": "Integrating Rapid Evaporative Ionization Mass Spectrometry Classification with Matrix-Assisted Laser Desorption Ionization Mass Spectrometry Imaging and Liquid Chromatography-Tandem Mass Spectrometry to Unveil Glioblastoma Overall Survival Prediction",
-   "publication_date": "2025-02-26",
-   "year": 2025,
-   "type": "article",
-   "journal": "ACS Chemical Neuroscience",
-   "landing_url": "https://doi.org/10.1021/acschemneuro.4c00463",
-   "is_oa": true,
-   "oa_url": "https://doi.org/10.1021/acschemneuro.4c00463",
-   "authors": [
-    "Tim Hendriks",
-    "Angeliki Birmpili",
-    "Steven De Vleeschouwer",
-    "Ron M. A. Heeren",
-    "Eva Cuypers"
-   ],
-   "author_count": 5,
-   "group_members": [
-    "tim-hendriks"
-   ],
-   "member_affiliations": {
-    "tim-hendriks": [
-     "Maastricht University",
-     "Maastricht University",
-     "The Maastricht MultiModal Molecular Imaging (M4I) Institute, Division of Imaging Mass Spectrometry (IMS)",
-     "The Maastricht MultiModal Molecular Imaging (M4I) Institute, Division of Imaging Mass Spectrometry (IMS), Maastricht University, Maastricht 6229 ER, The Netherlands"
-    ]
-   },
-   "affiliation_status": {
-    "tim-hendriks": "verified"
-   },
-   "cited_by_count": 9,
-   "abstract": "Glioblastoma multiforme (GBM) is a highly aggressive brain cancer with a median survival of 15 months. Despite advancements in conventional treatment approaches such as surgery and chemotherapy, the prognosis remains poor. This study investigates the use of rapid evaporative ionization mass spectrometry (REIMS) for real-time overall survival time classification of GBM samples and uses matrix-assisted laser desorption ionization mass spectrometry imaging (MALDI-MSI) to compare lipidomic differences within GBM tumors. A total of 45 GBM biopsies were analyzed to develop a survival prediction model for IDH-wild type GBM. REIMS patterns from 28 patients were classified with a 97.7% correct classification rate, identifying key discriminators between short-term (0-12 months) and prolonged (>12 months) survivors. Cross-validation with additional samples showed that the model correctly classified short-term and prolonged survival with 66.7 and 69.4% accuracy, respectively. MALDI-MSI was performed to confirm the discriminators derived from REIMS data. Results indicated 42 and 33 discriminating features for short-term and prolonged survival, respectively. Proteomic profiling was performed by isolating tumor regions via laser-capture microdissection (LMD) and liquid chromatography-tandem mass spectrometry (LC-MS/MS). Subsequently, 1387 proteins were identified, of which 79 were significantly altered. In conclusion, this study shows that REIMS rapidly predicts glioblastoma survival…",
-   "verified": true,
-   "first_seen": "2026-10-21"
-  },
-  {
    "id": "W4407870885",
    "openalex_url": "https://openalex.org/W4407870885",
    "doi": "https://doi.org/10.1016/j.esmoop.2025.104478",
@@ -9287,47 +8887,6 @@
    },
    "cited_by_count": 2,
    "abstract": "BACKGROUND: Aggregation of cohort data increases precision for studying neurodegenerative disease pathways, but efforts to combine data and expertise are often hampered by infrastructural, ethical and legal considerations. We aimed to unite various cohort studies in the Netherlands to enhance research infrastructure and facilitate research on dementia etiology and its public health implications. METHODS: The Netherlands Consortium of Dementia Cohorts (NCDC) includes participants with initially no established cognitive impairment from 9 Dutch cohorts: the Amsterdam Dementia Cohort (ADC), Doetinchem Cohort Study (DCS), European Medical Information Framework for Alzheimer's Disease (EMIF-AD), Longitudinal Aging Study Amsterdam (LASA), the Leiden Longevity Study (LLS), The Maastricht Study, the Memolife substudy of the Lifelines cohort, Rotterdam Study and Second Manifestations of ARTerial disease-Magnetic Resonance (SMART-MR) study. The objectives of NCDC are to improve data infrastructure and access to cohorts related to aging and dementia, investigate the role of Alzheimer's disease and vascular pathology in the development of dementia and estimate the public health impact of established dementia risk factors by assessing their relative contribution to the population burden of dementia. RESULTS: We increased the findability, accessibility, interoperability and reusability (FAIR) status of the cohorts through harmonization of data across cohorts, implementation of medical…",
-   "verified": true,
-   "first_seen": "2026-10-21"
-  },
-  {
-   "id": "W4407370801",
-   "openalex_url": "https://openalex.org/W4407370801",
-   "doi": "https://doi.org/10.1021/acs.analchem.4c03821",
-   "title": "Molecular Profiling of Glioblastoma Patient-Derived Single Cells Using Combined MALDI-MSI and MALDI-IHC",
-   "publication_date": "2025-02-11",
-   "year": 2025,
-   "type": "article",
-   "journal": "Analytical Chemistry",
-   "landing_url": "https://doi.org/10.1021/acs.analchem.4c03821",
-   "is_oa": true,
-   "oa_url": "https://doi.org/10.1021/acs.analchem.4c03821",
-   "authors": [
-    "Kasper K. Krestensen",
-    "Tim Hendriks",
-    "Andrej Grgic",
-    "Marleen Derweduwe",
-    "Frederik De Smet",
-    "Ron M. A. Heeren",
-    "Eva Cuypers"
-   ],
-   "author_count": 7,
-   "group_members": [
-    "tim-hendriks"
-   ],
-   "member_affiliations": {
-    "tim-hendriks": [
-     "Maastricht University",
-     "Maastricht University",
-     "The Maastricht MultiModal Molecular Imaging (M4I) institute, Division of Imaging Mass Spectrometry (IMS)",
-     "The Maastricht MultiModal Molecular Imaging (M4I) institute, Division of Imaging Mass Spectrometry (IMS), Maastricht University, 6229 ER Maastricht, The Netherlands"
-    ]
-   },
-   "affiliation_status": {
-    "tim-hendriks": "verified"
-   },
-   "cited_by_count": 27,
-   "abstract": "In recent years, mass spectrometry-based imaging techniques have improved at unprecedented speeds, particularly in spatial resolution, and matrix-assisted laser desorption/ionization (MALDI) mass spectrometry imaging (MSI) experiments can now routinely image molecular profiles of single cells in an untargeted fashion. With the introduction of MALDI-immunohistochemistry (IHC), multiplexed visualization of targeted proteins in their native tissue location has become accessible and joins the suite of multimodal imaging techniques that help unravel molecular complexities. However, MALDI-IHC has not been validated for use with cell cultures at single-cell level. Here, we introduce a workflow for combining MALDI-MSI and MALDI-IHC on single, isolated cells. Patient-derived cells from glioblastoma tumor samples were imaged, first with high-resolution MSI to obtain a lipid profile, followed by MALDI-IHC highlighting cell-specific protein markers. The multimodal imaging revealed cell type specific lipid profiles when comparing glioblastoma cells and neuronal cells. Furthermore, the initial MSI measurement and its sample preparation showed no significant differences in the subsequent MALDI-IHC ion intensities. Finally, an automated recognition model was created based on the MALDI-MSI data and was able to accurately classify cells into their respective cell type in agreement with the MALDI-IHC markers, with triglycerides, phosphatidylcholines, and sphingomyelins being the most…",
    "verified": true,
    "first_seen": "2026-10-21"
   },
@@ -9794,11 +9353,11 @@
     ]
    },
    "affiliation_status": {
-    "ananya-choudhury": "mismatch"
+    "ananya-choudhury": "verified"
    },
    "cited_by_count": 0,
    "abstract": "SHARING 1.3.1 Technical Interoperability 1.3.1.1Data Integration Integration platforms provide a comprehensive approach to establishing connections across various applications, services, and sources of data.Data integration platforms serve as intermediaries that enable the smooth transfer of patient information, medical records, imaging data, laboratory results, and other relevant data between different systems, including Electronic Health Records (EHRs), Radiology Information Systems (RIS), and Laboratory Information Management Systems (LIMS).These platforms integrate data from several sources to offer a full overview of patients' medical information.Integration systems facilitate the aggregation of patient data from many sources, empowering physicians to make well-informed judgments, hence mitigating diagnostic errors and augmenting treatment planning.Additionally, this promotes efficient communication among healthcare teams, guaranteeing synchronized and prompt interventions for patients.The utilization of aggregated data in research activities facilitates the examination of extensive datasets, hence allowing for the identification of trends, patterns, and insights that can inform evidence-based practices.The achievement of successful implementation necessitates the adoption of a collaborative approach involving several stakeholders, including healthcare providers, IT teams, vendors, and regulatory agencies.The implementation of scalable and adaptable architecture is…",
-   "verified": false,
+   "verified": true,
    "first_seen": "2026-10-21"
   },
   {
@@ -9974,11 +9533,11 @@
     ]
    },
    "affiliation_status": {
-    "ralph-brecheisen": "verified"
+    "ralph-brecheisen": "mismatch"
    },
    "cited_by_count": 0,
    "abstract": "Abstract Background Alterations in body composition are common among patients with Crohn’s disease (CD) and may represent a modifiable risk factor for dismal postoperative outcomes. This study aimed to investigate the association of preoperative body composition with postoperative complications and endoscopic postoperative recurrence (ePOR) in CD patients following ileocolic (re-)resection (ICR). Methods CD patients (≥16 years) scheduled for ICR with a preoperative CT or MRI scan (<12 months prior to ICR) were identified from an ongoing prospective, multicenter cohort study. Cross-sectional area normalized for body height (i.e. index) and lipid content (i.e. radiation attenuation on CT or signal intensity on MRI) of sketelal muscle (SM), subcutaneous adipose (SAT), and visceral adipose tissue (VAT) were analyzed at L3 level. Cut-offs were based on sex-specific tertiles. The primary outcome was postoperative complications (Clavien-Dindo grade I-IV) within 30 days. Secondary outcomes were moderate-to-severe complications (Clavien-Dindo grade ≥II), infectious complications (intra- or extra-abdominal), and ePOR (modified Rutgeerts’ score ≥i2b) at six months postoperatively. Multivariable logistic regression was performed to assess the association of preoperative body composition with study outcomes. Results In total, 227 patients were included. Preoperative characteristiscs and postoperative outcomes are shown in Table 1. Median interval from preoperative imaging to ICR was 2.3…",
-   "verified": true,
+   "verified": false,
    "first_seen": "2026-10-21"
   },
   {
@@ -10462,7 +10021,7 @@
    },
    "affiliation_status": {
     "leroy-volmer": "verified",
-    "ralph-brecheisen": "verified",
+    "ralph-brecheisen": "mismatch",
     "leonard-wee": "verified"
    },
    "cited_by_count": 5,
@@ -11149,11 +10708,11 @@
     ]
    },
    "affiliation_status": {
-    "andre-dekker": "verified"
+    "andre-dekker": "mismatch"
    },
    "cited_by_count": 0,
    "abstract": null,
-   "verified": true,
+   "verified": false,
    "first_seen": "2026-10-21"
   },
   {
@@ -11266,7 +10825,7 @@
    },
    "affiliation_status": {
     "leroy-volmer": "verified",
-    "ralph-brecheisen": "verified",
+    "ralph-brecheisen": "mismatch",
     "andre-dekker": "verified",
     "leonard-wee": "verified"
    },
@@ -11310,11 +10869,11 @@
     ]
    },
    "affiliation_status": {
-    "anshu-ankolekar": "verified"
+    "anshu-ankolekar": "mismatch"
    },
    "cited_by_count": 0,
    "abstract": "Patients and providers have expressed concerns about how digital care affects their relationship. We systematically reviewed the evidence on how digital health affects the patient-provider relationship. Methods: We searched 7 databases (date-Nov 2023) using terms for respiratory, digital health and patient-provider relationship (in secondary care). 38 volunteers from ELF, DRAGON and CONNECT undertook duplicate screening/data extraction. Analysis was thematic. Results: Of 116 included studies, 32 explicitly explored the patient-provider relationship. Existing frameworks for patient-provider relationships (Ridd) proved only partially applicable. Trust was foundational and depended on providers’ beliefs about the technology. It was obstructed if clinicians expressed fear and scepticism. Care was demonstrated through monitoring which created an emotional presence, making patients feel taken care of. Connection between the patient/provider was enhanced if communication was seamless, but burdensome technology could create a disconnect due to disengagement. Shared decision-making enhanced by self-monitoring devices changed the dynamics and created a more equal patient-doctor relationship, through improved self-efficacy, and empowerment. Conclusion: Digital care is widely used post-COVID [as shown in DRAGON IHI], however, the impact on the patient/provider relationship is still under-researched. Seamless connection, and strategies to increase trust (both in the technology and in…",
-   "verified": true,
+   "verified": false,
    "first_seen": "2026-10-21"
   },
   {
@@ -11363,11 +10922,11 @@
     ]
    },
    "affiliation_status": {
-    "andre-dekker": "mismatch"
+    "andre-dekker": "verified"
    },
    "cited_by_count": 0,
    "abstract": "Biological age scores are an emerging tool to characterize aging by estimating chronological age based on physiological biomarkers. Various scores have shown associations with aging-related outcomes. This study assessed the relation between an age score based on brain MRI images (BrainAge) and an age score based on metabolomic biomarkers (MetaboAge). We trained a federated deep learning model to estimate BrainAge in three cohorts. The federated BrainAge model yielded significantly lower error for age prediction across the cohorts than locally trained models. Harmonizing the age interval between cohorts further improved BrainAge accuracy. Subsequently, we compared BrainAge with MetaboAge using federated association and survival analyses. The results showed a small association between BrainAge and MetaboAge as well as a higher predictive value for the time to mortality of both scores combined than for the individual scores. Hence, our study suggests that both aging scores capture different aspects of the aging process.",
-   "verified": false,
+   "verified": true,
    "first_seen": "2026-10-21"
   },
   {
@@ -11875,11 +11434,11 @@
     ]
    },
    "affiliation_status": {
-    "ralph-brecheisen": "verified"
+    "ralph-brecheisen": "mismatch"
    },
    "cited_by_count": 7,
    "abstract": "BACKGROUND & AIMS: Several automated programs have been developed to facilitate body composition analysis of images from abdominal computed tomography (CT) scans. External validation in patients with colorectal cancer is necessary for use in research and clinical practice. Our aim was to validate an automatic method (AutoMATiCA) of segmenting CT images at the third lumbar level (L3) from patients with colorectal cancer, by comparing with manual segmentation. METHODS: Diagnostic abdominal CT scans of consecutive patients with stage I-III colorectal cancer were analysed to measure cross-sectional areas and tissue densities of skeletal muscle and intra-muscular, visceral, and subcutaneous adipose tissue. Trained analysts performed manual segmentation of L3 CT images using SliceOmatic. Automatic segmentation was performed using AutoMATiCA, an open-source software. The Dice similarity coefficient (DSC) was calculated to assess segmentation accuracy. Agreement of automatic with manual segmentation was evaluated using intra-class correlation coefficients (ICCs) and Bland-Altman plots with limits of agreement. RESULTS: A total of 292 scans were included, of which 62% were from male patients. The agreement of AutoMATiCA with the manual segmentation was excellent, with median DSC values ranging from 0.900 to 0.991 and ICCs above 0.95 for all segmented areas. No systematic deviations were observed in Bland-Altman plots for all segmented areas, with overall narrow limits of agreement.…",
-   "verified": true,
+   "verified": false,
    "first_seen": "2026-10-21"
   },
   {
@@ -12017,9 +11576,9 @@
    },
    "affiliation_status": {
     "leroy-volmer": "verified",
-    "ananya-choudhury": "verified",
+    "ananya-choudhury": "mismatch",
     "andre-dekker": "verified",
-    "leonard-wee": "verified"
+    "leonard-wee": "mismatch"
    },
    "cited_by_count": 1,
    "abstract": null,
@@ -12111,13 +11670,13 @@
     ]
    },
    "affiliation_status": {
-    "umesh-kumar-baburao-sherkhane": "verified",
-    "andre-dekker": "verified",
-    "leonard-wee": "verified"
+    "umesh-kumar-baburao-sherkhane": "mismatch",
+    "andre-dekker": "mismatch",
+    "leonard-wee": "mismatch"
    },
    "cited_by_count": 1,
    "abstract": null,
-   "verified": true,
+   "verified": false,
    "first_seen": "2026-10-21"
   },
   {
@@ -12333,11 +11892,11 @@
     ]
    },
    "affiliation_status": {
-    "leonard-wee": "verified"
+    "leonard-wee": "mismatch"
    },
    "cited_by_count": 6,
    "abstract": "There has been growing interest in the use of real-world data (RWD) to address clinically and policy-relevant (research) questions that cannot be answered with data from randomized controlled trials (RCTs) alone. This is, for example, the case in rare malignancies such as sarcomas as limited patient numbers pose challenges in conducting RCTs within feasible timeliness, a manageable number of collaborators, and statistical power. This narrative review explores the potential of RWD to generate real-world evidence (RWE) in sarcoma research, elucidating its application across different phases of the patient journey, from prediagnosis to the follow-up/survivorship phase. For instance, examining electronic health records (EHRs) from general practitioners (GPs) enables the exploration of consultation frequency and presenting symptoms in primary care before a sarcoma diagnosis. In addition, alternative study designs that integrate RWD with well-designed observational RCTs may offer relevant information on the effectiveness of clinical treatments. As, especially in cases of ultrarare sarcomas, it can be an extreme challenge to perform well-powered randomized prospective studies. Therefore, it is crucial to support the adaptation of novel study designs. Regarding the follow-up/survivorship phase, examining EHR from primary and secondary care can provide valuable insights into identifying the short- and long-term effects of treatment over an extended follow-up period. The utilization…",
-   "verified": true,
+   "verified": false,
    "first_seen": "2026-10-21"
   },
   {
@@ -12467,58 +12026,6 @@
    },
    "cited_by_count": 1,
    "abstract": "BACKGROUND Accurate delineation of the gross tumor volume (GTV) is crucial in radiotherapy for dose calculation and precise imaging-guided treatment of lung cancer patients. Conventionally, this task has been performed manually by radiation oncologists, which can be subjective and vary among clinicians. Deep learning has enabled automated GTV segmentation, with the potential to revolutionize the radiotherapy workflow by improving efficiency and consistency, ultimately enhancing patient outcomes while reducing clinician workload. However, the adoption of deep learning based GTV segmentation tools is hindered by the challenges of data privacy and the need for large, diverse datasets across multiple institutions. Federated learning (FL) offers a promising solution, allowing collaborative development of AI models without the need to share individual subject-level data. OBJECTIVE The objective is to introduce an innovative federated learning infrastructure called the Personal Health Train (PHT) that includes the procedural, technical, and governance components needed to implement federated learning on real-world healthcare data, including training deep learning neural networks. The study aims to apply this federated deep learning infrastructure to the use case of gross tumor volume (GTV) segmentation on chest CT images of lung cancer patients, and present the results from a proof-of-concept experiment. METHODS The PHT framework addresses the challenges of data privacy concerns…",
-   "verified": true,
-   "first_seen": "2026-10-21"
-  },
-  {
-   "id": "W4398251898",
-   "openalex_url": "https://openalex.org/W4398251898",
-   "doi": "https://doi.org/10.1001/jamaoncol.2024.1120",
-   "title": "Body Composition in Advanced Non-Small Cell Lung Cancer Treated With Immunotherapy",
-   "publication_date": "2024-05-23",
-   "year": 2024,
-   "type": "article",
-   "journal": "JAMA Oncology",
-   "landing_url": "https://doi.org/10.1001/jamaoncol.2024.1120",
-   "is_oa": true,
-   "oa_url": "https://cris.maastrichtuniversity.nl/en/publications/50d7305f-19c5-44ee-90ca-ce8395c0e529",
-   "authors": [
-    "Tafadzwa Lawrence Chaunzwa",
-    "Jack M. Qian",
-    "Qin Li",
-    "Biagio Ricciuti",
-    "Leonard Nürnberg",
-    "Justin W. Johnson",
-    "Jakob Weiß",
-    "Zhongyi Zhang",
-    "Jamie MacKay",
-    "Ioannis Kagiampakis",
-    "Damián E. Bikiel",
-    "Alessandro Di Federico",
-    "Joao V. Alessi",
-    "Raymond H. Mak",
-    "Etai Jacob",
-    "Mark Magdi Awad",
-    "Hugo J.W.L. Aerts"
-   ],
-   "author_count": 17,
-   "group_members": [
-    "leonard-nurnberg"
-   ],
-   "member_affiliations": {
-    "leonard-nurnberg": [
-     "Harvard University",
-     "Maastricht University",
-     "Mass General Brigham",
-     "Artificial Intelligence in Medicine Program, Mass General Brigham, Harvard Medical School, Boston, Massachusetts",
-     "Radiology and Nuclear Medicine, CARIM & GROW, Maastricht University, Maastricht, the Netherlands"
-    ]
-   },
-   "affiliation_status": {
-    "leonard-nurnberg": "verified"
-   },
-   "cited_by_count": 43,
-   "abstract": "Importance: The association between body composition (BC) and cancer outcomes is complex and incompletely understood. Previous research in non-small-cell lung cancer (NSCLC) has been limited to small, single-institution studies and yielded promising, albeit heterogeneous, results. Objectives: To evaluate the association of BC with oncologic outcomes in patients receiving immunotherapy for advanced or metastatic NSCLC. Design, Setting, and Participants: This comprehensive multicohort analysis included clinical data from cohorts receiving treatment at the Dana-Farber Brigham Cancer Center (DFBCC) who received immunotherapy given alone or in combination with chemotherapy and prospectively collected data from the phase 1/2 Study 1108 and the chemotherapy arm of the phase 3 MYSTIC trial. Baseline and follow-up computed tomography (CT) scans were collected and analyzed using deep neural networks for automatic L3 slice selection and body compartment segmentation (skeletal muscle [SM], subcutaneous adipose tissue [SAT], and visceral adipose tissue). Outcomes were compared based on baseline BC measures or their change at the first follow-up scan. The data were analyzed between July 2022 and April 2023. Main Outcomes and Measures: Hazard ratios (HRs) for the association of BC measurements with overall survival (OS) and progression-free survival (PFS). Results: A total of 1791 patients (878 women [49%]) with NSCLC were analyzed, of whom 487 (27.2%) received chemoimmunotherapy at DFBCC…",
    "verified": true,
    "first_seen": "2026-10-21"
   },
@@ -13533,26 +13040,20 @@
    ],
    "author_count": 10,
    "group_members": [
-    "ivan-zhovannik",
     "andre-dekker"
    ],
    "member_affiliations": {
-    "ivan-zhovannik": [
-     "Maastricht University Medical Centre",
-     "Maastricht Univ. Medical Ctr.+ (Netherlands)"
-    ],
     "andre-dekker": [
      "Maastricht University Medical Centre",
      "Maastricht Univ. Medical Ctr.+ (Netherlands)"
     ]
    },
    "affiliation_status": {
-    "ivan-zhovannik": "verified",
-    "andre-dekker": "verified"
+    "andre-dekker": "mismatch"
    },
    "cited_by_count": 0,
    "abstract": "Generative adversarial networks (GANs) have been used to successfully translate images between multiple imaging modalities. While there is a significant amount of literature on the use cases for these approaches, there has been limited investigation into the optimal model design and evaluation criteria. In this paper, we demonstrated the performance of different approaches on the task of cone-beam computer tomography (CBCT) to fan-beam computer tomography (CT) translation. We examined the implications of choosing between 2D and 3D models, the size of 3D patches, and the integration of the Structural Similarity Index Measure (SSIM) into the cycle-consistency loss. Additionally, we introduced a partially-invertible VNet architecture into the RevGAN framework, enabling the use of 3D UNet-like architectures with minimal memory footprint. We compared image similarity metrics to visual inspection as an evaluation method for these models using held-out patient data and phantom scans to demonstrate their generalizability. Our findings suggest that 3D models, despite requiring a longer training time to converge due to the number of parameters, produce fewer image perturbations compared to 2D models. Training with larger patches also improved stability and significantly reduced artifacts, but increased the training time, while the SSIM-L1 cycle-consistency loss function enhanced performance. Interestingly, our study revealed a discrepancy between standard image similarity metrics and…",
-   "verified": true,
+   "verified": false,
    "first_seen": "2026-10-21"
   },
   {
@@ -13638,11 +13139,11 @@
     ]
    },
    "affiliation_status": {
-    "anshu-ankolekar": "verified"
+    "anshu-ankolekar": "mismatch"
    },
    "cited_by_count": 3,
    "abstract": "The aim of this study was to develop and evaluate a proof-of-concept open-source individualized Patient Decision Aid (iPDA) with a group of patients, physicians, and computer scientists. The iPDA was developed based on the International Patient Decision Aid Standards (IPDAS). A previously published questionnaire was adapted and used to test the user-friendliness and content of the iPDA. The questionnaire contained 40 multiple-choice questions, and answers were given on a 5-point Likert Scale (1-5) ranging from \"strongly disagree\" to \"strongly agree.\" In addition to the questionnaire, semi-structured interviews were conducted with patients. We performed a descriptive analysis of the responses. The iPDA was evaluated by 28 computer scientists, 21 physicians, and 13 patients. The results demonstrate that the iPDA was found valuable by 92% (patients), 96% (computer scientists), and 86% (physicians), while the treatment information was judged useful by 92%, 96%, and 95%, respectively. Additionally, the tool was thought to be motivating for patients to actively engage in their treatment by 92%, 93%, and 91% of the above respondents groups. More multimedia components and less text were suggested by the respondents as ways to improve the tool and user interface. In conclusion, we successfully developed and tested an iPDA for patients with stage I-II Non-Small Cell Lung Cancer (NSCLC).",
-   "verified": true,
+   "verified": false,
    "first_seen": "2026-10-21"
   },
   {
@@ -13747,45 +13248,6 @@
    },
    "cited_by_count": 15,
    "abstract": "AIMS: The objective of this study was to develop a two-year overall survival model for inoperable stage I-III non-small cell lung cancer (NSCLC) patients using routine radiation oncology data over a federated (distributed) learning network and evaluate the potential of decision support for curative versus palliative radiotherapy. METHODS: A federated infrastructure of data extraction, de-identification, standardisation, image analysis, and modelling was installed for seven clinics to obtain clinical and imaging features and survival information for patients treated in 2011-2019. A logistic regression model was trained for the 2011-2016 curative patient cohort and validated for the 2017-2019 cohort. Features were selected with univariate and model-based analysis and optimised using bootstrapping. System performance was assessed by the receiver operating characteristic (ROC) and corresponding area under curve (AUC), C-index, calibration metrics and Kaplan-Meier survival curves, with risk groups defined by model probability quartiles. Decision support was evaluated using a case-control analysis using propensity matching between treatment groups. RESULTS: 1655 patient datasets were included. The overall model AUC was 0.68. Fifty-eight percent of patients treated with palliative radiotherapy had a low-to-moderate risk prediction according to the model, with survival times not significantly different (p = 0.87 and 0.061) from patients treated with curative radiotherapy classified…",
-   "verified": true,
-   "first_seen": "2026-10-21"
-  },
-  {
-   "id": "W4392374045",
-   "openalex_url": "https://openalex.org/W4392374045",
-   "doi": "https://doi.org/10.1021/acs.analchem.3c05850",
-   "title": "MALDI-MSI-LC-MS/MS Workflow for Single-Section Single Step Combined Proteomics and Quantitative Lipidomics",
-   "publication_date": "2024-03-04",
-   "year": 2024,
-   "type": "article",
-   "journal": "Analytical Chemistry",
-   "landing_url": "https://doi.org/10.1021/acs.analchem.3c05850",
-   "is_oa": true,
-   "oa_url": "https://doi.org/10.1021/acs.analchem.3c05850",
-   "authors": [
-    "Tim Hendriks",
-    "Kasper K. Krestensen",
-    "Ronny Mohren",
-    "Michiel Vandenbosch",
-    "Steven De Vleeschouwer",
-    "Ron M. A. Heeren",
-    "Eva Cuypers"
-   ],
-   "author_count": 7,
-   "group_members": [
-    "tim-hendriks"
-   ],
-   "member_affiliations": {
-    "tim-hendriks": [
-     "Maastricht University",
-     "The Maastricht MultiModal Molecular Imaging (M4I) institute, Division of Imaging Mass Spectrometry (IMS), Maastricht University, 6229 ER Maastricht, The Netherlands"
-    ]
-   },
-   "affiliation_status": {
-    "tim-hendriks": "verified"
-   },
-   "cited_by_count": 42,
-   "abstract": "We introduce a novel approach for comprehensive molecular profiling in biological samples. Our single-section methodology combines quantitative mass spectrometry imaging (Q-MSI) and a single step extraction protocol enabling lipidomic and proteomic liquid chromatography tandem mass spectrometry (LC-MS/MS) analysis on the same tissue area. The integration of spatially correlated lipidomic and proteomic data on a single tissue section allows for a comprehensive interpretation of the molecular landscape. Comparing Q-MSI and Q-LC-MS/MS quantification results sheds new light on the effect of MSI and related sample preparation. Performing MSI before Q-LC-MS on the same tissue section led to fewer protein identifications and a lower correlation between lipid quantification results. Also, the critical role and influence of internal standards in Q-MSI for accurate quantification is highlighted. Testing various slide types and the evaluation of different workflows for single-section spatial multiomics analysis emphasized the need for critical evaluation of Q-MSI data. These findings highlight the necessity for robust quantification methods comparable to current gold-standard LC-MS/MS techniques. The spatial information from MSI allowed region-specific insights within heterogeneous tissues, as demonstrated for glioblastoma multiforme. Additionally, our workflow demonstrated the efficiency of a single step extraction for lipidomic and proteomic analyses on the same tissue area,…",
    "verified": true,
    "first_seen": "2026-10-21"
   },
@@ -14058,13 +13520,13 @@
     ]
    },
    "affiliation_status": {
-    "joshi-hogenboom": "verified",
-    "leonard-wee": "verified",
-    "andre-dekker": "verified"
+    "joshi-hogenboom": "mismatch",
+    "leonard-wee": "mismatch",
+    "andre-dekker": "mismatch"
    },
    "cited_by_count": 26,
    "abstract": "Synthetic data promises to be a viable alternative when data collection and data sharing may not be feasible or cost effective, but it raises distinct ethical issue that merit serious consideration. [Image: see text]",
-   "verified": true,
+   "verified": false,
    "first_seen": "2026-10-21"
   },
   {
@@ -14710,11 +14172,11 @@
     ]
    },
    "affiliation_status": {
-    "sander-puts": "mismatch"
+    "sander-puts": "verified"
    },
    "cited_by_count": 0,
    "abstract": "In this PhD research, two AI tools were developed to significantly reduce the administrative workload for healthcare professionals and enhance the quality and accessibility of medical data. The first tool, a real-time AI assistant for radiologists, provides immediate feedback as they draft medical reports. It supports the use of natural language while automatically generating a structured version of the report that includes tumor classification, which radiologists can directly validate. This enhances the quality and completeness of the data. The second tool streamlines the ICD-10 coding process, essential for accurately classifying and coding diagnoses and procedures in patient records. This AI assistant efficiently identifies key terms, integrates seamlessly with the user’s workflow, and facilitates easy corrections. Collectively, these innovations can reduce the administrative burden on healthcare providers and improve the management of medical data, making it more standardized and easily accessible.",
-   "verified": false,
+   "verified": true,
    "first_seen": "2026-10-21"
   },
   {
@@ -14867,7 +14329,7 @@
    },
    "affiliation_status": {
     "ananya-choudhury": "verified",
-    "andre-dekker": "verified",
+    "andre-dekker": "mismatch",
     "leonard-wee": "verified"
    },
    "cited_by_count": 0,
@@ -14932,7 +14394,7 @@
    "affiliation_status": {
     "ananya-choudhury": "verified",
     "andre-dekker": "verified",
-    "johan-van-soest": "verified",
+    "johan-van-soest": "mismatch",
     "leonard-wee": "verified"
    },
    "cited_by_count": 6,
@@ -15056,11 +14518,11 @@
     ]
    },
    "affiliation_status": {
-    "andre-dekker": "verified"
+    "andre-dekker": "mismatch"
    },
    "cited_by_count": 0,
    "abstract": null,
-   "verified": true,
+   "verified": false,
    "first_seen": "2026-10-21"
   },
   {
@@ -15115,11 +14577,11 @@
     ]
    },
    "affiliation_status": {
-    "ralph-brecheisen": "verified"
+    "ralph-brecheisen": "mismatch"
    },
    "cited_by_count": 0,
    "abstract": "Abstract Background Alterations in body composition are common in Crohn’s disease (CD) patients and influence disease outcomes. However, the impact of preoperative body composition on postoperative outcomes is not completely understood. Therefore, this study aimed to investigate the association of preoperative body composition with postoperative complications and endoscopic recurrence in CD patients undergoing ileocolic (re-)resection (ICR). Methods CD patients (≥16 years) scheduled for an ICR with a computed tomography (CT) scan available (<12 months prior to ICR) were identified from an ongoing prospective, multicenter cohort study. Skeletal muscle mass (SM), visceral (VAT) and subcutaneous adipose tissue (SAT), and their radiation attenuation (RA) were assessed on a single CT image at L3 using a validated deep-learning automatic segmentation tool (Mosamatic). Low RA is associated with increased tissue triglyceride content (e.g. myosteatosis in case of SM). Cut-offs, based on sex-specific tertiles, were set at the lower and upper tertile for low and high values. The primary outcome was the development of overall postoperative complications within 90 days. Secondary outcomes were postoperative endoscopic recurrence (Rutgeerts’ score ≥ i2b) at 6 months, infectious complications, and moderate to severe complications (Clavien-Dindo ≥ II). Multivariable logistic regression was performed to assess the association of body composition variables with postoperative outcomes,…",
-   "verified": true,
+   "verified": false,
    "first_seen": "2026-10-21"
   },
   {

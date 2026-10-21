@@ -9,7 +9,7 @@ from pathlib import Path
 
 import yaml
 
-from .openalex import OpenAlex, abstract_from_inverted_index, author_affiliations, short_id
+from .openalex import OpenAlex, abstract_from_inverted_index, author_affiliations, author_current_institutions, short_id
 from .staff import fetch_staff, is_active, merge_people
 
 log = logging.getLogger(__name__)
@@ -97,21 +97,40 @@ def match_confidence(person: dict) -> str:
     return "name"
 
 
-def resolve_people(people: list[dict], client: OpenAlex, keywords: list[str], today: date) -> list[str]:
+def select_author_records(records: list[dict], strict: list[str], broad: list[str]) -> list[dict]:
+    """Pick the records that most plausibly belong to the group member, in tiers:
+    current institution matches the broad group words > any past affiliation matches the strict words >
+    any past affiliation matches the broad words > everything (no evidence either way)."""
+    if len(records) <= 1:
+        return records
+    tiers = (
+        [r for r in records if affiliation_matches(author_current_institutions(r), broad)],
+        [r for r in records if affiliation_matches(author_affiliations(r), strict)],
+        [r for r in records if affiliation_matches(author_affiliations(r), broad)],
+    )
+    for tier in tiers:
+        if tier:
+            return tier
+    return records
+
+
+def resolve_people(people: list[dict], client: OpenAlex, keywords: list[str], today: date, broad_keywords: list[str] | None = None) -> list[str]:
     """Work out which OpenAlex author record(s) each active person corresponds to.
 
     - hand-set openalex_id: used as is
-    - ORCID: all author records with that ORCID; if several, keep those with a group affiliation (OpenAlex sometimes
-      attaches one ORCID to a merged record of several people)
-    - neither: search by name, accept only an exact name with a group affiliation; otherwise needs_review
+    - ORCID: all author records with that ORCID; if several (OpenAlex sometimes attaches one ORCID to a merged
+      record of several people), the most plausible tier is kept (see select_author_records)
+    - neither: search by name, accept only an exact name whose record has a group affiliation (broad words);
+      papers of such people later count only with a strict, verified affiliation on the paper itself
     Returns the slugs that still need review.
     """
     unresolved = []
+    broad = broad_keywords or keywords
     for p in people:
         if not is_active(p, today):
             continue
-        if p.get("openalex_id"):
-            p["openalex_ids"] = [p["openalex_id"]]
+        if manual_ids(p):
+            p["openalex_ids"] = manual_ids(p)
             p["needs_review"] = False
             continue
         if p.get("orcid"):
@@ -121,10 +140,9 @@ def resolve_people(people: list[dict], client: OpenAlex, keywords: list[str], to
                 log.warning("author lookup by ORCID failed for %s: %s", p["name"], exc)
                 records = []
             if len(records) > 1:
-                affiliated = [r for r in records if affiliation_matches(author_affiliations(r), keywords)]
-                if affiliated:
-                    log.info("%s: ORCID maps to %d OpenAlex records, keeping %d with a group affiliation", p["name"], len(records), len(affiliated))
-                    records = affiliated
+                chosen = select_author_records(records, keywords, broad)
+                log.info("%s: ORCID maps to %d OpenAlex records, keeping %d (%s)", p["name"], len(records), len(chosen), ", ".join(short_id(r["id"]) for r in chosen))
+                records = chosen
             ids = [short_id(r["id"]) for r in records]
             if ids:
                 p["openalex_ids"] = ids
@@ -139,7 +157,7 @@ def resolve_people(people: list[dict], client: OpenAlex, keywords: list[str], to
             log.warning("author search failed for %s: %s", p["name"], exc)
         match = None
         for c in candidates:
-            if c.get("display_name", "").lower() == p["name"].lower() and affiliation_matches(author_affiliations(c), keywords):
+            if c.get("display_name", "").lower() == p["name"].lower() and affiliation_matches(author_affiliations(c), broad):
                 match = c
                 break
         if match:
@@ -156,9 +174,17 @@ def resolve_people(people: list[dict], client: OpenAlex, keywords: list[str], to
     return unresolved
 
 
+def manual_ids(person: dict) -> list[str]:
+    """Hand-set openalex_id may be one id or a list (to join records OpenAlex split)."""
+    v = person.get("openalex_id")
+    if not v:
+        return []
+    return [str(x) for x in v] if isinstance(v, list) else [str(v)]
+
+
 def person_filter(person: dict) -> str | None:
-    if person.get("openalex_id"):
-        return f"authorships.author.id:{person['openalex_id']}"
+    if manual_ids(person):
+        return "authorships.author.id:" + "|".join(manual_ids(person))
     if person.get("openalex_ids"):
         return "authorships.author.id:" + "|".join(person["openalex_ids"])
     if person.get("orcid"):
@@ -177,7 +203,7 @@ def normalise_work(raw: dict, people: list[dict], keywords: list[str] | None = N
     by_orcid = {p["orcid"].upper(): p["slug"] for p in people if p.get("orcid")}
     by_id: dict[str, str] = {}
     for p in people:
-        for aid in ([p["openalex_id"]] if p.get("openalex_id") else []) + list(p.get("openalex_ids") or []):
+        for aid in manual_ids(p) + list(p.get("openalex_ids") or []):
             by_id[aid] = p["slug"]
     authors, members, member_affiliations, status = [], [], {}, {}
     for a in raw.get("authorships", []) or []:
@@ -294,10 +320,18 @@ def fetch_works(
     return works, errors
 
 
-def merge_works(existing: list[dict], fetched: dict[str, dict], today: date) -> tuple[list[dict], list[str]]:
-    """Keep first_seen from existing records; anything unknown is new. Existing works not refetched are kept."""
+def merge_works(existing: list[dict], fetched: dict[str, dict], today: date, fetched_slugs: set[str] | None = None) -> tuple[list[dict], list[str]]:
+    """Keep first_seen from existing records; anything unknown is new.
+
+    Existing works that were not returned this run are dropped when any of their group members was (re)fetched this
+    run (the attribution no longer holds), and kept otherwise (e.g. papers of people who have left the group).
+    """
     today_s = today.isoformat()
-    merged: dict[str, dict] = {w["id"]: w for w in existing}
+    fetched_slugs = fetched_slugs or set()
+    merged: dict[str, dict] = {
+        w["id"]: w for w in existing
+        if w["id"] in fetched or not any(m in fetched_slugs for m in w.get("group_members", []))
+    }
     new_ids: list[str] = []
     for wid, w in fetched.items():
         old = merged.get(wid)
@@ -320,7 +354,7 @@ def public_people(people: list[dict], today: date) -> list[dict]:
             "role": p.get("role"),
             "employer": p.get("employer"),
             "orcid": p.get("orcid"),
-            "openalex_ids": [p["openalex_id"]] if p.get("openalex_id") else list(p.get("openalex_ids") or []),
+            "openalex_ids": manual_ids(p) or list(p.get("openalex_ids") or []),
             "match": match_confidence(p),
             "active": is_active(p, today),
             "needs_review": bool(p.get("needs_review")) and is_active(p, today),
@@ -353,7 +387,7 @@ def run(dry_run: bool = False, skip_people: bool = False, config_path: Path = CO
             people_changes = {"error": str(exc)}
 
     client = OpenAlex(mailto=cfg.get("openalex_mailto"))
-    unresolved = resolve_people(people, client, keywords, today)
+    unresolved = resolve_people(people, client, keywords, today, broad_keywords=cfg.get("author_match_keywords") or keywords)
     fetched, errors = fetch_works(
         people, client, int(cfg.get("since_year", 2024)), today,
         keywords=keywords, policy=cfg.get("affiliation_policy", "flag"), exclude_types=cfg.get("exclude_types"),
@@ -362,7 +396,9 @@ def run(dry_run: bool = False, skip_people: bool = False, config_path: Path = CO
     previous = load_publications()
     baseline = not previous.get("works")
     overrides = load_overrides()
-    works, new_ids = merge_works(previous.get("works", []), fetched, today)
+    failed_names = {e.split(":")[0] for e in errors}
+    fetched_slugs = {p["slug"] for p in people if is_active(p, today) and person_filter(p) and p["name"] not in failed_names}
+    works, new_ids = merge_works(previous.get("works", []), fetched, today, fetched_slugs)
     works = apply_overrides(works, overrides)
     new_ids = [i for i in new_ids if i not in overrides["reject"]]
 

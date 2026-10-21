@@ -100,3 +100,29 @@ def test_apply_overrides():
     out = apply_overrides(works, {"confirm": {"W1"}, "reject": {"W2"}})
     assert [w["id"] for w in out] == ["W1", "W3"]
     assert out[0]["verified"] is True and out[0]["manual"] == "confirmed"
+
+
+def test_merge_works_drops_stale_attributions_but_keeps_left_people():
+    from datetime import date
+    existing = [
+        {"id": "W1", "publication_date": "2026-01-01", "first_seen": "2026-01-05", "group_members": ["active"]},
+        {"id": "W9", "publication_date": "2025-01-01", "first_seen": "2025-02-01", "group_members": ["left"]},
+    ]
+    merged, new_ids = merge_works(existing, {}, date(2026, 10, 21), fetched_slugs={"active"})
+    assert [w["id"] for w in merged] == ["W9"] and new_ids == []
+
+
+def test_select_author_records_prefers_current_group_institution():
+    from pubpulse.sync import select_author_records
+    wrong = {"id": "https://openalex.org/A1", "last_known_institutions": [], "affiliations": [{"institution": {"display_name": "Radiation Oncology Dept, Leeds"}}]}
+    right = {"id": "https://openalex.org/A2", "last_known_institutions": [{"display_name": "Maastro Clinic"}], "affiliations": []}
+    strict, broad = ["maastro", "radiation oncology"], ["maastricht", "maastro"]
+    assert select_author_records([wrong, right], strict, broad) == [right]
+    assert select_author_records([wrong], strict, broad) == [wrong]
+    neither = {"id": "https://openalex.org/A3", "last_known_institutions": [], "affiliations": []}
+    assert select_author_records([wrong, neither], strict, broad) == [wrong]   # strict past affiliation beats nothing
+
+
+def test_manual_openalex_id_accepts_list():
+    assert person_filter({"openalex_id": ["A1", "A2"], "orcid": "x"}) == "authorships.author.id:A1|A2"
+    assert person_filter({"openalex_id": "A1", "orcid": "x"}) == "authorships.author.id:A1"

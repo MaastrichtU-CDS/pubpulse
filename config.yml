@@ -16,12 +16,17 @@ since_year: 2024
 # OpenAlex "polite pool" contact address (faster, more reliable API access). Not used for anything else.
 openalex_mailto: s.puts@maastrichtuniversity.nl
 
-# Affiliation verification. For every publication, each group member's authorship (as recorded by OpenAlex) is
-# checked for an institution containing one of these words. The site and digest mark papers without a verified
-# affiliation. The same words decide whether a person without ORCID may be auto-matched in OpenAlex.
-# Official strings: "Maastro, Maastricht Radiation Oncology Institute" and "Department of Radiation Oncology, GROW Research
-# Institute for Oncology and Reproduction, Maastricht University Medical Centre+". Matching is case-insensitive substring.
-institution_keywords: [maastro, maastricht, mumc, grow research institute]
+# Affiliation verification. For every publication, each group member's authorship (as recorded by OpenAlex) must
+# mention one of these words (case-insensitive substring). Official strings: "Maastro, Maastricht Radiation Oncology
+# Institute" and "Department of Radiation Oncology, GROW Research Institute for Oncology and Reproduction, Maastricht
+# University Medical Centre+". "Maastricht University" alone is deliberately NOT enough (too wide). "Medical Data Works"
+# is included because several group members are employed there. The same words decide whether a person without ORCID
+# may be auto-matched in OpenAlex, and which record wins when one ORCID maps to several OpenAlex author records.
+institution_keywords: [maastro, radiation oncology, grow research institute, grow school, medical data works, clinical data science]
+
+# Broader words used only to pick the right OpenAlex author record for a person (never to verify a paper):
+# a record whose current institution matches these wins over a namesake elsewhere.
+author_match_keywords: [maastricht, maastro, mumc, medical data works]
 # flag    = keep all papers, show a "not verified" marker (recommended: ORCID matches with missing affiliation data stay visible)
 # require = drop papers where no group member has a verified affiliation
 affiliation_policy: flag

@@ -90,9 +90,14 @@ def short_id(openalex_url: str | None) -> str | None:
 
 
 def author_affiliations(author: dict) -> list[str]:
+    """All institutions ever recorded on an author record (past and current)."""
     affs = [(a.get("institution") or {}).get("display_name", "") for a in (author.get("affiliations") or [])]
     affs += [(i or {}).get("display_name", "") for i in (author.get("last_known_institutions") or [])]
     return [a for a in affs if a]
+
+
+def author_current_institutions(author: dict) -> list[str]:
+    return [(i or {}).get("display_name", "") for i in (author.get("last_known_institutions") or []) if i]
 
 
 def abstract_from_inverted_index(index: dict | None, max_chars: int = 1500) -> str | None:
