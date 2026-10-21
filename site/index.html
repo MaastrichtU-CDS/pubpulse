@@ -22,8 +22,18 @@
       <label for="q">Search</label>
       <input id="q" type="search" placeholder="title, author, journal…" autocomplete="off">
     </div>
+    <div class="filter">
+      <label for="when">Period</label>
+      <select id="when">
+        <option value="">Any time</option>
+        <option value="week">New this week (added by the last run)</option>
+        <option value="30d">Published in the last 30 days</option>
+        <option value="90d">Published in the last 90 days</option>
+        <option value="12m">Published in the last 12 months</option>
+        <option value="year">Published this year</option>
+      </select>
+    </div>
     <div class="filter row">
-      <label class="check"><input type="checkbox" id="only-new"> New this week</label>
       <label class="check"><input type="checkbox" id="only-oa"> Open access</label>
     </div>
     <div class="filter">

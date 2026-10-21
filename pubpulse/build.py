@@ -113,7 +113,7 @@ def build_digest(pubs: dict, cfg: dict) -> dict:
     if unverified_new:
         body.append(
             f'<p style="font-size:13px;color:#8a5a00;border-left:3px solid #e0a800;padding-left:8px">{unverified_new} of these have no '
-            f'group affiliation recorded by OpenAlex. <a href="{html.escape(site)}#new=1&amp;verify=unverified">Check them</a> and confirm or '
+            f'group affiliation recorded by OpenAlex. <a href="{html.escape(site)}#when=week&amp;verify=unverified">Check them</a> and confirm or '
             "reject them in overrides.yml.</p>"
         )
     if review:
@@ -133,7 +133,7 @@ def build_digest(pubs: dict, cfg: dict) -> dict:
         text_lines += [f"{i}. {w['title']}", f"   {w.get('journal') or ''} · {w.get('publication_date') or ''}", f"   Group authors: {members}{flag}", f"   {work_link(w)}", ""]
     text_lines += [f"All publications: {site}", f"Feed: {site}feed.xml"]
     if unverified_new:
-        text_lines += ["", f"{unverified_new} of these have no group affiliation recorded: {site}#new=1&verify=unverified"]
+        text_lines += ["", f"{unverified_new} of these have no group affiliation recorded: {site}#when=week&verify=unverified"]
     if review:
         text_lines += ["", "Needs attention (no ORCID/OpenAlex match): " + ", ".join(review)]
 

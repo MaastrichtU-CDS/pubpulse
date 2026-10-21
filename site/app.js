@@ -2,7 +2,7 @@
 (() => {
   const $ = (id) => document.getElementById(id);
   const els = {
-    q: $("q"), onlyNew: $("only-new"), verify: $("verify"), onlyOa: $("only-oa"), year: $("year"),
+    q: $("q"), when: $("when"), verify: $("verify"), onlyOa: $("only-oa"), year: $("year"),
     type: $("type"), journal: $("journal"), sort: $("sort"), people: $("people"), peopleQ: $("people-q"),
     list: $("list"), count: $("count"), empty: $("empty"), chips: $("active-chips"), attention: $("attention"),
   };
@@ -14,7 +14,7 @@
     return {
       q: p.get("q") || "", year: p.get("year") || "", type: p.get("type") || "", journal: p.get("journal") || "",
       sort: p.get("sort") || "date", people: (p.get("people") || "").split(",").filter(Boolean),
-      new: p.get("new") === "1", verify: p.get("verify") || "", oa: p.get("oa") === "1",
+      when: p.get("when") || (p.get("new") === "1" ? "week" : ""), verify: p.get("verify") || "", oa: p.get("oa") === "1",
     };
   }
   function writeHash() {
@@ -25,7 +25,7 @@
     if (state.journal) p.set("journal", state.journal);
     if (state.sort !== "date") p.set("sort", state.sort);
     if (state.people.length) p.set("people", state.people.join(","));
-    if (state.new) p.set("new", "1");
+    if (state.when) p.set("when", state.when);
     if (state.verify) p.set("verify", state.verify);
     if (state.oa) p.set("oa", "1");
     history.replaceState(null, "", p.toString() ? "#" + p.toString() : location.pathname);
@@ -63,8 +63,8 @@
     const journals = Object.entries(jc).sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]));
     fillSelect(els.journal, journals.map(([j, n]) => [j, `${j} (${n})`]), state.journal);
 
-    els.q.value = state.q; els.sort.value = state.sort; els.verify.value = state.verify;
-    els.onlyNew.checked = state.new; els.onlyOa.checked = state.oa;
+    els.q.value = state.q; els.sort.value = state.sort; els.verify.value = state.verify; els.when.value = state.when;
+    els.onlyOa.checked = state.oa;
     renderPeople();
 
     const review = data.people.filter((p) => p.needs_review);
@@ -80,15 +80,15 @@
     els.type.addEventListener("change", () => { state.type = els.type.value; update(); });
     els.journal.addEventListener("change", () => { state.journal = els.journal.value; update(); });
     els.sort.addEventListener("change", () => { state.sort = els.sort.value; update(); });
-    els.onlyNew.addEventListener("change", () => { state.new = els.onlyNew.checked; update(); });
+    els.when.addEventListener("change", () => { state.when = els.when.value; update(); });
     els.verify.addEventListener("change", () => { state.verify = els.verify.value; update(); });
     els.onlyOa.addEventListener("change", () => { state.oa = els.onlyOa.checked; update(); });
     els.peopleQ.addEventListener("input", renderPeople);
     $("clear-people").addEventListener("click", () => { state.people = []; renderPeople(); update(); });
     $("reset").addEventListener("click", () => {
-      state = { q: "", year: "", type: "", journal: "", sort: "date", people: [], new: false, verify: "", oa: false };
-      els.q.value = ""; els.year.value = ""; els.type.value = ""; els.journal.value = ""; els.sort.value = "date"; els.verify.value = "";
-      els.onlyNew.checked = els.onlyOa.checked = false;
+      state = { q: "", year: "", type: "", journal: "", sort: "date", people: [], when: "", verify: "", oa: false };
+      els.q.value = ""; els.year.value = ""; els.type.value = ""; els.journal.value = ""; els.sort.value = "date"; els.verify.value = ""; els.when.value = "";
+      els.onlyOa.checked = false;
       renderPeople(); update();
     });
     window.addEventListener("hashchange", () => { state = readHash(); init(data); });
@@ -113,8 +113,18 @@
     }));
   }
 
+  function inPeriod(w, when) {
+    if (!w.publication_date) return false;
+    const d = new Date(w.publication_date + "T00:00:00Z");
+    const now = new Date();
+    if (when === "year") return d.getUTCFullYear() === now.getUTCFullYear();
+    const days = { "30d": 30, "90d": 90, "12m": 365 }[when];
+    return days ? (now - d) / 86400000 <= days : true;
+  }
+
   function matches(w) {
-    if (state.new && !data.newIds.has(w.id)) return false;
+    if (state.when === "week" && !data.newIds.has(w.id)) return false;
+    if (state.when && state.when !== "week" && !inPeriod(w, state.when)) return false;
     if (state.verify === "verified" && !w.verified) return false;
     if (state.verify === "unverified" && w.verified) return false;
     if (state.oa && !w.is_oa) return false;
