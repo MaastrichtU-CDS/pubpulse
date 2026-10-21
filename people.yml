@@ -22,6 +22,12 @@ people:
   openalex_ids:
   - A5074875800
   orcid_openalex: 0009-0003-5286-6973
+  publication_identity_sources:
+  - work: W7161945525
+    openalex_id: A5074875800
+    orcid: 0009-0003-5286-6973
+  publication_author_ids:
+  - A5074875800
 - slug: ali-al-zein
   name: Ali Al Zein
   profile_url: https://www.clinicaldatascience.nl/ali-al-zein
@@ -70,6 +76,12 @@ people:
   openalex_ids:
   - A5024986698
   scholar_checked_at: '2026-10-21'
+  publication_identity_sources:
+  - work: W7161945525
+    openalex_id: A5024986698
+    orcid: 0000-0001-9847-8165
+  publication_author_ids:
+  - A5024986698
 - slug: andre-dekker
   name: Andre Dekker
   profile_url: https://www.clinicaldatascience.nl/andre-dekker
@@ -88,6 +100,12 @@ people:
   openalex_ids:
   - A5013513157
   scholar_checked_at: '2026-10-21'
+  publication_identity_sources:
+  - work: W7128449036
+    openalex_id: A5013513157
+    orcid: 0000-0002-0422-7996
+  publication_author_ids:
+  - A5013513157
 - slug: andrea-pradas-agujetas
   name: Andrea Pradas Agujetas
   profile_url: https://www.clinicaldatascience.nl/andrea-pradas-agujetas
@@ -121,6 +139,12 @@ people:
   orcid_openalex: null
   openalex_ids:
   - A5120041081
+  publication_identity_sources:
+  - work: W7128449036
+    openalex_id: A5120041081
+    orcid: null
+  publication_author_ids:
+  - A5120041081
 - slug: anniek-van-hienen
   name: Anniek van Hienen
   profile_url: https://www.clinicaldatascience.nl/anniek-van-hienen
@@ -138,6 +162,12 @@ people:
   needs_review: false
   openalex_ids:
   - A5117621657
+  publication_identity_sources:
+  - work: W7118740404
+    openalex_id: A5117621657
+    orcid: 0009-0000-9454-6124
+  publication_author_ids:
+  - A5117621657
 - slug: anshu-ankolekar
   name: Anshu Ankolekar
   profile_url: https://www.clinicaldatascience.nl/Staff/anshu-ankolekar
@@ -154,6 +184,12 @@ people:
   active_until: null
   needs_review: false
   openalex_ids:
+  - A5075943046
+  publication_identity_sources:
+  - work: W7203783252
+    openalex_id: A5075943046
+    orcid: 0000-0001-7681-1254
+  publication_author_ids:
   - A5075943046
 - slug: ayesha-qayyum
   name: Ayesha Qayyum
@@ -218,6 +254,12 @@ people:
   openalex_ids:
   - A5068696493
   scholar_checked_at: '2026-10-21'
+  publication_identity_sources:
+  - work: W7128449036
+    openalex_id: A5068696493
+    orcid: 0000-0001-6428-2762
+  publication_author_ids:
+  - A5068696493
 - slug: daniel-slob
   name: Daniel Slob
   profile_url: https://www.clinicaldatascience.nl/daniel-slob
@@ -232,7 +274,14 @@ people:
   source: staff_page
   active_from: '2026-10-21'
   active_until: null
-  needs_review: true
+  needs_review: false
+  publication_identity_sources:
+  - work: W7221757932
+    openalex_id: A5117573348
+    orcid: 0009-0002-2084-5660
+  publication_author_ids:
+  - A5117573348
+  orcid_openalex: 0009-0002-2084-5660
 - slug: ekatarina-kondrateva
   name: Ekatarina Kondrateva
   profile_url: https://www.clinicaldatascience.nl/ekatarina-kondrateva
@@ -262,7 +311,14 @@ people:
   source: staff_page
   active_from: '2026-10-21'
   active_until: null
-  needs_review: true
+  needs_review: false
+  publication_identity_sources:
+  - work: W7221757932
+    openalex_id: A5073142805
+    orcid: 0000-0002-8235-9361
+  publication_author_ids:
+  - A5073142805
+  orcid_openalex: 0000-0002-8235-9361
 - slug: elif-sevim
   name: Elif Sevim
   profile_url: https://www.clinicaldatascience.nl/elif-sevim
@@ -293,6 +349,10 @@ people:
   active_from: '2026-10-21'
   active_until: null
   needs_review: true
+  publication_identity_sources:
+  - work: W4416897111
+    openalex_id: null
+    orcid: null
 - slug: farshad-jafarpour
   name: Farshad Jafarpour
   profile_url: https://www.clinicaldatascience.nl/farshad-jafarpour
@@ -386,6 +446,12 @@ people:
   orcid_openalex: 0009-0005-1982-3909
   openalex_ids:
   - A5091963091
+  publication_identity_sources:
+  - work: W7140737867
+    openalex_id: A5091963091
+    orcid: 0009-0005-1982-3909
+  publication_author_ids:
+  - A5091963091
 - slug: ivan-zhovannik
   name: Ivan Zhovannik
   profile_url: https://www.clinicaldatascience.nl/ivan-zhovannik
@@ -404,6 +470,12 @@ people:
   openalex_ids:
   - A5026209957
   orcid_openalex: 0000-0001-5649-6648
+  publication_identity_sources:
+  - work: W4407897666
+    openalex_id: A5026209957
+    orcid: 0000-0001-5649-6648
+  publication_author_ids:
+  - A5026209957
 - slug: jiaxu-zhang
   name: Jiaxu Zhang
   profile_url: https://www.clinicaldatascience.nl/jiaxu-zhang
@@ -418,7 +490,13 @@ people:
   source: staff_page
   active_from: '2026-10-21'
   active_until: null
-  needs_review: true
+  needs_review: false
+  publication_identity_sources:
+  - work: W7161960653
+    openalex_id: A5032778263
+    orcid: null
+  publication_author_ids:
+  - A5032778263
 - slug: jikai-zhou
   name: Jikai Zhou
   profile_url: https://www.clinicaldatascience.nl/jikai-zhou
@@ -437,6 +515,15 @@ people:
   openalex_ids:
   - A5121326451
   orcid_openalex: 0000-0002-5192-4532
+  publication_identity_sources:
+  - work: W7210292216
+    openalex_id: A5121326451
+    orcid: 0000-0002-5192-4532
+  - work: W4411338103
+    openalex_id: null
+    orcid: null
+  publication_author_ids:
+  - A5121326451
 - slug: johan-van-soest
   name: Johan van Soest
   profile_url: https://www.clinicaldatascience.nl/Staff/johan-van-soest
@@ -455,6 +542,12 @@ people:
   openalex_ids:
   - A5034589930
   scholar_checked_at: '2026-10-21'
+  publication_identity_sources:
+  - work: W7221757932
+    openalex_id: A5034589930
+    orcid: 0000-0003-2548-0330
+  publication_author_ids:
+  - A5034589930
 - slug: joshi-hogenboom
   name: Joshi Hogenboom
   profile_url: https://www.clinicaldatascience.nl/joshi-hogenboom
@@ -471,6 +564,12 @@ people:
   active_until: null
   needs_review: false
   openalex_ids:
+  - A5010896466
+  publication_identity_sources:
+  - work: W7213458335
+    openalex_id: A5010896466
+    orcid: 0000-0003-1278-3295
+  publication_author_ids:
   - A5010896466
 - slug: karlien-schmeetz
   name: Karlien Schmeetz
@@ -505,6 +604,12 @@ people:
   openalex_ids:
   - A5026394428
   orcid_openalex: 0000-0001-6544-4268
+  publication_identity_sources:
+  - work: W7222957496
+    openalex_id: A5026394428
+    orcid: 0000-0001-6544-4268
+  publication_author_ids:
+  - A5026394428
 - slug: leonard-wee
   name: Leonard Wee
   profile_url: https://www.clinicaldatascience.nl/leonard-wee
@@ -523,6 +628,12 @@ people:
   openalex_ids:
   - A5004688031
   scholar_checked_at: '2026-10-21'
+  publication_identity_sources:
+  - work: W7220851390
+    openalex_id: A5004688031
+    orcid: 0000-0003-1612-9055
+  publication_author_ids:
+  - A5004688031
 - slug: leroy-volmer
   name: Leroy Volmer
   profile_url: https://www.clinicaldatascience.nl/leroy-volmer
@@ -541,6 +652,12 @@ people:
   openalex_ids:
   - A5040286621
   orcid_openalex: 0009-0001-4978-4024
+  publication_identity_sources:
+  - work: W7215768157
+    openalex_id: A5040286621
+    orcid: 0009-0001-4978-4024
+  publication_author_ids:
+  - A5040286621
 - slug: madeline-therrien
   name: Madeline Therrien
   profile_url: https://www.clinicaldatascience.nl/madeline-therrien
@@ -559,6 +676,12 @@ people:
   orcid_openalex: 0009-0001-0466-0722
   openalex_ids:
   - A5119867254
+  publication_identity_sources:
+  - work: W7134113797
+    openalex_id: A5119867254
+    orcid: 0009-0001-0466-0722
+  publication_author_ids:
+  - A5119867254
 - slug: marine-jacquemin
   name: Marine Jacquemin
   profile_url: https://www.clinicaldatascience.nl/marine-jacquemin
@@ -576,6 +699,12 @@ people:
   needs_review: false
   orcid_openalex: 0009-0006-1221-7022
   openalex_ids:
+  - A5118451930
+  publication_identity_sources:
+  - work: W4411465141
+    openalex_id: A5118451930
+    orcid: 0009-0006-1221-7022
+  publication_author_ids:
   - A5118451930
 - slug: martijn-hector
   name: Martijn Hector
@@ -639,6 +768,18 @@ people:
   active_from: '2026-10-21'
   active_until: null
   needs_review: true
+  publication_identity_sources:
+  - work: W4415710214
+    openalex_id: A5051884745
+    orcid: 0000-0002-3498-5034
+  - work: W4404373392
+    openalex_id: A5102929368
+    orcid: 0009-0007-8541-2782
+  publication_author_ids: []
+  orcid_openalex: null
+  orcid_openalex_conflicts:
+  - 0000-0002-3498-5034
+  - 0009-0007-8541-2782
 - slug: minghua-li
   name: Minghua Li
   profile_url: https://www.clinicaldatascience.nl/minghua-li
@@ -653,7 +794,14 @@ people:
   source: staff_page
   active_from: '2026-10-21'
   active_until: null
-  needs_review: true
+  needs_review: false
+  publication_identity_sources:
+  - work: W4415710214
+    openalex_id: A5100633764
+    orcid: 0000-0002-3508-6700
+  publication_author_ids:
+  - A5100633764
+  orcid_openalex: 0000-0002-3508-6700
 - slug: monique-roos-koekkelkoren
   name: Monique Roos-Koekkelkoren
   profile_url: https://www.clinicaldatascience.nl/monique-roos-koekkelkoren
@@ -687,6 +835,12 @@ people:
   openalex_ids:
   - A5068572381
   scholar_checked_at: '2026-10-21'
+  publication_identity_sources:
+  - work: W7128449036
+    openalex_id: A5068572381
+    orcid: 0000-0002-4471-2021
+  publication_author_ids:
+  - A5068572381
 - slug: petros-koutsouvelis
   name: Petros Koutsouvelis
   profile_url: https://www.clinicaldatascience.nl/Staff/petros-koutsouvelis
@@ -705,6 +859,12 @@ people:
   openalex_ids:
   - A5115011256
   orcid_openalex: 0009-0002-3020-0030
+  publication_identity_sources:
+  - work: W7215768157
+    openalex_id: A5115011256
+    orcid: 0009-0002-3020-0030
+  publication_author_ids:
+  - A5115011256
 - slug: prabash-darshanapriya-galgane-banduge
   name: Prabash Darshanapriya Galgane Banduge
   profile_url: https://www.clinicaldatascience.nl/prabash-darshanapriya-galgane-banduge
@@ -737,6 +897,12 @@ people:
   needs_review: false
   openalex_ids:
   - A5077645218
+  publication_identity_sources:
+  - work: W7215768157
+    openalex_id: A5077645218
+    orcid: 0000-0001-9937-2602
+  publication_author_ids:
+  - A5077645218
 - slug: rianne-fijten
   name: Rianne Fijten
   profile_url: https://www.clinicaldatascience.nl/rianne-fijten
@@ -755,22 +921,35 @@ people:
   openalex_ids:
   - A5081642553
   scholar_checked_at: '2026-10-21'
+  publication_identity_sources:
+  - work: W7163123298
+    openalex_id: A5081642553
+    orcid: 0000-0002-1964-6317
+  publication_author_ids:
+  - A5081642553
 - slug: rutger-van-mierlo
   name: Rutger van Mierlo
   profile_url: https://www.clinicaldatascience.nl/rutger-van-mierlo
   role: PhD student
   employer: Maastricht University
   section: current
-  orcid: null
+  orcid: 0009-0009-4156-5669
   scholar_id: null
-  cris_url: null
+  cris_url: https://cris.maastrichtuniversity.nl/en/persons/rutger-van-mierlo/
   openalex_id: null
   profile_checked_at: '2026-10-21'
   source: staff_page
   active_from: '2026-10-21'
   active_until: null
-  needs_review: true
+  needs_review: false
   orcid_openalex: null
+  orcid_source: https://www.researchprotocols.org/2025/1/e66068
+  publication_identity_sources:
+  - work: W7128449036
+    openalex_id: A5059773341
+    orcid: 0009-0009-4156-5669
+  publication_author_ids:
+  - A5059773341
 - slug: sander-puts
   name: Sander Puts
   profile_url: https://www.clinicaldatascience.nl/sander-puts
@@ -789,6 +968,12 @@ people:
   openalex_ids:
   - A5089485363
   scholar_checked_at: '2026-10-21'
+  publication_identity_sources:
+  - work: W7161960653
+    openalex_id: A5089485363
+    orcid: 0000-0003-4148-1755
+  publication_author_ids:
+  - A5089485363
 - slug: shreya-anand
   name: Shreya Anand
   profile_url: https://www.clinicaldatascience.nl/shreya-anand
@@ -803,7 +988,13 @@ people:
   source: staff_page
   active_from: '2026-10-21'
   active_until: null
-  needs_review: true
+  needs_review: false
+  publication_identity_sources:
+  - work: W7214534901
+    openalex_id: A5153110077
+    orcid: null
+  publication_author_ids:
+  - A5153110077
 - slug: simone-mingels
   name: Simone Mingels
   profile_url: https://www.clinicaldatascience.nl/simone-mingels
@@ -820,6 +1011,12 @@ people:
   active_until: null
   needs_review: false
   openalex_ids:
+  - A5119867252
+  publication_identity_sources:
+  - work: W7221757932
+    openalex_id: A5119867252
+    orcid: 0009-0000-9848-2391
+  publication_author_ids:
   - A5119867252
 - slug: tafadzwa-chaunzwa
   name: Tafadzwa Chaunzwa
@@ -851,6 +1048,10 @@ people:
   active_from: '2026-10-21'
   active_until: null
   needs_review: true
+  publication_identity_sources:
+  - work: W7117241713
+    openalex_id: null
+    orcid: null
 - slug: tim-hendriks
   name: Tim Hendriks
   profile_url: https://www.clinicaldatascience.nl/Staff/tim-hendriks
@@ -869,7 +1070,15 @@ people:
   needs_review: false
   openalex_ids:
   - A5136686266
-  orcid_openalex: 0000-0003-2922-2953
+  orcid_openalex: null
+  publication_identity_sources:
+  - work: W7161945525
+    openalex_id: A5136686266
+    orcid: 0000-0001-8266-1627
+  publication_author_ids: []
+  orcid_openalex_conflicts:
+  - 0000-0001-8266-1627
+  - 0000-0003-2922-2953
 - slug: umesh-kumar-baburao-sherkhane
   name: Umesh Kumar Baburao Sherkhane
   profile_url: https://www.clinicaldatascience.nl/umesh-kumar-baburao-sherkhane
@@ -888,6 +1097,12 @@ people:
   openalex_ids:
   - A5036827029
   scholar_checked_at: '2026-10-21'
+  publication_identity_sources:
+  - work: W4412041683
+    openalex_id: A5036827029
+    orcid: 0000-0002-3953-2392
+  publication_author_ids:
+  - A5036827029
 - slug: varnita-mathur
   name: Varnita Mathur
   profile_url: https://www.clinicaldatascience.nl/varnita-mathur
@@ -924,18 +1139,33 @@ people:
   role: PhD Student
   employer: Maastricht University
   section: current
-  orcid: null
+  orcid: 0009-0000-2890-7825
   scholar_id: null
-  cris_url: null
+  cris_url: https://cris.maastrichtuniversity.nl/en/persons/wenjie-liang/
   openalex_id: null
   profile_checked_at: '2026-10-21'
   source: staff_page
   active_from: '2026-10-21'
   active_until: null
   needs_review: false
-  openalex_ids:
-  - A5086908934
-  orcid_openalex: 0000-0002-2741-8285
+  orcid_openalex: null
+  orcid_source: https://cris.maastrichtuniversity.nl/en/persons/wenjie-liang/
+  publication_identity_sources:
+  - work: W7128449036
+    openalex_id: A5122769882
+    orcid: null
+  - work: W7210292216
+    openalex_id: A5150447201
+    orcid: null
+  - work: W7167038328
+    openalex_id: A5086908934
+    orcid: 0000-0002-2741-8285
+  - work: W4416897111
+    openalex_id: A5101575032
+    orcid: 0009-0000-3468-1930
+  publication_author_ids:
+  - A5122769882
+  - A5150447201
 - slug: xuanhe-hou
   name: Xuanhe Hou
   profile_url: https://www.clinicaldatascience.nl/xuanhe-hou
@@ -953,6 +1183,12 @@ people:
   needs_review: false
   orcid_openalex: null
   openalex_ids:
+  - A5153266758
+  publication_identity_sources:
+  - work: W7210292216
+    openalex_id: A5153266758
+    orcid: null
+  publication_author_ids:
   - A5153266758
 - slug: yang-yao
   name: Yang Yao
@@ -1001,4 +1237,10 @@ people:
   needs_review: false
   orcid_openalex: null
   openalex_ids:
+  - A5115981268
+  publication_identity_sources:
+  - work: W7161960653
+    openalex_id: A5115981268
+    orcid: null
+  publication_author_ids:
   - A5115981268

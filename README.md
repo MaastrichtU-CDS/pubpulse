@@ -22,7 +22,7 @@ If you cannot edit the staff page, use the form at *Issues → New issue → "Ad
 **I am not on the list / my papers are missing.**
 Your profile needs an ORCID link (see above). Without one, the robot tries to find you in OpenAlex by name, but only
 accepts a match affiliated with Maastro/Maastricht, and then only counts papers that carry a group affiliation for you.
-People it cannot match are listed in a yellow "not matched yet" box on the website and in the digest.
+The website’s *Data sources & coverage* section explains profiles without a confirmed match.
 
 **A paper is marked "unverified".**
 OpenAlex did not record a Maastricht/Maastro/MUMC+ affiliation for you on that paper. The paper is still shown, just
@@ -31,8 +31,16 @@ marked. Usually this means the publisher did not send affiliations to Crossref. 
 **How papers are attributed (and why some are marked).**
 - People with an ORCID: OpenAlex is queried by ORCID. If OpenAlex attached that ORCID to several author records
   (it sometimes merges namesakes), the record whose current institution is in Maastricht wins.
-- People without an ORCID: matched by exact name *and* a Maastricht/Maastro affiliation on the OpenAlex record. For
+- People without an ORCID: matched by full name *and* a Maastricht/Maastro affiliation on the OpenAlex record.
+  Name matching allows accents, hyphens and extra middle initials, but not a first initial alone or ambiguous names. For
   them a paper only counts when the paper itself carries a verified group affiliation for that author.
+- Author highlighting and researcher filters include known CDS coauthors on papers already in the collection, even
+  when their authorship lists another department or has no affiliation. A unique full-name match is accepted within
+  a collaboration with an identified CDS coauthor, or with that author’s own group affiliation. This does not relax collection eligibility.
+- Split OpenAlex author IDs and missing reported ORCIDs can be recovered from affiliated authorships. The originating
+  work and IDs are retained in `people.yml` under `publication_identity_sources`. Reported ORCIDs remain separate from
+  confirmed ORCIDs; conflicting IDs are retained for review and are not used as profile links. Google Scholar profile
+  IDs come from explicit profile links, never from a name-based Scholar search URL.
 - Verified means the authorship on that paper mentions Maastro, Radiation Oncology, GROW or Medical Data Works.
   "Maastricht University" alone is deliberately not enough. Every paper shows, per group author: verified, other
   affiliation, or no affiliation data. Papers with no verified group author are marked *unverified* and wait for the

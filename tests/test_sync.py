@@ -207,3 +207,94 @@ def test_public_people_includes_known_author_profile_identifiers():
 
     assert public["reported"]["orcid"] is None
     assert public["reported"]["orcid_openalex"] == "0009-0003-5286-6973"
+
+
+def test_author_name_key_keeps_full_names_and_allows_middle_initials():
+    from pubpulse.sync import author_name_key
+
+    assert author_name_key("Rutger F. R. van Mierlo") == author_name_key("Rutger van Mierlo")
+    assert author_name_key("Daniël Slob") == author_name_key("Daniel Slob")
+    assert author_name_key("Anne-Lore Bynens") == author_name_key("Anne Lore Bynens")
+    assert author_name_key("R. van Mierlo") == ()
+    assert author_name_key("Rutger Frank van Mierlo") != author_name_key("Rutger van Mierlo")
+    assert author_name_key("Wenjia Liang") != author_name_key("Wenjie Liang")
+
+
+def test_normalise_recovers_coauthors_without_relaxing_name_ambiguity():
+    people = [
+        {"slug": "known", "name": "Known Researcher", "openalex_ids": ["A1"]},
+        {"slug": "wenjie", "name": "Wenjie Liang", "openalex_ids": ["A2"]},
+        {"slug": "rutger", "name": "Rutger van Mierlo"},
+        {"slug": "anne", "name": "Anne-Lore Bynens", "openalex_ids": ["A3"]},
+        {"slug": "dup1", "name": "Same Name"},
+        {"slug": "dup2", "name": "Same Name"},
+        {"slug": "excluded", "name": "Excluded Person", "exclude": True},
+    ]
+    def auth(aid, name, institution):
+        return {"author": {"id": "https://openalex.org/" + aid, "display_name": name}, "institutions": [{"display_name": institution}]}
+    raw = _raw(authorships=[
+        auth("A9", "Wenjie Liang", "Maastro"),
+        auth("A10", "Rutger F. R. van Mierlo", "Maastro"),
+        auth("A3", "Anne-Lore Bynens", "Maastricht University Medical Centre"),
+        auth("A1", "K. Researcher", "Maastro"),
+        auth("A11", "Same Name", "Maastro"),
+        auth("A12", "R. van Mierlo", "Maastro"),
+        auth("A13", "Excluded Person", "Maastro"),
+    ])
+    work = normalise_work(raw, people, ["maastro"])
+    assert work["author_members"] == ["wenjie", "rutger", "anne", "known", None, None, None]
+    assert work["author_profiles"]["rutger"]["match"] == "name"
+    assert work["author_profiles"]["rutger"]["openalex_id"] == "A10"
+    assert work["affiliation_status"]["anne"] == "mismatch"
+    # A matching name without a CDS affiliation or confirmed coauthor is not enough.
+    unrelated = normalise_work(_raw(authorships=[auth("A9", "Wenjie Liang", "Elsewhere")]), people, ["maastro"])
+    assert unrelated["author_members"] == [None]
+
+
+def test_publication_identity_discovery_keeps_sources_and_conflicts_separate():
+    from pubpulse.sync import enrich_people_from_works, known_author_ids, resolve_people
+
+    person = {"slug": "r", "name": "Rutger van Mierlo", "needs_review": True}
+    def work(wid, aid, orcid, affs):
+        return {"id": wid, "author_profiles": {"r": {"openalex_id": aid, "orcid": orcid, "affiliations": affs}}}
+    affiliated = work("W1", "A1", "0009-0009-4156-5669", ["Maastro"])
+    enrich_people_from_works([person], [affiliated, work("W2", "A9", "0000-0000-0000-0000", ["Unrelated University"])], ["maastro"])
+    assert known_author_ids(person) == ["A1"]
+    assert person["orcid_openalex"] == "0009-0009-4156-5669" and not person.get("orcid")
+    assert person["publication_identity_sources"] == [{"work": "W1", "openalex_id": "A1", "orcid": "0009-0009-4156-5669"}]
+    enrich_people_from_works([person], [affiliated], ["maastro"])
+    assert len(person["publication_identity_sources"]) == 1
+
+    class EmptySearch:
+        def search_authors(self, name): return []
+    assert resolve_people([person], EmptySearch(), ["maastro"], date(2026, 10, 21), max_age_days=0) == []
+    assert known_author_ids(person) == ["A1"] and person["needs_review"] is False
+
+    enrich_people_from_works([person], [work("W3", "A2", "0000-0000-0000-0000", ["Maastro"])], ["maastro"])
+    assert person["orcid_openalex"] is None  # conflicting reported IDs are never guessed
+    person["orcid"] = "0009-0009-4156-5669"
+    enrich_people_from_works([person], [work("W4", "A3", "0000-0000-0000-0000", ["Maastro"])], ["maastro"])
+    assert person["orcid"] == "0009-0009-4156-5669" and "A3" not in known_author_ids(person)
+    assert "A2" not in known_author_ids(person)
+    person["openalex_id"] = "Amanual"
+    assert known_author_ids(person) == ["Amanual"]
+
+
+def test_known_coauthor_metadata_survives_strict_collection_rules():
+    from pubpulse.sync import fetch_works
+
+    people = [
+        {"slug": "anchor", "name": "CDS Anchor", "orcid": "0000-0001-0000-0001", "openalex_ids": ["A1"]},
+        {"slug": "anne", "name": "Anne-Lore Bynens", "openalex_ids": ["A2"]},
+    ]
+    raw = _raw(authorships=[
+        {"author": {"id": "https://openalex.org/A2", "display_name": "Anne-Lore Bynens"}, "institutions": [{"display_name": "Maastricht University Medical Centre"}]},
+        {"author": {"id": "https://openalex.org/A1", "display_name": "CDS Anchor"}, "institutions": [{"display_name": "Maastro"}]},
+    ])
+    client = _FakeClient({"authorships.author.id:A1": [raw], "authorships.author.id:A2": [raw]})
+    works, errors = fetch_works(people, client, 2024, date(2026, 10, 21), keywords=["maastro"])
+    assert not errors
+    assert works["W1"]["group_members"] == ["anchor"]
+    assert works["W1"]["author_members"] == ["anne", "anchor"]
+    assert works["W1"]["author_profiles"]["anne"]["affiliations"] == ["Maastricht University Medical Centre"]
+    assert works["W1"]["verified"] is True

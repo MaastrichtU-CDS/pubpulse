@@ -4,6 +4,9 @@ from __future__ import annotations
 
 import json
 import logging
+import re
+import unicodedata
+from collections import defaultdict
 from datetime import date, datetime, timezone
 from pathlib import Path
 
@@ -103,6 +106,81 @@ def affiliation_matches(affiliations: list[str], keywords: list[str]) -> bool:
     return any(any(k in (a or "").lower() for k in kws) for a in affiliations)
 
 
+def author_name_key(name: str) -> tuple[str, ...]:
+    """Full given name and surname, allowing accents, punctuation and middle initials.
+
+    A first initial alone is deliberately insufficient for a name-based identity match.
+    Full middle names and surname particles remain significant.
+    """
+    plain = "".join(c for c in unicodedata.normalize("NFKD", name.casefold()) if not unicodedata.combining(c))
+    tokens = re.findall(r"[^\W_]+", plain)
+    if len(tokens) < 2 or len(tokens[0]) < 2:
+        return ()
+    return tuple(token for i, token in enumerate(tokens) if i == 0 or len(token) > 1)
+
+
+def known_author_ids(person: dict) -> list[str]:
+    if manual_ids(person):
+        return manual_ids(person)
+    canonical = (person.get("orcid") or "").upper()
+    conflicting = {
+        s.get("openalex_id") for s in person.get("publication_identity_sources") or []
+        if canonical and s.get("orcid") and s["orcid"].upper() != canonical
+    }
+    return [aid for aid in dict.fromkeys(list(person.get("openalex_ids") or []) + list(person.get("publication_author_ids") or [])) if aid not in conflicting]
+
+
+def enrich_people_from_works(people: list[dict], works, keywords: list[str]) -> None:
+    """Recover split author IDs and reported ORCIDs from affiliated coauthored papers.
+
+    Keep source works for every discovery. Conflicting ORCIDs are recorded rather than promoted;
+    a publication-derived ORCID remains informational and never changes collection confidence.
+    """
+    by_slug = {p["slug"]: p for p in people if not p.get("exclude")}
+    candidates = defaultdict(list)
+    for work in works:
+        for slug, profile in (work.get("author_profiles") or {}).items():
+            person = by_slug.get(slug)
+            if not person or not affiliation_matches(profile.get("affiliations") or [], keywords):
+                continue
+            candidates[slug].append({"work": work["id"], "openalex_id": profile.get("openalex_id"), "orcid": profile.get("orcid")})
+    for slug, discoveries in candidates.items():
+        person = by_slug[slug]
+        sources = person.setdefault("publication_identity_sources", [])
+        accepted_ids = set(person.get("publication_author_ids") or [])
+        canonical = (person.get("orcid") or "").upper()
+        reported = set(person.get("orcid_openalex_conflicts") or [])
+        if person.get("orcid_openalex"):
+            reported.add(person["orcid_openalex"].upper())
+        for discovery in discoveries:
+            if not any((s.get("openalex_id"), s.get("orcid")) == (discovery["openalex_id"], discovery["orcid"]) for s in sources):
+                sources.append(discovery)
+        for discovery in sources:
+            orcid = (discovery.get("orcid") or "").upper()
+            # A merged OpenAlex record can attach somebody else's ORCID to a valid coauthor.
+            if canonical and orcid and orcid != canonical:
+                continue
+            if discovery["openalex_id"]:
+                accepted_ids.add(discovery["openalex_id"])
+            if orcid:
+                reported.add(orcid)
+        if not canonical and len(reported) > 1:
+            # A shared name with conflicting identifiers needs review before extending its search.
+            accepted_ids.clear()
+            person["publication_author_ids"] = []
+        if accepted_ids:
+            person["publication_author_ids"] = sorted(accepted_ids - {
+                s.get("openalex_id") for s in sources if canonical and s.get("orcid") and s["orcid"].upper() != canonical
+            })
+        if known_author_ids(person):
+            person["needs_review"] = False
+        if not canonical and len(reported) == 1:
+            person["orcid_openalex"] = next(iter(reported))
+        elif not canonical and len(reported) > 1:
+            person["orcid_openalex"] = None
+            person["orcid_openalex_conflicts"] = sorted(reported)
+
+
 # ---------------------------------------------------------------------------------------------- resolve
 
 def match_confidence(person: dict) -> str:
@@ -195,7 +273,7 @@ def resolve_people(
             continue
         match = None
         for c in candidates:
-            if c.get("display_name", "").lower() == p["name"].lower() and affiliation_matches(author_affiliations(c), broad):
+            if author_name_key(p["name"]) and author_name_key(c.get("display_name", "")) == author_name_key(p["name"]) and affiliation_matches(author_affiliations(c), broad):
                 match = c
                 break
         p["resolved_at"] = today.isoformat()
@@ -203,13 +281,14 @@ def resolve_people(
             p["openalex_ids"] = [short_id(match["id"])]
             # Keep the ORCID OpenAlex knows as information only: identity still rests on a name match,
             # so papers for this person count only with a verified group affiliation.
-            p["orcid_openalex"] = short_id(match.get("orcid")) if match.get("orcid") else None
+            p["orcid_openalex"] = (short_id(match.get("orcid")) if match.get("orcid") else None) if not p.get("orcid_openalex_conflicts") else None
             p["needs_review"] = False
             log.info("resolved by name: %s -> %s", p["name"], p["openalex_ids"][0])
         else:
             p.pop("openalex_ids", None)
-            p["needs_review"] = True
-            unresolved.append(p["slug"])
+            p["needs_review"] = not bool(p.get("publication_author_ids"))
+            if p["needs_review"]:
+                unresolved.append(p["slug"])
     return unresolved
 
 
@@ -222,10 +301,8 @@ def manual_ids(person: dict) -> list[str]:
 
 
 def person_filter(person: dict) -> str | None:
-    if manual_ids(person):
-        return "authorships.author.id:" + "|".join(manual_ids(person))
-    if person.get("openalex_ids"):
-        return "authorships.author.id:" + "|".join(person["openalex_ids"])
+    if known_author_ids(person):
+        return "authorships.author.id:" + "|".join(known_author_ids(person))
     if person.get("orcid"):
         return f"authorships.author.orcid:{person['orcid']}"
     return None
@@ -239,30 +316,53 @@ def normalise_work(raw: dict, people: list[dict], keywords: list[str] | None = N
     Per member an affiliation_status is recorded: 'verified' (a group institution is on this authorship),
     'mismatch' (affiliations present, none from the group) or 'unknown' (OpenAlex has no affiliation for it).
     """
+    people = [p for p in people if not p.get("exclude")]
     by_orcid = {p["orcid"].upper(): p["slug"] for p in people if p.get("orcid")}
+    by_name = defaultdict(list)
     by_id: dict[str, str] = {}
     for p in people:
-        for aid in manual_ids(p) + list(p.get("openalex_ids") or []):
+        if author_name_key(p["name"]):
+            by_name[author_name_key(p["name"])].append(p["slug"])
+        for aid in known_author_ids(p):
             by_id[aid] = p["slug"]
+    authorships = raw.get("authorships", []) or []
+    def affiliations(a):
+        return [x for x in ([i.get("display_name") for i in (a.get("institutions") or [])] + list(a.get("raw_affiliation_strings") or [])) if x]
+    # Names are useful beside an identified CDS coauthor, not as a global first/last-name search.
+    group_context = any(
+        ((short_id((a.get("author") or {}).get("id")) in by_id) or
+         (short_id((a.get("author") or {}).get("orcid")) or "").upper() in by_orcid)
+        for a in authorships
+    )
     authors, author_members, author_positions = [], [], []
     members, member_affiliations, status = [], {}, {}
-    for position, a in enumerate(raw.get("authorships", []) or [], start=1):
+    profiles = {}
+    for position, a in enumerate(authorships, start=1):
         author = a.get("author") or {}
         name = author.get("display_name")
         orcid = short_id(author.get("orcid"))
         aid = short_id(author.get("id"))
         slug = (aid and by_id.get(aid)) or (orcid and by_orcid.get(orcid.upper()))
+        method = "openalex" if aid and by_id.get(aid) else "orcid"
+        affs = affiliations(a)
+        if not slug and (group_context or affiliation_matches(affs, keywords or [])):
+            matches = set()
+            for variant in [name or "", a.get("raw_author_name") or ""]:
+                matched = by_name.get(author_name_key(variant), [])
+                if len(matched) == 1:
+                    matches.add(matched[0])
+            if len(matches) == 1:
+                slug = next(iter(matches))
+                method = "name"
         if name:
             authors.append(name)
             author_members.append(slug or None)
             author_positions.append(position)
         if slug and slug not in members:
             members.append(slug)
-            affs = [i.get("display_name") for i in (a.get("institutions") or [])]
-            affs += list(a.get("raw_affiliation_strings") or [])
-            affs = [x for x in affs if x]
             member_affiliations[slug] = affs
             status[slug] = "unknown" if not affs else ("verified" if affiliation_matches(affs, keywords or []) else "mismatch")
+            profiles[slug] = {"openalex_id": aid or None, "orcid": orcid or None, "match": method, "affiliations": affs}
     loc = raw.get("primary_location") or {}
     source = loc.get("source") or {}
     oa = raw.get("open_access") or {}
@@ -280,6 +380,7 @@ def normalise_work(raw: dict, people: list[dict], keywords: list[str] | None = N
         "oa_url": oa.get("oa_url"),
         "authors": authors,
         "author_members": author_members,
+        "author_profiles": profiles,
         "author_positions": author_positions,
         "author_count": len(raw.get("authorships") or []),
         "group_members": members,
@@ -403,7 +504,7 @@ def public_people(people: list[dict], today: date, grace_months: int = 0) -> lis
             "orcid": p.get("orcid"),
             "orcid_openalex": p.get("orcid_openalex"),
             "scholar_id": p.get("scholar_id"),
-            "openalex_ids": manual_ids(p) or list(p.get("openalex_ids") or []),
+            "openalex_ids": known_author_ids(p),
             "match": match_confidence(p),
             "active": is_active(p, today),
             "tracked": is_tracked(p, today, grace_months),
@@ -443,6 +544,8 @@ def run(dry_run: bool = False, skip_people: bool = False, config_path: Path = CO
             people_changes = {"error": str(exc)}
 
     client = OpenAlex(mailto=cfg.get("openalex_mailto"))
+    previous = load_publications()
+    enrich_people_from_works(people, previous.get("works", []), cfg.get("author_match_keywords") or keywords)
     unresolved = resolve_people(
         people, client, keywords, today, broad_keywords=cfg.get("author_match_keywords") or keywords,
         grace_months=grace, max_age_days=int(cfg.get("resolve_cache_days", 30)),
@@ -453,7 +556,8 @@ def run(dry_run: bool = False, skip_people: bool = False, config_path: Path = CO
         grace_months=grace,
     )
 
-    previous = load_publications()
+    enrich_people_from_works(people, fetched.values(), cfg.get("author_match_keywords") or keywords)
+    unresolved = [p["slug"] for p in people if p.get("needs_review") and is_tracked(p, today, grace)]
     baseline = not previous.get("works")
     overrides = load_overrides()
     failed_names = {e.split(":")[0] for e in errors}
