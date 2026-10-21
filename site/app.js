@@ -98,6 +98,17 @@
   const nameOf = (slug) => (data.peopleBySlug[slug] || {}).name || slug;
   const fmtType = (t) => (t || "").replace(/-/g, " ");
 
+  function workMembers(work) {
+    // Collection eligibility uses verified affiliations; author display also includes
+    // known CDS coauthors whose publication lists a different department or no affiliation.
+    return [
+      ...new Set([
+        ...(work.group_members || []),
+        ...(work.author_members || []),
+      ]),
+    ].filter((slug) => slug && data.peopleBySlug[slug]);
+  }
+
   function authorProfileLinks(person) {
     if (!person) return "";
     const links = [];
@@ -567,7 +578,7 @@
   function renderPeople() {
     const counts = {};
     for (const w of data.works)
-      for (const s of w.group_members) counts[s] = (counts[s] || 0) + 1;
+      for (const s of workMembers(w)) counts[s] = (counts[s] || 0) + 1;
     const q = els.peopleQ.value.trim().toLowerCase();
     const people = data.people
       .filter((p) => !q || p.name.toLowerCase().includes(q))
@@ -605,7 +616,7 @@
       ? `<h3 class="profiles-heading">Selected ${people.length === 1 ? "researcher" : "researchers"}</h3><div class="profiles-grid">${people
           .map((person) => {
             const count = data.works.filter((work) =>
-              work.group_members.includes(person.slug),
+              workMembers(work).includes(person.slug),
             ).length;
             const description = [person.role, person.employer]
               .filter(Boolean)
@@ -709,7 +720,7 @@
     if (state.journal && w.journal !== state.journal) return false;
     if (
       state.people.length &&
-      !state.people.some((s) => w.group_members.includes(s))
+      !state.people.some((s) => workMembers(w).includes(s))
     )
       return false;
     if (state.q) {
@@ -720,7 +731,7 @@
         " " +
         (w.journal || "") +
         " " +
-        w.group_members.map(nameOf).join(" ")
+        workMembers(w).map(nameOf).join(" ")
       ).toLowerCase();
       if (
         !state.q
@@ -774,15 +785,16 @@
   function render(w) {
     const link = w.doi || w.landing_url || w.openalex_url;
     const isNew = data.newIds.has(w.id);
-    const members = w.group_members
+    const members = workMembers(w)
       .map((s) => {
         const st = (w.affiliation_status || {})[s] || "unknown";
         const affs = (
           (w.member_affiliations && w.member_affiliations[s]) ||
+          w.author_profiles?.[s]?.affiliations ||
           []
         ).join("; ");
         const mark =
-          st === "verified"
+          st === "verified" || !w.group_members.includes(s)
             ? ""
             : st === "mismatch"
               ? " <span class='badge warn' title='other affiliation on this paper'>other affil.</span>"
@@ -798,7 +810,7 @@
         .toLowerCase()
         .replace(/[^\p{L}\p{N}]/gu, "");
     const groupNames = new Map();
-    for (const slug of w.group_members) {
+    for (const slug of workMembers(w)) {
       const name = normalizeName(nameOf(slug));
       if (groupNames.has(name)) groupNames.set(name, null);
       else groupNames.set(name, slug);
@@ -809,7 +821,7 @@
           ? w.author_members[index]
           : groupNames.get(normalizeName(name));
         const position = w.author_positions?.[index] || index + 1;
-        if (!slug || !w.group_members.includes(slug)) return esc(name);
+        if (!slug || !data.peopleBySlug[slug]) return esc(name);
         return `<strong class="cds-author" title="${esc(nameOf(slug))} · CDS author · position ${position} of ${authorCount}">${esc(name)}<span class="author-position" aria-label="position ${position} of ${authorCount}">${position}/${authorCount}</span></strong>`;
       })
       .join(", ");
