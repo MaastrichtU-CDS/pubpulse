@@ -1,0 +1,40 @@
+name: Add or correct my ORCID / Scholar / OpenAlex id
+description: Tell pubpulse who you are so your papers are tracked correctly. A robot applies this within a few minutes.
+title: "Identifiers: <your name>"
+labels: [identifiers]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Fill in what you know; leave the rest empty. Your ORCID is the most important one.
+        Tip: if your profile on the [staff page](https://www.clinicaldatascience.nl/staff) links to your ORCID, pubpulse picks it up automatically and you do not need this form.
+  - type: input
+    id: name
+    attributes:
+      label: Your name, exactly as on the staff page
+      placeholder: e.g. Sander Puts
+    validations:
+      required: true
+  - type: input
+    id: orcid
+    attributes:
+      label: ORCID
+      description: 16 digits with dashes, from https://orcid.org
+      placeholder: 0000-0000-0000-0000
+  - type: input
+    id: scholar
+    attributes:
+      label: Google Scholar profile link
+      description: Informational only, not used to fetch papers.
+      placeholder: https://scholar.google.com/citations?user=XXXXXXXXXXXX
+  - type: input
+    id: openalex
+    attributes:
+      label: OpenAlex author id(s)
+      description: Only if you know them (search yourself on https://openalex.org). Several ids separated by commas join records OpenAlex split.
+      placeholder: A5012345678
+  - type: textarea
+    id: note
+    attributes:
+      label: Anything else
+      description: e.g. "paper W7168267980 is not mine" or "I left the group in June".

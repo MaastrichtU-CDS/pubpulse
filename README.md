@@ -12,10 +12,17 @@ preprint servers), stores the publications it finds here, refreshes the website 
 
 ## For group members (no technical knowledge needed)
 
+**How do I add or change my ORCID or Google Scholar link?**
+On the [staff page](https://www.clinicaldatascience.nl/staff): make sure your own profile page links to your ORCID
+(and, if you like, your Google Scholar profile). That is all. Every Monday the robot re-reads every profile, so the
+change is picked up automatically. Nobody needs a GitHub account for this.
+If you cannot edit the staff page, use the form at *Issues → New issue → "Add or correct my ORCID / Scholar / OpenAlex id"*
+(needs a free GitHub account); a robot applies it within minutes.
+
 **I am not on the list / my papers are missing.**
-Make sure your profile on the staff page links to your ORCID. The robot picks that up automatically the next Monday.
-If you have no ORCID, it tries to find you in OpenAlex by name, but only accepts a match that is affiliated with
-Maastricht/Maastro. People it cannot match are listed in a yellow "Needs attention" box on the website and in the digest.
+Your profile needs an ORCID link (see above). Without one, the robot tries to find you in OpenAlex by name, but only
+accepts a match affiliated with Maastro/Maastricht, and then only counts papers that carry a group affiliation for you.
+People it cannot match are listed in a yellow "not matched yet" box on the website and in the digest.
 
 **A paper is marked "unverified".**
 OpenAlex did not record a Maastricht/Maastro/MUMC+ affiliation for you on that paper. The paper is still shown, just

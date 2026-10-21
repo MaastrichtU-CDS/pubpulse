@@ -31,11 +31,27 @@ def main(argv: list[str] | None = None) -> int:
 
     sub.add_parser("build", help="build dist/ (website), data/feed.xml and out/ (digest email, Teams card)")
 
+    i = sub.add_parser("apply-issue", help="apply an 'identifiers' issue form body to people.yml")
+    i.add_argument("--body-file", required=True)
+    i.add_argument("--result-file", default="out/issue_result.md")
+
     a = sub.add_parser("all", help="sync then build")
     a.add_argument("--dry-run", action="store_true")
     a.add_argument("--skip-people", action="store_true")
 
     args = parser.parse_args(argv)
+    if args.cmd == "apply-issue":
+        from .issues import apply_identifiers, parse_issue_body
+        from .sync import load_people, save_people
+
+        people = load_people()
+        changed, message = apply_identifiers(people, parse_issue_body(Path(args.body_file).read_text(encoding="utf-8")))
+        if changed:
+            save_people(people)
+        Path(args.result_file).parent.mkdir(parents=True, exist_ok=True)
+        Path(args.result_file).write_text(message, encoding="utf-8")
+        print(message)
+        return 0 if changed else 3
     if args.cmd in ("sync", "all"):
         from .sync import run as sync_run
 

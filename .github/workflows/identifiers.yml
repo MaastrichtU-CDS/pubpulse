@@ -1,0 +1,50 @@
+name: identifiers
+
+on:
+  issues:
+    types: [opened, edited]
+
+permissions:
+  contents: write
+  issues: write
+
+concurrency:
+  group: pubpulse-weekly        # never edit people.yml while the weekly job runs
+  cancel-in-progress: false
+
+jobs:
+  apply:
+    if: contains(github.event.issue.labels.*.name, 'identifiers')
+    runs-on: ubuntu-latest
+    env:
+      GH_TOKEN: ${{ github.token }}
+      ISSUE_BODY: ${{ github.event.issue.body }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.txt
+      - name: Apply identifiers to people.yml
+        id: apply
+        run: |
+          printf '%s' "$ISSUE_BODY" > /tmp/body.md
+          set +e
+          python -m pubpulse apply-issue --body-file /tmp/body.md --result-file out/issue_result.md
+          echo "code=$?" >> "$GITHUB_OUTPUT"
+      - name: Commit
+        if: steps.apply.outputs.code == '0'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add people.yml
+          git commit -m "people: identifiers from issue #${{ github.event.issue.number }}"
+          git push
+      - name: Reply on the issue
+        run: gh issue comment ${{ github.event.issue.number }} --repo ${{ github.repository }} --body-file out/issue_result.md
+      - name: Close when applied
+        if: steps.apply.outputs.code == '0'
+        run: gh issue close ${{ github.event.issue.number }} --repo ${{ github.repository }} --comment "Applied, thanks!"
+      - name: Trigger a refresh
+        if: steps.apply.outputs.code == '0'
+        run: gh workflow run weekly.yml --repo ${{ github.repository }}
