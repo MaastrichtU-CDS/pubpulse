@@ -9,7 +9,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 from xml.sax.saxutils import escape
 
-from .sync import DATA_DIR, OUT_DIR, ROOT, load_config, load_publications
+from .sync import DATA_DIR, NOTIFIED_PATH, OUT_DIR, ROOT, load_config, load_pending, load_publications
 
 SITE_DIR = ROOT / "site"
 DIST_DIR = ROOT / "dist"
@@ -19,11 +19,12 @@ def work_link(w: dict) -> str:
     return w.get("doi") or w.get("landing_url") or w.get("openalex_url")
 
 
-def new_works(pubs: dict) -> list[dict]:
+def new_works(pubs: dict, pending_ids: list[str] | None = None) -> list[dict]:
+    """Works to announce: this run's new ids plus anything still pending from earlier runs."""
     last = pubs.get("last_run") or {}
     if last.get("baseline"):
         return []
-    ids = set(last.get("new_ids") or [])
+    ids = set(last.get("new_ids") or []) | set(pending_ids or [])
     return [w for w in pubs.get("works", []) if w["id"] in ids]
 
 
@@ -80,10 +81,10 @@ def _item_html(w: dict, names: dict[str, str]) -> str:
     )
 
 
-def build_digest(pubs: dict, cfg: dict) -> dict:
-    """Return subject, html, text, teams payload (dict) for this run's new works."""
+def build_digest(pubs: dict, cfg: dict, pending_ids: list[str] | None = None) -> dict:
+    """Return subject, html, text, teams payload (dict) for the works not announced yet."""
     names = people_names(pubs)
-    items = sorted(new_works(pubs), key=lambda w: w.get("publication_date") or "", reverse=True)
+    items = sorted(new_works(pubs, pending_ids), key=lambda w: w.get("publication_date") or "", reverse=True)
     last = pubs.get("last_run") or {}
     site = cfg.get("site_url", "")
     group = cfg.get("group_name", "the group")
@@ -186,7 +187,7 @@ def run(config_path: Path | None = None) -> dict:
     feed = build_feed(pubs, cfg, max_items=int((cfg.get("feed") or {}).get("max_items", 50)))
     (DATA_DIR / "feed.xml").write_text(feed, encoding="utf-8")
 
-    digest = build_digest(pubs, cfg)
+    digest = build_digest(pubs, cfg, load_pending() if NOTIFIED_PATH.exists() else None)
     (OUT_DIR / "digest.html").write_text(digest["html"], encoding="utf-8")
     (OUT_DIR / "digest.txt").write_text(digest["text"], encoding="utf-8")
     (OUT_DIR / "subject.txt").write_text(digest["subject"], encoding="utf-8")

@@ -96,6 +96,7 @@ jobs:
         uses: actions/deploy-pages@v4
 
       - name: Email digest (Gmail SMTP, one mail per subscriber)
+        id: email
         if: (steps.digest.outputs.new_count != '0' || inputs.force_notify) && env.GMAIL_USER != ''
         run: python -m pubpulse send-digest
 
@@ -105,3 +106,12 @@ jobs:
         run: |
           curl --fail --silent --show-error -X POST -H "Content-Type: application/json" \
             --data @out/teams.json "$TEAMS_WEBHOOK_URL"
+
+      - name: Record what has been announced
+        # Runs when the email was sent or no email is configured; skipped when sending failed, so the next run
+        # announces the same papers again instead of losing them.
+        if: "!cancelled() && steps.email.outcome != 'failure' && steps.digest.outputs.new_count != '0'"
+        run: |
+          python -m pubpulse mark-notified
+          git add data/pending.json
+          git commit -m "pubpulse: announced through $(date -u +%Y-%m-%d)" && git push || echo "nothing to record"

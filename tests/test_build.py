@@ -76,3 +76,10 @@ def test_site_build_uses_current_mailing_list_settings(tmp_path, monkeypatch):
         assert result["works"] == pubs["works"]
         assert (build.DIST_DIR / "assets" / "pubpulse.svg").exists()
     assert pubs["list"]["subscribe_url"] == "https://example.org/old-list"
+
+
+def test_new_works_includes_pending_from_earlier_runs():
+    from pubpulse.build import new_works
+    pubs = _pubs(1)
+    assert [w["id"] for w in new_works(pubs)] == ["W0"]
+    assert sorted(w["id"] for w in new_works(pubs, ["W3", "W4", "W999"])) == ["W0", "W3", "W4"]

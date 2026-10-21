@@ -22,6 +22,7 @@ OUT_DIR = ROOT / "out"
 PUBLICATIONS_PATH = DATA_DIR / "publications.json"
 RUNS_PATH = DATA_DIR / "runs.json"
 OVERRIDES_PATH = ROOT / "overrides.yml"
+NOTIFIED_PATH = DATA_DIR / "pending.json"
 
 DEFAULT_EXCLUDE_TYPES = ["supplementary-materials", "erratum", "paratext"]
 
@@ -60,6 +61,20 @@ def load_publications(path: Path = PUBLICATIONS_PATH) -> dict:
         return {"works": [], "people": [], "last_run": None}
     with open(path, encoding="utf-8") as f:
         return json.load(f)
+
+
+def load_pending(path: Path = NOTIFIED_PATH) -> list[str]:
+    """Ids of works found by earlier runs that have not been announced yet (email/Teams failed or was skipped)."""
+    if not path.exists():
+        return []
+    with open(path, encoding="utf-8") as f:
+        return list((json.load(f) or {}).get("pending_ids") or [])
+
+
+def save_pending(ids: list[str], path: Path = NOTIFIED_PATH) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    with open(path, "w", encoding="utf-8") as f:
+        json.dump({"pending_ids": ids}, f, indent=1)
 
 
 def load_overrides(path: Path = OVERRIDES_PATH) -> dict:
@@ -450,6 +465,13 @@ def run(dry_run: bool = False, skip_people: bool = False, config_path: Path = CO
     with open(out_dir / "runs.json", "w", encoding="utf-8") as f:
         json.dump(runs, f, ensure_ascii=False, indent=1)
     save_people(people, OUT_DIR / "people.yml" if (dry_run or failed) else PEOPLE_PATH)
+    if not (dry_run or failed):
+        # Carry unannounced ids over until a notification succeeds (workflow clears the file afterwards).
+        known = {w["id"] for w in works}
+        pending = [i for i in load_pending() if i in known and i not in overrides["reject"]]
+        if not baseline:
+            pending += [i for i in new_ids if i not in pending]
+        save_pending(pending)
 
     log.info(
         "run done: %d people active, %d tracked, %d works (%d unverified), %d new%s, %d need review, %d errors",

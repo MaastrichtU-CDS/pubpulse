@@ -50,8 +50,16 @@ def personalise(template: str, unsubscribe_url: str) -> str:
 
 def send_all(recips: list[dict], subject: str, html: str, text: str, user: str, password: str, from_name: str = "pubpulse", delay: float = 0.5) -> tuple[int, int]:
     sent = failed = 0
+    user, password = user.strip(), "".join(password.split())  # app passwords are often pasted as 'xxxx xxxx xxxx xxxx'
     with smtplib.SMTP_SSL("smtp.gmail.com", 465, timeout=60) as smtp:
-        smtp.login(user, password)  # raises SMTPAuthenticationError on bad credentials -> run fails visibly
+        try:
+            smtp.login(user, password)
+        except (smtplib.SMTPAuthenticationError, smtplib.SMTPServerDisconnected) as exc:
+            raise SystemExit(
+                f"Gmail refused the login for {user!r}: {exc}. Check that GMAIL_USER is the full address, that "
+                "GMAIL_APP_PASSWORD is a 16-character app password (https://myaccount.google.com/apppasswords, "
+                "requires 2-step verification on that account) and that the secrets contain no extra characters."
+            ) from exc
         for r in recips:
             msg = EmailMessage()
             msg["Subject"] = subject
