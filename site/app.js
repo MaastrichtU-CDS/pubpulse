@@ -241,7 +241,7 @@
         update();
       });
       window.addEventListener("hashchange", () => {
-        if (["#publications", "#subscribe", "#unsubscribe", "#scholar"].includes(location.hash)) return;
+        if (["#publications", "#subscribe", "#subscribed", "#unsubscribe", "#scholar"].includes(location.hash)) return;
         state = readHash();
         init(data);
       });
@@ -308,6 +308,15 @@
       fallback.className = "join-note";
       fallback.innerHTML = `Form not showing? <a href="${esc(formUrl)}" target="_blank" rel="noopener">Open it in a new tab ↗</a>`;
       $("join-note").before(fallback);
+      if (["#subscribe", "#subscribed"].includes(initialHash) && !dialog.open) {
+        if (initialHash === "#subscribed") {
+          $("join-title").innerHTML = "You're on the list.";
+          $("join-description").textContent = "The next digest arrives on a Monday when there is something new.";
+          frame.remove();
+          fallback.remove();
+        }
+        dialog.showModal();
+      }
       return;
     }
     if (!endpoint) {

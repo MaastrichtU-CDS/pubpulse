@@ -59,7 +59,7 @@ digest:
   # Brevo route (recommended): a hosted sign-up form with double opt-in, contacts in a private Brevo list, the weekly
   # digest sent as a Brevo campaign (unsubscribe link handled by Brevo). Needs secret BREVO_API_KEY.
   # subscribe_form_url = the form's "share" link from Brevo → Contacts → Forms (shown inside the website dialog).
-  subscribe_form_url: ""
+  subscribe_form_url: "https://bf388829.sibforms.com/serve/MUIFACpHZkx1wz7dAJd7w1LIKPLAjv_A1kiQTQY2997pNnpAxxYOa0B-tgCYX3uBWA_tcFPgrxDQB-CxzMhnsIATbZ65gqCH43N3ZveJ9tW42HQi7TSskIFMPBBSjHUFUX4KQ5vfN6wygRGBT0qQrFfSJAV72KjlicSrTX1Z_1i57zcpQoCUz-bR4JjF9kpAU3PdRY17Xw7gocKZfA=="
   brevo_list_name: "pubpulse weekly"
   list_name: "the pubpulse weekly list"
   from_name: "pubpulse"

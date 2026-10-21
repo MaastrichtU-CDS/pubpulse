@@ -13,10 +13,8 @@ on:
     branches: [main]
     paths:
       - people.yml
-      - config.yml
       - overrides.yml
       - "pubpulse/**"
-      - "site/**"
       - .github/workflows/weekly.yml
 
 permissions:
