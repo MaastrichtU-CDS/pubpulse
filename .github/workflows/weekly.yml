@@ -4,6 +4,11 @@ on:
   schedule:
     - cron: "0 6 * * 1"          # Mondays 06:00 UTC (07:00/08:00 Amsterdam)
   workflow_dispatch:
+    inputs:
+      force_notify:
+        description: "Send the email and Teams digest even when nothing is new (for testing)"
+        type: boolean
+        default: false
   push:
     branches: [main]
     paths:
@@ -90,7 +95,7 @@ jobs:
         uses: actions/deploy-pages@v4
 
       - name: Email digest (Gmail SMTP)
-        if: steps.digest.outputs.new_count != '0' && env.GMAIL_USER != '' && env.DIGEST_TO != ''
+        if: (steps.digest.outputs.new_count != '0' || inputs.force_notify) && env.GMAIL_USER != '' && env.DIGEST_TO != ''
         continue-on-error: true
         uses: dawidd6/action-send-mail@v3
         with:
@@ -106,7 +111,7 @@ jobs:
           body: file://out/digest.txt
 
       - name: Post digest to Teams
-        if: steps.digest.outputs.new_count != '0' && env.TEAMS_WEBHOOK_URL != ''
+        if: (steps.digest.outputs.new_count != '0' || inputs.force_notify) && env.TEAMS_WEBHOOK_URL != ''
         continue-on-error: true
         run: |
           curl --fail --silent --show-error -X POST -H "Content-Type: application/json" \

@@ -83,6 +83,10 @@ Edit either file in the GitHub web editor and commit to `main`; the workflow run
 
 A notification channel whose secret is missing is simply skipped; the site and feed always update.
 
+Mailing-list tips: use a dedicated Gmail account (not a personal one) as sender; if `DIGEST_TO` is a Maastro/UM
+distribution list, ask its owner to allow that external sender address, otherwise Exchange rejects the mail. To test
+delivery without waiting for a new paper: *Actions → weekly → Run workflow* and tick *force_notify*.
+
 ### How a run works
 
 ```
