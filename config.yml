@@ -38,6 +38,9 @@ exclude_types: [supplementary-materials, erratum, paratext]
 # but during that period a paper only counts when it carries a verified group affiliation for them.
 departed_grace_months: 18
 
+# OpenAlex author lookups per person are cached in people.yml for this many days (saves API budget).
+resolve_cache_days: 30
+
 # Safety net: if the staff page returns fewer people than this, keep the existing list untouched.
 min_people_on_staff_page: 3
 

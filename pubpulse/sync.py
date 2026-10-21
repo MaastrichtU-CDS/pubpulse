@@ -129,7 +129,19 @@ def select_author_records(records: list[dict], strict: list[str], broad: list[st
     return records
 
 
-def resolve_people(people: list[dict], client: OpenAlex, keywords: list[str], today: date, broad_keywords: list[str] | None = None, grace_months: int = 0) -> list[str]:
+def _fresh(resolved_at: str | None, today: date, max_age_days: int) -> bool:
+    if not resolved_at or max_age_days <= 0:
+        return False
+    try:
+        return (today - date.fromisoformat(str(resolved_at))).days < max_age_days
+    except ValueError:
+        return False
+
+
+def resolve_people(
+    people: list[dict], client: OpenAlex, keywords: list[str], today: date,
+    broad_keywords: list[str] | None = None, grace_months: int = 0, max_age_days: int = 30,
+) -> list[str]:
     """Work out which OpenAlex author record(s) each active person corresponds to.
 
     - hand-set openalex_id: used as is
@@ -137,6 +149,8 @@ def resolve_people(people: list[dict], client: OpenAlex, keywords: list[str], to
       record of several people), the most plausible tier is kept (see select_author_records)
     - neither: search by name, accept only an exact name whose record has a group affiliation (broad words);
       papers of such people later count only with a strict, verified affiliation on the paper itself
+    Results are cached in people.yml (openalex_ids + resolved_at) for max_age_days to save API budget; transient
+    API errors keep the previous state instead of flipping people to needs_review.
     Returns the slugs that still need review.
     """
     unresolved = []
@@ -149,11 +163,14 @@ def resolve_people(people: list[dict], client: OpenAlex, keywords: list[str], to
             p["needs_review"] = False
             continue
         if p.get("orcid"):
+            if p.get("openalex_ids") and _fresh(p.get("resolved_at"), today, max_age_days):
+                p["needs_review"] = False
+                continue
             try:
                 records = client.authors_by_orcid(p["orcid"])
             except Exception as exc:  # noqa: BLE001
-                log.warning("author lookup by ORCID failed for %s: %s", p["name"], exc)
-                records = []
+                log.warning("author lookup by ORCID failed for %s (keeping previous ids): %s", p["name"], exc)
+                continue
             if len(records) > 1:
                 chosen = select_author_records(records, keywords, broad)
                 log.info("%s: ORCID maps to %d OpenAlex records, keeping %d (%s)", p["name"], len(records), len(chosen), ", ".join(short_id(r["id"]) for r in chosen))
@@ -163,18 +180,25 @@ def resolve_people(people: list[dict], client: OpenAlex, keywords: list[str], to
                 p["openalex_ids"] = ids
             else:
                 p.pop("openalex_ids", None)  # no record: fall back to the ORCID filter
+            p["resolved_at"] = today.isoformat()
             p["needs_review"] = False
             continue
-        candidates = []
+        if p.get("openalex_ids") and _fresh(p.get("resolved_at"), today, max_age_days):
+            p["needs_review"] = False
+            continue
         try:
             candidates = client.search_authors(p["name"])
         except Exception as exc:  # noqa: BLE001
-            log.warning("author search failed for %s: %s", p["name"], exc)
+            log.warning("author search failed for %s (keeping previous state): %s", p["name"], exc)
+            if p.get("needs_review", True):
+                unresolved.append(p["slug"])
+            continue
         match = None
         for c in candidates:
             if c.get("display_name", "").lower() == p["name"].lower() and affiliation_matches(author_affiliations(c), broad):
                 match = c
                 break
+        p["resolved_at"] = today.isoformat()
         if match:
             p["openalex_ids"] = [short_id(match["id"])]
             # Keep the ORCID OpenAlex knows as information only: identity still rests on a name match,
@@ -408,7 +432,10 @@ def run(dry_run: bool = False, skip_people: bool = False, config_path: Path = CO
             people_changes = {"error": str(exc)}
 
     client = OpenAlex(mailto=cfg.get("openalex_mailto"))
-    unresolved = resolve_people(people, client, keywords, today, broad_keywords=cfg.get("author_match_keywords") or keywords, grace_months=grace)
+    unresolved = resolve_people(
+        people, client, keywords, today, broad_keywords=cfg.get("author_match_keywords") or keywords,
+        grace_months=grace, max_age_days=int(cfg.get("resolve_cache_days", 30)),
+    )
     fetched, errors = fetch_works(
         people, client, int(cfg.get("since_year", 2024)), today,
         keywords=keywords, policy=cfg.get("affiliation_policy", "flag"), exclude_types=cfg.get("exclude_types"),

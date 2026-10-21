@@ -140,3 +140,32 @@ def test_departed_person_counts_only_verified_papers():
     assert set(works) == {"W1"}
     works, _ = fetch_works(people, client, 2024, date(2028, 10, 21), keywords=KW, grace_months=18)
     assert works == {}  # grace period over
+
+
+def test_resolve_keeps_state_on_api_errors_and_caches():
+    from datetime import date
+    from pubpulse.sync import resolve_people
+
+    class Boom:
+        def authors_by_orcid(self, o): raise RuntimeError("429")
+        def search_authors(self, n): raise RuntimeError("429")
+
+    people = [
+        {"slug": "o", "name": "O", "orcid": "0000-0001-0000-0001", "openalex_ids": ["A1"], "resolved_at": "2026-01-01"},
+        {"slug": "n", "name": "N", "orcid": None, "openalex_ids": ["A2"], "needs_review": False, "resolved_at": "2026-01-01"},
+        {"slug": "u", "name": "U", "orcid": None, "needs_review": True},
+    ]
+    unresolved = resolve_people(people, Boom(), ["maastro"], date(2026, 10, 21), max_age_days=30)
+    assert people[0]["openalex_ids"] == ["A1"] and people[1]["openalex_ids"] == ["A2"] and people[1]["needs_review"] is False
+    assert unresolved == ["u"]
+
+    class Count:
+        calls = 0
+        def authors_by_orcid(self, o): Count.calls += 1; return [{"id": "https://openalex.org/A9", "last_known_institutions": [], "affiliations": []}]
+        def search_authors(self, n): Count.calls += 1; return []
+
+    fresh = [{"slug": "o", "name": "O", "orcid": "0000-0001-0000-0001", "openalex_ids": ["A1"], "resolved_at": "2026-10-15"}]
+    resolve_people(fresh, Count(), ["maastro"], date(2026, 10, 21), max_age_days=30)
+    assert Count.calls == 0 and fresh[0]["openalex_ids"] == ["A1"]          # cached
+    resolve_people(fresh, Count(), ["maastro"], date(2026, 12, 21), max_age_days=30)
+    assert Count.calls == 1 and fresh[0]["openalex_ids"] == ["A9"]          # refreshed after 30 days

@@ -65,6 +65,7 @@ def apply_identifiers(people: list[dict], form: dict) -> tuple[bool, str]:
     elif orcid and p.get("orcid") != orcid.group(1).upper():
         p["orcid"] = orcid.group(1).upper()
         p.pop("openalex_ids", None)
+        p.pop("resolved_at", None)
         p["needs_review"] = False
         lines.append(f"- ORCID set to `{p['orcid']}`.")
         changed = True
