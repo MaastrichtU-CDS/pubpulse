@@ -111,6 +111,36 @@
     }
   }
 
+  function enhanceDropdowns() {
+    // Keep native selects as a fallback if the optional enhancement cannot load.
+    if (typeof TomSelect !== "function") return;
+    document.querySelectorAll("select").forEach((select) => {
+      if (select.tomselect) {
+        select.tomselect.sync();
+        return;
+      }
+      new TomSelect(select, {
+        create: false,
+        maxItems: 1,
+        maxOptions: null,
+        allowEmptyOption: true,
+        searchField: ["text"],
+        highlight: true,
+        closeAfterSelect: true,
+        refreshThrottle: 0,
+        placeholder: "Type to search…",
+        controlInput:
+          '<input type="text" autocomplete="off" autocapitalize="none" spellcheck="false" aria-autocomplete="list">',
+      });
+    });
+  }
+
+  function syncDropdowns() {
+    document
+      .querySelectorAll("select")
+      .forEach((select) => select.tomselect?.sync());
+  }
+
   function init(json) {
     data = json;
     data.peopleBySlug = Object.fromEntries(data.people.map((p) => [p.slug, p]));
@@ -176,6 +206,7 @@
     els.verify.value = state.verify;
     els.when.value = state.when;
     els.onlyOa.checked = state.oa;
+    enhanceDropdowns();
     renderPeople();
 
     const review = data.people.filter((p) => p.needs_review);
@@ -209,7 +240,8 @@
         update();
       });
       els.sort.addEventListener("change", () => {
-        state.sort = els.sort.value;
+        state.sort = els.sort.value || "date";
+        els.sort.value = state.sort;
         update();
       });
       els.when.addEventListener("change", () => {
@@ -631,6 +663,7 @@
   }
 
   function update() {
+    syncDropdowns();
     writeHash();
     let items = data.works.filter((w) => matches(w));
     renderYearChart();

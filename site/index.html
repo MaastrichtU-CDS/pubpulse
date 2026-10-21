@@ -33,6 +33,7 @@
     />
     <meta name="apple-mobile-web-app-title" content="pubpulse" />
     <link rel="manifest" href="site.webmanifest" />
+    <link rel="stylesheet" href="vendor/tom-select-2.6.2.min.css" />
     <link rel="stylesheet" href="style.css" />
     <link
       rel="alternate"
@@ -230,6 +231,9 @@
             <h3>Filter publications</h3>
             <button class="link" id="reset" type="button">Reset all</button>
           </div>
+          <p class="filter-search-hint">
+            Type in any dropdown to find an option.
+          </p>
           <div class="filter">
             <label for="when">Period</label
             ><select id="when">
@@ -512,6 +516,7 @@
         You can also <a href="feed.xml">follow publications via RSS</a>.
       </p>
     </dialog>
+    <script src="vendor/tom-select-2.6.2.min.js"></script>
     <script src="app.js"></script>
   </body>
 </html>

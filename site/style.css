@@ -728,7 +728,7 @@ button.link:hover {
   display: grid;
   gap: 13px;
 }
-.item {
+.list > .item {
   position: relative;
   background: var(--panel);
   border: 1px solid var(--line);
@@ -738,7 +738,7 @@ button.link:hover {
     border-color 0.18s,
     box-shadow 0.18s;
 }
-.item:hover {
+.list > .item:hover {
   border-color: #a9c5df;
   box-shadow: 0 4px 16px #001c3d06;
 }
@@ -783,7 +783,7 @@ button.link:hover {
   background: var(--accent-soft);
   color: var(--accent);
 }
-.item h3 {
+.list > .item h3 {
   margin: 0 0 11px;
   font:
     400 22px/1.35 Georgia,
@@ -792,11 +792,11 @@ button.link:hover {
   letter-spacing: -0.3px;
   overflow-wrap: anywhere;
 }
-.item h3 a {
+.list > .item h3 a {
   color: var(--text);
   text-decoration: none;
 }
-.item h3 a:hover {
+.list > .item h3 a:hover {
   color: var(--accent);
 }
 .meta {
@@ -1252,7 +1252,7 @@ dialog .dialog-rss {
   .institutions .cds-logo img {
     height: 43px;
   }
-  .item {
+  .list > .item {
     padding: 20px;
   }
   .foot-top {
@@ -1435,10 +1435,10 @@ dialog .dialog-rss {
     max-width: 130px;
     font-size: 14px;
   }
-  .item {
+  .list > .item {
     padding: 20px;
   }
-  .item h3 {
+  .list > .item h3 {
     font-size: 21px;
   }
   .publication-top {
@@ -1639,7 +1639,7 @@ dialog .dialog-rss {
     align-items: center;
     min-height: 44px;
   }
-  .item {
+  .list > .item {
     padding: 18px;
   }
   dialog {
@@ -1746,4 +1746,142 @@ dialog .dialog-rss {
     line-height: 44px;
     margin-left: 0;
   }
+}
+
+/* Searchable dropdowns inherit the publication library's controls and palette. */
+.filter-search-hint {
+  font-size: 12px;
+  line-height: 1.6;
+  color: var(--muted);
+  margin: -9px 0 18px;
+}
+.ts-wrapper {
+  width: 100%;
+  min-width: 0;
+  padding: 0;
+  font-size: 15px;
+}
+.ts-wrapper.single .ts-control {
+  min-height: 44px;
+  border: 1px solid #d2dce7;
+  border-radius: 4px;
+  background: var(--panel);
+  color: var(--text);
+  padding: 9px 30px 9px 10px;
+  box-shadow: none;
+  align-items: center;
+  cursor: text;
+  line-height: 1.6;
+}
+.ts-wrapper.single .ts-control::after {
+  content: "";
+  position: absolute;
+  right: 12px;
+  top: 18px;
+  width: 7px;
+  height: 7px;
+  border-right: 1.5px solid var(--muted);
+  border-bottom: 1.5px solid var(--muted);
+  transform: rotate(45deg);
+  pointer-events: none;
+}
+.ts-wrapper.dropdown-active .ts-control::after {
+  top: 21px;
+  transform: rotate(225deg);
+}
+.ts-wrapper.focus .ts-control {
+  border-color: var(--accent);
+  outline: 3px solid #0e71bb30;
+  outline-offset: 1px;
+}
+.ts-control > input {
+  color: var(--text);
+  font: inherit;
+  min-width: 3px;
+  line-height: 1.6;
+  padding: 0 !important;
+  border: 0 !important;
+  outline: 0 !important;
+  box-shadow: none !important;
+}
+.ts-control > .item {
+  border: 0;
+  background: transparent;
+  padding: 0;
+  margin: 0;
+  border-radius: 0;
+  box-shadow: none;
+  font: inherit;
+  color: inherit;
+  overflow-wrap: anywhere;
+  max-width: 100%;
+}
+.ts-dropdown {
+  z-index: 20;
+  border: 1px solid #c4d4e4;
+  border-radius: 5px;
+  background: var(--panel);
+  color: var(--text);
+  font-size: 14px;
+  box-shadow: 0 8px 24px #001c3d18;
+  margin-top: 5px;
+  overflow: hidden;
+}
+.ts-dropdown-content {
+  max-height: 260px;
+  overscroll-behavior: contain;
+}
+.ts-dropdown .option,
+.ts-dropdown .no-results {
+  padding: 10px 12px;
+  min-height: 44px;
+  line-height: 1.6;
+  overflow-wrap: anywhere;
+}
+.ts-dropdown .active {
+  background: var(--accent-soft);
+  color: var(--navy);
+}
+.ts-dropdown .selected {
+  font-weight: 650;
+}
+.ts-dropdown .highlight {
+  background: #d9edf9;
+  color: var(--navy);
+  border-radius: 2px;
+}
+.ts-dropdown .no-results {
+  color: var(--muted);
+}
+.sort-control .ts-wrapper {
+  min-width: 160px;
+  width: 160px;
+  font-size: 14px;
+}
+.sort-control .ts-dropdown {
+  font-size: 14px;
+}
+@media (max-width: 760px) {
+  .filter-search-hint {
+    grid-column: 1 / -1;
+  }
+  .ts-wrapper,
+  .ts-control > input,
+  .sort-control .ts-wrapper {
+    font-size: 16px;
+  }
+  .ts-dropdown {
+    font-size: 16px;
+  }
+  .ts-dropdown-content {
+    max-height: min(260px, 40dvh);
+  }
+  .sort-control .ts-wrapper {
+    width: 165px;
+    min-width: 165px;
+  }
+}
+
+.ts-wrapper.dropdown-active {
+  z-index: 25;
 }
