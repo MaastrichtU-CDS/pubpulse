@@ -77,23 +77,45 @@ def parse_profile(html: str) -> dict:
     }
 
 
-def fetch_staff(staff_url: str, track_sections: list[str], session: requests.Session | None = None, delay: float = 0.3) -> list[dict]:
-    """Download the staff page and, for people in tracked sections, their profile pages."""
+def fetch_staff(
+    staff_url: str, track_sections: list[str], session: requests.Session | None = None, delay: float = 1.0,
+    known: dict[str, dict] | None = None, today: date | None = None, profile_refresh_days: int = 30,
+    contact: str | None = None,
+) -> list[dict]:
+    """Download the staff page (1 request) and the profile pages of tracked people that are new or whose profile
+    was last checked more than profile_refresh_days ago. Be gentle: one request per `delay` seconds, identify
+    ourselves, stop fetching profiles after the first server error."""
     session = session or requests.Session()
-    session.headers.setdefault("User-Agent", "pubpulse (publication tracker; +https://github.com/MaastrichtU-CDS/pubpulse)")
+    ua = "pubpulse/1.0 (publication tracker for the CDS group; weekly; +https://github.com/MaastrichtU-CDS/pubpulse"
+    session.headers.setdefault("User-Agent", ua + (f"; mailto:{contact})" if contact else ")"))
     resp = session.get(staff_url, timeout=60)
     resp.raise_for_status()
     people = parse_staff_page(resp.text, base_url=staff_url)
+    known = known or {}
+    today = today or date.today()
+    fetched = 0
     for person in people:
         if person["section"] not in track_sections:
             continue
+        prev = known.get(person["slug"])
+        checked = (prev or {}).get("profile_checked_at")
+        if prev and checked and profile_refresh_days > 0:
+            try:
+                if (today - date.fromisoformat(str(checked))).days < profile_refresh_days:
+                    continue  # profile recently checked: no request
+            except ValueError:
+                pass
+        time.sleep(delay)
         try:
             p = session.get(person["profile_url"], timeout=60)
             p.raise_for_status()
             person.update(parse_profile(p.text))
+            person["_profile_fetched"] = True
+            fetched += 1
         except requests.RequestException as exc:
-            log.warning("could not fetch profile %s: %s", person["profile_url"], exc)
-        time.sleep(delay)
+            log.warning("could not fetch profile %s: %s (not fetching further profiles this run)", person["profile_url"], exc)
+            break
+    log.info("staff page: %d people, %d profile pages fetched", len(people), fetched)
     return people
 
 
@@ -134,6 +156,7 @@ def merge_people(existing: list[dict], scraped: list[dict], track_sections: list
                 "cris_url": s.get("cris_url"),
                 "openalex_id": None,
                 "source": "staff_page",
+                "profile_checked_at": today_s if s.get("_profile_fetched") else None,
                 "active_from": today_s,
                 "active_until": None,
                 "needs_review": False,
@@ -143,6 +166,8 @@ def merge_people(existing: list[dict], scraped: list[dict], track_sections: list
             changes["added"].append(s["slug"])
             continue
         updated = False
+        if s.get("_profile_fetched"):
+            p["profile_checked_at"] = today_s
         for field in SCRAPED_FIELDS:
             val = s.get(field)
             if val and p.get(field) != val:

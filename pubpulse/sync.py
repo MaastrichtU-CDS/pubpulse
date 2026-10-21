@@ -422,7 +422,11 @@ def run(dry_run: bool = False, skip_people: bool = False, config_path: Path = CO
     people_changes: dict = {}
     if not skip_people:
         try:
-            scraped = fetch_staff(cfg["staff_url"], track_sections)
+            scraped = fetch_staff(
+                cfg["staff_url"], track_sections, known={p["slug"]: p for p in people}, today=today,
+                delay=float(cfg.get("scrape_delay_seconds", 1.0)), profile_refresh_days=int(cfg.get("profile_refresh_days", 30)),
+                contact=cfg.get("openalex_mailto"),
+            )
             people, people_changes = merge_people(
                 people, scraped, track_sections, today, min_people=int(cfg.get("min_people_on_staff_page", 3))
             )

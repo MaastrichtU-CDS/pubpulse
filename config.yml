@@ -38,6 +38,11 @@ exclude_types: [supplementary-materials, erratum, paratext]
 # but during that period a paper only counts when it carries a verified group affiliation for them.
 departed_grace_months: 18
 
+# Be gentle with the staff website: profile pages are re-read only for new people or after this many days,
+# with one request per scrape_delay_seconds. The weekly run normally makes 1-3 requests to the site.
+profile_refresh_days: 30
+scrape_delay_seconds: 1.0
+
 # OpenAlex author lookups per person are cached in people.yml for this many days (saves API budget).
 resolve_cache_days: 30
 

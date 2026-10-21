@@ -67,3 +67,31 @@ def test_grace_period_tracking():
     assert is_tracked(left, date(2027, 7, 31), 18) and not is_tracked(left, date(2027, 8, 1), 18)
     assert not is_active(left, date(2026, 6, 1))
     assert is_tracked({"slug": "a", "name": "A", "active_until": None}, date(2030, 1, 1), 0)
+
+
+def test_fetch_staff_skips_recently_checked_profiles(monkeypatch):
+    import pubpulse.staff as st
+    from pathlib import Path
+    html = (Path(__file__).parent / "fixtures" / "staff.html").read_text(encoding="utf-8")
+    prof = (Path(__file__).parent / "fixtures" / "profile-johan-van-soest.html").read_text(encoding="utf-8")
+    calls = []
+
+    class R:
+        def __init__(self, text): self.text = text
+        def raise_for_status(self): pass
+
+    class S:
+        headers = {}
+        def get(self, url, timeout=0):
+            calls.append(url)
+            return R(html if url.endswith("/staff") else prof)
+
+    monkeypatch.setattr(st.time, "sleep", lambda s: None)
+    known = {"sander-puts": {"profile_checked_at": "2026-10-15"}, "johan-van-soest": {"profile_checked_at": "2026-01-01"}}
+    people = st.fetch_staff("https://www.clinicaldatascience.nl/staff", ["current"], session=S(), known=known, today=date(2026, 10, 21), profile_refresh_days=30)
+    assert calls[0].endswith("/staff")
+    assert not any(u.endswith("/sander-puts") for u in calls)          # checked 6 days ago: skipped
+    assert any(u.endswith("/Staff/johan-van-soest") for u in calls)     # stale: fetched
+    jvs = next(p for p in people if p["slug"] == "johan-van-soest")
+    assert jvs["orcid"] == "0000-0003-2548-0330" and jvs["_profile_fetched"]
+    assert len(calls) == 1 + 60  # 61 current minus the one skipped

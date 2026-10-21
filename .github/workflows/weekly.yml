@@ -52,7 +52,9 @@ jobs:
       - run: pip install -r requirements.txt
 
       - name: Sync people and publications from OpenAlex
-        run: python -m pubpulse sync
+        # Push-triggered runs (config/code edits) do not touch the staff website; only the Monday schedule and
+        # manual runs read it.
+        run: python -m pubpulse sync ${{ github.event_name == 'push' && '--skip-people' || '' }}
 
       - name: Build site, feed and digest
         run: python -m pubpulse build
