@@ -15,7 +15,7 @@
     list: $("list"),
     count: $("count"),
     empty: $("empty"),
-    chips: $("active-chips"),
+    profiles: $("selected-profiles"),
     attention: $("attention"),
   };
   const dialog = $("digest-dialog");
@@ -109,8 +109,14 @@
       .replace(/\/$/, "")
       .toUpperCase();
     const scholar = String(person.scholar_id || "").trim();
+    const icons = {
+      ORCID:
+        '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="12" fill="#a6ce39"/><circle cx="6.6" cy="6.1" r="1.15" fill="#fff"/><path fill="#fff" d="M5.6 8.5h2v10h-2zM10 5.5h4.2a6.5 6.5 0 0 1 0 13H10zm2 2v9h2.2a4.5 4.5 0 0 0 0-9z"/></svg>',
+      "Google Scholar":
+        '<svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="m12 2-12 8 4 2.7V19h2v-5l6 4 10-6.7V19h2v-9zm0 13.6L3.6 10 12 4.4l8.4 5.6z"/><path d="M7 16.2V20c3 2.7 7 2.7 10 0v-3.8l-5 3.3z"/></svg>',
+    };
     const profileLink = (provider, id, url, note = "") =>
-      `<a href="${esc(url)}" target="_blank" rel="noopener" aria-label="${esc(person.name)} on ${provider}: ${esc(id)}${note ? " (" + esc(note) + ")" : ""}" title="${provider}: ${esc(id)}${note ? " · " + esc(note) : ""}"><span class="profile-provider">${provider}</span><span class="profile-id">${esc(id)}</span><span aria-hidden="true">↗</span></a>`;
+      `<a class="profile-icon" href="${esc(url)}" target="_blank" rel="noopener" aria-label="${esc(person.name)} on ${provider}: ${esc(id)}${note ? " (" + esc(note) + ")" : ""}" title="${provider}: ${esc(id)}${note ? " · " + esc(note) : ""}">${icons[provider]}</a>`;
     if (/^\d{4}-\d{4}-\d{4}-\d{3}[\dX]$/.test(orcid))
       links.push(
         profileLink(
@@ -577,7 +583,7 @@
       <div class="person-row"><label class="${p.active ? "" : "inactive"}" title="${p.active ? "" : p.tracked ? "left the group; papers with a group affiliation still counted until " + p.tracked_until : "no longer in the group"}">
         <input type="checkbox" value="${esc(p.slug)}" ${state.people.includes(p.slug) ? "checked" : ""}>
         ${esc(p.name)} <span class="n">${counts[p.slug] || 0}</span>
-      </label>${authorProfileLinks(p)}</div>`,
+      </label></div>`,
       )
       .join("");
     els.people.querySelectorAll("input").forEach((cb) =>
@@ -585,6 +591,35 @@
         state.people = cb.checked
           ? [...state.people, cb.value]
           : state.people.filter((s) => s !== cb.value);
+        update();
+      }),
+    );
+  }
+
+  function renderSelectedProfiles() {
+    const people = state.people
+      .map((slug) => data.peopleBySlug[slug])
+      .filter(Boolean);
+    els.profiles.classList.toggle("hidden", !people.length);
+    els.profiles.innerHTML = people.length
+      ? `<h3 class="profiles-heading">Selected ${people.length === 1 ? "researcher" : "researchers"}</h3><div class="profiles-grid">${people
+          .map((person) => {
+            const count = data.works.filter((work) =>
+              work.group_members.includes(person.slug),
+            ).length;
+            const description = [person.role, person.employer]
+              .filter(Boolean)
+              .join(" · ");
+            return `<article class="researcher-profile"><div class="profile-heading"><h4>${esc(person.name)}</h4><button class="profile-remove" type="button" data-slug="${esc(person.slug)}" aria-label="Remove ${esc(person.name)} from the author filter" title="Remove author filter">×</button></div>${description ? `<p class="profile-description">${esc(description)}</p>` : ""}<div class="profile-footer"><p>${count} ${count === 1 ? "publication" : "publications"} in this collection</p>${authorProfileLinks(person)}</div></article>`;
+          })
+          .join("")}</div>`
+      : "";
+    els.profiles.querySelectorAll("[data-slug]").forEach((button) =>
+      button.addEventListener("click", () => {
+        state.people = state.people.filter(
+          (slug) => slug !== button.dataset.slug,
+        );
+        renderPeople();
         update();
       }),
     );
@@ -718,19 +753,7 @@
     els.count.textContent =
       `${items.length} of ${data.works.length} publications · since ${coverageStart()}` +
       (data.newIds.size ? ` · ${data.newIds.size} new this week` : "");
-    els.chips.innerHTML = state.people
-      .map(
-        (s) =>
-          `<button class="chip" data-slug="${esc(s)}" title="remove">${esc(nameOf(s))} ✕</button>`,
-      )
-      .join("");
-    els.chips.querySelectorAll(".chip").forEach((c) =>
-      c.addEventListener("click", () => {
-        state.people = state.people.filter((s) => s !== c.dataset.slug);
-        renderPeople();
-        update();
-      }),
-    );
+    renderSelectedProfiles();
     els.list.innerHTML = items.map(render).join("");
     els.empty.classList.toggle("hidden", items.length > 0);
     els.list.querySelectorAll("[data-person]").forEach((b) =>
@@ -739,7 +762,7 @@
         if (!state.people.includes(s)) state.people = [...state.people, s];
         renderPeople();
         update();
-        $("publications").scrollIntoView({
+        els.profiles.scrollIntoView({
           behavior: matchMedia("(prefers-reduced-motion: reduce)").matches
             ? "instant"
             : "smooth",
@@ -764,7 +787,7 @@
             : st === "mismatch"
               ? " <span class='badge warn' title='other affiliation on this paper'>other affil.</span>"
               : " <span class='badge warn' title='no affiliation recorded by OpenAlex'>no affil.</span>";
-        return `<li><button class="link" data-person="${esc(s)}" title="${esc(affs || "no affiliation recorded by OpenAlex")}"><b>${esc(nameOf(s))}</b>${mark}</button>${authorProfileLinks(data.peopleBySlug[s])}</li>`;
+        return `<li><button class="link" data-person="${esc(s)}" title="${esc(affs || "no affiliation recorded by OpenAlex")}"><b>${esc(nameOf(s))}</b>${mark}</button></li>`;
       })
       .join("");
     const authorCount = w.author_count || w.authors.length;
