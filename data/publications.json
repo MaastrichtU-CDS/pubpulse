@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-23T12:49:47+00:00",
+ "generated": "2026-10-23T12:59:21+00:00",
  "group_name": "Clinical Data Science (Maastro / Maastricht University)",
  "site_url": "https://maastrichtu-cds.github.io/pubpulse/",
  "repo_url": "https://github.com/MaastrichtU-CDS/pubpulse",
@@ -3947,6 +3947,8 @@
    "landing_url": "https://doi.org/10.1038/s41523-026-01068-y",
    "is_oa": true,
    "oa_url": "https://www.nature.com/articles/s41523-026-01068-y_reference.pdf",
+   "license": "cc-by-nc-nd",
+   "pdf_url": "https://www.nature.com/articles/s41523-026-01068-y_reference.pdf",
    "authors": [
     "Wenjie Liang",
     "Rutger F. R. van Mierlo",
@@ -4225,6 +4227,8 @@
    "landing_url": "https://doi.org/10.2196/92329",
    "is_oa": true,
    "oa_url": "https://doi.org/10.2196/92329",
+   "license": "cc-by",
+   "pdf_url": null,
    "authors": [
     "Ekaterina S. Akhmad",
     "Daniël Slob",
@@ -4382,6 +4386,8 @@
    "landing_url": "https://doi.org/10.3389/fams.2026.1917462",
    "is_oa": true,
    "oa_url": "https://www.frontiersin.org/journals/applied-mathematics-and-statistics/articles/10.3389/fams.2026.1917462/pdf",
+   "license": "cc-by",
+   "pdf_url": "https://www.frontiersin.org/journals/applied-mathematics-and-statistics/articles/10.3389/fams.2026.1917462/pdf",
    "authors": [
     "Varsha Gouthamchand",
     "Johan van Soest",
@@ -4493,6 +4499,8 @@
    "landing_url": "https://doi.org/10.2196/preprints.113359",
    "is_oa": false,
    "oa_url": null,
+   "license": null,
+   "pdf_url": null,
    "authors": [
     "Jacob M. van Laar",
     "Chiara Ripepi",
@@ -4595,6 +4603,8 @@
    "landing_url": "https://doi.org/10.1007/s12032-026-03426-z",
    "is_oa": true,
    "oa_url": "https://link.springer.com/content/pdf/10.1007/s12032-026-03426-z.pdf",
+   "license": "cc-by",
+   "pdf_url": "https://link.springer.com/content/pdf/10.1007/s12032-026-03426-z.pdf",
    "authors": [
     "Aria Dianati",
     "Andre L.A.J. Dekker",
@@ -4691,6 +4701,8 @@
    "landing_url": "https://doi.org/10.64898/2026.10.01.26364470",
    "is_oa": true,
    "oa_url": "https://www.medrxiv.org/content/medrxiv/early/2026/10/02/2026.10.01.26364470.full.pdf",
+   "license": null,
+   "pdf_url": "https://www.medrxiv.org/content/medrxiv/early/2026/10/02/2026.10.01.26364470.full.pdf",
    "authors": [
     "Petros Koutsouvelis",
     "Sina Amirrajab",
@@ -4813,6 +4825,8 @@
    "landing_url": "https://doi.org/10.1016/j.landig.2026.101056",
    "is_oa": true,
    "oa_url": "https://www.thelancet.com/pdfs/journals/landig/PIIS2589-7500(26)00079-8.pdf",
+   "license": "cc-by-nc-nd",
+   "pdf_url": "https://www.thelancet.com/pdfs/journals/landig/PIIS2589-7500(26)00079-8.pdf",
    "authors": [
     "Fridolin Haugg",
     "Grace Lee",
@@ -4978,6 +4992,8 @@
    "landing_url": "https://doi.org/10.64898/2026.09.24.26363914",
    "is_oa": false,
    "oa_url": null,
+   "license": null,
+   "pdf_url": null,
    "authors": [
     "Shreya Anand",
     "Dinesh M S",
@@ -5076,6 +5092,8 @@
    "landing_url": "https://doi.org/10.2340/1651-226x.2026.46506",
    "is_oa": true,
    "oa_url": "https://medicaljournalssweden.se/actaoncologica/article/download/46506/55522",
+   "license": "cc-by",
+   "pdf_url": "https://medicaljournalssweden.se/actaoncologica/article/download/46506/55522",
    "authors": [
     "Claudine Backes",
     "Max Xhauflair",
@@ -5163,6 +5181,8 @@
    "landing_url": "https://doi.org/10.64898/2026.09.08.26361592",
    "is_oa": true,
    "oa_url": "https://www.medrxiv.org/content/medrxiv/early/2026/09/17/2026.09.08.26361592.full.pdf",
+   "license": "cc-by",
+   "pdf_url": "https://www.medrxiv.org/content/medrxiv/early/2026/09/17/2026.09.08.26361592.full.pdf",
    "authors": [
     "Joshi Hogenboom",
     "Natacha Perez",
@@ -5322,6 +5342,8 @@
    "landing_url": "https://doi.org/10.1016/j.esmorw.2026.100764",
    "is_oa": true,
    "oa_url": "https://doi.org/10.1016/j.esmorw.2026.100764",
+   "license": "cc-by",
+   "pdf_url": null,
    "authors": [
     "Nicola Hughes",
     "Joshi Hogenboom",
@@ -5511,6 +5533,8 @@
    "landing_url": "https://doi.org/10.1016/j.ctro.2026.101282",
    "is_oa": true,
    "oa_url": "https://www.ctro.science/article/S2405-6308(26)00177-1/pdf",
+   "license": "cc-by-nc-nd",
+   "pdf_url": "https://www.ctro.science/article/S2405-6308(26)00177-1/pdf",
    "authors": [
     "Jikai Zhou",
     "Xuanhe Hou",
@@ -5670,6 +5694,8 @@
    "landing_url": "https://doi.org/10.3389/fonc.2026.1901400",
    "is_oa": true,
    "oa_url": "https://www.frontiersin.org/journals/oncology/articles/10.3389/fonc.2026.1901400/pdf",
+   "license": "cc-by",
+   "pdf_url": "https://www.frontiersin.org/journals/oncology/articles/10.3389/fonc.2026.1901400/pdf",
    "authors": [
     "Nivedita Chakrabarty",
     "Swapnil Ulhas Rane",
@@ -5754,6 +5780,8 @@
    "landing_url": "https://doi.org/10.1016/j.lanepe.2026.101855",
    "is_oa": true,
    "oa_url": "https://doi.org/10.1016/j.lanepe.2026.101855",
+   "license": "cc-by-nc-nd",
+   "pdf_url": null,
    "authors": [
     "Gijs Geleijnse",
     "Claudine Backes",
@@ -5826,6 +5854,8 @@
    "landing_url": "https://doi.org/10.1016/j.ijrobp.2026.06.453",
    "is_oa": false,
    "oa_url": null,
+   "license": null,
+   "pdf_url": null,
    "authors": [
     "S.Y. Chen",
     "M. Zhang",
@@ -5925,6 +5955,8 @@
    "landing_url": "https://doi.org/10.1016/j.ejmp.2026.106097",
    "is_oa": false,
    "oa_url": null,
+   "license": null,
+   "pdf_url": null,
    "authors": [
     "Petros Kalendralis",
     "S. Hu",
@@ -5994,6 +6026,8 @@
    "landing_url": "https://doi.org/10.1016/j.ejmp.2026.106127",
    "is_oa": false,
    "oa_url": null,
+   "license": null,
+   "pdf_url": null,
    "authors": [
     "C. Zacharatou",
     "A. Sarno",
@@ -6072,6 +6106,8 @@
    "landing_url": "https://doi.org/10.1016/j.ijpt.2026.101350",
    "is_oa": true,
    "oa_url": "https://www.sciencedirect.com/science/article/pii/S2331518026000533/pdf",
+   "license": "cc-by-nc-nd",
+   "pdf_url": "https://www.sciencedirect.com/science/article/pii/S2331518026000533/pdf",
    "authors": [
     "Ester M. Orlandi",
     "Anna Maria Camarda",
@@ -6192,6 +6228,8 @@
    "landing_url": "https://doi.org/10.1016/j.annonc.2026.07.001",
    "is_oa": true,
    "oa_url": "https://doi.org/10.1016/j.annonc.2026.07.001",
+   "license": "cc-by",
+   "pdf_url": null,
    "authors": [
     "Vasco Prudente",
     "Simon Bernatz",
@@ -6379,6 +6417,8 @@
    "landing_url": "https://doi.org/10.4329/wjr.123720",
    "is_oa": true,
    "oa_url": "https://www.f6publishing.com/Forms/Main/DownloadFile.aspx?type=m&typeid=2&id=123720&filepath=8E31D0401EB18CD6271A9142AB7E05E369D96C985907EB5F5BD6BB074ECFE6DD9DE1F9CFC3C348E0",
+   "license": "cc-by-nc",
+   "pdf_url": "https://www.f6publishing.com/Forms/Main/DownloadFile.aspx?type=m&typeid=2&id=123720&filepath=8E31D0401EB18CD6271A9142AB7E05E369D96C985907EB5F5BD6BB074ECFE6DD9DE1F9CFC3C348E0",
    "authors": [
     "Ariadne L van der Velden",
     "Robrecht R. M. M. Knapen",
@@ -6475,6 +6515,8 @@
    "landing_url": "https://doi.org/10.1016/j.nexres.2026.102285",
    "is_oa": true,
    "oa_url": "https://doi.org/10.1016/j.nexres.2026.102285",
+   "license": "cc-by",
+   "pdf_url": null,
    "authors": [
     "En Hu",
     "Peiyu Qiu"
@@ -6531,6 +6573,8 @@
    "landing_url": "https://doi.org/10.1038/s41598-026-62420-7",
    "is_oa": true,
    "oa_url": "https://www.nature.com/articles/s41598-026-62420-7_reference.pdf",
+   "license": "cc-by-nc-nd",
+   "pdf_url": "https://www.nature.com/articles/s41598-026-62420-7_reference.pdf",
    "authors": [
     "Sithin Thulasi Seetha",
     "A. Messina",
@@ -6626,6 +6670,8 @@
    "landing_url": "https://osf.io/3px7e",
    "is_oa": true,
    "oa_url": "https://doi.org/10.17605/osf.io/3px7e",
+   "license": null,
+   "pdf_url": null,
    "authors": [
     "Anniek van Hienen",
     "Rianne Fijten"
@@ -6683,6 +6729,8 @@
    "landing_url": "https://doi.org/10.1016/j.ejca.2026.116933",
    "is_oa": true,
    "oa_url": "https://www.ejcancer.com/article/S0959-8049(26)00714-8/pdf",
+   "license": "cc-by",
+   "pdf_url": "https://www.ejcancer.com/article/S0959-8049(26)00714-8/pdf",
    "authors": [
     "Nicole D Hildebrand",
     "David P.J. van Dijk",
@@ -6848,6 +6896,8 @@
    "landing_url": "https://doi.org/10.5281/zenodo.21220925",
    "is_oa": true,
    "oa_url": "https://doi.org/10.5281/zenodo.21220925",
+   "license": "cc-by",
+   "pdf_url": null,
    "authors": [
     "Michaela Kargl",
     "Heimo Müller",
@@ -6917,6 +6967,8 @@
    "landing_url": "https://doi.org/10.1016/j.ijrobp.2026.06.3083",
    "is_oa": false,
    "oa_url": null,
+   "license": null,
+   "pdf_url": null,
    "authors": [
     "Meng Yan",
     "Zhixiang Wang",
@@ -7071,6 +7123,8 @@
    "landing_url": "https://research.rug.nl/en/publications/eecd7cbd-b817-442b-a18a-2d37a88ee8b0",
    "is_oa": true,
    "oa_url": "https://research.rug.nl/en/publications/eecd7cbd-b817-442b-a18a-2d37a88ee8b0",
+   "license": "cc-by",
+   "pdf_url": null,
    "authors": [
     "C.L. Deijen",
     "M. Berbée",
@@ -7167,6 +7221,8 @@
    "landing_url": "https://doi.org/10.3233/shti260947",
    "is_oa": true,
    "oa_url": "https://doi.org/10.3233/shti260947",
+   "license": "cc-by-nc",
+   "pdf_url": null,
    "authors": [
     "Wenjie Liang",
     "Jikai Zhou",
@@ -7260,6 +7316,8 @@
    "landing_url": "https://doi.org/10.1093/jamia/ocag117",
    "is_oa": true,
    "oa_url": "https://doi.org/10.1093/jamia/ocag117",
+   "license": "cc-by",
+   "pdf_url": null,
    "authors": [
     "Ankur Lohachab",
     "Frédéric JUNG",
@@ -7330,6 +7388,8 @@
    "landing_url": "https://doi.org/10.1016/j.nutos.2026.100691",
    "is_oa": true,
    "oa_url": "https://www.clinicalnutritionopenscience.com/article/S2667-2685(26)00067-7/pdf",
+   "license": "cc-by",
+   "pdf_url": "https://www.clinicalnutritionopenscience.com/article/S2667-2685(26)00067-7/pdf",
    "authors": [
     "J.N. Peltzer",
     "SELJ Verdonschot",
@@ -7406,6 +7466,8 @@
    "landing_url": "https://doi.org/10.1016/j.jaad.2026.06.047",
    "is_oa": true,
    "oa_url": "https://doi.org/10.1016/j.jaad.2026.06.047",
+   "license": "cc-by",
+   "pdf_url": null,
    "authors": [
     "Mariona Oliver",
     "Monika Molnárová",
@@ -7574,6 +7636,8 @@
    "landing_url": "https://doi.org/10.1186/s12911-026-03619-6",
    "is_oa": true,
    "oa_url": "https://doi.org/10.1186/s12911-026-03619-6",
+   "license": "cc-by-nc-nd",
+   "pdf_url": null,
    "authors": [
     "Sergio Consoli",
     "Dimitris Katsimpokis",
@@ -7637,6 +7701,8 @@
    "landing_url": "https://doi.org/10.1111/isj.70049",
    "is_oa": true,
    "oa_url": "https://doi.org/10.1111/isj.70049",
+   "license": "cc-by-nc-nd",
+   "pdf_url": null,
    "authors": [
     "Maria Jacobs",
     "Carol Ou",
@@ -7708,6 +7774,8 @@
    "landing_url": "https://doi.org/10.3390/nu18111795",
    "is_oa": true,
    "oa_url": "https://doi.org/10.3390/nu18111795",
+   "license": "cc-by",
+   "pdf_url": null,
    "authors": [
     "Girma Gilano",
     "Andre L.A.J. Dekker",
@@ -7789,6 +7857,8 @@
    "landing_url": "https://doi.org/10.1016/j.isci.2026.116135",
    "is_oa": true,
    "oa_url": "https://doi.org/10.1016/j.isci.2026.116135",
+   "license": "cc-by",
+   "pdf_url": null,
    "authors": [
     "Han Wang (254423)",
     "Guoguang Lao",
@@ -7897,6 +7967,8 @@
    "landing_url": "https://doi.org/10.3389/fresc.2026.1844025",
    "is_oa": true,
    "oa_url": "https://www.frontiersin.org/journals/rehabilitation-sciences/articles/10.3389/fresc.2026.1844025/pdf",
+   "license": "cc-by",
+   "pdf_url": "https://www.frontiersin.org/journals/rehabilitation-sciences/articles/10.3389/fresc.2026.1844025/pdf",
    "authors": [
     "Rutger F. R. van Mierlo",
     "Fleur W. W. Heijkens-Verberkt",
@@ -7994,6 +8066,8 @@
    "landing_url": "https://doi.org/10.3233/shti260729",
    "is_oa": true,
    "oa_url": "https://doi.org/10.3233/shti260729",
+   "license": "cc-by-nc",
+   "pdf_url": null,
    "authors": [
     "Kees C.W.J. Ebben",
     "Matthijs Sloep",
@@ -8051,6 +8125,8 @@
    "landing_url": "https://doi.org/10.3233/shti260350",
    "is_oa": true,
    "oa_url": "https://doi.org/10.3233/shti260350",
+   "license": "cc-by-nc",
+   "pdf_url": null,
    "authors": [
     "J Zhang",
     "Sander Puts",
@@ -8199,6 +8275,8 @@
    "landing_url": "https://doi.org/10.3233/shti260404",
    "is_oa": true,
    "oa_url": "https://doi.org/10.3233/shti260404",
+   "license": "cc-by-nc",
+   "pdf_url": null,
    "authors": [
     "Johan van Soest",
     "Ananya Choudhury",
@@ -8376,6 +8454,8 @@
    "landing_url": "https://doi.org/10.5281/zenodo.20340069",
    "is_oa": true,
    "oa_url": "https://doi.org/10.5281/zenodo.20340069",
+   "license": "cc-by",
+   "pdf_url": null,
    "authors": [
     "Isabelle de Zegher",
     "Ivanov, Petar",
@@ -8442,6 +8522,8 @@
    "landing_url": "https://doi.org/10.1093/ehjdh/ztag076",
    "is_oa": true,
    "oa_url": "https://doi.org/10.1093/ehjdh/ztag076",
+   "license": "cc-by",
+   "pdf_url": null,
    "authors": [
     "Lieke van Susante",
     "Rutger F. R. van Mierlo",
@@ -8511,6 +8593,8 @@
    "landing_url": "https://doi.org/10.21203/rs.3.rs-9394813/v1",
    "is_oa": true,
    "oa_url": "https://www.researchsquare.com/article/rs-9394813/latest.pdf",
+   "license": "cc-by",
+   "pdf_url": "https://www.researchsquare.com/article/rs-9394813/latest.pdf",
    "authors": [
     "Ariadne L van der Velden",
     "Robrecht R. M. M. Knapen",
@@ -8595,6 +8679,8 @@
    "landing_url": "https://osf.io/4x8q5",
    "is_oa": false,
    "oa_url": null,
+   "license": null,
+   "pdf_url": null,
    "authors": [
     "Ewout H. Meijer",
     "Linsay Ketelings",
@@ -8676,6 +8762,8 @@
    "landing_url": "https://dspace.library.uu.nl/handle/1874/484904",
    "is_oa": true,
    "oa_url": "https://dspace.library.uu.nl/handle/1874/484904",
+   "license": "other-oa",
+   "pdf_url": null,
    "authors": [
     "Michiel Thomas Jan Bak",
     "Karlijn Demers",
@@ -8808,6 +8896,8 @@
    "landing_url": "https://doi.org/10.63317/2fxa2v4tn93y",
    "is_oa": true,
    "oa_url": "http://www.lrec-conf.org/proceedings/lrec2026/workshops/cl4health/pdf/2026.cl4health-1.8.pdf",
+   "license": "cc-by-nc",
+   "pdf_url": "http://www.lrec-conf.org/proceedings/lrec2026/workshops/cl4health/pdf/2026.cl4health-1.8.pdf",
    "authors": [
     "Lifeng Han",
     "David Lindevelt",
@@ -8869,6 +8959,8 @@
    "landing_url": "https://doi.org/10.1016/j.ejso.2026.111688",
    "is_oa": false,
    "oa_url": null,
+   "license": null,
+   "pdf_url": null,
    "authors": [
     "Tim Rattay",
     "Guido Bologna",
@@ -9000,6 +9092,8 @@
    "landing_url": "https://arxiv.org/abs/2604.11679",
    "is_oa": true,
    "oa_url": "https://arxiv.org/pdf/2604.11679",
+   "license": "cc-by",
+   "pdf_url": "https://arxiv.org/pdf/2604.11679",
    "authors": [
     "Asbjørn Munk",
     "Stefano Cerri",
@@ -9325,6 +9419,8 @@
    "landing_url": "https://doi.org/10.1109/isbi61048.2026.11515369",
    "is_oa": true,
    "oa_url": "https://arxiv.org/pdf/2511.11311",
+   "license": null,
+   "pdf_url": "https://arxiv.org/pdf/2511.11311",
    "authors": [
     "Petros Koutsouvelis",
     "Matej Gazda",
@@ -9412,6 +9508,8 @@
    "landing_url": "https://doi.org/10.3389/fimmu.2026.1793039",
    "is_oa": true,
    "oa_url": "https://public-pages-files-2025.frontiersin.org/journals/immunology/articles/10.3389/fimmu.2026.1793039/pdf",
+   "license": "cc-by",
+   "pdf_url": "https://public-pages-files-2025.frontiersin.org/journals/immunology/articles/10.3389/fimmu.2026.1793039/pdf",
    "authors": [
     "Zirui Zhu",
     "Meng Yan",
@@ -9528,6 +9626,8 @@
    "landing_url": "https://doi.org/10.53962/tpjy-bs2a",
    "is_oa": false,
    "oa_url": null,
+   "license": null,
+   "pdf_url": null,
    "authors": [
     "Angelica Maineri",
     "Santosh Ilamparuthi",
@@ -9579,6 +9679,8 @@
    "landing_url": "https://doi.org/10.1016/j.clnesp.2026.103130",
    "is_oa": true,
    "oa_url": "https://doi.org/10.1016/j.clnesp.2026.103130",
+   "license": "cc-by",
+   "pdf_url": null,
    "authors": [
     "Chrisje Thöne",
     "Suzanne ten Dam",
@@ -9656,6 +9758,8 @@
    "landing_url": "https://doi.org/10.2196/preprints.96200",
    "is_oa": false,
    "oa_url": null,
+   "license": null,
+   "pdf_url": null,
    "authors": [
     "Marine Jacquemin",
     "Flora Lysen",
@@ -9728,6 +9832,8 @@
    "landing_url": "https://doi.org/10.1007/s00146-026-02997-9",
    "is_oa": true,
    "oa_url": "https://link.springer.com/content/pdf/10.1007/s00146-026-02997-9.pdf",
+   "license": "cc-by",
+   "pdf_url": "https://link.springer.com/content/pdf/10.1007/s00146-026-02997-9.pdf",
    "authors": [
     "Hannah Piehl",
     "Ricky Janssen",
@@ -9803,6 +9909,8 @@
    "landing_url": "https://cris.maastrichtuniversity.nl/en/publications/602da7ee-4c28-4dab-abaf-463e243bdce2",
    "is_oa": true,
    "oa_url": "https://cris.maastrichtuniversity.nl/en/publications/602da7ee-4c28-4dab-abaf-463e243bdce2",
+   "license": "cc-by-sa",
+   "pdf_url": null,
    "authors": [
     "Rianne Fijten",
     "Egon Willighagen",
@@ -9863,6 +9971,8 @@
    "landing_url": "https://doi.org/10.1016/j.clnesp.2026.103126",
    "is_oa": true,
    "oa_url": "https://doi.org/10.1016/j.clnesp.2026.103126",
+   "license": "cc-by",
+   "pdf_url": null,
    "authors": [
     "Yan Sun",
     "Isabel M. van Ruijven",
@@ -9932,6 +10042,8 @@
    "landing_url": "https://doi.org/10.2196/95090",
    "is_oa": true,
    "oa_url": "https://doi.org/10.2196/95090",
+   "license": "cc-by",
+   "pdf_url": null,
    "authors": [
     "Anshu Ankolekar"
    ],
@@ -9977,6 +10089,8 @@
    "landing_url": "https://doi.org/10.1038/s41586-026-10242-y",
    "is_oa": true,
    "oa_url": "https://doi.org/10.1038/s41586-026-10242-y",
+   "license": "cc-by-nc-nd",
+   "pdf_url": null,
    "authors": [
     "Simon Bernatz",
     "Vasco Prudente",
@@ -10178,6 +10292,8 @@
    "landing_url": "https://doi.org/10.1038/s41586-026-10243-x",
    "is_oa": true,
    "oa_url": "https://doi.org/10.1038/s41586-026-10243-x",
+   "license": "cc-by-nc-nd",
+   "pdf_url": null,
    "authors": [
     "Simon Bernatz",
     "Vasco Prudente",
@@ -10390,6 +10506,8 @@
    "landing_url": "https://doi.org/10.1016/j.esmoop.2026.106431",
    "is_oa": true,
    "oa_url": "https://www.esmoopen.com/article/S2059-7029(26)00373-X/pdf",
+   "license": "cc-by-nc-nd",
+   "pdf_url": "https://www.esmoopen.com/article/S2059-7029(26)00373-X/pdf",
    "authors": [
     "Mandy Jongbloed",
     "Valentina Bartolomeo",
@@ -10480,6 +10598,8 @@
    "landing_url": "https://doi.org/10.1016/j.esmoop.2026.106348",
    "is_oa": true,
    "oa_url": "https://www.esmoopen.com/article/S2059-7029(26)00290-5/pdf",
+   "license": "cc-by-nc-nd",
+   "pdf_url": "https://www.esmoopen.com/article/S2059-7029(26)00290-5/pdf",
    "authors": [
     "Jarno W J Huijs",
     "Janna Josephus Anna Oda Schoenmaekers",
@@ -10575,6 +10695,8 @@
    "landing_url": "https://doi.org/10.1038/s41467-026-70297-3",
    "is_oa": true,
    "oa_url": "https://www.nature.com/articles/s41467-026-70297-3_reference.pdf",
+   "license": "cc-by",
+   "pdf_url": "https://www.nature.com/articles/s41467-026-70297-3_reference.pdf",
    "authors": [
     "Stelios Theophanous",
     "Per-Ivar Lønne",
@@ -10860,6 +10982,8 @@
    "landing_url": "https://doi.org/10.1007/s10620-026-09750-8",
    "is_oa": true,
    "oa_url": "https://link.springer.com/content/pdf/10.1007/s10620-026-09750-8.pdf",
+   "license": "cc-by-nc",
+   "pdf_url": "https://link.springer.com/content/pdf/10.1007/s10620-026-09750-8.pdf",
    "authors": [
     "Yomi Okegunna",
     "M. Sekar",
@@ -10994,6 +11118,8 @@
    "landing_url": "https://doi.org/10.1016/j.seizure.2026.03.002",
    "is_oa": true,
    "oa_url": "https://www.seizure-journal.com/article/S1059-1311(26)00067-1/pdf",
+   "license": "cc-by",
+   "pdf_url": "https://www.seizure-journal.com/article/S1059-1311(26)00067-1/pdf",
    "authors": [
     "Petros Koutsouvelis",
     "Sven J. E. Ermans",
@@ -11117,6 +11243,8 @@
    "landing_url": "https://doi.org/10.1016/j.pecinn.2026.100468",
    "is_oa": true,
    "oa_url": "https://doi.org/10.1016/j.pecinn.2026.100468",
+   "license": "cc-by",
+   "pdf_url": null,
    "authors": [
     "Madeline Therrien",
     "Simone Mingels",
@@ -11219,6 +11347,8 @@
    "landing_url": "https://doi.org/10.3389/fimmu.2026.1787518",
    "is_oa": true,
    "oa_url": "https://public-pages-files-2025.frontiersin.org/journals/immunology/articles/10.3389/fimmu.2026.1787518/pdf",
+   "license": "cc-by",
+   "pdf_url": "https://public-pages-files-2025.frontiersin.org/journals/immunology/articles/10.3389/fimmu.2026.1787518/pdf",
    "authors": [
     "Jin Wang",
     "Zhaoyu Jiang",
@@ -11338,6 +11468,8 @@
    "landing_url": "https://doi.org/10.3390/diagnostics16050700",
    "is_oa": true,
    "oa_url": "https://www.mdpi.com/2075-4418/16/5/700/pdf?version=1772185831",
+   "license": "cc-by",
+   "pdf_url": "https://www.mdpi.com/2075-4418/16/5/700/pdf?version=1772185831",
    "authors": [
     "Florian van Daalen",
     "Balu Krishna Sasidharan",
@@ -11472,6 +11604,8 @@
    "landing_url": "https://doi.org/10.64898/2026.02.25.707931",
    "is_oa": true,
    "oa_url": "https://doi.org/10.64898/2026.02.25.707931",
+   "license": "cc-by",
+   "pdf_url": null,
    "authors": [
     "Linghan Cai",
     "Songhan Jiang",
@@ -11571,6 +11705,8 @@
    "landing_url": "https://doi.org/10.1016/j.jcmg.2026.01.006",
    "is_oa": true,
    "oa_url": "https://doi.org/10.1016/j.jcmg.2026.01.006",
+   "license": "cc-by-nc-nd",
+   "pdf_url": null,
    "authors": [
     "Daniel W. Oo",
     "Matthias Jung",
@@ -11675,6 +11811,8 @@
    "landing_url": "https://doi.org/10.1007/s00261-026-05381-9",
    "is_oa": false,
    "oa_url": null,
+   "license": null,
+   "pdf_url": null,
    "authors": [
     "Zhiming Wu",
     "Wenjie Liang",
@@ -11765,6 +11903,8 @@
    "landing_url": "https://doi.org/10.1158/1557-3265.sabcs25-ps1-12-19",
    "is_oa": false,
    "oa_url": null,
+   "license": null,
+   "pdf_url": null,
    "authors": [
     "Stelios Theophanous",
     "L. Revie",
@@ -11910,6 +12050,8 @@
    "landing_url": "https://doi.org/10.21037/qims-2025-1405",
    "is_oa": true,
    "oa_url": "https://doi.org/10.21037/qims-2025-1405",
+   "license": "cc-by-nc-nd",
+   "pdf_url": null,
    "authors": [
     "Yanqing Ma",
     "Pingshan Zhao",
@@ -11981,6 +12123,8 @@
    "landing_url": "https://doi.org/10.5281/zenodo.18431455",
    "is_oa": true,
    "oa_url": "https://doi.org/10.5281/zenodo.18431455",
+   "license": null,
+   "pdf_url": null,
    "authors": [
     "SteliosTheophanous",
     "Leonard Wee"
@@ -12035,6 +12179,8 @@
    "landing_url": "https://doi.org/10.1093/ije/dyag016",
    "is_oa": true,
    "oa_url": "https://doi.org/10.1093/ije/dyag016",
+   "license": "cc-by",
+   "pdf_url": null,
    "authors": [
     "Eng Hooi Tan",
     "Danielle Newby",
@@ -12370,6 +12516,8 @@
    "landing_url": "https://github.com/MaastrichtU-CDS/omop-converter/",
    "is_oa": true,
    "oa_url": "https://github.com/MaastrichtU-CDS/omop-converter/",
+   "license": null,
+   "pdf_url": null,
    "authors": [
     "Pedro da Costa Mateus",
     "Justine E. F. Moonen",
@@ -12486,6 +12634,8 @@
    "landing_url": "https://doi.org/10.5281/zenodo.18495622",
    "is_oa": true,
    "oa_url": "https://doi.org/10.5281/zenodo.18495622",
+   "license": "cc-by",
+   "pdf_url": null,
    "authors": [
     "Johan van Soest",
     "Joshi Hogenboom"
@@ -12555,6 +12705,8 @@
    "landing_url": "https://doi.org/10.5281/zenodo.18259274",
    "is_oa": true,
    "oa_url": "https://doi.org/10.5281/zenodo.18259274",
+   "license": "cc-by",
+   "pdf_url": null,
    "authors": [
     "Dennie G.A.J. Hebels",
     "Rianne Fijten"
@@ -12609,6 +12761,8 @@
    "landing_url": "https://doi.org/10.1007/s10278-025-01828-5",
    "is_oa": true,
    "oa_url": "https://link.springer.com/content/pdf/10.1007/s10278-025-01828-5.pdf",
+   "license": "cc-by",
+   "pdf_url": "https://link.springer.com/content/pdf/10.1007/s10278-025-01828-5.pdf",
    "authors": [
     "Hemalatha Kanakarajan",
     "Jikai Zhou",
@@ -12781,6 +12935,8 @@
    "landing_url": "https://doi.org/10.2196/85228",
    "is_oa": true,
    "oa_url": "https://doi.org/10.2196/85228",
+   "license": "cc-by",
+   "pdf_url": null,
    "authors": [
     "Simone Mingels",
     "Hannah Piehl",
@@ -12982,6 +13138,8 @@
    "landing_url": "https://doi.org/10.1016/j.canlet.2025.218229",
    "is_oa": true,
    "oa_url": "https://doi.org/10.1016/j.canlet.2025.218229",
+   "license": "cc-by-nc-nd",
+   "pdf_url": null,
    "authors": [
     "Yilong Huang",
     "Zhitao Wei",
@@ -13114,6 +13272,8 @@
    "landing_url": "https://doi.org/10.2139/ssrn.7401620",
    "is_oa": true,
    "oa_url": "https://doi.org/10.2139/ssrn.7401620",
+   "license": null,
+   "pdf_url": "https://doi.org/10.2139/ssrn.7401620",
    "authors": [
     "Louisa Schwarz",
     "Franz Rothlauf",
@@ -13177,6 +13337,8 @@
    "landing_url": "https://doi.org/10.2139/ssrn.7322264",
    "is_oa": true,
    "oa_url": "https://doi.org/10.2139/ssrn.7322264",
+   "license": null,
+   "pdf_url": null,
    "authors": [
     "Daniel Berger",
     "Charles S. Mayo",
@@ -13246,6 +13408,8 @@
    "landing_url": "https://doi.org/10.1016/j.ctarc.2026.101273",
    "is_oa": true,
    "oa_url": "https://doi.org/10.1016/j.ctarc.2026.101273",
+   "license": "cc-by",
+   "pdf_url": null,
    "authors": [
     "Van den Bosch A",
     "Loes F. S. Kooreman",
@@ -13324,6 +13488,8 @@
    "landing_url": "https://doi.org/10.17605/osf.io/4x8q5",
    "is_oa": true,
    "oa_url": "https://doi.org/10.17605/osf.io/4x8q5",
+   "license": null,
+   "pdf_url": null,
    "authors": [
     "Gjalt-Jorn Peters",
     "Egon Willighagen",
@@ -13405,6 +13571,8 @@
    "landing_url": "https://osf.io/e8whs",
    "is_oa": true,
    "oa_url": "https://osf.io/e8whs",
+   "license": "cc-by-nd",
+   "pdf_url": null,
    "authors": [
     "Anniek van Hienen"
    ],
@@ -13450,6 +13618,8 @@
    "landing_url": "https://osf.io/5xmtd",
    "is_oa": true,
    "oa_url": "https://osf.io/5xmtd",
+   "license": "cc-by-nc",
+   "pdf_url": null,
    "authors": [
     "Anniek van Hienen"
    ],
@@ -13495,6 +13665,8 @@
    "landing_url": "https://doi.org/10.1016/j.ejcskn.2026.100845",
    "is_oa": true,
    "oa_url": "https://doi.org/10.1016/j.ejcskn.2026.100845",
+   "license": "cc-by-nc-nd",
+   "pdf_url": null,
    "authors": [
     "E. Maas",
     "M. Spiekerman van Weezelenburg",
@@ -13567,6 +13739,8 @@
    "landing_url": "https://doi.org/10.24251/hicss.2026.413",
    "is_oa": true,
    "oa_url": "https://scholarspace.manoa.hawaii.edu/bitstreams/18b7af65-5c10-4396-8bd3-2c3a3d501d15/download",
+   "license": "cc-by-nc-nd",
+   "pdf_url": "https://scholarspace.manoa.hawaii.edu/bitstreams/18b7af65-5c10-4396-8bd3-2c3a3d501d15/download",
    "authors": [
     "Luca M. Heising",
     "Carol Ou",
@@ -13633,6 +13807,8 @@
    "landing_url": "https://doi.org/10.2139/ssrn.6221484",
    "is_oa": true,
    "oa_url": "https://doi.org/10.2139/ssrn.6221484",
+   "license": null,
+   "pdf_url": null,
    "authors": [
     "Charlotte Leonore Deijen",
     "Maaike Berbée",
@@ -13735,6 +13911,8 @@
    "landing_url": "https://doi.org/10.1093/bjrai/ubaf021",
    "is_oa": true,
    "oa_url": "https://doi.org/10.1093/bjrai/ubaf021",
+   "license": "cc-by",
+   "pdf_url": null,
    "authors": [
     "Chenfei Zhou",
     "Xuekun Zhang",
@@ -13822,6 +14000,8 @@
    "landing_url": "https://doi.org/10.1016/b978-0-443-13825-6.00360-5",
    "is_oa": false,
    "oa_url": null,
+   "license": null,
+   "pdf_url": null,
    "authors": [
     "Willem J.M. Gerver",
     "Bas Penders",
@@ -13879,6 +14059,8 @@
    "landing_url": "https://doi.org/10.1136/bmjopen-2025-112705",
    "is_oa": true,
    "oa_url": "https://doi.org/10.1136/bmjopen-2025-112705",
+   "license": "cc-by",
+   "pdf_url": null,
    "authors": [
     "Simone Mingels",
     "M Cloots",
@@ -14007,6 +14189,8 @@
    "landing_url": "https://doi.org/10.1200/cci-25-00177",
    "is_oa": true,
    "oa_url": "https://ascopubs.org/doi/pdf/10.1200/CCI-25-00177",
+   "license": "cc-by-nc-nd",
+   "pdf_url": "https://ascopubs.org/doi/pdf/10.1200/CCI-25-00177",
    "authors": [
     "Joshi Hogenboom",
     "Varsha Gouthamchand",
@@ -14186,6 +14370,8 @@
    "landing_url": "https://doi.org/10.1016/j.compbiomed.2025.111438",
    "is_oa": true,
    "oa_url": "https://doi.org/10.1016/j.compbiomed.2025.111438",
+   "license": "cc-by-nc",
+   "pdf_url": null,
    "authors": [
     "Maike S.V. Imkamp",
     "Vasco Prudente",
@@ -14308,6 +14494,8 @@
    "landing_url": "https://doi.org/10.1016/j.adro.2025.101988",
    "is_oa": true,
    "oa_url": "https://www.advancesradonc.org/article/S2452-1094(25)00275-1/pdf",
+   "license": "cc-by",
+   "pdf_url": "https://www.advancesradonc.org/article/S2452-1094(25)00275-1/pdf",
    "authors": [
     "Luca M. Heising",
     "Thijs Ackermans",
@@ -14416,6 +14604,8 @@
    "landing_url": "https://doi.org/10.1016/s1470-2045(25)00533-9",
    "is_oa": true,
    "oa_url": "https://pure.eur.nl/en/publications/7ed3725d-3351-4e4e-8f95-91ebd68b290f",
+   "license": "other-oa",
+   "pdf_url": null,
    "authors": [
     "Anne‐Sophie Darlington",
     "Kirsty M. Way",
@@ -14752,6 +14942,8 @@
    "landing_url": "https://doi.org/10.2196/89205",
    "is_oa": true,
    "oa_url": "https://doi.org/10.2196/89205",
+   "license": "cc-by",
+   "pdf_url": null,
    "authors": [
     "Anshu Ankolekar"
    ],
@@ -14797,6 +14989,8 @@
    "landing_url": "https://doi.org/10.3390/jcm14248703",
    "is_oa": true,
    "oa_url": "https://www.mdpi.com/2077-0383/14/24/8703/pdf?version=1765274467",
+   "license": "cc-by",
+   "pdf_url": "https://www.mdpi.com/2077-0383/14/24/8703/pdf?version=1765274467",
    "authors": [
     "Girma Gilano",
     "Andre L.A.J. Dekker",
@@ -14878,6 +15072,8 @@
    "landing_url": "https://doi.org/10.1007/s12672-025-04189-1",
    "is_oa": true,
    "oa_url": "https://doi.org/10.1007/s12672-025-04189-1",
+   "license": "cc-by-nc-nd",
+   "pdf_url": null,
    "authors": [
     "En Hu",
     "Peiyu Qiu",
@@ -15007,6 +15203,8 @@
    "landing_url": "https://doi.org/10.1136/jitc-2025-013840",
    "is_oa": true,
    "oa_url": "https://jitc.bmj.com/content/13/12/e013840.full.pdf",
+   "license": "cc-by-nc",
+   "pdf_url": "https://jitc.bmj.com/content/13/12/e013840.full.pdf",
    "authors": [
     "Baojia Qi",
     "Zhaoyu Jiang",
@@ -15155,6 +15353,8 @@
    "landing_url": "https://doi.org/10.1088/1361-6560/ae25b2",
    "is_oa": true,
    "oa_url": "https://doi.org/10.1088/1361-6560/ae25b2",
+   "license": "cc-by",
+   "pdf_url": null,
    "authors": [
     "Luca M. Heising",
     "Cecile J A Wolfs",
@@ -15228,6 +15428,8 @@
    "landing_url": "https://doi.org/10.1038/s41598-025-25568-2",
    "is_oa": true,
    "oa_url": "https://www.nature.com/articles/s41598-025-25568-2.pdf",
+   "license": "cc-by-nc-nd",
+   "pdf_url": "https://www.nature.com/articles/s41598-025-25568-2.pdf",
    "authors": [
     "Girma Gilano",
     "Andre L.A.J. Dekker",
@@ -15325,6 +15527,8 @@
    "landing_url": "https://doi.org/10.1016/j.compmedimag.2025.102663",
    "is_oa": true,
    "oa_url": "https://cris.maastrichtuniversity.nl/en/publications/7e81f580-c7d6-49d5-8816-1b6b046d1a3f",
+   "license": "other-oa",
+   "pdf_url": null,
    "authors": [
     "Yu Lu",
     "Shenlun Chen",
@@ -15499,6 +15703,8 @@
    "landing_url": "https://doi.org/10.1007/s00262-025-04235-5",
    "is_oa": true,
    "oa_url": "https://link.springer.com/content/pdf/10.1007/s00262-025-04235-5.pdf",
+   "license": "cc-by-nc-nd",
+   "pdf_url": "https://link.springer.com/content/pdf/10.1007/s00262-025-04235-5.pdf",
    "authors": [
     "Shenlun Chen",
     "Zonglin Liu",
@@ -15639,6 +15845,8 @@
    "landing_url": "https://doi.org/10.1186/s13244-025-02072-9",
    "is_oa": true,
    "oa_url": "https://insightsimaging.springeropen.com/counter/pdf/10.1186/s13244-025-02072-9",
+   "license": "cc-by",
+   "pdf_url": "https://insightsimaging.springeropen.com/counter/pdf/10.1186/s13244-025-02072-9",
    "authors": [
     "Ariadne L van der Velden",
     "Robrecht R. M. M. Knapen",
@@ -15784,6 +15992,8 @@
    "landing_url": "https://doi.org/10.3390/nu17213477",
    "is_oa": true,
    "oa_url": "https://www.mdpi.com/2072-6643/17/21/3477/pdf",
+   "license": "cc-by",
+   "pdf_url": "https://www.mdpi.com/2072-6643/17/21/3477/pdf",
    "authors": [
     "Girma Gilano",
     "Andre L.A.J. Dekker",
@@ -15875,6 +16085,8 @@
    "landing_url": "https://doi.org/10.1007/s00330-025-12094-y",
    "is_oa": true,
    "oa_url": "https://cris.maastrichtuniversity.nl/en/publications/71cbfdf1-905e-46dc-b157-8092b779eb35",
+   "license": "other-oa",
+   "pdf_url": null,
    "authors": [
     "Mengtao Zhou",
     "Ming‐Hua Li",
@@ -16048,6 +16260,8 @@
    "landing_url": "https://doi.org/10.3389/fdgth.2025.1629413",
    "is_oa": true,
    "oa_url": "https://www.frontiersin.org/journals/digital-health/articles/10.3389/fdgth.2025.1629413/pdf",
+   "license": "cc-by",
+   "pdf_url": "https://www.frontiersin.org/journals/digital-health/articles/10.3389/fdgth.2025.1629413/pdf",
    "authors": [
     "Rutger F. R. van Mierlo",
     "Wenjie Liang",
@@ -16211,6 +16425,8 @@
    "landing_url": "https://doi.org/10.2196/preprints.85870",
    "is_oa": true,
    "oa_url": "https://doi.org/10.2196/preprints.85870",
+   "license": "cc-by",
+   "pdf_url": null,
    "authors": [
     "Joshi Hogenboom",
     "Urška Košir",
@@ -16328,6 +16544,8 @@
    "landing_url": "https://doi.org/10.1016/j.eclinm.2025.103551",
    "is_oa": true,
    "oa_url": "https://doi.org/10.1016/j.eclinm.2025.103551",
+   "license": "cc-by-nc",
+   "pdf_url": null,
    "authors": [
     "Guanchao Ye",
     "Zhitao Wei",
@@ -16469,6 +16687,8 @@
    "landing_url": "https://doi.org/10.2196/preprints.85228",
    "is_oa": true,
    "oa_url": "https://doi.org/10.2196/preprints.85228",
+   "license": "cc-by",
+   "pdf_url": null,
    "authors": [
     "Simone Mingels",
     "Hannah Piehl",
@@ -16595,6 +16815,8 @@
    "landing_url": "https://cris.maastrichtuniversity.nl/en/publications/25f00641-2bc3-474e-a1f2-0e46d8f57822",
    "is_oa": false,
    "oa_url": null,
+   "license": null,
+   "pdf_url": null,
    "authors": [
     "Egor Titovich",
     "Olivera Ciraj‐Bjelac",
@@ -16671,6 +16893,8 @@
    "landing_url": "https://doi.org/10.1002/jcsm.13743",
    "is_oa": true,
    "oa_url": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1002/jcsm.13743",
+   "license": "cc-by",
+   "pdf_url": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1002/jcsm.13743",
    "authors": [
     "Leanne L. G. C. Ackermans",
     "Jasper C. Stokroos",
@@ -16770,6 +16994,8 @@
    "landing_url": "https://doi.org/10.1007/s13748-025-00404-w",
    "is_oa": true,
    "oa_url": "https://link.springer.com/content/pdf/10.1007/s13748-025-00404-w.pdf",
+   "license": "cc-by",
+   "pdf_url": "https://link.springer.com/content/pdf/10.1007/s13748-025-00404-w.pdf",
    "authors": [
     "Florian van Daalen",
     "Ralph Brecheisen",
@@ -16890,6 +17116,8 @@
    "landing_url": "https://doi.org/10.1093/bjr/tqaf239",
    "is_oa": true,
    "oa_url": "https://cris.maastrichtuniversity.nl/ws/files/282424250/Dekker-2025-Variational-autoencoder-based-deep-learning-and.pdf",
+   "license": "other-oa",
+   "pdf_url": "https://cris.maastrichtuniversity.nl/ws/files/282424250/Dekker-2025-Variational-autoencoder-based-deep-learning-and.pdf",
    "authors": [
     "Qing Gu",
     "Shenlun Chen",
@@ -17032,6 +17260,8 @@
    "landing_url": "https://doi.org/10.1201/9781003527749-13",
    "is_oa": true,
    "oa_url": "https://cris.maastrichtuniversity.nl/en/publications/5c4cdd11-832d-4617-835b-35d173d6c02e",
+   "license": "other-oa",
+   "pdf_url": null,
    "authors": [
     "M. Fernando",
     "K. Ruwani",
@@ -17092,6 +17322,8 @@
    "landing_url": "https://doi.org/10.1002/jcsm.70063",
    "is_oa": true,
    "oa_url": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1002/jcsm.70063",
+   "license": "cc-by",
+   "pdf_url": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1002/jcsm.70063",
    "authors": [
     "Xin Nie",
     "Yan Sun",
@@ -17169,6 +17401,8 @@
    "landing_url": "https://doi.org/10.2196/71817",
    "is_oa": true,
    "oa_url": "https://www.jmir.org/2025/1/e71817/PDF",
+   "license": "cc-by",
+   "pdf_url": "https://www.jmir.org/2025/1/e71817/PDF",
    "authors": [
     "Iva Halilaj",
     "Relinde I. Y. Lieverse",
@@ -17251,6 +17485,8 @@
    "landing_url": "https://doi.org/10.1016/j.radonc.2025.111134",
    "is_oa": true,
    "oa_url": "https://cris.maastrichtuniversity.nl/ws/files/278983024/Wee-2025-Minimum-sample-size-calculation-for.pdf",
+   "license": "other-oa",
+   "pdf_url": "https://cris.maastrichtuniversity.nl/ws/files/278983024/Wee-2025-Minimum-sample-size-calculation-for.pdf",
    "authors": [
     "Qian Cao",
     "Zhaoyu Jiang",
@@ -17370,6 +17606,8 @@
    "landing_url": "https://doi.org/10.1016/j.annonc.2025.08.631",
    "is_oa": true,
    "oa_url": "https://doi.org/10.1016/j.annonc.2025.08.631",
+   "license": null,
+   "pdf_url": null,
    "authors": [
     "E. Hu",
     "Leonard Wee",
@@ -17448,6 +17686,8 @@
    "landing_url": "https://doi.org/10.3390/cancers17162656",
    "is_oa": true,
    "oa_url": "https://www.mdpi.com/2072-6694/17/16/2656/pdf?version=1755174635",
+   "license": "cc-by",
+   "pdf_url": "https://www.mdpi.com/2072-6694/17/16/2656/pdf?version=1755174635",
    "authors": [
     "Coosje A. M. Verhagen",
     "Faeze Gholamiankhah",
@@ -17555,6 +17795,8 @@
    "landing_url": "https://osf.io/z64qb",
    "is_oa": true,
    "oa_url": "https://osf.io/z64qb",
+   "license": "cc-by",
+   "pdf_url": null,
    "authors": [
     "Anniek van Hienen",
     "Ruud M A Houben"
@@ -17603,6 +17845,8 @@
    "landing_url": "https://doi.org/10.1002/mp.18034",
    "is_oa": true,
    "oa_url": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1002/mp.18034",
+   "license": "cc-by-nc",
+   "pdf_url": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1002/mp.18034",
    "authors": [
     "Pedro Mateus",
     "Mariachiara Savino",
@@ -17726,6 +17970,8 @@
    "landing_url": "https://doi.org/10.1007/s41666-025-00208-6",
    "is_oa": true,
    "oa_url": "https://link.springer.com/content/pdf/10.1007/s41666-025-00208-6.pdf",
+   "license": "cc-by",
+   "pdf_url": "https://link.springer.com/content/pdf/10.1007/s41666-025-00208-6.pdf",
    "authors": [
     "Pedro Mateus",
     "Swier J.F. Garst",
@@ -17859,6 +18105,8 @@
    "landing_url": "https://doi.org/10.5281/zenodo.22206390",
    "is_oa": true,
    "oa_url": "https://doi.org/10.5281/zenodo.22206390",
+   "license": "cc-by",
+   "pdf_url": null,
    "authors": [
     "Leonard Wee",
     "Bart van Beusekom",
@@ -17940,6 +18188,8 @@
    "landing_url": "https://doi.org/10.1016/j.cgh.2025.06.039",
    "is_oa": true,
    "oa_url": "https://doi.org/10.1016/j.cgh.2025.06.039",
+   "license": "cc-by",
+   "pdf_url": null,
    "authors": [
     "Michiel Thomas Jan Bak",
     "Karlijn Demers",
@@ -18071,6 +18321,8 @@
    "landing_url": "https://doi.org/10.1186/s12913-025-13152-3",
    "is_oa": true,
    "oa_url": "https://bmchealthservres.biomedcentral.com/counter/pdf/10.1186/s12913-025-13152-3",
+   "license": "cc-by-nc-nd",
+   "pdf_url": "https://bmchealthservres.biomedcentral.com/counter/pdf/10.1186/s12913-025-13152-3",
    "authors": [
     "Rachelle Swart",
     "Liesbeth Jorinne Boersma",
@@ -18139,6 +18391,8 @@
    "landing_url": "https://doi.org/10.1007/s40747-025-02022-4",
    "is_oa": true,
    "oa_url": "https://link.springer.com/content/pdf/10.1007/s40747-025-02022-4.pdf",
+   "license": "cc-by",
+   "pdf_url": "https://link.springer.com/content/pdf/10.1007/s40747-025-02022-4.pdf",
    "authors": [
     "Florian van Daalen",
     "Djura Smits",
@@ -18223,6 +18477,8 @@
    "landing_url": "https://doi.org/10.1016/j.breast.2025.104537",
    "is_oa": true,
    "oa_url": "https://www.thebreastonline.com/article/S0960-9776(25)00554-5/pdf",
+   "license": "cc-by-nc",
+   "pdf_url": "https://www.thebreastonline.com/article/S0960-9776(25)00554-5/pdf",
    "authors": [
     "Orit Kaidar‐Person",
     "André Pfob",
@@ -18309,6 +18565,8 @@
    "landing_url": "https://doi.org/10.3389/fnume.2025.1611823",
    "is_oa": true,
    "oa_url": "https://www.frontiersin.org/journals/nuclear-medicine/articles/10.3389/fnume.2025.1611823/pdf",
+   "license": "cc-by",
+   "pdf_url": "https://www.frontiersin.org/journals/nuclear-medicine/articles/10.3389/fnume.2025.1611823/pdf",
    "authors": [
     "Ashish Kumar Jha",
     "Umesh B. Sherkhane",
@@ -18424,6 +18682,8 @@
    "landing_url": "https://doi.org/10.1186/s41512-025-00198-4",
    "is_oa": true,
    "oa_url": "https://diagnprognres.biomedcentral.com/counter/pdf/10.1186/s41512-025-00198-4",
+   "license": "cc-by",
+   "pdf_url": "https://diagnprognres.biomedcentral.com/counter/pdf/10.1186/s41512-025-00198-4",
    "authors": [
     "Anke Bruninx",
     "Lianne Ippel",
@@ -18504,6 +18764,8 @@
    "landing_url": "https://doi.org/10.1002/ejhf.3714",
    "is_oa": true,
    "oa_url": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1002/ejhf.3714",
+   "license": "cc-by",
+   "pdf_url": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1002/ejhf.3714",
    "authors": [
     "Chrit B.G. Geraeds",
     "Anke Bruninx",
@@ -18589,6 +18851,8 @@
    "landing_url": "https://doi.org/10.1007/s00270-025-04093-9",
    "is_oa": true,
    "oa_url": "https://link.springer.com/content/pdf/10.1007/s00270-025-04093-9.pdf",
+   "license": "cc-by",
+   "pdf_url": "https://link.springer.com/content/pdf/10.1007/s00270-025-04093-9.pdf",
    "authors": [
     "Ariadne L van der Velden",
     "Coosje A. M. Verhagen",
@@ -18758,6 +19022,8 @@
    "landing_url": "https://doi.org/10.1007/s10676-025-09843-4",
    "is_oa": true,
    "oa_url": "https://link.springer.com/content/pdf/10.1007/s10676-025-09843-4.pdf",
+   "license": "cc-by",
+   "pdf_url": "https://link.springer.com/content/pdf/10.1007/s10676-025-09843-4.pdf",
    "authors": [
     "Florian van Daalen",
     "Marine Jacquemin",
@@ -18882,6 +19148,8 @@
    "landing_url": "https://doi.org/10.1101/2025.06.13.25329594",
    "is_oa": true,
    "oa_url": "https://www.medrxiv.org/content/medrxiv/early/2025/06/16/2025.06.13.25329594.full.pdf",
+   "license": null,
+   "pdf_url": "https://www.medrxiv.org/content/medrxiv/early/2025/06/16/2025.06.13.25329594.full.pdf",
    "authors": [
     "Hemalatha Kanakarajan",
     "Jikai Zhou",
@@ -19046,6 +19314,8 @@
    "landing_url": "https://doi.org/10.1016/j.ijrobp.2025.05.088",
    "is_oa": true,
    "oa_url": "https://cris.maastrichtuniversity.nl/en/publications/f7738a0c-297e-4ed6-bbc7-b789ab6106dc",
+   "license": "other-oa",
+   "pdf_url": null,
    "authors": [
     "Balu Krishna Sasidharan",
     "Sharief K Sidhique",
@@ -19210,6 +19480,8 @@
    "landing_url": "https://doi.org/10.1016/j.annonc.2025.05.537",
    "is_oa": true,
    "oa_url": "https://www.annalsofoncology.org/action/showPdf?pii=S0923753425007665",
+   "license": "cc-by-nc-nd",
+   "pdf_url": "https://www.annalsofoncology.org/action/showPdf?pii=S0923753425007665",
    "authors": [
     "Yanqi Huang",
     "Xuling Chen",
@@ -19379,6 +19651,8 @@
    "landing_url": "https://doi.org/10.1101/2025.06.03.25328788",
    "is_oa": true,
    "oa_url": "https://www.medrxiv.org/content/medrxiv/early/2025/06/03/2025.06.03.25328788.full.pdf",
+   "license": "cc-by",
+   "pdf_url": "https://www.medrxiv.org/content/medrxiv/early/2025/06/03/2025.06.03.25328788.full.pdf",
    "authors": [
     "Joshi Hogenboom",
     "Varsha Gouthamchand",
@@ -19580,6 +19854,8 @@
    "landing_url": "https://doi.org/10.1038/s41746-025-01591-5",
    "is_oa": true,
    "oa_url": "https://www.nature.com/articles/s41746-025-01591-5.pdf",
+   "license": "cc-by-nc-nd",
+   "pdf_url": "https://www.nature.com/articles/s41746-025-01591-5.pdf",
    "authors": [
     "Anshu Ankolekar",
     "Sebastian Daniel Boie",
@@ -19673,6 +19949,8 @@
    "landing_url": "https://doi.org/10.1056/aioa2400937",
    "is_oa": true,
    "oa_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/12311810",
+   "license": null,
+   "pdf_url": null,
    "authors": [
     "Raffi Hagopian",
     "Timothy Strebel",
@@ -19815,6 +20093,8 @@
    "landing_url": "https://doi.org/10.3233/shti250351",
    "is_oa": true,
    "oa_url": "https://ebooks.iospress.nl/pdf/doi/10.3233/SHTI250351",
+   "license": "cc-by-nc",
+   "pdf_url": "https://ebooks.iospress.nl/pdf/doi/10.3233/SHTI250351",
    "authors": [
     "Ekaterina S. Akhmad",
     "Daniël Slob",
@@ -19952,6 +20232,8 @@
    "landing_url": "https://doi.org/10.3233/shti250324",
    "is_oa": true,
    "oa_url": "https://ebooks.iospress.nl/pdf/doi/10.3233/SHTI250324",
+   "license": "cc-by-nc",
+   "pdf_url": "https://ebooks.iospress.nl/pdf/doi/10.3233/SHTI250324",
    "authors": [
     "Johan van Soest",
     "Luis Sanchez Gomez",
@@ -20073,6 +20355,8 @@
    "landing_url": "https://doi.org/10.3233/shti250631",
    "is_oa": true,
    "oa_url": "https://ebooks.iospress.nl/pdf/doi/10.3233/SHTI250631",
+   "license": "cc-by-nc",
+   "pdf_url": "https://ebooks.iospress.nl/pdf/doi/10.3233/SHTI250631",
    "authors": [
     "Robin Pasman",
     "F. Jacobs",
@@ -20142,6 +20426,8 @@
    "landing_url": "https://doi.org/10.3233/shti250407",
    "is_oa": true,
    "oa_url": "https://ebooks.iospress.nl/pdf/doi/10.3233/SHTI250407",
+   "license": "cc-by-nc",
+   "pdf_url": "https://ebooks.iospress.nl/pdf/doi/10.3233/SHTI250407",
    "authors": [
     "Joshi Hogenboom",
     "Aiara Lobo Gomes",
@@ -20261,6 +20547,8 @@
    "landing_url": "https://doi.org/10.1016/j.clnesp.2025.04.009",
    "is_oa": false,
    "oa_url": null,
+   "license": null,
+   "pdf_url": null,
    "authors": [
     "Koen C H A Verkoulen",
     "Aimée J P M Franssen",
@@ -20340,6 +20628,8 @@
    "landing_url": "https://doi.org/10.1016/j.landig.2025.03.002",
    "is_oa": true,
    "oa_url": "https://doi.org/10.1016/j.landig.2025.03.002",
+   "license": "cc-by-nc-nd",
+   "pdf_url": null,
    "authors": [
     "Dennis Bontempi",
     "Osbert C. Zalay",
@@ -20552,6 +20842,8 @@
    "landing_url": "https://research.rug.nl/en/publications/0fead051-d980-447f-998e-3fa3faddadc0",
    "is_oa": false,
    "oa_url": null,
+   "license": null,
+   "pdf_url": null,
    "authors": [
     "Leroy Volmer",
     "Ananya Choudhury",
@@ -20708,6 +21000,8 @@
    "landing_url": "https://doi.org/10.1016/s0016-5085(25)01611-7",
    "is_oa": true,
    "oa_url": "https://www.gastrojournal.org/article/S0016-5085(25)01611-7/pdf",
+   "license": null,
+   "pdf_url": "https://www.gastrojournal.org/article/S0016-5085(25)01611-7/pdf",
    "authors": [
     "Michiel Thomas Jan Bak",
     "Karlijn Demers",
@@ -20831,6 +21125,8 @@
    "landing_url": "https://doi.org/10.1016/s0167-8140(25)00270-1",
    "is_oa": false,
    "oa_url": null,
+   "license": null,
+   "pdf_url": null,
    "authors": [
     "Fiona Ho",
     "Rachelle Swart",
@@ -20891,6 +21187,8 @@
    "landing_url": "https://doi.org/10.1016/s0167-8140(25)01096-5",
    "is_oa": false,
    "oa_url": null,
+   "license": null,
+   "pdf_url": null,
    "authors": [
     "Varsha Gouthamchand",
     "Benedetta Gottardelli",
@@ -21041,6 +21339,8 @@
    "landing_url": "https://doi.org/10.1016/s0167-8140(25)01135-1",
    "is_oa": false,
    "oa_url": null,
+   "license": null,
+   "pdf_url": null,
    "authors": [
     "Ming‐Hua Li",
     "Qing Gu",
@@ -21122,6 +21422,8 @@
    "landing_url": "https://doi.org/10.1016/s0167-8140(25)01292-7",
    "is_oa": true,
    "oa_url": "https://research.tilburguniversity.edu/en/publications/57161b87-570a-4ad5-be14-5ce4c16c481a",
+   "license": "other-oa",
+   "pdf_url": null,
    "authors": [
     "Claudia J.W. Offermann",
     "Anniek van Hienen",
@@ -21206,6 +21508,8 @@
    "landing_url": "https://doi.org/10.1016/s0167-8140(25)01885-7",
    "is_oa": false,
    "oa_url": null,
+   "license": null,
+   "pdf_url": null,
    "authors": [
     "Madeline S. Therrien",
     "Simone M.B. Mingels",
@@ -21278,6 +21582,8 @@
    "landing_url": "https://doi.org/10.1016/s0167-8140(25)01983-8",
    "is_oa": false,
    "oa_url": null,
+   "license": null,
+   "pdf_url": null,
    "authors": [
     "Leroy Volmer",
     "Ananya Choudhury",
@@ -21434,6 +21740,8 @@
    "landing_url": "https://doi.org/10.1016/j.ctro.2026.101163",
    "is_oa": true,
    "oa_url": "https://www.ctro.science/article/S2405-6308(26)00058-3/pdf",
+   "license": "cc-by",
+   "pdf_url": "https://www.ctro.science/article/S2405-6308(26)00058-3/pdf",
    "authors": [
     "Charlotte Leonore Deijen",
     "Maaike Berbée",
@@ -21538,6 +21846,8 @@
    "landing_url": "https://doi.org/10.1016/s0167-8140(25)04146-5",
    "is_oa": false,
    "oa_url": null,
+   "license": null,
+   "pdf_url": null,
    "authors": [
     "Andre L.A.J. Dekker"
    ],
@@ -21583,6 +21893,8 @@
    "landing_url": "https://doi.org/10.1016/s0167-8140(25)01756-6",
    "is_oa": false,
    "oa_url": null,
+   "license": null,
+   "pdf_url": null,
    "authors": [
     "Behzad Rezaeifar",
     "Wouter R. P. H. van de Worp",
@@ -21661,6 +21973,8 @@
    "landing_url": "https://doi.org/10.1016/s0167-8140(25)01651-2",
    "is_oa": false,
    "oa_url": null,
+   "license": null,
+   "pdf_url": null,
    "authors": [
     "Wenjie Liang",
     "Rutger van Mierlo",
@@ -21766,6 +22080,8 @@
    "landing_url": "https://doi.org/10.1101/2025.04.26.25326466",
    "is_oa": true,
    "oa_url": "https://www.medrxiv.org/content/medrxiv/early/2025/04/28/2025.04.26.25326466.full.pdf",
+   "license": "cc-by-nc-nd",
+   "pdf_url": "https://www.medrxiv.org/content/medrxiv/early/2025/04/28/2025.04.26.25326466.full.pdf",
    "authors": [
     "Amal Joseph Varghese",
     "Miracle Pathinathan",
@@ -21883,6 +22199,8 @@
    "landing_url": "https://doi.org/10.1158/1538-7445.am2025-3372",
    "is_oa": false,
    "oa_url": null,
+   "license": null,
+   "pdf_url": null,
    "authors": [
     "Alberto Traverso",
     "Giovanni Tonon",
@@ -21961,6 +22279,8 @@
    "landing_url": "https://doi.org/10.2196/66068",
    "is_oa": true,
    "oa_url": "https://s3.ca-central-1.amazonaws.com/assets.jmir.org/assets/preprints/preprint-66068-accepted.pdf",
+   "license": "cc-by",
+   "pdf_url": "https://s3.ca-central-1.amazonaws.com/assets.jmir.org/assets/preprints/preprint-66068-accepted.pdf",
    "authors": [
     "Rutger F. R. van Mierlo",
     "Bart Scheenstra",
@@ -22090,6 +22410,8 @@
    "landing_url": "https://doi.org/10.1016/j.radonc.2025.110874",
    "is_oa": true,
    "oa_url": "https://www.thegreenjournal.com/article/S0167-8140(25)00169-0/pdf",
+   "license": "cc-by",
+   "pdf_url": "https://www.thegreenjournal.com/article/S0167-8140(25)00169-0/pdf",
    "authors": [
     "Fiona Ho",
     "Rachelle Swart",
@@ -22263,6 +22585,8 @@
    "landing_url": "https://doi.org/10.1002/cam4.70880",
    "is_oa": true,
    "oa_url": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1002/cam4.70880",
+   "license": "cc-by",
+   "pdf_url": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1002/cam4.70880",
    "authors": [
     "Yolba Smit",
     "Lynn Verweij",
@@ -22337,6 +22661,8 @@
    "landing_url": "https://doi.org/10.1002/acm2.70071",
    "is_oa": true,
    "oa_url": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1002/acm2.70071",
+   "license": "cc-by",
+   "pdf_url": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1002/acm2.70071",
    "authors": [
     "Luca M. Heising",
     "Frank Verhaegen",
@@ -22423,6 +22749,8 @@
    "landing_url": "https://doi.org/10.2196/70970",
    "is_oa": true,
    "oa_url": "https://www.jmir.org/2025/1/e70970/PDF",
+   "license": "cc-by",
+   "pdf_url": "https://www.jmir.org/2025/1/e70970/PDF",
    "authors": [
     "Michaela Senek",
     "David Drummond",
@@ -22504,6 +22832,8 @@
    "landing_url": "https://doi.org/10.2196/66616",
    "is_oa": true,
    "oa_url": "https://www.jmir.org/2025/1/e66616/PDF",
+   "license": "cc-by",
+   "pdf_url": "https://www.jmir.org/2025/1/e66616/PDF",
    "authors": [
     "Daniel Kapitan",
     "Femke Heddema",
@@ -22581,6 +22911,8 @@
    "landing_url": "https://doi.org/10.1016/j.bspc.2025.107793",
    "is_oa": true,
    "oa_url": "https://cris.maastrichtuniversity.nl/ws/files/254321047/Dekker-2025-Data-efficient-federated-semi-supervised-learning.pdf",
+   "license": "other-oa",
+   "pdf_url": "https://cris.maastrichtuniversity.nl/ws/files/254321047/Dekker-2025-Data-efficient-federated-semi-supervised-learning.pdf",
    "authors": [
     "Weixing Li",
     "Xipeng Pan",
@@ -22710,6 +23042,8 @@
    "landing_url": "https://doi.org/10.1088/1361-6560/adbff1",
    "is_oa": false,
    "oa_url": null,
+   "license": null,
+   "pdf_url": null,
    "authors": [
     "Qingxin Wang",
     "Zhongqiu Wang",
@@ -22822,6 +23156,8 @@
    "landing_url": "https://doi.org/10.1016/s1556-0864(25)00424-1",
    "is_oa": true,
    "oa_url": "https://www.jto.org/article/S1556-0864(25)00424-1/pdf",
+   "license": null,
+   "pdf_url": "https://www.jto.org/article/S1556-0864(25)00424-1/pdf",
    "authors": [
     "Jie Zhou",
     "Fariba Tohidinezhad",
@@ -22915,6 +23251,8 @@
    "landing_url": "https://doi.org/10.1136/jitc-2024-011149",
    "is_oa": true,
    "oa_url": "https://jitc.bmj.com/content/13/3/e011149.full.pdf",
+   "license": "cc-by-nc",
+   "pdf_url": "https://jitc.bmj.com/content/13/3/e011149.full.pdf",
    "authors": [
     "Zhen Zhang",
     "Tianchen Luo",
@@ -23055,6 +23393,8 @@
    "landing_url": "https://doi.org/10.1016/j.esmoop.2025.104478",
    "is_oa": true,
    "oa_url": "https://doi.org/10.1016/j.esmoop.2025.104478",
+   "license": "cc-by",
+   "pdf_url": null,
    "authors": [
     "Urška Košir",
     "Flora Lysen",
@@ -23139,6 +23479,8 @@
    "landing_url": "https://doi.org/10.1101/2025.02.22.25321981",
    "is_oa": true,
    "oa_url": "https://doi.org/10.1101/2025.02.22.25321981",
+   "license": "cc-by-nc-nd",
+   "pdf_url": null,
    "authors": [
     "Åsa Kristina Öjlert",
     "Pooja Jain",
@@ -23281,6 +23623,8 @@
    "landing_url": "https://doi.org/10.1186/s12883-024-03995-4",
    "is_oa": true,
    "oa_url": "https://bmcneurol.biomedcentral.com/counter/pdf/10.1186/s12883-024-03995-4",
+   "license": "cc-by-nc-nd",
+   "pdf_url": "https://bmcneurol.biomedcentral.com/counter/pdf/10.1186/s12883-024-03995-4",
    "authors": [
     "Julie Elisabeth Oomens",
     "Justine E. F. Moonen",
@@ -23456,6 +23800,8 @@
    "landing_url": "https://doi.org/10.1016/j.breast.2025.104247",
    "is_oa": true,
    "oa_url": "https://doi.org/10.1016/j.breast.2025.104247",
+   "license": "cc-by-nc-nd",
+   "pdf_url": null,
    "authors": [
     "T. Rattay",
     "Karolien Verhoeven",
@@ -23564,6 +23910,8 @@
    "landing_url": "https://doi.org/10.1016/j.ijgc.2024.100772",
    "is_oa": true,
    "oa_url": "https://doi.org/10.1016/j.ijgc.2024.100772",
+   "license": null,
+   "pdf_url": null,
    "authors": [
     "Xiaoman Jin",
     "Anouk A. S. van den Bosch",
@@ -23638,6 +23986,8 @@
    "landing_url": "https://doi.org/10.1002/cam4.70458",
    "is_oa": true,
    "oa_url": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1002/cam4.70458",
+   "license": "cc-by",
+   "pdf_url": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1002/cam4.70458",
    "authors": [
     "Margrethe Bang Henriksen",
     "Florian van Daalen",
@@ -23729,6 +24079,8 @@
    "landing_url": "https://doi.org/10.31219/osf.io/7skmc_v2",
    "is_oa": true,
    "oa_url": "https://doi.org/10.31219/osf.io/7skmc_v2",
+   "license": "cc-by",
+   "pdf_url": null,
    "authors": [
     "Rianne Fijten",
     "Eva Schmidt",
@@ -23780,6 +24132,8 @@
    "landing_url": "https://doi.org/10.1101/2025.01.29.25321214",
    "is_oa": true,
    "oa_url": "https://www.medrxiv.org/content/medrxiv/early/2025/01/29/2025.01.29.25321214.full.pdf",
+   "license": "cc-by",
+   "pdf_url": "https://www.medrxiv.org/content/medrxiv/early/2025/01/29/2025.01.29.25321214.full.pdf",
    "authors": [
     "Varsha Gouthamchand",
     "Benedetta Gottardelli",
@@ -23998,6 +24352,8 @@
    "landing_url": "https://doi.org/10.1186/s13014-025-02583-1",
    "is_oa": true,
    "oa_url": "https://ro-journal.biomedcentral.com/counter/pdf/10.1186/s13014-025-02583-1",
+   "license": "cc-by",
+   "pdf_url": "https://ro-journal.biomedcentral.com/counter/pdf/10.1186/s13014-025-02583-1",
    "authors": [
     "Yan Meng",
     "Zhen Zhang",
@@ -24118,6 +24474,8 @@
    "landing_url": "https://doi.org/10.1007/s13347-024-00834-9",
    "is_oa": true,
    "oa_url": "https://link.springer.com/content/pdf/10.1007/s13347-024-00834-9.pdf",
+   "license": "cc-by",
+   "pdf_url": "https://link.springer.com/content/pdf/10.1007/s13347-024-00834-9.pdf",
    "authors": [
     "Eva Schmidt",
     "Paul Martin Putora",
@@ -24177,6 +24535,8 @@
    "landing_url": "https://www.sciencedirect.com/science/article/pii/S0957417424032317/pdf",
    "is_oa": true,
    "oa_url": "https://cris.maastrichtuniversity.nl/ws/files/242907013/Wee-2025-Label-efficient-transformer-based-framework.pdf",
+   "license": "other-oa",
+   "pdf_url": "https://cris.maastrichtuniversity.nl/ws/files/242907013/Wee-2025-Label-efficient-transformer-based-framework.pdf",
    "authors": [
     "Zhenbing Liu",
     "Zhenbing Liu",
@@ -24312,6 +24672,8 @@
    "landing_url": "https://cris.maastrichtuniversity.nl/en/publications/e6c735b5-c888-41b6-ad2a-7edc7566d68d",
    "is_oa": true,
    "oa_url": "https://cris.maastrichtuniversity.nl/en/publications/e6c735b5-c888-41b6-ad2a-7edc7566d68d",
+   "license": "cc-by",
+   "pdf_url": null,
    "authors": [
     "Yomi Okegunna",
     "Maija Utriaine",
@@ -24408,6 +24770,8 @@
    "landing_url": "https://doi.org/10.2139/ssrn.5900624",
    "is_oa": true,
    "oa_url": "https://doi.org/10.2139/ssrn.5900624",
+   "license": null,
+   "pdf_url": null,
    "authors": [
     "Madeline Therrien",
     "Simone  M.B. Mingels",
@@ -24490,6 +24854,8 @@
    "landing_url": "https://doi.org/10.26481/dis.20250915ac",
    "is_oa": true,
    "oa_url": "https://cris.maastrichtuniversity.nl/files/271184714/c8818.pdf",
+   "license": "other-oa",
+   "pdf_url": "https://cris.maastrichtuniversity.nl/files/271184714/c8818.pdf",
    "authors": [
     "Ananya Choudhury"
    ],
@@ -24539,6 +24905,8 @@
    "landing_url": "https://doi.org/10.1093/bjrai/ubaf008",
    "is_oa": true,
    "oa_url": "https://academic.oup.com/bjrai/advance-article-pdf/doi/10.1093/bjrai/ubaf008/63769619/ubaf008.pdf",
+   "license": "cc-by",
+   "pdf_url": "https://academic.oup.com/bjrai/advance-article-pdf/doi/10.1093/bjrai/ubaf008/63769619/ubaf008.pdf",
    "authors": [
     "Varsha Gouthamchand",
     "Louise de Almeida Ferreira Fonseca",
@@ -24687,6 +25055,8 @@
    "landing_url": "https://doi.org/10.1093/ecco-jcc/jjae190.0257",
    "is_oa": true,
    "oa_url": "https://academic.oup.com/ecco-jcc/article-pdf/19/Supplement_1/i450/61541456/jjae190.0257.pdf",
+   "license": null,
+   "pdf_url": "https://academic.oup.com/ecco-jcc/article-pdf/19/Supplement_1/i450/61541456/jjae190.0257.pdf",
    "authors": [
     "M Cloots",
     "Evelien M. B. Hendrix",
@@ -24827,6 +25197,8 @@
    "landing_url": "https://doi.org/10.1093/ecco-jcc/jjae190.0576",
    "is_oa": false,
    "oa_url": null,
+   "license": null,
+   "pdf_url": null,
    "authors": [
     "M Bak",
     "Karlijn Demers",
@@ -24958,6 +25330,8 @@
    "landing_url": "https://doi.org/10.1093/ecco-jcc/jjae190.1130",
    "is_oa": true,
    "oa_url": "https://academic.oup.com/ecco-jcc/article-pdf/19/Supplement_1/i1783/61545310/jjae190.1130.pdf",
+   "license": null,
+   "pdf_url": "https://academic.oup.com/ecco-jcc/article-pdf/19/Supplement_1/i1783/61545310/jjae190.1130.pdf",
    "authors": [
     "Yomi Okegunna",
     "M Utriainen",
@@ -25073,6 +25447,8 @@
    "landing_url": "https://doi.org/10.1093/ecco-jcc/jjae190.0962",
    "is_oa": true,
    "oa_url": "https://academic.oup.com/ecco-jcc/article-pdf/19/Supplement_1/i1517/61545703/jjae190.0962.pdf",
+   "license": null,
+   "pdf_url": "https://academic.oup.com/ecco-jcc/article-pdf/19/Supplement_1/i1517/61545703/jjae190.0962.pdf",
    "authors": [
     "J Zhang",
     "Rianne Fijten",
@@ -25187,6 +25563,8 @@
    "landing_url": "https://doi.org/10.1016/j.jcpo.2024.100537",
    "is_oa": true,
    "oa_url": "https://cris.maastrichtuniversity.nl/en/publications/d00e214a-7aeb-4d0a-b63b-af48f14e2740",
+   "license": "other-oa",
+   "pdf_url": null,
    "authors": [
     "Yuqin Liang",
     "Paolo Bajardi",
@@ -25322,6 +25700,8 @@
    "landing_url": "https://doi.org/10.1200/cci.24.00101",
    "is_oa": true,
    "oa_url": "https://ascopubs.org/doi/pdf/10.1200/CCI.24.00101",
+   "license": "cc-by-nc-nd",
+   "pdf_url": "https://ascopubs.org/doi/pdf/10.1200/CCI.24.00101",
    "authors": [
     "Rachelle Swart",
     "Liesbeth Jorinne Boersma",
@@ -25411,6 +25791,8 @@
    "landing_url": "https://doi.org/10.1088/1741-2552/ad9ad0",
    "is_oa": true,
    "oa_url": "https://doi.org/10.1088/1741-2552/ad9ad0",
+   "license": "cc-by",
+   "pdf_url": null,
    "authors": [
     "Petros Koutsouvelis",
     "Bartlomiej Chybowski",
@@ -25476,6 +25858,8 @@
    "landing_url": "https://doi.org/10.1200/cci.24.00056",
    "is_oa": true,
    "oa_url": "https://doi.org/10.1200/cci.24.00056",
+   "license": "cc-by-nc-nd",
+   "pdf_url": null,
    "authors": [
     "Joshi Hogenboom",
     "Aiara Lobo Gomes",
@@ -25605,6 +25989,8 @@
    "landing_url": "https://doi.org/10.3390/cancers16233989",
    "is_oa": true,
    "oa_url": "https://www.mdpi.com/2072-6694/16/23/3989/pdf?version=1732775138",
+   "license": "cc-by",
+   "pdf_url": "https://www.mdpi.com/2072-6694/16/23/3989/pdf?version=1732775138",
    "authors": [
     "Florian van Daalen",
     "Margrethe Bang Henriksen",
@@ -25698,6 +26084,8 @@
    "landing_url": "https://doi.org/10.2196/60095",
    "is_oa": true,
    "oa_url": "https://formative.jmir.org/2025/1/e60095/PDF",
+   "license": "cc-by",
+   "pdf_url": "https://formative.jmir.org/2025/1/e60095/PDF",
    "authors": [
     "Sander Puts",
     "Catharina M.L. Zegers",
@@ -25773,6 +26161,8 @@
    "landing_url": "https://doi.org/10.1016/j.ctro.2024.100897",
    "is_oa": true,
    "oa_url": "https://www.ctro.science/article/S2405-6308(24)00174-5/pdf",
+   "license": "cc-by",
+   "pdf_url": "https://www.ctro.science/article/S2405-6308(24)00174-5/pdf",
    "authors": [
     "Anniek van Hienen",
     "Claudia J.W. Offermann",
@@ -25851,6 +26241,8 @@
    "landing_url": "https://doi.org/10.1016/j.clnesp.2024.11.004",
    "is_oa": true,
    "oa_url": "https://doi.org/10.1016/j.clnesp.2024.11.004",
+   "license": "cc-by",
+   "pdf_url": null,
    "authors": [
     "Merel R. Aberle",
     "Mariëlle M.E. Coolsen",
@@ -25974,6 +26366,8 @@
    "landing_url": "https://doi.org/10.1016/j.esmorw.2024.100089",
    "is_oa": true,
    "oa_url": "https://www.esmorwd.org/article/S2949-8201(24)00067-5/pdf",
+   "license": "cc-by",
+   "pdf_url": "https://www.esmorwd.org/article/S2949-8201(24)00067-5/pdf",
    "authors": [
     "Matthew Craddock",
     "Clare E. Dempsey",
@@ -26118,6 +26512,8 @@
    "landing_url": "https://doi.org/10.1007/s11547-024-01919-3",
    "is_oa": true,
    "oa_url": "https://cris.maastrichtuniversity.nl/ws/files/235275252/Dekker-2024-Improved-prognostication-of-overall-survival-after-radiotherapy.pdf",
+   "license": "other-oa",
+   "pdf_url": "https://cris.maastrichtuniversity.nl/ws/files/235275252/Dekker-2024-Improved-prognostication-of-overall-survival-after-radiotherapy.pdf",
    "authors": [
     "Tianchen Luo",
     "Yan Meng",
@@ -26258,6 +26654,8 @@
    "landing_url": "https://doi.org/10.1186/s12884-024-06885-2",
    "is_oa": true,
    "oa_url": "https://bmcpregnancychildbirth.biomedcentral.com/counter/pdf/10.1186/s12884-024-06885-2",
+   "license": "cc-by-nc-nd",
+   "pdf_url": "https://bmcpregnancychildbirth.biomedcentral.com/counter/pdf/10.1186/s12884-024-06885-2",
    "authors": [
     "Girma Gilano",
     "Eshetu Andarge",
@@ -26351,6 +26749,8 @@
    "landing_url": "https://doi.org/10.1101/2024.10.22.24315007",
    "is_oa": true,
    "oa_url": "https://www.medrxiv.org/content/medrxiv/early/2024/10/22/2024.10.22.24315007.full.pdf",
+   "license": "cc-by",
+   "pdf_url": "https://www.medrxiv.org/content/medrxiv/early/2024/10/22/2024.10.22.24315007.full.pdf",
    "authors": [
     "Varsha Gouthamchand",
     "Louise de Almeida Ferreira Fonseca",
@@ -26495,6 +26895,8 @@
    "landing_url": "https://doi.org/10.2196/60847",
    "is_oa": true,
    "oa_url": "https://ai.jmir.org/2025/1/e60847/PDF",
+   "license": "cc-by",
+   "pdf_url": "https://ai.jmir.org/2025/1/e60847/PDF",
    "authors": [
     "Ananya Choudhury",
     "Leroy Volmer",
@@ -26667,6 +27069,8 @@
    "landing_url": "https://doi.org/10.1016/j.jtocrr.2024.100740",
    "is_oa": true,
    "oa_url": "https://www.jtocrr.org/article/S2666-3643(24)00110-3/pdf",
+   "license": "cc-by",
+   "pdf_url": "https://www.jtocrr.org/article/S2666-3643(24)00110-3/pdf",
    "authors": [
     "Mandy Jongbloed",
     "Martina Bortolot",
@@ -26749,6 +27153,8 @@
    "landing_url": "https://doi.org/10.1016/j.scib.2024.10.005",
    "is_oa": true,
    "oa_url": "https://doi.org/10.1016/j.scib.2024.10.005",
+   "license": "cc-by",
+   "pdf_url": null,
    "authors": [
     "Xiaobo Chen",
     "Yanqi Huang",
@@ -26872,6 +27278,8 @@
    "landing_url": "https://osf.io/ghjs6",
    "is_oa": false,
    "oa_url": null,
+   "license": null,
+   "pdf_url": null,
    "authors": [
     "Vera Ellen Heininga",
     "Olmo Robin van den Akker",
@@ -26986,6 +27394,8 @@
    "landing_url": "https://doi.org/10.1016/j.ijrobp.2024.07.1451",
    "is_oa": false,
    "oa_url": null,
+   "license": null,
+   "pdf_url": null,
    "authors": [
     "Y. Liang",
     "Jordan Rainbird",
@@ -27083,6 +27493,8 @@
    "landing_url": "https://doi.org/10.1016/j.radonc.2024.110544",
    "is_oa": true,
    "oa_url": "https://www.thegreenjournal.com/article/S0167-8140(24)03522-9/pdf",
+   "license": "cc-by",
+   "pdf_url": "https://www.thegreenjournal.com/article/S0167-8140(24)03522-9/pdf",
    "authors": [
     "Fariba Tohidinezhad",
     "Leonard Nürnberg",
@@ -27269,6 +27681,8 @@
    "landing_url": "https://doi.org/10.1088/1361-6560/ad7d5b",
    "is_oa": true,
    "oa_url": "https://doi.org/10.1088/1361-6560/ad7d5b",
+   "license": "cc-by",
+   "pdf_url": null,
    "authors": [
     "Lars H B A Daenen",
     "Wouter R. P. H. van de Worp",
@@ -27356,6 +27770,8 @@
    "landing_url": "http://arxiv.org/abs/2410.01828",
    "is_oa": true,
    "oa_url": "https://arxiv.org/pdf/2410.01828",
+   "license": "cc-by",
+   "pdf_url": "https://arxiv.org/pdf/2410.01828",
    "authors": [
     "Glazunova, Olga",
     "Cecile J A Wolfs",
@@ -27417,6 +27833,8 @@
    "landing_url": "http://dx.doi.org/10.21203/rs.3.rs-4938500/v1",
    "is_oa": true,
    "oa_url": "https://www.researchsquare.com/article/rs-4938500/latest.pdf",
+   "license": "cc-by",
+   "pdf_url": "https://www.researchsquare.com/article/rs-4938500/latest.pdf",
    "authors": [
     "Esther E. Bron",
     "Pedro Mateus",
@@ -27541,6 +27959,8 @@
    "landing_url": "http://arxiv.org/abs/2409.10057",
    "is_oa": true,
    "oa_url": "https://arxiv.org/pdf/2409.10057",
+   "license": "cc-by",
+   "pdf_url": "https://arxiv.org/pdf/2409.10057",
    "authors": [
     "Florian van Daalen",
     "Lianne Ippel",
@@ -27601,6 +28021,8 @@
    "landing_url": "https://doi.org/10.1093/bjr/tqae191",
    "is_oa": true,
    "oa_url": "https://doi.org/10.1093/bjr/tqae191",
+   "license": "cc-by-nc",
+   "pdf_url": null,
    "authors": [
     "David P.J. van Dijk",
     "Leroy Volmer",
@@ -27803,6 +28225,8 @@
    "landing_url": "https://doi.org/10.1183/13993003.congress-2024.oa1054",
    "is_oa": false,
    "oa_url": null,
+   "license": null,
+   "pdf_url": null,
    "authors": [
     "Michaela Senek",
     "David Drummond",
@@ -27881,6 +28305,8 @@
    "landing_url": "http://arxiv.org/abs/2409.01235",
    "is_oa": true,
    "oa_url": "https://arxiv.org/pdf/2409.01235",
+   "license": "cc-by",
+   "pdf_url": "https://arxiv.org/pdf/2409.01235",
    "authors": [
     "Pedro Mateus",
     "Swier J.F. Garst",
@@ -28001,6 +28427,8 @@
    "landing_url": "https://doi.org/10.1177/02841851241268463",
    "is_oa": true,
    "oa_url": "https://cris.maastrichtuniversity.nl/en/publications/816d7ba2-218d-4dad-9570-9dec70282b24",
+   "license": "other-oa",
+   "pdf_url": null,
    "authors": [
     "Pengfei Sun",
     "Ruifang Guo",
@@ -28116,6 +28544,8 @@
    "landing_url": "https://doi.org/10.1016/j.annonc.2024.08.1419",
    "is_oa": true,
    "oa_url": "https://www.annalsofoncology.org/article/S0923-7534(24)02938-7/pdf",
+   "license": null,
+   "pdf_url": "https://www.annalsofoncology.org/article/S0923-7534(24)02938-7/pdf",
    "authors": [
     "Åsa Kristina Öjlert",
     "Pooja Jain",
@@ -28235,6 +28665,8 @@
    "landing_url": "https://doi.org/10.1136/jitc-2024-009348",
    "is_oa": true,
    "oa_url": "https://jitc.bmj.com/content/12/9/e009348.full.pdf",
+   "license": "cc-by-nc",
+   "pdf_url": "https://jitc.bmj.com/content/12/9/e009348.full.pdf",
    "authors": [
     "Guanchao Ye",
     "Guangyao Wu",
@@ -28360,6 +28792,8 @@
    "landing_url": "https://doi.org/10.1016/j.ejmp.2024.103586",
    "is_oa": false,
    "oa_url": null,
+   "license": null,
+   "pdf_url": null,
    "authors": [
     "Petros Kalendralis",
     "Samuel M. H. Luk",
@@ -28435,6 +28869,8 @@
    "landing_url": "http://dx.doi.org/10.3233/shti240664",
    "is_oa": true,
    "oa_url": "http://dx.doi.org/10.3233/shti240664",
+   "license": "cc-by-nc",
+   "pdf_url": null,
    "authors": [
     "Kees C.W.J. Ebben",
     "Lonneke R.E. Vermeulen",
@@ -28498,6 +28934,8 @@
    "landing_url": "http://dx.doi.org/10.3233/shti240662",
    "is_oa": true,
    "oa_url": "http://dx.doi.org/10.3233/shti240662",
+   "license": "cc-by-nc",
+   "pdf_url": null,
    "authors": [
     "Kees C.W.J. Ebben",
     "Thijs van Vegchel",
@@ -28561,6 +28999,8 @@
    "landing_url": "https://doi.org/10.1038/s41598-024-69006-1",
    "is_oa": true,
    "oa_url": "https://www.nature.com/articles/s41598-024-69006-1.pdf",
+   "license": "cc-by",
+   "pdf_url": "https://www.nature.com/articles/s41598-024-69006-1.pdf",
    "authors": [
     "Nicola L. Barclay",
     "Edward Burn",
@@ -28896,6 +29336,8 @@
    "landing_url": "https://doi.org/10.1038/s41467-024-51202-2",
    "is_oa": true,
    "oa_url": "https://doi.org/10.1038/s41467-024-51202-2",
+   "license": "cc-by",
+   "pdf_url": null,
    "authors": [
     "Dennis Bontempi",
     "Leonard Nürnberg",
@@ -29068,6 +29510,8 @@
    "landing_url": "https://doi.org/10.1101/2024.08.08.24311681",
    "is_oa": true,
    "oa_url": "https://doi.org/10.1101/2024.08.08.24311681",
+   "license": "cc-by-nc",
+   "pdf_url": null,
    "authors": [
     "Anshu Ankolekar",
     "Sebastian Daniel Boie",
@@ -29158,6 +29602,8 @@
    "landing_url": "http://arxiv.org/abs/2408.05249",
    "is_oa": true,
    "oa_url": "https://arxiv.org/pdf/2408.05249",
+   "license": "cc-by",
+   "pdf_url": "https://arxiv.org/pdf/2408.05249",
    "authors": [
     "Anshu Ankolekar",
     "Sebastian Daniel Boie",
@@ -29248,6 +29694,8 @@
    "landing_url": "https://doi.org/10.1016/j.clnesp.2024.07.1054",
    "is_oa": true,
    "oa_url": "http://clinicalnutritionespen.com/article/S2405457724012634/pdf",
+   "license": "cc-by",
+   "pdf_url": "http://clinicalnutritionespen.com/article/S2405457724012634/pdf",
    "authors": [
     "Nadira R. Querido",
     "Martijn J.L. Bours",
@@ -29329,6 +29777,8 @@
    "landing_url": "https://doi.org/10.1088/1361-6560/ad69f6",
    "is_oa": true,
    "oa_url": "https://doi.org/10.1088/1361-6560/ad69f6",
+   "license": "cc-by",
+   "pdf_url": null,
    "authors": [
     "Viacheslav Iarkin",
     "Evelyn E.C. de Jong",
@@ -29394,6 +29844,8 @@
    "landing_url": "https://doi.org/10.3389/fcvm.2024.1387148",
    "is_oa": true,
    "oa_url": "https://doi.org/10.3389/fcvm.2024.1387148",
+   "license": "cc-by",
+   "pdf_url": null,
    "authors": [
     "Rutger F. R. van Mierlo",
     "V Houben",
@@ -29468,6 +29920,8 @@
    "landing_url": "https://doi.org/10.1186/s12905-024-03270-1",
    "is_oa": true,
    "oa_url": "https://bmcwomenshealth.biomedcentral.com/counter/pdf/10.1186/s12905-024-03270-1",
+   "license": "cc-by",
+   "pdf_url": "https://bmcwomenshealth.biomedcentral.com/counter/pdf/10.1186/s12905-024-03270-1",
    "authors": [
     "Zhixiang Wang",
     "Huiqiao Gao",
@@ -29618,6 +30072,8 @@
    "landing_url": "http://dx.doi.org/10.21203/rs.3.rs-4644605/v1",
    "is_oa": true,
    "oa_url": "http://dx.doi.org/10.21203/rs.3.rs-4644605/v1",
+   "license": "cc-by",
+   "pdf_url": null,
    "authors": [
     "Leroy Volmer",
     "Ananya Choudhury",
@@ -29743,6 +30199,8 @@
    "landing_url": "http://dx.doi.org/10.5603/rpor.101093",
    "is_oa": true,
    "oa_url": "https://journals.viamedica.pl/rpor/article/download/101093/78538",
+   "license": "cc-by-nc-nd",
+   "pdf_url": "https://journals.viamedica.pl/rpor/article/download/101093/78538",
    "authors": [
     "T. Piotrowski",
     "Adam Ryczkowski",
@@ -29817,6 +30275,8 @@
    "landing_url": "http://dx.doi.org/10.21203/rs.3.rs-4443132/v1",
    "is_oa": true,
    "oa_url": "https://www.researchsquare.com/article/rs-4443132/latest.pdf",
+   "license": "cc-by",
+   "pdf_url": "https://www.researchsquare.com/article/rs-4443132/latest.pdf",
    "authors": [
     "Sneha Mithun",
     "Umesh B. Sherkhane",
@@ -29931,6 +30391,8 @@
    "landing_url": "https://doi.org/10.1002/jcsm.13520",
    "is_oa": true,
    "oa_url": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1002/jcsm.13520",
+   "license": "cc-by",
+   "pdf_url": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1002/jcsm.13520",
    "authors": [
     "Wouter R. P. H. van de Worp",
     "Jan Theys",
@@ -30002,6 +30464,8 @@
    "landing_url": "https://doi.org/10.1136/bmjebm-2024-sdc.275",
    "is_oa": false,
    "oa_url": null,
+   "license": null,
+   "pdf_url": null,
    "authors": [
     "Anniek van Hienen",
     "Claudia J.W. Offermann",
@@ -30084,6 +30548,8 @@
    "landing_url": "http://dx.doi.org/10.1186/s12911-024-02584-2",
    "is_oa": true,
    "oa_url": "http://dx.doi.org/10.1186/s12911-024-02584-2",
+   "license": "cc-by",
+   "pdf_url": null,
    "authors": [
     "Esther Janssen",
     "Ilona M. Punt",
@@ -30184,6 +30650,8 @@
    "landing_url": "https://doi.org/10.1016/j.jbo.2024.100614",
    "is_oa": true,
    "oa_url": "https://doi.org/10.1016/j.jbo.2024.100614",
+   "license": "cc-by-nc-nd",
+   "pdf_url": null,
    "authors": [
     "Fan Yang",
     "Ying Feng",
@@ -30288,6 +30756,8 @@
    "landing_url": "https://doi.org/10.1200/cci.24.00054",
    "is_oa": true,
    "oa_url": "https://cris.maastrichtuniversity.nl/en/publications/78c8fea1-ed3f-4f1f-b037-0d8d95413768",
+   "license": "other-oa",
+   "pdf_url": null,
    "authors": [
     "Emily I. Holthuis",
     "Marianne J Heins",
@@ -30366,6 +30836,8 @@
    "landing_url": "https://doi.org/10.1016/j.jbi.2024.104661",
    "is_oa": true,
    "oa_url": "https://doi.org/10.1016/j.jbi.2024.104661",
+   "license": "cc-by",
+   "pdf_url": null,
    "authors": [
     "Pedro Mateus",
     "Justine E. F. Moonen",
@@ -30488,6 +30960,8 @@
    "landing_url": "http://dx.doi.org/10.2196/preprints.60847",
    "is_oa": true,
    "oa_url": "http://dx.doi.org/10.2196/preprints.60847",
+   "license": "cc-by",
+   "pdf_url": null,
    "authors": [
     "Ananya Choudhury",
     "L. Volmer",
@@ -30649,6 +31123,8 @@
    "landing_url": "https://doi.org/10.1001/jamaoncol.2024.1120",
    "is_oa": true,
    "oa_url": "https://cris.maastrichtuniversity.nl/en/publications/50d7305f-19c5-44ee-90ca-ce8395c0e529",
+   "license": "cc-by",
+   "pdf_url": null,
    "authors": [
     "Tafadzwa Lawrence Chaunzwa",
     "Jack M. Qian",
@@ -30800,6 +31276,8 @@
    "landing_url": "https://doi.org/10.3389/fmed.2024.1365501",
    "is_oa": true,
    "oa_url": "https://doi.org/10.3389/fmed.2024.1365501",
+   "license": "cc-by",
+   "pdf_url": null,
    "authors": [
     "Isabelle de Zegher",
     "Kerli Norak",
@@ -30892,6 +31370,8 @@
    "landing_url": "https://doi.org/10.1016/j.csbj.2024.05.014",
    "is_oa": true,
    "oa_url": "http://www.csbj.org/article/S2001037024001600/pdf",
+   "license": "cc-by-nc-nd",
+   "pdf_url": "http://www.csbj.org/article/S2001037024001600/pdf",
    "authors": [
     "Anshu Ankolekar",
     "Lisanne Eppings",
@@ -30976,6 +31456,8 @@
    "landing_url": "https://doi.org/10.1186/s12911-024-02526-y",
    "is_oa": true,
    "oa_url": "https://doi.org/10.1186/s12911-024-02526-y",
+   "license": "cc-by",
+   "pdf_url": null,
    "authors": [
     "Ananya Choudhury",
     "Esther Janssen",
@@ -31088,6 +31570,8 @@
    "landing_url": "https://doi.org/10.1016/s0167-8140(24)02126-1",
    "is_oa": false,
    "oa_url": null,
+   "license": null,
+   "pdf_url": null,
    "authors": [
     "Anniek van Hienen",
     "Claudia J.W. Offermann",
@@ -31154,6 +31638,8 @@
    "landing_url": "https://doi.org/10.1016/s0167-8140(24)01920-0",
    "is_oa": false,
    "oa_url": null,
+   "license": null,
+   "pdf_url": null,
    "authors": [
     "Luca M. Heising",
     "Frank Verhaegen",
@@ -31232,6 +31718,8 @@
    "landing_url": "https://doi.org/10.1016/s0167-8140(24)02092-9",
    "is_oa": false,
    "oa_url": null,
+   "license": null,
+   "pdf_url": null,
    "authors": [
     "Femke Vaassen",
     "Sebastiaan M. J. J. G. Nijsten",
@@ -31295,6 +31783,8 @@
    "landing_url": "http://dx.doi.org/10.1016/s0167-8140(24)02116-9",
    "is_oa": false,
    "oa_url": null,
+   "license": null,
+   "pdf_url": null,
    "authors": [
     "Rianne Fijten",
     "Hajar Hasannejadasl",
@@ -31370,6 +31860,8 @@
    "landing_url": "https://doi.org/10.1016/s0167-8140(24)02075-9",
    "is_oa": false,
    "oa_url": null,
+   "license": null,
+   "pdf_url": null,
    "authors": [
     "Fariba Tohidinezhad",
     "Leonard Nürnberg",
@@ -31469,6 +31961,8 @@
    "landing_url": "https://doi.org/10.1016/s0167-8140(24)02984-0",
    "is_oa": false,
    "oa_url": null,
+   "license": null,
+   "pdf_url": null,
    "authors": [
     "Charles S. Mayo",
     "Mary Uan-Sian Feng",
@@ -31586,6 +32080,8 @@
    "landing_url": "https://doi.org/10.1016/s0167-8140(24)02882-2",
    "is_oa": true,
    "oa_url": "https://research.tilburguniversity.edu/en/publications/870b35f8-ded2-401e-b228-406808aeac7d",
+   "license": "other-oa",
+   "pdf_url": null,
    "authors": [
     "Luca M. Heising",
     "Carol Xiaojuan Ou",
@@ -31646,6 +32142,8 @@
    "landing_url": "https://doi.org/10.1016/s0167-8140(24)00969-1",
    "is_oa": true,
    "oa_url": "https://research.tilburguniversity.edu/en/publications/1f816337-3bf6-4354-8c3e-72cc1e5c7ba7",
+   "license": "other-oa",
+   "pdf_url": null,
    "authors": [
     "Rachelle Swart",
     "Liesbeth Jorinne Boersma",
@@ -31712,6 +32210,8 @@
    "landing_url": "https://doi.org/10.1016/s0167-8140(24)01347-1",
    "is_oa": false,
    "oa_url": null,
+   "license": null,
+   "pdf_url": null,
    "authors": [
     "Zhen Zhang",
     "Leoanrd Wee",
@@ -31775,6 +32275,8 @@
    "landing_url": "https://doi.org/10.1016/s0167-8140(24)00979-4",
    "is_oa": false,
    "oa_url": null,
+   "license": null,
+   "pdf_url": null,
    "authors": [
     "Petros Kalendralis",
     "Samuel M. H. Luk",
@@ -31850,6 +32352,8 @@
    "landing_url": "https://doi.org/10.1016/s0167-8140(24)01011-9",
    "is_oa": false,
    "oa_url": null,
+   "license": null,
+   "pdf_url": null,
    "authors": [
     "Fariba Tohidinezhad",
     "Catharina M.L. Zegers",
@@ -31946,6 +32450,8 @@
    "landing_url": "https://doi.org/10.1016/s0167-8140(24)01436-1",
    "is_oa": false,
    "oa_url": null,
+   "license": null,
+   "pdf_url": null,
    "authors": [
     "T. Piotrowski",
     "Adam Ryczkowski",
@@ -32006,6 +32512,8 @@
    "landing_url": "http://dx.doi.org/10.1016/s0167-8140(24)01382-3",
    "is_oa": false,
    "oa_url": null,
+   "license": null,
+   "pdf_url": null,
    "authors": [
     "Luca M. Heising",
     "Cecile J A Wolfs",
@@ -32063,6 +32571,8 @@
    "landing_url": "https://doi.org/10.1016/s0167-8140(24)01410-5",
    "is_oa": false,
    "oa_url": null,
+   "license": null,
+   "pdf_url": null,
    "authors": [
     "Alon Witztum",
     "Younes Jourani",
@@ -32180,6 +32690,8 @@
    "landing_url": "https://doi.org/10.2196/preprints.60095",
    "is_oa": true,
    "oa_url": "https://doi.org/10.2196/preprints.60095",
+   "license": "cc-by",
+   "pdf_url": null,
    "authors": [
     "Sander Puts"
    ],
@@ -32225,6 +32737,8 @@
    "landing_url": "https://doi.org/10.1016/s0016-5085(24)03043-9",
    "is_oa": false,
    "oa_url": null,
+   "license": null,
+   "pdf_url": null,
    "authors": [
     "Michiel Thomas Jan Bak",
     "Karlijn Demers",
@@ -32345,6 +32859,8 @@
    "landing_url": "https://doi.org/10.1016/j.ejso.2024.108216",
    "is_oa": false,
    "oa_url": null,
+   "license": null,
+   "pdf_url": null,
    "authors": [
     "Tim Rattay",
     "Guido Bologna",
@@ -32512,6 +33028,8 @@
    "landing_url": "https://doi.org/10.1007/s40747-024-01424-0",
    "is_oa": true,
    "oa_url": "https://link.springer.com/content/pdf/10.1007/s40747-024-01424-0.pdf",
+   "license": "cc-by",
+   "pdf_url": "https://link.springer.com/content/pdf/10.1007/s40747-024-01424-0.pdf",
    "authors": [
     "Florian van Daalen",
     "Lianne Ippel",
@@ -32591,6 +33109,8 @@
    "landing_url": "https://doi.org/10.1016/j.radonc.2024.110293",
    "is_oa": true,
    "oa_url": "https://cris.maastrichtuniversity.nl/en/publications/b3510cce-444b-45a8-acda-0740dfea045b",
+   "license": "other-oa",
+   "pdf_url": null,
    "authors": [
     "Cai Grau",
     "Alexandru Daşu",
@@ -32700,6 +33220,8 @@
    "landing_url": "https://doi.org/10.1038/s41598-024-58241-1",
    "is_oa": true,
    "oa_url": "https://www.nature.com/articles/s41598-024-58241-1.pdf",
+   "license": "cc-by",
+   "pdf_url": "https://www.nature.com/articles/s41598-024-58241-1.pdf",
    "authors": [
     "Benedetta Gottardelli",
     "Varsha Gouthamchand",
@@ -32821,6 +33343,8 @@
    "landing_url": "https://doi.org/10.1117/12.3007031",
    "is_oa": true,
    "oa_url": "https://iris.unisr.it/bitstream/20.500.11768/207479/1/unpaywall-bitstream-647164212.pdf",
+   "license": "other-oa",
+   "pdf_url": "https://iris.unisr.it/bitstream/20.500.11768/207479/1/unpaywall-bitstream-647164212.pdf",
    "authors": [
     "Ibrahim Hadžić",
     "Suraj Pai",
@@ -32944,6 +33468,8 @@
    "landing_url": "https://doi.org/10.1093/neuonc/noae035",
    "is_oa": true,
    "oa_url": "https://academic.oup.com/neuro-oncology/advance-article-pdf/doi/10.1093/neuonc/noae035/57194911/noae035.pdf",
+   "license": "cc-by",
+   "pdf_url": "https://academic.oup.com/neuro-oncology/advance-article-pdf/doi/10.1093/neuonc/noae035/57194911/noae035.pdf",
    "authors": [
     "Fariba Tohidinezhad",
     "Catharina M.L. Zegers",
@@ -33106,6 +33632,8 @@
    "landing_url": "https://doi.org/10.3389/fdgth.2023.1303261",
    "is_oa": true,
    "oa_url": "https://doi.org/10.3389/fdgth.2023.1303261",
+   "license": "cc-by",
+   "pdf_url": null,
    "authors": [
     "Iva Halilaj",
     "Anshu Ankolekar",
@@ -33195,6 +33723,8 @@
    "landing_url": "https://doi.org/10.1016/j.clon.2024.03.011",
    "is_oa": true,
    "oa_url": "https://doi.org/10.1016/j.clon.2024.03.011",
+   "license": "cc-by",
+   "pdf_url": null,
    "authors": [
     "Gareth J. Price",
     "Niels B. Peek",
@@ -33307,6 +33837,8 @@
    "landing_url": "https://doi.org/10.1016/j.clon.2024.03.008",
    "is_oa": true,
    "oa_url": "https://doi.org/10.1016/j.clon.2024.03.008",
+   "license": "cc-by",
+   "pdf_url": null,
    "authors": [
     "Matthew Field",
     "Shalini Kavita Vinod",
@@ -33406,6 +33938,8 @@
    "landing_url": "https://doi.org/10.1016/j.ejca.2024.113624",
    "is_oa": true,
    "oa_url": "http://www.ejcancer.com/article/S0959804924002168/pdf",
+   "license": null,
+   "pdf_url": "http://www.ejcancer.com/article/S0959804924002168/pdf",
    "authors": [
     "Tim Rattay",
     "Guido Bologna",
@@ -33604,6 +34138,8 @@
    "landing_url": "https://doi.org/10.1016/j.ejca.2024.113820",
    "is_oa": true,
    "oa_url": "https://www.ejcancer.com/article/S0959-8049(24)00411-8/pdf",
+   "license": null,
+   "pdf_url": "https://www.ejcancer.com/article/S0959-8049(24)00411-8/pdf",
    "authors": [
     "Cheryl Roumen",
     "Jordan Rainbird",
@@ -33771,6 +34307,8 @@
    "landing_url": "https://doi.org/10.1136/ijgc-2024-esgo.318",
    "is_oa": true,
    "oa_url": "https://doi.org/10.1136/ijgc-2024-esgo.318",
+   "license": null,
+   "pdf_url": null,
    "authors": [
     "Xiaoman Jin",
     "Daphne Silvertand",
@@ -33874,6 +34412,8 @@
    "landing_url": "https://osf.io/yq324",
    "is_oa": true,
    "oa_url": "https://osf.io/yq324",
+   "license": "cc-by",
+   "pdf_url": null,
    "authors": [
     "Anniek van Hienen",
     "Rianne Fijten"
@@ -33931,6 +34471,8 @@
    "landing_url": "https://doi.org/10.1038/s44319-024-00101-0",
    "is_oa": true,
    "oa_url": "https://www.embopress.org/action/downloadSupplement?doi=10.1038/s44319-024-00101-0&file=44319_2024_101_MOESM1_ESM.pdf",
+   "license": "cc-by",
+   "pdf_url": "https://www.embopress.org/action/downloadSupplement?doi=10.1038/s44319-024-00101-0&file=44319_2024_101_MOESM1_ESM.pdf",
    "authors": [
     "Danielle Shanley",
     "Joshi Hogenboom",
@@ -34046,6 +34588,8 @@
    "landing_url": "https://doi.org/10.1371/journal.pone.0294442",
    "is_oa": true,
    "oa_url": "https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0294442&type=printable",
+   "license": "cc-by",
+   "pdf_url": "https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0294442&type=printable",
    "authors": [
     "Girma Gilano",
     "Sewunet Sako",
@@ -34133,6 +34677,8 @@
    "landing_url": "http://hdl.handle.net/10256/28453",
    "is_oa": true,
    "oa_url": "http://hdl.handle.net/10256/28453",
+   "license": "cc-by",
+   "pdf_url": null,
    "authors": [
     "Carl Delfin",
     "Iulian Dragan",
@@ -34319,6 +34865,8 @@
    "landing_url": "https://doi.org/10.3390/life14020262",
    "is_oa": true,
    "oa_url": "https://www.mdpi.com/2075-1729/14/2/262/pdf?version=1708078486",
+   "license": "cc-by",
+   "pdf_url": "https://www.mdpi.com/2075-1729/14/2/262/pdf?version=1708078486",
    "authors": [
     "Carl Delfin",
     "Iulian Dragan",
@@ -34515,6 +35063,8 @@
    "landing_url": "http://dx.doi.org/10.1016/j.tipsro.2024.100234",
    "is_oa": true,
    "oa_url": "https://www.tipsro.science/article/S2405-6324(24)00001-5/pdf",
+   "license": "cc-by",
+   "pdf_url": "https://www.tipsro.science/article/S2405-6324(24)00001-5/pdf",
    "authors": [
     "Biche Osong",
     "Hajar Hasannejadasl",
@@ -34659,6 +35209,8 @@
    "landing_url": "https://doi.org/10.1371/journal.pone.0295539",
    "is_oa": true,
    "oa_url": "https://doi.org/10.1371/journal.pone.0295539",
+   "license": "cc-by",
+   "pdf_url": null,
    "authors": [
     "Girma Gilano",
     "Andre L.A.J. Dekker",
@@ -34740,6 +35292,8 @@
    "landing_url": "https://doi.org/10.1016/j.nutos.2024.02.002",
    "is_oa": true,
    "oa_url": "https://doi.org/10.1016/j.nutos.2024.02.002",
+   "license": "cc-by-nc-nd",
+   "pdf_url": "https://doi.org/10.1016/j.nutos.2024.02.002",
    "authors": [
     "Girma Gilano",
     "Andre L.A.J. Dekker",
@@ -34849,6 +35403,8 @@
    "landing_url": "https://doi.org/10.21037/qims-23-1180",
    "is_oa": true,
    "oa_url": "https://doi.org/10.21037/qims-23-1180",
+   "license": "cc-by-nc-nd",
+   "pdf_url": null,
    "authors": [
     "Zhixiang Wang",
     "Zhen Zhang",
@@ -34966,6 +35522,8 @@
    "landing_url": "https://pubmed.ncbi.nlm.nih.gov/38319310",
    "is_oa": false,
    "oa_url": null,
+   "license": null,
+   "pdf_url": null,
    "authors": [
     "Johannes L. P. Kuijpens",
     "Tjerk Heimens Visser",
@@ -35025,6 +35583,8 @@
    "landing_url": "https://doi.org/10.1186/s13014-024-02402-z",
    "is_oa": true,
    "oa_url": "https://ro-journal.biomedcentral.com/counter/pdf/10.1186/s13014-024-02402-z",
+   "license": "cc-by",
+   "pdf_url": "https://ro-journal.biomedcentral.com/counter/pdf/10.1186/s13014-024-02402-z",
    "authors": [
     "Lu Yu",
     "Zhen Zhang",
@@ -35192,6 +35752,8 @@
    "landing_url": "https://doi.org/10.1007/s10278-023-00913-x",
    "is_oa": true,
    "oa_url": "https://link.springer.com/content/pdf/10.1007/s10278-023-00913-x.pdf",
+   "license": "cc-by",
+   "pdf_url": "https://link.springer.com/content/pdf/10.1007/s10278-023-00913-x.pdf",
    "authors": [
     "J. Martijn Nobel",
     "Sander Puts",
@@ -35292,6 +35854,8 @@
    "landing_url": "https://doi.org/10.1038/s41591-023-02715-8",
    "is_oa": true,
    "oa_url": "https://cris.maastrichtuniversity.nl/en/publications/6fd0ce7f-944c-46d2-9194-0e8a10d5af5a",
+   "license": "other-oa",
+   "pdf_url": null,
    "authors": [
     "Piers Mahon",
     "Ismini Chatzitheofilou",
@@ -35400,6 +35964,8 @@
    "landing_url": "https://doi.org/10.1016/j.compbiomed.2024.107939",
    "is_oa": true,
    "oa_url": "https://doi.org/10.1016/j.compbiomed.2024.107939",
+   "license": "cc-by-nc-nd",
+   "pdf_url": null,
    "authors": [
     "Zhihe Zhao",
     "Siyao Du",
@@ -35547,6 +36113,8 @@
    "landing_url": "https://doi.org/10.26481/dis.20241211sp",
    "is_oa": true,
    "oa_url": "https://cris.maastrichtuniversity.nl/en/publications/11f72f5b-38e9-4fca-80fb-cd1d6439cdd3",
+   "license": "other-oa",
+   "pdf_url": null,
    "authors": [
     "Sander Puts"
    ],
@@ -35596,6 +36164,8 @@
    "landing_url": "http://doi.org/10.2139/ssrn.5007884",
    "is_oa": true,
    "oa_url": "http://doi.org/10.2139/ssrn.5007884",
+   "license": null,
+   "pdf_url": null,
    "authors": [
     "Zhenwei Shi",
     "Weixing Li",
@@ -35695,6 +36265,8 @@
    "landing_url": "https://doi.org/10.2139/ssrn.4974237",
    "is_oa": true,
    "oa_url": "https://doi.org/10.2139/ssrn.4974237",
+   "license": null,
+   "pdf_url": null,
    "authors": [
     "Zhenwei Shi",
     "Weixing Li",
@@ -35794,6 +36366,8 @@
    "landing_url": "http://dx.doi.org/10.2139/ssrn.4764844",
    "is_oa": true,
    "oa_url": "http://dx.doi.org/10.2139/ssrn.4764844",
+   "license": null,
+   "pdf_url": null,
    "authors": [
     "Stelios Theophanous",
     "Per-Ivar Lønne",
@@ -35949,6 +36523,8 @@
    "landing_url": "https://doi.org/10.1093/bjrai/ubae005",
    "is_oa": true,
    "oa_url": "https://academic.oup.com/bjrai/advance-article-pdf/doi/10.1093/bjrai/ubae005/56888613/ubae005.pdf",
+   "license": "cc-by",
+   "pdf_url": "https://academic.oup.com/bjrai/advance-article-pdf/doi/10.1093/bjrai/ubae005/56888613/ubae005.pdf",
    "authors": [
     "Varsha Gouthamchand",
     "Ananya Choudhury",
@@ -36108,6 +36684,8 @@
    "landing_url": "https://doi.org/10.1177/26323524231225249",
    "is_oa": true,
    "oa_url": "https://journals.sagepub.com/doi/pdf/10.1177/26323524231225249",
+   "license": "cc-by",
+   "pdf_url": "https://journals.sagepub.com/doi/pdf/10.1177/26323524231225249",
    "authors": [
     "Judith A C Rietjens",
     "Ingeborg P. M. Griffioen",
@@ -36362,6 +36940,8 @@
    "landing_url": "https://doi.org/10.2139/ssrn.4716052",
    "is_oa": true,
    "oa_url": "https://doi.org/10.2139/ssrn.4716052",
+   "license": null,
+   "pdf_url": null,
    "authors": [
     "Pedro da Costa Mateus",
     "Justine E. F. Moonen",
@@ -36473,6 +37053,8 @@
    "landing_url": "https://doi.org/10.1093/ecco-jcc/jjad212.0948",
    "is_oa": true,
    "oa_url": "https://academic.oup.com/ecco-jcc/article-pdf/18/Supplement_1/i1521/56350703/jjad212.0948.pdf",
+   "license": null,
+   "pdf_url": "https://academic.oup.com/ecco-jcc/article-pdf/18/Supplement_1/i1521/56350703/jjad212.0948.pdf",
    "authors": [
     "M Bak",
     "Karlijn Demers",
@@ -36601,6 +37183,8 @@
    "landing_url": "https://doi.org/10.1016/b978-0-12-822000-9.00009-4",
    "is_oa": false,
    "oa_url": null,
+   "license": null,
+   "pdf_url": null,
    "authors": [
     "Petros Kalendralis",
     "Martin Vallières",
@@ -36706,6 +37290,8 @@
    "landing_url": "https://doi.org/10.1016/b978-0-12-822000-9.00004-5",
    "is_oa": false,
    "oa_url": null,
+   "license": null,
+   "pdf_url": null,
    "authors": [
     "Sander Puts",
     "Catharina M.L. Zegers",
@@ -36816,6 +37402,8 @@
    "landing_url": "https://doi.org/10.1136/fmch-2023-002340",
    "is_oa": true,
    "oa_url": "https://fmch.bmj.com/content/fmch/12/Suppl_1/e002340.full.pdf",
+   "license": "cc-by-nc",
+   "pdf_url": "https://fmch.bmj.com/content/fmch/12/Suppl_1/e002340.full.pdf",
    "authors": [
     "Shiv Kumar Jalepalli",
     "Prashant Kumar Gupta",
