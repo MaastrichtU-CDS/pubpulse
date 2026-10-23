@@ -83,10 +83,10 @@ def save_pending(ids: list[str], path: Path = NOTIFIED_PATH) -> None:
 def load_overrides(path: Path = OVERRIDES_PATH) -> dict:
     """Manual decisions: {'confirm': [W..], 'reject': [W..]}. Ids may be given as W123 or full OpenAlex URLs."""
     if not path.exists():
-        return {"confirm": set(), "reject": set()}
+        return {"confirm": set(), "reject": set(), "approve_external": set()}
     with open(path, encoding="utf-8") as f:
         raw = yaml.safe_load(f) or {}
-    return {k: {short_id(str(x)) for x in (raw.get(k) or [])} for k in ("confirm", "reject")}
+    return {k: {short_id(str(x)) for x in (raw.get(k) or [])} for k in ("confirm", "reject", "approve_external")}
 
 
 def apply_overrides(works: list[dict], overrides: dict) -> list[dict]:
@@ -97,6 +97,7 @@ def apply_overrides(works: list[dict], overrides: dict) -> list[dict]:
         if w["id"] in overrides["confirm"]:
             w["verified"] = True
             w["manual"] = "confirmed"
+        w["approved_external"] = w["id"] in overrides.get("approve_external", set())
         kept.append(w)
     return kept
 

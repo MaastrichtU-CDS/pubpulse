@@ -6,3 +6,7 @@ confirm: []
 
 # Papers that do NOT belong to the group (wrong person with the same name, work from another job, …).
 reject: []
+
+# Papers approved for external communication (website highlight, LinkedIn). A human decision per paper; the weekly
+# mail to the group is not affected by this list.
+approve_external: []

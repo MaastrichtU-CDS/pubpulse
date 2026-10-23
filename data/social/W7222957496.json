@@ -1,0 +1,10 @@
+{
+ "id": "W7222957496",
+ "title": "Foundation artificial intelligence models for health recognition by use of face photographs (FAHR-Face): a model development and validation study",
+ "doi": "https://doi.org/10.1016/j.landig.2026.101056",
+ "post": "A foundation model trained on more than 40 million face photographs estimated biological age with a mean error of 5.1 years and, in cancer patients, predicted survival independently of clinical factors.\n\nFAHR-Face was fine-tuned for two tasks: age estimation on ten public image datasets, and survival prediction on 34,363 photographs of patients with cancer. Robustness to cosmetic surgery, make-up, pose and lighting was tested, as was what the model attends to. Both models were evaluated in two independent cancer cohorts with multivariable Cox models adjusted for clinical prognostic factors.\n\nThe highest-risk quartile had more than three times the mortality of the lowest (adjusted hazard ratio 3.23). Results held across age, sex, race and cancer subgroups.\n\nWhy it matters: a photograph is non-invasive and already in many patient records; the model gives a prognostic signal that clinical variables do not capture.\n\nLimitation: validation was in cancer cohorts; use in other populations and the ethics of face-based prognosis need separate work [check].\n\nPaper: https://doi.org/10.1016/j.landig.2026.101056\nFull text: open access",
+ "short": "FAHR-Face, trained on 40 million face photos, estimates biological age within 5.1 years and predicts survival in cancer patients beyond clinical factors (adjusted HR 3.23). https://doi.org/10.1016/j.landig.2026.101056",
+ "model": "sample (written by Claude in session, 2026-10-23)",
+ "generated_at": "2026-10-23T12:41:50+00:00",
+ "flags": 1
+}

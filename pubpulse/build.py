@@ -13,6 +13,7 @@ from .sync import DATA_DIR, NOTIFIED_PATH, OUT_DIR, ROOT, load_config, load_pend
 
 SITE_DIR = ROOT / "site"
 DIST_DIR = ROOT / "dist"
+site_url_for_draft = "https://maastrichtu-cds.github.io/pubpulse/"
 
 
 def work_link(w: dict) -> str:
@@ -68,6 +69,14 @@ def build_feed(pubs: dict, cfg: dict, max_items: int = 50) -> str:
 
 # ---------------------------------------------------------------------------------------------- digest
 
+def _draft_for(w: dict) -> dict | None:
+    p = DATA_DIR / "social" / f"{w['id']}.json"
+    if not p.exists():
+        return None
+    with open(p, encoding="utf-8") as f:
+        return json.load(f)
+
+
 def _item_html(w: dict, names: dict[str, str]) -> str:
     members = ", ".join(html.escape(names.get(s, s)) for s in w.get("group_members", []))
     meta = " · ".join(x for x in (w.get("journal"), w.get("publication_date"), (w.get("type") or "").replace("-", " ")) if x)
@@ -77,7 +86,12 @@ def _item_html(w: dict, names: dict[str, str]) -> str:
         f'<a href="{html.escape(work_link(w))}" style="font-weight:600;color:#1a4b8c;text-decoration:none">{html.escape(w["title"])}</a>'
         f'<div style="color:#555;font-size:13px">{html.escape(meta)}</div>'
         f'<div style="font-size:13px">Group authors: <b>{members}</b>{flag}</div>'
-        f"</li>"
+        + (
+            f'<div style="font-size:13px;margin-top:4px;color:#444"><b>LinkedIn draft:</b> {html.escape(d["short"])} '
+            f'<a href="{html.escape(site_url_for_draft)}#q={html.escape(w["id"])}" style="color:#1a4b8c">full draft</a></div>'
+            if (d := _draft_for(w)) and d.get("short") else ""
+        )
+        + f"</li>"
     )
 
 
@@ -198,7 +212,9 @@ def build_digest(pubs: dict, cfg: dict, pending_ids: list[str] | None = None) ->
 # ---------------------------------------------------------------------------------------------- run
 
 def run(config_path: Path | None = None) -> dict:
+    global site_url_for_draft
     cfg = load_config(config_path) if config_path else load_config()
+    site_url_for_draft = cfg.get("site_url") or site_url_for_draft
     pubs = load_publications()
     OUT_DIR.mkdir(exist_ok=True)
 
@@ -220,11 +236,15 @@ def run(config_path: Path | None = None) -> dict:
     site_pubs = {
         **pubs,
         "list": {k: (cfg.get("digest") or {}).get(k) or "" for k in ("subscribe_endpoint", "subscribe_form_url", "list_name")},
+        "site": cfg.get("site") or {},
     }
     (DIST_DIR / "data" / "publications.json").write_text(
         json.dumps(site_pubs, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
     )
     shutil.copy(DATA_DIR / "feed.xml", DIST_DIR / "feed.xml")
+    if (DATA_DIR / "social" / "index.json").exists():
+        (DIST_DIR / "data" / "social").mkdir(exist_ok=True)
+        shutil.copy(DATA_DIR / "social" / "index.json", DIST_DIR / "data" / "social" / "index.json")
     # Cache-busting: browsers and GitHub Pages cache app.js/style.css for a while; a content hash in the URL
     # makes every deploy pick up the new files immediately.
     import hashlib

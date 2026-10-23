@@ -95,3 +95,4 @@ def test_fetch_staff_skips_recently_checked_profiles(monkeypatch):
     jvs = next(p for p in people if p["slug"] == "johan-van-soest")
     assert jvs["orcid"] == "0000-0003-2548-0330" and jvs["_profile_fetched"]
     assert len(calls) == 1 + 60  # 61 current minus the one skipped
+

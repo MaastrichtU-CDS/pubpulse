@@ -100,7 +100,7 @@ def author_current_institutions(author: dict) -> list[str]:
     return [(i or {}).get("display_name", "") for i in (author.get("last_known_institutions") or []) if i]
 
 
-def abstract_from_inverted_index(index: dict | None, max_chars: int = 1500) -> str | None:
+def abstract_from_inverted_index(index: dict | None, max_chars: int = 6000) -> str | None:
     if not index:
         return None
     positions: list[tuple[int, str]] = []

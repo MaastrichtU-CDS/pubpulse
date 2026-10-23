@@ -257,6 +257,9 @@
             <label class="check"
               ><input type="checkbox" id="only-oa" /> Open access only</label
             >
+            <label class="check"
+              ><input type="checkbox" id="include-preprints" /> Include preprints</label
+            >
           </div>
           <div class="filter-pair">
             <div class="filter">
@@ -284,6 +287,7 @@
               <option value="">All papers</option>
               <option value="verified">Verified only</option>
               <option value="unverified">Affiliation not verified</option>
+              <option value="approved">Approved for external communication</option>
             </select>
           </div>
           <div class="filter people-filter">
@@ -359,6 +363,7 @@
             Current and former CDS authors are highlighted. Numbers show
             position in the author list.
           </p>
+          <div id="type-bar" class="type-bar" aria-label="Publication types in the current selection"></div>
           <ol id="list" class="list"></ol>
           <div id="empty" class="empty hidden">
             <h3>No papers found, yet.</h3>

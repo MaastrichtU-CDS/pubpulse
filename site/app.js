@@ -6,6 +6,7 @@
     when: $("when"),
     verify: $("verify"),
     onlyOa: $("only-oa"),
+    preprints: $("include-preprints"),
     year: $("year"),
     type: $("type"),
     journal: $("journal"),
@@ -58,6 +59,7 @@
       when: p.get("when") || (p.get("new") === "1" ? "week" : ""),
       verify: p.get("verify") || "",
       oa: p.get("oa") === "1",
+      preprints: p.get("preprints") === "1",
     };
   }
   function writeHash() {
@@ -71,6 +73,7 @@
     if (state.when) p.set("when", state.when);
     if (state.verify) p.set("verify", state.verify);
     if (state.oa) p.set("oa", "1");
+    if (state.preprints) p.set("preprints", "1");
     if (
       !p.toString() &&
       ["#publications", "#coverage-notes"].includes(location.hash)
@@ -201,8 +204,19 @@
       .forEach((select) => select.tomselect?.sync());
   }
 
+  function siteDefaults() {
+    const site = (data && data.site) || {};
+    return { verify: site.default_verified_only ? "verified" : "", preprints: !!site.default_include_preprints };
+  }
+
   function init(json) {
     data = json;
+    {
+      const hp = new URLSearchParams(location.hash.slice(1));
+      const d = siteDefaults();
+      if (!hp.has("verify")) state.verify = d.verify;
+      if (!hp.has("preprints")) state.preprints = d.preprints;
+    }
     data.peopleBySlug = Object.fromEntries(data.people.map((p) => [p.slug, p]));
     data.newIds = new Set(
       data.last_run && !data.last_run.baseline ? data.last_run.new_ids : [],
@@ -264,9 +278,10 @@
 
     els.q.value = state.q;
     els.sort.value = state.sort;
-    els.verify.value = state.verify;
+    els.verify.value = state.verify === "all" ? "" : state.verify;
     els.when.value = state.when;
     els.onlyOa.checked = state.oa;
+    els.preprints.checked = state.preprints;
     enhanceDropdowns();
     renderPeople();
 
@@ -310,7 +325,11 @@
         update();
       });
       els.verify.addEventListener("change", () => {
-        state.verify = els.verify.value;
+        state.verify = els.verify.value || (siteDefaults().verify ? "all" : "");
+        update();
+      });
+      els.preprints.addEventListener("change", () => {
+        state.preprints = els.preprints.checked;
         update();
       });
       els.onlyOa.addEventListener("change", () => {
@@ -332,8 +351,9 @@
           sort: "date",
           people: [],
           when: "",
-          verify: "",
+          verify: siteDefaults().verify,
           oa: false,
+          preprints: siteDefaults().preprints,
         };
         els.q.value = "";
         els.year.value = "";
@@ -343,6 +363,7 @@
         els.verify.value = "";
         els.when.value = "";
         els.onlyOa.checked = false;
+        els.preprints.checked = state.preprints;
         els.peopleQ.value = "";
         renderPeople();
         update();
@@ -666,6 +687,48 @@
     return years.length ? Math.min(...years) : new Date().getFullYear();
   }
 
+  const TYPE_GROUPS = [
+    { key: "article", label: "Journal articles", color: "#2a78d6", types: ["article"], filter: "article" },
+    { key: "review", label: "Reviews", color: "#eb6834", types: ["review"], filter: "review" },
+    { key: "preprint", label: "Preprints", color: "#1baf7a", types: ["preprint"], filter: "preprint" },
+    { key: "conference", label: "Conference", color: "#eda100", types: ["conference-paper", "conference-abstract"], filter: null },
+    { key: "other", label: "Other", color: "#e87ba4", types: null, filter: null },
+  ];
+
+  function renderTypeBar() {
+    const box = $("type-bar");
+    if (!box) return;
+    const pool = data.works.filter((w) => matches(w, { ignoreType: true }));
+    const known = new Set(TYPE_GROUPS.flatMap((g) => g.types || []));
+    const counts = TYPE_GROUPS.map((g) => ({
+      ...g,
+      n: pool.filter((w) => (g.types ? g.types.includes(w.type) : !known.has(w.type))).length,
+    }));
+    const total = counts.reduce((s, g) => s + g.n, 0);
+    if (!total) { box.innerHTML = ""; return; }
+    const hidden = !state.type && !state.preprints ? counts.find((g) => g.key === "preprint").n : 0;
+    const seg = counts.filter((g) => g.n).map((g) => {
+      const pct = (100 * g.n) / total;
+      const on = g.filter && state.type === g.filter;
+      const title = `${g.label}: ${g.n} (${pct.toFixed(0)}%)${g.filter ? (on ? ". Clear type filter" : ". Filter to this type") : ""}`;
+      const inner = `<span class="type-seg-fill" style="background:${g.color}"></span>`;
+      return g.filter
+        ? `<button type="button" class="type-seg" style="flex:${g.n}" data-type="${g.filter}" aria-pressed="${on}" title="${esc(title)}" aria-label="${esc(title)}">${inner}</button>`
+        : `<span class="type-seg" style="flex:${g.n}" title="${esc(title)}" aria-label="${esc(title)}">${inner}</span>`;
+    }).join("");
+    const legend = counts.filter((g) => g.n).map((g) =>
+      `<span class="type-key"><span class="type-swatch" style="background:${g.color}"></span>${esc(g.label)} <b>${g.n}</b> <span class="meta">${((100 * g.n) / total).toFixed(0)}%</span></span>`).join("");
+    box.innerHTML = `<div class="type-track" role="img" aria-label="${esc(counts.filter((g) => g.n).map((g) => `${g.label} ${g.n}`).join(", "))}">${seg}</div>` +
+      `<div class="type-legend">${legend}${hidden ? `<span class="meta">· ${hidden} preprint${hidden === 1 ? "" : "s"} hidden by default</span>` : ""}</div>`;
+    box.querySelectorAll("button.type-seg").forEach((b) => b.addEventListener("click", () => {
+      const ty = b.dataset.type;
+      state.type = state.type === ty ? "" : ty;
+      if (state.type === "preprint") state.preprints = true;
+      els.preprints.checked = state.preprints;
+      update();
+    }));
+  }
+
   function renderYearChart() {
     const generatedYear =
       new Date(data.generated).getUTCFullYear() || new Date().getFullYear();
@@ -729,10 +792,14 @@
       return false;
     if (state.verify === "verified" && !w.verified) return false;
     if (state.verify === "unverified" && w.verified) return false;
+    if (state.verify === "approved" && !w.approved_external) return false;
     if (state.oa && !w.is_oa) return false;
     if (!options.ignoreYear && state.year && String(w.year) !== state.year)
       return false;
-    if (state.type && w.type !== state.type) return false;
+    if (!options.ignoreType) {
+      if (state.type && w.type !== state.type) return false;
+      if (!state.type && !state.preprints && w.type === "preprint") return false;
+    }
     if (state.journal && w.journal !== state.journal) return false;
     if (
       state.people.length &&
@@ -765,6 +832,7 @@
     writeHash();
     let items = data.works.filter((w) => matches(w));
     renderYearChart();
+    renderTypeBar();
     if (state.sort === "cited")
       items.sort((a, b) => (b.cited_by_count || 0) - (a.cited_by_count || 0));
     else if (state.sort === "added")
@@ -783,6 +851,14 @@
     renderSelectedProfiles();
     els.list.innerHTML = items.map(render).join("");
     els.empty.classList.toggle("hidden", items.length > 0);
+    els.list.querySelectorAll("[data-copy],[data-copy-short]").forEach((b) =>
+      b.addEventListener("click", async () => {
+        const id = b.dataset.copy || b.dataset.copyShort;
+        const text = b.dataset.copy ? data.social[id].post : data.social[id].short;
+        try { await navigator.clipboard.writeText(text); b.textContent = "Copied"; setTimeout(() => (b.textContent = b.dataset.copy ? "Copy post" : "Copy short"), 1500); }
+        catch { window.prompt("Copy the text:", text); }
+      }),
+    );
     els.list.querySelectorAll("[data-person]").forEach((b) =>
       b.addEventListener("click", () => {
         const s = b.dataset.person;
@@ -796,6 +872,18 @@
         });
       }),
     );
+  }
+
+  function draftHtml(w, link) {
+    const d = data.social && data.social[w.id];
+    if (!d || !d.post) return "";
+    const share = "https://www.linkedin.com/sharing/share-offsite/?url=" + encodeURIComponent(w.doi || link);
+    const flags = d.flags ? ` · ${d.flags} [check] mark${d.flags === 1 ? "" : "s"} to verify` : "";
+    return `<details class="social-draft"><summary>LinkedIn draft <span class="meta">(AI-written, read before posting${esc(flags)})</span></summary>
+      <pre class="draft-text">${esc(d.post)}</pre>
+      ${d.short ? `<p class="draft-short"><b>Short:</b> ${esc(d.short)}</p>` : ""}
+      <div class="draft-actions"><button type="button" class="button button-small" data-copy="${esc(w.id)}">Copy post</button><button type="button" class="button button-small" data-copy-short="${esc(w.id)}">Copy short</button><a class="button button-small button-dark" href="${esc(share)}" target="_blank" rel="noopener">Share on LinkedIn ↗</a><span class="meta">Opens LinkedIn with the paper link; paste the copied text.</span></div>
+    </details>`;
   }
 
   function render(w) {
@@ -851,12 +939,13 @@
       .map(esc)
       .join(" · ");
     return `<li class="item">
-      <div class="publication-top"><span class="journal-name">${esc(w.journal || "Research publication")}</span><span class="badges">${isNew ? '<span class="badge new">new</span>' : ""}${w.manual === "confirmed" ? '<span class="badge oa">confirmed</span>' : w.verified ? "" : '<span class="badge warn">unverified</span>'}${w.is_oa ? '<span class="badge oa">open access</span>' : ""}</span></div>
+      <div class="publication-top"><span class="journal-name">${esc(w.journal || "Research publication")}</span><span class="badges">${isNew ? '<span class="badge new">new</span>' : ""}${w.manual === "confirmed" ? '<span class="badge oa">confirmed</span>' : w.verified ? "" : '<span class="badge warn">unverified</span>'}${w.approved_external ? '<span class="badge new" title="approved for external communication">approved</span>' : ""}${w.is_oa ? '<span class="badge oa">open access</span>' : ""}</span></div>
       <h3><a href="${esc(link)}" target="_blank" rel="noopener">${esc(w.title)}</a></h3>
       <div class="meta">${meta}</div>
       <div class="authors group-authors"><span class="group-author-label">CDS authors</span><ul class="group-author-list">${members}</ul></div>
       <div class="authors authors-full"><span class="author-list-label">Authors (${authorCount}):</span> ${authors}${incomplete ? ` <span class="author-list-note">· ${w.authors.length} names available in OpenAlex</span>` : ""}</div>
       ${w.abstract ? `<details><summary>Abstract</summary><p>${esc(w.abstract)}</p></details>` : ""}
+      ${draftHtml(w, link)}
       <div class="links">${w.doi ? `<a href="${esc(w.doi)}" target="_blank" rel="noopener">DOI ↗</a>` : ""}${w.oa_url ? `<a href="${esc(w.oa_url)}" target="_blank" rel="noopener">Full text ↗</a>` : ""}<a href="${esc(w.openalex_url)}" target="_blank" rel="noopener">OpenAlex ↗</a><span class="meta work-id" title="use this id in overrides.yml">${esc(w.id)}</span></div>
     </li>`;
   }
@@ -866,6 +955,12 @@
       if (!r.ok) throw new Error(r.status);
       return r.json();
     })
+    .then((json) =>
+      fetch("data/social/index.json", { cache: "no-cache" })
+        .then((r) => (r.ok ? r.json() : {}))
+        .catch(() => ({}))
+        .then((social) => Object.assign(json, { social })),
+    )
     .then(init)
     .catch(() => {
       els.count.textContent =

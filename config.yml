@@ -5,6 +5,16 @@ staff_url: https://www.clinicaldatascience.nl/staff
 site_url: https://maastrichtu-cds.github.io/pubpulse/
 repo_url: https://github.com/MaastrichtU-CDS/pubpulse
 
+# Website defaults (visitors can switch them in the filters).
+site:
+  default_verified_only: true       # show only papers with a verified group affiliation
+  default_include_preprints: false  # hide preprints unless switched on
+
+# LinkedIn drafts written by Claude for verified journal papers (never preprints). Secret ANTHROPIC_API_KEY.
+# Drafts are never posted automatically: they appear on the website and in the digest for a person to copy and post.
+social:
+  model: claude-opus-5-5
+
 # Active sections to track. The previous-staff roster is always retained separately
 # and reviewed for recent collaborations under former_staff below.
 track_sections:

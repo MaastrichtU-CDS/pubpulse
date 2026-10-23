@@ -34,6 +34,13 @@ def main(argv: list[str] | None = None) -> int:
     sub.add_parser("send-digest", help="email out/digest.* to DIGEST_TO (and an Apps Script list, if configured) via SMTP")
     sub.add_parser("send-campaign", help="send out/digest.html as a Brevo campaign to the Brevo subscriber list")
 
+    sd = sub.add_parser("social-draft", help="write LinkedIn drafts (Claude) for verified journal papers into data/social/")
+    sd.add_argument("--ids", nargs="*", help="specific OpenAlex ids; default: this run's new papers")
+    sd.add_argument("--since", help="all eligible papers published on/after YYYY-MM-DD")
+    sd.add_argument("--limit", type=int)
+    sd.add_argument("--force", action="store_true", help="redo existing drafts")
+    sd.add_argument("--dry-run", action="store_true")
+
     sc = sub.add_parser("scholar-check", help="compare Google Scholar profiles (via SerpAPI) with pubpulse; writes data/scholar_check.json")
     sc.add_argument("--max-searches", type=int, default=None)
     sc.add_argument("--only", help="slug of one person")
@@ -76,6 +83,10 @@ def main(argv: list[str] | None = None) -> int:
         from .former import run as former_run
 
         return former_run(staff_snapshot=args.staff_snapshot)
+    if args.cmd == "social-draft":
+        from .social import run as social_run
+
+        return social_run(ids=args.ids, since=args.since, limit=args.limit, dry_run=args.dry_run, force=args.force)
     if args.cmd == "send-campaign":
         from .brevo import run as brevo_run
 

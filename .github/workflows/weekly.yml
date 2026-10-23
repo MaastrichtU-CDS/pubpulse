@@ -45,6 +45,7 @@ jobs:
       DIGEST_TO: ${{ secrets.DIGEST_TO }}
       SUBSCRIBERS_KEY: ${{ secrets.SUBSCRIBERS_KEY }}
       BREVO_API_KEY: ${{ secrets.BREVO_API_KEY }}
+      ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
       TEAMS_WEBHOOK_URL: ${{ secrets.TEAMS_WEBHOOK_URL }}
     steps:
       - uses: actions/checkout@v4
@@ -80,6 +81,11 @@ jobs:
         # Push-triggered runs (config/code edits) do not touch the staff website; only the Monday schedule and
         # manual runs read it.
         run: python -m pubpulse sync ${{ github.event_name == 'push' && '--skip-people' || '' }}
+
+      - name: LinkedIn drafts for new verified journal papers (Claude)
+        if: env.ANTHROPIC_API_KEY != ''
+        continue-on-error: true
+        run: python -m pubpulse social-draft
 
       - name: Build site, feed and digest
         run: python -m pubpulse build

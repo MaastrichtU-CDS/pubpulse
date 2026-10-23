@@ -2008,3 +2008,21 @@ dialog .dialog-rss {
     height: 44px;
   }
 }
+
+/* publication type composition bar */
+.type-bar { margin: 4px 0 14px; }
+.type-track { display: flex; gap: 2px; height: 14px; border-radius: 7px; overflow: hidden; background: var(--line); }
+.type-seg { display: block; min-width: 3px; padding: 0; border: 0; background: transparent; cursor: default; }
+button.type-seg { cursor: pointer; }
+.type-seg-fill { display: block; width: 100%; height: 100%; }
+button.type-seg:hover .type-seg-fill, button.type-seg[aria-pressed="true"] .type-seg-fill { filter: brightness(0.85); }
+button.type-seg:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.type-legend { display: flex; flex-wrap: wrap; gap: 6px 16px; margin-top: 6px; font-size: 13px; color: var(--text); }
+.type-key { display: inline-flex; align-items: center; gap: 6px; }
+.type-swatch { width: 10px; height: 10px; border-radius: 3px; display: inline-block; }
+/* LinkedIn drafts */
+.social-draft { margin-top: 8px; border: 1px dashed var(--line); border-radius: 8px; padding: 6px 10px; }
+.social-draft summary { font-weight: 600; }
+.draft-text { white-space: pre-wrap; font: inherit; font-size: 14px; line-height: 1.5; background: var(--bg); border-radius: 8px; padding: 10px 12px; margin: 8px 0; }
+.draft-short { font-size: 14px; margin: 6px 0; }
+.draft-actions { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin: 6px 0 4px; }
