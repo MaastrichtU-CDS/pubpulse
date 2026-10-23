@@ -712,6 +712,11 @@
     { key: "other", label: "Other", color: "#e87ba4", types: null, filter: null },
   ];
 
+  function typeGroupKey(type) {
+    const g = TYPE_GROUPS.find((g) => g.types && g.types.includes(type));
+    return g ? g.key : "other";
+  }
+
   function renderTypeBar() {
     const box = $("type-bar");
     if (!box) return;
@@ -950,24 +955,26 @@
           : groupNames.get(normalizeName(name));
         const position = w.author_positions?.[index] || index + 1;
         if (!slug || !data.peopleBySlug[slug]) return esc(name);
-        return `<strong class="cds-author" title="${esc(nameOf(slug))} · ${data.peopleBySlug[slug].active ? "CDS author" : "Former CDS staff"} · position ${position} of ${authorCount}">${esc(name)}<span class="author-position" aria-label="position ${position} of ${authorCount}">${position}/${authorCount}</span></strong>`;
+        const st = (w.affiliation_status || {})[slug];
+        const affs = ((w.member_affiliations && w.member_affiliations[slug]) || []).join("; ");
+        const tip = `${nameOf(slug)} · ${data.peopleBySlug[slug].active ? "CDS member" : "former CDS staff"} · author ${position} of ${authorCount}` +
+          (st ? ` · affiliation ${st}${affs ? ": " + affs : ""}` : "") + " · click to filter";
+        return `<button type="button" class="link cds-author" data-person="${esc(slug)}" title="${esc(tip)}">${esc(name)}</button>`;
       })
       .join(", ");
     const incomplete = w.authors.length < authorCount;
     const meta = [
       w.publication_date,
-      fmtType(w.type),
       w.cited_by_count ? `${w.cited_by_count} citations` : null,
     ]
       .filter(Boolean)
       .map(esc)
       .join(" · ");
     return `<li class="item">
-      <div class="publication-top"><span class="journal-name">${esc(w.journal || "Research publication")}</span><span class="badges">${isNew ? '<span class="badge new">new</span>' : ""}${w.manual === "confirmed" ? '<span class="badge oa">confirmed</span>' : !isCounted(w) ? '<span class="badge warn" title="not counted: outside the team window, or this author needs a verified group affiliation (overrides.yml) and none was recorded">not counted</span>' : ""}${w.approved_external ? '<span class="badge new" title="approved for external communication">approved</span>' : ""}${w.is_oa ? '<span class="badge oa">open access</span>' : ""}</span></div>
+      <div class="publication-top"><span class="journal-name">${esc(w.journal || "Research publication")}</span><span class="pill pill-${esc(typeGroupKey(w.type))}">${esc(fmtType(w.type) || "publication")}</span><span class="badges">${isNew ? '<span class="badge new">new</span>' : ""}${w.manual === "confirmed" ? '<span class="badge oa">confirmed</span>' : !isCounted(w) ? '<span class="badge warn" title="not counted: outside the team window, or this author needs a verified group affiliation (overrides.yml) and none was recorded">not counted</span>' : ""}${w.approved_external ? '<span class="badge new" title="approved for external communication">approved</span>' : ""}${w.is_oa ? '<span class="badge oa">open access</span>' : ""}</span></div>
       <h3><a href="${esc(link)}" target="_blank" rel="noopener">${esc(w.title)}</a></h3>
       <div class="meta">${meta}</div>
-      <div class="authors group-authors"><span class="group-author-label">CDS authors</span><ul class="group-author-list">${members}</ul></div>
-      <div class="authors authors-full"><span class="author-list-label">Authors (${authorCount}):</span> ${authors}${incomplete ? ` <span class="author-list-note">· ${w.authors.length} names available in OpenAlex</span>` : ""}</div>
+      <div class="authors authors-full"><span class="author-list-label">Authors (${authorCount}):</span> ${authors}${incomplete ? ` <span class="author-list-note">· ${w.authors.length} names available in OpenAlex</span>` : ""}${!isCounted(w) && workMembers(w).length ? ` <span class="author-list-note">· CDS authors here: ${workMembers(w).map((s) => esc(nameOf(s))).join(", ")}</span>` : ""}</div>
       ${w.abstract ? `<details><summary>Abstract</summary><p>${esc(w.abstract)}</p></details>` : ""}
       ${draftHtml(w, link)}
       <div class="links">${w.doi ? `<a href="${esc(w.doi)}" target="_blank" rel="noopener">DOI ↗</a>` : ""}${w.oa_url ? `<a href="${esc(w.oa_url)}" target="_blank" rel="noopener">Full text ↗</a>` : ""}<a href="${esc(w.openalex_url)}" target="_blank" rel="noopener">OpenAlex ↗</a><span class="meta work-id" title="use this id in overrides.yml">${esc(w.id)}</span></div>
