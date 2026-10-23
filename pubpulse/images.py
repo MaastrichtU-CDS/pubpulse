@@ -50,49 +50,87 @@ def _wrap(text: str, font, max_width: int, draw) -> list[str]:
     return lines
 
 
+ASSETS = Path(__file__).resolve().parent.parent / "site" / "assets"
+
+
+def _svg_image(name: str, height: int):
+    """Render a white-on-transparent SVG asset to an RGBA image of the given height (PyMuPDF renders SVG)."""
+    import pymupdf
+    from PIL import Image
+
+    path = ASSETS / name
+    if not path.exists():
+        return None
+    doc = pymupdf.open(str(path))
+    page = doc[0]
+    scale = height / page.rect.height
+    pix = page.get_pixmap(matrix=pymupdf.Matrix(scale * 2, scale * 2), alpha=True)
+    im = Image.frombytes("RGBA", (pix.width, pix.height), pix.samples)
+    im.thumbnail((im.width, height), Image.LANCZOS)
+    return im
+
+
+def _ellipsis(text: str, font, max_width: int, draw) -> str:
+    if draw.textlength(text, font=font) <= max_width:
+        return text
+    while text and draw.textlength(text + " …", font=font) > max_width:
+        text = text[:-1].rstrip()
+    return text + " …"
+
+
 def make_card(w: dict, names: dict[str, str], out_path: Path, group_label: str = "Clinical Data Science · Maastricht", finding: str | None = None) -> Path:
     """Branded 1200x627 card. With `finding` (the main point, usually the first line of the draft post) the finding is the
-    headline and the title goes underneath; without it the title is the headline."""
+    headline and the title goes underneath; without it the title is the headline. Footer: CDS emblem and partner logos."""
     from PIL import Image, ImageDraw
 
     img = Image.new("RGB", CARD_SIZE, NAVY)
     d = ImageDraw.Draw(img)
     d.rectangle([(0, 0), (14, CARD_SIZE[1])], fill=ACCENT)
-    x, y, width = 70, 60, CARD_SIZE[0] - 140
-    d.text((x, y), group_label.upper(), font=_font(22, True), fill=ACCENT)
-    y += 54
+    x, y, width = 70, 54, CARD_SIZE[0] - 140
+    d.text((x, y), group_label.upper(), font=_font(20, True), fill=ACCENT)
+    y += 48
     headline = (finding or w["title"]).strip()
-    size = 50 if len(headline) < 120 else 42 if len(headline) < 200 else 36
+    size = 44 if len(headline) < 120 else 38 if len(headline) < 190 else 33
     head_font = _font(size, True)
     lines = _wrap(headline, head_font, width, d)
-    while len(lines) > 5 and size > 30:
-        size -= 4
+    while len(lines) > 4 and size > 28:
+        size -= 3
         head_font = _font(size, True)
         lines = _wrap(headline, head_font, width, d)
-    if len(lines) > 5:
-        lines = lines[:5]
+    if len(lines) > 4:
+        lines = lines[:4]
         lines[-1] = lines[-1].rstrip(".,;:") + " …"
     for line in lines:
         d.text((x, y), line, font=head_font, fill=LIGHT)
-        y += int(head_font.size * 1.25)
-    y += 14
+        y += int(head_font.size * 1.22)
+    y += 12
     if finding:
-        tf = _font(24)
-        for line in _wrap(w["title"], tf, width, d)[:2]:
-            d.text((x, y), line, font=tf, fill=(205, 215, 230))
-            y += 32
-        y += 8
+        tf = _font(22)
+        d.text((x, y), _ellipsis(w["title"], tf, width, d), font=tf, fill=(205, 215, 230))
+        y += 34
     meta = " · ".join(x for x in (w.get("journal"), (w.get("publication_date") or "")[:4]) if x)
-    d.text((x, y), meta, font=_font(28), fill=ACCENT)
-    y += 46
+    d.text((x, y), _ellipsis(meta, _font(26), width, d), font=_font(26), fill=ACCENT)
+    y += 40
     members = ", ".join(names.get(s, s) for s in w.get("group_members", []))
     if members:
-        for line in _wrap("With " + members, _font(26), width, d)[:2]:
-            d.text((x, y), line, font=_font(26), fill=MUTED)
-            y += 36
-    foot = _font(24)
-    d.text((x, CARD_SIZE[1] - 70), (w.get("doi") or "").replace("https://", ""), font=foot, fill=MUTED)
-    d.text((CARD_SIZE[0] - 70 - d.textlength("pubpulse", font=_font(24, True)), CARD_SIZE[1] - 70), "pubpulse", font=_font(24, True), fill=ACCENT)
+        d.text((x, y), _ellipsis("With " + members, _font(24), width, d), font=_font(24), fill=MUTED)
+        y += 34
+    # footer: DOI, CDS emblem left, partner logos right
+    foot_y = CARD_SIZE[1] - 118
+    d.line([(x, foot_y - 18), (CARD_SIZE[0] - 70, foot_y - 18)], fill=(30, 58, 92), width=1)
+    d.text((x, foot_y - 4), (w.get("doi") or "").replace("https://", ""), font=_font(20), fill=MUTED)
+    logo_y = CARD_SIZE[1] - 78
+    cds = _svg_image("cds.svg", 56)
+    if cds:
+        img.paste(cds, (x - 6, logo_y - 8), cds)
+    right = CARD_SIZE[0] - 70
+    for name, h in (("maastricht-umc.svg", 26), ("maastro.svg", 24), ("maastricht-university.svg", 26)):
+        logo = _svg_image(name, h)
+        if not logo:
+            continue
+        right -= logo.width
+        img.paste(logo, (right, logo_y + (28 - logo.height) // 2), logo)
+        right -= 34
     out_path.parent.mkdir(parents=True, exist_ok=True)
     img.save(out_path, "PNG", optimize=True)
     return out_path
