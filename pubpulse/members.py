@@ -167,8 +167,11 @@ def template_csv(people: list[dict]) -> str:
     out = io.StringIO()
     w = csv.writer(out)
     w.writerow(["name", "slug", "role", "employer", "start", "end", "note"])
-    for p in sorted(people, key=lambda p: ((p.get("status") == "former" or bool(p.get("active_until"))), (p.get("name") or "").lower())):
+    def former(p):
+        return p.get("status") == "former" or p.get("section") == "previous" or bool(p.get("active_until"))
+
+    for p in sorted(people, key=lambda p: (former(p), (p.get("name") or "").lower())):
         if p.get("exclude"):
             continue
-        w.writerow([p["name"], p["slug"], p.get("role") or "", p.get("employer") or "", p.get("member_from") or "", p.get("member_until") or p.get("active_until") or "", p.get("member_note") or ("former staff" if p.get("status") == "former" else "")])
+        w.writerow([p["name"], p["slug"], p.get("role") or "", p.get("employer") or "", p.get("member_from") or "", p.get("member_until") or p.get("active_until") or "", p.get("member_note") or ("former staff (end date unknown)" if former(p) else "")])
     return out.getvalue()
