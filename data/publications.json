@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-23T13:42:15+00:00",
+ "generated": "2026-10-23T13:44:08+00:00",
  "group_name": "Clinical Data Science (Maastro / Maastricht University)",
  "site_url": "https://maastrichtu-cds.github.io/pubpulse/",
  "repo_url": "https://github.com/MaastrichtU-CDS/pubpulse",
@@ -5221,10 +5221,8 @@
    "cited_by_count": 0,
    "abstract": "CancerWatch: strengthening Europe's cancer intelligenceCancer remains one of Europe's most pressing public health challenges, with 2.7 million new cases and 1.3 million deaths estimated each year [1].By 2050, cancer incidence and mortality are projected to rise by 20.4% and 34.6% respectively, while per-capita cancer spending across the EU27 is forecast to increase by 59% in real terms over the same period [2, 3].Population ageing, persistent inequalities and rising costs are expected to increase pressure on European health systems [4,5].Assessing this growing burden and evaluating the effectiveness of cancer control therefore require timely, comparable and robust population-based evidence.In 2021, the European Commission launched Europe's Beating Cancer Plan (EBCP), supported by €4 billion to strengthen cancer control [6].Its four action areas cover prevention, early detection, diagnosis and treatment, and quality of life of all patients and survivors.However, a recent assessment by the European Court of Auditors found that the EBCP monitoring framework lacks quantified targets, milestones and indicators, highlighting the need for harmonised and comparable population-based data to assess progress and impact [7]. Population-based cancer registries: a foundation for cancer intelligencePopulation-based cancer registries (PBCRs) provide systematic, continuous and standardised real-world evidence on cancer across Europe.Their cancer collection draws on multiple data sources, harmonised coding and standardised analytical methods that follow international recommendations, supporting quality and comparability across populations [8][9][10][11].Unlike hospital-based or medico-administrative datasets, PBCRs capture core clinical information on all incident cancers within a defined population, irrespective of where patients are diagnosed or treated.This population-wide coverage is essential for more comprehensive and less selection-prone assessment of patient-centred cancer incidence, survival and other populationlevel outcomes.The Lancet Commission identified PBCRs as essential for evaluating cancer control policies and supporting population-based research [12].The reliability of PBCR data is commonly assessed through four competing dimensions: completeness, validity, comparability and timeliness [13,14].Maintaining high performance across all four remains challenging, particularly as demand for more timely cancer data increases.Beyond surveillance, PBCRs support population-based research on cancer aetiology, survival, inequalities and healthsystem performance.PBCRs are also essential for monitoring key cancer-control objectives across the entire cancer patient pathway.For example, they enable evaluation of organised screening programmes through indicators such as stage at diagnosis, interval cancers, survival and mortality, providing evidence of population-level effectiveness.Similarly, the target",
    "verified": false,
-   "counted_members": [
-    "matthijs-sloep"
-   ],
-   "counted": true,
+   "counted_members": [],
+   "counted": false,
    "first_seen": "2026-10-21",
    "approved_external": false
   },
@@ -5927,10 +5925,8 @@
    "cited_by_count": 0,
    "abstract": null,
    "verified": false,
-   "counted_members": [
-    "matthijs-sloep"
-   ],
-   "counted": true,
+   "counted_members": [],
+   "counted": false,
    "first_seen": "2026-10-21",
    "approved_external": false
   },
@@ -7860,10 +7856,8 @@
    "cited_by_count": 0,
    "abstract": "BACKGROUND: Survival analysis is a fundamental tool in clinical prognosis, yet traditional statistical models often struggle to capture complex, high-dimensional relationships in modern healthcare data. Recent advances in Large Language Models (LLMs) offer new opportunities for flexible and context-aware modeling. At the same time, access to real-world clinical data remains restricted due to privacy constraints, motivating the use of synthetic datasets as a privacy-preserving alternative for model development and evaluation. METHODS: We propose a survival analysis framework based on fine-tuned LLMs, evaluated on a large-scale synthetic breast cancer dataset derived from European cancer registry data. A synthetic dataset emulating a national population-based cancer registry and comprising 60,000 breast cancer patients was used following feature engineering and data imputation. We compared traditional survival analysis methods, including Cox regression and gradient boosting, with a range of fine-tuned LLMs representing encoder-only, decoder-only, and encoder-decoder architectures. Model performance was evaluated using standard survival analysis metrics accounting for censoring. To assess generalizability, the best-performing models were deployed on a real-world cohort of 183,304 patients from Dutch cancer registries. RESULTS: The proposed LLM-based models demonstrate competitive performance across multiple survival metrics, with consistent differences observed across model architectures. When applied to real-world registry data, models trained on synthetic data and those trained on real data retained strong performance in retrospective evaluation settings, while performance decreased under standard inference conditions where survival status was unavailable. This study provides large-scale empirical evidence that models trained on synthetic cancer registry data can generalize to real-world populations, achieving strong performance in retrospective evaluation settings and moderate performance under standard inference conditions. CONCLUSION: This study demonstrates that LLMs can serve as flexible models for survival analysis. The use of high-fidelity synthetic data enables privacy-preserving model development while maintaining strong predictive performance. These findings support the integration of Generative AI methods into survival modeling pipelines, particularly in data-constrained clinical settings.",
    "verified": false,
-   "counted_members": [
-    "matthijs-sloep"
-   ],
-   "counted": true,
+   "counted_members": [],
+   "counted": false,
    "first_seen": "2026-10-21",
    "approved_external": false
   },
@@ -8306,10 +8300,8 @@
    "cited_by_count": 1,
    "abstract": "Building on previous research and implementations, this study identifies the essential structural and functional components required to develop a Learning Health System (LHS) for oncology in the Netherlands. Drawing on work related to the Netherlands Cancer Registry (NCR), we systematically mapped our studies onto the LHS framework to examine component coverage and integration. Medical informatics advances LHS development by enabling structured data capture, computable guideline representation, continues real-world data analysis, and data-driven guideline refinement. In the Netherlands, strong integration with the NCR provides a robust foundation for continuous learning, moving the vision of a fast, data-driven health system closer to reality. Our findings show that while the methodological and technical foundations of LHS components are well established, integration gaps remain. The next step is engaging multidisciplinary learning communities, supported by clear governance, to enable continuous learning, and sustained improvement in oncology care.",
    "verified": false,
-   "counted_members": [
-    "matthijs-sloep"
-   ],
-   "counted": true,
+   "counted_members": [],
+   "counted": false,
    "first_seen": "2026-10-21",
    "approved_external": false
   },
@@ -13742,10 +13734,8 @@
    "cited_by_count": 0,
    "abstract": null,
    "verified": false,
-   "counted_members": [
-    "matthijs-sloep"
-   ],
-   "counted": true,
+   "counted_members": [],
+   "counted": false,
    "first_seen": "2026-10-21",
    "approved_external": false
   },
@@ -21176,10 +21166,8 @@
    "cited_by_count": 0,
    "abstract": "Molecular diagnostics is essential for personalized treatment in oncology. However, nationwide insight into the use of molecular diagnostics in clinical practice and corresponding outcomes is lacking. This project focuses on the design, development and evaluation of a prototype dashboard that combines data from national registries and computational guidelines to reveal missing insights in molecular diagnostics in the Netherlands. Stakeholder input and practical testing highlighted challenges with data availability and usability. The project demonstrates the feasibility of using real-world data and computational guidelines to create a dashboard, supporting a continuous short-cycle learning process to enhance patient care.",
    "verified": false,
-   "counted_members": [
-    "matthijs-sloep"
-   ],
-   "counted": true,
+   "counted_members": [],
+   "counted": false,
    "first_seen": "2026-10-21",
    "approved_external": false
   },
@@ -30085,10 +30073,8 @@
    "cited_by_count": 2,
    "abstract": "Data exchange in oncological healthcare is hindered by insufficient standardization agreements. An Information Standard comprises agreements facilitating accurate communication of care information with the necessary quality and timeliness. We introduce a structured approach to designing, implementing, and maintaining semantic information standards for oncology, supporting information use across medical scenarios. It consists of an element dataset organized into three tiers, ensuring comprehensive documentation and reliable information exchange. These agreements enhance health data interoperability and system functionality, governed by semantic standardization. Together with communication standards, they empower healthcare professionals with extensive medical records and grant patients control over their health data. Consequently, a high-quality semantic information standard supports both providers and patients, and is adequate during development and manageable during maintenance.",
    "verified": false,
-   "counted_members": [
-    "matthijs-sloep"
-   ],
-   "counted": true,
+   "counted_members": [],
+   "counted": false,
    "first_seen": "2026-10-21",
    "approved_external": false
   },
@@ -30154,10 +30140,8 @@
    "cited_by_count": 0,
    "abstract": "Decision-making in healthcare often relies on narrative guidelines; however, these instruments are poorly accessible for supporting clinical decision-making. This study explores the application of rule-based decision logic in algorithmic modeling, emphasizing its great potential in clinical decision support and research. Integrating rule-based algorithms with existing information systems and real-world data poses a serious challenge. Integrating decision algorithms with information standards increases their effectiveness across various applications. This study outlines a method for constructing clinical decision trees (CDTs), highlighting their transparency and interpretability, using information standards as a design principle. We use the digitization of the Dutch breast cancer guideline through CDTs as a case study to exemplify their versatility and practical significance. The process step 'primary treatment' has been successfully translated from the narrative guidelines format to the anticipated ted computational format.",
    "verified": false,
-   "counted_members": [
-    "matthijs-sloep"
-   ],
-   "counted": true,
+   "counted_members": [],
+   "counted": false,
    "first_seen": "2026-10-21",
    "approved_external": false
   },
