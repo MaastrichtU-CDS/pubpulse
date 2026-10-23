@@ -352,3 +352,10 @@ def test_verify_affiliation_exception_requires_verified():
     assert works["W1"]["counted"] is True and works["W2"]["counted"] is False
     works, _ = fetch_works(people, client, 2024, date(2026, 10, 23), keywords=KW)
     assert works["W2"]["counted"] is True
+
+
+def test_merge_review_decisions_respects_overrides():
+    from pubpulse.sync import merge_review_decisions
+    ov = {"confirm": {"W1"}, "reject": {"W2"}, "approve_external": set(), "verify_affiliation": set()}
+    out = merge_review_decisions(ov, {"W1": {"cds": "no"}, "W2": {"cds": "yes"}, "W3": {"cds": "yes"}, "W4": {"cds": "no"}, "W5": {"cds": ""}})
+    assert out["confirm"] == {"W1", "W3"} and out["reject"] == {"W2", "W4"}

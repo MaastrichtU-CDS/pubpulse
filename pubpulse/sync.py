@@ -10,6 +10,7 @@ from collections import defaultdict
 from datetime import date, datetime, timezone
 from pathlib import Path
 
+import requests
 import yaml
 
 from .openalex import OpenAlex, abstract_from_inverted_index, author_affiliations, author_current_institutions, short_id
@@ -89,6 +90,35 @@ def load_overrides(path: Path = OVERRIDES_PATH) -> dict:
         raw = yaml.safe_load(f) or {}
     out = {k: {short_id(str(x)) for x in (raw.get(k) or [])} for k in ("confirm", "reject", "approve_external")}
     out["verify_affiliation"] = {str(x).strip().lower() for x in (raw.get("verify_affiliation") or [])}
+    return out
+
+
+def fetch_review_decisions(url: str | None, key: str | None) -> dict:
+    """Manual yes/no decisions from the private review sheet (Apps Script web app). {} when not configured."""
+    if not url or not key:
+        return {}
+    try:
+        r = requests.get(url, params={"key": key}, timeout=60, allow_redirects=True)
+        r.raise_for_status()
+        data = r.json()
+        if not data.get("ok"):
+            raise RuntimeError(data.get("error"))
+        log.info("review sheet: %d decisions", data.get("count", 0))
+        return data.get("decisions") or {}
+    except Exception as exc:  # noqa: BLE001
+        log.error("review sheet could not be read (%s); continuing without it", exc)
+        return {}
+
+
+def merge_review_decisions(overrides: dict, decisions: dict) -> dict:
+    """'yes' confirms, 'no' rejects; overrides.yml entries stay and win on conflict."""
+    out = {k: set(v) for k, v in overrides.items()}
+    for wid, d in decisions.items():
+        v = (d.get("cds") or "").lower()
+        if v == "yes" and wid not in out["reject"]:
+            out["confirm"].add(wid)
+        elif v == "no" and wid not in out["confirm"]:
+            out["reject"].add(wid)
     return out
 
 
@@ -613,7 +643,8 @@ def run(dry_run: bool = False, skip_people: bool = False, config_path: Path = CO
         people, client, keywords, today, broad_keywords=cfg.get("author_match_keywords") or keywords,
         grace_months=grace, max_age_days=int(cfg.get("resolve_cache_days", 30)),
     )
-    overrides = load_overrides()
+    import os
+    overrides = merge_review_decisions(load_overrides(), fetch_review_decisions(os.environ.get("REVIEW_SHEET_URL"), os.environ.get("REVIEW_SHEET_KEY")))
     fetched, errors = fetch_works(
         people, client, int(cfg.get("since_year", 2024)), today,
         keywords=keywords, policy=cfg.get("affiliation_policy", "flag"), exclude_types=cfg.get("exclude_types"),

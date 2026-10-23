@@ -22,3 +22,11 @@ def test_rows_and_xlsx(tmp_path):
     wb = load_workbook(out)
     assert wb.sheetnames == ["Publications", "Group authorships", "People", "Notes"]
     assert wb["Publications"].max_row == 2 and wb["Group authorships"].max_row == 3 and wb["People"].max_row == 3
+
+
+def test_csv_companion(tmp_path):
+    from pubpulse.export import write_csv
+    import csv
+    out = write_csv(_pubs(), tmp_path / "p.csv")
+    rows = list(csv.reader(open(out, encoding="utf-8")))
+    assert rows[0][0] == "OpenAlex work id" and rows[1][0] == "W1" and len(rows) == 2

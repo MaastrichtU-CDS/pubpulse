@@ -145,3 +145,17 @@ def write_xlsx(pubs: dict, cfg: dict, path: Path) -> Path:
     path.parent.mkdir(parents=True, exist_ok=True)
     wb.save(path)
     return path
+
+
+def write_csv(pubs: dict, path: Path) -> Path:
+    """The Publications sheet as UTF-8 CSV (companion of the xlsx; read by the review sheet script)."""
+    import csv
+
+    rows = paper_rows(pubs)
+    path.parent.mkdir(parents=True, exist_ok=True)
+    with open(path, "w", newline="", encoding="utf-8") as f:
+        w = csv.writer(f)
+        w.writerow([label for _, label in PAPER_COLUMNS])
+        for r in rows:
+            w.writerow([("" if r.get(k) is None else r.get(k)) for k, _ in PAPER_COLUMNS])
+    return path

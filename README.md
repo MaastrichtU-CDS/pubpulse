@@ -176,6 +176,16 @@ pubpulse. Papers that are on Scholar but not in pubpulse show up on the website 
 with the person's name. Typical causes: the publisher did not send the author's ORCID (fix: add the paper in the ORCID
 record, OpenAlex follows), or grey literature OpenAlex does not index (nothing to do). Secret: `SERPAPI_KEY`.
 
+### Review sheet: manual "CDS authored" decisions in a private Google Sheet
+
+For members who prefer a spreadsheet to editing overrides.yml: a private Google Sheet in the pubpulse Google account
+mirrors the Excel export and adds the columns **CDS authored (manual)** (yes / no) and **Review note**. Only invited
+editors can see or edit it. A small Apps Script ([appsscript/ReviewSheet.gs](appsscript/ReviewSheet.gs)) refreshes
+the data columns every Monday from the site export, keeps the manual columns, stamps who decided when, and hands the
+decisions to the weekly run through a key-protected endpoint. "yes" counts the paper (marked *confirmed*), "no"
+removes it; entries in overrides.yml win on conflict. Setup is in the script header (5 steps, about 5 minutes);
+secrets: `REVIEW_SHEET_URL`, `REVIEW_SHEET_KEY`.
+
 ### The team-window rule
 
 A paper counts when a group member was in the team at publication time: current staff count for the whole window,
