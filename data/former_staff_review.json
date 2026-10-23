@@ -2031,8 +2031,8 @@
    "checked_at": "2026-10-23",
    "window_start": "2024-10-23",
    "recent_months": 24,
-   "shared_papers": 9,
-   "recent_shared_papers": 6,
+   "shared_papers": 10,
+   "recent_shared_papers": 7,
    "last_collaboration_date": "2026-10-01",
    "followup_until": "2028-10-01",
    "current_coauthors": [
@@ -2106,6 +2106,18 @@
      ],
      "author_name": "Hugo J.W.L. Aerts",
      "author_position": 23,
+     "recent": true
+    },
+    {
+     "work": "W7130704511",
+     "title": "Aortic and Cardiac Structure From Routine CT Predict Cardiovascular Risk Beyond PREVENT and Coronary Calcium",
+     "date": "2026-02-20",
+     "url": "https://doi.org/10.1016/j.jcmg.2026.01.006",
+     "current_coauthors": [
+      "leonard-nurnberg"
+     ],
+     "author_name": "Hugo J.W.L. Aerts",
+     "author_position": 11,
      "recent": true
     },
     {
@@ -2573,14 +2585,15 @@
    "checked_at": "2026-10-23",
    "window_start": "2024-10-23",
    "recent_months": 24,
-   "shared_papers": 1,
-   "recent_shared_papers": 1,
-   "last_collaboration_date": "2026-01-01",
-   "followup_until": "2028-01-01",
+   "shared_papers": 4,
+   "recent_shared_papers": 4,
+   "last_collaboration_date": "2026-03-12",
+   "followup_until": "2028-03-12",
    "current_coauthors": [
     "andre-dekker",
     "rianne-fijten",
-    "simone-mingels"
+    "simone-mingels",
+    "yomi-okegunna"
    ],
    "status": "recent_collaboration",
    "orcid": "0000-0002-7224-7198",
@@ -2588,6 +2601,20 @@
    "scholar_id": null,
    "identifier_evidence": {},
    "evidence": [
+    {
+     "work": "W7135024226",
+     "title": "Advancing Predictive Modeling of Inflammatory Bowel Disease (IBD) Flares: A Data-Driven Approach Using Lifestyle and Psychosocial Factors from a Remote Monitoring Platform",
+     "date": "2026-03-12",
+     "url": "https://doi.org/10.1007/s10620-026-09750-8",
+     "current_coauthors": [
+      "andre-dekker",
+      "rianne-fijten",
+      "yomi-okegunna"
+     ],
+     "author_name": "M Cloots",
+     "author_position": 4,
+     "recent": true
+    },
     {
      "work": "W7125369829",
      "title": "Decisional needs among patients and physicians in the treatment of chronic myeloid leukaemia: a qualitative analysis in the Netherlands",
@@ -2600,6 +2627,34 @@
      ],
      "author_name": "M Cloots",
      "author_position": 2,
+     "recent": true
+    },
+    {
+     "work": "W7164979543",
+     "title": "Predicting Clinical Remission in Crohn’s Disease:A Comparative Study of Expert-Generated and Computer-Generated Bayesian Networks",
+     "date": "2025-01-01",
+     "url": "https://openalex.org/W7164979543",
+     "current_coauthors": [
+      "andre-dekker",
+      "rianne-fijten",
+      "yomi-okegunna"
+     ],
+     "author_name": "M Cloots",
+     "author_position": 3,
+     "recent": true
+    },
+    {
+     "work": "W4406705129",
+     "title": "P0083 Decisional needs among patients and physicians in Crohn's disease: A qualitative analysis",
+     "date": "2025-01-01",
+     "url": "https://doi.org/10.1093/ecco-jcc/jjae190.0257",
+     "current_coauthors": [
+      "andre-dekker",
+      "rianne-fijten",
+      "yomi-okegunna"
+     ],
+     "author_name": "M Cloots",
+     "author_position": 1,
      "recent": true
     }
    ]
@@ -2628,7 +2683,7 @@
    "checked_at": "2026-10-23",
    "window_start": "2024-10-23",
    "recent_months": 24,
-   "shared_papers": 1,
+   "shared_papers": 2,
    "recent_shared_papers": 0,
    "last_collaboration_date": null,
    "followup_until": null,
@@ -2639,6 +2694,19 @@
    "scholar_id": null,
    "identifier_evidence": {},
    "evidence": [
+    {
+     "work": "W4390788550",
+     "title": "Natural Language Processing Algorithm Used for Staging Pulmonary Oncology from Free-Text Radiological Reports: “Including PET-CT and Validation Towards Clinical Use”",
+     "date": "2024-01-12",
+     "url": "https://doi.org/10.1007/s10278-023-00913-x",
+     "current_coauthors": [
+      "andre-dekker",
+      "sander-puts"
+     ],
+     "author_name": "J. Martijn Nobel",
+     "author_position": 1,
+     "recent": false
+    },
     {
      "work": "W4391065084",
      "title": "Natural language processing in oncology",

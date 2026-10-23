@@ -125,7 +125,7 @@ Edit either file in the GitHub web editor and commit to `main`; the workflow run
 | `OPENALEX_API_KEY` | free key from https://openalex.org/settings/api. Strongly recommended: without it OpenAlex shares one small daily budget per IP address (GitHub's runners share addresses) |
 | `GMAIL_USER` | Gmail address the digest is sent from |
 | `GMAIL_APP_PASSWORD` | a Gmail [app password](https://myaccount.google.com/apppasswords) (needs 2-step verification on that account) |
-| `DIGEST_TO` | optional fixed recipient(s), comma separated, in addition to the subscriber list |
+| `DIGEST_TO` | test recipient(s) only: used solely by manual runs with *force_notify* ticked; real sends go to the Brevo list |
 | `SUBSCRIBERS_KEY` | the SECRET printed by the Apps Script `setup` (see mailing list section) |
 | `BREVO_API_KEY` | Brevo API key: subscriber list + weekly campaign (see mailing list section) |
 | `SMTP_HOST`, `SMTP_PORT`, `SMTP_USER`, `SMTP_PASSWORD`, `SMTP_FROM` | optional: any other SMTP relay instead of Gmail (e.g. Brevo free tier: `smtp-relay.brevo.com`, port 587, your Brevo login + SMTP key, a verified sender address) |

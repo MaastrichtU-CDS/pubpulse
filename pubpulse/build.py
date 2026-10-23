@@ -106,10 +106,22 @@ def scholar_summary() -> dict | None:
     return {"checked_at": r.get("checked_at", ""), "missing": r.get("total_missing", 0), "not_attributed": r.get("total_not_attributed", 0)}
 
 
+def split_recent(items: list[dict], recent_days: int, today: str | None = None) -> tuple[list[dict], list[dict]]:
+    """News = published within recent_days; the rest are older papers that only now got linked to a group member
+    (newly identified person, late indexing) and belong in the archive note, not in the headline."""
+    from datetime import date, timedelta
+    today_d = date.fromisoformat(today) if today else date.today()
+    cutoff = (today_d - timedelta(days=recent_days)).isoformat()
+    recent = [w for w in items if (w.get("publication_date") or "") >= cutoff]
+    older = [w for w in items if (w.get("publication_date") or "") < cutoff]
+    return recent, older
+
+
 def build_digest(pubs: dict, cfg: dict, pending_ids: list[str] | None = None) -> dict:
     """Return subject, html, text, teams payload (dict) for the works not announced yet."""
     names = people_names(pubs)
-    items = sorted(new_works(pubs, pending_ids), key=lambda w: w.get("publication_date") or "", reverse=True)
+    all_items = sorted(new_works(pubs, pending_ids), key=lambda w: w.get("publication_date") or "", reverse=True)
+    items, backfill = split_recent(all_items, int((cfg.get("digest") or {}).get("recent_days", 120)), (pubs.get("last_run") or {}).get("date"))
     last = pubs.get("last_run") or {}
     site = cfg.get("site_url", "")
     group = cfg.get("group_name", "the group")
@@ -133,6 +145,11 @@ def build_digest(pubs: dict, cfg: dict, pending_ids: list[str] | None = None) ->
         + (f" · {html.escape(person_line)}" if person_line else "")
         + "</p>",
         "<ol>" + "".join(_item_html(w, names) for w in items) + "</ol>" if items else "<p>Nothing new this week.</p>",
+        (
+            f'<p style="font-size:13px;color:#555"><b>Also added to the archive</b> ({len(backfill)} older paper{"s" if len(backfill) != 1 else ""}, '
+            f'now linked to a group member): ' + "; ".join(f'{html.escape(w["title"][:70])} ({w.get("year")})' for w in backfill[:8])
+            + (" …" if len(backfill) > 8 else "") + f'. <a href="{html.escape(site)}#sort=added">See them on the site</a>.</p>'
+        ) if backfill else "",
         f'<p><a href="{html.escape(site)}">Browse and filter all publications</a> · <a href="{html.escape(site)}feed.xml">RSS feed</a></p>',
     ]
     unverified_new = sum(1 for w in items if not w.get("verified", True))
@@ -169,6 +186,8 @@ def build_digest(pubs: dict, cfg: dict, pending_ids: list[str] | None = None) ->
         members = ", ".join(names.get(s, s) for s in w.get("group_members", []))
         flag = "" if w.get("verified", True) else "  [group affiliation not verified]"
         text_lines += [f"{i}. {w['title']}", f"   {w.get('journal') or ''} · {w.get('publication_date') or ''}", f"   Group authors: {members}{flag}", f"   {work_link(w)}", ""]
+    if backfill:
+        text_lines += ["", f"Also added to the archive ({len(backfill)} older papers now linked to a group member):"] + [f"   - {w['title'][:80]} ({w.get('year')})" for w in backfill[:8]]
     text_lines += [f"All publications: {site}", f"Feed: {site}feed.xml"]
     if unverified_new:
         text_lines += ["", f"{unverified_new} of these have no group affiliation recorded: {site}#when=week&verify=unverified"]
@@ -206,7 +225,7 @@ def build_digest(pubs: dict, cfg: dict, pending_ids: list[str] | None = None) ->
             },
         }],
     }
-    return {"subject": subject, "html": html_body, "text": "\n".join(text_lines), "teams": teams, "new_count": n}
+    return {"subject": subject, "html": html_body, "text": "\n".join(text_lines), "teams": teams, "new_count": n, "pending_count": len(all_items)}
 
 
 # ---------------------------------------------------------------------------------------------- run
@@ -227,6 +246,7 @@ def run(config_path: Path | None = None) -> dict:
     (OUT_DIR / "subject.txt").write_text(digest["subject"], encoding="utf-8")
     (OUT_DIR / "teams.json").write_text(json.dumps(digest["teams"], ensure_ascii=False, indent=1), encoding="utf-8")
     (OUT_DIR / "new_count.txt").write_text(str(digest["new_count"]), encoding="utf-8")
+    (OUT_DIR / "pending_count.txt").write_text(str(digest.get("pending_count", digest["new_count"])), encoding="utf-8")
 
     if DIST_DIR.exists():
         shutil.rmtree(DIST_DIR)

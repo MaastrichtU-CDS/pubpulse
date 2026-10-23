@@ -3587,8 +3587,8 @@ people:
     checked_at: '2026-10-23'
     window_start: '2024-10-23'
     recent_months: 24
-    shared_papers: 9
-    recent_shared_papers: 6
+    shared_papers: 10
+    recent_shared_papers: 7
     last_collaboration_date: '2026-10-01'
     followup_until: '2028-10-01'
     current_coauthors:
@@ -4032,14 +4032,15 @@ people:
     checked_at: '2026-10-23'
     window_start: '2024-10-23'
     recent_months: 24
-    shared_papers: 1
-    recent_shared_papers: 1
-    last_collaboration_date: '2026-01-01'
-    followup_until: '2028-01-01'
+    shared_papers: 4
+    recent_shared_papers: 4
+    last_collaboration_date: '2026-03-12'
+    followup_until: '2028-03-12'
     current_coauthors:
     - andre-dekker
     - rianne-fijten
     - simone-mingels
+    - yomi-okegunna
   publication_identity_sources:
   - work: W7125369829
     openalex_id: A5115984648
@@ -4049,6 +4050,7 @@ people:
   orcid_openalex: 0000-0002-7224-7198
   publication_name_aliases:
   - M Cloots
+  resolved_at: '2026-10-23'
 - section: previous
   slug: marie-picquet
   name: Marie Picquet
@@ -4084,7 +4086,7 @@ people:
     checked_at: '2026-10-23'
     window_start: '2024-10-23'
     recent_months: 24
-    shared_papers: 1
+    shared_papers: 2
     recent_shared_papers: 0
     last_collaboration_date: null
     followup_until: null

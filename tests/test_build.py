@@ -99,3 +99,15 @@ def test_site_build_cache_busts_assets(tmp_path, monkeypatch):
     build.run()
     html = (build.DIST_DIR / "index.html").read_text()
     assert 'src="app.js?v=' in html and 'href="style.css?v=' in html
+
+
+def test_digest_separates_news_from_backfill():
+    from pubpulse.build import build_digest, split_recent
+    pubs = _pubs(5)
+    for i, w in enumerate(pubs["works"]):
+        w["publication_date"] = "2026-10-20" if i < 2 else "2025-03-12"
+    recent, older = split_recent(pubs["works"], 120, "2026-10-21")
+    assert [w["id"] for w in recent] == ["W0", "W1"] and len(older) == 3
+    d = build_digest(pubs, {**CFG, "digest": {"recent_days": 120}})
+    assert d["new_count"] == 2 and "2 new publications" in d["subject"]
+    assert "Also added to the archive" in d["html"] and "3 older papers" in d["html"]

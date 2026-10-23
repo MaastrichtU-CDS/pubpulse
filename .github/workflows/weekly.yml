@@ -106,6 +106,7 @@ jobs:
         id: digest
         run: |
           echo "new_count=$(cat out/new_count.txt)" >> "$GITHUB_OUTPUT"
+          echo "pending_count=$(cat out/pending_count.txt 2>/dev/null || echo 0)" >> "$GITHUB_OUTPUT"
           echo "subject=$(cat out/subject.txt)" >> "$GITHUB_OUTPUT"
           {
             echo "## pubpulse run"
@@ -129,17 +130,18 @@ jobs:
         uses: actions/deploy-pages@v4
 
       - name: Email digest to the Brevo subscriber list (campaign)
+        # Real sends go to the list only, and only on scheduled/normal runs with news; never on a forced test.
         id: email
-        if: (steps.digest.outputs.new_count != '0' || inputs.force_notify) && env.BREVO_API_KEY != ''
+        if: steps.digest.outputs.new_count != '0' && !inputs.force_notify && env.BREVO_API_KEY != ''
         run: python -m pubpulse send-campaign
 
-      - name: Email digest to fixed recipients (SMTP, DIGEST_TO)
+      - name: Test mail to DIGEST_TO (manual runs with force_notify only)
         id: email_fixed
-        if: "!cancelled() && (steps.digest.outputs.new_count != '0' || inputs.force_notify) && env.DIGEST_TO != '' && (env.GMAIL_USER != '' || env.SMTP_HOST != '')"
+        if: "!cancelled() && inputs.force_notify && env.DIGEST_TO != '' && (env.GMAIL_USER != '' || env.SMTP_HOST != '')"
         run: python -m pubpulse send-digest
 
       - name: Post digest to Teams
-        if: "!cancelled() && (steps.digest.outputs.new_count != '0' || inputs.force_notify) && env.TEAMS_WEBHOOK_URL != ''"
+        if: "!cancelled() && steps.digest.outputs.new_count != '0' && !inputs.force_notify && env.TEAMS_WEBHOOK_URL != ''"
         continue-on-error: true
         run: |
           curl --fail --silent --show-error -X POST -H "Content-Type: application/json" \
@@ -148,7 +150,8 @@ jobs:
       - name: Record what has been announced
         # Runs when the email was sent or no email is configured; skipped when sending failed, so the next run
         # announces the same papers again instead of losing them.
-        if: "!cancelled() && steps.email.outcome != 'failure' && steps.email_fixed.outcome != 'failure' && steps.digest.outputs.new_count != '0'"
+        # Clears the pending list (news and archive additions) once the real send succeeded or no sender is configured.
+        if: "!cancelled() && !inputs.force_notify && steps.email.outcome != 'failure' && steps.digest.outputs.pending_count != '0'"
         run: |
           python -m pubpulse mark-notified
           git add data/pending.json data/brevo_list.json 2>/dev/null || git add data/pending.json

@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-23T12:44:01+00:00",
+ "generated": "2026-10-23T12:48:22+00:00",
  "group_name": "Clinical Data Science (Maastro / Maastricht University)",
  "site_url": "https://maastrichtu-cds.github.io/pubpulse/",
  "repo_url": "https://github.com/MaastrichtU-CDS/pubpulse",
@@ -13,21 +13,9 @@
  "last_run": {
   "date": "2026-10-23",
   "baseline": false,
-  "new_count": 13,
+  "new_count": 1,
   "new_ids": [
-   "W7201896454",
-   "W4391967597",
-   "W4399495258",
-   "W7135214715",
-   "W4398251898",
-   "W4417408545",
-   "W4408388242",
-   "W4401101984",
-   "W7161732140",
-   "W7167462435",
-   "W7128700455",
-   "W7130567554",
-   "W7131799079"
+   "W7130704511"
   ],
   "needs_review": [
    "ali-al-zein",
@@ -2349,8 +2337,8 @@
     "checked_at": "2026-10-23",
     "window_start": "2024-10-23",
     "recent_months": 24,
-    "shared_papers": 9,
-    "recent_shared_papers": 6,
+    "shared_papers": 10,
+    "recent_shared_papers": 7,
     "last_collaboration_date": "2026-10-01",
     "followup_until": "2028-10-01",
     "current_coauthors": [
@@ -2848,18 +2836,19 @@
     "checked_at": "2026-10-23",
     "window_start": "2024-10-23",
     "recent_months": 24,
-    "shared_papers": 1,
-    "recent_shared_papers": 1,
-    "last_collaboration_date": "2026-01-01",
-    "followup_until": "2028-01-01",
+    "shared_papers": 4,
+    "recent_shared_papers": 4,
+    "last_collaboration_date": "2026-03-12",
+    "followup_until": "2028-03-12",
     "current_coauthors": [
      "andre-dekker",
      "rianne-fijten",
-     "simone-mingels"
+     "simone-mingels",
+     "yomi-okegunna"
     ]
    },
    "tracked": true,
-   "tracked_until": "2028-01-01",
+   "tracked_until": "2028-03-12",
    "needs_review": false
   },
   {
@@ -2910,7 +2899,7 @@
     "checked_at": "2026-10-23",
     "window_start": "2024-10-23",
     "recent_months": 24,
-    "shared_papers": 1,
+    "shared_papers": 2,
     "recent_shared_papers": 0,
     "last_collaboration_date": null,
     "followup_until": null,
@@ -10862,84 +10851,6 @@
    "approved_external": false
   },
   {
-   "id": "W7135214715",
-   "openalex_url": "https://openalex.org/W7135214715",
-   "doi": "https://doi.org/10.64898/2026.03.12.26347996",
-   "title": "Automated Segmentation of Head and Neck Cancer from CT Images Using 3D Convolutional Neural Networks",
-   "publication_date": "2026-03-13",
-   "year": 2026,
-   "type": "preprint",
-   "journal": "medRxiv",
-   "landing_url": "https://doi.org/10.64898/2026.03.12.26347996",
-   "is_oa": true,
-   "oa_url": "https://www.medrxiv.org/content/medrxiv/early/2026/03/13/2026.03.12.26347996.full.pdf",
-   "authors": [
-    "Piyus Prabhanjans",
-    "P. Asjad Nabeel",
-    "V K Aparna",
-    "Hannah Mary T. Thomas",
-    "S Balu Krishna",
-    "Hasan Shaikh",
-    "Amal Joseph Varghese",
-    "Rajendra Benny K",
-    "Simon Pradeep Pavamani",
-    "Jeny Rajan"
-   ],
-   "author_members": [
-    null,
-    null,
-    null,
-    "hannah-mary-thomas",
-    null,
-    null,
-    null,
-    null,
-    null,
-    null
-   ],
-   "author_profiles": {
-    "hannah-mary-thomas": {
-     "openalex_id": "A5035477951",
-     "orcid": "0000-0002-1454-512X",
-     "match": "openalex",
-     "affiliations": [
-      "Christian Medical College, Vellore",
-      "Quantitative Imaging Research and Artificial Intelligence Lab, Department of Radiation Oncology, Christian Medical College, Vellore, India"
-     ]
-    }
-   },
-   "author_positions": [
-    1,
-    2,
-    3,
-    4,
-    5,
-    6,
-    7,
-    8,
-    9,
-    10
-   ],
-   "author_count": 10,
-   "group_members": [
-    "hannah-mary-thomas"
-   ],
-   "member_affiliations": {
-    "hannah-mary-thomas": [
-     "Christian Medical College, Vellore",
-     "Quantitative Imaging Research and Artificial Intelligence Lab, Department of Radiation Oncology, Christian Medical College, Vellore, India"
-    ]
-   },
-   "affiliation_status": {
-    "hannah-mary-thomas": "verified"
-   },
-   "cited_by_count": 0,
-   "abstract": "Abstract Head and neck cancer (HNC) requires accurate tumor delineation for effective radiotherapy planning. Manual segmentation of tumor regions is time-consuming and subject to considerable inter-observer variability. Although several automated approaches have been proposed, many rely on multimodal imaging such as PET/CT, which is expensive, less accessible in many clinical settings, and increases the burden on patients. In this work, we investigate a CT-only three-dimensional segmentation framework that provides a clinically practical and resource-efficient alternative. CT images of 136 head and neck cancer patients from the publicly available HN1 dataset in The Cancer Imaging Archive (TCIA) were used along with 30 additional cases from a private dataset collected at a tertiary care centre, Christian Medical College (CMC), Vellore, India. A fully automated segmentation model was developed to delineate the primary gross tumor volume (GTV) using the 3D nnU-Net framework. The models were trained using the HN1 dataset and an extended HN1+CMC dataset that included the additional private cases. Performance was evaluated using three-fold cross-validation with standard segmentation metrics including Dice Similarity Coefficient (DSC), Intersection over Union (IoU), and the 95th percentile Hausdorff Distance (HD95). The proposed CT-based model achieved a Global Dice of 0.63 and a Median Dice of 0.60 on the HN1 dataset. When the additional CMC cases were incorporated during training, the performance improved to a Global Dice of 0.65 and a Median Dice of 0.71. These results demonstrate that 3D nnU-Net can effectively segment head and neck tumors from CT images alone. The proposed CT-only approach provides a cost-effective and scalable solution that can support radiotherapy treatment planning and help reduce variability in clinical workflows.",
-   "verified": true,
-   "first_seen": "2026-10-23",
-   "approved_external": false
-  },
-  {
    "id": "W7135024226",
    "openalex_url": "https://openalex.org/W7135024226",
    "doi": "https://doi.org/10.1007/s10620-026-09750-8",
@@ -10970,7 +10881,7 @@
     "yomi-okegunna",
     null,
     null,
-    null,
+    "manon-cloots",
     null,
     null,
     null,
@@ -10992,6 +10903,17 @@
       "Department of Gastroenterology-Hepatology, Maastricht University Medical Centre, Maastricht, The Netherlands. yomi.okegunna@maastrichtuniversity.nl",
       "Department of Radiation Oncology (MAASTRO), GROW-School for Oncology and Developmental Biology, Maastricht University Medical Centre+, Maastricht, The Netherlands. yomi.okegunna@maastrichtuniversity.nl",
       "Maastricht University, Universiteitssingel 50 | UNS50, 6229 ER, Maastricht, The Netherlands. yomi.okegunna@maastrichtuniversity.nl"
+     ]
+    },
+    "manon-cloots": {
+     "openalex_id": "A5115984648",
+     "orcid": "0000-0002-7224-7198",
+     "match": "openalex",
+     "affiliations": [
+      "Maastricht University Medical Centre",
+      "Maastricht University",
+      "Department of Gastroenterology-Hepatology, Maastricht University Medical Centre, Maastricht, The Netherlands",
+      "Institute for Nutrition and Translational Research in Metabolism (NUTRIM), Maastricht University, Maastricht, The Netherlands"
      ]
     },
     "andre-dekker": {
@@ -11511,17 +11433,11 @@
    ],
    "author_count": 9,
    "group_members": [
-    "balu-krishna-sasidharan",
     "andre-dekker",
     "leonard-wee",
-    "rianne-fijten",
-    "hannah-mary-thomas"
+    "rianne-fijten"
    ],
    "member_affiliations": {
-    "balu-krishna-sasidharan": [
-     "Christian Medical College, Vellore",
-     "Quantitative Imaging Research and Artificial Intelligence Lab, Department of Radiation Oncology, Unit 2, Christian Medical College Vellore, Vellore 632004, India"
-    ],
     "andre-dekker": [
      "Maastricht University Medical Centre",
      "Department of Radiation Oncology (Maastro), GROW Research Institute for Oncology and Reproduction, Maastricht University Medical Centre+, 6229 HX Maastricht, The Netherlands"
@@ -11533,19 +11449,12 @@
     "rianne-fijten": [
      "Maastricht University Medical Centre",
      "Department of Radiation Oncology (Maastro), GROW Research Institute for Oncology and Reproduction, Maastricht University Medical Centre+, 6229 HX Maastricht, The Netherlands"
-    ],
-    "hannah-mary-thomas": [
-     "Christian Medical College, Vellore",
-     "Biomedical Informatics Unit, Christian Medical College Vellore, Vellore 632004, India",
-     "Quantitative Imaging Research and Artificial Intelligence Lab, Department of Radiation Oncology, Unit 2, Christian Medical College Vellore, Vellore 632004, India"
     ]
    },
    "affiliation_status": {
-    "balu-krishna-sasidharan": "verified",
     "andre-dekker": "verified",
     "leonard-wee": "verified",
-    "rianne-fijten": "verified",
-    "hannah-mary-thomas": "verified"
+    "rianne-fijten": "verified"
    },
    "cited_by_count": 1,
    "abstract": "While AI models are developed in oncology for predicting different clinical outcomes, the focus is often on accuracy and many fail to adequately communicate the degree of certainty in these predictions. To improve clinical decision-making in oncology, this work introduces the idea of uncertainty quantification (UQ) for AI models using an illustrative example. Our goal is to help radiologists and oncologists better understand prediction reliability by integrating UQ. Our illustrative example is a Radiomics Risk Model (RM) for Thymic Epithelial Tumours, developed to provide a basic understanding of the mechanism to evaluate the degree to which individual patient data matches the training set. The study demonstrates the concept of measuring uncertainty in artificial intelligence (AI) models using a simple example of distance measures within the feature space and example cases where uncertainty is addressed with probable causes. The paper highlights specifically where the clinicians may need more information to improve their confidence in their AI-driven assessments for clinical diagnostics.",
@@ -11649,6 +11558,110 @@
    "cited_by_count": 0,
    "abstract": "Summary The spatial organization of the tumor immune microenvironment (TIME) drives hepatocellular carcinoma (HCC) prognosis but remains unquantifiable on routine H&E slides. Here, we present HCCExplorer, a deep learning framework that translates H&E into virtual multiplex immunofluorescence (mIF) and uses multi-modal graph learning to decode spatial survival signals. Trained on 30 H&E-mIF slide pairs, HCCExplorer evaluated a 1,813-slide multi-center cohort. It achieved superior overall survival stratification over clinical indices and state-of-the-art pathology and protein foundation models, yielding a concordance index of 0.71 and a Hazard Ratio (HR) of 15.46 ( P < 0.001), maintaining stability across three external cohorts. Beyond risk stratification, interpretation of model features identified M1 macrophage infiltration as a protective determinant (HR=0.40, P < 0.05). Furthermore, it uncovered a protective “Containment Niche” at the invasion frontier (HR=0.02, P < 0.01), featuring macrophages co-localizing with Foxp3+ Tregs and CD4+ T cells. Ultimately, HCCExplorer provides actionable, spatially-resolved biomarkers from conventional histology for precision HCC management.",
    "verified": false,
+   "first_seen": "2026-10-23",
+   "approved_external": false
+  },
+  {
+   "id": "W7130704511",
+   "openalex_url": "https://openalex.org/W7130704511",
+   "doi": "https://doi.org/10.1016/j.jcmg.2026.01.006",
+   "title": "Aortic and Cardiac Structure From Routine CT Predict Cardiovascular Risk Beyond PREVENT and Coronary Calcium",
+   "publication_date": "2026-02-20",
+   "year": 2026,
+   "type": "article",
+   "journal": "JACC. Cardiovascular imaging",
+   "landing_url": "https://doi.org/10.1016/j.jcmg.2026.01.006",
+   "is_oa": true,
+   "oa_url": "https://doi.org/10.1016/j.jcmg.2026.01.006",
+   "authors": [
+    "Daniel W. Oo",
+    "Matthias Jung",
+    "Leonard Nürnberg",
+    "Jay Chandra",
+    "A. Sturniolo",
+    "Nóra Melinda Kerkovits",
+    "Saman Doroodgar Jorshery",
+    "Marcel Christian Langenbach",
+    "Borek Foldyna",
+    "Douglas P. Kiel",
+    "Hugo J.W.L. Aerts",
+    "Pradeep Natarajan",
+    "Michael T. Lu",
+    "Vineet K. Raghu"
+   ],
+   "author_members": [
+    null,
+    null,
+    "leonard-nurnberg",
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    "hugo-aerts",
+    null,
+    null,
+    null
+   ],
+   "author_profiles": {
+    "leonard-nurnberg": {
+     "openalex_id": "A5026394428",
+     "orcid": "0000-0001-6544-4268",
+     "match": "openalex",
+     "affiliations": [
+      "Harvard University",
+      "Mass General Brigham",
+      "Artificial Intelligence in Medicine (AIM) Program, Mass General Brigham, Harvard Medical School, Boston, Massachusetts, USA"
+     ]
+    },
+    "hugo-aerts": {
+     "openalex_id": "A5001452511",
+     "orcid": "0000-0002-2122-2003",
+     "match": "openalex",
+     "affiliations": [
+      "Maastricht University",
+      "Massachusetts General Hospital",
+      "Mass General Brigham",
+      "Cardiovascular Imaging Research Center (CIRC), Department of Radiology, Massachusetts General Hospital and Harvard Medical School, Boston, Massachusetts, USA; Artificial Intelligence in Medicine (AIM) Program, Mass General Brigham, Harvard Medical School, Boston, Massachusetts, USA; Radiology and Nuclear Medicine, GROW and CARIM Maastricht University, Maastricht, Netherlands"
+     ]
+    }
+   },
+   "author_positions": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14
+   ],
+   "author_count": 14,
+   "group_members": [
+    "hugo-aerts"
+   ],
+   "member_affiliations": {
+    "hugo-aerts": [
+     "Maastricht University",
+     "Massachusetts General Hospital",
+     "Mass General Brigham",
+     "Cardiovascular Imaging Research Center (CIRC), Department of Radiology, Massachusetts General Hospital and Harvard Medical School, Boston, Massachusetts, USA; Artificial Intelligence in Medicine (AIM) Program, Mass General Brigham, Harvard Medical School, Boston, Massachusetts, USA; Radiology and Nuclear Medicine, GROW and CARIM Maastricht University, Maastricht, Netherlands"
+    ]
+   },
+   "affiliation_status": {
+    "hugo-aerts": "verified"
+   },
+   "cited_by_count": 6,
+   "abstract": "BACKGROUND: Cardiovascular disease prevention relies on accurate risk assessment; however, existing scores are imprecise. Routine imaging may be opportunistically used to predict risk. OBJECTIVES: The authors tested whether computed tomography (CT)-derived cardiac and aortic structure predicts major adverse cardiac events (MACE) beyond standard-of-care scores. METHODS: The authors developed a least absolute shrinkage and selection operator model to predict cardiovascular mortality using \"radiomics\" features describing cardiac and aortic structure from 13,437 lung cancer screening CTs from the NLST (National Lung Screening Trial). They compared this score to the PREVENT (Predicting Risk of Cardiovascular Disease Events) tool and the coronary artery calcium (CAC) score in patients with routine chest CT and no prior MACE from Mass General Brigham. They calculated discrimination using Harrel's C-index and MACE rates in high-risk groups by the PREVENT score (≥7.5% risk) or the radiomics score (≥3.0% in men, ≥1.5% in women). RESULTS: In external testing (n = 14,577, mean age 61.1 ± 8.6 years, 47.5% male), 6.2% had incident MACE over a median of 5.7 years of follow-up. The radiomics score had higher discrimination for MACE than PREVENT (C-index 0.66 [95% CI: 0.64-0.68] vs 0.61 [95% CI: 0.59-0.63]) and was complementary to CAC (combined C-index 0.69 [95% CI: 0.67-0.71] vs CAC alone 0.66 [95% CI: 0.65-0.68]). High-risk patients by the radiomics score but not PREVENT had 3.6-fold higher MACE incidence than low-risk patients by both scores (23.1 [95% CI: 16.7-30.2] vs 6.5 [95% CI: 5.5-7.5] MACE per 1,000 person-years). Aortic surface-to-volume ratio, left ventricular volume, and left atrial short-axis length were among the most predictive features of MACE. CONCLUSIONS: CT-derived structural cardiac and aortic radiomics identified high-risk patients missed by clinical scores and further stratified risk among CAC risk groups. High-risk patients may benefit from intensified primary prevention.",
+   "verified": true,
    "first_seen": "2026-10-23",
    "approved_external": false
   },
@@ -13905,7 +13918,7 @@
     "manon-cloots": {
      "openalex_id": "A5115984648",
      "orcid": "0000-0002-7224-7198",
-     "match": "name",
+     "match": "openalex",
      "affiliations": [
       "Maastricht University Medical Centre",
       "Maastricht University",
@@ -15718,11 +15731,18 @@
    ],
    "author_count": 12,
    "group_members": [
+    "hossein-rahmani",
     "leroy-volmer",
     "andre-dekker",
     "ralph-brecheisen"
    ],
    "member_affiliations": {
+    "hossein-rahmani": [
+     "Maastricht University Medical Centre",
+     "Maastricht University",
+     "Department of Radiology and Nuclear Medicine, Maastricht University Medical Center, Maastricht, The Netherlands",
+     "GROW, Research Institute for Oncology and Reproduction, Maastricht University, Maastricht, The Netherlands"
+    ],
     "leroy-volmer": [
      "Maastricht University",
      "Maastro Clinic",
@@ -15743,6 +15763,7 @@
     ]
    },
    "affiliation_status": {
+    "hossein-rahmani": "verified",
     "leroy-volmer": "verified",
     "andre-dekker": "verified",
     "ralph-brecheisen": "mismatch"
@@ -17212,11 +17233,11 @@
     ]
    },
    "affiliation_status": {
-    "anshu-ankolekar": "mismatch"
+    "anshu-ankolekar": "verified"
    },
    "cited_by_count": 2,
    "abstract": "Background: Making informed decisions about clinical trial participation can be overwhelming for patients due to the complexity of trial information, potential risks and benefits, and the emotional burden of a recent diagnosis. Patient decision aids (PDAs) simplify this process by providing clear information on treatment options, empowering patients to actively participate in shared decision-making with their doctors. While PDAs have shown promise in various health care contexts, their use in clinical trials, particularly in the form of trial-specific patient decision aids (tPDAs), remains underused. Objective: This study aims to address the challenge of patient comprehension of traditional clinical trial materials. We developed a freely accessible, user-friendly tPDA within the context of the ImmunoSABR phase 2 trial. The tPDA aimed to enhance informed decision-making regarding trial participation. The primary endpoint was usability, quantitatively measured by the System Usability Scale (SUS). Secondary endpoints included time spent on the tPDA, patient satisfaction ratings, and participants' self-reported level of understanding of the trial. Methods: We developed the tPDA following the International Patient Decision Aid Standards and validated it through a structured, 3-phase iterative evaluation process. An initial evaluation was performed with 17 computer scientists who had expertise in biomedical applications, ensuring technical robustness. The content and usability were further refined through evaluations involving 10 clinicians and 8 medical students, focusing on clinical accuracy and user-friendliness. Finally, the tool was tested by 6 patients eligible for the ImmunoSABR trial to assess real-world applicability and patient-centered design. Results: Evaluations demonstrated the tPDA's effectiveness in enhancing informed decision-making, directly addressing our primary end point of usability with an overall mean SUS score of 79.4 (SD 15.9), indicative of good usability. Addressing our secondary endpoints, patients completed the tPDA efficiently, with the majority (4/6) finishing in under 30 minutes, and all but 1 within 60 minutes. Qualitative feedback highlighted significant improvements in patients' understanding of the trial details, reinforcing the tPDA's role in facilitating better patient engagement and comprehension. Conclusions: Our study demonstrates the feasibility and potential of tPDAs to enhance patient comprehension and engagement in clinical trials. Integrating tPDAs offers a valuable addition to traditional paper-based and verbal communication methods, promoting informed decision-making and patient-centered care.",
-   "verified": false,
+   "verified": true,
    "first_seen": "2026-10-21",
    "approved_external": false
   },
@@ -17497,9 +17518,16 @@
    ],
    "author_count": 12,
    "group_members": [
+    "hossein-rahmani",
     "ralph-brecheisen"
    ],
    "member_affiliations": {
+    "hossein-rahmani": [
+     "Maastricht University Medical Centre",
+     "Maastricht University",
+     "Department of Radiology and Nuclear Medicine, Maastricht University Medical Center+, 6229 HX Maastricht, The Netherlands",
+     "GROW, Research Institute for Oncology and Reproduction, Maastricht University, 6211 LK Maastricht, The Netherlands"
+    ],
     "ralph-brecheisen": [
      "Maastricht University Medical Centre",
      "Maastricht University",
@@ -17508,11 +17536,12 @@
     ]
    },
    "affiliation_status": {
+    "hossein-rahmani": "verified",
     "ralph-brecheisen": "mismatch"
    },
    "cited_by_count": 7,
    "abstract": "Background: Early detection of patients at high risk for recurrence or local tumor progression (LTP) following thermal ablation of hepatocellular carcinoma (HCC) is essential for treatment selection and individualized follow-up. This systematic review aims to assess and compare the performance of prognostic models predicting recurrence or LTP in patients with HCC treated with thermal ablation. Methods: PubMed, Web of Science, Cochrane, and Embase were searched for studies developing models to predict recurrence after thermal ablation in treatment-naïve HCC patients, using imaging and clinical data with reported test set performance. Risk of bias and applicability were assessed by the Prediction model Risk of Bias Assessment Tool. Data on model performance, feature extraction and modeling technique was collected. Results: In total, 16 studies comprising 39 prognostic models were included, all developed using retrospective data from China or Korea. Outcomes included recurrence-free survival, (intrahepatic) early recurrence, LTP, late recurrence and aggressive intrasegmental recurrence. Predictive parameters varied across models addressing identical outcomes. Outcome definitions also differed. Nine models were externally validated. Most studies had a high risk of bias due to methodological limitations. Conclusions: Variability in model development methodology and type of predictors was found. Models that integrated multiple types of predictors consistently outperformed those relying on one type. To advance predictive tools toward clinical implementation, future research should prioritize standardized outcome definitions, external testing, and transparent reporting. Until these challenges are addressed, current evaluated models should be regarded as promising but preliminary tools.",
-   "verified": false,
+   "verified": true,
    "first_seen": "2026-10-21",
    "approved_external": false
   },
@@ -18693,9 +18722,16 @@
    ],
    "author_count": 30,
    "group_members": [
+    "hossein-rahmani",
     "ralph-brecheisen"
    ],
    "member_affiliations": {
+    "hossein-rahmani": [
+     "Maastricht University Medical Centre",
+     "Maastricht University",
+     "Department of Radiology and Nuclear Medicine, Maastricht University Medical Center+, Maastricht, The Netherlands",
+     "GROW, School for Oncology and Reproduction, Maastricht University, Maastricht, The Netherlands"
+    ],
     "ralph-brecheisen": [
      "Maastricht University Medical Centre",
      "Maastricht University",
@@ -18703,11 +18739,12 @@
     ]
    },
    "affiliation_status": {
+    "hossein-rahmani": "verified",
     "ralph-brecheisen": "mismatch"
    },
    "cited_by_count": 4,
    "abstract": "PURPOSE: The long-term objective of the Ablation-IMaging and Advanced Guidance for workflow optimization in Interventional Oncology (A-IMAGIO) project is to develop a standardized, accessible, low-complex, high-precision, end-to-end solution for treatment planning, needle guidance, and treatment evaluation for thermal liver ablation. MATERIALS AND METHODS: This is a prospective, international, multicentre, observational registry study. Patients will be included with age ≥ 18 years, diagnosed with primary or secondary liver tumours, and undergoing thermal liver ablation. A detailed dataset of medical history, baseline clinical and imaging parameters, tumour characteristics, ablation technique/parameters, treatment outcomes, periprocedural images, and adverse events, will be collected for all participants. This data will be used to develop AI algorithms for prognostic modelling and quantitative imaging analysis. Additionally, costs associated with thermal liver ablation clinical pathway will be evaluated. EXPECTED GAIN OF KNOWLEDGE: The results of this registry study are expected to provide profound insight in current variability among centres in performing thermal liver ablation, and identify best practices in order to eventually facilitate standardization and universally excellent clinical outcomes. TRIAL REGISTRATION: National Institute of Health Clinical trial database (NCT06179602) https://clinicaltrials.gov/study/NCT06179602 .",
-   "verified": false,
+   "verified": true,
    "first_seen": "2026-10-21",
    "approved_external": false
   },
@@ -19140,22 +19177,10 @@
    ],
    "author_count": 27,
    "group_members": [
-    "balu-krishna-sasidharan",
-    "hannah-mary-thomas",
     "andre-dekker",
     "leonard-wee"
    ],
    "member_affiliations": {
-    "balu-krishna-sasidharan": [
-     "Christian Medical College, Vellore",
-     "Tamil Nadu Dr. M.G.R. Medical University",
-     "Department of Radiation Oncology, Unit 2, Christian Medical College Vellore, The Tamil Nadu Dr M.G.R Medical University, India. Electronic address: balunair@cmcvellore.ac.in"
-    ],
-    "hannah-mary-thomas": [
-     "Christian Medical College, Vellore",
-     "Tamil Nadu Dr. M.G.R. Medical University",
-     "Department of Radiation Oncology, Unit 2, Christian Medical College Vellore, The Tamil Nadu Dr M.G.R Medical University, India"
-    ],
     "andre-dekker": [
      "Maastricht University Medical Centre",
      "Department of Radiation Oncology (Maastro), GROW Research Institute for Oncology and Reproduction, Maastricht University Medical Centre, Maastricht, The Netherlands"
@@ -19166,8 +19191,6 @@
     ]
    },
    "affiliation_status": {
-    "balu-krishna-sasidharan": "verified",
-    "hannah-mary-thomas": "verified",
     "andre-dekker": "verified",
     "leonard-wee": "verified"
    },
@@ -22463,11 +22486,11 @@
     ]
    },
    "affiliation_status": {
-    "anshu-ankolekar": "mismatch"
+    "anshu-ankolekar": "verified"
    },
    "cited_by_count": 14,
    "abstract": "BACKGROUND: Digital health technology adoption has accelerated in respiratory care, particularly since the COVID-19 pandemic, supporting various applications from self-management to telerehabilitation. While these technologies have transformed health care delivery, their impact on the patient-provider relationship in specialist respiratory care remains poorly understood. OBJECTIVE: This study aims to systematically review the literature on the impact of digital health technology on the patient-provider relationship in respiratory secondary care settings and to understand the factors that enhance or diminish this relationship. METHODS: In December 2023, we conducted a systematic review following Cochrane methodology, searching MEDLINE, Embase, CINAHL, Cochrane databases, and PsycINFO. We included qualitative, quantitative, and mixed methods studies examining digital health interventions in respiratory secondary care. Trained volunteers from the European Respiratory Society CONNECT Clinical Research Collaboration performed screening and data extraction. We conducted a qualitative meta-synthesis of findings, followed by an abductive quantitative data analysis. A total of 3 stakeholder workshops were held to interpret findings collaboratively with patients and health care professionals. RESULTS: From 15,779 papers screened, 97 met the inclusion criteria (55 qualitative/mixed-methods studies, 42 quantitative studies). Studies covered various respiratory conditions, including COPD (32%), asthma (26%), and COVID-19 (13%). Four main themes emerged: trust (foundational to the relationship), adoption factors (including clinical context and implementation drivers), confidence in technology (based on functionality and the evidence base), and connection (encompassing communication and a caring presence). Digital health technology can either enhance or diminish trust between patients and clinicians, with patients' perceptions of the motivations behind its implementation being crucial. While technology facilitated access and communication, remote consultations risked depersonalisation, particularly when not balanced with in-person interactions. Self-monitoring and access to information empowered patients and promoted more equitable patient-provider relationships. CONCLUSIONS: Digital health technology can either strengthen or weaken patient-provider relationships in respiratory care, with effects impacted by adoption factors, confidence in technology, connection, and patient empowerment. Maintaining trust in the era of digital care requires transparent implementation of motivations, consideration of individual circumstances, and reliable technology that supports rather than replaces the therapeutic relationship. TRIAL REGISTRATION: PROSPERO CRD42024493664; https://www.crd.york.ac.uk/PROSPERO/view/CRD42024493664.",
-   "verified": false,
+   "verified": true,
    "first_seen": "2026-10-21",
    "approved_external": false
   },
@@ -24307,7 +24330,7 @@
    "author_members": [
     "yomi-okegunna",
     null,
-    null,
+    "manon-cloots",
     null,
     null,
     null,
@@ -24321,6 +24344,12 @@
     "yomi-okegunna": {
      "openalex_id": "A5115981268",
      "orcid": null,
+     "match": "openalex",
+     "affiliations": []
+    },
+    "manon-cloots": {
+     "openalex_id": "A5115984648",
+     "orcid": "0000-0002-7224-7198",
      "match": "openalex",
      "affiliations": []
     },
@@ -24609,8 +24638,7 @@
     "varsha-gouthamchand",
     "rianne-fijten",
     "andre-dekker",
-    "leonard-wee",
-    "hannah-mary-thomas"
+    "leonard-wee"
    ],
    "member_affiliations": {
     "varsha-gouthamchand": [
@@ -24635,19 +24663,13 @@
      "Maastricht University Medical Centre",
      "Department of Radiation Oncology (Maastro), GROW Research Institute for Oncology and Reproduction, Maastricht University Medical Centre+ , Maastricht, 6229ER,",
      "Maastricht University Medical Centre+ Department of Radiation Oncology (Maastro), GROW Research Institute for Oncology and Reproduction, , Maastricht, The"
-    ],
-    "hannah-mary-thomas": [
-     "Christian Medical College, Vellore",
-     "Quantitative Imaging Research and Artificial Intelligence Lab, Department of Radiation Oncology, Unit II, Christian Medical College , Vellore, Tamil Nadu, 632004,",
-     "Unit II, Christian Medical College Quantitative Imaging Research and Artificial Intelligence Lab, Department of Radiation Oncology, , Vellore, Tamil Nadu,"
     ]
    },
    "affiliation_status": {
     "varsha-gouthamchand": "verified",
     "rianne-fijten": "verified",
     "andre-dekker": "verified",
-    "leonard-wee": "verified",
-    "hannah-mary-thomas": "verified"
+    "leonard-wee": "verified"
    },
    "cited_by_count": 0,
    "abstract": "Head and neck squamous cell carcinoma (HNSCC) presents a complex clinical challenge due to its heterogeneous nature and diverse treatment responses. This review critically appraises the performance of handcrafted radiomics (HC) and deep learning (DL) models in prognosticating outcomes in HNSCC patients treated with (chemo)-radiotherapy. The focus was on methodological rigor, performance metrics, and long-term outcome reporting. A comprehensive literature search was conducted up to May 2023, identifying 23 eligible studies that met the inclusion criteria. We analyzed methodological variability and predictive performance metrics of both models for outcomes including overall survival, loco-regional recurrence, and distant metastasi. Our findings concluded that DL models exhibited slightly superior performance metrics compared to HC models, particularly in outcome prediction. However, the highest methodological quality was noted predominantly in HC studies. Substantial variability in methodology, outcome definitions, and performance metrics was observed, highlighting the need for standardization. While DL models show potential for improved prognostic performance, the methodological robustness in HC studies underscores their reliability. This emphasizes the necessity for methodological improvements, including pre-registration of protocols and clinical utility assessments, to enhance the reliability and applicability of radiomics-based prognostic models in clinical practice.",
@@ -24683,7 +24705,7 @@
     "Rianne Fijten"
    ],
    "author_members": [
-    null,
+    "manon-cloots",
     null,
     "yomi-okegunna",
     null,
@@ -24698,6 +24720,17 @@
     "rianne-fijten"
    ],
    "author_profiles": {
+    "manon-cloots": {
+     "openalex_id": "A5115984648",
+     "orcid": "0000-0002-7224-7198",
+     "match": "openalex",
+     "affiliations": [
+      "Maastricht University Medical Centre",
+      "Maastricht University",
+      "Maastricht University Medical Center+, Department of Gastroenterology and Hepatology , Maastricht, The Netherlands",
+      "Maastricht University, Institute for Nutrition and Translational Research in Metabolism NUTRIM , Maastricht, The Netherlands"
+     ]
+    },
     "yomi-okegunna": {
      "openalex_id": "A5115981268",
      "orcid": null,
@@ -26414,8 +26447,7 @@
     "varsha-gouthamchand",
     "rianne-fijten",
     "andre-dekker",
-    "leonard-wee",
-    "hannah-mary-thomas"
+    "leonard-wee"
    ],
    "member_affiliations": {
     "varsha-gouthamchand": [
@@ -26439,18 +26471,13 @@
      "Maastricht University Medical Centre",
      "Maastro Clinic",
      "Department of Radiation Oncology (Maastro), GROW Research Institute for Oncology and Reproduction, Maastricht University Medical Centre+, Maastricht, The Netherlands"
-    ],
-    "hannah-mary-thomas": [
-     "Christian Medical College, Vellore",
-     "Quantitative Imaging Research and Artificial Intelligence Lab, Department of Radiation Oncology, Unit II, Christian Medical College, Vellore, Tamil Nadu, India"
     ]
    },
    "affiliation_status": {
     "varsha-gouthamchand": "verified",
     "rianne-fijten": "verified",
     "andre-dekker": "verified",
-    "leonard-wee": "verified",
-    "hannah-mary-thomas": "verified"
+    "leonard-wee": "verified"
    },
    "cited_by_count": 2,
    "abstract": "Abstract Head and neck squamous cell carcinoma (HNSCC) presents a complex clinical challenge due to its heterogeneous nature and diverse treatment responses. This systematic review critically appraises the performance of handcrafted radiomics (HC) and deep learning (DL) models in prognosticating outcomes in HNSCC patients treated with (chemo)-radiotherapy. A comprehensive literature search was conducted up to May 2023, identifying 23 eligible studies that met the inclusion criteria of methodological rigor and long-term outcome reporting. The review highlights the methodological variability and performance metrics of HC and DL models in predicting overall survival (OS), loco-regional recurrence (LRR) and distant metastasis (DM). While DL models demonstrated slightly superior performance metrics compared to HC models, the highest methodological quality was observed predominantly in studies using HC radiomics. The findings underscore the necessity for methodological improvements, including pre-registration of protocols and assessment of clinical utility, to enhance the reliability and applicability of radiomic-based prognostic models in clinical practice.",
@@ -27836,11 +27863,11 @@
     ]
    },
    "affiliation_status": {
-    "anshu-ankolekar": "mismatch"
+    "anshu-ankolekar": "verified"
    },
    "cited_by_count": 0,
    "abstract": "Patients and providers have expressed concerns about how digital care affects their relationship. We systematically reviewed the evidence on how digital health affects the patient-provider relationship. Methods: We searched 7 databases (date-Nov 2023) using terms for respiratory, digital health and patient-provider relationship (in secondary care). 38 volunteers from ELF, DRAGON and CONNECT undertook duplicate screening/data extraction. Analysis was thematic. Results: Of 116 included studies, 32 explicitly explored the patient-provider relationship. Existing frameworks for patient-provider relationships (Ridd) proved only partially applicable. Trust was foundational and depended on providers’ beliefs about the technology. It was obstructed if clinicians expressed fear and scepticism. Care was demonstrated through monitoring which created an emotional presence, making patients feel taken care of. Connection between the patient/provider was enhanced if communication was seamless, but burdensome technology could create a disconnect due to disengagement. Shared decision-making enhanced by self-monitoring devices changed the dynamics and created a more equal patient-doctor relationship, through improved self-efficacy, and empowerment. Conclusion: Digital care is widely used post-COVID [as shown in DRAGON IHI], however, the impact on the patient/provider relationship is still under-researched. Seamless connection, and strategies to increase trust (both in the technology and in clinician support) are important considerations for strengthening the relationship. These findings will inform the work of CONNECT CRC.",
-   "verified": false,
+   "verified": true,
    "first_seen": "2026-10-21",
    "approved_external": false
   },
@@ -27948,24 +27975,19 @@
    ],
    "author_count": 22,
    "group_members": [
-    "pedro-mateus",
     "andre-dekker"
    ],
    "member_affiliations": {
-    "pedro-mateus": [
-     "Department of Radiation Oncology"
-    ],
     "andre-dekker": [
      "Department of Radiation Oncology"
     ]
    },
    "affiliation_status": {
-    "pedro-mateus": "verified",
-    "andre-dekker": "verified"
+    "andre-dekker": "mismatch"
    },
    "cited_by_count": 0,
    "abstract": "Biological age scores are an emerging tool to characterize aging by estimating chronological age based on physiological biomarkers. Various scores have shown associations with aging-related outcomes. This study assessed the relation between an age score based on brain MRI images (BrainAge) and an age score based on metabolomic biomarkers (MetaboAge). We trained a federated deep learning model to estimate BrainAge in three cohorts. The federated BrainAge model yielded significantly lower error for age prediction across the cohorts than locally trained models. Harmonizing the age interval between cohorts further improved BrainAge accuracy. Subsequently, we compared BrainAge with MetaboAge using federated association and survival analyses. The results showed a small association between BrainAge and MetaboAge as well as a higher predictive value for the time to mortality of both scores combined than for the individual scores. Hence, our study suggests that both aging scores capture different aspects of the aging process.",
-   "verified": true,
+   "verified": false,
    "first_seen": "2026-10-21",
    "approved_external": false
   },
@@ -30153,116 +30175,6 @@
    "approved_external": false
   },
   {
-   "id": "W4399495258",
-   "openalex_url": "https://openalex.org/W4399495258",
-   "doi": "https://doi.org/10.1007/s12029-024-01073-z",
-   "title": "Can Pretreatment MRI and Planning CT Radiomics Improve Prediction of Complete Pathological Response in Locally Advanced Rectal Cancer Following Neoadjuvant Treatment?",
-   "publication_date": "2024-06-10",
-   "year": 2024,
-   "type": "article",
-   "journal": "Journal of Gastrointestinal Cancer",
-   "landing_url": "https://doi.org/10.1007/s12029-024-01073-z",
-   "is_oa": false,
-   "oa_url": null,
-   "authors": [
-    "Jeba Karunya Ramireddy",
-    "A. Sathya",
-    "Balu Krishna Sasidharan",
-    "Amal Joseph Varghese",
-    "Arvind Sathyamurthy",
-    "Neenu Oliver John",
-    "Anuradha Chandramohan",
-    "Ashish Kumar Singh",
-    "Anjana Joel",
-    "Rohin Mittal",
-    "Dipti Masih",
-    "Kripa Varghese",
-    "Grace J. Rebekah",
-    "Thomas Samuel Ram",
-    "Hannah Mary T. Thomas"
-   ],
-   "author_members": [
-    null,
-    null,
-    "balu-krishna-sasidharan",
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    "hannah-mary-thomas"
-   ],
-   "author_profiles": {
-    "balu-krishna-sasidharan": {
-     "openalex_id": "A5067337969",
-     "orcid": "0000-0002-2814-161X",
-     "match": "name",
-     "affiliations": [
-      "Christian Medical College, Vellore",
-      "Quantitative Imaging Research and Artificial Intelligence Lab, Department of Radiation Oncology, Unit 2, Dr Ida B Scudder Cancer Centre, Christian Medical College, Vellore, Tamil Nadu, 632004, India"
-     ]
-    },
-    "hannah-mary-thomas": {
-     "openalex_id": "A5035477951",
-     "orcid": "0000-0002-1454-512X",
-     "match": "openalex",
-     "affiliations": [
-      "Christian Medical College, Vellore",
-      "Quantitative Imaging Research and Artificial Intelligence Lab, Department of Radiation Oncology, Unit 2, Dr Ida B Scudder Cancer Centre, Christian Medical College, Vellore, Tamil Nadu, 632004, India. hannah.thomas@cmcvellore.ac.in",
-      "Quantitative Imaging Research and Artificial Intelligence Lab, Department of Radiation Oncology, Unit 2, Dr Ida B Scudder Cancer Centre, Christian Medical College, Vellore, Tamil Nadu, 632004, India"
-     ]
-    }
-   },
-   "author_positions": [
-    1,
-    2,
-    3,
-    4,
-    5,
-    6,
-    7,
-    8,
-    9,
-    10,
-    11,
-    12,
-    13,
-    14,
-    15
-   ],
-   "author_count": 15,
-   "group_members": [
-    "balu-krishna-sasidharan",
-    "hannah-mary-thomas"
-   ],
-   "member_affiliations": {
-    "balu-krishna-sasidharan": [
-     "Christian Medical College, Vellore",
-     "Quantitative Imaging Research and Artificial Intelligence Lab, Department of Radiation Oncology, Unit 2, Dr Ida B Scudder Cancer Centre, Christian Medical College, Vellore, Tamil Nadu, 632004, India"
-    ],
-    "hannah-mary-thomas": [
-     "Christian Medical College, Vellore",
-     "Quantitative Imaging Research and Artificial Intelligence Lab, Department of Radiation Oncology, Unit 2, Dr Ida B Scudder Cancer Centre, Christian Medical College, Vellore, Tamil Nadu, 632004, India. hannah.thomas@cmcvellore.ac.in",
-     "Quantitative Imaging Research and Artificial Intelligence Lab, Department of Radiation Oncology, Unit 2, Dr Ida B Scudder Cancer Centre, Christian Medical College, Vellore, Tamil Nadu, 632004, India"
-    ]
-   },
-   "affiliation_status": {
-    "balu-krishna-sasidharan": "verified",
-    "hannah-mary-thomas": "verified"
-   },
-   "cited_by_count": 3,
-   "abstract": null,
-   "verified": true,
-   "first_seen": "2026-10-23",
-   "approved_external": false
-  },
-  {
    "id": "W4399466786",
    "openalex_url": "https://openalex.org/W4399466786",
    "doi": "https://doi.org/10.1016/j.jbo.2024.100614",
@@ -30436,11 +30348,11 @@
     ]
    },
    "affiliation_status": {
-    "leonard-wee": "mismatch"
+    "leonard-wee": "verified"
    },
    "cited_by_count": 6,
    "abstract": "There has been growing interest in the use of real-world data (RWD) to address clinically and policy-relevant (research) questions that cannot be answered with data from randomized controlled trials (RCTs) alone. This is, for example, the case in rare malignancies such as sarcomas as limited patient numbers pose challenges in conducting RCTs within feasible timeliness, a manageable number of collaborators, and statistical power. This narrative review explores the potential of RWD to generate real-world evidence (RWE) in sarcoma research, elucidating its application across different phases of the patient journey, from prediagnosis to the follow-up/survivorship phase. For instance, examining electronic health records (EHRs) from general practitioners (GPs) enables the exploration of consultation frequency and presenting symptoms in primary care before a sarcoma diagnosis. In addition, alternative study designs that integrate RWD with well-designed observational RCTs may offer relevant information on the effectiveness of clinical treatments. As, especially in cases of ultrarare sarcomas, it can be an extreme challenge to perform well-powered randomized prospective studies. Therefore, it is crucial to support the adaptation of novel study designs. Regarding the follow-up/survivorship phase, examining EHR from primary and secondary care can provide valuable insights into identifying the short- and long-term effects of treatment over an extended follow-up period. The utilization of RWD also comes with several challenges, including issues related to data quality and privacy, as described in this study. Notwithstanding these challenges, this study underscores the potential of RWD to bridge, at least partially, gaps between evidence and practice and holds promise in contributing to the improvement of sarcoma care.",
-   "verified": false,
+   "verified": true,
    "first_seen": "2026-10-21",
    "approved_external": false
   },
@@ -30717,7 +30629,7 @@
    "affiliation_status": {
     "ananya-choudhury": "verified",
     "rianne-fijten": "verified",
-    "leonard-wee": "verified",
+    "leonard-wee": "mismatch",
     "andre-dekker": "verified",
     "johan-van-soest": "verified"
    },
@@ -30844,19 +30756,16 @@
    ],
    "author_count": 17,
    "group_members": [
-    "tafadzwa-chaunzwa",
+    "leonard-nurnberg",
     "hugo-aerts"
    ],
    "member_affiliations": {
-    "tafadzwa-chaunzwa": [
-     "Brigham and Women's Hospital",
+    "leonard-nurnberg": [
      "Harvard University",
-     "Dana-Farber Cancer Institute",
-     "Dana-Farber Brigham Cancer Center",
+     "Maastricht University",
      "Mass General Brigham",
      "Artificial Intelligence in Medicine Program, Mass General Brigham, Harvard Medical School, Boston, Massachusetts",
-     "Department of Radiation Oncology, Dana Farber Cancer Institute, Brigham and Women’s Hospital, Harvard Medical School, Boston, Massachusetts",
-     "Department of Radiation Oncology, Dana Farber Cancer Institute, Brigham and Women's Hospital, Harvard Medical School, Boston, Massachusetts"
+     "Radiology and Nuclear Medicine, CARIM & GROW, Maastricht University, Maastricht, the Netherlands"
     ],
     "hugo-aerts": [
      "Brigham and Women's Hospital",
@@ -30872,7 +30781,7 @@
     ]
    },
    "affiliation_status": {
-    "tafadzwa-chaunzwa": "verified",
+    "leonard-nurnberg": "verified",
     "hugo-aerts": "verified"
    },
    "cited_by_count": 43,
@@ -33268,11 +33177,11 @@
     ]
    },
    "affiliation_status": {
-    "anshu-ankolekar": "mismatch"
+    "anshu-ankolekar": "verified"
    },
    "cited_by_count": 3,
    "abstract": "The aim of this study was to develop and evaluate a proof-of-concept open-source individualized Patient Decision Aid (iPDA) with a group of patients, physicians, and computer scientists. The iPDA was developed based on the International Patient Decision Aid Standards (IPDAS). A previously published questionnaire was adapted and used to test the user-friendliness and content of the iPDA. The questionnaire contained 40 multiple-choice questions, and answers were given on a 5-point Likert Scale (1-5) ranging from \"strongly disagree\" to \"strongly agree.\" In addition to the questionnaire, semi-structured interviews were conducted with patients. We performed a descriptive analysis of the responses. The iPDA was evaluated by 28 computer scientists, 21 physicians, and 13 patients. The results demonstrate that the iPDA was found valuable by 92% (patients), 96% (computer scientists), and 86% (physicians), while the treatment information was judged useful by 92%, 96%, and 95%, respectively. Additionally, the tool was thought to be motivating for patients to actively engage in their treatment by 92%, 93%, and 91% of the above respondents groups. More multimedia components and less text were suggested by the respondents as ways to improve the tool and user interface. In conclusion, we successfully developed and tested an iPDA for patients with stage I-II Non-Small Cell Lung Cancer (NSCLC).",
-   "verified": false,
+   "verified": true,
    "first_seen": "2026-10-21",
    "approved_external": false
   },
@@ -34212,101 +34121,6 @@
    "abstract": "INTRODUCTION: Vaccine-preventable diseases are the public health problems in Africa, although vaccination is an available, safe, simple, and effective method prevention. Technologies such as mHealth may provide maternal access to health information and support decisions on childhood vaccination. Many studies on the role of mHealth in vaccination decisions have been conducted in Africa, but the evidence needs to provide conclusive information to support mHealth introduction. This study provides essential information to assist planning and policy decisions regarding the use of mHealth for childhood vaccination. METHODS: We conducted a systematic review and meta-analysis for studies applying mHealth in Africa for vaccination decisions following the Preferred Reporting Items for Systematic and Meta-Analysis [PRISMA] guideline. Databases such as CINAHL, EMBASE, PubMed, PsycINFO, Scopus, Web of Science, Google Scholar, Global Health, HINARI, and Cochrane Library were included. We screened studies in Endnote X20 and performed the analysis using Revman 5.4.1. RESULTS: The database search yielded 1,365 articles [14 RCTs and 4 quasi-experiments] with 21,070 participants satisfied all eligibility criteria. The meta-analysis showed that mHealth has an OR of 2.15 [95% CI: 1.70-2.72; P<0.001; I2 = 90%] on vaccination rates. The subgroup analysis showed that regional differences cause heterogeneity. Funnel plots and Harbord tests showed the absence of publication bias, while the GRADE scale showed a moderate-quality body of evidence. CONCLUSION: Although heterogeneous, this systematic review and meta-analysis showed that the application of mHealth could potentially improve childhood vaccination in Africa. It increased childhood vaccination by more than double [2.15 times] among children whose mothers are motivated by mHealth services. MHealth is more effective in less developed regions and when an additional incentive party with the messaging system. However, it can be provided at a comparably low cost based on the development level of regions and can be established as a routine service in Africa. REGISTRATION: PROSPERO: CRD42023415956.",
    "verified": true,
    "first_seen": "2026-10-21",
-   "approved_external": false
-  },
-  {
-   "id": "W4391967597",
-   "openalex_url": "https://openalex.org/W4391967597",
-   "doi": "https://doi.org/10.1007/s00701-024-05977-4",
-   "title": "Is radiomics a useful addition to magnetic resonance imaging in the preoperative classification of PitNETs?",
-   "publication_date": "2024-02-20",
-   "year": 2024,
-   "type": "article",
-   "journal": "Acta Neurochirurgica",
-   "landing_url": "https://doi.org/10.1007/s00701-024-05977-4",
-   "is_oa": true,
-   "oa_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/7617731",
-   "authors": [
-    "A Sathya",
-    "Abhijit Goyal‐Honavar",
-    "Ari George Chacko",
-    "Anitha Jasper",
-    "Geeta Chacko",
-    "Devakumar Devadhas",
-    "Joshua Anand Seelam",
-    "Balu Krishna Sasidharan",
-    "Simon Pradeep Pavamani",
-    "Hannah Mary T. Thomas"
-   ],
-   "author_members": [
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    "balu-krishna-sasidharan",
-    null,
-    "hannah-mary-thomas"
-   ],
-   "author_profiles": {
-    "balu-krishna-sasidharan": {
-     "openalex_id": "A5067337969",
-     "orcid": "0000-0002-2814-161X",
-     "match": "name",
-     "affiliations": [
-      "Christian Medical College, Vellore",
-      "Quantitative Imaging Research and Artificial Intelligence Lab, Department of Radiation Oncology Unit II, Ida B Scudder Cancer Centre, Christian Medical College, Vellore, India"
-     ]
-    },
-    "hannah-mary-thomas": {
-     "openalex_id": "A5035477951",
-     "orcid": "0000-0002-1454-512X",
-     "match": "openalex",
-     "affiliations": [
-      "Christian Medical College, Vellore",
-      "Quantitative Imaging Research and Artificial Intelligence Lab, Department of Radiation Oncology Unit II, Ida B Scudder Cancer Centre, Christian Medical College, Vellore, India. hannah.thomas@cmcvellore.ac.in",
-      "Quantitative Imaging Research and Artificial Intelligence Lab, Department of Radiation Oncology Unit II, Ida B Scudder Cancer Centre, Christian Medical College, Vellore, India"
-     ]
-    }
-   },
-   "author_positions": [
-    1,
-    2,
-    3,
-    4,
-    5,
-    6,
-    7,
-    8,
-    9,
-    10
-   ],
-   "author_count": 10,
-   "group_members": [
-    "balu-krishna-sasidharan",
-    "hannah-mary-thomas"
-   ],
-   "member_affiliations": {
-    "balu-krishna-sasidharan": [
-     "Christian Medical College, Vellore",
-     "Quantitative Imaging Research and Artificial Intelligence Lab, Department of Radiation Oncology Unit II, Ida B Scudder Cancer Centre, Christian Medical College, Vellore, India"
-    ],
-    "hannah-mary-thomas": [
-     "Christian Medical College, Vellore",
-     "Quantitative Imaging Research and Artificial Intelligence Lab, Department of Radiation Oncology Unit II, Ida B Scudder Cancer Centre, Christian Medical College, Vellore, India. hannah.thomas@cmcvellore.ac.in",
-     "Quantitative Imaging Research and Artificial Intelligence Lab, Department of Radiation Oncology Unit II, Ida B Scudder Cancer Centre, Christian Medical College, Vellore, India"
-    ]
-   },
-   "affiliation_status": {
-    "balu-krishna-sasidharan": "verified",
-    "hannah-mary-thomas": "verified"
-   },
-   "cited_by_count": 11,
-   "abstract": null,
-   "verified": true,
-   "first_seen": "2026-10-23",
    "approved_external": false
   },
   {
@@ -35390,7 +35204,7 @@
     "Andre L.A.J. Dekker"
    ],
    "author_members": [
-    null,
+    "martijn-nobel",
     "sander-puts",
     null,
     null,
@@ -35399,6 +35213,18 @@
     "andre-dekker"
    ],
    "author_profiles": {
+    "martijn-nobel": {
+     "openalex_id": "A5031899979",
+     "orcid": "0000-0003-3379-7290",
+     "match": "openalex",
+     "affiliations": [
+      "Maastricht University Medical Centre",
+      "Maastricht University",
+      "Department of Radiology and Nuclear Medicine, Maastricht University Medical Center+, Postbox 5800, 6202 AZ, Maastricht, Netherlands. martijn.nobel@mumc.nl",
+      "School of Health Professions Education, Maastricht University, Maastricht, Netherlands. martijn.nobel@mumc.nl",
+      "Department of Radiology and Nuclear Medicine, Maastricht University Medical Center+, Postbox 5800, 6202 AZ, Maastricht, Netherlands"
+     ]
+    },
     "sander-puts": {
      "openalex_id": "A5089485363",
      "orcid": "0000-0003-4148-1755",
@@ -36920,7 +36746,7 @@
     "martijn-nobel": {
      "openalex_id": "A5031899979",
      "orcid": "0000-0003-3379-7290",
-     "match": "name",
+     "match": "openalex",
      "affiliations": [
       "Maastricht University Medical Centre",
       "Maastricht University",

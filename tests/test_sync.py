@@ -313,3 +313,13 @@ def test_discovered_orcid_resolves_without_relaxing_collection_confidence():
     assert person_filter(person) == "authorships.author.id:A42"
     assert match_confidence(person) == "name"
     assert public_people([person], date(2026, 10, 21))[0]["orcid_discovered"] == person["orcid_discovered"]
+
+
+def test_affiliation_rules_require_cooccurrence():
+    from pubpulse.sync import affiliation_matches
+    rules = ["maastro", ["maastricht", "radiation oncology"]]
+    assert affiliation_matches(["Department of Radiation Oncology (Maastro), GROW, Maastricht University Medical Centre+"], rules)
+    assert affiliation_matches(["Maastro Clinic"], rules)
+    assert not affiliation_matches(["Department of Radiation Oncology, Christian Medical College, Vellore"], rules)
+    assert not affiliation_matches(["Maastricht University"], rules)
+    assert affiliation_matches(["Dept. of Radiation Oncology, Maastricht University Medical Centre"], rules)

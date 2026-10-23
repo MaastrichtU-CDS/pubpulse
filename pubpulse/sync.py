@@ -102,9 +102,15 @@ def apply_overrides(works: list[dict], overrides: dict) -> list[dict]:
     return kept
 
 
-def affiliation_matches(affiliations: list[str], keywords: list[str]) -> bool:
-    kws = [k.lower() for k in keywords]
-    return any(any(k in (a or "").lower() for k in kws) for a in affiliations)
+def affiliation_matches(affiliations: list[str], keywords: list) -> bool:
+    """A keyword entry is a string (substring match) or a list of strings that must ALL occur in the same
+    affiliation string (e.g. ["maastricht", "radiation oncology"]), so a generic department name alone never counts."""
+    rules = [[x.lower() for x in k] if isinstance(k, (list, tuple)) else [str(k).lower()] for k in keywords]
+    for a in affiliations:
+        a = (a or "").lower()
+        if any(all(term in a for term in rule) for rule in rules):
+            return True
+    return False
 
 
 def author_name_key(name: str) -> tuple[str, ...]:
