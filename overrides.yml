@@ -10,3 +10,8 @@ reject: []
 # Papers approved for external communication (website highlight, LinkedIn). A human decision per paper; the weekly
 # mail to the group is not affected by this list.
 approve_external: []
+
+# Exceptions to the team-window rule: people whose papers count only with a verified group affiliation
+# (e.g. a member whose recent work is mainly affiliated elsewhere). Use the member id (slug) from people.yml.
+verify_affiliation:
+  - matthijs-sloep

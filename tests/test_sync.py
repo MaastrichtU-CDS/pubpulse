@@ -338,3 +338,17 @@ def test_counted_uses_membership_period():
     client = _FakeClient({"authorships.author.id:A1": [w_before, w_in_unknown, w_in_mismatch]})
     works, _ = fetch_works(people, client, 2024, date(2026, 10, 23), keywords=KW)
     assert works["W1"]["counted"] is False and works["W2"]["counted"] is True and works["W3"]["counted"] is True  # in team: no affiliation check
+
+
+def test_verify_affiliation_exception_requires_verified():
+    from datetime import date
+    from pubpulse.sync import fetch_works
+
+    people = [{"slug": "ms", "name": "M S", "orcid": "0000-0001-0000-0001", "openalex_ids": ["A1"], "active_until": None}]
+    def auth(aid, insts):
+        return {"author": {"id": f"https://openalex.org/{aid}", "display_name": aid}, "institutions": [{"display_name": i} for i in insts]}
+    client = _FakeClient({"authorships.author.id:A1": [_raw("W1", [auth("A1", ["Maastro Clinic"])]), _raw("W2", [auth("A1", ["IKNL"])])]})
+    works, _ = fetch_works(people, client, 2024, date(2026, 10, 23), keywords=KW, affiliation_required={"ms"})
+    assert works["W1"]["counted"] is True and works["W2"]["counted"] is False
+    works, _ = fetch_works(people, client, 2024, date(2026, 10, 23), keywords=KW)
+    assert works["W2"]["counted"] is True
