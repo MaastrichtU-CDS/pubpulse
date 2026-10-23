@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-23T14:19:26+00:00",
+ "generated": "2026-10-23T14:25:04+00:00",
  "group_name": "Clinical Data Science (Maastro / Maastricht University)",
  "site_url": "https://maastrichtu-cds.github.io/pubpulse/",
  "repo_url": "https://github.com/MaastrichtU-CDS/pubpulse",
@@ -6616,8 +6616,7 @@
    "abstract": "BACKGROUND Multiple software programs are available for manual or (semi-)automated liver segmentation. Although manual segmentation has traditionally been the standard, it is time-intensive and susceptible to inter-observer variability. Conversely, (semi-)automated approaches have been shown to reduce segmentation time, but the availability and use of different software tools can introduce variability in liver volumetry outcomes. AIM To evaluate the reliability of three segmentation software programs (Synapse 3D (Fujifilm), OsiriX® (Pixmea), and Syngo.via (Siemens Healthineers)) for liver volumetry. METHODS Patients (≥ 18 years) with abdominal computed tomography images without liver pathology were included. Total liver volume (TLV) and segment II/III volume – a surrogate for the future liver remnant (FLR) – were measured. Two blinded independent researchers performed volumetric assessments. The intraclass correlation coefficient (ICC) was calculated for interobserver variability for the first 30 scans between both researchers. This was also performed for intra-observer variability between the software programs in 200 randomly selected patients (52.5% male; mean age: 63.5 years). RESULTS Mean TLV’s reported by Synapse 3D, Syngo.via and OsiriX® were 1705 ± 462 mL, 1672 ± 463 mL, and 1627 ± 449 mL, respectively. Mean segment II/III volumes reported were 304 ± 115 mL, 282 ± 109 mL, and 277 ± 108 mL, respectively. The highest interobserver agreement (n = 30) was for TLV with Synapse 3D (ICC: 0.999; 95%CI: 0.998-0.999), and highest intraobserver ICC was between Synapse 3D and Syngo.via for TLV (ICC: 0.997; 95%CI: 0.985-0.999). Mean standardized FLR for Synapse 3D, Syngo.via and OsiriX® were 18.6%, 17.2%, and 16.9%, respectively. CONCLUSION Although absolute volumes varied slightly, the standardized FLR remained comparable across the software programs, indicating that all three are suitable for reliable computed tomography liver volumetry.",
    "verified": true,
    "counted_members": [
-    "hossein-rahmani",
-    "ralph-brecheisen"
+    "hossein-rahmani"
    ],
    "counted": true,
    "first_seen": "2026-10-21",
@@ -7015,7 +7014,6 @@
    "abstract": "INTRODUCTION: Most present-day survival-models of patients with cancer do not account for tumor-host interactions. We hypothesized that host phenotypes based on systemic inflammation and body composition are prognostic of overall survival (OS) in patients with pancreatic ductal adenocarcinoma (PDAC). METHODS: We performed a post-hoc analysis of the nationwide PORSCH-trial, including all patients undergoing pancreatoduodenectomy for PDAC. Primary outcome was OS. Body composition analysis was performed using automatic segmentation (Mosamatic™) of preoperative abdominal computed tomography scans. Low muscle mass and myosteatosis were defined using log-rank stratification of sex-standardized Z-values of skeletal muscle index and radiation attenuation, respectively. Patients were clustered in eight host phenotypes based on combinations of adverse host factors: [1] low muscle mass, [2] myosteatosis, [3] systemic inflammation (C-reactive protein >6mg/L). Their association with OS was tested using multivariable-adjusted Cox-proportional hazard-analysis. Distinct combinations of adverse host factors were stratified into low-, intermediate-, and high-risk phenotypes according to k-means clustering based on log hazard-ratio's. RESULTS: 549 patients were included. The high-risk phenotype, characterized by the presence of all adverse host factors, showed lower median OS than intermediate ([1], [2], [1 +2], [1 +3], [2 +3]) and low-risk ([3]; none) phenotypes (13.0 months [95%CI 11.4-19.3] vs. 21.9 months [95%CI 19.3-24.7] vs. 35.2 months [95%CI 29.2-45.3], respectively; p < 0.001). In multivariable analysis, host phenotypes were associated with OS (adjusted [a]HR 1.39 [95%CI 1.08-1.80, p = 0.01; aHR 2.10 [95%CI 1.53-2.88], p < 0.01, for intermediate- and high-risk respectively), independent of tumor stage. DISCUSSION: Host phenotypes based on body composition and systemic inflammation predict OS independent of tumor stage in patients with resected PDAC, underscoring the importance of tumor-host interactions for clinical survival prediction.",
    "verified": true,
    "counted_members": [
-    "ralph-brecheisen",
     "leonard-wee"
    ],
    "counted": true,
@@ -8882,10 +8880,8 @@
    "cited_by_count": 0,
    "abstract": null,
    "verified": false,
-   "counted_members": [
-    "ralph-brecheisen"
-   ],
-   "counted": true,
+   "counted_members": [],
+   "counted": false,
    "first_seen": "2026-10-21",
    "approved_external": false
   },
@@ -9107,10 +9103,8 @@
    "cited_by_count": 0,
    "abstract": "Background & Aims: Preoperative body composition is a potential modifiable risk factor for poor postoperative outcomes in Crohn's disease (CD). This study aimed to investigate the association of preoperative body composition parameters with postoperative complications and endoscopic postoperative recurrence (ePOR) in patients with CD following ileocolic (re-)resection (ICR). Methods: Patients with CD (≥16 years) scheduled for ICR with preoperative abdominal imaging (<12 months) (n = 227) were identified from a prospective, multicenter cohort study. Cross-sectional surface area normalized for body height (ie, index) and lipid content in sketelal muscle mass (SM) and subcutaneous and visceral adipose tissue (SAT/VAT) were analyzed on imaging. Associations with postoperative complications (Clavien-Dindo I-IV), moderate-to-severe complications (Clavien-Dindo ≥II), infectious complications, and ePOR (modified Rutgeerts’ score ≥i2b) were explored. Results: High lipid content in SM (ie, myosteatosis) was associated with overall postoperative (adjusted odds ratio [aOR], 3.09; 95% confidence interval [CI], 1.36–7.00), moderate-to-severe (aOR, 2.66; 95% CI, 1.24–5.68), and infectious complications (aOR, 2.44; 95% CI, 1.10–5.40). Low preoperative SAT index was protective against postoperative complications (aOR, 0.38; 95% CI, 0.16–0.88). Low lipid content in VAT was associated with postoperative infectious complications (aOR, 4.31; 95% CI, 1.11–16.71), whereas high lipid content in VAT was protective against ePOR (aOR, 0.26; 95% CI, 0.07–0.99). Both low (aOR, 4.46; 95% CI, 1.09–19.57) and high SM index were associated with ePOR (aOR, 2.45; 95% CI, 1.06–5.65). Conclusion: Preoperative myosteatosis was consistently associated with overall postoperative complications, moderate-to severe, and infectious complications, in patients with CD following ICR. Furthermore, several body composition parameters were identified as risk factor or protective factor for postoperative complications and ePOR. Inconsistent findings were observed for SM levels and ePOR risk. The correlation between improvements of these parameters and postoperative outcomes requires further study.",
    "verified": false,
-   "counted_members": [
-    "ralph-brecheisen"
-   ],
-   "counted": true,
+   "counted_members": [],
+   "counted": false,
    "first_seen": "2026-10-21",
    "approved_external": false
   },
@@ -10003,10 +9997,8 @@
    "cited_by_count": 0,
    "abstract": "AIM: To investigate the association between preoperative computed tomography (CT) determined low muscle mass and low muscle quality (myosteatosis) on postoperative recovery in physical functioning and physical performance in patients undergoing gastrointestinal or lung cancer surgery. METHODS: A prospective cohort study was conducted using data from the Optimal Physical Recovery After Hospitalization (OPRAH) trial. The study population comprised adult patients scheduled for curative intent gastrointestinal or lung cancer surgery. Physical functioning (patient reported) and physical performance (handgrip strength, 30 s chair stand test, 2-min step test) were measured at multiple time points, up to three months after hospital discharge. Baseline CT scans were used to define low muscle mass and myosteatosis. Mixed-effect modeling evaluated associations between these muscle conditions and longitudinal postoperative recovery of physical functioning and physical performance. RESULTS: Of the 134 enrolled patients, 106 were included in the analysis. Preoperatively assessed low muscle mass was present in 28% of patients, myosteatosis in 58%, and both conditions in 22%. Patients with low muscle mass were younger than those with myosteatosis or with both conditions, but older than patients with adequate muscle status, and had a lower body mass index (BMI). Myosteatosis was more common in men and in patients with gastrointestinal tumors. Neither condition was associated with recovery of patient-reported physical functioning. However, both low muscle mass and myosteatosis were significantly associated with longitudinal outcome in the 30-s chair stand test, whereas no significant associations were observed for handgrip strength or the 2-min step test. Patients with adequate muscle status consistently performed better across all time points. CONCLUSION: CT-determined muscle characteristics were not associated with recovery in self-reported physical functioning. However, low muscle mass and myosteatosis were related to recovery of physical performance in the 30-s chair test. Preoperative muscle assessment using routine CT-imaging may therefore assist in identifying patients at risk of reduced postoperative physical performance and guide targeted prehabilitation strategies.",
    "verified": false,
-   "counted_members": [
-    "ralph-brecheisen"
-   ],
-   "counted": true,
+   "counted_members": [],
+   "counted": false,
    "first_seen": "2026-10-21",
    "approved_external": false
   },
@@ -10305,10 +10297,8 @@
    "cited_by_count": 0,
    "abstract": "BACKGROUND: Skeletal muscle mass and radiation attenuation (RA) have been shown to be associated with chemotoxicity and survival in cancer patients. However, little is known about the clinical significance of adipose tissue RA, which has been hypothesized to be associated with tissue inflammation and insulin resistance. We investigated the association between adipose tissue RA, chemotoxicity, and survival in patients with metastatic colorectal cancer (mCRC) by performing a secondary analysis using data from a randomized controlled trial. METHODS: based on stature. Associations between these body composition parameters and overall survival as well as chemotoxicity (NCI-CTCAE v 4.03) were evaluated using univariable and multivariable logistic and Cox regression analysis. Multivariable models evaluated body composition parameters, adjusted for age, sex, and significant clinically relevant covariates. RESULTS: Among the 104 patients in the cohort, 38 were female (36.5%). Mean age was 65.5 ± 9.5 years. 43 patients (41.3%) developed grade 3/4 toxicity. Pre-treatment SAT-RA was independently associated with grade 3/4 toxicities (OR = 0.78, 95% CI 0.62-0.98). Chemotherapy regimens and nutritional support were not associated with chemotoxicity. In the multivariable Cox analysis, SAT-RA (HR = 1.24, 95% CI 1.08-1.43) and SM-RA (HR = 0.74, 95% CI 0.61-0.90) were associated with shorter overall survival. CONCLUSION: Higher SAT-RA and lower SM-RA at baseline were associated with shorter overall survival of patients with mCRC, and lower SAT-RA was associated with increased chemotoxicity. These body composition alterations should be investigated in future chemotherapy related studies.",
    "verified": false,
-   "counted_members": [
-    "ralph-brecheisen"
-   ],
-   "counted": true,
+   "counted_members": [],
+   "counted": false,
    "first_seen": "2026-10-21",
    "approved_external": false
   },
@@ -14495,10 +14485,8 @@
    "cited_by_count": 0,
    "abstract": null,
    "verified": false,
-   "counted_members": [
-    "ralph-brecheisen"
-   ],
-   "counted": true,
+   "counted_members": [],
+   "counted": false,
    "first_seen": "2026-10-21",
    "approved_external": false
   },
@@ -16517,8 +16505,7 @@
    "counted_members": [
     "hossein-rahmani",
     "leroy-volmer",
-    "andre-dekker",
-    "ralph-brecheisen"
+    "andre-dekker"
    ],
    "counted": true,
    "first_seen": "2026-10-21",
@@ -17570,8 +17557,7 @@
    "abstract": "BACKGROUND: Polytrauma patients with an Injury Severity Score (ISS) ≥ 16 have a high mortality rate. Early identification of patients at risk of mortality is key. Different risk stratification models are available; however, body composition on third lumbar computed tomography (L3 CT) is not routinely used. The aim of this study is to determine the effect of CT body composition on 1-year mortality in adult polytrauma patients. METHODS: Body composition analysis (L3 CT) was performed on 593 adult polytrauma patients. The associations with 1-year mortality were assessed using uni- and multivariable logistic regression analysis. As a sensitivity analysis, 1-year mortality was analysed using Kaplan-Meier survival curves, log-rank tests and Cox regression. RESULTS: (±4.07). Comorbidities were present in 327 (55.4%) patients, with an average Charlson Comorbidity Index (CCI) of 2.07 points (±2.1). The mean ISS score was 27.59 (±11.06); 323 (54.5%) patients had an ISS ≥ 25 points. Age, CCI, ISS, skeletal muscle index and skeletal muscle radiation attenuation (OR 1.053, 5.713, 3.711, 0. 563 and 0.533, respectively; p < 0.001), subcutaneous adipose tissue radiation attenuation (SATRA OR 1.253, p = 0.028) and visceral adipose tissue index (OR 1.242, p = 0.038) were significantly associated with 1-year mortality. In multivariable logistic regression, age, ISS and SATRA remained statistically significantly associated with 1-year mortality (OR 1.062, p < 0.001; OR 4.761, p < 0.001; OR 1.396, p = 0.009). CONCLUSIONS: This study demonstrated that subcutaneous adipose tissue radiation attenuation on emergency trauma CT scans is significantly associated with 1-year mortality in adult polytrauma patients. Additionally, we found a significant effect of age and ISS on 1-year mortality. Incorporating body composition analysis could lead to a better selection of patients at risk for 1-year mortality and aid in treatment decision-making.",
    "verified": true,
    "counted_members": [
-    "leonard-wee",
-    "ralph-brecheisen"
+    "leonard-wee"
    ],
    "counted": true,
    "first_seen": "2026-10-21",
@@ -17999,10 +17985,8 @@
    "cited_by_count": 6,
    "abstract": "ABSTRACT Background Body composition alterations such as skeletal muscle (SM) loss in cancer patients are associated with poor survival. In turn, immune cell‐driven pathways have been linked to muscle wasting. We aimed to investigate the relationship between body composition, tumour‐infiltrating lymphocytes and survival in patients with advanced lung cancer. Methods We studied 200 patients with advanced lung cancer receiving immunotherapy ( n = 81) or non‐immunotherapy regimens ( n = 119). Body composition including SM index (SMI) at baseline and longitudinal changes were assessed using computed tomography (CT) scans at the third lumbar vertebra. Associations between body composition parameters and overall survival (OS) were evaluated using Cox regression analysis. The median value of SMI, stratified by sex, was used as the cut‐off to define groups with high and low baseline SMI. Stable SMI was defined by any increase or < 2% decrease per 100 days; loss of SMI was defined by ≥ 2% decrease per 100 days. Logistic regression analysis was applied to investigate the association between SMI and peripheral circulating immune cells. Tumour‐infiltrating lymphocytes were identified by immunohistochemistry, and their relationship with SMI was evaluated. Results SMI loss was associated with shorter OS (whole cohort: HR = 2.314, 95% CI = 1.388–3.858, p = 0.001; immunotherapy cohort: HR = 3.028, 95% CI = 1.113–8.236, p = 0.03; non‐immunotherapy cohort: HR = 2.298, 95% CI = 1.191–4.435, p = 0.013). Low baseline SMI was associated with higher CD3 + T cell abundance (OR = 1.240, 95% CI = 1.080–1.424, p = 0.002) but lower CD3 + CD8 + T cell abundance (OR = 0.862, 95% CI = 0.762–0.974, p = 0.018) in peripheral blood. Subsequent SMI loss during treatment was also significantly associated with higher CD3 + T cell counts (OR = 3.414, 95% CI = 1.301–8.961, p = 0.013) and lower CD3 + CD8 + T cell abundance (OR = 0.666, 95% CI = 0.459–0.968, p = 0.033). Patients with stable SMI had a higher number of CD8 + tumour‐infiltrating lymphocytes than patients with SMI loss (15.4% vs. 7.9%, p = 0.036). Conclusion SM loss is an independent predictor for survival in patients with advanced lung cancer and is associated with reduced peripheral and tumour‐infiltrating cytotoxic T cell abundance. An inadequate antitumour immune response may contribute to metabolic tissue wasting in cancer.",
    "verified": false,
-   "counted_members": [
-    "ralph-brecheisen"
-   ],
-   "counted": true,
+   "counted_members": [],
+   "counted": false,
    "first_seen": "2026-10-21",
    "approved_external": false
   },
@@ -18413,8 +18397,7 @@
    "abstract": "Background: Early detection of patients at high risk for recurrence or local tumor progression (LTP) following thermal ablation of hepatocellular carcinoma (HCC) is essential for treatment selection and individualized follow-up. This systematic review aims to assess and compare the performance of prognostic models predicting recurrence or LTP in patients with HCC treated with thermal ablation. Methods: PubMed, Web of Science, Cochrane, and Embase were searched for studies developing models to predict recurrence after thermal ablation in treatment-naïve HCC patients, using imaging and clinical data with reported test set performance. Risk of bias and applicability were assessed by the Prediction model Risk of Bias Assessment Tool. Data on model performance, feature extraction and modeling technique was collected. Results: In total, 16 studies comprising 39 prognostic models were included, all developed using retrospective data from China or Korea. Outcomes included recurrence-free survival, (intrahepatic) early recurrence, LTP, late recurrence and aggressive intrasegmental recurrence. Predictive parameters varied across models addressing identical outcomes. Outcome definitions also differed. Nine models were externally validated. Most studies had a high risk of bias due to methodological limitations. Conclusions: Variability in model development methodology and type of predictors was found. Models that integrated multiple types of predictors consistently outperformed those relying on one type. To advance predictive tools toward clinical implementation, future research should prioritize standardized outcome definitions, external testing, and transparent reporting. Until these challenges are addressed, current evaluated models should be regarded as promising but preliminary tools.",
    "verified": true,
    "counted_members": [
-    "hossein-rahmani",
-    "ralph-brecheisen"
+    "hossein-rahmani"
    ],
    "counted": true,
    "first_seen": "2026-10-21",
@@ -18963,10 +18946,8 @@
    "cited_by_count": 3,
    "abstract": "BACKGROUND & AIMS: Preoperative body composition is a potential modifiable risk factor for poor postoperative outcomes in Crohn's disease (CD). This study aimed to investigate the association of preoperative body composition parameters with postoperative complications and endoscopic postoperative recurrence (ePOR) in patients with CD following ileocolic (re-)resection (ICR). METHODS: Patients with CD (≥16 years) scheduled for ICR with preoperative abdominal imaging (<12 months) (n = 227) were identified from a prospective, multicenter cohort study. Cross-sectional surface area normalized for body height (ie, index) and lipid content in sketelal muscle mass (SM) and subcutaneous and visceral adipose tissue (SAT/VAT) were analyzed on imaging. Associations with postoperative complications (Clavien-Dindo I-IV), moderate-to-severe complications (Clavien-Dindo ≥II), infectious complications, and ePOR (modified Rutgeerts' score ≥i2b) were explored. RESULTS: High lipid content in SM (ie, myosteatosis) was associated with overall postoperative (adjusted odds ratio [aOR], 3.09; 95% confidence interval [CI], 1.36-7.00), moderate-to-severe (aOR, 2.66; 95% CI, 1.24-5.68), and infectious complications (aOR, 2.44; 95% CI, 1.10-5.40). Low preoperative SAT index was protective against postoperative complications (aOR, 0.38; 95% CI, 0.16-0.88). Low lipid content in VAT was associated with postoperative infectious complications (aOR, 4.31; 95% CI, 1.11-16.71), whereas high lipid content in VAT was protective against ePOR (aOR, 0.26; 95% CI, 0.07-0.99). Both low (aOR, 4.46; 95% CI, 1.09-19.57) and high SM index were associated with ePOR (aOR, 2.45; 95% CI, 1.06-5.65). CONCLUSIONS: Preoperative myosteatosis was consistently associated with overall postoperative complications, moderate-to severe, and infectious complications, in patients with CD following ICR. Furthermore, several body composition parameters were identified as risk factor or protective factor for postoperative complications and ePOR. Inconsistent findings were observed for SM levels and ePOR risk. The correlation between improvements of these parameters and postoperative outcomes requires further study.",
    "verified": false,
-   "counted_members": [
-    "ralph-brecheisen"
-   ],
-   "counted": true,
+   "counted_members": [],
+   "counted": false,
    "first_seen": "2026-10-21",
    "approved_external": false
   },
@@ -19698,8 +19679,7 @@
    "abstract": "PURPOSE: The long-term objective of the Ablation-IMaging and Advanced Guidance for workflow optimization in Interventional Oncology (A-IMAGIO) project is to develop a standardized, accessible, low-complex, high-precision, end-to-end solution for treatment planning, needle guidance, and treatment evaluation for thermal liver ablation. MATERIALS AND METHODS: This is a prospective, international, multicentre, observational registry study. Patients will be included with age ≥ 18 years, diagnosed with primary or secondary liver tumours, and undergoing thermal liver ablation. A detailed dataset of medical history, baseline clinical and imaging parameters, tumour characteristics, ablation technique/parameters, treatment outcomes, periprocedural images, and adverse events, will be collected for all participants. This data will be used to develop AI algorithms for prognostic modelling and quantitative imaging analysis. Additionally, costs associated with thermal liver ablation clinical pathway will be evaluated. EXPECTED GAIN OF KNOWLEDGE: The results of this registry study are expected to provide profound insight in current variability among centres in performing thermal liver ablation, and identify best practices in order to eventually facilitate standardization and universally excellent clinical outcomes. TRIAL REGISTRATION: National Institute of Health Clinical trial database (NCT06179602) https://clinicaltrials.gov/study/NCT06179602 .",
    "verified": true,
    "counted_members": [
-    "hossein-rahmani",
-    "ralph-brecheisen"
+    "hossein-rahmani"
    ],
    "counted": true,
    "first_seen": "2026-10-21",
@@ -21377,10 +21357,8 @@
    "cited_by_count": 4,
    "abstract": null,
    "verified": false,
-   "counted_members": [
-    "ralph-brecheisen"
-   ],
-   "counted": true,
+   "counted_members": [],
+   "counted": false,
    "first_seen": "2026-10-21",
    "approved_external": false
   },
@@ -21893,10 +21871,8 @@
    "cited_by_count": 0,
    "abstract": null,
    "verified": false,
-   "counted_members": [
-    "ralph-brecheisen"
-   ],
-   "counted": true,
+   "counted_members": [],
+   "counted": false,
    "first_seen": "2026-10-21",
    "approved_external": false
   },
@@ -26298,10 +26274,8 @@
    "cited_by_count": 0,
    "abstract": "Abstract Background Alterations in body composition are common among patients with Crohn’s disease (CD) and may represent a modifiable risk factor for dismal postoperative outcomes. This study aimed to investigate the association of preoperative body composition with postoperative complications and endoscopic postoperative recurrence (ePOR) in CD patients following ileocolic (re-)resection (ICR). Methods CD patients (≥16 years) scheduled for ICR with a preoperative CT or MRI scan (<12 months prior to ICR) were identified from an ongoing prospective, multicenter cohort study. Cross-sectional area normalized for body height (i.e. index) and lipid content (i.e. radiation attenuation on CT or signal intensity on MRI) of sketelal muscle (SM), subcutaneous adipose (SAT), and visceral adipose tissue (VAT) were analyzed at L3 level. Cut-offs were based on sex-specific tertiles. The primary outcome was postoperative complications (Clavien-Dindo grade I-IV) within 30 days. Secondary outcomes were moderate-to-severe complications (Clavien-Dindo grade ≥II), infectious complications (intra- or extra-abdominal), and ePOR (modified Rutgeerts’ score ≥i2b) at six months postoperatively. Multivariable logistic regression was performed to assess the association of preoperative body composition with study outcomes. Results In total, 227 patients were included. Preoperative characteristiscs and postoperative outcomes are shown in Table 1. Median interval from preoperative imaging to ICR was 2.3 months (IQR 1.1–4.6). High lipid content of SM (i.e. myosteatosis) was associated with postoperative complications (aOR 2.51; 95%CI 1.21–5.22), moderate-to-severe complications (aOR 2.34; 95%CI 1.13–4.85), and infectious complications (aOR 2.20; 95%CI 1.01–4.80) (Figure 1). Low VAT-index was protective against postoperative complications (aOR 0.17; 95%CI 0.05–0.58). Low lipid content of VAT (aOR 3.98; 95%CI 1.15–13.78) and a high SAT-index (aOR 3.38; 95%CI 1.12–10.15) were associated with infectious complications. High SM-index was associated with ePOR (aOR 2.51; 95%CI 1.09–5.77). Preoperative body mass index (BMI) showed no association with study outcomes in uni- and multivariable analyses. Conclusion Preoperative myosteatosis on abdominal imaging is consistently associated with postoperative complications in patients with CD following ICR. Low VAT-index was identified as protective factor for postoperative complications, while low lipid content of VAT and a high SAT-index were associated with infectious complications. Surprisingly, high SM increased the risk of ePOR. Future research should identify strategies for preoperative improvement of body composition, rather than relying solely on BMI, and investigate if these improvements correlate with better postoperative outcomes.",
    "verified": false,
-   "counted_members": [
-    "ralph-brecheisen"
-   ],
-   "counted": true,
+   "counted_members": [],
+   "counted": false,
    "first_seen": "2026-10-21",
    "approved_external": false
   },
@@ -27390,7 +27364,6 @@
    "verified": true,
    "counted_members": [
     "leroy-volmer",
-    "ralph-brecheisen",
     "leonard-wee"
    ],
    "counted": true,
@@ -29330,7 +29303,6 @@
    "verified": true,
    "counted_members": [
     "leroy-volmer",
-    "ralph-brecheisen",
     "andre-dekker",
     "leonard-wee"
    ],
@@ -30939,10 +30911,8 @@
    "cited_by_count": 7,
    "abstract": "BACKGROUND & AIMS: Several automated programs have been developed to facilitate body composition analysis of images from abdominal computed tomography (CT) scans. External validation in patients with colorectal cancer is necessary for use in research and clinical practice. Our aim was to validate an automatic method (AutoMATiCA) of segmenting CT images at the third lumbar level (L3) from patients with colorectal cancer, by comparing with manual segmentation. METHODS: Diagnostic abdominal CT scans of consecutive patients with stage I-III colorectal cancer were analysed to measure cross-sectional areas and tissue densities of skeletal muscle and intra-muscular, visceral, and subcutaneous adipose tissue. Trained analysts performed manual segmentation of L3 CT images using SliceOmatic. Automatic segmentation was performed using AutoMATiCA, an open-source software. The Dice similarity coefficient (DSC) was calculated to assess segmentation accuracy. Agreement of automatic with manual segmentation was evaluated using intra-class correlation coefficients (ICCs) and Bland-Altman plots with limits of agreement. RESULTS: A total of 292 scans were included, of which 62% were from male patients. The agreement of AutoMATiCA with the manual segmentation was excellent, with median DSC values ranging from 0.900 to 0.991 and ICCs above 0.95 for all segmented areas. No systematic deviations were observed in Bland-Altman plots for all segmented areas, with overall narrow limits of agreement. CONCLUSIONS: AutoMATiCA provides an accurate segmentation of abdominal CT images from patients with colorectal cancer. Our findings support its use as a highly efficient automated tool for body composition analysis in research and potentially also in clinical practice.",
    "verified": false,
-   "counted_members": [
-    "ralph-brecheisen"
-   ],
-   "counted": true,
+   "counted_members": [],
+   "counted": false,
    "first_seen": "2026-10-21",
    "approved_external": false
   },
@@ -34175,10 +34145,8 @@
    "cited_by_count": 0,
    "abstract": null,
    "verified": false,
-   "counted_members": [
-    "ralph-brecheisen"
-   ],
-   "counted": true,
+   "counted_members": [],
+   "counted": false,
    "first_seen": "2026-10-21",
    "approved_external": false
   },
@@ -38683,10 +38651,8 @@
    "cited_by_count": 0,
    "abstract": "Abstract Background Alterations in body composition are common in Crohn’s disease (CD) patients and influence disease outcomes. However, the impact of preoperative body composition on postoperative outcomes is not completely understood. Therefore, this study aimed to investigate the association of preoperative body composition with postoperative complications and endoscopic recurrence in CD patients undergoing ileocolic (re-)resection (ICR). Methods CD patients (≥16 years) scheduled for an ICR with a computed tomography (CT) scan available (<12 months prior to ICR) were identified from an ongoing prospective, multicenter cohort study. Skeletal muscle mass (SM), visceral (VAT) and subcutaneous adipose tissue (SAT), and their radiation attenuation (RA) were assessed on a single CT image at L3 using a validated deep-learning automatic segmentation tool (Mosamatic). Low RA is associated with increased tissue triglyceride content (e.g. myosteatosis in case of SM). Cut-offs, based on sex-specific tertiles, were set at the lower and upper tertile for low and high values. The primary outcome was the development of overall postoperative complications within 90 days. Secondary outcomes were postoperative endoscopic recurrence (Rutgeerts’ score ≥ i2b) at 6 months, infectious complications, and moderate to severe complications (Clavien-Dindo ≥ II). Multivariable logistic regression was performed to assess the association of body composition variables with postoperative outcomes, including adjustment for confounders. Results 121 patients were included (median age 37.1 years (IQR 27.1–53.2), 59.5% female). Median disease duration at surgery was 3.6 years (IQR 0.4–12.7), and 57.0% had prior exposure to ≥ 1 biological. Overall postoperative complications were reported in 51.2%, endoscopic recurrence in 33.3%, infectious complications in 26.4%, and moderate to severe complications in 41.3%. High SM-RA (aOR 0.67; 95%CI 0.16–0.85) and low VAT (aOR 0.38; 95%CI 0.17–0.87) were associated with decreased overall postoperative complications. Low VAT-RA was associated with decreased endoscopic recurrence (aOR 0.21; 95%CI 0.07–0.67), and high SAT with increased infectious complications (aOR 3.05; 95%CI 1.28–7.28). Conclusion Low visceral adipose tissue and high radiation attenuation of skeletal muscle (i.e. no myosteatosis) were protective of overall postoperative complications in CD patients undergoing ICR. Low radiation attenuation of visceral adipose tissue (i.e. high triglyceride content) was protective of endoscopic recurrence. High subcutaneous adipose tissue increased the risk of postoperative infectious complications. Further research in larger populations is warranted to validate these findings to improve preoperative stratification and strategies for CD.",
    "verified": false,
-   "counted_members": [
-    "ralph-brecheisen"
-   ],
-   "counted": true,
+   "counted_members": [],
+   "counted": false,
    "first_seen": "2026-10-21",
    "approved_external": false
   },

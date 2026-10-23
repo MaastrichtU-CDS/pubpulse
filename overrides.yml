@@ -15,3 +15,4 @@ approve_external: []
 # (e.g. a member whose recent work is mainly affiliated elsewhere). Use the member id (slug) from people.yml.
 verify_affiliation:
   - matthijs-sloep
+  - ralph-brecheisen
