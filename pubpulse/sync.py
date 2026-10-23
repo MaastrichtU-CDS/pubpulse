@@ -13,6 +13,7 @@ from pathlib import Path
 import yaml
 
 from .openalex import OpenAlex, abstract_from_inverted_index, author_affiliations, author_current_institutions, short_id
+from .members import apply_members, fetch_members, in_period
 from .staff import fetch_staff, is_active, is_tracked, merge_people, tracked_until
 
 log = logging.getLogger(__name__)
@@ -96,6 +97,7 @@ def apply_overrides(works: list[dict], overrides: dict) -> list[dict]:
             continue
         if w["id"] in overrides["confirm"]:
             w["verified"] = True
+            w["counted"] = True
             w["manual"] = "confirmed"
         w["approved_external"] = w["id"] in overrides.get("approve_external", set())
         kept.append(w)
@@ -429,6 +431,7 @@ def fetch_works(
     current_slugs = {p["slug"] for p in people if is_active(p, today)}
     current_ids = sorted({aid for p in people if p["slug"] in current_slugs for aid in known_author_ids(p)})
     strict_only = {p["slug"] for p in people if confidence[p["slug"]] == "name" or not is_active(p, today)}
+    by_slug_all = {p["slug"]: p for p in people}
     for p in people:
         if not is_tracked(p, today, grace_months):
             continue
@@ -477,7 +480,12 @@ def fetch_works(
     dropped_name, dropped_policy = 0, 0
     for wid in list(works):
         w = works[wid]
-        keep = [m for m in w["group_members"] if m not in strict_only or w["affiliation_status"].get(m) == "verified"]
+        keep = [
+            m for m in w["group_members"]
+            if w["affiliation_status"].get(m) == "verified"
+            or (confidence.get(m) == "orcid" and (m not in strict_only or (
+                w["affiliation_status"].get(m) != "mismatch" and in_period(by_slug_all.get(m, {}), w.get("publication_date"), grace_months))))
+        ]
         if len(keep) != len(w["group_members"]):
             for m in set(w["group_members"]) - set(keep):
                 w["member_affiliations"].pop(m, None)
@@ -488,6 +496,14 @@ def fetch_works(
             dropped_name += 1
             continue
         w["verified"] = any(s == "verified" for s in w["affiliation_status"].values())
+        # Counted for the group: verified affiliation, or inside the member's period without a conflicting affiliation.
+        w["counted_members"] = [
+            m for m in w["group_members"]
+            if w["affiliation_status"].get(m) == "verified"
+            or (w["affiliation_status"].get(m) != "mismatch" and confidence.get(m) == "orcid"
+                and in_period(by_slug_all.get(m, {}), w.get("publication_date"), grace_months))
+        ]
+        w["counted"] = bool(w["counted_members"])
         if policy == "require" and not w["verified"]:
             works.pop(wid)
             dropped_policy += 1
@@ -576,6 +592,14 @@ def run(dry_run: bool = False, skip_people: bool = False, config_path: Path = CO
             log.error("staff page sync failed, keeping people.yml unchanged: %s", exc)
             people_changes = {"error": str(exc)}
 
+    # Membership periods are applied in memory only: they are personal data and never written to people.yml,
+    # the published data or the site. Only the resulting per-paper "counted" flag is public.
+    rows = fetch_members(cfg, ROOT)
+    sheet_active_until = {p["slug"]: p.get("active_until") for p in people}
+    if rows:
+        mchanges = apply_members(people, rows, today)
+        log.info("membership periods applied for %d people (%d unknown names added)", len(mchanges["updated"]), len(mchanges["added"]))
+
     client = OpenAlex(mailto=cfg.get("openalex_mailto"))
     previous = load_publications()
     from .former import review_former
@@ -611,6 +635,7 @@ def run(dry_run: bool = False, skip_people: bool = False, config_path: Path = CO
         "people_tracked": sum(1 for p in people if is_tracked(p, today, grace) and person_filter(p)),
         "works_total": len(works),
         "unverified_total": sum(1 for w in works if not w.get("verified")),
+        "counted_total": sum(1 for w in works if w.get("counted")),
         "new_count": 0 if baseline else len(new_ids),
         "new_ids": [] if baseline else new_ids,
         "needs_review": unresolved,
@@ -645,6 +670,12 @@ def run(dry_run: bool = False, skip_people: bool = False, config_path: Path = CO
     runs.append(run_record)
     with open(out_dir / "runs.json", "w", encoding="utf-8") as f:
         json.dump(runs, f, ensure_ascii=False, indent=1)
+    for p in people:
+        for k in ("member_from", "member_until", "member_note", "membership_source"):
+            p.pop(k, None)
+        if p["slug"] in sheet_active_until:
+            p["active_until"] = sheet_active_until[p["slug"]]
+    people = [p for p in people if not (p.get("source") == "manual" and p.get("needs_review") and p["slug"] not in sheet_active_until)]
     save_people(people, OUT_DIR / "people.yml" if (dry_run or failed) else PEOPLE_PATH)
     if not (dry_run or failed):
         # Carry unannounced ids over until a notification succeeds (workflow clears the file afterwards).

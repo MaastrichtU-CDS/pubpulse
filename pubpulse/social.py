@@ -42,7 +42,7 @@ Output exactly the two sections, each starting with its "### POST" / "### SHORT"
 
 
 def eligible(w: dict) -> bool:
-    return bool(w.get("verified")) and w.get("type") in ELIGIBLE_TYPES and bool(w.get("abstract"))
+    return bool(w.get("counted", w.get("verified"))) and w.get("type") in ELIGIBLE_TYPES and bool(w.get("abstract"))
 
 
 def user_message(w: dict, names: dict[str, str]) -> str:

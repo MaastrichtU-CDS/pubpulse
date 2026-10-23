@@ -5,3 +5,5 @@ out/
 dist/
 .pytest_cache/
 .env
+members.csv
+members-template.csv

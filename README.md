@@ -165,6 +165,23 @@ pubpulse. Papers that are on Scholar but not in pubpulse show up on the website 
 with the person's name. Typical causes: the publisher did not send the author's ORCID (fix: add the paper in the ORCID
 record, OpenAlex follows), or grey literature OpenAlex does not index (nothing to do). Secret: `SERPAPI_KEY`.
 
+### Membership periods (private Google Sheet)
+
+Who counts as a member, and from when to when, is kept in a **private Google Sheet**, not in the repo: start and end
+dates are personal data. Setup once:
+
+1. `python -m pubpulse members-template` writes `members-template.csv` (names, roles, empty start/end columns; gitignored).
+2. Create a Google Sheet, *File → Import* that CSV. Fill `start` and `end` (YYYY-MM-DD, YYYY-MM or YYYY; leave end
+   empty for current members). Add rows for members who are not on the staff page.
+3. *Share → Anyone with the link → Viewer*. Build the CSV link: `https://docs.google.com/spreadsheets/d/<SHEET_ID>/export?format=csv`.
+4. GitHub → Settings → Secrets: `MEMBERS_SHEET_CSV_URL` = that link. Locally, put it in `.env`.
+
+Every run reads the sheet in memory. A paper **counts for the group** when a member's authorship either has a
+verified group affiliation, or falls inside that member's period without a conflicting affiliation recorded by
+OpenAlex. Papers before someone joined, or after they left (plus the grace period), count only with a verified
+affiliation. The website, the digest and the LinkedIn drafts use "counted"; "verified only" remains as a stricter
+filter. Dates never appear in people.yml, the published data or the site.
+
 ### How a run works
 
 ```

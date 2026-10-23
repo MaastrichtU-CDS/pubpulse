@@ -323,3 +323,18 @@ def test_affiliation_rules_require_cooccurrence():
     assert not affiliation_matches(["Department of Radiation Oncology, Christian Medical College, Vellore"], rules)
     assert not affiliation_matches(["Maastricht University"], rules)
     assert affiliation_matches(["Dept. of Radiation Oncology, Maastricht University Medical Centre"], rules)
+
+
+def test_counted_uses_membership_period():
+    from datetime import date
+    from pubpulse.sync import fetch_works
+
+    people = [{"slug": "m", "name": "M", "orcid": "0000-0001-0000-0001", "openalex_ids": ["A1"], "active_until": None, "member_from": "2025-01-01"}]
+    def auth(aid, insts):
+        return {"author": {"id": f"https://openalex.org/{aid}", "display_name": aid}, "institutions": [{"display_name": i} for i in insts]}
+    w_before = _raw("W1", [auth("A1", [])]); w_before["publication_date"] = "2024-06-01"
+    w_in_unknown = _raw("W2", [auth("A1", [])]); w_in_unknown["publication_date"] = "2025-06-01"
+    w_in_mismatch = _raw("W3", [auth("A1", ["Elsewhere"])]); w_in_mismatch["publication_date"] = "2025-06-01"
+    client = _FakeClient({"authorships.author.id:A1": [w_before, w_in_unknown, w_in_mismatch]})
+    works, _ = fetch_works(people, client, 2024, date(2026, 10, 23), keywords=KW)
+    assert works["W1"]["counted"] is False and works["W2"]["counted"] is True and works["W3"]["counted"] is False

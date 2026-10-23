@@ -80,7 +80,7 @@ def _draft_for(w: dict) -> dict | None:
 def _item_html(w: dict, names: dict[str, str]) -> str:
     members = ", ".join(html.escape(names.get(s, s)) for s in w.get("group_members", []))
     meta = " · ".join(x for x in (w.get("journal"), w.get("publication_date"), (w.get("type") or "").replace("-", " ")) if x)
-    flag = "" if w.get("verified", True) else ' <span style="color:#8a5a00;font-size:12px">⚠ group affiliation not verified</span>'
+    flag = "" if w.get("counted", w.get("verified", True)) else ' <span style="color:#8a5a00;font-size:12px">⚠ not counted for the group (affiliation / period)</span>'
     return (
         f'<li style="margin:0 0 14px 0">'
         f'<a href="{html.escape(work_link(w))}" style="font-weight:600;color:#1a4b8c;text-decoration:none">{html.escape(w["title"])}</a>'
@@ -152,11 +152,11 @@ def build_digest(pubs: dict, cfg: dict, pending_ids: list[str] | None = None) ->
         ) if backfill else "",
         f'<p><a href="{html.escape(site)}">Browse and filter all publications</a> · <a href="{html.escape(site)}feed.xml">RSS feed</a></p>',
     ]
-    unverified_new = sum(1 for w in items if not w.get("verified", True))
+    unverified_new = sum(1 for w in items if not w.get("counted", w.get("verified", True)))
     if unverified_new:
         body.append(
             f'<p style="font-size:13px;color:#8a5a00;border-left:3px solid #e0a800;padding-left:8px">{unverified_new} of these have no '
-            f'group affiliation recorded by OpenAlex. <a href="{html.escape(site)}#when=week&amp;verify=unverified">Check them</a> and confirm or '
+            f'group affiliation recorded by OpenAlex. <a href="{html.escape(site)}#when=week&amp;verify=uncounted">Check them</a> and confirm or '
             "reject them in overrides.yml.</p>"
         )
     sc = scholar_summary()
@@ -184,13 +184,13 @@ def build_digest(pubs: dict, cfg: dict, pending_ids: list[str] | None = None) ->
     text_lines = [f"{group}: {n} new publication(s) this week", ""]
     for i, w in enumerate(items, 1):
         members = ", ".join(names.get(s, s) for s in w.get("group_members", []))
-        flag = "" if w.get("verified", True) else "  [group affiliation not verified]"
+        flag = "" if w.get("counted", w.get("verified", True)) else "  [not counted for the group]"
         text_lines += [f"{i}. {w['title']}", f"   {w.get('journal') or ''} · {w.get('publication_date') or ''}", f"   Group authors: {members}{flag}", f"   {work_link(w)}", ""]
     if backfill:
         text_lines += ["", f"Also added to the archive ({len(backfill)} older papers now linked to a group member):"] + [f"   - {w['title'][:80]} ({w.get('year')})" for w in backfill[:8]]
     text_lines += [f"All publications: {site}", f"Feed: {site}feed.xml"]
     if unverified_new:
-        text_lines += ["", f"{unverified_new} of these have no group affiliation recorded: {site}#when=week&verify=unverified"]
+        text_lines += ["", f"{unverified_new} of these have no group affiliation recorded: {site}#when=week&verify=uncounted"]
     if review:
         text_lines += ["", "Needs attention (no ORCID/OpenAlex match): " + ", ".join(review)]
     text_lines += ["", "Unsubscribe: {{UNSUBSCRIBE_URL}}"]

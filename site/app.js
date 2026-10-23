@@ -204,18 +204,20 @@
       .forEach((select) => select.tomselect?.sync());
   }
 
+  const isCounted = (w) => (w.counted === undefined ? !!w.verified : !!w.counted);
+
   function headlineWorks() {
     const d = siteDefaults();
-    return data.works.filter((w) => (d.verify !== "verified" || w.verified) && (d.preprints || w.type !== "preprint"));
+    return data.works.filter((w) => (d.verify !== "counted" || isCounted(w)) && (d.preprints || w.type !== "preprint"));
   }
   function headlineDescription() {
     const d = siteDefaults();
-    return [d.verify === "verified" ? "verified" : "", d.preprints ? "" : "non-preprint"].filter(Boolean).join(", ") || "all";
+    return [d.verify === "counted" ? "counted" : "", d.preprints ? "" : "non-preprint"].filter(Boolean).join(", ") || "all";
   }
 
   function siteDefaults() {
     const site = (data && data.site) || {};
-    return { verify: site.default_verified_only ? "verified" : "", preprints: !!site.default_include_preprints };
+    return { verify: site.default_verified_only ? "counted" : "", preprints: !!site.default_include_preprints };
   }
 
   function init(json) {
@@ -803,6 +805,8 @@
     if (state.when === "week" && !data.newIds.has(w.id)) return false;
     if (state.when && state.when !== "week" && !inPeriod(w, state.when))
       return false;
+    if (state.verify === "counted" && !isCounted(w)) return false;
+    if (state.verify === "uncounted" && isCounted(w)) return false;
     if (state.verify === "verified" && !w.verified) return false;
     if (state.verify === "unverified" && w.verified) return false;
     if (state.verify === "approved" && !w.approved_external) return false;
@@ -860,7 +864,7 @@
       items.sort((a, b) =>
         (b.publication_date || "").localeCompare(a.publication_date || ""),
       );
-    const base = state.verify === "verified" && !state.preprints && !state.type ? headlineWorks().length : data.works.length;
+    const base = state.verify === "counted" && !state.preprints && !state.type ? headlineWorks().length : data.works.length;
     els.count.textContent =
       `${items.length} of ${base} publications · since ${coverageStart()}` +
       (data.newIds.size ? ` · ${data.newIds.size} new this week` : "");
@@ -957,7 +961,7 @@
       .map(esc)
       .join(" · ");
     return `<li class="item">
-      <div class="publication-top"><span class="journal-name">${esc(w.journal || "Research publication")}</span><span class="badges">${isNew ? '<span class="badge new">new</span>' : ""}${w.manual === "confirmed" ? '<span class="badge oa">confirmed</span>' : w.verified ? "" : '<span class="badge warn">unverified</span>'}${w.approved_external ? '<span class="badge new" title="approved for external communication">approved</span>' : ""}${w.is_oa ? '<span class="badge oa">open access</span>' : ""}</span></div>
+      <div class="publication-top"><span class="journal-name">${esc(w.journal || "Research publication")}</span><span class="badges">${isNew ? '<span class="badge new">new</span>' : ""}${w.manual === "confirmed" ? '<span class="badge oa">confirmed</span>' : !isCounted(w) ? '<span class="badge warn" title="outside the member period or conflicting affiliation">not counted</span>' : w.verified ? "" : '<span class="badge oa" title="counted via membership period; OpenAlex has no affiliation for this paper">in period</span>'}${w.approved_external ? '<span class="badge new" title="approved for external communication">approved</span>' : ""}${w.is_oa ? '<span class="badge oa">open access</span>' : ""}</span></div>
       <h3><a href="${esc(link)}" target="_blank" rel="noopener">${esc(w.title)}</a></h3>
       <div class="meta">${meta}</div>
       <div class="authors group-authors"><span class="group-author-label">CDS authors</span><ul class="group-author-list">${members}</ul></div>
