@@ -130,7 +130,7 @@ shows the main finding; methods figures are rejected.
 
 | Paper | Card | Figure | Why |
 |---|---|---|---|
-| Frontiers, federated survival analysis | yes | Figure 3, forest plot | Shows the finding directly: hazard ratios identical for standard and binned Cox models. Description: "Hazard ratios for the four clinical predictors are practically identical whether the federated Cox model sees exact event times or only binned ones (fixed or quantile bins). That is the paper's point: the privacy protection costs no accuracy." |
+| Frontiers, federated survival analysis | yes | Figure 3, forest plot | Shows the finding directly: hazard ratios identical for standard and binned Cox models. Caption for LinkedIn: "Each row is a known risk factor for survival in head and neck cancer, and each colour is a different version of the model: one standard, two that protect patient privacy. The dots land in the same place. Protecting privacy did not change the answers." |
 | Medical Oncology, ITH review | yes | none | Only extractable figure is the PRISMA flow diagram: methods, not the finding. |
 | npj Breast Cancer | yes | none | Licence CC BY-NC-ND: no reuse of figures. |
 | Lancet Digital Health, FAHR-Face | yes | none | Licence CC BY-NC-ND: no reuse of figures. |

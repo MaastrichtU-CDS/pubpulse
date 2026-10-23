@@ -215,8 +215,10 @@ def describe_with_claude(w: dict, draft: dict, cands: list[dict], model: str) ->
         "FINDING of the paper, not the methods (flow diagrams, pipelines, PRISMA charts, study designs do not qualify unless "
         "the paper is about the method itself). If no candidate shows the main finding, answer NONE.\n\n"
         f"Title: {w['title']}\nAbstract: {w.get('abstract') or ''}\n\nDraft post (first line is the main finding):\n{draft.get('post', '')}\n\n"
-        "Answer with exactly:\n### CHOICE\n<candidate number or NONE>\n### DESCRIPTION\n<1-2 plain sentences for the post: what the figure "
-        "shows and how it supports the main finding; use only what is visible and in the abstract; no hype>\n### ALT\n<one-sentence alt text>"
+        "Answer with exactly:\n### CHOICE\n<candidate number or NONE>\n### DESCRIPTION\n<a caption for LinkedIn readers outside the field, "
+        "at most 2 short sentences (about 40 words): say in everyday words what the picture shows and the one takeaway, the main point of the paper. "
+        "No method names, no statistics or abbreviations unless the reader needs them, no hype; only what is visible and in the abstract>"
+        "\n### ALT\n<one-sentence alt text describing the image for screen readers>"
     )}]
     for i, c in enumerate(cands, 1):
         im = c["image"].copy()
