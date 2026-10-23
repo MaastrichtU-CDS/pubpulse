@@ -156,6 +156,17 @@ to validate before the first larger campaign. (An alternative backend, Google Ap
 
 To test delivery without waiting for a new paper: *Actions → weekly → Run workflow* and tick *force_notify*.
 
+### Social posts: what goes where (design decisions)
+
+- **Card image**: one idea only. A catchy headline (max ~60 characters), a proof line "Published in <journal> · <year>",
+  a byline with the group authors, and quiet branding (eyebrow, emblem watermark, footer logos). The paper title and the
+  DOI are deliberately *not* on the card: at feed size they are unreadable and they compete with the headline.
+- **Post text**: the finding as first line, the group authors second (to tag), what/why/limitation in plain words,
+  the journal last. No links in the body (LinkedIn reduces reach of posts with external links).
+- **First comment**: the full paper title, the DOI and the open-access link. That is where readers look things up.
+- **Figure** (only CC BY papers): the one that shows the main finding, with a plain-language caption; methods figures are
+  rejected. Figure first, card second when both exist.
+
 ### Google Scholar cross-check (monthly)
 
 Scholar has no API and forbids scraping, so pubpulse never imports from it. Once a month (and on demand via

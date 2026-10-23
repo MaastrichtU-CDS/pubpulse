@@ -38,7 +38,8 @@ A LinkedIn post of 110 to 170 words, with NO links in it (links go in the first 
 - end with the journal name on its own line, e.g. "Published in The Lancet Digital Health."
 
 ### COMMENT
-The first comment, posted right after: "Paper: <DOI link>" and, if an open-access link is given, "Full text: <link>".
+The first comment, posted right after the post: the full paper title on the first line, then "Paper: <DOI link>" and,
+if an open-access link is given, "Full text: <link>".
 
 ### SHORT
 A two-sentence version of at most 280 characters including the DOI link (for other channels).

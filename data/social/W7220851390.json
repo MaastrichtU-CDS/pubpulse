@@ -18,6 +18,6 @@
   "alt": "Forest plot with three colours of dots and error bars per risk factor, all overlapping.",
   "chosen_by": "Claude (session review, 2026-10-23)"
  },
- "comment": "Paper: https://doi.org/10.3389/fams.2026.1917462\nFull text: https://www.frontiersin.org/journals/applied-mathematics-and-statistics/articles/10.3389/fams.2026.1917462/pdf",
+ "comment": "Navigating the privacy-accuracy tradeoff: federated survival analysis with binning and differential privacy\nPaper: https://doi.org/10.3389/fams.2026.1917462\nFull text: https://www.frontiersin.org/journals/applied-mathematics-and-statistics/articles/10.3389/fams.2026.1917462/pdf",
  "headline": "Privacy protection that costs nothing in accuracy"
 }
