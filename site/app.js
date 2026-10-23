@@ -247,17 +247,19 @@
     // Headline numbers follow the site defaults: verified group affiliation, no preprints.
     const headline = headlineWorks();
     const headlineLabel = headlineDescription();
+    const thisYear = new Date(data.generated).getUTCFullYear() || new Date().getFullYear();
+    const headlineYear = headline.filter((w) => Number(w.year) === thisYear);
     $("total-publications").textContent =
-      headline.length.toLocaleString("en-GB");
+      headlineYear.length.toLocaleString("en-GB");
     $("total-researchers").textContent = data.people
       .filter((person) => person.active)
       .length.toLocaleString("en-GB");
-    $("total-open").textContent = headline.length
+    $("total-open").textContent = headlineYear.length
       ? Math.round(
-          (headline.filter((w) => w.is_oa).length / headline.length) * 100,
+          (headlineYear.filter((w) => w.is_oa).length / headlineYear.length) * 100,
         ) + "%"
       : "—";
-    $("coverage-start").textContent = `${headlineLabel} · since ${coverageStart()}`;
+    $("coverage-start").textContent = `in ${thisYear} so far · ${headlineLabel}`;
     $("publication-range").textContent =
       `${headline.length.toLocaleString("en-GB")} ${headlineLabel} publications · ${coverageStart()} onwards · OpenAlex` +
       (data.works.length > headline.length ? ` · ${data.works.length - headline.length} more incl. preprints and unverified` : "");
