@@ -2053,3 +2053,8 @@ button.type-seg:focus-visible { outline: 2px solid var(--accent); outline-offset
 
 .footnote-mark { color: var(--highlight); text-decoration: none; font-weight: 700; margin-left: 2px; }
 .metric-footnote { font-size: 12px; color: rgba(255, 255, 255, 0.62); margin: 10px 0 0; max-width: 560px; line-height: 1.45; }
+
+.share-steps { font-size: 13px; color: var(--muted); margin: 8px 0 6px; padding-left: 20px; }
+.share-steps li { margin: 2px 0; }
+.draft-comment { font-size: 14px; margin: 6px 0; }
+.draft-comment span { white-space: pre-line; }

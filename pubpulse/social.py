@@ -22,23 +22,26 @@ SYSTEM_PROMPT = """You write LinkedIn posts for the Clinical Data Science group 
 Audience: clinicians, health-data scientists, hospital managers. Tone: plain, concrete, no hype, no emojis, no
 hashtags in the body (at most 3 at the very end), no phrases like "excited to share" or "thrilled".
 
-Write two things from the paper you are given:
+Write three things from the paper you are given:
 
 ### POST
-A LinkedIn post of 120 to 180 words:
-- first line: the main finding as a plain sentence a clinician would repeat (no question hooks)
-- what was done, in one or two sentences (data, size, method)
-- why it matters for practice or research, in one or two sentences
-- one honest limitation taken from the abstract
-- last lines: "Paper: <DOI link>" and, if an open-access link is given, "Full text: open access"
-- name the group authors by name; do not tag anyone
+A LinkedIn post of 110 to 170 words, with NO links in it (links go in the first comment):
+- line 1: the main finding as a plain sentence a clinician would repeat (no question hooks, no "excited")
+- line 2: the group authors by name, e.g. "Work by A, B and C with colleagues from X" (the poster will tag them)
+- then: what was done, in one or two sentences (data, size, method), in everyday words
+- then: why it matters for practice or research, in one or two sentences
+- then: one honest limitation taken from the abstract
+- end with the journal name on its own line, e.g. "Published in The Lancet Digital Health."
+
+### COMMENT
+The first comment, posted right after: "Paper: <DOI link>" and, if an open-access link is given, "Full text: <link>".
 
 ### SHORT
-A two-sentence version of at most 280 characters including the DOI link.
+A two-sentence version of at most 280 characters including the DOI link (for other channels).
 
 Rules: use only facts that are in the abstract; if the abstract gives no numbers, do not invent any; never say
 "first", "novel" or "breakthrough" unless the abstract does; mark any claim you are unsure about with [check].
-Output exactly the two sections, each starting with its "### POST" / "### SHORT" heading line, nothing else."""
+Output exactly the three sections, each starting with its "### POST" / "### COMMENT" / "### SHORT" heading line, nothing else."""
 
 
 def eligible(w: dict) -> bool:
@@ -63,9 +66,11 @@ def user_message(w: dict, names: dict[str, str]) -> str:
 
 
 def parse_output(text: str) -> dict:
-    post = re.search(r"###\s*POST\s*\n(.*?)(?=\n###\s*SHORT|\Z)", text, re.S)
+    post = re.search(r"###\s*POST\s*\n(.*?)(?=\n###\s*(?:COMMENT|SHORT)|\Z)", text, re.S)
+    comment = re.search(r"###\s*COMMENT\s*\n(.*?)(?=\n###\s*SHORT|\Z)", text, re.S)
     short = re.search(r"###\s*SHORT\s*\n(.*)", text, re.S)
-    return {"post": (post.group(1) if post else text).strip(), "short": (short.group(1) if short else "").strip()}
+    return {"post": (post.group(1) if post else text).strip(), "comment": (comment.group(1) if comment else "").strip(),
+            "short": (short.group(1) if short else "").strip()}
 
 
 def draft_one(client, w: dict, names: dict[str, str], model: str) -> dict:
@@ -106,7 +111,7 @@ def write_index() -> dict:
     index = {}
     for p in sorted(SOCIAL_DIR.glob("W*.json")):
         d = json.loads(p.read_text(encoding="utf-8"))
-        index[d["id"]] = {k: d.get(k) for k in ("post", "short", "model", "generated_at", "flags", "card", "figure", "figure_note")}
+        index[d["id"]] = {k: d.get(k) for k in ("post", "comment", "short", "model", "generated_at", "flags", "card", "figure", "figure_note")}
     SOCIAL_DIR.mkdir(parents=True, exist_ok=True)
     INDEX_PATH.write_text(json.dumps(index, ensure_ascii=False, indent=1), encoding="utf-8")
     return index

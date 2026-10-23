@@ -881,11 +881,12 @@
     renderSelectedProfiles();
     els.list.innerHTML = items.map(render).join("");
     els.empty.classList.toggle("hidden", items.length > 0);
-    els.list.querySelectorAll("[data-copy],[data-copy-short]").forEach((b) =>
+    els.list.querySelectorAll("[data-copy],[data-copy-short],[data-copy-comment]").forEach((b) =>
       b.addEventListener("click", async () => {
-        const id = b.dataset.copy || b.dataset.copyShort;
-        const text = b.dataset.copy ? data.social[id].post : data.social[id].short;
-        try { await navigator.clipboard.writeText(text); b.textContent = "Copied"; setTimeout(() => (b.textContent = b.dataset.copy ? "Copy post" : "Copy short"), 1500); }
+        const id = b.dataset.copy || b.dataset.copyShort || b.dataset.copyComment;
+        const text = b.dataset.copy ? data.social[id].post : b.dataset.copyComment ? data.social[id].comment : data.social[id].short;
+        const label = b.textContent;
+        try { await navigator.clipboard.writeText(text); b.textContent = "Copied"; setTimeout(() => (b.textContent = label), 1500); }
         catch { window.prompt("Copy the text:", text); }
       }),
     );
@@ -907,14 +908,17 @@
   function draftHtml(w, link) {
     const d = data.social && data.social[w.id];
     if (!d || !d.post) return "";
-    const share = "https://www.linkedin.com/sharing/share-offsite/?url=" + encodeURIComponent(w.doi || link);
-    const flags = d.flags ? ` · ${d.flags} [check] mark${d.flags === 1 ? "" : "s"} to verify` : "";
-    return `<details class="social-draft"><summary>LinkedIn draft <span class="meta">(AI-written, read before posting${esc(flags)})</span></summary>
-      ${d.card || (d.figure && d.figure.path) ? `<div class="draft-images">${d.figure && d.figure.path ? `<figure><img src="${esc(d.figure.path)}" alt="Figure from the paper" loading="lazy"><figcaption>${d.figure.description ? `<span class="fig-desc">${esc(d.figure.description)}</span><br>` : ""}${esc(d.figure.credit || "")} · <a href="${esc(d.figure.path)}" download>download</a>${d.figure.chosen_by && !/claude/.test(d.figure.chosen_by) ? ` · <span class="badge warn">unchecked pick</span>` : ""}</figcaption></figure>` : ""}${d.card ? `<figure><img src="${esc(d.card)}" alt="Card image for this paper" loading="lazy"><figcaption>Card · <a href="${esc(d.card)}" download>download</a></figcaption></figure>` : ""}</div>` : ""}
+    const prefill = "https://www.linkedin.com/feed/?shareActive=true&text=" + encodeURIComponent(d.post);
+    const flags = d.flags ? ` · ${d.flags} point${d.flags === 1 ? "" : "s"} marked [check]` : "";
+    const fig = d.figure && d.figure.path;
+    const images = (fig || d.card) ? `<div class="draft-images">${fig ? `<figure><img src="${esc(d.figure.path)}" alt="${esc(d.figure.alt || "Figure from the paper")}" loading="lazy"><figcaption>${d.figure.description ? `<span class="fig-desc">${esc(d.figure.description)}</span><br>` : ""}${esc(d.figure.credit || "")} · <a href="${esc(d.figure.path)}" download>download</a>${d.figure.chosen_by && !/claude/i.test(d.figure.chosen_by) ? ` · <span class="badge warn">unchecked pick</span>` : ""}</figcaption></figure>` : ""}${d.card ? `<figure><img src="${esc(d.card)}" alt="Card image for this paper" loading="lazy"><figcaption>Card${fig ? " (second image)" : ""} · <a href="${esc(d.card)}" download>download</a></figcaption></figure>` : ""}</div>` : "";
+    return `<details class="social-draft"><summary>Share on LinkedIn <span class="meta">· draft, read before posting${esc(flags)}</span></summary>
+      <ol class="share-steps"><li>Copy the text, open LinkedIn, paste.</li><li>Add the image${fig ? "s" : ""} below (figure first).</li><li>Tag the co-authors, post, then paste the link as the first comment.</li></ol>
+      ${images}
       ${d.figure_note ? `<p class="meta">${esc(d.figure_note)}</p>` : ""}
       <pre class="draft-text">${esc(d.post)}</pre>
-      ${d.short ? `<p class="draft-short"><b>Short:</b> ${esc(d.short)}</p>` : ""}
-      <div class="draft-actions"><button type="button" class="button button-small" data-copy="${esc(w.id)}">Copy post</button><button type="button" class="button button-small" data-copy-short="${esc(w.id)}">Copy short</button><a class="button button-small button-dark" href="${esc(share)}" target="_blank" rel="noopener">Share on LinkedIn ↗</a><span class="meta">Opens LinkedIn with the paper link; paste the copied text.</span></div>
+      ${d.comment ? `<p class="draft-comment"><b>First comment:</b> <span>${esc(d.comment)}</span></p>` : ""}
+      <div class="draft-actions"><button type="button" class="button button-small button-dark" data-copy="${esc(w.id)}">Copy post</button>${d.comment ? `<button type="button" class="button button-small" data-copy-comment="${esc(w.id)}">Copy first comment</button>` : ""}<a class="button button-small" href="${esc(prefill)}" target="_blank" rel="noopener">Open LinkedIn with this text ↗</a>${d.short ? `<button type="button" class="button button-small" data-copy-short="${esc(w.id)}">Copy short version</button>` : ""}</div>
     </details>`;
   }
 
