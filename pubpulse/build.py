@@ -262,6 +262,8 @@ def run(config_path: Path | None = None) -> dict:
         json.dumps(site_pubs, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
     )
     shutil.copy(DATA_DIR / "feed.xml", DIST_DIR / "feed.xml")
+    from .export import write_xlsx
+    write_xlsx(pubs, cfg, DIST_DIR / "data" / "pubpulse-publications.xlsx")
     if (DATA_DIR / "social" / "index.json").exists():
         (DIST_DIR / "data" / "social").mkdir(exist_ok=True)
         shutil.copy(DATA_DIR / "social" / "index.json", DIST_DIR / "data" / "social" / "index.json")
