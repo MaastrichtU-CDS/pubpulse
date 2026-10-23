@@ -2044,3 +2044,6 @@ button.type-seg:focus-visible { outline: 2px solid var(--accent); outline-offset
 /* single author list: CDS authors highlighted and clickable */
 .cds-author { font: inherit; font-weight: 700; color: var(--accent); background: var(--accent-soft); border: 0; border-radius: 5px; padding: 0 5px; cursor: pointer; }
 .cds-author:hover { text-decoration: underline; }
+
+.footnote-mark { color: var(--highlight); text-decoration: none; font-weight: 700; margin-left: 2px; }
+.metric-footnote { font-size: 12px; color: rgba(255, 255, 255, 0.62); margin: 10px 0 0; max-width: 560px; line-height: 1.45; }
