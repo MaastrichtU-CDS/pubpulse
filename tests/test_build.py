@@ -32,7 +32,7 @@ def test_digest_zero_one_many():
     assert "1 new publication this week" in d1["subject"] and "Paper 0 &lt;b&gt;" in d1["html"]
     d5 = build_digest(_pubs(5), CFG)
     assert d5["new_count"] == 5 and "Person One (5)" in d5["html"]
-    assert "team window" in d5["html"] and "team window" in d5["text"]
+    assert "not counted" in d5["html"] and "not counted" in d5["text"]
     assert "p2" in d5["text"]  # needs_review mentioned
     card = d5["teams"]["attachments"][0]["content"]
     assert card["type"] == "AdaptiveCard" and any("and 3 more" in b.get("text", "") for b in card["body"])

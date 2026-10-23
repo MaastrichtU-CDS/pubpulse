@@ -961,7 +961,7 @@
       .map(esc)
       .join(" · ");
     return `<li class="item">
-      <div class="publication-top"><span class="journal-name">${esc(w.journal || "Research publication")}</span><span class="badges">${isNew ? '<span class="badge new">new</span>' : ""}${w.manual === "confirmed" ? '<span class="badge oa">confirmed</span>' : !isCounted(w) ? '<span class="badge warn" title="published outside the author\'s team window and without a group affiliation">outside team window</span>' : ""}${w.approved_external ? '<span class="badge new" title="approved for external communication">approved</span>' : ""}${w.is_oa ? '<span class="badge oa">open access</span>' : ""}</span></div>
+      <div class="publication-top"><span class="journal-name">${esc(w.journal || "Research publication")}</span><span class="badges">${isNew ? '<span class="badge new">new</span>' : ""}${w.manual === "confirmed" ? '<span class="badge oa">confirmed</span>' : !isCounted(w) ? '<span class="badge warn" title="not counted: outside the team window, or this author needs a verified group affiliation (overrides.yml) and none was recorded">not counted</span>' : ""}${w.approved_external ? '<span class="badge new" title="approved for external communication">approved</span>' : ""}${w.is_oa ? '<span class="badge oa">open access</span>' : ""}</span></div>
       <h3><a href="${esc(link)}" target="_blank" rel="noopener">${esc(w.title)}</a></h3>
       <div class="meta">${meta}</div>
       <div class="authors group-authors"><span class="group-author-label">CDS authors</span><ul class="group-author-list">${members}</ul></div>

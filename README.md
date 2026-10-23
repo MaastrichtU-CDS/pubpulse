@@ -165,7 +165,14 @@ pubpulse. Papers that are on Scholar but not in pubpulse show up on the website 
 with the person's name. Typical causes: the publisher did not send the author's ORCID (fix: add the paper in the ORCID
 record, OpenAlex follows), or grey literature OpenAlex does not index (nothing to do). Secret: `SERPAPI_KEY`.
 
-### The team-window rule (membership periods in a private Google Sheet)
+### The team-window rule
+
+A paper counts when a group member was in the team at publication time: current staff count for the whole window,
+no affiliation check. Former staff count only with a verified group affiliation. **Exceptions by name** go in
+[overrides.yml](overrides.yml) under `verify_affiliation:` (member ids from people.yml): their papers count only with a
+verified affiliation. Papers you never want counted: `reject:`. That is the whole rule.
+
+### Optional: membership periods in a private Google Sheet
 
 Who counts as a member, and from when to when, is kept in a **private Google Sheet**, not in the repo: start and end
 dates are personal data. Setup once:

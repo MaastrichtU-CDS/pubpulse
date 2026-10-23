@@ -84,10 +84,12 @@ def save_pending(ids: list[str], path: Path = NOTIFIED_PATH) -> None:
 def load_overrides(path: Path = OVERRIDES_PATH) -> dict:
     """Manual decisions: {'confirm': [W..], 'reject': [W..]}. Ids may be given as W123 or full OpenAlex URLs."""
     if not path.exists():
-        return {"confirm": set(), "reject": set(), "approve_external": set()}
+        return {"confirm": set(), "reject": set(), "approve_external": set(), "verify_affiliation": set()}
     with open(path, encoding="utf-8") as f:
         raw = yaml.safe_load(f) or {}
-    return {k: {short_id(str(x)) for x in (raw.get(k) or [])} for k in ("confirm", "reject", "approve_external")}
+    out = {k: {short_id(str(x)) for x in (raw.get(k) or [])} for k in ("confirm", "reject", "approve_external")}
+    out["verify_affiliation"] = {str(x).strip().lower() for x in (raw.get("verify_affiliation") or [])}
+    return out
 
 
 def apply_overrides(works: list[dict], overrides: dict) -> list[dict]:
@@ -412,7 +414,7 @@ def normalise_work(raw: dict, people: list[dict], keywords: list[str] | None = N
 def fetch_works(
     people: list[dict], client: OpenAlex, since_year: int, today: date,
     keywords: list[str] | None = None, policy: str = "flag", exclude_types: list[str] | None = None,
-    grace_months: int = 0,
+    grace_months: int = 0, affiliation_required: set[str] | None = None,
 ) -> tuple[dict[str, dict], list[str]]:
     """Return {work_id: normalised work} for all tracked people, plus a list of per-person errors.
 
@@ -501,7 +503,8 @@ def fetch_works(
         w["counted_members"] = [
             m for m in w["group_members"]
             if w["affiliation_status"].get(m) == "verified"
-            or (confidence.get(m) == "orcid" and in_period(by_slug_all.get(m, {}), w.get("publication_date"), grace_months))
+            or (confidence.get(m) == "orcid" and m not in (affiliation_required or set())
+                and in_period(by_slug_all.get(m, {}), w.get("publication_date"), grace_months))
         ]
         w["counted"] = bool(w["counted_members"])
         if policy == "require" and not w["verified"]:
@@ -610,16 +613,16 @@ def run(dry_run: bool = False, skip_people: bool = False, config_path: Path = CO
         people, client, keywords, today, broad_keywords=cfg.get("author_match_keywords") or keywords,
         grace_months=grace, max_age_days=int(cfg.get("resolve_cache_days", 30)),
     )
+    overrides = load_overrides()
     fetched, errors = fetch_works(
         people, client, int(cfg.get("since_year", 2024)), today,
         keywords=keywords, policy=cfg.get("affiliation_policy", "flag"), exclude_types=cfg.get("exclude_types"),
-        grace_months=grace,
+        grace_months=grace, affiliation_required=overrides["verify_affiliation"],
     )
 
     enrich_people_from_works(people, fetched.values(), cfg.get("author_match_keywords") or keywords)
     unresolved = [p["slug"] for p in people if p.get("needs_review") and is_tracked(p, today, grace)]
     baseline = not previous.get("works")
-    overrides = load_overrides()
     failed_names = {e.split(":")[0] for e in errors}
     fetched_slugs = {p["slug"] for p in people if is_tracked(p, today, grace) and person_filter(p) and p["name"] not in failed_names}
     works, new_ids = merge_works(previous.get("works", []), fetched, today, fetched_slugs)

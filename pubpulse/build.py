@@ -80,7 +80,7 @@ def _draft_for(w: dict) -> dict | None:
 def _item_html(w: dict, names: dict[str, str]) -> str:
     members = ", ".join(html.escape(names.get(s, s)) for s in w.get("group_members", []))
     meta = " · ".join(x for x in (w.get("journal"), w.get("publication_date"), (w.get("type") or "").replace("-", " ")) if x)
-    flag = "" if w.get("counted", w.get("verified", True)) else ' <span style="color:#8a5a00;font-size:12px">⚠ outside the team window (no group affiliation)</span>'
+    flag = "" if w.get("counted", w.get("verified", True)) else ' <span style="color:#8a5a00;font-size:12px">⚠ not counted (team-window rule)</span>'
     return (
         f'<li style="margin:0 0 14px 0">'
         f'<a href="{html.escape(work_link(w))}" style="font-weight:600;color:#1a4b8c;text-decoration:none">{html.escape(w["title"])}</a>'
@@ -184,7 +184,7 @@ def build_digest(pubs: dict, cfg: dict, pending_ids: list[str] | None = None) ->
     text_lines = [f"{group}: {n} new publication(s) this week", ""]
     for i, w in enumerate(items, 1):
         members = ", ".join(names.get(s, s) for s in w.get("group_members", []))
-        flag = "" if w.get("counted", w.get("verified", True)) else "  [outside the team window]"
+        flag = "" if w.get("counted", w.get("verified", True)) else "  [not counted]"
         text_lines += [f"{i}. {w['title']}", f"   {w.get('journal') or ''} · {w.get('publication_date') or ''}", f"   Group authors: {members}{flag}", f"   {work_link(w)}", ""]
     if backfill:
         text_lines += ["", f"Also added to the archive ({len(backfill)} older papers now linked to a group member):"] + [f"   - {w['title'][:80]} ({w.get('year')})" for w in backfill[:8]]
