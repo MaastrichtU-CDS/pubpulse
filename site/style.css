@@ -763,16 +763,23 @@ button.link:hover {
   flex-wrap: wrap;
   flex-shrink: 0;
 }
-.badge {
-  display: inline-block;
-  font-size: 10px;
-  font-weight: 650;
-  letter-spacing: 0.5px;
+.badge,
+.pill {
+  display: inline-flex;
+  align-items: center;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.4px;
+  line-height: 1.4;
   text-transform: uppercase;
-  border-radius: 3px;
-  padding: 2px 6px;
+  border-radius: 999px;
+  padding: 2px 9px;
   white-space: nowrap;
+  background: var(--line);
+  color: var(--text);
 }
+.badge.approved { background: #ece8fb; color: #4a3fa3; }
+.badge.manual { background: #e7ebf0; color: #3d4b5c; }
 .badge.new {
   background: var(--new-soft);
   color: var(--new);
@@ -2035,7 +2042,6 @@ button.type-seg:focus-visible { outline: 2px solid var(--accent); outline-offset
 .fig-desc { color: var(--text); font-size: 13px; }
 
 /* publication type pills (same hues as the type bar, tinted) */
-.pill { display: inline-block; font-size: 11px; font-weight: 700; letter-spacing: .3px; text-transform: uppercase; border-radius: 999px; padding: 2px 9px; margin-left: 10px; vertical-align: middle; color: var(--text); background: var(--line); }
 .pill-article { background: #e3eefb; color: #1b4f91; }
 .pill-review { background: #fde9df; color: #8a3a16; }
 .pill-preprint { background: #dff5ec; color: #0f6a49; }
