@@ -78,7 +78,7 @@ def _ellipsis(text: str, font, max_width: int, draw) -> str:
     return text + " …"
 
 
-def make_card(w: dict, names: dict[str, str], out_path: Path, group_label: str = "Clinical Data Science · Maastricht", finding: str | None = None) -> Path:
+def make_card(w: dict, names: dict[str, str], out_path: Path, group_label: str = "Clinical Data Science · Maastricht University", finding: str | None = None) -> Path:
     """Branded 1200x627 card. With `finding` (the main point, usually the first line of the draft post) the finding is the
     headline and the title goes underneath; without it the title is the headline. Footer: CDS emblem and partner logos."""
     from PIL import Image, ImageDraw
