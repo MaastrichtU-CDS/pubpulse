@@ -204,6 +204,15 @@
       .forEach((select) => select.tomselect?.sync());
   }
 
+  function headlineWorks() {
+    const d = siteDefaults();
+    return data.works.filter((w) => (d.verify !== "verified" || w.verified) && (d.preprints || w.type !== "preprint"));
+  }
+  function headlineDescription() {
+    const d = siteDefaults();
+    return [d.verify === "verified" ? "verified" : "", d.preprints ? "" : "non-preprint"].filter(Boolean).join(", ") || "all";
+  }
+
   function siteDefaults() {
     const site = (data && data.site) || {};
     return { verify: site.default_verified_only ? "verified" : "", preprints: !!site.default_include_preprints };
@@ -233,19 +242,23 @@
         });
     $("repo-link").href =
       data.repo_url || "https://github.com/MaastrichtU-CDS/pubpulse";
+    // Headline numbers follow the site defaults: verified group affiliation, no preprints.
+    const headline = headlineWorks();
+    const headlineLabel = headlineDescription();
     $("total-publications").textContent =
-      data.works.length.toLocaleString("en-GB");
+      headline.length.toLocaleString("en-GB");
     $("total-researchers").textContent = data.people
       .filter((person) => person.active)
       .length.toLocaleString("en-GB");
-    $("total-open").textContent = data.works.length
+    $("total-open").textContent = headline.length
       ? Math.round(
-          (data.works.filter((w) => w.is_oa).length / data.works.length) * 100,
+          (headline.filter((w) => w.is_oa).length / headline.length) * 100,
         ) + "%"
       : "—";
-    $("coverage-start").textContent = "since " + coverageStart();
+    $("coverage-start").textContent = `${headlineLabel} · since ${coverageStart()}`;
     $("publication-range").textContent =
-      `${data.works.length.toLocaleString("en-GB")} publications · ${coverageStart()} onwards · OpenAlex`;
+      `${headline.length.toLocaleString("en-GB")} ${headlineLabel} publications · ${coverageStart()} onwards · OpenAlex` +
+      (data.works.length > headline.length ? ` · ${data.works.length - headline.length} more incl. preprints and unverified` : "");
     configureDigest(data.list || {});
 
     const years = [
@@ -847,8 +860,9 @@
       items.sort((a, b) =>
         (b.publication_date || "").localeCompare(a.publication_date || ""),
       );
+    const base = state.verify === "verified" && !state.preprints && !state.type ? headlineWorks().length : data.works.length;
     els.count.textContent =
-      `${items.length} of ${data.works.length} publications · since ${coverageStart()}` +
+      `${items.length} of ${base} publications · since ${coverageStart()}` +
       (data.newIds.size ? ` · ${data.newIds.size} new this week` : "");
     renderSelectedProfiles();
     els.list.innerHTML = items.map(render).join("");
