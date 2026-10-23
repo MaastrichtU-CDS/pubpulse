@@ -22,7 +22,11 @@ SYSTEM_PROMPT = """You write LinkedIn posts for the Clinical Data Science group 
 Audience: clinicians, health-data scientists, hospital managers. Tone: plain, concrete, no hype, no emojis, no
 hashtags in the body (at most 3 at the very end), no phrases like "excited to share" or "thrilled".
 
-Write three things from the paper you are given:
+Write four things from the paper you are given:
+
+### HEADLINE
+The main point as a catchy, plain-language line for an image card: at most 60 characters, no jargon, no question,
+no clickbait, no exclamation mark. Example style: "Privacy protection that costs nothing in accuracy".
 
 ### POST
 A LinkedIn post of 110 to 170 words, with NO links in it (links go in the first comment):
@@ -41,7 +45,7 @@ A two-sentence version of at most 280 characters including the DOI link (for oth
 
 Rules: use only facts that are in the abstract; if the abstract gives no numbers, do not invent any; never say
 "first", "novel" or "breakthrough" unless the abstract does; mark any claim you are unsure about with [check].
-Output exactly the three sections, each starting with its "### POST" / "### COMMENT" / "### SHORT" heading line, nothing else."""
+Output exactly the four sections, each starting with its "### HEADLINE" / "### POST" / "### COMMENT" / "### SHORT" heading line, nothing else."""
 
 
 def eligible(w: dict) -> bool:
@@ -66,10 +70,12 @@ def user_message(w: dict, names: dict[str, str]) -> str:
 
 
 def parse_output(text: str) -> dict:
+    headline = re.search(r"###\s*HEADLINE\s*\n(.*?)(?=\n###|\Z)", text, re.S)
     post = re.search(r"###\s*POST\s*\n(.*?)(?=\n###\s*(?:COMMENT|SHORT)|\Z)", text, re.S)
     comment = re.search(r"###\s*COMMENT\s*\n(.*?)(?=\n###\s*SHORT|\Z)", text, re.S)
     short = re.search(r"###\s*SHORT\s*\n(.*)", text, re.S)
-    return {"post": (post.group(1) if post else text).strip(), "comment": (comment.group(1) if comment else "").strip(),
+    return {"headline": (headline.group(1) if headline else "").strip().strip('"'),
+            "post": (post.group(1) if post else text).strip(), "comment": (comment.group(1) if comment else "").strip(),
             "short": (short.group(1) if short else "").strip()}
 
 
@@ -111,7 +117,7 @@ def write_index() -> dict:
     index = {}
     for p in sorted(SOCIAL_DIR.glob("W*.json")):
         d = json.loads(p.read_text(encoding="utf-8"))
-        index[d["id"]] = {k: d.get(k) for k in ("post", "comment", "short", "model", "generated_at", "flags", "card", "figure", "figure_note")}
+        index[d["id"]] = {k: d.get(k) for k in ("headline", "post", "comment", "short", "model", "generated_at", "flags", "card", "figure", "figure_note")}
     SOCIAL_DIR.mkdir(parents=True, exist_ok=True)
     INDEX_PATH.write_text(json.dumps(index, ensure_ascii=False, indent=1), encoding="utf-8")
     return index

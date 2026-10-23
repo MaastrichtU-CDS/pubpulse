@@ -90,7 +90,7 @@ def make_card(w: dict, names: dict[str, str], out_path: Path, group_label: str =
     d.text((x, y), group_label.upper(), font=_font(20, True), fill=ACCENT)
     y += 48
     headline = (finding or w["title"]).strip()
-    size = 44 if len(headline) < 120 else 38 if len(headline) < 190 else 33
+    size = 62 if len(headline) <= 70 else 44 if len(headline) < 120 else 38 if len(headline) < 190 else 33
     head_font = _font(size, True)
     lines = _wrap(headline, head_font, width, d)
     while len(lines) > 4 and size > 28:
@@ -113,8 +113,14 @@ def make_card(w: dict, names: dict[str, str], out_path: Path, group_label: str =
     y += 40
     members = ", ".join(names.get(s, s) for s in w.get("group_members", []))
     if members:
-        d.text((x, y), _ellipsis("With " + members, _font(24), width, d), font=_font(24), fill=MUTED)
-        y += 34
+        mf = _font(24)
+        mlines = _wrap("With " + members, mf, width, d)
+        if len(mlines) > 2:
+            mlines = mlines[:2]
+            mlines[-1] = _ellipsis(mlines[-1], mf, width - 30, d)
+        for line in mlines:
+            d.text((x, y), line, font=mf, fill=MUTED)
+            y += 32
     # footer: DOI, CDS emblem left, partner logos right
     foot_y = CARD_SIZE[1] - 118
     d.line([(x, foot_y - 18), (CARD_SIZE[0] - 70, foot_y - 18)], fill=(30, 58, 92), width=1)
@@ -294,7 +300,9 @@ def credit_line(w: dict) -> str:
 
 
 def main_finding(draft: dict) -> str | None:
-    """First sentence/line of the post: the plain statement of the finding."""
+    """The card headline: the catchy headline when the draft has one, else the first line of the post."""
+    if draft.get("headline"):
+        return draft["headline"].strip()
     post = (draft.get("post") or "").strip()
     if not post:
         return None

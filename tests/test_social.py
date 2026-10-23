@@ -10,8 +10,9 @@ def test_eligibility_excludes_preprints_and_unverified():
 
 
 def test_parse_output_sections():
-    text = "### POST\nLine one.\n\nPublished in J.\n\n### COMMENT\nPaper: https://doi.org/x\n\n### SHORT\nShort one. https://doi.org/x"
+    text = "### HEADLINE\n\"Catchy line\"\n### POST\nLine one.\n\nPublished in J.\n\n### COMMENT\nPaper: https://doi.org/x\n\n### SHORT\nShort one. https://doi.org/x"
     out = parse_output(text)
+    assert out["headline"] == "Catchy line"
     assert out["post"].startswith("Line one.") and out["post"].endswith("Published in J.")
     assert out["comment"] == "Paper: https://doi.org/x" and out["short"] == "Short one. https://doi.org/x"
     assert parse_output("no headings")["post"] == "no headings"

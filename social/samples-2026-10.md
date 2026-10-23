@@ -138,3 +138,15 @@ shows the main finding; methods figures are rejected.
 
 With the API key in place, the same selection and description step runs automatically with Claude; without it, the
 largest figure is taken and marked "unchecked pick" so a person always looks before posting.
+
+## Card headlines (added 2026-10-23)
+
+The card leads with a catchy main point (max ~60 characters, plain words); the pipeline generates it with the post.
+
+| Paper | Headline |
+|---|---|
+| npj Breast Cancer | One patient, one knowledge graph, three hospitals that can compare |
+| JMIR AI | AI reporting standards in health care: plenty, but none a machine can read |
+| Frontiers | Privacy protection that costs nothing in accuracy |
+| Medical Oncology | More diversity inside a breast tumour, less response to chemotherapy |
+| Lancet Digital Health | A face photo predicts survival in cancer beyond the clinical data |
