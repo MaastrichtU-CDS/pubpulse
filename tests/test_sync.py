@@ -137,7 +137,7 @@ def test_departed_person_counts_only_verified_papers():
         return {"author": {"id": f"https://openalex.org/{aid}", "display_name": aid}, "institutions": [{"display_name": i} for i in insts]}
     client = _FakeClient({"authorships.author.id:A1": [_raw("W1", [auth("A1", ["Maastro Clinic"])]), _raw("W2", [auth("A1", ["Elsewhere"])])]})
     works, _ = fetch_works(people, client, 2024, date(2026, 10, 21), keywords=KW, grace_months=18)
-    assert set(works) == {"W1"}
+    assert set(works) == {"W1", "W2"} and works["W2"]["counted"] is True  # within the grace period: still team
     works, _ = fetch_works(people, client, 2024, date(2028, 10, 21), keywords=KW, grace_months=18)
     assert works == {}  # grace period over
 
@@ -337,4 +337,4 @@ def test_counted_uses_membership_period():
     w_in_mismatch = _raw("W3", [auth("A1", ["Elsewhere"])]); w_in_mismatch["publication_date"] = "2025-06-01"
     client = _FakeClient({"authorships.author.id:A1": [w_before, w_in_unknown, w_in_mismatch]})
     works, _ = fetch_works(people, client, 2024, date(2026, 10, 23), keywords=KW)
-    assert works["W1"]["counted"] is False and works["W2"]["counted"] is True and works["W3"]["counted"] is False
+    assert works["W1"]["counted"] is False and works["W2"]["counted"] is True and works["W3"]["counted"] is True  # in team: no affiliation check

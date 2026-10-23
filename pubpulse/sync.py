@@ -483,8 +483,7 @@ def fetch_works(
         keep = [
             m for m in w["group_members"]
             if w["affiliation_status"].get(m) == "verified"
-            or (confidence.get(m) == "orcid" and (m not in strict_only or (
-                w["affiliation_status"].get(m) != "mismatch" and in_period(by_slug_all.get(m, {}), w.get("publication_date"), grace_months))))
+            or (confidence.get(m) == "orcid" and (m not in strict_only or in_period(by_slug_all.get(m, {}), w.get("publication_date"), grace_months)))
         ]
         if len(keep) != len(w["group_members"]):
             for m in set(w["group_members"]) - set(keep):
@@ -496,12 +495,13 @@ def fetch_works(
             dropped_name += 1
             continue
         w["verified"] = any(s == "verified" for s in w["affiliation_status"].values())
-        # Counted for the group: verified affiliation, or inside the member's period without a conflicting affiliation.
+        # Counted for the group: team members count without any affiliation check while they are in the team
+        # (current staff, or inside the start/end period from the members sheet). Outside the team, and for
+        # people matched by name only, a verified group affiliation is required.
         w["counted_members"] = [
             m for m in w["group_members"]
             if w["affiliation_status"].get(m) == "verified"
-            or (w["affiliation_status"].get(m) != "mismatch" and confidence.get(m) == "orcid"
-                and in_period(by_slug_all.get(m, {}), w.get("publication_date"), grace_months))
+            or (confidence.get(m) == "orcid" and in_period(by_slug_all.get(m, {}), w.get("publication_date"), grace_months))
         ]
         w["counted"] = bool(w["counted_members"])
         if policy == "require" and not w["verified"]:

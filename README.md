@@ -176,11 +176,14 @@ dates are personal data. Setup once:
 3. *Share → Anyone with the link → Viewer*. Build the CSV link: `https://docs.google.com/spreadsheets/d/<SHEET_ID>/export?format=csv`.
 4. GitHub → Settings → Secrets: `MEMBERS_SHEET_CSV_URL` = that link. Locally, put it in `.env`.
 
-Every run reads the sheet in memory. A paper **counts for the group** when a member's authorship either has a
-verified group affiliation, or falls inside that member's period without a conflicting affiliation recorded by
-OpenAlex. Papers before someone joined, or after they left (plus the grace period), count only with a verified
-affiliation. The website, the digest and the LinkedIn drafts use "counted"; "verified only" remains as a stricter
-filter. Dates never appear in people.yml, the published data or the site.
+Every run reads the sheet in memory. The rule is simple: **team members' papers count, no affiliation check.**
+"In the team" means current staff on the staff page, or inside the start/end period given in the sheet (the sheet is
+the exception list: only people whose period differs from "current staff = all of it" need a row). Outside the team
+(former staff, papers before a start date or after an end date plus the grace period) a paper counts only with a
+verified group affiliation. People matched by name only (no ORCID) also need a verified affiliation, because their
+identity is uncertain. A paper you do not want counted is one line in overrides.yml (`reject`). The website, digest
+and LinkedIn drafts use "counted"; "verified affiliation only" remains as a stricter filter. Dates never appear in
+people.yml, the published data or the site.
 
 ### How a run works
 
