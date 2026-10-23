@@ -14,7 +14,7 @@ members_csv: members.csv
 
 # Website defaults (visitors can switch them in the filters).
 site:
-  default_verified_only: true       # show only papers counted for the group: team members' papers (no affiliation check), others only with a verified group affiliation
+  default_verified_only: true       # team-window rule: team members' papers count (no affiliation check); outside the team window only with a verified group affiliation
   default_include_preprints: false  # hide preprints unless switched on
 
 # LinkedIn drafts written by Claude for verified journal papers (never preprints). Secret ANTHROPIC_API_KEY.

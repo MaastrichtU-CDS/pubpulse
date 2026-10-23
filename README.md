@@ -165,7 +165,7 @@ pubpulse. Papers that are on Scholar but not in pubpulse show up on the website 
 with the person's name. Typical causes: the publisher did not send the author's ORCID (fix: add the paper in the ORCID
 record, OpenAlex follows), or grey literature OpenAlex does not index (nothing to do). Secret: `SERPAPI_KEY`.
 
-### Membership periods (private Google Sheet)
+### The team-window rule (membership periods in a private Google Sheet)
 
 Who counts as a member, and from when to when, is kept in a **private Google Sheet**, not in the repo: start and end
 dates are personal data. Setup once:
@@ -176,7 +176,8 @@ dates are personal data. Setup once:
 3. *Share → Anyone with the link → Viewer*. Build the CSV link: `https://docs.google.com/spreadsheets/d/<SHEET_ID>/export?format=csv`.
 4. GitHub → Settings → Secrets: `MEMBERS_SHEET_CSV_URL` = that link. Locally, put it in `.env`.
 
-Every run reads the sheet in memory. The rule is simple: **team members' papers count, no affiliation check.**
+Every run reads the sheet in memory. The **team-window rule**: a paper counts when a group member was in the team at
+publication time, no affiliation check.
 "In the team" means current staff on the staff page, or inside the start/end period given in the sheet (the sheet is
 the exception list: only people whose period differs from "current staff = all of it" need a row). Outside the team
 (former staff, papers before a start date or after an end date plus the grace period) a paper counts only with a
