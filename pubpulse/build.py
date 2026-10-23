@@ -175,7 +175,8 @@ def build_digest(pubs: dict, cfg: dict, pending_ids: list[str] | None = None) ->
         body.append('<p style="font-size:13px;color:#a00">Errors during this run: ' + html.escape("; ".join(errors)) + "</p>")
     dg = cfg.get("digest") or {}
     body.append(
-        f'<p style="font-size:12px;color:#999">Sent automatically by pubpulse to {html.escape(dg.get("list_name") or "the group list")}. '
+        f'<p style="font-size:12px;color:#999">Automated overview, not manually verified: papers are matched by simple rules and mistakes are expected. '
+        f'Sent automatically by pubpulse to {html.escape(dg.get("list_name") or "the group list")}. '
         f'Data: OpenAlex. · <a href="{{{{UNSUBSCRIBE_URL}}}}" style="color:#999">Unsubscribe</a> · '
         f'<a href="{html.escape(site)}" style="color:#999">Subscribe someone else</a></p></div>'
     )

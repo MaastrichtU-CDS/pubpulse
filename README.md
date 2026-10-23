@@ -176,6 +176,29 @@ pubpulse. Papers that are on Scholar but not in pubpulse show up on the website 
 with the person's name. Typical causes: the publisher did not send the author's ORCID (fix: add the paper in the ORCID
 record, OpenAlex follows), or grey literature OpenAlex does not index (nothing to do). Secret: `SERPAPI_KEY`.
 
+### Status, limitations and open decisions (background)
+
+pubpulse is a first setup. Everything it shows is produced by simple rules, not by a person checking each paper:
+
+- **Who is a member** comes from scraping the group's staff page; identities come from ORCIDs on the profiles or, for
+  people without one, from a name match with a group affiliation.
+- **What counts** follows the team-window rule: current members' papers count without an affiliation check, former
+  members' papers only with a verified group affiliation, plus a short list of named exceptions whose papers always
+  need a verified affiliation.
+
+Known limits of this logic, discussed internally:
+
+- An affiliation rule cannot be right for everyone. Some members publish with several affiliations at once, so "team
+  member = no check" over-counts for them and "always check" under-counts for others; the exception list covers only
+  the clear cases.
+- Start and end dates of membership do not solve this either: papers stay in the pipeline long after someone joins
+  or leaves, so a date cut-off is wrong in both directions.
+- A manual check per paper is the only watertight method. The review sheet makes that possible for invited members,
+  but it is extra work and has not been adopted as a process yet.
+
+Until that process is decided, the website and the digest carry a **disclaimer**: the numbers are automated, not
+manually verified, and contain mistakes. Treat the overview as internal and indicative, not as a reporting figure.
+
 ### Review sheet: manual "CDS authored" decisions in a private Google Sheet
 
 For members who prefer a spreadsheet to editing overrides.yml: a private Google Sheet in the pubpulse Google account

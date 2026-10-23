@@ -262,7 +262,8 @@
     $("coverage-start").innerHTML = `in ${thisYear}<a href="#metric-footnote" class="footnote-mark" aria-label="how this is counted">*</a>`;
     $("metric-footnote").textContent =
       `* Year to date. Counted under the team-window rule: papers by current group members, and by others only with a verified group affiliation; ` +
-      `preprints not included. Open access share refers to the same set. Since ${coverageStart()}: ${headline.length} publications.`;
+      `preprints not included. Open access share refers to the same set. Since ${coverageStart()}: ${headline.length} publications. ` +
+      `Automated and not manually verified; mistakes are expected.`;
     $("publication-range").textContent =
       `${headline.length.toLocaleString("en-GB")} ${headlineLabel} publications · ${coverageStart()} onwards · OpenAlex` +
       (data.works.length > headline.length ? ` · ${data.works.length - headline.length} more incl. preprints and unverified` : "");

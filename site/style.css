@@ -2073,3 +2073,6 @@ button.type-seg:focus-visible { outline: 2px solid var(--accent); outline-offset
 details.abstract p { margin: 6px 0; font-size: 14px; line-height: 1.5; }
 .abs-label { color: var(--navy); margin-right: 4px; }
 .abs-label::after { content: "."; }
+
+.disclaimer { font-size: 13px; color: var(--warn); background: var(--warn-soft); border-left: 3px solid #e0a800; border-radius: 6px; padding: 8px 12px; margin: 10px 0 6px; max-width: 760px; line-height: 1.45; }
+.disclaimer strong { color: var(--warn); }
