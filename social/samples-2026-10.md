@@ -119,3 +119,22 @@ FAHR-Face, trained on 40 million face photos, estimates biological age within 5.
 - Paper 2's stored abstract is cut at 1,500 characters, so its result is missing. The pipeline will store full abstracts from now on.
 - Wenjie Liang is first author of paper 1 and on the staff page, but OpenAlex recorded no affiliation for him on it, so he is not listed as a group author. Adding his ORCID to the staff profile fixes this.
 - Paper 5 has one group author among 17; whether the group should promote it is a judgment call for the approval list.
+
+---
+
+## Images (added 2026-10-23)
+
+Every drafted paper gets a **card** (1200×627) with the main finding as headline, the title, journal, year and group
+authors. A **figure from the paper** is only used when the licence allows it (CC BY family, not ND) and only when it
+shows the main finding; methods figures are rejected.
+
+| Paper | Card | Figure | Why |
+|---|---|---|---|
+| Frontiers, federated survival analysis | yes | Figure 3, forest plot | Shows the finding directly: hazard ratios identical for standard and binned Cox models. Description: "Hazard ratios for the four clinical predictors are practically identical whether the federated Cox model sees exact event times or only binned ones (fixed or quantile bins). That is the paper's point: the privacy protection costs no accuracy." |
+| Medical Oncology, ITH review | yes | none | Only extractable figure is the PRISMA flow diagram: methods, not the finding. |
+| npj Breast Cancer | yes | none | Licence CC BY-NC-ND: no reuse of figures. |
+| Lancet Digital Health, FAHR-Face | yes | none | Licence CC BY-NC-ND: no reuse of figures. |
+| JMIR AI, reporting standards | yes | none | JMIR serves no PDF to automated requests. |
+
+With the API key in place, the same selection and description step runs automatically with Claude; without it, the
+largest figure is taken and marked "unchecked pick" so a person always looks before posting.

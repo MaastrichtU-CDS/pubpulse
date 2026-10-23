@@ -11,7 +11,11 @@
  "figure": {
   "path": "data/social/images/W7220851390-figure.png",
   "page": 5,
-  "credit": "Figure from Varsha Gouthamchand et al., Frontiers in Applied Mathematics and Statistics (2026), CC-BY · https://doi.org/10.3389/fams.2026.1917462",
-  "license": "cc-by"
+  "caption": "FIGURE 3 Comparison of hazard ratios (HR) with 95% confidence intervals (CI) of the clinical predictors for the standard and discretized Cox models.",
+  "credit": "Figure from Varsha Gouthamchand et al., Frontiers in Applied Mathematics and Statistics (2026),  · https://doi.org/10.3389/fams.2026.1917462",
+  "license": null,
+  "description": "Hazard ratios for the four clinical predictors are practically identical whether the federated Cox model sees exact event times or only binned ones (fixed or quantile bins). That is the paper's point: the privacy protection costs no accuracy.",
+  "alt": "Forest plot of hazard ratios with 95% confidence intervals for four predictors under the standard Cox model and two binned variants; the three estimates overlap for every predictor.",
+  "chosen_by": "Claude (session review, 2026-10-23)"
  }
 }

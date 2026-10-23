@@ -50,7 +50,9 @@ def _wrap(text: str, font, max_width: int, draw) -> list[str]:
     return lines
 
 
-def make_card(w: dict, names: dict[str, str], out_path: Path, group_label: str = "Clinical Data Science · Maastricht") -> Path:
+def make_card(w: dict, names: dict[str, str], out_path: Path, group_label: str = "Clinical Data Science · Maastricht", finding: str | None = None) -> Path:
+    """Branded 1200x627 card. With `finding` (the main point, usually the first line of the draft post) the finding is the
+    headline and the title goes underneath; without it the title is the headline."""
     from PIL import Image, ImageDraw
 
     img = Image.new("RGB", CARD_SIZE, NAVY)
@@ -59,17 +61,27 @@ def make_card(w: dict, names: dict[str, str], out_path: Path, group_label: str =
     x, y, width = 70, 60, CARD_SIZE[0] - 140
     d.text((x, y), group_label.upper(), font=_font(22, True), fill=ACCENT)
     y += 54
-    title_font = _font(50, True)
-    lines = _wrap(w["title"], title_font, width, d)
-    if len(lines) > 4:
-        title_font = _font(40, True)
-        lines = _wrap(w["title"], title_font, width, d)[:5]
-        if len(_wrap(w["title"], title_font, width, d)) > 5:
-            lines[-1] = lines[-1].rstrip(".,;:") + " …"
+    headline = (finding or w["title"]).strip()
+    size = 50 if len(headline) < 120 else 42 if len(headline) < 200 else 36
+    head_font = _font(size, True)
+    lines = _wrap(headline, head_font, width, d)
+    while len(lines) > 5 and size > 30:
+        size -= 4
+        head_font = _font(size, True)
+        lines = _wrap(headline, head_font, width, d)
+    if len(lines) > 5:
+        lines = lines[:5]
+        lines[-1] = lines[-1].rstrip(".,;:") + " …"
     for line in lines:
-        d.text((x, y), line, font=title_font, fill=LIGHT)
-        y += int(title_font.size * 1.25)
-    y += 18
+        d.text((x, y), line, font=head_font, fill=LIGHT)
+        y += int(head_font.size * 1.25)
+    y += 14
+    if finding:
+        tf = _font(24)
+        for line in _wrap(w["title"], tf, width, d)[:2]:
+            d.text((x, y), line, font=tf, fill=(205, 215, 230))
+            y += 32
+        y += 8
     meta = " · ".join(x for x in (w.get("journal"), (w.get("publication_date") or "")[:4]) if x)
     d.text((x, y), meta, font=_font(28), fill=ACCENT)
     y += 46
@@ -127,7 +139,16 @@ def extract_figures(pdf_bytes: bytes, max_pages: int = 14, min_w: int = 480, min
                 if stat.stddev[0] < 12:  # blank or near-uniform
                     continue
                 score = wdt * hgt * (1.0 if pno < 7 else 0.6) * (1.1 if 1.1 <= wdt / hgt <= 2.0 else 1.0)
-                out.append({"image": im, "page": pno + 1, "score": score})
+                caption = ""
+                try:
+                    bbox = pymupdf.Rect(page.get_image_bbox(info))
+                    caps = [b for b in page.get_text("blocks") if b[4].strip().lower().startswith(("fig.", "figure", "fig "))]
+                    below = sorted((b for b in caps if b[1] >= bbox.y1 - 5), key=lambda b: b[1] - bbox.y1)
+                    above = sorted((b for b in caps if b[3] <= bbox.y0 + 5), key=lambda b: bbox.y0 - b[3])
+                    caption = " ".join((below or above)[0][4].split()) if (below or above) else ""
+                except Exception:  # noqa: BLE001
+                    pass
+                out.append({"image": im, "page": pno + 1, "score": score, "caption": caption})
     out.sort(key=lambda f: -f["score"])
     return out
 
@@ -163,7 +184,7 @@ def extract_vector_figures(pdf_bytes: bytes, max_pages: int = 14, zoom: float = 
                     continue
                 pix = page.get_pixmap(matrix=pymupdf.Matrix(zoom, zoom), clip=box, alpha=False)
                 im = Image.frombytes("RGB", (pix.width, pix.height), pix.samples)
-                out.append({"image": im, "page": pno + 1, "score": box.get_area() * zoom * zoom * (0.9 if pno < 7 else 0.5)})
+                out.append({"image": im, "page": pno + 1, "score": box.get_area() * zoom * zoom * (0.9 if pno < 7 else 0.5), "caption": " ".join(cap[4].split())})
     out.sort(key=lambda f: -f["score"])
     return out
 
@@ -175,14 +196,76 @@ def best_figures(pdf_bytes: bytes) -> list[dict]:
     return figs
 
 
+def describe_with_claude(w: dict, draft: dict, cands: list[dict], model: str) -> dict | None:
+    """Ask Claude to pick the candidate that shows the main finding (or none) and to describe it. Returns
+    {"choice": index|None, "description": str, "alt": str} or None when no API key / on failure."""
+    import base64
+    import io
+    import os
+    import re
+
+    try:
+        import anthropic
+    except ImportError:
+        return None
+    if not os.environ.get("ANTHROPIC_API_KEY") and not os.environ.get("ANTHROPIC_AUTH_TOKEN"):
+        return None
+    content = [{"type": "text", "text": (
+        "You help a research group pick ONE figure for a LinkedIn post about their paper. The figure must show the MAIN "
+        "FINDING of the paper, not the methods (flow diagrams, pipelines, PRISMA charts, study designs do not qualify unless "
+        "the paper is about the method itself). If no candidate shows the main finding, answer NONE.\n\n"
+        f"Title: {w['title']}\nAbstract: {w.get('abstract') or ''}\n\nDraft post (first line is the main finding):\n{draft.get('post', '')}\n\n"
+        "Answer with exactly:\n### CHOICE\n<candidate number or NONE>\n### DESCRIPTION\n<1-2 plain sentences for the post: what the figure "
+        "shows and how it supports the main finding; use only what is visible and in the abstract; no hype>\n### ALT\n<one-sentence alt text>"
+    )}]
+    for i, c in enumerate(cands, 1):
+        im = c["image"].copy()
+        im.thumbnail((1200, 1200))
+        buf = io.BytesIO()
+        im.save(buf, "PNG", optimize=True)
+        content.append({"type": "text", "text": f"Candidate {i} (page {c['page']}). Caption: {c.get('caption') or 'none found'}"})
+        content.append({"type": "image", "source": {"type": "base64", "media_type": "image/png", "data": base64.standard_b64encode(buf.getvalue()).decode()}})
+    try:
+        resp = anthropic.Anthropic().messages.create(model=model, max_tokens=2000, output_config={"effort": "medium"}, messages=[{"role": "user", "content": content}])
+    except anthropic.APIError as exc:
+        log.warning("figure selection failed: %s", exc)
+        return None
+    if resp.stop_reason == "refusal":
+        return None
+    text = "".join(b.text for b in resp.content if b.type == "text")
+    ch = re.search(r"###\s*CHOICE\s*\n\s*(\S+)", text)
+    de = re.search(r"###\s*DESCRIPTION\s*\n(.*?)(?=\n###|\Z)", text, re.S)
+    al = re.search(r"###\s*ALT\s*\n(.*?)(?=\n###|\Z)", text, re.S)
+    choice = None
+    if ch and ch.group(1).strip().upper() != "NONE":
+        try:
+            choice = int(re.sub(r"\D", "", ch.group(1))) - 1
+        except ValueError:
+            choice = None
+    if choice is not None and not 0 <= choice < len(cands):
+        choice = None
+    return {"choice": choice, "description": (de.group(1).strip() if de else ""), "alt": (al.group(1).strip() if al else ""), "model": resp.model}
+
+
 def credit_line(w: dict) -> str:
     first = (w.get("authors") or ["the authors"])[0]
     many = (w.get("author_count") or 1) > 1
     return f"Figure from {first}{' et al.' if many else ''}, {w.get('journal') or ''} ({(w.get('publication_date') or '')[:4]}), {w.get('license', '').upper()} · {w.get('doi') or ''}"
 
 
+def main_finding(draft: dict) -> str | None:
+    """First sentence/line of the post: the plain statement of the finding."""
+    post = (draft.get("post") or "").strip()
+    if not post:
+        return None
+    first = post.split("\n")[0].strip()
+    return first if 20 <= len(first) <= 260 else None
+
+
 def run(ids: list[str] | None = None, all_drafts: bool = False, force: bool = False) -> int:
     logging.basicConfig(level=logging.INFO, format="%(levelname)s %(message)s")
+    from .sync import load_config
+    model = ((load_config().get("social") or {}).get("model")) or "claude-opus-5-5"
     pubs = load_publications()
     names = {p["slug"]: p["name"] for p in pubs.get("people", [])}
     byid = {w["id"]: w for w in pubs.get("works", [])}
@@ -202,7 +285,7 @@ def run(ids: list[str] | None = None, all_drafts: bool = False, force: bool = Fa
             continue
         card = IMG_DIR / f"{d['id']}-card.png"
         if force or not card.exists():
-            make_card(w, names, card)
+            make_card(w, names, card, finding=main_finding(d))
             cards += 1
         d["card"] = f"data/social/images/{card.name}"
         fig = IMG_DIR / f"{d['id']}-figure.png"
@@ -212,13 +295,26 @@ def run(ids: list[str] | None = None, all_drafts: bool = False, force: bool = Fa
                 pdf = fetch_pdf(url, session)
                 if pdf:
                     break
-            cands = best_figures(pdf) if pdf else []
-            if cands:
-                im = cands[0]["image"]
+            cands = (best_figures(pdf) if pdf else [])[:4]
+            picked = describe_with_claude(w, d, cands, model) if cands else None
+            if cands and (picked is None or picked["choice"] is not None):
+                c = cands[picked["choice"]] if picked else cands[0]
+                im = c["image"]
                 im.thumbnail((1600, 1600))
                 im.save(fig, "PNG", optimize=True)
-                d["figure"] = {"path": f"data/social/images/{fig.name}", "page": cands[0]["page"], "credit": credit_line(w), "license": w.get("license")}
+                d["figure"] = {
+                    "path": f"data/social/images/{fig.name}", "page": c["page"], "caption": c.get("caption") or "",
+                    "credit": credit_line(w), "license": w.get("license"),
+                    "description": picked["description"] if picked else f"[check] {c.get('caption') or 'Figure from the paper'}",
+                    "alt": picked["alt"] if picked else (c.get("caption") or "Figure from the paper"),
+                    "chosen_by": "claude" if picked else "largest figure (no API key); description unverified",
+                }
                 figs += 1
+            elif cands and picked and picked["choice"] is None:
+                d["figure"] = None
+                d["figure_note"] = "no figure shows the main finding (judged by Claude); card only"
+                if fig.exists():
+                    fig.unlink()
             else:
                 d["figure"] = None
         elif not figure_allowed(w):

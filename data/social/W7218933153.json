@@ -8,10 +8,6 @@
  "generated_at": "2026-10-23T12:41:50+00:00",
  "flags": 1,
  "card": "data/social/images/W7218933153-card.png",
- "figure": {
-  "path": "data/social/images/W7218933153-figure.png",
-  "page": 4,
-  "credit": "Figure from Aria Dianati et al., Medical Oncology (2026), CC-BY · https://doi.org/10.1007/s12032-026-03426-z",
-  "license": "cc-by"
- }
+ "figure": null,
+ "figure_note": "The only extractable figure is the PRISMA flow diagram (methods, not the finding): card only. Judged by Claude, session review 2026-10-23."
 }

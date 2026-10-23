@@ -32,3 +32,14 @@ def test_extract_figures_from_synthetic_pdf():
     figs = extract_figures(pdf)
     assert len(figs) == 1 and figs[0]["page"] == 1 and figs[0]["image"].size == (900, 600)
     assert "et al." in credit_line({"authors": ["X", "Y"], "author_count": 2, "journal": "J", "publication_date": "2026-01-01", "license": "cc-by", "doi": "d"})
+
+
+def test_main_finding_and_card_with_finding(tmp_path):
+    from PIL import Image
+    from pubpulse.images import main_finding, make_card
+    d = {"post": "Two privacy techniques kept hazard ratios almost unchanged while hiding individual time-to-event data.\n\nMore text."}
+    f = main_finding(d)
+    assert f and f.startswith("Two privacy techniques")
+    out = make_card({"title": "T", "journal": "J", "publication_date": "2026-01-01", "group_members": [], "doi": "https://doi.org/x"}, {}, tmp_path / "c.png", finding=f)
+    assert Image.open(out).size == (1200, 627)
+    assert main_finding({"post": "short"}) is None

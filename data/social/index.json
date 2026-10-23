@@ -16,13 +16,8 @@
   "generated_at": "2026-10-23T12:41:50+00:00",
   "flags": 1,
   "card": "data/social/images/W7218933153-card.png",
-  "figure": {
-   "path": "data/social/images/W7218933153-figure.png",
-   "page": 4,
-   "credit": "Figure from Aria Dianati et al., Medical Oncology (2026), CC-BY · https://doi.org/10.1007/s12032-026-03426-z",
-   "license": "cc-by"
-  },
-  "figure_note": null
+  "figure": null,
+  "figure_note": "The only extractable figure is the PRISMA flow diagram (methods, not the finding): card only. Judged by Claude, session review 2026-10-23."
  },
  "W7220851390": {
   "post": "Two privacy techniques on top of federated survival analysis kept hazard ratios almost unchanged while hiding individual time-to-event data.\n\nIn the Personal Health Train set-up, hospitals share model gradients instead of patient data, but some attacks on that infrastructure can still leak sensitive information. The study tested two protections for federated Cox proportional hazards models: grouping event times into bins so no individual time point is exposed, and local differential privacy, which adds noise to the gradients before they leave the hospital.\n\nBoth approaches reduced the privacy risk with only small variations in hazard ratios and cumulative baseline hazard curves.\n\nWhy it matters: multi-hospital survival studies can be run with a smaller re-identification risk, using methods that fit an existing federated infrastructure.\n\nLimitation: the abstract reports the accuracy effect qualitatively; the size of the privacy gain depends on the attack model considered [check].\n\nPaper: https://doi.org/10.3389/fams.2026.1917462\nFull text: open access",
@@ -34,8 +29,12 @@
   "figure": {
    "path": "data/social/images/W7220851390-figure.png",
    "page": 5,
-   "credit": "Figure from Varsha Gouthamchand et al., Frontiers in Applied Mathematics and Statistics (2026), CC-BY · https://doi.org/10.3389/fams.2026.1917462",
-   "license": "cc-by"
+   "caption": "FIGURE 3 Comparison of hazard ratios (HR) with 95% confidence intervals (CI) of the clinical predictors for the standard and discretized Cox models.",
+   "credit": "Figure from Varsha Gouthamchand et al., Frontiers in Applied Mathematics and Statistics (2026),  · https://doi.org/10.3389/fams.2026.1917462",
+   "license": null,
+   "description": "Hazard ratios for the four clinical predictors are practically identical whether the federated Cox model sees exact event times or only binned ones (fixed or quantile bins). That is the paper's point: the privacy protection costs no accuracy.",
+   "alt": "Forest plot of hazard ratios with 95% confidence intervals for four predictors under the standard Cox model and two binned variants; the three estimates overlap for every predictor.",
+   "chosen_by": "Claude (session review, 2026-10-23)"
   },
   "figure_note": null
  },

@@ -2031,3 +2031,5 @@ button.type-seg:focus-visible { outline: 2px solid var(--accent); outline-offset
 .draft-images figure { margin: 0; }
 .draft-images img { width: 100%; height: auto; border-radius: 8px; border: 1px solid var(--line); background: #fff; }
 .draft-images figcaption { font-size: 12px; color: var(--muted); margin-top: 4px; }
+
+.fig-desc { color: var(--text); font-size: 13px; }
