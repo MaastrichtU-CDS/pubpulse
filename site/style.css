@@ -2058,3 +2058,18 @@ button.type-seg:focus-visible { outline: 2px solid var(--accent); outline-offset
 .share-steps li { margin: 2px 0; }
 .draft-comment { font-size: 14px; margin: 6px 0; }
 .draft-comment span { white-space: pre-line; }
+
+/* LinkedIn preview inside the share panel */
+.li-preview { background: #fff; border: 1px solid var(--line); border-radius: 10px; padding: 14px 16px; margin: 10px 0; max-width: 560px; }
+.li-head { display: flex; gap: 10px; align-items: center; margin-bottom: 10px; font-size: 14px; }
+.li-avatar { width: 40px; height: 40px; border-radius: 50%; background: var(--navy); flex: 0 0 40px; }
+.li-body { font-size: 14px; line-height: 1.45; color: #1d2126; }
+.li-body p { margin: 0 0 12px; white-space: pre-line; }
+.li-body .li-hook { font-weight: 700; }
+.li-body .li-fold { color: #9aa3ad; }
+.li-more { font-size: 13px; color: #607087; }
+.li-preview .draft-images { margin-top: 4px; }
+
+details.abstract p { margin: 6px 0; font-size: 14px; line-height: 1.5; }
+.abs-label { color: var(--navy); margin-right: 4px; }
+.abs-label::after { content: "."; }

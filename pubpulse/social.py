@@ -35,7 +35,8 @@ A LinkedIn post of 110 to 170 words, with NO links in it (links go in the first 
 - then: what was done, in one or two sentences (data, size, method), in everyday words
 - then: why it matters for practice or research, in one or two sentences
 - then: one honest limitation taken from the abstract
-- end with the journal name on its own line, e.g. "Published in The Lancet Digital Health."
+- then the journal name on its own line, e.g. "Published in The Lancet Digital Health."
+- last line: 3 hashtags: #ClinicalDataScience #MaastrichtUniversity and one topical (e.g. #RadiationOncology, #MedicalAI)
 
 ### COMMENT
 The first comment, posted right after the post: the full paper title on the first line, then "Paper: <DOI link>" and,

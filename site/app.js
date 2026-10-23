@@ -884,7 +884,7 @@
     els.list.querySelectorAll("[data-copy],[data-copy-short],[data-copy-comment]").forEach((b) =>
       b.addEventListener("click", async () => {
         const id = b.dataset.copy || b.dataset.copyShort || b.dataset.copyComment;
-        const text = b.dataset.copy ? data.social[id].post : b.dataset.copyComment ? data.social[id].comment : data.social[id].short;
+        const text = b.dataset.copy ? linkedinText(data.social[id].post) : b.dataset.copyComment ? data.social[id].comment : data.social[id].short;
         const label = b.textContent;
         try { await navigator.clipboard.writeText(text); b.textContent = "Copied"; setTimeout(() => (b.textContent = label), 1500); }
         catch { window.prompt("Copy the text:", text); }
@@ -905,20 +905,83 @@
     );
   }
 
+  // LinkedIn has no text formatting; "bold" is done with Unicode sans-serif bold letters. Used for the first line only.
+  function boldUnicode(s) {
+    const map = (c) => {
+      const code = c.codePointAt(0);
+      if (code >= 65 && code <= 90) return String.fromCodePoint(0x1d5d4 + code - 65);
+      if (code >= 97 && code <= 122) return String.fromCodePoint(0x1d5ee + code - 97);
+      if (code >= 48 && code <= 57) return String.fromCodePoint(0x1d7ec + code - 48);
+      return c;
+    };
+    return Array.from(s).map(map).join("");
+  }
+  function linkedinText(post) {
+    const paras = post.trim().split(/\n\s*\n/);
+    if (!paras.length) return post;
+    paras[0] = boldUnicode(paras[0]);
+    return paras.join("\n\n");
+  }
+  const FOLD = 210; // characters LinkedIn shows before "…see more" on desktop
+
+  // Structured abstracts arrive from OpenAlex as one run of text; restore the section labels as bold paragraphs.
+  const ABSTRACT_LABELS = ["Background", "Objectives?", "Aims?", "Purpose", "Introduction", "Materials and methods", "Methods?",
+    "Design", "Setting", "Participants", "Interventions?", "Main outcome measures?", "Results", "Findings", "Conclusions?",
+    "Interpretation", "Funding", "Discussion", "Significance", "Trial registration", "Keywords?"];
+  const ABSTRACT_RE = new RegExp("(?:^|\\s)(" + ABSTRACT_LABELS.join("|") + ")\\s*:?\\s+(?=[A-Z0-9])", "g");
+  function formatAbstract(text) {
+    let s = String(text || "").replace(/^\s*Abstract[:.]?\s+/i, "").trim();
+    const parts = [];
+    let last = 0, m, count = 0;
+    ABSTRACT_RE.lastIndex = 0;
+    while ((m = ABSTRACT_RE.exec(s))) {
+      const body = s.slice(last, m.index).trim();
+      if (parts.length || body) parts.push({ label: parts.length ? parts[parts.length - 1].pending : "", body });
+      if (parts.length) parts[parts.length - 1].pending = undefined;
+      parts.push({ label: m[1], body: "", pending: m[1] });
+      last = ABSTRACT_RE.lastIndex;
+      count += 1;
+    }
+    if (count < 2) return `<p>${esc(s)}</p>`;
+    // rebuild: each label owns the text up to the next label
+    const out = [];
+    let idx = 0;
+    const labels = [];
+    ABSTRACT_RE.lastIndex = 0;
+    while ((m = ABSTRACT_RE.exec(s))) labels.push({ label: m[1], start: m.index, end: ABSTRACT_RE.lastIndex });
+    if (labels[0].start > 0) out.push(`<p>${esc(s.slice(0, labels[0].start).trim())}</p>`);
+    labels.forEach((l, i) => {
+      const body = s.slice(l.end, i + 1 < labels.length ? labels[i + 1].start : s.length).trim();
+      out.push(`<p><b class="abs-label">${esc(l.label)}</b> ${esc(body)}</p>`);
+    });
+    return out.join("");
+  }
+
   function draftHtml(w, link) {
     const d = data.social && data.social[w.id];
     if (!d || !d.post) return "";
-    const prefill = "https://www.linkedin.com/feed/?shareActive=true&text=" + encodeURIComponent(d.post);
+    const formatted = linkedinText(d.post);
+    const prefill = "https://www.linkedin.com/feed/?shareActive=true&text=" + encodeURIComponent(formatted);
     const flags = d.flags ? ` · ${d.flags} point${d.flags === 1 ? "" : "s"} marked [check]` : "";
     const fig = d.figure && d.figure.path;
+    const paras = d.post.trim().split(/\n\s*\n/);
+    let seen = 0;
+    const previewParas = paras.map((p, i) => {
+      const cls = i === 0 ? "li-hook" : seen > FOLD ? "li-fold" : "";
+      seen += p.length + 2;
+      return `<p class="${cls}">${esc(p)}</p>`;
+    }).join("");
     const images = (fig || d.card) ? `<div class="draft-images">${fig ? `<figure><img src="${esc(d.figure.path)}" alt="${esc(d.figure.alt || "Figure from the paper")}" loading="lazy"><figcaption>${d.figure.description ? `<span class="fig-desc">${esc(d.figure.description)}</span><br>` : ""}${esc(d.figure.credit || "")} · <a href="${esc(d.figure.path)}" download>download</a>${d.figure.chosen_by && !/claude/i.test(d.figure.chosen_by) ? ` · <span class="badge warn">unchecked pick</span>` : ""}</figcaption></figure>` : ""}${d.card ? `<figure><img src="${esc(d.card)}" alt="Card image for this paper" loading="lazy"><figcaption>Card${fig ? " (second image)" : ""} · <a href="${esc(d.card)}" download>download</a></figcaption></figure>` : ""}</div>` : "";
     return `<details class="social-draft"><summary>Share on LinkedIn <span class="meta">· draft, read before posting${esc(flags)}</span></summary>
-      <ol class="share-steps"><li>Copy the text, open LinkedIn, paste.</li><li>Add the image${fig ? "s" : ""} below (figure first).</li><li>Tag the co-authors, post, then paste the link as the first comment.</li></ol>
-      ${images}
+      <div class="li-preview" aria-label="LinkedIn preview">
+        <div class="li-head"><span class="li-avatar" aria-hidden="true"></span><div><b>Clinical Data Science · Maastricht University</b><br><span class="meta">Just now</span></div></div>
+        <div class="li-body">${previewParas}<span class="li-more">…see more</span></div>
+        ${images}
+      </div>
+      ${d.comment ? `<p class="draft-comment"><b>First comment</b> (paste right after posting):<br><span>${esc(d.comment)}</span></p>` : ""}
       ${d.figure_note ? `<p class="meta">${esc(d.figure_note)}</p>` : ""}
-      <pre class="draft-text">${esc(d.post)}</pre>
-      ${d.comment ? `<p class="draft-comment"><b>First comment:</b> <span>${esc(d.comment)}</span></p>` : ""}
-      <div class="draft-actions"><button type="button" class="button button-small button-dark" data-copy="${esc(w.id)}">Copy post</button>${d.comment ? `<button type="button" class="button button-small" data-copy-comment="${esc(w.id)}">Copy first comment</button>` : ""}<a class="button button-small" href="${esc(prefill)}" target="_blank" rel="noopener">Open LinkedIn with this text ↗</a>${d.short ? `<button type="button" class="button button-small" data-copy-short="${esc(w.id)}">Copy short version</button>` : ""}</div>
+      <div class="draft-actions"><button type="button" class="button button-small button-dark" data-copy="${esc(w.id)}">Copy post (LinkedIn format)</button>${d.comment ? `<button type="button" class="button button-small" data-copy-comment="${esc(w.id)}">Copy first comment</button>` : ""}<a class="button button-small" href="${esc(prefill)}" target="_blank" rel="noopener">Open LinkedIn with this text ↗</a>${d.short ? `<button type="button" class="button button-small" data-copy-short="${esc(w.id)}">Copy short version</button>` : ""}</div>
+      <p class="meta">Dimmed text falls below LinkedIn's "see more" fold; the first line is copied in bold. Add the image${fig ? "s" : ""} (figure first) and tag the co-authors before posting.</p>
     </details>`;
   }
 
@@ -982,7 +1045,7 @@
       <h3><a href="${esc(link)}" target="_blank" rel="noopener">${esc(w.title)}</a></h3>
       <div class="meta">${meta}</div>
       <div class="authors authors-full"><span class="author-list-label">Authors (${authorCount}):</span> ${authors}${incomplete ? ` <span class="author-list-note">· ${w.authors.length} names available in OpenAlex</span>` : ""}</div>
-      ${w.abstract ? `<details><summary>Abstract</summary><p>${esc(w.abstract)}</p></details>` : ""}
+      ${w.abstract ? `<details class="abstract"><summary>Abstract</summary>${formatAbstract(w.abstract)}</details>` : ""}
       ${draftHtml(w, link)}
       <div class="links">${w.doi ? `<a href="${esc(w.doi)}" target="_blank" rel="noopener">DOI ↗</a>` : ""}${w.oa_url ? `<a href="${esc(w.oa_url)}" target="_blank" rel="noopener">Full text ↗</a>` : ""}<a href="${esc(w.openalex_url)}" target="_blank" rel="noopener">OpenAlex ↗</a><span class="meta work-id" title="use this id in overrides.yml">${esc(w.id)}</span></div>
     </li>`;
