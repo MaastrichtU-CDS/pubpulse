@@ -265,6 +265,8 @@ def run(config_path: Path | None = None) -> dict:
     if (DATA_DIR / "social" / "index.json").exists():
         (DIST_DIR / "data" / "social").mkdir(exist_ok=True)
         shutil.copy(DATA_DIR / "social" / "index.json", DIST_DIR / "data" / "social" / "index.json")
+        if (DATA_DIR / "social" / "images").exists():
+            shutil.copytree(DATA_DIR / "social" / "images", DIST_DIR / "data" / "social" / "images")
     # Cache-busting: browsers and GitHub Pages cache app.js/style.css for a while; a content hash in the URL
     # makes every deploy pick up the new files immediately.
     import hashlib

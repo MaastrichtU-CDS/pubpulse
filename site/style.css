@@ -2026,3 +2026,8 @@ button.type-seg:focus-visible { outline: 2px solid var(--accent); outline-offset
 .draft-text { white-space: pre-wrap; font: inherit; font-size: 14px; line-height: 1.5; background: var(--bg); border-radius: 8px; padding: 10px 12px; margin: 8px 0; }
 .draft-short { font-size: 14px; margin: 6px 0; }
 .draft-actions { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin: 6px 0 4px; }
+
+.draft-images { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 12px; margin: 8px 0; }
+.draft-images figure { margin: 0; }
+.draft-images img { width: 100%; height: auto; border-radius: 8px; border: 1px solid var(--line); background: #fff; }
+.draft-images figcaption { font-size: 12px; color: var(--muted); margin-top: 4px; }

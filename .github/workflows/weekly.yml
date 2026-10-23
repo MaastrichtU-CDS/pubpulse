@@ -87,6 +87,10 @@ jobs:
         continue-on-error: true
         run: python -m pubpulse social-draft
 
+      - name: Social images (card for every draft, CC-BY figure when allowed)
+        continue-on-error: true
+        run: python -m pubpulse social-images
+
       - name: Build site, feed and digest
         run: python -m pubpulse build
 

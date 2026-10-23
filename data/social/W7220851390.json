@@ -6,5 +6,12 @@
  "short": "Binning event times or adding differential privacy to federated Cox models reduces re-identification risk with only small changes to hazard ratios. https://doi.org/10.3389/fams.2026.1917462",
  "model": "sample (written by Claude in session, 2026-10-23)",
  "generated_at": "2026-10-23T12:41:50+00:00",
- "flags": 1
+ "flags": 1,
+ "card": "data/social/images/W7220851390-card.png",
+ "figure": {
+  "path": "data/social/images/W7220851390-figure.png",
+  "page": 5,
+  "credit": "Figure from Varsha Gouthamchand et al., Frontiers in Applied Mathematics and Statistics (2026), CC-BY · https://doi.org/10.3389/fams.2026.1917462",
+  "license": "cc-by"
+ }
 }

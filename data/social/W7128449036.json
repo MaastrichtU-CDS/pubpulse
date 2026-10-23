@@ -6,5 +6,8 @@
  "short": "A virtual assistant turns breast cancer records into validated personal health knowledge graphs. Registries built this way in three hospitals were interoperable. https://doi.org/10.1038/s41523-026-01068-y",
  "model": "sample (written by Claude in session, 2026-10-23)",
  "generated_at": "2026-10-23T12:41:50+00:00",
- "flags": 2
+ "flags": 2,
+ "card": "data/social/images/W7128449036-card.png",
+ "figure": null,
+ "figure_note": "licence cc-by-nc-nd: figure reuse not allowed, card only"
 }

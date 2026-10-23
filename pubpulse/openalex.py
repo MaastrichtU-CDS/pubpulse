@@ -14,7 +14,7 @@ log = logging.getLogger(__name__)
 
 WORK_FIELDS = (
     "id,doi,title,display_name,publication_date,publication_year,type,"
-    "primary_location,open_access,authorships,cited_by_count,abstract_inverted_index,biblio"
+    "primary_location,best_oa_location,open_access,authorships,cited_by_count,abstract_inverted_index,biblio"
 )
 
 

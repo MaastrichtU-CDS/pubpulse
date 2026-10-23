@@ -106,7 +106,7 @@ def write_index() -> dict:
     index = {}
     for p in sorted(SOCIAL_DIR.glob("W*.json")):
         d = json.loads(p.read_text(encoding="utf-8"))
-        index[d["id"]] = {k: d.get(k) for k in ("post", "short", "model", "generated_at", "flags")}
+        index[d["id"]] = {k: d.get(k) for k in ("post", "short", "model", "generated_at", "flags", "card", "figure", "figure_note")}
     SOCIAL_DIR.mkdir(parents=True, exist_ok=True)
     INDEX_PATH.write_text(json.dumps(index, ensure_ascii=False, indent=1), encoding="utf-8")
     return index

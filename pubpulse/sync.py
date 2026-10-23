@@ -392,6 +392,8 @@ def normalise_work(raw: dict, people: list[dict], keywords: list[str] | None = N
         "landing_url": loc.get("landing_page_url"),
         "is_oa": bool(oa.get("is_oa")),
         "oa_url": oa.get("oa_url"),
+        "license": loc.get("license") or (raw.get("best_oa_location") or {}).get("license"),
+        "pdf_url": (raw.get("best_oa_location") or {}).get("pdf_url") or loc.get("pdf_url"),
         "authors": authors,
         "author_members": author_members,
         "author_profiles": profiles,

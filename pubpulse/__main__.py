@@ -41,6 +41,11 @@ def main(argv: list[str] | None = None) -> int:
     sd.add_argument("--force", action="store_true", help="redo existing drafts")
     sd.add_argument("--dry-run", action="store_true")
 
+    si = sub.add_parser("social-images", help="branded card (always) and CC-BY figure (when allowed) for drafted papers")
+    si.add_argument("--ids", nargs="*")
+    si.add_argument("--all", action="store_true", help="all drafts, not only new ones")
+    si.add_argument("--force", action="store_true")
+
     sc = sub.add_parser("scholar-check", help="compare Google Scholar profiles (via SerpAPI) with pubpulse; writes data/scholar_check.json")
     sc.add_argument("--max-searches", type=int, default=None)
     sc.add_argument("--only", help="slug of one person")
@@ -83,6 +88,10 @@ def main(argv: list[str] | None = None) -> int:
         from .former import run as former_run
 
         return former_run(staff_snapshot=args.staff_snapshot)
+    if args.cmd == "social-images":
+        from .images import run as images_run
+
+        return images_run(ids=args.ids, all_drafts=args.all, force=args.force)
     if args.cmd == "social-draft":
         from .social import run as social_run
 

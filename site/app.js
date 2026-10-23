@@ -810,6 +810,8 @@
       const hay = (
         w.title +
         " " +
+        w.id +
+        " " +
         w.authors.join(" ") +
         " " +
         (w.journal || "") +
@@ -880,6 +882,8 @@
     const share = "https://www.linkedin.com/sharing/share-offsite/?url=" + encodeURIComponent(w.doi || link);
     const flags = d.flags ? ` · ${d.flags} [check] mark${d.flags === 1 ? "" : "s"} to verify` : "";
     return `<details class="social-draft"><summary>LinkedIn draft <span class="meta">(AI-written, read before posting${esc(flags)})</span></summary>
+      ${d.card || (d.figure && d.figure.path) ? `<div class="draft-images">${d.figure && d.figure.path ? `<figure><img src="${esc(d.figure.path)}" alt="Figure from the paper" loading="lazy"><figcaption>${esc(d.figure.credit || "")} · <a href="${esc(d.figure.path)}" download>download</a></figcaption></figure>` : ""}${d.card ? `<figure><img src="${esc(d.card)}" alt="Card image for this paper" loading="lazy"><figcaption>Card · <a href="${esc(d.card)}" download>download</a></figcaption></figure>` : ""}</div>` : ""}
+      ${d.figure_note ? `<p class="meta">${esc(d.figure_note)}</p>` : ""}
       <pre class="draft-text">${esc(d.post)}</pre>
       ${d.short ? `<p class="draft-short"><b>Short:</b> ${esc(d.short)}</p>` : ""}
       <div class="draft-actions"><button type="button" class="button button-small" data-copy="${esc(w.id)}">Copy post</button><button type="button" class="button button-small" data-copy-short="${esc(w.id)}">Copy short</button><a class="button button-small button-dark" href="${esc(share)}" target="_blank" rel="noopener">Share on LinkedIn ↗</a><span class="meta">Opens LinkedIn with the paper link; paste the copied text.</span></div>
