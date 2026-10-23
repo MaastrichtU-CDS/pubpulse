@@ -79,64 +79,81 @@ def _ellipsis(text: str, font, max_width: int, draw) -> str:
 
 
 def make_card(w: dict, names: dict[str, str], out_path: Path, group_label: str = "Clinical Data Science · Maastricht University", finding: str | None = None) -> Path:
-    """Branded 1200x627 card. With `finding` (the main point, usually the first line of the draft post) the finding is the
-    headline and the title goes underneath; without it the title is the headline. Footer: CDS emblem and partner logos."""
+    """Branded 1200x627 card built for one message: a large headline (the catchy main point), one proof line
+    (journal and year), one byline (group authors), quiet branding. Title and DOI live in the post and the comment."""
     from PIL import Image, ImageDraw
 
-    img = Image.new("RGB", CARD_SIZE, NAVY)
+    W, H = CARD_SIZE
+    M = 84  # margin
+    img = Image.new("RGB", (W, H), NAVY)
+    # watermark: the CDS emblem, faint, right side
+    mark = _svg_image("cds-mask.svg", 460)
+    if mark is not None:
+        alpha = mark.split()[3].point(lambda a: int(a * 0.07))
+        white = Image.new("RGBA", mark.size, (255, 255, 255, 0))
+        white.putalpha(alpha)
+        img.paste(white, (W - mark.width + 40, 70), white)
     d = ImageDraw.Draw(img)
-    d.rectangle([(0, 0), (14, CARD_SIZE[1])], fill=ACCENT)
-    x, y, width = 70, 54, CARD_SIZE[0] - 140
-    d.text((x, y), group_label.upper(), font=_font(20, True), fill=ACCENT)
-    y += 48
+    d.rectangle([(0, 0), (12, H)], fill=ACCENT)
+
+    # eyebrow
+    d.text((M, 64), group_label.upper(), font=_font(20, True), fill=ACCENT)
+
+    # headline: 3 lines max, size adapts
     headline = (finding or w["title"]).strip()
-    size = 62 if len(headline) <= 70 else 44 if len(headline) < 120 else 38 if len(headline) < 190 else 33
-    head_font = _font(size, True)
-    lines = _wrap(headline, head_font, width, d)
-    while len(lines) > 4 and size > 28:
-        size -= 3
-        head_font = _font(size, True)
-        lines = _wrap(headline, head_font, width, d)
-    if len(lines) > 4:
-        lines = lines[:4]
-        lines[-1] = lines[-1].rstrip(".,;:") + " …"
+    width = W - 2 * M - 60
+    size = 66
+    while True:
+        hf = _font(size, True)
+        lines = _wrap(headline, hf, width, d)
+        if len(lines) <= 3 or size <= 40:
+            break
+        size -= 4
+    if len(lines) > 3:
+        lines = lines[:3]
+        lines[-1] = _ellipsis(lines[-1], hf, width, d)
+    lh = int(size * 1.15)
+    block_h = len(lines) * lh
+    y = 150 + (3 * int(66 * 1.15) - block_h) // 2  # keep the block vertically centred in its zone
     for line in lines:
-        d.text((x, y), line, font=head_font, fill=LIGHT)
-        y += int(head_font.size * 1.22)
-    y += 12
-    if finding:
-        tf = _font(22)
-        d.text((x, y), _ellipsis(w["title"], tf, width, d), font=tf, fill=(205, 215, 230))
-        y += 34
-    meta = " · ".join(x for x in (w.get("journal"), (w.get("publication_date") or "")[:4]) if x)
-    d.text((x, y), _ellipsis(meta, _font(26), width, d), font=_font(26), fill=ACCENT)
+        d.text((M, y), line, font=hf, fill=LIGHT)
+        y += lh
+    # accent rule + proof line + byline
+    y = 412
+    d.rectangle([(M, y), (M + 56, y + 5)], fill=ACCENT)
+    y += 26
+    journal = w.get("journal") or "Peer-reviewed publication"
+    proof = f"Published in {journal} · {(w.get('publication_date') or '')[:4]}".strip(" ·")
+    d.text((M, y), _ellipsis(proof, _font(27), W - 2 * M, d), font=_font(27), fill=(214, 226, 240))
     y += 40
-    members = ", ".join(names.get(s, s) for s in w.get("group_members", []))
+    members = [names.get(s, s) for s in w.get("group_members", [])]
     if members:
-        mf = _font(24)
-        mlines = _wrap("With " + members, mf, width, d)
-        if len(mlines) > 2:
-            mlines = mlines[:2]
-            mlines[-1] = _ellipsis(mlines[-1], mf, width - 30, d)
-        for line in mlines:
-            d.text((x, y), line, font=mf, fill=MUTED)
-            y += 32
-    # footer: DOI, CDS emblem left, partner logos right
-    foot_y = CARD_SIZE[1] - 118
-    d.line([(x, foot_y - 18), (CARD_SIZE[0] - 70, foot_y - 18)], fill=(30, 58, 92), width=1)
-    d.text((x, foot_y - 4), (w.get("doi") or "").replace("https://", ""), font=_font(20), fill=MUTED)
-    logo_y = CARD_SIZE[1] - 78
-    cds = _svg_image("cds.svg", 56)
-    if cds:
-        img.paste(cds, (x - 6, logo_y - 8), cds)
-    right = CARD_SIZE[0] - 70
-    for name, h in (("maastricht-umc.svg", 26), ("maastro.svg", 24), ("maastricht-university.svg", 26)):
+        bf = _font(23)
+        shown = list(members)
+        while True:
+            rest = len(members) - len(shown)
+            by = ", ".join(shown[:-1]) + (" and " if len(shown) > 1 else "") + shown[-1] if shown else ""
+            if rest:
+                by = ", ".join(shown) + f" and {rest} more"
+            if d.textlength("With " + by, font=bf) <= W - 2 * M or len(shown) <= 1:
+                break
+            shown = shown[:-1]
+        d.text((M, y), "With " + by, font=bf, fill=MUTED)
+
+    # footer: emblem left, partner logos right, on a slightly lighter band
+    band_y = H - 92
+    d.rectangle([(12, band_y), (W, H)], fill=(0, 34, 72))
+    cds = _svg_image("cds.svg", 52)
+    if cds is not None:
+        img.paste(cds, (M - 8, band_y + 20), cds)
+    right = W - M
+    for name, h in (("maastricht-umc.svg", 24), ("maastro.svg", 22), ("maastricht-university.svg", 24)):
         logo = _svg_image(name, h)
-        if not logo:
+        if logo is None:
             continue
         right -= logo.width
-        img.paste(logo, (right, logo_y + (28 - logo.height) // 2), logo)
-        right -= 34
+        img.paste(logo, (right, band_y + 46 - logo.height // 2), logo)
+        right -= 36
     out_path.parent.mkdir(parents=True, exist_ok=True)
     img.save(out_path, "PNG", optimize=True)
     return out_path
