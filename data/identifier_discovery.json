@@ -1,5 +1,5 @@
 {
- "checked_at": "2026-10-21",
+ "checked_at": "2026-10-26",
  "people": {
   "ralph-brecheisen": {
    "name": "Ralph Brecheisen",
@@ -307,11 +307,18 @@
   },
   "leonard-nurnberg": {
    "name": "Leonard Nürnberg",
-   "checked_at": "2026-10-21",
+   "checked_at": "2026-10-26",
    "known_coauthors": [
+    "hugo-aerts",
+    "sure-pai",
+    "vasco-prudente",
+    "dennis-bontempi",
+    "alberto-traverso",
+    "fariba-tohidinezhad",
     "andre-dekker",
+    "leroy-volmer",
     "petros-koutsouvelis",
-    "leroy-volmer"
+    "tafadzwa-chaunzwa"
    ],
    "orcid_candidates": [
     {
@@ -320,10 +327,42 @@
      "name": "Leonard Nürnberg",
      "affiliations": [],
      "name_match": true,
-     "shared_works": [],
+     "shared_works": [
+      {
+       "work": "W7138874906",
+       "title": "Thymic health and immunotherapy outcomes in patients with cancer",
+       "url": "https://doi.org/10.1038/s41586-026-10243-x",
+       "coauthors": [
+        "hugo-aerts",
+        "leonard-nurnberg",
+        "sure-pai",
+        "vasco-prudente"
+       ]
+      },
+      {
+       "work": "W7138973475",
+       "title": "Thymic health consequences in adults",
+       "url": "https://doi.org/10.1038/s41586-026-10242-y",
+       "coauthors": [
+        "hugo-aerts",
+        "leonard-nurnberg",
+        "sure-pai",
+        "vasco-prudente"
+       ]
+      },
+      {
+       "work": "W4410438194",
+       "title": "AI Opportunistic Coronary Calcium Screening at Veterans Affairs Hospitals",
+       "url": "https://doi.org/10.1056/aioa2400937",
+       "coauthors": [
+        "hugo-aerts",
+        "leonard-nurnberg"
+       ]
+      }
+     ],
      "linked_verified_scholar": false,
      "institution_match": false,
-     "accepted": false
+     "accepted": true
     }
    ],
    "scholar_candidates": [],
@@ -331,14 +370,59 @@
     "Scholar search deferred: search budget reached or no search key configured"
    ],
    "complete": false,
-   "orcid_decision": "insufficient_evidence",
+   "orcid_decision": "accepted",
    "scholar_decision": "deferred",
-   "status": "no_new_confirmed_profile",
+   "status": "matched",
    "identifiers": {
-    "orcid": null,
+    "orcid": "0000-0001-6544-4268",
     "scholar_id": null
    },
-   "verified_evidence": {}
+   "verified_evidence": {
+    "orcid": {
+     "checked_at": "2026-10-26",
+     "id": "0000-0001-6544-4268",
+     "url": "https://orcid.org/0000-0001-6544-4268",
+     "name": "Leonard Nürnberg",
+     "affiliations": [],
+     "name_match": true,
+     "shared_works": [
+      {
+       "work": "W7138874906",
+       "title": "Thymic health and immunotherapy outcomes in patients with cancer",
+       "url": "https://doi.org/10.1038/s41586-026-10243-x",
+       "coauthors": [
+        "hugo-aerts",
+        "leonard-nurnberg",
+        "sure-pai",
+        "vasco-prudente"
+       ]
+      },
+      {
+       "work": "W7138973475",
+       "title": "Thymic health consequences in adults",
+       "url": "https://doi.org/10.1038/s41586-026-10242-y",
+       "coauthors": [
+        "hugo-aerts",
+        "leonard-nurnberg",
+        "sure-pai",
+        "vasco-prudente"
+       ]
+      },
+      {
+       "work": "W4410438194",
+       "title": "AI Opportunistic Coronary Calcium Screening at Veterans Affairs Hospitals",
+       "url": "https://doi.org/10.1056/aioa2400937",
+       "coauthors": [
+        "hugo-aerts",
+        "leonard-nurnberg"
+       ]
+      }
+     ],
+     "linked_verified_scholar": false,
+     "institution_match": false,
+     "accepted": true
+    }
+   }
   },
   "matthijs-sloep": {
    "name": "Matthijs Sloep",
@@ -1766,7 +1850,7 @@
   },
   "ali-al-zein": {
    "name": "Ali Al Zein",
-   "checked_at": "2026-10-21",
+   "checked_at": "2026-10-26",
    "known_coauthors": [],
    "orcid_candidates": [
     {
@@ -1831,11 +1915,12 @@
    ],
    "scholar_candidates": [],
    "errors": [
-    "More than five matching ORCID records require review"
+    "More than five matching ORCID records require review",
+    "Scholar search deferred: search budget reached or no search key configured"
    ],
    "complete": false,
    "orcid_decision": "deferred",
-   "scholar_decision": "not_found",
+   "scholar_decision": "deferred",
    "status": "no_new_confirmed_profile",
    "identifiers": {
     "orcid": null,
@@ -1845,7 +1930,7 @@
   },
   "ali-zaila": {
    "name": "Ali Zaila",
-   "checked_at": "2026-10-21",
+   "checked_at": "2026-10-26",
    "known_coauthors": [],
    "orcid_candidates": [
     {
@@ -1863,70 +1948,9 @@
      "accepted": false
     }
    ],
-   "scholar_candidates": [
-    {
-     "id": "ePAHC1QAAAAJ",
-     "url": "https://scholar.google.com/citations?user=ePAHC1QAAAAJ",
-     "name": "Mohammed Abdelsamea",
-     "affiliations": "Senior Lecturer, Exeter University, UK",
-     "name_match": false,
-     "shared_works": [],
-     "known_coauthors": [],
-     "coauthor_profiles": [],
-     "institution_match": false,
-     "accepted": false
-    },
-    {
-     "id": "ZmHt6K4AAAAJ",
-     "url": "https://scholar.google.com/citations?user=ZmHt6K4AAAAJ",
-     "name": "Kipton Barros",
-     "affiliations": "Los Alamos National Laboratory",
-     "name_match": false,
-     "shared_works": [],
-     "known_coauthors": [],
-     "coauthor_profiles": [],
-     "institution_match": false,
-     "accepted": false
-    },
-    {
-     "id": "LFFk3rkAAAAJ",
-     "url": "https://scholar.google.com/citations?user=LFFk3rkAAAAJ",
-     "name": "O. Anatole von Lilienfeld",
-     "affiliations": "Clark & CIFAR AI chair at University of Toronto/Vector Institute/Chief Editor PRX Intelligence",
-     "name_match": false,
-     "shared_works": [],
-     "known_coauthors": [],
-     "coauthor_profiles": [],
-     "institution_match": false,
-     "accepted": false
-    },
-    {
-     "id": "KtSR8_0AAAAJ",
-     "url": "https://scholar.google.com/citations?user=KtSR8_0AAAAJ",
-     "name": "Jonathan Kelly",
-     "affiliations": "Professor, Institute for Aerospace Studies, University of Toronto",
-     "name_match": false,
-     "shared_works": [],
-     "known_coauthors": [],
-     "coauthor_profiles": [],
-     "institution_match": false,
-     "accepted": false
-    },
-    {
-     "id": "zvXrKpUAAAAJ",
-     "url": "https://scholar.google.com/citations?user=zvXrKpUAAAAJ",
-     "name": "Israel Borokini",
-     "affiliations": "Assistant Professor, Department of Ecology, Montana State University, Bozeman",
-     "name_match": false,
-     "shared_works": [],
-     "known_coauthors": [],
-     "coauthor_profiles": [],
-     "institution_match": false,
-     "accepted": false
-    }
-   ],
+   "scholar_candidates": [],
    "errors": [
-    "More than five matching Scholar profiles require review"
+    "Scholar search deferred: search budget reached or no search key configured"
    ],
    "complete": false,
    "orcid_decision": "insufficient_evidence",
@@ -1957,7 +1981,7 @@
   },
   "ayesha-qayyum": {
    "name": "Ayesha Qayyum",
-   "checked_at": "2026-10-21",
+   "checked_at": "2026-10-26",
    "known_coauthors": [],
    "orcid_candidates": [
     {
@@ -2020,11 +2044,12 @@
    ],
    "scholar_candidates": [],
    "errors": [
-    "More than five matching ORCID records require review"
+    "More than five matching ORCID records require review",
+    "Scholar search deferred: search budget reached or no search key configured"
    ],
    "complete": false,
    "orcid_decision": "deferred",
-   "scholar_decision": "not_found",
+   "scholar_decision": "deferred",
    "status": "no_new_confirmed_profile",
    "identifiers": {
     "orcid": null,
@@ -2034,7 +2059,7 @@
   },
   "carlos-santiago-rios": {
    "name": "Carlos Santiago Rios",
-   "checked_at": "2026-10-21",
+   "checked_at": "2026-10-26",
    "known_coauthors": [],
    "orcid_candidates": [
     {
@@ -2095,11 +2120,12 @@
    ],
    "scholar_candidates": [],
    "errors": [
-    "More than five matching ORCID records require review"
+    "More than five matching ORCID records require review",
+    "Scholar search deferred: search budget reached or no search key configured"
    ],
    "complete": false,
    "orcid_decision": "deferred",
-   "scholar_decision": "not_found",
+   "scholar_decision": "deferred",
    "status": "no_new_confirmed_profile",
    "identifiers": {
     "orcid": null,
@@ -2126,7 +2152,7 @@
   },
   "elif-sevim": {
    "name": "Elif Sevim",
-   "checked_at": "2026-10-21",
+   "checked_at": "2026-10-26",
    "known_coauthors": [],
    "orcid_candidates": [
     {
@@ -2193,11 +2219,12 @@
    ],
    "scholar_candidates": [],
    "errors": [
-    "More than five matching ORCID records require review"
+    "More than five matching ORCID records require review",
+    "Scholar search deferred: search budget reached or no search key configured"
    ],
    "complete": false,
    "orcid_decision": "deferred",
-   "scholar_decision": "not_found",
+   "scholar_decision": "deferred",
    "status": "no_new_confirmed_profile",
    "identifiers": {
     "orcid": null,
@@ -2610,7 +2637,7 @@
   },
   "yang-yao": {
    "name": "Yang Yao",
-   "checked_at": "2026-10-21",
+   "checked_at": "2026-10-26",
    "known_coauthors": [],
    "orcid_candidates": [
     {
@@ -2673,11 +2700,12 @@
    ],
    "scholar_candidates": [],
    "errors": [
-    "More than five matching ORCID records require review"
+    "More than five matching ORCID records require review",
+    "Scholar search deferred: search budget reached or no search key configured"
    ],
    "complete": false,
    "orcid_decision": "deferred",
-   "scholar_decision": "not_found",
+   "scholar_decision": "deferred",
    "status": "no_new_confirmed_profile",
    "identifiers": {
     "orcid": null,
@@ -7050,15 +7078,15 @@
   },
   "geert-bosmans": {
    "name": "Geert Bosmans",
-   "checked_at": "2026-10-21",
+   "checked_at": "2026-10-26",
    "known_coauthors": [
-    "andre-dekker",
-    "thijs-ackermans"
+    "thijs-ackermans",
+    "andre-dekker"
    ],
    "orcid_candidates": [],
    "scholar_candidates": [],
    "errors": [
-    "Scholar search deferred: Profile provider request failed"
+    "Scholar search deferred: search budget reached or no search key configured"
    ],
    "complete": false,
    "orcid_decision": "not_found",
@@ -7072,13 +7100,13 @@
   },
   "ibrahim-hadzic": {
    "name": "Ibrahim Hadzic",
-   "checked_at": "2026-10-21",
+   "checked_at": "2026-10-26",
    "known_coauthors": [
     "ivan-zhovannik",
     "alberto-traverso",
-    "sure-pai",
     "dennis-bontempi",
-    "andre-dekker"
+    "andre-dekker",
+    "sure-pai"
    ],
    "orcid_candidates": [
     {
@@ -7111,7 +7139,7 @@
   },
   "maike-imkamp": {
    "name": "Maike Imkamp",
-   "checked_at": "2026-10-21",
+   "checked_at": "2026-10-26",
    "known_coauthors": [
     "vasco-prudente",
     "leonard-wee"
@@ -7119,7 +7147,7 @@
    "orcid_candidates": [],
    "scholar_candidates": [],
    "errors": [
-    "Scholar search deferred: Profile provider request failed"
+    "Scholar search deferred: search budget reached or no search key configured"
    ],
    "complete": false,
    "orcid_decision": "known",
@@ -7157,12 +7185,12 @@
   },
   "mattea-welch": {
    "name": "Mattea Welch",
-   "checked_at": "2026-10-21",
+   "checked_at": "2026-10-26",
    "known_coauthors": [
     "johan-van-soest",
     "leonard-wee",
-    "ananya-choudhury",
     "varsha-gouthamchand",
+    "ananya-choudhury",
     "andre-dekker"
    ],
    "orcid_candidates": [
@@ -7194,14 +7222,14 @@
   },
   "melle-sieswerda": {
    "name": "Melle Sieswerda",
-   "checked_at": "2026-10-21",
+   "checked_at": "2026-10-26",
    "known_coauthors": [
     "andre-dekker"
    ],
    "orcid_candidates": [],
    "scholar_candidates": [],
    "errors": [
-    "Scholar search deferred: Profile provider request failed"
+    "Scholar search deferred: search budget reached or no search key configured"
    ],
    "complete": false,
    "orcid_decision": "known",
@@ -7243,11 +7271,11 @@
   },
   "michal-kazmierski": {
    "name": "Michal Kazmierski",
-   "checked_at": "2026-10-21",
+   "checked_at": "2026-10-26",
    "known_coauthors": [
-    "ralph-brecheisen",
     "leonard-wee",
     "leroy-volmer",
+    "ralph-brecheisen",
     "andre-dekker"
    ],
    "orcid_candidates": [
@@ -7282,10 +7310,11 @@
   },
   "stuti-nayak": {
    "name": "Stuti Nayak",
-   "checked_at": "2026-10-21",
+   "checked_at": "2026-10-26",
    "known_coauthors": [
-    "sander-puts",
-    "andre-dekker"
+    "martijn-nobel",
+    "andre-dekker",
+    "sander-puts"
    ],
    "orcid_candidates": [
     {
@@ -7338,7 +7367,7 @@
   },
   "abhimanyu-anand": {
    "name": "Abhimanyu Anand",
-   "checked_at": "2026-10-21",
+   "checked_at": "2026-10-26",
    "known_coauthors": [],
    "orcid_candidates": [
     {
@@ -7371,7 +7400,7 @@
   },
   "audrey-janssen": {
    "name": "Audrey Janssen",
-   "checked_at": "2026-10-21",
+   "checked_at": "2026-10-26",
    "known_coauthors": [],
    "orcid_candidates": [
     {
@@ -7404,8 +7433,10 @@
   },
   "bas-nijsten": {
    "name": "Bas Nijsten",
-   "checked_at": "2026-10-21",
-   "known_coauthors": [],
+   "checked_at": "2026-10-26",
+   "known_coauthors": [
+    "cecile-wolfs"
+   ],
    "orcid_candidates": [],
    "scholar_candidates": [],
    "errors": [
@@ -7423,7 +7454,7 @@
   },
   "chaitanya-kulkarni": {
    "name": "Chaitanya Kulkarni",
-   "checked_at": "2026-10-21",
+   "checked_at": "2026-10-26",
    "known_coauthors": [],
    "orcid_candidates": [
     {
@@ -7501,7 +7532,7 @@
   },
   "chengbing-zeng": {
    "name": "Chengbing Zeng",
-   "checked_at": "2026-10-21",
+   "checked_at": "2026-10-26",
    "known_coauthors": [],
    "orcid_candidates": [
     {
@@ -7532,7 +7563,7 @@
   },
   "chinmay-rao": {
    "name": "Chinmay Rao",
-   "checked_at": "2026-10-21",
+   "checked_at": "2026-10-26",
    "known_coauthors": [],
    "orcid_candidates": [
     {
@@ -7594,7 +7625,7 @@
   },
   "chong-zhang": {
    "name": "Chong Zhang",
-   "checked_at": "2026-10-21",
+   "checked_at": "2026-10-26",
    "known_coauthors": [],
    "orcid_candidates": [
     {
@@ -7670,7 +7701,7 @@
   },
   "elisabeth-pfaehler": {
    "name": "Elisabeth Pfaehler",
-   "checked_at": "2026-10-21",
+   "checked_at": "2026-10-26",
    "known_coauthors": [],
    "orcid_candidates": [
     {
@@ -7701,7 +7732,7 @@
   },
   "emese-szakaly": {
    "name": "Emese Szakaly",
-   "checked_at": "2026-10-21",
+   "checked_at": "2026-10-26",
    "known_coauthors": [],
    "orcid_candidates": [],
    "scholar_candidates": [],
@@ -7720,7 +7751,7 @@
   },
   "emmanuel-rios": {
    "name": "Emmanuel Rios",
-   "checked_at": "2026-10-21",
+   "checked_at": "2026-10-26",
    "known_coauthors": [],
    "orcid_candidates": [
     {
@@ -7781,7 +7812,7 @@
   },
   "erik-roelofs": {
    "name": "Erik Roelofs",
-   "checked_at": "2026-10-21",
+   "checked_at": "2026-10-26",
    "known_coauthors": [],
    "orcid_candidates": [
     {
@@ -7828,7 +7859,7 @@
   },
   "esther-bloemen": {
    "name": "Esther Bloemen",
-   "checked_at": "2026-10-21",
+   "checked_at": "2026-10-26",
    "known_coauthors": [],
    "orcid_candidates": [],
    "scholar_candidates": [],
@@ -7847,7 +7878,7 @@
   },
   "francesco-cellini": {
    "name": "Francesco Cellini",
-   "checked_at": "2026-10-21",
+   "checked_at": "2026-10-26",
    "known_coauthors": [],
    "orcid_candidates": [
     {
@@ -7891,7 +7922,7 @@
   },
   "frank-dankers": {
    "name": "Frank Dankers",
-   "checked_at": "2026-10-21",
+   "checked_at": "2026-10-26",
    "known_coauthors": [],
    "orcid_candidates": [
     {
@@ -7924,7 +7955,7 @@
   },
   "gabrielle-edgecombe": {
    "name": "Gabrielle Edgecombe",
-   "checked_at": "2026-10-21",
+   "checked_at": "2026-10-26",
    "known_coauthors": [],
    "orcid_candidates": [],
    "scholar_candidates": [],
@@ -7943,7 +7974,7 @@
   },
   "geetha-mahadevaiah": {
    "name": "Geetha Mahadevaiah",
-   "checked_at": "2026-10-21",
+   "checked_at": "2026-10-26",
    "known_coauthors": [],
    "orcid_candidates": [
     {
@@ -7979,7 +8010,7 @@
   },
   "gijs-frenken": {
    "name": "Gijs Frenken",
-   "checked_at": "2026-10-21",
+   "checked_at": "2026-10-26",
    "known_coauthors": [],
    "orcid_candidates": [],
    "scholar_candidates": [],
@@ -7998,7 +8029,7 @@
   },
   "glauco-lorenzut": {
    "name": "Glauco Lorenzut",
-   "checked_at": "2026-10-21",
+   "checked_at": "2026-10-26",
    "known_coauthors": [],
    "orcid_candidates": [],
    "scholar_candidates": [],
@@ -8017,7 +8048,7 @@
   },
   "gokul-jayakumar": {
    "name": "Gokul Jayakumar",
-   "checked_at": "2026-10-21",
+   "checked_at": "2026-10-26",
    "known_coauthors": [],
    "orcid_candidates": [
     {
@@ -8074,7 +8105,7 @@
   },
   "haiming-li": {
    "name": "Haiming Li",
-   "checked_at": "2026-10-21",
+   "checked_at": "2026-10-26",
    "known_coauthors": [],
    "orcid_candidates": [
     {
@@ -8150,7 +8181,7 @@
   },
   "inigo-bermejo-delgado": {
    "name": "Inigo Bermejo Delgado",
-   "checked_at": "2026-10-21",
+   "checked_at": "2026-10-26",
    "known_coauthors": [],
    "orcid_candidates": [],
    "scholar_candidates": [],
@@ -8169,7 +8200,7 @@
   },
   "jan-super": {
    "name": "Jan Super",
-   "checked_at": "2026-10-21",
+   "checked_at": "2026-10-26",
    "known_coauthors": [],
    "orcid_candidates": [],
    "scholar_candidates": [],
@@ -8188,7 +8219,7 @@
   },
   "jasper-snel": {
    "name": "Jasper Snel",
-   "checked_at": "2026-10-21",
+   "checked_at": "2026-10-26",
    "known_coauthors": [],
    "orcid_candidates": [],
    "scholar_candidates": [],
@@ -8207,7 +8238,7 @@
   },
   "jim-bemelen": {
    "name": "Jim Bemelen",
-   "checked_at": "2026-10-21",
+   "checked_at": "2026-10-26",
    "known_coauthors": [],
    "orcid_candidates": [],
    "scholar_candidates": [],
@@ -8226,7 +8257,7 @@
   },
   "jing-jing-you": {
    "name": "Jing Jing You",
-   "checked_at": "2026-10-21",
+   "checked_at": "2026-10-26",
    "known_coauthors": [],
    "orcid_candidates": [
     {
@@ -8302,7 +8333,7 @@
   },
   "johannes-petermann": {
    "name": "Johannes Petermann",
-   "checked_at": "2026-10-21",
+   "checked_at": "2026-10-26",
    "known_coauthors": [],
    "orcid_candidates": [],
    "scholar_candidates": [],
@@ -8321,7 +8352,7 @@
   },
   "julian-posch": {
    "name": "Julian Posch",
-   "checked_at": "2026-10-21",
+   "checked_at": "2026-10-26",
    "known_coauthors": [],
    "orcid_candidates": [
     {
@@ -8375,7 +8406,7 @@
   },
   "junhua-chen": {
    "name": "Junhua Chen",
-   "checked_at": "2026-10-21",
+   "checked_at": "2026-10-26",
    "known_coauthors": [],
    "orcid_candidates": [
     {
@@ -8454,7 +8485,7 @@
   },
   "lerau-seyben": {
    "name": "Lerau Seyben",
-   "checked_at": "2026-10-21",
+   "checked_at": "2026-10-26",
    "known_coauthors": [],
    "orcid_candidates": [
     {
@@ -8485,7 +8516,7 @@
   },
   "lotte-schyns": {
    "name": "Lotte Schyns",
-   "checked_at": "2026-10-21",
+   "checked_at": "2026-10-26",
    "known_coauthors": [],
    "orcid_candidates": [],
    "scholar_candidates": [],
@@ -8504,7 +8535,7 @@
   },
   "luca-pamboer": {
    "name": "Luca Pamboer",
-   "checked_at": "2026-10-21",
+   "checked_at": "2026-10-26",
    "known_coauthors": [],
    "orcid_candidates": [],
    "scholar_candidates": [],
@@ -8523,7 +8554,7 @@
   },
   "maija-utriainen": {
    "name": "Maija Utriainen",
-   "checked_at": "2026-10-21",
+   "checked_at": "2026-10-26",
    "known_coauthors": [],
    "orcid_candidates": [],
    "scholar_candidates": [],
@@ -8542,8 +8573,13 @@
   },
   "manon-cloots": {
    "name": "Manon Cloots",
-   "checked_at": "2026-10-21",
-   "known_coauthors": [],
+   "checked_at": "2026-10-26",
+   "known_coauthors": [
+    "rianne-fijten",
+    "andre-dekker",
+    "yomi-okegunna",
+    "simone-mingels"
+   ],
    "orcid_candidates": [
     {
      "id": "0000-0002-7224-7198",
@@ -8579,7 +8615,7 @@
   },
   "marie-picquet": {
    "name": "Marie Picquet",
-   "checked_at": "2026-10-21",
+   "checked_at": "2026-10-26",
    "known_coauthors": [],
    "orcid_candidates": [],
    "scholar_candidates": [],
@@ -8598,8 +8634,12 @@
   },
   "martijn-nobel": {
    "name": "Martijn Nobel",
-   "checked_at": "2026-10-21",
-   "known_coauthors": [],
+   "checked_at": "2026-10-26",
+   "known_coauthors": [
+    "andre-dekker",
+    "sander-puts",
+    "stuti-nayak"
+   ],
    "orcid_candidates": [],
    "scholar_candidates": [],
    "errors": [
@@ -8617,7 +8657,7 @@
   },
   "michel-saleh": {
    "name": "Michel Saleh",
-   "checked_at": "2026-10-21",
+   "checked_at": "2026-10-26",
    "known_coauthors": [],
    "orcid_candidates": [],
    "scholar_candidates": [],
@@ -8636,7 +8676,7 @@
   },
   "miriam-babukhian": {
    "name": "Miriam Babukhian",
-   "checked_at": "2026-10-21",
+   "checked_at": "2026-10-26",
    "known_coauthors": [],
    "orcid_candidates": [
     {
@@ -8670,7 +8710,7 @@
   },
   "naziha-el-aissati": {
    "name": "Naziha el Aissati",
-   "checked_at": "2026-10-21",
+   "checked_at": "2026-10-26",
    "known_coauthors": [],
    "orcid_candidates": [],
    "scholar_candidates": [],
@@ -8689,7 +8729,7 @@
   },
   "nibin-moni-george": {
    "name": "Nibin Moni George",
-   "checked_at": "2026-10-21",
+   "checked_at": "2026-10-26",
    "known_coauthors": [],
    "orcid_candidates": [
     {
@@ -8720,7 +8760,7 @@
   },
   "ravindra-patil": {
    "name": "Ravindra Patil",
-   "checked_at": "2026-10-21",
+   "checked_at": "2026-10-26",
    "known_coauthors": [],
    "orcid_candidates": [
     {
@@ -8800,7 +8840,7 @@
   },
   "sanchi-bhalla": {
    "name": "Sanchi Bhalla",
-   "checked_at": "2026-10-21",
+   "checked_at": "2026-10-26",
    "known_coauthors": [],
    "orcid_candidates": [],
    "scholar_candidates": [],
@@ -8819,7 +8859,7 @@
   },
   "seok-ho-lee": {
    "name": "Seok Ho Lee",
-   "checked_at": "2026-10-21",
+   "checked_at": "2026-10-26",
    "known_coauthors": [],
    "orcid_candidates": [
     {
@@ -8899,7 +8939,7 @@
   },
   "shashank-chakravarthy": {
    "name": "Shashank Chakravarthy",
-   "checked_at": "2026-10-21",
+   "checked_at": "2026-10-26",
    "known_coauthors": [],
    "orcid_candidates": [
     {
@@ -8933,7 +8973,7 @@
   },
   "siva-teja-kakileti": {
    "name": "Siva Teja Kakileti",
-   "checked_at": "2026-10-21",
+   "checked_at": "2026-10-26",
    "known_coauthors": [],
    "orcid_candidates": [
     {
@@ -8969,7 +9009,7 @@
   },
   "sneha-nair": {
    "name": "Sneha Nair",
-   "checked_at": "2026-10-21",
+   "checked_at": "2026-10-26",
    "known_coauthors": [],
    "orcid_candidates": [
     {
@@ -9048,7 +9088,7 @@
   },
   "sonia-potalivo": {
    "name": "Sonia Potalivo",
-   "checked_at": "2026-10-21",
+   "checked_at": "2026-10-26",
    "known_coauthors": [],
    "orcid_candidates": [],
    "scholar_candidates": [],
@@ -9067,7 +9107,7 @@
   },
   "steven-petit": {
    "name": "Steven Petit",
-   "checked_at": "2026-10-21",
+   "checked_at": "2026-10-26",
    "known_coauthors": [],
    "orcid_candidates": [
     {
@@ -9109,7 +9149,7 @@
   },
   "swapneel-datta": {
    "name": "Swapneel Datta",
-   "checked_at": "2026-10-21",
+   "checked_at": "2026-10-26",
    "known_coauthors": [],
    "orcid_candidates": [],
    "scholar_candidates": [],
@@ -9128,7 +9168,7 @@
   },
   "thuyila-robinson": {
    "name": "Thuyila Robinson",
-   "checked_at": "2026-10-21",
+   "checked_at": "2026-10-26",
    "known_coauthors": [],
    "orcid_candidates": [],
    "scholar_candidates": [],
@@ -9147,7 +9187,7 @@
   },
   "tim-lustberg": {
    "name": "Tim Lustberg",
-   "checked_at": "2026-10-21",
+   "checked_at": "2026-10-26",
    "known_coauthors": [],
    "orcid_candidates": [
     {
@@ -9178,7 +9218,7 @@
   },
   "timo-deist": {
    "name": "Timo Deist",
-   "checked_at": "2026-10-21",
+   "checked_at": "2026-10-26",
    "known_coauthors": [],
    "orcid_candidates": [
     {
@@ -9209,7 +9249,7 @@
   },
   "tom-sinsel": {
    "name": "Tom Sinsel",
-   "checked_at": "2026-10-21",
+   "checked_at": "2026-10-26",
    "known_coauthors": [],
    "orcid_candidates": [],
    "scholar_candidates": [],
@@ -9228,7 +9268,7 @@
   },
   "tutku-kilicaslan": {
    "name": "Tutku Kılıçaslan",
-   "checked_at": "2026-10-21",
+   "checked_at": "2026-10-26",
    "known_coauthors": [],
    "orcid_candidates": [],
    "scholar_candidates": [],
@@ -9247,7 +9287,7 @@
   },
   "valerie-van-nielen": {
    "name": "Valerie van Nielen",
-   "checked_at": "2026-10-21",
+   "checked_at": "2026-10-26",
    "known_coauthors": [],
    "orcid_candidates": [],
    "scholar_candidates": [],
@@ -9266,7 +9306,7 @@
   },
   "vincenzo-forte": {
    "name": "Vincenzo Forte",
-   "checked_at": "2026-10-21",
+   "checked_at": "2026-10-26",
    "known_coauthors": [],
    "orcid_candidates": [
     {
@@ -9311,12 +9351,12 @@
    "verified_evidence": {}
   }
  },
- "accepted_orcids": 0,
- "accepted_scholar": 1,
- "searches_used": 17,
- "search_budget": 42,
+ "accepted_orcids": 1,
+ "accepted_scholar": 0,
+ "searches_used": 0,
+ "search_budget": 0,
  "coverage": {
-  "tracked_people": 149,
+  "tracked_people": 89,
   "verified_orcid_profiles": 52,
   "scholar_profiles": 18,
   "discovered_orcids": 35,

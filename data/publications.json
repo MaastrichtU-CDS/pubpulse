@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-23T15:06:25+00:00",
+ "generated": "2026-10-26T11:52:20+00:00",
  "group_name": "Clinical Data Science (Maastro / Maastricht University)",
  "site_url": "https://maastrichtu-cds.github.io/pubpulse/",
  "repo_url": "https://github.com/MaastrichtU-CDS/pubpulse",
@@ -11,7 +11,7 @@
   "list_name": "the pubpulse weekly list"
  },
  "last_run": {
-  "date": "2026-10-23",
+  "date": "2026-10-26",
   "baseline": false,
   "new_count": 0,
   "new_ids": [],
@@ -654,7 +654,7 @@
    "role": "Phd student",
    "employer": "Maastricht University",
    "orcid": null,
-   "orcid_discovered": null,
+   "orcid_discovered": "0000-0001-6544-4268",
    "orcid_openalex": "0000-0001-6544-4268",
    "scholar_id": null,
    "openalex_ids": [
@@ -1290,8 +1290,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-10-23",
-    "window_start": "2024-10-23",
+    "checked_at": "2026-10-26",
+    "window_start": "2024-10-26",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -1320,8 +1320,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-10-23",
-    "window_start": "2024-10-23",
+    "checked_at": "2026-10-26",
+    "window_start": "2024-10-26",
     "recent_months": 24,
     "shared_papers": 19,
     "recent_shared_papers": 16,
@@ -1367,8 +1367,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-10-23",
-    "window_start": "2024-10-23",
+    "checked_at": "2026-10-26",
+    "window_start": "2024-10-26",
     "recent_months": 24,
     "shared_papers": 16,
     "recent_shared_papers": 2,
@@ -1400,8 +1400,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-10-23",
-    "window_start": "2024-10-23",
+    "checked_at": "2026-10-26",
+    "window_start": "2024-10-26",
     "recent_months": 24,
     "shared_papers": 3,
     "recent_shared_papers": 3,
@@ -1434,8 +1434,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-10-23",
-    "window_start": "2024-10-23",
+    "checked_at": "2026-10-26",
+    "window_start": "2024-10-26",
     "recent_months": 24,
     "shared_papers": 1,
     "recent_shared_papers": 1,
@@ -1465,8 +1465,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-10-23",
-    "window_start": "2024-10-23",
+    "checked_at": "2026-10-26",
+    "window_start": "2024-10-26",
     "recent_months": 24,
     "shared_papers": 4,
     "recent_shared_papers": 3,
@@ -1499,8 +1499,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-10-23",
-    "window_start": "2024-10-23",
+    "checked_at": "2026-10-26",
+    "window_start": "2024-10-26",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -1527,8 +1527,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-10-23",
-    "window_start": "2024-10-23",
+    "checked_at": "2026-10-26",
+    "window_start": "2024-10-26",
     "recent_months": 24,
     "shared_papers": 1,
     "recent_shared_papers": 0,
@@ -1557,8 +1557,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-10-23",
-    "window_start": "2024-10-23",
+    "checked_at": "2026-10-26",
+    "window_start": "2024-10-26",
     "recent_months": 24,
     "shared_papers": 2,
     "recent_shared_papers": 1,
@@ -1587,8 +1587,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-10-23",
-    "window_start": "2024-10-23",
+    "checked_at": "2026-10-26",
+    "window_start": "2024-10-26",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -1615,8 +1615,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-10-23",
-    "window_start": "2024-10-23",
+    "checked_at": "2026-10-26",
+    "window_start": "2024-10-26",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -1643,8 +1643,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-10-23",
-    "window_start": "2024-10-23",
+    "checked_at": "2026-10-26",
+    "window_start": "2024-10-26",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -1671,8 +1671,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-10-23",
-    "window_start": "2024-10-23",
+    "checked_at": "2026-10-26",
+    "window_start": "2024-10-26",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -1701,8 +1701,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-10-23",
-    "window_start": "2024-10-23",
+    "checked_at": "2026-10-26",
+    "window_start": "2024-10-26",
     "recent_months": 24,
     "shared_papers": 5,
     "recent_shared_papers": 2,
@@ -1732,8 +1732,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-10-23",
-    "window_start": "2024-10-23",
+    "checked_at": "2026-10-26",
+    "window_start": "2024-10-26",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -1760,8 +1760,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-10-23",
-    "window_start": "2024-10-23",
+    "checked_at": "2026-10-26",
+    "window_start": "2024-10-26",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -1788,8 +1788,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-10-23",
-    "window_start": "2024-10-23",
+    "checked_at": "2026-10-26",
+    "window_start": "2024-10-26",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -1816,8 +1816,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-10-23",
-    "window_start": "2024-10-23",
+    "checked_at": "2026-10-26",
+    "window_start": "2024-10-26",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -1844,8 +1844,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-10-23",
-    "window_start": "2024-10-23",
+    "checked_at": "2026-10-26",
+    "window_start": "2024-10-26",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -1874,8 +1874,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-10-23",
-    "window_start": "2024-10-23",
+    "checked_at": "2026-10-26",
+    "window_start": "2024-10-26",
     "recent_months": 24,
     "shared_papers": 9,
     "recent_shared_papers": 3,
@@ -1909,8 +1909,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-10-23",
-    "window_start": "2024-10-23",
+    "checked_at": "2026-10-26",
+    "window_start": "2024-10-26",
     "recent_months": 24,
     "shared_papers": 5,
     "recent_shared_papers": 0,
@@ -1939,8 +1939,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-10-23",
-    "window_start": "2024-10-23",
+    "checked_at": "2026-10-26",
+    "window_start": "2024-10-26",
     "recent_months": 24,
     "shared_papers": 8,
     "recent_shared_papers": 6,
@@ -1976,8 +1976,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-10-23",
-    "window_start": "2024-10-23",
+    "checked_at": "2026-10-26",
+    "window_start": "2024-10-26",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -2004,8 +2004,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-10-23",
-    "window_start": "2024-10-23",
+    "checked_at": "2026-10-26",
+    "window_start": "2024-10-26",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -2032,8 +2032,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-10-23",
-    "window_start": "2024-10-23",
+    "checked_at": "2026-10-26",
+    "window_start": "2024-10-26",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -2062,8 +2062,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-10-23",
-    "window_start": "2024-10-23",
+    "checked_at": "2026-10-26",
+    "window_start": "2024-10-26",
     "recent_months": 24,
     "shared_papers": 1,
     "recent_shared_papers": 1,
@@ -2093,8 +2093,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-10-23",
-    "window_start": "2024-10-23",
+    "checked_at": "2026-10-26",
+    "window_start": "2024-10-26",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -2121,8 +2121,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-10-23",
-    "window_start": "2024-10-23",
+    "checked_at": "2026-10-26",
+    "window_start": "2024-10-26",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -2151,8 +2151,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-10-23",
-    "window_start": "2024-10-23",
+    "checked_at": "2026-10-26",
+    "window_start": "2024-10-26",
     "recent_months": 24,
     "shared_papers": 8,
     "recent_shared_papers": 4,
@@ -2182,8 +2182,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-10-23",
-    "window_start": "2024-10-23",
+    "checked_at": "2026-10-26",
+    "window_start": "2024-10-26",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -2210,8 +2210,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-10-23",
-    "window_start": "2024-10-23",
+    "checked_at": "2026-10-26",
+    "window_start": "2024-10-26",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -2238,8 +2238,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-10-23",
-    "window_start": "2024-10-23",
+    "checked_at": "2026-10-26",
+    "window_start": "2024-10-26",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -2268,8 +2268,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-10-23",
-    "window_start": "2024-10-23",
+    "checked_at": "2026-10-26",
+    "window_start": "2024-10-26",
     "recent_months": 24,
     "shared_papers": 2,
     "recent_shared_papers": 0,
@@ -2298,8 +2298,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-10-23",
-    "window_start": "2024-10-23",
+    "checked_at": "2026-10-26",
+    "window_start": "2024-10-26",
     "recent_months": 24,
     "shared_papers": 5,
     "recent_shared_papers": 5,
@@ -2332,8 +2332,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-10-23",
-    "window_start": "2024-10-23",
+    "checked_at": "2026-10-26",
+    "window_start": "2024-10-26",
     "recent_months": 24,
     "shared_papers": 10,
     "recent_shared_papers": 7,
@@ -2365,8 +2365,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-10-23",
-    "window_start": "2024-10-23",
+    "checked_at": "2026-10-26",
+    "window_start": "2024-10-26",
     "recent_months": 24,
     "shared_papers": 1,
     "recent_shared_papers": 0,
@@ -2393,8 +2393,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-10-23",
-    "window_start": "2024-10-23",
+    "checked_at": "2026-10-26",
+    "window_start": "2024-10-26",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -2421,8 +2421,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-10-23",
-    "window_start": "2024-10-23",
+    "checked_at": "2026-10-26",
+    "window_start": "2024-10-26",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -2449,8 +2449,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-10-23",
-    "window_start": "2024-10-23",
+    "checked_at": "2026-10-26",
+    "window_start": "2024-10-26",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -2477,8 +2477,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-10-23",
-    "window_start": "2024-10-23",
+    "checked_at": "2026-10-26",
+    "window_start": "2024-10-26",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -2505,8 +2505,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-10-23",
-    "window_start": "2024-10-23",
+    "checked_at": "2026-10-26",
+    "window_start": "2024-10-26",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -2533,8 +2533,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-10-23",
-    "window_start": "2024-10-23",
+    "checked_at": "2026-10-26",
+    "window_start": "2024-10-26",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -2561,8 +2561,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-10-23",
-    "window_start": "2024-10-23",
+    "checked_at": "2026-10-26",
+    "window_start": "2024-10-26",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -2589,8 +2589,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-10-23",
-    "window_start": "2024-10-23",
+    "checked_at": "2026-10-26",
+    "window_start": "2024-10-26",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -2617,8 +2617,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-10-23",
-    "window_start": "2024-10-23",
+    "checked_at": "2026-10-26",
+    "window_start": "2024-10-26",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -2645,8 +2645,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-10-23",
-    "window_start": "2024-10-23",
+    "checked_at": "2026-10-26",
+    "window_start": "2024-10-26",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -2675,8 +2675,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-10-23",
-    "window_start": "2024-10-23",
+    "checked_at": "2026-10-26",
+    "window_start": "2024-10-26",
     "recent_months": 24,
     "shared_papers": 2,
     "recent_shared_papers": 1,
@@ -2708,8 +2708,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-10-23",
-    "window_start": "2024-10-23",
+    "checked_at": "2026-10-26",
+    "window_start": "2024-10-26",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -2736,8 +2736,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-10-23",
-    "window_start": "2024-10-23",
+    "checked_at": "2026-10-26",
+    "window_start": "2024-10-26",
     "recent_months": 24,
     "shared_papers": 2,
     "recent_shared_papers": 2,
@@ -2769,8 +2769,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-10-23",
-    "window_start": "2024-10-23",
+    "checked_at": "2026-10-26",
+    "window_start": "2024-10-26",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -2799,8 +2799,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-10-23",
-    "window_start": "2024-10-23",
+    "checked_at": "2026-10-26",
+    "window_start": "2024-10-26",
     "recent_months": 24,
     "shared_papers": 1,
     "recent_shared_papers": 1,
@@ -2831,8 +2831,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-10-23",
-    "window_start": "2024-10-23",
+    "checked_at": "2026-10-26",
+    "window_start": "2024-10-26",
     "recent_months": 24,
     "shared_papers": 4,
     "recent_shared_papers": 4,
@@ -2864,8 +2864,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-10-23",
-    "window_start": "2024-10-23",
+    "checked_at": "2026-10-26",
+    "window_start": "2024-10-26",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -2894,8 +2894,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-10-23",
-    "window_start": "2024-10-23",
+    "checked_at": "2026-10-26",
+    "window_start": "2024-10-26",
     "recent_months": 24,
     "shared_papers": 2,
     "recent_shared_papers": 0,
@@ -2922,8 +2922,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-10-23",
-    "window_start": "2024-10-23",
+    "checked_at": "2026-10-26",
+    "window_start": "2024-10-26",
     "recent_months": 24,
     "shared_papers": 1,
     "recent_shared_papers": 0,
@@ -2952,8 +2952,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-10-23",
-    "window_start": "2024-10-23",
+    "checked_at": "2026-10-26",
+    "window_start": "2024-10-26",
     "recent_months": 24,
     "shared_papers": 1,
     "recent_shared_papers": 1,
@@ -2982,8 +2982,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-10-23",
-    "window_start": "2024-10-23",
+    "checked_at": "2026-10-26",
+    "window_start": "2024-10-26",
     "recent_months": 24,
     "shared_papers": 1,
     "recent_shared_papers": 0,
@@ -3010,8 +3010,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-10-23",
-    "window_start": "2024-10-23",
+    "checked_at": "2026-10-26",
+    "window_start": "2024-10-26",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -3038,8 +3038,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-10-23",
-    "window_start": "2024-10-23",
+    "checked_at": "2026-10-26",
+    "window_start": "2024-10-26",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -3066,8 +3066,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-10-23",
-    "window_start": "2024-10-23",
+    "checked_at": "2026-10-26",
+    "window_start": "2024-10-26",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -3094,8 +3094,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-10-23",
-    "window_start": "2024-10-23",
+    "checked_at": "2026-10-26",
+    "window_start": "2024-10-26",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -3125,8 +3125,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-10-23",
-    "window_start": "2024-10-23",
+    "checked_at": "2026-10-26",
+    "window_start": "2024-10-26",
     "recent_months": 24,
     "shared_papers": 8,
     "recent_shared_papers": 4,
@@ -3155,8 +3155,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-10-23",
-    "window_start": "2024-10-23",
+    "checked_at": "2026-10-26",
+    "window_start": "2024-10-26",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -3183,8 +3183,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-10-23",
-    "window_start": "2024-10-23",
+    "checked_at": "2026-10-26",
+    "window_start": "2024-10-26",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -3211,8 +3211,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-10-23",
-    "window_start": "2024-10-23",
+    "checked_at": "2026-10-26",
+    "window_start": "2024-10-26",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -3239,8 +3239,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-10-23",
-    "window_start": "2024-10-23",
+    "checked_at": "2026-10-26",
+    "window_start": "2024-10-26",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -3269,8 +3269,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-10-23",
-    "window_start": "2024-10-23",
+    "checked_at": "2026-10-26",
+    "window_start": "2024-10-26",
     "recent_months": 24,
     "shared_papers": 3,
     "recent_shared_papers": 3,
@@ -3301,8 +3301,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-10-23",
-    "window_start": "2024-10-23",
+    "checked_at": "2026-10-26",
+    "window_start": "2024-10-26",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -3329,8 +3329,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-10-23",
-    "window_start": "2024-10-23",
+    "checked_at": "2026-10-26",
+    "window_start": "2024-10-26",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -3357,8 +3357,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-10-23",
-    "window_start": "2024-10-23",
+    "checked_at": "2026-10-26",
+    "window_start": "2024-10-26",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -3385,8 +3385,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-10-23",
-    "window_start": "2024-10-23",
+    "checked_at": "2026-10-26",
+    "window_start": "2024-10-26",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -3415,8 +3415,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-10-23",
-    "window_start": "2024-10-23",
+    "checked_at": "2026-10-26",
+    "window_start": "2024-10-26",
     "recent_months": 24,
     "shared_papers": 1,
     "recent_shared_papers": 0,
@@ -3445,8 +3445,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-10-23",
-    "window_start": "2024-10-23",
+    "checked_at": "2026-10-26",
+    "window_start": "2024-10-26",
     "recent_months": 24,
     "shared_papers": 7,
     "recent_shared_papers": 5,
@@ -3476,8 +3476,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-10-23",
-    "window_start": "2024-10-23",
+    "checked_at": "2026-10-26",
+    "window_start": "2024-10-26",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -3504,8 +3504,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-10-23",
-    "window_start": "2024-10-23",
+    "checked_at": "2026-10-26",
+    "window_start": "2024-10-26",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -3532,8 +3532,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-10-23",
-    "window_start": "2024-10-23",
+    "checked_at": "2026-10-26",
+    "window_start": "2024-10-26",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -3560,8 +3560,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-10-23",
-    "window_start": "2024-10-23",
+    "checked_at": "2026-10-26",
+    "window_start": "2024-10-26",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -3588,8 +3588,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-10-23",
-    "window_start": "2024-10-23",
+    "checked_at": "2026-10-26",
+    "window_start": "2024-10-26",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -3616,8 +3616,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-10-23",
-    "window_start": "2024-10-23",
+    "checked_at": "2026-10-26",
+    "window_start": "2024-10-26",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -3644,8 +3644,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-10-23",
-    "window_start": "2024-10-23",
+    "checked_at": "2026-10-26",
+    "window_start": "2024-10-26",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -3674,8 +3674,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-10-23",
-    "window_start": "2024-10-23",
+    "checked_at": "2026-10-26",
+    "window_start": "2024-10-26",
     "recent_months": 24,
     "shared_papers": 13,
     "recent_shared_papers": 10,
@@ -3715,8 +3715,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-10-23",
-    "window_start": "2024-10-23",
+    "checked_at": "2026-10-26",
+    "window_start": "2024-10-26",
     "recent_months": 24,
     "shared_papers": 6,
     "recent_shared_papers": 6,
@@ -3747,8 +3747,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-10-23",
-    "window_start": "2024-10-23",
+    "checked_at": "2026-10-26",
+    "window_start": "2024-10-26",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -3777,8 +3777,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-10-23",
-    "window_start": "2024-10-23",
+    "checked_at": "2026-10-26",
+    "window_start": "2024-10-26",
     "recent_months": 24,
     "shared_papers": 4,
     "recent_shared_papers": 1,
@@ -3810,8 +3810,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-10-23",
-    "window_start": "2024-10-23",
+    "checked_at": "2026-10-26",
+    "window_start": "2024-10-26",
     "recent_months": 24,
     "shared_papers": 2,
     "recent_shared_papers": 1,
@@ -3843,8 +3843,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-10-23",
-    "window_start": "2024-10-23",
+    "checked_at": "2026-10-26",
+    "window_start": "2024-10-26",
     "recent_months": 24,
     "shared_papers": 21,
     "recent_shared_papers": 15,
@@ -3883,8 +3883,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-10-23",
-    "window_start": "2024-10-23",
+    "checked_at": "2026-10-26",
+    "window_start": "2024-10-26",
     "recent_months": 24,
     "shared_papers": 8,
     "recent_shared_papers": 4,
@@ -3917,8 +3917,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-10-23",
-    "window_start": "2024-10-23",
+    "checked_at": "2026-10-26",
+    "window_start": "2024-10-26",
     "recent_months": 24,
     "shared_papers": 7,
     "recent_shared_papers": 3,
@@ -7526,7 +7526,7 @@
    "affiliation_status": {
     "anshu-ankolekar": "verified"
    },
-   "cited_by_count": 0,
+   "cited_by_count": 1,
    "abstract": "OBJECTIVE: Clinical AI systems and models increasingly need traceable documentation that makes intended use, performance evidence, transparency, and lifecycle status explicit, yet existing model cards, datasheets, reporting guidelines, and other documentation approaches do not consistently bring together structured clinical fields, vocabulary-linked cohort descriptions, structured performance reporting, and governed documentation history. We introduce Structured, Meaningful, Auditable, Responsible, and Transparent (SMART), a framework that adapts the model card concept into structured, lifecycle-aware documentation with OMOP integration, role-based lifecycle governance, and a blockchain-backed audit trail for verifying documentation integrity and lifecycle history. MATERIALS AND METHODS: Following a design-science-informed approach, we analyzed documentation requirements, reviewed existing approaches, implemented SMART through open-source packages and smart contracts, and evaluated it using example SMART model cards, an illustrative COPD exacerbation risk-prediction documentation case study, and blockchain-governed lifecycle experiments. RESULTS: The design process resulted in the SMART framework in which documentation provisions are reflected across Schema, Lifecycle, and Chain (ie, Blockchain) components. Evaluation showed that, in multi-party settings, documentation history remains independently verifiable because lifecycle actions are role-attributed and linked to content hashes; median testnet gas use ranged from 352 722 to 852 399 gas across the evaluated lifecycle operations. DISCUSSION: SMART positions clinical AI documentation as a shared infrastructure for preliminary model assessment, making role attribution, lifecycle state, and documentation changes more transparent and traceable over time. CONCLUSION: By providing an implementable framework, SMART illustrates how clinical AI documentation can be structured, clinically contextualized, auditable, responsible, transparent, and lifecycle-aware.",
    "verified": true,
    "counted_members": [
@@ -10550,7 +10550,7 @@
     "leonard-nurnberg": "verified",
     "hugo-aerts": "verified"
    },
-   "cited_by_count": 25,
+   "cited_by_count": 26,
    "abstract": "The thymus is essential for establishing T cell diversity early in life, but undergoes profound involution with age and has therefore traditionally been regarded as largely nonfunctional in adults1,2. Here we propose that preserving thymic functionality is integral to adult health and longevity. We developed a deep learning framework to quantify thymic health from routine radiographic images and evaluated its association with longevity and risk of major age-associated diseases in two large prospective cohorts of asymptomatic adults: the National Lung Screening Trial (n = 25,031) and the Framingham Heart Study (n = 2,581). In both cohorts, thymic health varied markedly across the population. In the National Lung Screening Trial, higher thymic health was consistently associated with lower all-cause mortality, reduced lung cancer incidence and lower cardiovascular mortality over 12 years of follow-up after adjustment for age, sex, smoking and comorbidities. In the independent Framingham Heart Study cohort, higher thymic health was significantly associated with reduced cardiovascular mortality, independent of age, sex and smoking. Thymic health was further linked to systemic inflammation and metabolic dysregulation, and associated with modifiable lifestyle factors including smoking, obesity and physical activity. Together, these findings reposition the thymus as a central regulator of immune-mediated ageing and disease susceptibility in adulthood, highlighting its potential as a target for preventive and regenerative strategies to promote healthy ageing and longevity. Assessing thymic function and health has highlighted the lifelong importance of the thymus as an organ that could be targeted to improve health outcomes, protect against disease and promote healthy ageing.",
    "verified": true,
    "counted_members": [
@@ -10771,7 +10771,7 @@
     "leonard-nurnberg": "verified",
     "hugo-aerts": "verified"
    },
-   "cited_by_count": 27,
+   "cited_by_count": 29,
    "abstract": "Although immunotherapy has revolutionized cancer treatment, many patients still experience limited benefit, highlighting the urgent need for improved biomarkers1. Although immunotherapy is founded on unleashing T cells2, most existing biomarkers remain tumour-centric and mainly overlook host immune competence. The thymus is a key immune organ that is crucial for T cell maturation, and we hypothesized that thymic functionality is associated with immunotherapy outcomes3. Here we show that thymic health, a radiographic measure of thymic functionality, is strongly associated with immunotherapy outcomes across several cancer types. Using a deep-learning framework applied to routine computed tomography images, we quantified thymic health in a pan-cancer cohort of 3,476 patients receiving immune checkpoint inhibitors. In patients with non-small cell lung cancer, higher thymic health was associated with reduced risks of progression and all-cause mortality. These associations remained significant across clinically relevant levels of programmed death ligand 1 (PD-L1) and tumour mutation burden. In the prospective TRACERx lung cancer study, thymic health was positively associated with T cell receptor diversity and T cell receptor excision circles, and correlated with immune-system signalling pathways, supporting radiographic thymic health as a proxy for thymic activity and adaptive immune competence. Analysis across patients with melanoma, breast cancer or renal cancer demonstrated pan-cancer relevance. Together, these findings identify thymic health as a previously unrecognized, tumour-agnostic determinant of immunotherapy efficacy, with potential implications for patient stratification, treatment timing and the development of immune-rejuvenating strategies in precision immuno-oncology. A deep-learning approach applied to routine CT scans is used to quantify the health of the thymus in a cohort of patients with cancer, and shows that thymic function is associated with immunotherapy outcomes.",
    "verified": true,
    "counted_members": [
@@ -19499,7 +19499,7 @@
     "anke-bruninx": "verified",
     "andre-dekker": "verified"
    },
-   "cited_by_count": 4,
+   "cited_by_count": 5,
    "abstract": "AIMS: Loop diuretics are widely used in heart failure (HF) for symptom relief. Guidelines advise treating patients with the lowest possible dose of loop diuretics to maintain euvolaemia, based on expert opinion only. However, data on the safety of this practice are scarce. This analysis aims to investigate the clinical course after changing loop diuretics in stable HF patients. METHODS AND RESULTS: A post-hoc analysis from the TIME-CHF study was conducted in 622 patients. Daily loop diuretic doses were meticulously recorded, resulting in 11 035 dose evaluations assessed. The frequency of relevant events within 30 days (hospitalization, death, dose change) following an up-titration, down-titration, or no change in diuretic therapy was calculated. Risk of hospitalization and deaths 30 days after down-titration was estimated after adjusting for congestion level. At baseline the cohort consisted mostly of males (59%), with a mean age of 77 years. Patients were highly symptomatic with 76% classified as New York Heart Association class III or IV. Within 30 days after a down-titration, diuretic dose necessitated an increase in 30.4% of cases, compared with 20.7% following up-titration and 8.0% on a stable dose. Hospitalization and death were significantly more frequent following down-titration (3.4% and 2% within 30 days, respectively) than with a stable dose (1% and 0.6%, p < 0.001). Similar hospitalization rates were observed after up-titration. The risk of hospitalization doubled and of death tripled after down-titration in patients with similar congestion levels. CONCLUSIONS: There is a significant risk that reduction in diuretic dose requires restart or increase of diuretics within a short period. Additionally, there may be a significant risk associated with diuretic dose reduction. Therefore, HF patients need to be closely monitored after down-titration of loop diuretic therapy.",
    "verified": true,
    "counted_members": [
@@ -27510,7 +27510,7 @@
    "affiliation_status": {
     "andre-dekker": "verified"
    },
-   "cited_by_count": 5,
+   "cited_by_count": 6,
    "abstract": "Real-world data (RWD) are defined as information collected about patients as a routine part of treatment. To understand the status of RWD initiatives in oncology in the UK, an online survey and in-person workshop were conducted which aimed to characterise current perceptions of RWD, establish where real-world evidence (RWE) could support unmet clinical need, and to identify the barriers and solutions to obtaining this evidence. Self-selecting health care professionals including oncologists, physicists, radiographers, and health data researchers, as well as patient representatives, participated in an anonymous survey ( N = 55) and/or a 1-day workshop ( N = 46). The workshop consisted of introductory presentations followed by three 1 hour grouped breakout sessions. An inductive thematic analysis synthesizing the outcomes of the survey and workshop was carried out post hoc . Despite issues of perceived poor data quality and the prevalence of unstructured data, 92% of survey respondents recognised the potential of RWD to provide novel evidence. Suggested applications of RWE were validation of trial results in the general population, continuous evaluation of new technologies, decision-making in rare disease groups, and resource allocation. Barriers to progression of RWD initiatives identified were data accessibility, data quality, and prioritisation. Potential solutions include streamlining information governance processes, training staff in data science skills, and demonstrating clinical benefit. The potential of RWD to provide novel evidence is strongly recognised in the UK radiotherapy community. While barriers to progress were identified, none of them are insurmountable. To move forwards, the profile of RWE needs to be elevated to attract higher prioritisation and resourcing.",
    "verified": true,
    "counted_members": [
@@ -27656,7 +27656,7 @@
     "leonard-wee": "verified",
     "zhen-zang": "verified"
    },
-   "cited_by_count": 16,
+   "cited_by_count": 17,
    "abstract": null,
    "verified": true,
    "counted_members": [
@@ -29890,7 +29890,7 @@
     "leonard-wee": "verified",
     "andre-dekker": "verified"
    },
-   "cited_by_count": 52,
+   "cited_by_count": 53,
    "abstract": "OBJECTIVES: Although neoadjuvant immunochemotherapy has been widely applied in non-small cell lung cancer (NSCLC), predicting treatment response remains a challenge. We used pretreatment multimodal CT to explore deep learning-based immunochemotherapy response image biomarkers. METHODS: This study retrospectively obtained non-contrast enhanced and contrast enhancedbubu CT scans of patients with NSCLC who underwent surgery after receiving neoadjuvant immunochemotherapy at multiple centers between August 2019 and February 2023. Deep learning features were extracted from both non-contrast enhanced and contrast enhanced CT scans to construct the predictive models (LUNAI-uCT model and LUNAI-eCT model), respectively. After the feature fusion of these two types of features, a fused model (LUNAI-fCT model) was constructed. The performance of the model was evaluated using the area under the receiver operating characteristic curve (AUC), accuracy, sensitivity, specificity, positive predictive value, and negative predictive value. SHapley Additive exPlanations analysis was used to quantify the impact of CT imaging features on model prediction. To gain insights into how our model makes predictions, we employed Gradient-weighted Class Activation Mapping to generate saliency heatmaps. RESULTS: The training and validation datasets included 113 patients from Center A at the 8:2 ratio, and the test dataset included 112 patients (Center B n=73, Center C n=20, Center D n=19). In the test dataset, the LUNAI-uCT, LUNAI-eCT, and LUNAI-fCT models achieved AUCs of 0.762 (95% CI 0.654 to 0.791), 0.797 (95% CI 0.724 to 0.844), and 0.866 (95% CI 0.821 to 0.883), respectively. CONCLUSIONS: By extracting deep learning features from contrast enhanced and non-contrast enhanced CT, we constructed the LUNAI-fCT model as an imaging biomarker, which can non-invasively predict pathological complete response in neoadjuvant immunochemotherapy for NSCLC.",
    "verified": true,
    "counted_members": [
@@ -30626,7 +30626,7 @@
     "sure-pai": "verified",
     "hugo-aerts": "verified"
    },
-   "cited_by_count": 19,
+   "cited_by_count": 20,
    "abstract": "Artificial intelligence (AI) algorithms hold the potential to revolutionize radiology. However, a significant portion of the published literature lacks transparency and reproducibility, which hampers sustained progress toward clinical translation. Although several reporting guidelines have been proposed, identifying practical means to address these issues remains challenging. Here, we show the potential of cloud-based infrastructure for implementing and sharing transparent and reproducible AI-based radiology pipelines. We demonstrate end-to-end reproducibility from retrieving cloud-hosted data, through data pre-processing, deep learning inference, and post-processing, to the analysis and reporting of the final results. We successfully implement two distinct use cases, starting from recent literature on AI-based biomarkers for cancer imaging. Using cloud-hosted data and computing, we confirm the findings of these studies and extend the validation to previously unseen data for one of the use cases. Furthermore, we provide the community with transparent and easy-to-extend examples of pipelines impactful for the broader oncology field. Our approach demonstrates the potential of cloud resources for implementing, sharing, and using reproducible and transparent AI pipelines, which can accelerate the translation into clinical solutions.",
    "verified": true,
    "counted_members": [
@@ -32666,7 +32666,7 @@
    "affiliation_status": {
     "anshu-ankolekar": "verified"
    },
-   "cited_by_count": 46,
+   "cited_by_count": 47,
    "abstract": "In anticipation of potential future pandemics, we examined the challenges and opportunities presented by the COVID-19 outbreak. This analysis highlights how artificial intelligence (AI) and predictive models can support both patients and clinicians in managing subsequent infectious diseases, and how legislators and policymakers could support these efforts, to bring learning healthcare system (LHS) from guidelines to real-world implementation. This report chronicles the trajectory of the COVID-19 pandemic, emphasizing the diverse data sets generated throughout its course. We propose strategies for harnessing this data via AI and predictive modelling to enhance the functioning of LHS. The challenges faced by patients and healthcare systems around the world during this unprecedented crisis could have been mitigated with an informed and timely adoption of the three pillars of the LHS: Knowledge, Data and Practice. By harnessing AI and predictive analytics, we can develop tools that not only detect potential pandemic-prone diseases early on but also assist in patient management, provide decision support, offer treatment recommendations, deliver patient outcome triage, predict post-recovery long-term disease impacts, monitor viral mutations and variant emergence, and assess vaccine and treatment efficacy in real-time. A patient-centric approach remains paramount, ensuring patients are both informed and actively involved in disease mitigation strategies.",
    "verified": true,
    "counted_members": [
@@ -35043,7 +35043,7 @@
    "affiliation_status": {
     "anshu-ankolekar": "verified"
    },
-   "cited_by_count": 3,
+   "cited_by_count": 4,
    "abstract": "The aim of this study was to develop and evaluate a proof-of-concept open-source individualized Patient Decision Aid (iPDA) with a group of patients, physicians, and computer scientists. The iPDA was developed based on the International Patient Decision Aid Standards (IPDAS). A previously published questionnaire was adapted and used to test the user-friendliness and content of the iPDA. The questionnaire contained 40 multiple-choice questions, and answers were given on a 5-point Likert Scale (1-5) ranging from \"strongly disagree\" to \"strongly agree.\" In addition to the questionnaire, semi-structured interviews were conducted with patients. We performed a descriptive analysis of the responses. The iPDA was evaluated by 28 computer scientists, 21 physicians, and 13 patients. The results demonstrate that the iPDA was found valuable by 92% (patients), 96% (computer scientists), and 86% (physicians), while the treatment information was judged useful by 92%, 96%, and 95%, respectively. Additionally, the tool was thought to be motivating for patients to actively engage in their treatment by 92%, 93%, and 91% of the above respondents groups. More multimedia components and less text were suggested by the respondents as ways to improve the tool and user interface. In conclusion, we successfully developed and tested an iPDA for patients with stage I-II Non-Small Cell Lung Cancer (NSCLC).",
    "verified": true,
    "counted_members": [
