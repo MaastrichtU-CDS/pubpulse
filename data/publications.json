@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-27T13:21:20+00:00",
+ "generated": "2026-10-27T13:31:30+00:00",
  "group_name": "Clinical Data Science (Maastro / Maastricht University)",
  "site_url": "https://maastrichtu-cds.github.io/pubpulse/",
  "repo_url": "https://github.com/MaastrichtU-CDS/pubpulse",
@@ -4049,7 +4049,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-27",
-   "approved_external": false,
    "journal_impact": null,
    "journal_h_index": null
   },
@@ -4166,7 +4165,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-27",
-   "approved_external": false,
    "journal_impact": null,
    "journal_h_index": null
   },
@@ -4457,7 +4455,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": 6.3,
    "journal_h_index": 77
   },
@@ -4628,7 +4625,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": 7.0,
    "journal_h_index": 29
   },
@@ -4751,7 +4747,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": 2.7,
    "journal_h_index": 37
   },
@@ -4862,7 +4857,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": null,
    "journal_h_index": null
   },
@@ -4969,7 +4963,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": 4.7,
    "journal_h_index": 109
   },
@@ -5103,7 +5096,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": null,
    "journal_h_index": null
   },
@@ -5313,7 +5305,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": 16.8,
    "journal_h_index": 132
   },
@@ -5422,7 +5413,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": null,
    "journal_h_index": null
   },
@@ -5516,7 +5506,6 @@
    "counted_members": [],
    "counted": false,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": 2.8,
    "journal_h_index": 151
   },
@@ -5688,7 +5677,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": null,
    "journal_h_index": null
   },
@@ -5890,7 +5878,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": 0.9,
    "journal_h_index": 11
   },
@@ -6063,7 +6050,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": 1.9,
    "journal_h_index": 47
   },
@@ -6156,7 +6142,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": 2.7,
    "journal_h_index": 206
   },
@@ -6235,7 +6220,6 @@
    "counted_members": [],
    "counted": false,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": 8.9,
    "journal_h_index": 88
   },
@@ -6367,7 +6351,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": 0.8,
    "journal_h_index": 346
   },
@@ -6446,7 +6429,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": 0.5,
    "journal_h_index": 87
   },
@@ -6533,7 +6515,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": 0.5,
    "journal_h_index": 87
   },
@@ -6663,7 +6644,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": 0.1,
    "journal_h_index": 31
   },
@@ -6862,7 +6842,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": 1.7,
    "journal_h_index": 387
   },
@@ -6967,7 +6946,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": 1.7,
    "journal_h_index": 65
   },
@@ -7032,7 +7010,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-23",
-   "approved_external": false,
    "journal_impact": 1.6,
    "journal_h_index": 19
   },
@@ -7136,7 +7113,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": 5.3,
    "journal_h_index": 463
   },
@@ -7203,7 +7179,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": null,
    "journal_h_index": null
   },
@@ -7377,7 +7352,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": 3.1,
    "journal_h_index": 298
   },
@@ -7455,7 +7429,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-23",
-   "approved_external": false,
    "journal_impact": null,
    "journal_h_index": null
   },
@@ -7620,7 +7593,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": 0.8,
    "journal_h_index": 346
   },
@@ -7725,7 +7697,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": null,
    "journal_h_index": null
   },
@@ -7829,7 +7800,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": null,
    "journal_h_index": null
   },
@@ -7908,7 +7878,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": 11.8,
    "journal_h_index": 232
   },
@@ -7993,7 +7962,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": 1.6,
    "journal_h_index": 18
   },
@@ -8170,7 +8138,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": 1.1,
    "journal_h_index": 324
   },
@@ -8240,7 +8207,6 @@
    "counted_members": [],
    "counted": false,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": 6.7,
    "journal_h_index": 145
   },
@@ -8320,7 +8286,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": 9.1,
    "journal_h_index": 141
   },
@@ -8411,7 +8376,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": 6.6,
    "journal_h_index": 331
   },
@@ -8528,7 +8492,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": 4.9,
    "journal_h_index": 141
   },
@@ -8635,7 +8598,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": 2.4,
    "journal_h_index": 32
   },
@@ -8699,7 +8661,6 @@
    "counted_members": [],
    "counted": false,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": null,
    "journal_h_index": null
   },
@@ -8860,7 +8821,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": null,
    "journal_h_index": null
   },
@@ -9052,7 +9012,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": null,
    "journal_h_index": null
   },
@@ -9127,7 +9086,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": null,
    "journal_h_index": null
   },
@@ -9205,7 +9163,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-23",
-   "approved_external": false,
    "journal_impact": 3.3,
    "journal_h_index": 37
   },
@@ -9296,7 +9253,6 @@
    "counted_members": [],
    "counted": false,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": null,
    "journal_h_index": null
   },
@@ -9386,7 +9342,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": null,
    "journal_h_index": null
   },
@@ -9525,7 +9480,6 @@
    "counted_members": [],
    "counted": false,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": null,
    "journal_h_index": null
   },
@@ -9595,7 +9549,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": null,
    "journal_h_index": null
   },
@@ -9737,7 +9690,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": 1.1,
    "journal_h_index": 145
   },
@@ -10072,7 +10024,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": null,
    "journal_h_index": null
   },
@@ -10169,7 +10120,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": null,
    "journal_h_index": null
   },
@@ -10296,7 +10246,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": 5.6,
    "journal_h_index": 351
   },
@@ -10356,7 +10305,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": 0.0,
    "journal_h_index": 4
   },
@@ -10440,7 +10388,6 @@
    "counted_members": [],
    "counted": false,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": 1.1,
    "journal_h_index": 65
   },
@@ -10522,7 +10469,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": null,
    "journal_h_index": null
   },
@@ -10607,7 +10553,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": 5.4,
    "journal_h_index": 101
   },
@@ -10676,7 +10621,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": null,
    "journal_h_index": null
   },
@@ -10752,7 +10696,6 @@
    "counted_members": [],
    "counted": false,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": 1.1,
    "journal_h_index": 65
   },
@@ -10806,7 +10749,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": 9.3,
    "journal_h_index": 286
   },
@@ -11019,7 +10961,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": 19.6,
    "journal_h_index": 1841
   },
@@ -11243,7 +11184,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": 19.6,
    "journal_h_index": 1841
   },
@@ -11342,7 +11282,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": 1.8,
    "journal_h_index": 99
   },
@@ -11446,7 +11385,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": 1.8,
    "journal_h_index": 99
   },
@@ -11742,7 +11680,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": 18.6,
    "journal_h_index": 746
   },
@@ -11887,7 +11824,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": 2.0,
    "journal_h_index": 204
   },
@@ -12022,7 +11958,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": 2.6,
    "journal_h_index": 124
   },
@@ -12135,7 +12070,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": 2.7,
    "journal_h_index": 19
   },
@@ -12265,7 +12199,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": 5.6,
    "journal_h_index": 351
   },
@@ -12410,7 +12343,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": 4.0,
    "journal_h_index": 129
   },
@@ -12518,7 +12450,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-23",
-   "approved_external": false,
    "journal_impact": null,
    "journal_h_index": null
   },
@@ -12631,7 +12562,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-23",
-   "approved_external": false,
    "journal_impact": 5.9,
    "journal_h_index": 205
   },
@@ -12730,7 +12660,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-23",
-   "approved_external": false,
    "journal_impact": 2.6,
    "journal_h_index": 76
   },
@@ -12885,7 +12814,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": 2.3,
    "journal_h_index": 418
   },
@@ -12965,7 +12893,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-23",
-   "approved_external": false,
    "journal_impact": 1.9,
    "journal_h_index": 68
   },
@@ -13028,7 +12955,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": null,
    "journal_h_index": null
   },
@@ -13372,7 +13298,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": 4.7,
    "journal_h_index": 328
   },
@@ -13497,7 +13422,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": null,
    "journal_h_index": null
   },
@@ -13576,7 +13500,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": null,
    "journal_h_index": null
   },
@@ -13639,7 +13562,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": null,
    "journal_h_index": null
   },
@@ -13825,7 +13747,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": 3.9,
    "journal_h_index": 101
   },
@@ -14042,7 +13963,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": 8.8,
    "journal_h_index": 67
   },
@@ -14184,7 +14104,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": 10.7,
    "journal_h_index": 265
   },
@@ -14254,7 +14173,6 @@
    "counted_members": [],
    "counted": false,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": null,
    "journal_h_index": null
   },
@@ -14332,7 +14250,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": null,
    "journal_h_index": null
   },
@@ -14419,7 +14336,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": 1.3,
    "journal_h_index": 38
   },
@@ -14509,7 +14425,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": null,
    "journal_h_index": null
   },
@@ -14563,7 +14478,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": null,
    "journal_h_index": null
   },
@@ -14617,7 +14531,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": null,
    "journal_h_index": null
   },
@@ -14698,7 +14611,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": 0.2,
    "journal_h_index": 6
   },
@@ -14773,7 +14685,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": null,
    "journal_h_index": null
   },
@@ -14884,7 +14795,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": null,
    "journal_h_index": null
   },
@@ -14981,7 +14891,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": 5.8,
    "journal_h_index": 10
   },
@@ -15045,7 +14954,6 @@
    "counted_members": [],
    "counted": false,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": null,
    "journal_h_index": null
   },
@@ -15184,7 +15092,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": 2.7,
    "journal_h_index": 241
   },
@@ -15377,7 +15284,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": 2.8,
    "journal_h_index": 56
   },
@@ -15510,7 +15416,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": 8.9,
    "journal_h_index": 189
   },
@@ -15629,7 +15534,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": 1.7,
    "journal_h_index": 52
   },
@@ -15978,7 +15882,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": 12.8,
    "journal_h_index": 521
   },
@@ -16032,7 +15935,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": 9.3,
    "journal_h_index": 286
   },
@@ -16123,7 +16025,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": 4.0,
    "journal_h_index": 188
   },
@@ -16264,7 +16165,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": 2.5,
    "journal_h_index": 36
   },
@@ -16423,7 +16323,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": 10.2,
    "journal_h_index": 184
   },
@@ -16505,7 +16404,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": 2.9,
    "journal_h_index": 266
   },
@@ -16613,7 +16511,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": 5.3,
    "journal_h_index": 463
   },
@@ -16800,7 +16697,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": 6.3,
    "journal_h_index": 119
   },
@@ -16952,7 +16848,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": 5.8,
    "journal_h_index": 164
   },
@@ -17108,7 +17003,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": 6.4,
    "journal_h_index": 106
   },
@@ -17210,7 +17104,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": 6.6,
    "journal_h_index": 331
   },
@@ -17396,7 +17289,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": 5.3,
    "journal_h_index": 212
   },
@@ -17572,7 +17464,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": 5.1,
    "journal_h_index": 66
   },
@@ -17701,7 +17592,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": null,
    "journal_h_index": null
   },
@@ -17852,7 +17742,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": 12.6,
    "journal_h_index": 150
   },
@@ -17991,7 +17880,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": null,
    "journal_h_index": null
   },
@@ -18076,7 +17964,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": null,
    "journal_h_index": null
   },
@@ -18184,7 +18071,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": 7.8,
    "journal_h_index": 150
   },
@@ -18316,7 +18202,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": 2.8,
    "journal_h_index": 39
   },
@@ -18470,7 +18355,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": 2.8,
    "journal_h_index": 178
   },
@@ -18539,7 +18423,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": null,
    "journal_h_index": null
   },
@@ -18623,7 +18506,6 @@
    "counted_members": [],
    "counted": false,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": 7.8,
    "journal_h_index": 150
   },
@@ -18714,7 +18596,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": 9.3,
    "journal_h_index": 286
   },
@@ -18844,7 +18725,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": 0.8,
    "journal_h_index": 226
   },
@@ -18932,7 +18812,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": 1.7,
    "journal_h_index": 387
   },
@@ -19048,7 +18927,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": 5.5,
    "journal_h_index": 220
   },
@@ -19105,7 +18983,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": null,
    "journal_h_index": null
   },
@@ -19239,7 +19116,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": 3.0,
    "journal_h_index": 270
   },
@@ -19382,7 +19258,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": 7.3,
    "journal_h_index": 34
   },
@@ -19473,7 +19348,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": null,
    "journal_h_index": null
   },
@@ -19611,7 +19485,6 @@
    "counted_members": [],
    "counted": false,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": 6.1,
    "journal_h_index": 262
   },
@@ -19688,7 +19561,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": 4.0,
    "journal_h_index": 217
   },
@@ -19782,7 +19654,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": 5.5,
    "journal_h_index": 91
   },
@@ -19877,7 +19748,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": 2.4,
    "journal_h_index": 128
   },
@@ -20003,7 +19873,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": 3.9,
    "journal_h_index": 18
   },
@@ -20093,7 +19962,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": 5.3,
    "journal_h_index": 35
   },
@@ -20188,7 +20056,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": 3.1,
    "journal_h_index": 222
   },
@@ -20269,7 +20136,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-27",
-   "approved_external": false,
    "journal_impact": 1.4,
    "journal_h_index": 218
   },
@@ -20447,7 +20313,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": 2.4,
    "journal_h_index": 120
   },
@@ -20583,7 +20448,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": 10.8,
    "journal_h_index": 106
   },
@@ -20761,7 +20625,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": null,
    "journal_h_index": null
   },
@@ -20935,7 +20798,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": 0.8,
    "journal_h_index": 346
   },
@@ -21115,7 +20977,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": 1.7,
    "journal_h_index": 387
   },
@@ -21330,7 +21191,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": null,
    "journal_h_index": null
   },
@@ -21407,7 +21267,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-27",
-   "approved_external": false,
    "journal_impact": 1.3,
    "journal_h_index": 27
   },
@@ -21509,7 +21368,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": 14.1,
    "journal_h_index": 166
   },
@@ -21661,7 +21519,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": 19.0,
    "journal_h_index": 39
   },
@@ -21811,7 +21668,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": null,
    "journal_h_index": null
   },
@@ -21944,7 +21800,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": null,
    "journal_h_index": null
   },
@@ -22020,7 +21875,6 @@
    "counted_members": [],
    "counted": false,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": null,
    "journal_h_index": null
   },
@@ -22151,7 +22005,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": null,
    "journal_h_index": null
   },
@@ -22237,7 +22090,6 @@
    "counted_members": [],
    "counted": false,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": 1.1,
    "journal_h_index": 65
   },
@@ -22462,7 +22314,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": 16.8,
    "journal_h_index": 132
   },
@@ -22630,7 +22481,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": null,
    "journal_h_index": null
   },
@@ -22760,7 +22610,6 @@
    "counted_members": [],
    "counted": false,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": 0.7,
    "journal_h_index": 586
   },
@@ -22829,7 +22678,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": 0.8,
    "journal_h_index": 226
   },
@@ -22992,7 +22840,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": 0.8,
    "journal_h_index": 226
   },
@@ -23083,7 +22930,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": 0.8,
    "journal_h_index": 226
   },
@@ -23178,7 +23024,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": 0.8,
    "journal_h_index": 226
   },
@@ -23260,7 +23105,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": 0.8,
    "journal_h_index": 226
   },
@@ -23428,7 +23272,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": 0.8,
    "journal_h_index": 226
   },
@@ -23541,7 +23384,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": 1.9,
    "journal_h_index": 47
   },
@@ -23595,7 +23437,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": 0.8,
    "journal_h_index": 226
   },
@@ -23682,7 +23523,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": 0.8,
    "journal_h_index": 226
   },
@@ -23799,7 +23639,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": 0.8,
    "journal_h_index": 226
   },
@@ -23926,7 +23765,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": null,
    "journal_h_index": null
   },
@@ -24013,7 +23851,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": 0.6,
    "journal_h_index": 469
   },
@@ -24154,7 +23991,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": 1.6,
    "journal_h_index": 62
   },
@@ -24336,7 +24172,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": 0.8,
    "journal_h_index": 226
   },
@@ -24419,7 +24254,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": 3.9,
    "journal_h_index": 122
   },
@@ -24514,7 +24348,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": 2.4,
    "journal_h_index": 81
   },
@@ -24604,7 +24437,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": 9.3,
    "journal_h_index": 286
   },
@@ -24690,7 +24522,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": 9.3,
    "journal_h_index": 286
   },
@@ -24829,7 +24660,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": 5.2,
    "journal_h_index": 154
   },
@@ -24951,7 +24781,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-23",
-   "approved_external": false,
    "journal_impact": 2.9,
    "journal_h_index": 266
   },
@@ -25055,7 +24884,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": 1.0,
    "journal_h_index": 222
   },
@@ -25206,7 +25034,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": 10.2,
    "journal_h_index": 184
   },
@@ -25299,7 +25126,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": 1.8,
    "journal_h_index": 99
   },
@@ -25452,7 +25278,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": null,
    "journal_h_index": null
   },
@@ -25637,7 +25462,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": 2.5,
    "journal_h_index": 122
   },
@@ -25755,7 +25579,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": 2.4,
    "journal_h_index": 128
   },
@@ -25838,7 +25661,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": 0.6,
    "journal_h_index": 125
   },
@@ -25939,7 +25761,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": 3.9,
    "journal_h_index": 122
   },
@@ -25999,7 +25820,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": null,
    "journal_h_index": null
   },
@@ -26231,7 +26051,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": null,
    "journal_h_index": null
   },
@@ -26362,7 +26181,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": 3.6,
    "journal_h_index": 115
   },
@@ -26430,7 +26248,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": 5.2,
    "journal_h_index": 85
   },
@@ -26576,7 +26393,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": 7.9,
    "journal_h_index": 352
   },
@@ -26682,7 +26498,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": null,
    "journal_h_index": null
   },
@@ -26773,7 +26588,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-23",
-   "approved_external": false,
    "journal_impact": null,
    "journal_h_index": null
   },
@@ -26831,7 +26645,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": null,
    "journal_h_index": null
   },
@@ -26991,7 +26804,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": 5.8,
    "journal_h_index": 10
   },
@@ -27142,7 +26954,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": 1.3,
    "journal_h_index": 152
   },
@@ -27280,7 +27091,6 @@
    "counted_members": [],
    "counted": false,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": 1.3,
    "journal_h_index": 152
   },
@@ -27406,7 +27216,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": 1.3,
    "journal_h_index": 152
   },
@@ -27532,7 +27341,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": 1.3,
    "journal_h_index": 152
   },
@@ -27678,7 +27486,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": 1.7,
    "journal_h_index": 30
   },
@@ -27777,7 +27584,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": 2.8,
    "journal_h_index": 56
   },
@@ -27851,7 +27657,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": 4.4,
    "journal_h_index": 165
   },
@@ -27992,7 +27797,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": 2.8,
    "journal_h_index": 56
   },
@@ -28095,7 +27899,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": 5.5,
    "journal_h_index": 220
   },
@@ -28180,7 +27983,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": 2.9,
    "journal_h_index": 54
   },
@@ -28268,7 +28070,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": 1.9,
    "journal_h_index": 47
   },
@@ -28401,7 +28202,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": 1.1,
    "journal_h_index": 65
   },
@@ -28554,7 +28354,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": 0.9,
    "journal_h_index": 11
   },
@@ -28706,7 +28505,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": 4.5,
    "journal_h_index": 78
   },
@@ -28809,7 +28607,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": 3.0,
    "journal_h_index": 171
   },
@@ -28965,7 +28762,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": null,
    "journal_h_index": null
   },
@@ -29151,7 +28947,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": 7.0,
    "journal_h_index": 29
   },
@@ -29242,7 +29037,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": 1.8,
    "journal_h_index": 33
   },
@@ -29376,7 +29170,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": 9.2,
    "journal_h_index": 163
   },
@@ -29499,7 +29292,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": null,
    "journal_h_index": null
   },
@@ -29605,7 +29397,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": 0.8,
    "journal_h_index": 346
   },
@@ -29805,7 +29596,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": 0.8,
    "journal_h_index": 226
   },
@@ -29901,7 +29691,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": 2.9,
    "journal_h_index": 266
   },
@@ -29971,7 +29760,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": null,
    "journal_h_index": null
   },
@@ -30104,7 +29892,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": null,
    "journal_h_index": null
   },
@@ -30173,7 +29960,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": null,
    "journal_h_index": null
   },
@@ -30386,7 +30172,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": 2.8,
    "journal_h_index": 178
   },
@@ -30473,7 +30258,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": null,
    "journal_h_index": null
   },
@@ -30602,7 +30386,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": null,
    "journal_h_index": null
   },
@@ -30728,7 +30511,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": 1.4,
    "journal_h_index": 101
   },
@@ -30857,7 +30639,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": 1.7,
    "journal_h_index": 387
   },
@@ -30992,7 +30773,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": 10.2,
    "journal_h_index": 184
   },
@@ -31077,7 +30857,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": 0.5,
    "journal_h_index": 87
   },
@@ -31147,7 +30926,6 @@
    "counted_members": [],
    "counted": false,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": null,
    "journal_h_index": null
   },
@@ -31217,7 +30995,6 @@
    "counted_members": [],
    "counted": false,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": null,
    "journal_h_index": null
   },
@@ -31561,7 +31338,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": 5.3,
    "journal_h_index": 463
   },
@@ -31745,7 +31521,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": 18.6,
    "journal_h_index": 746
   },
@@ -31844,7 +31619,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": null,
    "journal_h_index": null
   },
@@ -31943,7 +31717,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": null,
    "journal_h_index": null
   },
@@ -32031,7 +31804,6 @@
    "counted_members": [],
    "counted": false,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": 1.1,
    "journal_h_index": 65
   },
@@ -32105,7 +31877,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": 2.9,
    "journal_h_index": 266
   },
@@ -32188,7 +31959,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-23",
-   "approved_external": false,
    "journal_impact": 2.5,
    "journal_h_index": 116
   },
@@ -32350,7 +32120,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": 3.7,
    "journal_h_index": 106
   },
@@ -32487,7 +32256,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": null,
    "journal_h_index": null
   },
@@ -32570,7 +32338,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": 1.2,
    "journal_h_index": 45
   },
@@ -32695,7 +32462,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": null,
    "journal_h_index": null
   },
@@ -32775,7 +32541,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": 7.8,
    "journal_h_index": 150
   },
@@ -32867,7 +32632,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": null,
    "journal_h_index": null
   },
@@ -32977,7 +32741,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": 6.7,
    "journal_h_index": 145
   },
@@ -33055,7 +32818,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-27",
-   "approved_external": false,
    "journal_impact": 1.9,
    "journal_h_index": 52
   },
@@ -33169,7 +32931,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": 3.6,
    "journal_h_index": 52
   },
@@ -33256,7 +33017,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": 2.8,
    "journal_h_index": 56
   },
@@ -33388,7 +33148,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": 7.3,
    "journal_h_index": 169
   },
@@ -33562,7 +33321,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": null,
    "journal_h_index": null
   },
@@ -33723,7 +33481,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-23",
-   "approved_external": false,
    "journal_impact": 8.7,
    "journal_h_index": 245
   },
@@ -33824,7 +33581,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": 2.6,
    "journal_h_index": 148
   },
@@ -33917,7 +33673,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": 6.9,
    "journal_h_index": 127
   },
@@ -34040,7 +33795,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": 6.7,
    "journal_h_index": 145
   },
@@ -34116,7 +33870,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": 0.8,
    "journal_h_index": 226
   },
@@ -34203,7 +33956,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": 0.8,
    "journal_h_index": 226
   },
@@ -34275,7 +34027,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": 0.8,
    "journal_h_index": 226
   },
@@ -34360,7 +34111,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": 0.8,
    "journal_h_index": 226
   },
@@ -34468,7 +34218,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": 0.8,
    "journal_h_index": 226
   },
@@ -34594,7 +34343,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": 0.8,
    "journal_h_index": 226
   },
@@ -34663,7 +34411,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": 0.8,
    "journal_h_index": 226
   },
@@ -34738,7 +34485,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": 0.8,
    "journal_h_index": 226
   },
@@ -34810,7 +34556,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": 0.8,
    "journal_h_index": 226
   },
@@ -34895,7 +34640,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": 0.8,
    "journal_h_index": 226
   },
@@ -35000,7 +34744,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": 0.8,
    "journal_h_index": 226
   },
@@ -35069,7 +34812,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": 0.8,
    "journal_h_index": 226
   },
@@ -35135,7 +34877,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": 0.8,
    "journal_h_index": 226
   },
@@ -35261,7 +35002,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": 0.8,
    "journal_h_index": 226
   },
@@ -35315,7 +35055,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": null,
    "journal_h_index": null
   },
@@ -35442,7 +35181,6 @@
    "counted_members": [],
    "counted": false,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": 0.7,
    "journal_h_index": 586
   },
@@ -35622,7 +35360,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": 1.1,
    "journal_h_index": 145
   },
@@ -35711,7 +35448,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": 5.5,
    "journal_h_index": 91
   },
@@ -35829,7 +35565,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": 0.8,
    "journal_h_index": 226
   },
@@ -35961,7 +35696,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": 5.3,
    "journal_h_index": 463
   },
@@ -36093,7 +35827,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": null,
    "journal_h_index": null
   },
@@ -36268,7 +36001,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": 1.2,
    "journal_h_index": 216
   },
@@ -36366,7 +36098,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": 5.1,
    "journal_h_index": 66
   },
@@ -36489,7 +36220,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": 1.3,
    "journal_h_index": 112
   },
@@ -36597,7 +36327,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": 1.3,
    "journal_h_index": 112
   },
@@ -36808,7 +36537,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": 3.1,
    "journal_h_index": 298
   },
@@ -36987,7 +36715,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": 3.1,
    "journal_h_index": 298
   },
@@ -37099,7 +36826,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": 0.6,
    "journal_h_index": 125
   },
@@ -37166,7 +36892,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": null,
    "journal_h_index": null
   },
@@ -37292,7 +37017,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": 5.6,
    "journal_h_index": 252
   },
@@ -37389,7 +37113,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": 3.5,
    "journal_h_index": 594
   },
@@ -37584,7 +37307,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": null,
    "journal_h_index": null
   },
@@ -37789,7 +37511,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": 3.9,
    "journal_h_index": 109
   },
@@ -37946,7 +37667,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": 1.3,
    "journal_h_index": 27
   },
@@ -38037,7 +37757,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": 3.5,
    "journal_h_index": 594
   },
@@ -38157,7 +37876,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": 1.6,
    "journal_h_index": 18
   },
@@ -38286,7 +38004,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": 1.9,
    "journal_h_index": 68
   },
@@ -38354,7 +38071,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": null,
    "journal_h_index": null
   },
@@ -38533,7 +38249,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": 3.6,
    "journal_h_index": 115
   },
@@ -38643,7 +38358,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": 3.9,
    "journal_h_index": 101
   },
@@ -38761,7 +38475,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": 33.5,
    "journal_h_index": 763
   },
@@ -38918,7 +38631,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": 8.9,
    "journal_h_index": 189
   },
@@ -38976,7 +38688,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": null,
    "journal_h_index": null
   },
@@ -39085,7 +38796,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": null,
    "journal_h_index": null
   },
@@ -39194,7 +38904,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": null,
    "journal_h_index": null
   },
@@ -39272,7 +38981,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-27",
-   "approved_external": false,
    "journal_impact": null,
    "journal_h_index": null
   },
@@ -39438,7 +39146,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": null,
    "journal_h_index": null
   },
@@ -39610,7 +39317,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": 5.8,
    "journal_h_index": 10
   },
@@ -39873,7 +39579,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": 1.8,
    "journal_h_index": 24
   },
@@ -39993,7 +39698,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": null,
    "journal_h_index": null
   },
@@ -40128,7 +39832,6 @@
    "counted_members": [],
    "counted": false,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": 1.3,
    "journal_h_index": 152
   },
@@ -40244,7 +39947,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": null,
    "journal_h_index": null
   },
@@ -40365,7 +40067,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": null,
    "journal_h_index": null
   },
@@ -40437,7 +40138,6 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
-   "approved_external": false,
    "journal_impact": 3.7,
    "journal_h_index": 33
   }
