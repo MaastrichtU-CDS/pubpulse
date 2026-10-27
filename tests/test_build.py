@@ -134,3 +134,55 @@ def test_digest_page_previews_queue_and_lists_sent_digests(tmp_path):
     write_digest_pages(pubs, CFG, [], dist, digests)
     page = (dist / "digest.html").read_text()  # nothing queued: the last sent issue is the current one
     assert "Sent <b>Monday 19 October 2026</b>" in page and "sent mail" in page
+
+
+def test_digest_is_a_standalone_email_with_absolute_png_images(monkeypatch):
+    from html.parser import HTMLParser
+    from pubpulse import build
+
+    monkeypatch.setattr(build, "_draft_for", lambda w: {
+        "headline": "A clearer research headline", "short": "A summary & its implications.",
+        "card": "data/social/images/W0-card.png", "post": "Ready to share",
+    })
+    digest = build.build_digest(_pubs(1), CFG)
+
+    class Images(HTMLParser):
+        def __init__(self):
+            super().__init__()
+            self.sources = []
+
+        def handle_starttag(self, tag, attrs):
+            if tag == "img":
+                self.sources.append(dict(attrs)["src"])
+
+    images = Images()
+    images.feed(digest["html"])
+    assert digest["html"].lower().startswith("<!doctype html>")
+    assert '<html lang="en">' in digest["html"] and '<meta name="viewport"' in digest["html"]
+    assert len(images.sources) == 5  # CDS, paper graphic, and three partner logos
+    assert all(src.startswith(CFG["site_url"]) and src.endswith(".png") for src in images.sources)
+    assert f'{CFG["site_url"]}social.html?id=W0' in digest["html"]
+    assert "A summary &amp; its implications." in digest["html"]
+    assert "{{UNSUBSCRIBE_URL}}" in digest["html"]
+
+
+def test_full_email_archives_embed_without_nested_documents(tmp_path):
+    from pubpulse.build import archive_digest, write_digest_pages
+
+    pubs = _pubs(1)
+    digest = build_digest(pubs, CFG)
+    digests = tmp_path / "digests"
+    archive_digest(digest["html"], "2026-10-19", digests)
+    dist = tmp_path / "dist"
+    dist.mkdir()
+    write_digest_pages(pubs, CFG, [], dist, digests)
+    for filename, prefix in (("digest.html", "./"), ("digests/2026-10-19.html", "../")):
+        page = (dist / filename).read_text()
+        assert page.count("<!doctype html>") == 1 and page.count('<html lang="en">') == 1
+        assert page.count("<body") == 1 and page.count("</body>") == 1
+        assert f'src="{prefix}assets/cds-email.png"' in page
+        assert f'href="{prefix}#unsubscribe"' in page
+        assert 'href="https://doi.org/10.1/0"' in page
+        assert "{{UNSUBSCRIBE_URL}}" not in page
+        assert 'digest.css?v=' in page
+        assert "@media only screen" in page  # preserve the email's responsive styling

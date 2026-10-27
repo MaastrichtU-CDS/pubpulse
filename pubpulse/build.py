@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import html
 import json
+import re
 import shutil
 from datetime import datetime, timezone
 from pathlib import Path
@@ -106,16 +107,14 @@ def split_recent(items: list[dict], recent_days: int, today: str | None = None) 
 
 
 # Newsletter look: the site's palette, email-safe markup (tables, inline styles, absolute image URLs).
-NAVY, ACCENT, SKY, MUTED, LINE = "#001c3d", "#0e71bb", "#049fd8", "#607087", "#dfe5ec"
+NAVY, ACCENT, MUTED, LINE = "#001c3d", "#0e71bb", "#607087", "#dfe5ec"
 SANS = "-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif"
-SERIF = "Georgia,'Times New Roman',serif"
 TYPE_PILLS = {"article": ("#e3eefb", "#1b4f91"), "review": ("#fde9df", "#8a3a16"), "preprint": ("#dff5ec", "#0f6a49"),
               "conference-paper": ("#fff1d1", "#7a5400"), "conference-abstract": ("#fff1d1", "#7a5400")}
 
 
 def _summary(w: dict, draft: dict | None) -> str:
     """The draft's short version when it has no open [check] marks, else the opening of the abstract."""
-    import re
     if draft and draft.get("short") and "[check" not in draft["short"]:
         return re.sub(r"\s*https?://\S+", "", draft["short"]).strip()
     label = r"(background|introduction|purpose|objectives?|aims?|context|rationale)"
@@ -139,9 +138,11 @@ def _published(day: str | None) -> str:
 
 
 def _button(href: str, label: str, dark: bool = False) -> str:
-    style = (f"background:{NAVY};color:#ffffff;border:1px solid {NAVY};" if dark else f"background:#ffffff;color:{NAVY};border:1px solid #c4d4e4;")
-    return (f'<a href="{html.escape(href)}" style="{style}display:inline-block;padding:9px 14px;border-radius:6px;font:600 13px/1.2 {SANS};'
-            f'text-decoration:none;margin:0 6px 6px 0">{html.escape(label)}</a>')
+    bg, fg, border = (NAVY, "#ffffff", NAVY) if dark else ("#ffffff", NAVY, "#c4d4e4")
+    return (f'<table role="presentation" cellpadding="0" cellspacing="0" border="0" style="display:inline-table;vertical-align:middle;margin:0 12px 8px 0">'
+            f'<tr><td bgcolor="{bg}" style="padding:11px 16px;background:{bg};border:1px solid {border};border-radius:5px">'
+            f'<a href="{html.escape(href)}" style="display:block;color:{fg};font:600 13px/18px {SANS};text-decoration:none">'
+            f'{html.escape(label)}</a></td></tr></table>')
 
 
 def _item_html(w: dict, names: dict[str, str], site: str) -> str:
@@ -156,27 +157,28 @@ def _item_html(w: dict, names: dict[str, str], site: str) -> str:
     meta = " · ".join(html.escape(x) for x in (w.get("journal"), _published(w.get("publication_date"))) if x)
     card = ""
     if d and d.get("card"):
-        card = (f'<a href="{html.escape(work_link(w))}"><img src="{html.escape(site + d["card"])}" width="536" alt="{html.escape(headline or w["title"])}" '
-                f'style="display:block;width:100%;max-width:536px;height:auto;border:0;border-radius:8px;margin:0 0 14px"></a>')
-    flag = "" if w.get("counted", w.get("verified", True)) else f' <span style="color:#8a5a00">· not in the group totals (no group affiliation recorded)</span>'
+        card = (f'<p style="margin:0 0 18px"><a href="{html.escape(work_link(w))}"><img src="{html.escape(site + d["card"])}" width="568" alt="{html.escape(headline or w["title"])}" '
+                f'style="display:block;width:100%;max-width:568px;height:auto;border:0;border-radius:6px;color:{NAVY};font:14px/20px {SANS}"></a></p>')
     buttons = _button(work_link(w), "Read the paper →", dark=True)
+    secondary = []
     if w.get("oa_url"):
-        buttons += _button(w["oa_url"], "Full text")
+        secondary.append(f'<a href="{html.escape(w["oa_url"])}" style="display:inline-block;margin:0 14px 8px 0;color:{ACCENT};font:600 13px/20px {SANS};text-decoration:underline">Full text</a>')
     if d and d.get("post"):
-        buttons += _button(f"{site}#q={w['id']}", "Share on LinkedIn")
+        secondary.append(f'<a href="{html.escape(site)}social.html?id={html.escape(w["id"])}" style="display:inline-block;margin:0 0 8px;color:{ACCENT};font:600 13px/20px {SANS};text-decoration:underline">LinkedIn post</a>')
     title_block = (
-        f'<h2 style="margin:10px 0 4px;font:400 23px/1.25 {SERIF};color:{NAVY}"><a href="{html.escape(work_link(w))}" style="color:{NAVY};text-decoration:none">{html.escape(headline)}</a></h2>'
-        f'<div style="font:13px/1.45 {SANS};color:{MUTED};margin:0 0 10px">{html.escape(w["title"])}</div>'
+        f'<h2 style="margin:12px 0 8px;font:600 22px/29px {SANS};letter-spacing:-.4px;color:{NAVY}"><a href="{html.escape(work_link(w))}" style="color:{NAVY};text-decoration:none">{html.escape(headline)}</a></h2>'
+        f'<p style="margin:0 0 10px;font:14px/21px {SANS};color:{MUTED}">{html.escape(w["title"])}</p>'
         if headline else
-        f'<h2 style="margin:10px 0 10px;font:400 21px/1.3 {SERIF};color:{NAVY}"><a href="{html.escape(work_link(w))}" style="color:{NAVY};text-decoration:none">{html.escape(w["title"])}</a></h2>'
+        f'<h2 style="margin:12px 0 10px;font:600 22px/29px {SANS};letter-spacing:-.4px;color:{NAVY}"><a href="{html.escape(work_link(w))}" style="color:{NAVY};text-decoration:none">{html.escape(w["title"])}</a></h2>'
     )
     summary = _summary(w, d)
     return (
-        f'<tr><td style="padding:22px 32px 18px;border-top:1px solid {LINE}">'
-        f"{card}<div>{pill}{oa} <span style=\"font:13px {SANS};color:{MUTED}\">{meta}</span></div>{title_block}"
-        + (f'<p style="margin:0 0 12px;font:15px/1.6 {SANS};color:#182f4b">{html.escape(summary)}</p>' if summary else "")
-        + f'<p style="margin:0 0 14px;font:13px/1.5 {SANS};color:#182f4b">From the group: <b>{members}</b>{flag}</p>'
-        f"<div>{buttons}</div></td></tr>"
+        f'<tr><td class="email-pad email-paper" style="padding:28px 36px 24px;border-top:1px solid {LINE};overflow-wrap:anywhere">'
+        f'<p style="margin:0;line-height:22px">{pill}{oa}</p>{title_block}'
+        f'<p style="margin:0 0 18px;font:12px/19px {SANS};color:{MUTED}">{meta}</p>{card}'
+        + (f'<p style="margin:0 0 14px;font:15px/24px {SANS};color:#213449">{html.escape(summary)}</p>' if summary else "")
+        + f'<p style="margin:0 0 18px;font:13px/21px {SANS};color:{MUTED}">From the group: <b style="color:#213449">{members}</b></p>'
+        f'<div>{buttons}<span style="display:inline-block;vertical-align:middle">{"".join(secondary)}</span></div></td></tr>'
     )
 
 
@@ -231,34 +233,66 @@ def build_digest(pubs: dict, cfg: dict, pending_ids: list[str] | None = None, is
     if errors:
         notes.append('<span style="color:#a00">Errors during this run: ' + html.escape("; ".join(errors)) + "</span>")
 
-    banner = (f'<tr><td style="background:#fff4dd;padding:12px 32px;font:600 13px/1.5 {SANS};color:#805615">{html.escape(test_note)}</td></tr>'
+    banner = (f'<tr><td class="email-pad" style="background:#fff4dd;padding:14px 36px;font:600 13px/20px {SANS};color:#805615">{html.escape(test_note)}</td></tr>'
               if test_note else "")
     body = [
-        f'<div style="background:#eef2f7;padding:24px 8px;margin:0">',
+        '<!doctype html><html lang="en"><head><meta charset="utf-8">'
+        '<meta name="viewport" content="width=device-width, initial-scale=1">'
+        '<meta name="color-scheme" content="light"><meta name="supported-color-schemes" content="light">'
+        f'<title>{html.escape(subject)}</title>'
+        '<!--[if mso]><noscript><xml><o:OfficeDocumentSettings xmlns:o="urn:schemas-microsoft-com:office:office">'
+        '<o:PixelsPerInch>96</o:PixelsPerInch></o:OfficeDocumentSettings></xml></noscript><![endif]-->'
+        '<style>.email-shell {border-collapse:separate;} '
+        '@media only screen and (max-width:600px) {'
+        '.email-canvas {padding:12px 8px!important;} .email-pad {padding-left:20px!important;padding-right:20px!important;} '
+        '.email-title {font-size:26px!important;line-height:32px!important;} '
+        '.email-cds {width:104px!important;height:auto!important;} '
+        '.email-partners {padding-left:16px!important;padding-right:16px!important;} '
+        '.email-partners img {max-width:100%!important;height:auto!important;} '
+        '}</style></head>'
+        f'<body style="margin:0;padding:0;background:#eef2f7;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%">'
+        f'<div style="display:none;font-size:1px;line-height:1px;max-height:0;max-width:0;opacity:0;overflow:hidden;mso-hide:all" aria-hidden="true">{html.escape(subject)}</div>'
+        '<div class="email-canvas" style="background:#eef2f7;padding:28px 12px;margin:0">',
         '<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td align="center">',
-        f'<table role="presentation" width="600" cellpadding="0" cellspacing="0" border="0" style="width:100%;max-width:600px;background:#ffffff;border-radius:12px;overflow:hidden">',
-        f'<tr><td style="background:{NAVY};padding:30px 32px 26px">'
-        f'<div style="font:700 11px/1.4 {SANS};letter-spacing:2px;color:{SKY}">THE PUBPULSE NEWSLETTER · {html.escape(issue.upper())}</div>'
-        f'<div style="font:400 30px/1.2 {SERIF};color:#ffffff;margin:12px 0 6px">New from Clinical Data Science</div>'
-        f'<div style="font:14px/1.5 {SANS};color:#aec7df">Maastro · Maastricht University · Maastricht UMC+</div></td></tr>' + banner,
-        f'<tr><td style="padding:24px 32px 20px;font:15px/1.6 {SANS};color:#182f4b">'
-        + (f'<b style="font-size:17px">{n} new paper{"s" if n != 1 else ""} since the last newsletter.</b><br>With {html.escape(person_line)}. '
-           f'<span style="color:{MUTED}">Papers can take weeks to reach OpenAlex, our source, so some were published a while ago.</span>' if n else
-           '<b style="font-size:17px">Nothing new since the last newsletter.</b>')
+        '<!--[if mso]><table role="presentation" width="640" cellpadding="0" cellspacing="0" border="0"><tr><td><![endif]-->',
+        '<table class="email-shell" role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="width:100%;max-width:640px;table-layout:fixed;background:#ffffff;border-spacing:0;text-align:left">',
+        f'<tr><td class="email-pad" bgcolor="{NAVY}" style="background:{NAVY};padding:28px 36px 30px">'
+        '<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="table-layout:fixed"><tr>'
+        f'<td width="140" valign="middle"><a href="{html.escape(site)}"><img class="email-cds" src="{html.escape(site)}assets/cds-email.png" width="128" height="64" alt="Clinical Data Science" style="display:block;width:128px;height:64px;border:0;color:#ffffff;font:12px/18px {SANS}"></a></td>'
+        f'<td align="right" valign="middle"><p style="margin:0;color:#ffffff;font:600 13px/21px {SANS}">pubpulse newsletter</p>'
+        f'<p style="margin:3px 0 0;color:#b7cce0;font:12px/19px {SANS}">Week {day.isocalendar()[1]}<br>{html.escape(day.strftime("%-d %B %Y"))}</p></td></tr></table>'
+        f'<h1 class="email-title" style="margin:28px 0 8px;color:#ffffff;font:600 30px/37px {SANS};letter-spacing:-.7px">New from<br>Clinical Data Science</h1>'
+        f'<p style="margin:0;color:#b7cce0;font:14px/22px {SANS}">Research from our team, in one place.</p></td></tr>' + banner,
+        f'<tr><td class="email-pad" style="padding:28px 36px;font:15px/24px {SANS};color:#213449">'
+        + (f'<p style="margin:0 0 10px;color:{NAVY};font:600 19px/27px {SANS}">{n} new paper{"s" if n != 1 else ""} since the last newsletter.</p>'
+           f'<p style="margin:0 0 12px;font:14px/22px {SANS}">With {html.escape(person_line)}.</p>'
+           f'<p style="margin:0;color:{MUTED};font:13px/21px {SANS}">Papers can take weeks to reach OpenAlex, our source, so some were published a while ago.</p>' if n else
+           f'<p style="margin:0 0 8px;color:{NAVY};font:600 19px/27px {SANS}">Nothing new since the last newsletter.</p>'
+           f'<p style="margin:0;color:{MUTED};font:14px/22px {SANS}">The next issue will appear when new publications are ready to share.</p>')
         + "</td></tr>",
         "".join(_item_html(w, names, site) for w in items),
-        f'<tr><td style="padding:20px 32px 6px;border-top:1px solid {LINE}">{_button(site, "Browse all publications")}{_button(site + "digest.html", "Newsletter on the web")}</td></tr>',
+        f'<tr><td class="email-pad" bgcolor="#f5f8fb" style="padding:24px 36px 18px;background:#f5f8fb;border-top:1px solid {LINE}">'
+        f'<p style="margin:0 0 6px;color:{NAVY};font:600 16px/24px {SANS}">Explore the full collection</p>'
+        f'<p style="margin:0 0 16px;color:{MUTED};font:14px/22px {SANS}">Find more research, people and topics in pubpulse.</p>'
+        f'{_button(site, "Browse all publications")}<a href="{html.escape(site)}digest.html" style="display:inline-block;margin:0 0 8px;color:{ACCENT};font:600 13px/20px {SANS}">View in your browser →</a></td></tr>',
     ]
     if notes:
-        body.append(f'<tr><td style="padding:10px 32px 4px;font:12px/1.55 {SANS};color:{MUTED}"><b style="color:#182f4b">Behind the scenes</b>'
-                    + "".join(f'<p style="margin:6px 0">{x}</p>' for x in notes) + "</td></tr>")
+        body.append(f'<tr><td class="email-pad" style="padding:22px 36px;font:12px/20px {SANS};color:{MUTED}">'
+                    f'<p style="margin:0 0 8px;color:#213449;font:600 13px/20px {SANS}">Collection notes</p>'
+                    + "".join(f'<p style="margin:6px 0;font:12px/20px {SANS}">{x}</p>' for x in notes) + "</td></tr>")
     body.append(
-        f'<tr><td style="background:#f5f7fa;padding:18px 32px;font:12px/1.6 {SANS};color:#8090a3">'
-        f'Automated overview, not manually verified: papers are matched by simple rules and mistakes are expected. '
-        f'Sent by pubpulse to {html.escape(dg.get("list_name") or "the group list")} on Mondays when there is something new. Data: OpenAlex.<br>'
-        f'<a href="{{{{UNSUBSCRIBE_URL}}}}" style="color:#8090a3">Unsubscribe</a> · <a href="{html.escape(site)}#subscribe" style="color:#8090a3">Subscribe someone else</a> · '
-        f'<a href="{html.escape(site)}feed.xml" style="color:#8090a3">RSS</a></td></tr>'
-        "</table></td></tr></table></div>"
+        f'<tr><td class="email-partners" bgcolor="{NAVY}" style="background:{NAVY};padding:22px 36px">'
+        '<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="table-layout:fixed"><tr>'
+        f'<td width="40%" valign="middle" style="padding-right:16px"><a href="https://www.maastrichtuniversity.nl/"><img src="{html.escape(site)}assets/maastricht-university-email.png" width="154" height="24" alt="Maastricht University" style="display:block;width:154px;max-width:100%;height:auto;border:0;color:#ffffff;font:10px/14px {SANS}"></a></td>'
+        f'<td width="25%" align="center" valign="middle" style="padding:0 12px"><a href="https://www.maastro.nl/"><img src="{html.escape(site)}assets/maastro-email.png" width="86" height="18" alt="Maastro" style="display:block;width:86px;max-width:100%;height:auto;border:0;color:#ffffff;font:10px/14px {SANS}"></a></td>'
+        f'<td width="35%" align="right" valign="middle" style="padding-left:16px"><a href="https://www.mumc.nl/"><img src="{html.escape(site)}assets/maastricht-umc-email.png" width="136" height="25" alt="Maastricht UMC+" style="display:block;width:136px;max-width:100%;height:auto;border:0;color:#ffffff;font:10px/14px {SANS}"></a></td>'
+        '</tr></table></td></tr>'
+        f'<tr><td class="email-pad" style="background:#f5f7fa;padding:22px 36px;font:12px/20px {SANS};color:{MUTED}">'
+        f'<p style="margin:0 0 10px;font:12px/20px {SANS}">Sent by pubpulse to {html.escape(dg.get("list_name") or "the group list")} on Mondays when there is something new.</p>'
+        f'<p style="margin:0 0 14px;font:12px/20px {SANS}">Automated overview, not manually verified: papers are matched by simple rules and mistakes are expected. Data: OpenAlex.</p>'
+        f'<p style="margin:0;font:12px/20px {SANS}"><a href="{{{{UNSUBSCRIBE_URL}}}}" style="color:#445d78">Unsubscribe</a> &nbsp;·&nbsp; <a href="{html.escape(site)}#subscribe" style="color:#445d78">Subscribe</a> &nbsp;·&nbsp; '
+        f'<a href="{html.escape(site)}feed.xml" style="color:#445d78">RSS</a></p></td></tr>'
+        '</table><!--[if mso]></td></tr></table><![endif]--></td></tr></table></div></body></html>'
     )
     html_body = "\n".join(body)
 
@@ -346,40 +380,58 @@ def _long_date(day: str) -> str:
         return day
 
 
+def _digest_preview(body: str, site: str, prefix: str) -> tuple[str, str]:
+    """Embed complete emails and older archived fragments in the same web shell."""
+    match = re.search(r"<body\b[^>]*>(.*?)</body\s*>", body, flags=re.I | re.S)
+    styles = "".join(re.findall(r"<style\b[^>]*>.*?</style\s*>", body[:match.start()], flags=re.I | re.S)) if match else ""
+    content = match.group(1) if match else body
+    home = prefix or "./"
+    content = content.replace("{{UNSUBSCRIBE_URL}}", home + "#unsubscribe")
+    content = re.sub(r"(href=[\"'])#([\"'])", rf"\g<1>{home}#unsubscribe\2", content)
+    # Keep the web preview on this deployment, including unpublished local assets.
+    if site:
+        for attr in ("href", "src"):
+            for quote in ('"', "'"):
+                content = content.replace(f"{attr}={quote}{html.escape(site)}", f"{attr}={quote}{home}")
+    return styles, content
+
+
 def digest_page(heading: str, status: str, body: str, archive: list[str], site: str, prefix: str = "") -> str:
+    import hashlib
+
+    def asset(name: str) -> str:
+        path = SITE_DIR / name
+        version = "?v=" + hashlib.sha1(path.read_bytes()).hexdigest()[:10] if path.exists() else ""
+        return prefix + name + version
+
+    email_styles, preview = _digest_preview(body, site, prefix)
     issues = "".join(
-        f'<a class="issue" href="{prefix}digests/{d}.html"><span>Week {__import__("datetime").date.fromisoformat(d).isocalendar()[1]}</span>{html.escape(_long_date(d))}</a>'
+        f'<a class="digest-issue" href="{prefix}digests/{d}.html"><span>Week {__import__("datetime").date.fromisoformat(d).isocalendar()[1]}</span>{html.escape(_long_date(d))}<span aria-hidden="true">→</span></a>'
         for d in archive)
     return f"""<!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>{html.escape(heading)} · pubpulse</title><link rel="icon" href="{prefix}favicon.ico?v=cds-3">
-<style>
-:root{{--navy:#001c3d;--accent:#0e71bb;--sky:#049fd8;--muted:#607087;--line:#dfe5ec}}
-*{{box-sizing:border-box}} body{{margin:0;background:#eef2f7;color:#182f4b;font:15px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif}}
-.top{{background:var(--navy);color:#fff}} .bar{{max-width:1000px;margin:0 auto;padding:16px;display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}}
-.brand{{color:#fff;text-decoration:none;font-weight:700;font-size:20px;display:flex;align-items:center;gap:10px}} .brand img{{width:30px;height:30px}}
-.brand span span{{font-weight:400;color:#aec7df}} .bar nav a{{color:#fff;text-decoration:none;font-size:14px;margin-left:18px}}
-.hero{{background:var(--navy);color:#fff;padding:18px 16px 70px}} .hero-in{{max-width:600px;margin:0 auto}}
-.eyebrow{{font-size:11px;font-weight:700;letter-spacing:2px;color:var(--sky);margin:0}}
-h1{{font:400 34px/1.15 Georgia,serif;margin:10px 0 8px}} .status{{color:#aec7df;font-size:14px;margin:0}}
-.status b{{color:#fff}} .actions{{margin-top:16px;display:flex;gap:10px;flex-wrap:wrap}}
-.btn{{display:inline-block;padding:10px 16px;border-radius:6px;font-weight:600;font-size:13px;text-decoration:none;background:var(--sky);color:var(--navy)}}
-.btn.ghost{{background:transparent;color:#fff;border:1px solid #2c4c70}}
-.mail{{max-width:616px;margin:-56px auto 0;padding:0 8px}} .mail > div{{padding:0 !important;background:none !important}}
-.mail table[width="600"]{{box-shadow:0 12px 40px #001c3d22}}
-.past{{max-width:600px;margin:32px auto 56px;padding:0 16px}} .past h2{{font:400 22px Georgia,serif;margin:0 0 12px}}
-.issues{{display:grid;grid-template-columns:repeat(auto-fill,minmax(170px,1fr));gap:10px}}
-.issue{{background:#fff;border:1px solid var(--line);border-radius:8px;padding:12px 14px;text-decoration:none;color:var(--navy);font-size:14px}}
-.issue span{{display:block;font-size:11px;font-weight:700;letter-spacing:1px;color:var(--accent);text-transform:uppercase}}
-.issue:hover{{border-color:var(--accent)}}
-</style></head>
-<body>
-<header class="top"><div class="bar"><a class="brand" href="{prefix}./"><img src="{prefix}assets/cds-icon.svg?v=cds-3" alt=""><span>pub<span>pulse</span></span></a>
-<nav><a href="{prefix}./#publications">Publications</a><a href="{prefix}./#stats">Statistics</a><a href="{prefix}social.html">Social posts</a><a href="{prefix}digest.html">Newsletter</a></nav></div></header>
-<section class="hero"><div class="hero-in"><p class="eyebrow">THE PUBPULSE NEWSLETTER</p><h1>{html.escape(heading)}</h1><p class="status">{status}</p>
-<div class="actions"><a class="btn" href="{prefix}./#subscribe">Get it every Monday ↗</a><a class="btn ghost" href="{prefix}./#publications">All publications</a></div></div></section>
-<main class="mail">{body}</main>
-{f'<section class="past"><h2>Past issues</h2><div class="issues">{issues}</div></section>' if archive else '<div style="height:48px"></div>'}
+<meta name="theme-color" content="#001c3d">
+<title>{html.escape(heading)} · pubpulse</title>
+<link rel="icon" type="image/svg+xml" href="{prefix}assets/cds-icon.svg?v=cds-3">
+<link rel="icon" href="{prefix}favicon.ico?v=cds-3">
+<link rel="stylesheet" href="{asset('style.css')}">
+{email_styles}<link rel="stylesheet" href="{asset('digest.css')}"></head>
+<body class="digest-page">
+<a class="skip-link" href="#newsletter">Skip to newsletter</a>
+<header class="top"><div class="wrap nav">
+<a class="brand" href="{prefix}./" aria-label="pubpulse home"><img src="{prefix}assets/cds-icon.svg?v=cds-3" width="36" height="36" alt=""><span>pub<span class="brand-light">pulse</span><small>RESEARCH UPDATES</small></span></a>
+<nav aria-label="Main navigation"><a href="{prefix}./#publications">Publications</a><a href="{prefix}./#stats">Statistics</a><a href="{prefix}social.html">Social posts</a><a class="button button-small" href="{prefix}digest.html" aria-current="page">Newsletter <span aria-hidden="true">→</span></a></nav>
+</div></header>
+<section class="digest-hero"><div class="wrap digest-hero-inner"><div>
+<p class="eyebrow">THE PUBPULSE NEWSLETTER</p><h1>{html.escape(heading)}</h1><p class="digest-status">{status}</p></div>
+<div class="digest-actions"><a class="button button-dark" href="{prefix}./#subscribe">Get the newsletter <span aria-hidden="true">→</span></a><a href="{prefix}./#publications">Browse all publications</a></div>
+</div></section>
+<main class="digest-content" id="newsletter">
+<div class="digest-preview-heading"><h2>Newsletter preview</h2><p>Weekly research updates</p></div>
+<div class="digest-preview">{preview}</div>
+{f'<section class="digest-past"><h2>Past issues</h2><div class="digest-issues">{issues}</div></section>' if archive else ''}
+</main>
+<footer class="digest-footer">Clinical Data Science <span aria-hidden="true">·</span> Maastro, Maastricht University &amp; Maastricht UMC+</footer>
 </body></html>
 """
 
@@ -403,7 +455,7 @@ def write_digest_pages(pubs: dict, cfg: dict, pending: list[str], dist: Path, di
         status = (f"Sent <b>{html.escape(_long_date(archive[0]))}</b>. Nothing new queued yet for {html.escape(_long_date(monday))}; "
                   "new papers appear here as they are found (every weekday).")
         body = (folder / f"{archive[0]}.html").read_text(encoding="utf-8")
-    (dist / "digest.html").write_text(digest_page(heading, status, body.replace("{{UNSUBSCRIBE_URL}}", "#"), archive, site), encoding="utf-8")
+    (dist / "digest.html").write_text(digest_page(heading, status, body, archive, site), encoding="utf-8")
     if archive:
         (dist / "digests").mkdir(exist_ok=True)
         for day in archive:

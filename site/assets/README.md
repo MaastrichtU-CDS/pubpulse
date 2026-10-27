@@ -12,6 +12,8 @@ supplied vector master `logo-cds.svg` (27 October 2026), preserved unchanged.
 - `maastro.svg`: `/themes/custom/cds_maastro/assets/images/logo-maastro.svg`
 - `maastricht-university.svg`: `/themes/custom/cds_maastro/assets/images/logo-maastricht-university.svg`
 - `maastricht-umc.svg`: `/themes/custom/cds_maastro/assets/images/logo-maastricht-umc.svg`
+- `*-email.png`: high-resolution PNG exports of the four institutional logos,
+  on navy backgrounds, for email clients that do not display SVG images.
 
 `pubpulse.svg` is the original pulse mark, retained as an unused source asset.
 

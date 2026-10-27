@@ -37,6 +37,18 @@ def rasterize(svg: bytes, size: int) -> Image.Image:
         return Image.frombytes("RGBA", (pix.width, pix.height), pix.samples)
 
 
+def email_logo(name: str, width: int) -> None:
+    """Opaque PNGs keep white institutional artwork visible in email clients."""
+    with pymupdf.open(ASSETS / f"{name}.svg") as doc:
+        page = doc[0]
+        scale = width / page.rect.width
+        pix = page.get_pixmap(matrix=pymupdf.Matrix(scale, scale), alpha=True)
+        artwork = Image.frombytes("RGBA", (pix.width, pix.height), pix.samples)
+    image = Image.new("RGBA", artwork.size, "#001c3d")
+    image.alpha_composite(artwork)
+    image.convert("RGB").save(ASSETS / f"{name}-email.png", optimize=True)
+
+
 def main() -> None:
     source = ET.parse(ASSETS / "logo-cds.svg").getroot()
     # Flatten the source's class-based fill rules without changing its paths.
@@ -93,7 +105,9 @@ def main() -> None:
         app_image.resize((size, size), Image.Resampling.LANCZOS).save(ASSETS / name, optimize=True)
     # Keep classic bitmap ICO entries for the same compatibility as the old favicon.
     high_res.save(ROOT / "site" / "favicon.ico", format="ICO", bitmap_format="bmp", sizes=[(16, 16), (32, 32), (48, 48)])
-    print("Rebuilt CDS logo, full-logo mask, emblem mask, and browser/app icons.")
+    for name, width in (("cds", 384), ("maastricht-university", 512), ("maastro", 228), ("maastricht-umc", 408)):
+        email_logo(name, width)
+    print("Rebuilt CDS logo, masks, browser/app icons, and email PNG logos.")
 
 
 if __name__ == "__main__":
