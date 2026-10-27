@@ -223,26 +223,32 @@ the last `digest.recent_days` (120); older papers that only now got linked to a 
 indexing) are left out, they just appear on the website. Each paper gets its LinkedIn card image, headline and short
 text when a draft exists (needs `ANTHROPIC_API_KEY`), otherwise the title and the opening of the abstract. Mail goes out on the Monday schedule only; push-triggered runs and the Tue–Fri refreshes queue.
 
-### Social posts: edit them on the website
+### Social posts: the social post studio
 
-Every journal paper (not preprints) has a *Share on LinkedIn* panel. The post text, the first comment and the card
-image are edited right there in the browser: change the text and the LinkedIn preview follows; change the headline,
-the "published in" line or the byline and the card is redrawn; optionally add a photo or figure from your own computer,
-shown on the right of the card. *Copy post*, *Copy first comment*, *Open LinkedIn with this text* and *Download card
-(PNG)* use what you edited. Nothing is stored: a reload brings back the draft. Papers with a Claude draft start from
-that draft; others start from a short template with the title on the card.
+[Social post studio](https://maastrichtu-cds.github.io/pubpulse/social.html) (*Social posts* in the menu): a page for
+making a LinkedIn post for any paper, in three steps, without accounts or keys.
 
-**No API key needed:** *Copy prompt* copies the pipeline's own instructions plus the paper (title, journal, authors,
-abstract) for any AI chat (claude.ai, ChatGPT, Copilot). Paste the chat's JSON answer back and *Import answer* fills in
-the post, the first comment and the card headline. The *Social media* tab lists every postable paper in the current
-filter (not preprints or datasets) with its status, *draft ready* or *no draft yet*, and opens the same editor.
+1. **Choose the paper**: paste a DOI (or pick a recent paper). Papers outside pubpulse are looked up live in OpenAlex,
+   and CDS authors are recognised by their OpenAlex id or ORCID.
+2. **Write it with an AI chat**: *Copy prompt* copies the pipeline's own instructions plus the paper (title, journal,
+   authors, abstract); paste it into claude.ai, ChatGPT or Copilot, paste the JSON answer back, *Import answer*.
+3. **Edit, copy and download**: post text and first comment with a live LinkedIn preview; the card image (headline,
+   "published in" line, byline, optional own photo) is redrawn in the browser and downloaded as PNG.
+
+Nothing is stored. Papers with a pipeline draft start from it. Every paper on the website, and the *Social media* tab,
+links to the studio. Preprints and datasets are not posted.
+
+**Writing rules** (`SYSTEM_PROMPT` in pubpulse/social.py, shared by the pipeline and the studio): the post is an advert
+for the paper (no limitations), but every statement must be true to the abstract. The headline restates the abstract's
+own conclusion and never adds impact, adoption, "now" or causality the abstract does not state; a proof of concept
+stays a proof of concept. (Added after an author found a headline that overstated his paper.)
 
 ### Social posts: what goes where (design decisions)
 
 - **Card image**: one idea only. A catchy headline (max ~60 characters), a proof line "Published in <journal> · <year>",
   a byline with the group authors, and quiet branding (eyebrow, emblem watermark, footer logos). The paper title and the
   DOI are deliberately *not* on the card: at feed size they are unreadable and they compete with the headline.
-- **Post text**: the finding as first line, the group authors second (to tag), what/why/limitation in plain words,
+- **Post text**: an advert for the paper: the finding as first line, the group authors second (to tag), what/why in plain words, an invitation to read (no limitations),
   the journal last. No links in the body (LinkedIn reduces reach of posts with external links).
 - **First comment**: the full paper title, the DOI and the open-access link. That is where readers look things up.
 - **Which papers**: counted journal articles and reviews with an abstract of at least 80 words (shorter ones are

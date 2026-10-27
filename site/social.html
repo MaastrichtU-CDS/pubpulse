@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#001c3d" />
+    <title>Social post studio · pubpulse</title>
+    <link rel="icon" type="image/svg+xml" href="assets/cds-icon.svg?v=cds-2" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico?v=cds-2" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="studio-page">
+    <header class="top">
+      <div class="wrap nav">
+        <a class="brand" href="./" aria-label="pubpulse home"
+          ><img src="assets/cds-icon.svg?v=cds-2" width="36" height="36" alt="" /><span
+            >pub<span class="brand-light">pulse</span><small>RESEARCH UPDATES</small></span
+          ></a
+        >
+        <nav aria-label="Main navigation">
+          <a href="./#publications">Publications</a>
+          <a href="./#stats">Statistics</a>
+          <a href="social.html" aria-current="page">Social posts</a>
+          <a class="button button-small" href="digest.html">Newsletter <span aria-hidden="true">→</span></a>
+        </nav>
+      </div>
+    </header>
+
+    <section class="studio-hero">
+      <div class="wrap">
+        <p class="eyebrow">SOCIAL POST STUDIO</p>
+        <h1>A LinkedIn post for any paper.</h1>
+        <p>
+          Paste a DOI, let an AI chat write the post, import its answer, polish the text and the card, and post it.
+          Nothing is stored: everything happens in your browser.
+        </p>
+      </div>
+    </section>
+
+    <main class="wrap studio">
+      <section class="se-step">
+        <h2 class="se-step-title"><span>1</span> Choose the paper</h2>
+        <form id="paper-form" class="studio-form" autocomplete="off">
+          <label for="paper-q" class="visually-hidden">DOI or OpenAlex id</label>
+          <input id="paper-q" type="search" placeholder="Paste a DOI, e.g. 10.1016/j.landig.2026.101056 or https://doi.org/…" />
+          <button type="submit" class="button button-dark">Find paper</button>
+        </form>
+        <div class="studio-recent">
+          <label for="recent">or pick a recent paper from pubpulse</label>
+          <select id="recent"><option value="">Recent papers…</option></select>
+        </div>
+        <p id="paper-msg" class="meta" role="status"></p>
+        <div id="paper-card" class="studio-paper hidden"></div>
+      </section>
+      <div id="studio-editor"></div>
+      <p class="data-note">
+        Paper details come from pubpulse or, for papers outside it, live from
+        <a href="https://openalex.org" target="_blank" rel="noopener">OpenAlex</a>. The prompt is the same one the
+        pubpulse pipeline uses. Preprints are not posted externally.
+      </p>
+    </main>
+
+    <script src="social-editor.js"></script>
+    <script src="social.js"></script>
+  </body>
+</html>

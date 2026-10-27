@@ -381,7 +381,7 @@ h1{{font:400 34px/1.15 Georgia,serif;margin:10px 0 8px}} .status{{color:#aec7df;
 </style></head>
 <body>
 <header class="top"><div class="bar"><a class="brand" href="{prefix}./"><img src="{prefix}assets/cds-icon.svg" alt=""><span>pub<span>pulse</span></span></a>
-<nav><a href="{prefix}./#publications">Publications</a><a href="{prefix}./#stats">Statistics</a><a href="{prefix}digest.html">Newsletter</a></nav></div></header>
+<nav><a href="{prefix}./#publications">Publications</a><a href="{prefix}./#stats">Statistics</a><a href="{prefix}social.html">Social posts</a><a href="{prefix}digest.html">Newsletter</a></nav></div></header>
 <section class="hero"><div class="hero-in"><p class="eyebrow">THE PUBPULSE NEWSLETTER</p><h1>{html.escape(heading)}</h1><p class="status">{status}</p>
 <div class="actions"><a class="btn" href="{prefix}./#subscribe">Get it every Monday ↗</a><a class="btn ghost" href="{prefix}./#publications">All publications</a></div></div></section>
 <main class="mail">{body}</main>
@@ -469,14 +469,16 @@ def run(config_path: Path | None = None) -> dict:
     # Cache-busting: browsers and GitHub Pages cache app.js/style.css for a while; a content hash in the URL
     # makes every deploy pick up the new files immediately.
     import hashlib
-    index = DIST_DIR / "index.html"
-    html_text = index.read_text(encoding="utf-8") if index.exists() else ""
-    for asset in ("app.js", "style.css"):
-        if (DIST_DIR / asset).exists():
-            digest_hex = hashlib.sha1((DIST_DIR / asset).read_bytes()).hexdigest()[:10]
-            html_text = html_text.replace(f'"{asset}"', f'"{asset}?v={digest_hex}"')
-    if index.exists():
-        index.write_text(html_text, encoding="utf-8")
+    for page in ("index.html", "social.html"):
+        path = DIST_DIR / page
+        if not path.exists():
+            continue
+        html_text = path.read_text(encoding="utf-8")
+        for asset in ("app.js", "style.css", "social-editor.js", "social.js"):
+            if (DIST_DIR / asset).exists():
+                digest_hex = hashlib.sha1((DIST_DIR / asset).read_bytes()).hexdigest()[:10]
+                html_text = html_text.replace(f'"{asset}"', f'"{asset}?v={digest_hex}"')
+        path.write_text(html_text, encoding="utf-8")
     if (DATA_DIR / "scholar_check.json").exists():
         shutil.copy(DATA_DIR / "scholar_check.json", DIST_DIR / "data" / "scholar_check.json")
     pending = load_pending() if NOTIFIED_PATH.exists() else list((pubs.get("last_run") or {}).get("new_ids") or [])

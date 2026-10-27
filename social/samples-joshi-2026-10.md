@@ -1,3 +1,7 @@
+> **Revised 2026-10-27** after feedback from Joshi: posts no longer mention limitations (advert tone), and the headline of
+> "From registration to insight" was wrong ("now informs young patients' care" overstated a proof of concept); it is now
+> "A UK cancer registry joins a European data network". The current texts are in the social post studio on the website.
+
 # LinkedIn draft samples — Joshi Hogenboom, 2024–2026
 
 Written from the abstracts only, in the format the weekly pipeline produces (same system prompt as `pubpulse/social.py`),
