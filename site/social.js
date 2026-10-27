@@ -5,6 +5,8 @@
     String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[c]);
   let data = { works: [], people: [] };
   let drafts = {};
+  let libraryReady;
+  let lookupVersion = 0;
 
   const normDoi = (s) => (String(s || "").match(/10\.\d{4,9}\/[^\s"<>]+/i) || [""])[0].replace(/[.,;)]+$/, "").toLowerCase();
   const nameOf = (slug) => (data.people.find((p) => p.slug === slug) || {}).name || slug;
@@ -45,6 +47,7 @@
   async function find(query) {
     const q = String(query || "").trim();
     if (!q) return null;
+    await libraryReady;
     const wid = (q.match(/\bW\d{4,}\b/) || [])[0];
     const doi = normDoi(q);
     const local = data.works.find((w) => (wid && w.id === wid) || (doi && normDoi(w.doi) === doi));
@@ -61,11 +64,11 @@
     const warn = paper.type === "preprint" ? '<p class="studio-warn">This is a preprint. Preprints are not posted externally.</p>' : "";
     $("paper-card").classList.remove("hidden");
     $("paper-card").innerHTML =
-      `<p class="meta">${esc(paper.journal || "Publication")} · ${esc(paper.publication_date || "")} · ${esc((paper.type || "").replace(/-/g, " "))} · from ${esc(paper.source)}` +
-      ` ${draft?.post ? '<span class="badge ready">draft ready</span>' : '<span class="badge">no draft yet</span>'}</p>` +
+      `<div class="studio-paper-top"><p class="meta">${esc(paper.journal || "Publication")} · ${esc(paper.publication_date || "")}</p>` +
+      ` ${draft?.post ? '<span class="badge ready">Draft available</span>' : '<span class="badge">Ready to draft</span>'}</div>` +
       `<h3><a href="${esc(paper.link)}" target="_blank" rel="noopener">${esc(paper.title)}</a></h3>` +
-      `<p class="meta">Group authors: ${esc(paper.group_authors.join(", ") || "none recognised (fill them in yourself)")}` +
-      `${paper.abstract ? "" : " · <b>no abstract available</b>: the AI chat will have little to work with"}</p>${warn}`;
+      `<p class="studio-paper-authors">CDS authors: ${esc(paper.group_authors.join(", ") || "none identified in this record")}</p>` +
+      (paper.abstract ? `<details class="studio-paper-context"><summary>Abstract &amp; source details</summary><p>${esc(paper.abstract)}</p><p class="meta">${esc(paper.source)} · ${esc((paper.type || "publication").replace(/-/g, " "))}</p></details>` : '<p class="studio-warn">No abstract was found. Add the abstract in your AI chat before asking it to write the post.</p>') + warn;
     window.PubpulseSocial.mount($("studio-editor"), paper, { draft, prompt: data.social_prompt });
     const url = new URL(location.href);
     url.search = "";
@@ -74,14 +77,20 @@
   }
 
   async function load(query) {
+    const version = ++lookupVersion;
+    const button = $("paper-form").querySelector("button");
+    button.disabled = true;
     $("paper-msg").textContent = "Looking up the paper…";
     try {
       const paper = await find(query);
+      if (version !== lookupVersion) return;
       if (!paper) { $("paper-msg").textContent = ""; return; }
       $("paper-msg").textContent = "";
       show(paper);
     } catch (e) {
-      $("paper-msg").textContent = e.message;
+      if (version === lookupVersion) $("paper-msg").textContent = e.message;
+    } finally {
+      if (version === lookupVersion) button.disabled = false;
     }
   }
 
@@ -90,7 +99,7 @@
     load($("paper-q").value);
   });
 
-  Promise.all([
+  libraryReady = Promise.all([
     fetch("data/publications.json", { cache: "no-cache" }).then((r) => r.json()),
     fetch("data/social/index.json", { cache: "no-cache" }).then((r) => (r.ok ? r.json() : {})).catch(() => ({})),
   ]).then(([pubs, social]) => {

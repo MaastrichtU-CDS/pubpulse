@@ -352,7 +352,7 @@ def digest_page(heading: str, status: str, body: str, archive: list[str], site: 
         for d in archive)
     return f"""<!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>{html.escape(heading)} · pubpulse</title><link rel="icon" href="{prefix}favicon.ico">
+<title>{html.escape(heading)} · pubpulse</title><link rel="icon" href="{prefix}favicon.ico?v=cds-3">
 <style>
 :root{{--navy:#001c3d;--accent:#0e71bb;--sky:#049fd8;--muted:#607087;--line:#dfe5ec}}
 *{{box-sizing:border-box}} body{{margin:0;background:#eef2f7;color:#182f4b;font:15px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif}}
@@ -374,7 +374,7 @@ h1{{font:400 34px/1.15 Georgia,serif;margin:10px 0 8px}} .status{{color:#aec7df;
 .issue:hover{{border-color:var(--accent)}}
 </style></head>
 <body>
-<header class="top"><div class="bar"><a class="brand" href="{prefix}./"><img src="{prefix}assets/cds-icon.svg" alt=""><span>pub<span>pulse</span></span></a>
+<header class="top"><div class="bar"><a class="brand" href="{prefix}./"><img src="{prefix}assets/cds-icon.svg?v=cds-3" alt=""><span>pub<span>pulse</span></span></a>
 <nav><a href="{prefix}./#publications">Publications</a><a href="{prefix}./#stats">Statistics</a><a href="{prefix}social.html">Social posts</a><a href="{prefix}digest.html">Newsletter</a></nav></div></header>
 <section class="hero"><div class="hero-in"><p class="eyebrow">THE PUBPULSE NEWSLETTER</p><h1>{html.escape(heading)}</h1><p class="status">{status}</p>
 <div class="actions"><a class="btn" href="{prefix}./#subscribe">Get it every Monday ↗</a><a class="btn ghost" href="{prefix}./#publications">All publications</a></div></div></section>
@@ -468,7 +468,7 @@ def run(config_path: Path | None = None) -> dict:
         if not path.exists():
             continue
         html_text = path.read_text(encoding="utf-8")
-        for asset in ("app.js", "style.css", "social-editor.js", "social.js"):
+        for asset in ("app.js", "style.css", "library.css", "studio.css", "social-editor.js", "social.js"):
             if (DIST_DIR / asset).exists():
                 digest_hex = hashlib.sha1((DIST_DIR / asset).read_bytes()).hexdigest()[:10]
                 html_text = html_text.replace(f'"{asset}"', f'"{asset}?v={digest_hex}"')

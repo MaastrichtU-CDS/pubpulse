@@ -13,40 +13,41 @@
       rel="icon"
       type="image/x-icon"
       sizes="16x16 32x32 48x48"
-      href="favicon.ico?v=cds-2"
+      href="favicon.ico?v=cds-3"
     />
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="assets/cds-icon-32.png?v=cds-2"
+      href="assets/cds-icon-32.png?v=cds-3"
     />
     <link
       rel="icon"
       type="image/svg+xml"
       sizes="any"
-      href="assets/cds-icon.svg?v=cds-2"
+      href="assets/cds-icon.svg?v=cds-3"
     />
-    <link rel="mask-icon" href="assets/cds-mask.svg?v=cds-2" color="#001c3d" />
+    <link rel="mask-icon" href="assets/cds-mask.svg?v=cds-3" color="#001c3d" />
     <link
       rel="apple-touch-icon"
       sizes="152x152"
-      href="assets/apple-touch-icon-152.png?v=cds-2"
+      href="assets/apple-touch-icon-152.png?v=cds-3"
     />
     <link
       rel="apple-touch-icon"
       sizes="167x167"
-      href="assets/apple-touch-icon-167.png?v=cds-2"
+      href="assets/apple-touch-icon-167.png?v=cds-3"
     />
     <link
       rel="apple-touch-icon"
       sizes="180x180"
-      href="assets/apple-touch-icon.png?v=cds-2"
+      href="assets/apple-touch-icon.png?v=cds-3"
     />
     <meta name="apple-mobile-web-app-title" content="pubpulse" />
-    <link rel="manifest" href="site.webmanifest?v=cds-2" />
+    <link rel="manifest" href="site.webmanifest?v=cds-3" />
     <link rel="stylesheet" href="vendor/tom-select-2.6.2.min.css" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="library.css" />
     <link
       rel="alternate"
       type="application/atom+xml"
@@ -54,13 +55,13 @@
       href="feed.xml"
     />
   </head>
-  <body>
+  <body class="publication-page">
     <a class="skip-link" href="#publications">Skip to publications</a>
     <header class="top">
       <div class="wrap nav">
         <a class="brand" href="./" aria-label="pubpulse home"
           ><img
-            src="assets/cds-icon.svg?v=cds-2"
+            src="assets/cds-icon.svg?v=cds-3"
             width="36"
             height="36"
             alt=""
@@ -80,13 +81,6 @@
             class="about-link"
             >About CDS <span aria-hidden="true">↗</span></a
           >
-          <a
-            href="https://www.maastrichtuniversity.nl/"
-            target="_blank"
-            rel="noopener"
-            class="um-link"
-            >Maastricht University <span aria-hidden="true">↗</span></a
-          >
           <a class="button button-small" href="digest.html">
             Newsletter <span aria-hidden="true">→</span>
           </a>
@@ -97,14 +91,12 @@
     <section class="hero" aria-labelledby="hero-title">
       <div class="wrap hero-grid">
         <div class="hero-copy">
-          <p class="eyebrow">
-            <span class="status-dot"></span> RESEARCH &amp; PUBLICATIONS
-          </p>
+          <p class="eyebrow">RESEARCH &amp; PUBLICATIONS</p>
           <h1 id="hero-title">
-            Clinical Data Science.<br /><em>Maastricht University</em>
+            Clinical Data Science.<span>Maastricht University</span>
           </h1>
           <p class="hero-description">
-            Research from our joint academic department with
+            In partnership with
             <a href="https://www.mumc.nl/" target="_blank" rel="noopener"
               >Maastricht UMC+</a
             >
@@ -113,9 +105,9 @@
               >Maastro</a
             >.
           </p>
-          <a class="text-link" href="#publications"
-            >Explore the publications <span aria-hidden="true">↓</span></a
-          >
+        </div>
+        <details class="hero-overview" id="hero-overview" open>
+          <summary class="hero-overview-toggle">Research at a glance</summary>
           <div class="hero-metrics" aria-label="Publication overview">
             <div>
               <strong id="total-publications">—</strong
@@ -128,44 +120,21 @@
             </div>
             <div>
               <strong id="total-researchers">—</strong
-              ><span>current group members</span>
+              ><span>group members</span>
             </div>
             <div>
               <strong id="total-open">—</strong><span>open access</span>
             </div>
           </div>
-          <p class="metric-footnote" id="metric-footnote"></p>
-        </div>
-        <aside class="digest-card" aria-labelledby="digest-heading">
-          <div class="digest-card-top">
-            <span class="envelope" aria-hidden="true"
-              ><svg viewBox="0 0 32 32" fill="none">
-                <rect x="4" y="7" width="24" height="18" rx="3" />
-                <path d="m5 9 11 8L27 9M5 24l8-9m14 9-8-9" /></svg></span
-            ><span class="edition">YOUR MONDAY READING LIST</span>
-          </div>
-          <h2 id="digest-heading">
-            A little less searching.<br /><em>A little more discovery.</em>
-          </h2>
-          <p>
-            New papers from the CDS group in one email on Mondays, only when
-            there is something new.
-            <a href="digest.html" id="digest-preview-link">Read this week’s newsletter</a>.
-          </p>
-          <button type="button" class="button button-dark" data-open-digest>
-            Join the mailing list <span aria-hidden="true">↗</span>
-          </button>
-          <p class="digest-note" id="digest-note">
-            Ask a group maintainer to add you to the list.
-          </p>
-          <div class="digest-alternative">
-            Prefer a feed reader?
-            <a href="feed.xml"
-              >Follow via RSS <span aria-hidden="true">↗</span></a
-            >
-          </div>
-        </aside>
+          <details class="metric-method">
+            <summary>About these numbers</summary>
+            <p class="metric-footnote" id="metric-footnote"></p>
+          </details>
+        </details>
       </div>
+    </section>
+
+    <div class="institution-band">
       <div
         class="wrap institutions"
         aria-label="Clinical Data Science institutions"
@@ -176,12 +145,11 @@
           rel="noopener"
           class="cds-logo"
           ><img
-            src="assets/cds.svg"
+            src="assets/cds.svg?v=cds-3"
             alt="Clinical Data Science"
             width="150"
             height="75"
         /></a>
-        <span class="institution-divider" aria-hidden="true"></span>
         <a
           href="https://www.maastrichtuniversity.nl/"
           target="_blank"
@@ -196,7 +164,6 @@
         <a href="https://www.maastro.nl/" target="_blank" rel="noopener"
           ><img src="assets/maastro.svg" alt="Maastro" width="114" height="24"
         /></a>
-
         <a href="https://www.mumc.nl/" target="_blank" rel="noopener"
           ><img
             src="assets/maastricht-umc.svg"
@@ -205,22 +172,21 @@
             height="37"
         /></a>
       </div>
-    </section>
+    </div>
 
     <main class="wrap library" id="publications" tabindex="-1">
       <div class="library-heading">
         <div>
           <h2>Publication library</h2>
-          <p class="disclaimer" role="note">
-            <strong>Automated overview, not manually verified.</strong> Papers are matched and counted by simple rules
-            (identifiers, staff page, affiliations). Mistakes are expected; please verify before quoting any number.
-          </p>
           <p class="library-range">
             <span id="publication-range">Loading publication coverage…</span>
             <a id="coverage-link" class="hidden" href="#coverage-notes"
               >About coverage</a
             >
-
+          </p>
+          <p class="library-caveat" role="note">
+            Automatically collected from OpenAlex. Please verify records before
+            citing.
           </p>
         </div>
         <p class="updated">
@@ -241,86 +207,144 @@
         <aside class="filters" id="filters" aria-label="Publication filters">
           <div class="filter-heading">
             <h3>Filters</h3>
-            <span class="filter-heading-actions">
-              <button class="button button-small button-dark" id="reset" type="button">Default view</button>
-              <button class="button button-small button-ghost" id="show-all" type="button">Show everything</button>
-            </span>
           </div>
+          <div class="filter-presets" role="group" aria-label="Filter presets">
+            <button type="button" id="reset" aria-pressed="true">
+              Default view
+            </button>
+            <button type="button" id="show-all" aria-pressed="false">
+              Clear all filters
+            </button>
+          </div>
+          <p class="filter-preset-note" id="filter-preset-note">
+            Verified group affiliation; preprints excluded.
+          </p>
 
-          <p class="filter-group-label">When</p>
-          <div class="filter">
-            <label for="when">Period</label
-            ><select id="when">
-              <option value="">Any time</option>
-              <option value="week">New in the last 7 days</option>
-              <option value="queued">Queued for the next newsletter</option>
-              <option value="30d">Published in the last 30 days</option>
-              <option value="90d">Published in the last 90 days</option>
-              <option value="12m">Published in the last 12 months</option>
-              <option value="year">Published this year</option>
-            </select>
-          </div>
-          <div class="filter">
-            <label for="year">Year</label
-            ><select id="year">
-              <option value="">All years</option>
-            </select>
-          </div>
-
-          <p class="filter-group-label">What</p>
-          <div class="filter">
-            <label for="type">Type <small class="label-hint">pick one or more</small></label
-            ><select id="type" multiple data-placeholder="All types"></select>
-          </div>
-          <div class="filter">
-            <label for="journal">Journal / source</label
-            ><select id="journal">
-              <option value="">All sources</option>
-            </select>
-          </div>
-          <div class="filter row">
-            <label class="check"
-              ><input type="checkbox" id="only-oa" /> Open access only</label
-            >
-            <label class="check"
-              ><input type="checkbox" id="include-preprints" /> Include preprints</label
-            >
-          </div>
-
-          <p class="filter-group-label">Counting rule</p>
-          <div class="filter">
-            <label for="verify">Group affiliation</label
-            ><select id="verify">
-              <option value="">All papers</option>
-              <option value="counted">Team window</option>
-              <option value="verified">Verified affiliation only</option>
-              <option value="uncounted">Not counted</option>
-              <option value="unverified">Affiliation not verified</option>
-            </select>
-          </div>
-
-          <p class="filter-group-label">Who</p>
-          <div class="filter people-filter">
-            <div class="label-row">
-              <label for="people-q">Group members</label
-              ><button class="link" id="clear-people" type="button">
-                Clear
-              </button>
+          <details class="filter-section" id="filter-date" open>
+            <summary>
+              Date
+              <span
+                class="filter-section-count"
+                data-filter-count="date"
+                hidden
+              ></span>
+            </summary>
+            <div class="filter-section-body">
+              <div class="filter">
+                <label for="when">Period</label
+                ><select id="when">
+                  <option value="">Any time</option>
+                  <option value="week">New in the last 7 days</option>
+                  <option value="queued">Queued for the next newsletter</option>
+                  <option value="30d">Published in the last 30 days</option>
+                  <option value="90d">Published in the last 90 days</option>
+                  <option value="12m">Published in the last 12 months</option>
+                  <option value="year">Published this year</option>
+                </select>
+              </div>
+              <div class="filter">
+                <label for="year">Year</label
+                ><select id="year">
+                  <option value="">All years</option>
+                </select>
+              </div>
             </div>
-            <input
-              id="people-q"
-              type="search"
-              placeholder="Find current or former staff…"
-              class="small"
-              autocomplete="off"
-            />
-            <div
-              id="people"
-              class="people"
-              role="group"
-              aria-label="Filter by group member"
-            ></div>
-          </div>
+          </details>
+          <details class="filter-section" id="filter-publication" open>
+            <summary>
+              Publication
+              <span
+                class="filter-section-count"
+                data-filter-count="publication"
+                hidden
+              ></span>
+            </summary>
+            <div class="filter-section-body">
+              <div class="filter">
+                <label for="type">Type</label
+                ><select
+                  id="type"
+                  multiple
+                  data-placeholder="All types"
+                ></select>
+              </div>
+              <div class="filter">
+                <label for="journal">Journal / source</label
+                ><select id="journal">
+                  <option value="">All sources</option>
+                </select>
+              </div>
+              <div class="filter row">
+                <label class="check"
+                  ><input type="checkbox" id="only-oa" /> Open access
+                  only</label
+                >
+                <label class="check"
+                  ><input type="checkbox" id="include-preprints" /> Include
+                  preprints</label
+                >
+              </div>
+            </div>
+          </details>
+          <details class="filter-section" id="filter-researchers" open>
+            <summary>
+              Researchers
+              <span
+                class="filter-section-count"
+                data-filter-count="researchers"
+                hidden
+              ></span>
+            </summary>
+            <div class="filter-section-body">
+              <div class="filter people-filter">
+                <div class="label-row">
+                  <label for="people-q" class="visually-hidden"
+                    >Find a researcher</label
+                  >
+                  <button class="link" id="clear-people" type="button">
+                    Clear selection
+                  </button>
+                </div>
+                <input
+                  id="people-q"
+                  type="search"
+                  placeholder="Find a researcher…"
+                  class="small"
+                  autocomplete="off"
+                />
+                <div
+                  id="people"
+                  class="people"
+                  role="group"
+                  aria-label="Filter by group member"
+                ></div>
+              </div>
+            </div>
+          </details>
+          <details class="filter-section" id="filter-coverage">
+            <summary>
+              Coverage
+              <span
+                class="filter-section-count"
+                data-filter-count="coverage"
+                hidden
+              ></span>
+            </summary>
+            <div class="filter-section-body">
+              <div class="filter">
+                <label for="verify">Group affiliation</label
+                ><select id="verify">
+                  <option value="">All papers</option>
+                  <option value="counted">Team window</option>
+                  <option value="verified">Verified affiliation only</option>
+                  <option value="unverified">Affiliation not verified</option>
+                </select>
+              </div>
+              <p class="filter-help" id="filter-default-note">
+                Verified group affiliation; preprints excluded by default.
+              </p>
+            </div>
+          </details>
         </aside>
         <section class="results" aria-label="Publications">
           <div class="filter search-filter">
@@ -332,44 +356,84 @@
               autocomplete="off"
             />
           </div>
-          <div id="active-filters" class="active-filters" aria-live="polite"></div>
+          <div
+            id="active-filters"
+            class="active-filters"
+            aria-live="polite"
+          ></div>
           <section
             id="selected-profiles"
             class="author-profiles hidden"
             aria-label="Selected researcher profiles"
           ></section>
-          <section class="publication-chart overview-card" aria-labelledby="chart-heading">
+
+          <section
+            class="library-overview publication-chart overview-card"
+            id="library-overview"
+            aria-labelledby="overview-heading"
+          >
             <div class="chart-heading">
-              <h3 id="chart-heading">Overview</h3>
-              <p id="chart-note"></p>
+              <h3 id="overview-heading">Explore the research</h3>
+              <p>Click a year or publication type to filter</p>
             </div>
-            <h4 class="overview-sub">Publications by year</h4>
-            <div class="chart-plot">
-              <div id="chart-axis" class="chart-axis" aria-hidden="true"></div>
-              <div
-                id="year-bars"
-                class="year-bars"
-                role="group"
-                aria-label="Filter publications by year"
-              ></div>
+            <div class="overview-grid">
+              <div class="overview-years">
+                <div class="overview-block-heading">
+                  <h4 class="overview-sub">Publications by year</h4>
+                  <p id="chart-note"></p>
+                </div>
+                <div class="chart-plot">
+                  <div
+                    id="chart-axis"
+                    class="chart-axis"
+                    aria-hidden="true"
+                  ></div>
+                  <div
+                    id="year-bars"
+                    class="year-bars"
+                    role="group"
+                    aria-label="Filter publications by year"
+                  ></div>
+                </div>
+              </div>
+              <div class="overview-types">
+                <h4 class="overview-sub">Publication types</h4>
+                <div
+                  id="type-bar"
+                  class="type-bar"
+                  aria-label="Filter by publication type"
+                ></div>
+              </div>
             </div>
-            <h4 class="overview-sub">Publication types</h4>
-            <div id="type-bar" class="type-bar" aria-label="Publication types in the current selection"></div>
-            <p class="chart-caption">
-              Totals follow your search and filters. Click a year or a type to filter.
-            </p>
           </section>
 
           <div class="view-tabs" role="tablist" aria-label="Show">
-            <button type="button" role="tab" id="tab-list" aria-controls="panel-list" aria-selected="true">
+            <button
+              type="button"
+              role="tab"
+              id="tab-list"
+              aria-controls="panel-list"
+              aria-selected="true"
+            >
               Publications <span class="tab-count" id="tab-list-count"></span>
             </button>
-            <button type="button" role="tab" id="tab-stats" aria-controls="panel-stats" aria-selected="false">
-              Authorship statistics
+            <button
+              type="button"
+              role="tab"
+              id="tab-stats"
+              aria-controls="panel-stats"
+              aria-selected="false"
+            >
+              Statistics
             </button>
           </div>
 
-          <div id="panel-stats" role="tabpanel" aria-labelledby="tab-stats" hidden>
+          <div
+            id="panel-stats"
+            role="tabpanel"
+            aria-labelledby="tab-stats"
+            hidden
+          >
             <section class="stats-panel" id="stats">
               <p class="stats-summary" id="stats-summary"></p>
               <div id="stats-body"></div>
@@ -377,32 +441,58 @@
           </div>
 
           <div id="panel-list" role="tabpanel" aria-labelledby="tab-list">
-          <div class="results-toolbar">
-            <p id="count" role="status" aria-live="polite">
-              Loading publications…
-            </p>
-            <div class="sort-control">
-              <label for="sort">Sort by</label
-              ><select id="sort">
-                <option value="date">Newest first</option>
-                <option value="added">Recently added</option>
-                <option value="cited">Most cited</option>
-                <option value="impact">Journal impact</option>
-              </select>
+            <div
+              class="results-toolbar"
+              id="results-toolbar"
+              tabindex="-1"
+              aria-label="Publication results"
+            >
+              <p id="count" role="status" aria-live="polite">
+                Loading publications…
+              </p>
+              <div class="results-controls">
+                <div class="page-size-control">
+                  <label for="page-size">Per page</label>
+                  <select id="page-size" data-native>
+                    <option value="20">20</option>
+                    <option value="50">50</option>
+                    <option value="100">100</option>
+                  </select>
+                </div>
+                <div class="sort-control">
+                  <label for="sort">Sort by</label
+                  ><select id="sort">
+                    <option value="date">Newest first</option>
+                    <option value="added">Recently added</option>
+                    <option value="cited">Most cited</option>
+                    <option value="impact">Journal impact</option>
+                  </select>
+                </div>
+              </div>
             </div>
-          </div>
-          <p class="author-legend">
-            CDS authors are highlighted; click a name to filter the list.
-            Hover a name for the author position.
-          </p>
-          <ol id="list" class="list"></ol>
-          <div id="empty" class="empty hidden">
-            <h3>No papers found, yet.</h3>
-            <p>
-              Try a different search or reset the filters to explore all
-              publications.
+            <p class="author-legend">
+              Select a highlighted CDS author to explore their research.
             </p>
-          </div>
+            <nav
+              id="pagination-top"
+              class="pagination"
+              aria-label="Publication pages above results"
+              hidden
+            ></nav>
+            <ol id="list" class="list"></ol>
+            <nav
+              id="pagination-bottom"
+              class="pagination"
+              aria-label="Publication pages below results"
+              hidden
+            ></nav>
+            <div id="empty" class="empty hidden">
+              <h3>No papers found, yet.</h3>
+              <p>
+                Try a different search or reset the filters to explore all
+                publications.
+              </p>
+            </div>
           </div>
           <noscript
             ><p>
@@ -429,11 +519,29 @@
       </section>
     </main>
 
+    <aside class="digest-strip" aria-labelledby="digest-heading">
+      <div class="wrap digest-strip-inner">
+        <div>
+          <h2 id="digest-heading">Keep up with the research.</h2>
+          <p>
+            New CDS papers in your inbox on Mondays, when there’s something new.
+          </p>
+        </div>
+        <div class="digest-strip-actions">
+          <a href="digest.html" id="digest-preview-link"
+            >Read the newsletter <span aria-hidden="true">↗</span></a
+          ><button type="button" class="button button-dark" data-open-digest>
+            Get the weekly digest <span aria-hidden="true">→</span>
+          </button>
+        </div>
+      </div>
+    </aside>
+
     <footer class="wrap foot">
       <div class="foot-top">
         <a class="brand" href="./"
           ><img
-            src="assets/cds-icon.svg?v=cds-2"
+            src="assets/cds-icon.svg?v=cds-3"
             width="30"
             height="30"
             alt=""
@@ -445,7 +553,11 @@
         </p>
         <div class="footer-links">
           <a href="feed.xml">RSS feed ↗</a
-          ><a href="data/pubpulse-publications.xlsx" download title="All publications with the columns used for counting">Data (Excel) ↓</a
+          ><a
+            href="data/pubpulse-publications.xlsx"
+            download
+            title="All publications with the columns used for counting"
+            >Data (Excel) ↓</a
           ><a
             id="repo-link"
             href="https://github.com/MaastrichtU-CDS/pubpulse"
@@ -466,9 +578,9 @@
         <a href="https://openalex.org" target="_blank" rel="noopener"
           >OpenAlex</a
         >
-        (CC0). Group affiliations are checked automatically per author. Missing a
-        paper? Make sure the publisher has the author’s ORCID, or add the paper
-        to the ORCID record.
+        (CC0). Group affiliations are checked automatically per author. Missing
+        a paper? Make sure the publisher has the author’s ORCID, or add the
+        paper to the ORCID record.
       </p>
     </footer>
 
@@ -491,6 +603,9 @@
       <p id="join-description">
         Get new Clinical Data Science Maastricht papers in one email, every
         Monday when there is something new.
+      </p>
+      <p class="digest-note" id="digest-note">
+        Ask a group maintainer to add you to the list.
       </p>
       <ol class="join-steps" id="join-steps">
         <li>

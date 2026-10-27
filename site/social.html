@@ -5,23 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#001c3d" />
     <title>Social post studio · pubpulse</title>
-    <link rel="icon" type="image/svg+xml" href="assets/cds-icon.svg?v=cds-2" />
-    <link rel="icon" type="image/x-icon" href="favicon.ico?v=cds-2" />
+    <link rel="icon" type="image/svg+xml" href="assets/cds-icon.svg?v=cds-3" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico?v=cds-3" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="studio.css" />
   </head>
   <body class="studio-page">
     <header class="top">
       <div class="wrap nav">
         <a class="brand" href="./" aria-label="pubpulse home"
-          ><img src="assets/cds-icon.svg?v=cds-2" width="36" height="36" alt="" /><span
-            >pub<span class="brand-light">pulse</span><small>RESEARCH UPDATES</small></span
+          ><img
+            src="assets/cds-icon.svg?v=cds-3"
+            width="36"
+            height="36"
+            alt=""
+          /><span
+            >pub<span class="brand-light">pulse</span
+            ><small>RESEARCH UPDATES</small></span
           ></a
         >
         <nav aria-label="Main navigation">
           <a href="./#publications">Publications</a>
           <a href="./#stats">Statistics</a>
           <a href="social.html" aria-current="page">Social posts</a>
-          <a class="button button-small" href="digest.html">Newsletter <span aria-hidden="true">→</span></a>
+          <a class="button button-small" href="digest.html"
+            >Newsletter <span aria-hidden="true">→</span></a
+          >
         </nav>
       </div>
     </header>
@@ -29,33 +38,84 @@
     <section class="studio-hero">
       <div class="wrap">
         <p class="eyebrow">SOCIAL POST STUDIO</p>
-        <h1>A LinkedIn post for any paper.</h1>
+        <h1>Good research. Ready to share.</h1>
         <p>
-          Paste a DOI, let an AI chat write the post, import its answer, polish the text and the card, and post it.
-          Nothing is stored: everything happens in your browser.
+          Turn a paper into a clear LinkedIn post and a branded image. Bring a
+          draft from ChatGPT, then make it yours.
         </p>
       </div>
     </section>
 
     <main class="wrap studio">
-      <section class="se-step">
-        <h2 class="se-step-title"><span>1</span> Choose the paper</h2>
+      <section
+        class="se-step paper-picker"
+        aria-labelledby="paper-picker-heading"
+      >
+        <h2 class="se-step-title" id="paper-picker-heading">
+          <span>1</span> Choose a paper
+        </h2>
         <form id="paper-form" class="studio-form" autocomplete="off">
-          <label for="paper-q" class="visually-hidden">DOI or OpenAlex id</label>
-          <input id="paper-q" type="search" placeholder="Paste a DOI, e.g. 10.1016/j.landig.2026.101056 or https://doi.org/…" />
+          <label for="paper-q" class="visually-hidden"
+            >DOI or OpenAlex id</label
+          >
+          <input
+            id="paper-q"
+            type="search"
+            placeholder="Paste a DOI or OpenAlex link…"
+          />
           <button type="submit" class="button button-dark">Find paper</button>
         </form>
-        <p class="meta studio-hint">Or use the <b>LinkedIn post →</b> link under any paper on the <a href="./#publications">publications page</a>.</p>
+        <p class="studio-hint">
+          For papers in the collection, use the LinkedIn post link in the
+          <a href="./#publications">publication overview</a>.
+        </p>
         <p id="paper-msg" class="meta" role="status"></p>
         <div id="paper-card" class="studio-paper hidden"></div>
       </section>
       <div id="studio-editor"></div>
       <p class="data-note">
-        Paper details come from pubpulse or, for papers outside it, live from
-        <a href="https://openalex.org" target="_blank" rel="noopener">OpenAlex</a>. The prompt is the same one the
-        pubpulse pipeline uses. Preprints are not posted externally.
+        Paper details come from pubpulse or, for papers outside it, from
+        <a href="https://openalex.org" target="_blank" rel="noopener"
+          >OpenAlex</a
+        >. Your edits stay in this tab; copy or download them before leaving.
       </p>
     </main>
+
+    <footer class="studio-footer">
+      <div class="wrap" aria-label="Clinical Data Science institutions">
+        <a
+          href="https://www.clinicaldatascience.nl/"
+          target="_blank"
+          rel="noopener"
+          ><img
+            class="studio-footer-cds"
+            src="assets/cds.svg?v=cds-3"
+            width="150"
+            height="75"
+            alt="Clinical Data Science"
+        /></a>
+        <a
+          href="https://www.maastrichtuniversity.nl/"
+          target="_blank"
+          rel="noopener"
+          ><img
+            src="assets/maastricht-university.svg"
+            width="256"
+            height="39"
+            alt="Maastricht University"
+        /></a>
+        <a href="https://www.maastro.nl/" target="_blank" rel="noopener"
+          ><img src="assets/maastro.svg" width="114" height="24" alt="Maastro"
+        /></a>
+        <a href="https://www.mumc.nl/" target="_blank" rel="noopener"
+          ><img
+            src="assets/maastricht-umc.svg"
+            width="204"
+            height="37"
+            alt="Maastricht UMC+"
+        /></a>
+      </div>
+    </footer>
 
     <script src="social-editor.js"></script>
     <script src="social.js"></script>

@@ -11,6 +11,7 @@
     type: $("type"),
     journal: $("journal"),
     sort: $("sort"),
+    pageSize: $("page-size"),
     people: $("people"),
     peopleQ: $("people-q"),
     list: $("list"),
@@ -19,8 +20,14 @@
     profiles: $("selected-profiles"),
     attention: $("attention"),
     active: $("active-filters"),
+    pagination: [$("pagination-top"), $("pagination-bottom")],
   };
   const dialog = $("digest-dialog");
+  const overview = $("hero-overview");
+  const compactLayout = matchMedia("(max-width: 760px)");
+  const syncOverviewLayout = () => { overview.open = !compactLayout.matches; };
+  syncOverviewLayout();
+  compactLayout.addEventListener("change", syncOverviewLayout);
   document.querySelectorAll("[data-open-digest]").forEach((button) => {
     button.addEventListener("click", () => dialog.showModal());
   });
@@ -62,10 +69,16 @@
   let initialHash = location.hash;
   let data = null;
   let listenersBound = false;
+  const PAGE_SIZES = [20, 50, 100];
+  const DEFAULT_PAGE_SIZE = 20;
+  let lastResultsKey = null;
   let state = readHash();
 
   function readHash() {
     const p = new URLSearchParams(location.hash.slice(1));
+    const page = Number(p.get("page"));
+    const pageSize = Number(p.get("per_page"));
+    const requestedVerify = p.get("verify");
     return {
       q: p.get("q") || "",
       year: p.get("year") || "",
@@ -74,10 +87,13 @@
       sort: p.get("sort") || "date",
       people: (p.get("people") || "").split(",").filter(Boolean),
       when: p.get("when") || (p.get("new") === "1" ? "week" : ""),
-      verify: p.get("verify") || "",
+      // Retired or unknown coverage filters must not silently exclude records.
+      verify: requestedVerify ? (["all", "counted", "verified", "unverified"].includes(requestedVerify) ? requestedVerify : "all") : "",
       oa: p.get("oa") === "1",
       preprints: p.get("preprints") === "1",
       view: p.get("view") === "stats" || location.hash === "#stats" ? "stats" : "list",
+      page: Number.isSafeInteger(page) && page > 0 ? page : 1,
+      pageSize: PAGE_SIZES.includes(pageSize) ? pageSize : DEFAULT_PAGE_SIZE,
     };
   }
   function writeHash() {
@@ -93,6 +109,8 @@
     if (state.oa) p.set("oa", "1");
     if (state.preprints) p.set("preprints", "1");
     if (state.view !== "list") p.set("view", state.view);
+    if (state.page > 1) p.set("page", String(state.page));
+    if (state.pageSize !== DEFAULT_PAGE_SIZE) p.set("per_page", String(state.pageSize));
     if (
       !p.toString() &&
       ["#publications", "#coverage-notes"].includes(location.hash)
@@ -209,6 +227,7 @@
     setMulti(els.type, state.types);
     els.journal.value = state.journal;
     els.sort.value = state.sort;
+    els.pageSize.value = String(state.pageSize);
     els.verify.value = state.verify === "all" ? "" : state.verify;
     els.when.value = state.when;
     els.onlyOa.checked = state.oa;
@@ -218,7 +237,7 @@
   function enhanceDropdowns() {
     // Keep native selects as a fallback if the optional enhancement cannot load.
     if (typeof TomSelect !== "function") return;
-    document.querySelectorAll("select").forEach((select) => {
+    document.querySelectorAll("select:not([data-native])").forEach((select) => {
       if (select.tomselect) {
         select.tomselect.sync();
         return;
@@ -233,6 +252,7 @@
         closeAfterSelect: !select.multiple,
         refreshThrottle: 0,
         placeholder: select.dataset.placeholder || "Type to search…",
+        hidePlaceholder: true,
         // Option labels carry counts "(12)"; the chosen value reads cleaner without them.
         render: { item: (d, escape) => `<div>${escape(String(d.text).replace(/\s*\(\d+\)$/, ""))}</div>` },
         controlInput:
@@ -270,11 +290,6 @@
     const d = siteDefaults();
     return data.works.filter((w) => inView(w, d.verify) && (d.preprints || w.type !== "preprint"));
   }
-  function headlineDescription() {
-    const d = siteDefaults();
-    return [VIEWS[d.verify]?.label || "", d.preprints ? "" : "non-preprint"].filter(Boolean).join(", ") || "all";
-  }
-
   function siteDefaults() {
     const site = (data && data.site) || {};
     const view = site.default_view ?? (site.default_verified_only ? "counted" : "");
@@ -315,7 +330,6 @@
       data.repo_url || "https://github.com/MaastrichtU-CDS/pubpulse";
     // Headline numbers follow the site defaults: verified group affiliation, no preprints.
     const headline = headlineWorks();
-    const headlineLabel = headlineDescription();
     const thisYear = new Date(data.generated).getUTCFullYear() || new Date().getFullYear();
     const headlineYear = headline.filter((w) => Number(w.year) === thisYear);
     $("total-publications").textContent =
@@ -328,14 +342,15 @@
           (headlineYear.filter((w) => w.is_oa).length / headlineYear.length) * 100,
         ) + "%"
       : "—";
-    $("coverage-start").innerHTML = `in ${thisYear}<a href="#metric-footnote" class="footnote-mark" aria-label="how this is counted">*</a>`;
+    $("coverage-start").textContent = ` in ${thisYear}`;
     $("metric-footnote").textContent =
-      `* Year to date. ${VIEWS[siteDefaults().verify]?.rule || "All papers found for group members"}; ` +
-      `preprints not included. Open access share refers to the same set. Since ${coverageStart()}: ${headline.length} publications. ` +
+      `Year to date. ${VIEWS[siteDefaults().verify]?.rule || "All papers found for group members"}; ` +
+      `preprints ${siteDefaults().preprints ? "included" : "excluded"}. Open access share refers to the same set. Since ${coverageStart()}: ${headline.length} publications. ` +
       `Automated and not manually verified; mistakes are expected.`;
     $("publication-range").textContent =
-      `${headline.length.toLocaleString("en-GB")} ${headlineLabel} publications · ${coverageStart()} onwards · OpenAlex` +
-      (data.works.length > headline.length ? ` · ${data.works.length - headline.length} more incl. preprints and unverified` : "");
+      `${data.works.length.toLocaleString("en-GB")} collected publications · ${coverageStart()} onwards`;
+    $("filter-default-note").textContent =
+      `${VIEWS[siteDefaults().verify]?.plain || "All collected papers"}; preprints ${siteDefaults().preprints ? "included" : "excluded"} by default.`;
     configureDigest(data.list || {});
     for (const o of els.verify.options) {
       o.dataset.label ||= o.textContent;
@@ -408,6 +423,11 @@
         els.sort.value = state.sort;
         update();
       });
+      els.pageSize.addEventListener("change", () => {
+        state.pageSize = Number(els.pageSize.value);
+        state.page = 1;
+        update();
+      });
       els.when.addEventListener("change", () => {
         state.when = els.when.value;
         update();
@@ -460,6 +480,7 @@
           return;
         const toStats = location.hash === "#stats";
         state = readHash();
+        lastResultsKey = null;
         init(data);
         if (toStats) showTabs();
       });
@@ -485,7 +506,7 @@
     $("tab-list-count").textContent = count;
   }
 
-  // "Default view" = the standard settings (config.yml site.*); "show everything" also lifts the default restrictions.
+  // Default view restores the configured coverage; clearing all also lifts those restrictions.
   function resetAll(everything = false) {
     state = {
       q: "",
@@ -499,6 +520,8 @@
       oa: false,
       preprints: everything ? true : siteDefaults().preprints,
       view: state.view,
+      page: 1,
+      pageSize: state.pageSize,
     };
     els.peopleQ.value = "";
     renderPeople();
@@ -837,16 +860,18 @@
     }).join("");
     const legend = counts.map((g) => {
       const on = state.types.includes(g.key);
-      return `<button type="button" class="type-key${any && !on ? " is-dim" : ""}" data-type="${g.key}" aria-pressed="${on}" title="${esc(label(g))}"><span class="type-swatch" style="background:${g.color}"></span>${on ? "✓ " : ""}${esc(g.label)} <b>${g.n}</b> <span class="meta">${((100 * g.n) / total).toFixed(0)}%</span></button>`;
+      return `<button type="button" class="type-key${any && !on ? " is-dim" : ""}" style="--type-color:${g.color}" data-type="${g.key}" aria-pressed="${on}" title="${esc(label(g))}"><span class="type-swatch" style="background:${g.color}"></span><span class="type-name">${esc(g.label)}</span><b>${g.n}</b>${on ? '<span class="type-selected" aria-hidden="true">✓</span>' : ""}</button>`;
     }).join("");
     const status = any
       ? `<span class="type-status">Showing only: <b>${esc(state.types.map((k) => TYPE_GROUPS.find((g) => g.key === k)?.label || k).join(", "))}</b> <button type="button" class="link" data-clear-types>Show all types</button></span>`
-      : hidden ? `<span class="type-status meta">${hidden} preprint${hidden === 1 ? "" : "s"} hidden by default (switch on under What → Include preprints)</span>` : "";
+      : hidden ? `<span class="type-status meta">${hidden} preprint${hidden === 1 ? "" : "s"} excluded. Include them under Publication in the filters.</span>` : "";
     box.innerHTML = `<div class="type-track">${seg}</div><div class="type-legend">${legend}</div>${status}`;
     box.querySelectorAll("[data-type]").forEach((b) => b.addEventListener("click", () => {
       const ty = b.dataset.type;
+      const control = b.classList.contains("type-key") ? ".type-key" : ".type-seg";
       state.types = state.types.includes(ty) ? state.types.filter((t) => t !== ty) : [...state.types, ty];
       update();
+      box.querySelector(`${control}[data-type="${ty}"]`)?.focus({ preventScroll: true });
     }));
     box.querySelector("[data-clear-types]")?.addEventListener("click", () => {
       state.types = [];
@@ -854,8 +879,7 @@
     });
   }
 
-  // One row of removable chips for everything that differs from the default view.
-  // One row of removable chips for every restriction on the list, the default ones marked as such.
+  // Keep the active coverage visible alongside custom filters.
   function renderActiveFilters() {
     const box = els.active;
     const d = siteDefaults();
@@ -871,7 +895,7 @@
     if (state.journal) chip(`Source: ${state.journal}`, () => (state.journal = ""));
     if (verify) chip(optionText(els.verify, verify), () => (state.verify = "all"), verify === d.verify);
     if (state.oa) chip("Open access only", () => (state.oa = false));
-    if (!state.preprints && !state.types.length) chip("Preprints hidden", () => (state.preprints = true), !d.preprints);
+    if (!state.types.length && !state.preprints) chip("Preprints excluded", () => (state.preprints = true), !d.preprints);
     for (const slug of state.people)
       chip(nameOf(slug), () => {
         state.people = state.people.filter((s) => s !== slug);
@@ -879,24 +903,44 @@
       });
     const atDefault = !state.q && !state.when && !state.year && !state.types.length && !state.journal && !state.oa &&
       !state.people.length && verify === (d.verify || "") && state.preprints === d.preprints;
-    const restricted = chips.length > 0;
-    const buttons =
-      (atDefault ? "" : '<button type="button" class="button button-small button-dark" data-reset>Default view</button>') +
-      (restricted ? '<button type="button" class="button button-small button-ghost" data-all>Show everything</button>' : "");
+    const atEmpty = !state.q && !state.when && !state.year && !state.types.length && !state.journal && !state.oa &&
+      !state.people.length && !verify && state.preprints;
+    const mode = atEmpty ? "all" : atDefault ? "default" : "custom";
+    box.dataset.filterView = mode;
     box.innerHTML =
-      (restricted
-        ? `<span class="active-label">${atDefault ? "Default view" : "Applied filters"}</span>` +
-          chips.map((c, i) => `<button type="button" class="filter-chip${c.isDefault ? " is-default" : ""}" data-chip="${i}" title="Remove this filter">${esc(c.label)}${c.isDefault ? ' <small>default</small>' : ""} <span aria-hidden="true">×</span><span class="visually-hidden">remove</span></button>`).join("")
-        : '<span class="active-label meta">Showing everything: all papers, including preprints and papers without a verified affiliation.</span>') +
-      `<span class="active-actions">${buttons}</span>`;
-    $("reset").hidden = atDefault;
-    $("show-all").hidden = !restricted;
+      `<span class="filter-view-label">${atEmpty ? "No filters" : atDefault ? "Default view" : "Custom filters"}</span>` +
+      (atEmpty ? '<span class="filter-view-description">All collected papers, including preprints and unverified affiliations.</span>' :
+        chips.map((c, i) => `<button type="button" class="filter-chip${c.isDefault ? " is-default" : ""}" data-chip="${i}" title="Remove this filter">${esc(c.label)} <span aria-hidden="true">×</span><span class="visually-hidden">remove</span></button>`).join("")) +
+      (atDefault ? "" : '<button type="button" class="link active-reset" data-reset>Default view</button>');
+    $("reset").setAttribute("aria-pressed", String(atDefault));
+    $("show-all").setAttribute("aria-pressed", String(atEmpty));
+    $("filter-preset-note").textContent = atEmpty
+      ? "All collected papers. No affiliation or preprint restrictions."
+      : atDefault
+        ? `${VIEWS[d.verify]?.plain || "All collected papers"}; preprints ${d.preprints ? "included" : "excluded"}.`
+        : "Your selected filters apply to the list and charts.";
+    $("clear-people").hidden = !state.people.length;
+    const counts = {
+      date: Number(!!state.when) + Number(!!state.year),
+      publication: state.types.length + Number(!!state.journal) + Number(state.oa) + Number(!state.preprints && !state.types.length),
+      researchers: state.people.length,
+      coverage: Number(!!verify),
+    };
+    for (const [group, count] of Object.entries(counts)) {
+      const badge = document.querySelector(`[data-filter-count="${group}"]`);
+      badge.textContent = count;
+      badge.hidden = !count;
+      const section = badge.closest("details");
+      // Reveal filters selected through shared URLs, charts, or author names once,
+      // while still allowing the user to collapse a section with active filters.
+      if (count && !Number(section.dataset.activeCount || 0) && (group !== "coverage" || verify !== d.verify)) section.open = true;
+      section.dataset.activeCount = count;
+    }
     box.querySelectorAll("[data-chip]").forEach((b) => b.addEventListener("click", () => {
       chips[Number(b.dataset.chip)].clear();
       update();
     }));
     box.querySelector("[data-reset]")?.addEventListener("click", () => resetAll());
-    box.querySelector("[data-all]")?.addEventListener("click", () => resetAll(true));
   }
 
   // Authorship positions per person and per group, over the current filters (except the author filter).
@@ -1057,7 +1101,6 @@
     if (state.when && !["week", "queued"].includes(state.when) && !inPeriod(w, state.when))
       return false;
     if (state.verify === "counted" && !isCounted(w)) return false;
-    if (state.verify === "uncounted" && isCounted(w)) return false;
     if (state.verify === "verified" && !w.verified) return false;
     if (state.verify === "unverified" && w.verified) return false;
     if (state.oa && !w.is_oa) return false;
@@ -1098,10 +1141,46 @@
     return true;
   }
 
+  function renderPagination(pageCount) {
+    const neighbors = state.page <= 2 ? [1, 2, 3]
+      : state.page >= pageCount - 1 ? [pageCount - 2, pageCount - 1, pageCount]
+      : [state.page - 1, state.page, state.page + 1];
+    const pages = [...new Set([1, ...neighbors, pageCount])]
+      .filter((page) => page >= 1 && page <= pageCount)
+      .sort((a, b) => a - b);
+    const numbers = pages.map((page, i) =>
+      (i && page - pages[i - 1] > 1 ? '<span class="pagination-gap" aria-hidden="true">…</span>' : "") +
+      `<button type="button" class="pagination-number" data-page="${page}" aria-label="Page ${page}"${page === state.page ? ' aria-current="page"' : ""}>${page}</button>`,
+    ).join("");
+    for (const nav of els.pagination) {
+      nav.hidden = pageCount <= 1;
+      nav.innerHTML = nav.hidden ? "" :
+        `<button type="button" class="pagination-direction" data-page="${state.page - 1}" aria-label="Previous page"${state.page === 1 ? " disabled" : ""}><span aria-hidden="true">←</span> Previous</button>` +
+        `<span class="pagination-position">Page ${state.page} of ${pageCount}</span>` + numbers +
+        `<button type="button" class="pagination-direction" data-page="${state.page + 1}" aria-label="Next page"${state.page === pageCount ? " disabled" : ""}>Next <span aria-hidden="true">→</span></button>`;
+      nav.querySelectorAll("[data-page]").forEach((button) => button.addEventListener("click", () => {
+        state.page = Number(button.dataset.page);
+        update();
+        const toolbar = $("results-toolbar");
+        toolbar.focus({ preventScroll: true });
+        toolbar.scrollIntoView({
+          block: "start",
+          behavior: matchMedia("(prefers-reduced-motion: reduce)").matches ? "instant" : "smooth",
+        });
+      }));
+    }
+  }
+
   function update() {
+    // Changes to the result set return to page one; paging and switching tabs do not.
+    const resultsKey = JSON.stringify([
+      state.q, state.when, state.year, [...state.types].sort(), state.journal,
+      state.verify, state.oa, state.preprints, [...state.people].sort(), state.sort,
+    ]);
+    if (lastResultsKey !== null && resultsKey !== lastResultsKey) state.page = 1;
+    lastResultsKey = resultsKey;
     reflectState();
     syncDropdowns();
-    writeHash();
     let items = data.works.filter((w) => matches(w));
     renderActiveFilters();
     renderYearChart();
@@ -1123,12 +1202,19 @@
       items.sort((a, b) =>
         (b.publication_date || "").localeCompare(a.publication_date || ""),
       );
-    const base = state.verify === siteDefaults().verify && !state.preprints && !state.types.length ? headlineWorks().length : data.works.length;
-    els.count.textContent =
-      `${items.length} of ${base} publications · since ${coverageStart()}` +
-      (data.newIds.size ? ` · ${data.newIds.size} new in the last 7 days` : "");
+    const pageCount = Math.max(1, Math.ceil(items.length / state.pageSize));
+    state.page = Math.min(Math.max(1, state.page), pageCount);
+    const start = (state.page - 1) * state.pageSize;
+    const end = Math.min(start + state.pageSize, items.length);
+    writeHash();
+    const total = items.length.toLocaleString("en-GB");
+    els.count.textContent = items.length > state.pageSize
+      ? `${start + 1}–${end} of ${total} publications`
+      : `${total} ${items.length === 1 ? "publication" : "publications"}`;
     renderSelectedProfiles();
-    els.list.innerHTML = items.map(render).join("");
+    els.list.start = start + 1;
+    els.list.innerHTML = items.slice(start, end).map(render).join("");
+    renderPagination(pageCount);
     els.empty.classList.toggle("hidden", items.length > 0);
     els.list.querySelectorAll("[data-person]").forEach((b) =>
       b.addEventListener("click", () => {
@@ -1188,23 +1274,10 @@
   function render(w) {
     const link = w.doi || w.landing_url || w.openalex_url;
     const isNew = data.newIds.has(w.id);
-    const members = workMembers(w)
-      .map((s) => {
-        const st = (w.affiliation_status || {})[s] || "unknown";
-        const affs = (
-          (w.member_affiliations && w.member_affiliations[s]) ||
-          w.author_profiles?.[s]?.affiliations ||
-          []
-        ).join("; ");
-        const mark =
-          st === "verified" || !w.group_members.includes(s)
-            ? ""
-            : st === "mismatch"
-              ? " <span class='badge warn' title='other affiliation on this paper'>other affil.</span>"
-              : " <span class='badge warn' title='no affiliation recorded by OpenAlex'>no affil.</span>";
-        return `<li><button class="link" data-person="${esc(s)}" title="${esc(affs || "no affiliation recorded by OpenAlex")}"><b>${esc(nameOf(s))}</b>${mark}</button></li>`;
-      })
-      .join("");
+    const memberSlugs = workMembers(w);
+    const memberPreview = memberSlugs.slice(0, 4)
+      .map((s) => `<button type="button" class="link cds-author" data-person="${esc(s)}" title="Explore publications by ${esc(nameOf(s))}">${esc(nameOf(s))}</button>`)
+      .join(", ");
     const authorCount = w.author_count || w.authors.length;
     const normalizeName = (name) =>
       String(name)
@@ -1240,13 +1313,20 @@
     ]
       .filter(Boolean)
       .join(" · ");
-    return `<li class="item">
-      <div class="publication-top"><span class="journal-name">${esc(w.journal || "Research publication")}</span><span class="badges"><span class="badge pill-${esc(typeGroupKey(w.type))}" title="publication type (OpenAlex)">${esc(fmtType(w.type) || "publication")}</span>${isNew ? '<span class="badge new">new</span>' : ""}${w.manual === "confirmed" ? '<span class="badge manual" title="confirmed by hand in overrides.yml">confirmed</span>' : !isCounted(w) ? '<span class="badge warn" title="not counted: outside the team window, or this author needs a verified group affiliation (overrides.yml) and none was recorded">not counted</span>' : ""}${w.is_oa ? '<span class="badge oa" title="open access">open access</span>' : ""}</span></div>
+    const date = new Date((w.publication_date || "") + "T12:00:00Z");
+    const dateLabel = Number.isNaN(date.getTime()) ? w.year || "" : date.toLocaleDateString("en-GB", { day: "numeric", month: "short", year: "numeric", timeZone: "UTC" });
+    return `<li class="item" data-work-id="${esc(w.id)}">
+      <div class="publication-top"><span class="journal-name">${esc(w.journal || "Research publication")}</span><span class="publication-date">${isNew ? '<span class="badge new">new</span> ' : ""}${esc(dateLabel)}</span></div>
       <h3><a href="${esc(link)}" target="_blank" rel="noopener">${esc(w.title)}</a></h3>
+      ${memberPreview ? `<div class="authors author-preview"><span class="author-list-label">CDS</span> ${memberPreview}${memberSlugs.length > 4 ? ` <span class="author-list-note">+${memberSlugs.length - 4} more</span>` : ""}</div>` : ""}
+      <div class="publication-footer"><span class="badges"><span class="badge pill-${esc(typeGroupKey(w.type))}">${esc(fmtType(w.type) || "publication")}</span>${w.manual === "confirmed" ? '<span class="badge manual" title="confirmed by hand in overrides.yml">confirmed</span>' : ""}${w.is_oa ? '<span class="badge oa">open access</span>' : ""}</span><a class="read-paper" href="${esc(link)}" target="_blank" rel="noopener">Read paper <span aria-hidden="true">↗</span></a></div>
+      <details class="paper-details"><summary>${w.abstract ? "Abstract & publication details" : "Publication details"}</summary>
+      <div class="paper-details-body">
       <div class="meta">${meta}</div>
-      <div class="authors authors-full"><span class="author-list-label">Authors (${authorCount}):</span> ${authors}${incomplete ? ` <span class="author-list-note">· ${w.authors.length} names available in OpenAlex</span>` : ""}</div>
-      ${w.abstract ? `<details class="abstract"><summary>Abstract</summary>${formatAbstract(w.abstract)}</details>` : ""}
+      <div class="authors authors-full"><span class="author-list-label">All authors (${authorCount}):</span> ${authors}${incomplete ? ` <span class="author-list-note">· ${w.authors.length} names available in OpenAlex</span>` : ""}</div>
+      ${w.abstract ? `<div class="abstract">${formatAbstract(w.abstract)}</div>` : ""}
       <div class="links">${w.doi ? `<a href="${esc(w.doi)}" target="_blank" rel="noopener">DOI ↗</a>` : ""}${w.oa_url ? `<a href="${esc(w.oa_url)}" target="_blank" rel="noopener">Full text ↗</a>` : ""}<a href="${esc(w.openalex_url)}" target="_blank" rel="noopener">OpenAlex ↗</a>${studioLink(w)}<span class="meta work-id" title="use this id in overrides.yml">${esc(w.id)}</span></div>
+      </div></details>
     </li>`;
   }
 

@@ -218,17 +218,20 @@ text when a draft exists (needs `ANTHROPIC_API_KEY`), otherwise the title and th
 ### Social posts: the social post studio
 
 [Social post studio](https://maastrichtu-cds.github.io/pubpulse/social.html) (*Social posts* in the menu): a page for
-making a LinkedIn post for any paper, in three steps, without accounts or keys.
+making a LinkedIn post for a paper, in three steps, without connecting an account or entering API keys in pubpulse.
 
-1. **Choose the paper**: paste a DOI (or pick a recent paper). Papers outside pubpulse are looked up live in OpenAlex,
+1. **Choose the paper**: use its LinkedIn post link in the publication overview, or paste a DOI. Papers outside pubpulse are looked up live in OpenAlex,
    and CDS authors are recognised by their OpenAlex id or ORCID.
-2. **Write it with an AI chat**: *Copy prompt* copies the pipeline's own instructions plus the paper (title, journal,
-   authors, abstract); paste it into claude.ai, ChatGPT or Copilot, paste the JSON answer back, *Import answer*.
-3. **Edit, copy and download**: post text and first comment with a live LinkedIn preview; the card image (headline,
-   "published in" line, byline, optional own photo) is redrawn in the browser and downloaded as PNG.
+2. **Create a draft**: *Copy prompt* copies the writing guidelines and selected paper, with a JSON-only output contract
+   for `headline`, `post`, `comment` and `short`. Paste it into ChatGPT or another AI chat, copy the complete reply, then
+   choose *Paste & import*. If clipboard access is unavailable, open *Or paste the JSON manually* and paste it there.
+   The importer accepts raw or fenced JSON and validates all four fields before replacing the draft.
+3. **Edit and export**: separate *Post text* and *Card image* tabs keep the controls compact, alongside a live preview.
+   Copy the post and first comment, then copy or download the 1200 × 627 PNG card. A short version for other channels
+   is available under the post editor. Optional photos stay in the current browser tab.
 
-Nothing is stored. Papers with a pipeline draft start from it. Every paper on the website, and the *Social media* tab,
-links to the studio. Preprints and datasets are not posted.
+Studio edits are not stored. Papers with a pipeline draft start from it. Publication rows link to the studio.
+Preprints and datasets are not posted.
 
 **Writing rules** (`SYSTEM_PROMPT` in pubpulse/social.py, shared by the pipeline and the studio): the post is an advert
 for the paper (no limitations), but every statement must be true to the abstract. The headline restates the abstract's
@@ -330,6 +333,7 @@ python -m pubpulse sync               # updates people.yml and data/
 python -m pubpulse build              # dist/ (site), data/feed.xml, out/digest.html, out/teams.json
 python -m http.server -d dist 8000    # open http://localhost:8000
 pytest
+node --test tests/social-editor.test.cjs  # social prompt and JSON-import checks
 ```
 
 ### Why OpenAlex and not ORCID or Google Scholar
