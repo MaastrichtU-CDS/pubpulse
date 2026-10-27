@@ -4,7 +4,55 @@
 <link href="https://maastrichtu-cds.github.io/pubpulse/"/>
 <link rel="self" href="https://maastrichtu-cds.github.io/pubpulse/feed.xml"/>
 <id>https://maastrichtu-cds.github.io/pubpulse/</id>
-<updated>2026-10-26T11:52:20+00:00</updated>
+<updated>2026-10-27T10:49:01+00:00</updated>
+<entry>
+<title>Brain state locks silent memories in a trained fly connectome: Core data and models</title>
+<link href="https://doi.org/10.5281/zenodo.23629826"/>
+<id>https://openalex.org/W7223572531</id>
+<updated>2026-10-27T00:00:00Z</updated>
+<summary>Zenodo (CERN European Organization for Nuclear Research) · 2026-10-25 · group authors: Xuanhe Hou
+
+Every file that the paper's analysis, renders, figure builds and writing scripts read; the models, configurations, logs and results of every training run and evaluation in Table S3; and the published result tables, figures, videos, figure source data and supplemental tables. Unpack the archives into the code release; MANIFEST.csv lists every file with its SHA-256, and verify_deposit.py checks and unpacks them. See README.md. Funding: This work was supported by the National Natural Science Foundation of China (grant nos. 82160215, 81660174, and 82271169); the Guangdong Provincial Key Laboratory of Autophagy and Major Chronic Non-communicable Diseases (grant no. 2022B1212030003); the Research Startup Funds for High-level Talents in the Affiliated Hospital of Guangdong Medical University (grant no. GCC20220013); the College Students' Innovative Entrepreneurial Training Plan Program (grant no. S202510571025); and the 2025 Artificial Intelligence-Enabled Medical Device Innovation Task (Open Competition Mechanism, project no. 2025-AISJK-02007).</summary>
+</entry>
+<entry>
+<title>Brain state locks silent memories in a trained fly connectome: Extended data and validation records</title>
+<link href="https://doi.org/10.5281/zenodo.23629834"/>
+<id>https://openalex.org/W7223550845</id>
+<updated>2026-10-27T00:00:00Z</updated>
+<summary>Zenodo (CERN European Organization for Nuclear Research) · 2026-10-25 · group authors: Xuanhe Hou
+
+The verification replays, behavior features of every training update and dense recordings that no analysis of the paper reads, completing the run folders of part 1. See README.md. Funding: This work was supported by the National Natural Science Foundation of China (grant nos. 82160215, 81660174, and 82271169); the Guangdong Provincial Key Laboratory of Autophagy and Major Chronic Non-communicable Diseases (grant no. 2022B1212030003); the Research Startup Funds for High-level Talents in the Affiliated Hospital of Guangdong Medical University (grant no. GCC20220013); the College Students' Innovative Entrepreneurial Training Plan Program (grant no. S202510571025); and the 2025 Artificial Intelligence-Enabled Medical Device Innovation Task (Open Competition Mechanism, project no. 2025-AISJK-02007).</summary>
+</entry>
+<entry>
+<title>Postoperative forward flexion loss in Adolescent Idiopathic Scoliosis: How it relates to the lowest instrumented vertebra and function</title>
+<link href="https://doi.org/10.1016/j.gaitpost.2025.06.018"/>
+<id>https://openalex.org/W4411593465</id>
+<updated>2026-10-27T00:00:00Z</updated>
+<summary>Gait &amp; Posture · 2025-06-24 · group authors: Thijs Ackermans</summary>
+</entry>
+<entry>
+<title>The impact of digital tools and the expected digital transformation in radiotherapy on Dutch radiation therapists (RTTs)</title>
+<link href="https://doi.org/10.1016/j.tipsro.2025.100319"/>
+<id>https://openalex.org/W4411024156</id>
+<updated>2026-10-27T00:00:00Z</updated>
+<summary>Technical Innovations &amp; Patient Support in Radiation Oncology · 2025-06-01 · group authors: Thijs Ackermans
+
+Background and Purpose: Technological advancements have the potential to mitigate RTT shortages, burnout levels, and turnover rates. However, it is unclear if RTTs currently experience technostress (stress or anxiety from being overwhelmed by technology) and how extensive digital tool usage impacts key job performance indicators (e.g., job engagement, satisfaction, and turnover intentions). This study investigates the impact of digital tools used and expected digital transformation on RTTs' technostress and key job performance indicators. Materials and Methods: A survey was distributed to RTTs across all Dutch radiotherapy centers, resulting in 265 respondents. The survey included validated questionnaires on digital tool use, technostress, job autonomy, innovative work behavior and job performance indicators. Relationships were assessed using linear regression models and paired samples T-tests (p &lt; 0.05). Results: The number of digital tools used had no significant effect (p &lt; 0.05) on key job performance indicators and was not related to technostress. Technostress negatively impacted key job performance indicators, but explained less than 7 % of the variance. Other factors, such as job autonomy, had a greater influence. When presented with a description of the future perspective of their job role after the expected digital transformation, RTTs reported small declines in key job performance indicators. Conclusion: Current RTT performance is not affected by the number of digital tools used, as RTTs are used to working with digital tools. RTTs showed no technostress. After the predicted digital transformation RTTs remained satisfied and engaged. Ensuring RTTs feel skilled and empowered with decision-making authority is crucial before introducing new digital tools.</summary>
+</entry>
+<entry>
+<title>Placement of ilio-sacral screws in fusionless technique for pediatric neuromuscular scoliosis utilizing planning software, in conjunction with intraoperative navigation, results in a safer optimal screw: a CT-based study</title>
+<link href="https://doi.org/10.1007/s43390-024-00915-x"/>
+<id>https://openalex.org/W4399730398</id>
+<updated>2026-10-27T00:00:00Z</updated>
+<summary>Spine Deformity · 2024-06-17 · group authors: Thijs Ackermans</summary>
+</entry>
+<entry>
+<title>Postoperative Trunk Mobility Recovery and the Predictive Role of the Lowest Instrumented Vertebra in Adolescent Idiopathic Scoliosis Fusion Surgery</title>
+<link href="https://doi.org/10.2139/ssrn.4912112"/>
+<id>https://openalex.org/W4401504239</id>
+<updated>2026-10-27T00:00:00Z</updated>
+<summary>SSRN Electronic Journal · 2024-01-01 · group authors: Thijs Ackermans</summary>
+</entry>
 <entry>
 <title>Cross-disease multi-omics integration reveals shared mechanisms driving the breast cancer-rheumatoid arthritis association</title>
 <link href="https://doi.org/10.1016/j.nexres.2026.102285"/>
@@ -386,57 +434,5 @@ Introduction: Prelacteal feeding, the practice of giving newborns substances oth
 <summary>iScience · 2026-06-01 · group authors: Xuanhe Hou
 
 Early identification of ICU patients at high mortality risk is essential for triage and timely intervention. We present adaptive layer fusion with intelligent attention (ALFIA), a modular architecture that jointly trains low-rank adaptation (LoRA) adapters and an adaptive layer-weighting mechanism to fuse multi-layer semantic features from a pretrained transformer backbone. ALFIA operates on text-encoded representations of the structured EHR data , in which tabular clinical variables (demographics, vital signs, laboratory values, and severity scores) are converted into standardized natural-language descriptions rather than processed as free-text clinical notes. Evaluated on the CriticalWindow-24 benchmark with MIMIC-IV and eICU cohorts, ALFIA achieves strong AUPRC while maintaining a balanced precision-recall profile. The learned embeddings can be further combined with gradient boosting (ALFIA-boost) or neural networks (ALFIA-nn) for additional gains. These findings demonstrate that text-encoded structured EHR data can support practical, generalizable early-warning models for ICU mortality risk stratification.</summary>
-</entry>
-<entry>
-<title>Patient characteristics of non-participants and reasons for non-participation in cardiac (tele)rehabilitation—a prospective analysis</title>
-<link href="https://doi.org/10.3389/fresc.2026.1844025"/>
-<id>https://openalex.org/W7162143175</id>
-<updated>2026-10-21T00:00:00Z</updated>
-<summary>Frontiers in Rehabilitation Sciences · 2026-05-22 · group authors: Rutger van Mierlo, Petros Kalendralis
-
-Introduction Low participation in cardiac rehabilitation after acute myocardial infarction remains problematic. Cardiac telerehabilitation has emerged as a strategy to improve the uptake by addressing clinical, interpersonal, logistical, and healthcare system-related barriers. In this study, our aim is to determine which patient-related characteristics could lead to non-participation in cardiac rehabilitation, as well as to the reasons for non-participation. Methods In our study, the REHAB + study, cardiac telerehabilitation was implemented in routine clinical practice. In this sub analysis, observational data were collected between November 2021 and 2024 after its implementation in Zuyderland medical center, the Netherlands. After enrolment, patients could choose to participate in center-based cardiac rehabilitation, cardiac telerehabilitation, or were non-participants. Results A total of 328 patients with recent acute myocardial infarction were included. Two hundred (61%) patients participated in center-based cardiac rehabilitation, 64 (20%) in cardiac telerehabilitation, and 64 (20%) were non-participants. Non-participants were older (69 ± 11 years) than participants in center-based cardiac rehabilitation (64 ± 10 years) or cardiac telerehabilitation (61 ± 10 years) ( p &lt; 0.001 ). There were fewer smokers in the cardiac telerehabilitation group (18%), than center-based cardiac rehabilitation (35%) or non-participation (38%). The most common reason for non-participation was a lack of interest, or a failure to acknowledge its necessity (58%). Discussion A high proportion of our myocardial infarction population participated in either cbCR or CTR after trial enrollment. CTR offers remote-access patient education, counselling, and monitoring, which in our study was more appealing to the non-smoking population. Importantly, non-participation in cardiac rehabilitation was influenced by the aging population, mainly for lack of interest, and therefore CR programs should find ways to make their programs more appealing to the aging population. These findings support further work on patient-centered counselling and on adapting rehabilitation pathways to the needs of older patients.</summary>
-</entry>
-<entry>
-<title>The Essential Components and Critical Conditions for Success in a Learning Health System in Oncology</title>
-<link href="https://doi.org/10.3233/shti260729"/>
-<id>https://openalex.org/W7166677609</id>
-<updated>2026-10-21T00:00:00Z</updated>
-<summary>Studies in health technology and informatics · 2026-05-21 · group authors: Matthijs Sloep
-
-Building on previous research and implementations, this study identifies the essential structural and functional components required to develop a Learning Health System (LHS) for oncology in the Netherlands. Drawing on work related to the Netherlands Cancer Registry (NCR), we systematically mapped our studies onto the LHS framework to examine component coverage and integration. Medical informatics advances LHS development by enabling structured data capture, computable guideline representation, continues real-world data analysis, and data-driven guideline refinement. In the Netherlands, strong integration with the NCR provides a robust foundation for continuous learning, moving the vision of a fast, data-driven health system closer to reality. Our findings show that while the methodological and technical foundations of LHS components are well established, integration gaps remain. The next step is engaging multidisciplinary learning communities, supported by clear governance, to enable continuous learning, and sustained improvement in oncology care.</summary>
-</entry>
-<entry>
-<title>Uncovering Topics in Dutch Patient Messages in Inflammatory Bowel Disease: A Comparative Study of Embedding Models for Neural Topic Modeling</title>
-<link href="https://doi.org/10.3233/shti260350"/>
-<id>https://openalex.org/W7161960653</id>
-<updated>2026-10-21T00:00:00Z</updated>
-<summary>Studies in health technology and informatics · 2026-05-21 · group authors: Jiaxu Zhang, Sander Puts, Yomi Okegunna, Andre Dekker, Rianne Fijten
-
-This study applied natural language processing to identify common topics in 12,054 Dutch patient-provider messages in inflammatory bowel disease. Using the BERTopic framework, three embedding models were evaluated with topic diversity, Cv coherence, and topic assignment proportion. A lightweight Dutch-specific embedding model (RobBERT) outperformed two larger multilingual models (MPNet Sentence Transformer and QWEN3-embedding-8B). We identified 120 sentence-level topics covering medical and administrative themes. Results showed that 22% of messages did not require specialist attention, highlighting the potential of neural topic models for automated triage in digital IBD care.</summary>
-</entry>
-<entry>
-<title>LinkedDicom: Indexing DICOM Metadata Using Semantic Web Technologies</title>
-<link href="https://doi.org/10.3233/shti260404"/>
-<id>https://openalex.org/W7161945525</id>
-<updated>2026-10-21T00:00:00Z</updated>
-<summary>Studies in health technology and informatics · 2026-05-21 · group authors: Johan van Soest, Ananya Choudhury, Alessio Romita, Tim Hendriks, Leonard Wee, Andre Dekker, Varsha Gouthamchand
-
-The Digital Imaging and Communications in Medicine (DICOM) standard contains rich metadata describing patients, studies, series, and imaging instances, yet archiving systems typically store only a limited subset of these elements. For research purposes, integration of imaging metadata with clinical and experimental data is essential. To address this, we developed LinkedDicom, a lightweight Python package for converting DICOM metadata into Resource Description Framework (RDF) triples and querying using Semantic Web technologies. Building on lessons learned from our earlier Semantic DICOM (SeDI) toolkit, LinkedDicom was designed to be resource-efficient, and flexible to use in various scenarios. We evaluated the package on a publicly available head and neck cancer dataset and measured query performance time in various scenarios (using an SPARQL endpoint and per-patient file storage), demonstrating that on-disk storage with selective in-memory analysis provides a flexible alternative to resource-intensive live databases. Our findings show that LinkedDicom enables efficient, scalable, and FAIR-compliant representation of imaging metadata for research, with practical trade-offs between database-driven and on-demand querying.</summary>
-</entry>
-<entry>
-<title>Report on the status of posting results</title>
-<link href="https://doi.org/10.5281/zenodo.20340069"/>
-<id>https://openalex.org/W7162117453</id>
-<updated>2026-10-21T00:00:00Z</updated>
-<summary>Zenodo (CERN European Organization for Nuclear Research) · 2026-05-19 · group authors: Petros Kalendralis
-
-Deliverable D1.12 reports on the status of AIDAVA's Open Science compliance as of Month 41 (January 2026), documenting how the consortium has deposited, described and made accessible its scientific publications, research datasets and other project outputs in accordance with Horizon Europe Open Access obligations and FAIR principles. A final update on these activities will be included in D6.11 Update of Report on dissemination and communication activities 2 due in Month 48. Scientific publications. The consortium has significantly exceeded its contractual KPI of 15 peer-reviewed publications: as of M41, AIDAVA researchers have produced 25 peer-reviewed publications and 8 preprints, with 24 papers indexed in Scopus and 14 in PubMed Central. Cumulative citations exceed 1,000 in Google Scholar (613 in Scopus), and the project h-index has risen from 6 at M36 to 8 at M41. All public deliverables (23 in total) are deposited on Zenodo and mirrored on OpenAIRE, ensuring long-term traceability and broad visibility. Research data. AIDAVA applies the principle of "as open as possible, as close as necessary" to its two categories of research data. Pseudonymised and annotated clinical text corpora in Dutch (MUMC+), German (MUG) and Estonian (NEMC) — used for NLP model training — are managed under strict data transfer agreements and will be deleted or archived in de-identified label-only form at project end. Fully identifiable patient data (PHKGs, FHIR IPS, SMART scores) remain within the secure infrastructure of each clinical site in full compliance with GDPR, ethics committee approvals, and institutional governance; they have not left the hospital environment. Dissemination of other results. Beyond publications, AIDAVA has disseminated results through 15 conferences and symposia, 2 patient consultant workshops (including the February 2025 Brussels event co-hosted with EHN), 2 SULO co-creation workshops, and through public GitHub repositories for the AIDAVA Reference Ontology and SULO codebase. Video outputs are hosted on the AIDAVA YouTube channel and Website Compliance status. The consortium has established a shared publication strategy governing authorship, acknowledgements and repository submission workflows, enabling systematic tracking via tools such as Harzing's Publish or Perish. Open Science compliance is monitored through WP6 and aligned with the project's Data Management Plan and Plan for Dissemination and Exploitation of Results (PDEC).</summary>
-</entry>
-<entry>
-<title>Comparing the performance of three software programmes for manual and (semi-)automatic liver volumetry</title>
-<link href="https://doi.org/10.21203/rs.3.rs-9394813/v1"/>
-<id>https://openalex.org/W7160058866</id>
-<updated>2026-10-21T00:00:00Z</updated>
-<summary>Research Square · 2026-05-04 · group authors: Ralph Brecheisen</summary>
 </entry>
 </feed>
