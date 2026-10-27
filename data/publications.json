@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-27T10:49:01+00:00",
+ "generated": "2026-10-27T11:14:06+00:00",
  "group_name": "Clinical Data Science (Maastro / Maastricht University)",
  "site_url": "https://maastrichtu-cds.github.io/pubpulse/",
  "repo_url": "https://github.com/MaastrichtU-CDS/pubpulse",
@@ -13,15 +13,8 @@
  "last_run": {
   "date": "2026-10-27",
   "baseline": false,
-  "new_count": 6,
-  "new_ids": [
-   "W4399730398",
-   "W4401504239",
-   "W4411024156",
-   "W4411593465",
-   "W7223550845",
-   "W7223572531"
-  ],
+  "new_count": 0,
+  "new_ids": [],
   "needs_review": [
    "ali-al-zein",
    "ali-zaila",
