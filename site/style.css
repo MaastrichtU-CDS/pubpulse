@@ -2245,3 +2245,6 @@ button.type-key[aria-pressed="true"] { border-color: var(--navy); background: va
   .studio-hero h1 { font-size: 30px; }
   .se-step { padding: 14px; }
 }
+.badge.ready { background: #e6f4ea; color: #27623d; }
+.se-howto { font-size: 12px; margin: 6px 0 0; }
+.studio-hint { margin: 10px 0 0; font-size: 13px; }

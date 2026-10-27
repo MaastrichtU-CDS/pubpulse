@@ -121,16 +121,20 @@
               <label class="se-label">Photo or figure <span class="meta">optional, shown on the right; stays on your computer</span>
                 <input class="se-photo" type="file" accept="image/*"></label>
               <div class="draft-actions">
-                <button type="button" class="button button-small button-dark" data-act="download">Download card (PNG)</button>
+                <button type="button" class="button button-small button-dark" data-act="copy-card">Copy card image</button>
+                <button type="button" class="button button-small button-ghost" data-act="download">Download card (PNG)</button>
+                ${canShareFiles() ? '<button type="button" class="button button-small button-ghost" data-act="share">Share…</button>' : ""}
                 <button type="button" class="button button-small button-ghost" data-act="reset-card">Reset card</button>
               </div>
+              <p class="meta se-howto">LinkedIn cannot receive images from a website. Easiest: <b>Open LinkedIn with this text</b>,
+                then <b>Copy card image</b> and paste it into the post (Ctrl/Cmd+V).${canShareFiles() ? " <b>Share…</b> opens your device's share menu with the card (pick LinkedIn); the app may drop the text, so copy the post first." : ""}</p>
             </fieldset>
           </div>
           <div class="se-preview">
             <div class="li-preview" aria-label="LinkedIn preview">
               <div class="li-head"><span class="li-avatar" aria-hidden="true"></span><div><b>Clinical Data Science · Maastricht University</b><br><span class="meta">Just now</span></div></div>
               <div class="li-body"></div>
-              ${fig ? `<figure class="se-figure"><img src="${esc(fig.path)}" alt="${esc(fig.alt || "Figure from the paper")}" loading="lazy"><figcaption>${fig.description ? `${esc(fig.description)}<br>` : ""}${esc(fig.credit || "")} · <a href="${esc(fig.path)}" download>download figure</a> (post it first, the card second)</figcaption></figure>` : ""}
+              ${fig ? `<figure class="se-figure"><img src="${esc(fig.path)}" alt="${esc(fig.alt || "Figure from the paper")}" loading="lazy"><figcaption>${fig.description ? `${esc(fig.description)}<br>` : ""}${esc(fig.credit || "")} · <button type="button" class="link" data-act="copy-figure">copy figure</button> · <a href="${esc(fig.path)}" download>download figure</a> (post it first, the card second)</figcaption></figure>` : ""}
               <canvas class="se-canvas" width="1200" height="627" aria-label="Card image preview"></canvas>
             </div>
             ${draft?.figure_note ? `<p class="meta">${esc(draft.figure_note)}</p>` : ""}
@@ -149,10 +153,23 @@
       q(".se-count").textContent = `${post.length} of 3000 characters · LinkedIn shows about the first ${FOLD} before "see more" (dimmed text is below the fold)`;
       q(".se-open").href = "https://www.linkedin.com/feed/?shareActive=true&text=" + encodeURIComponent(linkedinText(post));
     };
+    // The latest card as a PNG blob, kept ready so Share can run straight from the click (browsers require that).
+    let cardBlob = null;
     const refreshCard = () => {
       const n = f.headline.value.trim().length;
       q(".se-hcount").textContent = `${n} characters${n > 60 ? " · shorter reads better (≤ 60)" : ""}`;
-      drawCard(q(".se-canvas"), { headline: f.headline.value, proof: f.proof.value, byline: f.byline.value, photo });
+      drawCard(q(".se-canvas"), { headline: f.headline.value, proof: f.proof.value, byline: f.byline.value, photo })
+        .then(() => q(".se-canvas").toBlob((b) => (cardBlob = b), "image/png"));
+    };
+    const copyImage = async (b, blobPromise) => {
+      const label = b.textContent;
+      try {
+        await navigator.clipboard.write([new ClipboardItem({ "image/png": blobPromise })]);
+        b.textContent = "Copied: paste it in LinkedIn";
+      } catch {
+        b.textContent = "Copy not supported here: use Download";
+      }
+      setTimeout(() => (b.textContent = label), 2500);
     };
     setText(); setCard(); refreshText(); refreshCard();
     f.post.addEventListener("input", refreshText);
@@ -186,6 +203,12 @@
         msg.textContent = `Imported${flags ? ` · ${flags} point${flags === 1 ? "" : "s"} marked [check]: verify them in the paper` : ""}. Read it before posting.`;
       }
       else if (act === "copy-post") copy(b, linkedinText(f.post.value));
+      else if (act === "copy-card") copyImage(b, new Promise((resolve) => q(".se-canvas").toBlob(resolve, "image/png")));
+      else if (act === "copy-figure") copyImage(b, fetch(fig.path).then((r) => r.blob()).then((blob) => blob.type === "image/png" ? blob : toPng(blob)));
+      else if (act === "share" && cardBlob) {
+        const files = [new File([cardBlob], `cds-${paper.id || "paper"}-card.png`, { type: "image/png" })];
+        navigator.share({ files, text: linkedinText(f.post.value), title: paper.title }).catch(() => {});
+      }
       else if (act === "copy-comment") copy(b, f.comment.value);
       else if (act === "reset-text") { setText(); refreshText(); }
       else if (act === "reset-card") { setCard(); refreshCard(); }
@@ -219,10 +242,30 @@
     return cardAssets;
   }
 
+  // Device share menu with files (phones, Safari, Edge); hidden where it is not available.
+  function canShareFiles() {
+    try {
+      return !!navigator.canShare && navigator.canShare({ files: [new File([""], "card.png", { type: "image/png" })] });
+    } catch {
+      return false;
+    }
+  }
+
+  // Clipboards only take PNG: convert other image types through a canvas.
+  function toPng(blob) {
+    return createImageBitmap(blob).then((bmp) => {
+      const c = document.createElement("canvas");
+      c.width = bmp.width;
+      c.height = bmp.height;
+      c.getContext("2d").drawImage(bmp, 0, 0);
+      return new Promise((resolve) => c.toBlob(resolve, "image/png"));
+    });
+  }
+
   function drawCard(canvas, card) {
     const W = 1200, H = 627, M = 84, NAVY = "#001c3d", ACCENT = "#049fd8";
     const font = (size, bold) => `${bold ? "700 " : ""}${size}px "Helvetica Neue", Helvetica, Arial, sans-serif`;
-    loadCardAssets().then((assets) => {
+    return loadCardAssets().then((assets) => {
       const ctx = canvas.getContext("2d");
       const bandY = H - 92;
       const textRight = card.photo ? 740 : W - M - 60;

@@ -189,12 +189,11 @@ def build_digest(pubs: dict, cfg: dict, pending_ids: list[str] | None = None, is
     dg = cfg.get("digest") or {}
     all_items = sorted(new_works(pubs, pending_ids), key=lambda w: w.get("publication_date") or "", reverse=True)
     recent, _older = split_recent(all_items, int(dg.get("recent_days", 120)), last.get("date"))
-    # The newsletter follows the team-window rule: only counted papers are listed; the rest is one note for maintainers.
+    # The newsletter follows the team-window rule: only counted papers are listed.
     counted = lambda w: bool(w.get("counted", w.get("verified", True)))  # noqa: E731
     skip_types = set(dg.get("exclude_types", ["dataset"]))  # data deposits are not news; they stay on the website
     recent = [w for w in recent if w.get("type") not in skip_types]
     items = [w for w in recent if counted(w)]
-    uncounted_new = len(recent) - len(items)
     # Papers with a LinkedIn draft (headline and card) lead the issue.
     items.sort(key=lambda w: _draft_for(w) is None)
     site = cfg.get("site_url", "")
@@ -221,9 +220,6 @@ def build_digest(pubs: dict, cfg: dict, pending_ids: list[str] | None = None, is
     sc = scholar_summary()
 
     notes = []
-    if uncounted_new:
-        notes.append(f'{uncounted_new} more new paper{"s are" if uncounted_new != 1 else " is"} not listed: outside the team window and no group affiliation recorded. '
-                     f'<a href="{html.escape(site)}#when=queued&amp;verify=uncounted" style="color:{ACCENT}">Check them</a> and confirm or reject them in overrides.yml.')
     if sc:
         parts = [f'{sc["missing"]} paper{"s" if sc["missing"] != 1 else ""} on Google Scholar profiles {"are" if sc["missing"] != 1 else "is"} not in pubpulse' if sc["missing"] else "",
                  f'{sc["not_attributed"]} {"are" if sc["not_attributed"] != 1 else "is"} in pubpulse but not linked to the person' if sc["not_attributed"] else ""]
@@ -280,8 +276,6 @@ def build_digest(pubs: dict, cfg: dict, pending_ids: list[str] | None = None, is
             text_lines.append(f"   {summary}")
         text_lines += [f"   {work_link(w)}", ""]
     text_lines += [f"All publications: {site}", f"Newsletter on the web: {site}digest.html"]
-    if uncounted_new:
-        text_lines += ["", f"{uncounted_new} more new paper(s) not listed (outside the team window, no group affiliation recorded): {site}#when=queued&verify=uncounted"]
     if review:
         text_lines += ["", f"{len(review)} staff profiles without a confirmed author match: {site}#coverage-notes"]
     text_lines += ["", "Unsubscribe: {{UNSUBSCRIBE_URL}}"]

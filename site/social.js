@@ -62,7 +62,7 @@
     $("paper-card").classList.remove("hidden");
     $("paper-card").innerHTML =
       `<p class="meta">${esc(paper.journal || "Publication")} · ${esc(paper.publication_date || "")} · ${esc((paper.type || "").replace(/-/g, " "))} · from ${esc(paper.source)}` +
-      ` ${draft?.post ? '<span class="badge approved">draft ready</span>' : '<span class="badge">no draft yet</span>'}</p>` +
+      ` ${draft?.post ? '<span class="badge ready">draft ready</span>' : '<span class="badge">no draft yet</span>'}</p>` +
       `<h3><a href="${esc(paper.link)}" target="_blank" rel="noopener">${esc(paper.title)}</a></h3>` +
       `<p class="meta">Group authors: ${esc(paper.group_authors.join(", ") || "none recognised (fill them in yourself)")}` +
       `${paper.abstract ? "" : " · <b>no abstract available</b>: the AI chat will have little to work with"}</p>${warn}`;
@@ -89,9 +89,6 @@
     ev.preventDefault();
     load($("paper-q").value);
   });
-  $("recent").addEventListener("change", () => {
-    if ($("recent").value) load($("recent").value);
-  });
 
   Promise.all([
     fetch("data/publications.json", { cache: "no-cache" }).then((r) => r.json()),
@@ -99,12 +96,6 @@
   ]).then(([pubs, social]) => {
     data = pubs;
     drafts = social;
-    const recent = data.works
-      .filter((w) => !["preprint", "dataset"].includes(w.type) && (w.verified || w.counted))
-      .sort((a, b) => (b.publication_date || "").localeCompare(a.publication_date || ""))
-      .slice(0, 80);
-    $("recent").innerHTML = '<option value="">Recent papers…</option>' +
-      recent.map((w) => `<option value="${esc(w.id)}">${esc(w.publication_date || "")} · ${drafts[w.id]?.post ? "✓ " : ""}${esc(w.title.slice(0, 110))}</option>`).join("");
     const params = new URLSearchParams(location.search);
     const start = params.get("id") || params.get("doi");
     if (start) { $("paper-q").value = start; load(start); }

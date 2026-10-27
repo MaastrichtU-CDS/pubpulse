@@ -9,16 +9,14 @@ Weekly overview of publications by the **Clinical Data Science** group (Maastro 
 - **Authorship statistics** (on the website, under *Statistics*): papers, % first author, % last author per person and per
   research group, following the website filters.
 
-## Lists you can edit (Google login, no GitHub needed)
+## What you can change yourself
 
 | What | Where | Who can edit |
 | --- | --- | --- |
-| "CDS authored" yes/no per paper | [review sheet](REVIEW_SHEET_EDIT_LINK) | invited editors, Google login |
 | Your ORCID / Google Scholar link | your own profile on the [staff page](https://www.clinicaldatascience.nl/staff) | website login |
-| Membership start/end dates (private) | ask a maintainer | maintainers only |
+| A paper wrongly attributed to you | ask a maintainer (one line in `overrides.yml`) | maintainers |
 
-Changes are picked up by the next run (daily for the sheets, Mondays for the staff page). To ask for edit access, contact
-a maintainer.
+Papers are not approved by hand: everything on the website and in the newsletter follows automatic rules.
 
 ## When is what updated?
 
@@ -31,7 +29,6 @@ a maintainer.
 | OpenAlex author matching per person | every 30 days, or immediately after an edit of people.yml |
 | Automatic search for missing ORCID / Scholar profiles | every 30 days per person (Mondays) |
 | Google Scholar cross-check | first day of the month |
-| Review sheet | every run |
 
 Every Monday a small robot reads the [staff page](https://www.clinicaldatascience.nl/staff), looks up every current
 staff member and follows recent former-staff collaborations in [OpenAlex](https://openalex.org) (a free, open catalogue that merges Crossref, PubMed, ORCID and
@@ -105,16 +102,11 @@ collecting papers. Existing supplied profile IDs are preserved. Negative results
 for 30 days. A configurable SerpAPI search cap preserves quota for the monthly publication cross-check.
 - Verified means the authorship on that paper mentions Maastro, Radiation Oncology, GROW or Medical Data Works.
   "Maastricht University" alone is deliberately not enough. Every paper shows, per group author: verified, other
-  affiliation, or no affiliation data. Papers with no verified group author are marked *unverified* and wait for the
-  manual check below. Set `affiliation_policy: require` in `config.yml` to hide them instead.
-
-**Manual check of unverified papers.**
-On the website choose *Group affiliation → Unverified only*. For each paper decide: ours or not. Then put its OpenAlex id
-(the `W…` shown under the paper) in [`overrides.yml`](overrides.yml) under `confirm:` or `reject:` and commit.
-Rejected papers disappear, confirmed ones lose the marker. The weekly digest links straight to this view when needed.
+  affiliation, or no affiliation data. Papers are not checked by hand. Set `affiliation_policy: require` in `config.yml` to drop
+  papers without a verified group author.
 
 **A paper is not mine (same name, different person).**
-Reject it in `overrides.yml` (see above). If it keeps happening, ask a maintainer to set your `openalex_id` in
+A maintainer puts its OpenAlex id (the `W…` shown under the paper) in [`overrides.yml`](overrides.yml) under `reject:`. If it keeps happening, ask a maintainer to set your `openalex_id` in
 `people.yml`, or add your ORCID to the staff profile.
 
 **I want the digest / to stop it.**
@@ -140,7 +132,7 @@ This refreshes everything and updates the digest preview; it does not send mail 
 | File | What |
 | --- | --- |
 | `config.yml` | group name, site URL, `since_year`, `track_sections` for active staff, former-staff collaboration window, institution keywords, `affiliation_policy` (`flag` or `require`) |
-| `overrides.yml` | manual decisions per paper: `confirm:` / `reject:` lists of OpenAlex ids |
+| `overrides.yml` | corrections per paper (`reject:` a wrongly attributed paper, `confirm:` a missed one) and the `verify_affiliation:` exceptions |
 | `people.yml` | refreshed from the staff page on every run. Hand-edited fields that are never overwritten: `openalex_id` (one id, or a list when OpenAlex split a person into several records), `orcid` (when the staff page has none), `exclude: true`, `notes`. To track someone who is not on the staff page, add an entry with `source: manual`. People who disappear from the page get an `active_until` date; they are still tracked for `departed_grace_months` (papers in the pipeline), but only papers with a verified group affiliation count. Their earlier papers stay on the site. |
 | `data/former_staff_review.json` | audit of every former staff member: shared papers, current coauthors, last collaboration, profile identifiers and follow-up status. A person without evidence remains explicitly unconfirmed. |
 
@@ -282,21 +274,10 @@ Known limits of this logic, discussed internally:
   the clear cases.
 - Start and end dates of membership do not solve this either: papers stay in the pipeline long after someone joins
   or leaves, so a date cut-off is wrong in both directions.
-- A manual check per paper is the only watertight method. The review sheet makes that possible for invited members,
-  but it is extra work and has not been adopted as a process yet.
+- Only a manual check per paper would be watertight; the group decided not to do that.
 
-Until that process is decided, the website and the digest carry a **disclaimer**: the numbers are automated, not
-manually verified, and contain mistakes. Treat the overview as internal and indicative, not as a reporting figure.
-
-### Review sheet: manual "CDS authored" decisions in a private Google Sheet
-
-For members who prefer a spreadsheet to editing overrides.yml: a private Google Sheet in the pubpulse Google account
-mirrors the Excel export and adds the columns **CDS authored (manual)** (yes / no) and **Review note**. Only invited
-editors can see or edit it. A small Apps Script ([appsscript/ReviewSheet.gs](appsscript/ReviewSheet.gs)) refreshes
-the data columns every Monday from the site export, keeps the manual columns, stamps who decided when, and hands the
-decisions to the weekly run through a key-protected endpoint. "yes" counts the paper (marked *confirmed*), "no"
-removes it; entries in overrides.yml win on conflict. Setup is in the script header (5 steps, about 5 minutes);
-secrets: `REVIEW_SHEET_URL`, `REVIEW_SHEET_KEY`.
+So the website and the newsletter carry a **disclaimer**: the numbers are automated, not manually verified, and
+contain mistakes. Treat the overview as internal and indicative, not as a reporting figure.
 
 ### The team-window rule
 

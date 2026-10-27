@@ -296,7 +296,6 @@
               <option value="verified">Verified affiliation only</option>
               <option value="uncounted">Not counted</option>
               <option value="unverified">Affiliation not verified</option>
-              <option value="approved">Approved for external communication</option>
             </select>
           </div>
 
@@ -368,9 +367,6 @@
             <button type="button" role="tab" id="tab-stats" aria-controls="panel-stats" aria-selected="false">
               Authorship statistics
             </button>
-            <button type="button" role="tab" id="tab-social" aria-controls="panel-social" aria-selected="false">
-              Social media <span class="tab-count" id="tab-social-count"></span>
-            </button>
           </div>
 
           <div id="panel-stats" role="tabpanel" aria-labelledby="tab-stats" hidden>
@@ -378,15 +374,6 @@
               <p class="stats-summary" id="stats-summary"></p>
               <div id="stats-body"></div>
             </section>
-          </div>
-
-          <div id="panel-social" role="tabpanel" aria-labelledby="tab-social" hidden>
-            <div class="social-intro">
-              <p><b>Make a LinkedIn post for any paper</b> in the <a href="social.html">social post studio</a>: an AI chat
-              writes it from the abstract, you polish the text and the card image. Papers outside pubpulse work too
-              (paste a DOI there). The list follows the filters; preprints and datasets are never posted.</p>
-            </div>
-            <ol class="social-list" id="social-list"></ol>
           </div>
 
           <div id="panel-list" role="tabpanel" aria-labelledby="tab-list">
@@ -479,11 +466,9 @@
         <a href="https://openalex.org" target="_blank" rel="noopener"
           >OpenAlex</a
         >
-        (CC0). Group affiliations are checked per author; papers without a
-        verified group affiliation are marked
-        <span class="badge warn">unverified</span>. Missing a paper? Make sure
-        the publisher has the author’s ORCID, or add the paper to the ORCID
-        record.
+        (CC0). Group affiliations are checked automatically per author. Missing a
+        paper? Make sure the publisher has the author’s ORCID, or add the paper
+        to the ORCID record.
       </p>
     </footer>
 

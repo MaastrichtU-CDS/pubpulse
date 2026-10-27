@@ -77,7 +77,7 @@
       verify: p.get("verify") || "",
       oa: p.get("oa") === "1",
       preprints: p.get("preprints") === "1",
-      view: ["stats", "social"].includes(p.get("view")) ? p.get("view") : location.hash === "#stats" ? "stats" : "list",
+      view: p.get("view") === "stats" || location.hash === "#stats" ? "stats" : "list",
     };
   }
   function writeHash() {
@@ -432,7 +432,7 @@
       });
       $("reset").addEventListener("click", () => resetAll());
       $("show-all").addEventListener("click", () => resetAll(true));
-      const tabs = [["list", $("tab-list")], ["stats", $("tab-stats")], ["social", $("tab-social")]];
+      const tabs = [["list", $("tab-list")], ["stats", $("tab-stats")]];
       tabs.forEach(([view, tab], i) => {
         tab.addEventListener("click", () => {
           state.view = view;
@@ -471,26 +471,12 @@
     }
   }
 
-  function renderSocialTab(items) {
-    const papers = items.filter(postable);
-    $("social-list").innerHTML = papers.length
-      ? papers.map((w) => {
-          const d = data.social && data.social[w.id];
-          const status = d?.post ? '<span class="badge approved">draft ready</span>' : '<span class="badge">no draft yet</span>';
-          return `<li class="social-row"><div class="social-row-head"><div><p class="meta">${esc(w.journal || "Publication")} · ${esc(w.publication_date || "")} ${status}</p>` +
-            `<h3>${esc((d && d.headline) || w.title)}</h3>${d?.headline ? `<p class="meta">${esc(w.title)}</p>` : ""}</div>` +
-            `<a class="button button-small button-dark" href="social.html?id=${encodeURIComponent(w.id)}">Make post →</a></div></li>`;
-        }).join("")
-      : '<li class="meta">No papers in the current selection (preprints and datasets are never posted).</li>';
-    $("tab-social-count").textContent = papers.length;
-  }
-
   function showTabs() {
     $("tab-list").parentElement.scrollIntoView({ behavior: matchMedia("(prefers-reduced-motion: reduce)").matches ? "instant" : "smooth" });
   }
 
   function renderTabs(count) {
-    for (const [view, tab, panel] of [["list", $("tab-list"), $("panel-list")], ["stats", $("tab-stats"), $("panel-stats")], ["social", $("tab-social"), $("panel-social")]]) {
+    for (const [view, tab, panel] of [["list", $("tab-list"), $("panel-list")], ["stats", $("tab-stats"), $("panel-stats")]]) {
       const on = state.view === view;
       tab.setAttribute("aria-selected", String(on));
       tab.tabIndex = on ? 0 : -1;
@@ -1074,7 +1060,6 @@
     if (state.verify === "uncounted" && isCounted(w)) return false;
     if (state.verify === "verified" && !w.verified) return false;
     if (state.verify === "unverified" && w.verified) return false;
-    if (state.verify === "approved" && !w.approved_external) return false;
     if (state.oa && !w.is_oa) return false;
     if (!options.ignoreYear && state.year && String(w.year) !== state.year)
       return false;
@@ -1124,8 +1109,6 @@
     renderTabs(items.length);
     renderPeople();
     if (state.view === "stats") renderStats();
-    if (state.view === "social") renderSocialTab(items);
-    else $("tab-social-count").textContent = items.filter(postable).length;
     if (state.sort === "cited")
       items.sort((a, b) => (b.cited_by_count || 0) - (a.cited_by_count || 0));
     else if (state.sort === "impact")
@@ -1198,13 +1181,9 @@
   // No preprints in external communication, and data deposits are not posted.
   const postable = (w) => !["preprint", "dataset"].includes(w.type);
 
-  // Posts are made in the social post studio (social.html); the list links there.
-  function draftHtml(w) {
-    if (!postable(w)) return "";
-    const d = data.social && data.social[w.id];
-    return `<div class="share-link"><a class="button button-small button-ghost" href="social.html?id=${encodeURIComponent(w.id)}">Make a LinkedIn post →</a>` +
-      `<span class="meta">${d?.post ? `draft ready${d.flags ? ` · ${d.flags} point${d.flags === 1 ? "" : "s"} marked [check]` : ""}` : "write it with an AI chat in the studio"}</span></div>`;
-  }
+  // Posts are made in the social post studio (social.html); every postable paper links there.
+  const studioLink = (w) =>
+    postable(w) ? `<a href="social.html?id=${encodeURIComponent(w.id)}" title="Make a LinkedIn post in the social post studio">LinkedIn post →</a>` : "";
 
   function render(w) {
     const link = w.doi || w.landing_url || w.openalex_url;
@@ -1262,13 +1241,12 @@
       .filter(Boolean)
       .join(" · ");
     return `<li class="item">
-      <div class="publication-top"><span class="journal-name">${esc(w.journal || "Research publication")}</span><span class="badges"><span class="badge pill-${esc(typeGroupKey(w.type))}" title="publication type (OpenAlex)">${esc(fmtType(w.type) || "publication")}</span>${isNew ? '<span class="badge new">new</span>' : ""}${w.manual === "confirmed" ? '<span class="badge manual" title="confirmed by hand in overrides.yml">confirmed</span>' : !isCounted(w) ? '<span class="badge warn" title="not counted: outside the team window, or this author needs a verified group affiliation (overrides.yml) and none was recorded">not counted</span>' : ""}${w.approved_external ? '<span class="badge approved" title="approved for external communication">approved</span>' : ""}${w.is_oa ? '<span class="badge oa" title="open access">open access</span>' : ""}</span></div>
+      <div class="publication-top"><span class="journal-name">${esc(w.journal || "Research publication")}</span><span class="badges"><span class="badge pill-${esc(typeGroupKey(w.type))}" title="publication type (OpenAlex)">${esc(fmtType(w.type) || "publication")}</span>${isNew ? '<span class="badge new">new</span>' : ""}${w.manual === "confirmed" ? '<span class="badge manual" title="confirmed by hand in overrides.yml">confirmed</span>' : !isCounted(w) ? '<span class="badge warn" title="not counted: outside the team window, or this author needs a verified group affiliation (overrides.yml) and none was recorded">not counted</span>' : ""}${w.is_oa ? '<span class="badge oa" title="open access">open access</span>' : ""}</span></div>
       <h3><a href="${esc(link)}" target="_blank" rel="noopener">${esc(w.title)}</a></h3>
       <div class="meta">${meta}</div>
       <div class="authors authors-full"><span class="author-list-label">Authors (${authorCount}):</span> ${authors}${incomplete ? ` <span class="author-list-note">· ${w.authors.length} names available in OpenAlex</span>` : ""}</div>
       ${w.abstract ? `<details class="abstract"><summary>Abstract</summary>${formatAbstract(w.abstract)}</details>` : ""}
-      ${draftHtml(w)}
-      <div class="links">${w.doi ? `<a href="${esc(w.doi)}" target="_blank" rel="noopener">DOI ↗</a>` : ""}${w.oa_url ? `<a href="${esc(w.oa_url)}" target="_blank" rel="noopener">Full text ↗</a>` : ""}<a href="${esc(w.openalex_url)}" target="_blank" rel="noopener">OpenAlex ↗</a><span class="meta work-id" title="use this id in overrides.yml">${esc(w.id)}</span></div>
+      <div class="links">${w.doi ? `<a href="${esc(w.doi)}" target="_blank" rel="noopener">DOI ↗</a>` : ""}${w.oa_url ? `<a href="${esc(w.oa_url)}" target="_blank" rel="noopener">Full text ↗</a>` : ""}<a href="${esc(w.openalex_url)}" target="_blank" rel="noopener">OpenAlex ↗</a>${studioLink(w)}<span class="meta work-id" title="use this id in overrides.yml">${esc(w.id)}</span></div>
     </li>`;
   }
 

@@ -34,7 +34,6 @@ def test_digest_zero_one_many():
     d5 = build_digest(_pubs(5), CFG)
     # team-window rule: the uncounted W4 is not listed, only mentioned in one note
     assert d5["new_count"] == 4 and "Person One (4)" in d5["html"] and "Paper 4" not in d5["html"]
-    assert "1 more new paper is not listed" in d5["html"] and "1 more new paper(s) not listed" in d5["text"]
     pubs = _pubs(2)
     pubs["works"][0]["type"] = "dataset"  # data deposits stay on the website only
     assert build_digest(pubs, CFG)["new_count"] == 1
