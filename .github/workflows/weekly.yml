@@ -2,9 +2,14 @@ name: weekly
 
 on:
   schedule:
-    - cron: "0 6 * * 1"          # Mondays 06:00 UTC (07:00/08:00 Amsterdam)
+    - cron: "0 6 * * 1"          # Mondays 06:00 UTC (07:00/08:00 Amsterdam): full run, digest is sent
+    - cron: "0 6 * * 2-5"        # Tue-Fri: refresh papers and the digest preview only (no mail, no staff site, no SerpAPI)
   workflow_dispatch:
     inputs:
+      send_now:
+        description: "Send the queued digest to the list now instead of waiting for Monday"
+        type: boolean
+        default: false
       force_notify:
         description: "Send the email and Teams digest even when nothing is new (for testing)"
         type: boolean
@@ -50,6 +55,9 @@ jobs:
       REVIEW_SHEET_URL: ${{ secrets.REVIEW_SHEET_URL }}
       REVIEW_SHEET_KEY: ${{ secrets.REVIEW_SHEET_KEY }}
       TEAMS_WEBHOOK_URL: ${{ secrets.TEAMS_WEBHOOK_URL }}
+      # FULL = Monday schedule or a manual run: staff page, profile discovery. SEND = the digest goes to the list.
+      FULL: ${{ github.event_name == 'workflow_dispatch' || github.event.schedule == '0 6 * * 1' }}
+      SEND: ${{ (github.event.schedule == '0 6 * * 1' || inputs.send_now == true) && inputs.force_notify != true }}
     steps:
       - uses: actions/checkout@v4
 
@@ -61,7 +69,7 @@ jobs:
       - run: pip install -r requirements.txt
 
       - name: Cache public author discovery responses
-        if: github.event_name != 'push'
+        if: env.FULL == 'true'
         uses: actions/cache@v4
         with:
           path: out/identifier-cache.json
@@ -69,21 +77,21 @@ jobs:
           restore-keys: author-identifiers-${{ runner.os }}-
 
       - name: Review the former staff collaboration roster
-        if: github.event_name != 'push'
+        if: env.FULL == 'true'
         run: python -m pubpulse review-former
 
       - name: Search missing profiles across all former staff
-        if: github.event_name != 'push'
+        if: env.FULL == 'true'
         run: python -m pubpulse discover-identifiers --former --max-searches 10
 
       - name: Discover missing author profiles using coauthors
-        if: github.event_name != 'push'
+        if: env.FULL == 'true'
         run: python -m pubpulse discover-identifiers
 
       - name: Sync people and publications from OpenAlex
-        # Push-triggered runs (config/code edits) do not touch the staff website; only the Monday schedule and
+        # Push-triggered and daily refresh runs do not touch the staff website; only the Monday schedule and
         # manual runs read it.
-        run: python -m pubpulse sync ${{ github.event_name == 'push' && '--skip-people' || '' }}
+        run: python -m pubpulse sync ${{ env.FULL != 'true' && '--skip-people' || '' }}
 
       - name: LinkedIn drafts for new verified journal papers (Claude)
         if: env.ANTHROPIC_API_KEY != ''
@@ -139,7 +147,7 @@ jobs:
       - name: Email digest to the Brevo subscriber list (campaign)
         # Real sends go to the list only, and only on scheduled/normal runs with news; never on a forced test.
         id: email
-        if: steps.digest.outputs.new_count != '0' && !inputs.force_notify && env.BREVO_API_KEY != ''
+        if: env.SEND == 'true' && steps.digest.outputs.new_count != '0' && env.BREVO_API_KEY != ''
         run: python -m pubpulse send-campaign
 
       - name: Test mail to DIGEST_TO (manual runs with force_notify only)
@@ -148,7 +156,7 @@ jobs:
         run: python -m pubpulse send-digest
 
       - name: Post digest to Teams
-        if: "!cancelled() && steps.digest.outputs.new_count != '0' && !inputs.force_notify && env.TEAMS_WEBHOOK_URL != ''"
+        if: "!cancelled() && env.SEND == 'true' && steps.digest.outputs.new_count != '0' && env.TEAMS_WEBHOOK_URL != ''"
         continue-on-error: true
         run: |
           curl --fail --silent --show-error -X POST -H "Content-Type: application/json" \
@@ -158,8 +166,9 @@ jobs:
         # Runs when the email was sent or no email is configured; skipped when sending failed, so the next run
         # announces the same papers again instead of losing them.
         # Clears the pending list (news and archive additions) once the real send succeeded or no sender is configured.
-        if: "!cancelled() && !inputs.force_notify && steps.email.outcome != 'failure' && steps.digest.outputs.pending_count != '0'"
+        # Only on send runs: refresh runs keep collecting papers for the next Monday.
+        if: "!cancelled() && env.SEND == 'true' && steps.email.outcome != 'failure' && steps.digest.outputs.pending_count != '0'"
         run: |
           python -m pubpulse mark-notified
-          git add data/pending.json data/brevo_list.json 2>/dev/null || git add data/pending.json
+          git add data/pending.json data/brevo_list.json data/digests 2>/dev/null || git add data/pending.json
           git commit -m "pubpulse: announced through $(date -u +%Y-%m-%d)" && git push || echo "nothing to record"

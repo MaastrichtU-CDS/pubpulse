@@ -71,6 +71,7 @@
         >
         <nav aria-label="Main navigation">
           <a href="#publications">Publications</a>
+          <a href="#stats">Statistics</a>
           <a
             href="https://www.clinicaldatascience.nl/"
             target="_blank"
@@ -85,9 +86,9 @@
             class="um-link"
             >Maastricht University <span aria-hidden="true">↗</span></a
           >
-          <button class="button button-small" type="button" data-open-digest>
-            Weekly digest <span aria-hidden="true">↗</span>
-          </button>
+          <a class="button button-small" href="digest.html">
+            Newsletter <span aria-hidden="true">→</span>
+          </a>
         </nav>
       </div>
     </header>
@@ -146,14 +147,10 @@
             A little less searching.<br /><em>A little more discovery.</em>
           </h2>
           <p>
-            New papers from the CDS group, delivered to your inbox in one weekly
-            email.
+            New papers from the CDS group in one email on Mondays, only when
+            there is something new.
+            <a href="digest.html" id="digest-preview-link">Read this week’s newsletter</a>.
           </p>
-          <ul class="digest-benefits">
-            <li>Every Monday, when there’s something new</li>
-            <li>Direct links to papers and full text</li>
-            <li>One digest. No daily notifications.</li>
-          </ul>
           <button type="button" class="button button-dark" data-open-digest>
             Join the mailing list <span aria-hidden="true">↗</span>
           </button>
@@ -252,7 +249,8 @@
             <label for="when">Period</label
             ><select id="when">
               <option value="">Any time</option>
-              <option value="week">New in the latest update</option>
+              <option value="week">New in the last 7 days</option>
+              <option value="queued">Queued for the next digest</option>
               <option value="30d">Published in the last 30 days</option>
               <option value="90d">Published in the last 90 days</option>
               <option value="12m">Published in the last 12 months</option>
@@ -267,19 +265,15 @@
               ><input type="checkbox" id="include-preprints" /> Include preprints</label
             >
           </div>
-          <div class="filter-pair">
-            <div class="filter">
-              <label for="year">Year</label
-              ><select id="year">
-                <option value="">All years</option>
-              </select>
-            </div>
-            <div class="filter">
-              <label for="type">Type</label
-              ><select id="type">
-                <option value="">All types</option>
-              </select>
-            </div>
+          <div class="filter">
+            <label for="type">Type <small class="label-hint">pick one or more</small></label
+            ><select id="type" multiple data-placeholder="All types"></select>
+          </div>
+          <div class="filter">
+            <label for="year">Year</label
+            ><select id="year">
+              <option value="">All years</option>
+            </select>
           </div>
           <div class="filter">
             <label for="journal">Journal / source</label
@@ -321,6 +315,7 @@
           </div>
         </aside>
         <section class="results" aria-label="Publications">
+          <div id="active-filters" class="active-filters" aria-live="polite"></div>
           <section
             id="selected-profiles"
             class="author-profiles hidden"
@@ -345,6 +340,13 @@
               list.
             </p>
           </section>
+          <details class="stats-panel" id="stats">
+            <summary>
+              <span class="stats-title">Authorship statistics</span>
+              <span class="stats-summary" id="stats-summary"></span>
+            </summary>
+            <div id="stats-body"></div>
+          </details>
           <div class="filter search-filter">
             <label for="q">Search publications</label
             ><input
@@ -405,18 +407,6 @@
       </section>
     </main>
 
-    <section class="follow-strip">
-      <div class="wrap follow-inner">
-        <div>
-          <p class="eyebrow">KEEP YOUR CURIOSITY CURRENT</p>
-          <h2>The next paper could spark your next idea.</h2>
-          <p>Let the weekly CDS digest bring the latest research to you.</p>
-        </div>
-        <button class="button button-dark" type="button" data-open-digest>
-          Get the weekly digest <span aria-hidden="true">↗</span>
-        </button>
-      </div>
-    </section>
     <footer class="wrap foot">
       <div class="foot-top">
         <a class="brand" href="./"

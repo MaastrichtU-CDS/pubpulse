@@ -1,4 +1,52 @@
 {
+ "W4392049920": {
+  "headline": "Synthetic data is not ethics-free",
+  "post": "Synthetic data is often presented as the way around hard data sharing, but it raises its own ethical questions that deserve serious attention.\n\nWork by Joshi Hogenboom, Leonard Wee and Andre Dekker with colleagues.\n\nIn this commentary the authors look at synthetic data, artificially generated records that mimic real patients, as an alternative when collecting or sharing real data is not feasible or too costly. They argue that it brings distinct ethical issues of its own. [check: which issues the piece names; the stored summary is one sentence]\n\nWhy it matters: synthetic data is spreading quickly in health research, and treating it as automatically safe could hide new risks.\n\nLimitation: this is a perspective piece, not an empirical study.\n\nPublished in EMBO Reports.\n\n#ClinicalDataScience #MaastrichtUniversity #DataEthics",
+  "comment": "Getting real about synthetic data ethics\nPaper: https://doi.org/10.1038/s44319-024-00101-0",
+  "short": "Synthetic data can stand in when real data cannot be shared, but it raises its own ethical issues. A commentary in EMBO Reports. https://doi.org/10.1038/s44319-024-00101-0",
+  "model": "sample (written by Claude in session, 2026-10-27)",
+  "generated_at": "2026-10-27T10:22:56+00:00",
+  "flags": 1,
+  "card": "data/social/images/W4392049920-card.png",
+  "figure": null,
+  "figure_note": null
+ },
+ "W4392946919": {
+  "headline": "Real-world cancer data is already usable, at every scale",
+  "post": "Research with real-world cancer data is already possible, from a single hospital database up to international federated studies, as long as the question matches the scale.\n\nWork by Joshi Hogenboom, Johan van Soest and Andre Dekker with colleagues, led from the UK.\n\nThe paper reviews current real-world data resources and how researchers can get access to them: local hospital research databases, regional care records, national repositories, and federated learning for international collaboration. Case studies, mainly from the UK, show the infrastructure and governance needed at each scale.\n\nWhy it matters: real-world data can fill evidence gaps where clinical trials do not exist, and access is often named as the main barrier. The overview shows which routes exist today.\n\nLimitation: the examples are mainly from the UK, so the governance routes may differ elsewhere.\n\nPublished in Clinical Oncology.\n\n#ClinicalDataScience #MaastrichtUniversity #RealWorldData",
+  "comment": "An Overview of Real-World Data Infrastructure for Cancer Research\nPaper: https://doi.org/10.1016/j.clon.2024.03.011\nFull text: https://doi.org/10.1016/j.clon.2024.03.011",
+  "short": "From hospital databases to international federated studies: an overview of real-world data infrastructure for cancer research, with UK case studies on access and governance. https://doi.org/10.1016/j.clon.2024.03.011",
+  "model": "sample (written by Claude in session, 2026-10-27)",
+  "generated_at": "2026-10-27T10:22:56+00:00",
+  "flags": 0,
+  "card": "data/social/images/W4392946919-card.png",
+  "figure": null,
+  "figure_note": null
+ },
+ "W4404946484": {
+  "headline": "Synthetic data works, but sample size changes the trade-offs",
+  "post": "Synthetic patient data can be useful even for a rare, varied group, but the number of real patients behind it changes its quality and privacy risk.\n\nWork by Joshi Hogenboom, Aiara Lobo Gomes, Andre Dekker and Leonard Wee with colleagues.\n\nFrom a population-based cohort of 3,735 adolescents and young adults with cancer, the team drew 13 training sets and generated synthetic data with four generators from the open-source Synthetic Data Vault. Each synthetic set was compared with its real data on veracity, utility and privacy.\n\nAll four generators produced usable data when the synthetic set was about as large as the real one. Larger synthetic sets were more faithful but generally riskier for privacy; fewer training patients sped up veracity but partly worsened privacy.\n\nWhy it matters: synthetic data is a candidate for sharing and enlarging scarce data, but only with consistent checks and a deliberate sample size.\n\nLimitation: one cohort and generators from a single library were tested.\n\nPublished in JCO Clinical Cancer Informatics.\n\n#ClinicalDataScience #MaastrichtUniversity #SyntheticData",
+  "comment": "Actionability of Synthetic Data in a Heterogeneous and Rare Health Care Demographic: Adolescents and Young Adults With Cancer\nPaper: https://doi.org/10.1200/cci.24.00056\nFull text: https://doi.org/10.1200/cci.24.00056",
+  "short": "Synthetic data for 3,735 young adults with cancer: all four generators gave usable data, but larger synthetic sets traded privacy for fidelity. Sample size matters. https://doi.org/10.1200/cci.24.00056",
+  "model": "sample (written by Claude in session, 2026-10-27)",
+  "generated_at": "2026-10-27T10:22:56+00:00",
+  "flags": 0,
+  "card": "data/social/images/W4404946484-card.png",
+  "figure": null,
+  "figure_note": "licence cc-by-nc-nd: figure reuse not allowed, card only"
+ },
+ "W7124178724": {
+  "headline": "Making messy cancer data talk without forcing one format",
+  "post": "Hospital data in different formats can be made to work together without rewriting them into one rigid standard, using knowledge graphs.\n\nWork by Joshi Hogenboom, Varsha Gouthamchand, Andre Dekker, Leonard Wee, Johan van Soest and Aiara Lobo Gomes with colleagues in the STRONG AYA project.\n\nSTRONG AYA is building a federated data infrastructure for adolescents and young adults with cancer, a rare and scattered group whose data arrive in many formats. The team converted the structured data into linked data (RDF triples) with a semantic web tool [check: tool name, missing from the stored abstract] and used a mapping and annotation helper to query local terminologies as they are, without changing them. Graphs and mappings are published online.\n\nWhy it matters: rare-disease research needs data from many centres; this makes them reusable without every centre adopting one schema.\n\nLimitation: this is a demonstration on the project's own data; it does not yet show results from analyses run on it.\n\nPublished in JCO Clinical Cancer Informatics.\n\n#ClinicalDataScience #MaastrichtUniversity #FAIRData",
+  "comment": "Knowledge Representation of a Multicenter Adolescent and Young Adult Cancer Infrastructure: Development of the STRONG AYA Knowledge Graph\nPaper: https://doi.org/10.1200/cci-25-00177\nFull text: https://ascopubs.org/doi/pdf/10.1200/CCI-25-00177",
+  "short": "Knowledge graphs make differently formatted data on young adults with cancer interoperable across centres, without forcing one rigid schema. From the STRONG AYA project. https://doi.org/10.1200/cci-25-00177",
+  "model": "sample (written by Claude in session, 2026-10-27)",
+  "generated_at": "2026-10-27T10:22:56+00:00",
+  "flags": 1,
+  "card": "data/social/images/W7124178724-card.png",
+  "figure": null,
+  "figure_note": "licence cc-by-nc-nd: figure reuse not allowed, card only"
+ },
  "W7128449036": {
   "headline": "One patient, one knowledge graph, three hospitals that can compare",
   "post": "Breast cancer records from a hospital can be turned into a validated, machine-readable \"personal health knowledge graph\", and registries built that way in three hospitals were interoperable.\n\nWork by Wenjie Liang, Rutger van Mierlo, Cecile Wolfs, Andre Dekker and Petros Kalendralis with colleagues.\n\nWith patient consent, breast cancer data were extracted from the hospital systems and mapped to a reference ontology by a virtual assistant that combines classic rules with AI support. Every patient graph was checked with a SHACL validator before use, and one SPARQL query over the validated graphs produced a local breast cancer registry. The prototype runs in Maastricht and in two hospitals abroad [check: which countries].\n\nWhy it matters: keeping clinical registries up to date is slow manual work. A validated graph per patient makes secondary use across hospitals possible without re-entering data.\n\nLimitation: this is a first prototype in three hospitals; how well the AI-supported mapping holds up at scale is not yet shown [check].\n\nPublished in npj Breast Cancer.\\n\\n#ClinicalDataScience #MaastrichtUniversity #HealthData",
@@ -10,6 +58,30 @@
   "card": "data/social/images/W7128449036-card.png",
   "figure": null,
   "figure_note": "licence cc-by-nc-nd: figure reuse not allowed, card only"
+ },
+ "W7204787670": {
+  "headline": "Quality checks for every algorithm in a federated network",
+  "post": "Every algorithm that runs on the STRONG AYA federated network now goes through a defined quality assurance process.\n\nWork by Leonard Wee and Joshi Hogenboom with colleagues in the STRONG AYA consortium.\n\nThe guidelines set out how algorithms built for Vantage6, the open-source platform that lets analyses travel to the data instead of the data travelling to the analyst, are reviewed before they are used in STRONG AYA. [check: what the review covers, e.g. code review, testing, privacy checks; the stored summary is one sentence]\n\nWhy it matters: in a federated network nobody sees the raw data, so trust rests on the algorithms themselves. A shared review process makes that trust explicit and repeatable.\n\nLimitation: this is a process document; it does not report how many algorithms were reviewed or what the reviews found [check].\n\nPublished on Zenodo.\n\n#ClinicalDataScience #MaastrichtUniversity #FederatedLearning",
+  "comment": "STRONG AYA Algorithm Review Guidelines\nPaper: https://doi.org/10.5281/zenodo.22206390\nFull text: https://doi.org/10.5281/zenodo.22206390",
+  "short": "STRONG AYA sets out a quality assurance process for the Vantage6 algorithms that run on its federated network for young adults with cancer. https://doi.org/10.5281/zenodo.22206390",
+  "model": "sample (written by Claude in session, 2026-10-27)",
+  "generated_at": "2026-10-27T10:22:56+00:00",
+  "flags": 2,
+  "card": "data/social/images/W7204787670-card.png",
+  "figure": null,
+  "figure_note": null
+ },
+ "W7213226988": {
+  "headline": "A UK cancer registry now informs young patients' care",
+  "post": "A regional cancer registry can feed a European data network and bring the results back into the consultation room for adolescents and young adults with cancer.\n\nWork by Joshi Hogenboom, Varsha Gouthamchand, Aiara Lobo Gomes, Andre Dekker and Leonard Wee with colleagues in the STRONG AYA consortium and the University of Leeds.\n\nData from the Yorkshire Specialist Register of Cancer in Children and Young People were loaded into an open-source federated learning infrastructure, where they are analysed together with data from other consortium members without being pooled. The results flow into PROMPT, software from Leeds, and appear in the patient's electronic health record.\n\nWhy it matters: clinicians can see a patient's reported outcomes over time next to summary results from the wider consortium, which can support conversations with young patients and, later, research and policy.\n\nLimitation: this is a proof of concept; whether it improves outcomes for young patients has not been measured yet.\n\nPublished in ESMO Real World Data and Digital Oncology.\n\n#ClinicalDataScience #MaastrichtUniversity #AYACancer",
+  "comment": "From registration to insight: how STRONG AYA transforms registry data to enhance decision-support tools for adolescent and young adult oncology\nPaper: https://doi.org/10.1016/j.esmorw.2026.100764\nFull text: https://doi.org/10.1016/j.esmorw.2026.100764",
+  "short": "A UK registry for young people with cancer now feeds the STRONG AYA federated network, and the results show up in the patient record during consultations. A proof of concept. https://doi.org/10.1016/j.esmorw.2026.100764",
+  "model": "sample (written by Claude in session, 2026-10-27)",
+  "generated_at": "2026-10-27T10:22:56+00:00",
+  "flags": 0,
+  "card": "data/social/images/W7213226988-card.png",
+  "figure": null,
+  "figure_note": null
  },
  "W7218933153": {
   "headline": "More diversity inside a breast tumour, less response to chemotherapy",

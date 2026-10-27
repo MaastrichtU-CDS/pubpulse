@@ -1,0 +1,15 @@
+{
+ "id": "W7204787670",
+ "title": "STRONG AYA Algorithm Review Guidelines",
+ "doi": "https://doi.org/10.5281/zenodo.22206390",
+ "headline": "Quality checks for every algorithm in a federated network",
+ "post": "Every algorithm that runs on the STRONG AYA federated network now goes through a defined quality assurance process.\n\nWork by Leonard Wee and Joshi Hogenboom with colleagues in the STRONG AYA consortium.\n\nThe guidelines set out how algorithms built for Vantage6, the open-source platform that lets analyses travel to the data instead of the data travelling to the analyst, are reviewed before they are used in STRONG AYA. [check: what the review covers, e.g. code review, testing, privacy checks; the stored summary is one sentence]\n\nWhy it matters: in a federated network nobody sees the raw data, so trust rests on the algorithms themselves. A shared review process makes that trust explicit and repeatable.\n\nLimitation: this is a process document; it does not report how many algorithms were reviewed or what the reviews found [check].\n\nPublished on Zenodo.\n\n#ClinicalDataScience #MaastrichtUniversity #FederatedLearning",
+ "comment": "STRONG AYA Algorithm Review Guidelines\nPaper: https://doi.org/10.5281/zenodo.22206390\nFull text: https://doi.org/10.5281/zenodo.22206390",
+ "short": "STRONG AYA sets out a quality assurance process for the Vantage6 algorithms that run on its federated network for young adults with cancer. https://doi.org/10.5281/zenodo.22206390",
+ "model": "sample (written by Claude in session, 2026-10-27)",
+ "generated_at": "2026-10-27T10:22:56+00:00",
+ "flags": 2,
+ "figure": null,
+ "figure_note": null,
+ "card": "data/social/images/W7204787670-card.png"
+}

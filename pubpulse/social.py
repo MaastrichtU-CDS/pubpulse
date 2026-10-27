@@ -17,6 +17,8 @@ SOCIAL_DIR = DATA_DIR / "social"
 INDEX_PATH = SOCIAL_DIR / "index.json"
 DEFAULT_MODEL = "claude-opus-5-5"
 ELIGIBLE_TYPES = {"article", "review"}
+# Shorter "abstracts" are teasers or one-line repository descriptions: too little to write a post from.
+MIN_ABSTRACT_WORDS = 80
 
 SYSTEM_PROMPT = """You write LinkedIn posts for the Clinical Data Science group (Maastro / Maastricht University / Maastricht UMC+).
 Audience: clinicians, health-data scientists, hospital managers. Tone: plain, concrete, no hype, no emojis, no
@@ -51,7 +53,8 @@ Output exactly the four sections, each starting with its "### HEADLINE" / "### P
 
 
 def eligible(w: dict) -> bool:
-    return bool(w.get("counted", w.get("verified"))) and w.get("type") in ELIGIBLE_TYPES and bool(w.get("abstract"))
+    return (bool(w.get("counted", w.get("verified"))) and w.get("type") in ELIGIBLE_TYPES
+            and len((w.get("abstract") or "").split()) >= MIN_ABSTRACT_WORDS)
 
 
 def user_message(w: dict, names: dict[str, str]) -> str:
@@ -125,7 +128,8 @@ def write_index() -> dict:
     return index
 
 
-def run(ids: list[str] | None = None, since: str | None = None, limit: int | None = None, dry_run: bool = False, force: bool = False) -> int:
+def run(ids: list[str] | None = None, since: str | None = None, limit: int | None = None, dry_run: bool = False, force: bool = False,
+        person: str | None = None) -> int:
     logging.basicConfig(level=logging.INFO, format="%(levelname)s %(message)s")
     cfg = load_config()
     sc = cfg.get("social") or {}
@@ -133,7 +137,11 @@ def run(ids: list[str] | None = None, since: str | None = None, limit: int | Non
     pubs = load_publications()
     names = {p["slug"]: p["name"] for p in pubs.get("people", [])}
     works = [w for w in pubs.get("works", []) if eligible(w)]
-    if ids:
+    if person:
+        works = [w for w in works if person in (w.get("group_members") or []) + [s for s in w.get("author_members") or [] if s]]
+        if since:
+            works = [w for w in works if (w.get("publication_date") or "") >= since]
+    elif ids:
         wanted = set(ids)
         works = [w for w in works if w["id"] in wanted]
     elif since:

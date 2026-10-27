@@ -113,4 +113,6 @@ def run() -> int:
     camp = client.send_campaign(list_id, subject, html, sender_email, dg.get("from_name") or "pubpulse", reply_to=dg.get("reply_to"))
     log.info("Brevo campaign %s sent to list %s (%d subscribers)", camp.get("id"), list_id, n)
     (OUT_DIR / "sent.txt").write_text(f"campaign {camp.get('id')} to {n} subscribers\n", encoding="utf-8")
+    from .build import archive_digest
+    archive_digest((OUT_DIR / "digest.html").read_text(encoding="utf-8"), datetime.now(timezone.utc).date().isoformat())
     return 0

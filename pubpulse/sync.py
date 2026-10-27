@@ -160,6 +160,21 @@ def author_name_key(name: str) -> tuple[str, ...]:
     return tuple(token for i, token in enumerate(tokens) if i == 0 or len(token) > 1)
 
 
+def middle_name_match(name: str, candidates: list[dict], strict: list) -> dict | None:
+    """OpenAlex often carries full baptismal names ("Thijs Maria Anne Ackermans" for "Thijs Ackermans").
+    Accept such a record only when it is the single candidate with the same first and last name whose CURRENT
+    institution matches the strict group words; papers still need a verified affiliation (name-only identity)."""
+    key = author_name_key(name)
+    if len(key) < 2:
+        return None
+    found = []
+    for c in candidates:
+        ck = author_name_key(c.get("display_name", ""))
+        if len(ck) > len(key) and (ck[0], ck[-1]) == (key[0], key[-1]) and affiliation_matches(author_current_institutions(c), strict):
+            found.append(c)
+    return found[0] if len(found) == 1 else None
+
+
 def known_author_ids(person: dict) -> list[str]:
     if manual_ids(person):
         return manual_ids(person)
@@ -322,6 +337,8 @@ def resolve_people(
             if author_name_key(p["name"]) and author_name_key(c.get("display_name", "")) == author_name_key(p["name"]) and affiliation_matches(author_affiliations(c), broad):
                 match = c
                 break
+        if not match:
+            match = middle_name_match(p["name"], candidates, keywords)
         p["resolved_at"] = today.isoformat()
         if match:
             p["openalex_ids"] = [short_id(match["id"])]

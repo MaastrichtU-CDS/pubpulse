@@ -1,0 +1,15 @@
+{
+ "id": "W4404946484",
+ "title": "Actionability of Synthetic Data in a Heterogeneous and Rare Health Care Demographic: Adolescents and Young Adults With Cancer",
+ "doi": "https://doi.org/10.1200/cci.24.00056",
+ "headline": "Synthetic data works, but sample size changes the trade-offs",
+ "post": "Synthetic patient data can be useful even for a rare, varied group, but the number of real patients behind it changes its quality and privacy risk.\n\nWork by Joshi Hogenboom, Aiara Lobo Gomes, Andre Dekker and Leonard Wee with colleagues.\n\nFrom a population-based cohort of 3,735 adolescents and young adults with cancer, the team drew 13 training sets and generated synthetic data with four generators from the open-source Synthetic Data Vault. Each synthetic set was compared with its real data on veracity, utility and privacy.\n\nAll four generators produced usable data when the synthetic set was about as large as the real one. Larger synthetic sets were more faithful but generally riskier for privacy; fewer training patients sped up veracity but partly worsened privacy.\n\nWhy it matters: synthetic data is a candidate for sharing and enlarging scarce data, but only with consistent checks and a deliberate sample size.\n\nLimitation: one cohort and generators from a single library were tested.\n\nPublished in JCO Clinical Cancer Informatics.\n\n#ClinicalDataScience #MaastrichtUniversity #SyntheticData",
+ "comment": "Actionability of Synthetic Data in a Heterogeneous and Rare Health Care Demographic: Adolescents and Young Adults With Cancer\nPaper: https://doi.org/10.1200/cci.24.00056\nFull text: https://doi.org/10.1200/cci.24.00056",
+ "short": "Synthetic data for 3,735 young adults with cancer: all four generators gave usable data, but larger synthetic sets traded privacy for fidelity. Sample size matters. https://doi.org/10.1200/cci.24.00056",
+ "model": "sample (written by Claude in session, 2026-10-27)",
+ "generated_at": "2026-10-27T10:22:56+00:00",
+ "flags": 0,
+ "figure": null,
+ "figure_note": "licence cc-by-nc-nd: figure reuse not allowed, card only",
+ "card": "data/social/images/W4404946484-card.png"
+}

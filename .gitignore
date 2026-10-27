@@ -7,3 +7,4 @@ dist/
 .env
 members.csv
 members-template.csv
+groups-template.csv

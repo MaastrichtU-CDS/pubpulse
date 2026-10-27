@@ -5,6 +5,34 @@ Weekly overview of publications by the **Clinical Data Science** group (Maastro 
 - **Website with filters:** https://maastrichtu-cds.github.io/pubpulse/
 - **RSS feed:** https://maastrichtu-cds.github.io/pubpulse/feed.xml
 - **Weekly digest:** every Monday morning by email and in Teams, only when there is something new.
+  **[This week's newsletter](https://maastrichtu-cds.github.io/pubpulse/digest.html)** on the web (refreshed daily, past issues below it).
+- **Authorship statistics** (on the website, under *Statistics*): papers, % first author, % last author per person and per
+  research group, following the website filters.
+
+## Lists you can edit (Google login, no GitHub needed)
+
+| What | Where | Who can edit |
+| --- | --- | --- |
+| Research groups and seniors (for the statistics) | [groups sheet](GROUPS_SHEET_EDIT_LINK) | invited editors, Google login |
+| "CDS authored" yes/no per paper | [review sheet](REVIEW_SHEET_EDIT_LINK) | invited editors, Google login |
+| Your ORCID / Google Scholar link | your own profile on the [staff page](https://www.clinicaldatascience.nl/staff) | website login |
+| Membership start/end dates (private) | ask a maintainer | maintainers only |
+
+Changes are picked up by the next run (daily for the sheets, Mondays for the staff page). To ask for edit access, contact
+a maintainer.
+
+## When is what updated?
+
+| What | When |
+| --- | --- |
+| New papers from OpenAlex | daily (Mon–Fri, 06:00 UTC); OpenAlex itself indexes papers days to weeks after publication |
+| Digest email and Teams post | Mondays only, and only when there are new papers; [preview](https://maastrichtu-cds.github.io/pubpulse/digest.html) |
+| Staff list (who is a member, who left) | Mondays, from the staff page list |
+| ORCID / Scholar links on staff profiles | when someone is new, otherwise every 30 days per profile |
+| OpenAlex author matching per person | every 30 days, or immediately after an edit of people.yml |
+| Automatic search for missing ORCID / Scholar profiles | every 30 days per person (Mondays) |
+| Google Scholar cross-check | first day of the month |
+| Groups sheet, review sheet | every run |
 
 Every Monday a small robot reads the [staff page](https://www.clinicaldatascience.nl/staff), looks up every current
 staff member and follows recent former-staff collaborations in [OpenAlex](https://openalex.org) (a free, open catalogue that merges Crossref, PubMed, ORCID and
@@ -104,6 +132,7 @@ published"* with the feed link, which posts every new paper to a channel without
 
 **Refresh now instead of waiting for Monday.**
 Go to [Actions → weekly](https://github.com/MaastrichtU-CDS/pubpulse/actions/workflows/weekly.yml) → *Run workflow*.
+This refreshes everything and updates the digest preview; it does not send mail unless you tick *send_now*.
 
 ## For maintainers
 
@@ -156,6 +185,35 @@ to validate before the first larger campaign. (An alternative backend, Google Ap
 
 To test delivery without waiting for a new paper: *Actions → weekly → Run workflow* and tick *force_notify*.
 
+### Authorship statistics and the groups sheet
+
+The website's *Authorship statistics* panel counts, over the current filters, per person: papers, first author, last
+author and other positions (with percentages), and per group: papers with a member, papers with a member as first or as
+last author. Positions come from the author order in OpenAlex; equal-contribution (shared first/last) authorship is not
+recorded there. "All CDS" is always shown; seniors and research groups come from a Google Sheet:
+
+1. `python -m pubpulse groups-template` writes `groups-template.csv`: current staff, `senior` pre-filled "yes" for
+   professors (check it), `group` empty.
+2. Create a Google Sheet, *File → Import* that CSV. Fill `senior` (yes/no) and `group`: the group name per person, usually
+   the senior's name or the research line; several groups separated by `;`. Rows for people not on the staff page are
+   reported as "not found" and ignored.
+3. Share the sheet with the editors only (*Share → add people*); editing then needs a Google login.
+4. *File → Share → Publish to web* → choose that tab → *Comma-separated values (.csv)* → *Publish*, copy the link.
+5. `config.yml` → `groups.sheet_csv_url:` = that link, `groups.edit_url:` = the normal sheet link (shown on the
+   website for editors). Replace `GROUPS_SHEET_EDIT_LINK` at the top of this README with the same link. Commit.
+
+Every build reads the published CSV and keeps the last good copy in `data/groups.json`. Group composition is public on
+the website (it is shown in the statistics); the sheet itself stays editable only by invited people.
+
+### Digest preview and archive
+
+`digest.html` on the website shows the mail as the next Monday run would send it right now: papers found by the daily
+refreshes since the last digest (`data/pending.json`). Every digest that actually went out is kept in `data/digests/`
+and listed under the preview. The newsletter lists only papers that are new since the last issue and published in
+the last `digest.recent_days` (120); older papers that only now got linked to a member (a newly identified person, late
+indexing) are left out, they just appear on the website. Each paper gets its LinkedIn card image, headline and short
+text when a draft exists (needs `ANTHROPIC_API_KEY`), otherwise the title and the opening of the abstract. Mail goes out on the Monday schedule only; push-triggered runs and the Tue–Fri refreshes queue.
+
 ### Social posts: what goes where (design decisions)
 
 - **Card image**: one idea only. A catchy headline (max ~60 characters), a proof line "Published in <journal> · <year>",
@@ -164,6 +222,8 @@ To test delivery without waiting for a new paper: *Actions → weekly → Run wo
 - **Post text**: the finding as first line, the group authors second (to tag), what/why/limitation in plain words,
   the journal last. No links in the body (LinkedIn reduces reach of posts with external links).
 - **First comment**: the full paper title, the DOI and the open-access link. That is where readers look things up.
+- **Which papers**: counted journal articles and reviews with an abstract of at least 80 words (shorter ones are
+  teasers or repository descriptions). `python -m pubpulse social-draft --person <slug>` drafts all of one member's papers.
 - **Figure** (only CC BY papers): the one that shows the main finding, with a plain-language caption; methods figures are
   rejected. Figure first, card second when both exist.
 

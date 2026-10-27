@@ -12,6 +12,17 @@ repo_url: https://github.com/MaastrichtU-CDS/pubpulse
 # Start with: python -m pubpulse members-template  ->  import members-template.csv into the sheet.
 members_csv: members.csv
 
+# Research groups and seniors for the authorship statistics on the website. Kept in a Google Sheet that only invited
+# people can edit (Google login). Start with: python -m pubpulse groups-template -> import groups-template.csv.
+# Columns: name, slug (optional), senior (yes/no), group (one or more names separated by ";").
+#   sheet_csv_url: File -> Share -> Publish to web -> the tab -> "Comma-separated values (.csv)" -> Publish -> copy link
+#   edit_url:      the normal link of the sheet (shown on the website and in the README for editors)
+# Read at every build; the last good copy is kept in data/groups.json. A local groups.csv works too.
+groups:
+  sheet_csv_url: ""
+  edit_url: ""
+  csv: groups.csv
+
 # Website defaults (visitors can switch them in the filters).
 site:
   default_verified_only: true       # team-window rule: team members' papers count (no affiliation check); outside the team window only with a verified group affiliation

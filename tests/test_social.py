@@ -2,8 +2,9 @@ from pubpulse.social import eligible, parse_output, user_message
 
 
 def test_eligibility_excludes_preprints_and_unverified():
-    base = {"verified": True, "type": "article", "abstract": "x"}
+    base = {"verified": True, "type": "article", "abstract": "word " * 80}
     assert eligible(base)
+    assert not eligible({**base, "abstract": "A one-line repository description."})
     assert not eligible({**base, "type": "preprint"})
     assert not eligible({**base, "verified": False})
     assert not eligible({**base, "abstract": None})

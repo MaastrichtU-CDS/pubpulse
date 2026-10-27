@@ -1747,10 +1747,11 @@ people:
   role: Grant advisor and Project coordinator
   employer: Maastricht University/Maastro Clinic
   section: current
-  orcid: null
+  orcid: 0000-0002-6977-1001
   scholar_id: null
   cris_url: null
-  openalex_id: null
+  openalex_id: A5087194448
+  notes: pinned 2026-10-27; OpenAlex lists him as 'Thijs Maria Anne Ackermans' (Maastro + KU Leuven); no ORCID on the staff page
   profile_checked_at: '2026-10-21'
   source: staff_page
   active_from: '2026-10-21'

@@ -1,4 +1,5 @@
 import xml.etree.ElementTree as ET
+from html import escape
 
 from pubpulse.build import build_digest, build_feed
 
@@ -27,13 +28,13 @@ def test_feed_is_valid_atom():
 
 def test_digest_zero_one_many():
     d0 = build_digest(_pubs(0), CFG)
-    assert d0["new_count"] == 0 and "0 new publications" in d0["subject"] and "Nothing new" in d0["html"]
+    assert d0["new_count"] == 0 and "0 new publications" in d0["subject"] and "Nothing new since the last newsletter" in d0["html"]
     d1 = build_digest(_pubs(1), CFG)
-    assert "1 new publication this week" in d1["subject"] and "Paper 0 &lt;b&gt;" in d1["html"]
+    assert "1 new publication ·" in d1["subject"] and "published 10 October 2026" in d1["html"] and "Paper 0 &lt;b&gt;" in d1["html"]
     d5 = build_digest(_pubs(5), CFG)
     assert d5["new_count"] == 5 and "Person One (5)" in d5["html"]
-    assert "not counted" in d5["html"] and "not counted" in d5["text"]
-    assert "p2" in d5["text"]  # needs_review mentioned
+    assert "not in the group totals" in d5["html"] and "not in the group totals" in d5["text"]
+    assert "1 staff profile" in d5["text"] and "#coverage-notes" in d5["html"]  # needs_review as a count, no name list
     card = d5["teams"]["attachments"][0]["content"]
     assert card["type"] == "AdaptiveCard" and any("and 3 more" in b.get("text", "") for b in card["body"])
 
@@ -110,4 +111,23 @@ def test_digest_separates_news_from_backfill():
     assert [w["id"] for w in recent] == ["W0", "W1"] and len(older) == 3
     d = build_digest(pubs, {**CFG, "digest": {"recent_days": 120}})
     assert d["new_count"] == 2 and "2 new publications" in d["subject"]
-    assert "Also added to the archive" in d["html"] and "3 older papers" in d["html"]
+    # older papers that only now got linked are not news: not listed, not even counted
+    assert "older" not in d["html"] and not any(escape(w["title"]) in d["html"] or w["title"] in d["text"] for w in older)
+    assert all(escape(w["title"]) in d["html"] for w in recent)
+
+
+def test_digest_page_previews_queue_and_lists_sent_digests(tmp_path):
+    from pubpulse.build import archive_digest, write_digest_pages
+    digests = tmp_path / "digests"
+    archive_digest("<div>sent mail <a href='{{UNSUBSCRIBE_URL}}'>x</a></div>", "2026-10-19", digests)
+    dist = tmp_path / "dist"; dist.mkdir()
+    pubs = _pubs(3)  # last_run.new_ids are ignored: the preview shows the queue only
+    write_digest_pages(pubs, CFG, ["W1"], dist, digests)
+    page = (dist / "digest.html").read_text()
+    assert "Preview of the issue" in page and "Monday 26 October 2026" in page
+    assert "Paper 1 &lt;b&gt;" in page and "Paper 0" not in page
+    assert 'href="digests/2026-10-19.html"' in page and "{{UNSUBSCRIBE_URL}}" not in page
+    assert "sent mail" in (dist / "digests" / "2026-10-19.html").read_text()
+    write_digest_pages(pubs, CFG, [], dist, digests)
+    page = (dist / "digest.html").read_text()  # nothing queued: the last sent issue is the current one
+    assert "Sent <b>Monday 19 October 2026</b>" in page and "sent mail" in page

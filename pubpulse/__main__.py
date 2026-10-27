@@ -34,10 +34,12 @@ def main(argv: list[str] | None = None) -> int:
     sub.add_parser("send-digest", help="email out/digest.* to DIGEST_TO (and an Apps Script list, if configured) via SMTP")
     sub.add_parser("send-campaign", help="send out/digest.html as a Brevo campaign to the Brevo subscriber list")
     sub.add_parser("members-template", help="write members-template.csv (import into the Google Sheet) from people.yml")
+    sub.add_parser("groups-template", help="write groups-template.csv (import into the groups Google Sheet) from people.yml")
 
     sd = sub.add_parser("social-draft", help="write LinkedIn drafts (Claude) for verified journal papers into data/social/")
     sd.add_argument("--ids", nargs="*", help="specific OpenAlex ids; default: this run's new papers")
     sd.add_argument("--since", help="all eligible papers published on/after YYYY-MM-DD")
+    sd.add_argument("--person", help="all eligible papers of one member (slug from people.yml), e.g. joshi-hogenboom")
     sd.add_argument("--limit", type=int)
     sd.add_argument("--force", action="store_true", help="redo existing drafts")
     sd.add_argument("--dry-run", action="store_true")
@@ -96,13 +98,20 @@ def main(argv: list[str] | None = None) -> int:
     if args.cmd == "social-draft":
         from .social import run as social_run
 
-        return social_run(ids=args.ids, since=args.since, limit=args.limit, dry_run=args.dry_run, force=args.force)
+        return social_run(ids=args.ids, since=args.since, limit=args.limit, dry_run=args.dry_run, force=args.force, person=args.person)
     if args.cmd == "members-template":
         from .members import template_csv
         from .sync import ROOT, load_people
 
         (ROOT / "members-template.csv").write_text(template_csv(load_people()), encoding="utf-8")
         print("wrote members-template.csv")
+        return 0
+    if args.cmd == "groups-template":
+        from .groups import template_csv as groups_template
+        from .sync import ROOT, load_people
+
+        (ROOT / "groups-template.csv").write_text(groups_template(load_people()), encoding="utf-8")
+        print("wrote groups-template.csv")
         return 0
     if args.cmd == "send-campaign":
         from .brevo import run as brevo_run

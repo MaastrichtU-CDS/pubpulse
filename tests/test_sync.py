@@ -220,6 +220,19 @@ def test_author_name_key_keeps_full_names_and_allows_middle_initials():
     assert author_name_key("Wenjia Liang") != author_name_key("Wenjie Liang")
 
 
+def test_middle_name_match_needs_a_single_current_group_record():
+    from pubpulse.sync import middle_name_match
+
+    strict = ["maastro"]
+    thijs = {"display_name": "Thijs Maria Anne Ackermans", "last_known_institutions": [{"display_name": "Maastro Clinic"}]}
+    leuven = {"display_name": "Thijs Pieter Ackermans", "last_known_institutions": [{"display_name": "KU Leuven"}]}
+    assert middle_name_match("Thijs Ackermans", [leuven, thijs], strict) is thijs
+    assert middle_name_match("Thijs Ackermans", [leuven], strict) is None
+    twin = {**thijs, "display_name": "Thijs Johan Ackermans"}
+    assert middle_name_match("Thijs Ackermans", [thijs, twin], strict) is None
+    assert middle_name_match("Thijs Ackermans", [{**thijs, "display_name": "Thijs Ackermans-Smit"}], strict) is None
+
+
 def test_normalise_recovers_coauthors_without_relaxing_name_ambiguity():
     people = [
         {"slug": "known", "name": "Known Researcher", "openalex_ids": ["A1"]},
