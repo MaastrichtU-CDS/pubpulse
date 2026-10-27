@@ -274,13 +274,11 @@
     verified: {
       label: "verified-affiliation",
       plain: "papers with a verified group affiliation",
-      rule: "Counted when at least one group author has a verified Maastro, Radiation Oncology (Maastricht), GROW or Medical Data Works affiliation on the paper, or the paper was confirmed by hand",
       test: (w) => !!w.verified,
     },
     counted: {
       label: "team-window",
       plain: "counted papers (team-window rule)",
-      rule: "Counted under the team-window rule: papers by current group members, and by others only with a verified group affiliation",
       test: (w) => isCounted(w),
     },
   };
@@ -344,9 +342,9 @@
       : "—";
     $("coverage-start").textContent = ` in ${thisYear}`;
     $("metric-footnote").textContent =
-      `Year to date. ${VIEWS[siteDefaults().verify]?.rule || "All papers found for group members"}; ` +
-      `preprints ${siteDefaults().preprints ? "included" : "excluded"}. Open access share refers to the same set. Since ${coverageStart()}: ${headline.length} publications. ` +
-      `Automated and not manually verified; mistakes are expected.`;
+      `This year so far: ${VIEWS[siteDefaults().verify]?.plain || "all collected papers"}, ` +
+      `${siteDefaults().preprints ? "including" : "without"} preprints. ${headline.length} since ${coverageStart()}. ` +
+      `Collected automatically from public indexes such as OpenAlex: they can lag behind, publications do not always list affiliations and people move between groups, so some papers may be missing or misattributed.`;
     $("publication-range").textContent =
       `${data.works.length.toLocaleString("en-GB")} collected publications · ${coverageStart()} onwards`;
     $("filter-default-note").textContent =
