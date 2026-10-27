@@ -232,6 +232,11 @@ shown on the right of the card. *Copy post*, *Copy first comment*, *Open LinkedI
 (PNG)* use what you edited. Nothing is stored: a reload brings back the draft. Papers with a Claude draft start from
 that draft; others start from a short template with the title on the card.
 
+**No API key needed:** *Copy prompt* copies the pipeline's own instructions plus the paper (title, journal, authors,
+abstract) for any AI chat (claude.ai, ChatGPT, Copilot). Paste the chat's JSON answer back and *Import answer* fills in
+the post, the first comment and the card headline. The *Social media* tab lists every postable paper in the current
+filter (not preprints or datasets) with its status, *draft ready* or *no draft yet*, and opens the same editor.
+
 ### Social posts: what goes where (design decisions)
 
 - **Card image**: one idea only. A catchy headline (max ~60 characters), a proof line "Published in <journal> · <year>",

@@ -241,8 +241,8 @@
           <div class="filter-heading">
             <h3>Filters</h3>
             <span class="filter-heading-actions">
-              <button class="link" id="reset" type="button">Default view</button>
-              <button class="link" id="show-all" type="button">Show everything</button>
+              <button class="button button-small button-dark" id="reset" type="button">Default view</button>
+              <button class="button button-small button-ghost" id="show-all" type="button">Show everything</button>
             </span>
           </div>
 
@@ -367,6 +367,9 @@
             <button type="button" role="tab" id="tab-stats" aria-controls="panel-stats" aria-selected="false">
               Authorship statistics
             </button>
+            <button type="button" role="tab" id="tab-social" aria-controls="panel-social" aria-selected="false">
+              Social media <span class="tab-count" id="tab-social-count"></span>
+            </button>
           </div>
 
           <div id="panel-stats" role="tabpanel" aria-labelledby="tab-stats" hidden>
@@ -374,6 +377,15 @@
               <p class="stats-summary" id="stats-summary"></p>
               <div id="stats-body"></div>
             </section>
+          </div>
+
+          <div id="panel-social" role="tabpanel" aria-labelledby="tab-social" hidden>
+            <div class="social-intro">
+              <p><b>Make a LinkedIn post for any paper.</b> Open the editor, then edit the text and the card image and
+              download the card. No draft yet? Use <i>Copy prompt</i> with any AI chat and import its answer.
+              Nothing is saved; the list follows the filters (preprints and datasets are never posted).</p>
+            </div>
+            <ol class="social-list" id="social-list"></ol>
           </div>
 
           <div id="panel-list" role="tabpanel" aria-labelledby="tab-list">

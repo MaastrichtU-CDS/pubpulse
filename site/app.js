@@ -77,7 +77,7 @@
       verify: p.get("verify") || "",
       oa: p.get("oa") === "1",
       preprints: p.get("preprints") === "1",
-      view: p.get("view") === "stats" || location.hash === "#stats" ? "stats" : "list",
+      view: ["stats", "social"].includes(p.get("view")) ? p.get("view") : location.hash === "#stats" ? "stats" : "list",
     };
   }
   function writeHash() {
@@ -92,7 +92,7 @@
     if (state.verify) p.set("verify", state.verify);
     if (state.oa) p.set("oa", "1");
     if (state.preprints) p.set("preprints", "1");
-    if (state.view === "stats") p.set("view", "stats");
+    if (state.view !== "list") p.set("view", state.view);
     if (
       !p.toString() &&
       ["#publications", "#coverage-notes"].includes(location.hash)
@@ -432,7 +432,7 @@
       });
       $("reset").addEventListener("click", () => resetAll());
       $("show-all").addEventListener("click", () => resetAll(true));
-      const tabs = [["list", $("tab-list")], ["stats", $("tab-stats")]];
+      const tabs = [["list", $("tab-list")], ["stats", $("tab-stats")], ["social", $("tab-social")]];
       tabs.forEach(([view, tab], i) => {
         tab.addEventListener("click", () => {
           state.view = view;
@@ -471,12 +471,35 @@
     }
   }
 
+  function renderSocialTab(items) {
+    const papers = items.filter(postable);
+    const box = $("social-list");
+    box.innerHTML = papers.length
+      ? papers.map((w) => {
+          const d = data.social && data.social[w.id];
+          const status = d?.post ? '<span class="badge approved">draft ready</span>' : '<span class="badge">no draft yet</span>';
+          return `<li class="social-row"><div class="social-row-head"><div><p class="meta">${esc(w.journal || "Publication")} · ${esc(w.publication_date || "")} ${status}</p>` +
+            `<h3>${esc((d && d.headline) || w.title)}</h3>${d?.headline ? `<p class="meta">${esc(w.title)}</p>` : ""}</div>` +
+            `<button type="button" class="button button-small button-dark" data-edit="${esc(w.id)}" aria-expanded="false">Edit post</button></div><div class="social-editor"></div></li>`;
+        }).join("")
+      : '<li class="meta">No papers in the current selection (preprints and datasets are never posted).</li>';
+    box.querySelectorAll("[data-edit]").forEach((b) => b.addEventListener("click", () => {
+      const slot = b.closest(".social-row").querySelector(".social-editor");
+      const open = b.getAttribute("aria-expanded") !== "true";
+      if (open && !slot.childElementCount) initSocialEditor(slot, data.works.find((w) => w.id === b.dataset.edit));
+      slot.hidden = !open;
+      b.setAttribute("aria-expanded", String(open));
+      b.textContent = open ? "Close editor" : "Edit post";
+    }));
+    $("tab-social-count").textContent = papers.length;
+  }
+
   function showTabs() {
     $("tab-list").parentElement.scrollIntoView({ behavior: matchMedia("(prefers-reduced-motion: reduce)").matches ? "instant" : "smooth" });
   }
 
   function renderTabs(count) {
-    for (const [view, tab, panel] of [["list", $("tab-list"), $("panel-list")], ["stats", $("tab-stats"), $("panel-stats")]]) {
+    for (const [view, tab, panel] of [["list", $("tab-list"), $("panel-list")], ["stats", $("tab-stats"), $("panel-stats")], ["social", $("tab-social"), $("panel-social")]]) {
       const on = state.view === view;
       tab.setAttribute("aria-selected", String(on));
       tab.tabIndex = on ? 0 : -1;
@@ -881,14 +904,14 @@
       !state.people.length && verify === (d.verify || "") && state.preprints === d.preprints;
     const restricted = chips.length > 0;
     const buttons =
-      (atDefault ? "" : '<button type="button" class="link reset-chip" data-reset>Default view</button>') +
-      (restricted ? '<button type="button" class="link reset-chip" data-all>Show everything</button>' : "");
+      (atDefault ? "" : '<button type="button" class="button button-small button-dark" data-reset>Default view</button>') +
+      (restricted ? '<button type="button" class="button button-small button-ghost" data-all>Show everything</button>' : "");
     box.innerHTML =
       (restricted
-        ? `<span class="active-label">${atDefault ? "Default view:" : "Filters:"}</span>` +
+        ? `<span class="active-label">${atDefault ? "Default view" : "Applied filters"}</span>` +
           chips.map((c, i) => `<button type="button" class="filter-chip${c.isDefault ? " is-default" : ""}" data-chip="${i}" title="Remove this filter">${esc(c.label)}${c.isDefault ? ' <small>default</small>' : ""} <span aria-hidden="true">×</span><span class="visually-hidden">remove</span></button>`).join("")
         : '<span class="active-label meta">Showing everything: all papers, including preprints and papers without a verified affiliation.</span>') +
-      buttons;
+      `<span class="active-actions">${buttons}</span>`;
     $("reset").hidden = atDefault;
     $("show-all").hidden = !restricted;
     box.querySelectorAll("[data-chip]").forEach((b) => b.addEventListener("click", () => {
@@ -1110,6 +1133,8 @@
     renderTabs(items.length);
     renderPeople();
     if (state.view === "stats") renderStats();
+    if (state.view === "social") renderSocialTab(items);
+    else $("tab-social-count").textContent = items.filter(postable).length;
     if (state.sort === "cited")
       items.sort((a, b) => (b.cited_by_count || 0) - (a.cited_by_count || 0));
     else if (state.sort === "impact")
@@ -1223,8 +1248,11 @@
     };
   }
 
+  // No preprints in external communication, and data deposits are not posted.
+  const postable = (w) => !["preprint", "dataset"].includes(w.type);
+
   function draftHtml(w) {
-    if (w.type === "preprint") return "";  // no preprints in external communication
+    if (!postable(w)) return "";
     const d = data.social && data.social[w.id];
     const label = d?.post
       ? `draft, read before posting${d.flags ? ` · ${d.flags} point${d.flags === 1 ? "" : "s"} marked [check]` : ""}`
@@ -1241,11 +1269,54 @@
     }).join("");
   }
 
+  // The paper as the pipeline sends it to Claude (pubpulse/social.py user_message), for pasting into any AI chat.
+  function paperMessage(w) {
+    return [
+      `Title: ${w.title}`,
+      `Journal: ${w.journal || "unknown"}`,
+      `Published: ${w.publication_date || "unknown"} (${w.type})`,
+      `Group authors: ${(w.group_members || []).map(nameOf).join(", ") || "none listed"}`,
+      `First authors: ${(w.authors || []).slice(0, 3).join(", ")} (total ${w.author_count})`,
+      `DOI link: ${w.doi || w.landing_url || w.openalex_url}`,
+      `Open-access link: ${w.oa_url || "none"}`,
+      "",
+      "Abstract:",
+      w.abstract || "(no abstract)",
+    ].join("\n");
+  }
+
+  // Accepts the JSON the prompt asks for (also inside ``` fences or with raw line breaks), or the ### sections format.
+  function parseSocialAnswer(text) {
+    const t = text.trim().replace(/^```(?:json)?\s*/i, "").replace(/```\s*$/, "");
+    const start = t.indexOf("{"), end = t.lastIndexOf("}");
+    if (start >= 0 && end > start) {
+      const raw = t.slice(start, end + 1);
+      for (const candidate of [raw, raw.replace(/\r?\n/g, "\\n")]) {
+        try {
+          const o = JSON.parse(candidate);
+          if (o && typeof o.post === "string") return o;
+        } catch { /* try the next form */ }
+      }
+    }
+    const sec = (name) => (t.match(new RegExp("###\\s*" + name + "\\s*\\n([\\s\\S]*?)(?=\\n###|$)", "i")) || [])[1]?.trim();
+    const o = { headline: sec("HEADLINE"), post: sec("POST"), comment: sec("COMMENT"), short: sec("SHORT") };
+    return o.post ? o : null;
+  }
+
   function initSocialEditor(box, w) {
     const seed = socialSeed(w);
     const d = seed.draft;
     const fig = d?.figure?.path ? d.figure : null;
     box.innerHTML = `
+      <div class="se-ai">
+        <p class="se-ai-title"><b>${d?.post ? "Want another version? Write it with an AI chat" : "Write it with an AI chat"}</b> <span class="meta">(Claude, ChatGPT, Copilot …)</span></p>
+        <ol class="se-ai-steps">
+          <li><button type="button" class="button button-small button-dark" data-act="copy-prompt">Copy prompt</button> and paste it into the chat.</li>
+          <li>Paste the chat's answer here and import it:
+            <textarea class="se-answer" rows="3" placeholder='{"headline": "…", "post": "…", "comment": "…", "short": "…"}'></textarea>
+            <span class="se-ai-actions"><button type="button" class="button button-small button-dark" data-act="import">Import answer</button><span class="meta se-ai-msg" role="status"></span></span></li>
+        </ol>
+      </div>
       <div class="se-grid">
         <div class="se-edit">
           <label class="se-label">Post text <span class="meta">first paragraph = hook, copied in bold</span>
@@ -1257,7 +1328,7 @@
             <button type="button" class="button button-small button-dark" data-act="copy-post">Copy post</button>
             <button type="button" class="button button-small" data-act="copy-comment">Copy first comment</button>
             <a class="button button-small se-open" target="_blank" rel="noopener">Open LinkedIn with this text ↗</a>
-            <button type="button" class="link" data-act="reset-text">Reset text</button>
+            <button type="button" class="button button-small button-ghost" data-act="reset-text">Reset text</button>
           </div>
           <fieldset class="se-card-fields"><legend>Card image</legend>
             <label class="se-label">Headline <span class="meta se-hcount"></span><input class="se-headline" type="text"></label>
@@ -1267,7 +1338,7 @@
               <input class="se-photo" type="file" accept="image/*"></label>
             <div class="draft-actions">
               <button type="button" class="button button-small button-dark" data-act="download">Download card (PNG)</button>
-              <button type="button" class="link" data-act="reset-card">Reset card</button>
+              <button type="button" class="button button-small button-ghost" data-act="reset-card">Reset card</button>
             </div>
           </fieldset>
         </div>
@@ -1317,7 +1388,19 @@
       const b = ev.target.closest("[data-act]");
       if (!b) return;
       const act = b.dataset.act;
-      if (act === "copy-post") copy(b, linkedinText(f.post.value));
+      if (act === "copy-prompt") copy(b, (data.social_prompt || "") + "\n\n" + paperMessage(w));
+      else if (act === "import") {
+        const o = parseSocialAnswer(q(".se-answer").value);
+        const msg = q(".se-ai-msg");
+        if (!o) { msg.textContent = "Could not read that answer: paste the whole JSON (or the ### sections)."; return; }
+        if (o.post) f.post.value = String(o.post).trim();
+        if (o.comment) f.comment.value = String(o.comment).trim();
+        if (o.headline) f.headline.value = String(o.headline).trim();
+        refreshText(); refreshCard();
+        const flags = (String(o.post || "").match(/\[check[^\]]*\]/g) || []).length;
+        msg.textContent = `Imported${flags ? ` · ${flags} point${flags === 1 ? "" : "s"} marked [check]: verify them in the paper` : ""}. Read it before posting.`;
+      }
+      else if (act === "copy-post") copy(b, linkedinText(f.post.value));
       else if (act === "copy-comment") copy(b, f.comment.value);
       else if (act === "reset-text") { setText(); refreshText(); }
       else if (act === "reset-card") { setCard(); refreshCard(); }

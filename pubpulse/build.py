@@ -10,6 +10,7 @@ from pathlib import Path
 from xml.sax.saxutils import escape
 
 from .groups import role_group, role_groups, role_title
+from .social import CHAT_PROMPT
 from .sync import DATA_DIR, NOTIFIED_PATH, OUT_DIR, ROOT, load_config, load_pending, load_publications
 
 SITE_DIR = ROOT / "site"
@@ -448,6 +449,7 @@ def run(config_path: Path | None = None) -> dict:
         "site": cfg.get("site") or {},
         "pending_ids": load_pending() if NOTIFIED_PATH.exists() else [],
         "recent_days": int((cfg.get("digest") or {}).get("recent_days", 120)),
+        "social_prompt": CHAT_PROMPT,
         "groups": role_groups(pubs.get("people", [])),
         # Staff-page roles normalised for display and grouping (the raw role stays in people.yml).
         "people": [{**p, "role_title": role_title(p.get("role")), "role_group": role_group(p.get("role"))} for p in pubs.get("people", [])],

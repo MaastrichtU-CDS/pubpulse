@@ -52,6 +52,15 @@ Rules: use only facts that are in the abstract; if the abstract gives no numbers
 Output exactly the four sections, each starting with its "### HEADLINE" / "### POST" / "### COMMENT" / "### SHORT" heading line, nothing else."""
 
 
+# The same instructions for a person using any AI chat (claude.ai, ChatGPT, …) from the website: the answer comes back
+# as JSON so the share editor can import it in one paste.
+CHAT_PROMPT = SYSTEM_PROMPT.rsplit("Output exactly the four sections", 1)[0].rstrip() + """
+Output a single JSON object and nothing else, with the keys "headline", "post", "comment" and "short"; use \\n for
+line breaks inside the strings. Example: {"headline": "...", "post": "line one\\n\\nline two", "comment": "...", "short": "..."}
+
+The paper follows."""
+
+
 def eligible(w: dict) -> bool:
     return (bool(w.get("counted", w.get("verified"))) and w.get("type") in ELIGIBLE_TYPES
             and len((w.get("abstract") or "").split()) >= MIN_ABSTRACT_WORDS)
