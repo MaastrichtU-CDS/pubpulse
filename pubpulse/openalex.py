@@ -74,6 +74,15 @@ class OpenAlex:
                     break
                 page += 1
 
+    def sources(self, ids: list[str]) -> list[dict]:
+        """Journal records (with summary_stats) for short source ids, 50 per request."""
+        out = []
+        for i in range(0, len(ids), 50):
+            chunk = ids[i:i + 50]
+            out += self.get("/sources", {"filter": "openalex:" + "|".join(chunk), "per-page": 50,
+                                         "select": "id,display_name,type,summary_stats"}).get("results", [])
+        return out
+
     def search_authors(self, name: str, per_page: int = 10) -> list[dict]:
         return self.get("/authors", {"search": name, "per-page": per_page}).get("results", [])
 

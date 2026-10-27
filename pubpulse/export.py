@@ -16,6 +16,7 @@ PAPER_COLUMNS = [
     ("last_author_group", "Last author is group member"), ("group_affiliation_status", "Affiliation status per group author"),
     ("author_count", "Total authors"), ("all_authors", "All authors (OpenAlex order)"),
     ("open_access", "Open access"), ("oa_url", "Open-access link"), ("license", "Licence"), ("cited_by_count", "Citations (OpenAlex)"),
+    ("journal_impact", "Journal impact (OpenAlex 2-yr mean citedness)"),
     ("first_seen", "First seen by pubpulse"), ("openalex_url", "OpenAlex URL"), ("landing_url", "Landing page"), ("abstract", "Abstract"),
 ]
 
@@ -42,7 +43,7 @@ def paper_rows(pubs: dict) -> list[dict]:
             "group_affiliation_status": "; ".join(f"{names.get(s, s)}: {st.get(s, 'unknown')}" for s in members),
             "author_count": total, "all_authors": "; ".join(w.get("authors") or []),
             "open_access": bool(w.get("is_oa")), "oa_url": w.get("oa_url"), "license": w.get("license"),
-            "cited_by_count": w.get("cited_by_count"), "first_seen": w.get("first_seen"),
+            "cited_by_count": w.get("cited_by_count"), "journal_impact": w.get("journal_impact"), "first_seen": w.get("first_seen"),
             "openalex_url": w.get("openalex_url"), "landing_url": w.get("landing_url"), "abstract": w.get("abstract"),
         })
     return rows

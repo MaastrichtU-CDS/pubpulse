@@ -440,6 +440,7 @@ def normalise_work(raw: dict, people: list[dict], keywords: list[str] | None = N
         "year": raw.get("publication_year"),
         "type": raw.get("type"),
         "journal": source.get("display_name"),
+        "source_id": short_id(source.get("id")),
         "landing_url": loc.get("landing_page_url"),
         "is_oa": bool(oa.get("is_oa")),
         "oa_url": oa.get("oa_url"),
@@ -564,6 +565,35 @@ def fetch_works(
     return works, errors
 
 
+SOURCES_PATH = DATA_DIR / "sources.json"
+
+
+def add_journal_metrics(works: list[dict], client, today: date, max_age_days: int = 30, path: Path | None = None) -> None:
+    """Journal impact per work: OpenAlex's 2-year mean citedness of the journal (computed like the Journal Impact
+    Factor, but open data; the Clarivate JIF itself is licensed and cannot be published). Cached per source for
+    max_age_days in data/sources.json; a failed lookup keeps the cached values."""
+    path = path or SOURCES_PATH
+    cache = json.loads(path.read_text(encoding="utf-8")) if path.exists() else {}
+    wanted = sorted({w["source_id"] for w in works if w.get("source_id")})
+    stale = [s for s in wanted if not _fresh((cache.get(s) or {}).get("fetched"), today, max_age_days) or "type" not in cache[s]]
+    if stale:
+        try:
+            for src in client.sources(stale):
+                stats = src.get("summary_stats") or {}
+                cache[short_id(src["id"])] = {"name": src.get("display_name"), "type": src.get("type"), "impact": stats.get("2yr_mean_citedness"),
+                                              "h_index": stats.get("h_index"), "fetched": today.isoformat()}
+        except Exception as exc:  # noqa: BLE001
+            log.warning("journal metrics lookup failed (keeping cached values): %s", exc)
+    for w in works:
+        m = cache.get(w.get("source_id") or "") or {}
+        if m.get("type") != "journal":  # repositories, preprint servers, conferences: no meaningful journal impact
+            m = {}
+        w["journal_impact"] = round(m["impact"], 1) if isinstance(m.get("impact"), (int, float)) else None
+        w["journal_h_index"] = m.get("h_index")
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(json.dumps(dict(sorted(cache.items())), ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
+
+
 def merge_works(existing: list[dict], fetched: dict[str, dict], today: date, fetched_slugs: set[str] | None = None) -> tuple[list[dict], list[str]]:
     """Keep first_seen from existing records; anything unknown is new.
 
@@ -675,6 +705,7 @@ def run(dry_run: bool = False, skip_people: bool = False, config_path: Path = CO
     fetched_slugs = {p["slug"] for p in people if is_tracked(p, today, grace) and person_filter(p) and p["name"] not in failed_names}
     works, new_ids = merge_works(previous.get("works", []), fetched, today, fetched_slugs)
     works = apply_overrides(works, overrides)
+    add_journal_metrics(works, client, today, path=(OUT_DIR / "sources.json") if dry_run else SOURCES_PATH)
     former_report = review_former(people, works, today, review_months)
     new_ids = [i for i in new_ids if i not in overrides["reject"]]
 

@@ -372,3 +372,28 @@ def test_merge_review_decisions_respects_overrides():
     ov = {"confirm": {"W1"}, "reject": {"W2"}, "approve_external": set(), "verify_affiliation": set()}
     out = merge_review_decisions(ov, {"W1": {"cds": "no"}, "W2": {"cds": "yes"}, "W3": {"cds": "yes"}, "W4": {"cds": "no"}, "W5": {"cds": ""}})
     assert out["confirm"] == {"W1", "W3"} and out["reject"] == {"W2", "W4"}
+
+
+def test_journal_metrics_are_cached_and_survive_api_errors(tmp_path):
+    from datetime import date
+    from pubpulse.sync import add_journal_metrics
+
+    class Client:
+        calls = 0
+        def sources(self, ids):
+            Client.calls += 1
+            return [{"id": f"https://openalex.org/{i}", "display_name": "J", "type": "journal" if i == "S1" else "repository",
+                     "summary_stats": {"2yr_mean_citedness": 16.7734, "h_index": 132}} for i in ids]
+
+    path = tmp_path / "sources.json"
+    works = [{"id": "W1", "source_id": "S1"}, {"id": "W2", "source_id": None}, {"id": "W3", "source_id": "S2"}]
+    add_journal_metrics(works, Client(), date(2026, 10, 27), path=path)
+    assert works[0]["journal_impact"] == 16.8 and works[0]["journal_h_index"] == 132 and works[1]["journal_impact"] is None
+    assert works[2]["journal_impact"] is None  # a repository (Zenodo, medRxiv) has no journal impact
+    add_journal_metrics(works, Client(), date(2026, 11, 2), path=path)  # fresh cache: no new lookup
+    assert Client.calls == 1
+
+    class Broken:
+        def sources(self, ids): raise RuntimeError("429")
+    add_journal_metrics(works, Broken(), date(2027, 1, 1), path=path)  # stale but the API fails: keep cached values
+    assert works[0]["journal_impact"] == 16.8

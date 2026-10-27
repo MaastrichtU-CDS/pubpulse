@@ -240,7 +240,10 @@
         <aside class="filters" id="filters" aria-label="Publication filters">
           <div class="filter-heading">
             <h3>Filters</h3>
-            <button class="link" id="reset" type="button">Reset all</button>
+            <span class="filter-heading-actions">
+              <button class="link" id="reset" type="button">Default view</button>
+              <button class="link" id="show-all" type="button">Show everything</button>
+            </span>
           </div>
 
           <p class="filter-group-label">When</p>
@@ -384,6 +387,7 @@
                 <option value="date">Newest first</option>
                 <option value="added">Recently added</option>
                 <option value="cited">Most cited</option>
+                <option value="impact">Journal impact</option>
               </select>
             </div>
           </div>

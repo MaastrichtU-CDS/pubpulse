@@ -430,7 +430,8 @@
         renderPeople();
         update();
       });
-      $("reset").addEventListener("click", resetAll);
+      $("reset").addEventListener("click", () => resetAll());
+      $("show-all").addEventListener("click", () => resetAll(true));
       const tabs = [["list", $("tab-list")], ["stats", $("tab-stats")]];
       tabs.forEach(([view, tab], i) => {
         tab.addEventListener("click", () => {
@@ -464,6 +465,10 @@
       });
     }
     update();
+    if (initialHash === "#stats") {
+      initialHash = "";
+      showTabs();
+    }
   }
 
   function showTabs() {
@@ -480,7 +485,8 @@
     $("tab-list-count").textContent = count;
   }
 
-  function resetAll() {
+  // "Default view" = the standard settings (config.yml site.*); "show everything" also lifts the default restrictions.
+  function resetAll(everything = false) {
     state = {
       q: "",
       year: "",
@@ -489,18 +495,14 @@
       sort: state.sort,
       people: [],
       when: "",
-      verify: siteDefaults().verify,
+      verify: everything ? "all" : siteDefaults().verify,
       oa: false,
-      preprints: siteDefaults().preprints,
+      preprints: everything ? true : siteDefaults().preprints,
       view: state.view,
     };
     els.peopleQ.value = "";
     renderPeople();
     update();
-    if (initialHash === "#stats") {
-      initialHash = "";
-      showTabs();
-    }
   }
 
   function updateCoverageVisibility() {
@@ -720,13 +722,21 @@
     }
   }
 
-  function renderPeople() {
+  // Counts follow every filter except the author filter itself (so they show what selecting someone would give).
+  function personCounts() {
     const counts = {};
     for (const w of data.works)
-      for (const s of workMembers(w)) counts[s] = (counts[s] || 0) + 1;
+      if (matches(w, { ignorePeople: true }))
+        for (const s of workMembers(w)) counts[s] = (counts[s] || 0) + 1;
+    return counts;
+  }
+
+  function renderPeople() {
+    const counts = personCounts();
+    const focused = els.people.contains(document.activeElement) ? document.activeElement.value : null;
     const q = els.peopleQ.value.trim().toLowerCase();
     const people = data.people
-      .filter((p) => p.active || counts[p.slug] || q)
+      .filter((p) => p.active || counts[p.slug] || state.people.includes(p.slug) || q)
       .filter((p) => !q || p.name.toLowerCase().includes(q))
       .sort(
         (a, b) =>
@@ -751,6 +761,7 @@
         update();
       }),
     );
+    if (focused) els.people.querySelector(`input[value="${CSS.escape(focused)}"]`)?.focus();
   }
 
   function renderSelectedProfiles() {
@@ -761,9 +772,8 @@
     els.profiles.innerHTML = people.length
       ? `<h3 class="profiles-heading">Selected ${people.length === 1 ? "researcher" : "researchers"}</h3><div class="profiles-grid">${people
           .map((person) => {
-            const count = data.works.filter((work) =>
-              workMembers(work).includes(person.slug),
-            ).length;
+            const total = data.works.filter((work) => workMembers(work).includes(person.slug)).length;
+            const count = data.works.filter((work) => workMembers(work).includes(person.slug) && matches(work, { ignorePeople: true })).length;
             const description = [person.role_title || person.role, person.employer]
               .filter(Boolean)
               .join(" · ");
@@ -774,7 +784,7 @@
             const recent = collaboration?.last_collaboration_date
               ? `<p class="profile-collaboration">${collaboration.recent_shared_papers} shared ${collaboration.recent_shared_papers === 1 ? "paper" : "papers"} with current CDS members in the last ${collaboration.recent_months || 24} months · latest ${esc(new Date(collaboration.last_collaboration_date + "T12:00:00Z").toLocaleDateString("en-GB", { day: "numeric", month: "short", year: "numeric" }))}</p>`
               : "";
-            return `<article class="researcher-profile"><div class="profile-heading"><h4>${esc(person.name)}</h4><button class="profile-remove" type="button" data-slug="${esc(person.slug)}" aria-label="Remove ${esc(person.name)} from the author filter" title="Remove author filter">×</button></div>${status}${description ? `<p class="profile-description">${esc(description)}</p>` : ""}${recent}<div class="profile-footer"><p>${count} ${count === 1 ? "publication" : "publications"} in this collection</p>${authorProfileLinks(person)}</div></article>`;
+            return `<article class="researcher-profile"><div class="profile-heading"><h4>${esc(person.name)}</h4><button class="profile-remove" type="button" data-slug="${esc(person.slug)}" aria-label="Remove ${esc(person.name)} from the author filter" title="Remove author filter">×</button></div>${status}${description ? `<p class="profile-description">${esc(description)}</p>` : ""}${recent}<div class="profile-footer"><p>${count} ${count === 1 ? "publication" : "publications"} with the current filters${total !== count ? ` · ${total} in the whole collection` : ""}</p>${authorProfileLinks(person)}</div></article>`;
           })
           .join("")}</div>`
       : "";
@@ -845,43 +855,61 @@
   }
 
   // One row of removable chips for everything that differs from the default view.
+  // One row of removable chips for every restriction on the list, the default ones marked as such.
   function renderActiveFilters() {
     const box = els.active;
     const d = siteDefaults();
-    const optionText = (el, v) => [...el.options].find((o) => o.value === v)?.textContent.replace(/\s*\(\d+\)$/, "") || v;
+    const verify = state.verify === "all" ? "" : state.verify || "";
+    const optionText = (el, v) => ([...el.options].find((o) => o.value === v)?.dataset.label || [...el.options].find((o) => o.value === v)?.textContent || v).replace(/\s*\(\d+\)$/, "");
     const chips = [];
-    const chip = (label, clear) => chips.push({ label, clear });
+    const chip = (label, clear, isDefault = false) => chips.push({ label, clear, isDefault });
     if (state.q) chip(`Search: “${state.q}”`, () => (state.q = ""));
     if (state.when) chip(optionText(els.when, state.when), () => (state.when = ""));
     if (state.year) chip(`Year: ${state.year}`, () => (state.year = ""));
     for (const t of state.types)
       chip(`Type: ${TYPE_GROUPS.find((g) => g.key === t)?.label || t}`, () => (state.types = state.types.filter((x) => x !== t)));
     if (state.journal) chip(`Source: ${state.journal}`, () => (state.journal = ""));
-    if ((state.verify || "") !== d.verify && !(state.verify === "all" && !d.verify))
-      chip(`Group affiliation: ${optionText(els.verify, state.verify === "all" ? "" : state.verify)}`, () => (state.verify = d.verify));
+    if (verify) chip(optionText(els.verify, verify), () => (state.verify = "all"), verify === d.verify);
     if (state.oa) chip("Open access only", () => (state.oa = false));
-    if (state.preprints !== d.preprints && !state.types.length)
-      chip(state.preprints ? "Preprints included" : "Preprints hidden", () => (state.preprints = d.preprints));
+    if (!state.preprints && !state.types.length) chip("Preprints hidden", () => (state.preprints = true), !d.preprints);
     for (const slug of state.people)
       chip(nameOf(slug), () => {
         state.people = state.people.filter((s) => s !== slug);
         renderPeople();
       });
-    const defaults = [VIEWS[d.verify]?.plain || "papers", d.preprints ? "" : "no preprints"].filter(Boolean).join(", ");
-    box.innerHTML = chips.length
-      ? `<span class="active-label">Filters:</span>${chips.map((c, i) => `<button type="button" class="filter-chip" data-chip="${i}" title="Remove this filter">${esc(c.label)} <span aria-hidden="true">×</span><span class="visually-hidden">remove</span></button>`).join("")}<button type="button" class="link reset-chip" data-reset>Reset all</button>`
-      : `<span class="active-label meta">No filters: showing all ${esc(defaults)}. Click a bar, a type colour or an author name to narrow the list.</span>`;
+    const atDefault = !state.q && !state.when && !state.year && !state.types.length && !state.journal && !state.oa &&
+      !state.people.length && verify === (d.verify || "") && state.preprints === d.preprints;
+    const restricted = chips.length > 0;
+    const buttons =
+      (atDefault ? "" : '<button type="button" class="link reset-chip" data-reset>Default view</button>') +
+      (restricted ? '<button type="button" class="link reset-chip" data-all>Show everything</button>' : "");
+    box.innerHTML =
+      (restricted
+        ? `<span class="active-label">${atDefault ? "Default view:" : "Filters:"}</span>` +
+          chips.map((c, i) => `<button type="button" class="filter-chip${c.isDefault ? " is-default" : ""}" data-chip="${i}" title="Remove this filter">${esc(c.label)}${c.isDefault ? ' <small>default</small>' : ""} <span aria-hidden="true">×</span><span class="visually-hidden">remove</span></button>`).join("")
+        : '<span class="active-label meta">Showing everything: all papers, including preprints and papers without a verified affiliation.</span>') +
+      buttons;
+    $("reset").hidden = atDefault;
+    $("show-all").hidden = !restricted;
     box.querySelectorAll("[data-chip]").forEach((b) => b.addEventListener("click", () => {
       chips[Number(b.dataset.chip)].clear();
       update();
     }));
-    box.querySelector("[data-reset]")?.addEventListener("click", resetAll);
+    box.querySelector("[data-reset]")?.addEventListener("click", () => resetAll());
+    box.querySelector("[data-all]")?.addEventListener("click", () => resetAll(true));
   }
 
   // Authorship positions per person and per group, over the current filters (except the author filter).
   // Consortium papers (CONSORTIUM+ authors) are counted but left out of the position percentages: a middle position
   // there says little. "Senior author" = last or second-to-last, where supervisors usually sit.
   const CONSORTIUM = 20;
+  const IMPACT_HELP = "Journal impact = the journal's 2-year mean citedness in OpenAlex: citations in the last year to its papers of the two years before, per paper. Calculated like the Journal Impact Factor, but on open data, so values differ somewhat.";
+  const median = (xs) => {
+    const v = xs.filter((x) => x != null).sort((a, b) => a - b);
+    if (!v.length) return null;
+    const m = v.length >> 1;
+    return v.length % 2 ? v[m] : Math.round(((v[m - 1] + v[m]) / 2) * 10) / 10;
+  };
   const pct = (n, of) => (of ? Math.round((100 * n) / of) + "%" : "—");
   let statsSort = { table: "people", key: "papers", dir: -1 };
   function renderStats() {
@@ -895,11 +923,12 @@
       return !pos ? "other" : pos === 1 ? "first" : pos >= n - 1 ? "senior" : "other";
     };
     const per = {};
-    const row = (slug) => (per[slug] ||= { slug, papers: 0, consortium: 0, ranked: 0, first: 0, senior: 0, other: 0 });
+    const row = (slug) => (per[slug] ||= { slug, papers: 0, consortium: 0, ranked: 0, first: 0, senior: 0, other: 0, impacts: [] });
     for (const w of pool)
       for (const slug of workMembers(w)) {
         const r = row(slug);
         r.papers += 1;
+        r.impacts.push(w.journal_impact ?? null);
         if (isConsortium(w)) r.consortium += 1;
         else { r.ranked += 1; r[place(w, slug)] += 1; }
       }
@@ -913,13 +942,14 @@
         name, note, members: members.length, papers: works.length, consortium: works.length - ranked.length, ranked: ranked.length,
         first: ranked.filter((w) => has(w, "first")).length,
         senior: ranked.filter((w) => has(w, "senior")).length,
+        impact: median(works.map((w) => w.journal_impact ?? null)),
       };
     };
     const everyone = data.people.map((p) => p.slug);
     const groups = [{ ...groupRow("All CDS", everyone, "everyone in this collection"), members: data.people.filter((p) => p.active).length }];
     const notes = { "Senior staff": "current professors, researchers, postdocs", "Non-senior staff": "current PhD students, interns, support staff", "Former staff": "everyone who left; last role in the people table" };
     for (const g of groupsCfg.groups || []) groups.push(groupRow(g.name, g.members, `${notes[g.name] || ""} · ${g.members.length}`));
-    let people = Object.values(per).filter((r) => isKnown(r.slug));
+    let people = Object.values(per).filter((r) => isKnown(r.slug)).map((r) => ({ ...r, impact: median(r.impacts) }));
     if (state.people.length) people = people.filter((r) => state.people.includes(r.slug));
     const sortBy = (rows, table) => {
       if (statsSort.table !== table) return rows.sort((a, b) => b.papers - a.papers);
@@ -935,15 +965,15 @@
     $("stats-summary").textContent = `${total} publications in the current selection · ${people.length} ${people.length === 1 ? "person" : "people"} · ${groups.length} groups`;
     const seniorTitle = "last or second-to-last author, where supervisors usually sit";
     const groupTable =
-      `<table class="stats-table"><thead><tr>${th("groups", "name", "Group")}${th("groups", "papers", "Papers", "papers with at least one member of the group")}${th("groups", "firstPct", "Member first author")}${th("groups", "seniorPct", "Member senior author", seniorTitle)}${th("groups", "consortium", `${CONSORTIUM}+ authors`, "consortium papers, left out of the position percentages")}<th scope="col">Share of CDS</th></tr></thead><tbody>` +
-      sortBy(groups, "groups").map((g) => `<tr><th scope="row">${esc(g.name)}${g.note ? `<span class="meta stats-note">${esc(g.note)}</span>` : ""}</th><td>${g.papers}</td>${cell(g.first, g.ranked)}${cell(g.senior, g.ranked)}<td>${g.consortium}</td><td>${pct(g.papers, total)}</td></tr>`).join("") +
+      `<table class="stats-table"><thead><tr>${th("groups", "name", "Group")}${th("groups", "papers", "Papers", "papers with at least one member of the group")}${th("groups", "firstPct", "Member first author")}${th("groups", "seniorPct", "Member senior author", seniorTitle)}${th("groups", "consortium", `${CONSORTIUM}+ authors`, "consortium papers, left out of the position percentages")}${th("groups", "impact", "Median journal impact", IMPACT_HELP)}<th scope="col">Share of CDS</th></tr></thead><tbody>` +
+      sortBy(groups, "groups").map((g) => `<tr><th scope="row">${esc(g.name)}${g.note ? `<span class="meta stats-note">${esc(g.note)}</span>` : ""}</th><td>${g.papers}</td>${cell(g.first, g.ranked)}${cell(g.senior, g.ranked)}<td>${g.consortium}</td><td>${g.impact ?? "—"}</td><td>${pct(g.papers, total)}</td></tr>`).join("") +
       "</tbody></table>";
     const peopleTable = people.length
-      ? `<table class="stats-table"><thead><tr>${th("people", "name", "Person")}${th("people", "role", "Role")}${th("people", "papers", "Papers")}${th("people", "firstPct", "First author")}${th("people", "seniorPct", "Senior author", seniorTitle)}${th("people", "otherPct", "Other position")}${th("people", "consortium", `${CONSORTIUM}+ authors`, "consortium papers, left out of the position percentages")}<th scope="col">Share of CDS</th></tr></thead><tbody>` +
+      ? `<table class="stats-table"><thead><tr>${th("people", "name", "Person")}${th("people", "role", "Role")}${th("people", "papers", "Papers")}${th("people", "firstPct", "First author")}${th("people", "seniorPct", "Senior author", seniorTitle)}${th("people", "otherPct", "Other position")}${th("people", "consortium", `${CONSORTIUM}+ authors`, "consortium papers, left out of the position percentages")}${th("people", "impact", "Median journal impact", IMPACT_HELP)}<th scope="col">Share of CDS</th></tr></thead><tbody>` +
         sortBy(people, "people").map((r) => {
           const p = data.peopleBySlug[r.slug];
           const senior = (groupsCfg.seniors || []).includes(r.slug);
-          return `<tr><th scope="row"><button type="button" class="link" data-person="${esc(r.slug)}">${esc(p.name)}</button>${senior ? ' <span class="badge">senior</span>' : ""}${p.active ? "" : ' <small class="former-label">Former</small>'}</th><td class="stats-role">${esc(p.role_title || "")}</td><td>${r.papers}</td>${cell(r.first, r.ranked)}${cell(r.senior, r.ranked)}${cell(r.other, r.ranked)}<td>${r.consortium}</td><td>${pct(r.papers, total)}</td></tr>`;
+          return `<tr><th scope="row"><button type="button" class="link" data-person="${esc(r.slug)}">${esc(p.name)}</button>${senior ? ' <span class="badge">senior</span>' : ""}${p.active ? "" : ' <small class="former-label">Former</small>'}</th><td class="stats-role">${esc(p.role_title || "")}</td><td>${r.papers}</td>${cell(r.first, r.ranked)}${cell(r.senior, r.ranked)}${cell(r.other, r.ranked)}<td>${r.consortium}</td><td>${r.impact ?? "—"}</td><td>${pct(r.papers, total)}</td></tr>`;
         }).join("") + "</tbody></table>"
       : '<p class="meta">No group authors in the current selection.</p>';
     $("stats-body").innerHTML =
@@ -951,7 +981,7 @@
       `<b>Senior author</b> = last or second-to-last author. Position percentages leave out the ${big} consortium paper${big === 1 ? "" : "s"} with ${CONSORTIUM} or more authors; "share of CDS" is of all ${total} papers in the selection.</p>` +
       `<h4>Groups</h4><div class="table-scroll">${groupTable}</div><p class="meta">Senior staff = current professors, researchers and postdocs by their role on the CDS staff page; non-senior = current PhD students, interns and support staff; former staff = everyone who left. A paper counts once per group, however many members are on it.</p>` +
       `<h4>People</h4><div class="table-scroll">${peopleTable}</div>` +
-      `<p class="meta">Author positions come from the author order in OpenAlex. Shared first or last authorship (equal contribution) is not recorded there, so a co-first author listed second counts as "other position". Single-author papers count as first author. Automated, not manually verified.</p>`;
+      `<p class="meta">Author positions come from the author order in OpenAlex. Shared first or last authorship (equal contribution) is not recorded there, so a co-first author listed second counts as "other position". Single-author papers count as first author. ${esc(IMPACT_HELP)} The median is over the papers that have a journal value. Automated, not manually verified.</p>`;
     $("stats-body").querySelectorAll(".sort-th").forEach((b) => b.addEventListener("click", () => {
       const { table, key } = b.dataset;
       statsSort = statsSort.table === table && statsSort.key === key ? { table, key, dir: -statsSort.dir } : { table, key, dir: ["name", "role"].includes(key) ? 1 : -1 };
@@ -1078,9 +1108,12 @@
     renderYearChart();
     renderTypeBar();
     renderTabs(items.length);
+    renderPeople();
     if (state.view === "stats") renderStats();
     if (state.sort === "cited")
       items.sort((a, b) => (b.cited_by_count || 0) - (a.cited_by_count || 0));
+    else if (state.sort === "impact")
+      items.sort((a, b) => (b.journal_impact ?? -1) - (a.journal_impact ?? -1));
     else if (state.sort === "added")
       items.sort(
         (a, b) =>
@@ -1098,13 +1131,10 @@
     renderSelectedProfiles();
     els.list.innerHTML = items.map(render).join("");
     els.empty.classList.toggle("hidden", items.length > 0);
-    els.list.querySelectorAll("[data-copy],[data-copy-short],[data-copy-comment]").forEach((b) =>
-      b.addEventListener("click", async () => {
-        const id = b.dataset.copy || b.dataset.copyShort || b.dataset.copyComment;
-        const text = b.dataset.copy ? linkedinText(data.social[id].post) : b.dataset.copyComment ? data.social[id].comment : data.social[id].short;
-        const label = b.textContent;
-        try { await navigator.clipboard.writeText(text); b.textContent = "Copied"; setTimeout(() => (b.textContent = label), 1500); }
-        catch { window.prompt("Copy the text:", text); }
+    els.list.querySelectorAll("details[data-social]").forEach((panel) =>
+      panel.addEventListener("toggle", () => {
+        const box = panel.querySelector(".social-editor");
+        if (panel.open && !box.childElementCount) initSocialEditor(box, data.works.find((w) => w.id === panel.dataset.social));
       }),
     );
     els.list.querySelectorAll("[data-person]").forEach((b) =>
@@ -1174,32 +1204,252 @@
     return out.join("");
   }
 
-  function draftHtml(w, link) {
+  // Share panel: post text and card image are edited in the browser and nothing is saved, so anyone can polish
+  // a post without tools. Drafts (Claude) prefill it; papers without a draft get a simple starter.
+  function socialSeed(w) {
+    const d = (data.social && data.social[w.id]) || null;
+    const members = (w.group_members || []).map(nameOf);
+    const list = (xs) => (xs.length > 1 ? xs.slice(0, -1).join(", ") + " and " + xs[xs.length - 1] : xs[0] || "");
+    const link = w.doi || w.landing_url || w.openalex_url;
+    return {
+      draft: d,
+      post: d?.post ||
+        ["[The main finding in one plain sentence]", `Work by ${list(members)} with colleagues.`, "[What was done, and why it matters, in two or three sentences.]",
+          `Published in ${w.journal || "[journal]"}.`, "#ClinicalDataScience #MaastrichtUniversity"].join("\n\n"),
+      comment: d?.comment || [w.title, `Paper: ${link}`, w.oa_url ? `Full text: ${w.oa_url}` : ""].filter(Boolean).join("\n"),
+      headline: d?.headline || w.title,
+      proof: `Published in ${w.journal || "a peer-reviewed journal"} · ${(w.publication_date || "").slice(0, 4)}`.replace(/ · $/, ""),
+      byline: members.length ? "With " + list(members) : "",
+    };
+  }
+
+  function draftHtml(w) {
+    if (w.type === "preprint") return "";  // no preprints in external communication
     const d = data.social && data.social[w.id];
-    if (!d || !d.post) return "";
-    const formatted = linkedinText(d.post);
-    const prefill = "https://www.linkedin.com/feed/?shareActive=true&text=" + encodeURIComponent(formatted);
-    const flags = d.flags ? ` · ${d.flags} point${d.flags === 1 ? "" : "s"} marked [check]` : "";
-    const fig = d.figure && d.figure.path;
-    const paras = d.post.trim().split(/\n\s*\n/);
+    const label = d?.post
+      ? `draft, read before posting${d.flags ? ` · ${d.flags} point${d.flags === 1 ? "" : "s"} marked [check]` : ""}`
+      : "write a post and make a card";
+    return `<details class="social-draft" data-social="${esc(w.id)}"><summary>Share on LinkedIn <span class="meta">· ${esc(label)}</span></summary><div class="social-editor"></div></details>`;
+  }
+
+  function previewParas(post) {
     let seen = 0;
-    const previewParas = paras.map((p, i) => {
+    return post.trim().split(/\n\s*\n/).map((p, i) => {
       const cls = i === 0 ? "li-hook" : seen > FOLD ? "li-fold" : "";
       seen += p.length + 2;
       return `<p class="${cls}">${esc(p)}</p>`;
     }).join("");
-    const images = (fig || d.card) ? `<div class="draft-images">${fig ? `<figure><img src="${esc(d.figure.path)}" alt="${esc(d.figure.alt || "Figure from the paper")}" loading="lazy"><figcaption>${d.figure.description ? `<span class="fig-desc">${esc(d.figure.description)}</span><br>` : ""}${esc(d.figure.credit || "")} · <a href="${esc(d.figure.path)}" download>download</a>${d.figure.chosen_by && !/claude/i.test(d.figure.chosen_by) ? ` · <span class="badge warn">unchecked pick</span>` : ""}</figcaption></figure>` : ""}${d.card ? `<figure><img src="${esc(d.card)}" alt="Card image for this paper" loading="lazy"><figcaption>Card${fig ? " (second image)" : ""} · <a href="${esc(d.card)}" download>download</a></figcaption></figure>` : ""}</div>` : "";
-    return `<details class="social-draft"><summary>Share on LinkedIn <span class="meta">· draft, read before posting${esc(flags)}</span></summary>
-      <div class="li-preview" aria-label="LinkedIn preview">
-        <div class="li-head"><span class="li-avatar" aria-hidden="true"></span><div><b>Clinical Data Science · Maastricht University</b><br><span class="meta">Just now</span></div></div>
-        <div class="li-body">${previewParas}<span class="li-more">…see more</span></div>
-        ${images}
-      </div>
-      ${d.comment ? `<p class="draft-comment"><b>First comment</b> (paste right after posting):<br><span>${esc(d.comment)}</span></p>` : ""}
-      ${d.figure_note ? `<p class="meta">${esc(d.figure_note)}</p>` : ""}
-      <div class="draft-actions"><button type="button" class="button button-small button-dark" data-copy="${esc(w.id)}">Copy post (LinkedIn format)</button>${d.comment ? `<button type="button" class="button button-small" data-copy-comment="${esc(w.id)}">Copy first comment</button>` : ""}<a class="button button-small" href="${esc(prefill)}" target="_blank" rel="noopener">Open LinkedIn with this text ↗</a>${d.short ? `<button type="button" class="button button-small" data-copy-short="${esc(w.id)}">Copy short version</button>` : ""}</div>
-      <p class="meta">Dimmed text falls below LinkedIn's "see more" fold; the first line is copied in bold. Add the image${fig ? "s" : ""} (figure first) and tag the co-authors before posting.</p>
-    </details>`;
+  }
+
+  function initSocialEditor(box, w) {
+    const seed = socialSeed(w);
+    const d = seed.draft;
+    const fig = d?.figure?.path ? d.figure : null;
+    box.innerHTML = `
+      <div class="se-grid">
+        <div class="se-edit">
+          <label class="se-label">Post text <span class="meta">first paragraph = hook, copied in bold</span>
+            <textarea class="se-post" rows="12" spellcheck="true"></textarea></label>
+          <p class="meta se-count"></p>
+          <label class="se-label">First comment <span class="meta">post it right after the post: links go here</span>
+            <textarea class="se-comment" rows="3"></textarea></label>
+          <div class="draft-actions">
+            <button type="button" class="button button-small button-dark" data-act="copy-post">Copy post</button>
+            <button type="button" class="button button-small" data-act="copy-comment">Copy first comment</button>
+            <a class="button button-small se-open" target="_blank" rel="noopener">Open LinkedIn with this text ↗</a>
+            <button type="button" class="link" data-act="reset-text">Reset text</button>
+          </div>
+          <fieldset class="se-card-fields"><legend>Card image</legend>
+            <label class="se-label">Headline <span class="meta se-hcount"></span><input class="se-headline" type="text"></label>
+            <label class="se-label">Published line<input class="se-proof" type="text"></label>
+            <label class="se-label">Byline<input class="se-byline" type="text"></label>
+            <label class="se-label">Photo or figure <span class="meta">optional, shown on the right; stays on your computer</span>
+              <input class="se-photo" type="file" accept="image/*"></label>
+            <div class="draft-actions">
+              <button type="button" class="button button-small button-dark" data-act="download">Download card (PNG)</button>
+              <button type="button" class="link" data-act="reset-card">Reset card</button>
+            </div>
+          </fieldset>
+        </div>
+        <div class="se-preview">
+          <div class="li-preview" aria-label="LinkedIn preview">
+            <div class="li-head"><span class="li-avatar" aria-hidden="true"></span><div><b>Clinical Data Science · Maastricht University</b><br><span class="meta">Just now</span></div></div>
+            <div class="li-body"></div>
+            ${fig ? `<figure class="se-figure"><img src="${esc(fig.path)}" alt="${esc(fig.alt || "Figure from the paper")}" loading="lazy"><figcaption>${fig.description ? `${esc(fig.description)}<br>` : ""}${esc(fig.credit || "")} · <a href="${esc(fig.path)}" download>download figure</a> (post it first, the card second)</figcaption></figure>` : ""}
+            <canvas class="se-canvas" width="1200" height="627" aria-label="Card image preview"></canvas>
+          </div>
+          ${d?.figure_note ? `<p class="meta">${esc(d.figure_note)}</p>` : ""}
+          <p class="meta">Nothing is saved: your edits stay in this tab until you close or reload the page. Tag the co-authors on LinkedIn before posting.</p>
+        </div>
+      </div>`;
+    const q = (sel) => box.querySelector(sel);
+    const f = { post: q(".se-post"), comment: q(".se-comment"), headline: q(".se-headline"), proof: q(".se-proof"), byline: q(".se-byline") };
+    let photo = null;
+    const setText = () => { f.post.value = seed.post; f.comment.value = seed.comment; };
+    const setCard = () => { f.headline.value = seed.headline; f.proof.value = seed.proof; f.byline.value = seed.byline; photo = null; q(".se-photo").value = ""; };
+    const refreshText = () => {
+      const post = f.post.value;
+      q(".li-body").innerHTML = previewParas(post) + '<span class="li-more">…see more</span>';
+      q(".se-count").textContent = `${post.length} of 3000 characters · LinkedIn shows about the first ${FOLD} before "see more" (dimmed text is below the fold)`;
+      q(".se-open").href = "https://www.linkedin.com/feed/?shareActive=true&text=" + encodeURIComponent(linkedinText(post));
+    };
+    const refreshCard = () => {
+      const n = f.headline.value.trim().length;
+      q(".se-hcount").textContent = `${n} characters${n > 60 ? " · shorter reads better (≤ 60)" : ""}`;
+      drawCard(q(".se-canvas"), { headline: f.headline.value, proof: f.proof.value, byline: f.byline.value, photo });
+    };
+    setText(); setCard(); refreshText(); refreshCard();
+    f.post.addEventListener("input", refreshText);
+    for (const k of ["headline", "proof", "byline"]) f[k].addEventListener("input", refreshCard);
+    q(".se-photo").addEventListener("change", (ev) => {
+      const file = ev.target.files[0];
+      if (!file) return;
+      const img = new Image();
+      img.onload = () => { photo = img; refreshCard(); };
+      img.src = URL.createObjectURL(file);
+    });
+    const copy = async (b, text) => {
+      const label = b.textContent;
+      try { await navigator.clipboard.writeText(text); b.textContent = "Copied"; setTimeout(() => (b.textContent = label), 1500); }
+      catch { window.prompt("Copy the text:", text); }
+    };
+    box.addEventListener("click", (ev) => {
+      const b = ev.target.closest("[data-act]");
+      if (!b) return;
+      const act = b.dataset.act;
+      if (act === "copy-post") copy(b, linkedinText(f.post.value));
+      else if (act === "copy-comment") copy(b, f.comment.value);
+      else if (act === "reset-text") { setText(); refreshText(); }
+      else if (act === "reset-card") { setCard(); refreshCard(); }
+      else if (act === "download")
+        q(".se-canvas").toBlob((blob) => {
+          const a = document.createElement("a");
+          a.href = URL.createObjectURL(blob);
+          a.download = `cds-${w.id}-card.png`;
+          a.click();
+          setTimeout(() => URL.revokeObjectURL(a.href), 2000);
+        }, "image/png");
+    });
+  }
+
+  // Card image, same design as the generated cards (pubpulse/images.py): 1200x627, navy, headline, proof line, byline,
+  // logo band. Logos are loaded once; SVGs get explicit sizes so every browser can draw them on a canvas.
+  let cardAssets = null;
+  function loadCardAssets() {
+    const load = (name) => fetch("assets/" + name).then((r) => r.text()).then((svg) => {
+      const vb = (svg.match(/viewBox="([^"]+)"/) || [])[1]?.split(/\s+/).map(Number) || [0, 0, 100, 100];
+      if (!/<svg[^>]*\swidth=/.test(svg)) svg = svg.replace("<svg", `<svg width="${vb[2]}" height="${vb[3]}"`);
+      return new Promise((resolve) => {
+        const img = new Image();
+        img.onload = () => resolve(img);
+        img.onerror = () => resolve(null);
+        img.src = URL.createObjectURL(new Blob([svg], { type: "image/svg+xml" }));
+      });
+    }).catch(() => null);
+    cardAssets ||= Promise.all(["cds.svg", "cds-mask.svg", "maastricht-umc.svg", "maastro.svg", "maastricht-university.svg"].map(load))
+      .then(([cds, mask, umc, maastro, um]) => ({ cds, mask, logos: [[umc, 24], [maastro, 22], [um, 24]] }));
+    return cardAssets;
+  }
+
+  function drawCard(canvas, card) {
+    const W = 1200, H = 627, M = 84, NAVY = "#001c3d", ACCENT = "#049fd8";
+    const font = (size, bold) => `${bold ? "700 " : ""}${size}px "Helvetica Neue", Helvetica, Arial, sans-serif`;
+    loadCardAssets().then((assets) => {
+      const ctx = canvas.getContext("2d");
+      const bandY = H - 92;
+      const textRight = card.photo ? 740 : W - M - 60;
+      ctx.fillStyle = NAVY;
+      ctx.fillRect(0, 0, W, H);
+      if (card.photo) {
+        // photo panel on the right, cropped to fill
+        const x0 = 780, pw = W - x0, ph = bandY;
+        const r = Math.max(pw / card.photo.width, ph / card.photo.height);
+        const sw = pw / r, sh = ph / r;
+        ctx.drawImage(card.photo, (card.photo.width - sw) / 2, (card.photo.height - sh) / 2, sw, sh, x0, 0, pw, ph);
+      } else if (assets.mask) {
+        // faint emblem watermark
+        const off = document.createElement("canvas");
+        off.width = off.height = 460;
+        const o = off.getContext("2d");
+        o.drawImage(assets.mask, 0, 0, 460, 460);
+        o.globalCompositeOperation = "source-in";
+        o.fillStyle = "#fff";
+        o.fillRect(0, 0, 460, 460);
+        ctx.globalAlpha = 0.07;
+        ctx.drawImage(off, W - 460 + 40, 70);
+        ctx.globalAlpha = 1;
+      }
+      ctx.fillStyle = ACCENT;
+      ctx.fillRect(0, 0, 12, H);
+      ctx.textBaseline = "top";
+      ctx.font = font(20, true);
+      ctx.fillText("CLINICAL DATA SCIENCE · MAASTRICHT UNIVERSITY", M, 64);
+
+      const wrap = (text, maxW) => {
+        const lines = [];
+        let cur = "";
+        for (const word of text.split(/\s+/).filter(Boolean)) {
+          const trial = (cur + " " + word).trim();
+          if (ctx.measureText(trial).width <= maxW || !cur) cur = trial;
+          else { lines.push(cur); cur = word; }
+        }
+        if (cur) lines.push(cur);
+        return lines;
+      };
+      const ellipsis = (text, maxW) => {
+        if (ctx.measureText(text).width <= maxW) return text;
+        while (text && ctx.measureText(text + " …").width > maxW) text = text.slice(0, -1).trimEnd();
+        return text + " …";
+      };
+      // headline: up to 3 lines, font shrinks to fit
+      const width = textRight - M;
+      let size = 66, lines;
+      for (;;) {
+        ctx.font = font(size, true);
+        lines = wrap(card.headline.trim(), width);
+        if (lines.length <= 3 || size <= 40) break;
+        size -= 4;
+      }
+      if (lines.length > 3) { lines = lines.slice(0, 3); lines[2] = ellipsis(lines[2], width); }
+      const lh = Math.round(size * 1.15);
+      let y = 150 + Math.floor((3 * Math.round(66 * 1.15) - lines.length * lh) / 2);
+      ctx.fillStyle = "#f5f7fa";
+      for (const line of lines) { ctx.fillText(line, M, y); y += lh; }
+      // accent rule, proof line, byline
+      y = 412;
+      ctx.fillStyle = ACCENT;
+      ctx.fillRect(M, y, 56, 5);
+      const lineW = card.photo ? 780 - M - 28 : W - 2 * M;
+      // a long byline drops names ("… and 2 more") before it is cut off
+      const fitList = (text, maxW) => {
+        const m = text.match(/^(\S+\s)(.+)$/);
+        if (ctx.measureText(text).width <= maxW || !m || !/,| and /.test(m[2])) return ellipsis(text, maxW);
+        const names = m[2].split(/,\s*|\s+and\s+/).filter(Boolean);
+        for (let k = names.length - 1; k >= 1; k--) {
+          const t = m[1] + names.slice(0, k).join(", ") + ` and ${names.length - k} more`;
+          if (ctx.measureText(t).width <= maxW) return t;
+        }
+        return ellipsis(text, maxW);
+      };
+      ctx.font = font(27);
+      ctx.fillStyle = "#d6e2f0";
+      ctx.fillText(ellipsis(card.proof.trim(), lineW), M, y + 26);
+      ctx.font = font(23);
+      ctx.fillStyle = "#a0b0c4";
+      ctx.fillText(fitList(card.byline.trim(), lineW), M, y + 66);
+      // footer band: emblem left, partner logos right
+      ctx.fillStyle = "#002248";
+      ctx.fillRect(12, bandY, W, H - bandY);
+      if (assets.cds) ctx.drawImage(assets.cds, M - 8, bandY + 20, 104, 52);
+      let right = W - M;
+      for (const [logo, h] of assets.logos) {
+        if (!logo) continue;
+        const lw = (h * logo.width) / logo.height;
+        right -= lw;
+        ctx.drawImage(logo, right, bandY + 46 - h / 2, lw, h);
+        right -= 36;
+      }
+    });
   }
 
   function render(w) {
@@ -1251,11 +1501,11 @@
       .join(", ");
     const incomplete = w.authors.length < authorCount;
     const meta = [
-      w.publication_date,
-      w.cited_by_count ? `${w.cited_by_count} citations` : null,
+      esc(w.publication_date),
+      w.cited_by_count ? esc(`${w.cited_by_count} citations`) : null,
+      w.journal_impact != null ? `<span title="${esc(IMPACT_HELP)}">journal impact ${esc(w.journal_impact)}</span>` : null,
     ]
       .filter(Boolean)
-      .map(esc)
       .join(" · ");
     return `<li class="item">
       <div class="publication-top"><span class="journal-name">${esc(w.journal || "Research publication")}</span><span class="badges"><span class="badge pill-${esc(typeGroupKey(w.type))}" title="publication type (OpenAlex)">${esc(fmtType(w.type) || "publication")}</span>${isNew ? '<span class="badge new">new</span>' : ""}${w.manual === "confirmed" ? '<span class="badge manual" title="confirmed by hand in overrides.yml">confirmed</span>' : !isCounted(w) ? '<span class="badge warn" title="not counted: outside the team window, or this author needs a verified group affiliation (overrides.yml) and none was recorded">not counted</span>' : ""}${w.approved_external ? '<span class="badge approved" title="approved for external communication">approved</span>' : ""}${w.is_oa ? '<span class="badge oa" title="open access">open access</span>' : ""}</span></div>
@@ -1263,7 +1513,7 @@
       <div class="meta">${meta}</div>
       <div class="authors authors-full"><span class="author-list-label">Authors (${authorCount}):</span> ${authors}${incomplete ? ` <span class="author-list-note">· ${w.authors.length} names available in OpenAlex</span>` : ""}</div>
       ${w.abstract ? `<details class="abstract"><summary>Abstract</summary>${formatAbstract(w.abstract)}</details>` : ""}
-      ${draftHtml(w, link)}
+      ${draftHtml(w)}
       <div class="links">${w.doi ? `<a href="${esc(w.doi)}" target="_blank" rel="noopener">DOI ↗</a>` : ""}${w.oa_url ? `<a href="${esc(w.oa_url)}" target="_blank" rel="noopener">Full text ↗</a>` : ""}<a href="${esc(w.openalex_url)}" target="_blank" rel="noopener">OpenAlex ↗</a><span class="meta work-id" title="use this id in overrides.yml">${esc(w.id)}</span></div>
     </li>`;
   }

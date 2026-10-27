@@ -192,6 +192,18 @@ member, papers with a member as first or as senior author. Consortium papers (20
 out of the position percentages, since a middle position there says little. Positions come from the author order in
 OpenAlex; equal-contribution (shared first/last) authorship is not recorded there.
 
+**Journal impact.** Every journal paper shows the journal's *2-year mean citedness* from OpenAlex: citations in
+the last year to the journal's papers of the two years before, per paper. It is calculated like the Journal Impact
+Factor but on open data (CC0), so values differ somewhat from Clarivate's JIF, which is licensed and may not be
+published on a public website. Only journals get a value (not repositories, preprint servers, books or conferences).
+The list can be sorted by it, and the statistics show the median per person and group. Values are cached per journal
+for 30 days in `data/sources.json`.
+
+**Maastricht University Pure (CRIS).** The Pure portal (cris.maastrichtuniversity.nl) holds validated UM output, but
+its robots.txt disallows automated reading of the RSS feeds, and the Pure web-service API needs a key from the Library
+Pure team. With such a key, Pure could serve as an extra, validated affiliation source; ask the Library
+(https://library.maastrichtuniversity.nl/research/evaluating-research/cris-support/#Pure-contact).
+
 **Default view.** The website (headline numbers, list, statistics) starts from *verified affiliation only*:
 papers where a group author has a verified Maastro / Radiation Oncology / GROW / Medical Data Works affiliation, or that
 were confirmed by hand (`site.default_view` in config.yml). The newsletter uses the broader team-window rule.
@@ -210,6 +222,15 @@ and listed under the preview. The newsletter lists only papers that are new sinc
 the last `digest.recent_days` (120); older papers that only now got linked to a member (a newly identified person, late
 indexing) are left out, they just appear on the website. Each paper gets its LinkedIn card image, headline and short
 text when a draft exists (needs `ANTHROPIC_API_KEY`), otherwise the title and the opening of the abstract. Mail goes out on the Monday schedule only; push-triggered runs and the Tue–Fri refreshes queue.
+
+### Social posts: edit them on the website
+
+Every journal paper (not preprints) has a *Share on LinkedIn* panel. The post text, the first comment and the card
+image are edited right there in the browser: change the text and the LinkedIn preview follows; change the headline,
+the "published in" line or the byline and the card is redrawn; optionally add a photo or figure from your own computer,
+shown on the right of the card. *Copy post*, *Copy first comment*, *Open LinkedIn with this text* and *Download card
+(PNG)* use what you edited. Nothing is stored: a reload brings back the draft. Papers with a Claude draft start from
+that draft; others start from a short template with the title on the card.
 
 ### Social posts: what goes where (design decisions)
 

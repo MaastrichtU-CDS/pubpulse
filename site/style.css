@@ -2147,3 +2147,29 @@ button.type-key[aria-pressed="true"] { border-color: var(--navy); background: va
   .view-tabs [role="tab"] { padding: 10px 10px 8px; font-size: 14px; }
   #panel-stats .stats-panel { padding: 12px 14px; }
 }
+
+/* Share panel: edit the post and the card in the browser (nothing is saved) */
+.social-draft[open] { padding-bottom: 12px; }
+.se-grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 20px; margin-top: 10px; }
+.se-label { display: block; font-size: 13px; font-weight: 600; color: var(--text); margin: 10px 0 4px; }
+.se-label .meta { font-weight: 400; }
+.se-label textarea, .se-label input[type="text"] { font-weight: 400; display: block; width: 100%; margin-top: 4px; font: inherit; font-size: 14px; line-height: 1.5; color: var(--text); background: var(--panel); border: 1px solid #c9d6e4; border-radius: 6px; padding: 8px 10px; }
+.se-label textarea { resize: vertical; min-height: 90px; }
+.se-label textarea:focus, .se-label input:focus { outline: 3px solid #0e71bb30; border-color: var(--accent); }
+.se-label input[type="file"] { display: block; margin-top: 6px; font-size: 13px; }
+.se-count { font-size: 12px; margin: 2px 0 6px; }
+.se-card-fields { border: 1px solid var(--line); border-radius: 8px; padding: 6px 14px 10px; margin: 16px 0 0; }
+.se-card-fields legend { font-size: 13px; font-weight: 700; padding: 0 6px; color: var(--navy); }
+.se-preview .li-preview { margin-top: 10px; max-width: none; }
+.se-canvas { display: block; width: 100%; height: auto; border-radius: 6px; border: 1px solid var(--line); }
+.se-figure { margin: 0 0 10px; }
+.se-figure img { width: 100%; height: auto; border-radius: 6px; border: 1px solid var(--line); background: #fff; }
+.se-figure figcaption { font-size: 12px; color: var(--muted); margin-top: 4px; }
+@media (max-width: 900px) {
+  .se-grid { grid-template-columns: 1fr; }
+}
+.filter-heading-actions { display: inline-flex; gap: 12px; flex-wrap: wrap; justify-content: flex-end; }
+.filter-heading-actions [hidden] { display: none; }
+.filter-chip.is-default { background: var(--panel); border-style: dashed; }
+.filter-chip small { font-size: 10px; text-transform: uppercase; letter-spacing: 0.6px; color: var(--muted); }
+.reset-chip + .reset-chip { margin-left: 10px; }
