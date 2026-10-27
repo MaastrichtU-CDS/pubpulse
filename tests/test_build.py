@@ -10,7 +10,7 @@ def _pubs(n_new):
     works = [
         {"id": f"W{i}", "openalex_url": f"https://openalex.org/W{i}", "doi": f"https://doi.org/10.1/{i}", "title": f"Paper {i} <b>",
          "publication_date": f"2026-10-{10 + i:02d}", "year": 2026, "type": "article", "journal": "J", "landing_url": None,
-         "is_oa": False, "oa_url": None, "authors": ["A"], "author_count": 1, "group_members": ["p1"], "verified": i % 2 == 0,
+         "is_oa": False, "oa_url": None, "authors": ["A"], "author_count": 1, "group_members": ["p1"], "verified": i % 2 == 0, "counted": i < 4,
          "affiliation_status": {"p1": "verified" if i % 2 == 0 else "unknown"}, "member_affiliations": {"p1": []}, "cited_by_count": 0, "abstract": None, "first_seen": "2026-10-21"}
         for i in range(5)
     ]
@@ -32,11 +32,15 @@ def test_digest_zero_one_many():
     d1 = build_digest(_pubs(1), CFG)
     assert "1 new publication ·" in d1["subject"] and "published 10 October 2026" in d1["html"] and "Paper 0 &lt;b&gt;" in d1["html"]
     d5 = build_digest(_pubs(5), CFG)
-    assert d5["new_count"] == 5 and "Person One (5)" in d5["html"]
-    assert "not in the group totals" in d5["html"] and "not in the group totals" in d5["text"]
+    # team-window rule: the uncounted W4 is not listed, only mentioned in one note
+    assert d5["new_count"] == 4 and "Person One (4)" in d5["html"] and "Paper 4" not in d5["html"]
+    assert "1 more new paper is not listed" in d5["html"] and "1 more new paper(s) not listed" in d5["text"]
+    pubs = _pubs(2)
+    pubs["works"][0]["type"] = "dataset"  # data deposits stay on the website only
+    assert build_digest(pubs, CFG)["new_count"] == 1
     assert "1 staff profile" in d5["text"] and "#coverage-notes" in d5["html"]  # needs_review as a count, no name list
     card = d5["teams"]["attachments"][0]["content"]
-    assert card["type"] == "AdaptiveCard" and any("and 3 more" in b.get("text", "") for b in card["body"])
+    assert card["type"] == "AdaptiveCard" and any("and 2 more" in b.get("text", "") for b in card["body"])
 
 
 def test_digest_baseline_sends_nothing():

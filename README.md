@@ -13,7 +13,6 @@ Weekly overview of publications by the **Clinical Data Science** group (Maastro 
 
 | What | Where | Who can edit |
 | --- | --- | --- |
-| Research groups and seniors (for the statistics) | [groups sheet](GROUPS_SHEET_EDIT_LINK) | invited editors, Google login |
 | "CDS authored" yes/no per paper | [review sheet](REVIEW_SHEET_EDIT_LINK) | invited editors, Google login |
 | Your ORCID / Google Scholar link | your own profile on the [staff page](https://www.clinicaldatascience.nl/staff) | website login |
 | Membership start/end dates (private) | ask a maintainer | maintainers only |
@@ -32,7 +31,7 @@ a maintainer.
 | OpenAlex author matching per person | every 30 days, or immediately after an edit of people.yml |
 | Automatic search for missing ORCID / Scholar profiles | every 30 days per person (Mondays) |
 | Google Scholar cross-check | first day of the month |
-| Groups sheet, review sheet | every run |
+| Review sheet | every run |
 
 Every Monday a small robot reads the [staff page](https://www.clinicaldatascience.nl/staff), looks up every current
 staff member and follows recent former-staff collaborations in [OpenAlex](https://openalex.org) (a free, open catalogue that merges Crossref, PubMed, ORCID and
@@ -185,25 +184,23 @@ to validate before the first larger campaign. (An alternative backend, Google Ap
 
 To test delivery without waiting for a new paper: *Actions → weekly → Run workflow* and tick *force_notify*.
 
-### Authorship statistics and the groups sheet
+### Authorship statistics and groups
 
-The website's *Authorship statistics* panel counts, over the current filters, per person: papers, first author, last
-author and other positions (with percentages), and per group: papers with a member, papers with a member as first or as
-last author. Positions come from the author order in OpenAlex; equal-contribution (shared first/last) authorship is not
-recorded there. "All CDS" is always shown; seniors and research groups come from a Google Sheet:
+The website's *Authorship statistics* panel counts, over the current filters, per person: papers, first author,
+senior author (last or second-to-last, where supervisors usually sit) and other positions, and per group: papers with a
+member, papers with a member as first or as senior author. Consortium papers (20 or more authors) are counted but left
+out of the position percentages, since a middle position there says little. Positions come from the author order in
+OpenAlex; equal-contribution (shared first/last) authorship is not recorded there.
 
-1. `python -m pubpulse groups-template` writes `groups-template.csv`: current staff, `senior` pre-filled "yes" for
-   professors (check it), `group` empty.
-2. Create a Google Sheet, *File → Import* that CSV. Fill `senior` (yes/no) and `group`: the group name per person, usually
-   the senior's name or the research line; several groups separated by `;`. Rows for people not on the staff page are
-   reported as "not found" and ignored.
-3. Share the sheet with the editors only (*Share → add people*); editing then needs a Google login.
-4. *File → Share → Publish to web* → choose that tab → *Comma-separated values (.csv)* → *Publish*, copy the link.
-5. `config.yml` → `groups.sheet_csv_url:` = that link, `groups.edit_url:` = the normal sheet link (shown on the
-   website for editors). Replace `GROUPS_SHEET_EDIT_LINK` at the top of this README with the same link. Commit.
+**Default view.** The website (headline numbers, list, statistics) starts from *verified affiliation only*:
+papers where a group author has a verified Maastro / Radiation Oncology / GROW / Medical Data Works affiliation, or that
+were confirmed by hand (`site.default_view` in config.yml). The newsletter uses the broader team-window rule.
 
-Every build reads the published CSV and keeps the last good copy in `data/groups.json`. Group composition is public on
-the website (it is shown in the statistics); the sheet itself stays editable only by invited people.
+**Senior vs non-senior needs no upkeep.** It follows each person's role on the CDS staff page: professors,
+researchers and postdocs (including visiting researchers) are senior; PhD students, interns and support staff are not.
+Everyone who left the staff page is grouped as *former staff*. Roles are also
+normalised for display ("Former PhD Student", "Phd student" → *PhD student*; "Management Assistent" → *Management
+assistant*). The rule lives in `pubpulse/groups.py` (`SENIOR_ROLES`).
 
 ### Digest preview and archive
 

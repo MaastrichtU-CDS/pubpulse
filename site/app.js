@@ -59,7 +59,7 @@
     return g ? g.key : "other";
   }
 
-  const initialHash = location.hash;
+  let initialHash = location.hash;
   let data = null;
   let listenersBound = false;
   let state = readHash();
@@ -77,6 +77,7 @@
       verify: p.get("verify") || "",
       oa: p.get("oa") === "1",
       preprints: p.get("preprints") === "1",
+      view: p.get("view") === "stats" || location.hash === "#stats" ? "stats" : "list",
     };
   }
   function writeHash() {
@@ -91,6 +92,7 @@
     if (state.verify) p.set("verify", state.verify);
     if (state.oa) p.set("oa", "1");
     if (state.preprints) p.set("preprints", "1");
+    if (state.view === "stats") p.set("view", "stats");
     if (
       !p.toString() &&
       ["#publications", "#coverage-notes"].includes(location.hash)
@@ -247,18 +249,36 @@
 
   const isCounted = (w) => (w.counted === undefined ? !!w.verified : !!w.counted);
 
+  // The default view (config.yml site.default_view): what the headline numbers, statistics and list start from.
+  const VIEWS = {
+    verified: {
+      label: "verified-affiliation",
+      plain: "papers with a verified group affiliation",
+      rule: "Counted when at least one group author has a verified Maastro, Radiation Oncology (Maastricht), GROW or Medical Data Works affiliation on the paper, or the paper was confirmed by hand",
+      test: (w) => !!w.verified,
+    },
+    counted: {
+      label: "team-window",
+      plain: "counted papers (team-window rule)",
+      rule: "Counted under the team-window rule: papers by current group members, and by others only with a verified group affiliation",
+      test: (w) => isCounted(w),
+    },
+  };
+  const inView = (w, view) => !VIEWS[view] || VIEWS[view].test(w);
+
   function headlineWorks() {
     const d = siteDefaults();
-    return data.works.filter((w) => (d.verify !== "counted" || isCounted(w)) && (d.preprints || w.type !== "preprint"));
+    return data.works.filter((w) => inView(w, d.verify) && (d.preprints || w.type !== "preprint"));
   }
   function headlineDescription() {
     const d = siteDefaults();
-    return [d.verify === "counted" ? "team-window" : "", d.preprints ? "" : "non-preprint"].filter(Boolean).join(", ") || "all";
+    return [VIEWS[d.verify]?.label || "", d.preprints ? "" : "non-preprint"].filter(Boolean).join(", ") || "all";
   }
 
   function siteDefaults() {
     const site = (data && data.site) || {};
-    return { verify: site.default_verified_only ? "counted" : "", preprints: !!site.default_include_preprints };
+    const view = site.default_view ?? (site.default_verified_only ? "counted" : "");
+    return { verify: view === "all" ? "" : view, preprints: !!site.default_include_preprints };
   }
 
   function init(json) {
@@ -310,13 +330,17 @@
       : "—";
     $("coverage-start").innerHTML = `in ${thisYear}<a href="#metric-footnote" class="footnote-mark" aria-label="how this is counted">*</a>`;
     $("metric-footnote").textContent =
-      `* Year to date. Counted under the team-window rule: papers by current group members, and by others only with a verified group affiliation; ` +
+      `* Year to date. ${VIEWS[siteDefaults().verify]?.rule || "All papers found for group members"}; ` +
       `preprints not included. Open access share refers to the same set. Since ${coverageStart()}: ${headline.length} publications. ` +
       `Automated and not manually verified; mistakes are expected.`;
     $("publication-range").textContent =
       `${headline.length.toLocaleString("en-GB")} ${headlineLabel} publications · ${coverageStart()} onwards · OpenAlex` +
       (data.works.length > headline.length ? ` · ${data.works.length - headline.length} more incl. preprints and unverified` : "");
     configureDigest(data.list || {});
+    for (const o of els.verify.options) {
+      o.dataset.label ||= o.textContent;
+      o.textContent = o.dataset.label + (o.value === siteDefaults().verify ? " (default)" : "");
+    }
 
     const years = [
       ...new Set(data.works.map((w) => w.year).filter(Boolean)),
@@ -407,6 +431,20 @@
         update();
       });
       $("reset").addEventListener("click", resetAll);
+      const tabs = [["list", $("tab-list")], ["stats", $("tab-stats")]];
+      tabs.forEach(([view, tab], i) => {
+        tab.addEventListener("click", () => {
+          state.view = view;
+          update();
+        });
+        tab.addEventListener("keydown", (ev) => {
+          if (!["ArrowLeft", "ArrowRight"].includes(ev.key)) return;
+          const next = tabs[(i + (ev.key === "ArrowRight" ? 1 : tabs.length - 1)) % tabs.length];
+          state.view = next[0];
+          update();
+          next[1].focus();
+        });
+      });
       window.addEventListener("hashchange", () => {
         if (
           [
@@ -419,11 +457,27 @@
           ].includes(location.hash)
         )
           return;
+        const toStats = location.hash === "#stats";
         state = readHash();
         init(data);
+        if (toStats) showTabs();
       });
     }
     update();
+  }
+
+  function showTabs() {
+    $("tab-list").parentElement.scrollIntoView({ behavior: matchMedia("(prefers-reduced-motion: reduce)").matches ? "instant" : "smooth" });
+  }
+
+  function renderTabs(count) {
+    for (const [view, tab, panel] of [["list", $("tab-list"), $("panel-list")], ["stats", $("tab-stats"), $("panel-stats")]]) {
+      const on = state.view === view;
+      tab.setAttribute("aria-selected", String(on));
+      tab.tabIndex = on ? 0 : -1;
+      panel.hidden = !on;
+    }
+    $("tab-list-count").textContent = count;
   }
 
   function resetAll() {
@@ -438,10 +492,15 @@
       verify: siteDefaults().verify,
       oa: false,
       preprints: siteDefaults().preprints,
+      view: state.view,
     };
     els.peopleQ.value = "";
     renderPeople();
     update();
+    if (initialHash === "#stats") {
+      initialHash = "";
+      showTabs();
+    }
   }
 
   function updateCoverageVisibility() {
@@ -705,7 +764,7 @@
             const count = data.works.filter((work) =>
               workMembers(work).includes(person.slug),
             ).length;
-            const description = [person.role, person.employer]
+            const description = [person.role_title || person.role, person.employer]
               .filter(Boolean)
               .join(" · ");
             const collaboration = person.former_collaboration;
@@ -772,7 +831,7 @@
     }).join("");
     const status = any
       ? `<span class="type-status">Showing only: <b>${esc(state.types.map((k) => TYPE_GROUPS.find((g) => g.key === k)?.label || k).join(", "))}</b> <button type="button" class="link" data-clear-types>Show all types</button></span>`
-      : `<span class="type-status meta">Click a colour to filter by type${hidden ? ` · ${hidden} preprint${hidden === 1 ? "" : "s"} hidden by default` : ""}</span>`;
+      : hidden ? `<span class="type-status meta">${hidden} preprint${hidden === 1 ? "" : "s"} hidden by default (switch on under What → Include preprints)</span>` : "";
     box.innerHTML = `<div class="type-track">${seg}</div><div class="type-legend">${legend}</div>${status}`;
     box.querySelectorAll("[data-type]").forEach((b) => b.addEventListener("click", () => {
       const ty = b.dataset.type;
@@ -808,7 +867,7 @@
         state.people = state.people.filter((s) => s !== slug);
         renderPeople();
       });
-    const defaults = [d.verify === "counted" ? "counted papers (team-window rule)" : "", d.preprints ? "" : "no preprints"].filter(Boolean).join(", ");
+    const defaults = [VIEWS[d.verify]?.plain || "papers", d.preprints ? "" : "no preprints"].filter(Boolean).join(", ");
     box.innerHTML = chips.length
       ? `<span class="active-label">Filters:</span>${chips.map((c, i) => `<button type="button" class="filter-chip" data-chip="${i}" title="Remove this filter">${esc(c.label)} <span aria-hidden="true">×</span><span class="visually-hidden">remove</span></button>`).join("")}<button type="button" class="link reset-chip" data-reset>Reset all</button>`
       : `<span class="active-label meta">No filters: showing all ${esc(defaults)}. Click a bar, a type colour or an author name to narrow the list.</span>`;
@@ -820,78 +879,82 @@
   }
 
   // Authorship positions per person and per group, over the current filters (except the author filter).
+  // Consortium papers (CONSORTIUM+ authors) are counted but left out of the position percentages: a middle position
+  // there says little. "Senior author" = last or second-to-last, where supervisors usually sit.
+  const CONSORTIUM = 20;
   const pct = (n, of) => (of ? Math.round((100 * n) / of) + "%" : "—");
   let statsSort = { table: "people", key: "papers", dir: -1 };
   function renderStats() {
     const pool = data.works.filter((w) => matches(w, { ignorePeople: true }));
     const groupsCfg = data.groups || { groups: [], seniors: [] };
-    const per = {};
-    const row = (slug) => (per[slug] ||= { slug, papers: 0, first: 0, last: 0, middle: 0 });
-    const firstSlug = (w) => (w.author_members || [])[(w.author_positions || []).indexOf(1)] || null;
-    const lastSlug = (w) => {
-      const n = w.author_count || (w.authors || []).length;
-      return n > 1 ? (w.author_members || [])[(w.author_positions || []).indexOf(n)] || null : null;
+    const nAuthors = (w) => w.author_count || (w.authors || []).length;
+    const isConsortium = (w) => nAuthors(w) >= CONSORTIUM;
+    const positionOf = (w, slug) => (w.author_positions || [])[(w.author_members || []).indexOf(slug)] || null;
+    const place = (w, slug) => {
+      const pos = positionOf(w, slug), n = nAuthors(w);
+      return !pos ? "other" : pos === 1 ? "first" : pos >= n - 1 ? "senior" : "other";
     };
-    for (const w of pool) {
-      const f = firstSlug(w), l = lastSlug(w);
+    const per = {};
+    const row = (slug) => (per[slug] ||= { slug, papers: 0, consortium: 0, ranked: 0, first: 0, senior: 0, other: 0 });
+    for (const w of pool)
       for (const slug of workMembers(w)) {
         const r = row(slug);
         r.papers += 1;
-        if (slug === f) r.first += 1;
-        else if (slug === l) r.last += 1;
-        else r.middle += 1;
+        if (isConsortium(w)) r.consortium += 1;
+        else { r.ranked += 1; r[place(w, slug)] += 1; }
       }
-    }
     const isKnown = (s) => s && data.peopleBySlug[s];
     const groupRow = (name, members, note) => {
       const set = new Set(members);
       const works = pool.filter((w) => workMembers(w).some((s) => set.has(s)));
+      const ranked = works.filter((w) => !isConsortium(w));
+      const has = (w, where) => [...set].some((s) => workMembers(w).includes(s) && place(w, s) === where);
       return {
-        name, note, members: members.length, papers: works.length,
-        first: works.filter((w) => set.has(firstSlug(w))).length,
-        last: works.filter((w) => set.has(lastSlug(w))).length,
+        name, note, members: members.length, papers: works.length, consortium: works.length - ranked.length, ranked: ranked.length,
+        first: ranked.filter((w) => has(w, "first")).length,
+        senior: ranked.filter((w) => has(w, "senior")).length,
       };
     };
     const everyone = data.people.map((p) => p.slug);
     const groups = [{ ...groupRow("All CDS", everyone, "everyone in this collection"), members: data.people.filter((p) => p.active).length }];
-    if ((groupsCfg.seniors || []).length) groups.push(groupRow("Seniors", groupsCfg.seniors, "senior staff from the groups sheet"));
-    for (const g of groupsCfg.groups || []) groups.push(groupRow(g.name, g.members, (g.seniors || []).map(nameOf).join(", ")));
+    const notes = { "Senior staff": "current professors, researchers, postdocs", "Non-senior staff": "current PhD students, interns, support staff", "Former staff": "everyone who left; last role in the people table" };
+    for (const g of groupsCfg.groups || []) groups.push(groupRow(g.name, g.members, `${notes[g.name] || ""} · ${g.members.length}`));
     let people = Object.values(per).filter((r) => isKnown(r.slug));
     if (state.people.length) people = people.filter((r) => state.people.includes(r.slug));
     const sortBy = (rows, table) => {
       if (statsSort.table !== table) return rows.sort((a, b) => b.papers - a.papers);
       const k = statsSort.key;
-      const val = (r) => (k === "name" ? (r.name || nameOf(r.slug)).toLowerCase() : k.endsWith("Pct") ? (r.papers ? r[k.slice(0, -3)] / r.papers : -1) : r[k]);
+      const val = (r) => (k === "name" ? (r.name || nameOf(r.slug)).toLowerCase() : k === "role" ? (data.peopleBySlug[r.slug]?.role_title || "").toLowerCase() : k.endsWith("Pct") ? (r.ranked ? r[k.slice(0, -3)] / r.ranked : -1) : r[k]);
       return rows.sort((a, b) => (val(a) > val(b) ? 1 : val(a) < val(b) ? -1 : 0) * statsSort.dir || b.papers - a.papers);
     };
     const th = (table, key, label, title = "") =>
       `<th scope="col"><button type="button" class="link sort-th${statsSort.table === table && statsSort.key === key ? " is-sorted" : ""}" data-table="${table}" data-key="${key}" title="${esc(title || "Sort by " + label)}">${label}${statsSort.table === table && statsSort.key === key ? (statsSort.dir < 0 ? " ↓" : " ↑") : ""}</button></th>`;
     const cell = (n, of) => `<td>${n} <span class="meta">${pct(n, of)}</span></td>`;
     const total = pool.length;
-    $("stats-summary").textContent = `${total} publications in the current selection · ${people.length} ${people.length === 1 ? "person" : "people"}${(groupsCfg.groups || []).length ? ` · ${groupsCfg.groups.length} groups` : ""}`;
+    const big = pool.filter(isConsortium).length;
+    $("stats-summary").textContent = `${total} publications in the current selection · ${people.length} ${people.length === 1 ? "person" : "people"} · ${groups.length} groups`;
+    const seniorTitle = "last or second-to-last author, where supervisors usually sit";
     const groupTable =
-      `<table class="stats-table"><thead><tr>${th("groups", "name", "Group")}${th("groups", "papers", "Papers", "papers with at least one member of the group")}${th("groups", "firstPct", "Member first author")}${th("groups", "lastPct", "Member last author")}<th scope="col">Share of CDS</th></tr></thead><tbody>` +
-      sortBy(groups, "groups").map((g) => `<tr><th scope="row">${esc(g.name)}${g.note ? `<span class="meta stats-note">${esc(g.note)}</span>` : ""}</th><td>${g.papers}</td>${cell(g.first, g.papers)}${cell(g.last, g.papers)}<td>${pct(g.papers, total)}</td></tr>`).join("") +
+      `<table class="stats-table"><thead><tr>${th("groups", "name", "Group")}${th("groups", "papers", "Papers", "papers with at least one member of the group")}${th("groups", "firstPct", "Member first author")}${th("groups", "seniorPct", "Member senior author", seniorTitle)}${th("groups", "consortium", `${CONSORTIUM}+ authors`, "consortium papers, left out of the position percentages")}<th scope="col">Share of CDS</th></tr></thead><tbody>` +
+      sortBy(groups, "groups").map((g) => `<tr><th scope="row">${esc(g.name)}${g.note ? `<span class="meta stats-note">${esc(g.note)}</span>` : ""}</th><td>${g.papers}</td>${cell(g.first, g.ranked)}${cell(g.senior, g.ranked)}<td>${g.consortium}</td><td>${pct(g.papers, total)}</td></tr>`).join("") +
       "</tbody></table>";
     const peopleTable = people.length
-      ? `<table class="stats-table"><thead><tr>${th("people", "name", "Person")}${th("people", "papers", "Papers")}${th("people", "firstPct", "First author")}${th("people", "lastPct", "Last author")}${th("people", "middlePct", "Other position")}<th scope="col">Share of CDS</th></tr></thead><tbody>` +
+      ? `<table class="stats-table"><thead><tr>${th("people", "name", "Person")}${th("people", "role", "Role")}${th("people", "papers", "Papers")}${th("people", "firstPct", "First author")}${th("people", "seniorPct", "Senior author", seniorTitle)}${th("people", "otherPct", "Other position")}${th("people", "consortium", `${CONSORTIUM}+ authors`, "consortium papers, left out of the position percentages")}<th scope="col">Share of CDS</th></tr></thead><tbody>` +
         sortBy(people, "people").map((r) => {
           const p = data.peopleBySlug[r.slug];
           const senior = (groupsCfg.seniors || []).includes(r.slug);
-          return `<tr><th scope="row"><button type="button" class="link" data-person="${esc(r.slug)}">${esc(p.name)}</button>${senior ? ' <span class="badge">senior</span>' : ""}${p.active ? "" : ' <small class="former-label">Former</small>'}</th><td>${r.papers}</td>${cell(r.first, r.papers)}${cell(r.last, r.papers)}${cell(r.middle, r.papers)}<td>${pct(r.papers, total)}</td></tr>`;
+          return `<tr><th scope="row"><button type="button" class="link" data-person="${esc(r.slug)}">${esc(p.name)}</button>${senior ? ' <span class="badge">senior</span>' : ""}${p.active ? "" : ' <small class="former-label">Former</small>'}</th><td class="stats-role">${esc(p.role_title || "")}</td><td>${r.papers}</td>${cell(r.first, r.ranked)}${cell(r.senior, r.ranked)}${cell(r.other, r.ranked)}<td>${r.consortium}</td><td>${pct(r.papers, total)}</td></tr>`;
         }).join("") + "</tbody></table>"
       : '<p class="meta">No group authors in the current selection.</p>';
-    const groupNote = (groupsCfg.groups || []).length
-      ? `Groups and seniors come from the groups sheet${groupsCfg.edit_url ? ` (<a href="${esc(safeLink(groupsCfg.edit_url))}" target="_blank" rel="noopener">edit, Google login needed ↗</a>)` : ""}.${(groupsCfg.unmatched || []).length ? ` Names in the sheet not found among staff: ${esc(groupsCfg.unmatched.join(", "))}.` : ""}`
-      : `Research groups are not defined yet; they come from a Google Sheet maintained by the group${groupsCfg.edit_url ? ` (<a href="${esc(safeLink(groupsCfg.edit_url))}" target="_blank" rel="noopener">edit ↗</a>)` : ""}.`;
     $("stats-body").innerHTML =
-      `<p class="stats-intro">Counts follow the filters above (period, year, type, affiliation rule); the author filter only narrows the people table. Percentages are of that row's papers; "share of CDS" is of all ${total} papers in the selection.</p>` +
-      `<h4>Groups</h4><div class="table-scroll">${groupTable}</div><p class="meta">${groupNote} A paper counts once per group, however many members are on it.</p>` +
+      `<p class="stats-intro">Counts follow the filters above (period, year, type, affiliation); the author filter only narrows the people table. ` +
+      `<b>Senior author</b> = last or second-to-last author. Position percentages leave out the ${big} consortium paper${big === 1 ? "" : "s"} with ${CONSORTIUM} or more authors; "share of CDS" is of all ${total} papers in the selection.</p>` +
+      `<h4>Groups</h4><div class="table-scroll">${groupTable}</div><p class="meta">Senior staff = current professors, researchers and postdocs by their role on the CDS staff page; non-senior = current PhD students, interns and support staff; former staff = everyone who left. A paper counts once per group, however many members are on it.</p>` +
       `<h4>People</h4><div class="table-scroll">${peopleTable}</div>` +
       `<p class="meta">Author positions come from the author order in OpenAlex. Shared first or last authorship (equal contribution) is not recorded there, so a co-first author listed second counts as "other position". Single-author papers count as first author. Automated, not manually verified.</p>`;
     $("stats-body").querySelectorAll(".sort-th").forEach((b) => b.addEventListener("click", () => {
       const { table, key } = b.dataset;
-      statsSort = statsSort.table === table && statsSort.key === key ? { table, key, dir: -statsSort.dir } : { table, key, dir: key === "name" ? 1 : -1 };
+      statsSort = statsSort.table === table && statsSort.key === key ? { table, key, dir: -statsSort.dir } : { table, key, dir: ["name", "role"].includes(key) ? 1 : -1 };
       renderStats();
     }));
     $("stats-body").querySelectorAll("[data-person]").forEach((b) => b.addEventListener("click", () => {
@@ -1014,7 +1077,8 @@
     renderActiveFilters();
     renderYearChart();
     renderTypeBar();
-    renderStats();
+    renderTabs(items.length);
+    if (state.view === "stats") renderStats();
     if (state.sort === "cited")
       items.sort((a, b) => (b.cited_by_count || 0) - (a.cited_by_count || 0));
     else if (state.sort === "added")
@@ -1027,7 +1091,7 @@
       items.sort((a, b) =>
         (b.publication_date || "").localeCompare(a.publication_date || ""),
       );
-    const base = state.verify === "counted" && !state.preprints && !state.types.length ? headlineWorks().length : data.works.length;
+    const base = state.verify === siteDefaults().verify && !state.preprints && !state.types.length ? headlineWorks().length : data.works.length;
     els.count.textContent =
       `${items.length} of ${base} publications · since ${coverageStart()}` +
       (data.newIds.size ? ` · ${data.newIds.size} new in the last 7 days` : "");

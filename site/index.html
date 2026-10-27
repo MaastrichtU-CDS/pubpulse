@@ -239,22 +239,39 @@
       <div class="layout">
         <aside class="filters" id="filters" aria-label="Publication filters">
           <div class="filter-heading">
-            <h3>Filter publications</h3>
+            <h3>Filters</h3>
             <button class="link" id="reset" type="button">Reset all</button>
           </div>
-          <p class="filter-search-hint">
-            Type in any dropdown to find an option.
-          </p>
+
+          <p class="filter-group-label">When</p>
           <div class="filter">
             <label for="when">Period</label
             ><select id="when">
               <option value="">Any time</option>
               <option value="week">New in the last 7 days</option>
-              <option value="queued">Queued for the next digest</option>
+              <option value="queued">Queued for the next newsletter</option>
               <option value="30d">Published in the last 30 days</option>
               <option value="90d">Published in the last 90 days</option>
               <option value="12m">Published in the last 12 months</option>
               <option value="year">Published this year</option>
+            </select>
+          </div>
+          <div class="filter">
+            <label for="year">Year</label
+            ><select id="year">
+              <option value="">All years</option>
+            </select>
+          </div>
+
+          <p class="filter-group-label">What</p>
+          <div class="filter">
+            <label for="type">Type <small class="label-hint">pick one or more</small></label
+            ><select id="type" multiple data-placeholder="All types"></select>
+          </div>
+          <div class="filter">
+            <label for="journal">Journal / source</label
+            ><select id="journal">
+              <option value="">All sources</option>
             </select>
           </div>
           <div class="filter row">
@@ -265,33 +282,21 @@
               ><input type="checkbox" id="include-preprints" /> Include preprints</label
             >
           </div>
-          <div class="filter">
-            <label for="type">Type <small class="label-hint">pick one or more</small></label
-            ><select id="type" multiple data-placeholder="All types"></select>
-          </div>
-          <div class="filter">
-            <label for="year">Year</label
-            ><select id="year">
-              <option value="">All years</option>
-            </select>
-          </div>
-          <div class="filter">
-            <label for="journal">Journal / source</label
-            ><select id="journal">
-              <option value="">All sources</option>
-            </select>
-          </div>
+
+          <p class="filter-group-label">Counting rule</p>
           <div class="filter">
             <label for="verify">Group affiliation</label
             ><select id="verify">
               <option value="">All papers</option>
-              <option value="counted">Team window (default)</option>
+              <option value="counted">Team window</option>
               <option value="verified">Verified affiliation only</option>
               <option value="uncounted">Not counted</option>
               <option value="unverified">Affiliation not verified</option>
               <option value="approved">Approved for external communication</option>
             </select>
           </div>
+
+          <p class="filter-group-label">Who</p>
           <div class="filter people-filter">
             <div class="label-row">
               <label for="people-q">Group members</label
@@ -315,17 +320,27 @@
           </div>
         </aside>
         <section class="results" aria-label="Publications">
+          <div class="filter search-filter">
+            <label for="q" class="visually-hidden">Search publications</label
+            ><input
+              id="q"
+              type="search"
+              placeholder="Search titles, authors or journals…"
+              autocomplete="off"
+            />
+          </div>
           <div id="active-filters" class="active-filters" aria-live="polite"></div>
           <section
             id="selected-profiles"
             class="author-profiles hidden"
             aria-label="Selected researcher profiles"
           ></section>
-          <section class="publication-chart" aria-labelledby="chart-heading">
+          <section class="publication-chart overview-card" aria-labelledby="chart-heading">
             <div class="chart-heading">
-              <h3 id="chart-heading">Publications by year</h3>
+              <h3 id="chart-heading">Overview</h3>
               <p id="chart-note"></p>
             </div>
+            <h4 class="overview-sub">Publications by year</h4>
             <div class="chart-plot">
               <div id="chart-axis" class="chart-axis" aria-hidden="true"></div>
               <div
@@ -335,27 +350,30 @@
                 aria-label="Filter publications by year"
               ></div>
             </div>
+            <h4 class="overview-sub">Publication types</h4>
+            <div id="type-bar" class="type-bar" aria-label="Publication types in the current selection"></div>
             <p class="chart-caption">
-              Totals follow your search and filters. Select a year to filter the
-              list.
+              Totals follow your search and filters. Click a year or a type to filter.
             </p>
           </section>
-          <details class="stats-panel" id="stats">
-            <summary>
-              <span class="stats-title">Authorship statistics</span>
-              <span class="stats-summary" id="stats-summary"></span>
-            </summary>
-            <div id="stats-body"></div>
-          </details>
-          <div class="filter search-filter">
-            <label for="q">Search publications</label
-            ><input
-              id="q"
-              type="search"
-              placeholder="Title, author or journal…"
-              autocomplete="off"
-            />
+
+          <div class="view-tabs" role="tablist" aria-label="Show">
+            <button type="button" role="tab" id="tab-list" aria-controls="panel-list" aria-selected="true">
+              Publications <span class="tab-count" id="tab-list-count"></span>
+            </button>
+            <button type="button" role="tab" id="tab-stats" aria-controls="panel-stats" aria-selected="false">
+              Authorship statistics
+            </button>
           </div>
+
+          <div id="panel-stats" role="tabpanel" aria-labelledby="tab-stats" hidden>
+            <section class="stats-panel" id="stats">
+              <p class="stats-summary" id="stats-summary"></p>
+              <div id="stats-body"></div>
+            </section>
+          </div>
+
+          <div id="panel-list" role="tabpanel" aria-labelledby="tab-list">
           <div class="results-toolbar">
             <p id="count" role="status" aria-live="polite">
               Loading publications…
@@ -373,7 +391,6 @@
             CDS authors are highlighted; click a name to filter the list.
             Hover a name for the author position.
           </p>
-          <div id="type-bar" class="type-bar" aria-label="Publication types in the current selection"></div>
           <ol id="list" class="list"></ol>
           <div id="empty" class="empty hidden">
             <h3>No papers found, yet.</h3>
@@ -381,6 +398,7 @@
               Try a different search or reset the filters to explore all
               publications.
             </p>
+          </div>
           </div>
           <noscript
             ><p>

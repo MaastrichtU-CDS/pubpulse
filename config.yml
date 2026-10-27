@@ -12,20 +12,12 @@ repo_url: https://github.com/MaastrichtU-CDS/pubpulse
 # Start with: python -m pubpulse members-template  ->  import members-template.csv into the sheet.
 members_csv: members.csv
 
-# Research groups and seniors for the authorship statistics on the website. Kept in a Google Sheet that only invited
-# people can edit (Google login). Start with: python -m pubpulse groups-template -> import groups-template.csv.
-# Columns: name, slug (optional), senior (yes/no), group (one or more names separated by ";").
-#   sheet_csv_url: File -> Share -> Publish to web -> the tab -> "Comma-separated values (.csv)" -> Publish -> copy link
-#   edit_url:      the normal link of the sheet (shown on the website and in the README for editors)
-# Read at every build; the last good copy is kept in data/groups.json. A local groups.csv works too.
-groups:
-  sheet_csv_url: ""
-  edit_url: ""
-  csv: groups.csv
-
 # Website defaults (visitors can switch them in the filters).
 site:
-  default_verified_only: true       # team-window rule: team members' papers count (no affiliation check); outside the team window only with a verified group affiliation
+  # verified = only papers where a group author has a verified group affiliation (strict; headline numbers and statistics)
+  # counted  = team-window rule (current members' papers count without an affiliation check); all = everything
+  # The newsletter always uses the team-window rule.
+  default_view: verified
   default_include_preprints: false  # hide preprints unless switched on
 
 # LinkedIn drafts written by Claude for verified journal papers (never preprints). Secret ANTHROPIC_API_KEY.
@@ -95,6 +87,8 @@ digest:
   # Papers published within this many days count as news; older ones that newly appear (a person newly identified,
   # late indexing) are only mentioned as "added to the archive".
   recent_days: 120
+  # Work types left out of the newsletter (still on the website): data deposits on Zenodo etc. are not news.
+  exclude_types: [dataset]
   teams_max_items: 10
   # Subscriber list: URL of the Apps Script web app (appsscript/Code.gs) deployed under the pubpulse Gmail account.
   # The website form posts to it; the weekly job fetches the confirmed list with the SUBSCRIBERS_KEY secret and

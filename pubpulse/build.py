@@ -9,7 +9,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 from xml.sax.saxutils import escape
 
-from .groups import load_groups
+from .groups import role_group, role_groups, role_title
 from .sync import DATA_DIR, NOTIFIED_PATH, OUT_DIR, ROOT, load_config, load_pending, load_publications
 
 SITE_DIR = ROOT / "site"
@@ -187,7 +187,13 @@ def build_digest(pubs: dict, cfg: dict, pending_ids: list[str] | None = None, is
     last = pubs.get("last_run") or {}
     dg = cfg.get("digest") or {}
     all_items = sorted(new_works(pubs, pending_ids), key=lambda w: w.get("publication_date") or "", reverse=True)
-    items, _older = split_recent(all_items, int(dg.get("recent_days", 120)), last.get("date"))
+    recent, _older = split_recent(all_items, int(dg.get("recent_days", 120)), last.get("date"))
+    # The newsletter follows the team-window rule: only counted papers are listed; the rest is one note for maintainers.
+    counted = lambda w: bool(w.get("counted", w.get("verified", True)))  # noqa: E731
+    skip_types = set(dg.get("exclude_types", ["dataset"]))  # data deposits are not news; they stay on the website
+    recent = [w for w in recent if w.get("type") not in skip_types]
+    items = [w for w in recent if counted(w)]
+    uncounted_new = len(recent) - len(items)
     # Papers with a LinkedIn draft (headline and card) lead the issue.
     items.sort(key=lambda w: _draft_for(w) is None)
     site = cfg.get("site_url", "")
@@ -211,13 +217,12 @@ def build_digest(pubs: dict, cfg: dict, pending_ids: list[str] | None = None, is
     person_line = ", ".join(f"{names.get(s, s)}" + (f" ({c})" if c > 1 else "") for s, c in sorted(per_person.items(), key=lambda x: (-x[1], names.get(x[0], x[0]))))
     review = last.get("needs_review", [])
     errors = last.get("errors") or []
-    unverified_new = sum(1 for w in items if not w.get("counted", w.get("verified", True)))
     sc = scholar_summary()
 
     notes = []
-    if unverified_new:
-        notes.append(f'{unverified_new} of these {"are" if unverified_new != 1 else "is"} not in the group totals because no group affiliation was recorded: '
-                     f'<a href="{html.escape(site)}#when=queued&amp;verify=uncounted" style="color:{ACCENT}">check them</a> and confirm or reject them in overrides.yml.')
+    if uncounted_new:
+        notes.append(f'{uncounted_new} more new paper{"s are" if uncounted_new != 1 else " is"} not listed: outside the team window and no group affiliation recorded. '
+                     f'<a href="{html.escape(site)}#when=queued&amp;verify=uncounted" style="color:{ACCENT}">Check them</a> and confirm or reject them in overrides.yml.')
     if sc:
         parts = [f'{sc["missing"]} paper{"s" if sc["missing"] != 1 else ""} on Google Scholar profiles {"are" if sc["missing"] != 1 else "is"} not in pubpulse' if sc["missing"] else "",
                  f'{sc["not_attributed"]} {"are" if sc["not_attributed"] != 1 else "is"} in pubpulse but not linked to the person' if sc["not_attributed"] else ""]
@@ -274,8 +279,8 @@ def build_digest(pubs: dict, cfg: dict, pending_ids: list[str] | None = None, is
             text_lines.append(f"   {summary}")
         text_lines += [f"   {work_link(w)}", ""]
     text_lines += [f"All publications: {site}", f"Newsletter on the web: {site}digest.html"]
-    if unverified_new:
-        text_lines += ["", f"{unverified_new} of these are not in the group totals (no group affiliation recorded): {site}#when=queued&verify=uncounted"]
+    if uncounted_new:
+        text_lines += ["", f"{uncounted_new} more new paper(s) not listed (outside the team window, no group affiliation recorded): {site}#when=queued&verify=uncounted"]
     if review:
         text_lines += ["", f"{len(review)} staff profiles without a confirmed author match: {site}#coverage-notes"]
     text_lines += ["", "Unsubscribe: {{UNSUBSCRIBE_URL}}"]
@@ -443,7 +448,9 @@ def run(config_path: Path | None = None) -> dict:
         "site": cfg.get("site") or {},
         "pending_ids": load_pending() if NOTIFIED_PATH.exists() else [],
         "recent_days": int((cfg.get("digest") or {}).get("recent_days", 120)),
-        "groups": load_groups(cfg, pubs.get("people", []), ROOT, DATA_DIR / "groups.json"),
+        "groups": role_groups(pubs.get("people", [])),
+        # Staff-page roles normalised for display and grouping (the raw role stays in people.yml).
+        "people": [{**p, "role_title": role_title(p.get("role")), "role_group": role_group(p.get("role"))} for p in pubs.get("people", [])],
     }
     (DIST_DIR / "data" / "publications.json").write_text(
         json.dumps(site_pubs, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"

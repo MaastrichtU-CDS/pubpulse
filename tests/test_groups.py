@@ -1,4 +1,4 @@
-from pubpulse.groups import load_groups, parse_groups_csv, resolve_groups, template_csv
+from pubpulse.groups import role_group, role_groups, role_title
 
 PEOPLE = [
     {"slug": "andre-dekker", "name": "Andre Dekker", "role": "Professor"},
@@ -7,29 +7,22 @@ PEOPLE = [
 ]
 
 
-def test_parse_and_resolve_groups():
-    text = "﻿Name,Senior,Group\nAndré Dekker,yes,FAIR data; Federated learning\nJoshi Hogenboom,,Federated learning\nNo Body,x,Ghost\n"
-    rows = parse_groups_csv(text)
-    assert rows[0] == {"name": "André Dekker", "slug": "", "groups": ["FAIR data", "Federated learning"], "senior": True}
-    out = resolve_groups(rows, PEOPLE)
-    assert out["seniors"] == ["andre-dekker"] and out["unmatched"] == ["No Body"]
-    fed = next(g for g in out["groups"] if g["name"] == "Federated learning")
-    assert fed["members"] == ["andre-dekker", "joshi-hogenboom"] and fed["seniors"] == ["andre-dekker"]
+def test_roles_are_normalised_and_grouped():
+    assert role_title("Former PhD Student") == "PhD student" == role_title("Phd student")
+    assert role_title("Management Assistent") == "Management assistant"
+    assert role_title("Postdoc – Artificial Intelligence & Implementation Science in Radiotherapy (OPERAI") == "Postdoc"
+    assert role_title("Visiting researcher from Magna Græcia University") == "Visiting researcher"
+    assert role_title("Student- assistant") == "Student assistant" and role_title(None) == ""
+    assert role_group("Former Assistant Professor") == "Senior staff" == role_group("Professor")
+    assert role_group("Researcher") == "Senior staff" == role_group("Postdoc – AI") == role_group("Visiting postdoctoral researcher")
+    assert role_group("PhD Student") == "Non-senior staff" == role_group("Senior Software Engineer") == role_group("Intern")
+    assert role_group("") is None
 
 
-def test_load_groups_prefers_csv_then_cache(tmp_path):
-    cache = tmp_path / "data" / "groups.json"
-    empty = load_groups({}, PEOPLE, tmp_path, cache)
-    assert empty["groups"] == [] and empty["source"] is None
-    (tmp_path / "groups.csv").write_text("name,group\nLeonard Wee,Imaging\n")
-    out = load_groups({"groups": {"edit_url": "https://docs.google.com/x"}}, PEOPLE, tmp_path, cache)
-    assert out["source"] == "csv" and out["groups"][0]["members"] == ["leonard-wee"] and out["edit_url"].startswith("https://")
-    (tmp_path / "groups.csv").unlink()
-    assert load_groups({}, PEOPLE, tmp_path, cache)["groups"][0]["name"] == "Imaging"  # last good copy
-
-
-def test_template_marks_professors_as_senior():
-    lines = template_csv(PEOPLE).splitlines()
-    assert lines[0] == "name,slug,role,senior,group"
-    assert lines[1].startswith("Andre Dekker,andre-dekker,Professor,yes,Andre Dekker")
-    assert "Joshi Hogenboom,joshi-hogenboom,PhD student,," in lines[-1]
+def test_former_staff_form_their_own_group():
+    people = PEOPLE + [{"slug": "ex", "name": "Ex Postdoc", "role": "Former Postdoc", "active": False},
+                       {"slug": "ex2", "name": "Ex Intern", "role": None, "active": False}]
+    out = role_groups(people)
+    assert [(g["name"], g["members"]) for g in out["groups"]] == [
+        ("Senior staff", ["andre-dekker", "leonard-wee"]), ("Non-senior staff", ["joshi-hogenboom"]), ("Former staff", ["ex", "ex2"])]
+    assert out["seniors"] == ["andre-dekker", "leonard-wee", "ex"]
