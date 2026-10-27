@@ -1,0 +1,1010 @@
+{
+ "S1043257": {
+  "name": "Acta Oncologica",
+  "type": "journal",
+  "impact": 2.8482142857142856,
+  "h_index": 151,
+  "fetched": "2026-10-27"
+ },
+ "S106234763": {
+  "name": "Cancer Letters",
+  "type": "journal",
+  "impact": 10.721620079863092,
+  "h_index": 265,
+  "fetched": "2026-10-27"
+ },
+ "S106908163": {
+  "name": "Neuro-Oncology",
+  "type": "journal",
+  "impact": 1.244451440264442,
+  "h_index": 216,
+  "fetched": "2026-10-27"
+ },
+ "S107516304": {
+  "name": "BMC Medical Informatics and Decision Making",
+  "type": "journal",
+  "impact": 6.669559412550067,
+  "h_index": 145,
+  "fetched": "2026-10-27"
+ },
+ "S110533041": {
+  "name": "International Journal of Radiation Oncology*Biology*Physics",
+  "type": "journal",
+  "impact": 0.8349546398513499,
+  "h_index": 346,
+  "fetched": "2026-10-27"
+ },
+ "S110785341": {
+  "name": "Nutrients",
+  "type": "journal",
+  "impact": 6.5537161873880025,
+  "h_index": 331,
+  "fetched": "2026-10-27"
+ },
+ "S11622463": {
+  "name": "Journal of Biomedical Informatics",
+  "type": "journal",
+  "impact": 7.278330019880715,
+  "h_index": 169,
+  "fetched": "2026-10-27"
+ },
+ "S116900674": {
+  "name": "The Lancet Oncology",
+  "type": "journal",
+  "impact": 12.762158054711247,
+  "h_index": 521,
+  "fetched": "2026-10-27"
+ },
+ "S120289491": {
+  "name": "BMC Neurology",
+  "type": "journal",
+  "impact": 2.4761904761904763,
+  "h_index": 122,
+  "fetched": "2026-10-27"
+ },
+ "S123732490": {
+  "name": "BMC Pregnancy and Childbirth",
+  "type": "journal",
+  "impact": 3.005699481865285,
+  "h_index": 171,
+  "fetched": "2026-10-27"
+ },
+ "S12898181": {
+  "name": "BMC Health Services Research",
+  "type": "journal",
+  "impact": 3.970374510899944,
+  "h_index": 217,
+  "fetched": "2026-10-27"
+ },
+ "S129839026": {
+  "name": "Journal of the American Medical Informatics Association",
+  "type": "journal",
+  "impact": 11.770469798657718,
+  "h_index": 232,
+  "fetched": "2026-10-27"
+ },
+ "S13096939": {
+  "name": "Ethics and Information Technology",
+  "type": "journal",
+  "impact": 10.804123711340207,
+  "h_index": 106,
+  "fetched": "2026-10-27"
+ },
+ "S13144211": {
+  "name": "Expert Systems with Applications",
+  "type": "journal",
+  "impact": 7.945190156599552,
+  "h_index": 352,
+  "fetched": "2026-10-27"
+ },
+ "S131800149": {
+  "name": "Abdominal Radiology",
+  "type": "journal",
+  "impact": 2.5764425936942295,
+  "h_index": 76,
+  "fetched": "2026-10-27"
+ },
+ "S13389975": {
+  "name": "International Journal of Epidemiology",
+  "type": "journal",
+  "impact": 4.715179968701095,
+  "h_index": 328,
+  "fetched": "2026-10-27"
+ },
+ "S137773608": {
+  "name": "Nature",
+  "type": "journal",
+  "impact": 19.558060433475717,
+  "h_index": 1841,
+  "fetched": "2026-10-27"
+ },
+ "S138998826": {
+  "name": "Physica Medica",
+  "type": "journal",
+  "impact": 0.5362568071080539,
+  "h_index": 87,
+  "fetched": "2026-10-27"
+ },
+ "S142542876": {
+  "name": "British Journal of Radiology",
+  "type": "journal",
+  "impact": 2.8431122448979593,
+  "h_index": 178,
+  "fetched": "2026-10-27"
+ },
+ "S143352558": {
+  "name": "Gastroenterology",
+  "type": "journal",
+  "impact": 0.7433663143692377,
+  "h_index": 586,
+  "fetched": "2026-10-27"
+ },
+ "S144507673": {
+  "name": "Radiotherapy and Oncology",
+  "type": "journal",
+  "impact": 0.8098226137323519,
+  "h_index": 226,
+  "fetched": "2026-10-27"
+ },
+ "S156006901": {
+  "name": "Gait & Posture",
+  "type": "journal",
+  "impact": 1.417808219178082,
+  "h_index": 218,
+  "fetched": "2026-10-27"
+ },
+ "S158473028": {
+  "name": "European Journal of Surgical Oncology",
+  "type": "journal",
+  "impact": 1.0707557502738225,
+  "h_index": 145,
+  "fetched": "2026-10-27"
+ },
+ "S160113820": {
+  "name": "Acta Radiologica",
+  "type": "journal",
+  "impact": 1.3663366336633664,
+  "h_index": 101,
+  "fetched": "2026-10-27"
+ },
+ "S16731738": {
+  "name": "European Journal of Cancer",
+  "type": "journal",
+  "impact": 3.0769509981851177,
+  "h_index": 298,
+  "fetched": "2026-10-27"
+ },
+ "S168415115": {
+  "name": "Cancers",
+  "type": "journal",
+  "impact": 5.468460673185082,
+  "h_index": 220,
+  "fetched": "2026-10-27"
+ },
+ "S168508312": {
+  "name": "Reports of Practical Oncology & Radiotherapy",
+  "type": "journal",
+  "impact": 1.25,
+  "h_index": 45,
+  "fetched": "2026-10-27"
+ },
+ "S168522863": {
+  "name": "Cancer Research",
+  "type": "journal",
+  "impact": 0.6301215430685221,
+  "h_index": 469,
+  "fetched": "2026-10-27"
+ },
+ "S170712534": {
+  "name": "CardioVascular and Interventional Radiology",
+  "type": "journal",
+  "impact": 2.376110562685094,
+  "h_index": 120,
+  "fetched": "2026-10-27"
+ },
+ "S17147534": {
+  "name": "Journal of Medical Internet Research",
+  "type": "journal",
+  "impact": 9.3375748502994,
+  "h_index": 286,
+  "fetched": "2026-10-27"
+ },
+ "S173726759": {
+  "name": "Journal of Cachexia Sarcopenia and Muscle",
+  "type": "journal",
+  "impact": 7.817469204927212,
+  "h_index": 150,
+  "fetched": "2026-10-27"
+ },
+ "S175033026": {
+  "name": "World Journal of Radiology",
+  "type": "journal",
+  "impact": 1.6977611940298507,
+  "h_index": 65,
+  "fetched": "2026-10-27"
+ },
+ "S181123643": {
+  "name": "The Breast",
+  "type": "journal",
+  "impact": 2.3719931271477663,
+  "h_index": 128,
+  "fetched": "2026-10-27"
+ },
+ "S183149254": {
+  "name": "Clinical Cancer Research",
+  "type": "journal",
+  "impact": 2.2899616368286444,
+  "h_index": 418,
+  "fetched": "2026-10-27"
+ },
+ "S190064913": {
+  "name": "Clinical Oncology",
+  "type": "journal",
+  "impact": 1.3049645390070923,
+  "h_index": 112,
+  "fetched": "2026-10-27"
+ },
+ "S194656152": {
+  "name": "Digestive Diseases and Sciences",
+  "type": "journal",
+  "impact": 1.958843704066634,
+  "h_index": 204,
+  "fetched": "2026-10-27"
+ },
+ "S195556561": {
+  "name": "JACC. Cardiovascular imaging",
+  "type": "journal",
+  "impact": 5.932253313696613,
+  "h_index": 205,
+  "fetched": "2026-10-27"
+ },
+ "S196734849": {
+  "name": "Scientific Reports",
+  "type": "journal",
+  "impact": 5.328172183804575,
+  "h_index": 463,
+  "fetched": "2026-10-27"
+ },
+ "S197311665": {
+  "name": "La radiologia medica",
+  "type": "journal",
+  "impact": 4.547970479704797,
+  "h_index": 78,
+  "fetched": "2026-10-27"
+ },
+ "S198823948": {
+  "name": "Computerized Medical Imaging and Graphics",
+  "type": "journal",
+  "impact": 6.3423799582463465,
+  "h_index": 119,
+  "fetched": "2026-10-27"
+ },
+ "S202381698": {
+  "name": "PLoS ONE",
+  "type": "journal",
+  "impact": 3.4921606718863445,
+  "h_index": 594,
+  "fetched": "2026-10-27"
+ },
+ "S20241394": {
+  "name": "Physics in Medicine and Biology",
+  "type": "journal",
+  "impact": 2.8769315673289184,
+  "h_index": 266,
+  "fetched": "2026-10-27"
+ },
+ "S203256638": {
+  "name": "Nature Medicine",
+  "type": "journal",
+  "impact": 33.49391955098223,
+  "h_index": 763,
+  "fetched": "2026-10-27"
+ },
+ "S203303425": {
+  "name": "Cancer Immunology Immunotherapy",
+  "type": "journal",
+  "impact": 5.76370887337986,
+  "h_index": 164,
+  "fetched": "2026-10-27"
+ },
+ "S204953464": {
+  "name": "Medical Oncology",
+  "type": "journal",
+  "impact": 4.691588785046729,
+  "h_index": 109,
+  "fetched": "2026-10-27"
+ },
+ "S23735784": {
+  "name": "Philosophy & Technology",
+  "type": "journal",
+  "impact": 5.244781783681215,
+  "h_index": 85,
+  "fetched": "2026-10-27"
+ },
+ "S2480581173": {
+  "name": "Progress in Artificial Intelligence",
+  "type": "journal",
+  "impact": 2.7923497267759565,
+  "h_index": 39,
+  "fetched": "2026-10-27"
+ },
+ "S2595292759": {
+  "name": "Frontiers in Immunology",
+  "type": "journal",
+  "impact": 5.629062647197363,
+  "h_index": 351,
+  "fetched": "2026-10-27"
+ },
+ "S2595413687": {
+  "name": "Frontiers in Cardiovascular Medicine",
+  "type": "journal",
+  "impact": 2.4895815395212675,
+  "h_index": 116,
+  "fetched": "2026-10-27"
+ },
+ "S2596394214": {
+  "name": "Frontiers in Oncology",
+  "type": "journal",
+  "impact": 2.7462021618463335,
+  "h_index": 206,
+  "fetched": "2026-10-27"
+ },
+ "S2597052008": {
+  "name": "Frontiers in Medicine",
+  "type": "journal",
+  "impact": 2.6218179349670763,
+  "h_index": 148,
+  "fetched": "2026-10-27"
+ },
+ "S2597085352": {
+  "name": "Frontiers in Applied Mathematics and Statistics",
+  "type": "journal",
+  "impact": 2.7216216216216216,
+  "h_index": 37,
+  "fetched": "2026-10-27"
+ },
+ "S2735960814": {
+  "name": "Journal of Crohn s and Colitis",
+  "type": "journal",
+  "impact": 1.259953614224971,
+  "h_index": 152,
+  "fetched": "2026-10-27"
+ },
+ "S2737969411": {
+  "name": "Journal of Clinical Medicine",
+  "type": "journal",
+  "impact": 3.9732010124954797,
+  "h_index": 188,
+  "fetched": "2026-10-27"
+ },
+ "S2739058702": {
+  "name": "JMIR Research Protocols",
+  "type": "journal",
+  "impact": 1.624256837098692,
+  "h_index": 62,
+  "fetched": "2026-10-27"
+ },
+ "S2754803477": {
+  "name": "Journal for ImmunoTherapy of Cancer",
+  "type": "journal",
+  "impact": 10.224834237492466,
+  "h_index": 184,
+  "fetched": "2026-10-27"
+ },
+ "S2754843627": {
+  "name": "Cancer Medicine",
+  "type": "journal",
+  "impact": 3.9063010120796604,
+  "h_index": 122,
+  "fetched": "2026-10-27"
+ },
+ "S2756165422": {
+  "name": "JAMA Oncology",
+  "type": "journal",
+  "impact": 8.73049645390071,
+  "h_index": 245,
+  "fetched": "2026-10-27"
+ },
+ "S2764396434": {
+  "name": "Spine Deformity",
+  "type": "journal",
+  "impact": 1.8616010854816825,
+  "h_index": 52,
+  "fetched": "2026-10-27"
+ },
+ "S2764457454": {
+  "name": "Quantitative Imaging in Medicine and Surgery",
+  "type": "journal",
+  "impact": 1.9042392127176382,
+  "h_index": 68,
+  "fetched": "2026-10-27"
+ },
+ "S2764498025": {
+  "name": "Family Medicine and Community Health",
+  "type": "journal",
+  "impact": 3.680327868852459,
+  "h_index": 33,
+  "fetched": "2026-10-27"
+ },
+ "S2764539591": {
+  "name": "Computational and Structural Biotechnology Journal",
+  "type": "journal",
+  "impact": 6.922077922077922,
+  "h_index": 127,
+  "fetched": "2026-10-27"
+ },
+ "S2764562432": {
+  "name": "Journal of bone oncology",
+  "type": "journal",
+  "impact": 3.578014184397163,
+  "h_index": 52,
+  "fetched": "2026-10-27"
+ },
+ "S2764631794": {
+  "name": "Journal of Cancer Policy",
+  "type": "journal",
+  "impact": 1.7090395480225988,
+  "h_index": 30,
+  "fetched": "2026-10-27"
+ },
+ "S2764915710": {
+  "name": "Clinical Nutrition ESPEN",
+  "type": "journal",
+  "impact": 1.1046082949308755,
+  "h_index": 65,
+  "fetched": "2026-10-27"
+ },
+ "S2765008485": {
+  "name": "Advances in Radiation Oncology",
+  "type": "journal",
+  "impact": 1.670605612998523,
+  "h_index": 52,
+  "fetched": "2026-10-27"
+ },
+ "S2898297225": {
+  "name": "Clinical and Translational Radiation Oncology",
+  "type": "journal",
+  "impact": 1.9405940594059405,
+  "h_index": 47,
+  "fetched": "2026-10-27"
+ },
+ "S2898347799": {
+  "name": "EClinicalMedicine",
+  "type": "journal",
+  "impact": 12.643548387096773,
+  "h_index": 150,
+  "fetched": "2026-10-27"
+ },
+ "S2898358376": {
+  "name": "iScience",
+  "type": "journal",
+  "impact": 4.861680784663397,
+  "h_index": 141,
+  "fetched": "2026-10-27"
+ },
+ "S2898444622": {
+  "name": "Technical Innovations & Patient Support in Radiation Oncology",
+  "type": "journal",
+  "impact": 1.3461538461538463,
+  "h_index": 27,
+  "fetched": "2026-10-27"
+ },
+ "S29972171": {
+  "name": "Journal of Applied Clinical Medical Physics",
+  "type": "journal",
+  "impact": 2.4259115593483322,
+  "h_index": 81,
+  "fetched": "2026-10-27"
+ },
+ "S3005729997": {
+  "name": "medRxiv",
+  "type": "repository",
+  "impact": 0.6488816253284625,
+  "h_index": 115,
+  "fetched": "2026-10-27"
+ },
+ "S3035462843": {
+  "name": "Complex & Intelligent Systems",
+  "type": "journal",
+  "impact": 5.54983388704319,
+  "h_index": 91,
+  "fetched": "2026-10-27"
+ },
+ "S32898093": {
+  "name": "Journal of Neural Engineering",
+  "type": "journal",
+  "impact": 4.36875,
+  "h_index": 165,
+  "fetched": "2026-10-27"
+ },
+ "S41026820": {
+  "name": "International Journal of Gynecological Cancer",
+  "type": "journal",
+  "impact": 0.598856325947105,
+  "h_index": 125,
+  "fetched": "2026-10-27"
+ },
+ "S41454044": {
+  "name": "Annals of Oncology",
+  "type": "journal",
+  "impact": 1.7214252226910456,
+  "h_index": 387,
+  "fetched": "2026-10-27"
+ },
+ "S4210170686": {
+  "name": "Frontiers in Digital Health",
+  "type": "journal",
+  "impact": 5.070263488080301,
+  "h_index": 66,
+  "fetched": "2026-10-27"
+ },
+ "S4210172076": {
+  "name": "Diagnostics",
+  "type": "journal",
+  "impact": 4.039659162634126,
+  "h_index": 129,
+  "fetched": "2026-10-27"
+ },
+ "S4210172589": {
+  "name": "SSRN Electronic Journal",
+  "type": "repository",
+  "impact": 0.19439628182627944,
+  "h_index": 417,
+  "fetched": "2026-10-27"
+ },
+ "S4210173023": {
+  "name": "PEC Innovation",
+  "type": "journal",
+  "impact": 2.675675675675676,
+  "h_index": 19,
+  "fetched": "2026-10-27"
+ },
+ "S4210179765": {
+  "name": "Studies in health technology and informatics",
+  "type": "book series",
+  "impact": 0.8154670750382849,
+  "h_index": 73,
+  "fetched": "2026-10-27"
+ },
+ "S4210181501": {
+  "name": "JCO Clinical Cancer Informatics",
+  "type": "journal",
+  "impact": 2.8211206896551726,
+  "h_index": 56,
+  "fetched": "2026-10-27"
+ },
+ "S4210185979": {
+  "name": "Palliative Care and Social Practice",
+  "type": "journal",
+  "impact": 1.8304597701149425,
+  "h_index": 24,
+  "fetched": "2026-10-27"
+ },
+ "S4210186504": {
+  "name": "Cancer Treatment and Research Communications",
+  "type": "journal",
+  "impact": 1.2694524495677233,
+  "h_index": 38,
+  "fetched": "2026-10-27"
+ },
+ "S4210190517": {
+  "name": "AI & Society",
+  "type": "journal",
+  "impact": 5.408387096774193,
+  "h_index": 101,
+  "fetched": "2026-10-27"
+ },
+ "S4210195248": {
+  "name": "Hawaii International Conference on System Sciences (HICSS)",
+  "type": "conference",
+  "impact": 1.0526885600866114,
+  "h_index": 165,
+  "fetched": "2026-10-27"
+ },
+ "S4210195431": {
+  "name": "npj Digital Medicine",
+  "type": "journal",
+  "impact": 14.05296343001261,
+  "h_index": 166,
+  "fetched": "2026-10-27"
+ },
+ "S4210195722": {
+  "name": "Frontiers in Rehabilitation Sciences",
+  "type": "journal",
+  "impact": 2.399408284023669,
+  "h_index": 32,
+  "fetched": "2026-10-27"
+ },
+ "S4210196034": {
+  "name": "The Lancet Regional Health - Europe",
+  "type": "journal",
+  "impact": 8.94980694980695,
+  "h_index": 88,
+  "fetched": "2026-10-27"
+ },
+ "S4210196546": {
+  "name": "Journal of Healthcare Informatics Research",
+  "type": "journal",
+  "impact": 7.254901960784314,
+  "h_index": 34,
+  "fetched": "2026-10-27"
+ },
+ "S4210199274": {
+  "name": "Frontiers in Nuclear Medicine",
+  "type": "journal",
+  "impact": 3.869158878504673,
+  "h_index": 18,
+  "fetched": "2026-10-27"
+ },
+ "S4210200765": {
+  "name": "Life",
+  "type": "journal",
+  "impact": 3.9375,
+  "h_index": 109,
+  "fetched": "2026-10-27"
+ },
+ "S4210207747": {
+  "name": "npj Breast Cancer",
+  "type": "journal",
+  "impact": 6.275488069414317,
+  "h_index": 77,
+  "fetched": "2026-10-27"
+ },
+ "S4210212741": {
+  "name": "JMIR Medical Education",
+  "type": "journal",
+  "impact": 8.780530973451327,
+  "h_index": 67,
+  "fetched": "2026-10-27"
+ },
+ "S4210213696": {
+  "name": "Discover Oncology",
+  "type": "journal",
+  "impact": 2.471543125366712,
+  "h_index": 36,
+  "fetched": "2026-10-27"
+ },
+ "S4210217024": {
+  "name": "ESMO Open",
+  "type": "journal",
+  "impact": 1.7910798122065728,
+  "h_index": 99,
+  "fetched": "2026-10-27"
+ },
+ "S4210219142": {
+  "name": "International Journal of Particle Therapy",
+  "type": "journal",
+  "impact": 0.12072538860103627,
+  "h_index": 31,
+  "fetched": "2026-10-27"
+ },
+ "S4210220198": {
+  "name": "European Heart Journal - Digital Health",
+  "type": "journal",
+  "impact": 3.3083475298126066,
+  "h_index": 37,
+  "fetched": "2026-10-27"
+ },
+ "S4210220242": {
+  "name": "JTO Clinical and Research Reports",
+  "type": "journal",
+  "impact": 1.8070175438596492,
+  "h_index": 33,
+  "fetched": "2026-10-27"
+ },
+ "S4210227373": {
+  "name": "Clinical Nutrition Open Science",
+  "type": "journal",
+  "impact": 1.6215538847117794,
+  "h_index": 18,
+  "fetched": "2026-10-27"
+ },
+ "S4210227620": {
+  "name": "Diagnostic and Prognostic Research",
+  "type": "journal",
+  "impact": 5.291139240506329,
+  "h_index": 35,
+  "fetched": "2026-10-27"
+ },
+ "S4210234749": {
+  "name": "JMIR Formative Research",
+  "type": "journal",
+  "impact": 2.9342629482071714,
+  "h_index": 54,
+  "fetched": "2026-10-27"
+ },
+ "S4210237014": {
+  "name": "The Lancet Digital Health",
+  "type": "journal",
+  "impact": 16.7734375,
+  "h_index": 132,
+  "fetched": "2026-10-27"
+ },
+ "S42123126": {
+  "name": "Radiation Oncology",
+  "type": "journal",
+  "impact": 3.6298932384341636,
+  "h_index": 115,
+  "fetched": "2026-10-27"
+ },
+ "S4306400194": {
+  "name": "arXiv (Cornell University)",
+  "type": "repository",
+  "impact": 0.22734111642257224,
+  "h_index": 760,
+  "fetched": "2026-10-27"
+ },
+ "S4306400420": {
+  "name": "University of Groningen research database (University of Groningen / Centre for Information Technology)",
+  "type": "repository",
+  "impact": 0.04225663716814159,
+  "h_index": 142,
+  "fetched": "2026-10-27"
+ },
+ "S4306400562": {
+  "name": "Zenodo (CERN European Organization for Nuclear Research)",
+  "type": "repository",
+  "impact": 0.04189397404456413,
+  "h_index": 202,
+  "fetched": "2026-10-27"
+ },
+ "S4306401127": {
+  "name": "OSF Preprints (OSF Preprints)",
+  "type": "repository",
+  "impact": 0.016263092066285786,
+  "h_index": 44,
+  "fetched": "2026-10-27"
+ },
+ "S4306401633": {
+  "name": "Universitat de Girona Digital Repository (Universitat de Girona)",
+  "type": "repository",
+  "impact": 0.0,
+  "h_index": 18,
+  "fetched": "2026-10-27"
+ },
+ "S4306401649": {
+  "name": "Utrecht University Repository (Utrecht University)",
+  "type": "repository",
+  "impact": 0.01953981008035062,
+  "h_index": 105,
+  "fetched": "2026-10-27"
+ },
+ "S4306402567": {
+  "name": "bioRxiv (Cold Spring Harbor Laboratory)",
+  "type": "repository",
+  "impact": 0.8023127814532718,
+  "h_index": 150,
+  "fetched": "2026-10-27"
+ },
+ "S4306402616": {
+  "name": "Research Publications (Maastricht University)",
+  "type": "repository",
+  "impact": 0.024926066751161807,
+  "h_index": 69,
+  "fetched": "2026-10-27"
+ },
+ "S4306463075": {
+  "name": "CRC Press eBooks",
+  "type": "ebook platform",
+  "impact": 0.7999539462322262,
+  "h_index": 598,
+  "fetched": "2026-10-27"
+ },
+ "S4306463230": {
+  "name": "Elsevier eBooks",
+  "type": "ebook platform",
+  "impact": 0.618520903466658,
+  "h_index": 789,
+  "fetched": "2026-10-27"
+ },
+ "S4306525036": {
+  "name": "PubMed",
+  "type": "repository",
+  "impact": 0.6642561588898084,
+  "h_index": 932,
+  "fetched": "2026-10-27"
+ },
+ "S4306525896": {
+  "name": "Research Square",
+  "type": "repository",
+  "impact": 0.17111267735987412,
+  "h_index": 48,
+  "fetched": "2026-10-27"
+ },
+ "S4306542128": {
+  "name": "中国科学通报：英文版",
+  "type": "journal",
+  "impact": 9.234358974358974,
+  "h_index": 163,
+  "fetched": "2026-10-27"
+ },
+ "S4363605129": {
+  "name": "IEEE International Symposium on Biomedical Imaging (ISBI)",
+  "type": "conference",
+  "impact": 1.7999096657633242,
+  "h_index": 100,
+  "fetched": "2026-10-27"
+ },
+ "S4363607032": {
+  "name": "ResearchEquals",
+  "type": "journal",
+  "impact": 0.025906735751295335,
+  "h_index": 4,
+  "fetched": "2026-10-27"
+ },
+ "S4363607561": {
+  "name": "SPIE Medical Imaging: Image Processing",
+  "type": "conference",
+  "impact": 1.1823899371069182,
+  "h_index": 32,
+  "fetched": "2026-10-27"
+ },
+ "S4387286577": {
+  "name": "JMIR AI",
+  "type": "journal",
+  "impact": 6.953424657534247,
+  "h_index": 29,
+  "fetched": "2026-10-27"
+ },
+ "S4387288999": {
+  "name": "EJC Skin Cancer",
+  "type": "journal",
+  "impact": 0.23306948109058928,
+  "h_index": 6,
+  "fetched": "2026-10-27"
+ },
+ "S4389157630": {
+  "name": "ESMO Real World Data and Digital Oncology",
+  "type": "journal",
+  "impact": 0.8862928348909658,
+  "h_index": 11,
+  "fetched": "2026-10-27"
+ },
+ "S4389157821": {
+  "name": "NEJM AI",
+  "type": "journal",
+  "impact": 18.971875,
+  "h_index": 39,
+  "fetched": "2026-10-27"
+ },
+ "S4404663819": {
+  "name": "Next research.",
+  "type": "journal",
+  "impact": 1.6290135396518375,
+  "h_index": 19,
+  "fetched": "2026-10-27"
+ },
+ "S44278595": {
+  "name": "Computers in Biology and Medicine",
+  "type": "journal",
+  "impact": 8.915895710681244,
+  "h_index": 189,
+  "fetched": "2026-10-27"
+ },
+ "S44632665": {
+  "name": "Insights into Imaging",
+  "type": "journal",
+  "impact": 6.445093457943925,
+  "h_index": 106,
+  "fetched": "2026-10-27"
+ },
+ "S45493217": {
+  "name": "Seizure",
+  "type": "journal",
+  "impact": 2.5778331257783313,
+  "h_index": 124,
+  "fetched": "2026-10-27"
+ },
+ "S4819472": {
+  "name": "European Radiology",
+  "type": "journal",
+  "impact": 5.315119145439605,
+  "h_index": 212,
+  "fetched": "2026-10-27"
+ },
+ "S5407040186": {
+  "name": "BJR|Artificial Intelligence",
+  "type": "journal",
+  "impact": 5.754716981132075,
+  "h_index": 10,
+  "fetched": "2026-10-27"
+ },
+ "S57252141": {
+  "name": "EMBO Reports",
+  "type": "journal",
+  "impact": 5.641949152542373,
+  "h_index": 252,
+  "fetched": "2026-10-27"
+ },
+ "S58727509": {
+  "name": "Journal of the American Academy of Dermatology",
+  "type": "journal",
+  "impact": 1.050588646695419,
+  "h_index": 324,
+  "fetched": "2026-10-27"
+ },
+ "S62275304": {
+  "name": "Journal of Imaging Informatics in Medicine",
+  "type": "journal",
+  "impact": 3.8827077747989276,
+  "h_index": 101,
+  "fetched": "2026-10-27"
+ },
+ "S64187185": {
+  "name": "Nature Communications",
+  "type": "journal",
+  "impact": 18.640344267995825,
+  "h_index": 746,
+  "fetched": "2026-10-27"
+ },
+ "S6642600": {
+  "name": "Clinical Gastroenterology and Hepatology",
+  "type": "journal",
+  "impact": 6.1193442622950815,
+  "h_index": 262,
+  "fetched": "2026-10-27"
+ },
+ "S7407050956": {
+  "name": "Open Science Framework",
+  "type": "repository",
+  "impact": 0.01674510463064123,
+  "h_index": 11,
+  "fetched": "2026-10-27"
+ },
+ "S7407088301": {
+  "name": "Language Resources and Evaluation Conference (LREC)",
+  "type": "conference",
+  "impact": 0.8751810719459199,
+  "h_index": 130,
+  "fetched": "2026-10-27"
+ },
+ "S79054089": {
+  "name": "BMJ Open",
+  "type": "journal",
+  "impact": 2.664744975578509,
+  "h_index": 241,
+  "fetched": "2026-10-27"
+ },
+ "S8427965": {
+  "name": "Biomedical Signal Processing and Control",
+  "type": "journal",
+  "impact": 5.196178584941355,
+  "h_index": 154,
+  "fetched": "2026-10-27"
+ },
+ "S87609158": {
+  "name": "European Journal of Heart Failure",
+  "type": "journal",
+  "impact": 3.052573121066272,
+  "h_index": 222,
+  "fetched": "2026-10-27"
+ },
+ "S90745127": {
+  "name": "Journal of Thoracic Oncology",
+  "type": "journal",
+  "impact": 1.001885697708152,
+  "h_index": 222,
+  "fetched": "2026-10-27"
+ },
+ "S92260147": {
+  "name": "Information Systems Journal",
+  "type": "journal",
+  "impact": 9.071065989847716,
+  "h_index": 141,
+  "fetched": "2026-10-27"
+ },
+ "S94788606": {
+  "name": "BMC Women s Health",
+  "type": "journal",
+  "impact": 3.699440820130475,
+  "h_index": 106,
+  "fetched": "2026-10-27"
+ },
+ "S95522064": {
+  "name": "Medical Physics",
+  "type": "journal",
+  "impact": 3.0496163682864452,
+  "h_index": 270,
+  "fetched": "2026-10-27"
+ }
+}
