@@ -985,6 +985,19 @@ details p {
   line-height: 1.8;
   color: var(--muted);
 }
+.build-version {
+  margin: 8px 0 0;
+  font-size: 11px;
+  color: var(--muted);
+  font-variant-numeric: tabular-nums;
+}
+.build-version a {
+  color: inherit;
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+}
+.digest-footer .build-version {
+  margin-top: 4px;
+}
 dialog {
   border: 1px solid #d3e1ef;
   border-radius: 12px;

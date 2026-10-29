@@ -396,7 +396,29 @@ def _digest_preview(body: str, site: str, prefix: str) -> tuple[str, str]:
     return styles, content
 
 
-def digest_page(heading: str, status: str, body: str, archive: list[str], site: str, prefix: str = "") -> str:
+def build_version(repo_url: str = "") -> str:
+    """Footer line with the code commit and build time, so a visitor can tell whether the page is the latest deploy."""
+    import os
+    import subprocess
+
+    try:
+        sha = subprocess.run(["git", "rev-parse", "HEAD"], cwd=ROOT, capture_output=True, text=True, check=True).stdout.strip()
+    except (OSError, subprocess.CalledProcessError):
+        sha = os.environ.get("GITHUB_SHA", "")
+    try:
+        from zoneinfo import ZoneInfo
+        built = datetime.now(ZoneInfo("Europe/Amsterdam"))
+    except Exception:  # no tz database: fall back to UTC
+        built = datetime.now(timezone.utc)
+    when = f"{built.day} {built:%b %Y, %H:%M} {built.tzname()}"
+    if not sha:
+        return f'<p class="build-version">Built {when}</p>'
+    label = html.escape(sha[:7])
+    commit = f'<a href="{html.escape(repo_url.rstrip("/"))}/commit/{html.escape(sha)}">{label}</a>' if repo_url else label
+    return f'<p class="build-version">Version {commit} · built {when}</p>'
+
+
+def digest_page(heading: str, status: str, body: str, archive: list[str], site: str, prefix: str = "", version: str = "") -> str:
     import hashlib
 
     def asset(name: str) -> str:
@@ -431,12 +453,13 @@ def digest_page(heading: str, status: str, body: str, archive: list[str], site: 
 <div class="digest-preview">{preview}</div>
 {f'<section class="digest-past"><h2>Past issues</h2><div class="digest-issues">{issues}</div></section>' if archive else ''}
 </main>
-<footer class="digest-footer">Clinical Data Science <span aria-hidden="true">·</span> Maastro, Maastricht University &amp; Maastricht UMC+</footer>
+<footer class="digest-footer">Clinical Data Science <span aria-hidden="true">·</span> Maastro, Maastricht University &amp; Maastricht UMC+{version}</footer>
 </body></html>
 """
 
 
-def write_digest_pages(pubs: dict, cfg: dict, pending: list[str], dist: Path, digests_dir: Path | None = None) -> None:
+def write_digest_pages(pubs: dict, cfg: dict, pending: list[str], dist: Path, digests_dir: Path | None = None,
+                       version: str = "") -> None:
     """dist/digest.html = the current issue: the one queued for the coming Monday, or the last one sent when nothing is
     queued yet. dist/digests/<date>.html = every issue that was sent."""
     folder = digests_dir or DIGESTS_DIR
@@ -455,12 +478,12 @@ def write_digest_pages(pubs: dict, cfg: dict, pending: list[str], dist: Path, di
         status = (f"Sent <b>{html.escape(_long_date(archive[0]))}</b>. Nothing new queued yet for {html.escape(_long_date(monday))}; "
                   "new papers appear here as they are found (every weekday).")
         body = (folder / f"{archive[0]}.html").read_text(encoding="utf-8")
-    (dist / "digest.html").write_text(digest_page(heading, status, body, archive, site), encoding="utf-8")
+    (dist / "digest.html").write_text(digest_page(heading, status, body, archive, site, version=version), encoding="utf-8")
     if archive:
         (dist / "digests").mkdir(exist_ok=True)
         for day in archive:
             page = digest_page(f"Issue of {_long_date(day)}", f"Sent {html.escape(_long_date(day))}.",
-                               (folder / f"{day}.html").read_text(encoding="utf-8"), [d for d in archive if d != day], site, prefix="../")
+                               (folder / f"{day}.html").read_text(encoding="utf-8"), [d for d in archive if d != day], site, prefix="../", version=version)
             (dist / "digests" / f"{day}.html").write_text(page.replace('href="../digests/', 'href="'), encoding="utf-8")
 
 
@@ -515,11 +538,12 @@ def run(config_path: Path | None = None) -> dict:
     # Cache-busting: browsers and GitHub Pages cache app.js/style.css for a while; a content hash in the URL
     # makes every deploy pick up the new files immediately.
     import hashlib
+    version = build_version(cfg.get("repo_url") or "")
     for page in ("index.html", "social.html"):
         path = DIST_DIR / page
         if not path.exists():
             continue
-        html_text = path.read_text(encoding="utf-8")
+        html_text = path.read_text(encoding="utf-8").replace("<!-- build-version -->", version)
         for asset in ("app.js", "style.css", "library.css", "studio.css", "social-editor.js", "social.js"):
             if (DIST_DIR / asset).exists():
                 digest_hex = hashlib.sha1((DIST_DIR / asset).read_bytes()).hexdigest()[:10]
@@ -528,7 +552,7 @@ def run(config_path: Path | None = None) -> dict:
     if (DATA_DIR / "scholar_check.json").exists():
         shutil.copy(DATA_DIR / "scholar_check.json", DIST_DIR / "data" / "scholar_check.json")
     pending = load_pending() if NOTIFIED_PATH.exists() else list((pubs.get("last_run") or {}).get("new_ids") or [])
-    write_digest_pages(pubs, cfg, pending, DIST_DIR)
+    write_digest_pages(pubs, cfg, pending, DIST_DIR, version=version)
     (DIST_DIR / ".nojekyll").write_text("")
     print(f"built dist/ ({len(pubs.get('works', []))} works), out/digest.html, out/teams.json; new this run: {digest['new_count']}")
     return digest
