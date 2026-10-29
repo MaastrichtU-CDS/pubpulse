@@ -56,18 +56,34 @@
         </h2>
         <form id="paper-form" class="studio-form" autocomplete="off">
           <label for="paper-q" class="visually-hidden"
-            >DOI or OpenAlex id</label
+            >Search pubpulse or paste a DOI</label
           >
-          <input
-            id="paper-q"
-            type="search"
-            placeholder="Paste a DOI or OpenAlex link…"
-          />
+          <div class="studio-search">
+            <input
+              id="paper-q"
+              type="search"
+              role="combobox"
+              aria-autocomplete="list"
+              aria-expanded="false"
+              aria-controls="paper-suggest"
+              autocapitalize="none"
+              spellcheck="false"
+              placeholder="Search by title, author or DOI…"
+            />
+            <ul
+              id="paper-suggest"
+              class="studio-suggest"
+              role="listbox"
+              aria-label="Papers in pubpulse"
+              hidden
+            ></ul>
+          </div>
           <button type="submit" class="button button-dark">Find paper</button>
         </form>
         <p class="studio-hint">
-          For papers in the collection, use the LinkedIn post link in the
-          <a href="./#publications">publication overview</a>.
+          Search the papers in the
+          <a href="./#publications">publication overview</a>, or paste a DOI
+          to look up any other paper in OpenAlex.
         </p>
         <p id="paper-msg" class="meta" role="status"></p>
         <div id="paper-card" class="studio-paper hidden"></div>
