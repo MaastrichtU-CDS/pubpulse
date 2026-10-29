@@ -55,22 +55,24 @@ test("chooses the final complete reply when chat text includes an earlier exampl
   assert.deepEqual(comparable(parseAnswer(response)), actual);
 });
 
-test("copied prompts include the current paper and one unambiguous JSON output contract", () => {
+test("copied prompts are the instructions once, followed by the current paper", () => {
   const paper = { title: "Current paper", journal: "Current journal", publication_date: "2026-10-27", group_authors: ["Researcher A"], authors: ["Researcher A"], link: "https://doi.org/10.1000/current", abstract: "A specific, measured finding." };
-  const prompt = buildPrompt(paper, '### HEADLINE\nKeep it faithful.\nOutput exactly the four sections, nothing else.');
-  assert(prompt.includes(paper.title));
-  assert(prompt.includes(paper.abstract));
-  assert(prompt.includes(paper.link));
-  assert(prompt.includes("Researcher A"));
-  assert(!prompt.includes("### HEADLINE"));
-  assert(!prompt.includes("Output exactly the four sections"));
-  const example = prompt.trim().split("\n").at(-1);
-  assert.deepEqual(Object.keys(JSON.parse(example)), ["headline", "post", "comment", "short"]);
+  const prompt = buildPrompt(paper, "Shared writing rules.");
+  assert(prompt.startsWith("Shared writing rules.\n"));
+  assert.equal(prompt.split("Shared writing rules.").length, 2);
+  for (const part of [paper.title, paper.journal, paper.link, "Researcher A"]) assert(prompt.includes(part));
+  assert(prompt.trim().endsWith(paper.abstract));
+  assert(!prompt.includes("Open-access link"));
 });
 
-test("fallback prompts still request complete JSON when shared writing instructions are absent", () => {
+test("fallback prompts ask for the four-key JSON code block when shared instructions are absent", () => {
   const prompt = buildPrompt({ title: "Paper", authors: [], group_authors: [], link: "https://doi.org/10.1000/paper" });
-  assert(prompt.includes("Use only the supplied abstract"));
-  assert(prompt.includes("Every value must be a non-empty string"));
-  assert.equal(Object.keys(JSON.parse(prompt.trim().split("\n").at(-1))).length, 4);
+  const block = prompt.match(/```json\n(.*)\n```/)[1];
+  assert.deepEqual(Object.keys(JSON.parse(block)), ["headline", "post", "comment", "short"]);
+  assert(prompt.includes("paste the abstract here"));
+});
+
+test("imports a reply given as a JSON code block with literal line breaks", () => {
+  const reply = '```json\n{"headline": "H", "post": "First.\n\nSecond.", "comment": "C", "short": "S"}\n```';
+  assert.deepEqual(comparable(parseAnswer(reply)), { headline: "H", post: "First.\n\nSecond.", comment: "C", short: "S" });
 });
