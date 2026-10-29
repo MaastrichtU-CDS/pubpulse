@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-28T11:55:02+00:00",
+ "generated": "2026-10-29T12:02:44+00:00",
  "group_name": "Clinical Data Science (Maastro / Maastricht University)",
  "site_url": "https://maastrichtu-cds.github.io/pubpulse/",
  "repo_url": "https://github.com/MaastrichtU-CDS/pubpulse",
@@ -11,10 +11,13 @@
   "list_name": "the pubpulse weekly list"
  },
  "last_run": {
-  "date": "2026-10-28",
+  "date": "2026-10-29",
   "baseline": false,
-  "new_count": 0,
-  "new_ids": [],
+  "new_count": 2,
+  "new_ids": [
+   "W7223167501",
+   "W7152462318"
+  ],
   "needs_review": [
    "ali-al-zein",
    "ali-zaila",
@@ -1292,8 +1295,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-10-28",
-    "window_start": "2024-10-28",
+    "checked_at": "2026-10-29",
+    "window_start": "2024-10-29",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -1322,8 +1325,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-10-28",
-    "window_start": "2024-10-28",
+    "checked_at": "2026-10-29",
+    "window_start": "2024-10-29",
     "recent_months": 24,
     "shared_papers": 19,
     "recent_shared_papers": 16,
@@ -1369,8 +1372,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-10-28",
-    "window_start": "2024-10-28",
+    "checked_at": "2026-10-29",
+    "window_start": "2024-10-29",
     "recent_months": 24,
     "shared_papers": 16,
     "recent_shared_papers": 2,
@@ -1402,8 +1405,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-10-28",
-    "window_start": "2024-10-28",
+    "checked_at": "2026-10-29",
+    "window_start": "2024-10-29",
     "recent_months": 24,
     "shared_papers": 3,
     "recent_shared_papers": 3,
@@ -1436,8 +1439,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-10-28",
-    "window_start": "2024-10-28",
+    "checked_at": "2026-10-29",
+    "window_start": "2024-10-29",
     "recent_months": 24,
     "shared_papers": 1,
     "recent_shared_papers": 1,
@@ -1467,11 +1470,11 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-10-28",
-    "window_start": "2024-10-28",
+    "checked_at": "2026-10-29",
+    "window_start": "2024-10-29",
     "recent_months": 24,
-    "shared_papers": 4,
-    "recent_shared_papers": 3,
+    "shared_papers": 5,
+    "recent_shared_papers": 4,
     "last_collaboration_date": "2025-07-04",
     "followup_until": "2027-07-04",
     "current_coauthors": [
@@ -1501,8 +1504,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-10-28",
-    "window_start": "2024-10-28",
+    "checked_at": "2026-10-29",
+    "window_start": "2024-10-29",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -1529,8 +1532,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-10-28",
-    "window_start": "2024-10-28",
+    "checked_at": "2026-10-29",
+    "window_start": "2024-10-29",
     "recent_months": 24,
     "shared_papers": 1,
     "recent_shared_papers": 0,
@@ -1559,8 +1562,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-10-28",
-    "window_start": "2024-10-28",
+    "checked_at": "2026-10-29",
+    "window_start": "2024-10-29",
     "recent_months": 24,
     "shared_papers": 2,
     "recent_shared_papers": 1,
@@ -1589,8 +1592,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-10-28",
-    "window_start": "2024-10-28",
+    "checked_at": "2026-10-29",
+    "window_start": "2024-10-29",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -1617,8 +1620,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-10-28",
-    "window_start": "2024-10-28",
+    "checked_at": "2026-10-29",
+    "window_start": "2024-10-29",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -1645,8 +1648,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-10-28",
-    "window_start": "2024-10-28",
+    "checked_at": "2026-10-29",
+    "window_start": "2024-10-29",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -1673,8 +1676,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-10-28",
-    "window_start": "2024-10-28",
+    "checked_at": "2026-10-29",
+    "window_start": "2024-10-29",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -1703,8 +1706,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-10-28",
-    "window_start": "2024-10-28",
+    "checked_at": "2026-10-29",
+    "window_start": "2024-10-29",
     "recent_months": 24,
     "shared_papers": 5,
     "recent_shared_papers": 2,
@@ -1734,8 +1737,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-10-28",
-    "window_start": "2024-10-28",
+    "checked_at": "2026-10-29",
+    "window_start": "2024-10-29",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -1762,8 +1765,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-10-28",
-    "window_start": "2024-10-28",
+    "checked_at": "2026-10-29",
+    "window_start": "2024-10-29",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -1790,8 +1793,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-10-28",
-    "window_start": "2024-10-28",
+    "checked_at": "2026-10-29",
+    "window_start": "2024-10-29",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -1818,8 +1821,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-10-28",
-    "window_start": "2024-10-28",
+    "checked_at": "2026-10-29",
+    "window_start": "2024-10-29",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -1846,8 +1849,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-10-28",
-    "window_start": "2024-10-28",
+    "checked_at": "2026-10-29",
+    "window_start": "2024-10-29",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -1876,8 +1879,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-10-28",
-    "window_start": "2024-10-28",
+    "checked_at": "2026-10-29",
+    "window_start": "2024-10-29",
     "recent_months": 24,
     "shared_papers": 9,
     "recent_shared_papers": 3,
@@ -1911,8 +1914,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-10-28",
-    "window_start": "2024-10-28",
+    "checked_at": "2026-10-29",
+    "window_start": "2024-10-29",
     "recent_months": 24,
     "shared_papers": 5,
     "recent_shared_papers": 0,
@@ -1941,8 +1944,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-10-28",
-    "window_start": "2024-10-28",
+    "checked_at": "2026-10-29",
+    "window_start": "2024-10-29",
     "recent_months": 24,
     "shared_papers": 8,
     "recent_shared_papers": 6,
@@ -1978,8 +1981,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-10-28",
-    "window_start": "2024-10-28",
+    "checked_at": "2026-10-29",
+    "window_start": "2024-10-29",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -2006,8 +2009,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-10-28",
-    "window_start": "2024-10-28",
+    "checked_at": "2026-10-29",
+    "window_start": "2024-10-29",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -2034,8 +2037,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-10-28",
-    "window_start": "2024-10-28",
+    "checked_at": "2026-10-29",
+    "window_start": "2024-10-29",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -2064,8 +2067,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-10-28",
-    "window_start": "2024-10-28",
+    "checked_at": "2026-10-29",
+    "window_start": "2024-10-29",
     "recent_months": 24,
     "shared_papers": 1,
     "recent_shared_papers": 1,
@@ -2095,8 +2098,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-10-28",
-    "window_start": "2024-10-28",
+    "checked_at": "2026-10-29",
+    "window_start": "2024-10-29",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -2123,8 +2126,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-10-28",
-    "window_start": "2024-10-28",
+    "checked_at": "2026-10-29",
+    "window_start": "2024-10-29",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -2153,8 +2156,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-10-28",
-    "window_start": "2024-10-28",
+    "checked_at": "2026-10-29",
+    "window_start": "2024-10-29",
     "recent_months": 24,
     "shared_papers": 8,
     "recent_shared_papers": 4,
@@ -2184,8 +2187,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-10-28",
-    "window_start": "2024-10-28",
+    "checked_at": "2026-10-29",
+    "window_start": "2024-10-29",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -2212,8 +2215,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-10-28",
-    "window_start": "2024-10-28",
+    "checked_at": "2026-10-29",
+    "window_start": "2024-10-29",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -2240,8 +2243,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-10-28",
-    "window_start": "2024-10-28",
+    "checked_at": "2026-10-29",
+    "window_start": "2024-10-29",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -2270,8 +2273,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-10-28",
-    "window_start": "2024-10-28",
+    "checked_at": "2026-10-29",
+    "window_start": "2024-10-29",
     "recent_months": 24,
     "shared_papers": 2,
     "recent_shared_papers": 0,
@@ -2300,8 +2303,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-10-28",
-    "window_start": "2024-10-28",
+    "checked_at": "2026-10-29",
+    "window_start": "2024-10-29",
     "recent_months": 24,
     "shared_papers": 5,
     "recent_shared_papers": 5,
@@ -2334,8 +2337,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-10-28",
-    "window_start": "2024-10-28",
+    "checked_at": "2026-10-29",
+    "window_start": "2024-10-29",
     "recent_months": 24,
     "shared_papers": 10,
     "recent_shared_papers": 7,
@@ -2367,8 +2370,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-10-28",
-    "window_start": "2024-10-28",
+    "checked_at": "2026-10-29",
+    "window_start": "2024-10-29",
     "recent_months": 24,
     "shared_papers": 1,
     "recent_shared_papers": 0,
@@ -2395,8 +2398,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-10-28",
-    "window_start": "2024-10-28",
+    "checked_at": "2026-10-29",
+    "window_start": "2024-10-29",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -2423,8 +2426,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-10-28",
-    "window_start": "2024-10-28",
+    "checked_at": "2026-10-29",
+    "window_start": "2024-10-29",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -2451,8 +2454,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-10-28",
-    "window_start": "2024-10-28",
+    "checked_at": "2026-10-29",
+    "window_start": "2024-10-29",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -2479,8 +2482,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-10-28",
-    "window_start": "2024-10-28",
+    "checked_at": "2026-10-29",
+    "window_start": "2024-10-29",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -2507,8 +2510,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-10-28",
-    "window_start": "2024-10-28",
+    "checked_at": "2026-10-29",
+    "window_start": "2024-10-29",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -2535,8 +2538,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-10-28",
-    "window_start": "2024-10-28",
+    "checked_at": "2026-10-29",
+    "window_start": "2024-10-29",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -2563,8 +2566,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-10-28",
-    "window_start": "2024-10-28",
+    "checked_at": "2026-10-29",
+    "window_start": "2024-10-29",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -2591,8 +2594,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-10-28",
-    "window_start": "2024-10-28",
+    "checked_at": "2026-10-29",
+    "window_start": "2024-10-29",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -2619,8 +2622,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-10-28",
-    "window_start": "2024-10-28",
+    "checked_at": "2026-10-29",
+    "window_start": "2024-10-29",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -2647,8 +2650,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-10-28",
-    "window_start": "2024-10-28",
+    "checked_at": "2026-10-29",
+    "window_start": "2024-10-29",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -2677,8 +2680,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-10-28",
-    "window_start": "2024-10-28",
+    "checked_at": "2026-10-29",
+    "window_start": "2024-10-29",
     "recent_months": 24,
     "shared_papers": 2,
     "recent_shared_papers": 1,
@@ -2710,8 +2713,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-10-28",
-    "window_start": "2024-10-28",
+    "checked_at": "2026-10-29",
+    "window_start": "2024-10-29",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -2738,8 +2741,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-10-28",
-    "window_start": "2024-10-28",
+    "checked_at": "2026-10-29",
+    "window_start": "2024-10-29",
     "recent_months": 24,
     "shared_papers": 2,
     "recent_shared_papers": 2,
@@ -2771,8 +2774,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-10-28",
-    "window_start": "2024-10-28",
+    "checked_at": "2026-10-29",
+    "window_start": "2024-10-29",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -2801,8 +2804,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-10-28",
-    "window_start": "2024-10-28",
+    "checked_at": "2026-10-29",
+    "window_start": "2024-10-29",
     "recent_months": 24,
     "shared_papers": 1,
     "recent_shared_papers": 1,
@@ -2833,8 +2836,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-10-28",
-    "window_start": "2024-10-28",
+    "checked_at": "2026-10-29",
+    "window_start": "2024-10-29",
     "recent_months": 24,
     "shared_papers": 4,
     "recent_shared_papers": 4,
@@ -2866,8 +2869,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-10-28",
-    "window_start": "2024-10-28",
+    "checked_at": "2026-10-29",
+    "window_start": "2024-10-29",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -2896,8 +2899,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-10-28",
-    "window_start": "2024-10-28",
+    "checked_at": "2026-10-29",
+    "window_start": "2024-10-29",
     "recent_months": 24,
     "shared_papers": 2,
     "recent_shared_papers": 0,
@@ -2924,8 +2927,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-10-28",
-    "window_start": "2024-10-28",
+    "checked_at": "2026-10-29",
+    "window_start": "2024-10-29",
     "recent_months": 24,
     "shared_papers": 1,
     "recent_shared_papers": 0,
@@ -2954,8 +2957,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-10-28",
-    "window_start": "2024-10-28",
+    "checked_at": "2026-10-29",
+    "window_start": "2024-10-29",
     "recent_months": 24,
     "shared_papers": 1,
     "recent_shared_papers": 1,
@@ -2984,8 +2987,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-10-28",
-    "window_start": "2024-10-28",
+    "checked_at": "2026-10-29",
+    "window_start": "2024-10-29",
     "recent_months": 24,
     "shared_papers": 1,
     "recent_shared_papers": 0,
@@ -3012,8 +3015,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-10-28",
-    "window_start": "2024-10-28",
+    "checked_at": "2026-10-29",
+    "window_start": "2024-10-29",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -3040,8 +3043,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-10-28",
-    "window_start": "2024-10-28",
+    "checked_at": "2026-10-29",
+    "window_start": "2024-10-29",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -3068,8 +3071,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-10-28",
-    "window_start": "2024-10-28",
+    "checked_at": "2026-10-29",
+    "window_start": "2024-10-29",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -3096,8 +3099,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-10-28",
-    "window_start": "2024-10-28",
+    "checked_at": "2026-10-29",
+    "window_start": "2024-10-29",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -3127,8 +3130,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-10-28",
-    "window_start": "2024-10-28",
+    "checked_at": "2026-10-29",
+    "window_start": "2024-10-29",
     "recent_months": 24,
     "shared_papers": 8,
     "recent_shared_papers": 4,
@@ -3157,8 +3160,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-10-28",
-    "window_start": "2024-10-28",
+    "checked_at": "2026-10-29",
+    "window_start": "2024-10-29",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -3185,8 +3188,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-10-28",
-    "window_start": "2024-10-28",
+    "checked_at": "2026-10-29",
+    "window_start": "2024-10-29",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -3213,8 +3216,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-10-28",
-    "window_start": "2024-10-28",
+    "checked_at": "2026-10-29",
+    "window_start": "2024-10-29",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -3241,8 +3244,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-10-28",
-    "window_start": "2024-10-28",
+    "checked_at": "2026-10-29",
+    "window_start": "2024-10-29",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -3271,8 +3274,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-10-28",
-    "window_start": "2024-10-28",
+    "checked_at": "2026-10-29",
+    "window_start": "2024-10-29",
     "recent_months": 24,
     "shared_papers": 3,
     "recent_shared_papers": 3,
@@ -3303,8 +3306,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-10-28",
-    "window_start": "2024-10-28",
+    "checked_at": "2026-10-29",
+    "window_start": "2024-10-29",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -3331,8 +3334,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-10-28",
-    "window_start": "2024-10-28",
+    "checked_at": "2026-10-29",
+    "window_start": "2024-10-29",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -3359,8 +3362,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-10-28",
-    "window_start": "2024-10-28",
+    "checked_at": "2026-10-29",
+    "window_start": "2024-10-29",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -3387,8 +3390,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-10-28",
-    "window_start": "2024-10-28",
+    "checked_at": "2026-10-29",
+    "window_start": "2024-10-29",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -3417,8 +3420,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-10-28",
-    "window_start": "2024-10-28",
+    "checked_at": "2026-10-29",
+    "window_start": "2024-10-29",
     "recent_months": 24,
     "shared_papers": 1,
     "recent_shared_papers": 0,
@@ -3447,8 +3450,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-10-28",
-    "window_start": "2024-10-28",
+    "checked_at": "2026-10-29",
+    "window_start": "2024-10-29",
     "recent_months": 24,
     "shared_papers": 7,
     "recent_shared_papers": 5,
@@ -3478,8 +3481,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-10-28",
-    "window_start": "2024-10-28",
+    "checked_at": "2026-10-29",
+    "window_start": "2024-10-29",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -3506,8 +3509,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-10-28",
-    "window_start": "2024-10-28",
+    "checked_at": "2026-10-29",
+    "window_start": "2024-10-29",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -3534,8 +3537,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-10-28",
-    "window_start": "2024-10-28",
+    "checked_at": "2026-10-29",
+    "window_start": "2024-10-29",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -3562,8 +3565,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-10-28",
-    "window_start": "2024-10-28",
+    "checked_at": "2026-10-29",
+    "window_start": "2024-10-29",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -3590,8 +3593,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-10-28",
-    "window_start": "2024-10-28",
+    "checked_at": "2026-10-29",
+    "window_start": "2024-10-29",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -3618,8 +3621,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-10-28",
-    "window_start": "2024-10-28",
+    "checked_at": "2026-10-29",
+    "window_start": "2024-10-29",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -3646,8 +3649,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-10-28",
-    "window_start": "2024-10-28",
+    "checked_at": "2026-10-29",
+    "window_start": "2024-10-29",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -3676,11 +3679,11 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-10-28",
-    "window_start": "2024-10-28",
+    "checked_at": "2026-10-29",
+    "window_start": "2024-10-29",
     "recent_months": 24,
-    "shared_papers": 13,
-    "recent_shared_papers": 10,
+    "shared_papers": 14,
+    "recent_shared_papers": 11,
     "last_collaboration_date": "2026-10-07",
     "followup_until": "2028-10-07",
     "current_coauthors": [
@@ -3717,8 +3720,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-10-28",
-    "window_start": "2024-10-28",
+    "checked_at": "2026-10-29",
+    "window_start": "2024-10-29",
     "recent_months": 24,
     "shared_papers": 6,
     "recent_shared_papers": 6,
@@ -3749,8 +3752,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-10-28",
-    "window_start": "2024-10-28",
+    "checked_at": "2026-10-29",
+    "window_start": "2024-10-29",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -3779,8 +3782,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-10-28",
-    "window_start": "2024-10-28",
+    "checked_at": "2026-10-29",
+    "window_start": "2024-10-29",
     "recent_months": 24,
     "shared_papers": 4,
     "recent_shared_papers": 1,
@@ -3812,8 +3815,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-10-28",
-    "window_start": "2024-10-28",
+    "checked_at": "2026-10-29",
+    "window_start": "2024-10-29",
     "recent_months": 24,
     "shared_papers": 2,
     "recent_shared_papers": 1,
@@ -3845,8 +3848,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-10-28",
-    "window_start": "2024-10-28",
+    "checked_at": "2026-10-29",
+    "window_start": "2024-10-29",
     "recent_months": 24,
     "shared_papers": 21,
     "recent_shared_papers": 15,
@@ -3885,8 +3888,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-10-28",
-    "window_start": "2024-10-28",
+    "checked_at": "2026-10-29",
+    "window_start": "2024-10-29",
     "recent_months": 24,
     "shared_papers": 8,
     "recent_shared_papers": 4,
@@ -3919,8 +3922,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-10-28",
-    "window_start": "2024-10-28",
+    "checked_at": "2026-10-29",
+    "window_start": "2024-10-29",
     "recent_months": 24,
     "shared_papers": 7,
     "recent_shared_papers": 3,
@@ -6660,9 +6663,9 @@
    "source_id": "S41454044",
    "landing_url": "https://doi.org/10.1016/j.annonc.2026.07.001",
    "is_oa": true,
-   "oa_url": "https://doi.org/10.1016/j.annonc.2026.07.001",
+   "oa_url": "https://www.annalsofoncology.org/article/S0923-7534(26)00997-X/pdf",
    "license": "cc-by",
-   "pdf_url": null,
+   "pdf_url": "https://www.annalsofoncology.org/article/S0923-7534(26)00997-X/pdf",
    "authors": [
     "Vasco Prudente",
     "Simon Bernatz",
@@ -7503,7 +7506,7 @@
     "leonard-wee": {
      "openalex_id": "A5159167140",
      "orcid": null,
-     "match": "name",
+     "match": "openalex",
      "affiliations": [
       "Maastricht University Medical Centre",
       "Maastro Clinic",
@@ -9011,7 +9014,7 @@
    "pdf_url": null,
    "authors": [
     "Isabelle de Zegher",
-    "Ivanov, Petar",
+    "Petar Ivanov",
     "Mall Maasik",
     "Petros Kalendralis",
     "Markus Kreuzthaler",
@@ -9760,7 +9763,7 @@
     "Anthony J. Winder",
     "Jelmer M. Wolterink",
     "Maxence Wynen",
-    "Yang, Chang",
+    "Chang Yang",
     "Si Young Yie",
     "Mostafa Mehdipour Ghazi",
     "Akshay Pai",
@@ -10001,6 +10004,89 @@
    ],
    "counted": true,
    "first_seen": "2026-10-21",
+   "journal_impact": null,
+   "journal_h_index": null
+  },
+  {
+   "id": "W7152462318",
+   "openalex_url": "https://openalex.org/W7152462318",
+   "doi": "https://doi.org/10.64898/2026.04.06.716823",
+   "title": "IEKB: a comprehensive knowledge base for inner ear genetics integrating curated associations, cochlear interactions, Bayesian candidate prioritisation, explainable dark-gene support relations, and a scientific entity network",
+   "publication_date": "2026-04-09",
+   "year": 2026,
+   "type": "preprint",
+   "journal": "bioRxiv (Cold Spring Harbor Laboratory)",
+   "source_id": "S4306402567",
+   "landing_url": "https://doi.org/10.64898/2026.04.06.716823",
+   "is_oa": true,
+   "oa_url": "https://doi.org/10.64898/2026.04.06.716823",
+   "license": "cc-by",
+   "pdf_url": null,
+   "authors": [
+    "Hao Wang",
+    "Weibang Chen",
+    "Hongyu Ning",
+    "Yao Cai",
+    "Yue Min Xu",
+    "Xuanhe Hou",
+    "Lingpin Pang",
+    "Ziyin Luo",
+    "Chunjie Tian"
+   ],
+   "author_members": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    "xuanhe-hou",
+    null,
+    null,
+    null
+   ],
+   "author_profiles": {
+    "xuanhe-hou": {
+     "openalex_id": "A5153266758",
+     "orcid": null,
+     "match": "openalex",
+     "affiliations": [
+      "Maastricht University",
+      "Department of Radiation Oncology (MAASTRO), GROW – Research Institute for Oncology and Reproduction, Maastricht University, Maastricht, the Netherlands"
+     ]
+    }
+   },
+   "author_positions": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+   ],
+   "author_count": 9,
+   "group_members": [
+    "xuanhe-hou"
+   ],
+   "member_affiliations": {
+    "xuanhe-hou": [
+     "Maastricht University",
+     "Department of Radiation Oncology (MAASTRO), GROW – Research Institute for Oncology and Reproduction, Maastricht University, Maastricht, the Netherlands"
+    ]
+   },
+   "affiliation_status": {
+    "xuanhe-hou": "verified"
+   },
+   "cited_by_count": 0,
+   "abstract": "Abstract Inner-ear genetics has expanded rapidly, yet the supporting evidence remains dispersed across a vast literature and across resources that typically emphasise loci, variants, or expression data rather than integrated biological interpretation. Here we present the Inner Ear Knowledge Base (IEKB; https://earkb.org ), an open database that unifies curated associations, cochlear interaction evidence, candidate prioritisation, explainable support relations, and network exploration for inner-ear research. IEKB was built with an automated agent-assisted curation workflow that combines schema-constrained literature extraction, continuous human monitoring, and final expert review by inner-ear genetics researchers. By systematically analysing 250,696 PubMed-indexed records retrieved across 16,563 screened genes, IEKB curates 6,051 gene–phenotype–disease associations from 2,494 genes across 43 phenotype categories and 4,102 cochlear gene–gene interactions with pathway, cell-type, and experimental context. IEKB further includes a Bayesian “dark matter” module that prioritises 243,071 candidate gene–phenotype associations for 13,229 genes across all 43 phenotypes (global AUC-ROC = 0.8603; global AUC-PR = 0.1674), together with a supervised dark-relation layer that ranks phenotype-specific known-gene support for each candidate and a multi-entity scientific network containing nearly 4,000 entities, 28,616 deterministic edges, and 83,712 literature-derived relational links. The web resource supports interactive search, multi-parameter filtering, gene-detail pages, bibliometric exploration, domain-specific enrichment against IEKB phenotype and disease gene sets, network visualisation, bulk download in CSV, JSON, SQLite, and XLSX formats, and natural-language evidence-grounded question answering through a companion conversational interface (IEKB QA). To our knowledge, IEKB is the first openly accessible inner-ear resource that integrates curated associations, cochlear interactions, probabilistic candidate prioritisation, auditable known-gene support relations for novel candidates, and a multi-entity scientific network within a single database. All data are released without registration under the CC BY 4.0 license.",
+   "verified": true,
+   "counted_members": [
+    "xuanhe-hou"
+   ],
+   "counted": true,
+   "first_seen": "2026-10-29",
    "journal_impact": null,
    "journal_h_index": null
   },
@@ -10927,7 +11013,7 @@
     "leonard-nurnberg": "verified",
     "hugo-aerts": "verified"
    },
-   "cited_by_count": 26,
+   "cited_by_count": 28,
    "abstract": "The thymus is essential for establishing T cell diversity early in life, but undergoes profound involution with age and has therefore traditionally been regarded as largely nonfunctional in adults1,2. Here we propose that preserving thymic functionality is integral to adult health and longevity. We developed a deep learning framework to quantify thymic health from routine radiographic images and evaluated its association with longevity and risk of major age-associated diseases in two large prospective cohorts of asymptomatic adults: the National Lung Screening Trial (n = 25,031) and the Framingham Heart Study (n = 2,581). In both cohorts, thymic health varied markedly across the population. In the National Lung Screening Trial, higher thymic health was consistently associated with lower all-cause mortality, reduced lung cancer incidence and lower cardiovascular mortality over 12 years of follow-up after adjustment for age, sex, smoking and comorbidities. In the independent Framingham Heart Study cohort, higher thymic health was significantly associated with reduced cardiovascular mortality, independent of age, sex and smoking. Thymic health was further linked to systemic inflammation and metabolic dysregulation, and associated with modifiable lifestyle factors including smoking, obesity and physical activity. Together, these findings reposition the thymus as a central regulator of immune-mediated ageing and disease susceptibility in adulthood, highlighting its potential as a target for preventive and regenerative strategies to promote healthy ageing and longevity. Assessing thymic function and health has highlighted the lifelong importance of the thymus as an organ that could be targeted to improve health outcomes, protect against disease and promote healthy ageing.",
    "verified": true,
    "counted_members": [
@@ -11150,7 +11236,7 @@
     "leonard-nurnberg": "verified",
     "hugo-aerts": "verified"
    },
-   "cited_by_count": 29,
+   "cited_by_count": 31,
    "abstract": "Although immunotherapy has revolutionized cancer treatment, many patients still experience limited benefit, highlighting the urgent need for improved biomarkers1. Although immunotherapy is founded on unleashing T cells2, most existing biomarkers remain tumour-centric and mainly overlook host immune competence. The thymus is a key immune organ that is crucial for T cell maturation, and we hypothesized that thymic functionality is associated with immunotherapy outcomes3. Here we show that thymic health, a radiographic measure of thymic functionality, is strongly associated with immunotherapy outcomes across several cancer types. Using a deep-learning framework applied to routine computed tomography images, we quantified thymic health in a pan-cancer cohort of 3,476 patients receiving immune checkpoint inhibitors. In patients with non-small cell lung cancer, higher thymic health was associated with reduced risks of progression and all-cause mortality. These associations remained significant across clinically relevant levels of programmed death ligand 1 (PD-L1) and tumour mutation burden. In the prospective TRACERx lung cancer study, thymic health was positively associated with T cell receptor diversity and T cell receptor excision circles, and correlated with immune-system signalling pathways, supporting radiographic thymic health as a proxy for thymic activity and adaptive immune competence. Analysis across patients with melanoma, breast cancer or renal cancer demonstrated pan-cancer relevance. Together, these findings identify thymic health as a previously unrecognized, tumour-agnostic determinant of immunotherapy efficacy, with potential implications for patient stratification, treatment timing and the development of immune-rejuvenating strategies in precision immuno-oncology. A deep-learning approach applied to routine CT scans is used to quantify the health of the thymus in a cohort of patients with cancer, and shows that thymic function is associated with immunotherapy outcomes.",
    "verified": true,
    "counted_members": [
@@ -12348,7 +12434,7 @@
     "Yanqing Ma",
     "Ziqian Li",
     "Shi Feng",
-    "Maotong Hu",
+    "Mo Hu",
     "Xiuming Zhang",
     "Jing Zhang",
     "Jakob Nikolas Kather",
@@ -15324,6 +15410,7 @@
      "match": "openalex",
      "affiliations": [
       "Maastricht University Medical Centre",
+      "Maastricht University",
       "Department of Radiation Oncology (MAASTRO), School for Oncology and Reproduction (GROW), Maastricht University Medical Centre (MUMC+), Maastricht, the Netherlands; Cardiovascular Research Institute Maastricht (CARIM), Maastricht University, Maastricht, the Netherlands"
      ]
     },
@@ -15367,6 +15454,7 @@
     ],
     "vasco-prudente": [
      "Maastricht University Medical Centre",
+     "Maastricht University",
      "Department of Radiation Oncology (MAASTRO), School for Oncology and Reproduction (GROW), Maastricht University Medical Centre (MUMC+), Maastricht, the Netherlands; Cardiovascular Research Institute Maastricht (CARIM), Maastricht University, Maastricht, the Netherlands"
     ],
     "leonard-wee": [
@@ -19466,7 +19554,7 @@
    "title": "Criteria for establishing a centre of excellence in oncology: a scoping review",
    "publication_date": "2025-07-27",
    "year": 2025,
-   "type": "article",
+   "type": "review",
    "journal": "BMC Health Services Research",
    "source_id": "S12898181",
    "landing_url": "https://doi.org/10.1186/s12913-025-13152-3",
@@ -20933,7 +21021,7 @@
     "minghua-li": "verified",
     "leonard-wee": "verified"
    },
-   "cited_by_count": 33,
+   "cited_by_count": 35,
    "abstract": "BACKGROUND: Current risk stratification for stage II colorectal cancer (CRC) has limited accuracy in identifying patients who would benefit from adjuvant chemotherapy, leading to potential overtreatment or undertreatment. We aimed to develop a more precise risk stratification system by integrating artificial intelligence-based imaging analysis with pathological markers. PATIENTS AND METHODS: We analyzed 2992 stage II CRC patients from 12 centers. A deep learning classifier (Swin Transformer Assisted Risk-stratification for CRC, STAR-CRC) was developed using multi-planar computed tomography (CT) images from 1587 patients (training : internal validation = 7 : 3) and validated in 1405 patients from eight independent centers, which stratified patients into low-, uncertain-, and high-risk groups. To further refine the uncertain-risk group, a composite score based on pathological markers (pT4 stage, number of lymph nodes sampled, perineural invasion, and lymphovascular invasion) was applied, forming the Intelligent Risk Integration System for stage II Colorectal Cancer (IRIS-CRC). IRIS-CRC was compared against the guideline-based risk stratification system (GRSS-CRC) for prediction performance and validated in the validation dataset. RESULTS: IRIS-CRC stratified patients into four prognostic groups with distinct 3-year disease-free survival rates (≥95%, 95%-75%, 75%-55%, ≤55%). Upon external validation, compared with GRSS-CRC, IRIS-CRC downstaged 27.1% of high-risk patients into the favorable group, and upstaged 6.5% of low-risk patients into the very poor prognosis group who might require more aggressive treatment. In the GRSS-CRC intermediate-risk group of the external validation dataset, IRIS-CRC reclassified 40.1% as favorable prognosis and 7.0% as very poor prognosis. IRIS-CRC's performance maintained generalizability in both chemotherapy and non-chemotherapy cohorts. CONCLUSIONS: IRIS-CRC offers a more precise and personalized risk assessment than current guideline-based risk factors, potentially sparing low-risk patients from unnecessary adjuvant chemotherapy while identifying high-risk individuals for more aggressive treatment. This novel approach holds promise for improving clinical decision-making and outcomes in stage II CRC.",
    "verified": true,
    "counted_members": [
@@ -21225,7 +21313,7 @@
    "affiliation_status": {
     "thijs-ackermans": "verified"
    },
-   "cited_by_count": 0,
+   "cited_by_count": 1,
    "abstract": "Background and Purpose: Technological advancements have the potential to mitigate RTT shortages, burnout levels, and turnover rates. However, it is unclear if RTTs currently experience technostress (stress or anxiety from being overwhelmed by technology) and how extensive digital tool usage impacts key job performance indicators (e.g., job engagement, satisfaction, and turnover intentions). This study investigates the impact of digital tools used and expected digital transformation on RTTs' technostress and key job performance indicators. Materials and Methods: A survey was distributed to RTTs across all Dutch radiotherapy centers, resulting in 265 respondents. The survey included validated questionnaires on digital tool use, technostress, job autonomy, innovative work behavior and job performance indicators. Relationships were assessed using linear regression models and paired samples T-tests (p < 0.05). Results: The number of digital tools used had no significant effect (p < 0.05) on key job performance indicators and was not related to technostress. Technostress negatively impacted key job performance indicators, but explained less than 7 % of the variance. Other factors, such as job autonomy, had a greater influence. When presented with a description of the future perspective of their job role after the expected digital transformation, RTTs reported small declines in key job performance indicators. Conclusion: Current RTT performance is not affected by the number of digital tools used, as RTTs are used to working with digital tools. RTTs showed no technostress. After the predicted digital transformation RTTs remained satisfied and engaged. Ensuring RTTs feel skilled and empowered with decision-making authority is crucial before introducing new digital tools.",
    "verified": true,
    "counted_members": [
@@ -22284,6 +22372,132 @@
    "journal_h_index": 132
   },
   {
+   "id": "W7223167501",
+   "openalex_url": "https://openalex.org/W7223167501",
+   "doi": null,
+   "title": "Federated Prediction Models and External Validation for Radiotherapy Outcomes in Head and Neck Cancer using FAIR Clinical and Radiomics Data",
+   "publication_date": "2025-05-01",
+   "year": 2025,
+   "type": "conference-paper",
+   "journal": "Research Publications (Maastricht University)",
+   "source_id": "S4306402616",
+   "landing_url": "https://cris.maastrichtuniversity.nl/en/publications/b8bec8cc-2512-4f16-a97a-56ba2d641227",
+   "is_oa": false,
+   "oa_url": null,
+   "license": null,
+   "pdf_url": null,
+   "authors": [
+    "Varsha; id_orcid 0000-0002-4756-2866 Gouthamchand",
+    "Benedetta Gottardelli",
+    "Gauri Kulkarni",
+    "Umesh B. Sherkhane",
+    "Joshi; id_orcid 0000-0003-1278-3295 Hogenboom",
+    "Rajamenakshi Subramanian",
+    "Ashish Kumar Jha",
+    "Sneha Mithun",
+    "Nilendu C. Purandare",
+    "Jai Prakash Agarwal",
+    "Krithikaa Sekar",
+    "G. Lohith",
+    "Sarbani G. Laskar",
+    "Shwetabh Sinha",
+    "Frank J. P. Hoebers",
+    "Venkatesh Rangarajan",
+    "Gaur Sunder",
+    "Andre Dekker",
+    "Johan; id_orcid 0000-0003-2548-0330 van Soest",
+    "Leonard Wee"
+   ],
+   "author_members": [
+    "varsha-gouthamchand",
+    null,
+    null,
+    null,
+    null,
+    null,
+    "ashish-jha",
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    "andre-dekker",
+    null,
+    "leonard-wee"
+   ],
+   "author_profiles": {
+    "ashish-jha": {
+     "openalex_id": "A5112657267",
+     "orcid": null,
+     "match": "name",
+     "affiliations": []
+    },
+    "andre-dekker": {
+     "openalex_id": "A5158344304",
+     "orcid": null,
+     "match": "name",
+     "affiliations": []
+    },
+    "leonard-wee": {
+     "openalex_id": "A5159167140",
+     "orcid": null,
+     "match": "openalex",
+     "affiliations": []
+    }
+   },
+   "author_positions": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20
+   ],
+   "author_count": 20,
+   "group_members": [
+    "andre-dekker",
+    "leonard-wee"
+   ],
+   "member_affiliations": {
+    "andre-dekker": [],
+    "leonard-wee": []
+   },
+   "affiliation_status": {
+    "andre-dekker": "unknown",
+    "leonard-wee": "unknown"
+   },
+   "cited_by_count": 0,
+   "abstract": null,
+   "verified": false,
+   "counted_members": [
+    "andre-dekker",
+    "leonard-wee"
+   ],
+   "counted": true,
+   "first_seen": "2026-10-29",
+   "journal_impact": null,
+   "journal_h_index": null
+  },
+  {
    "id": "W7209907262",
    "openalex_url": "https://openalex.org/W7209907262",
    "doi": null,
@@ -22320,7 +22534,6 @@
     "Tomas M. Janssen",
     "Per-Ivar Lønne",
     "René Monshouwer",
-    "Zhen Zhang",
     "Ying Xiao",
     "Stephanie; https://orcid.org/0000-0002-4387-1522 Tanadini-Lang",
     "Leonard Wee"
@@ -22347,7 +22560,6 @@
     null,
     null,
     null,
-    "zhen-zang",
     null,
     null,
     "leonard-wee"
@@ -22414,10 +22626,9 @@
     21,
     22,
     23,
-    24,
-    25
+    24
    ],
-   "author_count": 25,
+   "author_count": 24,
    "group_members": [
     "ananya-choudhury",
     "johan-van-soest",
@@ -24212,7 +24423,7 @@
    "affiliation_status": {
     "andre-dekker": "verified"
    },
-   "cited_by_count": 0,
+   "cited_by_count": 1,
    "abstract": "BACKGROUND: Toxicity monitoring should be modernized to include real-world patient-reported data. However, little is known about how stakeholders view the incorporation of real-world patient-reported toxicity symptoms into guidelines. This gap hinders the development of a sustained learning healthcare environment and limits the incorporation of this data into daily care. METHODS: This qualitative study, reported according to COREQ, involved interviews with 29 plus 10 chronic myeloid leukemia (CML) patients and 18 CML clinicians, including eight hematologists/guideline developers. The interviews were audio-recorded, transcribed, and independently coded in Atlas.ti. A framework, adapted from systematically sourced literature, was used for coding. Codes were assessed as either beneficial or limiting. An expert panel of all CML guideline developers completed and prioritized the identified knowledge gaps through a RAND-modified Delphi procedure. RESULTS: Thirty-one benefits and limitations of systematically monitoring patient-reported toxicity symptoms in the real world were identified. Compared to an existing framework, novel benefits centered around the use of aggregated data: Participants viewed real-world patient-reported toxicity symptoms as a way to systematically include patients' toxicity symptoms in the guidelines; personalize guideline advice; and fill knowledge gaps. The expert panel agreed on 14 knowledge gaps in chronic myeloid leukemia care that could be addressed through such data. Novel limitations focused on the suitability, acceptance, and applicability of toxicity symptom monitoring in routine clinical practice. Participants felt that this monitoring does not establish a causal link between medication and symptoms, and it has no added value over open conversation. CONCLUSIONS: The benefits and limitations of adopting patient-reported real-world toxicity symptom monitoring need to be leveraged and addressed to ensure maximum value and uptake. Guideline developers viewed aggregated data as beneficial. The identified knowledge gaps provide concrete points of action for CML guideline development.",
    "verified": true,
    "counted_members": [
@@ -28041,9 +28252,9 @@
    "source_id": "S2764915710",
    "landing_url": "https://doi.org/10.1016/j.clnesp.2024.11.004",
    "is_oa": true,
-   "oa_url": "https://doi.org/10.1016/j.clnesp.2024.11.004",
+   "oa_url": "https://www.clinicalnutritionespen.com/article/S2405-4577(24)01513-4/pdf",
    "license": "cc-by",
-   "pdf_url": null,
+   "pdf_url": "https://www.clinicalnutritionespen.com/article/S2405-4577(24)01513-4/pdf",
    "authors": [
     "Merel R. Aberle",
     "Mariëlle M.E. Coolsen",
@@ -33285,8 +33496,8 @@
    "source_id": "S2756165422",
    "landing_url": "https://doi.org/10.1001/jamaoncol.2024.1120",
    "is_oa": true,
-   "oa_url": "https://cris.maastrichtuniversity.nl/en/publications/50d7305f-19c5-44ee-90ca-ce8395c0e529",
-   "license": "cc-by",
+   "oa_url": "https://pmc.ncbi.nlm.nih.gov/articles/instance/11117154/bin/jamaoncol-e241120-s001.pdf",
+   "license": null,
    "pdf_url": null,
    "authors": [
     "Tafadzwa Lawrence Chaunzwa",
@@ -35017,7 +35228,7 @@
    "type": "conference-abstract",
    "journal": "Gastroenterology",
    "source_id": "S143352558",
-   "landing_url": "http://dx.doi.org/10.1016/s0016-5085(24)03043-9",
+   "landing_url": "https://doi.org/10.1016/s0016-5085(24)03043-9",
    "is_oa": false,
    "oa_url": null,
    "license": null,
