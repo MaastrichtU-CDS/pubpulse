@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-30T22:19:42+00:00",
+ "generated": "2026-10-30T22:35:05+00:00",
  "group_name": "Clinical Data Science (Maastro / Maastricht University)",
  "site_url": "https://maastrichtu-cds.github.io/pubpulse/",
  "repo_url": "https://github.com/MaastrichtU-CDS/pubpulse",
@@ -8911,6 +8911,7 @@
    "counted": false,
    "listed_elsewhere": true,
    "first_seen": "2026-10-21",
+   "other_group": "Kees C.W.J. Ebben",
    "journal_impact": null,
    "journal_h_index": null
   },
@@ -11263,13 +11264,12 @@
    ],
    "cited_by_count": 0,
    "abstract": "Current guidelines recommend adding local radical treatment (LRT) to systemic therapy in patients (pts) with synchronous oligometastatic (sOM) non-small cell lung cancer (NSCLC). While some achieve long-term survival, many pts experience early progression (PD), stressing the need for biomarkers to identify who may benefit from LRT. Accurate selection is crucial to avoid futile treatment and to enable tailored communication and survivorship support. Radiomics and artificial intelligence may offer noninvasive biomarkers by quantifying tumor characteristics.",
-   "verified": true,
-   "counted_members": [
-    "leonard-wee"
-   ],
-   "counted": true,
-   "listed_elsewhere": false,
+   "verified": false,
+   "counted_members": [],
+   "counted": false,
+   "listed_elsewhere": true,
    "first_seen": "2026-10-21",
+   "other_group": "Lizza E.L. Hendriks",
    "journal_impact": 1.8,
    "journal_h_index": 99
   },
@@ -14682,12 +14682,11 @@
    "cited_by_count": 0,
    "abstract": "Adaptive radiotherapy (ART) aims to detect changing patient anatomy and adapt the radiotherapy (RT) treatment plan accordingly, improving accuracy and outcomes. Artificial intelligence (AI) is introduced into this workflow to facilitate adaptation and manage the increased workload. However, the complexity and opacity of AI models used in ART pose challenges for clinical adoption. Outputs of traditional explainable AI methods, such as heatmaps, often lack consistency and can induce cognitive bias in clinicians' decision-making. This study introduces a novel approach using counterfactual explanations and domain knowledge to enhance transparency and trust in ART systems. By leveraging the physical properties of computed tomography images the proposed method generates realistic and semantically meaningful counterfactuals. These explanations help clinicians understand the clinical relevance of AI-detected deviations in the treatment, supporting safer and more effective decision-making for RT.",
    "verified": false,
-   "counted_members": [
-    "cecile-wolfs"
-   ],
-   "counted": true,
-   "listed_elsewhere": false,
+   "counted_members": [],
+   "counted": false,
+   "listed_elsewhere": true,
    "first_seen": "2026-10-21",
+   "other_group": "Frank Verhaegen",
    "journal_impact": null,
    "journal_h_index": null
   },
@@ -19119,13 +19118,12 @@
    ],
    "cited_by_count": 7,
    "abstract": "Background: Early detection of patients at high risk for recurrence or local tumor progression (LTP) following thermal ablation of hepatocellular carcinoma (HCC) is essential for treatment selection and individualized follow-up. This systematic review aims to assess and compare the performance of prognostic models predicting recurrence or LTP in patients with HCC treated with thermal ablation. Methods: PubMed, Web of Science, Cochrane, and Embase were searched for studies developing models to predict recurrence after thermal ablation in treatment-naïve HCC patients, using imaging and clinical data with reported test set performance. Risk of bias and applicability were assessed by the Prediction model Risk of Bias Assessment Tool. Data on model performance, feature extraction and modeling technique was collected. Results: In total, 16 studies comprising 39 prognostic models were included, all developed using retrospective data from China or Korea. Outcomes included recurrence-free survival, (intrahepatic) early recurrence, LTP, late recurrence and aggressive intrasegmental recurrence. Predictive parameters varied across models addressing identical outcomes. Outcome definitions also differed. Nine models were externally validated. Most studies had a high risk of bias due to methodological limitations. Conclusions: Variability in model development methodology and type of predictors was found. Models that integrated multiple types of predictors consistently outperformed those relying on one type. To advance predictive tools toward clinical implementation, future research should prioritize standardized outcome definitions, external testing, and transparent reporting. Until these challenges are addressed, current evaluated models should be regarded as promising but preliminary tools.",
-   "verified": true,
-   "counted_members": [
-    "hossein-rahmani"
-   ],
-   "counted": true,
-   "listed_elsewhere": false,
+   "verified": false,
+   "counted_members": [],
+   "counted": false,
+   "listed_elsewhere": true,
    "first_seen": "2026-10-21",
+   "other_group": "Christiaan van der Leij",
    "journal_impact": 5.5,
    "journal_h_index": 220
   },
@@ -19777,7 +19775,7 @@
    "counted": false,
    "listed_elsewhere": true,
    "first_seen": "2026-10-21",
-   "other_group": "Maria Jacobs",
+   "other_group": "Liesbeth Jorinne Boersma",
    "journal_impact": 4.0,
    "journal_h_index": 217
   },
@@ -22995,7 +22993,7 @@
    "counted": false,
    "listed_elsewhere": true,
    "first_seen": "2026-10-21",
-   "other_group": "Maria Jacobs",
+   "other_group": "Liesbeth Jorinne Boersma",
    "journal_impact": 0.8,
    "journal_h_index": 226
   },
@@ -23340,14 +23338,11 @@
    "cited_by_count": 0,
    "abstract": null,
    "verified": false,
-   "counted_members": [
-    "anniek-van-hienen",
-    "anshu-ankolekar",
-    "rianne-fijten"
-   ],
-   "counted": true,
-   "listed_elsewhere": false,
+   "counted_members": [],
+   "counted": false,
+   "listed_elsewhere": true,
    "first_seen": "2026-10-21",
+   "other_group": "Liesbeth Jorinne Boersma",
    "journal_impact": 0.8,
    "journal_h_index": 226
   },
@@ -24522,13 +24517,12 @@
    ],
    "cited_by_count": 2,
    "abstract": "BACKGROUND AND PURPOSE: Radiotherapy (RT) is rapidly advancing, yet only 50 % of innovations are implemented promptly. Despite the availability of Implementation Science (ImpSci) theories, models, and frameworks (TMFs), a theory-practice gap persists in effectively applying these insights in RT clinical practice. This study aims to develop a consensus-based implementation protocol for RT innovations using validated ImpSci knowledge. MATERIAL AND METHODS: A literature review of TMFs (May-August 2023) and 20 semi-structured interviews with Dutch RT professionals (August-December 2023) identified key RT components for implementation. These insights informed a draft RT implementation protocol, which was refined through a three-round international Delphi study (March-September 2024) involving 11 RT and 5 ImpSci experts. Consensus was determined using a 5-point Likert scale, analysing medians, interquartile ranges (IQRs), and percentage scoring. RESULTS: The Knowledge-to-Action (KTA) Framework and input from expert interviews were used to draft the protocol. Delphi response rates were 100 %, 93.8 %, and 88.9 % across rounds. In round 1, 88.9 % of elements achieved consensus (median = 4.0, IQR = 0.0-1.3); only the application of a prediction model for timely implementation (step 3c) needed revision after rounds 1 and 2. In round 3, also for step 3c consensus was reached (median = 4.0, IQR = 0.3). The protocol includes defining innovation types, stakeholder analysis, tailored implementation strategies, and a phased evaluation plan to ensure sustainability. CONCLUSION: This is the first consensus-based RT innovation implementation protocol, addressing the theory-practice gap with a structured clinical approach. Future research should validate the protocol and assess the impact of preparation on implementation success.",
-   "verified": true,
-   "counted_members": [
-    "rianne-fijten"
-   ],
-   "counted": true,
-   "listed_elsewhere": false,
+   "verified": false,
+   "counted_members": [],
+   "counted": false,
+   "listed_elsewhere": true,
    "first_seen": "2026-10-21",
+   "other_group": "Liesbeth Jorinne Boersma",
    "journal_impact": 0.8,
    "journal_h_index": 226
   },
@@ -24709,13 +24703,12 @@
    ],
    "cited_by_count": 3,
    "abstract": "INTRODUCTION: Many artificial intelligence (AI) solutions have been proposed to enhance the radiotherapy (RT) workflow, but limited applications have been implemented to date, suggesting an implementation gap. One contributing factor to this gap is a misalignment between AI systems and their users. To address the AI implementation gap, we propose a human-centric methodology, novel in RT, for an interface design of an AI-driven RT treatment error detection system. METHODS: A 5-day design sprint was set up with a multi-disciplinary team of clinical and research staff and a commercial company. In the design sprint, an interface was prototyped to aid medical physicists in catching treatment errors during daily treatment fractions using dose-guided RT (DGRT) with a portal imager. RESULTS: The design sprint resulted in a simulated prototype of an interface supported by all stakeholders. Important features of an interface include the AI certainty metric, explainable AI features, feedback options, and decision aid. The prototype was well-received by expert users. CONCLUSION/DISCUSSION: Using a co-creation strategy, which is a novel approach in RT, we were able to prototype a novel human-interpretable interface to detect RT treatment errors and aid the DGRT workflow. Users showed confidence that the overall design method and the proposed prototype could lead to a viable clinical implementation.",
-   "verified": true,
-   "counted_members": [
-    "cecile-wolfs"
-   ],
-   "counted": true,
-   "listed_elsewhere": false,
+   "verified": false,
+   "counted_members": [],
+   "counted": false,
+   "listed_elsewhere": true,
    "first_seen": "2026-10-21",
+   "other_group": "Frank Verhaegen",
    "journal_impact": 2.4,
    "journal_h_index": 81
   },
@@ -25272,15 +25265,12 @@
    ],
    "cited_by_count": 0,
    "abstract": null,
-   "verified": true,
-   "counted_members": [
-    "fariba-tohidinezhad",
-    "petros-kalendralis",
-    "aiara-lobo-gomes"
-   ],
-   "counted": true,
-   "listed_elsewhere": false,
+   "verified": false,
+   "counted_members": [],
+   "counted": false,
+   "listed_elsewhere": true,
    "first_seen": "2026-10-21",
+   "other_group": "Lizza E.L. Hendriks",
    "journal_impact": 1.0,
    "journal_h_index": 222
   },
@@ -25673,15 +25663,12 @@
    ],
    "cited_by_count": 0,
    "abstract": "Abstract Real-world data is an important complement to randomized controlled trials and can be used to assess whether study results translate well to routine clinical practice and to groups of patients that are often excluded from clinical trials. The aim of this di sease na tural hi st ory and care qualit y assessment (DINASTY) study is to describe treatments, outcomes and care quality for patients with metastatic non-small cell lung cancer using real-world data. The study is a retrospective observational multicenter study conducted within DIGICORE, a non-profit European Economic Interest Grouping, formed to facilitate real-world evidence studies. The study will make use of methods developed within the network. Forty essential variables to describe patients with cancer, treatments and outcomes have been defined within DIGICORE and mapped to the Observational Medical Outcomes Partnership (OMOP) common data model (CDM). The study uses data that is drawn directly from the electronic patient health records at the patient’s local hospital and mapped to OMOP. Data are analyzed using a federated approach, meaning that patient-level data is analyzed locally, and only aggregated results are shared across centers and combined to present results for the full cohort. This method enables the delivery of multicenter studies and the presentation of results in a privacy-preserving way.",
-   "verified": true,
-   "counted_members": [
-    "anne-lore-bynens",
-    "aiara-lobo-gomes",
-    "ivan-zhovannik"
-   ],
-   "counted": true,
-   "listed_elsewhere": false,
+   "verified": false,
+   "counted_members": [],
+   "counted": false,
+   "listed_elsewhere": true,
    "first_seen": "2026-10-21",
+   "other_group": "Lizza E.L. Hendriks",
    "journal_impact": null,
    "journal_h_index": null
   },
@@ -28083,7 +28070,7 @@
    "counted": false,
    "listed_elsewhere": true,
    "first_seen": "2026-10-21",
-   "other_group": "Maria Jacobs",
+   "other_group": "Liesbeth Jorinne Boersma",
    "journal_impact": 2.8,
    "journal_h_index": 56
   },
@@ -31262,14 +31249,12 @@
    ],
    "cited_by_count": 1,
    "abstract": null,
-   "verified": true,
-   "counted_members": [
-    "aiara-lobo-gomes",
-    "ivan-zhovannik"
-   ],
-   "counted": true,
-   "listed_elsewhere": false,
+   "verified": false,
+   "counted_members": [],
+   "counted": false,
+   "listed_elsewhere": true,
    "first_seen": "2026-10-21",
+   "other_group": "Lizza E.L. Hendriks",
    "journal_impact": 1.7,
    "journal_h_index": 387
   },
@@ -31573,6 +31558,7 @@
    "counted": false,
    "listed_elsewhere": true,
    "first_seen": "2026-10-21",
+   "other_group": "Kees C.W.J. Ebben",
    "journal_impact": null,
    "journal_h_index": null
   },
@@ -31647,6 +31633,7 @@
    "counted": false,
    "listed_elsewhere": true,
    "first_seen": "2026-10-21",
+   "other_group": "Kees C.W.J. Ebben",
    "journal_impact": null,
    "journal_h_index": null
   },
@@ -32014,13 +32001,12 @@
    ],
    "cited_by_count": 1,
    "abstract": "Abstract Objective. The aim of this work was to develop a novel artificial intelligence-assisted in vivo dosimetry method using time-resolved (TR) dose verification data to improve quality of external beam radiotherapy. Approach. Although threshold classification methods are commonly used in error classification, they may lead to missing errors due to the loss of information resulting from the compression of multi-dimensional electronic portal imaging device (EPID) data into one or a few numbers. Recent research has investigated the classification of errors on time-integrated (TI) in vivo EPID images, with convolutional neural networks showing promise. However, it has been observed previously that TI approaches may cancel out the error presence on γ-maps during dynamic treatments. To address this limitation, simulated TR γ-maps for each volumetric modulated arc radiotherapy angle were used to detect treatment errors caused by complex patient geometries and beam arrangements. Typically, such images can be interpreted as a set of segments where only set class labels are provided. Inspired by recent weakly supervised approaches on histopathology images, we implemented a transformer based multiple instance learning approach and utilized transfer learning from TI to TR γ-maps. Main results. The proposed algorithm performed well on classification of error type and error magnitude. The accuracy in the test set was up to 0.94 and 0.81 for 11 (error type) and 22 (error magnitude) classes of treatment errors, respectively. Significance. TR dose distributions can enhance treatment delivery decision-making, however manual data analysis is nearly impossible due to the complexity and quantity of this data. Our proposed model efficiently handles data complexity, substantially improving treatment error classification compared to models that leverage TI data.",
-   "verified": true,
-   "counted_members": [
-    "cecile-wolfs"
-   ],
-   "counted": true,
-   "listed_elsewhere": false,
+   "verified": false,
+   "counted_members": [],
+   "counted": false,
+   "listed_elsewhere": true,
    "first_seen": "2026-10-21",
+   "other_group": "Frank Verhaegen",
    "journal_impact": 2.9,
    "journal_h_index": 266
   },
@@ -32715,13 +32701,12 @@
    ],
    "cited_by_count": 7,
    "abstract": "BACKGROUND: Cachexia, a syndrome with high prevalence in non-small cell lung cancer patients, impairs quality of life and reduces tolerance and responsiveness to cancer therapy resulting in decreased survival. Optimal nutritional care is pivotal in the treatment of cachexia and a recommended cornerstone of multimodal therapy. Here, we investigated the therapeutic effect of an intervention diet consisting of a specific combination of high protein, leucine, fish oil, vitamin D, galacto-oligosaccharides, and fructo-oligosaccharides on the development and progression of cachexia in an orthotopic lung cancer mouse model. METHODS: Eleven-week-old male 129S2/Sv mice were orthotopically implanted with 344P lung epithelial tumour cells or vehicle (control). Seven days post-implantation tumour-bearing (TB) mice were allocated to either intervention- or isocaloric control diet. Cachexia was defined as 5 days of consecutive body weight loss, after which mice were euthanized for tissue analyses. RESULTS: TB mice developed cachexia accompanied by significant loss of skeletal muscle mass and epididymal fat mass compared with sham operated mice. The cachectic endpoint was significantly delayed (46.0 ± 15.2 vs. 34.7 ± 11.4 days), and the amount (-1.57 ± 0.62 vs. -2.13 ± 0.57 g) and progression (-0.26 ± 0.14 vs. -0.39 ± 0.11 g/day) of body weight loss were significantly reduced by the intervention compared with control diet. Moreover, systemic inflammation (pentraxin-2 plasma levels) and alterations in molecular markers for proteolysis and protein synthesis, indicative of muscle atrophy signalling in TB-mice, were suppressed in skeletal muscle by the intervention diet. CONCLUSIONS: Together, these data demonstrate the potential of this multinutrient intervention, targeting multiple components of cachexia, as integral part of lung cancer management.",
-   "verified": true,
-   "counted_members": [
-    "cecile-wolfs"
-   ],
-   "counted": true,
-   "listed_elsewhere": false,
+   "verified": false,
+   "counted_members": [],
+   "counted": false,
+   "listed_elsewhere": true,
    "first_seen": "2026-10-21",
+   "other_group": "Frank Verhaegen",
    "journal_impact": 7.8,
    "journal_h_index": 150
   },
@@ -34037,12 +34022,11 @@
    "cited_by_count": 0,
    "abstract": null,
    "verified": false,
-   "counted_members": [
-    "cecile-wolfs"
-   ],
-   "counted": true,
-   "listed_elsewhere": false,
+   "counted_members": [],
+   "counted": false,
+   "listed_elsewhere": true,
    "first_seen": "2026-10-21",
+   "other_group": "Frank Verhaegen",
    "journal_impact": 0.8,
    "journal_h_index": 226
   },
@@ -34506,7 +34490,7 @@
    "counted": false,
    "listed_elsewhere": true,
    "first_seen": "2026-10-21",
-   "other_group": "Maria Jacobs",
+   "other_group": "Frank Verhaegen",
    "journal_impact": 0.8,
    "journal_h_index": 226
   },
@@ -34581,7 +34565,7 @@
    "counted": false,
    "listed_elsewhere": true,
    "first_seen": "2026-10-21",
-   "other_group": "Maria Jacobs",
+   "other_group": "Liesbeth Jorinne Boersma",
    "journal_impact": 0.8,
    "journal_h_index": 226
   },
@@ -34978,12 +34962,11 @@
    "cited_by_count": 0,
    "abstract": null,
    "verified": false,
-   "counted_members": [
-    "cecile-wolfs"
-   ],
-   "counted": true,
-   "listed_elsewhere": false,
+   "counted_members": [],
+   "counted": false,
+   "listed_elsewhere": true,
    "first_seen": "2026-10-21",
+   "other_group": "Maria Jacobs",
    "journal_impact": 0.8,
    "journal_h_index": 226
   },
@@ -36984,13 +36967,12 @@
    ],
    "cited_by_count": 0,
    "abstract": null,
-   "verified": true,
-   "counted_members": [
-    "rianne-fijten"
-   ],
-   "counted": true,
-   "listed_elsewhere": false,
+   "verified": false,
+   "counted_members": [],
+   "counted": false,
+   "listed_elsewhere": true,
    "first_seen": "2026-10-21",
+   "other_group": "Henrica M.J. Werner",
    "journal_impact": 0.6,
    "journal_h_index": 125
   },
