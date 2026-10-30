@@ -48,8 +48,9 @@ institution_keywords:
   # Precision Medicine, GROW" or "Radiology and Nuclear Medicine, GROW & CARIM" is another affiliation.
   - {school: grow}
 
-# A paper whose senior (last) author is not CDS but is listed with one of these belongs to another Maastricht group
-# (e.g. Maastro physics, Radiology within GROW) and does not count, unless a CDS member is first or last author.
+# A paper whose senior (last) author is not CDS but is listed with one of these, on that paper or on any other paper in
+# the archive, belongs to another Maastricht group (e.g. Maastro physics, Radiology within GROW) and does not count,
+# unless a CDS member is first or last author or a CDS professor (staff-page role "Professor") is on it.
 other_group_senior_keywords: [maastro, grow]
 
 # Broader words used only to pick the right OpenAlex author record for a person (never to verify a paper):

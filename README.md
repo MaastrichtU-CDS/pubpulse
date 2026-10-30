@@ -291,9 +291,11 @@ contain mistakes. Treat the overview as internal and indicative, not as a report
 A paper counts when a group author has a verified group affiliation, or when a group member was in the team at
 publication time and OpenAlex lists no affiliation for them. A member listed with another institution only (for
 example a second appointment elsewhere) does not count; confirm such a paper by hand if it should. Former staff count
-only with a verified group affiliation. **Another group's paper:** when the senior (last) author is not CDS but is listed with Maastro or
-GROW, the paper belongs to another Maastricht group and does not count, unless a CDS member is first or last author
-or the paper is confirmed by hand. Papers you never want counted: `reject:`. That is the whole rule; there are no
+only with a verified group affiliation. **Another group's paper:** when the senior (last) author is not CDS but is a Maastro or GROW senior,
+the paper belongs to another Maastricht group and does not count. A Maastro or GROW senior is a last author listed
+with Maastro or GROW on this paper or on any other paper in the archive (so also their papers where OpenAlex lists no
+affiliation). Such a paper still counts when a CDS member is first or last author, when a CDS professor (role
+"Professor" on the staff page) is on it, or when it is confirmed by hand. Papers you never want counted: `reject:`. That is the whole rule; there are no
 exceptions by name.
 
 "In the team" means on the staff page; someone who left counts up to the day they were last seen there plus the

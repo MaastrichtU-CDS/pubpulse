@@ -390,27 +390,32 @@ def test_bare_maastricht_affiliation_is_not_another_affiliation_and_grow_alone_v
 
 def test_paper_led_by_another_maastricht_group_does_not_count():
     from pubpulse.sync import apply_overrides
-    people = [{"slug": "m", "name": "M Member"}, {"slug": "ib", "name": "Inigo Bermejo Delgado"}]
+    people = [{"slug": "m", "name": "M Member", "role": "PhD student"}, {"slug": "ib", "name": "Inigo Bermejo Delgado"},
+              {"slug": "lead", "name": "Lead", "role": "Professor"}, {"slug": "ap", "name": "A P", "role": "Assistant Professor"}]
     def work(wid, authors, members, senior_affs=()):
         return {"id": wid, "authors": authors, "author_members": members, "group_members": ["m"], "verified": True,
                 "counted": True, "counted_members": ["m"], "listed_elsewhere": False, "senior_affiliations": list(senior_affs)}
     grow = ["Radiology and Nuclear Medicine, GROW, Maastricht University"]
     works = [
-        work("W1", ["A", "M Member", "Frank Verhaegen"], [None, "m", None]),          # senior without Maastro/GROW listed
+        work("W1", ["A", "M Member", "Frank Verhaegen"], [None, "m", None]),          # no affiliation here, Maastro on W8
         work("W2", ["A", "M Member", "C van der Leij"], [None, "m", None], grow),    # non-CDS senior listed with GROW
         work("W3", ["M Member", "B", "C van der Leij"], ["m", None, None], grow),     # CDS first author: CDS-led
         work("W4", ["A", "M Member", "Iñigo Bermejo"], [None, "m", None], grow),     # senior is (former) CDS
         work("W5", ["A", "M Member", "D Smith"], [None, "m", None], ["Leiden University"]),  # external collaborator
         work("W6", ["A", "M Member", "C van der Leij"], [None, "m", None], grow),    # confirmed by hand
-        work("W7", ["A", "Lead", "M Member", "C van der Leij"], [None, "lead", "m", None], grow),  # CDS members in the middle only
+        work("W7", ["A", "Lead", "M Member", "C van der Leij"], [None, "lead", "m", None], grow),  # a CDS professor is on it
+        work("W8", ["A", "M Member", "Frank Verhaegen"], [None, "m", None], ["Maastro Clinic"]),
+        work("W9", ["A", "A P", "M Member", "C van der Leij"], [None, "ap", "m", None], grow),  # assistant professor only
+        work("W10", ["A", "M Member", "E Jones"], [None, "m", None]),                   # never listed with Maastro / GROW
     ]
-    works[-1]["group_members"] = ["lead", "m"]
+    works[6]["group_members"] = ["lead", "m"]
+    works[8]["group_members"] = ["ap", "m"]
     ov = {"confirm": {"W6"}, "reject": set()}
     out = {w["id"]: w for w in apply_overrides(works, ov, people=people, senior_keywords=["maastro", "grow"])}
-    for wid in ("W2", "W7"):
+    for wid in ("W1", "W2", "W8", "W9"):
         assert not out[wid]["counted"] and not out[wid]["verified"] and out[wid]["listed_elsewhere"]
     assert out["W2"]["other_group"] == "C van der Leij"
-    for wid in ("W1", "W3", "W4", "W5", "W6"):
+    for wid in ("W3", "W4", "W5", "W6", "W7", "W10"):
         assert out[wid]["counted"] and "other_group" not in out[wid]
 
 

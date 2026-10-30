@@ -134,26 +134,47 @@ def is_cds_name(name: str, people: list[dict]) -> bool:
     return False
 
 
-def led_by_other_group(w: dict, people: list[dict], senior_keywords: list) -> bool:
-    """The senior (last) author is not CDS but is listed with Maastro / GROW: the paper is another group's, unless a
-    group member is first or last author (CDS-led)."""
+def is_cds_professor(person: dict) -> bool:
+    """Full professor of the group, by the role on the staff page (not assistant or associate professors)."""
+    return bool(re.fullmatch(r"\s*(?:full\s+)?professor\s*", person.get("role") or "", re.I))
+
+
+def maastricht_seniors(works: list[dict], people: list[dict], senior_keywords: list) -> set[tuple[str, ...]]:
+    """Senior (last) authors outside CDS who are listed with Maastro / GROW on at least one paper in the archive.
+    They lead another Maastricht group, also on their papers where OpenAlex lists no affiliation for them."""
+    seniors = set()
+    for w in works:
+        last = (w.get("authors") or [""])[-1]
+        if senior_keywords and affiliation_matches(w.get("senior_affiliations") or [], senior_keywords) \
+                and not is_cds_name(last, people):
+            seniors.add(author_name_key(last))
+    return seniors - {()}
+
+
+def led_by_other_group(w: dict, people: list[dict], senior_keywords: list, seniors: set = frozenset()) -> bool:
+    """The senior (last) author is not CDS but is a Maastro / GROW senior: the paper is another group's, unless a
+    group member is first or last author (CDS-led) or a CDS professor is on it."""
     members = w.get("author_members") or []
     if not members or members[0] or members[-1]:
+        return False
+    professors = {p["slug"] for p in people if is_cds_professor(p)}
+    if professors & set(w.get("group_members") or []):
         return False
     last = (w.get("authors") or [""])[-1]
     if not senior_keywords or is_cds_name(last, people):
         return False
-    return affiliation_matches(w.get("senior_affiliations") or [], senior_keywords)
+    return author_name_key(last) in seniors or affiliation_matches(w.get("senior_affiliations") or [], senior_keywords)
 
 
 def apply_overrides(works: list[dict], overrides: dict, people: list[dict] | None = None,
                     senior_keywords: list | None = None) -> list[dict]:
+    seniors = maastricht_seniors(works, people or [], senior_keywords or [])
     kept = []
     for w in works:
         if w["id"] in overrides["reject"]:
             continue
         w.pop("other_group", None)
-        if led_by_other_group(w, people or [], senior_keywords or []) and w["id"] not in overrides["confirm"]:
+        if led_by_other_group(w, people or [], senior_keywords or [], seniors) and w["id"] not in overrides["confirm"]:
             # The senior (last) author leads another group: the paper is that group's, whatever the affiliations say.
             w["verified"] = w["counted"] = False
             w["counted_members"] = []
