@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-30T19:14:45+00:00",
+ "generated": "2026-10-30T19:18:58+00:00",
  "group_name": "Clinical Data Science (Maastro / Maastricht University)",
  "site_url": "https://maastrichtu-cds.github.io/pubpulse/",
  "repo_url": "https://github.com/MaastrichtU-CDS/pubpulse",
@@ -30151,7 +30151,6 @@
     "fariba-tohidinezhad",
     "leonard-nurnberg",
     "femke-vaassen",
-    "hugo-aerts",
     "andre-dekker",
     "alberto-traverso"
    ],
@@ -30176,15 +30175,6 @@
      "Maastro Clinic",
      "Department of Radiation Oncology (Maastro Clinic), School for Oncology and Reproduction (GROW), Maastricht University Medical Center, Maastricht, the Netherlands"
     ],
-    "hugo-aerts": [
-     "Brigham and Women's Hospital",
-     "Maastricht University Medical Centre",
-     "Maastricht University",
-     "Dana-Farber Cancer Institute",
-     "Dana-Farber Brigham Cancer Center",
-     "Mass General Brigham",
-     "Artificial Intelligence in Medicine (AIM) Program, Mass General Brigham, Harvard Medical School, Boston, MA, USA; Department of Radiology and Nuclear Medicine, Maastricht University Medical Center, Maastricht, the Netherlands; Departments of Radiation Oncology and Radiology, Brigham and Women's Hospital, Dana-Farber Cancer Institute, Harvard Medical School, Boston, MA, USA"
-    ],
     "andre-dekker": [
      "Maastricht University Medical Centre",
      "Maastricht University",
@@ -30203,7 +30193,6 @@
     "fariba-tohidinezhad": "verified",
     "leonard-nurnberg": "verified",
     "femke-vaassen": "verified",
-    "hugo-aerts": "verified",
     "andre-dekker": "verified",
     "alberto-traverso": "verified"
    },
@@ -30214,7 +30203,6 @@
     "fariba-tohidinezhad",
     "leonard-nurnberg",
     "femke-vaassen",
-    "hugo-aerts",
     "andre-dekker",
     "alberto-traverso"
    ],
