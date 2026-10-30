@@ -45,14 +45,13 @@ openalex_mailto: s.puts@maastrichtuniversity.nl
 # is included because several group members are employed there. The same words decide whether a person without ORCID
 # may be auto-matched in OpenAlex, and which record wins when one ORCID maps to several OpenAlex author records.
 # An entry is one word (anywhere in the affiliation) or a list of words that must all occur in the SAME affiliation
-# string: "radiation oncology" alone would match any radiation oncology department in the world.
+# string. Radiation Oncology is not a verification word: it is also the name of many departments elsewhere, and every
+# group paper that lists the Maastricht one also lists Maastro or GROW.
 institution_keywords:
   - maastro
   - medical data works
   - clinical data science
-  - [maastricht, radiation oncology]
   - grow
-  - [mumc, radiation oncology]
   # Other labs within GROW, not the group: an affiliation string naming them never verifies.
   - {other_lab: precision medicine}
   - {other_lab: d-lab}

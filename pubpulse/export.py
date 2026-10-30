@@ -133,7 +133,7 @@ def write_xlsx(pubs: dict, cfg: dict, path: Path) -> Path:
         "group member was in the team at publication time and OpenAlex lists no other affiliation for them (none, or only a bare Maastricht University / MUMC+ / Radiation Oncology). "
         "Listed with another institution only: "
         "not counted. Outside the team window, and for people matched by name only, a verified group affiliation is required.",
-        "Verified group affiliation: the authorship carries Maastro, Medical Data Works, Clinical Data Science, or Radiation Oncology/GROW together with Maastricht/MUMC.",
+        "Verified group affiliation: the authorship carries Maastro, GROW, Clinical Data Science or Medical Data Works (not the D-Lab / Precision Medicine).",
         "Affiliation status per author: verified / unspecific (only a bare Maastricht University, MUMC+ or Radiation Oncology) / mismatch (another department or institution recorded) / unknown (OpenAlex has no affiliation for this authorship).",
         "Manual decisions (overrides.yml): confirmed = counted by hand; rejected papers are not in this file.",
         "Preprints are flagged in 'Preprint' and hidden on the website by default; they are included here.",
