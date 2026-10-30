@@ -2261,3 +2261,16 @@ button.type-key[aria-pressed="true"] { border-color: var(--navy); background: va
 .badge.ready { background: #e6f4ea; color: #27623d; }
 .se-howto { font-size: 12px; margin: 6px 0 0; }
 .studio-hint { margin: 10px 0 0; font-size: 13px; }
+
+/* Search autocomplete */
+.results > .search-filter { position: relative; }
+.search-suggest { position: absolute; z-index: 30; left: 0; right: 0; top: calc(100% + 4px); max-height: min(420px, 60vh); overflow-y: auto; background: var(--panel); border: 1px solid #c9d6e4; border-radius: 6px; box-shadow: 0 10px 28px rgba(0, 28, 61, 0.14); padding: 6px 0; }
+.suggest-group { padding: 8px 16px 4px; font-size: 11px; font-weight: 700; letter-spacing: 1.2px; text-transform: uppercase; color: var(--muted); }
+.suggest-option { display: flex; align-items: baseline; gap: 12px; padding: 8px 16px; cursor: pointer; color: var(--text); font-size: 14px; line-height: 1.35; }
+.suggest-option[aria-selected="true"], .suggest-option:hover { background: var(--accent-soft); }
+.suggest-label { flex: 1; min-width: 0; overflow-wrap: anywhere; }
+.suggest-label mark { background: none; color: var(--accent); font-weight: 700; }
+.suggest-count { flex: none; font-size: 12px; color: var(--muted); white-space: nowrap; }
+@media (max-width: 760px) {
+  .suggest-option { flex-wrap: wrap; gap: 2px 12px; }
+}

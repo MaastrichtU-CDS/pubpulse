@@ -403,7 +403,11 @@
       els.q.addEventListener("input", () => {
         state.q = els.q.value;
         update();
+        suggest.open();
       });
+      els.q.addEventListener("keydown", (e) => suggest.key(e));
+      els.q.addEventListener("focus", () => suggest.open());
+      els.q.addEventListener("blur", () => suggest.close());
       els.year.addEventListener("change", () => {
         state.year = els.year.value;
         update();
@@ -1116,7 +1120,7 @@
       !state.people.some((s) => workMembers(w).includes(s))
     )
       return false;
-    if (state.q) {
+    if (state.q && !options.ignoreQ) {
       const hay = (
         w.title +
         " " +
@@ -1168,6 +1172,131 @@
       }));
     }
   }
+
+  // Autocomplete for the main search box: researchers, journals, co-authors and paper titles that match what was
+  // typed, among the papers the other filters leave. Picking one sets the matching filter (or the search text).
+  const suggest = (() => {
+    const box = $("q-suggest");
+    const fold = (s) => String(s || "").normalize("NFKD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
+    let options = [];
+    let active = -1;
+
+    function mark(text, tokens) {
+      const f = fold(text);
+      const hits = new Array(text.length).fill(false);
+      tokens.forEach((t) => {
+        for (let i = f.indexOf(t); i !== -1 && t; i = f.indexOf(t, i + 1)) hits.fill(true, i, i + t.length);
+      });
+      let out = "";
+      let open = false;
+      [...text].forEach((c, i) => {
+        if (hits[i] !== open) { out += hits[i] ? "<mark>" : "</mark>"; open = hits[i]; }
+        out += esc(c);
+      });
+      return out + (open ? "</mark>" : "");
+    }
+
+    function candidates(q) {
+      const tokens = fold(q).split(/\s+/).filter(Boolean);
+      const hit = (s) => { const f = fold(s); return tokens.every((t) => f.includes(t)); };
+      // Names starting with what was typed come first, then the most papers.
+      const rank = (label, n) => [fold(label).split(/\s+/).some((w) => w.startsWith(tokens[0])) ? 0 : 1, -n];
+      const byRank = (a, b) => { const x = rank(a.label, a.n), y = rank(b.label, b.n); return x[0] - y[0] || x[1] - y[1] || a.label.localeCompare(b.label); };
+      const pool = data.works.filter((w) => matches(w, { ignoreQ: true, ignorePeople: true }));
+      const memberCount = {}, journalCount = {}, authorCount = {};
+      const memberNames = new Set(data.people.map((p) => fold(p.name)));
+      pool.forEach((w) => {
+        workMembers(w).forEach((s) => (memberCount[s] = (memberCount[s] || 0) + 1));
+        if (w.journal) journalCount[w.journal] = (journalCount[w.journal] || 0) + 1;
+        // Co-authors only: an author position matched to a CDS member is that member under another spelling.
+        new Set((w.authors || []).filter((a, i) => !(w.author_members || [])[i])).forEach((a) => (authorCount[a] = (authorCount[a] || 0) + 1));
+      });
+      const people = Object.entries(memberCount).filter(([s]) => !state.people.includes(s) && hit(nameOf(s)))
+        .map(([s, n]) => ({ kind: "Researchers", label: nameOf(s), n, pick: () => { state.people = [...state.people, s]; state.q = ""; } }))
+        .sort(byRank).slice(0, 4);
+      const journals = Object.entries(journalCount).filter(([j]) => j !== state.journal && hit(j))
+        .map(([j, n]) => ({ kind: "Journals", label: j, n, pick: () => { state.journal = j; state.q = ""; } }))
+        .sort(byRank).slice(0, 3);
+      const authors = Object.entries(authorCount).filter(([a]) => !memberNames.has(fold(a)) && hit(a))
+        .map(([a, n]) => ({ kind: "Co-authors", label: a, n, pick: () => { state.q = a; } }))
+        .sort(byRank).slice(0, 3);
+      const papers = pool.filter((w) => hit(w.title))
+        .sort((a, b) => (b.publication_date || "").localeCompare(a.publication_date || ""))
+        .slice(0, 5)
+        .map((w) => ({ kind: "Papers", label: w.title, n: 0, meta: [w.journal, (w.publication_date || "").slice(0, 4)].filter(Boolean).join(" · "), pick: () => { state.q = w.title; } }));
+      return { tokens, list: [...people, ...journals, ...authors, ...papers] };
+    }
+
+    function render() {
+      const q = els.q.value.trim();
+      const { tokens, list } = q.length >= 2 ? candidates(q) : { tokens: [], list: [] };
+      options = list;
+      active = -1;
+      let html = "";
+      let group = "";
+      list.forEach((o, i) => {
+        if (o.kind !== group) { group = o.kind; html += `<div class="suggest-group" role="presentation">${esc(group)}</div>`; }
+        const count = o.n ? `<span class="suggest-count">${o.n} ${o.n === 1 ? "paper" : "papers"}</span>` : "";
+        const meta = o.meta ? `<span class="suggest-count">${esc(o.meta)}</span>` : "";
+        html += `<div class="suggest-option" role="option" id="q-suggest-${i}" data-i="${i}" aria-selected="false"><span class="suggest-label">${mark(o.label, tokens)}</span>${count}${meta}</div>`;
+      });
+      box.innerHTML = html;
+      const show = list.length > 0 && document.activeElement === els.q;
+      box.hidden = !show;
+      els.q.setAttribute("aria-expanded", String(show));
+      els.q.removeAttribute("aria-activedescendant");
+    }
+
+    function highlight(i) {
+      active = (i + options.length) % options.length;
+      box.querySelectorAll(".suggest-option").forEach((el) => {
+        const on = Number(el.dataset.i) === active;
+        el.setAttribute("aria-selected", String(on));
+        if (on) el.scrollIntoView({ block: "nearest" });
+      });
+      els.q.setAttribute("aria-activedescendant", `q-suggest-${active}`);
+    }
+
+    function choose(i) {
+      const o = options[i];
+      if (!o) return;
+      o.pick();
+      close();
+      update();
+    }
+
+    function close() {
+      box.hidden = true;
+      options = [];
+      active = -1;
+      els.q.setAttribute("aria-expanded", "false");
+      els.q.removeAttribute("aria-activedescendant");
+    }
+
+    // mousedown, not click: picking must happen before the input's blur closes the list.
+    box.addEventListener("mousedown", (e) => {
+      const el = e.target.closest(".suggest-option");
+      if (!el) return;
+      e.preventDefault();
+      choose(Number(el.dataset.i));
+    });
+
+    return {
+      open: render,
+      close,
+      key(e) {
+        if (box.hidden) {
+          if (e.key === "ArrowDown") { render(); if (options.length) { e.preventDefault(); highlight(0); } }
+          return;
+        }
+        if (e.key === "ArrowDown") { e.preventDefault(); highlight(active + 1); }
+        else if (e.key === "ArrowUp") { e.preventDefault(); highlight(active - 1); }
+        else if (e.key === "Enter" && active >= 0) { e.preventDefault(); choose(active); }
+        else if (e.key === "Escape") { e.preventDefault(); close(); }
+        else if (e.key === "Tab") close();
+      },
+    };
+  })();
 
   function update() {
     // Changes to the result set return to page one; paging and switching tabs do not.

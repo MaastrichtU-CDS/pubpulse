@@ -354,7 +354,12 @@
               type="search"
               placeholder="Search titles, authors or journals…"
               autocomplete="off"
+              role="combobox"
+              aria-autocomplete="list"
+              aria-expanded="false"
+              aria-controls="q-suggest"
             />
+            <div id="q-suggest" class="search-suggest" role="listbox" aria-label="Search suggestions" hidden></div>
           </div>
           <div
             id="active-filters"
