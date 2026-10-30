@@ -370,16 +370,15 @@ def test_bare_maastricht_affiliation_is_not_another_affiliation_and_grow_alone_v
         _raw("W5", [auth("A1", ["Department of Radiation Oncology"])]),
         _raw("W6", [auth("A1", ["Maastricht University Medical Centre", "Department of Surgery, Maastricht University Medical Centre+"])]),
         _raw("W7", [auth("A1", ["Department of Radiation Oncology, Stanford University"])]),
-        _raw("W8", [auth("A1", ["The D-Lab, Department of Precision Medicine, GROW - Research Institute for Oncology and Reproduction"])]),
         _raw("W9", [auth("A1", ["Radiology and Nuclear Medicine, GROW & CARIM, Maastricht University"])]),
         _raw("W10", [auth("A1", ["Departments of Radiation Oncology and Radiology, Harvard Medical School, Boston; "
                                   "Department of Radiology and Nuclear Medicine, Maastricht University Medical Center"])])]})
     works, _ = fetch_works(people, client, 2024, date(2026, 10, 30),
-                           keywords=["maastro", "grow", ["maastricht", "radiation oncology"], {"other_lab": "d-lab"}])
+                           keywords=["maastro", "grow", ["maastricht", "radiation oncology"]])
     for wid in ("W1", "W5"):  # names no department or institution beyond Maastricht University / Radiation Oncology
         assert works[wid]["affiliation_status"]["m"] == "unspecific"
         assert works[wid]["counted"] is True and works[wid]["listed_elsewhere"] is False
-    for wid in ("W2", "W4", "W6", "W7", "W8", "W10"):  # another institution, department or lab; "growth" is not GROW
+    for wid in ("W2", "W4", "W6", "W7", "W10"):  # another institution or department; "growth" is not GROW
         assert works[wid]["affiliation_status"]["m"] == "mismatch"
         assert works[wid]["counted"] is False and works[wid]["listed_elsewhere"] is True
     for wid in ("W3", "W9"):  # GROW, also with another department

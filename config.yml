@@ -52,9 +52,6 @@ institution_keywords:
   - medical data works
   - clinical data science
   - grow
-  # Other labs within GROW, not the group: an affiliation string naming them never verifies.
-  - {other_lab: precision medicine}
-  - {other_lab: d-lab}
 
 # A paper whose senior (last) author is not CDS but is listed with one of these belongs to another Maastricht group
 # (e.g. Maastro physics, Radiology within GROW) and does not count, unless a CDS member is first or last author.
