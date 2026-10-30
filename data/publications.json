@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-30T19:51:26+00:00",
+ "generated": "2026-10-30T19:53:37+00:00",
  "group_name": "Clinical Data Science (Maastro / Maastricht University)",
  "site_url": "https://maastrichtu-cds.github.io/pubpulse/",
  "repo_url": "https://github.com/MaastrichtU-CDS/pubpulse",
@@ -19576,7 +19576,7 @@
     ]
    },
    "affiliation_status": {
-    "anshu-ankolekar": "mismatch"
+    "anshu-ankolekar": "verified"
    },
    "senior_affiliations": [
     "Maastricht University Medical Centre",
@@ -22473,7 +22473,7 @@
     ]
    },
    "affiliation_status": {
-    "anshu-ankolekar": "mismatch"
+    "anshu-ankolekar": "verified"
    },
    "senior_affiliations": [
     "Pfizer (United States)",
@@ -22481,10 +22481,12 @@
    ],
    "cited_by_count": 36,
    "abstract": "Federated learning (FL) is advancing cancer research by enabling privacy-preserving collaborative training of machine learning (ML) models on diverse, multi-centre data. This systematic review synthesises current knowledge on state-of-the-art FL in oncology, focusing on breast, lung, and prostate cancer. Unlike previous surveys, we critically evaluate FL's real-world implementation and impact, demonstrating its effectiveness in enhancing ML generalisability and performance in clinical settings. Our analysis reveals that FL outperformed centralised ML in 15 out of 25 studies, spanning diverse models and clinical applications, including multi-modal integration for precision medicine. Despite challenges identified in reproducibility and standardisation, FL demonstrates substantial potential for advancing cancer research. We propose future research focus on addressing these limitations and investigating advanced FL methods to fully harness data diversity and realise the transformative power of cutting-edge FL in cancer care.",
-   "verified": false,
-   "counted_members": [],
-   "counted": false,
-   "listed_elsewhere": true,
+   "verified": true,
+   "counted_members": [
+    "anshu-ankolekar"
+   ],
+   "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": 14.1,
    "journal_h_index": 166
@@ -25807,7 +25809,7 @@
     ]
    },
    "affiliation_status": {
-    "anshu-ankolekar": "mismatch"
+    "anshu-ankolekar": "verified"
    },
    "senior_affiliations": [
     "European Lung Foundation",
@@ -25815,10 +25817,12 @@
    ],
    "cited_by_count": 14,
    "abstract": "BACKGROUND: Digital health technology adoption has accelerated in respiratory care, particularly since the COVID-19 pandemic, supporting various applications from self-management to telerehabilitation. While these technologies have transformed health care delivery, their impact on the patient-provider relationship in specialist respiratory care remains poorly understood. OBJECTIVE: This study aims to systematically review the literature on the impact of digital health technology on the patient-provider relationship in respiratory secondary care settings and to understand the factors that enhance or diminish this relationship. METHODS: In December 2023, we conducted a systematic review following Cochrane methodology, searching MEDLINE, Embase, CINAHL, Cochrane databases, and PsycINFO. We included qualitative, quantitative, and mixed methods studies examining digital health interventions in respiratory secondary care. Trained volunteers from the European Respiratory Society CONNECT Clinical Research Collaboration performed screening and data extraction. We conducted a qualitative meta-synthesis of findings, followed by an abductive quantitative data analysis. A total of 3 stakeholder workshops were held to interpret findings collaboratively with patients and health care professionals. RESULTS: From 15,779 papers screened, 97 met the inclusion criteria (55 qualitative/mixed-methods studies, 42 quantitative studies). Studies covered various respiratory conditions, including COPD (32%), asthma (26%), and COVID-19 (13%). Four main themes emerged: trust (foundational to the relationship), adoption factors (including clinical context and implementation drivers), confidence in technology (based on functionality and the evidence base), and connection (encompassing communication and a caring presence). Digital health technology can either enhance or diminish trust between patients and clinicians, with patients' perceptions of the motivations behind its implementation being crucial. While technology facilitated access and communication, remote consultations risked depersonalisation, particularly when not balanced with in-person interactions. Self-monitoring and access to information empowered patients and promoted more equitable patient-provider relationships. CONCLUSIONS: Digital health technology can either strengthen or weaken patient-provider relationships in respiratory care, with effects impacted by adoption factors, confidence in technology, connection, and patient empowerment. Maintaining trust in the era of digital care requires transparent implementation of motivations, consideration of individual circumstances, and reliable technology that supports rather than replaces the therapeutic relationship. TRIAL REGISTRATION: PROSPERO CRD42024493664; https://www.crd.york.ac.uk/PROSPERO/view/CRD42024493664.",
-   "verified": false,
-   "counted_members": [],
-   "counted": false,
-   "listed_elsewhere": true,
+   "verified": true,
+   "counted_members": [
+    "anshu-ankolekar"
+   ],
+   "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": 9.3,
    "journal_h_index": 286
@@ -31869,7 +31873,7 @@
     ]
    },
    "affiliation_status": {
-    "anshu-ankolekar": "mismatch"
+    "anshu-ankolekar": "verified"
    },
    "senior_affiliations": [
     "European Lung Foundation",
@@ -31877,10 +31881,12 @@
    ],
    "cited_by_count": 0,
    "abstract": "Patients and providers have expressed concerns about how digital care affects their relationship. We systematically reviewed the evidence on how digital health affects the patient-provider relationship. Methods: We searched 7 databases (date-Nov 2023) using terms for respiratory, digital health and patient-provider relationship (in secondary care). 38 volunteers from ELF, DRAGON and CONNECT undertook duplicate screening/data extraction. Analysis was thematic. Results: Of 116 included studies, 32 explicitly explored the patient-provider relationship. Existing frameworks for patient-provider relationships (Ridd) proved only partially applicable. Trust was foundational and depended on providers’ beliefs about the technology. It was obstructed if clinicians expressed fear and scepticism. Care was demonstrated through monitoring which created an emotional presence, making patients feel taken care of. Connection between the patient/provider was enhanced if communication was seamless, but burdensome technology could create a disconnect due to disengagement. Shared decision-making enhanced by self-monitoring devices changed the dynamics and created a more equal patient-doctor relationship, through improved self-efficacy, and empowerment. Conclusion: Digital care is widely used post-COVID [as shown in DRAGON IHI], however, the impact on the patient/provider relationship is still under-researched. Seamless connection, and strategies to increase trust (both in the technology and in clinician support) are important considerations for strengthening the relationship. These findings will inform the work of CONNECT CRC.",
-   "verified": false,
-   "counted_members": [],
-   "counted": false,
-   "listed_elsewhere": true,
+   "verified": true,
+   "counted_members": [
+    "anshu-ankolekar"
+   ],
+   "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": null,
    "journal_h_index": null
@@ -33291,7 +33297,7 @@
     ]
    },
    "affiliation_status": {
-    "anshu-ankolekar": "mismatch"
+    "anshu-ankolekar": "verified"
    },
    "senior_affiliations": [
     "Pfizer (United States)",
@@ -33299,10 +33305,12 @@
    ],
    "cited_by_count": 5,
    "abstract": "Abstract Federated Learning (FL) has emerged as a promising solution to address the limitations of centralised machine learning (ML) in oncology, particularly in overcoming privacy concerns and harnessing the power of diverse, multi-center data. This systematic review synthesises current knowledge on the state-of-the-art FL in oncology, focusing on breast, lung, and prostate cancer. Distinct from previous surveys, our comprehensive review critically evaluates the real-world implementation and impact of FL on cancer care, demonstrating its effectiveness in enhancing ML generalisability, performance and data privacy in clinical settings and data. We evaluated state-of-the-art advances in FL, demonstrating its growing adoption amid tightening data privacy regulations. FL outperformed centralised ML in 15 out of the 25 studies reviewed, spanning diverse ML models and clinical applications, and facilitating integration of multi-modal information for precision medicine. Despite the current challenges identified in reproducibility, standardisation and methodology across studies, the demonstrable benefits of FL in harnessing real-world data and addressing clinical needs highlight its significant potential for advancing cancer research. We propose that future research should focus on addressing these limitations and investigating further advanced FL methods, to fully harness data diversity and realise the transformative power of cutting-edge FL in cancer care.",
-   "verified": false,
-   "counted_members": [],
-   "counted": false,
-   "listed_elsewhere": true,
+   "verified": true,
+   "counted_members": [
+    "anshu-ankolekar"
+   ],
+   "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": null,
    "journal_h_index": null
@@ -33392,7 +33400,7 @@
     ]
    },
    "affiliation_status": {
-    "anshu-ankolekar": "mismatch"
+    "anshu-ankolekar": "verified"
    },
    "senior_affiliations": [
     "Pfizer (United States)",
@@ -33400,10 +33408,12 @@
    ],
    "cited_by_count": 1,
    "abstract": "Federated Learning (FL) has emerged as a promising solution to address the limitations of centralised machine learning (ML) in oncology, particularly in overcoming privacy concerns and harnessing the power of diverse, multi-center data. This systematic review synthesises current knowledge on the state-of-the-art FL in oncology, focusing on breast, lung, and prostate cancer. Distinct from previous surveys, our comprehensive review critically evaluates the real-world implementation and impact of FL on cancer care, demonstrating its effectiveness in enhancing ML generalisability, performance and data privacy in clinical settings and data. We evaluated state-of-the-art advances in FL, demonstrating its growing adoption amid tightening data privacy regulations. FL outperformed centralised ML in 15 out of the 25 studies reviewed, spanning diverse ML models and clinical applications, and facilitating integration of multi-modal information for precision medicine. Despite the current challenges identified in reproducibility, standardisation and methodology across studies, the demonstrable benefits of FL in harnessing real-world data and addressing clinical needs highlight its significant potential for advancing cancer research. We propose that future research should focus on addressing these limitations and investigating further advanced FL methods, to fully harness data diversity and realise the transformative power of cutting-edge FL in cancer care.",
-   "verified": false,
-   "counted_members": [],
-   "counted": false,
-   "listed_elsewhere": true,
+   "verified": true,
+   "counted_members": [
+    "anshu-ankolekar"
+   ],
+   "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": null,
    "journal_h_index": null
@@ -35460,7 +35470,7 @@
     ]
    },
    "affiliation_status": {
-    "anshu-ankolekar": "mismatch"
+    "anshu-ankolekar": "verified"
    },
    "senior_affiliations": [
     "Maastricht University Medical Centre",
@@ -35468,10 +35478,12 @@
    ],
    "cited_by_count": 48,
    "abstract": "In anticipation of potential future pandemics, we examined the challenges and opportunities presented by the COVID-19 outbreak. This analysis highlights how artificial intelligence (AI) and predictive models can support both patients and clinicians in managing subsequent infectious diseases, and how legislators and policymakers could support these efforts, to bring learning healthcare system (LHS) from guidelines to real-world implementation. This report chronicles the trajectory of the COVID-19 pandemic, emphasizing the diverse data sets generated throughout its course. We propose strategies for harnessing this data via AI and predictive modelling to enhance the functioning of LHS. The challenges faced by patients and healthcare systems around the world during this unprecedented crisis could have been mitigated with an informed and timely adoption of the three pillars of the LHS: Knowledge, Data and Practice. By harnessing AI and predictive analytics, we can develop tools that not only detect potential pandemic-prone diseases early on but also assist in patient management, provide decision support, offer treatment recommendations, deliver patient outcome triage, predict post-recovery long-term disease impacts, monitor viral mutations and variant emergence, and assess vaccine and treatment efficacy in real-time. A patient-centric approach remains paramount, ensuring patients are both informed and actively involved in disease mitigation strategies.",
-   "verified": false,
-   "counted_members": [],
-   "counted": false,
-   "listed_elsewhere": true,
+   "verified": true,
+   "counted_members": [
+    "anshu-ankolekar"
+   ],
+   "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": 6.9,
    "journal_h_index": 127
@@ -37961,7 +37973,7 @@
     ]
    },
    "affiliation_status": {
-    "anshu-ankolekar": "mismatch"
+    "anshu-ankolekar": "verified"
    },
    "senior_affiliations": [
     "Maastricht University",
