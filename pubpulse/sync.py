@@ -178,14 +178,18 @@ def apply_overrides(works: list[dict], overrides: dict, people: list[dict] | Non
 def affiliation_matches(affiliations: list[str], keywords: list) -> bool:
     """A keyword entry is a string or a list of strings that must ALL occur in the same affiliation string
     (e.g. ["maastricht", "radiation oncology"]), so a generic department name alone never counts. Terms match as
-    whole words, so "grow" matches "GROW" and a footnote "5GROW" but not "growth". A raw string listing
+    whole words, so "grow" matches "GROW" and a footnote "5GROW" but not "growth". An entry {other_lab: d-lab} names
+    another lab that shares these words: an affiliation string mentioning it never matches. A raw string listing
     several affiliations separated by ";" is matched per affiliation, so "Radiation Oncology, Harvard; Radiology,
     Maastricht University" is not Maastricht radiation oncology."""
     def pattern(term: str) -> re.Pattern:
         return re.compile(r"(?<![a-z])" + re.escape(str(term).lower()) + r"(?![a-z])")
-    rules = [[pattern(x) for x in k] if isinstance(k, (list, tuple)) else [pattern(k)] for k in keywords]
+    others = [pattern(k["other_lab"]) for k in keywords if isinstance(k, dict)]
+    rules = [[pattern(x) for x in k] if isinstance(k, (list, tuple)) else [pattern(k)] for k in keywords if not isinstance(k, dict)]
     for a in _split_affiliations(affiliations):
         a = a.lower()
+        if any(o.search(a) for o in others):
+            continue
         if any(all(p.search(a) for p in rule) for rule in rules):
             return True
     return False
