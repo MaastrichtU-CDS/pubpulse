@@ -23,3 +23,7 @@ verify_affiliation:
 other_group_seniors:
   - Frank Verhaegen
   - Maria Jacobs
+
+# CDS leads: a paper with one of them on it is a CDS paper, whoever the senior author is. Member ids from people.yml.
+cds_leads:
+  - andre-dekker

@@ -295,7 +295,8 @@ example a second appointment elsewhere) does not count; confirm such a paper by 
 only with a verified group affiliation. **Exceptions by name** go in
 [overrides.yml](overrides.yml) under `verify_affiliation:` (member ids from people.yml): their papers count only with a
 verified affiliation. **Another group's paper:** when the senior (last) author is not CDS but is listed with Maastro or
-GROW, the paper belongs to another Maastricht group and does not count, unless a CDS member is first or last author.
+GROW, the paper belongs to another Maastricht group and does not count, unless a CDS member is first or last author
+or a CDS lead (`cds_leads:`, e.g. Andre Dekker) is on it.
 Leads of other groups whose papers lack that affiliation go under `other_group_seniors:`. Papers you never want counted: `reject:`. That is the whole
 rule.
 

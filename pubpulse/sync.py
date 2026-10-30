@@ -85,12 +85,13 @@ def save_pending(ids: list[str], path: Path = NOTIFIED_PATH) -> None:
 def load_overrides(path: Path = OVERRIDES_PATH) -> dict:
     """Manual decisions: {'confirm': [W..], 'reject': [W..]}. Ids may be given as W123 or full OpenAlex URLs."""
     if not path.exists():
-        return {"confirm": set(), "reject": set(), "verify_affiliation": set(), "other_group_seniors": set()}
+        return {"confirm": set(), "reject": set(), "verify_affiliation": set(), "other_group_seniors": set(), "cds_leads": set()}
     with open(path, encoding="utf-8") as f:
         raw = yaml.safe_load(f) or {}
     out = {k: {short_id(str(x)) for x in (raw.get(k) or [])} for k in ("confirm", "reject")}
     out["verify_affiliation"] = {str(x).strip().lower() for x in (raw.get("verify_affiliation") or [])}
     out["other_group_seniors"] = {author_name_key(str(x)) for x in (raw.get("other_group_seniors") or [])} - {()}
+    out["cds_leads"] = {str(x).strip().lower() for x in (raw.get("cds_leads") or [])}
     return out
 
 
@@ -137,11 +138,11 @@ def is_cds_name(name: str, people: list[dict]) -> bool:
     return False
 
 
-def led_by_other_group(w: dict, people: list[dict], senior_keywords: list, seniors: set) -> bool:
+def led_by_other_group(w: dict, people: list[dict], senior_keywords: list, seniors: set, cds_leads: set = frozenset()) -> bool:
     """The senior (last) author is not CDS but is listed with Maastro / GROW, or is a named lead of another group:
-    the paper is another group's, unless a group member is first or last author (CDS-led)."""
+    the paper is another group's, unless a group member is first or last author (CDS-led) or a CDS lead is on it."""
     members = w.get("author_members") or []
-    if not members or members[0] or members[-1]:
+    if not members or members[0] or members[-1] or cds_leads & set(w.get("group_members") or []):
         return False
     last = (w.get("authors") or [""])[-1]
     if author_name_key(last) in seniors:
@@ -159,7 +160,7 @@ def apply_overrides(works: list[dict], overrides: dict, people: list[dict] | Non
         if w["id"] in overrides["reject"]:
             continue
         w.pop("other_group", None)
-        if led_by_other_group(w, people or [], senior_keywords or [], seniors) and w["id"] not in overrides["confirm"]:
+        if led_by_other_group(w, people or [], senior_keywords or [], seniors, overrides.get("cds_leads") or set()) and w["id"] not in overrides["confirm"]:
             # The senior (last) author leads another group: the paper is that group's, whatever the affiliations say.
             w["verified"] = w["counted"] = False
             w["counted_members"] = []
