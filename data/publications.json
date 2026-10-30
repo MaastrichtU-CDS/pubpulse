@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-30T15:28:23+00:00",
+ "generated": "2026-10-30T15:40:42+00:00",
  "group_name": "Clinical Data Science (Maastro / Maastricht University)",
  "site_url": "https://maastrichtu-cds.github.io/pubpulse/",
  "repo_url": "https://github.com/MaastrichtU-CDS/pubpulse",
@@ -13,12 +13,8 @@
  "last_run": {
   "date": "2026-10-30",
   "baseline": false,
-  "new_count": 3,
-  "new_ids": [
-   "W7224493705",
-   "W7224308387",
-   "W7224572054"
-  ],
+  "new_count": 0,
+  "new_ids": [],
   "needs_review": [
    "ali-al-zein",
    "ali-zaila",
@@ -4055,6 +4051,7 @@
     "xuanhe-hou"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-30",
    "journal_impact": null,
    "journal_h_index": null
@@ -4118,6 +4115,7 @@
     "marine-jacquemin"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-30",
    "journal_impact": 7.1,
    "journal_h_index": 53
@@ -4201,6 +4199,7 @@
     "sander-puts"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-30",
    "journal_impact": 5.3,
    "journal_h_index": 212
@@ -4317,6 +4316,7 @@
     "xuanhe-hou"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-27",
    "journal_impact": null,
    "journal_h_index": null
@@ -4433,6 +4433,7 @@
     "xuanhe-hou"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-27",
    "journal_impact": null,
    "journal_h_index": null
@@ -4723,6 +4724,7 @@
     "petros-kalendralis"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": 6.3,
    "journal_h_index": 77
@@ -4893,6 +4895,7 @@
     "johan-van-soest"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": 7.0,
    "journal_h_index": 29
@@ -5015,6 +5018,7 @@
     "leonard-wee"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": 2.7,
    "journal_h_index": 37
@@ -5125,6 +5129,7 @@
     "andre-dekker"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": null,
    "journal_h_index": null
@@ -5231,6 +5236,7 @@
     "leonard-wee"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": 4.7,
    "journal_h_index": 109
@@ -5364,6 +5370,7 @@
     "andre-dekker"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": null,
    "journal_h_index": null
@@ -5573,6 +5580,7 @@
     "hugo-aerts"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": 16.8,
    "journal_h_index": 132
@@ -5681,6 +5689,7 @@
     "leonard-wee"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": null,
    "journal_h_index": null
@@ -5774,6 +5783,7 @@
    "verified": false,
    "counted_members": [],
    "counted": false,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": 2.8,
    "journal_h_index": 151
@@ -5945,6 +5955,7 @@
     "varsha-gouthamchand"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": null,
    "journal_h_index": null
@@ -6146,6 +6157,7 @@
     "leonard-wee"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": 0.9,
    "journal_h_index": 11
@@ -6318,6 +6330,7 @@
     "petros-kalendralis"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": 1.9,
    "journal_h_index": 47
@@ -6406,10 +6419,9 @@
    "cited_by_count": 1,
    "abstract": "Introduction: This study aims to predict recurrence-free survival (RFS) and overall survival (OS), to stratify risk using radiomics, radiology semantic, clinical, and pathology models-individually and in combination-derived from pre-treatment magnetic resonance imaging (MRI), post-operative histopathology, age, and adjuvant therapy details in oral tongue squamous cell carcinoma (OTSCC), and to correlate National Comprehensive Cancer Network (NCCN) low + intermediate- and high-risk groups with the risk stratification provided by the radiomics models. The secondary objectives included predicting post-operative perineural invasion (PNI), metastatic lymph nodes, and pathological extranodal extension (pENE). Methods: This retrospective cohort study included 219 treatment-naive OTSCC patients who underwent pre-treatment MRI (January 2021-December 2022) with 2-year follow-up. Radiomics features were extracted from T1-weighted, T2-weighted, and contrast-enhanced T1-weighted (T1c) sequences. Lasso-Cox and DeepSurv models were evaluated for RFS and OS prediction, while random forest and logistic regression models were assessed for PNI, metastatic lymph nodes, and pENE prediction. Radiomics, radiology semantic, clinical, and pathology models were evaluated individually and in combination. Risk stratification was evaluated using the log-rank test. Results: Among 219 patients (mean age 46.99 ± 10.94 years), Lasso-Cox outperformed DeepSurv for RFS and OS prediction. The radiomics combined model (T1 + T2 + T1c radiomics + radiology semantic + clinical + pathology) achieved the best performance for RFS and non-inferior performance to the pathology model for OS prediction. The pre-treatment radiomics models effectively stratified the patients into high- and low-risk groups for recurrence and OS and also identified low-risk patients within the NCCN high-risk group and high-risk patients within the NCCN low + intermediate-risk group for recurrence. The T1c radiomics model demonstrated the best overall performance for predicting metastatic lymph nodes. The radiology semantic features model demonstrated the highest predictive performance for PNI and pENE. Conclusions: The radiomics combined and pre-treatment radiomics models demonstrate potential for prognostication and risk-adapted management. By identifying low-risk patients within the NCCN high-risk group and high-risk patients within the NCCN low + intermediate-risk group for recurrence, these models may support treatment de-escalation and escalation, respectively, pending prospective multicenter validation. Furthermore, prediction of metastatic lymph nodes, PNI, and pENE from pre-treatment radiomics models may inform decisions regarding elective neck dissection and guide adjuvant therapy following prospective validation.",
    "verified": false,
-   "counted_members": [
-    "umesh-kumar-baburao-sherkhane"
-   ],
-   "counted": true,
+   "counted_members": [],
+   "counted": false,
+   "listed_elsewhere": true,
    "first_seen": "2026-10-21",
    "journal_impact": 2.7,
    "journal_h_index": 206
@@ -6488,6 +6500,7 @@
    "verified": false,
    "counted_members": [],
    "counted": false,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": 8.9,
    "journal_h_index": 88
@@ -6619,6 +6632,7 @@
     "leonard-wee"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": 0.8,
    "journal_h_index": 346
@@ -6697,6 +6711,7 @@
     "andre-dekker"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": 0.5,
    "journal_h_index": 87
@@ -6783,6 +6798,7 @@
     "andre-dekker"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": 0.5,
    "journal_h_index": 87
@@ -6912,6 +6928,7 @@
     "petros-kalendralis"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": 0.1,
    "journal_h_index": 31
@@ -7110,6 +7127,7 @@
     "hugo-aerts"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": 1.7,
    "journal_h_index": 387
@@ -7212,6 +7230,7 @@
     "hossein-rahmani"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": 1.7,
    "journal_h_index": 65
@@ -7276,6 +7295,7 @@
     "en-hu"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-23",
    "journal_impact": 1.6,
    "journal_h_index": 19
@@ -7379,6 +7399,7 @@
     "andre-dekker"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": 5.3,
    "journal_h_index": 463
@@ -7445,6 +7466,7 @@
     "rianne-fijten"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": null,
    "journal_h_index": null
@@ -7618,6 +7640,7 @@
     "leonard-wee"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": 3.1,
    "journal_h_index": 298
@@ -7695,6 +7718,7 @@
     "rutger-van-mierlo"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-23",
    "journal_impact": null,
    "journal_h_index": null
@@ -7851,6 +7875,7 @@
     "zhen-zang"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": 0.8,
    "journal_h_index": 346
@@ -7955,6 +7980,7 @@
     "leonard-wee"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": null,
    "journal_h_index": null
@@ -8058,6 +8084,7 @@
     "petros-kalendralis"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": null,
    "journal_h_index": null
@@ -8136,6 +8163,7 @@
     "anshu-ankolekar"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": 11.8,
    "journal_h_index": 232
@@ -8218,6 +8246,7 @@
     "leonard-wee"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": 1.6,
    "journal_h_index": 18
@@ -8394,6 +8423,7 @@
     "leonard-wee"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": 1.1,
    "journal_h_index": 324
@@ -8463,6 +8493,7 @@
    "verified": false,
    "counted_members": [],
    "counted": false,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": 6.7,
    "journal_h_index": 145
@@ -8542,6 +8573,7 @@
     "andre-dekker"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": 9.1,
    "journal_h_index": 141
@@ -8632,6 +8664,7 @@
     "rianne-fijten"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": 6.6,
    "journal_h_index": 331
@@ -8748,6 +8781,7 @@
     "xuanhe-hou"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": 4.9,
    "journal_h_index": 141
@@ -8854,6 +8888,7 @@
     "petros-kalendralis"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": 2.4,
    "journal_h_index": 32
@@ -8917,6 +8952,7 @@
    "verified": false,
    "counted_members": [],
    "counted": false,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": null,
    "journal_h_index": null
@@ -9067,6 +9103,7 @@
     "rianne-fijten"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": null,
    "journal_h_index": null
@@ -9258,6 +9295,7 @@
     "varsha-gouthamchand"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": null,
    "journal_h_index": null
@@ -9332,6 +9370,7 @@
     "petros-kalendralis"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": null,
    "journal_h_index": null
@@ -9407,6 +9446,7 @@
     "rutger-van-mierlo"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-23",
    "journal_impact": 3.3,
    "journal_h_index": 37
@@ -9497,6 +9537,7 @@
    "verified": false,
    "counted_members": [],
    "counted": false,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": null,
    "journal_h_index": null
@@ -9586,6 +9627,7 @@
     "rianne-fijten"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": null,
    "journal_h_index": null
@@ -9724,6 +9766,7 @@
    "verified": false,
    "counted_members": [],
    "counted": false,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": null,
    "journal_h_index": null
@@ -9793,6 +9836,7 @@
     "sander-puts"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": null,
    "journal_h_index": null
@@ -9934,6 +9978,7 @@
     "johan-van-soest"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": 1.1,
    "journal_h_index": 145
@@ -10268,6 +10313,7 @@
     "leroy-volmer"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": null,
    "journal_h_index": null
@@ -10351,6 +10397,7 @@
     "xuanhe-hou"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-29",
    "journal_impact": null,
    "journal_h_index": null
@@ -10447,6 +10494,7 @@
     "leroy-volmer"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": null,
    "journal_h_index": null
@@ -10573,6 +10621,7 @@
     "leonard-wee"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": 5.6,
    "journal_h_index": 351
@@ -10632,6 +10681,7 @@
     "rianne-fijten"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": 0.0,
    "journal_h_index": 4
@@ -10715,6 +10765,7 @@
    "verified": false,
    "counted_members": [],
    "counted": false,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": 1.1,
    "journal_h_index": 65
@@ -10796,6 +10847,7 @@
     "leonard-wee"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": null,
    "journal_h_index": null
@@ -10880,6 +10932,7 @@
     "rianne-fijten"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": 5.4,
    "journal_h_index": 101
@@ -10948,6 +11001,7 @@
     "rianne-fijten"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": null,
    "journal_h_index": null
@@ -11023,6 +11077,7 @@
    "verified": false,
    "counted_members": [],
    "counted": false,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": 1.1,
    "journal_h_index": 65
@@ -11076,6 +11131,7 @@
     "anshu-ankolekar"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": 9.3,
    "journal_h_index": 286
@@ -11288,6 +11344,7 @@
     "hugo-aerts"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": 19.6,
    "journal_h_index": 1841
@@ -11511,6 +11568,7 @@
     "hugo-aerts"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": 19.6,
    "journal_h_index": 1841
@@ -11609,6 +11667,7 @@
     "leonard-wee"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": 1.8,
    "journal_h_index": 99
@@ -11710,6 +11769,7 @@
     "cecile-wolfs"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": 1.8,
    "journal_h_index": 99
@@ -12005,6 +12065,7 @@
     "leonard-wee"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": 18.6,
    "journal_h_index": 746
@@ -12149,6 +12210,7 @@
     "rianne-fijten"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": 2.0,
    "journal_h_index": 204
@@ -12283,6 +12345,7 @@
     "andre-dekker"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": 2.6,
    "journal_h_index": 124
@@ -12395,6 +12458,7 @@
     "rianne-fijten"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": 2.7,
    "journal_h_index": 19
@@ -12524,6 +12588,7 @@
     "leonard-wee"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": 5.6,
    "journal_h_index": 351
@@ -12668,6 +12733,7 @@
     "rianne-fijten"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": 4.0,
    "journal_h_index": 129
@@ -12771,10 +12837,9 @@
    "cited_by_count": 0,
    "abstract": "Summary The spatial organization of the tumor immune microenvironment (TIME) drives hepatocellular carcinoma (HCC) prognosis but remains unquantifiable on routine H&E slides. Here, we present HCCExplorer, a deep learning framework that translates H&E into virtual multiplex immunofluorescence (mIF) and uses multi-modal graph learning to decode spatial survival signals. Trained on 30 H&E-mIF slide pairs, HCCExplorer evaluated a 1,813-slide multi-center cohort. It achieved superior overall survival stratification over clinical indices and state-of-the-art pathology and protein foundation models, yielding a concordance index of 0.71 and a Hazard Ratio (HR) of 15.46 ( P < 0.001), maintaining stability across three external cohorts. Beyond risk stratification, interpretation of model features identified M1 macrophage infiltration as a protective determinant (HR=0.40, P < 0.05). Furthermore, it uncovered a protective “Containment Niche” at the invasion frontier (HR=0.02, P < 0.01), featuring macrophages co-localizing with Foxp3+ Tregs and CD4+ T cells. Ultimately, HCCExplorer provides actionable, spatially-resolved biomarkers from conventional histology for precision HCC management.",
    "verified": false,
-   "counted_members": [
-    "wenjie-liang"
-   ],
-   "counted": true,
+   "counted_members": [],
+   "counted": false,
+   "listed_elsewhere": true,
    "first_seen": "2026-10-23",
    "journal_impact": null,
    "journal_h_index": null
@@ -12887,6 +12952,7 @@
     "hugo-aerts"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-23",
    "journal_impact": 5.9,
    "journal_h_index": 205
@@ -12981,10 +13047,9 @@
    "cited_by_count": 0,
    "abstract": null,
    "verified": false,
-   "counted_members": [
-    "wenjie-liang"
-   ],
-   "counted": true,
+   "counted_members": [],
+   "counted": false,
+   "listed_elsewhere": true,
    "first_seen": "2026-10-23",
    "journal_impact": 2.6,
    "journal_h_index": 76
@@ -13139,6 +13204,7 @@
     "varsha-gouthamchand"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": 2.3,
    "journal_h_index": 418
@@ -13214,10 +13280,9 @@
    "cited_by_count": 1,
    "abstract": "Background: Early differentiation between invasive adenocarcinoma (IAC) and non-IAC pulmonary nodules is crucial for guiding clinical decision-making. Therefore, this study aimed to distinguish IAC from non-IAC pulmonary nodules using intra-tumor radiomics signatures, habitat radiomics analysis, and a combined nomogram by integrating generative adversarial network (GAN) based super-resolution reconstruction. Methods: 89 IAC cases; mean ± SD: 57.037±11.683 years) were included. Univariate and multivariate analyses were conducted to explore clinical characteristics. Radiomics features were extracted from intra-tumor regions and sub-regions. After feature selection, machine learning models, namely the Intra-Model and Habitat-Model, were developed. A combined nomogram integrating significant clinical factors, intra-tumor radiomics and habitat radiomics was constructed and evaluated using area under receiver operator characteristics curve (AUC), decision curve analysis (DCA), and other quantified metrics. Results: 0.875) in predicting IAC invasiveness. The combined nomogram demonstrated an incremental advancement in IAC stratification [training AUC: 0.907 (95% CI: 0.887-0.927); testing AUC: 0.895 (95% CI: 0.849-0.941)], with DCA confirming 28-34% net benefit improvement over single-modality approaches at critical thresholds (10-25% risk). Age (P<0.001) and nodule diameter (P<0.001), along with intra-tumor and habitat radiomics, were identified as key contributing factors. Conclusions: The spatially resolved habitat radiomics model exhibited higher discriminative accuracy than the classical intra-tumor radiomics model. The combined nomogram framework, which integrated intra-tumor radiomics, habitat radiomics, and significant clinical biomarkers, achieved state-of-the-art performance in IAC stratification. This framework provides a robust tool for precision therapeutic decision-making in pulmonary nodule management.",
    "verified": false,
-   "counted_members": [
-    "wenjie-liang"
-   ],
-   "counted": true,
+   "counted_members": [],
+   "counted": false,
+   "listed_elsewhere": true,
    "first_seen": "2026-10-23",
    "journal_impact": 1.9,
    "journal_h_index": 68
@@ -13280,6 +13345,7 @@
     "leonard-wee"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": null,
    "journal_h_index": null
@@ -13623,6 +13689,7 @@
     "anshu-ankolekar"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": 4.7,
    "journal_h_index": 328
@@ -13747,6 +13814,7 @@
     "andre-dekker"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": null,
    "journal_h_index": null
@@ -13825,6 +13893,7 @@
     "joshi-hogenboom"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": null,
    "journal_h_index": null
@@ -13887,6 +13956,7 @@
     "rianne-fijten"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": null,
    "journal_h_index": null
@@ -14070,6 +14140,7 @@
     "andre-dekker"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": 3.9,
    "journal_h_index": 101
@@ -14286,6 +14357,7 @@
     "rianne-fijten"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": 8.8,
    "journal_h_index": 67
@@ -14427,6 +14499,7 @@
     "andre-dekker"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": 10.7,
    "journal_h_index": 265
@@ -14496,6 +14569,7 @@
    "verified": false,
    "counted_members": [],
    "counted": false,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": null,
    "journal_h_index": null
@@ -14573,6 +14647,7 @@
     "andre-dekker"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": null,
    "journal_h_index": null
@@ -14659,6 +14734,7 @@
     "ralph-brecheisen"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": 1.3,
    "journal_h_index": 38
@@ -14748,6 +14824,7 @@
     "rianne-fijten"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": null,
    "journal_h_index": null
@@ -14801,6 +14878,7 @@
     "anniek-van-hienen"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": null,
    "journal_h_index": null
@@ -14854,6 +14932,7 @@
     "anniek-van-hienen"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": null,
    "journal_h_index": null
@@ -14934,6 +15013,7 @@
     "ralph-brecheisen"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": 0.2,
    "journal_h_index": 6
@@ -15008,6 +15088,7 @@
     "cecile-wolfs"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": null,
    "journal_h_index": null
@@ -15118,6 +15199,7 @@
     "leonard-wee"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": null,
    "journal_h_index": null
@@ -15214,6 +15296,7 @@
     "leonard-wee"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": 5.8,
    "journal_h_index": 10
@@ -15277,6 +15360,7 @@
    "verified": false,
    "counted_members": [],
    "counted": false,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": null,
    "journal_h_index": null
@@ -15415,6 +15499,7 @@
     "rianne-fijten"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": 2.7,
    "journal_h_index": 241
@@ -15607,6 +15692,7 @@
     "aiara-lobo-gomes"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": 2.8,
    "journal_h_index": 56
@@ -15741,6 +15827,7 @@
     "leonard-wee"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": 8.9,
    "journal_h_index": 189
@@ -15859,6 +15946,7 @@
     "andre-dekker"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": 1.7,
    "journal_h_index": 52
@@ -16207,6 +16295,7 @@
     "leonard-wee"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": 12.8,
    "journal_h_index": 521
@@ -16260,6 +16349,7 @@
     "anshu-ankolekar"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": 9.3,
    "journal_h_index": 286
@@ -16350,6 +16440,7 @@
     "rianne-fijten"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": 4.0,
    "journal_h_index": 188
@@ -16490,6 +16581,7 @@
     "wenjie-liang"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": 2.5,
    "journal_h_index": 36
@@ -16648,6 +16740,7 @@
     "zhen-zang"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": 10.2,
    "journal_h_index": 184
@@ -16729,6 +16822,7 @@
     "cecile-wolfs"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": 2.9,
    "journal_h_index": 266
@@ -16836,6 +16930,7 @@
     "rianne-fijten"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": 5.3,
    "journal_h_index": 463
@@ -17022,6 +17117,7 @@
     "zhen-zang"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": 6.3,
    "journal_h_index": 119
@@ -17173,6 +17269,7 @@
     "petros-kalendralis"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": 5.8,
    "journal_h_index": 164
@@ -17328,6 +17425,7 @@
     "andre-dekker"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": 6.4,
    "journal_h_index": 106
@@ -17429,6 +17527,7 @@
     "rianne-fijten"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": 6.6,
    "journal_h_index": 331
@@ -17614,6 +17713,7 @@
     "andre-dekker"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": 5.3,
    "journal_h_index": 212
@@ -17789,6 +17889,7 @@
     "petros-kalendralis"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": 5.1,
    "journal_h_index": 66
@@ -17917,6 +18018,7 @@
     "leonard-wee"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": null,
    "journal_h_index": null
@@ -18067,6 +18169,7 @@
     "andre-dekker"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": 12.6,
    "journal_h_index": 150
@@ -18205,6 +18308,7 @@
     "rianne-fijten"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": null,
    "journal_h_index": null
@@ -18289,6 +18393,7 @@
     "andre-dekker"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": null,
    "journal_h_index": null
@@ -18396,6 +18501,7 @@
     "leonard-wee"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": 7.8,
    "journal_h_index": 150
@@ -18527,6 +18633,7 @@
     "andre-dekker"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": 2.8,
    "journal_h_index": 39
@@ -18680,6 +18787,7 @@
     "petros-kalendralis"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": 2.8,
    "journal_h_index": 178
@@ -18748,6 +18856,7 @@
     "andre-dekker"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": null,
    "journal_h_index": null
@@ -18829,6 +18938,7 @@
    "verified": false,
    "counted_members": [],
    "counted": false,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": 7.8,
    "journal_h_index": 150
@@ -18919,6 +19029,7 @@
     "anshu-ankolekar"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": 9.3,
    "journal_h_index": 286
@@ -19048,6 +19159,7 @@
     "zhen-zang"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": 0.8,
    "journal_h_index": 226
@@ -19135,6 +19247,7 @@
     "andre-dekker"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": 1.7,
    "journal_h_index": 387
@@ -19250,6 +19363,7 @@
     "hossein-rahmani"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": 5.5,
    "journal_h_index": 220
@@ -19306,6 +19420,7 @@
     "anniek-van-hienen"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": null,
    "journal_h_index": null
@@ -19433,6 +19548,7 @@
     "andre-dekker"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": 3.0,
    "journal_h_index": 270
@@ -19575,6 +19691,7 @@
     "andre-dekker"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": 7.3,
    "journal_h_index": 34
@@ -19665,6 +19782,7 @@
     "joshi-hogenboom"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": null,
    "journal_h_index": null
@@ -19800,6 +19918,7 @@
    "verified": false,
    "counted_members": [],
    "counted": false,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": 6.1,
    "journal_h_index": 262
@@ -19876,6 +19995,7 @@
     "rianne-fijten"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": 4.0,
    "journal_h_index": 217
@@ -19969,6 +20089,7 @@
     "andre-dekker"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": 5.5,
    "journal_h_index": 91
@@ -20063,6 +20184,7 @@
     "andre-dekker"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": 2.4,
    "journal_h_index": 128
@@ -20183,11 +20305,10 @@
    "abstract": "Background: The characterization of solitary pulmonary nodules (SPNs) as malignant or benign remains a diagnostic challenge using conventional imaging parameters. The literature suggests using combined Positron Emission Tomography (PET) and Computed Tomography (CT) to characterise a SPN. Radiomics and machine learning are other promising technologies which can be utilised to characterise the SPN. Purpose: This study explores the potential of PET radiomics signatures and machine learning algorithms to characterise the SPN. Methods: This retrospective study aimed to characterize solitary pulmonary nodules (SPNs) using PET radiomics. A total of 163 patients who underwent PET/CT imaging were included in this study. A total of 1,098 features were extracted from PET images using PyRadiomics. To optimize model performance two strategies i.e., (a) feature selection and (b) feature reduction techniques were employed, including hierarchical clustering, RFE in feature selection, and PCA in feature reduction. To address outcome class imbalance, the dataset was statistically resampled (SMOTE). A random forest models was developed using original training set (RF-Model-O & RF-PCA-Model-O) and balanced training dataset (RF-Model-B & RF-PCA-Model-B) and validated on the test datasets. Additionally, 5-fold cross-validation and bootstrap validation was also performed. The model's performance was assessed using various metrics, such as accuracy, AUC, precision, recall, and F1-score. Results: five principal components were deemed optimal using PCA. The model accuracy of RF-Model-O and RF-Model-B in the train-test validation, 5-fold cross-validation and bootstrap validation were found to be 0.8, 0.80 ± 0.07, 0.84 ± 1.11 and 0.8, 0.83 ± 0.10, 0.80 ± 0.07 in Strategy (a). Similarly, the model accuracy of RF-PCA-Model-O and RF-PCA-Model-B in the train-test validation, 5-fold cross-validation and bootstrap validation were found to be 0.84, 0.80 ± 0.07, 0.84 ± 07 and 0.74, 0.80 ± 0.08, 0.75 ± 0.08 in Strategy (b). Conclusion: The PET radiomics demonstrated excellent performance in characterizing SPNs as benign or malignant.",
    "verified": true,
    "counted_members": [
-    "umesh-kumar-baburao-sherkhane",
-    "leonard-wee",
-    "andre-dekker"
+    "umesh-kumar-baburao-sherkhane"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": 3.9,
    "journal_h_index": 18
@@ -20277,6 +20398,7 @@
     "andre-dekker"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": 5.3,
    "journal_h_index": 35
@@ -20371,6 +20493,7 @@
     "andre-dekker"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": 3.1,
    "journal_h_index": 222
@@ -20451,6 +20574,7 @@
     "thijs-ackermans"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-27",
    "journal_impact": 1.4,
    "journal_h_index": 218
@@ -20625,6 +20749,7 @@
     "hossein-rahmani"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": 2.4,
    "journal_h_index": 120
@@ -20760,6 +20885,7 @@
     "andre-dekker"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": 10.8,
    "journal_h_index": 106
@@ -20935,6 +21061,7 @@
     "andre-dekker"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": null,
    "journal_h_index": null
@@ -21108,6 +21235,7 @@
     "leonard-wee"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": 0.8,
    "journal_h_index": 346
@@ -21287,6 +21415,7 @@
     "leonard-wee"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": 1.7,
    "journal_h_index": 387
@@ -21501,6 +21630,7 @@
     "aiara-lobo-gomes"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": null,
    "journal_h_index": null
@@ -21577,6 +21707,7 @@
     "thijs-ackermans"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-27",
    "journal_impact": 1.3,
    "journal_h_index": 27
@@ -21678,6 +21809,7 @@
     "anshu-ankolekar"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": 14.1,
    "journal_h_index": 166
@@ -21829,6 +21961,7 @@
     "hugo-aerts"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": 19.0,
    "journal_h_index": 39
@@ -21978,6 +22111,7 @@
     "johan-van-soest"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": null,
    "journal_h_index": null
@@ -22110,6 +22244,7 @@
     "andre-dekker"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": null,
    "journal_h_index": null
@@ -22185,6 +22320,7 @@
    "verified": false,
    "counted_members": [],
    "counted": false,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": null,
    "journal_h_index": null
@@ -22315,6 +22451,7 @@
     "leonard-wee"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": null,
    "journal_h_index": null
@@ -22398,6 +22535,7 @@
    "verified": false,
    "counted_members": [],
    "counted": false,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": 1.1,
    "journal_h_index": 65
@@ -22622,6 +22760,7 @@
     "hugo-aerts"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": 16.8,
    "journal_h_index": 132
@@ -22774,6 +22913,7 @@
     "leonard-wee"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-29",
    "journal_impact": null,
    "journal_h_index": null
@@ -22938,6 +23078,7 @@
     "leonard-wee"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": null,
    "journal_h_index": null
@@ -23067,6 +23208,7 @@
    "verified": false,
    "counted_members": [],
    "counted": false,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": 0.7,
    "journal_h_index": 586
@@ -23135,6 +23277,7 @@
     "rianne-fijten"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": 0.8,
    "journal_h_index": 226
@@ -23297,6 +23440,7 @@
     "leonard-wee"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": 0.8,
    "journal_h_index": 226
@@ -23387,6 +23531,7 @@
     "andre-dekker"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": 0.8,
    "journal_h_index": 226
@@ -23481,6 +23626,7 @@
     "rianne-fijten"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": 0.8,
    "journal_h_index": 226
@@ -23562,6 +23708,7 @@
     "rianne-fijten"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": 0.8,
    "journal_h_index": 226
@@ -23729,6 +23876,7 @@
     "leonard-wee"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": 0.8,
    "journal_h_index": 226
@@ -23841,6 +23989,7 @@
     "leonard-wee"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": 1.9,
    "journal_h_index": 47
@@ -23894,6 +24043,7 @@
     "andre-dekker"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": 0.8,
    "journal_h_index": 226
@@ -23980,6 +24130,7 @@
     "cecile-wolfs"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": 0.8,
    "journal_h_index": 226
@@ -24096,6 +24247,7 @@
     "petros-kalendralis"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": 0.8,
    "journal_h_index": 226
@@ -24222,6 +24374,7 @@
     "andre-dekker"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": null,
    "journal_h_index": null
@@ -24308,6 +24461,7 @@
     "andre-dekker"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": 0.6,
    "journal_h_index": 469
@@ -24448,6 +24602,7 @@
     "andre-dekker"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": 1.6,
    "journal_h_index": 62
@@ -24629,6 +24784,7 @@
     "rianne-fijten"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": 0.8,
    "journal_h_index": 226
@@ -24711,6 +24867,7 @@
     "andre-dekker"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": 3.9,
    "journal_h_index": 122
@@ -24805,6 +24962,7 @@
     "cecile-wolfs"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": 2.4,
    "journal_h_index": 81
@@ -24894,6 +25052,7 @@
     "anshu-ankolekar"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": 9.3,
    "journal_h_index": 286
@@ -24979,6 +25138,7 @@
     "andre-dekker"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": 9.3,
    "journal_h_index": 286
@@ -25117,6 +25277,7 @@
     "andre-dekker"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": 5.2,
    "journal_h_index": 154
@@ -25238,6 +25399,7 @@
     "zhen-zang"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-23",
    "journal_impact": 2.9,
    "journal_h_index": 266
@@ -25341,6 +25503,7 @@
     "aiara-lobo-gomes"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": 1.0,
    "journal_h_index": 222
@@ -25485,6 +25648,7 @@
     "leonard-wee"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": 10.2,
    "journal_h_index": 184
@@ -25577,6 +25741,7 @@
     "leonard-wee"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": 1.8,
    "journal_h_index": 99
@@ -25721,6 +25886,7 @@
     "ivan-zhovannik"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": null,
    "journal_h_index": null
@@ -25905,6 +26071,7 @@
     "andre-dekker"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": 2.5,
    "journal_h_index": 122
@@ -26022,6 +26189,7 @@
     "johan-van-soest"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": 2.4,
    "journal_h_index": 128
@@ -26104,6 +26272,7 @@
     "ralph-brecheisen"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": 0.6,
    "journal_h_index": 125
@@ -26200,6 +26369,7 @@
     "leonard-wee"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": 3.9,
    "journal_h_index": 122
@@ -26259,6 +26429,7 @@
     "rianne-fijten"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": null,
    "journal_h_index": null
@@ -26490,6 +26661,7 @@
     "leonard-wee"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": null,
    "journal_h_index": null
@@ -26620,6 +26792,7 @@
     "leonard-wee"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": 3.6,
    "journal_h_index": 115
@@ -26687,6 +26860,7 @@
     "rianne-fijten"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": 5.2,
    "journal_h_index": 85
@@ -26832,6 +27006,7 @@
     "andre-dekker"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": 7.9,
    "journal_h_index": 352
@@ -26937,6 +27112,7 @@
     "rianne-fijten"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": null,
    "journal_h_index": null
@@ -27027,6 +27203,7 @@
     "simone-mingels"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-23",
    "journal_impact": null,
    "journal_h_index": null
@@ -27084,6 +27261,7 @@
     "ananya-choudhury"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": null,
    "journal_h_index": null
@@ -27243,6 +27421,7 @@
     "leonard-wee"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": 5.8,
    "journal_h_index": 10
@@ -27393,6 +27572,7 @@
     "rianne-fijten"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": 1.3,
    "journal_h_index": 152
@@ -27528,6 +27708,7 @@
    "verified": false,
    "counted_members": [],
    "counted": false,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": 1.3,
    "journal_h_index": 152
@@ -27653,6 +27834,7 @@
     "rianne-fijten"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": 1.3,
    "journal_h_index": 152
@@ -27778,6 +27960,7 @@
     "yomi-okegunna"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": 1.3,
    "journal_h_index": 152
@@ -27923,6 +28106,7 @@
     "alberto-traverso"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": 1.7,
    "journal_h_index": 30
@@ -28021,6 +28205,7 @@
     "wouter-van-elmpt"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": 2.8,
    "journal_h_index": 56
@@ -28094,6 +28279,7 @@
     "petros-koutsouvelis"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": 4.4,
    "journal_h_index": 165
@@ -28234,6 +28420,7 @@
     "leonard-wee"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": 2.8,
    "journal_h_index": 56
@@ -28336,6 +28523,7 @@
     "leonard-wee"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": 5.5,
    "journal_h_index": 220
@@ -28420,6 +28608,7 @@
     "andre-dekker"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": 2.9,
    "journal_h_index": 54
@@ -28507,6 +28696,7 @@
     "rianne-fijten"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": 1.9,
    "journal_h_index": 47
@@ -28637,6 +28827,7 @@
     "leonard-wee"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": 1.1,
    "journal_h_index": 65
@@ -28789,6 +28980,7 @@
     "andre-dekker"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": 0.9,
    "journal_h_index": 11
@@ -28940,6 +29132,7 @@
     "zhen-zang"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": 4.5,
    "journal_h_index": 78
@@ -29042,6 +29235,7 @@
     "rianne-fijten"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": 3.0,
    "journal_h_index": 171
@@ -29197,6 +29391,7 @@
     "leonard-wee"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": null,
    "journal_h_index": null
@@ -29382,6 +29577,7 @@
     "johan-van-soest"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": 7.0,
    "journal_h_index": 29
@@ -29470,6 +29666,7 @@
     "leonard-wee"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": 1.8,
    "journal_h_index": 33
@@ -29603,6 +29800,7 @@
     "andre-dekker"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": 9.2,
    "journal_h_index": 163
@@ -29725,6 +29923,7 @@
     "rianne-fijten"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": null,
    "journal_h_index": null
@@ -29830,6 +30029,7 @@
     "alessio-romita"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": 0.8,
    "journal_h_index": 346
@@ -30029,6 +30229,7 @@
     "alberto-traverso"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": 0.8,
    "journal_h_index": 226
@@ -30124,6 +30325,7 @@
     "cecile-wolfs"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": 2.9,
    "journal_h_index": 266
@@ -30191,6 +30393,7 @@
     "cecile-wolfs"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": null,
    "journal_h_index": null
@@ -30322,6 +30525,7 @@
     "andre-dekker"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": null,
    "journal_h_index": null
@@ -30390,6 +30594,7 @@
     "andre-dekker"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": null,
    "journal_h_index": null
@@ -30602,6 +30807,7 @@
     "leonard-wee"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": 2.8,
    "journal_h_index": 178
@@ -30688,6 +30894,7 @@
     "anshu-ankolekar"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": null,
    "journal_h_index": null
@@ -30812,10 +31019,9 @@
    "cited_by_count": 0,
    "abstract": "Biological age scores are an emerging tool to characterize aging by estimating chronological age based on physiological biomarkers. Various scores have shown associations with aging-related outcomes. This study assessed the relation between an age score based on brain MRI images (BrainAge) and an age score based on metabolomic biomarkers (MetaboAge). We trained a federated deep learning model to estimate BrainAge in three cohorts. The federated BrainAge model yielded significantly lower error for age prediction across the cohorts than locally trained models. Harmonizing the age interval between cohorts further improved BrainAge accuracy. Subsequently, we compared BrainAge with MetaboAge using federated association and survival analyses. The results showed a small association between BrainAge and MetaboAge as well as a higher predictive value for the time to mortality of both scores combined than for the individual scores. Hence, our study suggests that both aging scores capture different aspects of the aging process.",
    "verified": false,
-   "counted_members": [
-    "andre-dekker"
-   ],
-   "counted": true,
+   "counted_members": [],
+   "counted": false,
+   "listed_elsewhere": true,
    "first_seen": "2026-10-21",
    "journal_impact": null,
    "journal_h_index": null
@@ -30941,6 +31147,7 @@
     "zhixiang-wang"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": 1.4,
    "journal_h_index": 101
@@ -31069,6 +31276,7 @@
     "ivan-zhovannik"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": 1.7,
    "journal_h_index": 387
@@ -31202,6 +31410,7 @@
     "andre-dekker"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": 10.2,
    "journal_h_index": 184
@@ -31286,6 +31495,7 @@
     "andre-dekker"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": 0.5,
    "journal_h_index": 87
@@ -31355,6 +31565,7 @@
    "verified": false,
    "counted_members": [],
    "counted": false,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": null,
    "journal_h_index": null
@@ -31424,6 +31635,7 @@
    "verified": false,
    "counted_members": [],
    "counted": false,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": null,
    "journal_h_index": null
@@ -31767,6 +31979,7 @@
     "anshu-ankolekar"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": 5.3,
    "journal_h_index": 463
@@ -31950,6 +32163,7 @@
     "hugo-aerts"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": 18.6,
    "journal_h_index": 746
@@ -32048,6 +32262,7 @@
     "anshu-ankolekar"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": null,
    "journal_h_index": null
@@ -32146,6 +32361,7 @@
     "anshu-ankolekar"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": null,
    "journal_h_index": null
@@ -32233,6 +32449,7 @@
    "verified": false,
    "counted_members": [],
    "counted": false,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": 1.1,
    "journal_h_index": 65
@@ -32306,6 +32523,7 @@
     "cecile-wolfs"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": 2.9,
    "journal_h_index": 266
@@ -32388,6 +32606,7 @@
     "rutger-van-mierlo"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-23",
    "journal_impact": 2.5,
    "journal_h_index": 116
@@ -32549,6 +32768,7 @@
     "alberto-traverso"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": 3.7,
    "journal_h_index": 106
@@ -32685,6 +32905,7 @@
     "leonard-wee"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": null,
    "journal_h_index": null
@@ -32767,6 +32988,7 @@
     "petros-kalendralis"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": 1.2,
    "journal_h_index": 45
@@ -32891,6 +33113,7 @@
     "leonard-wee"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": null,
    "journal_h_index": null
@@ -32970,6 +33193,7 @@
     "cecile-wolfs"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": 7.8,
    "journal_h_index": 150
@@ -33061,6 +33285,7 @@
     "rianne-fijten"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": null,
    "journal_h_index": null
@@ -33170,6 +33395,7 @@
     "andre-dekker"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": 6.7,
    "journal_h_index": 145
@@ -33243,10 +33469,9 @@
    "cited_by_count": 0,
    "abstract": null,
    "verified": false,
-   "counted_members": [
-    "thijs-ackermans"
-   ],
-   "counted": true,
+   "counted_members": [],
+   "counted": false,
+   "listed_elsewhere": true,
    "first_seen": "2026-10-27",
    "journal_impact": 1.9,
    "journal_h_index": 52
@@ -33360,6 +33585,7 @@
     "andre-dekker"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": 3.6,
    "journal_h_index": 52
@@ -33446,6 +33672,7 @@
     "leonard-wee"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": 2.8,
    "journal_h_index": 56
@@ -33577,6 +33804,7 @@
     "andre-dekker"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": 7.3,
    "journal_h_index": 169
@@ -33748,6 +33976,7 @@
     "johan-van-soest"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": null,
    "journal_h_index": null
@@ -33905,6 +34134,7 @@
     "hugo-aerts"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-23",
    "journal_impact": 8.7,
    "journal_h_index": 245
@@ -34005,6 +34235,7 @@
     "petros-kalendralis"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": 2.6,
    "journal_h_index": 148
@@ -34097,6 +34328,7 @@
     "anshu-ankolekar"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": 6.9,
    "journal_h_index": 127
@@ -34219,6 +34451,7 @@
     "johan-van-soest"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": 6.7,
    "journal_h_index": 145
@@ -34294,6 +34527,7 @@
     "rianne-fijten"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": 0.8,
    "journal_h_index": 226
@@ -34380,6 +34614,7 @@
     "cecile-wolfs"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": 0.8,
    "journal_h_index": 226
@@ -34451,6 +34686,7 @@
     "cecile-wolfs"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": 0.8,
    "journal_h_index": 226
@@ -34535,6 +34771,7 @@
     "andre-dekker"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": 0.8,
    "journal_h_index": 226
@@ -34642,6 +34879,7 @@
     "andre-dekker"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": 0.8,
    "journal_h_index": 226
@@ -34767,6 +35005,7 @@
     "andre-dekker"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": 0.8,
    "journal_h_index": 226
@@ -34835,6 +35074,7 @@
     "cecile-wolfs"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": 0.8,
    "journal_h_index": 226
@@ -34909,6 +35149,7 @@
     "rianne-fijten"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": 0.8,
    "journal_h_index": 226
@@ -34980,6 +35221,7 @@
     "andre-dekker"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": 0.8,
    "journal_h_index": 226
@@ -35064,6 +35306,7 @@
     "andre-dekker"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": 0.8,
    "journal_h_index": 226
@@ -35168,6 +35411,7 @@
     "andre-dekker"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": 0.8,
    "journal_h_index": 226
@@ -35236,6 +35480,7 @@
     "petros-kalendralis"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": 0.8,
    "journal_h_index": 226
@@ -35301,6 +35546,7 @@
     "cecile-wolfs"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": 0.8,
    "journal_h_index": 226
@@ -35426,6 +35672,7 @@
     "andre-dekker"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": 0.8,
    "journal_h_index": 226
@@ -35479,6 +35726,7 @@
     "sander-puts"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": null,
    "journal_h_index": null
@@ -35605,6 +35853,7 @@
    "verified": false,
    "counted_members": [],
    "counted": false,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": 0.7,
    "journal_h_index": 586
@@ -35784,6 +36033,7 @@
     "alberto-traverso"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": 1.1,
    "journal_h_index": 145
@@ -35872,6 +36122,7 @@
     "andre-dekker"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": 5.5,
    "journal_h_index": 91
@@ -35989,6 +36240,7 @@
     "rianne-fijten"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": 0.8,
    "journal_h_index": 226
@@ -36120,6 +36372,7 @@
     "andre-dekker"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": 5.3,
    "journal_h_index": 463
@@ -36251,6 +36504,7 @@
     "andre-dekker"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": null,
    "journal_h_index": null
@@ -36425,6 +36679,7 @@
     "alberto-traverso"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": 1.2,
    "journal_h_index": 216
@@ -36522,6 +36777,7 @@
     "anshu-ankolekar"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": 5.1,
    "journal_h_index": 66
@@ -36646,6 +36902,7 @@
     "andre-dekker"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": 1.3,
    "journal_h_index": 112
@@ -36753,6 +37010,7 @@
     "andre-dekker"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": 1.3,
    "journal_h_index": 112
@@ -36943,6 +37201,7 @@
     "fariba-tohidinezhad"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": 3.1,
    "journal_h_index": 298
@@ -37121,6 +37380,7 @@
     "alberto-traverso"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": 3.1,
    "journal_h_index": 298
@@ -37232,6 +37492,7 @@
     "rianne-fijten"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": 0.6,
    "journal_h_index": 125
@@ -37298,6 +37559,7 @@
     "rianne-fijten"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": null,
    "journal_h_index": null
@@ -37416,6 +37678,7 @@
     "andre-dekker"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": 5.6,
    "journal_h_index": 252
@@ -37512,6 +37775,7 @@
     "rianne-fijten"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": 3.5,
    "journal_h_index": 594
@@ -37706,6 +37970,7 @@
     "johan-van-soest"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": null,
    "journal_h_index": null
@@ -37910,6 +38175,7 @@
     "johan-van-soest"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": 3.9,
    "journal_h_index": 109
@@ -38066,6 +38332,7 @@
     "rianne-fijten"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": 1.3,
    "journal_h_index": 27
@@ -38156,6 +38423,7 @@
     "rianne-fijten"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": 3.5,
    "journal_h_index": 594
@@ -38269,6 +38537,7 @@
     "rianne-fijten"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": 1.6,
    "journal_h_index": 18
@@ -38397,6 +38666,7 @@
     "andre-dekker"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": 1.9,
    "journal_h_index": 68
@@ -38464,6 +38734,7 @@
     "andre-dekker"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": null,
    "journal_h_index": null
@@ -38642,6 +38913,7 @@
     "alberto-traverso"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": 3.6,
    "journal_h_index": 115
@@ -38751,6 +39023,7 @@
     "andre-dekker"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": 3.9,
    "journal_h_index": 101
@@ -38868,6 +39141,7 @@
     "alberto-traverso"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": 33.5,
    "journal_h_index": 763
@@ -39024,6 +39298,7 @@
     "andre-dekker"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": 8.9,
    "journal_h_index": 189
@@ -39081,6 +39356,7 @@
     "sander-puts"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": null,
    "journal_h_index": null
@@ -39189,6 +39465,7 @@
     "andre-dekker"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": null,
    "journal_h_index": null
@@ -39297,6 +39574,7 @@
     "andre-dekker"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": null,
    "journal_h_index": null
@@ -39370,10 +39648,9 @@
    "cited_by_count": 0,
    "abstract": null,
    "verified": false,
-   "counted_members": [
-    "thijs-ackermans"
-   ],
-   "counted": true,
+   "counted_members": [],
+   "counted": false,
+   "listed_elsewhere": true,
    "first_seen": "2026-10-27",
    "journal_impact": null,
    "journal_h_index": null
@@ -39537,6 +39814,7 @@
     "leonard-wee"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": null,
    "journal_h_index": null
@@ -39708,6 +39986,7 @@
     "leonard-wee"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": 5.8,
    "journal_h_index": 10
@@ -39970,6 +40249,7 @@
     "leonard-wee"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": 1.8,
    "journal_h_index": 24
@@ -40087,6 +40367,7 @@
     "andre-dekker"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": null,
    "journal_h_index": null
@@ -40221,6 +40502,7 @@
    "verified": false,
    "counted_members": [],
    "counted": false,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": 1.3,
    "journal_h_index": 152
@@ -40336,6 +40618,7 @@
     "rianne-fijten"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": null,
    "journal_h_index": null
@@ -40456,6 +40739,7 @@
     "andre-dekker"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": null,
    "journal_h_index": null
@@ -40527,6 +40811,7 @@
     "andre-dekker"
    ],
    "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": 3.7,
    "journal_h_index": 33
