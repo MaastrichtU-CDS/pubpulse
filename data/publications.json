@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-30T19:20:39+00:00",
+ "generated": "2026-10-30T19:29:13+00:00",
  "group_name": "Clinical Data Science (Maastro / Maastricht University)",
  "site_url": "https://maastrichtu-cds.github.io/pubpulse/",
  "repo_url": "https://github.com/MaastrichtU-CDS/pubpulse",
@@ -24117,12 +24117,11 @@
    "cited_by_count": 0,
    "abstract": null,
    "verified": false,
-   "counted_members": [
-    "cecile-wolfs"
-   ],
-   "counted": true,
-   "listed_elsewhere": false,
+   "counted_members": [],
+   "counted": false,
+   "listed_elsewhere": true,
    "first_seen": "2026-10-21",
+   "other_group": "Frank Verhaegen",
    "journal_impact": 0.8,
    "journal_h_index": 226
   },
@@ -30298,13 +30297,12 @@
    },
    "cited_by_count": 6,
    "abstract": "Abstract Objective. Cachexia is a devastating condition, characterized by involuntary loss of muscle mass with or without loss of adipose tissue mass. It affects more than half of patients with lung cancer, diminishing treatment effects and increasing mortality. Cone-beam computed tomography (CBCT) images, routinely acquired during radiotherapy treatment, might contain valuable anatomical information for monitoring body composition changes associated with cachexia. For this purpose, we propose an automatic artificial intelligence (AI)-based workflow, consisting of CBCT to CT conversion, followed by segmentation of pectoralis muscles. Approach. Data from 140 stage III non-small cell lung cancer patients was used. Two deep learning models, cycle-consistent generative adversarial network (CycleGAN) and contrastive unpaired translation (CUT), were used for unpaired training of CBCT to CT conversion, to generate synthetic CT (sCT) images. The no-new U-Net (nnU-Net) model was used for automatic pectoralis muscle segmentation. To evaluate tissue segmentation performance in the absence of ground truth labels, an uncertainty metric (UM) based on Monte Carlo dropout was developed and validated. Main results. Both CycleGAN and CUT restored the Hounsfield unit fidelity of the CBCT images compared to the planning CT (pCT) images and visually reduced streaking artefacts. The nnU-Net model achieved a Dice similarity coefficient (DSC) of 0.93, 0.94, 0.92 for the CT, sCT and CBCT images, respectively, on an independent test set. The UM showed a high correlation with DSC with a correlation coefficient of −0.84 for the pCT dataset and −0.89 for the sCT dataset. Significance. This paper shows a proof-of-concept for automatic AI-based monitoring of the pectoralis muscle area of lung cancer patients during radiotherapy treatment based on CBCT images, which provides an unprecedented time resolution of muscle mass loss during cachexia progression. Ultimately, the proposed workflow could provide valuable information for early intervention of cachexia, ideally resulting in improved cancer treatment outcome.",
-   "verified": true,
-   "counted_members": [
-    "cecile-wolfs"
-   ],
-   "counted": true,
-   "listed_elsewhere": false,
+   "verified": false,
+   "counted_members": [],
+   "counted": false,
+   "listed_elsewhere": true,
    "first_seen": "2026-10-21",
+   "other_group": "Frank Verhaegen",
    "journal_impact": 2.9,
    "journal_h_index": 266
   },
@@ -30366,13 +30364,12 @@
    },
    "cited_by_count": 0,
    "abstract": "Objective: Radiotherapy uses precise doses of radiation to treat cancer, requiring accurate verification, e.g. using the Electronic Portal Imaging Device (EPID), to guide treatment. To develop an effective artificial intelligence (AI) model for error detection and treatment verification, a large and well-annotated dataset of EPID images is needed, however, acquiring such high quality real data is difficult. While synthetic EPID data could be a viable alternative, it is critical to ensure that this data is as realistic as possible to effectively train an accurate and reliable AI model. The measurement uncertainty that is not modeled in EPID predictions but is present on real measured EPID images can hinder downstream tasks such as error detection and classification. Our research aims to improve synthetic EPID data through image-to-image (I2I) translation based on deep generative modeling. Approach: A dataset of 989 predicted EPID images and corresponding measured EPID images was used. We evaluate both paired and unpaired generative modeling approaches for this task. For the former, we introduce a novel modification of Variational Autoencoder (VAE) to I2I, a method that, to the best of our knowledge, has not been previously explored for this task. For the latter, we use UNsupervised Image-to-Image Translation Networks (UNIT). Results: Our results show that both models achieved some degree of I2I translation, with our novel modification of the VAE model outperforming the UNIT model in improving key metrics (mean absolute error: 4.1 cGy vs 6.4 cGy; relative dose difference in-field: 2.5% vs 5.5%; absolute dose difference in-field: 5.3 cGy vs 10.8 cGy). Significance: This enhanced synthetic data is expected to improve downstream tasks such as training neural networks for automated error detection and error classification in radiotherapy.",
-   "verified": true,
-   "counted_members": [
-    "cecile-wolfs"
-   ],
-   "counted": true,
-   "listed_elsewhere": false,
+   "verified": false,
+   "counted_members": [],
+   "counted": false,
+   "listed_elsewhere": true,
    "first_seen": "2026-10-21",
+   "other_group": "Frank Verhaegen",
    "journal_impact": null,
    "journal_h_index": null
   },
