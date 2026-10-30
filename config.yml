@@ -53,6 +53,9 @@ institution_keywords:
   - [maastricht, radiation oncology]
   - grow
   - [mumc, radiation oncology]
+  # Other labs within GROW, not the group: an affiliation string naming them never verifies.
+  - {other_lab: precision medicine}
+  - {other_lab: d-lab}
 
 # Broader words used only to pick the right OpenAlex author record for a person (never to verify a paper):
 # a record whose current institution matches these wins over a namesake elsewhere.
