@@ -385,6 +385,22 @@ def test_bare_maastricht_affiliation_is_not_another_affiliation_and_grow_alone_v
         assert works[wid]["affiliation_status"]["m"] == "verified" and works[wid]["counted"] is True
 
 
+def test_work_from_before_a_members_start_date_does_not_count_even_when_verified():
+    from datetime import date
+    from pubpulse.sync import fetch_works
+
+    people = [{"slug": "m", "name": "M", "orcid": "0000-0001-0000-0001", "openalex_ids": ["A1"], "active_until": None,
+               "member_from": "2025-01-01"}]
+    def auth(aid, insts):
+        return {"author": {"id": f"https://openalex.org/{aid}", "display_name": aid}, "institutions": [{"display_name": i} for i in insts]}
+    client = _FakeClient({"authorships.author.id:A1": [
+        {**_raw("W1", [auth("A1", ["GROW School for Oncology, Maastricht University"])]), "publication_date": "2024-05-01", "publication_year": 2024},
+        {**_raw("W2", [auth("A1", ["GROW School for Oncology, Maastricht University"])]), "publication_date": "2025-05-01", "publication_year": 2025}]})
+    works, _ = fetch_works(people, client, 2024, date(2026, 10, 30), keywords=["maastro", "grow"])
+    assert not works["W1"]["counted"] and not works["W1"]["verified"]
+    assert works["W2"]["counted"] and works["W2"]["verified"]
+
+
 def test_verify_affiliation_exception_requires_verified():
     from datetime import date
     from pubpulse.sync import fetch_works

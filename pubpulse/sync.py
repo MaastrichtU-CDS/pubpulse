@@ -617,7 +617,12 @@ def fetch_works(
             works.pop(wid)
             dropped_name += 1
             continue
-        w["verified"] = any(s == "verified" for s in w["affiliation_status"].values())
+        # Before a member's start date (members sheet) their authorship never counts, not even with a GROW or Maastro
+        # affiliation: that work was done in another group.
+        def started(m: str) -> bool:
+            start = by_slug_all.get(m, {}).get("member_from")
+            return not start or (w.get("publication_date") or "") >= start
+        w["verified"] = any(s == "verified" and started(m) for m, s in w["affiliation_status"].items())
         # Counted for the group: a verified group affiliation, or, for team members (current staff, or inside the
         # start/end period from the members sheet) matched by ORCID, no clear other affiliation: none listed, or only a
         # bare Maastricht University / MUMC+ / Radiation Oncology. A member listed with another department or
@@ -625,7 +630,7 @@ def fetch_works(
         # required.
         w["counted_members"] = [
             m for m in w["group_members"]
-            if w["affiliation_status"].get(m) == "verified"
+            if (w["affiliation_status"].get(m) == "verified" and started(m))
             or (w["affiliation_status"].get(m) in ("unknown", "unspecific")
                 and confidence.get(m) == "orcid" and m not in (affiliation_required or set())
                 and in_period(by_slug_all.get(m, {}), w.get("publication_date"), grace_months))
