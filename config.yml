@@ -56,8 +56,9 @@ institution_keywords:
   - {school: grow}
 
 # A paper whose senior (last) author is not CDS but is listed with one of these belongs to another Maastricht group
-# (e.g. Maastro physics, Radiology within GROW) and does not count, unless a CDS member is first or last author.
-other_group_senior_keywords: [maastro, grow]
+# (e.g. Maastro physics, Radiology within GROW, Surgery, the Institute of Data Science) and does not count, unless a
+# CDS member is first or last author or a CDS lead is on it. Senior authors elsewhere are collaborations and count.
+other_group_senior_keywords: [maastro, grow, maastricht, mumc]
 
 # Broader words used only to pick the right OpenAlex author record for a person (never to verify a paper):
 # a record whose current institution matches these wins over a namesake elsewhere.
