@@ -5,13 +5,6 @@ staff_url: https://www.clinicaldatascience.nl/staff
 site_url: https://maastrichtu-cds.github.io/pubpulse/
 repo_url: https://github.com/MaastrichtU-CDS/pubpulse
 
-# Membership periods (start/end date per member) come from a PRIVATE Google Sheet: shared "anyone with the link",
-# the link kept in the GitHub secret MEMBERS_SHEET_CSV_URL (CSV export form:
-# https://docs.google.com/spreadsheets/d/<SHEET_ID>/export?format=csv). Dates are applied in memory during a run
-# and never written to the repo or the website. Locally, a gitignored members.csv works the same way.
-# Start with: python -m pubpulse members-template  ->  import members-template.csv into the sheet.
-members_csv: members.csv
-
 # Website defaults (visitors can switch them in the filters).
 site:
   # verified = only papers where a group author has a verified group affiliation (strictest)

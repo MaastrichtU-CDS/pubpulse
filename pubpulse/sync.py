@@ -14,8 +14,7 @@ import requests
 import yaml
 
 from .openalex import OpenAlex, abstract_from_inverted_index, author_affiliations, author_current_institutions, short_id
-from .members import apply_members, fetch_members, in_period
-from .staff import fetch_staff, is_active, is_tracked, merge_people, tracked_until
+from .staff import fetch_staff, in_period, is_active, is_tracked, merge_people, tracked_until
 
 log = logging.getLogger(__name__)
 
@@ -85,13 +84,10 @@ def save_pending(ids: list[str], path: Path = NOTIFIED_PATH) -> None:
 def load_overrides(path: Path = OVERRIDES_PATH) -> dict:
     """Manual decisions: {'confirm': [W..], 'reject': [W..]}. Ids may be given as W123 or full OpenAlex URLs."""
     if not path.exists():
-        return {"confirm": set(), "reject": set(), "verify_affiliation": set(), "other_group_seniors": set(), "cds_leads": set()}
+        return {"confirm": set(), "reject": set()}
     with open(path, encoding="utf-8") as f:
         raw = yaml.safe_load(f) or {}
     out = {k: {short_id(str(x)) for x in (raw.get(k) or [])} for k in ("confirm", "reject")}
-    out["verify_affiliation"] = {str(x).strip().lower() for x in (raw.get("verify_affiliation") or [])}
-    out["other_group_seniors"] = {author_name_key(str(x)) for x in (raw.get("other_group_seniors") or [])} - {()}
-    out["cds_leads"] = {str(x).strip().lower() for x in (raw.get("cds_leads") or [])}
     return out
 
 
@@ -138,15 +134,13 @@ def is_cds_name(name: str, people: list[dict]) -> bool:
     return False
 
 
-def led_by_other_group(w: dict, people: list[dict], senior_keywords: list, seniors: set, cds_leads: set = frozenset()) -> bool:
-    """The senior (last) author is not CDS but is listed with Maastro / GROW, or is a named lead of another group:
-    the paper is another group's, unless a group member is first or last author (CDS-led) or a CDS lead is on it."""
+def led_by_other_group(w: dict, people: list[dict], senior_keywords: list) -> bool:
+    """The senior (last) author is not CDS but is listed with Maastro / GROW: the paper is another group's, unless a
+    group member is first or last author (CDS-led)."""
     members = w.get("author_members") or []
-    if not members or members[0] or members[-1] or cds_leads & set(w.get("group_members") or []):
+    if not members or members[0] or members[-1]:
         return False
     last = (w.get("authors") or [""])[-1]
-    if author_name_key(last) in seniors:
-        return True
     if not senior_keywords or is_cds_name(last, people):
         return False
     return affiliation_matches(w.get("senior_affiliations") or [], senior_keywords)
@@ -154,13 +148,12 @@ def led_by_other_group(w: dict, people: list[dict], senior_keywords: list, senio
 
 def apply_overrides(works: list[dict], overrides: dict, people: list[dict] | None = None,
                     senior_keywords: list | None = None) -> list[dict]:
-    seniors = overrides.get("other_group_seniors") or set()
     kept = []
     for w in works:
         if w["id"] in overrides["reject"]:
             continue
         w.pop("other_group", None)
-        if led_by_other_group(w, people or [], senior_keywords or [], seniors, overrides.get("cds_leads") or set()) and w["id"] not in overrides["confirm"]:
+        if led_by_other_group(w, people or [], senior_keywords or []) and w["id"] not in overrides["confirm"]:
             # The senior (last) author leads another group: the paper is that group's, whatever the affiliations say.
             w["verified"] = w["counted"] = False
             w["counted_members"] = []
@@ -555,7 +548,7 @@ def normalise_work(raw: dict, people: list[dict], keywords: list[str] | None = N
 def fetch_works(
     people: list[dict], client: OpenAlex, since_year: int, today: date,
     keywords: list[str] | None = None, policy: str = "flag", exclude_types: list[str] | None = None,
-    grace_months: int = 0, affiliation_required: set[str] | None = None,
+    grace_months: int = 0,
 ) -> tuple[dict[str, dict], list[str]]:
     """Return {work_id: normalised work} for all tracked people, plus a list of per-person errors.
 
@@ -637,22 +630,17 @@ def fetch_works(
             works.pop(wid)
             dropped_name += 1
             continue
-        # Before a member's start date (members sheet) their authorship never counts, not even with a GROW or Maastro
-        # affiliation: that work was done in another group.
-        def started(m: str) -> bool:
-            start = by_slug_all.get(m, {}).get("member_from")
-            return not start or (w.get("publication_date") or "") >= start
-        w["verified"] = any(s == "verified" and started(m) for m, s in w["affiliation_status"].items())
-        # Counted for the group: a verified group affiliation, or, for team members (current staff, or inside the
-        # start/end period from the members sheet) matched by ORCID, no clear other affiliation: none listed, or only a
+        w["verified"] = any(s == "verified" for s in w["affiliation_status"].values())
+        # Counted for the group: a verified group affiliation, or, for team members (current staff, or departed staff
+        # within the grace period) matched by ORCID, no clear other affiliation: none listed, or only a
         # bare Maastricht University / MUMC+ / Radiation Oncology. A member listed with another department or
         # institution does not count. Outside the team, and for name-only matches, a verified group affiliation is
         # required.
         w["counted_members"] = [
             m for m in w["group_members"]
-            if (w["affiliation_status"].get(m) == "verified" and started(m))
+            if w["affiliation_status"].get(m) == "verified"
             or (w["affiliation_status"].get(m) in ("unknown", "unspecific")
-                and confidence.get(m) == "orcid" and m not in (affiliation_required or set())
+                and confidence.get(m) == "orcid"
                 and in_period(by_slug_all.get(m, {}), w.get("publication_date"), grace_months))
         ]
         w["counted"] = bool(w["counted_members"])
@@ -660,7 +648,7 @@ def fetch_works(
         # a section of their own, the website only outside its default view.
         w["listed_elsewhere"] = not w["counted"] and any(
             w["affiliation_status"].get(m) == "mismatch"
-            and confidence.get(m) == "orcid" and m not in (affiliation_required or set())
+            and confidence.get(m) == "orcid"
             and in_period(by_slug_all.get(m, {}), w.get("publication_date"), grace_months)
             for m in w["group_members"])
         if policy == "require" and not w["verified"]:
@@ -780,14 +768,6 @@ def run(dry_run: bool = False, skip_people: bool = False, config_path: Path = CO
             log.error("staff page sync failed, keeping people.yml unchanged: %s", exc)
             people_changes = {"error": str(exc)}
 
-    # Membership periods are applied in memory only: they are personal data and never written to people.yml,
-    # the published data or the site. Only the resulting per-paper "counted" flag is public.
-    rows = fetch_members(cfg, ROOT)
-    sheet_active_until = {p["slug"]: p.get("active_until") for p in people}
-    if rows:
-        mchanges = apply_members(people, rows, today)
-        log.info("membership periods applied for %d people (%d unknown names added)", len(mchanges["updated"]), len(mchanges["added"]))
-
     client = OpenAlex(mailto=cfg.get("openalex_mailto"))
     previous = load_publications()
     from .former import review_former
@@ -803,7 +783,7 @@ def run(dry_run: bool = False, skip_people: bool = False, config_path: Path = CO
     fetched, errors = fetch_works(
         people, client, int(cfg.get("since_year", 2024)), today,
         keywords=keywords, policy=cfg.get("affiliation_policy", "flag"), exclude_types=cfg.get("exclude_types"),
-        grace_months=grace, affiliation_required=overrides["verify_affiliation"],
+        grace_months=grace,
     )
 
     enrich_people_from_works(people, fetched.values(), cfg.get("author_match_keywords") or keywords)
@@ -860,12 +840,6 @@ def run(dry_run: bool = False, skip_people: bool = False, config_path: Path = CO
     runs.append(run_record)
     with open(out_dir / "runs.json", "w", encoding="utf-8") as f:
         json.dump(runs, f, ensure_ascii=False, indent=1)
-    for p in people:
-        for k in ("member_from", "member_until", "member_note", "membership_source"):
-            p.pop(k, None)
-        if p["slug"] in sheet_active_until:
-            p["active_until"] = sheet_active_until[p["slug"]]
-    people = [p for p in people if not (p.get("source") == "manual" and p.get("needs_review") and p["slug"] not in sheet_active_until)]
     save_people(people, OUT_DIR / "people.yml" if (dry_run or failed) else PEOPLE_PATH)
     if not (dry_run or failed):
         # Carry unannounced ids over until a notification succeeds (workflow clears the file afterwards).

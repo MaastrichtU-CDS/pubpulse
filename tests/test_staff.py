@@ -96,3 +96,11 @@ def test_fetch_staff_skips_recently_checked_profiles(monkeypatch):
     assert jvs["orcid"] == "0000-0003-2548-0330" and jvs["_profile_fetched"]
     assert len(calls) == 1 + 60  # 61 current minus the one skipped
 
+
+
+def test_in_period_follows_the_staff_page():
+    from pubpulse.staff import in_period
+    assert in_period({"slug": "x", "name": "X", "active_until": None}, "2024-05-05")          # current member
+    assert not in_period({"slug": "y", "name": "Y", "status": "former"}, "2024-05-05")        # former, never seen leaving
+    left = {"slug": "b", "name": "B", "active_until": "2025-06-30"}
+    assert in_period(left, "2025-01-01") and not in_period(left, "2025-09-01") and in_period(left, "2025-09-01", grace_months=6)

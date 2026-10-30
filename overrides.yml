@@ -8,22 +8,5 @@ confirm:
   - W4416157627  # Sander Puts, Dutch metaphor extraction (Suzan Verberne, Leiden): OpenAlex wrongly lists her with GROW
 
 # Papers that do NOT belong to the group (wrong person with the same name, work from another job, …).
-reject: []
-
-# Exceptions to the team-window rule: people whose papers count only with a verified group affiliation
-# (e.g. a member whose recent work is mainly affiliated elsewhere). Use the member id (slug) from people.yml.
-verify_affiliation:
-  - matthijs-sloep
-  - ralph-brecheisen
-
-# Senior authors who lead another group. A paper whose last author is not CDS but listed with Maastro / GROW is
-# already treated as another group's (config.yml other_group_senior_keywords); names here also catch their papers
-# without that affiliation. Either way a paper still counts when a CDS member is first or last author, or is listed
-# under confirm. Full name as on the paper.
-other_group_seniors:
-  - Frank Verhaegen
-  - Maria Jacobs
-
-# CDS leads: a paper with one of them on it is a CDS paper, whoever the senior author is. Member ids from people.yml.
-cds_leads:
-  - andre-dekker
+reject:
+  - W4401666562  # Anshu Ankolekar, breast cancer consortium paper (2024): not CDS work

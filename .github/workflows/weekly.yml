@@ -51,7 +51,6 @@ jobs:
       SUBSCRIBERS_KEY: ${{ secrets.SUBSCRIBERS_KEY }}
       BREVO_API_KEY: ${{ secrets.BREVO_API_KEY }}
       ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
-      MEMBERS_SHEET_CSV_URL: ${{ secrets.MEMBERS_SHEET_CSV_URL }}
       REVIEW_SHEET_URL: ${{ secrets.REVIEW_SHEET_URL }}
       REVIEW_SHEET_KEY: ${{ secrets.REVIEW_SHEET_KEY }}
       TEAMS_WEBHOOK_URL: ${{ secrets.TEAMS_WEBHOOK_URL }}

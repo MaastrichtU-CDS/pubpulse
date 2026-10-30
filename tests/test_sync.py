@@ -339,20 +339,19 @@ def test_affiliation_rules_require_cooccurrence():
     assert affiliation_matches(["Dept. of Radiation Oncology, Maastricht University Medical Centre"], rules)
 
 
-def test_counted_uses_membership_period():
+def test_counted_for_team_members_without_another_affiliation():
     from datetime import date
     from pubpulse.sync import fetch_works
 
-    people = [{"slug": "m", "name": "M", "orcid": "0000-0001-0000-0001", "openalex_ids": ["A1"], "active_until": None, "member_from": "2025-01-01"}]
+    people = [{"slug": "m", "name": "M", "orcid": "0000-0001-0000-0001", "openalex_ids": ["A1"], "active_until": None}]
     def auth(aid, insts):
         return {"author": {"id": f"https://openalex.org/{aid}", "display_name": aid}, "institutions": [{"display_name": i} for i in insts]}
-    w_before = _raw("W1", [auth("A1", [])]); w_before["publication_date"] = "2024-06-01"
     w_in_unknown = _raw("W2", [auth("A1", [])]); w_in_unknown["publication_date"] = "2025-06-01"
     w_in_mismatch = _raw("W3", [auth("A1", ["Elsewhere"])]); w_in_mismatch["publication_date"] = "2025-06-01"
-    client = _FakeClient({"authorships.author.id:A1": [w_before, w_in_unknown, w_in_mismatch]})
+    client = _FakeClient({"authorships.author.id:A1": [w_in_unknown, w_in_mismatch]})
     works, _ = fetch_works(people, client, 2024, date(2026, 10, 23), keywords=KW)
     # in team: no affiliation listed counts; listed with another institution only does not
-    assert works["W1"]["counted"] is False and works["W2"]["counted"] is True and works["W3"]["counted"] is False
+    assert works["W2"]["counted"] is True and works["W3"]["counted"] is False
 
 
 def test_bare_maastricht_affiliation_is_not_another_affiliation_and_grow_alone_verifies():
@@ -389,36 +388,6 @@ def test_bare_maastricht_affiliation_is_not_another_affiliation_and_grow_alone_v
         assert works[wid]["affiliation_status"]["m"] == "verified" and works[wid]["counted"] is True
 
 
-def test_work_from_before_a_members_start_date_does_not_count_even_when_verified():
-    from datetime import date
-    from pubpulse.sync import fetch_works
-
-    people = [{"slug": "m", "name": "M", "orcid": "0000-0001-0000-0001", "openalex_ids": ["A1"], "active_until": None,
-               "member_from": "2025-01-01"}]
-    def auth(aid, insts):
-        return {"author": {"id": f"https://openalex.org/{aid}", "display_name": aid}, "institutions": [{"display_name": i} for i in insts]}
-    client = _FakeClient({"authorships.author.id:A1": [
-        {**_raw("W1", [auth("A1", ["GROW School for Oncology, Maastricht University"])]), "publication_date": "2024-05-01", "publication_year": 2024},
-        {**_raw("W2", [auth("A1", ["GROW School for Oncology, Maastricht University"])]), "publication_date": "2025-05-01", "publication_year": 2025}]})
-    works, _ = fetch_works(people, client, 2024, date(2026, 10, 30), keywords=["maastro", "grow"])
-    assert not works["W1"]["counted"] and not works["W1"]["verified"]
-    assert works["W2"]["counted"] and works["W2"]["verified"]
-
-
-def test_verify_affiliation_exception_requires_verified():
-    from datetime import date
-    from pubpulse.sync import fetch_works
-
-    people = [{"slug": "ms", "name": "M S", "orcid": "0000-0001-0000-0001", "openalex_ids": ["A1"], "active_until": None}]
-    def auth(aid, insts):
-        return {"author": {"id": f"https://openalex.org/{aid}", "display_name": aid}, "institutions": [{"display_name": i} for i in insts]}
-    client = _FakeClient({"authorships.author.id:A1": [_raw("W1", [auth("A1", ["Maastro Clinic"])]), _raw("W2", [auth("A1", [])])]})
-    works, _ = fetch_works(people, client, 2024, date(2026, 10, 23), keywords=KW, affiliation_required={"ms"})
-    assert works["W1"]["counted"] is True and works["W2"]["counted"] is False
-    works, _ = fetch_works(people, client, 2024, date(2026, 10, 23), keywords=KW)
-    assert works["W2"]["counted"] is True
-
-
 def test_paper_led_by_another_maastricht_group_does_not_count():
     from pubpulse.sync import apply_overrides
     people = [{"slug": "m", "name": "M Member"}, {"slug": "ib", "name": "Inigo Bermejo Delgado"}]
@@ -427,28 +396,27 @@ def test_paper_led_by_another_maastricht_group_does_not_count():
                 "counted": True, "counted_members": ["m"], "listed_elsewhere": False, "senior_affiliations": list(senior_affs)}
     grow = ["Radiology and Nuclear Medicine, GROW, Maastricht University"]
     works = [
-        work("W1", ["A", "M Member", "Frank Verhaegen"], [None, "m", None]),          # named lead of another group
+        work("W1", ["A", "M Member", "Frank Verhaegen"], [None, "m", None]),          # senior without Maastro/GROW listed
         work("W2", ["A", "M Member", "C van der Leij"], [None, "m", None], grow),    # non-CDS senior listed with GROW
         work("W3", ["M Member", "B", "C van der Leij"], ["m", None, None], grow),     # CDS first author: CDS-led
         work("W4", ["A", "M Member", "Iñigo Bermejo"], [None, "m", None], grow),     # senior is (former) CDS
         work("W5", ["A", "M Member", "D Smith"], [None, "m", None], ["Leiden University"]),  # external collaborator
         work("W6", ["A", "M Member", "C van der Leij"], [None, "m", None], grow),    # confirmed by hand
-        work("W7", ["A", "Lead", "M Member", "C van der Leij"], [None, "lead", "m", None], grow),  # a CDS lead is on it
+        work("W7", ["A", "Lead", "M Member", "C van der Leij"], [None, "lead", "m", None], grow),  # CDS members in the middle only
     ]
     works[-1]["group_members"] = ["lead", "m"]
-    ov = {"confirm": {"W6"}, "reject": set(), "verify_affiliation": set(), "other_group_seniors": {("frank", "verhaegen")},
-          "cds_leads": {"lead"}}
+    ov = {"confirm": {"W6"}, "reject": set()}
     out = {w["id"]: w for w in apply_overrides(works, ov, people=people, senior_keywords=["maastro", "grow"])}
-    for wid in ("W1", "W2"):
+    for wid in ("W2", "W7"):
         assert not out[wid]["counted"] and not out[wid]["verified"] and out[wid]["listed_elsewhere"]
     assert out["W2"]["other_group"] == "C van der Leij"
-    for wid in ("W3", "W4", "W5", "W6", "W7"):
+    for wid in ("W1", "W3", "W4", "W5", "W6"):
         assert out[wid]["counted"] and "other_group" not in out[wid]
 
 
 def test_merge_review_decisions_respects_overrides():
     from pubpulse.sync import merge_review_decisions
-    ov = {"confirm": {"W1"}, "reject": {"W2"}, "approve_external": set(), "verify_affiliation": set()}
+    ov = {"confirm": {"W1"}, "reject": {"W2"}, "approve_external": set()}
     out = merge_review_decisions(ov, {"W1": {"cds": "no"}, "W2": {"cds": "yes"}, "W3": {"cds": "yes"}, "W4": {"cds": "no"}, "W5": {"cds": ""}})
     assert out["confirm"] == {"W1", "W3"} and out["reject"] == {"W2", "W4"}
 

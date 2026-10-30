@@ -33,7 +33,6 @@ def main(argv: list[str] | None = None) -> int:
 
     sub.add_parser("send-digest", help="email out/digest.* to DIGEST_TO (and an Apps Script list, if configured) via SMTP")
     sub.add_parser("send-campaign", help="send out/digest.html as a Brevo campaign to the Brevo subscriber list")
-    sub.add_parser("members-template", help="write members-template.csv (import into the Google Sheet) from people.yml")
 
     sd = sub.add_parser("social-draft", help="write LinkedIn drafts (Claude) for verified journal papers into data/social/")
     sd.add_argument("--ids", nargs="*", help="specific OpenAlex ids; default: this run's new papers")
@@ -98,13 +97,6 @@ def main(argv: list[str] | None = None) -> int:
         from .social import run as social_run
 
         return social_run(ids=args.ids, since=args.since, limit=args.limit, dry_run=args.dry_run, force=args.force, person=args.person)
-    if args.cmd == "members-template":
-        from .members import template_csv
-        from .sync import ROOT, load_people
-
-        (ROOT / "members-template.csv").write_text(template_csv(load_people()), encoding="utf-8")
-        print("wrote members-template.csv")
-        return 0
     if args.cmd == "send-campaign":
         from .brevo import run as brevo_run
 

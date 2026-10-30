@@ -238,6 +238,18 @@ def is_active(person: dict, today: date | None = None) -> bool:
     return date.fromisoformat(str(until)) > today
 
 
+def in_period(person: dict, date_s: str | None, grace_months: int = 0) -> bool:
+    """Was the person in the team at this publication date? Current staff: always. Someone who left the staff page:
+    up to the day they were last seen there, plus the grace period."""
+    if not date_s:
+        return False
+    until = person.get("active_until")
+    if not until:
+        return is_active(person) and person.get("status") != "former"
+    last = add_months(date.fromisoformat(str(until)), grace_months) if grace_months else date.fromisoformat(str(until))
+    return date_s <= last.isoformat()
+
+
 def tracked_until(person: dict, grace_months: int) -> date | None:
     """Last day on which papers are still collected for a person who left; None while active."""
     until = person.get("active_until")

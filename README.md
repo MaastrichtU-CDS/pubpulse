@@ -134,7 +134,7 @@ This refreshes everything and updates the digest preview; it does not send mail 
 | File | What |
 | --- | --- |
 | `config.yml` | group name, site URL, `since_year`, `track_sections` for active staff, former-staff collaboration window, institution keywords, `affiliation_policy` (`flag` or `require`) |
-| `overrides.yml` | corrections per paper (`reject:` a wrongly attributed paper, `confirm:` a missed one) and the `verify_affiliation:` exceptions |
+| `overrides.yml` | corrections per paper (`reject:` a wrongly attributed paper, `confirm:` a missed one) |
 | `people.yml` | refreshed from the staff page on every run. Hand-edited fields that are never overwritten: `openalex_id` (one id, or a list when OpenAlex split a person into several records), `orcid` (when the staff page has none), `exclude: true`, `notes`. To track someone who is not on the staff page, add an entry with `source: manual`. People who disappear from the page get an `active_until` date; they are still tracked for `departed_grace_months` (papers in the pipeline), but only papers with a verified group affiliation count. Their earlier papers stay on the site. |
 | `data/former_staff_review.json` | audit of every former staff member: shared papers, current coauthors, last collaboration, profile identifiers and follow-up status. A person without evidence remains explicitly unconfirmed. |
 
@@ -279,10 +279,8 @@ pubpulse is a first setup. Everything it shows is produced by simple rules, not 
 Known limits of this logic, discussed internally:
 
 - An affiliation rule cannot be right for everyone. Some members publish with several affiliations at once, so "team
-  member = no check" over-counts for them and "always check" under-counts for others; the exception list covers only
-  the clear cases.
-- Start and end dates of membership do not solve this either: papers stay in the pipeline long after someone joins
-  or leaves, so a date cut-off is wrong in both directions.
+  member = no check" over-counts for them and "always check" under-counts for others; a wrong paper is
+  rejected one by one.
 - Only a manual check per paper would be watertight; the group decided not to do that.
 
 So the website and the newsletter carry a **disclaimer**: the numbers are automated, not manually verified, and
@@ -293,34 +291,16 @@ contain mistakes. Treat the overview as internal and indicative, not as a report
 A paper counts when a group author has a verified group affiliation, or when a group member was in the team at
 publication time and OpenAlex lists no affiliation for them. A member listed with another institution only (for
 example a second appointment elsewhere) does not count; confirm such a paper by hand if it should. Former staff count
-only with a verified group affiliation. **Exceptions by name** go in
-[overrides.yml](overrides.yml) under `verify_affiliation:` (member ids from people.yml): their papers count only with a
-verified affiliation. **Another group's paper:** when the senior (last) author is not CDS but is listed with Maastro or
+only with a verified group affiliation. **Another group's paper:** when the senior (last) author is not CDS but is listed with Maastro or
 GROW, the paper belongs to another Maastricht group and does not count, unless a CDS member is first or last author
-or a CDS lead (`cds_leads:`, e.g. Andre Dekker) is on it.
-Leads of other groups whose papers lack that affiliation go under `other_group_seniors:`. Papers you never want counted: `reject:`. That is the whole
-rule.
+or the paper is confirmed by hand. Papers you never want counted: `reject:`. That is the whole rule; there are no
+exceptions by name.
 
-### Optional: membership periods in a private Google Sheet
-
-Who counts as a member, and from when to when, is kept in a **private Google Sheet**, not in the repo: start and end
-dates are personal data. Setup once:
-
-1. `python -m pubpulse members-template` writes `members-template.csv` (names, roles, empty start/end columns; gitignored).
-2. Create a Google Sheet, *File → Import* that CSV. Fill `start` and `end` (YYYY-MM-DD, YYYY-MM or YYYY; leave end
-   empty for current members). Add rows for members who are not on the staff page.
-3. *Share → Anyone with the link → Viewer*. Build the CSV link: `https://docs.google.com/spreadsheets/d/<SHEET_ID>/export?format=csv`.
-4. GitHub → Settings → Secrets: `MEMBERS_SHEET_CSV_URL` = that link. Locally, put it in `.env`.
-
-Every run reads the sheet in memory. The **team-window rule**: a paper counts when a group member was in the team at
-publication time and no other institution is listed for them (or with a verified group affiliation at any time).
-"In the team" means current staff on the staff page, or inside the start/end period given in the sheet (the sheet is
-the exception list: only people whose period differs from "current staff = all of it" need a row). Outside the team
-(former staff, papers before a start date or after an end date plus the grace period) a paper counts only with a
-verified group affiliation. People matched by name only (no ORCID) also need a verified affiliation, because their
-identity is uncertain. A paper you do not want counted is one line in overrides.yml (`reject`). The website, digest
-and LinkedIn drafts use "counted"; "verified affiliation only" remains as a stricter filter. Dates never appear in
-people.yml, the published data or the site.
+"In the team" means on the staff page; someone who left counts up to the day they were last seen there plus the
+grace period (`departed_grace_months`). No membership dates are configured anywhere: a paper from before someone
+joined, or otherwise not CDS work, is one line under `reject:`. People matched by name only (no ORCID) need a verified
+affiliation, because their identity is uncertain. The website, digest and LinkedIn drafts use "counted"; "verified
+affiliation only" remains as a stricter filter.
 
 ### How a run works
 
