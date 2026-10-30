@@ -51,10 +51,9 @@ institution_keywords:
   - maastro
   - medical data works
   - clinical data science
-  - grow
-  # Other labs within GROW, not the group: an affiliation string naming them never verifies.
-  - {other_lab: precision medicine}
-  - {other_lab: d-lab}
+  # GROW spans many departments: it counts only in an affiliation that names no other department, so "Department of
+  # Precision Medicine, GROW" or "Radiology and Nuclear Medicine, GROW & CARIM" is another affiliation.
+  - {school: grow}
 
 # A paper whose senior (last) author is not CDS but is listed with one of these belongs to another Maastricht group
 # (e.g. Maastro physics, Radiology within GROW) and does not count, unless a CDS member is first or last author.

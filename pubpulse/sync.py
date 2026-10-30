@@ -178,19 +178,19 @@ def apply_overrides(works: list[dict], overrides: dict, people: list[dict] | Non
 def affiliation_matches(affiliations: list[str], keywords: list) -> bool:
     """A keyword entry is a string or a list of strings that must ALL occur in the same affiliation string
     (e.g. ["maastricht", "radiation oncology"]), so a generic department name alone never counts. Terms match as
-    whole words, so "grow" matches "GROW" and a footnote "5GROW" but not "growth". An entry {other_lab: d-lab} names
-    another lab that shares these words: an affiliation string mentioning it never matches. A raw string listing
-    several affiliations separated by ";" is matched per affiliation, so "Radiation Oncology, Harvard; Radiology,
-    Maastricht University" is not Maastricht radiation oncology."""
+    whole words, so "grow" matches "GROW" and a footnote "5GROW" but not "growth". An entry {school: grow} is a
+    research institute spanning many departments: it counts only in an affiliation that names no other department,
+    so "GROW Research Institute for Oncology and Reproduction, Maastricht University" counts but "Radiology and Nuclear
+    Medicine, GROW & CARIM" or "Department of Precision Medicine, GROW" does not. A raw string listing several
+    affiliations separated by ";" is matched per affiliation, so "Radiation Oncology, Harvard; Radiology, Maastricht
+    University" is not Maastricht radiation oncology."""
     def pattern(term: str) -> re.Pattern:
         return re.compile(r"(?<![a-z])" + re.escape(str(term).lower()) + r"(?![a-z])")
-    others = [pattern(k["other_lab"]) for k in keywords if isinstance(k, dict)]
-    rules = [[pattern(x) for x in k] if isinstance(k, (list, tuple)) else [pattern(k)] for k in keywords if not isinstance(k, dict)]
+    rules = [([pattern(k["school"])], True) if isinstance(k, dict)
+             else ([pattern(x) for x in k] if isinstance(k, (list, tuple)) else [pattern(k)], False) for k in keywords]
     for a in _split_affiliations(affiliations):
         a = a.lower()
-        if any(o.search(a) for o in others):
-            continue
-        if any(all(p.search(a) for p in rule) for rule in rules):
+        if any(all(p.search(a) for p in rule) and (not school or _names_no_other_department(a)) for rule, school in rules):
             return True
     return False
 
@@ -207,6 +207,22 @@ _UNSPECIFIC_WORDS = {
     "mumc", "umc", "the", "netherlands", "nederland", "limburg", "p", "o", "po", "box", "paul", "henri", "spaaklaan",
     "spakalaan",
 }
+
+
+# The research institute's own name, its faculty, and Maastricht University's Pure research-line tags
+# ("RS: GROW - R2 - Basic and Translational Cancer Biology"): none of these names a department.
+_SCHOOL_WORDS = {
+    "grow", "research", "institute", "school", "for", "oncology", "and", "reproduction", "developmental", "biology", "of",
+    "faculty", "health", "medicine", "life", "sciences", "fhml", "nl",
+}
+
+
+def _names_no_other_department(a: str) -> bool:
+    a = re.sub(r"\S+@\S+", " ", a.lower())  # e-mail address
+    a = re.sub(r"rs: ?grow ?- ?r\d[^;]*", " ", a)
+    a = re.sub(r"(?:(?:department|dept\.?) of )?radiation oncology", " ", a)  # our own department
+    a = re.sub(r"\b\d{4} ?[a-z]{2}\b", " ", a)  # Dutch postcode
+    return all(word in _UNSPECIFIC_WORDS | _SCHOOL_WORDS for word in re.findall(r"[a-z]+", a))
 
 
 def affiliation_unspecific(affiliations: list[str]) -> bool:
