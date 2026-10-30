@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-30T22:16:15+00:00",
+ "generated": "2026-10-30T22:19:42+00:00",
  "group_name": "Clinical Data Science (Maastro / Maastricht University)",
  "site_url": "https://maastrichtu-cds.github.io/pubpulse/",
  "repo_url": "https://github.com/MaastrichtU-CDS/pubpulse",
@@ -9513,12 +9513,11 @@
    "cited_by_count": 0,
    "abstract": null,
    "verified": false,
-   "counted_members": [
-    "ralph-brecheisen"
-   ],
-   "counted": true,
-   "listed_elsewhere": false,
+   "counted_members": [],
+   "counted": false,
+   "listed_elsewhere": true,
    "first_seen": "2026-10-21",
+   "other_group": "Christiaan van der Leij",
    "journal_impact": null,
    "journal_h_index": null
   },
@@ -15578,12 +15577,15 @@
    ],
    "cited_by_count": 0,
    "abstract": "Purpose: Because proton therapy (PT) can be regarded as a major radical innovation, its implementation in a radiation therapy (RT) department may have an adverse impact on processes. The current study aimed to investigate the effect of PT implementation on disruptions of clinical processes, patient satisfaction, and technology use. Materials and methods: The study was performed in an independent Dutch RT institute, where PT was implemented in February 2019. Endpoints were (1) process disruptions, (2) patient satisfaction, and (3) technology use. Causal inference and Wilcoxon rank-sum tests in R and MATLAB were used for the analyses. Results: After the implementation of PT, human-related errors and organizational culture-related errors in the photon therapy (PhT) process increased. Our empirical data showed more process disruptions associated with PT than with PhT. The implementation did not significantly affect patients' satisfaction. Analysis of technology use showed a decrease in PT uptime, including treatment stagnations lasting ≥2 days. The organizational process of the entire clinic was affected in the first 13 months after PT implementation because of significantly more process disruptions in PT compared to PhT and an increase in some distinct PhT process disruptions. The decrease in PT machine uptime below 95% caused treatment stagnation with consequences for patients and staffing. Conclusions: This study provides the first quantitative assessment of introducing PT in an ambidextrous, ambitious center that also runs PhT. Incident profiles shifted toward human-related errors in PhT and organizational issues in PT, with no lasting change in patient satisfaction. In conclusion, successful adoption requires stronger preparation and training, early patient engagement, and proactive planning for quality control, frequent updates, and lower initial uptime in partnership with vendors.",
-   "verified": false,
-   "counted_members": [],
-   "counted": false,
-   "listed_elsewhere": true,
+   "verified": true,
+   "counted_members": [
+    "thijs-ackermans",
+    "geert-bosmans",
+    "andre-dekker"
+   ],
+   "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
-   "other_group": "Maria Jacobs",
    "journal_impact": 1.7,
    "journal_h_index": 52
   },
@@ -17105,12 +17107,15 @@
    ],
    "cited_by_count": 0,
    "abstract": "OBJECTIVES: Artificial intelligence (AI) has gained increasing interest in supporting clinicians in patient selection, treatment planning, and prognostics. However, the current application of AI in the treatment of colorectal liver metastases (CRLM) is not clearly established and validated. This scoping review assesses the current impact of AI techniques on local therapeutic strategies for CRLM, exploring its benefits, challenges, and future directions. MATERIALS AND METHODS: A comprehensive literature search in PubMed, EMBASE, Web of Science, and SCOPUS was conducted for patients with CRLM undergoing surgery or thermal ablation, along with descriptions of AI tools. Eligible studies were cohort studies or clinical trials. Data extraction focused on treatment strategies, AI techniques, clinical and radiomics parameters, and outcomes. RESULTS: Out of 1464 articles, thirteen met the inclusion criteria. Eight articles regarded thermal liver ablation, and five surgical resection for CRLM. Most studies used traditional machine learning methods, such as support vector machines and random forests, combined with radiomics for predictive model building. While most studies demonstrated high performance, they frequently involved small sample sizes, and machine learning techniques often lacked robustness. CONCLUSIONS: AI shows promising results in improving local treatment strategies for CRLM, but further advancements are required for AI decision support tools. Future research should focus on large multicentre studies to validate AI-driven personalised colorectal liver metastases treatment strategies. CRITICAL RELEVANCE STATEMENT: This review evaluates the use of AI in colorectal liver metastases treatment for outcome prediction and treatment evaluation. Included studies used AI for segmentation and predictive modelling and were often limited by small sample-sized single-centre studies, necessitating multicentre studies. KEY POINTS: The position of AI in local colorectal liver metastases treatments is not yet established. AI algorithms are mostly used for predictive model building and image registration. Studies often lack validity, limiting generalisability and implementation of AI support tools.",
-   "verified": false,
-   "counted_members": [],
-   "counted": false,
-   "listed_elsewhere": true,
+   "verified": true,
+   "counted_members": [
+    "hossein-rahmani",
+    "leroy-volmer",
+    "andre-dekker"
+   ],
+   "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
-   "other_group": "Christiaan van der Leij",
    "journal_impact": 6.4,
    "journal_h_index": 106
   },
@@ -19767,13 +19772,12 @@
    ],
    "cited_by_count": 4,
    "abstract": "BACKGROUND/AIM: Centres of Excellence (CoEs) are assumed to indicate centres that are leading in healthcare, research, and innovation. However, there is no consensus on the criteria or frameworks for defining CoEs. This review aims to identify which criteria have been mentioned in literature for CoEs in oncology, and what the evidence is for these criteria. METHODS: A scoping review was conducted in PubMed, Web of Science, and EMBASE, following PRISMA guidelines. Data extraction categorised findings into four pillars: medical care, organisation/management, research, and education. RESULTS: A total of 5717 records were retrieved, of which 20 papers were included in the review. CoE features in Medical care included: multidisciplinary team participation (10/20), specialised treatments (8/20), ICT interoperability (6/20), innovation (5/20), patient-centred care (5/20), and state-of-the-art equipment (3/20). For Organisation/Management notable features were strong HR policies for career development (4/20), high-performance teams (4/20), and frameworks promoting excellence (3/20). For Research we found: focused on international collaboration (5/20), clinical trials (4/20), and high-quality translational research (3/20). Education included residency and fellowship programs (7/20), comprehensive training programs (5/20), and continuous education (3/20). These findings emphasise the comprehensive approach necessary for achieving excellence in oncology care, although no papers were found where these criteria were correlated with outcome. CONCLUSION: We found that most studies mentioned integrated care, and specific characteristics of organisation & operational management, research, and education when defining CoE in oncology, but these criteria have not been validated with outcome.",
-   "verified": true,
-   "counted_members": [
-    "rianne-fijten"
-   ],
-   "counted": true,
-   "listed_elsewhere": false,
+   "verified": false,
+   "counted_members": [],
+   "counted": false,
+   "listed_elsewhere": true,
    "first_seen": "2026-10-21",
+   "other_group": "Maria Jacobs",
    "journal_impact": 4.0,
    "journal_h_index": 217
   },
@@ -22987,12 +22991,11 @@
    "cited_by_count": 0,
    "abstract": null,
    "verified": false,
-   "counted_members": [
-    "rianne-fijten"
-   ],
-   "counted": true,
-   "listed_elsewhere": false,
+   "counted_members": [],
+   "counted": false,
+   "listed_elsewhere": true,
    "first_seen": "2026-10-21",
+   "other_group": "Maria Jacobs",
    "journal_impact": 0.8,
    "journal_h_index": 226
   },
@@ -23851,12 +23854,11 @@
    "cited_by_count": 0,
    "abstract": null,
    "verified": false,
-   "counted_members": [
-    "cecile-wolfs"
-   ],
-   "counted": true,
-   "listed_elsewhere": false,
+   "counted_members": [],
+   "counted": false,
+   "listed_elsewhere": true,
    "first_seen": "2026-10-21",
+   "other_group": "Frank Verhaegen",
    "journal_impact": 0.8,
    "journal_h_index": 226
   },
@@ -28076,14 +28078,12 @@
    ],
    "cited_by_count": 11,
    "abstract": "PURPOSE: Artificial intelligence (AI) applications in radiotherapy (RT) are expected to save time and improve quality, but implementation remains limited. Therefore, we used implementation science to develop a format for designing an implementation strategy for AI. This study aimed to (1) apply this format to develop an AI implementation strategy for our center; (2) identify insights gained to enhance AI implementation using this format; and (3) assess the feasibility and acceptability of this format to design a center-specific implementation strategy for departments aiming to implement AI. METHODS: We created an AI-implementation strategy for our own center using implementation science methods. This included a stakeholder analysis, literature review, and interviews to identify facilitators and barriers, and designed strategies to overcome the barriers. These methods were subsequently used in a workshop with teams from seven Dutch RT centers to develop their own AI-implementation plans. The applicability, appropriateness, and feasibility were evaluated by the workshop participants, and relevant insights for AI implementation were summarized. RESULTS: The stakeholder analysis identified internal (physicians, physicists, RT technicians, information technology, and education) and external (patients and representatives) stakeholders. Barriers and facilitators included concerns about opacity, privacy, data quality, legal aspects, knowledge, trust, stakeholder involvement, ethics, and multidisciplinary collaboration, all integrated into our implementation strategy. The workshop evaluation showed high acceptability (18 participants [90%]), appropriateness (17 participants [85%]), and feasibility (15 participants [75%]) of the implementation strategy. Sixteen participants fully agreed with the format. CONCLUSION: Our study highlights the need for a collaborative approach to implement AI in RT. We designed a strategy to overcome organizational challenges, improve AI integration, and enhance patient care. Workshop feedback indicates the proposed methods are useful for multiple RT centers. Insights gained by applying the methods highlight the importance of multidisciplinary collaboration in the development and implementation of AI.",
-   "verified": true,
-   "counted_members": [
-    "rianne-fijten",
-    "wouter-van-elmpt"
-   ],
-   "counted": true,
-   "listed_elsewhere": false,
+   "verified": false,
+   "counted_members": [],
+   "counted": false,
+   "listed_elsewhere": true,
    "first_seen": "2026-10-21",
+   "other_group": "Maria Jacobs",
    "journal_impact": 2.8,
    "journal_h_index": 56
   },
@@ -34502,12 +34502,11 @@
    "cited_by_count": 0,
    "abstract": null,
    "verified": false,
-   "counted_members": [
-    "cecile-wolfs"
-   ],
-   "counted": true,
-   "listed_elsewhere": false,
+   "counted_members": [],
+   "counted": false,
+   "listed_elsewhere": true,
    "first_seen": "2026-10-21",
+   "other_group": "Maria Jacobs",
    "journal_impact": 0.8,
    "journal_h_index": 226
   },
@@ -34578,12 +34577,11 @@
    "cited_by_count": 0,
    "abstract": null,
    "verified": false,
-   "counted_members": [
-    "rianne-fijten"
-   ],
-   "counted": true,
-   "listed_elsewhere": false,
+   "counted_members": [],
+   "counted": false,
+   "listed_elsewhere": true,
    "first_seen": "2026-10-21",
+   "other_group": "Maria Jacobs",
    "journal_impact": 0.8,
    "journal_h_index": 226
   },
