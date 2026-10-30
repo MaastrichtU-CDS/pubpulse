@@ -310,7 +310,7 @@
     data.newIds = new Set(
       data.works
         .filter((w) => (w.first_seen || "") > daysBefore(7) && w.first_seen > baseline)
-        .filter((w) => (w.publication_date || "") >= daysBefore(data.recent_days || 120))
+        .filter((w) => (w.publication_date || "") >= daysBefore(data.recent_days || 30))
         .map((w) => w.id),
     );
     data.queuedIds = new Set(data.pending_ids || []);

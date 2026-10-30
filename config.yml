@@ -84,9 +84,10 @@ min_people_on_staff_page: 3
 
 digest:
   subject_prefix: "pubpulse"
-  # Papers published within this many days count as news; older ones that newly appear (a person newly identified,
-  # late indexing) are only mentioned as "added to the archive".
-  recent_days: 120
+  # Papers published within this many days count as news. The newsletter lists last week's papers first, then
+  # earlier ones that only now reached OpenAlex. Older papers that newly appear (a person newly identified, late
+  # indexing) stay on the website but are left out of the newsletter.
+  recent_days: 30
   # Work types left out of the newsletter (still on the website): data deposits on Zenodo etc. are not news.
   exclude_types: [dataset]
   teams_max_items: 10

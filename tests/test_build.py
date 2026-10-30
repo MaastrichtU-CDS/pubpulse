@@ -119,6 +119,22 @@ def test_digest_separates_news_from_backfill():
     assert all(escape(w["title"]) in d["html"] for w in recent)
 
 
+def test_digest_lists_last_week_first_then_earlier_papers_in_their_own_section():
+    from pubpulse.build import build_digest
+    pubs = _pubs(4)
+    for w, day in zip(pubs["works"], ["2026-10-01", "2026-10-18", "2026-08-01", "2026-10-15"]):
+        w["publication_date"] = day
+    d = build_digest(pubs, {**CFG, "digest": {"recent_days": 30}})
+    assert d["new_count"] == 3  # W2 (August) is older than 30 days: left out
+    html_body = d["html"]
+    week, earlier = html_body.index("Published last week"), html_body.index("Published earlier, only now listed")
+    assert week < html_body.index("Paper 1", week) < html_body.index("Paper 3", week) < earlier < html_body.index("Paper 0", week)
+    assert "Paper 2" not in html_body and "2 published last week, 1 published earlier" in html_body
+    assert d["text"].index("PUBLISHED LAST WEEK") < d["text"].index("PUBLISHED EARLIER") < d["text"].index("Paper 0")
+    titles = [b["text"] for b in d["teams"]["attachments"][0]["content"]["body"]]
+    assert titles.index("Published last week") < titles.index("Published earlier, only now listed")
+
+
 def test_digest_page_previews_queue_and_lists_sent_digests(tmp_path):
     from pubpulse.build import archive_digest, write_digest_pages
     digests = tmp_path / "digests"

@@ -161,6 +161,107 @@
   line-height: 1.7;
   margin: 12px 0 0;
 }
+.studio-guide {
+  border: 1px solid var(--line);
+  border-radius: 9px;
+  background: #fff;
+  padding: 0 24px;
+  margin: 0 0 20px;
+}
+.studio-guide summary {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 52px;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--navy);
+  cursor: pointer;
+  list-style: none;
+}
+.studio-guide summary::-webkit-details-marker {
+  display: none;
+}
+.studio-guide summary::after {
+  content: "+";
+  margin-left: auto;
+  color: var(--muted);
+  font-size: 17px;
+  font-weight: 400;
+}
+.studio-guide[open] summary::after {
+  content: "−";
+}
+.studio-guide-steps {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 18px;
+  margin: 4px 0 0;
+  padding: 0;
+  list-style: none;
+  counter-reset: guide;
+}
+.studio-guide-steps li {
+  counter-increment: guide;
+  display: grid;
+  align-content: start;
+  gap: 4px;
+  font-size: 12px;
+  line-height: 1.6;
+  color: var(--muted);
+}
+.studio-guide-steps li::before {
+  content: counter(guide);
+  display: inline-grid;
+  place-items: center;
+  width: 22px;
+  height: 22px;
+  margin-bottom: 4px;
+  border-radius: 6px;
+  background: #edf3f8;
+  color: var(--accent);
+  font-size: 11px;
+  font-weight: 600;
+}
+.studio-guide-steps b {
+  color: var(--navy);
+  font-size: 13px;
+  font-weight: 600;
+}
+.studio-guide-steps code {
+  font-size: 11px;
+}
+.studio-guide-check {
+  margin: 18px 0 20px;
+  padding: 12px 14px;
+  border-radius: 6px;
+  background: var(--warn-soft);
+  color: var(--warn);
+  font-size: 12px;
+  line-height: 1.6;
+}
+.studio-guide-check ul {
+  margin: 4px 0 0;
+  padding-left: 18px;
+}
+@media (max-width: 900px) {
+  .studio-guide-steps {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+  .studio-guide-steps li {
+    grid-template-columns: 30px 1fr;
+    column-gap: 0;
+  }
+  .studio-guide-steps li::before {
+    grid-row: span 2;
+  }
+}
+@media (max-width: 760px) {
+  .studio-guide {
+    padding: 0 16px;
+  }
+}
 #paper-msg {
   font-size: 12px;
   margin: 12px 0 0;

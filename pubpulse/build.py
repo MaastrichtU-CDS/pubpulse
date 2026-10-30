@@ -145,6 +145,12 @@ def _button(href: str, label: str, dark: bool = False) -> str:
             f'{html.escape(label)}</a></td></tr></table>')
 
 
+def _section_html(title: str, note: str = "") -> str:
+    return (f'<tr><td class="email-pad" bgcolor="#f5f8fb" style="padding:16px 36px 14px;background:#f5f8fb;border-top:1px solid {LINE}">'
+            f'<p style="margin:0;color:{NAVY};font:600 12px/18px {SANS};text-transform:uppercase;letter-spacing:.6px">{html.escape(title)}</p>'
+            + (f'<p style="margin:4px 0 0;color:{MUTED};font:13px/20px {SANS}">{html.escape(note)}</p>' if note else "") + "</td></tr>")
+
+
 def _item_html(w: dict, names: dict[str, str], site: str) -> str:
     d = _draft_for(w)
     headline = (d or {}).get("headline") or ""
@@ -190,7 +196,8 @@ def build_digest(pubs: dict, cfg: dict, pending_ids: list[str] | None = None, is
     last = pubs.get("last_run") or {}
     dg = cfg.get("digest") or {}
     all_items = sorted(new_works(pubs, pending_ids), key=lambda w: w.get("publication_date") or "", reverse=True)
-    recent, _older = split_recent(all_items, int(dg.get("recent_days", 120)), last.get("date"))
+    recent_days = int(dg.get("recent_days", 30))
+    recent, _older = split_recent(all_items, recent_days, last.get("date"))
     # The newsletter follows the team-window rule: only counted papers are listed.
     counted = lambda w: bool(w.get("counted", w.get("verified", True)))  # noqa: E731
     skip_types = set(dg.get("exclude_types", ["dataset"]))  # data deposits are not news; they stay on the website
@@ -198,6 +205,16 @@ def build_digest(pubs: dict, cfg: dict, pending_ids: list[str] | None = None, is
     items = [w for w in recent if counted(w)]
     # Papers with a LinkedIn draft (headline and card) lead the issue.
     items.sort(key=lambda w: _draft_for(w) is None)
+    # Two sections, so a paper published weeks ago does not look like a mistake: last week's papers, and earlier
+    # ones (within recent_days) that OpenAlex only listed now.
+    week_cutoff = recent_cutoff(7, last.get("date"))
+    this_week = [w for w in items if (w.get("publication_date") or "") >= week_cutoff]
+    earlier = [w for w in items if (w.get("publication_date") or "") < week_cutoff]
+    items = this_week + earlier
+    sections = [(title, note, ws) for title, note, ws in (
+        ("Published last week", "", this_week),
+        ("Published earlier, only now listed", f"Published in the past {recent_days} days; these reached OpenAlex, our source, only this week.", earlier),
+    ) if ws]
     site = cfg.get("site_url", "")
     group = cfg.get("group_name", "the group")
     prefix = dg.get("subject_prefix", "pubpulse")
@@ -266,11 +283,12 @@ def build_digest(pubs: dict, cfg: dict, pending_ids: list[str] | None = None, is
         f'<tr><td class="email-pad" style="padding:28px 36px;font:15px/24px {SANS};color:#213449">'
         + (f'<p style="margin:0 0 10px;color:{NAVY};font:600 19px/27px {SANS}">{n} new paper{"s" if n != 1 else ""} since the last newsletter.</p>'
            f'<p style="margin:0 0 12px;font:14px/22px {SANS}">With {html.escape(person_line)}.</p>'
-           f'<p style="margin:0;color:{MUTED};font:13px/21px {SANS}">Papers can take weeks to reach OpenAlex, our source, so some were published a while ago.</p>' if n else
+           + (f'<p style="margin:0;color:{MUTED};font:13px/21px {SANS}">{len(this_week)} published last week, {len(earlier)} published earlier and only now listed in OpenAlex.</p>'
+              if this_week and earlier else "") if n else
            f'<p style="margin:0 0 8px;color:{NAVY};font:600 19px/27px {SANS}">Nothing new since the last newsletter.</p>'
            f'<p style="margin:0;color:{MUTED};font:14px/22px {SANS}">The next issue will appear when new publications are ready to share.</p>')
         + "</td></tr>",
-        "".join(_item_html(w, names, site) for w in items),
+        "".join(_section_html(title, note) + "".join(_item_html(w, names, site) for w in ws) for title, note, ws in sections),
         f'<tr><td class="email-pad" bgcolor="#f5f8fb" style="padding:24px 36px 18px;background:#f5f8fb;border-top:1px solid {LINE}">'
         f'<p style="margin:0 0 6px;color:{NAVY};font:600 16px/24px {SANS}">Explore the full collection</p>'
         f'<p style="margin:0 0 16px;color:{MUTED};font:14px/22px {SANS}">Find more research, people and topics in pubpulse.</p>'
@@ -299,6 +317,9 @@ def build_digest(pubs: dict, cfg: dict, pending_ids: list[str] | None = None, is
     text_lines = [f"THE PUBPULSE NEWSLETTER · {issue}"] + ([test_note] if test_note else []) + [
         f"{group}: {n} new paper(s) since the last newsletter" + (f", with {person_line}" if n else ""), ""]
     for i, w in enumerate(items, 1):
+        for title, note, ws in sections:
+            if w is ws[0]:
+                text_lines += [title.upper()] + ([note] if note else []) + [""]
         d = _draft_for(w)
         members = ", ".join(names.get(s, s) for s in w.get("group_members", []))
         flag = "" if w.get("counted", w.get("verified", True)) else "  [not in the group totals]"
@@ -320,6 +341,9 @@ def build_digest(pubs: dict, cfg: dict, pending_ids: list[str] | None = None, is
         {"type": "TextBlock", "text": html.escape(group), "isSubtle": True, "wrap": True},
     ]
     for w in items[:teams_max]:
+        for title, _note, ws in sections:
+            if w is ws[0]:
+                card_body.append({"type": "TextBlock", "weight": "Bolder", "spacing": "Large", "text": title, "wrap": True})
         members = ", ".join(names.get(s, s) for s in w.get("group_members", []))
         headline = (_draft_for(w) or {}).get("headline")
         card_body.append(
@@ -517,7 +541,7 @@ def run(config_path: Path | None = None) -> dict:
         "list": {k: (cfg.get("digest") or {}).get(k) or "" for k in ("subscribe_endpoint", "subscribe_form_url", "list_name")},
         "site": cfg.get("site") or {},
         "pending_ids": load_pending() if NOTIFIED_PATH.exists() else [],
-        "recent_days": int((cfg.get("digest") or {}).get("recent_days", 120)),
+        "recent_days": int((cfg.get("digest") or {}).get("recent_days", 30)),
         "social_prompt": CHAT_PROMPT,
         "groups": role_groups(pubs.get("people", [])),
         # Staff-page roles normalised for display and grouping (the raw role stays in people.yml).
