@@ -139,17 +139,12 @@ def apply_overrides(works: list[dict], overrides: dict) -> list[dict]:
 def affiliation_matches(affiliations: list[str], keywords: list) -> bool:
     """A keyword entry is a string or a list of strings that must ALL occur in the same affiliation string
     (e.g. ["maastricht", "radiation oncology"]), so a generic department name alone never counts. Terms match as
-    whole words, so "grow" matches "GROW" and a footnote "5GROW" but not "growth". An entry {school: grow} is a
-    research school of many departments: it counts only in an affiliation that names no other department, so
-    "GROW Research Institute for Oncology and Reproduction, Maastricht University" counts but "Radiology and Nuclear
-    Medicine, GROW & CARIM, Maastricht University" does not."""
-    def pattern(term: str) -> re.Pattern:
-        return re.compile(r"(?<![a-z])" + re.escape(term.lower()) + r"(?![a-z])")
-    rules = [([pattern(k["school"])], True) if isinstance(k, dict)
-             else ([pattern(x) for x in k] if isinstance(k, (list, tuple)) else [pattern(str(k))], False) for k in keywords]
+    whole words, so "grow" matches "GROW" and a footnote "5GROW" but not "growth"."""
+    rules = [[x.lower() for x in k] if isinstance(k, (list, tuple)) else [str(k).lower()] for k in keywords]
+    patterns = [[re.compile(r"(?<![a-z])" + re.escape(term) + r"(?![a-z])") for term in rule] for rule in rules]
     for a in affiliations:
         a = (a or "").lower()
-        if any(all(p.search(a) for p in rule) and (not school or _names_no_other_department(a)) for rule, school in rules):
+        if any(all(p.search(a) for p in rule) for rule in patterns):
             return True
     return False
 
@@ -162,24 +157,17 @@ _UNSPECIFIC_WORDS = {
     "mumc", "umc", "the", "netherlands", "nederland", "limburg", "p", "o", "po", "box", "paul", "henri", "spaaklaan",
     "spakalaan",
 }
-# The name of the research school itself ("GROW Research Institute for Oncology and Reproduction", "GROW School for
-# Oncology and Developmental Biology").
-_SCHOOL_WORDS = {"grow", "research", "institute", "school", "for", "oncology", "and", "reproduction", "developmental", "biology"}
-
-
-def _only_words(a: str, allowed: set[str]) -> bool:
-    a = re.sub(r"(?:(?:department|dept\.?) of )?radiation oncology", " ", a.lower())
-    a = re.sub(r"\b\d{4} ?[a-z]{2}\b", " ", a)  # Dutch postcode
-    return all(word in allowed for word in re.findall(r"[a-z]+", a))
-
-
-def _names_no_other_department(a: str) -> bool:
-    return _only_words(a, _UNSPECIFIC_WORDS | _SCHOOL_WORDS)
 
 
 def affiliation_unspecific(affiliations: list[str]) -> bool:
     """True when every affiliation string names nothing beyond Maastricht University / MUMC+ / Radiation Oncology."""
-    return bool(affiliations) and all(_only_words(a or "", _UNSPECIFIC_WORDS) for a in affiliations)
+    for a in affiliations:
+        a = (a or "").lower()
+        a = re.sub(r"(?:(?:department|dept\.?) of )?radiation oncology", " ", a)
+        a = re.sub(r"\b\d{4} ?[a-z]{2}\b", " ", a)  # Dutch postcode
+        if any(word not in _UNSPECIFIC_WORDS for word in re.findall(r"[a-z]+", a)):
+            return False
+    return bool(affiliations)
 
 
 def author_name_key(name: str) -> tuple[str, ...]:
