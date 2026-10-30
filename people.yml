@@ -2855,7 +2855,7 @@ people:
     checked_at: '2026-10-30'
     window_start: '2024-10-30'
     recent_months: 24
-    shared_papers: 5
+    shared_papers: 4
     recent_shared_papers: 2
     last_collaboration_date: '2026-10-01'
     followup_until: '2028-10-01'
@@ -3635,8 +3635,8 @@ people:
     checked_at: '2026-10-30'
     window_start: '2024-10-30'
     recent_months: 24
-    shared_papers: 10
-    recent_shared_papers: 7
+    shared_papers: 3
+    recent_shared_papers: 2
     last_collaboration_date: '2026-10-01'
     followup_until: '2028-10-01'
     current_coauthors:
@@ -4696,8 +4696,8 @@ people:
     checked_at: '2026-10-30'
     window_start: '2024-10-30'
     recent_months: 24
-    shared_papers: 7
-    recent_shared_papers: 5
+    shared_papers: 3
+    recent_shared_papers: 2
     last_collaboration_date: '2026-10-01'
     followup_until: '2028-10-01'
     current_coauthors:
@@ -5158,8 +5158,8 @@ people:
     checked_at: '2026-10-30'
     window_start: '2024-10-30'
     recent_months: 24
-    shared_papers: 6
-    recent_shared_papers: 6
+    shared_papers: 3
+    recent_shared_papers: 3
     last_collaboration_date: '2026-10-01'
     followup_until: '2028-10-01'
     current_coauthors:

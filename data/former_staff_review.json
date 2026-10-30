@@ -1017,7 +1017,7 @@
    "checked_at": "2026-10-30",
    "window_start": "2024-10-30",
    "recent_months": 24,
-   "shared_papers": 5,
+   "shared_papers": 4,
    "recent_shared_papers": 2,
    "last_collaboration_date": "2026-10-01",
    "followup_until": "2028-10-01",
@@ -1065,18 +1065,6 @@
      "author_name": "Dennis Bontempi",
      "author_position": 1,
      "recent": true
-    },
-    {
-     "work": "W4401546164",
-     "title": "End-to-end reproducible AI pipelines in radiology using the cloud",
-     "date": "2024-08-13",
-     "url": "https://doi.org/10.1038/s41467-024-51202-2",
-     "current_coauthors": [
-      "leonard-nurnberg"
-     ],
-     "author_name": "Dennis Bontempi",
-     "author_position": 1,
-     "recent": false
     },
     {
      "work": "W4402044888",
@@ -2046,8 +2034,8 @@
    "checked_at": "2026-10-30",
    "window_start": "2024-10-30",
    "recent_months": 24,
-   "shared_papers": 10,
-   "recent_shared_papers": 7,
+   "shared_papers": 3,
+   "recent_shared_papers": 2,
    "last_collaboration_date": "2026-10-01",
    "followup_until": "2028-10-01",
    "current_coauthors": [
@@ -2088,66 +2076,6 @@
      "recent": true
     },
     {
-     "work": "W7204178963",
-     "title": "Thymic radiation is associated with worse outcomes in patients with NSCLC",
-     "date": "2026-08-25",
-     "url": "https://doi.org/10.1016/j.annonc.2026.07.001",
-     "current_coauthors": [
-      "leonard-nurnberg"
-     ],
-     "author_name": "Hugo J.W.L. Aerts",
-     "author_position": 24,
-     "recent": true
-    },
-    {
-     "work": "W7138973475",
-     "title": "Thymic health consequences in adults",
-     "date": "2026-03-18",
-     "url": "https://doi.org/10.1038/s41586-026-10242-y",
-     "current_coauthors": [
-      "leonard-nurnberg"
-     ],
-     "author_name": "Hugo J.W.L. Aerts",
-     "author_position": 18,
-     "recent": true
-    },
-    {
-     "work": "W7138874906",
-     "title": "Thymic health and immunotherapy outcomes in patients with cancer",
-     "date": "2026-03-18",
-     "url": "https://doi.org/10.1038/s41586-026-10243-x",
-     "current_coauthors": [
-      "leonard-nurnberg"
-     ],
-     "author_name": "Hugo J.W.L. Aerts",
-     "author_position": 23,
-     "recent": true
-    },
-    {
-     "work": "W7130704511",
-     "title": "Aortic and Cardiac Structure From Routine CT Predict Cardiovascular Risk Beyond PREVENT and Coronary Calcium",
-     "date": "2026-02-20",
-     "url": "https://doi.org/10.1016/j.jcmg.2026.01.006",
-     "current_coauthors": [
-      "leonard-nurnberg"
-     ],
-     "author_name": "Hugo J.W.L. Aerts",
-     "author_position": 11,
-     "recent": true
-    },
-    {
-     "work": "W4410438194",
-     "title": "AI Opportunistic Coronary Calcium Screening at Veterans Affairs Hospitals",
-     "date": "2025-05-16",
-     "url": "https://doi.org/10.1056/aioa2400937",
-     "current_coauthors": [
-      "leonard-nurnberg"
-     ],
-     "author_name": "Hugo J.W.L. Aerts",
-     "author_position": 17,
-     "recent": true
-    },
-    {
      "work": "W4410197107",
      "title": "FaceAge, a deep learning system to estimate biological age from face photographs to improve prognostication: a model development and validation study",
      "date": "2025-05-08",
@@ -2170,31 +2098,6 @@
      ],
      "author_name": "Hugo J.W.L. Aerts",
      "author_position": 5,
-     "recent": false
-    },
-    {
-     "work": "W4401546164",
-     "title": "End-to-end reproducible AI pipelines in radiology using the cloud",
-     "date": "2024-08-13",
-     "url": "https://doi.org/10.1038/s41467-024-51202-2",
-     "current_coauthors": [
-      "leonard-nurnberg"
-     ],
-     "author_name": "Hugo J.W.L. Aerts",
-     "author_position": 11,
-     "recent": false
-    },
-    {
-     "work": "W4398251898",
-     "title": "Body Composition in Advanced Non-Small Cell Lung Cancer Treated With Immunotherapy",
-     "date": "2024-05-23",
-     "url": "https://doi.org/10.1001/jamaoncol.2024.1120",
-     "current_coauthors": [
-      "leonard-nurnberg",
-      "tafadzwa-chaunzwa"
-     ],
-     "author_name": "Hugo J.W.L. Aerts",
-     "author_position": 17,
      "recent": false
     }
    ]
@@ -3322,8 +3225,8 @@
    "checked_at": "2026-10-30",
    "window_start": "2024-10-30",
    "recent_months": 24,
-   "shared_papers": 7,
-   "recent_shared_papers": 5,
+   "shared_papers": 3,
+   "recent_shared_papers": 2,
    "last_collaboration_date": "2026-10-01",
    "followup_until": "2028-10-01",
    "current_coauthors": [
@@ -3360,42 +3263,6 @@
      "recent": true
     },
     {
-     "work": "W7204178963",
-     "title": "Thymic radiation is associated with worse outcomes in patients with NSCLC",
-     "date": "2026-08-25",
-     "url": "https://doi.org/10.1016/j.annonc.2026.07.001",
-     "current_coauthors": [
-      "leonard-nurnberg"
-     ],
-     "author_name": "Suraj Pai",
-     "author_position": 3,
-     "recent": true
-    },
-    {
-     "work": "W7138973475",
-     "title": "Thymic health consequences in adults",
-     "date": "2026-03-18",
-     "url": "https://doi.org/10.1038/s41586-026-10242-y",
-     "current_coauthors": [
-      "leonard-nurnberg"
-     ],
-     "author_name": "Suraj Pai",
-     "author_position": 3,
-     "recent": true
-    },
-    {
-     "work": "W7138874906",
-     "title": "Thymic health and immunotherapy outcomes in patients with cancer",
-     "date": "2026-03-18",
-     "url": "https://doi.org/10.1038/s41586-026-10243-x",
-     "current_coauthors": [
-      "leonard-nurnberg"
-     ],
-     "author_name": "Suraj Pai",
-     "author_position": 3,
-     "recent": true
-    },
-    {
      "work": "W4410197107",
      "title": "FaceAge, a deep learning system to estimate biological age from face photographs to improve prognostication: a model development and validation study",
      "date": "2025-05-08",
@@ -3406,18 +3273,6 @@
      "author_name": "Suraj Pai",
      "author_position": 11,
      "recent": true
-    },
-    {
-     "work": "W4401546164",
-     "title": "End-to-end reproducible AI pipelines in radiology using the cloud",
-     "date": "2024-08-13",
-     "url": "https://doi.org/10.1038/s41467-024-51202-2",
-     "current_coauthors": [
-      "leonard-nurnberg"
-     ],
-     "author_name": "Suraj Pai",
-     "author_position": 3,
-     "recent": false
     },
     {
      "work": "W4393407981",
@@ -3836,8 +3691,8 @@
    "checked_at": "2026-10-30",
    "window_start": "2024-10-30",
    "recent_months": 24,
-   "shared_papers": 6,
-   "recent_shared_papers": 6,
+   "shared_papers": 3,
+   "recent_shared_papers": 3,
    "last_collaboration_date": "2026-10-01",
    "followup_until": "2028-10-01",
    "current_coauthors": [
@@ -3874,42 +3729,6 @@
      ],
      "author_name": "Vasco Prudente",
      "author_position": 8,
-     "recent": true
-    },
-    {
-     "work": "W7204178963",
-     "title": "Thymic radiation is associated with worse outcomes in patients with NSCLC",
-     "date": "2026-08-25",
-     "url": "https://doi.org/10.1016/j.annonc.2026.07.001",
-     "current_coauthors": [
-      "leonard-nurnberg"
-     ],
-     "author_name": "Vasco Prudente",
-     "author_position": 1,
-     "recent": true
-    },
-    {
-     "work": "W7138973475",
-     "title": "Thymic health consequences in adults",
-     "date": "2026-03-18",
-     "url": "https://doi.org/10.1038/s41586-026-10242-y",
-     "current_coauthors": [
-      "leonard-nurnberg"
-     ],
-     "author_name": "Vasco Prudente",
-     "author_position": 2,
-     "recent": true
-    },
-    {
-     "work": "W7138874906",
-     "title": "Thymic health and immunotherapy outcomes in patients with cancer",
-     "date": "2026-03-18",
-     "url": "https://doi.org/10.1038/s41586-026-10243-x",
-     "current_coauthors": [
-      "leonard-nurnberg"
-     ],
-     "author_name": "Vasco Prudente",
-     "author_position": 2,
      "recent": true
     },
     {
