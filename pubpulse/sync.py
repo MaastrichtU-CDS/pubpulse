@@ -213,14 +213,14 @@ _UNSPECIFIC_WORDS = {
 # ("RS: GROW - R2 - Basic and Translational Cancer Biology"): none of these names a department.
 _SCHOOL_WORDS = {
     "grow", "research", "institute", "school", "for", "oncology", "and", "reproduction", "developmental", "biology", "of",
-    "faculty", "health", "medicine", "life", "sciences", "fhml", "nl",
+    "faculty", "health", "medicine", "life", "sciences", "fhml", "nl", "res", "inst",
 }
 
 
 def _names_no_other_department(a: str) -> bool:
     a = re.sub(r"\S+@\S+", " ", a.lower())  # e-mail address
     a = re.sub(r"rs: ?grow ?- ?r\d[^;]*", " ", a)
-    a = re.sub(r"(?:(?:department|dept\.?) of )?radiation oncology", " ", a)  # our own department
+    a = re.sub(r"(?:(?:department|dept\.?) of )?(?:radiation oncology|radiotherap(?:y|ie))", " ", a)  # our own department
     a = re.sub(r"\b\d{4} ?[a-z]{2}\b", " ", a)  # Dutch postcode
     return all(word in _UNSPECIFIC_WORDS | _SCHOOL_WORDS for word in re.findall(r"[a-z]+", a))
 
