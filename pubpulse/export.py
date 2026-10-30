@@ -129,8 +129,10 @@ def write_xlsx(pubs: dict, cfg: dict, path: Path) -> Path:
         f"pubpulse export · generated {datetime.now(timezone.utc).strftime('%Y-%m-%d %H:%M UTC')} · {cfg.get('group_name', '')}",
         f"Source: OpenAlex (CC0). Coverage: publications from {pubs.get('since_year')} onwards. Data as of {pubs.get('generated', '')}.",
         "",
-        "Team-window rule (column 'Counted (team-window rule)'): a paper counts when a group member was in the team at publication time, "
-        "without an affiliation check. Outside the team window, and for people matched by name only, a verified group affiliation is required.",
+        "Team-window rule (column 'Counted (team-window rule)'): a paper counts when a group author has a verified group affiliation, or when a "
+        "group member was in the team at publication time and OpenAlex lists no other affiliation for them (none, or only a broad Maastricht one). "
+        "Listed with another institution only: "
+        "not counted. Outside the team window, and for people matched by name only, a verified group affiliation is required.",
         "Verified group affiliation: the authorship carries Maastro, Medical Data Works, Clinical Data Science, or Radiation Oncology/GROW together with Maastricht/MUMC.",
         "Affiliation status per author: verified / mismatch (another institution recorded) / unknown (OpenAlex has no affiliation for this authorship).",
         "Manual decisions (overrides.yml): confirmed = counted by hand; rejected papers are not in this file.",

@@ -196,9 +196,12 @@ its robots.txt disallows automated reading of the RSS feeds, and the Pure web-se
 Pure team. With such a key, Pure could serve as an extra, validated affiliation source; ask the Library
 (https://library.maastrichtuniversity.nl/research/evaluating-research/cris-support/#Pure-contact).
 
-**Default view.** The website (headline numbers, list, statistics) starts from *verified affiliation only*:
-papers where a group author has a verified Maastro / Radiation Oncology / GROW / Medical Data Works affiliation, or that
-were confirmed by hand (`site.default_view` in config.yml). The newsletter uses the broader team-window rule.
+**Default view.** The website (headline numbers, list, statistics) and the newsletter both use the team-window rule:
+papers where a group author has a verified Maastro / Radiation Oncology / GROW / Medical Data Works affiliation, or a
+team member with no affiliation listed in OpenAlex, or that were confirmed by hand (`site.default_view` in config.yml).
+A Maastricht-only affiliation ("Maastricht University", too wide to verify) counts like none listed. Papers that list
+team members with another institution only are left out of the default view; the newsletter lists them in a section
+of their own. *Verified affiliation only* remains as a stricter filter.
 
 **Senior vs non-senior needs no upkeep.** It follows each person's role on the CDS staff page: professors,
 researchers and postdocs (including visiting researchers) are senior; PhD students, interns and support staff are not.
@@ -266,9 +269,9 @@ pubpulse is a first setup. Everything it shows is produced by simple rules, not 
 
 - **Who is a member** comes from scraping the group's staff page; identities come from ORCIDs on the profiles or, for
   people without one, from a name match with a group affiliation.
-- **What counts** follows the team-window rule: current members' papers count without an affiliation check, former
-  members' papers only with a verified group affiliation, plus a short list of named exceptions whose papers always
-  need a verified affiliation.
+- **What counts** follows the team-window rule: current members' papers count with a verified group affiliation or
+  with no affiliation listed (not when another institution is listed), former members' papers only with a verified
+  group affiliation, plus a short list of named exceptions whose papers always need a verified affiliation.
 
 Known limits of this logic, discussed internally:
 
@@ -284,8 +287,10 @@ contain mistakes. Treat the overview as internal and indicative, not as a report
 
 ### The team-window rule
 
-A paper counts when a group member was in the team at publication time: current staff count for the whole window,
-no affiliation check. Former staff count only with a verified group affiliation. **Exceptions by name** go in
+A paper counts when a group author has a verified group affiliation, or when a group member was in the team at
+publication time and OpenAlex lists no affiliation for them. A member listed with another institution only (for
+example a second appointment elsewhere) does not count; confirm such a paper by hand if it should. Former staff count
+only with a verified group affiliation. **Exceptions by name** go in
 [overrides.yml](overrides.yml) under `verify_affiliation:` (member ids from people.yml): their papers count only with a
 verified affiliation. Papers you never want counted: `reject:`. That is the whole rule.
 
@@ -301,7 +306,7 @@ dates are personal data. Setup once:
 4. GitHub → Settings → Secrets: `MEMBERS_SHEET_CSV_URL` = that link. Locally, put it in `.env`.
 
 Every run reads the sheet in memory. The **team-window rule**: a paper counts when a group member was in the team at
-publication time, no affiliation check.
+publication time and no other institution is listed for them (or with a verified group affiliation at any time).
 "In the team" means current staff on the staff page, or inside the start/end period given in the sheet (the sheet is
 the exception list: only people whose period differs from "current staff = all of it" need a row). Outside the team
 (former staff, papers before a start date or after an end date plus the grace period) a paper counts only with a

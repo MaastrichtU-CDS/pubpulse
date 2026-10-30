@@ -14,10 +14,11 @@ members_csv: members.csv
 
 # Website defaults (visitors can switch them in the filters).
 site:
-  # verified = only papers where a group author has a verified group affiliation (strict; headline numbers and statistics)
-  # counted  = team-window rule (current members' papers count without an affiliation check); all = everything
-  # The newsletter always uses the team-window rule.
-  default_view: verified
+  # verified = only papers where a group author has a verified group affiliation (strictest)
+  # counted  = team-window rule: a verified group affiliation, or for team members no other affiliation listed (none,
+  #            or only a broad Maastricht one); papers listing another institution only are left out; all = everything
+  # The newsletter uses the team-window rule and lists "another institution only" papers in a section of their own.
+  default_view: counted
   default_include_preprints: false  # hide preprints unless switched on
 
 # LinkedIn drafts written by Claude for verified journal papers (never preprints). Secret ANTHROPIC_API_KEY.

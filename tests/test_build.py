@@ -135,6 +135,33 @@ def test_digest_lists_last_week_first_then_earlier_papers_in_their_own_section()
     assert titles.index("Published last week") < titles.index("Published earlier, only now listed")
 
 
+def test_digest_lists_papers_with_another_institution_in_their_own_section():
+    from pubpulse.build import build_digest
+    pubs = _pubs(3)
+    for w in pubs["works"][:3]:
+        w["publication_date"] = "2026-10-18"
+    pubs["works"][0].update(counted=False, listed_elsewhere=True, affiliation_status={"p1": "mismatch"},
+                            member_affiliations={"p1": ["Other Institute", "Dept X, Other Institute"]})
+    d = build_digest(pubs, {**CFG, "digest": {"recent_days": 30}})
+    body = d["html"]
+    week, other = body.index("Published last week"), body.index("Also by team members, listed with another affiliation")
+    assert week < body.index("Paper 1", week) < body.index("Paper 2", week) < other < body.index("Paper 0", week)
+    assert "Person One (Other Institute)" in body and "Person One (Other Institute)" in d["text"]
+    assert "2 published last week, 1 listed with another affiliation" in body and d["new_count"] == 3
+    assert "Paper 0" not in d["subject"]
+
+
+def test_digest_preview_uses_the_issue_day_like_the_monday_send():
+    from pubpulse.build import build_digest
+    pubs = _pubs(2)
+    pubs["works"][0]["publication_date"] = "2026-10-15"  # last week seen from the 21st, not from Monday the 26th
+    pubs["works"][1]["publication_date"] = "2026-09-23"  # within 30 days of the 21st, not of the 26th
+    preview = build_digest(pubs, {**CFG, "digest": {"recent_days": 30}}, issue_date="2026-10-26")
+    monday = build_digest({**pubs, "last_run": {**pubs["last_run"], "date": "2026-10-26"}}, {**CFG, "digest": {"recent_days": 30}})
+    assert preview["html"] == monday["html"] and preview["new_count"] == monday["new_count"] == 1
+    assert "Published earlier, only now listed" in preview["html"] and "Published last week" not in preview["html"]
+
+
 def test_digest_page_previews_queue_and_lists_sent_digests(tmp_path):
     from pubpulse.build import archive_digest, write_digest_pages
     digests = tmp_path / "digests"

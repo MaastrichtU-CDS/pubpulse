@@ -137,7 +137,8 @@ def test_departed_person_counts_only_verified_papers():
         return {"author": {"id": f"https://openalex.org/{aid}", "display_name": aid}, "institutions": [{"display_name": i} for i in insts]}
     client = _FakeClient({"authorships.author.id:A1": [_raw("W1", [auth("A1", ["Maastro Clinic"])]), _raw("W2", [auth("A1", ["Elsewhere"])])]})
     works, _ = fetch_works(people, client, 2024, date(2026, 10, 21), keywords=KW, grace_months=18)
-    assert set(works) == {"W1", "W2"} and works["W2"]["counted"] is True  # within the grace period: still team
+    assert set(works) == {"W1", "W2"} and works["W1"]["counted"] is True  # within the grace period: still tracked
+    assert works["W2"]["counted"] is False  # listed with another institution only
     works, _ = fetch_works(people, client, 2024, date(2028, 10, 21), keywords=KW, grace_months=18)
     assert works == {}  # grace period over
 
@@ -350,7 +351,23 @@ def test_counted_uses_membership_period():
     w_in_mismatch = _raw("W3", [auth("A1", ["Elsewhere"])]); w_in_mismatch["publication_date"] = "2025-06-01"
     client = _FakeClient({"authorships.author.id:A1": [w_before, w_in_unknown, w_in_mismatch]})
     works, _ = fetch_works(people, client, 2024, date(2026, 10, 23), keywords=KW)
-    assert works["W1"]["counted"] is False and works["W2"]["counted"] is True and works["W3"]["counted"] is True  # in team: no affiliation check
+    # in team: no affiliation listed counts; listed with another institution only does not
+    assert works["W1"]["counted"] is False and works["W2"]["counted"] is True and works["W3"]["counted"] is False
+
+
+def test_broad_maastricht_affiliation_counts_like_none_listed_for_team_members():
+    from datetime import date
+    from pubpulse.sync import fetch_works
+
+    people = [{"slug": "m", "name": "M", "orcid": "0000-0001-0000-0001", "openalex_ids": ["A1"], "active_until": None}]
+    def auth(aid, insts):
+        return {"author": {"id": f"https://openalex.org/{aid}", "display_name": aid}, "institutions": [{"display_name": i} for i in insts]}
+    client = _FakeClient({"authorships.author.id:A1": [_raw("W1", [auth("A1", ["Maastricht University"])]), _raw("W2", [auth("A1", ["KU Leuven"])])]})
+    works, _ = fetch_works(people, client, 2024, date(2026, 10, 30), keywords=[["maastricht", "radiation oncology"]],
+                           broad_keywords=["maastricht", "mumc"])
+    assert works["W1"]["affiliation_status"]["m"] == "mismatch" and works["W1"]["counted"] is True  # ours, too wide to verify
+    assert works["W1"]["listed_elsewhere"] is False
+    assert works["W2"]["counted"] is False and works["W2"]["listed_elsewhere"] is True  # clearly another institution
 
 
 def test_verify_affiliation_exception_requires_verified():
@@ -360,7 +377,7 @@ def test_verify_affiliation_exception_requires_verified():
     people = [{"slug": "ms", "name": "M S", "orcid": "0000-0001-0000-0001", "openalex_ids": ["A1"], "active_until": None}]
     def auth(aid, insts):
         return {"author": {"id": f"https://openalex.org/{aid}", "display_name": aid}, "institutions": [{"display_name": i} for i in insts]}
-    client = _FakeClient({"authorships.author.id:A1": [_raw("W1", [auth("A1", ["Maastro Clinic"])]), _raw("W2", [auth("A1", ["IKNL"])])]})
+    client = _FakeClient({"authorships.author.id:A1": [_raw("W1", [auth("A1", ["Maastro Clinic"])]), _raw("W2", [auth("A1", [])])]})
     works, _ = fetch_works(people, client, 2024, date(2026, 10, 23), keywords=KW, affiliation_required={"ms"})
     assert works["W1"]["counted"] is True and works["W2"]["counted"] is False
     works, _ = fetch_works(people, client, 2024, date(2026, 10, 23), keywords=KW)

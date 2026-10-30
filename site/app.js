@@ -278,7 +278,7 @@
     },
     counted: {
       label: "team-window",
-      plain: "counted papers (team-window rule)",
+      plain: "papers with a verified group affiliation or none listed",
       test: (w) => isCounted(w),
     },
   };

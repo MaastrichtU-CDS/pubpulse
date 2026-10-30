@@ -130,6 +130,7 @@ def apply_overrides(works: list[dict], overrides: dict) -> list[dict]:
         if w["id"] in overrides["confirm"]:
             w["verified"] = True
             w["counted"] = True
+            w["listed_elsewhere"] = False
             w["manual"] = "confirmed"
         kept.append(w)
     return kept
@@ -461,7 +462,7 @@ def normalise_work(raw: dict, people: list[dict], keywords: list[str] | None = N
 def fetch_works(
     people: list[dict], client: OpenAlex, since_year: int, today: date,
     keywords: list[str] | None = None, policy: str = "flag", exclude_types: list[str] | None = None,
-    grace_months: int = 0, affiliation_required: set[str] | None = None,
+    grace_months: int = 0, affiliation_required: set[str] | None = None, broad_keywords: list | None = None,
 ) -> tuple[dict[str, dict], list[str]]:
     """Return {work_id: normalised work} for all tracked people, plus a list of per-person errors.
 
@@ -544,16 +545,30 @@ def fetch_works(
             dropped_name += 1
             continue
         w["verified"] = any(s == "verified" for s in w["affiliation_status"].values())
-        # Counted for the group: team members count without any affiliation check while they are in the team
-        # (current staff, or inside the start/end period from the members sheet). Outside the team, and for
-        # people matched by name only, a verified group affiliation is required.
+        # Counted for the group: a verified group affiliation, or, for team members (current staff, or inside the
+        # start/end period from the members sheet) matched by ORCID, no clear other affiliation: none listed, or only
+        # a broad Maastricht one (e.g. "Maastricht University", too wide to verify). A member listed with another
+        # institution only does not count. Outside the team, and for name-only matches, a verified group affiliation
+        # is required.
+        def no_other_affiliation(m: str) -> bool:
+            status = w["affiliation_status"].get(m)
+            return status == "unknown" or (status == "mismatch" and bool(broad_keywords)
+                                           and affiliation_matches(w["member_affiliations"].get(m) or [], broad_keywords))
         w["counted_members"] = [
             m for m in w["group_members"]
             if w["affiliation_status"].get(m) == "verified"
-            or (confidence.get(m) == "orcid" and m not in (affiliation_required or set())
+            or (no_other_affiliation(m)
+                and confidence.get(m) == "orcid" and m not in (affiliation_required or set())
                 and in_period(by_slug_all.get(m, {}), w.get("publication_date"), grace_months))
         ]
         w["counted"] = bool(w["counted_members"])
+        # Not counted only because team members are listed with another institution: the newsletter shows these in
+        # a section of their own, the website only outside its default view.
+        w["listed_elsewhere"] = not w["counted"] and any(
+            w["affiliation_status"].get(m) == "mismatch" and not no_other_affiliation(m)
+            and confidence.get(m) == "orcid" and m not in (affiliation_required or set())
+            and in_period(by_slug_all.get(m, {}), w.get("publication_date"), grace_months)
+            for m in w["group_members"])
         if policy == "require" and not w["verified"]:
             works.pop(wid)
             dropped_policy += 1
@@ -695,6 +710,7 @@ def run(dry_run: bool = False, skip_people: bool = False, config_path: Path = CO
         people, client, int(cfg.get("since_year", 2024)), today,
         keywords=keywords, policy=cfg.get("affiliation_policy", "flag"), exclude_types=cfg.get("exclude_types"),
         grace_months=grace, affiliation_required=overrides["verify_affiliation"],
+        broad_keywords=cfg.get("author_match_keywords") or keywords,
     )
 
     enrich_people_from_works(people, fetched.values(), cfg.get("author_match_keywords") or keywords)

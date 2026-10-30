@@ -145,6 +145,13 @@ def _button(href: str, label: str, dark: bool = False) -> str:
             f'{html.escape(label)}</a></td></tr></table>')
 
 
+def _member_label(w: dict, slug: str, names: dict[str, str]) -> str:
+    """Name, plus the institution OpenAlex lists when the paper carries no group affiliation for this person."""
+    affs = (w.get("member_affiliations") or {}).get(slug) or []
+    other = (w.get("affiliation_status") or {}).get(slug) == "mismatch" and w.get("listed_elsewhere") and affs
+    return names.get(slug, slug) + (f" ({affs[0]})" if other else "")
+
+
 def _section_html(title: str, note: str = "") -> str:
     return (f'<tr><td class="email-pad" bgcolor="#f5f8fb" style="padding:16px 36px 14px;background:#f5f8fb;border-top:1px solid {LINE}">'
             f'<p style="margin:0;color:{NAVY};font:600 12px/18px {SANS};text-transform:uppercase;letter-spacing:.6px">{html.escape(title)}</p>'
@@ -154,7 +161,7 @@ def _section_html(title: str, note: str = "") -> str:
 def _item_html(w: dict, names: dict[str, str], site: str) -> str:
     d = _draft_for(w)
     headline = (d or {}).get("headline") or ""
-    members = ", ".join(html.escape(names.get(s, s)) for s in w.get("group_members", []))
+    members = ", ".join(html.escape(_member_label(w, s, names)) for s in w.get("group_members", []))
     bg, fg = TYPE_PILLS.get(w.get("type") or "", ("#fbe4ee", "#8a2a55"))
     pill = (f'<span style="background:{bg};color:{fg};border-radius:4px;padding:2px 7px;font:600 11px/1.6 {SANS};'
             f'text-transform:uppercase;letter-spacing:.4px">{html.escape((w.get("type") or "paper").replace("-", " "))}</span>')
@@ -197,24 +204,34 @@ def build_digest(pubs: dict, cfg: dict, pending_ids: list[str] | None = None, is
     dg = cfg.get("digest") or {}
     all_items = sorted(new_works(pubs, pending_ids), key=lambda w: w.get("publication_date") or "", reverse=True)
     recent_days = int(dg.get("recent_days", 30))
-    recent, _older = split_recent(all_items, recent_days, last.get("date"))
-    # The newsletter follows the team-window rule: only counted papers are listed.
+    # Cutoffs count back from the issue day, so the web preview of Monday's issue matches what Monday sends.
+    ref_day = issue_date or last.get("date")
+    recent, _older = split_recent(all_items, recent_days, ref_day)
+    # The newsletter follows the team-window rule (verified group affiliation, or a team member with no other
+    # affiliation listed); papers listing team members with another institution only get a section of their own.
     counted = lambda w: bool(w.get("counted", w.get("verified", True)))  # noqa: E731
     skip_types = set(dg.get("exclude_types", ["dataset"]))  # data deposits are not news; they stay on the website
     recent = [w for w in recent if w.get("type") not in skip_types]
     items = [w for w in recent if counted(w)]
+    elsewhere = [w for w in recent if not counted(w) and w.get("listed_elsewhere")]
     # Papers with a LinkedIn draft (headline and card) lead the issue.
     items.sort(key=lambda w: _draft_for(w) is None)
-    # Two sections, so a paper published weeks ago does not look like a mistake: last week's papers, and earlier
-    # ones (within recent_days) that OpenAlex only listed now.
-    week_cutoff = recent_cutoff(7, last.get("date"))
+    # Sections, so nothing looks like a mistake: last week's papers; earlier ones (within recent_days) that OpenAlex
+    # only listed now; and papers on which our team members are listed with another institution only.
+    week_cutoff = recent_cutoff(7, ref_day)
     this_week = [w for w in items if (w.get("publication_date") or "") >= week_cutoff]
     earlier = [w for w in items if (w.get("publication_date") or "") < week_cutoff]
-    items = this_week + earlier
+    items = this_week + earlier + elsewhere
     sections = [(title, note, ws) for title, note, ws in (
         ("Published last week", "", this_week),
         ("Published earlier, only now listed", f"Published in the past {recent_days} days; these reached OpenAlex, our source, only this week.", earlier),
+        ("Also by team members, listed with another affiliation", "On these papers OpenAlex lists our team members with another institution only.", elsewhere),
     ) if ws]
+    breakdown = ", ".join(x for x in (
+        f"{len(this_week)} published last week" if this_week else "",
+        f"{len(earlier)} published earlier and only now listed in OpenAlex" if earlier else "",
+        f"{len(elsewhere)} listed with another affiliation" if elsewhere else "",
+    ) if x)
     site = cfg.get("site_url", "")
     group = cfg.get("group_name", "the group")
     prefix = dg.get("subject_prefix", "pubpulse")
@@ -283,8 +300,8 @@ def build_digest(pubs: dict, cfg: dict, pending_ids: list[str] | None = None, is
         f'<tr><td class="email-pad" style="padding:28px 36px;font:15px/24px {SANS};color:#213449">'
         + (f'<p style="margin:0 0 10px;color:{NAVY};font:600 19px/27px {SANS}">{n} new paper{"s" if n != 1 else ""} since the last newsletter.</p>'
            f'<p style="margin:0 0 12px;font:14px/22px {SANS}">With {html.escape(person_line)}.</p>'
-           + (f'<p style="margin:0;color:{MUTED};font:13px/21px {SANS}">{len(this_week)} published last week, {len(earlier)} published earlier and only now listed in OpenAlex.</p>'
-              if this_week and earlier else "") if n else
+           + (f'<p style="margin:0;color:{MUTED};font:13px/21px {SANS}">{html.escape(breakdown)}.</p>'
+              if len(sections) > 1 else "") if n else
            f'<p style="margin:0 0 8px;color:{NAVY};font:600 19px/27px {SANS}">Nothing new since the last newsletter.</p>'
            f'<p style="margin:0;color:{MUTED};font:14px/22px {SANS}">The next issue will appear when new publications are ready to share.</p>')
         + "</td></tr>",
@@ -321,7 +338,7 @@ def build_digest(pubs: dict, cfg: dict, pending_ids: list[str] | None = None, is
             if w is ws[0]:
                 text_lines += [title.upper()] + ([note] if note else []) + [""]
         d = _draft_for(w)
-        members = ", ".join(names.get(s, s) for s in w.get("group_members", []))
+        members = ", ".join(_member_label(w, s, names) for s in w.get("group_members", []))
         flag = "" if w.get("counted", w.get("verified", True)) else "  [not in the group totals]"
         text_lines += [f"{i}. {(d or {}).get('headline') or w['title']}"]
         if (d or {}).get("headline"):
@@ -344,7 +361,7 @@ def build_digest(pubs: dict, cfg: dict, pending_ids: list[str] | None = None, is
         for title, _note, ws in sections:
             if w is ws[0]:
                 card_body.append({"type": "TextBlock", "weight": "Bolder", "spacing": "Large", "text": title, "wrap": True})
-        members = ", ".join(names.get(s, s) for s in w.get("group_members", []))
+        members = ", ".join(_member_label(w, s, names) for s in w.get("group_members", []))
         headline = (_draft_for(w) or {}).get("headline")
         card_body.append(
             {"type": "TextBlock", "wrap": True, "spacing": "Medium",
