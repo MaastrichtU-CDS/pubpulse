@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-30T19:48:13+00:00",
+ "generated": "2026-10-30T19:51:26+00:00",
  "group_name": "Clinical Data Science (Maastro / Maastricht University)",
  "site_url": "https://maastrichtu-cds.github.io/pubpulse/",
  "repo_url": "https://github.com/MaastrichtU-CDS/pubpulse",
@@ -16392,12 +16392,15 @@
    ],
    "cited_by_count": 0,
    "abstract": "Purpose: Because proton therapy (PT) can be regarded as a major radical innovation, its implementation in a radiation therapy (RT) department may have an adverse impact on processes. The current study aimed to investigate the effect of PT implementation on disruptions of clinical processes, patient satisfaction, and technology use. Materials and methods: The study was performed in an independent Dutch RT institute, where PT was implemented in February 2019. Endpoints were (1) process disruptions, (2) patient satisfaction, and (3) technology use. Causal inference and Wilcoxon rank-sum tests in R and MATLAB were used for the analyses. Results: After the implementation of PT, human-related errors and organizational culture-related errors in the photon therapy (PhT) process increased. Our empirical data showed more process disruptions associated with PT than with PhT. The implementation did not significantly affect patients' satisfaction. Analysis of technology use showed a decrease in PT uptime, including treatment stagnations lasting ≥2 days. The organizational process of the entire clinic was affected in the first 13 months after PT implementation because of significantly more process disruptions in PT compared to PhT and an increase in some distinct PhT process disruptions. The decrease in PT machine uptime below 95% caused treatment stagnation with consequences for patients and staffing. Conclusions: This study provides the first quantitative assessment of introducing PT in an ambidextrous, ambitious center that also runs PhT. Incident profiles shifted toward human-related errors in PhT and organizational issues in PT, with no lasting change in patient satisfaction. In conclusion, successful adoption requires stronger preparation and training, early patient engagement, and proactive planning for quality control, frequent updates, and lower initial uptime in partnership with vendors.",
-   "verified": false,
-   "counted_members": [],
-   "counted": false,
-   "listed_elsewhere": true,
+   "verified": true,
+   "counted_members": [
+    "thijs-ackermans",
+    "geert-bosmans",
+    "andre-dekker"
+   ],
+   "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
-   "other_group": "Maria Jacobs",
    "journal_impact": 1.7,
    "journal_h_index": 52
   },
@@ -17919,12 +17922,15 @@
    ],
    "cited_by_count": 0,
    "abstract": "OBJECTIVES: Artificial intelligence (AI) has gained increasing interest in supporting clinicians in patient selection, treatment planning, and prognostics. However, the current application of AI in the treatment of colorectal liver metastases (CRLM) is not clearly established and validated. This scoping review assesses the current impact of AI techniques on local therapeutic strategies for CRLM, exploring its benefits, challenges, and future directions. MATERIALS AND METHODS: A comprehensive literature search in PubMed, EMBASE, Web of Science, and SCOPUS was conducted for patients with CRLM undergoing surgery or thermal ablation, along with descriptions of AI tools. Eligible studies were cohort studies or clinical trials. Data extraction focused on treatment strategies, AI techniques, clinical and radiomics parameters, and outcomes. RESULTS: Out of 1464 articles, thirteen met the inclusion criteria. Eight articles regarded thermal liver ablation, and five surgical resection for CRLM. Most studies used traditional machine learning methods, such as support vector machines and random forests, combined with radiomics for predictive model building. While most studies demonstrated high performance, they frequently involved small sample sizes, and machine learning techniques often lacked robustness. CONCLUSIONS: AI shows promising results in improving local treatment strategies for CRLM, but further advancements are required for AI decision support tools. Future research should focus on large multicentre studies to validate AI-driven personalised colorectal liver metastases treatment strategies. CRITICAL RELEVANCE STATEMENT: This review evaluates the use of AI in colorectal liver metastases treatment for outcome prediction and treatment evaluation. Included studies used AI for segmentation and predictive modelling and were often limited by small sample-sized single-centre studies, necessitating multicentre studies. KEY POINTS: The position of AI in local colorectal liver metastases treatments is not yet established. AI algorithms are mostly used for predictive model building and image registration. Studies often lack validity, limiting generalisability and implementation of AI support tools.",
-   "verified": false,
-   "counted_members": [],
-   "counted": false,
-   "listed_elsewhere": true,
+   "verified": true,
+   "counted_members": [
+    "hossein-rahmani",
+    "leroy-volmer",
+    "andre-dekker"
+   ],
+   "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
-   "other_group": "Christiaan van der Leij",
    "journal_impact": 6.4,
    "journal_h_index": 106
   },
