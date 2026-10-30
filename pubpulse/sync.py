@@ -139,11 +139,15 @@ def is_cds_professor(person: dict) -> bool:
     return bool(re.fullmatch(r"\s*(?:full\s+)?professor\s*", person.get("role") or "", re.I))
 
 
-def maastricht_seniors(works: list[dict], people: list[dict], senior_keywords: list) -> set[tuple[str, ...]]:
+def maastricht_seniors(works: list[dict], people: list[dict], senior_keywords: list,
+                       confirmed: set = frozenset()) -> set[tuple[str, ...]]:
     """Senior (last) authors outside CDS who are listed with Maastro / GROW on at least one paper in the archive.
-    They lead another Maastricht group, also on their papers where OpenAlex lists no affiliation for them."""
+    They lead another Maastricht group, also on their papers where OpenAlex lists no affiliation for them. Papers
+    confirmed by hand are CDS papers, so their affiliations (sometimes wrong in OpenAlex) make no one a lead."""
     seniors = set()
     for w in works:
+        if w["id"] in confirmed:
+            continue
         last = (w.get("authors") or [""])[-1]
         if senior_keywords and affiliation_matches(w.get("senior_affiliations") or [], senior_keywords) \
                 and not is_cds_name(last, people):
@@ -151,35 +155,43 @@ def maastricht_seniors(works: list[dict], people: list[dict], senior_keywords: l
     return seniors - {()}
 
 
-def led_by_other_group(w: dict, people: list[dict], senior_keywords: list, seniors: set = frozenset()) -> bool:
-    """The senior (last) author is not CDS but is a Maastro / GROW senior: the paper is another group's, unless a
-    group member is first or last author (CDS-led) or a CDS professor is on it."""
+def led_by_other_group(w: dict, people: list[dict], senior_keywords: list, seniors: set = frozenset()) -> str | None:
+    """The name of another Maastricht group's lead on the paper, or None. A lead is the last author when not CDS and
+    listed with Maastro / GROW, or any author known as a Maastro / GROW senior (last author with that affiliation on a
+    paper in the archive), wherever they are in the author list. A CDS first author or a CDS professor on the paper
+    keeps it a CDS paper."""
     members = w.get("author_members") or []
-    if not members or members[0] or members[-1]:
-        return False
+    authors = w.get("authors") or []
+    if not members or members[0] or not senior_keywords:
+        return None
     professors = {p["slug"] for p in people if is_cds_professor(p)}
     if professors & set(w.get("group_members") or []):
-        return False
-    last = (w.get("authors") or [""])[-1]
-    if not senior_keywords or is_cds_name(last, people):
-        return False
-    return author_name_key(last) in seniors or affiliation_matches(w.get("senior_affiliations") or [], senior_keywords)
+        return None
+    last = authors[-1] if authors else ""
+    if not members[-1] and not is_cds_name(last, people) \
+            and affiliation_matches(w.get("senior_affiliations") or [], senior_keywords):
+        return last
+    for i, name in enumerate(authors):
+        if (i >= len(members) or not members[i]) and author_name_key(name) in seniors and not is_cds_name(name, people):
+            return name
+    return None
 
 
 def apply_overrides(works: list[dict], overrides: dict, people: list[dict] | None = None,
                     senior_keywords: list | None = None) -> list[dict]:
-    seniors = maastricht_seniors(works, people or [], senior_keywords or [])
+    seniors = maastricht_seniors(works, people or [], senior_keywords or [], overrides["confirm"])
     kept = []
     for w in works:
         if w["id"] in overrides["reject"]:
             continue
         w.pop("other_group", None)
-        if led_by_other_group(w, people or [], senior_keywords or [], seniors) and w["id"] not in overrides["confirm"]:
-            # The senior (last) author leads another group: the paper is that group's, whatever the affiliations say.
+        lead = led_by_other_group(w, people or [], senior_keywords or [], seniors)
+        if lead and w["id"] not in overrides["confirm"]:
+            # Another group's lead is on it: the paper is that group's, whatever the affiliations say.
             w["verified"] = w["counted"] = False
             w["counted_members"] = []
             w["listed_elsewhere"] = bool(w.get("group_members"))
-            w["other_group"] = (w.get("authors") or [""])[-1]
+            w["other_group"] = lead
         if w["id"] in overrides["confirm"]:
             w["verified"] = True
             w["counted"] = True

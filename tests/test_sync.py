@@ -407,15 +407,19 @@ def test_paper_led_by_another_maastricht_group_does_not_count():
         work("W8", ["A", "M Member", "Frank Verhaegen"], [None, "m", None], ["Maastro Clinic"]),
         work("W9", ["A", "A P", "M Member", "C van der Leij"], [None, "ap", "m", None], grow),  # assistant professor only
         work("W10", ["A", "M Member", "E Jones"], [None, "m", None]),                   # never listed with Maastro / GROW
+        work("W11", ["A", "Frank Verhaegen", "M Member"], [None, None, "m"]),           # a lead in the middle, CDS last
+        work("W12", ["M Member", "Frank Verhaegen", "B"], ["m", None, None]),           # a lead in the middle, CDS first
+        work("W13", ["A", "S Verberne"], [None, None], grow),                           # GROW only on a confirmed paper
+        work("W14", ["A", "S Verberne", "M Member"], [None, None, "m"]),
     ]
     works[6]["group_members"] = ["lead", "m"]
     works[8]["group_members"] = ["ap", "m"]
-    ov = {"confirm": {"W6"}, "reject": set()}
+    ov = {"confirm": {"W6", "W13"}, "reject": set()}
     out = {w["id"]: w for w in apply_overrides(works, ov, people=people, senior_keywords=["maastro", "grow"])}
-    for wid in ("W1", "W2", "W8", "W9"):
+    for wid in ("W1", "W2", "W8", "W9", "W11"):
         assert not out[wid]["counted"] and not out[wid]["verified"] and out[wid]["listed_elsewhere"]
-    assert out["W2"]["other_group"] == "C van der Leij"
-    for wid in ("W3", "W4", "W5", "W6", "W7", "W10"):
+    assert out["W2"]["other_group"] == "C van der Leij" and out["W11"]["other_group"] == "Frank Verhaegen"
+    for wid in ("W3", "W4", "W5", "W6", "W7", "W10", "W12", "W14"):
         assert out[wid]["counted"] and "other_group" not in out[wid]
 
 
