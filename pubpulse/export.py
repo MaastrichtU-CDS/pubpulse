@@ -130,11 +130,11 @@ def write_xlsx(pubs: dict, cfg: dict, path: Path) -> Path:
         f"Source: OpenAlex (CC0). Coverage: publications from {pubs.get('since_year')} onwards. Data as of {pubs.get('generated', '')}.",
         "",
         "Team-window rule (column 'Counted (team-window rule)'): a paper counts when a group author has a verified group affiliation, or when a "
-        "group member was in the team at publication time and OpenAlex lists no other affiliation for them (none, or only a broad Maastricht one). "
+        "group member was in the team at publication time and OpenAlex lists no other affiliation for them (none, or only a bare Maastricht University / MUMC+ / Radiation Oncology). "
         "Listed with another institution only: "
         "not counted. Outside the team window, and for people matched by name only, a verified group affiliation is required.",
         "Verified group affiliation: the authorship carries Maastro, Medical Data Works, Clinical Data Science, or Radiation Oncology/GROW together with Maastricht/MUMC.",
-        "Affiliation status per author: verified / mismatch (another institution recorded) / unknown (OpenAlex has no affiliation for this authorship).",
+        "Affiliation status per author: verified / unspecific (only a bare Maastricht University, MUMC+ or Radiation Oncology) / mismatch (another department or institution recorded) / unknown (OpenAlex has no affiliation for this authorship).",
         "Manual decisions (overrides.yml): confirmed = counted by hand; rejected papers are not in this file.",
         "Preprints are flagged in 'Preprint' and hidden on the website by default; they are included here.",
         "Sheet 'Group authorships' has one row per (paper, group author) for fractional or per-person counting; 'Fractional credit' = 1 / total authors.",

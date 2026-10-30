@@ -137,14 +137,37 @@ def apply_overrides(works: list[dict], overrides: dict) -> list[dict]:
 
 
 def affiliation_matches(affiliations: list[str], keywords: list) -> bool:
-    """A keyword entry is a string (substring match) or a list of strings that must ALL occur in the same
-    affiliation string (e.g. ["maastricht", "radiation oncology"]), so a generic department name alone never counts."""
+    """A keyword entry is a string or a list of strings that must ALL occur in the same affiliation string
+    (e.g. ["maastricht", "radiation oncology"]), so a generic department name alone never counts. Terms match as
+    whole words, so "grow" matches "GROW" and a footnote "5GROW" but not "growth"."""
     rules = [[x.lower() for x in k] if isinstance(k, (list, tuple)) else [str(k).lower()] for k in keywords]
+    patterns = [[re.compile(r"(?<![a-z])" + re.escape(term) + r"(?![a-z])") for term in rule] for rule in rules]
     for a in affiliations:
         a = (a or "").lower()
-        if any(all(term in a for term in rule) for rule in rules):
+        if any(all(p.search(a) for p in rule) for rule in patterns):
             return True
     return False
+
+
+# Words an affiliation may consist of and still name no specific department or institution: a bare "Maastricht
+# University", "MUMC+" or "Department of Radiation Oncology", with address parts. These are not a clear other
+# affiliation, so they count like no affiliation listed.
+_UNSPECIFIC_WORDS = {
+    "maastricht", "university", "universiteit", "univ", "medical", "medisch", "centre", "center", "centrum", "ctr",
+    "mumc", "umc", "the", "netherlands", "nederland", "limburg", "p", "o", "po", "box", "paul", "henri", "spaaklaan",
+    "spakalaan",
+}
+
+
+def affiliation_unspecific(affiliations: list[str]) -> bool:
+    """True when every affiliation string names nothing beyond Maastricht University / MUMC+ / Radiation Oncology."""
+    for a in affiliations:
+        a = (a or "").lower()
+        a = re.sub(r"(?:(?:department|dept\.?) of )?radiation oncology", " ", a)
+        a = re.sub(r"\b\d{4} ?[a-z]{2}\b", " ", a)  # Dutch postcode
+        if any(word not in _UNSPECIFIC_WORDS for word in re.findall(r"[a-z]+", a)):
+            return False
+    return bool(affiliations)
 
 
 def author_name_key(name: str) -> tuple[str, ...]:
@@ -377,7 +400,8 @@ def normalise_work(raw: dict, people: list[dict], keywords: list[str] | None = N
     """Flatten an OpenAlex work and attribute it to group members.
 
     Per member an affiliation_status is recorded: 'verified' (a group institution is on this authorship),
-    'mismatch' (affiliations present, none from the group) or 'unknown' (OpenAlex has no affiliation for it).
+    'unspecific' (only a bare Maastricht University / MUMC+ / Radiation Oncology), 'mismatch' (another department or
+    institution) or 'unknown' (OpenAlex has no affiliation for it).
     """
     people = [p for p in people if not p.get("exclude")]
     by_orcid = {(p.get("orcid") or p["orcid_discovered"]).upper(): p["slug"] for p in people if p.get("orcid") or p.get("orcid_discovered")}
@@ -426,7 +450,8 @@ def normalise_work(raw: dict, people: list[dict], keywords: list[str] | None = N
         if slug and slug not in members:
             members.append(slug)
             member_affiliations[slug] = affs
-            status[slug] = "unknown" if not affs else ("verified" if affiliation_matches(affs, keywords or []) else "mismatch")
+            status[slug] = ("unknown" if not affs else "verified" if affiliation_matches(affs, keywords or [])
+                            else "unspecific" if affiliation_unspecific(affs) else "mismatch")
             profiles[slug] = {"openalex_id": aid or None, "orcid": orcid or None, "match": method, "affiliations": affs}
     loc = raw.get("primary_location") or {}
     source = loc.get("source") or {}
@@ -462,7 +487,7 @@ def normalise_work(raw: dict, people: list[dict], keywords: list[str] | None = N
 def fetch_works(
     people: list[dict], client: OpenAlex, since_year: int, today: date,
     keywords: list[str] | None = None, policy: str = "flag", exclude_types: list[str] | None = None,
-    grace_months: int = 0, affiliation_required: set[str] | None = None, broad_keywords: list | None = None,
+    grace_months: int = 0, affiliation_required: set[str] | None = None,
 ) -> tuple[dict[str, dict], list[str]]:
     """Return {work_id: normalised work} for all tracked people, plus a list of per-person errors.
 
@@ -546,18 +571,14 @@ def fetch_works(
             continue
         w["verified"] = any(s == "verified" for s in w["affiliation_status"].values())
         # Counted for the group: a verified group affiliation, or, for team members (current staff, or inside the
-        # start/end period from the members sheet) matched by ORCID, no clear other affiliation: none listed, or only
-        # a broad Maastricht one (e.g. "Maastricht University", too wide to verify). A member listed with another
-        # institution only does not count. Outside the team, and for name-only matches, a verified group affiliation
-        # is required.
-        def no_other_affiliation(m: str) -> bool:
-            status = w["affiliation_status"].get(m)
-            return status == "unknown" or (status == "mismatch" and bool(broad_keywords)
-                                           and affiliation_matches(w["member_affiliations"].get(m) or [], broad_keywords))
+        # start/end period from the members sheet) matched by ORCID, no clear other affiliation: none listed, or only a
+        # bare Maastricht University / MUMC+ / Radiation Oncology. A member listed with another department or
+        # institution does not count. Outside the team, and for name-only matches, a verified group affiliation is
+        # required.
         w["counted_members"] = [
             m for m in w["group_members"]
             if w["affiliation_status"].get(m) == "verified"
-            or (no_other_affiliation(m)
+            or (w["affiliation_status"].get(m) in ("unknown", "unspecific")
                 and confidence.get(m) == "orcid" and m not in (affiliation_required or set())
                 and in_period(by_slug_all.get(m, {}), w.get("publication_date"), grace_months))
         ]
@@ -565,7 +586,7 @@ def fetch_works(
         # Not counted only because team members are listed with another institution: the newsletter shows these in
         # a section of their own, the website only outside its default view.
         w["listed_elsewhere"] = not w["counted"] and any(
-            w["affiliation_status"].get(m) == "mismatch" and not no_other_affiliation(m)
+            w["affiliation_status"].get(m) == "mismatch"
             and confidence.get(m) == "orcid" and m not in (affiliation_required or set())
             and in_period(by_slug_all.get(m, {}), w.get("publication_date"), grace_months)
             for m in w["group_members"])
@@ -710,7 +731,6 @@ def run(dry_run: bool = False, skip_people: bool = False, config_path: Path = CO
         people, client, int(cfg.get("since_year", 2024)), today,
         keywords=keywords, policy=cfg.get("affiliation_policy", "flag"), exclude_types=cfg.get("exclude_types"),
         grace_months=grace, affiliation_required=overrides["verify_affiliation"],
-        broad_keywords=cfg.get("author_match_keywords") or keywords,
     )
 
     enrich_people_from_works(people, fetched.values(), cfg.get("author_match_keywords") or keywords)

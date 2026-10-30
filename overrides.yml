@@ -2,7 +2,9 @@
 # under each paper on the website. Edit on GitHub and commit; the next run applies it.
 
 # Papers that DO belong to the group although OpenAlex recorded no group affiliation (shown as "unverified").
-confirm: []
+confirm:
+  - W7137993139  # Cecile Wolfs, 41P osimertinib + cranial RT (ESMO Open 2026): Maastro, OpenAlex lists only MUMC
+  - W4409875408  # Leonard Wee, Andre Dekker, radiomics vs semantic features (medRxiv 2025): Maastro in the PDF
 
 # Papers that do NOT belong to the group (wrong person with the same name, work from another job, …).
 reject: []

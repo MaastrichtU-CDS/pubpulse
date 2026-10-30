@@ -259,7 +259,7 @@ def test_normalise_recovers_coauthors_without_relaxing_name_ambiguity():
     assert work["author_members"] == ["wenjie", "rutger", "anne", "known", None, None, None]
     assert work["author_profiles"]["rutger"]["match"] == "name"
     assert work["author_profiles"]["rutger"]["openalex_id"] == "A10"
-    assert work["affiliation_status"]["anne"] == "mismatch"
+    assert work["affiliation_status"]["anne"] == "unspecific"  # a bare MUMC is no other affiliation
     # A matching name without a CDS affiliation or confirmed coauthor is not enough.
     unrelated = normalise_work(_raw(authorships=[auth("A9", "Wenjie Liang", "Elsewhere")]), people, ["maastro"])
     assert unrelated["author_members"] == [None]
@@ -355,19 +355,29 @@ def test_counted_uses_membership_period():
     assert works["W1"]["counted"] is False and works["W2"]["counted"] is True and works["W3"]["counted"] is False
 
 
-def test_broad_maastricht_affiliation_counts_like_none_listed_for_team_members():
+def test_bare_maastricht_affiliation_is_not_another_affiliation_and_grow_alone_verifies():
     from datetime import date
     from pubpulse.sync import fetch_works
 
     people = [{"slug": "m", "name": "M", "orcid": "0000-0001-0000-0001", "openalex_ids": ["A1"], "active_until": None}]
     def auth(aid, insts):
         return {"author": {"id": f"https://openalex.org/{aid}", "display_name": aid}, "institutions": [{"display_name": i} for i in insts]}
-    client = _FakeClient({"authorships.author.id:A1": [_raw("W1", [auth("A1", ["Maastricht University"])]), _raw("W2", [auth("A1", ["KU Leuven"])])]})
-    works, _ = fetch_works(people, client, 2024, date(2026, 10, 30), keywords=[["maastricht", "radiation oncology"]],
-                           broad_keywords=["maastricht", "mumc"])
-    assert works["W1"]["affiliation_status"]["m"] == "mismatch" and works["W1"]["counted"] is True  # ours, too wide to verify
-    assert works["W1"]["listed_elsewhere"] is False
-    assert works["W2"]["counted"] is False and works["W2"]["listed_elsewhere"] is True  # clearly another institution
+    client = _FakeClient({"authorships.author.id:A1": [
+        _raw("W1", [auth("A1", ["Maastricht University", "Maastricht University, P.O. Box 616, 6200MD Maastricht, The Netherlands"])]),
+        _raw("W2", [auth("A1", ["KU Leuven"])]),
+        _raw("W3", [auth("A1", ["5GROW School for Oncology and Reproduction"])]),
+        _raw("W4", [auth("A1", ["Dept of Growth and Reproduction"])]),
+        _raw("W5", [auth("A1", ["Department of Radiation Oncology"])]),
+        _raw("W6", [auth("A1", ["Maastricht University Medical Centre", "Department of Surgery, Maastricht University Medical Centre+"])]),
+        _raw("W7", [auth("A1", ["Department of Radiation Oncology, Stanford University"])])]})
+    works, _ = fetch_works(people, client, 2024, date(2026, 10, 30), keywords=["maastro", "grow", ["maastricht", "radiation oncology"]])
+    for wid in ("W1", "W5"):  # names no department or institution beyond Maastricht University / Radiation Oncology
+        assert works[wid]["affiliation_status"]["m"] == "unspecific"
+        assert works[wid]["counted"] is True and works[wid]["listed_elsewhere"] is False
+    for wid in ("W2", "W4", "W6", "W7"):  # another institution or department; "growth" is not GROW
+        assert works[wid]["affiliation_status"]["m"] == "mismatch"
+        assert works[wid]["counted"] is False and works[wid]["listed_elsewhere"] is True
+    assert works["W3"]["affiliation_status"]["m"] == "verified" and works["W3"]["counted"] is True
 
 
 def test_verify_affiliation_exception_requires_verified():

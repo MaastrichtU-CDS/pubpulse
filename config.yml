@@ -16,7 +16,8 @@ members_csv: members.csv
 site:
   # verified = only papers where a group author has a verified group affiliation (strictest)
   # counted  = team-window rule: a verified group affiliation, or for team members no other affiliation listed (none,
-  #            or only a broad Maastricht one); papers listing another institution only are left out; all = everything
+  #            or only a bare Maastricht University / MUMC+ / Radiation Oncology); papers listing another department or
+  #            institution only are left out; all = everything
   # The newsletter uses the team-window rule and lists "another institution only" papers in a section of their own.
   default_view: counted
   default_include_preprints: false  # hide preprints unless switched on
@@ -50,7 +51,7 @@ institution_keywords:
   - medical data works
   - clinical data science
   - [maastricht, radiation oncology]
-  - [maastricht, grow]
+  - grow
   - [mumc, radiation oncology]
 
 # Broader words used only to pick the right OpenAlex author record for a person (never to verify a paper):

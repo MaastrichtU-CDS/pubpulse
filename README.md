@@ -101,8 +101,8 @@ known coauthors and unresolved candidates are saved in `data/identifier_discover
 collecting papers. Existing supplied profile IDs are preserved. Negative results and provider responses are cached
 for 30 days. A configurable SerpAPI search cap preserves quota for the monthly publication cross-check.
 - Verified means the authorship on that paper mentions Maastro, Radiation Oncology, GROW or Medical Data Works.
-  "Maastricht University" alone is deliberately not enough. Every paper shows, per group author: verified, other
-  affiliation, or no affiliation data. Papers are not checked by hand. Set `affiliation_policy: require` in `config.yml` to drop
+  "Maastricht University" alone is deliberately not enough. Every paper shows, per group author: verified, unspecific
+  (only a bare Maastricht University / MUMC+ / Radiation Oncology), other affiliation, or no affiliation data. Papers are not checked by hand. Set `affiliation_policy: require` in `config.yml` to drop
   papers without a verified group author.
 
 **A paper is not mine (same name, different person).**
@@ -199,8 +199,9 @@ Pure team. With such a key, Pure could serve as an extra, validated affiliation 
 **Default view.** The website (headline numbers, list, statistics) and the newsletter both use the team-window rule:
 papers where a group author has a verified Maastro / Radiation Oncology / GROW / Medical Data Works affiliation, or a
 team member with no affiliation listed in OpenAlex, or that were confirmed by hand (`site.default_view` in config.yml).
-A Maastricht-only affiliation ("Maastricht University", too wide to verify) counts like none listed. Papers that list
-team members with another institution only are left out of the default view; the newsletter lists them in a section
+An affiliation that names nothing more specific than "Maastricht University", "MUMC+" or "Department of Radiation
+Oncology" is not verified, but it is no other affiliation either: it counts like none listed. Papers that list team
+members with another department or institution only are left out of the default view; the newsletter lists them in a section
 of their own. *Verified affiliation only* remains as a stricter filter.
 
 **Senior vs non-senior needs no upkeep.** It follows each person's role on the CDS staff page: professors,
