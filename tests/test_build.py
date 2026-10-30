@@ -144,10 +144,10 @@ def test_digest_lists_papers_with_another_institution_in_their_own_section():
                             member_affiliations={"p1": ["Other Institute", "Dept X, Other Institute"]})
     d = build_digest(pubs, {**CFG, "digest": {"recent_days": 30}})
     body = d["html"]
-    week, other = body.index("Published last week"), body.index("Also by team members, listed with another affiliation")
+    week, other = body.index("Published last week"), body.index("Also by team members, with another group or affiliation")
     assert week < body.index("Paper 1", week) < body.index("Paper 2", week) < other < body.index("Paper 0", week)
     assert "Person One (Other Institute)" in body and "Person One (Other Institute)" in d["text"]
-    assert "2 published last week, 1 listed with another affiliation" in body and d["new_count"] == 3
+    assert "2 published last week, 1 with another group or affiliation" in body and d["new_count"] == 3
     assert "Paper 0" not in d["subject"]
 
 

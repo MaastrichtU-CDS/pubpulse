@@ -400,6 +400,19 @@ def test_verify_affiliation_exception_requires_verified():
     assert works["W2"]["counted"] is True
 
 
+def test_paper_with_another_groups_senior_as_last_author_does_not_count():
+    from pubpulse.sync import apply_overrides
+    def work(wid, authors):
+        return {"id": wid, "authors": authors, "group_members": ["m"], "verified": True, "counted": True,
+                "counted_members": ["m"], "listed_elsewhere": False}
+    works = [work("W1", ["M", "Frank Verhaegen"]), work("W2", ["Frank Verhaegen", "M"]), work("W3", ["M", "Frank Verhaegen"])]
+    ov = {"confirm": {"W3"}, "reject": set(), "verify_affiliation": set(), "other_group_seniors": {("frank", "verhaegen")}}
+    w1, w2, w3 = apply_overrides(works, ov)
+    assert not w1["counted"] and not w1["verified"] and w1["listed_elsewhere"] and w1["other_group"] == "Frank Verhaegen"
+    assert w2["counted"] and "other_group" not in w2  # only as senior (last) author
+    assert w3["counted"]  # confirmed by hand
+
+
 def test_merge_review_decisions_respects_overrides():
     from pubpulse.sync import merge_review_decisions
     ov = {"confirm": {"W1"}, "reject": {"W2"}, "approve_external": set(), "verify_affiliation": set()}

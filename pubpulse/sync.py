@@ -85,11 +85,12 @@ def save_pending(ids: list[str], path: Path = NOTIFIED_PATH) -> None:
 def load_overrides(path: Path = OVERRIDES_PATH) -> dict:
     """Manual decisions: {'confirm': [W..], 'reject': [W..]}. Ids may be given as W123 or full OpenAlex URLs."""
     if not path.exists():
-        return {"confirm": set(), "reject": set(), "verify_affiliation": set()}
+        return {"confirm": set(), "reject": set(), "verify_affiliation": set(), "other_group_seniors": set()}
     with open(path, encoding="utf-8") as f:
         raw = yaml.safe_load(f) or {}
     out = {k: {short_id(str(x)) for x in (raw.get(k) or [])} for k in ("confirm", "reject")}
     out["verify_affiliation"] = {str(x).strip().lower() for x in (raw.get("verify_affiliation") or [])}
+    out["other_group_seniors"] = {author_name_key(str(x)) for x in (raw.get("other_group_seniors") or [])} - {()}
     return out
 
 
@@ -123,10 +124,19 @@ def merge_review_decisions(overrides: dict, decisions: dict) -> dict:
 
 
 def apply_overrides(works: list[dict], overrides: dict) -> list[dict]:
+    seniors = overrides.get("other_group_seniors") or set()
     kept = []
     for w in works:
         if w["id"] in overrides["reject"]:
             continue
+        w.pop("other_group", None)
+        last = (w.get("authors") or [""])[-1]
+        if seniors and author_name_key(last) in seniors and w["id"] not in overrides["confirm"]:
+            # The senior (last) author leads another group: the paper is that group's, whatever the affiliations say.
+            w["verified"] = w["counted"] = False
+            w["counted_members"] = []
+            w["listed_elsewhere"] = bool(w.get("group_members"))
+            w["other_group"] = last
         if w["id"] in overrides["confirm"]:
             w["verified"] = True
             w["counted"] = True

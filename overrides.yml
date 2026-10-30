@@ -14,3 +14,8 @@ reject: []
 verify_affiliation:
   - matthijs-sloep
   - ralph-brecheisen
+
+# Senior authors who lead another group: a paper with one of them as last author belongs to that group and does not
+# count, whatever the affiliations say (a paper listed under confirm still counts). Full name as on the paper.
+other_group_seniors:
+  - Frank Verhaegen

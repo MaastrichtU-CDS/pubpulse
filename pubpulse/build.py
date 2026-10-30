@@ -225,12 +225,12 @@ def build_digest(pubs: dict, cfg: dict, pending_ids: list[str] | None = None, is
     sections = [(title, note, ws) for title, note, ws in (
         ("Published last week", "", this_week),
         ("Published earlier, only now listed", f"Published in the past {recent_days} days; these reached OpenAlex, our source, only this week.", earlier),
-        ("Also by team members, listed with another affiliation", "On these papers OpenAlex lists our team members with another institution only.", elsewhere),
+        ("Also by team members, with another group or affiliation", "On these papers OpenAlex lists our team members with another institution only, or the senior author leads another group.", elsewhere),
     ) if ws]
     breakdown = ", ".join(x for x in (
         f"{len(this_week)} published last week" if this_week else "",
         f"{len(earlier)} published earlier and only now listed in OpenAlex" if earlier else "",
-        f"{len(elsewhere)} listed with another affiliation" if elsewhere else "",
+        f"{len(elsewhere)} with another group or affiliation" if elsewhere else "",
     ) if x)
     site = cfg.get("site_url", "")
     group = cfg.get("group_name", "the group")

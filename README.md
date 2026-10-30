@@ -294,7 +294,9 @@ publication time and OpenAlex lists no affiliation for them. A member listed wit
 example a second appointment elsewhere) does not count; confirm such a paper by hand if it should. Former staff count
 only with a verified group affiliation. **Exceptions by name** go in
 [overrides.yml](overrides.yml) under `verify_affiliation:` (member ids from people.yml): their papers count only with a
-verified affiliation. Papers you never want counted: `reject:`. That is the whole rule.
+verified affiliation. Senior authors who lead another group go under `other_group_seniors:`: a paper with one of them
+as last author belongs to that group and does not count. Papers you never want counted: `reject:`. That is the whole
+rule.
 
 ### Optional: membership periods in a private Google Sheet
 
