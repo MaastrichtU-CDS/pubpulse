@@ -763,6 +763,8 @@
      "url": "https://openalex.org/W7223167501",
      "current_coauthors": [
       "andre-dekker",
+      "johan-van-soest",
+      "joshi-hogenboom",
       "leonard-wee"
      ],
      "author_name": "Ashish Kumar Jha",
@@ -2696,17 +2698,31 @@
    "checked_at": "2026-10-30",
    "window_start": "2024-10-30",
    "recent_months": 24,
-   "shared_papers": 2,
-   "recent_shared_papers": 0,
-   "last_collaboration_date": null,
-   "followup_until": null,
-   "current_coauthors": [],
-   "status": "historical_collaboration",
+   "shared_papers": 3,
+   "recent_shared_papers": 1,
+   "last_collaboration_date": "2026-10-29",
+   "followup_until": "2028-10-29",
+   "current_coauthors": [
+    "sander-puts"
+   ],
+   "status": "recent_collaboration",
    "orcid": "0000-0003-3379-7290",
    "orcid_verified": false,
    "scholar_id": null,
    "identifier_evidence": {},
    "evidence": [
+    {
+     "work": "W7224308387",
+     "title": "Generating patient-friendly radiology reports with a local large language model: expert evaluation of quality and readability",
+     "date": "2026-10-29",
+     "url": "https://doi.org/10.1007/s00330-026-12971-0",
+     "current_coauthors": [
+      "sander-puts"
+     ],
+     "author_name": "J. Martijn Nobel",
+     "author_position": 8,
+     "recent": true
+    },
     {
      "work": "W4390788550",
      "title": "Natural Language Processing Algorithm Used for Staging Pulmonary Oncology from Free-Text Radiological Reports: “Including PET-CT and Validation Towards Clinical Use”",
@@ -3714,9 +3730,11 @@
      "url": "https://openalex.org/W7223167501",
      "current_coauthors": [
       "andre-dekker",
+      "johan-van-soest",
+      "joshi-hogenboom",
       "leonard-wee"
      ],
-     "author_name": "Varsha; id_orcid 0000-0002-4756-2866 Gouthamchand",
+     "author_name": "Varsha Gouthamchand",
      "author_position": 1,
      "recent": true
     },
@@ -4683,5 +4701,5 @@
  },
  "former_staff_reviewed": 88,
  "with_collaborations": 36,
- "with_recent_collaborations": 28
+ "with_recent_collaborations": 29
 }

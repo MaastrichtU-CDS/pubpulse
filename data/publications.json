@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-30T11:56:19+00:00",
+ "generated": "2026-10-30T15:28:23+00:00",
  "group_name": "Clinical Data Science (Maastro / Maastricht University)",
  "site_url": "https://maastrichtu-cds.github.io/pubpulse/",
  "repo_url": "https://github.com/MaastrichtU-CDS/pubpulse",
@@ -13,8 +13,12 @@
  "last_run": {
   "date": "2026-10-30",
   "baseline": false,
-  "new_count": 0,
-  "new_ids": [],
+  "new_count": 3,
+  "new_ids": [
+   "W7224493705",
+   "W7224308387",
+   "W7224572054"
+  ],
   "needs_review": [
    "ali-al-zein",
    "ali-zaila",
@@ -2899,14 +2903,16 @@
     "checked_at": "2026-10-30",
     "window_start": "2024-10-30",
     "recent_months": 24,
-    "shared_papers": 2,
-    "recent_shared_papers": 0,
-    "last_collaboration_date": null,
-    "followup_until": null,
-    "current_coauthors": []
+    "shared_papers": 3,
+    "recent_shared_papers": 1,
+    "last_collaboration_date": "2026-10-29",
+    "followup_until": "2028-10-29",
+    "current_coauthors": [
+     "sander-puts"
+    ]
    },
-   "tracked": false,
-   "tracked_until": null,
+   "tracked": true,
+   "tracked_until": "2028-10-29",
    "needs_review": false
   },
   {
@@ -3937,6 +3943,268 @@
   }
  ],
  "works": [
+  {
+   "id": "W7224572054",
+   "openalex_url": "https://openalex.org/W7224572054",
+   "doi": "https://doi.org/10.64898/2026.10.24.761586",
+   "title": "Brain state locks silent memories in a trained fly connectome",
+   "publication_date": "2026-10-29",
+   "year": 2026,
+   "type": "preprint",
+   "journal": "bioRxiv (Cold Spring Harbor Laboratory)",
+   "source_id": "S4306402567",
+   "landing_url": "https://doi.org/10.64898/2026.10.24.761586",
+   "is_oa": true,
+   "oa_url": "https://doi.org/10.64898/2026.10.24.761586",
+   "license": "cc-by-nc-nd",
+   "pdf_url": null,
+   "authors": [
+    "Han Wang",
+    "Joe Poh Sheng YEONG",
+    "Yunhua Zhao",
+    "Yuhui Zhao",
+    "Zizhong Yu",
+    "Xiaoyu Liu",
+    "Ruoyun He",
+    "Huikuan Chen",
+    "Ting Liu",
+    "Ye Tian",
+    "Weibang Chen",
+    "Yao Cai",
+    "Yue Xu",
+    "Hongyu Ning",
+    "Xuanhe Hou",
+    "Lingpin Pang",
+    "Danxian Jiang",
+    "Huafeng Liu",
+    "Junfeng Hao",
+    "Chunjie Tian"
+   ],
+   "author_members": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    "xuanhe-hou",
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   "author_profiles": {
+    "xuanhe-hou": {
+     "openalex_id": "A5153266758",
+     "orcid": null,
+     "match": "openalex",
+     "affiliations": [
+      "Maastro Clinic",
+      "Department of Radiation Oncology (MAASTRO), GROW - Research Institute for Oncology and Reproduction, Maastricht University, Maastricht, the Netherlands;"
+     ]
+    }
+   },
+   "author_positions": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20
+   ],
+   "author_count": 20,
+   "group_members": [
+    "xuanhe-hou"
+   ],
+   "member_affiliations": {
+    "xuanhe-hou": [
+     "Maastro Clinic",
+     "Department of Radiation Oncology (MAASTRO), GROW - Research Institute for Oncology and Reproduction, Maastricht University, Maastricht, the Netherlands;"
+    ]
+   },
+   "affiliation_status": {
+    "xuanhe-hou": "verified"
+   },
+   "cited_by_count": 0,
+   "abstract": "Complete connectomes now exist for insect nervous systems, but whether a fixed wiring diagram can learn, and what its memories consist of, is unknown. Here, we trained a spiking model of the whole male Drosophila central nervous system, 167,106 neurons with fixed wiring, to plan moves and to remember a visual cue. Spikes write the cue into neuronal adaptation, which holds it silently until the next input reads it out. Cells that hold the trace are enriched for transcripts of a calcium-activated potassium channel in fly cell atlases. The learned readout recalls the trace only in the brain state of learning: the same trace evokes a different response at another delay, and a disease-like loss of potassium current rewrites the trace and changes how it is read. Learning in the new state is spared. Memory failure can arise from a change of state rather than a loss of storage.",
+   "verified": true,
+   "counted_members": [
+    "xuanhe-hou"
+   ],
+   "counted": true,
+   "first_seen": "2026-10-30",
+   "journal_impact": null,
+   "journal_h_index": null
+  },
+  {
+   "id": "W7224493705",
+   "openalex_url": "https://openalex.org/W7224493705",
+   "doi": "https://doi.org/10.3389/fdata.2026.1910002",
+   "title": "The limits of privacy enhancement in healthcare federated learning: a ELSA perspective in the EU context",
+   "publication_date": "2026-10-29",
+   "year": 2026,
+   "type": "article",
+   "journal": "Frontiers in Big Data",
+   "source_id": "S4210201220",
+   "landing_url": "https://doi.org/10.3389/fdata.2026.1910002",
+   "is_oa": true,
+   "oa_url": "https://www.frontiersin.org/journals/big-data/articles/10.3389/fdata.2026.1910002/pdf",
+   "license": "cc-by",
+   "pdf_url": "https://www.frontiersin.org/journals/big-data/articles/10.3389/fdata.2026.1910002/pdf",
+   "authors": [
+    "Marine Jacquemin"
+   ],
+   "author_members": [
+    "marine-jacquemin"
+   ],
+   "author_profiles": {
+    "marine-jacquemin": {
+     "openalex_id": "A5118451930",
+     "orcid": "0009-0006-1221-7022",
+     "match": "openalex",
+     "affiliations": [
+      "Maastricht University Medical Centre",
+      "Maastricht University",
+      "Department of Philosophy, Faculty of Arts and Social Sciences, Maastricht University",
+      "Department of Radiation Oncology, GROW Research Institute for Oncology and Reproduction, Maastricht University Medical Centre+"
+     ]
+    }
+   },
+   "author_positions": [
+    1
+   ],
+   "author_count": 1,
+   "group_members": [
+    "marine-jacquemin"
+   ],
+   "member_affiliations": {
+    "marine-jacquemin": [
+     "Maastricht University Medical Centre",
+     "Maastricht University",
+     "Department of Philosophy, Faculty of Arts and Social Sciences, Maastricht University",
+     "Department of Radiation Oncology, GROW Research Institute for Oncology and Reproduction, Maastricht University Medical Centre+"
+    ]
+   },
+   "affiliation_status": {
+    "marine-jacquemin": "verified"
+   },
+   "cited_by_count": 0,
+   "abstract": "Federated Learning (FL) usage is steadily increasing in healthcare. Offering an attractive alternative to centralized data processing, FL is often promoted as a privacy-enhancing technology (PET) because it keeps patient-level data local, exchanging only aggregated data or model updates. As such, it is frequently presented as a means of addressing the ethical, legal and societal challenges associated with the use of sensitive health data. This framing has contributed to growing policy interest in FL within initiatives such as the European Health Data Space (EHDS). This paper examines FL from an ethical, legal and societal (ELSA) perspective in the EU context, focusing on its interaction with the European data protection framework and contemporary debates on health data governance. First, it analyzes the interaction between FL architectures and the General Data Protection regulation (GDPR), showing that questions of controllership, joint responsibility, and identifiability persist despite decentralization, particularly in complex multi-institutional settings. Second, it argues that privacy-centric approaches to health data governance remain ethically insufficient because harmful inferences, discrimination, and collective harms may arise even when data remains formally anonymous. The dominant focus on reidentification risk thus reflects a narrow and individualistic conception of privacy that is poorly adapted to the contemporary data landscape of the EU. It fails to capture broader forms of harm, including group-level discrimination, inferential profiling, and structural power asymmetries. The paper concludes that, despite its framing as a PET, the use of FL alone is not sufficient to guarantee appropriate health data protection. Indeed, FL should also be approached as a distributed data-processing paradigm in which risks and benefits depend on implementation choices, institutional arrangements, and regulatory interpretation. Accordingly, FL should be situated within broader questions of data governance, including how access, accountability, and collaboration are structured and distributed across institutions.",
+   "verified": true,
+   "counted_members": [
+    "marine-jacquemin"
+   ],
+   "counted": true,
+   "first_seen": "2026-10-30",
+   "journal_impact": 7.1,
+   "journal_h_index": 53
+  },
+  {
+   "id": "W7224308387",
+   "openalex_url": "https://openalex.org/W7224308387",
+   "doi": "https://doi.org/10.1007/s00330-026-12971-0",
+   "title": "Generating patient-friendly radiology reports with a local large language model: expert evaluation of quality and readability",
+   "publication_date": "2026-10-29",
+   "year": 2026,
+   "type": "article",
+   "journal": "European Radiology",
+   "source_id": "S4819472",
+   "landing_url": "https://doi.org/10.1007/s00330-026-12971-0",
+   "is_oa": true,
+   "oa_url": "https://doi.org/10.1007/s00330-026-12971-0",
+   "license": "cc-by",
+   "pdf_url": null,
+   "authors": [
+    "Frederieke A. M. van der Mee",
+    "Rens Broos",
+    "Ramon P G Ottenheijm",
+    "Sander Puts",
+    "Frank M. Zijta",
+    "Jesse Jansen",
+    "Jochen Cals",
+    "J. Martijn Nobel",
+    "Ralph T. H. Leijenaar"
+   ],
+   "author_members": [
+    null,
+    null,
+    null,
+    "sander-puts",
+    null,
+    null,
+    null,
+    "martijn-nobel",
+    null
+   ],
+   "author_profiles": {
+    "sander-puts": {
+     "openalex_id": "A5089485363",
+     "orcid": "0000-0003-4148-1755",
+     "match": "openalex",
+     "affiliations": []
+    },
+    "martijn-nobel": {
+     "openalex_id": "A5031899979",
+     "orcid": "0000-0003-3379-7290",
+     "match": "openalex",
+     "affiliations": []
+    }
+   },
+   "author_positions": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+   ],
+   "author_count": 9,
+   "group_members": [
+    "sander-puts"
+   ],
+   "member_affiliations": {
+    "sander-puts": []
+   },
+   "affiliation_status": {
+    "sander-puts": "unknown"
+   },
+   "cited_by_count": 0,
+   "abstract": "Abstract Objectives To assess the feasibility of using a locally hosted large language model (LLM) to generate patient-friendly radiology reports while avoiding cloud transfer of report text. Materials and methods In this retrospective study, 360 chest, knee, lumbar spine, and shoulder X-rays, and shoulder and abdominal ultrasound reports from Dutch primary care were included. Main report sections ( n = 359) and conclusion sections ( n = 350) were translated into patient-friendly versions using Gemma-3 (12B parameters) and assessed for accuracy and completeness on 5-point Likert scales. Readability was evaluated using text length and Flesch–Douma reading ease (FDRE) scores. Hallucinations were systematically documented. Statistical analyses included Kruskal–Wallis, Wilcoxon signed-rank, and paired t -tests. Results Patient-friendly conclusions achieved higher median accuracy scores than main reports (5 [Q1–Q3 5–5] vs 4 [3–5]), while completeness scores were high for both sections (5 [5–5]). Compared with original reports, patient-friendly reports were longer (median increase 65 words [48–84], p < 0.001) and had higher FDRE scores (mean increase 54.2 ± 18.8, p < 0.001). Overall, 71.0% of main reports and 96.0% of conclusions met predefined quality criteria (accuracy and completeness ≥ 4), while 48.0% of combined main report and conclusion sections met both quality and readability criteria (FDRE score > 60). Clinically relevant hallucinations occurred in 45 reports (12.5%). Conclusion A locally hosted LLM demonstrated feasibility for generating patient-friendly translations of Dutch X-ray and ultrasound reports while avoiding cloud transfer of data, with better performance for conclusion sections than main reports. However, clinically relevant hallucinations remain a safety concern and indicate the need for clinician oversight and further evaluation before clinical implementation. Key Points Question Can a locally hosted LLM generate patient-friendly radiology reports while preserving data privacy and maintaining acceptable accuracy, completeness, and readability? Findings A locally hosted LLM generated patient-friendly report conclusions with higher quality scores than main reports, while clinically relevant hallucinations remained an important safety concern . Clinical relevance A locally hosted LLM has potential to generate patient-friendly radiology report translations without external cloud data transfer. Report conclusions appear to be the most promising initial application, although clinician oversight and further patient-centered validation remain essential before clinical implementation .",
+   "verified": false,
+   "counted_members": [
+    "sander-puts"
+   ],
+   "counted": true,
+   "first_seen": "2026-10-30",
+   "journal_impact": 5.3,
+   "journal_h_index": 212
+  },
   {
    "id": "W7223572531",
    "openalex_url": "https://openalex.org/W7223572531",
@@ -10696,9 +10964,9 @@
    "source_id": "S2764915710",
    "landing_url": "https://doi.org/10.1016/j.clnesp.2026.103126",
    "is_oa": true,
-   "oa_url": "https://doi.org/10.1016/j.clnesp.2026.103126",
+   "oa_url": "https://www.clinicalnutritionespen.com/article/S2405-4577(26)00222-6/pdf",
    "license": "cc-by",
-   "pdf_url": null,
+   "pdf_url": "https://www.clinicalnutritionespen.com/article/S2405-4577(26)00222-6/pdf",
    "authors": [
     "Yan Sun",
     "Isabel M. van Ruijven",
@@ -10751,7 +11019,7 @@
     "ralph-brecheisen": "mismatch"
    },
    "cited_by_count": 0,
-   "abstract": "BACKGROUND: Skeletal muscle mass and radiation attenuation (RA) have been shown to be associated with chemotoxicity and survival in cancer patients. However, little is known about the clinical significance of adipose tissue RA, which has been hypothesized to be associated with tissue inflammation and insulin resistance. We investigated the association between adipose tissue RA, chemotoxicity, and survival in patients with metastatic colorectal cancer (mCRC) by performing a secondary analysis using data from a randomized controlled trial. METHODS: based on stature. Associations between these body composition parameters and overall survival as well as chemotoxicity (NCI-CTCAE v 4.03) were evaluated using univariable and multivariable logistic and Cox regression analysis. Multivariable models evaluated body composition parameters, adjusted for age, sex, and significant clinically relevant covariates. RESULTS: Among the 104 patients in the cohort, 38 were female (36.5%). Mean age was 65.5 ± 9.5 years. 43 patients (41.3%) developed grade 3/4 toxicity. Pre-treatment SAT-RA was independently associated with grade 3/4 toxicities (OR = 0.78, 95% CI 0.62-0.98). Chemotherapy regimens and nutritional support were not associated with chemotoxicity. In the multivariable Cox analysis, SAT-RA (HR = 1.24, 95% CI 1.08-1.43) and SM-RA (HR = 0.74, 95% CI 0.61-0.90) were associated with shorter overall survival. CONCLUSION: Higher SAT-RA and lower SM-RA at baseline were associated with shorter overall survival of patients with mCRC, and lower SAT-RA was associated with increased chemotoxicity. These body composition alterations should be investigated in future chemotherapy related studies.",
+   "abstract": "Background Skeletal muscle mass and radiation attenuation (RA) have been shown to be associated with chemotoxicity and survival in cancer patients. However, little is known about the clinical significance of adipose tissue RA, which has been hypothesized to be associated with tissue inflammation and insulin resistance. We investigated the association between adipose tissue RA, chemotoxicity, and survival in patients with metastatic colorectal cancer (mCRC) by performing a secondary analysis using data from a randomized controlled trial. Methods We included 104 mCRC patients treated with standard first-line chemotherapy. Using diagnostic abdominal computed tomography (CT) scans, we assessed height adjusted (cm 2 ) area and RA of skeletal muscle (SM), visceral adipose tissue (VAT), and subcutaneous adipose tissue (SAT) at the third lumbar vertebra, and calculated SM index (SMI), VATI, and SATI as cm 2 /m 2 based on stature. Associations between these body composition parameters and overall survival as well as chemotoxicity (NCI-CTCAE v 4.03) were evaluated using univariable and multivariable logistic and Cox regression analysis. Multivariable models evaluated body composition parameters, adjusted for age, sex, and significant clinically relevant covariates. Results Among the 104 patients in the cohort, 38 were female (36.5%). Mean age was 65.5 ± 9.5 years. 43 patients (41.3%) developed grade 3/4 toxicity. Pre-treatment SAT-RA was independently associated with grade 3/4 toxicities (OR = 0.78, 95% CI 0.62–0.98). Chemotherapy regimens and nutritional support were not associated with chemotoxicity. In the multivariable Cox analysis, SAT-RA (HR = 1.24, 95% CI 1.08–1.43) and SM-RA (HR = 0.74, 95% CI 0.61–0.90) were associated with shorter overall survival. Conclusion Higher SAT-RA and lower SM-RA at baseline were associated with shorter overall survival of patients with mCRC, and lower SAT-RA was associated with increased chemotoxicity. These body composition alterations should be investigated in future chemotherapy related studies.",
    "verified": false,
    "counted_members": [],
    "counted": false,
@@ -10801,7 +11069,7 @@
    "affiliation_status": {
     "anshu-ankolekar": "unknown"
    },
-   "cited_by_count": 1,
+   "cited_by_count": 2,
    "abstract": null,
    "verified": false,
    "counted_members": [
@@ -13059,7 +13327,7 @@
     "Charles Auffray",
     "Jie Shen",
     "Nareen Katta",
-    "Steven J. MacLennan",
+    "Steven MacLennan",
     "Sara MacLennan",
     "Valerie Speirs",
     "Yilin Xu",
@@ -18528,7 +18796,6 @@
      "match": "openalex",
      "affiliations": [
       "Maastricht University",
-      "Department of Surgery, NUTRIM School of Nutrition and Translational Research in Metabolism Maastricht University  Maastricht the Netherlands",
       "Department of Surgery, NUTRIM School of Nutrition and Translational Research in Metabolism, Maastricht University, Maastricht, the Netherlands"
      ]
     }
@@ -18551,7 +18818,6 @@
    "member_affiliations": {
     "ralph-brecheisen": [
      "Maastricht University",
-     "Department of Surgery, NUTRIM School of Nutrition and Translational Research in Metabolism Maastricht University  Maastricht the Netherlands",
      "Department of Surgery, NUTRIM School of Nutrition and Translational Research in Metabolism, Maastricht University, Maastricht, the Netherlands"
     ]
    },
@@ -19093,7 +19359,6 @@
      "affiliations": [
       "Maastricht University Medical Centre",
       "Maastro Clinic",
-      "Department of Radiation Oncology (Maastro) GROW School for Oncology and Reproduction Maastricht University Medical Centre+  Maastricht the Netherlands",
       "Department of Radiation Oncology (Maastro), GROW School for Oncology and Reproduction, Maastricht University Medical Centre+, Maastricht, the Netherlands"
      ]
     },
@@ -19104,7 +19369,6 @@
      "affiliations": [
       "Maastricht University Medical Centre",
       "Maastro Clinic",
-      "Department of Radiation Oncology (Maastro) GROW School for Oncology and Reproduction Maastricht University Medical Centre+  Maastricht the Netherlands",
       "Department of Radiation Oncology (Maastro), GROW School for Oncology and Reproduction, Maastricht University Medical Centre+, Maastricht, the Netherlands"
      ]
     },
@@ -19115,7 +19379,6 @@
      "affiliations": [
       "Maastricht University Medical Centre",
       "Maastro Clinic",
-      "Department of Radiation Oncology (Maastro) GROW School for Oncology and Reproduction Maastricht University Medical Centre+  Maastricht the Netherlands",
       "Department of Radiation Oncology (Maastro), GROW School for Oncology and Reproduction, Maastricht University Medical Centre+, Maastricht, the Netherlands"
      ]
     }
@@ -19143,19 +19406,16 @@
     "pedro-mateus": [
      "Maastricht University Medical Centre",
      "Maastro Clinic",
-     "Department of Radiation Oncology (Maastro) GROW School for Oncology and Reproduction Maastricht University Medical Centre+  Maastricht the Netherlands",
      "Department of Radiation Oncology (Maastro), GROW School for Oncology and Reproduction, Maastricht University Medical Centre+, Maastricht, the Netherlands"
     ],
     "biche-osong": [
      "Maastricht University Medical Centre",
      "Maastro Clinic",
-     "Department of Radiation Oncology (Maastro) GROW School for Oncology and Reproduction Maastricht University Medical Centre+  Maastricht the Netherlands",
      "Department of Radiation Oncology (Maastro), GROW School for Oncology and Reproduction, Maastricht University Medical Centre+, Maastricht, the Netherlands"
     ],
     "andre-dekker": [
      "Maastricht University Medical Centre",
      "Maastro Clinic",
-     "Department of Radiation Oncology (Maastro) GROW School for Oncology and Reproduction Maastricht University Medical Centre+  Maastricht the Netherlands",
      "Department of Radiation Oncology (Maastro), GROW School for Oncology and Reproduction, Maastricht University Medical Centre+, Maastricht, the Netherlands"
     ]
    },
@@ -20490,7 +20750,7 @@
     "johan-van-soest": "verified",
     "andre-dekker": "verified"
    },
-   "cited_by_count": 8,
+   "cited_by_count": 9,
    "abstract": "Access to large datasets, the rise of the Internet of Things (IoT) and the ease of collecting personal data, have led to significant breakthroughs in machine learning. However, they have also raised new concerns about privacy data protection. Controversies like the Facebook-Cambridge Analytica scandal highlight unethical practices in today's digital landscape. Historical privacy incidents have led to the development of technical and legal solutions to protect data subjects' right to privacy. However, within machine learning, these problems have largely been approached from a mathematical point of view, ignoring the larger context in which privacy is relevant. This technical approach has benefited data-controllers and failed to protect individuals adequately. Moreover, it has aligned with Big Tech organizations' interests and allowed them to further push the discussion in a direction that is favorable to their interests. This paper reflects on current privacy approaches in machine learning and explores how various big organizations guide the public discourse, and how this harms data subjects. It also critiques the current data protection regulations, as they allow superficial compliance without addressing deeper ethical issues. Finally, it argues that redefining privacy to focus on harm to data subjects rather than on data breaches would benefit data subjects as well as society at large.",
    "verified": true,
    "counted_members": [
@@ -21018,7 +21278,7 @@
     "minghua-li": "verified",
     "leonard-wee": "verified"
    },
-   "cited_by_count": 35,
+   "cited_by_count": 36,
    "abstract": "BACKGROUND: Current risk stratification for stage II colorectal cancer (CRC) has limited accuracy in identifying patients who would benefit from adjuvant chemotherapy, leading to potential overtreatment or undertreatment. We aimed to develop a more precise risk stratification system by integrating artificial intelligence-based imaging analysis with pathological markers. PATIENTS AND METHODS: We analyzed 2992 stage II CRC patients from 12 centers. A deep learning classifier (Swin Transformer Assisted Risk-stratification for CRC, STAR-CRC) was developed using multi-planar computed tomography (CT) images from 1587 patients (training : internal validation = 7 : 3) and validated in 1405 patients from eight independent centers, which stratified patients into low-, uncertain-, and high-risk groups. To further refine the uncertain-risk group, a composite score based on pathological markers (pT4 stage, number of lymph nodes sampled, perineural invasion, and lymphovascular invasion) was applied, forming the Intelligent Risk Integration System for stage II Colorectal Cancer (IRIS-CRC). IRIS-CRC was compared against the guideline-based risk stratification system (GRSS-CRC) for prediction performance and validated in the validation dataset. RESULTS: IRIS-CRC stratified patients into four prognostic groups with distinct 3-year disease-free survival rates (≥95%, 95%-75%, 75%-55%, ≤55%). Upon external validation, compared with GRSS-CRC, IRIS-CRC downstaged 27.1% of high-risk patients into the favorable group, and upstaged 6.5% of low-risk patients into the very poor prognosis group who might require more aggressive treatment. In the GRSS-CRC intermediate-risk group of the external validation dataset, IRIS-CRC reclassified 40.1% as favorable prognosis and 7.0% as very poor prognosis. IRIS-CRC's performance maintained generalizability in both chemotherapy and non-chemotherapy cohorts. CONCLUSIONS: IRIS-CRC offers a more precise and personalized risk assessment than current guideline-based risk factors, potentially sparing low-risk patients from unnecessary adjuvant chemotherapy while identifying high-risk individuals for more aggressive treatment. This novel approach holds promise for improving clinical decision-making and outcomes in stage II CRC.",
    "verified": true,
    "counted_members": [
@@ -22045,7 +22305,7 @@
     "andre-dekker": "verified",
     "leonard-wee": "verified"
    },
-   "cited_by_count": 0,
+   "cited_by_count": 1,
    "abstract": "Information on health data is often shrouded in exclusivity and sharing of such information is normally difficult and time-locked for numerous reasons. Federated learning (FL) regularly accelerates knowledge sharing, yet it is not fully exploited to alleviate overall data exclusivity and time constraints. Here, we present a proof-of-concept for a public FL-based info portal of the STRONG AYA Initiative.",
    "verified": true,
    "counted_members": [
@@ -22104,8 +22364,7 @@
      "affiliations": [
       "Maastricht University Medical Centre",
       "Maastricht University",
-      "Department of Surgery, Maastricht University Medical Center, Maastricht, the Netherlands; NUTRIM-School of Nutrition and Translational Research in Metabolism, Maastricht University, Maastricht, the Netherlands",
-      "Department of Surgery, Maastricht University Medical Center, Maastricht, the Netherlands; NUTRIM-School of Nutrition and Translational Research in Metabolism, Maastricht University, Maastricht, The Netherlands"
+      "Department of Surgery, Maastricht University Medical Center, Maastricht, the Netherlands; NUTRIM-School of Nutrition and Translational Research in Metabolism, Maastricht University, Maastricht, the Netherlands"
      ]
     }
    },
@@ -22128,8 +22387,7 @@
     "ralph-brecheisen": [
      "Maastricht University Medical Centre",
      "Maastricht University",
-     "Department of Surgery, Maastricht University Medical Center, Maastricht, the Netherlands; NUTRIM-School of Nutrition and Translational Research in Metabolism, Maastricht University, Maastricht, the Netherlands",
-     "Department of Surgery, Maastricht University Medical Center, Maastricht, the Netherlands; NUTRIM-School of Nutrition and Translational Research in Metabolism, Maastricht University, Maastricht, The Netherlands"
+     "Department of Surgery, Maastricht University Medical Center, Maastricht, the Netherlands; NUTRIM-School of Nutrition and Translational Research in Metabolism, Maastricht University, Maastricht, the Netherlands"
     ]
    },
    "affiliation_status": {
@@ -22384,11 +22642,11 @@
    "license": null,
    "pdf_url": null,
    "authors": [
-    "Varsha; id_orcid 0000-0002-4756-2866 Gouthamchand",
+    "Varsha Gouthamchand",
     "Benedetta Gottardelli",
     "Gauri Kulkarni",
     "Umesh B. Sherkhane",
-    "Joshi; id_orcid 0000-0003-1278-3295 Hogenboom",
+    "Joshi Hogenboom",
     "Rajamenakshi Subramanian",
     "Ashish Kumar Jha",
     "Sneha Mithun",
@@ -22402,7 +22660,7 @@
     "Venkatesh Rangarajan",
     "Gaur Sunder",
     "Andre Dekker",
-    "Johan; id_orcid 0000-0003-2548-0330 van Soest",
+    "Johan van Soest",
     "Leonard Wee"
    ],
    "author_members": [
@@ -22410,7 +22668,7 @@
     null,
     null,
     null,
-    null,
+    "joshi-hogenboom",
     null,
     "ashish-jha",
     null,
@@ -22424,12 +22682,18 @@
     null,
     null,
     "andre-dekker",
-    null,
+    "johan-van-soest",
     "leonard-wee"
    ],
    "author_profiles": {
     "varsha-gouthamchand": {
      "openalex_id": "A5159170619",
+     "orcid": null,
+     "match": "name",
+     "affiliations": []
+    },
+    "joshi-hogenboom": {
+     "openalex_id": "A5159207284",
      "orcid": null,
      "match": "name",
      "affiliations": []
@@ -22442,6 +22706,12 @@
     },
     "andre-dekker": {
      "openalex_id": "A5158344304",
+     "orcid": null,
+     "match": "name",
+     "affiliations": []
+    },
+    "johan-van-soest": {
+     "openalex_id": "A5159214534",
      "orcid": null,
      "match": "name",
      "affiliations": []
@@ -22477,22 +22747,30 @@
    ],
    "author_count": 20,
    "group_members": [
+    "joshi-hogenboom",
     "andre-dekker",
+    "johan-van-soest",
     "leonard-wee"
    ],
    "member_affiliations": {
+    "joshi-hogenboom": [],
     "andre-dekker": [],
+    "johan-van-soest": [],
     "leonard-wee": []
    },
    "affiliation_status": {
+    "joshi-hogenboom": "unknown",
     "andre-dekker": "unknown",
+    "johan-van-soest": "unknown",
     "leonard-wee": "unknown"
    },
    "cited_by_count": 0,
    "abstract": null,
    "verified": false,
    "counted_members": [
+    "joshi-hogenboom",
     "andre-dekker",
+    "johan-van-soest",
     "leonard-wee"
    ],
    "counted": true,
@@ -22538,7 +22816,7 @@
     "Per-Ivar Lønne",
     "René Monshouwer",
     "Ying Xiao",
-    "Stephanie; https://orcid.org/0000-0002-4387-1522 Tanadini-Lang",
+    "Stephanie Tanadini-Lang",
     "Leonard Wee"
    ],
    "author_members": [
@@ -25369,7 +25647,6 @@
      "match": "openalex",
      "affiliations": [
       "Maastricht University Medical Centre",
-      "Clinical data science, Maastricht University Medical Center, Maastricht, Netherlands;",
       "Clinical data science, Maastricht University Medical Center, Maastricht, Netherlands"
      ]
     },
@@ -25378,7 +25655,6 @@
      "orcid": "0000-0003-4670-6036",
      "match": "openalex",
      "affiliations": [
-      "Department of Radiation Oncology (Maastro), GROW Research Institute for Oncology and Reproduction, Maastricht, Netherlands;",
       "Department of Radiation Oncology (Maastro), GROW Research Institute for Oncology and Reproduction, Maastricht, Netherlands"
      ]
     },
@@ -25387,7 +25663,6 @@
      "orcid": "0000-0001-5649-6648",
      "match": "openalex",
      "affiliations": [
-      "Federated Learning, Medical Data Works B.V., Maastricht, Netherlands;",
       "Federated Learning, Medical Data Works B.V., Maastricht, Netherlands"
      ]
     }
@@ -25423,15 +25698,12 @@
    "member_affiliations": {
     "anne-lore-bynens": [
      "Maastricht University Medical Centre",
-     "Clinical data science, Maastricht University Medical Center, Maastricht, Netherlands;",
      "Clinical data science, Maastricht University Medical Center, Maastricht, Netherlands"
     ],
     "aiara-lobo-gomes": [
-     "Department of Radiation Oncology (Maastro), GROW Research Institute for Oncology and Reproduction, Maastricht, Netherlands;",
      "Department of Radiation Oncology (Maastro), GROW Research Institute for Oncology and Reproduction, Maastricht, Netherlands"
     ],
     "ivan-zhovannik": [
-     "Federated Learning, Medical Data Works B.V., Maastricht, Netherlands;",
      "Federated Learning, Medical Data Works B.V., Maastricht, Netherlands"
     ]
    },
@@ -25878,7 +26150,6 @@
      "match": "openalex",
      "affiliations": [
       "Maastricht University Medical Centre",
-      "Department of Radiation Oncology (MAASTRO) GROW School for Oncology and Reproduction Maastricht University Medical Centre+  Maastricht the Netherlands",
       "Department of Radiation Oncology (MAASTRO) GROW School for Oncology and Reproduction, Maastricht University Medical Centre+, Maastricht, the Netherlands"
      ]
     },
@@ -25888,7 +26159,6 @@
      "match": "openalex",
      "affiliations": [
       "Maastricht University Medical Centre",
-      "Department of Radiation Oncology (MAASTRO) GROW School for Oncology and Reproduction Maastricht University Medical Centre+  Maastricht the Netherlands",
       "Department of Radiation Oncology (MAASTRO) GROW School for Oncology and Reproduction, Maastricht University Medical Centre+, Maastricht, the Netherlands"
      ]
     }
@@ -25911,12 +26181,10 @@
    "member_affiliations": {
     "florian-van-daalen": [
      "Maastricht University Medical Centre",
-     "Department of Radiation Oncology (MAASTRO) GROW School for Oncology and Reproduction Maastricht University Medical Centre+  Maastricht the Netherlands",
      "Department of Radiation Oncology (MAASTRO) GROW School for Oncology and Reproduction, Maastricht University Medical Centre+, Maastricht, the Netherlands"
     ],
     "leonard-wee": [
      "Maastricht University Medical Centre",
-     "Department of Radiation Oncology (MAASTRO) GROW School for Oncology and Reproduction Maastricht University Medical Centre+  Maastricht the Netherlands",
      "Department of Radiation Oncology (MAASTRO) GROW School for Oncology and Reproduction, Maastricht University Medical Centre+, Maastricht, the Netherlands"
     ]
    },
@@ -28314,8 +28582,7 @@
      "affiliations": [
       "Maastricht University Medical Centre",
       "Maastricht University",
-      "GROW School for Oncology and Reproduction, Maastricht University, Maastricht, the Netherlands; Department of Radiotherapy (MAASTRO), Maastricht University Medical Centre+, Maastricht, the Netherlands; Clinical Data Science, Maastricht University, Maastricht, the Netherlands",
-      "GROW school for oncology and reproduction, Maastricht University, Maastricht, The Netherlands; Department of Radiotherapy (MAASTRO), Maastricht University Medical Centre+, Maastricht, The Netherlands; Clinical Data Science, Maastricht University, Maastricht, The Netherlands"
+      "GROW School for Oncology and Reproduction, Maastricht University, Maastricht, the Netherlands; Department of Radiotherapy (MAASTRO), Maastricht University Medical Centre+, Maastricht, the Netherlands; Clinical Data Science, Maastricht University, Maastricht, the Netherlands"
      ]
     }
    },
@@ -28354,8 +28621,7 @@
     "leonard-wee": [
      "Maastricht University Medical Centre",
      "Maastricht University",
-     "GROW School for Oncology and Reproduction, Maastricht University, Maastricht, the Netherlands; Department of Radiotherapy (MAASTRO), Maastricht University Medical Centre+, Maastricht, the Netherlands; Clinical Data Science, Maastricht University, Maastricht, the Netherlands",
-     "GROW school for oncology and reproduction, Maastricht University, Maastricht, The Netherlands; Department of Radiotherapy (MAASTRO), Maastricht University Medical Centre+, Maastricht, The Netherlands; Clinical Data Science, Maastricht University, Maastricht, The Netherlands"
+     "GROW School for Oncology and Reproduction, Maastricht University, Maastricht, the Netherlands; Department of Radiotherapy (MAASTRO), Maastricht University Medical Centre+, Maastricht, the Netherlands; Clinical Data Science, Maastricht University, Maastricht, the Netherlands"
     ]
    },
    "affiliation_status": {
@@ -30886,8 +31152,7 @@
       "Department of Radiology, Guangdong Provincial People’s Hospital (Guangdong Academy of Medical Sciences), Southern Medical University, Guangzhou, China",
       "Guangdong Provincial Key Laboratory of Artificial Intelligence in Medical Image Analysis and Application, Guangzhou, China",
       "Medical Research Institute, Guangdong Provincial People’s Hospital (Guangdong Academy of Medical Sciences), Southern Medical University, Guangzhou, China",
-      "Department of Radiology, Guangdong Provincial People's Hospital (Guangdong Academy of Medical Sciences), Southern Medical University, Guangzhou, China shizhenwei@gdph.org.cn liaoyongde@hust.edu.cn liuzaiyi@gdph.org.cn hanchu@gdph.org.cn",
-      "Medical Research Institute, Guangdong Provincial People's Hospital (Guangdong Academy of Medical Sciences), Southern Medical University, Guangzhou, China"
+      "Department of Radiology, Guangdong Provincial People's Hospital (Guangdong Academy of Medical Sciences), Southern Medical University, Guangzhou, China shizhenwei@gdph.org.cn liaoyongde@hust.edu.cn liuzaiyi@gdph.org.cn hanchu@gdph.org.cn"
      ]
     }
    },
@@ -31215,7 +31480,7 @@
     "Johann Pellet",
     "Imran Omar",
     "Lesley Ann Anderson",
-    "Steven J. MacLennan",
+    "Steven MacLennan",
     "Sara Jane MacLennan",
     "Valerie Speirs",
     "Solveiga Žibaitė",
@@ -33552,8 +33817,7 @@
       "Dana-Farber Brigham Cancer Center",
       "Mass General Brigham",
       "Artificial Intelligence in Medicine Program, Mass General Brigham, Harvard Medical School, Boston, Massachusetts",
-      "Department of Radiation Oncology, Dana Farber Cancer Institute, Brigham and Women’s Hospital, Harvard Medical School, Boston, Massachusetts",
-      "Department of Radiation Oncology, Dana Farber Cancer Institute, Brigham and Women's Hospital, Harvard Medical School, Boston, Massachusetts"
+      "Department of Radiation Oncology, Dana Farber Cancer Institute, Brigham and Women’s Hospital, Harvard Medical School, Boston, Massachusetts"
      ]
     },
     "leonard-nurnberg": {
@@ -33581,8 +33845,7 @@
       "Mass General Brigham",
       "Artificial Intelligence in Medicine Program, Mass General Brigham, Harvard Medical School, Boston, Massachusetts",
       "Department of Radiation Oncology, Dana Farber Cancer Institute, Brigham and Women’s Hospital, Harvard Medical School, Boston, Massachusetts",
-      "Radiology and Nuclear Medicine, CARIM & GROW, Maastricht University, Maastricht, the Netherlands",
-      "Department of Radiation Oncology, Dana Farber Cancer Institute, Brigham and Women's Hospital, Harvard Medical School, Boston, Massachusetts"
+      "Radiology and Nuclear Medicine, CARIM & GROW, Maastricht University, Maastricht, the Netherlands"
      ]
     }
    },
@@ -33627,8 +33890,7 @@
      "Mass General Brigham",
      "Artificial Intelligence in Medicine Program, Mass General Brigham, Harvard Medical School, Boston, Massachusetts",
      "Department of Radiation Oncology, Dana Farber Cancer Institute, Brigham and Women’s Hospital, Harvard Medical School, Boston, Massachusetts",
-     "Radiology and Nuclear Medicine, CARIM & GROW, Maastricht University, Maastricht, the Netherlands",
-     "Department of Radiation Oncology, Dana Farber Cancer Institute, Brigham and Women's Hospital, Harvard Medical School, Boston, Massachusetts"
+     "Radiology and Nuclear Medicine, CARIM & GROW, Maastricht University, Maastricht, the Netherlands"
     ]
    },
    "affiliation_status": {
@@ -33828,7 +34090,7 @@
    "affiliation_status": {
     "anshu-ankolekar": "verified"
    },
-   "cited_by_count": 47,
+   "cited_by_count": 48,
    "abstract": "In anticipation of potential future pandemics, we examined the challenges and opportunities presented by the COVID-19 outbreak. This analysis highlights how artificial intelligence (AI) and predictive models can support both patients and clinicians in managing subsequent infectious diseases, and how legislators and policymakers could support these efforts, to bring learning healthcare system (LHS) from guidelines to real-world implementation. This report chronicles the trajectory of the COVID-19 pandemic, emphasizing the diverse data sets generated throughout its course. We propose strategies for harnessing this data via AI and predictive modelling to enhance the functioning of LHS. The challenges faced by patients and healthcare systems around the world during this unprecedented crisis could have been mitigated with an informed and timely adoption of the three pillars of the LHS: Knowledge, Data and Practice. By harnessing AI and predictive analytics, we can develop tools that not only detect potential pandemic-prone diseases early on but also assist in patient management, provide decision support, offer treatment recommendations, deliver patient outcome triage, predict post-recovery long-term disease impacts, monitor viral mutations and variant emergence, and assess vaccine and treatment efficacy in real-time. A patient-centric approach remains paramount, ensuring patients are both informed and actively involved in disease mitigation strategies.",
    "verified": true,
    "counted_members": [
@@ -36561,7 +36823,6 @@
      "match": "openalex",
      "affiliations": [
       "Maastricht University Medical Centre",
-      "Maastricht University Medical Center+, Department of Radiation Oncology MAASTRO, Maastricht, Netherlands;",
       "Maastricht University Medical Center+, Department of Radiation Oncology MAASTRO, Maastricht, Netherlands"
      ]
     },
@@ -36570,7 +36831,6 @@
      "orcid": "0009-0003-5286-6973",
      "match": "openalex",
      "affiliations": [
-      "Medical Data Works B.V., Maastricht, Netherlands;",
       "Medical Data Works B.V., Maastricht, Netherlands"
      ]
     },
@@ -36581,9 +36841,6 @@
      "affiliations": [
       "Maastricht University Medical Centre",
       "Maastricht University",
-      "Maastricht University Medical Center+, Department of Radiation Oncology MAASTRO, Maastricht, Netherlands;",
-      "Maastricht University, Brightlands Institute for Smart Society BISS, Maastricht, Netherlands;",
-      "Medical Data Works B.V., Maastricht, Netherlands;",
       "Maastricht University Medical Center+, Department of Radiation Oncology MAASTRO, Maastricht, Netherlands",
       "Maastricht University, Brightlands Institute for Smart Society BISS, Maastricht, Netherlands",
       "Medical Data Works B.V., Maastricht, Netherlands"
@@ -36596,8 +36853,6 @@
      "affiliations": [
       "Vita-Salute San Raffaele University",
       "Maastricht University Medical Centre",
-      "Maastricht University Medical Center+, Department of Radiation Oncology MAASTRO, Maastricht, Netherlands;",
-      "Università Vita-Salute San Raffaele, School of Medicine, Milan, Italy;",
       "Maastricht University Medical Center+, Department of Radiation Oncology MAASTRO, Maastricht, Netherlands",
       "Università Vita-Salute San Raffaele, School of Medicine, Milan, Italy"
      ]
@@ -36609,7 +36864,6 @@
      "affiliations": [
       "Maastricht University Medical Centre",
       "Maastricht University",
-      "Maastricht University Medical Cente+, Department of Radiation Oncology MAASTRO, Maastricht, Netherlands;",
       "Maastricht University Medical Cente+, Department of Radiation Oncology MAASTRO, Maastricht, Netherlands"
      ]
     }
@@ -36647,19 +36901,14 @@
    "member_affiliations": {
     "andre-dekker": [
      "Maastricht University Medical Centre",
-     "Maastricht University Medical Center+, Department of Radiation Oncology MAASTRO, Maastricht, Netherlands;",
      "Maastricht University Medical Center+, Department of Radiation Oncology MAASTRO, Maastricht, Netherlands"
     ],
     "alessio-romita": [
-     "Medical Data Works B.V., Maastricht, Netherlands;",
      "Medical Data Works B.V., Maastricht, Netherlands"
     ],
     "johan-van-soest": [
      "Maastricht University Medical Centre",
      "Maastricht University",
-     "Maastricht University Medical Center+, Department of Radiation Oncology MAASTRO, Maastricht, Netherlands;",
-     "Maastricht University, Brightlands Institute for Smart Society BISS, Maastricht, Netherlands;",
-     "Medical Data Works B.V., Maastricht, Netherlands;",
      "Maastricht University Medical Center+, Department of Radiation Oncology MAASTRO, Maastricht, Netherlands",
      "Maastricht University, Brightlands Institute for Smart Society BISS, Maastricht, Netherlands",
      "Medical Data Works B.V., Maastricht, Netherlands"
@@ -36667,15 +36916,12 @@
     "alberto-traverso": [
      "Vita-Salute San Raffaele University",
      "Maastricht University Medical Centre",
-     "Maastricht University Medical Center+, Department of Radiation Oncology MAASTRO, Maastricht, Netherlands;",
-     "Università Vita-Salute San Raffaele, School of Medicine, Milan, Italy;",
      "Maastricht University Medical Center+, Department of Radiation Oncology MAASTRO, Maastricht, Netherlands",
      "Università Vita-Salute San Raffaele, School of Medicine, Milan, Italy"
     ],
     "fariba-tohidinezhad": [
      "Maastricht University Medical Centre",
      "Maastricht University",
-     "Maastricht University Medical Cente+, Department of Radiation Oncology MAASTRO, Maastricht, Netherlands;",
      "Maastricht University Medical Cente+, Department of Radiation Oncology MAASTRO, Maastricht, Netherlands"
     ]
    },
@@ -37096,8 +37342,7 @@
      "match": "openalex",
      "affiliations": [
       "Maastricht University",
-      "Maastricht University, Maastricht, The Netherlands",
-      "Maastricht University Maastricht The Netherlands"
+      "Maastricht University, Maastricht, The Netherlands"
      ]
     },
     "leonard-wee": {
@@ -37106,8 +37351,7 @@
      "match": "openalex",
      "affiliations": [
       "Maastricht University",
-      "Maastricht University, Maastricht, The Netherlands",
-      "Maastricht University Maastricht The Netherlands"
+      "Maastricht University, Maastricht, The Netherlands"
      ]
     },
     "aiara-lobo-gomes": {
@@ -37116,8 +37360,7 @@
      "match": "openalex",
      "affiliations": [
       "Maastricht University",
-      "Maastricht University, Maastricht, The Netherlands",
-      "Maastricht University Maastricht The Netherlands"
+      "Maastricht University, Maastricht, The Netherlands"
      ]
     },
     "andre-dekker": {
@@ -37126,8 +37369,7 @@
      "match": "openalex",
      "affiliations": [
       "Maastricht University",
-      "Maastricht University, Maastricht, The Netherlands",
-      "Maastricht University Maastricht The Netherlands"
+      "Maastricht University, Maastricht, The Netherlands"
      ]
     }
    },
@@ -37149,18 +37391,15 @@
    "member_affiliations": {
     "joshi-hogenboom": [
      "Maastricht University",
-     "Maastricht University, Maastricht, The Netherlands",
-     "Maastricht University Maastricht The Netherlands"
+     "Maastricht University, Maastricht, The Netherlands"
     ],
     "leonard-wee": [
      "Maastricht University",
-     "Maastricht University, Maastricht, The Netherlands",
-     "Maastricht University Maastricht The Netherlands"
+     "Maastricht University, Maastricht, The Netherlands"
     ],
     "andre-dekker": [
      "Maastricht University",
-     "Maastricht University, Maastricht, The Netherlands",
-     "Maastricht University Maastricht The Netherlands"
+     "Maastricht University, Maastricht, The Netherlands"
     ]
    },
    "affiliation_status": {
@@ -37957,8 +38196,7 @@
       "Maastro Clinic",
       "Arba Minch University",
       "Department of Public Health Informatics, School of Public Health, College of Medicine and Health Sciences, Arba Minch University, Arba Minch, Ethiopia",
-      "Department of Radiation Oncology (Maastro), GROW School for Oncology and Developmental Biology, Maastricht University Medical Centre+, Maastricht, The Netherlands",
-      "] Department of Public Health Informatics, School of Public Health, College of Medicine and Health Sciences, Arba Minch University, Arba Minch, Ethiopia ["
+      "Department of Radiation Oncology (Maastro), GROW School for Oncology and Developmental Biology, Maastricht University Medical Centre+, Maastricht, The Netherlands"
      ]
     },
     "andre-dekker": {
@@ -37969,8 +38207,7 @@
       "Maastricht University Medical Centre",
       "Maastricht University",
       "Maastro Clinic",
-      "Department of Radiation Oncology (Maastro), GROW School for Oncology and Developmental Biology, Maastricht University Medical Centre+, Maastricht, the Netherlands",
-      "Department of Radiation Oncology (Maastro), GROW School for Oncology and Developmental Biology, Maastricht University Medical Centre+, Maastricht, The Netherlands"
+      "Department of Radiation Oncology (Maastro), GROW School for Oncology and Developmental Biology, Maastricht University Medical Centre+, Maastricht, the Netherlands"
      ]
     },
     "rianne-fijten": {
@@ -37981,8 +38218,7 @@
       "Maastricht University Medical Centre",
       "Maastricht University",
       "Maastro Clinic",
-      "Department of Radiation Oncology (Maastro), GROW School for Oncology and Developmental Biology, Maastricht University Medical Centre+, Maastricht, the Netherlands",
-      "Department of Radiation Oncology (Maastro), GROW School for Oncology and Developmental Biology, Maastricht University Medical Centre+, Maastricht, The Netherlands"
+      "Department of Radiation Oncology (Maastro), GROW School for Oncology and Developmental Biology, Maastricht University Medical Centre+, Maastricht, the Netherlands"
      ]
     }
    },
@@ -38004,22 +38240,19 @@
      "Maastro Clinic",
      "Arba Minch University",
      "Department of Public Health Informatics, School of Public Health, College of Medicine and Health Sciences, Arba Minch University, Arba Minch, Ethiopia",
-     "Department of Radiation Oncology (Maastro), GROW School for Oncology and Developmental Biology, Maastricht University Medical Centre+, Maastricht, The Netherlands",
-     "] Department of Public Health Informatics, School of Public Health, College of Medicine and Health Sciences, Arba Minch University, Arba Minch, Ethiopia ["
+     "Department of Radiation Oncology (Maastro), GROW School for Oncology and Developmental Biology, Maastricht University Medical Centre+, Maastricht, The Netherlands"
     ],
     "andre-dekker": [
      "Maastricht University Medical Centre",
      "Maastricht University",
      "Maastro Clinic",
-     "Department of Radiation Oncology (Maastro), GROW School for Oncology and Developmental Biology, Maastricht University Medical Centre+, Maastricht, the Netherlands",
-     "Department of Radiation Oncology (Maastro), GROW School for Oncology and Developmental Biology, Maastricht University Medical Centre+, Maastricht, The Netherlands"
+     "Department of Radiation Oncology (Maastro), GROW School for Oncology and Developmental Biology, Maastricht University Medical Centre+, Maastricht, the Netherlands"
     ],
     "rianne-fijten": [
      "Maastricht University Medical Centre",
      "Maastricht University",
      "Maastro Clinic",
-     "Department of Radiation Oncology (Maastro), GROW School for Oncology and Developmental Biology, Maastricht University Medical Centre+, Maastricht, the Netherlands",
-     "Department of Radiation Oncology (Maastro), GROW School for Oncology and Developmental Biology, Maastricht University Medical Centre+, Maastricht, The Netherlands"
+     "Department of Radiation Oncology (Maastro), GROW School for Oncology and Developmental Biology, Maastricht University Medical Centre+, Maastricht, the Netherlands"
     ]
    },
    "affiliation_status": {
@@ -38175,7 +38408,7 @@
    "title": "[Implementing new interventions and indications: the possible role for real world data].",
    "publication_date": "2024-01-22",
    "year": 2024,
-   "type": "other",
+   "type": "article",
    "journal": "PubMed",
    "source_id": "S4306525036",
    "landing_url": "https://pubmed.ncbi.nlm.nih.gov/38319310",
@@ -39230,7 +39463,6 @@
      "match": "openalex",
      "affiliations": [
       "Maastricht University",
-      "Maastricht  University",
       "Maastricht University"
      ]
     },
@@ -39284,7 +39516,6 @@
     ],
     "andre-dekker": [
      "Maastricht University",
-     "Maastricht  University",
      "Maastricht University"
     ],
     "leonard-wee": [
@@ -39813,7 +40044,6 @@
      "match": "openalex",
      "affiliations": [
       "Maastricht University",
-      "Maastricht  University",
       "Maastricht University"
      ]
     }
@@ -39844,7 +40074,6 @@
    "member_affiliations": {
     "andre-dekker": [
      "Maastricht University",
-     "Maastricht  University",
      "Maastricht University"
     ]
    },

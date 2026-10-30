@@ -4134,11 +4134,12 @@ people:
     checked_at: '2026-10-30'
     window_start: '2024-10-30'
     recent_months: 24
-    shared_papers: 2
-    recent_shared_papers: 0
-    last_collaboration_date: null
-    followup_until: null
-    current_coauthors: []
+    shared_papers: 3
+    recent_shared_papers: 1
+    last_collaboration_date: '2026-10-29'
+    followup_until: '2028-10-29'
+    current_coauthors:
+    - sander-puts
   publication_identity_sources:
   - work: W4391065084
     openalex_id: A5031899979
