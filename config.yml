@@ -51,7 +51,9 @@ institution_keywords:
   - medical data works
   - clinical data science
   - [maastricht, radiation oncology]
-  - grow
+  # GROW is a research school of many departments: it counts only when the affiliation names no other department
+  # ("Radiology and Nuclear Medicine, GROW & CARIM" or "Department of Precision Medicine, GROW" do not count).
+  - {school: grow}
   - [mumc, radiation oncology]
 
 # Broader words used only to pick the right OpenAlex author record for a person (never to verify a paper):

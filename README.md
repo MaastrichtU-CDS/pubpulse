@@ -101,6 +101,8 @@ known coauthors and unresolved candidates are saved in `data/identifier_discover
 collecting papers. Existing supplied profile IDs are preserved. Negative results and provider responses are cached
 for 30 days. A configurable SerpAPI search cap preserves quota for the monthly publication cross-check.
 - Verified means the authorship on that paper mentions Maastro, Radiation Oncology, GROW or Medical Data Works.
+  GROW is a research school of many departments: it verifies only when no other department is named, so "Radiology
+  and Nuclear Medicine, GROW & CARIM" or "Department of Precision Medicine, GROW" is another affiliation.
   "Maastricht University" alone is deliberately not enough. Every paper shows, per group author: verified, unspecific
   (only a bare Maastricht University / MUMC+ / Radiation Oncology), other affiliation, or no affiliation data. Papers are not checked by hand. Set `affiliation_policy: require` in `config.yml` to drop
   papers without a verified group author.
