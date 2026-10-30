@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-30T15:40:42+00:00",
+ "generated": "2026-10-30T17:07:09+00:00",
  "group_name": "Clinical Data Science (Maastro / Maastricht University)",
  "site_url": "https://maastrichtu-cds.github.io/pubpulse/",
  "repo_url": "https://github.com/MaastrichtU-CDS/pubpulse",
@@ -9361,7 +9361,7 @@
     ]
    },
    "affiliation_status": {
-    "petros-kalendralis": "mismatch"
+    "petros-kalendralis": "unspecific"
    },
    "cited_by_count": 0,
    "abstract": "Deliverable D1.12 reports on the status of AIDAVA's Open Science compliance as of Month 41 (January 2026), documenting how the consortium has deposited, described and made accessible its scientific publications, research datasets and other project outputs in accordance with Horizon Europe Open Access obligations and FAIR principles. A final update on these activities will be included in D6.11 Update of Report on dissemination and communication activities 2 due in Month 48. Scientific publications. The consortium has significantly exceeded its contractual KPI of 15 peer-reviewed publications: as of M41, AIDAVA researchers have produced 25 peer-reviewed publications and 8 preprints, with 24 papers indexed in Scopus and 14 in PubMed Central. Cumulative citations exceed 1,000 in Google Scholar (613 in Scopus), and the project h-index has risen from 6 at M36 to 8 at M41. All public deliverables (23 in total) are deposited on Zenodo and mirrored on OpenAIRE, ensuring long-term traceability and broad visibility. Research data. AIDAVA applies the principle of \"as open as possible, as close as necessary\" to its two categories of research data. Pseudonymised and annotated clinical text corpora in Dutch (MUMC+), German (MUG) and Estonian (NEMC) — used for NLP model training — are managed under strict data transfer agreements and will be deleted or archived in de-identified label-only form at project end. Fully identifiable patient data (PHKGs, FHIR IPS, SMART scores) remain within the secure infrastructure of each clinical site in full compliance with GDPR, ethics committee approvals, and institutional governance; they have not left the hospital environment. Dissemination of other results. Beyond publications, AIDAVA has disseminated results through 15 conferences and symposia, 2 patient consultant workshops (including the February 2025 Brussels event co-hosted with EHN), 2 SULO co-creation workshops, and through public GitHub repositories for the AIDAVA Reference Ontology and SULO codebase. Video outputs are hosted on the AIDAVA YouTube channel and Website Compliance status. The consortium has established a shared publication strategy governing authorship, acknowledgements and repository submission workflows, enabling systematic tracking via tools such as Harzing's Publish or Perish. Open Science compliance is monitored through WP6 and aligned with the project's Data Management Plan and Plan for Dissemination and Exploitation of Results (PDEC).",
@@ -9442,11 +9442,9 @@
    "cited_by_count": 0,
    "abstract": "Abstract Aims The purpose of this subanalysis was to explore whether or not teleprehabilitation leads to worsening cardiac symptoms in patients accepted for coronary artery bypass grafting (CABG). Methods and results A subgroup of patients accepted for CABG (including off-pump and minimally invasive) who were randomized between teleprehabilitation and standard care in DCC trial were included. Teleprehabilitation patients had access to blended care supported by online modules, including nutritional support, functional exercise training, smoking cessation, inspiratory muscle training, and psychological support. All patients were weekly telemonitored for cardiac symptoms using a customized digital platform. This cohort included 155 patients. Baseline characteristics, including NYHA and CCS class, were balanced, except for shorter preoperative waiting times in weeks (15.0 [9.8–22.2] vs. 12.5 [7.0–16.0]) in the teleprehabilitation group. There was no significant difference in incidence of major adverse cardiac events in the preoperative period. There were 141 patients (77 control; 64 teleprehabilitation) with at least one symptom monitoring entry. A total of 373/1786 (21%) entries indicated worsening of cardiac symptoms. The distribution was right-skewed and did not significantly differ between the two groups. There was no statistically significant difference in time to event between control and teleprehabilitation for any cardiac symptom (P = 0.529), angina (P = 0.167), or dyspnoea (P = 0.334). Conclusion Teleprehabilitation does not lead to worsening cardiac symptoms before CABG. We postulate that teleprehabilitation, which includes low-intensity physical training, can be safely offered to patients undergoing elective CABG.",
    "verified": false,
-   "counted_members": [
-    "rutger-van-mierlo"
-   ],
-   "counted": true,
-   "listed_elsewhere": false,
+   "counted_members": [],
+   "counted": false,
+   "listed_elsewhere": true,
    "first_seen": "2026-10-23",
    "journal_impact": 3.3,
    "journal_h_index": 37
@@ -9530,7 +9528,7 @@
     ]
    },
    "affiliation_status": {
-    "ralph-brecheisen": "mismatch"
+    "ralph-brecheisen": "unspecific"
    },
    "cited_by_count": 0,
    "abstract": null,
@@ -9966,7 +9964,7 @@
    },
    "affiliation_status": {
     "alessio-romita": "verified",
-    "andre-dekker": "mismatch",
+    "andre-dekker": "unspecific",
     "johan-van-soest": "verified"
    },
    "cited_by_count": 0,
@@ -11764,13 +11762,12 @@
    },
    "cited_by_count": 0,
    "abstract": "Osi has high intracranial (IC) activity in epidermal growth factor receptor (EGFR)–NSCLC; yet patients (pts) may still develop IC-progressive disease (PD) requiring stereotactic radiotherapy (SRT) or whole-brain radiotherapy (WBRT). The safety of continuing osi during cranial RT, particularly regarding neurotoxicity, remains uncertain and was investigated in this study.",
-   "verified": false,
-   "counted_members": [
-    "cecile-wolfs"
-   ],
+   "verified": true,
+   "counted_members": [],
    "counted": true,
    "listed_elsewhere": false,
    "first_seen": "2026-10-21",
+   "manual": "confirmed",
    "journal_impact": 1.8,
    "journal_h_index": 99
   },
@@ -13336,7 +13333,7 @@
     ]
    },
    "affiliation_status": {
-    "leonard-wee": "mismatch"
+    "leonard-wee": "unspecific"
    },
    "cited_by_count": 1,
    "abstract": "Code repository for AtomCAT 2 multicentre study",
@@ -13882,8 +13879,8 @@
     ]
    },
    "affiliation_status": {
-    "johan-van-soest": "mismatch",
-    "joshi-hogenboom": "mismatch"
+    "johan-van-soest": "unspecific",
+    "joshi-hogenboom": "unspecific"
    },
    "cited_by_count": 0,
    "abstract": null,
@@ -14638,7 +14635,7 @@
     ]
    },
    "affiliation_status": {
-    "andre-dekker": "mismatch"
+    "andre-dekker": "unspecific"
    },
    "cited_by_count": 0,
    "abstract": null,
@@ -15353,7 +15350,7 @@
     ]
    },
    "affiliation_status": {
-    "ralph-brecheisen": "mismatch"
+    "ralph-brecheisen": "unspecific"
    },
    "cited_by_count": 0,
    "abstract": null,
@@ -19771,8 +19768,8 @@
     ]
    },
    "affiliation_status": {
-    "leonard-wee": "mismatch",
-    "joshi-hogenboom": "mismatch"
+    "leonard-wee": "unspecific",
+    "joshi-hogenboom": "unspecific"
    },
    "cited_by_count": 0,
    "abstract": "This document establishes a quality assurance process for the Vantage6 algorithms used in STRONG-AYA.",
@@ -20570,11 +20567,9 @@
    "cited_by_count": 0,
    "abstract": null,
    "verified": false,
-   "counted_members": [
-    "thijs-ackermans"
-   ],
-   "counted": true,
-   "listed_elsewhere": false,
+   "counted_members": [],
+   "counted": false,
+   "listed_elsewhere": true,
    "first_seen": "2026-10-27",
    "journal_impact": 1.4,
    "journal_h_index": 218
@@ -24363,12 +24358,12 @@
     ]
    },
    "affiliation_status": {
-    "leonard-wee": "mismatch",
-    "andre-dekker": "mismatch"
+    "leonard-wee": "unspecific",
+    "andre-dekker": "unspecific"
    },
    "cited_by_count": 1,
    "abstract": "Abstract Thymic epithelial tumours (TETs) are rare and exhibit varied behaviour and prognosis based on their histological subtype, as classified by the World Health Organization (WHO). These subtypes are further categorized into low-risk and high-risk groups. Low-risk thymomas generally allow for complete surgical resection without adjuvant therapy, while high-risk types often require multimodal treatment due to their aggressive nature. This study aims to evaluate the role of CT radiomics in discriminating between high- and low-risk TETs. Methods This retrospective study included patients treated in a single hospital in India who underwent surgical resection of TETs from 2010 to 2024. Inclusion criteria were confirmed TET diagnosis, had pre-operative CT scans, and had medical and post-operative histopathological confirmation. Conventional CT (semantic) features were manually extracted from radiology reports, while radiomic features were obtained using PyRadiomics. The data was randomly split for training and a hold-out validation set stratified by class. Three classification models were evaluated, each using clinical, semantic, and radiomic features with LASSO regularization. The performance of the models was assessed using Area under the Receiver Operating Curve (AUC), sensitivity, and specificity on the test set. Results Out of 195 enrolled patients, 132 met inclusion criteria and were divided into training (n = 100) and a validation set (n=32). The clinical model included age, presence of Pure Red Cell Aplasia and weight loss, achieving an AUC of 0.69 (95% CI: 0.49–0.87), sensitivity of 0.73 (95% CI: 0.46-1.00), and specificity of 0.53 (95% CI: 0.29-0.76) in the holdout set. The radiomics model included 90th percentile and sphericity as key predictors with AUC of 0.77 (95% CI: 0.56-0.94), sensitivity of 0.82 (95% CI: 0.55–1.00), and specificity of 0.72 (95% CI: 0.52-0.91). The semantic model performed best with AUC of 0.82 (95% CI: 0.62– 0.96), sensitivity of 0.82 (95% CI: 0.55-1.00), and specificity of 0.77 (95% CI: 0.57-0.91). Discussion and Conclusion The findings indicate that radiomic features could be valuable in preoperative risk assessment for TETs. Although the conventional CT features-based Semantic models demonstrated superior predictive capability, there is a risk of subjectivity and inter-observer disagreement.",
-   "verified": false,
+   "verified": true,
    "counted_members": [
     "leonard-wee",
     "andre-dekker"
@@ -24376,6 +24371,7 @@
    "counted": true,
    "listed_elsewhere": false,
    "first_seen": "2026-10-21",
+   "manual": "confirmed",
    "journal_impact": null,
    "journal_h_index": null
   },
@@ -27194,7 +27190,7 @@
     ]
    },
    "affiliation_status": {
-    "simone-mingels": "mismatch"
+    "simone-mingels": "unspecific"
    },
    "cited_by_count": 0,
    "abstract": null,
@@ -30516,7 +30512,7 @@
     ]
    },
    "affiliation_status": {
-    "andre-dekker": "mismatch"
+    "andre-dekker": "unspecific"
    },
    "cited_by_count": 0,
    "abstract": null,
@@ -31014,14 +31010,16 @@
     ]
    },
    "affiliation_status": {
-    "andre-dekker": "mismatch"
+    "andre-dekker": "unspecific"
    },
    "cited_by_count": 0,
    "abstract": "Biological age scores are an emerging tool to characterize aging by estimating chronological age based on physiological biomarkers. Various scores have shown associations with aging-related outcomes. This study assessed the relation between an age score based on brain MRI images (BrainAge) and an age score based on metabolomic biomarkers (MetaboAge). We trained a federated deep learning model to estimate BrainAge in three cohorts. The federated BrainAge model yielded significantly lower error for age prediction across the cohorts than locally trained models. Harmonizing the age interval between cohorts further improved BrainAge accuracy. Subsequently, we compared BrainAge with MetaboAge using federated association and survival analyses. The results showed a small association between BrainAge and MetaboAge as well as a higher predictive value for the time to mortality of both scores combined than for the individual scores. Hence, our study suggests that both aging scores capture different aspects of the aging process.",
    "verified": false,
-   "counted_members": [],
-   "counted": false,
-   "listed_elsewhere": true,
+   "counted_members": [
+    "andre-dekker"
+   ],
+   "counted": true,
+   "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": null,
    "journal_h_index": null
@@ -32891,9 +32889,9 @@
    },
    "affiliation_status": {
     "leroy-volmer": "verified",
-    "ananya-choudhury": "mismatch",
+    "ananya-choudhury": "unspecific",
     "andre-dekker": "verified",
-    "leonard-wee": "mismatch"
+    "leonard-wee": "unspecific"
    },
    "cited_by_count": 1,
    "abstract": null,
@@ -33100,9 +33098,9 @@
     ]
    },
    "affiliation_status": {
-    "umesh-kumar-baburao-sherkhane": "mismatch",
-    "andre-dekker": "mismatch",
-    "leonard-wee": "mismatch"
+    "umesh-kumar-baburao-sherkhane": "unspecific",
+    "andre-dekker": "unspecific",
+    "leonard-wee": "unspecific"
    },
    "cited_by_count": 1,
    "abstract": null,
@@ -33961,7 +33959,7 @@
    "affiliation_status": {
     "ananya-choudhury": "verified",
     "rianne-fijten": "verified",
-    "leonard-wee": "mismatch",
+    "leonard-wee": "verified",
     "andre-dekker": "verified",
     "johan-van-soest": "verified"
    },
@@ -36495,7 +36493,7 @@
     ]
    },
    "affiliation_status": {
-    "andre-dekker": "mismatch"
+    "andre-dekker": "unspecific"
    },
    "cited_by_count": 0,
    "abstract": "Generative adversarial networks (GANs) have been used to successfully translate images between multiple imaging modalities. While there is a significant amount of literature on the use cases for these approaches, there has been limited investigation into the optimal model design and evaluation criteria. In this paper, we demonstrated the performance of different approaches on the task of cone-beam computer tomography (CBCT) to fan-beam computer tomography (CT) translation. We examined the implications of choosing between 2D and 3D models, the size of 3D patches, and the integration of the Structural Similarity Index Measure (SSIM) into the cycle-consistency loss. Additionally, we introduced a partially-invertible VNet architecture into the RevGAN framework, enabling the use of 3D UNet-like architectures with minimal memory footprint. We compared image similarity metrics to visual inspection as an evaluation method for these models using held-out patient data and phantom scans to demonstrate their generalizability. Our findings suggest that 3D models, despite requiring a longer training time to converge due to the number of parameters, produce fewer image perturbations compared to 2D models. Training with larger patches also improved stability and significantly reduced artifacts, but increased the training time, while the SSIM-L1 cycle-consistency loss function enhanced performance. Interestingly, our study revealed a discrepancy between standard image similarity metrics and visual evaluation, with the former failing to adequately penalize visually evident artifacts in synthetic CT scans. This underscores the need for tailored and standardized evaluation metrics for medical image translation, which would facilitate more accurate comparisons across studies. To further the clinical applicability of image-to-image translation, we have open-sourced our methods and experiments, available at github.com/ganslate-team.",
@@ -37665,9 +37663,9 @@
     ]
    },
    "affiliation_status": {
-    "joshi-hogenboom": "mismatch",
-    "leonard-wee": "mismatch",
-    "andre-dekker": "mismatch"
+    "joshi-hogenboom": "unspecific",
+    "leonard-wee": "unspecific",
+    "andre-dekker": "unspecific"
    },
    "cited_by_count": 26,
    "abstract": "Synthetic data promises to be a viable alternative when data collection and data sharing may not be feasible or cost effective, but it raises distinct ethical issue that merit serious consideration. [Image: see text]",
@@ -39802,7 +39800,7 @@
    },
    "affiliation_status": {
     "ananya-choudhury": "verified",
-    "andre-dekker": "mismatch",
+    "andre-dekker": "unspecific",
     "leonard-wee": "verified"
    },
    "cited_by_count": 0,
@@ -39982,7 +39980,6 @@
     "varsha-gouthamchand",
     "ananya-choudhury",
     "andre-dekker",
-    "johan-van-soest",
     "leonard-wee"
    ],
    "counted": true,
@@ -40358,7 +40355,7 @@
     ]
    },
    "affiliation_status": {
-    "andre-dekker": "mismatch"
+    "andre-dekker": "unspecific"
    },
    "cited_by_count": 0,
    "abstract": null,
