@@ -400,17 +400,28 @@ def test_verify_affiliation_exception_requires_verified():
     assert works["W2"]["counted"] is True
 
 
-def test_paper_with_another_groups_senior_as_last_author_does_not_count():
+def test_paper_led_by_another_maastricht_group_does_not_count():
     from pubpulse.sync import apply_overrides
-    def work(wid, authors):
-        return {"id": wid, "authors": authors, "group_members": ["m"], "verified": True, "counted": True,
-                "counted_members": ["m"], "listed_elsewhere": False}
-    works = [work("W1", ["M", "Frank Verhaegen"]), work("W2", ["Frank Verhaegen", "M"]), work("W3", ["M", "Frank Verhaegen"])]
-    ov = {"confirm": {"W3"}, "reject": set(), "verify_affiliation": set(), "other_group_seniors": {("frank", "verhaegen")}}
-    w1, w2, w3 = apply_overrides(works, ov)
-    assert not w1["counted"] and not w1["verified"] and w1["listed_elsewhere"] and w1["other_group"] == "Frank Verhaegen"
-    assert w2["counted"] and "other_group" not in w2  # only as senior (last) author
-    assert w3["counted"]  # confirmed by hand
+    people = [{"slug": "m", "name": "M Member"}, {"slug": "ib", "name": "Inigo Bermejo Delgado"}]
+    def work(wid, authors, members, senior_affs=()):
+        return {"id": wid, "authors": authors, "author_members": members, "group_members": ["m"], "verified": True,
+                "counted": True, "counted_members": ["m"], "listed_elsewhere": False, "senior_affiliations": list(senior_affs)}
+    grow = ["Radiology and Nuclear Medicine, GROW, Maastricht University"]
+    works = [
+        work("W1", ["A", "M Member", "Frank Verhaegen"], [None, "m", None]),          # named lead of another group
+        work("W2", ["A", "M Member", "C van der Leij"], [None, "m", None], grow),    # non-CDS senior listed with GROW
+        work("W3", ["M Member", "B", "C van der Leij"], ["m", None, None], grow),     # CDS first author: CDS-led
+        work("W4", ["A", "M Member", "Iñigo Bermejo"], [None, "m", None], grow),     # senior is (former) CDS
+        work("W5", ["A", "M Member", "D Smith"], [None, "m", None], ["Leiden University"]),  # external collaborator
+        work("W6", ["A", "M Member", "C van der Leij"], [None, "m", None], grow),    # confirmed by hand
+    ]
+    ov = {"confirm": {"W6"}, "reject": set(), "verify_affiliation": set(), "other_group_seniors": {("frank", "verhaegen")}}
+    out = {w["id"]: w for w in apply_overrides(works, ov, people=people, senior_keywords=["maastro", "grow"])}
+    for wid in ("W1", "W2"):
+        assert not out[wid]["counted"] and not out[wid]["verified"] and out[wid]["listed_elsewhere"]
+    assert out["W2"]["other_group"] == "C van der Leij"
+    for wid in ("W3", "W4", "W5", "W6"):
+        assert out[wid]["counted"] and "other_group" not in out[wid]
 
 
 def test_merge_review_decisions_respects_overrides():

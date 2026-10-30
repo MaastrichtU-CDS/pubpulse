@@ -5,6 +5,7 @@
 confirm:
   - W7137993139  # Cecile Wolfs, 41P osimertinib + cranial RT (ESMO Open 2026): Maastro, OpenAlex lists only MUMC
   - W4409875408  # Leonard Wee, Andre Dekker, radiomics vs semantic features (medRxiv 2025): Maastro in the PDF
+  - W4416157627  # Sander Puts, Dutch metaphor extraction (Suzan Verberne, Leiden): OpenAlex wrongly lists her with GROW
 
 # Papers that do NOT belong to the group (wrong person with the same name, work from another job, …).
 reject: []
@@ -15,7 +16,10 @@ verify_affiliation:
   - matthijs-sloep
   - ralph-brecheisen
 
-# Senior authors who lead another group: a paper with one of them as last author belongs to that group and does not
-# count, whatever the affiliations say (a paper listed under confirm still counts). Full name as on the paper.
+# Senior authors who lead another group. A paper whose last author is not CDS but listed with Maastro / GROW is
+# already treated as another group's (config.yml other_group_senior_keywords); names here also catch their papers
+# without that affiliation. Either way a paper still counts when a CDS member is first or last author, or is listed
+# under confirm. Full name as on the paper.
 other_group_seniors:
   - Frank Verhaegen
+  - Maria Jacobs

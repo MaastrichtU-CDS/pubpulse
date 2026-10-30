@@ -56,6 +56,10 @@ institution_keywords:
   - {other_lab: precision medicine}
   - {other_lab: d-lab}
 
+# A paper whose senior (last) author is not CDS but is listed with one of these belongs to another Maastricht group
+# (e.g. Maastro physics, Radiology within GROW) and does not count, unless a CDS member is first or last author.
+other_group_senior_keywords: [maastro, grow]
+
 # Broader words used only to pick the right OpenAlex author record for a person (never to verify a paper):
 # a record whose current institution matches these wins over a namesake elsewhere.
 author_match_keywords: [maastricht, maastro, mumc, medical data works]

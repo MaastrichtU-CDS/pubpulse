@@ -123,20 +123,48 @@ def merge_review_decisions(overrides: dict, decisions: dict) -> dict:
     return out
 
 
-def apply_overrides(works: list[dict], overrides: dict) -> list[dict]:
+def is_cds_name(name: str, people: list[dict]) -> bool:
+    """The name belongs to a (current or former) group member, also when the paper drops a second surname
+    ("Iñigo Bermejo" for Inigo Bermejo Delgado)."""
+    key = author_name_key(name or "")
+    if not key:
+        return False
+    for p in people:
+        for n in [p["name"], *(p.get("publication_name_aliases") or []), *(p.get("aliases") or [])]:
+            other = author_name_key(n)
+            if other and other[0] == key[0] and (set(key[1:]) <= set(other[1:]) or set(other[1:]) <= set(key[1:])):
+                return True
+    return False
+
+
+def led_by_other_group(w: dict, people: list[dict], senior_keywords: list, seniors: set) -> bool:
+    """The senior (last) author is not CDS but is listed with Maastro / GROW, or is a named lead of another group:
+    the paper is another group's, unless a group member is first or last author (CDS-led)."""
+    members = w.get("author_members") or []
+    if not members or members[0] or members[-1]:
+        return False
+    last = (w.get("authors") or [""])[-1]
+    if author_name_key(last) in seniors:
+        return True
+    if not senior_keywords or is_cds_name(last, people):
+        return False
+    return affiliation_matches(w.get("senior_affiliations") or [], senior_keywords)
+
+
+def apply_overrides(works: list[dict], overrides: dict, people: list[dict] | None = None,
+                    senior_keywords: list | None = None) -> list[dict]:
     seniors = overrides.get("other_group_seniors") or set()
     kept = []
     for w in works:
         if w["id"] in overrides["reject"]:
             continue
         w.pop("other_group", None)
-        last = (w.get("authors") or [""])[-1]
-        if seniors and author_name_key(last) in seniors and w["id"] not in overrides["confirm"]:
+        if led_by_other_group(w, people or [], senior_keywords or [], seniors) and w["id"] not in overrides["confirm"]:
             # The senior (last) author leads another group: the paper is that group's, whatever the affiliations say.
             w["verified"] = w["counted"] = False
             w["counted_members"] = []
             w["listed_elsewhere"] = bool(w.get("group_members"))
-            w["other_group"] = last
+            w["other_group"] = (w.get("authors") or [""])[-1]
         if w["id"] in overrides["confirm"]:
             w["verified"] = True
             w["counted"] = True
@@ -501,6 +529,7 @@ def normalise_work(raw: dict, people: list[dict], keywords: list[str] | None = N
         "group_members": members,
         "member_affiliations": member_affiliations,
         "affiliation_status": status,
+        "senior_affiliations": affiliations(authorships[-1]) if authorships else [],
         "cited_by_count": raw.get("cited_by_count", 0),
         "abstract": abstract_from_inverted_index(raw.get("abstract_inverted_index")),
     }
@@ -761,7 +790,7 @@ def run(dry_run: bool = False, skip_people: bool = False, config_path: Path = CO
     failed_names = {e.split(":")[0] for e in errors}
     fetched_slugs = {p["slug"] for p in people if is_tracked(p, today, grace) and person_filter(p) and p["name"] not in failed_names}
     works, new_ids = merge_works(previous.get("works", []), fetched, today, fetched_slugs)
-    works = apply_overrides(works, overrides)
+    works = apply_overrides(works, overrides, people=people, senior_keywords=cfg.get("other_group_senior_keywords"))
     add_journal_metrics(works, client, today, path=(OUT_DIR / "sources.json") if dry_run else SOURCES_PATH)
     former_report = review_former(people, works, today, review_months)
     new_ids = [i for i in new_ids if i not in overrides["reject"]]
