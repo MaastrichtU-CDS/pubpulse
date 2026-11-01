@@ -102,7 +102,7 @@ people:
   needs_review: false
   openalex_ids:
   - A5024986698
-  scholar_checked_at: '2026-10-21'
+  scholar_checked_at: '2026-11-01'
   publication_identity_sources:
   - work: W7161945525
     openalex_id: A5024986698
@@ -127,7 +127,7 @@ people:
   needs_review: false
   openalex_ids:
   - A5013513157
-  scholar_checked_at: '2026-10-21'
+  scholar_checked_at: '2026-11-01'
   publication_identity_sources:
   - work: W7128449036
     openalex_id: A5013513157
@@ -241,6 +241,7 @@ people:
       accepted: true
   identifier_discovery_checked_at: '2026-10-21'
   resolved_at: '2026-10-23'
+  scholar_checked_at: '2026-11-01'
 - slug: anshu-ankolekar
   name: Anshu Ankolekar
   profile_url: https://www.clinicaldatascience.nl/Staff/anshu-ankolekar
@@ -332,7 +333,7 @@ people:
   needs_review: false
   openalex_ids:
   - A5068696493
-  scholar_checked_at: '2026-10-21'
+  scholar_checked_at: '2026-11-01'
   publication_identity_sources:
   - work: W7128449036
     openalex_id: A5068696493
@@ -881,7 +882,7 @@ people:
   needs_review: false
   openalex_ids:
   - A5034589930
-  scholar_checked_at: '2026-10-21'
+  scholar_checked_at: '2026-11-01'
   publication_identity_sources:
   - work: W7221757932
     openalex_id: A5034589930
@@ -1008,7 +1009,7 @@ people:
   needs_review: false
   openalex_ids:
   - A5004688031
-  scholar_checked_at: '2026-10-21'
+  scholar_checked_at: '2026-11-01'
   publication_identity_sources:
   - work: W7220851390
     openalex_id: A5004688031
@@ -1454,7 +1455,7 @@ people:
   needs_review: false
   openalex_ids:
   - A5068572381
-  scholar_checked_at: '2026-10-21'
+  scholar_checked_at: '2026-11-01'
   publication_identity_sources:
   - work: W7128449036
     openalex_id: A5068572381
@@ -1558,6 +1559,7 @@ people:
   orcid_discovered: 0009-0002-3020-0030
   identifier_discovery_checked_at: '2026-10-21'
   resolved_at: '2026-10-23'
+  scholar_checked_at: '2026-11-01'
 - slug: prabash-darshanapriya-galgane-banduge
   name: Prabash Darshanapriya Galgane Banduge
   profile_url: https://www.clinicaldatascience.nl/prabash-darshanapriya-galgane-banduge
@@ -1617,7 +1619,7 @@ people:
   needs_review: false
   openalex_ids:
   - A5081642553
-  scholar_checked_at: '2026-10-21'
+  scholar_checked_at: '2026-11-01'
   publication_identity_sources:
   - work: W7163123298
     openalex_id: A5081642553
@@ -1669,7 +1671,7 @@ people:
   needs_review: false
   openalex_ids:
   - A5089485363
-  scholar_checked_at: '2026-10-21'
+  scholar_checked_at: '2026-11-01'
   publication_identity_sources:
   - work: W7161960653
     openalex_id: A5089485363
@@ -1845,7 +1847,7 @@ people:
   needs_review: false
   openalex_ids:
   - A5036827029
-  scholar_checked_at: '2026-10-21'
+  scholar_checked_at: '2026-11-01'
   publication_identity_sources:
   - work: W4412041683
     openalex_id: A5036827029
@@ -2469,6 +2471,7 @@ people:
   openalex_ids:
   - A5008606043
   resolved_at: '2026-10-23'
+  scholar_checked_at: '2026-11-01'
 - section: previous
   slug: anke-bruninx
   name: Anke Bruninx
@@ -2760,6 +2763,7 @@ people:
   openalex_ids:
   - A5035571354
   resolved_at: '2026-10-23'
+  scholar_checked_at: '2026-11-01'
 - section: previous
   slug: chaitanya-kulkarni
   name: Chaitanya Kulkarni
@@ -3688,6 +3692,7 @@ people:
   openalex_ids:
   - A5001452511
   resolved_at: '2026-10-23'
+  scholar_checked_at: '2026-11-01'
 - section: previous
   slug: ibrahim-hadzic
   name: Ibrahim Hadzic
@@ -4460,6 +4465,7 @@ people:
   - A5101679672
   - A5027554938
   resolved_at: '2026-10-23'
+  scholar_checked_at: '2026-11-01'
 - section: previous
   slug: ravindra-patil
   name: Ravindra Patil
@@ -5143,6 +5149,7 @@ people:
   resolved_at: '2026-10-23'
   publication_name_aliases:
   - Varsha; id_orcid 0000-0002-4756-2866 Gouthamchand
+  scholar_checked_at: '2026-11-01'
 - section: previous
   slug: vasco-prudente
   name: Vasco Prudente
@@ -5339,6 +5346,7 @@ people:
   openalex_ids:
   - A5057987192
   resolved_at: '2026-10-23'
+  scholar_checked_at: '2026-11-01'
 - section: previous
   slug: yanqi-huang
   name: Yanqi Huang
@@ -5647,6 +5655,7 @@ people:
   openalex_ids:
   - A5004657494
   resolved_at: '2026-10-23'
+  scholar_checked_at: '2026-11-01'
 - section: previous
   slug: zhixiang-wang
   name: Zhixiang Wang
