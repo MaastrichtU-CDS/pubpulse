@@ -4,7 +4,7 @@
 <link href="https://maastrichtu-cds.github.io/pubpulse/"/>
 <link rel="self" href="https://maastrichtu-cds.github.io/pubpulse/feed.xml"/>
 <id>https://maastrichtu-cds.github.io/pubpulse/</id>
-<updated>2026-11-03T13:22:27+00:00</updated>
+<updated>2026-11-04T13:34:01+00:00</updated>
 <entry>
 <title>AB025. Deep learning model predicts recurrence in thymic epithelial tumours: a multicentre study</title>
 <link href="https://doi.org/10.21037/med-26-ab025"/>
@@ -26,7 +26,7 @@
 <updated>2026-10-30T00:00:00Z</updated>
 <summary>bioRxiv (Cold Spring Harbor Laboratory) · 2026-10-29 · group authors: Xuanhe Hou
 
-Complete connectomes now exist for insect nervous systems, but whether a fixed wiring diagram can learn, and what its memories consist of, is unknown. Here, we trained a spiking model of the whole male Drosophila central nervous system, 167,106 neurons with fixed wiring, to plan moves and to remember a visual cue. Spikes write the cue into neuronal adaptation, which holds it silently until the next input reads it out. Cells that hold the trace are enriched for transcripts of a calcium-activated potassium channel in fly cell atlases. The learned readout recalls the trace only in the brain state of learning: the same trace evokes a different response at another delay, and a disease-like loss of potassium current rewrites the trace and changes how it is read. Learning in the new state is spared. Memory failure can arise from a change of state rather than a loss of storage.</summary>
+SUMMARY Complete connectomes now exist for insect nervous systems, but whether a fixed wiring diagram can learn, and what its memories consist of, is unknown. Here, we trained a spiking model of the whole male Drosophila central nervous system, 167,106 neurons with fixed wiring, to plan moves and to remember a visual cue. Spikes write the cue into neuronal adaptation, which holds it silently until the next input reads it out. Cells that hold the trace are enriched for transcripts of a calcium-activated potassium channel in fly cell atlases. The learned readout recalls the trace only in the brain state of learning: the same trace evokes a different response at another delay, and a disease-like loss of potassium current rewrites the trace and changes how it is read. Learning in the new state is spared. Memory failure can arise from a change of state rather than a loss of storage. HIGHLIGHTS A fixed whole-fly connectome learns to plan and to remember a visual cue The cue is held silently in neuronal adaptation and read out by the next input Recall works only in the brain state of learning, at writing and at reading A disease-like lesion rewrites the trace, while learning in the new state is spared IN BRIEF Wang et al. train a spiking model of the whole male fly nervous system to plan and to remember. It holds a visual cue silently in neuronal adaptation and recalls it only in the brain state of learning, so a disease-like lesion removes recall while new learning is spared.</summary>
 </entry>
 <entry>
 <title>The limits of privacy enhancement in healthcare federated learning: a ELSA perspective in the EU context</title>
