@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-04T13:34:01+00:00",
+ "generated": "2026-11-05T13:48:25+00:00",
  "group_name": "Clinical Data Science (Maastro / Maastricht University)",
  "site_url": "https://maastrichtu-cds.github.io/pubpulse/",
  "repo_url": "https://github.com/MaastrichtU-CDS/pubpulse",
@@ -11,7 +11,7 @@
   "list_name": "the pubpulse weekly list"
  },
  "last_run": {
-  "date": "2026-11-04",
+  "date": "2026-11-05",
   "baseline": false,
   "new_count": 0,
   "new_ids": [],
@@ -1292,8 +1292,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-04",
-    "window_start": "2024-11-04",
+    "checked_at": "2026-11-05",
+    "window_start": "2024-11-05",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -1322,11 +1322,11 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-04",
-    "window_start": "2024-11-04",
+    "checked_at": "2026-11-05",
+    "window_start": "2024-11-05",
     "recent_months": 24,
-    "shared_papers": 19,
-    "recent_shared_papers": 16,
+    "shared_papers": 17,
+    "recent_shared_papers": 14,
     "last_collaboration_date": "2026-10-12",
     "followup_until": "2028-10-12",
     "current_coauthors": [
@@ -1369,8 +1369,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-04",
-    "window_start": "2024-11-04",
+    "checked_at": "2026-11-05",
+    "window_start": "2024-11-05",
     "recent_months": 24,
     "shared_papers": 16,
     "recent_shared_papers": 2,
@@ -1402,8 +1402,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-04",
-    "window_start": "2024-11-04",
+    "checked_at": "2026-11-05",
+    "window_start": "2024-11-05",
     "recent_months": 24,
     "shared_papers": 3,
     "recent_shared_papers": 3,
@@ -1436,8 +1436,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-04",
-    "window_start": "2024-11-04",
+    "checked_at": "2026-11-05",
+    "window_start": "2024-11-05",
     "recent_months": 24,
     "shared_papers": 1,
     "recent_shared_papers": 1,
@@ -1467,8 +1467,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-04",
-    "window_start": "2024-11-04",
+    "checked_at": "2026-11-05",
+    "window_start": "2024-11-05",
     "recent_months": 24,
     "shared_papers": 5,
     "recent_shared_papers": 4,
@@ -1501,8 +1501,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-04",
-    "window_start": "2024-11-04",
+    "checked_at": "2026-11-05",
+    "window_start": "2024-11-05",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -1529,8 +1529,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-04",
-    "window_start": "2024-11-04",
+    "checked_at": "2026-11-05",
+    "window_start": "2024-11-05",
     "recent_months": 24,
     "shared_papers": 1,
     "recent_shared_papers": 0,
@@ -1559,8 +1559,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-04",
-    "window_start": "2024-11-04",
+    "checked_at": "2026-11-05",
+    "window_start": "2024-11-05",
     "recent_months": 24,
     "shared_papers": 2,
     "recent_shared_papers": 1,
@@ -1589,8 +1589,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-04",
-    "window_start": "2024-11-04",
+    "checked_at": "2026-11-05",
+    "window_start": "2024-11-05",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -1617,8 +1617,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-04",
-    "window_start": "2024-11-04",
+    "checked_at": "2026-11-05",
+    "window_start": "2024-11-05",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -1645,8 +1645,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-04",
-    "window_start": "2024-11-04",
+    "checked_at": "2026-11-05",
+    "window_start": "2024-11-05",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -1673,8 +1673,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-04",
-    "window_start": "2024-11-04",
+    "checked_at": "2026-11-05",
+    "window_start": "2024-11-05",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -1703,8 +1703,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-04",
-    "window_start": "2024-11-04",
+    "checked_at": "2026-11-05",
+    "window_start": "2024-11-05",
     "recent_months": 24,
     "shared_papers": 4,
     "recent_shared_papers": 2,
@@ -1734,8 +1734,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-04",
-    "window_start": "2024-11-04",
+    "checked_at": "2026-11-05",
+    "window_start": "2024-11-05",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -1762,8 +1762,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-04",
-    "window_start": "2024-11-04",
+    "checked_at": "2026-11-05",
+    "window_start": "2024-11-05",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -1790,8 +1790,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-04",
-    "window_start": "2024-11-04",
+    "checked_at": "2026-11-05",
+    "window_start": "2024-11-05",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -1818,8 +1818,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-04",
-    "window_start": "2024-11-04",
+    "checked_at": "2026-11-05",
+    "window_start": "2024-11-05",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -1846,8 +1846,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-04",
-    "window_start": "2024-11-04",
+    "checked_at": "2026-11-05",
+    "window_start": "2024-11-05",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -1876,11 +1876,11 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-04",
-    "window_start": "2024-11-04",
+    "checked_at": "2026-11-05",
+    "window_start": "2024-11-05",
     "recent_months": 24,
-    "shared_papers": 9,
-    "recent_shared_papers": 3,
+    "shared_papers": 8,
+    "recent_shared_papers": 2,
     "last_collaboration_date": "2026-01-13",
     "followup_until": "2028-01-13",
     "current_coauthors": [
@@ -1911,8 +1911,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-04",
-    "window_start": "2024-11-04",
+    "checked_at": "2026-11-05",
+    "window_start": "2024-11-05",
     "recent_months": 24,
     "shared_papers": 5,
     "recent_shared_papers": 0,
@@ -1941,8 +1941,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-04",
-    "window_start": "2024-11-04",
+    "checked_at": "2026-11-05",
+    "window_start": "2024-11-05",
     "recent_months": 24,
     "shared_papers": 8,
     "recent_shared_papers": 6,
@@ -1978,8 +1978,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-04",
-    "window_start": "2024-11-04",
+    "checked_at": "2026-11-05",
+    "window_start": "2024-11-05",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -2006,8 +2006,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-04",
-    "window_start": "2024-11-04",
+    "checked_at": "2026-11-05",
+    "window_start": "2024-11-05",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -2034,8 +2034,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-04",
-    "window_start": "2024-11-04",
+    "checked_at": "2026-11-05",
+    "window_start": "2024-11-05",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -2064,8 +2064,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-04",
-    "window_start": "2024-11-04",
+    "checked_at": "2026-11-05",
+    "window_start": "2024-11-05",
     "recent_months": 24,
     "shared_papers": 1,
     "recent_shared_papers": 1,
@@ -2095,8 +2095,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-04",
-    "window_start": "2024-11-04",
+    "checked_at": "2026-11-05",
+    "window_start": "2024-11-05",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -2123,8 +2123,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-04",
-    "window_start": "2024-11-04",
+    "checked_at": "2026-11-05",
+    "window_start": "2024-11-05",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -2153,8 +2153,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-04",
-    "window_start": "2024-11-04",
+    "checked_at": "2026-11-05",
+    "window_start": "2024-11-05",
     "recent_months": 24,
     "shared_papers": 8,
     "recent_shared_papers": 4,
@@ -2184,8 +2184,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-04",
-    "window_start": "2024-11-04",
+    "checked_at": "2026-11-05",
+    "window_start": "2024-11-05",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -2212,8 +2212,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-04",
-    "window_start": "2024-11-04",
+    "checked_at": "2026-11-05",
+    "window_start": "2024-11-05",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -2240,8 +2240,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-04",
-    "window_start": "2024-11-04",
+    "checked_at": "2026-11-05",
+    "window_start": "2024-11-05",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -2270,8 +2270,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-04",
-    "window_start": "2024-11-04",
+    "checked_at": "2026-11-05",
+    "window_start": "2024-11-05",
     "recent_months": 24,
     "shared_papers": 2,
     "recent_shared_papers": 0,
@@ -2300,11 +2300,11 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-04",
-    "window_start": "2024-11-04",
+    "checked_at": "2026-11-05",
+    "window_start": "2024-11-05",
     "recent_months": 24,
-    "shared_papers": 5,
-    "recent_shared_papers": 5,
+    "shared_papers": 4,
+    "recent_shared_papers": 4,
     "last_collaboration_date": "2026-08-25",
     "followup_until": "2028-08-25",
     "current_coauthors": [
@@ -2334,8 +2334,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-04",
-    "window_start": "2024-11-04",
+    "checked_at": "2026-11-05",
+    "window_start": "2024-11-05",
     "recent_months": 24,
     "shared_papers": 3,
     "recent_shared_papers": 2,
@@ -2367,8 +2367,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-04",
-    "window_start": "2024-11-04",
+    "checked_at": "2026-11-05",
+    "window_start": "2024-11-05",
     "recent_months": 24,
     "shared_papers": 1,
     "recent_shared_papers": 0,
@@ -2395,8 +2395,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-04",
-    "window_start": "2024-11-04",
+    "checked_at": "2026-11-05",
+    "window_start": "2024-11-05",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -2423,8 +2423,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-04",
-    "window_start": "2024-11-04",
+    "checked_at": "2026-11-05",
+    "window_start": "2024-11-05",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -2451,8 +2451,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-04",
-    "window_start": "2024-11-04",
+    "checked_at": "2026-11-05",
+    "window_start": "2024-11-05",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -2479,8 +2479,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-04",
-    "window_start": "2024-11-04",
+    "checked_at": "2026-11-05",
+    "window_start": "2024-11-05",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -2507,8 +2507,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-04",
-    "window_start": "2024-11-04",
+    "checked_at": "2026-11-05",
+    "window_start": "2024-11-05",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -2535,8 +2535,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-04",
-    "window_start": "2024-11-04",
+    "checked_at": "2026-11-05",
+    "window_start": "2024-11-05",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -2563,8 +2563,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-04",
-    "window_start": "2024-11-04",
+    "checked_at": "2026-11-05",
+    "window_start": "2024-11-05",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -2591,8 +2591,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-04",
-    "window_start": "2024-11-04",
+    "checked_at": "2026-11-05",
+    "window_start": "2024-11-05",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -2619,8 +2619,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-04",
-    "window_start": "2024-11-04",
+    "checked_at": "2026-11-05",
+    "window_start": "2024-11-05",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -2647,8 +2647,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-04",
-    "window_start": "2024-11-04",
+    "checked_at": "2026-11-05",
+    "window_start": "2024-11-05",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -2677,10 +2677,10 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-04",
-    "window_start": "2024-11-04",
+    "checked_at": "2026-11-05",
+    "window_start": "2024-11-05",
     "recent_months": 24,
-    "shared_papers": 2,
+    "shared_papers": 1,
     "recent_shared_papers": 1,
     "last_collaboration_date": "2025-01-01",
     "followup_until": "2027-01-01",
@@ -2710,8 +2710,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-04",
-    "window_start": "2024-11-04",
+    "checked_at": "2026-11-05",
+    "window_start": "2024-11-05",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -2738,8 +2738,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-04",
-    "window_start": "2024-11-04",
+    "checked_at": "2026-11-05",
+    "window_start": "2024-11-05",
     "recent_months": 24,
     "shared_papers": 2,
     "recent_shared_papers": 2,
@@ -2771,8 +2771,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-04",
-    "window_start": "2024-11-04",
+    "checked_at": "2026-11-05",
+    "window_start": "2024-11-05",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -2801,8 +2801,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-04",
-    "window_start": "2024-11-04",
+    "checked_at": "2026-11-05",
+    "window_start": "2024-11-05",
     "recent_months": 24,
     "shared_papers": 1,
     "recent_shared_papers": 1,
@@ -2833,8 +2833,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-04",
-    "window_start": "2024-11-04",
+    "checked_at": "2026-11-05",
+    "window_start": "2024-11-05",
     "recent_months": 24,
     "shared_papers": 4,
     "recent_shared_papers": 4,
@@ -2866,8 +2866,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-04",
-    "window_start": "2024-11-04",
+    "checked_at": "2026-11-05",
+    "window_start": "2024-11-05",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -2896,8 +2896,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-04",
-    "window_start": "2024-11-04",
+    "checked_at": "2026-11-05",
+    "window_start": "2024-11-05",
     "recent_months": 24,
     "shared_papers": 3,
     "recent_shared_papers": 1,
@@ -2926,8 +2926,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-04",
-    "window_start": "2024-11-04",
+    "checked_at": "2026-11-05",
+    "window_start": "2024-11-05",
     "recent_months": 24,
     "shared_papers": 1,
     "recent_shared_papers": 0,
@@ -2956,8 +2956,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-04",
-    "window_start": "2024-11-04",
+    "checked_at": "2026-11-05",
+    "window_start": "2024-11-05",
     "recent_months": 24,
     "shared_papers": 1,
     "recent_shared_papers": 1,
@@ -2986,8 +2986,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-04",
-    "window_start": "2024-11-04",
+    "checked_at": "2026-11-05",
+    "window_start": "2024-11-05",
     "recent_months": 24,
     "shared_papers": 1,
     "recent_shared_papers": 0,
@@ -3014,8 +3014,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-04",
-    "window_start": "2024-11-04",
+    "checked_at": "2026-11-05",
+    "window_start": "2024-11-05",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -3042,8 +3042,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-04",
-    "window_start": "2024-11-04",
+    "checked_at": "2026-11-05",
+    "window_start": "2024-11-05",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -3070,8 +3070,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-04",
-    "window_start": "2024-11-04",
+    "checked_at": "2026-11-05",
+    "window_start": "2024-11-05",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -3098,8 +3098,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-04",
-    "window_start": "2024-11-04",
+    "checked_at": "2026-11-05",
+    "window_start": "2024-11-05",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -3129,10 +3129,10 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-04",
-    "window_start": "2024-11-04",
+    "checked_at": "2026-11-05",
+    "window_start": "2024-11-05",
     "recent_months": 24,
-    "shared_papers": 8,
+    "shared_papers": 6,
     "recent_shared_papers": 4,
     "last_collaboration_date": "2026-01-20",
     "followup_until": "2028-01-20",
@@ -3159,8 +3159,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-04",
-    "window_start": "2024-11-04",
+    "checked_at": "2026-11-05",
+    "window_start": "2024-11-05",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -3187,8 +3187,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-04",
-    "window_start": "2024-11-04",
+    "checked_at": "2026-11-05",
+    "window_start": "2024-11-05",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -3215,8 +3215,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-04",
-    "window_start": "2024-11-04",
+    "checked_at": "2026-11-05",
+    "window_start": "2024-11-05",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -3243,8 +3243,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-04",
-    "window_start": "2024-11-04",
+    "checked_at": "2026-11-05",
+    "window_start": "2024-11-05",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -3273,8 +3273,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-04",
-    "window_start": "2024-11-04",
+    "checked_at": "2026-11-05",
+    "window_start": "2024-11-05",
     "recent_months": 24,
     "shared_papers": 3,
     "recent_shared_papers": 3,
@@ -3305,8 +3305,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-04",
-    "window_start": "2024-11-04",
+    "checked_at": "2026-11-05",
+    "window_start": "2024-11-05",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -3333,8 +3333,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-04",
-    "window_start": "2024-11-04",
+    "checked_at": "2026-11-05",
+    "window_start": "2024-11-05",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -3361,8 +3361,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-04",
-    "window_start": "2024-11-04",
+    "checked_at": "2026-11-05",
+    "window_start": "2024-11-05",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -3389,8 +3389,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-04",
-    "window_start": "2024-11-04",
+    "checked_at": "2026-11-05",
+    "window_start": "2024-11-05",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -3419,8 +3419,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-04",
-    "window_start": "2024-11-04",
+    "checked_at": "2026-11-05",
+    "window_start": "2024-11-05",
     "recent_months": 24,
     "shared_papers": 1,
     "recent_shared_papers": 0,
@@ -3449,8 +3449,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-04",
-    "window_start": "2024-11-04",
+    "checked_at": "2026-11-05",
+    "window_start": "2024-11-05",
     "recent_months": 24,
     "shared_papers": 3,
     "recent_shared_papers": 2,
@@ -3480,8 +3480,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-04",
-    "window_start": "2024-11-04",
+    "checked_at": "2026-11-05",
+    "window_start": "2024-11-05",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -3508,8 +3508,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-04",
-    "window_start": "2024-11-04",
+    "checked_at": "2026-11-05",
+    "window_start": "2024-11-05",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -3536,8 +3536,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-04",
-    "window_start": "2024-11-04",
+    "checked_at": "2026-11-05",
+    "window_start": "2024-11-05",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -3564,8 +3564,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-04",
-    "window_start": "2024-11-04",
+    "checked_at": "2026-11-05",
+    "window_start": "2024-11-05",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -3592,8 +3592,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-04",
-    "window_start": "2024-11-04",
+    "checked_at": "2026-11-05",
+    "window_start": "2024-11-05",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -3620,8 +3620,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-04",
-    "window_start": "2024-11-04",
+    "checked_at": "2026-11-05",
+    "window_start": "2024-11-05",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -3648,8 +3648,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-04",
-    "window_start": "2024-11-04",
+    "checked_at": "2026-11-05",
+    "window_start": "2024-11-05",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -3678,11 +3678,11 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-04",
-    "window_start": "2024-11-04",
+    "checked_at": "2026-11-05",
+    "window_start": "2024-11-05",
     "recent_months": 24,
-    "shared_papers": 14,
-    "recent_shared_papers": 11,
+    "shared_papers": 12,
+    "recent_shared_papers": 10,
     "last_collaboration_date": "2026-10-07",
     "followup_until": "2028-10-07",
     "current_coauthors": [
@@ -3719,8 +3719,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-04",
-    "window_start": "2024-11-04",
+    "checked_at": "2026-11-05",
+    "window_start": "2024-11-05",
     "recent_months": 24,
     "shared_papers": 3,
     "recent_shared_papers": 3,
@@ -3751,8 +3751,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-04",
-    "window_start": "2024-11-04",
+    "checked_at": "2026-11-05",
+    "window_start": "2024-11-05",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -3781,8 +3781,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-04",
-    "window_start": "2024-11-04",
+    "checked_at": "2026-11-05",
+    "window_start": "2024-11-05",
     "recent_months": 24,
     "shared_papers": 4,
     "recent_shared_papers": 1,
@@ -3814,8 +3814,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-04",
-    "window_start": "2024-11-04",
+    "checked_at": "2026-11-05",
+    "window_start": "2024-11-05",
     "recent_months": 24,
     "shared_papers": 2,
     "recent_shared_papers": 1,
@@ -3847,8 +3847,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-04",
-    "window_start": "2024-11-04",
+    "checked_at": "2026-11-05",
+    "window_start": "2024-11-05",
     "recent_months": 24,
     "shared_papers": 21,
     "recent_shared_papers": 15,
@@ -3887,8 +3887,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-04",
-    "window_start": "2024-11-04",
+    "checked_at": "2026-11-05",
+    "window_start": "2024-11-05",
     "recent_months": 24,
     "shared_papers": 8,
     "recent_shared_papers": 4,
@@ -3921,8 +3921,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-04",
-    "window_start": "2024-11-04",
+    "checked_at": "2026-11-05",
+    "window_start": "2024-11-05",
     "recent_months": 24,
     "shared_papers": 7,
     "recent_shared_papers": 3,
@@ -7264,13 +7264,13 @@
    "pdf_url": "https://www.f6publishing.com/Forms/Main/DownloadFile.aspx?type=m&typeid=2&id=123720&filepath=8E31D0401EB18CD6271A9142AB7E05E369D96C985907EB5F5BD6BB074ECFE6DD9DE1F9CFC3C348E0",
    "authors": [
     "Ariadne L van der Velden",
-    "Robrecht R. M. M. Knapen",
+    "Robrecht R M M Knapen",
     "Sinéad James",
     "Hossein Rahmani",
     "Ralph Brecheisen",
-    "Sander M. J. van Kuijk",
-    "Joachim Ernst Wildberger",
-    "Ronald M. van Dam",
+    "Sander M J van Kuijk",
+    "Joachim E Wildberger",
+    "Ronald R M M van Dam",
     "Christiaan van der Leij"
    ],
    "author_members": [
@@ -7291,9 +7291,7 @@
      "match": "openalex",
      "affiliations": [
       "Maastricht University Medical Centre",
-      "Maastricht University",
-      "Department of Radiology and Nuclear Medicine, Maastricht University Medical Center+, Maastricht 6229 HX, Limburg, Netherlands",
-      "GROW Research Institute for Oncology and Reproduction, Maastricht University, Maastricht 6229 ER, Limburg, Netherlands"
+      "Maastricht University Medical Centre"
      ]
     },
     "ralph-brecheisen": {
@@ -7302,7 +7300,7 @@
      "match": "openalex",
      "affiliations": [
       "Maastricht University Medical Centre",
-      "Department of Surgery, Maastricht University Medical Center+, Maastricht 6229 HX, Limburg, Netherlands"
+      "Maastricht University Medical Centre"
      ]
     }
    },
@@ -7319,33 +7317,23 @@
    ],
    "author_count": 9,
    "group_members": [
-    "hossein-rahmani",
     "ralph-brecheisen"
    ],
    "member_affiliations": {
-    "hossein-rahmani": [
-     "Maastricht University Medical Centre",
-     "Maastricht University",
-     "Department of Radiology and Nuclear Medicine, Maastricht University Medical Center+, Maastricht 6229 HX, Limburg, Netherlands",
-     "GROW Research Institute for Oncology and Reproduction, Maastricht University, Maastricht 6229 ER, Limburg, Netherlands"
-    ],
     "ralph-brecheisen": [
      "Maastricht University Medical Centre",
-     "Department of Surgery, Maastricht University Medical Center+, Maastricht 6229 HX, Limburg, Netherlands"
+     "Maastricht University Medical Centre"
     ]
    },
    "affiliation_status": {
-    "hossein-rahmani": "verified",
-    "ralph-brecheisen": "mismatch"
+    "ralph-brecheisen": "unspecific"
    },
    "senior_affiliations": [
     "Maastricht University Medical Centre",
-    "Maastricht University",
-    "Department of Radiology and Nuclear Medicine, Maastricht University Medical Center+, Maastricht 6229 HX, Limburg, Netherlands",
-    "GROW Research Institute for Oncology and Reproduction, Maastricht University, Maastricht 6229 ER, Limburg, Netherlands. christiaan.vander.leij@mumc.nl"
+    "Maastricht University Medical Centre"
    ],
    "cited_by_count": 0,
-   "abstract": "BACKGROUND Multiple software programs are available for manual or (semi-)automated liver segmentation. Although manual segmentation has traditionally been the standard, it is time-intensive and susceptible to inter-observer variability. Conversely, (semi-)automated approaches have been shown to reduce segmentation time, but the availability and use of different software tools can introduce variability in liver volumetry outcomes. AIM To evaluate the reliability of three segmentation software programs (Synapse 3D (Fujifilm), OsiriX® (Pixmea), and Syngo.via (Siemens Healthineers)) for liver volumetry. METHODS Patients (≥ 18 years) with abdominal computed tomography images without liver pathology were included. Total liver volume (TLV) and segment II/III volume – a surrogate for the future liver remnant (FLR) – were measured. Two blinded independent researchers performed volumetric assessments. The intraclass correlation coefficient (ICC) was calculated for interobserver variability for the first 30 scans between both researchers. This was also performed for intra-observer variability between the software programs in 200 randomly selected patients (52.5% male; mean age: 63.5 years). RESULTS Mean TLV’s reported by Synapse 3D, Syngo.via and OsiriX® were 1705 ± 462 mL, 1672 ± 463 mL, and 1627 ± 449 mL, respectively. Mean segment II/III volumes reported were 304 ± 115 mL, 282 ± 109 mL, and 277 ± 108 mL, respectively. The highest interobserver agreement (n = 30) was for TLV with Synapse 3D (ICC: 0.999; 95%CI: 0.998-0.999), and highest intraobserver ICC was between Synapse 3D and Syngo.via for TLV (ICC: 0.997; 95%CI: 0.985-0.999). Mean standardized FLR for Synapse 3D, Syngo.via and OsiriX® were 18.6%, 17.2%, and 16.9%, respectively. CONCLUSION Although absolute volumes varied slightly, the standardized FLR remained comparable across the software programs, indicating that all three are suitable for reliable computed tomography liver volumetry.",
+   "abstract": "Abstract Purpose: Multiple software programs are available for manual or (semi-)automated liver segmentation. The aim of this study was to evaluate the performance of three segmentation software programs (Synapse 3D (Fujifilm), OsiriX® (Pixmea), and Syngo.via (Siemens Healthineers)) for liver segmentation and volumetry, and secondly to assess variability between observers and among the software programs. Methods: Patients (≥ 18 years) with abdominal computed tomography (CT) images without liver pathology were included. Total liver volume (TLV) and segment II/III (SII/III), as surrogate for future liver remnant (FLR), volume were measured. Two independent researchers conducted volumetry blinded. The intraclass correlation (ICC) was calculated for interobserver variability for the first 30 scans between both researchers, and for intraobserver variability among the software programs for 200 randomly selected patients (53% men; mean age: 63.5 years). Results: Mean TLV and SII/III volumes for Synapse 3D, Syngo.via and OsiriX® were 1705 ± 462 mL and 304 ± 115 mL 1672 ± 463 mL and 282 ± 109 mL, and 1627 ± 449 mL and 277 ± 108 mL, respectively. Highest interobserver agreement (n = 30) was for TLV with Synapse 3D (ICC:0.999;95%CI:0.998–0.999), and highest intraobserver ICC was between Synapse 3D and Syngo.via for TLV (ICC:0.997;95%CI:0.985–0.999). Mean sFLR for Synapse 3D, Syngo.via and OsiriX® were 18.6%, 17.2%, and 16.9%, respectively. Conclusion Although absolute volumes varied slightly, sFLR remained constant across the software programs, making them all suitable for reliable CT liver volumetry.",
    "verified": false,
    "counted_members": [],
    "counted": false,
@@ -8025,112 +8013,6 @@
    "first_seen": "2026-10-21",
    "journal_impact": 0.8,
    "journal_h_index": 346
-  },
-  {
-   "id": "W7150748203",
-   "openalex_url": "https://openalex.org/W7150748203",
-   "doi": "https://doi.org/10.1016/j.ctro.2026.101163",
-   "title": "Outcomes after (chemo)radiotherapy for anal cancer – A nationwide cohort study",
-   "publication_date": "2026-07-01",
-   "year": 2026,
-   "type": "article",
-   "journal": "University of Groningen research database (University of Groningen / Centre for Information Technology)",
-   "source_id": "S4306400420",
-   "landing_url": "https://research.rug.nl/en/publications/eecd7cbd-b817-442b-a18a-2d37a88ee8b0",
-   "is_oa": true,
-   "oa_url": "https://research.rug.nl/en/publications/eecd7cbd-b817-442b-a18a-2d37a88ee8b0",
-   "license": "cc-by",
-   "pdf_url": null,
-   "authors": [
-    "C.L. Deijen",
-    "M. Berbée",
-    "Elisabeth D. Geijsen",
-    "Karen J. Neelis",
-    "Leonard Wee",
-    "M. A.B. Bakker-Van der Jagt",
-    "A. H. Boer",
-    "Heleen M. Ceha",
-    "J. S. Cnossen",
-    "Martijn Intven",
-    "Mathilde M Leseman-Hoogenboom",
-    "G. Ebrahimi",
-    "K. Muller",
-    "Vera Oppedijk",
-    "Onne Reerink",
-    "Heidi Rütten",
-    "Patty H. Spruit",
-    "Baukelien van Triest"
-   ],
-   "author_members": [
-    null,
-    null,
-    null,
-    null,
-    "leonard-wee",
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null
-   ],
-   "author_profiles": {
-    "leonard-wee": {
-     "openalex_id": "A5004688031",
-     "orcid": "0000-0003-1612-9055",
-     "match": "openalex",
-     "affiliations": []
-    }
-   },
-   "author_positions": [
-    1,
-    2,
-    3,
-    4,
-    5,
-    6,
-    7,
-    8,
-    9,
-    10,
-    11,
-    12,
-    13,
-    14,
-    15,
-    16,
-    17,
-    18
-   ],
-   "author_count": 18,
-   "group_members": [
-    "leonard-wee"
-   ],
-   "member_affiliations": {
-    "leonard-wee": []
-   },
-   "affiliation_status": {
-    "leonard-wee": "unknown"
-   },
-   "senior_affiliations": [],
-   "cited_by_count": 0,
-   "abstract": "Introduction: Due to the rarity of anal cancer, real-world data on treatment outcomes are scarce. However, its incidence is increasing in the Netherlands with > 300 new cases and 70 deaths yearly. Standard of care consists of chemoradiotherapy (CRT) or radiotherapy alone (RT). The primary objective of our nationwide study was two-fold; to evaluate real-world outcomes after curatively intended CRT/RT for anal squamous cell carcinoma (ASCC), and to create a large, high-quality dataset as a national benchmark to guide future prospective research. Material and methods: Data were collected retrospectively from 16 Dutch institutions treating ASCC between 2015 and 2018. Primary endpoint was locoregional recurrence free survival (LRFS). Secondary endpoints were overall survival (OS), disease specific survival (DSS), colostomy free survival (CFS), complete response (CR) and toxicity. Results: A total of 462 patients were analysed. Most patients received CRT (85%), with mitomycin-capecitabine as a radiosensitizer in 86% of cases. After median follow-up of 5 years, LRFS for all patients was 80% at 3 years and 78% at 5 years. In total 82% of patients had reached CR, with a median interval to define CR of 3 months. At 3 years, OS, DSS and CFS were 78%, 86% and 88%, respectively. Conclusion: These real-world data demonstrate that curatively intended CRT/RT for ASCC results in LRFS of 80% at 3 years. Organ preservation outcomes were favourable with a CFS of 88% at 3 years. These findings support the current treatment approach as the reference standard for these patients and provide a national benchmark to guide future prospective research.",
-   "verified": false,
-   "counted_members": [
-    "leonard-wee"
-   ],
-   "counted": true,
-   "listed_elsewhere": false,
-   "first_seen": "2026-10-21",
-   "journal_impact": null,
-   "journal_h_index": null
   },
   {
    "id": "W7167038328",
@@ -9141,7 +9023,7 @@
     "Netherlands Comprehensive Cancer Organisation",
     "Department of Research and Development, Netherlands Comprehensive Cancer Organization (IKNL), Utrecht, the Netherlands"
    ],
-   "cited_by_count": 1,
+   "cited_by_count": 2,
    "abstract": "Building on previous research and implementations, this study identifies the essential structural and functional components required to develop a Learning Health System (LHS) for oncology in the Netherlands. Drawing on work related to the Netherlands Cancer Registry (NCR), we systematically mapped our studies onto the LHS framework to examine component coverage and integration. Medical informatics advances LHS development by enabling structured data capture, computable guideline representation, continues real-world data analysis, and data-driven guideline refinement. In the Netherlands, strong integration with the NCR provides a robust foundation for continuous learning, moving the vision of a fast, data-driven health system closer to reality. Our findings show that while the methodological and technical foundations of LHS components are well established, integration gaps remain. The next step is engaging multidisciplinary learning communities, supported by clear governance, to enable continuous learning, and sustained improvement in oncology care.",
    "verified": false,
    "counted_members": [],
@@ -9664,102 +9546,6 @@
    "journal_h_index": 37
   },
   {
-   "id": "W7160058866",
-   "openalex_url": "https://openalex.org/W7160058866",
-   "doi": "https://doi.org/10.21203/rs.3.rs-9394813/v1",
-   "title": "Comparing the performance of three software programmes for manual and (semi-)automatic liver volumetry",
-   "publication_date": "2026-05-04",
-   "year": 2026,
-   "type": "preprint",
-   "journal": "Research Square",
-   "source_id": "S4306525896",
-   "landing_url": "https://doi.org/10.21203/rs.3.rs-9394813/v1",
-   "is_oa": true,
-   "oa_url": "https://www.researchsquare.com/article/rs-9394813/latest.pdf",
-   "license": "cc-by",
-   "pdf_url": "https://www.researchsquare.com/article/rs-9394813/latest.pdf",
-   "authors": [
-    "Ariadne L van der Velden",
-    "Robrecht R. M. M. Knapen",
-    "Sinéad James",
-    "Hossein Rahmani",
-    "Ralph Brecheisen",
-    "Sander M. J. van Kuijk",
-    "Joachim Ernst Wildberger",
-    "Ronald M. van Dam",
-    "Christiaan van der Leij"
-   ],
-   "author_members": [
-    null,
-    null,
-    null,
-    "hossein-rahmani",
-    "ralph-brecheisen",
-    null,
-    null,
-    null,
-    null
-   ],
-   "author_profiles": {
-    "hossein-rahmani": {
-     "openalex_id": "A5080786959",
-     "orcid": "0000-0003-2988-6178",
-     "match": "openalex",
-     "affiliations": [
-      "Maastricht University Medical Centre",
-      "Maastricht University Medical Centre"
-     ]
-    },
-    "ralph-brecheisen": {
-     "openalex_id": "A5077645218",
-     "orcid": "0000-0001-9937-2602",
-     "match": "openalex",
-     "affiliations": [
-      "Maastricht University Medical Centre",
-      "Maastricht University Medical Centre"
-     ]
-    }
-   },
-   "author_positions": [
-    1,
-    2,
-    3,
-    4,
-    5,
-    6,
-    7,
-    8,
-    9
-   ],
-   "author_count": 9,
-   "group_members": [
-    "ralph-brecheisen"
-   ],
-   "member_affiliations": {
-    "ralph-brecheisen": [
-     "Maastricht University Medical Centre",
-     "Maastricht University Medical Centre"
-    ]
-   },
-   "affiliation_status": {
-    "ralph-brecheisen": "unspecific"
-   },
-   "senior_affiliations": [
-    "Maastricht University Medical Centre",
-    "Maastricht University Medical Centre"
-   ],
-   "cited_by_count": 0,
-   "abstract": "Abstract Purpose: Multiple software programs are available for manual or (semi-)automated liver segmentation. The aim of this study was to evaluate the performance of three segmentation software programs (Synapse 3D (Fujifilm), OsiriX® (Pixmea), and Syngo.via (Siemens Healthineers)) for liver segmentation and volumetry, and secondly to assess variability between observers and among the software programs. Methods: Patients (≥ 18 years) with abdominal computed tomography (CT) images without liver pathology were included. Total liver volume (TLV) and segment II/III (SII/III), as surrogate for future liver remnant (FLR), volume were measured. Two independent researchers conducted volumetry blinded. The intraclass correlation (ICC) was calculated for interobserver variability for the first 30 scans between both researchers, and for intraobserver variability among the software programs for 200 randomly selected patients (53% men; mean age: 63.5 years). Results: Mean TLV and SII/III volumes for Synapse 3D, Syngo.via and OsiriX® were 1705 ± 462 mL and 304 ± 115 mL 1672 ± 463 mL and 282 ± 109 mL, and 1627 ± 449 mL and 277 ± 108 mL, respectively. Highest interobserver agreement (n = 30) was for TLV with Synapse 3D (ICC:0.999;95%CI:0.998–0.999), and highest intraobserver ICC was between Synapse 3D and Syngo.via for TLV (ICC:0.997;95%CI:0.985–0.999). Mean sFLR for Synapse 3D, Syngo.via and OsiriX® were 18.6%, 17.2%, and 16.9%, respectively. Conclusion Although absolute volumes varied slightly, sFLR remained constant across the software programs, making them all suitable for reliable CT liver volumetry.",
-   "verified": false,
-   "counted_members": [],
-   "counted": false,
-   "listed_elsewhere": true,
-   "first_seen": "2026-10-21",
-   "other_group": "Christiaan van der Leij",
-   "journal_impact": null,
-   "journal_h_index": null
-  },
-  {
    "id": "W7160365937",
    "openalex_url": "https://openalex.org/W7160365937",
    "doi": null,
@@ -9843,148 +9629,6 @@
    "verified": false,
    "counted_members": [
     "rianne-fijten"
-   ],
-   "counted": true,
-   "listed_elsewhere": false,
-   "first_seen": "2026-10-21",
-   "journal_impact": null,
-   "journal_h_index": null
-  },
-  {
-   "id": "W7164119891",
-   "openalex_url": "https://openalex.org/W7164119891",
-   "doi": null,
-   "title": "Preoperative body composition parameters are associated with postoperative outcomes in patients with Crohn's disease",
-   "publication_date": "2026-05-01",
-   "year": 2026,
-   "type": "article",
-   "journal": "Utrecht University Repository (Utrecht University)",
-   "source_id": "S4306401649",
-   "landing_url": "https://dspace.library.uu.nl/handle/1874/484904",
-   "is_oa": true,
-   "oa_url": "https://dspace.library.uu.nl/handle/1874/484904",
-   "license": "other-oa",
-   "pdf_url": null,
-   "authors": [
-    "Michiel Thomas Jan Bak",
-    "Karlijn Demers",
-    "Oddeke van Ruler",
-    "Marieke J. Pierik",
-    "David P.J. van Dijk",
-    "Jarmila D.W. van der Bilt",
-    "Mariëlle J. L. Romberg-Camps",
-    "Dijkstra Gerard",
-    "Marjolijn Duijvestein",
-    "Sander van der Marel",
-    "Jeroen Maljaars",
-    "Christianne Johanna Buskens",
-    "Frans C. H. Bakers",
-    "Ralph Brecheisen",
-    "Bart Chateau Bongers",
-    "de Witte, Dennis",
-    "Sita V. Jansen",
-    "Bindia Jharap",
-    "Carmen S. Horjus",
-    "Fiona D M van Schaik",
-    "Rachel Louise West",
-    "Nanne K.H. de Boer",
-    "Bettina E. Hansen",
-    "C. Janneke van der Woude",
-    "Elisabeth F. C. van Rossum",
-    "Laurents P. S. Stassen",
-    "Annemarie Charlotte de Vries",
-    "RAP-CD study group",
-    "MS MDL 1",
-    "Infection & Immunity"
-   ],
-   "author_members": [
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    "ralph-brecheisen",
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null
-   ],
-   "author_profiles": {
-    "ralph-brecheisen": {
-     "openalex_id": "A5077645218",
-     "orcid": "0000-0001-9937-2602",
-     "match": "openalex",
-     "affiliations": []
-    }
-   },
-   "author_positions": [
-    1,
-    2,
-    3,
-    4,
-    5,
-    6,
-    7,
-    8,
-    9,
-    10,
-    11,
-    12,
-    13,
-    14,
-    15,
-    16,
-    17,
-    18,
-    19,
-    20,
-    21,
-    22,
-    23,
-    24,
-    25,
-    26,
-    27,
-    28,
-    29,
-    30
-   ],
-   "author_count": 30,
-   "group_members": [
-    "ralph-brecheisen"
-   ],
-   "member_affiliations": {
-    "ralph-brecheisen": []
-   },
-   "affiliation_status": {
-    "ralph-brecheisen": "unknown"
-   },
-   "senior_affiliations": [],
-   "cited_by_count": 0,
-   "abstract": "Background & Aims: Preoperative body composition is a potential modifiable risk factor for poor postoperative outcomes in Crohn's disease (CD). This study aimed to investigate the association of preoperative body composition parameters with postoperative complications and endoscopic postoperative recurrence (ePOR) in patients with CD following ileocolic (re-)resection (ICR). Methods: Patients with CD (≥16 years) scheduled for ICR with preoperative abdominal imaging (<12 months) (n = 227) were identified from a prospective, multicenter cohort study. Cross-sectional surface area normalized for body height (ie, index) and lipid content in sketelal muscle mass (SM) and subcutaneous and visceral adipose tissue (SAT/VAT) were analyzed on imaging. Associations with postoperative complications (Clavien-Dindo I-IV), moderate-to-severe complications (Clavien-Dindo ≥II), infectious complications, and ePOR (modified Rutgeerts’ score ≥i2b) were explored. Results: High lipid content in SM (ie, myosteatosis) was associated with overall postoperative (adjusted odds ratio [aOR], 3.09; 95% confidence interval [CI], 1.36–7.00), moderate-to-severe (aOR, 2.66; 95% CI, 1.24–5.68), and infectious complications (aOR, 2.44; 95% CI, 1.10–5.40). Low preoperative SAT index was protective against postoperative complications (aOR, 0.38; 95% CI, 0.16–0.88). Low lipid content in VAT was associated with postoperative infectious complications (aOR, 4.31; 95% CI, 1.11–16.71), whereas high lipid content in VAT was protective against ePOR (aOR, 0.26; 95% CI, 0.07–0.99). Both low (aOR, 4.46; 95% CI, 1.09–19.57) and high SM index were associated with ePOR (aOR, 2.45; 95% CI, 1.06–5.65). Conclusion: Preoperative myosteatosis was consistently associated with overall postoperative complications, moderate-to severe, and infectious complications, in patients with CD following ICR. Furthermore, several body composition parameters were identified as risk factor or protective factor for postoperative complications and ePOR. Inconsistent findings were observed for SM levels and ePOR risk. The correlation between improvements of these parameters and postoperative outcomes requires further study.",
-   "verified": false,
-   "counted_members": [
-    "ralph-brecheisen"
    ],
    "counted": true,
    "listed_elsewhere": false,
@@ -10408,6 +10052,7 @@
      "orcid": "0009-0002-3020-0030",
      "match": "openalex",
      "affiliations": [
+      "Maastricht University Medical Centre",
       "Maastro Clinic",
       "Eindhoven University of Technology",
       "Department of Biomedical Engineering , Medical Image Analysis , Eindhoven University of Technology , Eindhoven , The Netherlands",
@@ -10425,6 +10070,7 @@
      "orcid": "0009-0001-4978-4024",
      "match": "openalex",
      "affiliations": [
+      "Maastricht University Medical Centre",
       "Maastro Clinic",
       "Department of Radiation Oncology (Maastro) , GROW Research Institute for Oncology and Reproduction , Maastricht University Medical Centre+ , Maastricht , The Netherlands"
      ]
@@ -10523,12 +10169,14 @@
    ],
    "member_affiliations": {
     "petros-koutsouvelis": [
+     "Maastricht University Medical Centre",
      "Maastro Clinic",
      "Eindhoven University of Technology",
      "Department of Biomedical Engineering , Medical Image Analysis , Eindhoven University of Technology , Eindhoven , The Netherlands",
      "Department of Radiation Oncology (Maastro) , GROW Research Institute for Oncology and Reproduction , Maastricht University Medical Centre+ , Maastricht , The Netherlands"
     ],
     "leroy-volmer": [
+     "Maastricht University Medical Centre",
      "Maastro Clinic",
      "Department of Radiation Oncology (Maastro) , GROW Research Institute for Oncology and Reproduction , Maastricht University Medical Centre+ , Maastricht , The Netherlands"
     ]
@@ -11906,7 +11554,7 @@
     "South Western Sydney Clinical Campus, School of Clinical Medicine, UNSW, Sydney, New South Wales, Australia"
    ],
    "cited_by_count": 2,
-   "abstract": "Precision oncology relies on access to high-quality data for increasingly smaller patient subgroups. The international atomCAT consortium investigates the potential of federated learning to support this, using anal cancer as a rare cancer exemplar. Here, we show that federated multivariable Cox models trained across 14 centres (1428 patients) and externally validated in two additional centres (277 patients) achieve consistent calibration and discrimination during leave-one-centre-out and external validation (c-indices 0.68-0.79). Lower T stage, absence of nodal involvement, smaller tumour volume, female sex, younger age, and mitomycin- or cisplatin-based chemotherapy are associated with improved overall survival. Lower T stage, smaller tumour volume, and female sex are associated with improved locoregional control, while absence of nodal involvement and smaller tumour volume are associated with better freedom from distant metastases. These findings demonstrate that federated learning enables robust, privacy-preserving prognostic modelling for rare cancers using real-world data, supporting international collaboration without data sharing.",
+   "abstract": "Abstract Precision oncology relies on access to high-quality data for increasingly smaller patient subgroups. The international atomCAT consortium investigates the potential of federated learning to support this, using anal cancer as a rare cancer exemplar. Here, we show that federated multivariable Cox models trained across 14 centres (1428 patients) and externally validated in two additional centres (277 patients) achieve consistent calibration and discrimination during leave-one-centre-out and external validation (c-indices 0.68-0.79). Lower T stage, absence of nodal involvement, smaller tumour volume, female sex, younger age, and mitomycin- or cisplatin-based chemotherapy are associated with improved overall survival. Lower T stage, smaller tumour volume, and female sex are associated with improved locoregional control, while absence of nodal involvement and smaller tumour volume are associated with better freedom from distant metastases. These findings demonstrate that federated learning enables robust, privacy-preserving prognostic modelling for rare cancers using real-world data, supporting international collaboration without data sharing.",
    "verified": true,
    "counted_members": [
     "ananya-choudhury",
@@ -13926,7 +13574,7 @@
     "Tilburg University",
     "Department of Cognitive Neuropsychology, Tilburg University, Tilburg, The Netherlands"
    ],
-   "cited_by_count": 2,
+   "cited_by_count": 4,
    "abstract": "Accurate estimation of Overall Survival (OS) in Non-Small Cell Lung Cancer (NSCLC) patients provides critical insights for treatment planning. While previous studies have shown that radiomics or Deep Learning (DL) features improved prediction accuracy, this study aimed to evaluate whether a model that integrates clinical, radiomics, DL, and dosimetric features outperforms other models developed with only a subset of these features. We collected pre-treatment lung CT scans and clinical data for 219 NSCLC patients from the Maastro Clinic: 183 for training and 36 for testing. Radiomics features were extracted using the Python radiomics feature extractor, and DL and dose features were obtained using a 3D ResNet model. An ensemble model comprising XGB and NN classifiers was developed using: (1) clinical features only; (2) clinical and radiomics features; (3) clinical and DL features; (4) clinical and dose features, and (5) clinical, radiomics, dose and DL features. The performance metrics were evaluated for the test and K-fold cross-validation data sets. The prediction model utilizing only clinical variables provided an Area Under the Receiver Operating Characteristic Curve (AUC) of 0.71 and a test accuracy of 72.73%. The best performance came from combining clinical, radiomics, dose and DL features (AUC: 0.84, accuracy: 88.64%). World Health Organisation Performance Status emerged as the factor with the highest importance for the combined model. Integrating radiomics, dose and DL features with clinical characteristics improved the prediction of OS after radiotherapy for NSCLC patients. The increased accuracy of our integrated model could enable personalized, risk-based treatment planning, guiding clinicians toward more effective interventions, improved patient outcomes and enhanced quality of life.",
    "verified": true,
    "counted_members": [
@@ -15407,9 +15055,8 @@
      "orcid": "0000-0003-1278-3295",
      "match": "openalex",
      "affiliations": [
-      "Maastricht University Medical Centre",
-      "Maastro Clinic",
-      "Department of Radiation Oncology (Maastro), GROW School for Oncology and Reproduction, Maastricht University Medical Centre+, Maastricht, the Netherlands"
+      "Maastricht University",
+      "Maastricht University;"
      ]
     },
     "varsha-gouthamchand": {
@@ -15417,9 +15064,8 @@
      "orcid": "0000-0002-4756-2866",
      "match": "openalex",
      "affiliations": [
-      "Maastricht University Medical Centre",
-      "Maastro Clinic",
-      "Department of Radiation Oncology (Maastro), GROW School for Oncology and Reproduction, Maastricht University Medical Centre+, Maastricht, the Netherlands"
+      "Maastricht University",
+      "Maastricht University;"
      ]
     },
     "andre-dekker": {
@@ -15427,9 +15073,8 @@
      "orcid": "0000-0002-0422-7996",
      "match": "openalex",
      "affiliations": [
-      "Maastricht University Medical Centre",
-      "Maastro Clinic",
-      "Department of Radiation Oncology (Maastro), GROW School for Oncology and Reproduction, Maastricht University Medical Centre+, Maastricht, the Netherlands"
+      "Maastricht University",
+      "Maastricht University;"
      ]
     },
     "leonard-wee": {
@@ -15437,9 +15082,8 @@
      "orcid": "0000-0003-1612-9055",
      "match": "openalex",
      "affiliations": [
-      "Maastricht University Medical Centre",
-      "Maastro Clinic",
-      "Department of Radiation Oncology (Maastro), GROW School for Oncology and Reproduction, Maastricht University Medical Centre+, Maastricht, the Netherlands"
+      "Maastricht University",
+      "Maastricht University;"
      ]
     },
     "johan-van-soest": {
@@ -15447,11 +15091,8 @@
      "orcid": "0000-0003-2548-0330",
      "match": "openalex",
      "affiliations": [
-      "Maastricht University Medical Centre",
       "Maastricht University",
-      "Maastro Clinic",
-      "Brightlands Institute for Smart Society (BISS), Faculty of Science and Engineering, Maastricht University, Maastricht, the Netherlands",
-      "Department of Radiation Oncology (Maastro), GROW School for Oncology and Reproduction, Maastricht University Medical Centre+, Maastricht, the Netherlands"
+      "Maastricht University;"
      ]
     },
     "aiara-lobo-gomes": {
@@ -15459,11 +15100,8 @@
      "orcid": "0000-0003-4670-6036",
      "match": "openalex",
      "affiliations": [
-      "Maastricht University Medical Centre",
-      "Maastro Clinic",
-      "RWTH Aachen University",
-      "Department of Radiation Oncology (Maastro), GROW School for Oncology and Reproduction, Maastricht University Medical Centre+, Maastricht, the Netherlands",
-      "Institute of Molecular Medicine, RWTH Aachen University, Aachen, Germany"
+      "Maastricht University",
+      "Maastricht University;"
      ]
     }
    },
@@ -15484,73 +15122,46 @@
    "author_count": 12,
    "group_members": [
     "joshi-hogenboom",
-    "varsha-gouthamchand",
     "andre-dekker",
     "leonard-wee",
-    "johan-van-soest",
-    "aiara-lobo-gomes"
+    "johan-van-soest"
    ],
    "member_affiliations": {
     "joshi-hogenboom": [
-     "Maastricht University Medical Centre",
-     "Maastro Clinic",
-     "Department of Radiation Oncology (Maastro), GROW School for Oncology and Reproduction, Maastricht University Medical Centre+, Maastricht, the Netherlands"
-    ],
-    "varsha-gouthamchand": [
-     "Maastricht University Medical Centre",
-     "Maastro Clinic",
-     "Department of Radiation Oncology (Maastro), GROW School for Oncology and Reproduction, Maastricht University Medical Centre+, Maastricht, the Netherlands"
+     "Maastricht University",
+     "Maastricht University;"
     ],
     "andre-dekker": [
-     "Maastricht University Medical Centre",
-     "Maastro Clinic",
-     "Department of Radiation Oncology (Maastro), GROW School for Oncology and Reproduction, Maastricht University Medical Centre+, Maastricht, the Netherlands"
+     "Maastricht University",
+     "Maastricht University;"
     ],
     "leonard-wee": [
-     "Maastricht University Medical Centre",
-     "Maastro Clinic",
-     "Department of Radiation Oncology (Maastro), GROW School for Oncology and Reproduction, Maastricht University Medical Centre+, Maastricht, the Netherlands"
+     "Maastricht University",
+     "Maastricht University;"
     ],
     "johan-van-soest": [
-     "Maastricht University Medical Centre",
      "Maastricht University",
-     "Maastro Clinic",
-     "Brightlands Institute for Smart Society (BISS), Faculty of Science and Engineering, Maastricht University, Maastricht, the Netherlands",
-     "Department of Radiation Oncology (Maastro), GROW School for Oncology and Reproduction, Maastricht University Medical Centre+, Maastricht, the Netherlands"
-    ],
-    "aiara-lobo-gomes": [
-     "Maastricht University Medical Centre",
-     "Maastro Clinic",
-     "RWTH Aachen University",
-     "Department of Radiation Oncology (Maastro), GROW School for Oncology and Reproduction, Maastricht University Medical Centre+, Maastricht, the Netherlands",
-     "Institute of Molecular Medicine, RWTH Aachen University, Aachen, Germany"
+     "Maastricht University;"
     ]
    },
    "affiliation_status": {
-    "joshi-hogenboom": "verified",
-    "varsha-gouthamchand": "verified",
-    "andre-dekker": "verified",
-    "leonard-wee": "verified",
-    "johan-van-soest": "verified",
-    "aiara-lobo-gomes": "verified"
+    "joshi-hogenboom": "unspecific",
+    "andre-dekker": "unspecific",
+    "leonard-wee": "unspecific",
+    "johan-van-soest": "unspecific"
    },
    "senior_affiliations": [
-    "Maastricht University Medical Centre",
-    "Maastro Clinic",
-    "RWTH Aachen University",
-    "Department of Radiation Oncology (Maastro), GROW School for Oncology and Reproduction, Maastricht University Medical Centre+, Maastricht, the Netherlands",
-    "Institute of Molecular Medicine, RWTH Aachen University, Aachen, Germany"
+    "Maastricht University",
+    "Maastricht University;"
    ],
-   "cited_by_count": 0,
+   "cited_by_count": 2,
    "abstract": "PURPOSE: Rare diseases are difficult to fully capture, and regularly call for large, geographically dispersed initiatives. Such initiatives are often met with data harmonization challenges. These challenges render data incompatible and impede successful realization. The STRONG AYA project is such an initiative, specifically focusing on adolescent and young adult (AYAs) with cancer. STRONG AYA is setting up a federated data infrastructure containing data of varying format. Here, we elaborate on how we used health care-agnostic semantic web technologies to overcome such challenges. METHODS: is a tool that converts structured data into resource description framework (RDF) triples and enables semantic interoperability. As a demonstration, we mapped data that are to be included in the STRONG AYA infrastructure. RESULTS: The knowledge graphs provided a comprehensive overview of the large number of STRONG AYA concepts. The semantic terminology mapping and annotation helper allowed us to query data with incomprehensible terminologies, without changing them. Both the knowledge graphs and semantic map were made available on a Hugo webpage for increased transparency and understanding. CONCLUSION: The use of semantic web technologies, such as RDF and knowledge graphs, is a viable solution to overcome challenges regarding data interoperability and reusability for a federated AYA cancer data infrastructure without being bound to rigid standardized schemas. The linkage of semantically meaningful concepts to otherwise incomprehensible data elements demonstrates how by using these domain-agnostic technologies we made nonstandardized health care data interoperable.",
-   "verified": true,
+   "verified": false,
    "counted_members": [
     "joshi-hogenboom",
-    "varsha-gouthamchand",
     "andre-dekker",
     "leonard-wee",
-    "johan-van-soest",
-    "aiara-lobo-gomes"
+    "johan-van-soest"
    ],
    "counted": true,
    "listed_elsewhere": false,
@@ -18121,146 +17732,6 @@
    "first_seen": "2026-10-21",
    "journal_impact": 12.6,
    "journal_h_index": 150
-  },
-  {
-   "id": "W4414869539",
-   "openalex_url": "https://openalex.org/W4414869539",
-   "doi": "https://doi.org/10.2196/preprints.85228",
-   "title": "Understanding Clinicians’ Informational Needs for AI-driven Clinical Decision Support Systems: Qualitative Interview Study (Preprint)",
-   "publication_date": "2025-10-03",
-   "year": 2025,
-   "type": "preprint",
-   "journal": null,
-   "source_id": null,
-   "landing_url": "https://doi.org/10.2196/preprints.85228",
-   "is_oa": true,
-   "oa_url": "https://doi.org/10.2196/preprints.85228",
-   "license": "cc-by",
-   "pdf_url": null,
-   "authors": [
-    "Simone Mingels",
-    "Hannah Piehl",
-    "Madeline Therrien",
-    "Ekaterina S. Akhmad",
-    "Anniek van Hienen",
-    "Johan van Soest",
-    "Laura M. J. Hochstenbach",
-    "Andre L.A.J. Dekker",
-    "Olga Catherina Damman",
-    "Rianne Fijten"
-   ],
-   "author_members": [
-    "simone-mingels",
-    "hannah-piehl",
-    "madeline-therrien",
-    "ekaterina-akhmad",
-    "anniek-van-hienen",
-    "johan-van-soest",
-    null,
-    "andre-dekker",
-    null,
-    "rianne-fijten"
-   ],
-   "author_profiles": {
-    "simone-mingels": {
-     "openalex_id": "A5119867252",
-     "orcid": "0009-0000-9848-2391",
-     "match": "openalex",
-     "affiliations": []
-    },
-    "hannah-piehl": {
-     "openalex_id": "A5091963091",
-     "orcid": "0009-0005-1982-3909",
-     "match": "openalex",
-     "affiliations": []
-    },
-    "madeline-therrien": {
-     "openalex_id": "A5119867254",
-     "orcid": "0009-0001-0466-0722",
-     "match": "openalex",
-     "affiliations": []
-    },
-    "ekaterina-akhmad": {
-     "openalex_id": "A5073142805",
-     "orcid": "0000-0002-8235-9361",
-     "match": "openalex",
-     "affiliations": []
-    },
-    "anniek-van-hienen": {
-     "openalex_id": "A5117621657",
-     "orcid": "0009-0000-9454-6124",
-     "match": "openalex",
-     "affiliations": []
-    },
-    "johan-van-soest": {
-     "openalex_id": "A5034589930",
-     "orcid": "0000-0003-2548-0330",
-     "match": "openalex",
-     "affiliations": []
-    },
-    "andre-dekker": {
-     "openalex_id": "A5013513157",
-     "orcid": "0000-0002-0422-7996",
-     "match": "openalex",
-     "affiliations": []
-    },
-    "rianne-fijten": {
-     "openalex_id": "A5081642553",
-     "orcid": "0000-0002-1964-6317",
-     "match": "openalex",
-     "affiliations": []
-    }
-   },
-   "author_positions": [
-    1,
-    2,
-    3,
-    4,
-    5,
-    6,
-    7,
-    8,
-    9,
-    10
-   ],
-   "author_count": 10,
-   "group_members": [
-    "simone-mingels",
-    "anniek-van-hienen",
-    "johan-van-soest",
-    "andre-dekker",
-    "rianne-fijten"
-   ],
-   "member_affiliations": {
-    "simone-mingels": [],
-    "anniek-van-hienen": [],
-    "johan-van-soest": [],
-    "andre-dekker": [],
-    "rianne-fijten": []
-   },
-   "affiliation_status": {
-    "simone-mingels": "unknown",
-    "anniek-van-hienen": "unknown",
-    "johan-van-soest": "unknown",
-    "andre-dekker": "unknown",
-    "rianne-fijten": "unknown"
-   },
-   "senior_affiliations": [],
-   "cited_by_count": 0,
-   "abstract": "BACKGROUND Advancements in Artificial Intelligence (AI) are transforming healthcare, particularly through AI-driven Clinical Decision Support Systems (AI-CDSS) that aid in predicting disease progression and personalizing treatment. Despite their potential, adoption remains limited due to clinician concerns about algorithm misuse, misinterpretation, and lack of transparency. OBJECTIVE This qualitative study explores the informational needs and preferences of clinicians to better understand and appropriately use AI-CDSS in decision-making. In parallel this study explores AI experts’ perspectives on what information should be communicated to enable safe and appropriate use of AI-CDSS. METHODS A qualitative description design study was conducted using semi-structured interviews with 16 participants (8 clinicians and 8 AI experts). Discussions focused on experiences with AI, informational needs, and feedback on existing reporting standards including Model Cards (Mitchell et al., 2019), Model Facts (Sendak et al., 2020), and the TRIPOD-AI checklist (Collins et al., 2015, 2024). The transcripts were analyzed through codebook thematic analysis. RESULTS Four key themes were identified: (i) Clinicians need clear information on training data, its origin, size, and inclusion/exclusion criteria, to judge model applicability; (ii) Performance metrics must go beyond AUC and be clinically relevant to support informed decisions; (iii) Limitations and warnings about inappropriate use should be specific and clearly communicated to prevent misuse; (iv) Information should be presented in layered, customizable formats within existing clinical software, avoiding unnecessary jargon and allowing optional deeper explanations. While each of the reviewed reporting standards offered strengths, none were considered sufficient alone. Participants recommended a combined and clinician-centered approach to information delivery. Alignment of reporting standards with clinical workflows and decision thresholds was thought to be crucial to bridge the current usability gap. CONCLUSIONS To improve AI-CDSS adoption in clinical practice, reporting standards must be designed for better clinician comprehension and usability. Enhancing transparency, particularly regarding training data and performance, can likely help clinicians assess AI-CDSS more effectively. Information should be delivered in an accessible, layered format, fitting clinical workflows. Co-creation with clinicians throughout AI-CDSS development was a cross-cutting theme, highlighting its importance in ensuring tools are not only technically sound but also practically usable. Future research should explore how to structurally report on performance and validation metrics for clinician understanding and assess the impact of information provision on AI-CDSS adoption.",
-   "verified": false,
-   "counted_members": [
-    "simone-mingels",
-    "anniek-van-hienen",
-    "johan-van-soest",
-    "andre-dekker",
-    "rianne-fijten"
-   ],
-   "counted": true,
-   "listed_elsewhere": false,
-   "first_seen": "2026-10-21",
-   "journal_impact": null,
-   "journal_h_index": null
   },
   {
    "id": "W7149233765",
@@ -20952,187 +20423,6 @@
    "journal_h_index": 106
   },
   {
-   "id": "W4411338103",
-   "openalex_url": "https://openalex.org/W4411338103",
-   "doi": "https://doi.org/10.1101/2025.06.13.25329594",
-   "title": "Predicting overall survival of NSCLC patients with clinical, radiomics and deep learning features",
-   "publication_date": "2025-06-16",
-   "year": 2025,
-   "type": "preprint",
-   "journal": "medRxiv",
-   "source_id": "S3005729997",
-   "landing_url": "https://doi.org/10.1101/2025.06.13.25329594",
-   "is_oa": true,
-   "oa_url": "https://www.medrxiv.org/content/medrxiv/early/2025/06/16/2025.06.13.25329594.full.pdf",
-   "license": null,
-   "pdf_url": "https://www.medrxiv.org/content/medrxiv/early/2025/06/16/2025.06.13.25329594.full.pdf",
-   "authors": [
-    "Hemalatha Kanakarajan",
-    "Jikai Zhou",
-    "Aiara Lobo Gomes",
-    "Petros Kalendralis",
-    "Wenjie Liang",
-    "Fariba Tohidinezhad",
-    "Andre L.A.J. Dekker",
-    "Wouter De Baene",
-    "Margriet Maria Sitskoorn"
-   ],
-   "author_members": [
-    null,
-    "jikai-zhou",
-    "aiara-lobo-gomes",
-    "petros-kalendralis",
-    "wenjie-liang",
-    "fariba-tohidinezhad",
-    "andre-dekker",
-    null,
-    null
-   ],
-   "author_profiles": {
-    "jikai-zhou": {
-     "openalex_id": null,
-     "orcid": null,
-     "match": "name",
-     "affiliations": [
-      "Maastricht University Medical Centre",
-      "Maastricht University",
-      "Maastricht University",
-      "Department of Radiation Oncology (Maastro), GROW School for Oncology and Reproduction,Maastricht University Medical Centre, Maastricht, 68ET,The Netherlands"
-     ]
-    },
-    "aiara-lobo-gomes": {
-     "openalex_id": "A5082702576",
-     "orcid": "0000-0003-4670-6036",
-     "match": "openalex",
-     "affiliations": [
-      "Maastricht University Medical Centre",
-      "RWTH Aachen University",
-      "Department of Radiation Oncology (Maastro), GROW School for Oncology and Reproduction,Maastricht University Medical Centre, Maastricht, 68ET,The Netherlands",
-      "Institute of Molecular Medicine, RWTH Aachen University, Aachen, Germany"
-     ]
-    },
-    "petros-kalendralis": {
-     "openalex_id": "A5068572381",
-     "orcid": "0000-0002-4471-2021",
-     "match": "openalex",
-     "affiliations": [
-      "Maastricht University Medical Centre",
-      "Department of Radiation Oncology (Maastro), GROW School for Oncology and Reproduction,Maastricht University Medical Centre, Maastricht, 68ET,The Netherlands"
-     ]
-    },
-    "wenjie-liang": {
-     "openalex_id": "A5101575032",
-     "orcid": "0009-0000-3468-1930",
-     "match": "name",
-     "affiliations": [
-      "Maastricht University Medical Centre",
-      "Department of Radiation Oncology (Maastro), GROW School for Oncology and Reproduction,Maastricht University Medical Centre, Maastricht, 68ET,The Netherlands"
-     ]
-    },
-    "fariba-tohidinezhad": {
-     "openalex_id": "A5054496746",
-     "orcid": "0000-0001-8880-3593",
-     "match": "openalex",
-     "affiliations": [
-      "Maastricht University Medical Centre",
-      "Erasmus MC",
-      "Department of Radiation Oncology (Maastro), GROW School for Oncology and Reproduction,Maastricht University Medical Centre, Maastricht, 68ET,The Netherlands",
-      "Department of Radiology & Nuclear Medicine, Erasmus Universiteit Medical Centre, Rotterdam, 3015 GD,The Netherlands"
-     ]
-    },
-    "andre-dekker": {
-     "openalex_id": "A5013513157",
-     "orcid": "0000-0002-0422-7996",
-     "match": "openalex",
-     "affiliations": [
-      "Maastricht University Medical Centre",
-      "Department of Radiation Oncology (Maastro), GROW School for Oncology and Reproduction,Maastricht University Medical Centre, Maastricht, 68ET,The Netherlands"
-     ]
-    }
-   },
-   "author_positions": [
-    1,
-    2,
-    3,
-    4,
-    5,
-    6,
-    7,
-    8,
-    9
-   ],
-   "author_count": 9,
-   "group_members": [
-    "jikai-zhou",
-    "aiara-lobo-gomes",
-    "petros-kalendralis",
-    "wenjie-liang",
-    "fariba-tohidinezhad",
-    "andre-dekker"
-   ],
-   "member_affiliations": {
-    "jikai-zhou": [
-     "Maastricht University Medical Centre",
-     "Maastricht University",
-     "Maastricht University",
-     "Department of Radiation Oncology (Maastro), GROW School for Oncology and Reproduction,Maastricht University Medical Centre, Maastricht, 68ET,The Netherlands"
-    ],
-    "aiara-lobo-gomes": [
-     "Maastricht University Medical Centre",
-     "RWTH Aachen University",
-     "Department of Radiation Oncology (Maastro), GROW School for Oncology and Reproduction,Maastricht University Medical Centre, Maastricht, 68ET,The Netherlands",
-     "Institute of Molecular Medicine, RWTH Aachen University, Aachen, Germany"
-    ],
-    "petros-kalendralis": [
-     "Maastricht University Medical Centre",
-     "Department of Radiation Oncology (Maastro), GROW School for Oncology and Reproduction,Maastricht University Medical Centre, Maastricht, 68ET,The Netherlands"
-    ],
-    "wenjie-liang": [
-     "Maastricht University Medical Centre",
-     "Department of Radiation Oncology (Maastro), GROW School for Oncology and Reproduction,Maastricht University Medical Centre, Maastricht, 68ET,The Netherlands"
-    ],
-    "fariba-tohidinezhad": [
-     "Maastricht University Medical Centre",
-     "Erasmus MC",
-     "Department of Radiation Oncology (Maastro), GROW School for Oncology and Reproduction,Maastricht University Medical Centre, Maastricht, 68ET,The Netherlands",
-     "Department of Radiology & Nuclear Medicine, Erasmus Universiteit Medical Centre, Rotterdam, 3015 GD,The Netherlands"
-    ],
-    "andre-dekker": [
-     "Maastricht University Medical Centre",
-     "Department of Radiation Oncology (Maastro), GROW School for Oncology and Reproduction,Maastricht University Medical Centre, Maastricht, 68ET,The Netherlands"
-    ]
-   },
-   "affiliation_status": {
-    "jikai-zhou": "verified",
-    "aiara-lobo-gomes": "verified",
-    "petros-kalendralis": "verified",
-    "wenjie-liang": "verified",
-    "fariba-tohidinezhad": "verified",
-    "andre-dekker": "verified"
-   },
-   "senior_affiliations": [
-    "Tilburg University",
-    "Tilburg University;",
-    "Department of Cognitive Neuropsychology, Tilburg University, Tilburg, The Netherlands"
-   ],
-   "cited_by_count": 2,
-   "abstract": "Abstract Background and purpose Accurate estimation of Overall Survival (OS) in Non-Small Cell Lung Cancer (NSCLC) patients provides critical insights for treatment planning. While previous studies have shown that radiomics or Deep Learning (DL) features improved prediction accuracy, this study aimed to evaluate whether a model that integrates clinical, radiomics, DL, and dosimetric features outperforms other models developed with only a subset of these features. Materials and methods We collected pre-treatment lung CT scans and clinical data for 225 NSCLC patients from the Maastro Clinic: 180 for training and 45 for testing. Radiomics features were extracted using the Python radiomics feature extractor, and DL features were obtained using a 3D ResNet model. An ensemble model comprising XGB and NN classifiers was developed using: (1) clinical features only; (2) clinical and radiomics features; (3) clinical and DL features; and (4) clinical, radiomics, and DL features. The performance metrics were evaluated for the test and K-fold cross-validation data sets. Results The prediction model utilizing only clinical variables provided an Area Under the Receiver Operating Characteristic Curve (AUC) of 0.64 and a test accuracy of 77.55%. The best performance came from combining clinical, radiomics, and DL features (AUC: 0.84, accuracy: 85.71%). The prediction improvement of this model was statistically significant compared to models trained with clinical features alone or with a combination of clinical and radiomics features. Conclusion Integrating radiomics and DL features with clinical characteristics improved the prediction of OS after radiotherapy for NSCLC patients. The increased accuracy of our integrated model enables personalized, risk-based treatment planning, guiding clinicians toward more effective interventions, improved patient outcomes and enhanced quality of life.",
-   "verified": true,
-   "counted_members": [
-    "jikai-zhou",
-    "aiara-lobo-gomes",
-    "petros-kalendralis",
-    "wenjie-liang",
-    "fariba-tohidinezhad",
-    "andre-dekker"
-   ],
-   "counted": true,
-   "listed_elsewhere": false,
-   "first_seen": "2026-10-21",
-   "journal_impact": null,
-   "journal_h_index": null
-  },
-  {
    "id": "W4411315279",
    "openalex_url": "https://openalex.org/W4411315279",
    "doi": "https://doi.org/10.1016/j.ijrobp.2025.05.088",
@@ -21496,230 +20786,6 @@
    "first_seen": "2026-10-21",
    "journal_impact": 1.7,
    "journal_h_index": 387
-  },
-  {
-   "id": "W4411034911",
-   "openalex_url": "https://openalex.org/W4411034911",
-   "doi": "https://doi.org/10.1101/2025.06.03.25328788",
-   "title": "Knowledge representation of a multi-centre adolescent and young adult (AYA) cancer infrastructure; development of the STRONG AYA Knowledge Graph",
-   "publication_date": "2025-06-03",
-   "year": 2025,
-   "type": "preprint",
-   "journal": "medRxiv",
-   "source_id": "S3005729997",
-   "landing_url": "https://doi.org/10.1101/2025.06.03.25328788",
-   "is_oa": true,
-   "oa_url": "https://www.medrxiv.org/content/medrxiv/early/2025/06/03/2025.06.03.25328788.full.pdf",
-   "license": "cc-by",
-   "pdf_url": "https://www.medrxiv.org/content/medrxiv/early/2025/06/03/2025.06.03.25328788.full.pdf",
-   "authors": [
-    "Joshi Hogenboom",
-    "Varsha Gouthamchand",
-    "Charlotte Cairns",
-    "Silvie H. M. Janssen",
-    "Kirsty M. Way",
-    "Andre L.A.J. Dekker",
-    "Winette T.A. van der Graaf",
-    "Anne‐Sophie Darlington",
-    "Olga Husson",
-    "Leonard Wee",
-    "Johan van Soest",
-    "Aiara Lobo Gomes"
-   ],
-   "author_members": [
-    "joshi-hogenboom",
-    "varsha-gouthamchand",
-    null,
-    null,
-    null,
-    "andre-dekker",
-    null,
-    null,
-    null,
-    "leonard-wee",
-    "johan-van-soest",
-    "aiara-lobo-gomes"
-   ],
-   "author_profiles": {
-    "joshi-hogenboom": {
-     "openalex_id": "A5010896466",
-     "orcid": "0000-0003-1278-3295",
-     "match": "openalex",
-     "affiliations": [
-      "Maastricht University Medical Centre",
-      "Maastricht University",
-      "Maastro Clinic",
-      "Maastricht University;",
-      "Department of Radiation Oncology (Maastro), GROW School for Oncology and Reproduction, Maastricht University Medical Centre+, Maastricht, the Netherlands"
-     ]
-    },
-    "varsha-gouthamchand": {
-     "openalex_id": "A5011282185",
-     "orcid": "0000-0002-4756-2866",
-     "match": "openalex",
-     "affiliations": [
-      "Maastricht University Medical Centre",
-      "Maastricht University",
-      "Maastro Clinic",
-      "Maastricht University;",
-      "Department of Radiation Oncology (Maastro), GROW School for Oncology and Reproduction, Maastricht University Medical Centre+, Maastricht, the Netherlands"
-     ]
-    },
-    "andre-dekker": {
-     "openalex_id": "A5013513157",
-     "orcid": "0000-0002-0422-7996",
-     "match": "openalex",
-     "affiliations": [
-      "Maastricht University Medical Centre",
-      "Maastricht University",
-      "Maastro Clinic",
-      "Maastricht University;",
-      "Department of Radiation Oncology (Maastro), GROW School for Oncology and Reproduction, Maastricht University Medical Centre+, Maastricht, the Netherlands"
-     ]
-    },
-    "leonard-wee": {
-     "openalex_id": "A5004688031",
-     "orcid": "0000-0003-1612-9055",
-     "match": "openalex",
-     "affiliations": [
-      "Maastricht University Medical Centre",
-      "Maastricht University",
-      "Maastro Clinic",
-      "Maastricht University;",
-      "Department of Radiation Oncology (Maastro), GROW School for Oncology and Reproduction, Maastricht University Medical Centre+, Maastricht, the Netherlands"
-     ]
-    },
-    "johan-van-soest": {
-     "openalex_id": "A5034589930",
-     "orcid": "0000-0003-2548-0330",
-     "match": "openalex",
-     "affiliations": [
-      "Maastricht University Medical Centre",
-      "Maastricht University",
-      "Maastro Clinic",
-      "Maastricht University;",
-      "Brightlands Institute for Smart Society (BISS), Faculty of Science and Engineering, Maastricht University, Maastricht, The Netherlands",
-      "Department of Radiation Oncology (Maastro), GROW School for Oncology and Reproduction, Maastricht University Medical Centre+, Maastricht, the Netherlands"
-     ]
-    },
-    "aiara-lobo-gomes": {
-     "openalex_id": "A5082702576",
-     "orcid": "0000-0003-4670-6036",
-     "match": "openalex",
-     "affiliations": [
-      "Maastricht University Medical Centre",
-      "Maastricht University",
-      "Maastro Clinic",
-      "RWTH Aachen University",
-      "Maastricht University;",
-      "Department of Radiation Oncology (Maastro), GROW School for Oncology and Reproduction, Maastricht University Medical Centre+, Maastricht, the Netherlands",
-      "Institute of Molecular Medicine, RWTH Aachen University, Aachen, Germany"
-     ]
-    }
-   },
-   "author_positions": [
-    1,
-    2,
-    3,
-    4,
-    5,
-    6,
-    7,
-    8,
-    9,
-    10,
-    11,
-    12
-   ],
-   "author_count": 12,
-   "group_members": [
-    "joshi-hogenboom",
-    "varsha-gouthamchand",
-    "andre-dekker",
-    "leonard-wee",
-    "johan-van-soest",
-    "aiara-lobo-gomes"
-   ],
-   "member_affiliations": {
-    "joshi-hogenboom": [
-     "Maastricht University Medical Centre",
-     "Maastricht University",
-     "Maastro Clinic",
-     "Maastricht University;",
-     "Department of Radiation Oncology (Maastro), GROW School for Oncology and Reproduction, Maastricht University Medical Centre+, Maastricht, the Netherlands"
-    ],
-    "varsha-gouthamchand": [
-     "Maastricht University Medical Centre",
-     "Maastricht University",
-     "Maastro Clinic",
-     "Maastricht University;",
-     "Department of Radiation Oncology (Maastro), GROW School for Oncology and Reproduction, Maastricht University Medical Centre+, Maastricht, the Netherlands"
-    ],
-    "andre-dekker": [
-     "Maastricht University Medical Centre",
-     "Maastricht University",
-     "Maastro Clinic",
-     "Maastricht University;",
-     "Department of Radiation Oncology (Maastro), GROW School for Oncology and Reproduction, Maastricht University Medical Centre+, Maastricht, the Netherlands"
-    ],
-    "leonard-wee": [
-     "Maastricht University Medical Centre",
-     "Maastricht University",
-     "Maastro Clinic",
-     "Maastricht University;",
-     "Department of Radiation Oncology (Maastro), GROW School for Oncology and Reproduction, Maastricht University Medical Centre+, Maastricht, the Netherlands"
-    ],
-    "johan-van-soest": [
-     "Maastricht University Medical Centre",
-     "Maastricht University",
-     "Maastro Clinic",
-     "Maastricht University;",
-     "Brightlands Institute for Smart Society (BISS), Faculty of Science and Engineering, Maastricht University, Maastricht, The Netherlands",
-     "Department of Radiation Oncology (Maastro), GROW School for Oncology and Reproduction, Maastricht University Medical Centre+, Maastricht, the Netherlands"
-    ],
-    "aiara-lobo-gomes": [
-     "Maastricht University Medical Centre",
-     "Maastricht University",
-     "Maastro Clinic",
-     "RWTH Aachen University",
-     "Maastricht University;",
-     "Department of Radiation Oncology (Maastro), GROW School for Oncology and Reproduction, Maastricht University Medical Centre+, Maastricht, the Netherlands",
-     "Institute of Molecular Medicine, RWTH Aachen University, Aachen, Germany"
-    ]
-   },
-   "affiliation_status": {
-    "joshi-hogenboom": "verified",
-    "varsha-gouthamchand": "verified",
-    "andre-dekker": "verified",
-    "leonard-wee": "verified",
-    "johan-van-soest": "verified",
-    "aiara-lobo-gomes": "verified"
-   },
-   "senior_affiliations": [
-    "Maastricht University Medical Centre",
-    "Maastricht University",
-    "Maastro Clinic",
-    "RWTH Aachen University",
-    "Maastricht University;",
-    "Department of Radiation Oncology (Maastro), GROW School for Oncology and Reproduction, Maastricht University Medical Centre+, Maastricht, the Netherlands",
-    "Institute of Molecular Medicine, RWTH Aachen University, Aachen, Germany"
-   ],
-   "cited_by_count": 0,
-   "abstract": "Abstract Purpose Rare diseases are difficult to fully capture, and regularly call for large, geographically dispersed initiatives. Such initiatives are often met with data harmonisation challenges. These challenges render data incompatible and impede successful realisation. The STRONG AYA project is such an initiative, specifically focusing on adolescents and young adults (AYAs) with cancer. STRONG AYA is setting up a federated data infrastructure containing data of varying format. Here, we elaborate on how we used healthcare-agnostic Semantic Web technologies to overcome such challenges. Methodology We structured the STRONG AYA case-mix and core outcome measures concepts and their properties as knowledge graphs. Having identified the corresponding standard terminologies, we developed a semantic map based on the knowledge graphs and the here introduced annotation helper plugin for Flyover. Flyover is a tool that converts structured data into Resource Descriptor Framework (RDF) triples and enables semantic interoperability. As a demonstration, we mapped data that is to be included in the STRONG AYA infrastructure. Results The knowledge graphs provided a comprehensive overview of the large number of STRONG AYA concepts. The semantic terminology mapping and annotation helper allowed us to query data with incomprehensible terminologies, without changing them. Both the knowledge graphs and semantic map were made available on a Hugo webpage for increased transparency and understanding. Discussion The use of Semantic Web technologies such as RDF and knowledge graphs are a viable solution to overcome challenges regarding data interoperability and reusability for a federated AYA cancer data infrastructure without being bound to rigid standardised schemas. The linkage of semantically meaningful concepts to otherwise incomprehensible data elements demonstrates how by using these domain-agnostic technologies we made non-standardised healthcare data interoperable.",
-   "verified": true,
-   "counted_members": [
-    "joshi-hogenboom",
-    "varsha-gouthamchand",
-    "andre-dekker",
-    "leonard-wee",
-    "johan-van-soest",
-    "aiara-lobo-gomes"
-   ],
-   "counted": true,
-   "listed_elsewhere": false,
-   "first_seen": "2026-10-21",
-   "journal_impact": null,
-   "journal_h_index": null
   },
   {
    "id": "W4411024156",
@@ -22699,7 +21765,7 @@
     "Mass General Brigham",
     "Artificial Intelligence in Medicine Program, Mass General Brigham, Harvard Medical School, Boston, MA, USA; Department of Radiation Oncology, Brigham and Women's Hospital, Dana-Farber Cancer Institute, Harvard Medical School, Boston, MA, USA; Department of Radiology and Nuclear Medicine, CARIM & GROW, Maastricht University, Maastricht, Netherlands; Department of Radiology, Brigham and Women's Hospital, Harvard Medical School, Boston, MA, USA. Electronic address: haerts@bwh.harvard.edu"
    ],
-   "cited_by_count": 37,
+   "cited_by_count": 42,
    "abstract": "BACKGROUND: As humans age at different rates, physical appearance can yield insights into biological age and physiological health more reliably than chronological age. In medicine, however, appearance is incorporated into medical judgements in a subjective and non-standardised way. In this study, we aimed to develop and validate FaceAge, a deep learning system to estimate biological age from easily obtainable and low-cost face photographs. METHODS: FaceAge was trained on data from 58 851 presumed healthy individuals aged 60 years or older: 56 304 individuals from the IMDb-Wiki dataset (training) and 2547 from the UTKFace dataset (initial validation). Clinical utility was evaluated on data from 6196 patients with cancer diagnoses from two institutions in the Netherlands and the USA: the MAASTRO, Harvard Thoracic, and Harvard Palliative cohorts FaceAge estimates in these cancer cohorts were compared with a non-cancerous reference cohort of 535 individuals. To assess the prognostic relevance of FaceAge, we performed Kaplan-Meier survival analysis and Cox modelling, adjusting for several clinical covariates. We also assessed the performance of FaceAge in patients with metastatic cancer receiving palliative treatment at the end of life by incorporating FaceAge into clinical prediction models. To evaluate whether FaceAge has the potential to be a biomarker for molecular ageing, we performed a gene-based analysis to assess its association with senescence genes. FINDINGS: FaceAge showed significant independent prognostic performance in various cancer types and stages. Looking older was correlated with worse overall survival (after adjusting for covariates per-decade hazard ratio [HR] 1·151, p=0·013 in a pan-cancer cohort of n=4906; 1·148, p=0·011 in a thoracic cohort of n=573; and 1·117, p=0·021 in a palliative cohort of n=717). We found that, on average, patients with cancer looked older than their chronological age (mean increase of 4·79 years with respect to non-cancerous reference cohort, p<0·0001). We found that FaceAge can improve physicians' survival predictions in patients with incurable cancer receiving palliative treatments (from area under the curve 0·74 [95% CI 0·70-0·78] to 0·8 [0·76-0·83]; p<0·0001), highlighting the clinical use of the algorithm to support end-of-life decision making. FaceAge was also significantly associated with molecular mechanisms of senescence through gene analysis, whereas age was not. INTERPRETATION: Our results suggest that a deep learning model can estimate biological age from face photographs and thereby enhance survival prediction in patients with cancer. Further research, including validation in larger cohorts, is needed to verify these findings in patients with cancer and to establish whether the findings extend to patients with other diseases. Subject to further testing and validation, approaches such as FaceAge could be used to translate a patient's visual appearance into objective, quantitative, and clinically valuable measures. FUNDING: US National Institutes of Health and EU European Research Council.",
    "verified": true,
    "counted_members": [
@@ -25118,7 +24184,7 @@
    "senior_affiliations": [
     "Ona, Burlington, VT, United States"
    ],
-   "cited_by_count": 22,
+   "cited_by_count": 24,
    "abstract": "Following the proposal by Tsafnat et al (2024) to converge on three open health data standards, this viewpoint offers a critical reflection on their proposed alignment of openEHR, Fast Health Interoperability Resources (FHIR), and Observational Medical Outcomes Partnership (OMOP) as default data standards for clinical care and administration, data exchange, and longitudinal analysis, respectively. We argue that open standards are a necessary but not sufficient condition to achieve health data interoperability. The ecosystem of open-source software needs to be considered when choosing an appropriate standard for a given context. We discuss two specific contexts, namely standardization of (1) health data for federated learning, and (2) health data sharing in low- and middle-income countries. Specific design principles, practical considerations, and implementation choices for these two contexts are described, based on ongoing work in both areas. In the case of federated learning, we observe convergence toward OMOP and FHIR, where the two standards can effectively be used side-by-side given the availability of mediators between the two. In the case of health information exchanges in low and middle-income countries, we see a strong convergence toward FHIR as the primary standard. We propose practical guidelines for context-specific adaptation of open health data standards.",
    "verified": true,
    "counted_members": [
@@ -25650,7 +24716,7 @@
     "Zhejiang Key Laboratory of Prevention Diagnosis and Therapy for Gastrointestinal Cancer, Hangzhou, Zhejiang, China",
     "Zhejiang Cancer Hospital,Hangzhou Institute of Medicine (HIM), Chinese Academy of Sciences, Hangzhou, Zhejiang, China jiyl@zjcc.org.cn jiangyh@zjcc.org.cn"
    ],
-   "cited_by_count": 55,
+   "cited_by_count": 56,
    "abstract": "BACKGROUND: Accurate prediction of pathologic complete response (pCR) following neoadjuvant immunotherapy combined with chemotherapy (nICT) is crucial for tailoring patient care in esophageal squamous cell carcinoma (ESCC). This study aimed to develop and validate a deep learning model using a novel voxel-level radiomics approach to predict pCR based on preoperative CT images. METHODS: In this multicenter, retrospective study, 741 patients with ESCC who underwent nICT followed by radical esophagectomy were enrolled from three institutions. Patients from one center were divided into a training set (469 patients) and an internal validation set (118 patients) while the data from the other two centers was used as external validation sets (120 and 34 patients, respectively). The deep learning model, Vision-Mamba, integrated voxel-level radiomics feature maps and CT images for pCR prediction. Additionally, other commonly used deep learning models, including 3D-ResNet and Vision Transformer, as well as traditional radiomics methods, were developed for comparison. Model performance was evaluated using accuracy, area under the curve (AUC), sensitivity, specificity, and prognostic stratification capabilities. The SHapley Additive exPlanations analysis was employed to interpret the model's predictions. RESULTS: The Vision-Mamba model demonstrated robust predictive performance in the training set (accuracy: 0.89, AUC: 0.91, sensitivity: 0.82, specificity: 0.92) and validation sets (accuracy: 0.83-0.91, AUC: 0.83-0.92, sensitivity: 0.73-0.94, specificity: 0.84-1.0). The model outperformed other deep learning models and traditional radiomics methods. The model's ability to stratify patients into high and low-risk groups was validated, showing superior prognostic stratification compared with traditional methods. SHAP provided quantitative and visual model interpretation. CONCLUSIONS: We present a voxel-level radiomics-based deep learning model to predict pCR to neoadjuvant immunotherapy combined with chemotherapy based on pretreatment diagnostic CT images with high accuracy and robustness. This model could provide a promising tool for individualized management of patients with ESCC.",
    "verified": true,
    "counted_members": [
@@ -27183,101 +26249,6 @@
    "journal_h_index": null
   },
   {
-   "id": "W4417408545",
-   "openalex_url": "https://openalex.org/W4417408545",
-   "doi": "https://doi.org/10.2139/ssrn.5900624",
-   "title": "In Their Own Words: A Qualitative Study of Patient Narratives on Daily Life After Breast Cancer Radiotherapy",
-   "publication_date": "2025-01-01",
-   "year": 2025,
-   "type": "preprint",
-   "journal": "SSRN Electronic Journal",
-   "source_id": "S4210172589",
-   "landing_url": "https://doi.org/10.2139/ssrn.5900624",
-   "is_oa": true,
-   "oa_url": "https://doi.org/10.2139/ssrn.5900624",
-   "license": null,
-   "pdf_url": null,
-   "authors": [
-    "Madeline Therrien",
-    "Simone  M.B. Mingels",
-    "Riane Fijten",
-    "D.B. Raphael",
-    "Marcel R. Stam",
-    "H.J.G.D. van den Bongard",
-    "Olga Catherina Damman",
-    "Liesbeth Jorinne Boersma"
-   ],
-   "author_members": [
-    "madeline-therrien",
-    "simone-mingels",
-    null,
-    null,
-    null,
-    null,
-    null,
-    null
-   ],
-   "author_profiles": {
-    "madeline-therrien": {
-     "openalex_id": "A5119867254",
-     "orcid": "0009-0001-0466-0722",
-     "match": "openalex",
-     "affiliations": [
-      "Independent  - affiliation not provided to SSRN"
-     ]
-    },
-    "simone-mingels": {
-     "openalex_id": null,
-     "orcid": null,
-     "match": "name",
-     "affiliations": [
-      "Maastricht University",
-      "Maastricht University",
-      "Maastricht University, P.O. Box 616, Maastricht, 6200MD, Netherlands"
-     ]
-    }
-   },
-   "author_positions": [
-    1,
-    2,
-    3,
-    4,
-    5,
-    6,
-    7,
-    8
-   ],
-   "author_count": 8,
-   "group_members": [
-    "simone-mingels"
-   ],
-   "member_affiliations": {
-    "simone-mingels": [
-     "Maastricht University",
-     "Maastricht University",
-     "Maastricht University, P.O. Box 616, Maastricht, 6200MD, Netherlands"
-    ]
-   },
-   "affiliation_status": {
-    "simone-mingels": "unspecific"
-   },
-   "senior_affiliations": [
-    "Maastricht University",
-    "Maastricht University"
-   ],
-   "cited_by_count": 0,
-   "abstract": null,
-   "verified": false,
-   "counted_members": [
-    "simone-mingels"
-   ],
-   "counted": true,
-   "listed_elsewhere": false,
-   "first_seen": "2026-10-23",
-   "journal_impact": null,
-   "journal_h_index": null
-  },
-  {
    "id": "W4413375862",
    "openalex_url": "https://openalex.org/W4413375862",
    "doi": "https://doi.org/10.26481/dis.20250915ac",
@@ -28637,7 +27608,7 @@
     "Data Science Institute (DSI), Hasselt University, 3500 Hasselt, Belgium",
     "Department of Radiation Oncology (MAASTRO), GROW School for Oncology and Reproduction, Maastricht University Medical Centre+, 6229 HX Maastricht, The Netherlands"
    ],
-   "cited_by_count": 1,
+   "cited_by_count": 2,
    "abstract": "Background/Objectives: Lung cancer (LC) is the leading cause of cancer mortality, making early diagnosis essential. While LC screening trials are underway globally, optimal prediction models and inclusion criteria are still lacking. This study aimed to develop and evaluate Bayesian Network (BN) models for LC risk prediction using a decade of data from Denmark. The primary goal was to assess BN performance on datasets varying in size and completeness, simulate real-world screening scenarios, and identify the most valuable data sources for LC screening. Methods: The study included 38,944 patients evaluated for LC, with 11,284 (29%) diagnosed. Data on comorbidities, medications, and general practice were available for the entire cohort, while laboratory results, smoking habits, and other variables were only available for subsets. The cohort was divided into four subsets based on data availability, and BNs were trained and validated across these subsets using cross-validation and external validation. To determine the optimal combination of variables, all possible data combinations were evaluated on the samples that contained all the variables (n = 5587). Results: A model trained on the small, complete dataset (AUC 0.78) performed similarly on a larger dataset with 21% missing data (AUC 0.78). Performance dropped when 39% of data were missing (AUC 0.67), resulting in informative variables missing completely in the dataset. Laboratory results and smoking data were the most informative, significantly outperforming models based only on age and smoking status (AUC 0.70). Conclusions: BN models demonstrated moderate to strong predictive performance, even with incomplete data, highlighting the potential value of incorporating laboratory results in LC screening programs.",
    "verified": true,
    "counted_members": [
@@ -29399,166 +28370,6 @@
    "journal_h_index": 171
   },
   {
-   "id": "W4403625443",
-   "openalex_url": "https://openalex.org/W4403625443",
-   "doi": "https://doi.org/10.1101/2024.10.22.24315007",
-   "title": "Performance of Handcrafted Radiomics versus Deep Learning for Prognosticating Head and Neck Squamous Cell Carcinoma – A Systematic Review with Critical Appraisal of Quantitative Imaging Studies",
-   "publication_date": "2024-10-22",
-   "year": 2024,
-   "type": "preprint",
-   "journal": "medRxiv",
-   "source_id": "S3005729997",
-   "landing_url": "https://doi.org/10.1101/2024.10.22.24315007",
-   "is_oa": true,
-   "oa_url": "https://www.medrxiv.org/content/medrxiv/early/2024/10/22/2024.10.22.24315007.full.pdf",
-   "license": "cc-by",
-   "pdf_url": "https://www.medrxiv.org/content/medrxiv/early/2024/10/22/2024.10.22.24315007.full.pdf",
-   "authors": [
-    "Varsha Gouthamchand",
-    "Louise de Almeida Ferreira Fonseca",
-    "Frank J P Hoebers",
-    "Rianne Fijten",
-    "Andre L.A.J. Dekker",
-    "Leonard Wee",
-    "Hannah Mary T. Thomas"
-   ],
-   "author_members": [
-    "varsha-gouthamchand",
-    "louise-de-almeida-ferreira-fonseca",
-    null,
-    "rianne-fijten",
-    "andre-dekker",
-    "leonard-wee",
-    "hannah-mary-thomas"
-   ],
-   "author_profiles": {
-    "varsha-gouthamchand": {
-     "openalex_id": "A5011282185",
-     "orcid": "0000-0002-4756-2866",
-     "match": "openalex",
-     "affiliations": [
-      "Maastricht University Medical Centre",
-      "Maastro Clinic",
-      "Department of Radiation Oncology (Maastro), GROW Research Institute for Oncology and Reproduction, Maastricht University Medical Centre+, Maastricht, The Netherlands"
-     ]
-    },
-    "louise-de-almeida-ferreira-fonseca": {
-     "openalex_id": "A5027238355",
-     "orcid": null,
-     "match": "openalex",
-     "affiliations": [
-      "KU Leuven",
-      "Academic Center for General Practice, Department of Public Health and Primary Care, KU Leuven, Leuven, Belgium"
-     ]
-    },
-    "rianne-fijten": {
-     "openalex_id": "A5081642553",
-     "orcid": "0000-0002-1964-6317",
-     "match": "openalex",
-     "affiliations": [
-      "Maastricht University Medical Centre",
-      "Maastro Clinic",
-      "Department of Radiation Oncology (Maastro), GROW Research Institute for Oncology and Reproduction, Maastricht University Medical Centre+, Maastricht, The Netherlands"
-     ]
-    },
-    "andre-dekker": {
-     "openalex_id": "A5013513157",
-     "orcid": "0000-0002-0422-7996",
-     "match": "openalex",
-     "affiliations": [
-      "Maastricht University Medical Centre",
-      "Maastricht University",
-      "Maastro Clinic",
-      "Brightlands Institute for Smart Society, Faculty of Science and Engineering, Maastricht University, Heerlen, The Netherlands",
-      "Department of Radiation Oncology (Maastro), GROW Research Institute for Oncology and Reproduction, Maastricht University Medical Centre+, Maastricht, The Netherlands"
-     ]
-    },
-    "leonard-wee": {
-     "openalex_id": "A5004688031",
-     "orcid": "0000-0003-1612-9055",
-     "match": "openalex",
-     "affiliations": [
-      "Maastricht University Medical Centre",
-      "Maastro Clinic",
-      "Department of Radiation Oncology (Maastro), GROW Research Institute for Oncology and Reproduction, Maastricht University Medical Centre+, Maastricht, The Netherlands"
-     ]
-    },
-    "hannah-mary-thomas": {
-     "openalex_id": "A5035477951",
-     "orcid": "0000-0002-1454-512X",
-     "match": "openalex",
-     "affiliations": [
-      "Christian Medical College, Vellore",
-      "Quantitative Imaging Research and Artificial Intelligence Lab, Department of Radiation Oncology, Unit II, Christian Medical College, Vellore, Tamil Nadu, India"
-     ]
-    }
-   },
-   "author_positions": [
-    1,
-    2,
-    3,
-    4,
-    5,
-    6,
-    7
-   ],
-   "author_count": 7,
-   "group_members": [
-    "varsha-gouthamchand",
-    "rianne-fijten",
-    "andre-dekker",
-    "leonard-wee"
-   ],
-   "member_affiliations": {
-    "varsha-gouthamchand": [
-     "Maastricht University Medical Centre",
-     "Maastro Clinic",
-     "Department of Radiation Oncology (Maastro), GROW Research Institute for Oncology and Reproduction, Maastricht University Medical Centre+, Maastricht, The Netherlands"
-    ],
-    "rianne-fijten": [
-     "Maastricht University Medical Centre",
-     "Maastro Clinic",
-     "Department of Radiation Oncology (Maastro), GROW Research Institute for Oncology and Reproduction, Maastricht University Medical Centre+, Maastricht, The Netherlands"
-    ],
-    "andre-dekker": [
-     "Maastricht University Medical Centre",
-     "Maastricht University",
-     "Maastro Clinic",
-     "Brightlands Institute for Smart Society, Faculty of Science and Engineering, Maastricht University, Heerlen, The Netherlands",
-     "Department of Radiation Oncology (Maastro), GROW Research Institute for Oncology and Reproduction, Maastricht University Medical Centre+, Maastricht, The Netherlands"
-    ],
-    "leonard-wee": [
-     "Maastricht University Medical Centre",
-     "Maastro Clinic",
-     "Department of Radiation Oncology (Maastro), GROW Research Institute for Oncology and Reproduction, Maastricht University Medical Centre+, Maastricht, The Netherlands"
-    ]
-   },
-   "affiliation_status": {
-    "varsha-gouthamchand": "verified",
-    "rianne-fijten": "verified",
-    "andre-dekker": "verified",
-    "leonard-wee": "verified"
-   },
-   "senior_affiliations": [
-    "Christian Medical College, Vellore",
-    "Quantitative Imaging Research and Artificial Intelligence Lab, Department of Radiation Oncology, Unit II, Christian Medical College, Vellore, Tamil Nadu, India"
-   ],
-   "cited_by_count": 2,
-   "abstract": "Abstract Head and neck squamous cell carcinoma (HNSCC) presents a complex clinical challenge due to its heterogeneous nature and diverse treatment responses. This systematic review critically appraises the performance of handcrafted radiomics (HC) and deep learning (DL) models in prognosticating outcomes in HNSCC patients treated with (chemo)-radiotherapy. A comprehensive literature search was conducted up to May 2023, identifying 23 eligible studies that met the inclusion criteria of methodological rigor and long-term outcome reporting. The review highlights the methodological variability and performance metrics of HC and DL models in predicting overall survival (OS), loco-regional recurrence (LRR) and distant metastasis (DM). While DL models demonstrated slightly superior performance metrics compared to HC models, the highest methodological quality was observed predominantly in studies using HC radiomics. The findings underscore the necessity for methodological improvements, including pre-registration of protocols and assessment of clinical utility, to enhance the reliability and applicability of radiomic-based prognostic models in clinical practice.",
-   "verified": true,
-   "counted_members": [
-    "varsha-gouthamchand",
-    "rianne-fijten",
-    "andre-dekker",
-    "leonard-wee"
-   ],
-   "counted": true,
-   "listed_elsewhere": false,
-   "first_seen": "2026-10-21",
-   "journal_impact": null,
-   "journal_h_index": null
-  },
-  {
    "id": "W4403503010",
    "openalex_url": "https://openalex.org/W4403503010",
    "doi": "https://doi.org/10.2196/60847",
@@ -29969,7 +28780,7 @@
     "Southern Medical University",
     "Department of Radiology, Guangdong Provincial People's Hospital (Guangdong Academy of Medical Sciences), Southern Medical University, Guangzhou 510080, China; Guangdong Provincial Key Laboratory of Artificial Intelligence in Medical Image Analysis and Application, Guangzhou 510080, China. Electronic address: liuzaiyi@gdph.org.cn"
    ],
-   "cited_by_count": 12,
+   "cited_by_count": 13,
    "abstract": "(c) 2024 The Authors. Published by Elsevier B.V. and Science China Press. This is an open access article under the CC BY license (http://creativecommons.org/licenses/by/4.0/).",
    "verified": true,
    "counted_members": [
@@ -31098,139 +29909,6 @@
    "journal_h_index": 357
   },
   {
-   "id": "W4402954517",
-   "openalex_url": "https://openalex.org/W4402954517",
-   "doi": "https://doi.org/10.48550/arxiv.2409.01235",
-   "title": "MRI-based and metabolomics-based age scores act synergetically for mortality prediction shown by multi-cohort federated learning",
-   "publication_date": "2024-09-02",
-   "year": 2024,
-   "type": "preprint",
-   "journal": "arXiv (Cornell University)",
-   "source_id": "S4306400194",
-   "landing_url": "http://arxiv.org/abs/2409.01235",
-   "is_oa": true,
-   "oa_url": "https://arxiv.org/pdf/2409.01235",
-   "license": "cc-by",
-   "pdf_url": "https://arxiv.org/pdf/2409.01235",
-   "authors": [
-    "Pedro Mateus",
-    "Swier J.F. Garst",
-    "Jing Yu",
-    "Davy Cats",
-    "Harms, Alexander G. J.",
-    "Mahlet A. Birhanu",
-    "Marian Beekman",
-    "P. Eline Slagboom",
-    "Marcel J. T. Reinders",
-    "Jeroen van der Grond",
-    "Andre L.A.J. Dekker",
-    "Jacobus F.A. Jansen",
-    "Magdalena Beran",
-    "Miranda T. Schram",
-    "Pieter Jelle Visser",
-    "Justine E. F. Moonen",
-    "Mohsen Ghanbari",
-    "Gennady V. Roshchupkin",
-    "Dina Vojinović",
-    "Iñigo Bermejo",
-    "Hailiang Mei",
-    "Esther E. Bron"
-   ],
-   "author_members": [
-    "pedro-mateus",
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    "andre-dekker",
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null
-   ],
-   "author_profiles": {
-    "pedro-mateus": {
-     "openalex_id": "A5101679672",
-     "orcid": "0000-0002-3047-7630",
-     "match": "openalex",
-     "affiliations": [
-      "Department of Radiation Oncology"
-     ]
-    },
-    "andre-dekker": {
-     "openalex_id": "A5013513157",
-     "orcid": "0000-0002-0422-7996",
-     "match": "openalex",
-     "affiliations": [
-      "Department of Radiation Oncology"
-     ]
-    }
-   },
-   "author_positions": [
-    1,
-    2,
-    3,
-    4,
-    5,
-    6,
-    7,
-    8,
-    9,
-    10,
-    11,
-    12,
-    13,
-    14,
-    15,
-    16,
-    17,
-    18,
-    19,
-    20,
-    21,
-    22
-   ],
-   "author_count": 22,
-   "group_members": [
-    "andre-dekker"
-   ],
-   "member_affiliations": {
-    "andre-dekker": [
-     "Department of Radiation Oncology"
-    ]
-   },
-   "affiliation_status": {
-    "andre-dekker": "unspecific"
-   },
-   "senior_affiliations": [
-    "Erasmus MC",
-    "Biomedical Imaging Group Rotterdam, Department of Radiology & Nuclear Medicine, Erasmus MC - University Medical Center Rotterdam, Rotterdam, the Netherlands"
-   ],
-   "cited_by_count": 0,
-   "abstract": "Biological age scores are an emerging tool to characterize aging by estimating chronological age based on physiological biomarkers. Various scores have shown associations with aging-related outcomes. This study assessed the relation between an age score based on brain MRI images (BrainAge) and an age score based on metabolomic biomarkers (MetaboAge). We trained a federated deep learning model to estimate BrainAge in three cohorts. The federated BrainAge model yielded significantly lower error for age prediction across the cohorts than locally trained models. Harmonizing the age interval between cohorts further improved BrainAge accuracy. Subsequently, we compared BrainAge with MetaboAge using federated association and survival analyses. The results showed a small association between BrainAge and MetaboAge as well as a higher predictive value for the time to mortality of both scores combined than for the individual scores. Hence, our study suggests that both aging scores capture different aspects of the aging process.",
-   "verified": false,
-   "counted_members": [
-    "andre-dekker"
-   ],
-   "counted": true,
-   "listed_elsewhere": false,
-   "first_seen": "2026-10-21",
-   "journal_impact": null,
-   "journal_h_index": null
-  },
-  {
    "id": "W4402137708",
    "openalex_url": "https://openalex.org/W4402137708",
    "doi": "https://doi.org/10.1177/02841851241268463",
@@ -31966,107 +30644,6 @@
     "Pfizer Inc, New York, New York, USA"
    ],
    "cited_by_count": 6,
-   "abstract": "Abstract Federated Learning (FL) has emerged as a promising solution to address the limitations of centralised machine learning (ML) in oncology, particularly in overcoming privacy concerns and harnessing the power of diverse, multi-center data. This systematic review synthesises current knowledge on the state-of-the-art FL in oncology, focusing on breast, lung, and prostate cancer. Distinct from previous surveys, our comprehensive review critically evaluates the real-world implementation and impact of FL on cancer care, demonstrating its effectiveness in enhancing ML generalisability, performance and data privacy in clinical settings and data. We evaluated state-of-the-art advances in FL, demonstrating its growing adoption amid tightening data privacy regulations. FL outperformed centralised ML in 15 out of the 25 studies reviewed, spanning diverse ML models and clinical applications, and facilitating integration of multi-modal information for precision medicine. Despite the current challenges identified in reproducibility, standardisation and methodology across studies, the demonstrable benefits of FL in harnessing real-world data and addressing clinical needs highlight its significant potential for advancing cancer research. We propose that future research should focus on addressing these limitations and investigating further advanced FL methods, to fully harness data diversity and realise the transformative power of cutting-edge FL in cancer care.",
-   "verified": false,
-   "counted_members": [],
-   "counted": false,
-   "listed_elsewhere": true,
-   "first_seen": "2026-10-21",
-   "journal_impact": null,
-   "journal_h_index": null
-  },
-  {
-   "id": "W4401455476",
-   "openalex_url": "https://openalex.org/W4401455476",
-   "doi": "https://doi.org/10.1101/2024.08.08.24311681",
-   "title": "Advancing oncology with federated learning: transcending boundaries in breast, lung, and prostate cancer. A systematic review",
-   "publication_date": "2024-08-09",
-   "year": 2024,
-   "type": "preprint",
-   "journal": "medRxiv",
-   "source_id": "S3005729997",
-   "landing_url": "https://doi.org/10.1101/2024.08.08.24311681",
-   "is_oa": true,
-   "oa_url": "https://doi.org/10.1101/2024.08.08.24311681",
-   "license": "cc-by-nc",
-   "pdf_url": null,
-   "authors": [
-    "Anshu Ankolekar",
-    "Sebastian Daniel Boie",
-    "Maryam Abdollahyan",
-    "Emanuela Gadaleta",
-    "Seyed Alireza Hasheminasab",
-    "Guang Yang",
-    "Charles Beauville",
-    "Νικόλαος Δικαίος",
-    "George Anthony Kastis",
-    "Michael Bussmann",
-    "Sara Khalid",
-    "Hagen Kruger",
-    "Philippe Lambin",
-    "Giorgos Papanastasiou"
-   ],
-   "author_members": [
-    "anshu-ankolekar",
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null
-   ],
-   "author_profiles": {
-    "anshu-ankolekar": {
-     "openalex_id": "A5075943046",
-     "orcid": "0000-0001-7681-1254",
-     "match": "openalex",
-     "affiliations": [
-      "Maastricht University",
-      "Department of Precision Medicine, GROW Research Institute for Oncology and Reproduction, Maastricht University, Maastricht, the Netherlands"
-     ]
-    }
-   },
-   "author_positions": [
-    1,
-    2,
-    3,
-    4,
-    5,
-    6,
-    7,
-    8,
-    9,
-    10,
-    11,
-    12,
-    13,
-    14
-   ],
-   "author_count": 14,
-   "group_members": [
-    "anshu-ankolekar"
-   ],
-   "member_affiliations": {
-    "anshu-ankolekar": [
-     "Maastricht University",
-     "Department of Precision Medicine, GROW Research Institute for Oncology and Reproduction, Maastricht University, Maastricht, the Netherlands"
-    ]
-   },
-   "affiliation_status": {
-    "anshu-ankolekar": "mismatch"
-   },
-   "senior_affiliations": [
-    "Pfizer (United States)",
-    "Pfizer Inc, New York, New York, USA"
-   ],
-   "cited_by_count": 5,
    "abstract": "Abstract Federated Learning (FL) has emerged as a promising solution to address the limitations of centralised machine learning (ML) in oncology, particularly in overcoming privacy concerns and harnessing the power of diverse, multi-center data. This systematic review synthesises current knowledge on the state-of-the-art FL in oncology, focusing on breast, lung, and prostate cancer. Distinct from previous surveys, our comprehensive review critically evaluates the real-world implementation and impact of FL on cancer care, demonstrating its effectiveness in enhancing ML generalisability, performance and data privacy in clinical settings and data. We evaluated state-of-the-art advances in FL, demonstrating its growing adoption amid tightening data privacy regulations. FL outperformed centralised ML in 15 out of the 25 studies reviewed, spanning diverse ML models and clinical applications, and facilitating integration of multi-modal information for precision medicine. Despite the current challenges identified in reproducibility, standardisation and methodology across studies, the demonstrable benefits of FL in harnessing real-world data and addressing clinical needs highlight its significant potential for advancing cancer research. We propose that future research should focus on addressing these limitations and investigating further advanced FL methods, to fully harness data diversity and realise the transformative power of cutting-edge FL in cancer care.",
    "verified": false,
    "counted_members": [],
@@ -33594,186 +32171,6 @@
    "journal_h_index": 169
   },
   {
-   "id": "W4399612961",
-   "openalex_url": "https://openalex.org/W4399612961",
-   "doi": "https://doi.org/10.2196/preprints.60847",
-   "title": "Privacy Preserving Federated Deep Learning Infrastructure for ARGOS: ARtificial intelligence for Gross tumor vOlume Segmentation. (Preprint)",
-   "publication_date": "2024-05-23",
-   "year": 2024,
-   "type": "preprint",
-   "journal": null,
-   "source_id": null,
-   "landing_url": "http://dx.doi.org/10.2196/preprints.60847",
-   "is_oa": true,
-   "oa_url": "http://dx.doi.org/10.2196/preprints.60847",
-   "license": "cc-by",
-   "pdf_url": null,
-   "authors": [
-    "Ananya Choudhury",
-    "L. Volmer",
-    "Frank Joseph Martin",
-    "Rianne Fijten",
-    "Leonard Wee",
-    "Andre L.A.J. Dekker",
-    "Johan van Soest"
-   ],
-   "author_members": [
-    "ananya-choudhury",
-    null,
-    null,
-    "rianne-fijten",
-    "leonard-wee",
-    "andre-dekker",
-    "johan-van-soest"
-   ],
-   "author_profiles": {
-    "ananya-choudhury": {
-     "openalex_id": "A5024986698",
-     "orcid": "0000-0001-9847-8165",
-     "match": "openalex",
-     "affiliations": [
-      "Maastricht University Medical Centre",
-      "Maastricht University",
-      "Clinical Data Science Maastricht University Maastricht NL",
-      "GROW Research Institute for Oncology and Reproduction Maastricht University Medical Center+ Maastricht NL",
-      "Maastricht NL"
-     ]
-    },
-    "rianne-fijten": {
-     "openalex_id": "A5081642553",
-     "orcid": "0000-0002-1964-6317",
-     "match": "openalex",
-     "affiliations": [
-      "Maastricht University Medical Centre",
-      "Maastricht University",
-      "Clinical Data Science Maastricht University Maastricht NL",
-      "GROW Research Institute for Oncology and Reproduction Maastricht University Medical Center+ Maastricht NL",
-      "Maastricht NL"
-     ]
-    },
-    "leonard-wee": {
-     "openalex_id": "A5004688031",
-     "orcid": "0000-0003-1612-9055",
-     "match": "openalex",
-     "affiliations": [
-      "Maastricht University Medical Centre",
-      "GROW Research Institute for Oncology and Reproduction",
-      "Maastricht University Medical Center+ Paul Henri Spakalaan"
-     ]
-    },
-    "andre-dekker": {
-     "openalex_id": "A5013513157",
-     "orcid": "0000-0002-0422-7996",
-     "match": "openalex",
-     "affiliations": [
-      "Maastricht University Medical Centre",
-      "Maastricht University",
-      "Brightlands Institute for Smart Society (BISS) Faculty of Science and Engineering (FSE) Maastricht University Heerlen NL",
-      "Clinical Data Science Maastricht University Maastricht NL",
-      "GROW Research Institute for Oncology and Reproduction Maastricht University Medical Center+ Maastricht NL",
-      "Maastricht NL"
-     ]
-    },
-    "johan-van-soest": {
-     "openalex_id": "A5034589930",
-     "orcid": "0000-0003-2548-0330",
-     "match": "openalex",
-     "affiliations": [
-      "Maastricht University Medical Centre",
-      "Maastricht University",
-      "Brightlands Institute for Smart Society (BISS) Faculty of Science and Engineering (FSE) Maastricht University Heerlen NL",
-      "Clinical Data Science Maastricht University Maastricht NL",
-      "GROW Research Institute for Oncology and Reproduction Maastricht University Medical Center+ Maastricht NL",
-      "Maastricht NL"
-     ]
-    }
-   },
-   "author_positions": [
-    1,
-    2,
-    3,
-    4,
-    5,
-    6,
-    7
-   ],
-   "author_count": 7,
-   "group_members": [
-    "ananya-choudhury",
-    "rianne-fijten",
-    "leonard-wee",
-    "andre-dekker",
-    "johan-van-soest"
-   ],
-   "member_affiliations": {
-    "ananya-choudhury": [
-     "Maastricht University Medical Centre",
-     "Maastricht University",
-     "Clinical Data Science Maastricht University Maastricht NL",
-     "GROW Research Institute for Oncology and Reproduction Maastricht University Medical Center+ Maastricht NL",
-     "Maastricht NL"
-    ],
-    "rianne-fijten": [
-     "Maastricht University Medical Centre",
-     "Maastricht University",
-     "Clinical Data Science Maastricht University Maastricht NL",
-     "GROW Research Institute for Oncology and Reproduction Maastricht University Medical Center+ Maastricht NL",
-     "Maastricht NL"
-    ],
-    "leonard-wee": [
-     "Maastricht University Medical Centre",
-     "GROW Research Institute for Oncology and Reproduction",
-     "Maastricht University Medical Center+ Paul Henri Spakalaan"
-    ],
-    "andre-dekker": [
-     "Maastricht University Medical Centre",
-     "Maastricht University",
-     "Brightlands Institute for Smart Society (BISS) Faculty of Science and Engineering (FSE) Maastricht University Heerlen NL",
-     "Clinical Data Science Maastricht University Maastricht NL",
-     "GROW Research Institute for Oncology and Reproduction Maastricht University Medical Center+ Maastricht NL",
-     "Maastricht NL"
-    ],
-    "johan-van-soest": [
-     "Maastricht University Medical Centre",
-     "Maastricht University",
-     "Brightlands Institute for Smart Society (BISS) Faculty of Science and Engineering (FSE) Maastricht University Heerlen NL",
-     "Clinical Data Science Maastricht University Maastricht NL",
-     "GROW Research Institute for Oncology and Reproduction Maastricht University Medical Center+ Maastricht NL",
-     "Maastricht NL"
-    ]
-   },
-   "affiliation_status": {
-    "ananya-choudhury": "verified",
-    "rianne-fijten": "verified",
-    "leonard-wee": "verified",
-    "andre-dekker": "verified",
-    "johan-van-soest": "verified"
-   },
-   "senior_affiliations": [
-    "Maastricht University Medical Centre",
-    "Maastricht University",
-    "Brightlands Institute for Smart Society (BISS) Faculty of Science and Engineering (FSE) Maastricht University Heerlen NL",
-    "Clinical Data Science Maastricht University Maastricht NL",
-    "GROW Research Institute for Oncology and Reproduction Maastricht University Medical Center+ Maastricht NL",
-    "Maastricht NL"
-   ],
-   "cited_by_count": 1,
-   "abstract": "BACKGROUND Accurate delineation of the gross tumor volume (GTV) is crucial in radiotherapy for dose calculation and precise imaging-guided treatment of lung cancer patients. Conventionally, this task has been performed manually by radiation oncologists, which can be subjective and vary among clinicians. Deep learning has enabled automated GTV segmentation, with the potential to revolutionize the radiotherapy workflow by improving efficiency and consistency, ultimately enhancing patient outcomes while reducing clinician workload. However, the adoption of deep learning based GTV segmentation tools is hindered by the challenges of data privacy and the need for large, diverse datasets across multiple institutions. Federated learning (FL) offers a promising solution, allowing collaborative development of AI models without the need to share individual subject-level data. OBJECTIVE The objective is to introduce an innovative federated learning infrastructure called the Personal Health Train (PHT) that includes the procedural, technical, and governance components needed to implement federated learning on real-world healthcare data, including training deep learning neural networks. The study aims to apply this federated deep learning infrastructure to the use case of gross tumor volume (GTV) segmentation on chest CT images of lung cancer patients, and present the results from a proof-of-concept experiment. METHODS The PHT framework addresses the challenges of data privacy concerns of data sharing by keeping data close to the source, and instead sending analysis to the data. Technologically, PHT requires three interdependent components: \"tracks\" (protected communication channels), \"trains\" (containerized software applications), and \"stations\" (institutional data repositories), which are supported by the open source \"Vantage6\" software. The study applies this federated deep learning infrastructure to the use case of GTV segmentation on chest CT images of lung cancer patients, with the introduction of an additional component called the Secure Aggregations Server, where the model averaging is done in a trusted and inaccessible environment. RESULTS In this paper we demonstrated the feasibility of executing deep learning algorithms in a federated manner using PHT and presented the results from a proof-of-concept study. The infrastructure linked 12 hospitals across 8 nations, covering 4 continents, demonstrating the scalability and global reach of the proposed approach. In the entire execution and training of the deep learning algorithm, no data has been shared outside the hospital. CONCLUSIONS The findings of the proof-of-concept study, as well as the implications and limitations of the infrastructure and the results, are discussed. The application of federated deep learning to unstructured medical imaging data, facilitated by the PHT framework and Vantage6 platform, represents a significant advancement in the field. The proposed infrastructure addresses the challenges of data privacy and enables collaborative model development, paving the way for the widespread adoption of deep learning-based tools in the medical domain and beyond. The introduction of the Secure Aggregation Server implied that data leakage problems in federated learning can be prevented by careful design decisions of the infrastructure. CLINICALTRIAL ARtificial Intelligence for Gross Tumour vOlume Segmentation (ARGOS) ClinicalTrials.gov ID NCT05775068 Sponsor Maastricht Radiation Oncology Information provided by Andre Dekker, Maastricht Radiation Oncology (Responsible Party) https://clinicaltrials.gov/study/NCT05775068",
-   "verified": true,
-   "counted_members": [
-    "ananya-choudhury",
-    "rianne-fijten",
-    "leonard-wee",
-    "andre-dekker",
-    "johan-van-soest"
-   ],
-   "counted": true,
-   "listed_elsewhere": false,
-   "first_seen": "2026-10-21",
-   "journal_impact": null,
-   "journal_h_index": null
-  },
-  {
    "id": "W4396935494",
    "openalex_url": "https://openalex.org/W4396935494",
    "doi": "https://doi.org/10.3389/fmed.2024.1365501",
@@ -33866,7 +32263,7 @@
     "Maastricht University",
     "Department of Advanced Computing Sciences, Institute of Data Science, Maastricht University, Maastricht, Netherlands"
    ],
-   "cited_by_count": 15,
+   "cited_by_count": 18,
    "abstract": "The emerging European Health Data Space (EHDS) Regulation opens new prospects for large-scale sharing and re-use of health data. Yet, the proposed regulation suffers from two important limitations: it is designed to benefit the whole population with limited consideration for individuals, and the generation of secondary datasets from heterogeneous, unlinked patient data will remain burdensome. AIDAVA, a Horizon Europe project that started in September 2022, proposes to address both shortcomings by providing patients with an AI-based virtual assistant that maximises automation in the integration and transformation of their health data into an interoperable, longitudinal health record. This personal record can then be used to inform patient-related decisions at the point of care, whether this is the usual point of care or a possible cross-border point of care. The personal record can also be used to generate population datasets for research and policymaking. The proposed solution will enable a much-needed paradigm shift in health data management, implementing a 'curate once at patient level, use many times' approach, primarily for the benefit of patients and their care providers, but also for more efficient generation of high-quality secondary datasets. After 15 months, the project shows promising preliminary results in achieving automation in the integration and transformation of heterogeneous data of each individual patient, once the content of the data sources managed by the data holders has been formally described. Additionally, the conceptualization phase of the project identified a set of recommendations for the development of a patient-centric EHDS, significantly facilitating the generation of data for secondary use.",
    "verified": true,
    "counted_members": [
@@ -33963,7 +32360,7 @@
     "Maastricht University Medical Centre",
     "Department of Precision Medicine, GROW School for Oncology, Maastricht University Medical Centre+, Maastricht, the Netherlands"
    ],
-   "cited_by_count": 49,
+   "cited_by_count": 57,
    "abstract": "In anticipation of potential future pandemics, we examined the challenges and opportunities presented by the COVID-19 outbreak. This analysis highlights how artificial intelligence (AI) and predictive models can support both patients and clinicians in managing subsequent infectious diseases, and how legislators and policymakers could support these efforts, to bring learning healthcare system (LHS) from guidelines to real-world implementation. This report chronicles the trajectory of the COVID-19 pandemic, emphasizing the diverse data sets generated throughout its course. We propose strategies for harnessing this data via AI and predictive modelling to enhance the functioning of LHS. The challenges faced by patients and healthcare systems around the world during this unprecedented crisis could have been mitigated with an informed and timely adoption of the three pillars of the LHS: Knowledge, Data and Practice. By harnessing AI and predictive analytics, we can develop tools that not only detect potential pandemic-prone diseases early on but also assist in patient management, provide decision support, offer treatment recommendations, deliver patient outcome triage, predict post-recovery long-term disease impacts, monitor viral mutations and variant emergence, and assess vaccine and treatment efficacy in real-time. A patient-centric approach remains paramount, ensuring patients are both informed and actively involved in disease mitigation strategies.",
    "verified": false,
    "counted_members": [],
@@ -35333,61 +33730,6 @@
    "first_seen": "2026-10-21",
    "journal_impact": 0.8,
    "journal_h_index": 226
-  },
-  {
-   "id": "W4399034236",
-   "openalex_url": "https://openalex.org/W4399034236",
-   "doi": "https://doi.org/10.2196/preprints.60095",
-   "title": "An Assistant for ICD-10 Coding: Leveraging GPT-4 and RoBERTa for Term Extraction and Code Description Analysis (Preprint)",
-   "publication_date": "2024-05-01",
-   "year": 2024,
-   "type": "preprint",
-   "journal": null,
-   "source_id": null,
-   "landing_url": "https://doi.org/10.2196/preprints.60095",
-   "is_oa": true,
-   "oa_url": "https://doi.org/10.2196/preprints.60095",
-   "license": "cc-by",
-   "pdf_url": null,
-   "authors": [
-    "Sander Puts"
-   ],
-   "author_members": [
-    "sander-puts"
-   ],
-   "author_profiles": {
-    "sander-puts": {
-     "openalex_id": "A5089485363",
-     "orcid": "0000-0003-4148-1755",
-     "match": "openalex",
-     "affiliations": []
-    }
-   },
-   "author_positions": [
-    1
-   ],
-   "author_count": 1,
-   "group_members": [
-    "sander-puts"
-   ],
-   "member_affiliations": {
-    "sander-puts": []
-   },
-   "affiliation_status": {
-    "sander-puts": "unknown"
-   },
-   "senior_affiliations": [],
-   "cited_by_count": 0,
-   "abstract": "BACKGROUND The International Classification of Diseases (ICD), developed by the WHO, standardizes health condition coding to support healthcare policy, research, and billing, but AI automation, while promising, still underperforms compared to human accuracy and lacks the explainability needed for adoption in medical settings. OBJECTIVE The potential of Large Language Models (LLMs) is explored for assisting medical coders in the International Classification of Diseases-10 (ICD-10) coding. The study aims on augmenting human coding by initially identifying lead terms and utilizing RAG-based methods for computer-assisted coding enhancement. METHODS The explainability dataset from the CodiEsp challenge (CodiEsp-X) was used, featuring 1000 Spanish clinical cases annotated with ICD-10 codes. From CodiEsp-X, a dataset was created using GPT-4, where full textual evidence annotations were replaced with lead term annotations. Phase 1 consisted of fine-tuning a named entity recognition (NER) RoBERTa transformer model for lead term extraction. In Phase 2, the ICD code for identified lead terms was assigned using GPT-4 and ICD code descriptions, a Retrieval-Augmented Generation (RAG) approach. RESULTS The fine-tuned RoBERTa achieved an overall F1 score of 0.80 for ICD lead term extraction on the new CodiEsp-X-lead dataset in phase 1. In phase 2, the GPT-4 generated code descriptions improved the recall from 55.1% to 82.3% for procedure code lookups in a code description database. However, relying solely on GPT-4 prompting and code descriptions as a resource to assign the correct ICD-10 code to identified lead terms resulted in poor performance on the CodiEsp-X task, with an F1 score of 0.305. CONCLUSIONS While the fine-tuning on training data might have improved the ICD coding, it was intentionally omitted to prioritize generalizability.",
-   "verified": false,
-   "counted_members": [
-    "sander-puts"
-   ],
-   "counted": true,
-   "listed_elsewhere": false,
-   "first_seen": "2026-10-21",
-   "journal_impact": null,
-   "journal_h_index": null
   },
   {
    "id": "W4396644957",
@@ -37506,202 +35848,6 @@
    "journal_h_index": 594
   },
   {
-   "id": "W7139654193",
-   "openalex_url": "https://openalex.org/W7139654193",
-   "doi": null,
-   "title": "A federated database for obesity research",
-   "publication_date": "2024-02-16",
-   "year": 2024,
-   "type": "article",
-   "journal": "Universitat de Girona Digital Repository (Universitat de Girona)",
-   "source_id": "S4306401633",
-   "landing_url": "http://hdl.handle.net/10256/28453",
-   "is_oa": true,
-   "oa_url": "http://hdl.handle.net/10256/28453",
-   "license": "cc-by",
-   "pdf_url": null,
-   "authors": [
-    "Carl Delfin",
-    "Iulian Dragan",
-    "Dmitry Kuznetsov",
-    "Juan Fernandez Tajes",
-    "Femke Smit",
-    "Daniel Coral",
-    "Ali Farzaneh",
-    "André Haugg",
-    "Andreas Hungele",
-    "Anne Niknejad",
-    "Christopher Hall",
-    "Daan Jacobs",
-    "Diana Marek",
-    "Diane P. Fraser",
-    "Dorothée Thuillier",
-    "Fariba Ahmadizar",
-    "Florence Mehl",
-    "François Pattou",
-    "Frédéric Burdet",
-    "Gareth Hawkes",
-    "Ilja C.W. Arts",
-    "Jordi Blanch Andreu",
-    "Johan van Soest",
-    "José Manuel Fernández-Real Lemos",
-    "Juergen Boehl",
-    "Fink, Katharina",
-    "Marleen M. J. van Greevenbroek",
-    "Maryam Kavousi",
-    "Michiel Minten",
-    "Nicole Prinz",
-    "Niels Ipsen",
-    "Paul W. Franks",
-    "Rafel Ramos",
-    "Reinhard Holl",
-    "Scott Horban",
-    "Talita Duarte‐Salles",
-    "Van Du T. Tran",
-    "Violeta Raverdy",
-    "Yenny Teresa",
-    "Adam Lenart",
-    "Ewan R. Pearson",
-    "Thomas Sparsø",
-    "Giuseppe Giordano",
-    "Vassilios Ioannidis",
-    "Keng Soh",
-    "Timothy Frayling",
-    "Carel Wynand le Roux",
-    "Mark R. Ibberson"
-   ],
-   "author_members": [
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    "johan-van-soest",
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null
-   ],
-   "author_profiles": {
-    "johan-van-soest": {
-     "openalex_id": "A5034589930",
-     "orcid": "0000-0003-2548-0330",
-     "match": "openalex",
-     "affiliations": []
-    }
-   },
-   "author_positions": [
-    1,
-    2,
-    3,
-    4,
-    5,
-    6,
-    7,
-    8,
-    9,
-    10,
-    11,
-    12,
-    13,
-    14,
-    15,
-    16,
-    17,
-    18,
-    19,
-    20,
-    21,
-    22,
-    23,
-    24,
-    25,
-    26,
-    27,
-    28,
-    29,
-    30,
-    31,
-    32,
-    33,
-    34,
-    35,
-    36,
-    37,
-    38,
-    39,
-    40,
-    41,
-    42,
-    43,
-    44,
-    45,
-    46,
-    47,
-    48
-   ],
-   "author_count": 48,
-   "group_members": [
-    "johan-van-soest"
-   ],
-   "member_affiliations": {
-    "johan-van-soest": []
-   },
-   "affiliation_status": {
-    "johan-van-soest": "unknown"
-   },
-   "senior_affiliations": [],
-   "cited_by_count": 0,
-   "abstract": "This work was funded as part of the Stratification of Obesity Phenotypes to Optimize Future Obesity Therapy (SOPHIA) project (SOPHIA; www.imisophia.eu accessed on 15 August 2023). SOPHIA has received funding from the Innovative Medicines Initiative 2 Joint Undertaking under grant agreement No. 875534. This Joint Undertaking is supported by the European Union’s Horizon 2020 research and innovation program and the EFPIA and T1D Exchange, the JDRF, and the Obesity Action Coalition. This work was also supported by the National Institute for Health and Care Research Exeter Biomedical Research Centre and National Institute for Health and the Care Research Exeter Clinical Research Facility. The views expressed are those of the author(s) and not necessarily those of the NIHR or the Department of Health and Social Care",
-   "verified": false,
-   "counted_members": [
-    "johan-van-soest"
-   ],
-   "counted": true,
-   "listed_elsewhere": false,
-   "first_seen": "2026-10-21",
-   "journal_impact": null,
-   "journal_h_index": null
-  },
-  {
    "id": "W4391879491",
    "openalex_url": "https://openalex.org/W4391879491",
    "doi": "https://doi.org/10.3390/life14020262",
@@ -39365,256 +37511,6 @@
    "journal_h_index": null
   },
   {
-   "id": "W4401504239",
-   "openalex_url": "https://openalex.org/W4401504239",
-   "doi": "https://doi.org/10.2139/ssrn.4912112",
-   "title": "Postoperative Trunk Mobility Recovery and the Predictive Role of the Lowest Instrumented Vertebra in Adolescent Idiopathic Scoliosis Fusion Surgery",
-   "publication_date": "2024-01-01",
-   "year": 2024,
-   "type": "preprint",
-   "journal": "SSRN Electronic Journal",
-   "source_id": "S4210172589",
-   "landing_url": "http://dx.doi.org/10.2139/ssrn.4912112",
-   "is_oa": true,
-   "oa_url": "http://dx.doi.org/10.2139/ssrn.4912112",
-   "license": null,
-   "pdf_url": null,
-   "authors": [
-    "Sebastiaan Schelfaut",
-    "Thijs Maria Anne Ackermans",
-    "Tom Leppens",
-    "Pierre Moens",
-    "Anja Van Campenhout",
-    "Lieven Moke",
-    "Lennart Scheys"
-   ],
-   "author_members": [
-    null,
-    "thijs-ackermans",
-    null,
-    null,
-    null,
-    null,
-    null
-   ],
-   "author_profiles": {
-    "thijs-ackermans": {
-     "openalex_id": "A5087194448",
-     "orcid": "0000-0002-6977-1001",
-     "match": "openalex",
-     "affiliations": [
-      "KU Leuven",
-      "KU Leuven, Oude Markt 13, Leuven, 3000, Belgium"
-     ]
-    }
-   },
-   "author_positions": [
-    1,
-    2,
-    3,
-    4,
-    5,
-    6,
-    7
-   ],
-   "author_count": 7,
-   "group_members": [
-    "thijs-ackermans"
-   ],
-   "member_affiliations": {
-    "thijs-ackermans": [
-     "KU Leuven",
-     "KU Leuven, Oude Markt 13, Leuven, 3000, Belgium"
-    ]
-   },
-   "affiliation_status": {
-    "thijs-ackermans": "mismatch"
-   },
-   "senior_affiliations": [
-    "KU Leuven",
-    "Institute for Orthopaedic Research and Training (IORT)",
-    "KU Leuven - Biomechanics Section",
-    "KU Leuven - University Hospitals Leuven"
-   ],
-   "cited_by_count": 0,
-   "abstract": null,
-   "verified": false,
-   "counted_members": [],
-   "counted": false,
-   "listed_elsewhere": true,
-   "first_seen": "2026-10-27",
-   "journal_impact": null,
-   "journal_h_index": null
-  },
-  {
-   "id": "W4393059818",
-   "openalex_url": "https://openalex.org/W4393059818",
-   "doi": "https://doi.org/10.2139/ssrn.4764844",
-   "title": "Federated Learning with Real-World Data: An International Multi-Centre Study to Develop and Validate Prognostic Models for Anal Cancer",
-   "publication_date": "2024-01-01",
-   "year": 2024,
-   "type": "preprint",
-   "journal": "SSRN Electronic Journal",
-   "source_id": "S4210172589",
-   "landing_url": "http://dx.doi.org/10.2139/ssrn.4764844",
-   "is_oa": true,
-   "oa_url": "http://dx.doi.org/10.2139/ssrn.4764844",
-   "license": null,
-   "pdf_url": null,
-   "authors": [
-    "Stelios Theophanous",
-    "Per-Ivar Lønne",
-    "Ananya Choudhury",
-    "Maaike Berbée",
-    "Charlotte Leonore Deijen",
-    "Andre L.A.J. Dekker",
-    "Matthew Field",
-    "Maria Antonietta Gambacorta",
-    "Alexandra Gilbert",
-    "Marianne G. Guren",
-    "Rashmi Jadon",
-    "Rohit Kochhar",
-    "Daniel Martin",
-    "Ahmed Allam Mohamed",
-    "Rebecca Muirhead",
-    "Oriol Parés",
-    "Łukasz Raszewski",
-    "Rajarshi Roy",
-    "Andrew Frederick Scarsbrook",
-    "David Sebag‐Montefiore",
-    "Emiliano Spezi",
-    "Vassilios Vassiliou",
-    "Eirik Malinen",
-    "Leonard Wee",
-    "Ane Lindegaard Appelt"
-   ],
-   "author_members": [
-    null,
-    null,
-    "ananya-choudhury",
-    null,
-    null,
-    "andre-dekker",
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    "leonard-wee",
-    null
-   ],
-   "author_profiles": {
-    "ananya-choudhury": {
-     "openalex_id": "A5024986698",
-     "orcid": "0000-0001-9847-8165",
-     "match": "openalex",
-     "affiliations": [
-      "Maastricht University",
-      "Maastricht University - GROW School for Oncology and Reproduction"
-     ]
-    },
-    "andre-dekker": {
-     "openalex_id": "A5013513157",
-     "orcid": "0000-0002-0422-7996",
-     "match": "openalex",
-     "affiliations": [
-      "Maastricht University",
-      "Maastricht University"
-     ]
-    },
-    "leonard-wee": {
-     "openalex_id": "A5004688031",
-     "orcid": "0000-0003-1612-9055",
-     "match": "openalex",
-     "affiliations": [
-      "Maastricht University",
-      "Maastricht University - GROW School for Oncology and Reproduction"
-     ]
-    }
-   },
-   "author_positions": [
-    1,
-    2,
-    3,
-    4,
-    5,
-    6,
-    7,
-    8,
-    9,
-    10,
-    11,
-    12,
-    13,
-    14,
-    15,
-    16,
-    17,
-    18,
-    19,
-    20,
-    21,
-    22,
-    23,
-    24,
-    25
-   ],
-   "author_count": 25,
-   "group_members": [
-    "ananya-choudhury",
-    "andre-dekker",
-    "leonard-wee"
-   ],
-   "member_affiliations": {
-    "ananya-choudhury": [
-     "Maastricht University",
-     "Maastricht University - GROW School for Oncology and Reproduction"
-    ],
-    "andre-dekker": [
-     "Maastricht University",
-     "Maastricht University"
-    ],
-    "leonard-wee": [
-     "Maastricht University",
-     "Maastricht University - GROW School for Oncology and Reproduction"
-    ]
-   },
-   "affiliation_status": {
-    "ananya-choudhury": "verified",
-    "andre-dekker": "unspecific",
-    "leonard-wee": "verified"
-   },
-   "senior_affiliations": [
-    "Leeds Teaching Hospitals NHS Trust",
-    "Leeds Teaching Hospitals NHS Trust"
-   ],
-   "cited_by_count": 0,
-   "abstract": null,
-   "verified": true,
-   "counted_members": [
-    "ananya-choudhury",
-    "andre-dekker",
-    "leonard-wee"
-   ],
-   "counted": true,
-   "listed_elsewhere": false,
-   "first_seen": "2026-10-21",
-   "journal_impact": null,
-   "journal_h_index": null
-  },
-  {
    "id": "W4392556699",
    "openalex_url": "https://openalex.org/W4392556699",
    "doi": "https://doi.org/10.1093/bjrai/ubae005",
@@ -40056,129 +37952,6 @@
    "first_seen": "2026-10-21",
    "journal_impact": 1.8,
    "journal_h_index": 24
-  },
-  {
-   "id": "W4391607864",
-   "openalex_url": "https://openalex.org/W4391607864",
-   "doi": "https://doi.org/10.2139/ssrn.4716052",
-   "title": "Data Harmonization and Federated Learning for Multi-Cohort Dementia Research Using the OMOP Common Data Model: A Netherlands Consortium of Dementia Cohorts Case Study",
-   "publication_date": "2024-01-01",
-   "year": 2024,
-   "type": "preprint",
-   "journal": "SSRN Electronic Journal",
-   "source_id": "S4210172589",
-   "landing_url": "https://doi.org/10.2139/ssrn.4716052",
-   "is_oa": true,
-   "oa_url": "https://doi.org/10.2139/ssrn.4716052",
-   "license": null,
-   "pdf_url": null,
-   "authors": [
-    "Pedro da Costa Mateus",
-    "Justine E. F. Moonen",
-    "Magdalena Beran",
-    "Eva A. Jaarsma",
-    "Sophie M. van der Landen",
-    "Joost Heuvelink",
-    "Mahlet A. Birhanu",
-    "Alexander  G.J. Harms",
-    "Esther E. Bron",
-    "Frank J. Wolters",
-    "Davy Cats",
-    "Hailiang Mei",
-    "Julie Elisabeth Oomens",
-    "Willemijn J. Jansen",
-    "Miranda T. Schram",
-    "Andre L.A.J. Dekker",
-    "Iñigo Bermejo"
-   ],
-   "author_members": [
-    "pedro-mateus",
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    "andre-dekker",
-    null
-   ],
-   "author_profiles": {
-    "pedro-mateus": {
-     "openalex_id": "A5027554938",
-     "orcid": "0000-0002-3047-7630",
-     "match": "openalex",
-     "affiliations": [
-      "Maastricht University",
-      "Maastricht University",
-      "Maastricht University, P.O. Box 616, Maastricht, 6200MD, Netherlands"
-     ]
-    },
-    "andre-dekker": {
-     "openalex_id": "A5013513157",
-     "orcid": "0000-0002-0422-7996",
-     "match": "openalex",
-     "affiliations": [
-      "Maastricht University",
-      "Maastricht University"
-     ]
-    }
-   },
-   "author_positions": [
-    1,
-    2,
-    3,
-    4,
-    5,
-    6,
-    7,
-    8,
-    9,
-    10,
-    11,
-    12,
-    13,
-    14,
-    15,
-    16,
-    17
-   ],
-   "author_count": 17,
-   "group_members": [
-    "andre-dekker"
-   ],
-   "member_affiliations": {
-    "andre-dekker": [
-     "Maastricht University",
-     "Maastricht University"
-    ]
-   },
-   "affiliation_status": {
-    "andre-dekker": "unspecific"
-   },
-   "senior_affiliations": [
-    "Maastricht University",
-    "Maastricht University",
-    "Maastricht University, P.O. Box 616, Maastricht, 6200MD, Netherlands"
-   ],
-   "cited_by_count": 0,
-   "abstract": null,
-   "verified": false,
-   "counted_members": [
-    "andre-dekker"
-   ],
-   "counted": true,
-   "listed_elsewhere": false,
-   "first_seen": "2026-10-21",
-   "journal_impact": null,
-   "journal_h_index": null
   },
   {
    "id": "W4391161867",
