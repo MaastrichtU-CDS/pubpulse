@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-05T13:48:25+00:00",
+ "generated": "2026-11-06T13:31:31+00:00",
  "group_name": "Clinical Data Science (Maastro / Maastricht University)",
  "site_url": "https://maastrichtu-cds.github.io/pubpulse/",
  "repo_url": "https://github.com/MaastrichtU-CDS/pubpulse",
@@ -11,10 +11,13 @@
   "list_name": "the pubpulse weekly list"
  },
  "last_run": {
-  "date": "2026-11-05",
+  "date": "2026-11-06",
   "baseline": false,
-  "new_count": 0,
-  "new_ids": [],
+  "new_count": 2,
+  "new_ids": [
+   "W7225340213",
+   "W7225339278"
+  ],
   "needs_review": [
    "ali-al-zein",
    "ali-zaila",
@@ -1292,8 +1295,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-05",
-    "window_start": "2024-11-05",
+    "checked_at": "2026-11-06",
+    "window_start": "2024-11-06",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -1316,19 +1319,20 @@
    "orcid_openalex": "0000-0003-4670-6036",
    "scholar_id": null,
    "openalex_ids": [
-    "A5082702576"
+    "A5082702576",
+    "A5160821168"
    ],
    "match": "name",
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-05",
-    "window_start": "2024-11-05",
+    "checked_at": "2026-11-06",
+    "window_start": "2024-11-06",
     "recent_months": 24,
-    "shared_papers": 17,
-    "recent_shared_papers": 14,
-    "last_collaboration_date": "2026-10-12",
-    "followup_until": "2028-10-12",
+    "shared_papers": 18,
+    "recent_shared_papers": 15,
+    "last_collaboration_date": "2026-11-03",
+    "followup_until": "2028-11-03",
     "current_coauthors": [
      "ananya-choudhury",
      "andre-dekker",
@@ -1349,7 +1353,7 @@
     ]
    },
    "tracked": true,
-   "tracked_until": "2028-10-12",
+   "tracked_until": "2028-11-03",
    "needs_review": false
   },
   {
@@ -1369,8 +1373,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-05",
-    "window_start": "2024-11-05",
+    "checked_at": "2026-11-06",
+    "window_start": "2024-11-06",
     "recent_months": 24,
     "shared_papers": 16,
     "recent_shared_papers": 2,
@@ -1402,8 +1406,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-05",
-    "window_start": "2024-11-05",
+    "checked_at": "2026-11-06",
+    "window_start": "2024-11-06",
     "recent_months": 24,
     "shared_papers": 3,
     "recent_shared_papers": 3,
@@ -1436,8 +1440,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-05",
-    "window_start": "2024-11-05",
+    "checked_at": "2026-11-06",
+    "window_start": "2024-11-06",
     "recent_months": 24,
     "shared_papers": 1,
     "recent_shared_papers": 1,
@@ -1467,8 +1471,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-05",
-    "window_start": "2024-11-05",
+    "checked_at": "2026-11-06",
+    "window_start": "2024-11-06",
     "recent_months": 24,
     "shared_papers": 5,
     "recent_shared_papers": 4,
@@ -1501,8 +1505,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-05",
-    "window_start": "2024-11-05",
+    "checked_at": "2026-11-06",
+    "window_start": "2024-11-06",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -1529,8 +1533,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-05",
-    "window_start": "2024-11-05",
+    "checked_at": "2026-11-06",
+    "window_start": "2024-11-06",
     "recent_months": 24,
     "shared_papers": 1,
     "recent_shared_papers": 0,
@@ -1559,8 +1563,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-05",
-    "window_start": "2024-11-05",
+    "checked_at": "2026-11-06",
+    "window_start": "2024-11-06",
     "recent_months": 24,
     "shared_papers": 2,
     "recent_shared_papers": 1,
@@ -1589,8 +1593,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-05",
-    "window_start": "2024-11-05",
+    "checked_at": "2026-11-06",
+    "window_start": "2024-11-06",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -1617,8 +1621,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-05",
-    "window_start": "2024-11-05",
+    "checked_at": "2026-11-06",
+    "window_start": "2024-11-06",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -1645,8 +1649,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-05",
-    "window_start": "2024-11-05",
+    "checked_at": "2026-11-06",
+    "window_start": "2024-11-06",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -1673,8 +1677,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-05",
-    "window_start": "2024-11-05",
+    "checked_at": "2026-11-06",
+    "window_start": "2024-11-06",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -1703,8 +1707,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-05",
-    "window_start": "2024-11-05",
+    "checked_at": "2026-11-06",
+    "window_start": "2024-11-06",
     "recent_months": 24,
     "shared_papers": 4,
     "recent_shared_papers": 2,
@@ -1734,8 +1738,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-05",
-    "window_start": "2024-11-05",
+    "checked_at": "2026-11-06",
+    "window_start": "2024-11-06",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -1762,8 +1766,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-05",
-    "window_start": "2024-11-05",
+    "checked_at": "2026-11-06",
+    "window_start": "2024-11-06",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -1790,8 +1794,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-05",
-    "window_start": "2024-11-05",
+    "checked_at": "2026-11-06",
+    "window_start": "2024-11-06",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -1818,8 +1822,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-05",
-    "window_start": "2024-11-05",
+    "checked_at": "2026-11-06",
+    "window_start": "2024-11-06",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -1846,8 +1850,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-05",
-    "window_start": "2024-11-05",
+    "checked_at": "2026-11-06",
+    "window_start": "2024-11-06",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -1876,8 +1880,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-05",
-    "window_start": "2024-11-05",
+    "checked_at": "2026-11-06",
+    "window_start": "2024-11-06",
     "recent_months": 24,
     "shared_papers": 8,
     "recent_shared_papers": 2,
@@ -1911,8 +1915,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-05",
-    "window_start": "2024-11-05",
+    "checked_at": "2026-11-06",
+    "window_start": "2024-11-06",
     "recent_months": 24,
     "shared_papers": 5,
     "recent_shared_papers": 0,
@@ -1941,8 +1945,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-05",
-    "window_start": "2024-11-05",
+    "checked_at": "2026-11-06",
+    "window_start": "2024-11-06",
     "recent_months": 24,
     "shared_papers": 8,
     "recent_shared_papers": 6,
@@ -1978,8 +1982,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-05",
-    "window_start": "2024-11-05",
+    "checked_at": "2026-11-06",
+    "window_start": "2024-11-06",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -2006,8 +2010,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-05",
-    "window_start": "2024-11-05",
+    "checked_at": "2026-11-06",
+    "window_start": "2024-11-06",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -2034,8 +2038,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-05",
-    "window_start": "2024-11-05",
+    "checked_at": "2026-11-06",
+    "window_start": "2024-11-06",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -2064,8 +2068,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-05",
-    "window_start": "2024-11-05",
+    "checked_at": "2026-11-06",
+    "window_start": "2024-11-06",
     "recent_months": 24,
     "shared_papers": 1,
     "recent_shared_papers": 1,
@@ -2095,8 +2099,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-05",
-    "window_start": "2024-11-05",
+    "checked_at": "2026-11-06",
+    "window_start": "2024-11-06",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -2123,8 +2127,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-05",
-    "window_start": "2024-11-05",
+    "checked_at": "2026-11-06",
+    "window_start": "2024-11-06",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -2153,8 +2157,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-05",
-    "window_start": "2024-11-05",
+    "checked_at": "2026-11-06",
+    "window_start": "2024-11-06",
     "recent_months": 24,
     "shared_papers": 8,
     "recent_shared_papers": 4,
@@ -2184,8 +2188,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-05",
-    "window_start": "2024-11-05",
+    "checked_at": "2026-11-06",
+    "window_start": "2024-11-06",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -2212,8 +2216,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-05",
-    "window_start": "2024-11-05",
+    "checked_at": "2026-11-06",
+    "window_start": "2024-11-06",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -2240,8 +2244,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-05",
-    "window_start": "2024-11-05",
+    "checked_at": "2026-11-06",
+    "window_start": "2024-11-06",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -2270,8 +2274,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-05",
-    "window_start": "2024-11-05",
+    "checked_at": "2026-11-06",
+    "window_start": "2024-11-06",
     "recent_months": 24,
     "shared_papers": 2,
     "recent_shared_papers": 0,
@@ -2300,8 +2304,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-05",
-    "window_start": "2024-11-05",
+    "checked_at": "2026-11-06",
+    "window_start": "2024-11-06",
     "recent_months": 24,
     "shared_papers": 4,
     "recent_shared_papers": 4,
@@ -2334,8 +2338,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-05",
-    "window_start": "2024-11-05",
+    "checked_at": "2026-11-06",
+    "window_start": "2024-11-06",
     "recent_months": 24,
     "shared_papers": 3,
     "recent_shared_papers": 2,
@@ -2367,8 +2371,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-05",
-    "window_start": "2024-11-05",
+    "checked_at": "2026-11-06",
+    "window_start": "2024-11-06",
     "recent_months": 24,
     "shared_papers": 1,
     "recent_shared_papers": 0,
@@ -2395,8 +2399,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-05",
-    "window_start": "2024-11-05",
+    "checked_at": "2026-11-06",
+    "window_start": "2024-11-06",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -2423,8 +2427,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-05",
-    "window_start": "2024-11-05",
+    "checked_at": "2026-11-06",
+    "window_start": "2024-11-06",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -2451,8 +2455,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-05",
-    "window_start": "2024-11-05",
+    "checked_at": "2026-11-06",
+    "window_start": "2024-11-06",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -2479,8 +2483,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-05",
-    "window_start": "2024-11-05",
+    "checked_at": "2026-11-06",
+    "window_start": "2024-11-06",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -2507,8 +2511,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-05",
-    "window_start": "2024-11-05",
+    "checked_at": "2026-11-06",
+    "window_start": "2024-11-06",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -2535,8 +2539,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-05",
-    "window_start": "2024-11-05",
+    "checked_at": "2026-11-06",
+    "window_start": "2024-11-06",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -2563,8 +2567,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-05",
-    "window_start": "2024-11-05",
+    "checked_at": "2026-11-06",
+    "window_start": "2024-11-06",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -2591,8 +2595,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-05",
-    "window_start": "2024-11-05",
+    "checked_at": "2026-11-06",
+    "window_start": "2024-11-06",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -2619,8 +2623,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-05",
-    "window_start": "2024-11-05",
+    "checked_at": "2026-11-06",
+    "window_start": "2024-11-06",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -2647,8 +2651,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-05",
-    "window_start": "2024-11-05",
+    "checked_at": "2026-11-06",
+    "window_start": "2024-11-06",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -2677,8 +2681,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-05",
-    "window_start": "2024-11-05",
+    "checked_at": "2026-11-06",
+    "window_start": "2024-11-06",
     "recent_months": 24,
     "shared_papers": 1,
     "recent_shared_papers": 1,
@@ -2710,8 +2714,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-05",
-    "window_start": "2024-11-05",
+    "checked_at": "2026-11-06",
+    "window_start": "2024-11-06",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -2738,8 +2742,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-05",
-    "window_start": "2024-11-05",
+    "checked_at": "2026-11-06",
+    "window_start": "2024-11-06",
     "recent_months": 24,
     "shared_papers": 2,
     "recent_shared_papers": 2,
@@ -2771,8 +2775,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-05",
-    "window_start": "2024-11-05",
+    "checked_at": "2026-11-06",
+    "window_start": "2024-11-06",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -2801,8 +2805,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-05",
-    "window_start": "2024-11-05",
+    "checked_at": "2026-11-06",
+    "window_start": "2024-11-06",
     "recent_months": 24,
     "shared_papers": 1,
     "recent_shared_papers": 1,
@@ -2833,8 +2837,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-05",
-    "window_start": "2024-11-05",
+    "checked_at": "2026-11-06",
+    "window_start": "2024-11-06",
     "recent_months": 24,
     "shared_papers": 4,
     "recent_shared_papers": 4,
@@ -2866,8 +2870,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-05",
-    "window_start": "2024-11-05",
+    "checked_at": "2026-11-06",
+    "window_start": "2024-11-06",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -2896,8 +2900,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-05",
-    "window_start": "2024-11-05",
+    "checked_at": "2026-11-06",
+    "window_start": "2024-11-06",
     "recent_months": 24,
     "shared_papers": 3,
     "recent_shared_papers": 1,
@@ -2926,8 +2930,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-05",
-    "window_start": "2024-11-05",
+    "checked_at": "2026-11-06",
+    "window_start": "2024-11-06",
     "recent_months": 24,
     "shared_papers": 1,
     "recent_shared_papers": 0,
@@ -2956,8 +2960,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-05",
-    "window_start": "2024-11-05",
+    "checked_at": "2026-11-06",
+    "window_start": "2024-11-06",
     "recent_months": 24,
     "shared_papers": 1,
     "recent_shared_papers": 1,
@@ -2986,8 +2990,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-05",
-    "window_start": "2024-11-05",
+    "checked_at": "2026-11-06",
+    "window_start": "2024-11-06",
     "recent_months": 24,
     "shared_papers": 1,
     "recent_shared_papers": 0,
@@ -3014,8 +3018,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-05",
-    "window_start": "2024-11-05",
+    "checked_at": "2026-11-06",
+    "window_start": "2024-11-06",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -3042,8 +3046,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-05",
-    "window_start": "2024-11-05",
+    "checked_at": "2026-11-06",
+    "window_start": "2024-11-06",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -3070,8 +3074,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-05",
-    "window_start": "2024-11-05",
+    "checked_at": "2026-11-06",
+    "window_start": "2024-11-06",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -3098,8 +3102,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-05",
-    "window_start": "2024-11-05",
+    "checked_at": "2026-11-06",
+    "window_start": "2024-11-06",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -3129,8 +3133,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-05",
-    "window_start": "2024-11-05",
+    "checked_at": "2026-11-06",
+    "window_start": "2024-11-06",
     "recent_months": 24,
     "shared_papers": 6,
     "recent_shared_papers": 4,
@@ -3159,8 +3163,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-05",
-    "window_start": "2024-11-05",
+    "checked_at": "2026-11-06",
+    "window_start": "2024-11-06",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -3187,8 +3191,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-05",
-    "window_start": "2024-11-05",
+    "checked_at": "2026-11-06",
+    "window_start": "2024-11-06",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -3215,8 +3219,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-05",
-    "window_start": "2024-11-05",
+    "checked_at": "2026-11-06",
+    "window_start": "2024-11-06",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -3243,8 +3247,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-05",
-    "window_start": "2024-11-05",
+    "checked_at": "2026-11-06",
+    "window_start": "2024-11-06",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -3273,8 +3277,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-05",
-    "window_start": "2024-11-05",
+    "checked_at": "2026-11-06",
+    "window_start": "2024-11-06",
     "recent_months": 24,
     "shared_papers": 3,
     "recent_shared_papers": 3,
@@ -3305,8 +3309,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-05",
-    "window_start": "2024-11-05",
+    "checked_at": "2026-11-06",
+    "window_start": "2024-11-06",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -3333,8 +3337,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-05",
-    "window_start": "2024-11-05",
+    "checked_at": "2026-11-06",
+    "window_start": "2024-11-06",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -3361,8 +3365,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-05",
-    "window_start": "2024-11-05",
+    "checked_at": "2026-11-06",
+    "window_start": "2024-11-06",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -3389,8 +3393,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-05",
-    "window_start": "2024-11-05",
+    "checked_at": "2026-11-06",
+    "window_start": "2024-11-06",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -3419,8 +3423,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-05",
-    "window_start": "2024-11-05",
+    "checked_at": "2026-11-06",
+    "window_start": "2024-11-06",
     "recent_months": 24,
     "shared_papers": 1,
     "recent_shared_papers": 0,
@@ -3449,8 +3453,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-05",
-    "window_start": "2024-11-05",
+    "checked_at": "2026-11-06",
+    "window_start": "2024-11-06",
     "recent_months": 24,
     "shared_papers": 3,
     "recent_shared_papers": 2,
@@ -3480,8 +3484,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-05",
-    "window_start": "2024-11-05",
+    "checked_at": "2026-11-06",
+    "window_start": "2024-11-06",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -3508,8 +3512,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-05",
-    "window_start": "2024-11-05",
+    "checked_at": "2026-11-06",
+    "window_start": "2024-11-06",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -3536,8 +3540,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-05",
-    "window_start": "2024-11-05",
+    "checked_at": "2026-11-06",
+    "window_start": "2024-11-06",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -3564,8 +3568,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-05",
-    "window_start": "2024-11-05",
+    "checked_at": "2026-11-06",
+    "window_start": "2024-11-06",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -3592,8 +3596,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-05",
-    "window_start": "2024-11-05",
+    "checked_at": "2026-11-06",
+    "window_start": "2024-11-06",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -3620,8 +3624,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-05",
-    "window_start": "2024-11-05",
+    "checked_at": "2026-11-06",
+    "window_start": "2024-11-06",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -3648,8 +3652,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-05",
-    "window_start": "2024-11-05",
+    "checked_at": "2026-11-06",
+    "window_start": "2024-11-06",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -3678,8 +3682,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-05",
-    "window_start": "2024-11-05",
+    "checked_at": "2026-11-06",
+    "window_start": "2024-11-06",
     "recent_months": 24,
     "shared_papers": 12,
     "recent_shared_papers": 10,
@@ -3719,8 +3723,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-05",
-    "window_start": "2024-11-05",
+    "checked_at": "2026-11-06",
+    "window_start": "2024-11-06",
     "recent_months": 24,
     "shared_papers": 3,
     "recent_shared_papers": 3,
@@ -3751,8 +3755,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-05",
-    "window_start": "2024-11-05",
+    "checked_at": "2026-11-06",
+    "window_start": "2024-11-06",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -3781,8 +3785,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-05",
-    "window_start": "2024-11-05",
+    "checked_at": "2026-11-06",
+    "window_start": "2024-11-06",
     "recent_months": 24,
     "shared_papers": 4,
     "recent_shared_papers": 1,
@@ -3814,8 +3818,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-05",
-    "window_start": "2024-11-05",
+    "checked_at": "2026-11-06",
+    "window_start": "2024-11-06",
     "recent_months": 24,
     "shared_papers": 2,
     "recent_shared_papers": 1,
@@ -3847,8 +3851,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-05",
-    "window_start": "2024-11-05",
+    "checked_at": "2026-11-06",
+    "window_start": "2024-11-06",
     "recent_months": 24,
     "shared_papers": 21,
     "recent_shared_papers": 15,
@@ -3887,8 +3891,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-05",
-    "window_start": "2024-11-05",
+    "checked_at": "2026-11-06",
+    "window_start": "2024-11-06",
     "recent_months": 24,
     "shared_papers": 8,
     "recent_shared_papers": 4,
@@ -3921,8 +3925,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-05",
-    "window_start": "2024-11-05",
+    "checked_at": "2026-11-06",
+    "window_start": "2024-11-06",
     "recent_months": 24,
     "shared_papers": 7,
     "recent_shared_papers": 3,
@@ -3939,6 +3943,392 @@
   }
  ],
  "works": [
+  {
+   "id": "W7225339278",
+   "openalex_url": "https://openalex.org/W7225339278",
+   "doi": "https://doi.org/10.1371/journal.pone.0360428",
+   "title": "Stakeholder perspectives on implementing geographic information systems for leprosy elimination in Pakistan: A qualitative study",
+   "publication_date": "2026-11-05",
+   "year": 2026,
+   "type": "article",
+   "journal": "PLoS ONE",
+   "source_id": "S202381698",
+   "landing_url": "https://doi.org/10.1371/journal.pone.0360428",
+   "is_oa": true,
+   "oa_url": "https://doi.org/10.1371/journal.pone.0360428",
+   "license": "cc-by",
+   "pdf_url": null,
+   "authors": [
+    "Vincent Geskus",
+    "Anil Fastenau",
+    "Rhea Brüggemann",
+    "Fabian Schlumberger",
+    "Johan van Soest",
+    "Matthew Dean Willis"
+   ],
+   "author_members": [
+    null,
+    null,
+    null,
+    null,
+    "johan-van-soest",
+    null
+   ],
+   "author_profiles": {
+    "johan-van-soest": {
+     "openalex_id": "A5034589930",
+     "orcid": "0000-0003-2548-0330",
+     "match": "openalex",
+     "affiliations": [
+      "Maastricht University Medical Centre",
+      "Brightlands Institute for Smart Society (BISS)",
+      "GROW Research Institute for Oncology and Reproduction, Maastricht University Medical Centre+"
+     ]
+    }
+   },
+   "author_positions": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "author_count": 6,
+   "group_members": [
+    "johan-van-soest"
+   ],
+   "member_affiliations": {
+    "johan-van-soest": [
+     "Maastricht University Medical Centre",
+     "Brightlands Institute for Smart Society (BISS)",
+     "GROW Research Institute for Oncology and Reproduction, Maastricht University Medical Centre+"
+    ]
+   },
+   "affiliation_status": {
+    "johan-van-soest": "verified"
+   },
+   "senior_affiliations": [
+    "University of Bremen",
+    "Institute of Public Health and Nursing Research, University of Bremen"
+   ],
+   "cited_by_count": 0,
+   "abstract": "Introduction Leprosy remains a pressing global health concern, with Pakistan among countries still facing missed and delayed diagnosis. By highlighting elevated risk areas, Geographic Information Systems (GIS) are a cost-effective solution to improve leprosy case detection by guiding targeted interventions to high-risk areas. This study’s purpose was to investigate the perceived GIS implementation facilitators and barriers, to support targeted interventions and advance the Zero Leprosy strategy. Methods Semi-structured interviews were conducted with twelve stakeholders, including local field staff, program managers, and international experts. Thematic analysis was guided by the Unified Theory of Acceptance and Use of Technology (UTAUT) and the Diffusion of Innovation Theory (DOI) to identify facilitators and barriers concerned with GIS implementation for leprosy. Results Key facilitators included an integrated multi-disease and pilot-based rollout approach, capacity building activities, offline-capable tools, and improved visibility to drive motivation. Barriers included the limited local capacity in complex GIS data analysis, hybrid digital-manual workflows, historical data lacking GPS, and ensuring feedback and ownership for staff members. Conclusion GIS implementation is not only dependent on individual readiness, but also on broader external and organizational facilitators and constraints. This necessitates holistic implementation strategies that recognize the interconnectedness of different parts of the system. Internal capacity building is paramount to address statistical complexity and to build trust, ownership, and independence. As the world moves closer to achieving Zero Leprosy, integrating GIS within a multi-disease approach will be critical to making sustainable progress in combatting neglected tropical diseases.",
+   "verified": true,
+   "counted_members": [
+    "johan-van-soest"
+   ],
+   "counted": true,
+   "listed_elsewhere": false,
+   "first_seen": "2026-11-06",
+   "journal_impact": 3.5,
+   "journal_h_index": 594
+  },
+  {
+   "id": "W7225340213",
+   "openalex_url": "https://openalex.org/W7225340213",
+   "doi": "https://doi.org/10.1093/ehjdh/ztag176",
+   "title": "Artificial Intelligence-Assisted Semi-automated Personal Health Data Curation and Reuse for Myocardial Infarction",
+   "publication_date": "2026-11-03",
+   "year": 2026,
+   "type": "article",
+   "journal": "European Heart Journal - Digital Health",
+   "source_id": "S4210220198",
+   "landing_url": "https://doi.org/10.1093/ehjdh/ztag176",
+   "is_oa": true,
+   "oa_url": "https://doi.org/10.1093/ehjdh/ztag176",
+   "license": "cc-by",
+   "pdf_url": null,
+   "authors": [
+    "Wenjie Liang",
+    "Rutger F. R. van Mierlo",
+    "Anne-Lore Bynens",
+    "Eno-Martin Lotman",
+    "Markus Kreuzthaler",
+    "Martin Benedikt",
+    "Ensar Emir Erol",
+    "Omer Durukan Kilic",
+    "Katerina Serafimova",
+    "Todor Primov",
+    "Svetla Boytcheva",
+    "Cecile J A Wolfs",
+    "Aiara Lobo Gomes",
+    "Remzi Çelebi",
+    "Isabelle de Zegher",
+    "Andre L.A.J. Dekker",
+    "Petros Kalendralis",
+    "Alexander Kreutz",
+    "Alpár Tana",
+    "Aranka Ravai-Nagy",
+    "Bart Scheenstra",
+    "Béla Bihari",
+    "Botond Kiss",
+    "Dominik Steiger",
+    "Elion Sõber",
+    "Emmanuel Benoist",
+    "Gleb Klimenkov",
+    "Gregorio Sambataro",
+    "Heimo Müller",
+    "Stefan Schulz",
+    "Michaela Kargl",
+    "Markus Plass",
+    "Mall Maasik",
+    "István Horváth",
+    "János Dániel Dallos",
+    "Katrin Lepik",
+    "Kristian Kankainen",
+    "Liesbeth Jorinne Boersma",
+    "Lóránt Ferencz",
+    "Michel Dumontier",
+    "Mónika Moga",
+    "Sina Amirrajab",
+    "Zoltan Lazar",
+    "Zsolt Máté"
+   ],
+   "author_members": [
+    "wenjie-liang",
+    "rutger-van-mierlo",
+    "anne-lore-bynens",
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    "cecile-wolfs",
+    "aiara-lobo-gomes",
+    null,
+    null,
+    "andre-dekker",
+    "petros-kalendralis",
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   "author_profiles": {
+    "wenjie-liang": {
+     "openalex_id": "A5086908934",
+     "orcid": "0000-0002-2741-8285",
+     "match": "name",
+     "affiliations": [
+      "Maastricht University Medical Centre",
+      "Maastro Clinic",
+      "Department of Radiation Oncology (Maastro), GROW Research Institute for Oncology and Reproduction, Maastricht University Medical Centre+ , Maastricht ,"
+     ]
+    },
+    "rutger-van-mierlo": {
+     "openalex_id": "A5059773341",
+     "orcid": "0009-0009-4156-5669",
+     "match": "openalex",
+     "affiliations": [
+      "Maastricht University Medical Centre",
+      "Maastricht University",
+      "Zuyderland Medisch Centrum",
+      "Maastro Clinic",
+      "Department of Cardiology, Cardiovascular Research Institute Maastricht (CARIM), Maastricht University , Maastricht ,",
+      "Department of Cardiology, Maastricht University Medical Centre+ (MUMC+) , Maastricht ,",
+      "Department of Cardiology, Zuyderland Medical Centre , Heerlen ,",
+      "Department of Radiation Oncology (Maastro), GROW Research Institute for Oncology and Reproduction, Maastricht University Medical Centre+ , Maastricht ,"
+     ]
+    },
+    "anne-lore-bynens": {
+     "openalex_id": "A5120041081",
+     "orcid": null,
+     "match": "openalex",
+     "affiliations": [
+      "Maastricht University Medical Centre",
+      "Department of Medical Instrumentation & Information Technology (MIT), Maastricht University Medical Centre (MUMC+) , Maastricht ,"
+     ]
+    },
+    "cecile-wolfs": {
+     "openalex_id": "A5068696493",
+     "orcid": "0000-0001-6428-2762",
+     "match": "openalex",
+     "affiliations": [
+      "Maastricht University Medical Centre",
+      "Maastro Clinic",
+      "Department of Radiation Oncology (Maastro), GROW Research Institute for Oncology and Reproduction, Maastricht University Medical Centre+ , Maastricht ,"
+     ]
+    },
+    "aiara-lobo-gomes": {
+     "openalex_id": "A5160821168",
+     "orcid": null,
+     "match": "name",
+     "affiliations": [
+      "Maastricht University Medical Centre",
+      "Maastro Clinic",
+      "RWTH Aachen University",
+      "Department of Radiation Oncology (Maastro), GROW Research Institute for Oncology and Reproduction, Maastricht University Medical Centre+ , Maastricht ,",
+      "Institute of Molecular Medicine, RWTH Aachen University , Aachen ,"
+     ]
+    },
+    "andre-dekker": {
+     "openalex_id": "A5013513157",
+     "orcid": "0000-0002-0422-7996",
+     "match": "openalex",
+     "affiliations": [
+      "Maastricht University Medical Centre",
+      "Maastro Clinic",
+      "Department of Radiation Oncology (Maastro), GROW Research Institute for Oncology and Reproduction, Maastricht University Medical Centre+ , Maastricht ,"
+     ]
+    },
+    "petros-kalendralis": {
+     "openalex_id": "A5068572381",
+     "orcid": "0000-0002-4471-2021",
+     "match": "openalex",
+     "affiliations": [
+      "Maastricht University Medical Centre",
+      "Maastro Clinic",
+      "Department of Radiation Oncology (Maastro), GROW Research Institute for Oncology and Reproduction, Maastricht University Medical Centre+ , Maastricht ,"
+     ]
+    }
+   },
+   "author_positions": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44
+   ],
+   "author_count": 44,
+   "group_members": [
+    "wenjie-liang",
+    "rutger-van-mierlo",
+    "cecile-wolfs",
+    "aiara-lobo-gomes",
+    "andre-dekker",
+    "petros-kalendralis"
+   ],
+   "member_affiliations": {
+    "wenjie-liang": [
+     "Maastricht University Medical Centre",
+     "Maastro Clinic",
+     "Department of Radiation Oncology (Maastro), GROW Research Institute for Oncology and Reproduction, Maastricht University Medical Centre+ , Maastricht ,"
+    ],
+    "rutger-van-mierlo": [
+     "Maastricht University Medical Centre",
+     "Maastricht University",
+     "Zuyderland Medisch Centrum",
+     "Maastro Clinic",
+     "Department of Cardiology, Cardiovascular Research Institute Maastricht (CARIM), Maastricht University , Maastricht ,",
+     "Department of Cardiology, Maastricht University Medical Centre+ (MUMC+) , Maastricht ,",
+     "Department of Cardiology, Zuyderland Medical Centre , Heerlen ,",
+     "Department of Radiation Oncology (Maastro), GROW Research Institute for Oncology and Reproduction, Maastricht University Medical Centre+ , Maastricht ,"
+    ],
+    "cecile-wolfs": [
+     "Maastricht University Medical Centre",
+     "Maastro Clinic",
+     "Department of Radiation Oncology (Maastro), GROW Research Institute for Oncology and Reproduction, Maastricht University Medical Centre+ , Maastricht ,"
+    ],
+    "aiara-lobo-gomes": [
+     "Maastricht University Medical Centre",
+     "Maastro Clinic",
+     "RWTH Aachen University",
+     "Department of Radiation Oncology (Maastro), GROW Research Institute for Oncology and Reproduction, Maastricht University Medical Centre+ , Maastricht ,",
+     "Institute of Molecular Medicine, RWTH Aachen University , Aachen ,"
+    ],
+    "andre-dekker": [
+     "Maastricht University Medical Centre",
+     "Maastro Clinic",
+     "Department of Radiation Oncology (Maastro), GROW Research Institute for Oncology and Reproduction, Maastricht University Medical Centre+ , Maastricht ,"
+    ],
+    "petros-kalendralis": [
+     "Maastricht University Medical Centre",
+     "Maastro Clinic",
+     "Department of Radiation Oncology (Maastro), GROW Research Institute for Oncology and Reproduction, Maastricht University Medical Centre+ , Maastricht ,"
+    ]
+   },
+   "affiliation_status": {
+    "wenjie-liang": "verified",
+    "rutger-van-mierlo": "verified",
+    "cecile-wolfs": "verified",
+    "aiara-lobo-gomes": "verified",
+    "andre-dekker": "verified",
+    "petros-kalendralis": "verified"
+   },
+   "senior_affiliations": [],
+   "cited_by_count": 0,
+   "abstract": "Abstract Background and Aims Digital applications have high potential in myocardial infarction management. This study aims to harmonize personal health data using a workflow driven by an Artificial Intelligence-assisted virtual assistant prototype, then reuse the data to facilitate the creation of standardized patient summaries and risk assessment. Methods The required configurations for data documentation and curation were developed to drive the workflow execution. With consent and data transfer agreements, data of patients with myocardial infarction were extracted from multi-source medical records, structured and ingested into the workflow. After transformation, personal health data were mapped into concrete clinical concepts connected with specific relationships defined by the reference ontology, forming source health knowledge graphs as the basic structure of personal health knowledge graphs. Then the constructed graphs were validated by using Shapes Constraint Language-based constraints, triggering the human-in-the-loop process to enhance data quality. Information queries were conducted for data reuse. Results 38 out of 45 planned patients were recruited with a signed informed consent. Thirty patients finalized the study. Overall successful data ingestion rate is approximately 83%. The average data quality score is 95.45/100. Constructed personal health knowledge graphs can be reused to represent medical information as an international patient summary and evaluate individual risk of future cardiovascular events by calculating the Second Manifestations of Arterial Disease risk score. Conclusion Our proposed workflow is feasible for semi-automated personal health data curation and secondary use. It provides a potential solution to enhance medical data interoperability, thereby facilitating risk assessment in cardiovascular diseases.",
+   "verified": true,
+   "counted_members": [
+    "wenjie-liang",
+    "rutger-van-mierlo",
+    "cecile-wolfs",
+    "aiara-lobo-gomes",
+    "andre-dekker",
+    "petros-kalendralis"
+   ],
+   "counted": true,
+   "listed_elsewhere": false,
+   "first_seen": "2026-11-06",
+   "journal_impact": 3.3,
+   "journal_h_index": 37
+  },
   {
    "id": "W7224572054",
    "openalex_url": "https://openalex.org/W7224572054",
@@ -6253,7 +6643,7 @@
     "Nicola Hughes",
     "Joshi Hogenboom",
     "R. Carter",
-    "Lee J Norman",
+    "Lee Norman",
     "Varsha Gouthamchand",
     "Oana C. Lindner",
     "Emily Connearn",
@@ -7269,7 +7659,7 @@
     "Hossein Rahmani",
     "Ralph Brecheisen",
     "Sander M J van Kuijk",
-    "Joachim E Wildberger",
+    "Joachim Ernst Wildberger",
     "Ronald R M M van Dam",
     "Christiaan van der Leij"
    ],
@@ -8194,7 +8584,7 @@
     "Maastricht University",
     "Maastricht University Institute of Data Science, Department of Advanced Computing Sciences, , Maastricht, Limburg, 6229 GS,"
    ],
-   "cited_by_count": 1,
+   "cited_by_count": 2,
    "abstract": "OBJECTIVE: Clinical AI systems and models increasingly need traceable documentation that makes intended use, performance evidence, transparency, and lifecycle status explicit, yet existing model cards, datasheets, reporting guidelines, and other documentation approaches do not consistently bring together structured clinical fields, vocabulary-linked cohort descriptions, structured performance reporting, and governed documentation history. We introduce Structured, Meaningful, Auditable, Responsible, and Transparent (SMART), a framework that adapts the model card concept into structured, lifecycle-aware documentation with OMOP integration, role-based lifecycle governance, and a blockchain-backed audit trail for verifying documentation integrity and lifecycle history. MATERIALS AND METHODS: Following a design-science-informed approach, we analyzed documentation requirements, reviewed existing approaches, implemented SMART through open-source packages and smart contracts, and evaluated it using example SMART model cards, an illustrative COPD exacerbation risk-prediction documentation case study, and blockchain-governed lifecycle experiments. RESULTS: The design process resulted in the SMART framework in which documentation provisions are reflected across Schema, Lifecycle, and Chain (ie, Blockchain) components. Evaluation showed that, in multi-party settings, documentation history remains independently verifiable because lifecycle actions are role-attributed and linked to content hashes; median testnet gas use ranged from 352 722 to 852 399 gas across the evaluated lifecycle operations. DISCUSSION: SMART positions clinical AI documentation as a shared infrastructure for preliminary model assessment, making role attribution, lifecycle state, and documentation changes more transparent and traceable over time. CONCLUSION: By providing an implementable framework, SMART illustrates how clinical AI documentation can be structured, clinically contextualized, auditable, responsible, transparent, and lifecycle-aware.",
    "verified": true,
    "counted_members": [
@@ -21961,7 +22351,7 @@
     "Zhen Zhang",
     "Robin Wijsman",
     "Andrea Damiani",
-    "Janssen, Rogier",
+    "Rogier Janssen",
     "Brent van der Heyden",
     "John Lilley",
     "Thomas J. Dilling",
@@ -24460,7 +24850,7 @@
     "Radiation Oncology Center, Affiliated Changzhou No. 2 People's Hospital of Nanjing Medical University, Changzhou, Jiangsu 213003, People's Republic of China",
     "Faculty of Business Information, Shanghai Business School, 123 Fengpu Blvd, Shanghai, 201499, CHINA"
    ],
-   "cited_by_count": 32,
+   "cited_by_count": 35,
    "abstract": "Abstract Objective. Radiotherapy planning requires significant expertise to balance tumor control and organ-at-risk (OAR) sparing. Automated planning can improve both efficiency and quality. This study introduces GPT-Plan, a novel multi-agent system powered by the GPT-4 family of large language models (LLMs), for automating the iterative radiotherapy plan optimization. Approach. GPT-Plan uses LLM-driven agents, mimicking the collaborative clinical workflow of a dosimetrist and physicist, to iteratively generate and evaluate text-based radiotherapy plans based on predefined criteria. Supporting tools assist the agents by leveraging historical plans, mitigating LLM hallucinations, and balancing exploration and exploitation. Performance was evaluated on 12 lung (IMRT) and 5 cervical (VMAT) cancer cases, benchmarked against the ECHO auto-planning method and manual plans. The impact of historical plan retrieval on efficiency was also assessed. Results. For IMRT lung cancer cases, GPT-Plan generated high-quality plans, demonstrating superior target coverage and homogeneity compared to ECHO while maintaining comparable or better OAR sparing. For VMAT cervical cancer cases, plan quality was comparable to a senior physicist and consistently superior to a junior physicist, particularly for OAR sparing. Retrieving historical plans significantly reduced the number of required optimization iterations for lung cases (p < 0.01) and yielded iteration counts comparable to those of the senior physicist for cervical cases (p = 0.313). Occasional LLM hallucinations have been mitigated by self-reflection mechanisms. One limitation was the inaccuracy of vision-based LLMs in interpreting dose images. Significance. This pioneering study demonstrates the feasibility of automating radiotherapy planning using LLM-powered agents for complex treatment decision-making tasks. While challenges remain in addressing LLM limitations, ongoing advancements hold potential for further refining and expanding GPT-Plan’s capabilities.",
    "verified": true,
    "counted_members": [
@@ -25177,7 +25567,7 @@
    "title": "P435: PRE-ACT-01: The Prediction of Radiotherapy side Effects using explainable AI for patient Communication and Treatment modification-01 Trial",
    "publication_date": "2025-02-01",
    "year": 2025,
-   "type": "article",
+   "type": "conference-abstract",
    "journal": "The Breast",
    "source_id": "S181123643",
    "landing_url": "https://doi.org/10.1016/j.breast.2025.104247",
@@ -28356,7 +28746,7 @@
     "Maastro Clinic",
     "Department of Radiation Oncology (Maastro), GROW School for Oncology and Developmental Biology, Maastricht University Medical Centre+, Maastricht, The Netherlands"
    ],
-   "cited_by_count": 9,
+   "cited_by_count": 10,
    "abstract": "INTRODUCTION: Mobile health (mHealth) interventions have shown potential to improve maternal and child health outcomes in Africa, but their effectiveness depends on specific interventions, context, and implementation quality. Challenges such as limited infrastructure, low digital literacy, and sustainability need to be addressed. Further evaluation studies are essential to summarize the impact of mHealth interventions. Thus, this synthesis focuses on qualitative evidence of the impact of mHealth on maternal and child health in Africa to summarize such evidence to help policy decisions. METHODS: A qualitative systematic review guided by the concepts of Intervention, Context, Mechanism, and Outcome (ICAMO) was employed in this study. The GRADE CERQual assessment and methodological constraints tools were utilized in the review to ascertain the level of confidence in the evidence and to examine the methodological limitations. The JBI checklist for qualitative research appraisal was also consulted during the review. RESULTS: The current review contains 32 eligible studies from databases such as CINAHL, EMBASE, MEDLINE, Scopus, Web of Science, HINARI, and Cochrane Library. The review demonstrated substantial improvements in the HCP-woman relationship, communication system, maternal and child healthcare uptake, health-seeking behavior, and HCP skills. Economic capacities, maternal education, and the low quality of existing services challenged participants. CONCLUSION: mHealth significantly improves maternal and child health outcomes in Africa. This review showed it can improve healthcare access, empower women, and contribute to the region's goal of universal health coverage. However, the challenges such as low partner support, high costs for services, and poor quality of current care as narrated by women need commitment from health authorities in the continent. The evidence from this review suggests that mHealth can be implemented to improve maternal and child health in Africa. TRIAL REGISTRATION: PROSPERO: CRD42023461425.",
    "verified": true,
    "counted_members": [
@@ -28545,7 +28935,7 @@
     "Clinical Data Science, Maastricht University, Maastricht, Netherlands",
     "GROW Research Institute for Oncology and Reproduction, Maastricht University Medical Center+, Maastricht, Netherlands"
    ],
-   "cited_by_count": 50,
+   "cited_by_count": 51,
    "abstract": "BACKGROUND: The rapid advancement of deep learning in health care presents significant opportunities for automating complex medical tasks and improving clinical workflows. However, widespread adoption is impeded by data privacy concerns and the necessity for large, diverse datasets across multiple institutions. Federated learning (FL) has emerged as a viable solution, enabling collaborative artificial intelligence model development without sharing individual patient data. To effectively implement FL in health care, robust and secure infrastructures are essential. Developing such federated deep learning frameworks is crucial to harnessing the full potential of artificial intelligence while ensuring patient data privacy and regulatory compliance. OBJECTIVE: The objective is to introduce an innovative FL infrastructure called the Personal Health Train (PHT) that includes the procedural, technical, and governance components needed to implement FL on real-world health care data, including training deep learning neural networks. The study aims to apply this federated deep learning infrastructure to the use case of gross tumor volume segmentation on chest computed tomography images of patients with lung cancer and present the results from a proof-of-concept experiment. METHODS: The PHT framework addresses the challenges of data privacy when sharing data, by keeping data close to the source and instead bringing the analysis to the data. Technologically, PHT requires 3 interdependent components: \"tracks\" (protected communication channels), \"trains\" (containerized software apps), and \"stations\" (institutional data repositories), which are supported by the open source \"Vantage6\" software. The study applies this federated deep learning infrastructure to the use case of gross tumor volume segmentation on chest computed tomography images of patients with lung cancer, with the introduction of an additional component called the secure aggregation server, where the model averaging is done in a trusted and inaccessible environment. RESULTS: We demonstrated the feasibility of executing deep learning algorithms in a federated manner using PHT and presented the results from a proof-of-concept study. The infrastructure linked 12 hospitals across 8 nations, covering 4 continents, demonstrating the scalability and global reach of the proposed approach. During the execution and training of the deep learning algorithm, no data were shared outside the hospital. CONCLUSIONS: The findings of the proof-of-concept study, as well as the implications and limitations of the infrastructure and the results, are discussed. The application of federated deep learning to unstructured medical imaging data, facilitated by the PHT framework and Vantage6 platform, represents a significant advancement in the field. The proposed infrastructure addresses the challenges of data privacy and enables collaborative model development, paving the way for the widespread adoption of deep learning-based tools in the medical domain and beyond. The introduction of the secure aggregation server implied that data leakage problems in FL can be prevented by careful design decisions of the infrastructure. TRIAL REGISTRATION: ClinicalTrials.gov NCT05775068; https://clinicaltrials.gov/study/NCT05775068.",
    "verified": true,
    "counted_members": [
@@ -30573,7 +30963,7 @@
     "Maryam Abdollahyan",
     "Emanuela Gadaleta",
     "Seyed Alireza Hasheminasab",
-    "Guang Zhi Yang",
+    "Guang Yang",
     "Charles Beauville",
     "Νικόλαος Δικαίος",
     "George Anthony Kastis",
@@ -35732,7 +36122,7 @@
     "Maastricht University",
     "Maastricht University, Maastricht, The Netherlands"
    ],
-   "cited_by_count": 30,
+   "cited_by_count": 31,
    "abstract": "Synthetic data promises to be a viable alternative when data collection and data sharing may not be feasible or cost effective, but it raises distinct ethical issue that merit serious consideration. [Image: see text]",
    "verified": false,
    "counted_members": [
@@ -36299,7 +36689,7 @@
     "Maastricht University Medical Centre",
     "Department of Radiation Oncology [Maastro], GROW School for Oncology and Developmental Biology, Maastricht University Medical Centre+, Maastricht, The Netherlands"
    ],
-   "cited_by_count": 8,
+   "cited_by_count": 9,
    "abstract": "INTRODUCTION: Maternal and child mortality remained higher in developing regions such as Southern Ethiopia due to poor maternal and child health. Technologies such as mobile applications in health may be an opportunity to reduce maternal and child mortality because they can improve access to information. Therefore, the main aim of this study was to explore the role of mHealth in improving maternal and child health in Southern Ethiopia. METHODS: This study employed a qualitative study design to explore the role of mHealth in improving maternal and child health among health professionals in Southern Ethiopia from December 2022 to March 2023. We conducted nine in-depth interviews, six key informants' in-depth interviews, and four focused group discussions among health professionals. This is followed by thematic analyses to synthesize the collected evidence. RESULTS: The results are based on 226 quotations, 5 major themes, and 24 subthemes. The study participants discussed the possible acceptance of mHealth in terms of its fitness in the existing health system, its support to health professionals, and its importance in improving maternal and child health. The participants ascertained the importance of awareness creation before the implementation of mHealth among women, families, communities, and providers. They reported the importance of mHealth for mothers and health professionals and the effectiveness of mHealth services. The participants stated that the main challenges related to acceptance, awareness, negligence, readiness, and workload. However, they also suggested strategic solutions such as using family support, provider support, mothers' forums, and community forums. CONCLUSION: The evidence generated during this analysis is important information for program implementations and can inform policy-making. The planned intervention needs to introduce mHealth in Southern Ethiopia. Planners, decision-makers, and researchers can use it in mobile technology-related interventions. For challenges identified, we recommend solution-identified-based interventions and quality studies.",
    "verified": true,
    "counted_members": [
