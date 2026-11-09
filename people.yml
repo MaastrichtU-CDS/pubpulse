@@ -68,7 +68,7 @@ people:
   active_from: '2026-10-21'
   active_until: null
   needs_review: true
-  resolved_at: '2026-11-06'
+  resolved_at: '2026-11-09'
 - slug: ali-zaila
   name: Ali Zaila
   profile_url: https://www.clinicaldatascience.nl/ali-zaila
@@ -84,7 +84,7 @@ people:
   active_from: '2026-10-21'
   active_until: null
   needs_review: true
-  resolved_at: '2026-11-06'
+  resolved_at: '2026-11-09'
 - slug: ananya-choudhury
   name: Ananya Choudhury
   profile_url: https://www.clinicaldatascience.nl/ananya-choudhury
@@ -151,7 +151,7 @@ people:
   active_until: null
   needs_review: true
   identifier_discovery_checked_at: '2026-10-21'
-  resolved_at: '2026-11-06'
+  resolved_at: '2026-11-09'
 - slug: anne-lore-bynens
   name: Anne-Lore Bynens
   profile_url: https://www.clinicaldatascience.nl/anne-lore-bynens
@@ -282,7 +282,7 @@ people:
   active_from: '2026-10-21'
   active_until: null
   needs_review: true
-  resolved_at: '2026-11-06'
+  resolved_at: '2026-11-09'
 - slug: balu-krishna-sasidharan
   name: Balu Krishna Sasidharan
   profile_url: https://www.clinicaldatascience.nl/balu-krishna-sasidharan
@@ -299,23 +299,7 @@ people:
   active_until: null
   needs_review: true
   identifier_discovery_checked_at: '2026-10-21'
-  resolved_at: '2026-11-06'
-- slug: carlos-santiago-rios
-  name: Carlos Santiago Rios
-  profile_url: https://www.clinicaldatascience.nl/carlos-santiago-rios
-  role: Intern
-  employer: Maastricht University
-  section: current
-  orcid: null
-  scholar_id: null
-  cris_url: null
-  openalex_id: null
-  profile_checked_at: '2026-10-21'
-  source: staff_page
-  active_from: '2026-10-21'
-  active_until: null
-  needs_review: true
-  resolved_at: '2026-11-06'
+  resolved_at: '2026-11-09'
 - slug: cecile-wolfs
   name: Cecile Wolfs
   profile_url: https://www.clinicaldatascience.nl/cecile-wolfs
@@ -414,7 +398,7 @@ people:
   active_until: null
   needs_review: true
   identifier_discovery_checked_at: '2026-10-21'
-  resolved_at: '2026-11-06'
+  resolved_at: '2026-11-09'
 - slug: ekaterina-akhmad
   name: Ekaterina Akhmad
   profile_url: https://www.clinicaldatascience.nl/ekaterina-akhmad
@@ -513,7 +497,7 @@ people:
   active_from: '2026-10-21'
   active_until: null
   needs_review: true
-  resolved_at: '2026-11-06'
+  resolved_at: '2026-11-09'
 - slug: en-hu
   name: En Hu
   profile_url: https://www.clinicaldatascience.nl/en-hu
@@ -581,7 +565,7 @@ people:
   active_until: null
   needs_review: true
   identifier_discovery_checked_at: '2026-10-21'
-  resolved_at: '2026-11-06'
+  resolved_at: '2026-11-09'
 - slug: fiona-zegwaard-gelink
   name: Fiona Zegwaard - Gelink
   profile_url: https://www.clinicaldatascience.nl/fiona-zegwaard-gelink
@@ -598,7 +582,7 @@ people:
   active_until: null
   needs_review: true
   identifier_discovery_checked_at: '2026-10-21'
-  resolved_at: '2026-11-06'
+  resolved_at: '2026-11-09'
 - slug: frederik-behets
   name: Frederik Behets
   profile_url: https://www.clinicaldatascience.nl/frederik-behets
@@ -615,7 +599,7 @@ people:
   active_until: null
   needs_review: true
   identifier_discovery_checked_at: '2026-10-21'
-  resolved_at: '2026-11-06'
+  resolved_at: '2026-11-09'
 - slug: gleb-tsikhanovich
   name: Gleb Tsikhanovich
   profile_url: https://www.clinicaldatascience.nl/gleb-tsikhanovich
@@ -632,7 +616,7 @@ people:
   active_until: null
   needs_review: true
   identifier_discovery_checked_at: '2026-10-21'
-  resolved_at: '2026-11-06'
+  resolved_at: '2026-11-09'
 - slug: hannah-mary-thomas
   name: Hannah Mary Thomas
   profile_url: https://www.clinicaldatascience.nl/hannah-mary-thomas
@@ -808,7 +792,7 @@ people:
   publication_author_ids:
   - A5032778263
   identifier_discovery_checked_at: '2026-10-21'
-  resolved_at: '2026-11-06'
+  resolved_at: '2026-11-09'
 - slug: jikai-zhou
   name: Jikai Zhou
   profile_url: https://www.clinicaldatascience.nl/jikai-zhou
@@ -864,7 +848,7 @@ people:
       institution_match: true
       accepted: true
   identifier_discovery_checked_at: '2026-10-21'
-  resolved_at: '2026-11-06'
+  resolved_at: '2026-11-09'
 - slug: johan-van-soest
   name: Johan van Soest
   profile_url: https://www.clinicaldatascience.nl/Staff/johan-van-soest
@@ -931,7 +915,7 @@ people:
   active_until: null
   needs_review: true
   identifier_discovery_checked_at: '2026-10-21'
-  resolved_at: '2026-11-06'
+  resolved_at: '2026-11-09'
 - slug: leonard-nurnberg
   name: Leonard Nürnberg
   profile_url: https://www.clinicaldatascience.nl/leonard-nurnberg
@@ -1268,7 +1252,7 @@ people:
   active_until: null
   needs_review: true
   identifier_discovery_checked_at: '2026-10-21'
-  resolved_at: '2026-11-06'
+  resolved_at: '2026-11-09'
 - slug: matthijs-sloep
   name: Matthijs Sloep
   profile_url: https://www.clinicaldatascience.nl/matthijs-sloep
@@ -1310,7 +1294,7 @@ people:
   active_until: null
   needs_review: true
   identifier_discovery_checked_at: '2026-10-21'
-  resolved_at: '2026-11-06'
+  resolved_at: '2026-11-09'
 - slug: meng-zhou
   name: Meng Zhou
   profile_url: https://www.clinicaldatascience.nl/meng-zhou
@@ -1371,7 +1355,7 @@ people:
       institution_match: true
       accepted: true
   identifier_discovery_checked_at: '2026-10-21'
-  resolved_at: '2026-11-06'
+  resolved_at: '2026-11-09'
 - slug: minghua-li
   name: Minghua Li
   profile_url: https://www.clinicaldatascience.nl/minghua-li
@@ -1420,7 +1404,7 @@ people:
       institution_match: true
       accepted: true
   identifier_discovery_checked_at: '2026-10-21'
-  resolved_at: '2026-11-06'
+  resolved_at: '2026-11-09'
 - slug: monique-roos-koekkelkoren
   name: Monique Roos-Koekkelkoren
   profile_url: https://www.clinicaldatascience.nl/monique-roos-koekkelkoren
@@ -1437,7 +1421,7 @@ people:
   active_until: null
   needs_review: true
   identifier_discovery_checked_at: '2026-10-21'
-  resolved_at: '2026-11-06'
+  resolved_at: '2026-11-09'
 - slug: petros-kalendralis
   name: Petros Kalendralis
   profile_url: https://www.clinicaldatascience.nl/Staff/petros-kalendralis
@@ -1576,7 +1560,7 @@ people:
   active_until: null
   needs_review: true
   identifier_discovery_checked_at: '2026-10-21'
-  resolved_at: '2026-11-06'
+  resolved_at: '2026-11-09'
 - slug: ralph-brecheisen
   name: Ralph Brecheisen
   profile_url: https://www.clinicaldatascience.nl/ralph-brecheisen
@@ -1701,7 +1685,7 @@ people:
   publication_author_ids:
   - A5153110077
   identifier_discovery_checked_at: '2026-10-21'
-  resolved_at: '2026-11-06'
+  resolved_at: '2026-11-09'
 - slug: simone-mingels
   name: Simone Mingels
   profile_url: https://www.clinicaldatascience.nl/simone-mingels
@@ -1746,7 +1730,7 @@ people:
   active_until: null
   needs_review: true
   identifier_discovery_checked_at: '2026-10-21'
-  resolved_at: '2026-11-06'
+  resolved_at: '2026-11-09'
 - slug: thijs-ackermans
   name: Thijs Ackermans
   profile_url: https://www.clinicaldatascience.nl/thijs-ackermans
@@ -1871,7 +1855,7 @@ people:
   active_until: null
   needs_review: true
   identifier_discovery_checked_at: '2026-10-21'
-  resolved_at: '2026-11-06'
+  resolved_at: '2026-11-09'
 - slug: vikram-baliga
   name: Vikram Baliga
   profile_url: https://www.clinicaldatascience.nl/vikram-baliga
@@ -1888,7 +1872,7 @@ people:
   active_until: null
   needs_review: true
   identifier_discovery_checked_at: '2026-10-21'
-  resolved_at: '2026-11-06'
+  resolved_at: '2026-11-09'
 - slug: wenjie-liang
   name: Wenjie Liang
   profile_url: https://www.clinicaldatascience.nl/wenjie-liang
@@ -1967,7 +1951,7 @@ people:
   active_from: '2026-10-21'
   active_until: null
   needs_review: true
-  resolved_at: '2026-11-06'
+  resolved_at: '2026-11-09'
 - slug: yemu-katanda
   name: Yemu Katanda
   profile_url: https://www.clinicaldatascience.nl/yemu-katanda
@@ -1984,7 +1968,7 @@ people:
   active_until: null
   needs_review: true
   identifier_discovery_checked_at: '2026-10-21'
-  resolved_at: '2026-11-06'
+  resolved_at: '2026-11-09'
 - slug: yomi-okegunna
   name: Yomi Okegunna
   profile_url: https://www.clinicaldatascience.nl/yomi-okegunna
@@ -2031,7 +2015,7 @@ people:
       institution_match: true
       accepted: true
   identifier_discovery_checked_at: '2026-10-21'
-  resolved_at: '2026-11-06'
+  resolved_at: '2026-11-09'
 - section: previous
   slug: abhimanyu-anand
   name: Abhimanyu Anand
@@ -2044,8 +2028,8 @@ people:
   former_observed_at: '2026-10-21'
   needs_review: true
   former_collaboration:
-    checked_at: '2026-11-06'
-    window_start: '2024-11-06'
+    checked_at: '2026-11-09'
+    window_start: '2024-11-09'
     recent_months: 24
     shared_papers: 0
     recent_shared_papers: 0
@@ -2064,11 +2048,11 @@ people:
   former_observed_at: '2026-10-21'
   needs_review: false
   former_collaboration:
-    checked_at: '2026-11-06'
-    window_start: '2024-11-06'
+    checked_at: '2026-11-09'
+    window_start: '2024-11-09'
     recent_months: 24
-    shared_papers: 18
-    recent_shared_papers: 15
+    shared_papers: 19
+    recent_shared_papers: 16
     last_collaboration_date: '2026-11-03'
     followup_until: '2028-11-03'
     current_coauthors:
@@ -2192,8 +2176,8 @@ people:
   former_observed_at: '2026-10-21'
   needs_review: false
   former_collaboration:
-    checked_at: '2026-11-06'
-    window_start: '2024-11-06'
+    checked_at: '2026-11-09'
+    window_start: '2024-11-09'
     recent_months: 24
     shared_papers: 16
     recent_shared_papers: 2
@@ -2487,8 +2471,8 @@ people:
   former_observed_at: '2026-10-21'
   needs_review: false
   former_collaboration:
-    checked_at: '2026-11-06'
-    window_start: '2024-11-06'
+    checked_at: '2026-11-09'
+    window_start: '2024-11-09'
     recent_months: 24
     shared_papers: 3
     recent_shared_papers: 3
@@ -2557,8 +2541,8 @@ people:
   former_observed_at: '2026-10-21'
   needs_review: false
   former_collaboration:
-    checked_at: '2026-11-06'
-    window_start: '2024-11-06'
+    checked_at: '2026-11-09'
+    window_start: '2024-11-09'
     recent_months: 24
     shared_papers: 1
     recent_shared_papers: 1
@@ -2592,8 +2576,8 @@ people:
   publication_name_aliases:
   - Ashish Kumar Jha
   former_collaboration:
-    checked_at: '2026-11-06'
-    window_start: '2024-11-06'
+    checked_at: '2026-11-09'
+    window_start: '2024-11-09'
     recent_months: 24
     shared_papers: 5
     recent_shared_papers: 4
@@ -2610,7 +2594,7 @@ people:
     openalex_id: null
     orcid: null
   identifier_discovery_checked_at: '2026-10-21'
-  resolved_at: '2026-11-06'
+  resolved_at: '2026-11-09'
 - section: previous
   slug: audrey-janssen
   name: Audrey Janssen
@@ -2623,8 +2607,8 @@ people:
   former_observed_at: '2026-10-21'
   needs_review: true
   former_collaboration:
-    checked_at: '2026-11-06'
-    window_start: '2024-11-06'
+    checked_at: '2026-11-09'
+    window_start: '2024-11-09'
     recent_months: 24
     shared_papers: 0
     recent_shared_papers: 0
@@ -2643,8 +2627,8 @@ people:
   former_observed_at: '2026-10-21'
   needs_review: true
   former_collaboration:
-    checked_at: '2026-11-06'
-    window_start: '2024-11-06'
+    checked_at: '2026-11-09'
+    window_start: '2024-11-09'
     recent_months: 24
     shared_papers: 1
     recent_shared_papers: 0
@@ -2665,8 +2649,8 @@ people:
   former_observed_at: '2026-10-21'
   needs_review: false
   former_collaboration:
-    checked_at: '2026-11-06'
-    window_start: '2024-11-06'
+    checked_at: '2026-11-09'
+    window_start: '2024-11-09'
     recent_months: 24
     shared_papers: 2
     recent_shared_papers: 1
@@ -2767,6 +2751,32 @@ people:
   - A5035571354
   resolved_at: '2026-10-23'
   scholar_checked_at: '2026-11-01'
+- slug: carlos-santiago-rios
+  name: Carlos Santiago Rios
+  profile_url: https://www.clinicaldatascience.nl/carlos-santiago-rios
+  role: Former intern
+  employer: Maastricht University
+  section: previous
+  orcid: null
+  scholar_id: null
+  cris_url: null
+  openalex_id: null
+  profile_checked_at: '2026-10-21'
+  source: staff_page
+  active_from: '2026-10-21'
+  active_until: '2026-11-09'
+  needs_review: true
+  resolved_at: '2026-11-09'
+  former_observed_at: '2026-11-09'
+  former_collaboration:
+    checked_at: '2026-11-09'
+    window_start: '2024-11-09'
+    recent_months: 24
+    shared_papers: 0
+    recent_shared_papers: 0
+    last_collaboration_date: null
+    followup_until: null
+    current_coauthors: []
 - section: previous
   slug: chaitanya-kulkarni
   name: Chaitanya Kulkarni
@@ -2779,8 +2789,8 @@ people:
   former_observed_at: '2026-10-21'
   needs_review: true
   former_collaboration:
-    checked_at: '2026-11-06'
-    window_start: '2024-11-06'
+    checked_at: '2026-11-09'
+    window_start: '2024-11-09'
     recent_months: 24
     shared_papers: 0
     recent_shared_papers: 0
@@ -2799,8 +2809,8 @@ people:
   former_observed_at: '2026-10-21'
   needs_review: true
   former_collaboration:
-    checked_at: '2026-11-06'
-    window_start: '2024-11-06'
+    checked_at: '2026-11-09'
+    window_start: '2024-11-09'
     recent_months: 24
     shared_papers: 0
     recent_shared_papers: 0
@@ -2819,8 +2829,8 @@ people:
   former_observed_at: '2026-10-21'
   needs_review: true
   former_collaboration:
-    checked_at: '2026-11-06'
-    window_start: '2024-11-06'
+    checked_at: '2026-11-09'
+    window_start: '2024-11-09'
     recent_months: 24
     shared_papers: 0
     recent_shared_papers: 0
@@ -2839,8 +2849,8 @@ people:
   former_observed_at: '2026-10-21'
   needs_review: true
   former_collaboration:
-    checked_at: '2026-11-06'
-    window_start: '2024-11-06'
+    checked_at: '2026-11-09'
+    window_start: '2024-11-09'
     recent_months: 24
     shared_papers: 0
     recent_shared_papers: 0
@@ -2859,8 +2869,8 @@ people:
   former_observed_at: '2026-10-21'
   needs_review: false
   former_collaboration:
-    checked_at: '2026-11-06'
-    window_start: '2024-11-06'
+    checked_at: '2026-11-09'
+    window_start: '2024-11-09'
     recent_months: 24
     shared_papers: 4
     recent_shared_papers: 2
@@ -2941,8 +2951,8 @@ people:
   former_observed_at: '2026-10-21'
   needs_review: true
   former_collaboration:
-    checked_at: '2026-11-06'
-    window_start: '2024-11-06'
+    checked_at: '2026-11-09'
+    window_start: '2024-11-09'
     recent_months: 24
     shared_papers: 0
     recent_shared_papers: 0
@@ -2961,8 +2971,8 @@ people:
   former_observed_at: '2026-10-21'
   needs_review: true
   former_collaboration:
-    checked_at: '2026-11-06'
-    window_start: '2024-11-06'
+    checked_at: '2026-11-09'
+    window_start: '2024-11-09'
     recent_months: 24
     shared_papers: 0
     recent_shared_papers: 0
@@ -2981,8 +2991,8 @@ people:
   former_observed_at: '2026-10-21'
   needs_review: true
   former_collaboration:
-    checked_at: '2026-11-06'
-    window_start: '2024-11-06'
+    checked_at: '2026-11-09'
+    window_start: '2024-11-09'
     recent_months: 24
     shared_papers: 0
     recent_shared_papers: 0
@@ -3001,8 +3011,8 @@ people:
   former_observed_at: '2026-10-21'
   needs_review: true
   former_collaboration:
-    checked_at: '2026-11-06'
-    window_start: '2024-11-06'
+    checked_at: '2026-11-09'
+    window_start: '2024-11-09'
     recent_months: 24
     shared_papers: 0
     recent_shared_papers: 0
@@ -3021,8 +3031,8 @@ people:
   former_observed_at: '2026-10-21'
   needs_review: true
   former_collaboration:
-    checked_at: '2026-11-06'
-    window_start: '2024-11-06'
+    checked_at: '2026-11-09'
+    window_start: '2024-11-09'
     recent_months: 24
     shared_papers: 0
     recent_shared_papers: 0
@@ -3041,13 +3051,13 @@ people:
   former_observed_at: '2026-10-21'
   needs_review: false
   former_collaboration:
-    checked_at: '2026-11-06'
-    window_start: '2024-11-06'
+    checked_at: '2026-11-09'
+    window_start: '2024-11-09'
     recent_months: 24
-    shared_papers: 8
-    recent_shared_papers: 2
-    last_collaboration_date: '2026-01-13'
-    followup_until: '2028-01-13'
+    shared_papers: 9
+    recent_shared_papers: 3
+    last_collaboration_date: '2026-05-01'
+    followup_until: '2028-05-01'
     current_coauthors:
     - andre-dekker
     - jikai-zhou
@@ -3106,7 +3116,6 @@ people:
       linked_verified_scholar: false
       institution_match: true
       accepted: true
-  identifier_discovery_checked_at: '2026-10-21'
   openalex_ids:
   - A5054496746
   resolved_at: '2026-10-23'
@@ -3122,8 +3131,8 @@ people:
   former_observed_at: '2026-10-21'
   needs_review: false
   former_collaboration:
-    checked_at: '2026-11-06'
-    window_start: '2024-11-06'
+    checked_at: '2026-11-09'
+    window_start: '2024-11-09'
     recent_months: 24
     shared_papers: 5
     recent_shared_papers: 0
@@ -3150,8 +3159,8 @@ people:
   former_observed_at: '2026-10-21'
   needs_review: false
   former_collaboration:
-    checked_at: '2026-11-06'
-    window_start: '2024-11-06'
+    checked_at: '2026-11-09'
+    window_start: '2024-11-09'
     recent_months: 24
     shared_papers: 8
     recent_shared_papers: 6
@@ -3262,8 +3271,8 @@ people:
   former_observed_at: '2026-10-21'
   needs_review: true
   former_collaboration:
-    checked_at: '2026-11-06'
-    window_start: '2024-11-06'
+    checked_at: '2026-11-09'
+    window_start: '2024-11-09'
     recent_months: 24
     shared_papers: 0
     recent_shared_papers: 0
@@ -3282,8 +3291,8 @@ people:
   former_observed_at: '2026-10-21'
   needs_review: true
   former_collaboration:
-    checked_at: '2026-11-06'
-    window_start: '2024-11-06'
+    checked_at: '2026-11-09'
+    window_start: '2024-11-09'
     recent_months: 24
     shared_papers: 0
     recent_shared_papers: 0
@@ -3302,8 +3311,8 @@ people:
   former_observed_at: '2026-10-21'
   needs_review: true
   former_collaboration:
-    checked_at: '2026-11-06'
-    window_start: '2024-11-06'
+    checked_at: '2026-11-09'
+    window_start: '2024-11-09'
     recent_months: 24
     shared_papers: 0
     recent_shared_papers: 0
@@ -3322,8 +3331,8 @@ people:
   former_observed_at: '2026-10-21'
   needs_review: false
   former_collaboration:
-    checked_at: '2026-11-06'
-    window_start: '2024-11-06'
+    checked_at: '2026-11-09'
+    window_start: '2024-11-09'
     recent_months: 24
     shared_papers: 1
     recent_shared_papers: 1
@@ -3354,8 +3363,8 @@ people:
   former_observed_at: '2026-10-21'
   needs_review: true
   former_collaboration:
-    checked_at: '2026-11-06'
-    window_start: '2024-11-06'
+    checked_at: '2026-11-09'
+    window_start: '2024-11-09'
     recent_months: 24
     shared_papers: 0
     recent_shared_papers: 0
@@ -3374,8 +3383,8 @@ people:
   former_observed_at: '2026-10-21'
   needs_review: true
   former_collaboration:
-    checked_at: '2026-11-06'
-    window_start: '2024-11-06'
+    checked_at: '2026-11-09'
+    window_start: '2024-11-09'
     recent_months: 24
     shared_papers: 0
     recent_shared_papers: 0
@@ -3394,8 +3403,8 @@ people:
   former_observed_at: '2026-10-21'
   needs_review: false
   former_collaboration:
-    checked_at: '2026-11-06'
-    window_start: '2024-11-06'
+    checked_at: '2026-11-09'
+    window_start: '2024-11-09'
     recent_months: 24
     shared_papers: 8
     recent_shared_papers: 4
@@ -3494,8 +3503,8 @@ people:
   former_observed_at: '2026-10-21'
   needs_review: true
   former_collaboration:
-    checked_at: '2026-11-06'
-    window_start: '2024-11-06'
+    checked_at: '2026-11-09'
+    window_start: '2024-11-09'
     recent_months: 24
     shared_papers: 0
     recent_shared_papers: 0
@@ -3514,8 +3523,8 @@ people:
   former_observed_at: '2026-10-21'
   needs_review: true
   former_collaboration:
-    checked_at: '2026-11-06'
-    window_start: '2024-11-06'
+    checked_at: '2026-11-09'
+    window_start: '2024-11-09'
     recent_months: 24
     shared_papers: 0
     recent_shared_papers: 0
@@ -3534,8 +3543,8 @@ people:
   former_observed_at: '2026-10-21'
   needs_review: true
   former_collaboration:
-    checked_at: '2026-11-06'
-    window_start: '2024-11-06'
+    checked_at: '2026-11-09'
+    window_start: '2024-11-09'
     recent_months: 24
     shared_papers: 0
     recent_shared_papers: 0
@@ -3554,8 +3563,8 @@ people:
   former_observed_at: '2026-10-21'
   needs_review: false
   former_collaboration:
-    checked_at: '2026-11-06'
-    window_start: '2024-11-06'
+    checked_at: '2026-11-09'
+    window_start: '2024-11-09'
     recent_months: 24
     shared_papers: 2
     recent_shared_papers: 0
@@ -3605,8 +3614,8 @@ people:
   former_observed_at: '2026-10-21'
   needs_review: false
   former_collaboration:
-    checked_at: '2026-11-06'
-    window_start: '2024-11-06'
+    checked_at: '2026-11-09'
+    window_start: '2024-11-09'
     recent_months: 24
     shared_papers: 4
     recent_shared_papers: 4
@@ -3639,8 +3648,8 @@ people:
   former_observed_at: '2026-10-21'
   needs_review: false
   former_collaboration:
-    checked_at: '2026-11-06'
-    window_start: '2024-11-06'
+    checked_at: '2026-11-09'
+    window_start: '2024-11-09'
     recent_months: 24
     shared_papers: 3
     recent_shared_papers: 2
@@ -3708,8 +3717,8 @@ people:
   former_observed_at: '2026-10-21'
   needs_review: false
   former_collaboration:
-    checked_at: '2026-11-06'
-    window_start: '2024-11-06'
+    checked_at: '2026-11-09'
+    window_start: '2024-11-09'
     recent_months: 24
     shared_papers: 1
     recent_shared_papers: 0
@@ -3735,8 +3744,8 @@ people:
   former_observed_at: '2026-10-21'
   needs_review: true
   former_collaboration:
-    checked_at: '2026-11-06'
-    window_start: '2024-11-06'
+    checked_at: '2026-11-09'
+    window_start: '2024-11-09'
     recent_months: 24
     shared_papers: 0
     recent_shared_papers: 0
@@ -3755,8 +3764,8 @@ people:
   former_observed_at: '2026-10-21'
   needs_review: true
   former_collaboration:
-    checked_at: '2026-11-06'
-    window_start: '2024-11-06'
+    checked_at: '2026-11-09'
+    window_start: '2024-11-09'
     recent_months: 24
     shared_papers: 0
     recent_shared_papers: 0
@@ -3775,8 +3784,8 @@ people:
   former_observed_at: '2026-10-21'
   needs_review: true
   former_collaboration:
-    checked_at: '2026-11-06'
-    window_start: '2024-11-06'
+    checked_at: '2026-11-09'
+    window_start: '2024-11-09'
     recent_months: 24
     shared_papers: 0
     recent_shared_papers: 0
@@ -3795,8 +3804,8 @@ people:
   former_observed_at: '2026-10-21'
   needs_review: true
   former_collaboration:
-    checked_at: '2026-11-06'
-    window_start: '2024-11-06'
+    checked_at: '2026-11-09'
+    window_start: '2024-11-09'
     recent_months: 24
     shared_papers: 0
     recent_shared_papers: 0
@@ -3815,8 +3824,8 @@ people:
   former_observed_at: '2026-10-21'
   needs_review: true
   former_collaboration:
-    checked_at: '2026-11-06'
-    window_start: '2024-11-06'
+    checked_at: '2026-11-09'
+    window_start: '2024-11-09'
     recent_months: 24
     shared_papers: 0
     recent_shared_papers: 0
@@ -3835,8 +3844,8 @@ people:
   former_observed_at: '2026-10-21'
   needs_review: true
   former_collaboration:
-    checked_at: '2026-11-06'
-    window_start: '2024-11-06'
+    checked_at: '2026-11-09'
+    window_start: '2024-11-09'
     recent_months: 24
     shared_papers: 0
     recent_shared_papers: 0
@@ -3855,8 +3864,8 @@ people:
   former_observed_at: '2026-10-21'
   needs_review: true
   former_collaboration:
-    checked_at: '2026-11-06'
-    window_start: '2024-11-06'
+    checked_at: '2026-11-09'
+    window_start: '2024-11-09'
     recent_months: 24
     shared_papers: 0
     recent_shared_papers: 0
@@ -3875,8 +3884,8 @@ people:
   former_observed_at: '2026-10-21'
   needs_review: true
   former_collaboration:
-    checked_at: '2026-11-06'
-    window_start: '2024-11-06'
+    checked_at: '2026-11-09'
+    window_start: '2024-11-09'
     recent_months: 24
     shared_papers: 0
     recent_shared_papers: 0
@@ -3895,8 +3904,8 @@ people:
   former_observed_at: '2026-10-21'
   needs_review: true
   former_collaboration:
-    checked_at: '2026-11-06'
-    window_start: '2024-11-06'
+    checked_at: '2026-11-09'
+    window_start: '2024-11-09'
     recent_months: 24
     shared_papers: 0
     recent_shared_papers: 0
@@ -3915,8 +3924,8 @@ people:
   former_observed_at: '2026-10-21'
   needs_review: true
   former_collaboration:
-    checked_at: '2026-11-06'
-    window_start: '2024-11-06'
+    checked_at: '2026-11-09'
+    window_start: '2024-11-09'
     recent_months: 24
     shared_papers: 0
     recent_shared_papers: 0
@@ -3935,8 +3944,8 @@ people:
   former_observed_at: '2026-10-21'
   needs_review: false
   former_collaboration:
-    checked_at: '2026-11-06'
-    window_start: '2024-11-06'
+    checked_at: '2026-11-09'
+    window_start: '2024-11-09'
     recent_months: 24
     shared_papers: 1
     recent_shared_papers: 1
@@ -3964,8 +3973,8 @@ people:
   former_observed_at: '2026-10-21'
   needs_review: true
   former_collaboration:
-    checked_at: '2026-11-06'
-    window_start: '2024-11-06'
+    checked_at: '2026-11-09'
+    window_start: '2024-11-09'
     recent_months: 24
     shared_papers: 0
     recent_shared_papers: 0
@@ -3984,8 +3993,8 @@ people:
   former_observed_at: '2026-10-21'
   needs_review: true
   former_collaboration:
-    checked_at: '2026-11-06'
-    window_start: '2024-11-06'
+    checked_at: '2026-11-09'
+    window_start: '2024-11-09'
     recent_months: 24
     shared_papers: 2
     recent_shared_papers: 2
@@ -4001,7 +4010,7 @@ people:
     openalex_id: null
     orcid: null
   identifier_discovery_checked_at: '2026-10-21'
-  resolved_at: '2026-11-06'
+  resolved_at: '2026-11-09'
 - section: previous
   slug: maija-utriainen
   name: Maija Utriainen
@@ -4014,8 +4023,8 @@ people:
   former_observed_at: '2026-10-21'
   needs_review: true
   former_collaboration:
-    checked_at: '2026-11-06'
-    window_start: '2024-11-06'
+    checked_at: '2026-11-09'
+    window_start: '2024-11-09'
     recent_months: 24
     shared_papers: 0
     recent_shared_papers: 0
@@ -4034,8 +4043,8 @@ people:
   former_observed_at: '2026-10-21'
   needs_review: false
   former_collaboration:
-    checked_at: '2026-11-06'
-    window_start: '2024-11-06'
+    checked_at: '2026-11-09'
+    window_start: '2024-11-09'
     recent_months: 24
     shared_papers: 1
     recent_shared_papers: 1
@@ -4085,8 +4094,8 @@ people:
   former_observed_at: '2026-10-21'
   needs_review: false
   former_collaboration:
-    checked_at: '2026-11-06'
-    window_start: '2024-11-06'
+    checked_at: '2026-11-09'
+    window_start: '2024-11-09'
     recent_months: 24
     shared_papers: 4
     recent_shared_papers: 4
@@ -4106,7 +4115,7 @@ people:
   orcid_openalex: 0000-0002-7224-7198
   publication_name_aliases:
   - M Cloots
-  resolved_at: '2026-11-06'
+  resolved_at: '2026-11-09'
 - section: previous
   slug: marie-picquet
   name: Marie Picquet
@@ -4119,8 +4128,8 @@ people:
   former_observed_at: '2026-10-21'
   needs_review: true
   former_collaboration:
-    checked_at: '2026-11-06'
-    window_start: '2024-11-06'
+    checked_at: '2026-11-09'
+    window_start: '2024-11-09'
     recent_months: 24
     shared_papers: 0
     recent_shared_papers: 0
@@ -4139,8 +4148,8 @@ people:
   former_observed_at: '2026-10-21'
   needs_review: false
   former_collaboration:
-    checked_at: '2026-11-06'
-    window_start: '2024-11-06'
+    checked_at: '2026-11-09'
+    window_start: '2024-11-09'
     recent_months: 24
     shared_papers: 3
     recent_shared_papers: 1
@@ -4157,7 +4166,7 @@ people:
   orcid_openalex: 0000-0003-3379-7290
   publication_name_aliases:
   - J. Martijn Nobel
-  resolved_at: '2026-11-06'
+  resolved_at: '2026-11-09'
 - section: previous
   slug: mattea-welch
   name: Mattea Welch
@@ -4170,8 +4179,8 @@ people:
   former_observed_at: '2026-10-21'
   needs_review: true
   former_collaboration:
-    checked_at: '2026-11-06'
-    window_start: '2024-11-06'
+    checked_at: '2026-11-09'
+    window_start: '2024-11-09'
     recent_months: 24
     shared_papers: 1
     recent_shared_papers: 0
@@ -4190,8 +4199,8 @@ people:
   former_observed_at: '2026-10-21'
   needs_review: false
   former_collaboration:
-    checked_at: '2026-11-06'
-    window_start: '2024-11-06'
+    checked_at: '2026-11-09'
+    window_start: '2024-11-09'
     recent_months: 24
     shared_papers: 1
     recent_shared_papers: 1
@@ -4243,8 +4252,8 @@ people:
   former_observed_at: '2026-10-21'
   needs_review: true
   former_collaboration:
-    checked_at: '2026-11-06'
-    window_start: '2024-11-06'
+    checked_at: '2026-11-09'
+    window_start: '2024-11-09'
     recent_months: 24
     shared_papers: 1
     recent_shared_papers: 0
@@ -4263,8 +4272,8 @@ people:
   former_observed_at: '2026-10-21'
   needs_review: true
   former_collaboration:
-    checked_at: '2026-11-06'
-    window_start: '2024-11-06'
+    checked_at: '2026-11-09'
+    window_start: '2024-11-09'
     recent_months: 24
     shared_papers: 0
     recent_shared_papers: 0
@@ -4283,8 +4292,8 @@ people:
   former_observed_at: '2026-10-21'
   needs_review: true
   former_collaboration:
-    checked_at: '2026-11-06'
-    window_start: '2024-11-06'
+    checked_at: '2026-11-09'
+    window_start: '2024-11-09'
     recent_months: 24
     shared_papers: 0
     recent_shared_papers: 0
@@ -4303,8 +4312,8 @@ people:
   former_observed_at: '2026-10-21'
   needs_review: true
   former_collaboration:
-    checked_at: '2026-11-06'
-    window_start: '2024-11-06'
+    checked_at: '2026-11-09'
+    window_start: '2024-11-09'
     recent_months: 24
     shared_papers: 0
     recent_shared_papers: 0
@@ -4323,8 +4332,8 @@ people:
   former_observed_at: '2026-10-21'
   needs_review: true
   former_collaboration:
-    checked_at: '2026-11-06'
-    window_start: '2024-11-06'
+    checked_at: '2026-11-09'
+    window_start: '2024-11-09'
     recent_months: 24
     shared_papers: 0
     recent_shared_papers: 0
@@ -4345,8 +4354,8 @@ people:
   publication_name_aliases:
   - Pedro da Costa Mateus
   former_collaboration:
-    checked_at: '2026-11-06'
-    window_start: '2024-11-06'
+    checked_at: '2026-11-09'
+    window_start: '2024-11-09'
     recent_months: 24
     shared_papers: 6
     recent_shared_papers: 4
@@ -4481,8 +4490,8 @@ people:
   former_observed_at: '2026-10-21'
   needs_review: true
   former_collaboration:
-    checked_at: '2026-11-06'
-    window_start: '2024-11-06'
+    checked_at: '2026-11-09'
+    window_start: '2024-11-09'
     recent_months: 24
     shared_papers: 0
     recent_shared_papers: 0
@@ -4501,8 +4510,8 @@ people:
   former_observed_at: '2026-10-21'
   needs_review: true
   former_collaboration:
-    checked_at: '2026-11-06'
-    window_start: '2024-11-06'
+    checked_at: '2026-11-09'
+    window_start: '2024-11-09'
     recent_months: 24
     shared_papers: 0
     recent_shared_papers: 0
@@ -4521,8 +4530,8 @@ people:
   former_observed_at: '2026-10-21'
   needs_review: true
   former_collaboration:
-    checked_at: '2026-11-06'
-    window_start: '2024-11-06'
+    checked_at: '2026-11-09'
+    window_start: '2024-11-09'
     recent_months: 24
     shared_papers: 0
     recent_shared_papers: 0
@@ -4541,8 +4550,8 @@ people:
   former_observed_at: '2026-10-21'
   needs_review: true
   former_collaboration:
-    checked_at: '2026-11-06'
-    window_start: '2024-11-06'
+    checked_at: '2026-11-09'
+    window_start: '2024-11-09'
     recent_months: 24
     shared_papers: 0
     recent_shared_papers: 0
@@ -4561,8 +4570,8 @@ people:
   former_observed_at: '2026-10-21'
   needs_review: false
   former_collaboration:
-    checked_at: '2026-11-06'
-    window_start: '2024-11-06'
+    checked_at: '2026-11-09'
+    window_start: '2024-11-09'
     recent_months: 24
     shared_papers: 3
     recent_shared_papers: 3
@@ -4595,8 +4604,8 @@ people:
   former_observed_at: '2026-10-21'
   needs_review: true
   former_collaboration:
-    checked_at: '2026-11-06'
-    window_start: '2024-11-06'
+    checked_at: '2026-11-09'
+    window_start: '2024-11-09'
     recent_months: 24
     shared_papers: 0
     recent_shared_papers: 0
@@ -4615,8 +4624,8 @@ people:
   former_observed_at: '2026-10-21'
   needs_review: true
   former_collaboration:
-    checked_at: '2026-11-06'
-    window_start: '2024-11-06'
+    checked_at: '2026-11-09'
+    window_start: '2024-11-09'
     recent_months: 24
     shared_papers: 0
     recent_shared_papers: 0
@@ -4635,8 +4644,8 @@ people:
   former_observed_at: '2026-10-21'
   needs_review: true
   former_collaboration:
-    checked_at: '2026-11-06'
-    window_start: '2024-11-06'
+    checked_at: '2026-11-09'
+    window_start: '2024-11-09'
     recent_months: 24
     shared_papers: 0
     recent_shared_papers: 0
@@ -4655,8 +4664,8 @@ people:
   former_observed_at: '2026-10-21'
   needs_review: true
   former_collaboration:
-    checked_at: '2026-11-06'
-    window_start: '2024-11-06'
+    checked_at: '2026-11-09'
+    window_start: '2024-11-09'
     recent_months: 24
     shared_papers: 0
     recent_shared_papers: 0
@@ -4675,8 +4684,8 @@ people:
   former_observed_at: '2026-10-21'
   needs_review: false
   former_collaboration:
-    checked_at: '2026-11-06'
-    window_start: '2024-11-06'
+    checked_at: '2026-11-09'
+    window_start: '2024-11-09'
     recent_months: 24
     shared_papers: 1
     recent_shared_papers: 0
@@ -4702,8 +4711,8 @@ people:
   former_observed_at: '2026-10-21'
   needs_review: false
   former_collaboration:
-    checked_at: '2026-11-06'
-    window_start: '2024-11-06'
+    checked_at: '2026-11-09'
+    window_start: '2024-11-09'
     recent_months: 24
     shared_papers: 3
     recent_shared_papers: 2
@@ -4778,8 +4787,8 @@ people:
   former_observed_at: '2026-10-21'
   needs_review: true
   former_collaboration:
-    checked_at: '2026-11-06'
-    window_start: '2024-11-06'
+    checked_at: '2026-11-09'
+    window_start: '2024-11-09'
     recent_months: 24
     shared_papers: 0
     recent_shared_papers: 0
@@ -4798,8 +4807,8 @@ people:
   former_observed_at: '2026-10-21'
   needs_review: true
   former_collaboration:
-    checked_at: '2026-11-06'
-    window_start: '2024-11-06'
+    checked_at: '2026-11-09'
+    window_start: '2024-11-09'
     recent_months: 24
     shared_papers: 0
     recent_shared_papers: 0
@@ -4818,8 +4827,8 @@ people:
   former_observed_at: '2026-10-21'
   needs_review: true
   former_collaboration:
-    checked_at: '2026-11-06'
-    window_start: '2024-11-06'
+    checked_at: '2026-11-09'
+    window_start: '2024-11-09'
     recent_months: 24
     shared_papers: 0
     recent_shared_papers: 0
@@ -4838,8 +4847,8 @@ people:
   former_observed_at: '2026-10-21'
   needs_review: true
   former_collaboration:
-    checked_at: '2026-11-06'
-    window_start: '2024-11-06'
+    checked_at: '2026-11-09'
+    window_start: '2024-11-09'
     recent_months: 24
     shared_papers: 0
     recent_shared_papers: 0
@@ -4858,8 +4867,8 @@ people:
   former_observed_at: '2026-10-21'
   needs_review: true
   former_collaboration:
-    checked_at: '2026-11-06'
-    window_start: '2024-11-06'
+    checked_at: '2026-11-09'
+    window_start: '2024-11-09'
     recent_months: 24
     shared_papers: 0
     recent_shared_papers: 0
@@ -4878,8 +4887,8 @@ people:
   former_observed_at: '2026-10-21'
   needs_review: true
   former_collaboration:
-    checked_at: '2026-11-06'
-    window_start: '2024-11-06'
+    checked_at: '2026-11-09'
+    window_start: '2024-11-09'
     recent_months: 24
     shared_papers: 0
     recent_shared_papers: 0
@@ -4898,8 +4907,8 @@ people:
   former_observed_at: '2026-10-21'
   needs_review: true
   former_collaboration:
-    checked_at: '2026-11-06'
-    window_start: '2024-11-06'
+    checked_at: '2026-11-09'
+    window_start: '2024-11-09'
     recent_months: 24
     shared_papers: 0
     recent_shared_papers: 0
@@ -4918,8 +4927,8 @@ people:
   former_observed_at: '2026-10-21'
   needs_review: false
   former_collaboration:
-    checked_at: '2026-11-06'
-    window_start: '2024-11-06'
+    checked_at: '2026-11-09'
+    window_start: '2024-11-09'
     recent_months: 24
     shared_papers: 12
     recent_shared_papers: 10
@@ -5165,8 +5174,8 @@ people:
   former_observed_at: '2026-10-21'
   needs_review: false
   former_collaboration:
-    checked_at: '2026-11-06'
-    window_start: '2024-11-06'
+    checked_at: '2026-11-09'
+    window_start: '2024-11-09'
     recent_months: 24
     shared_papers: 3
     recent_shared_papers: 3
@@ -5258,8 +5267,8 @@ people:
   former_observed_at: '2026-10-21'
   needs_review: true
   former_collaboration:
-    checked_at: '2026-11-06'
-    window_start: '2024-11-06'
+    checked_at: '2026-11-09'
+    window_start: '2024-11-09'
     recent_months: 24
     shared_papers: 0
     recent_shared_papers: 0
@@ -5278,8 +5287,8 @@ people:
   former_observed_at: '2026-10-21'
   needs_review: false
   former_collaboration:
-    checked_at: '2026-11-06'
-    window_start: '2024-11-06'
+    checked_at: '2026-11-09'
+    window_start: '2024-11-09'
     recent_months: 24
     shared_papers: 4
     recent_shared_papers: 1
@@ -5362,8 +5371,8 @@ people:
   former_observed_at: '2026-10-21'
   needs_review: false
   former_collaboration:
-    checked_at: '2026-11-06'
-    window_start: '2024-11-06'
+    checked_at: '2026-11-09'
+    window_start: '2024-11-09'
     recent_months: 24
     shared_papers: 2
     recent_shared_papers: 1
@@ -5399,11 +5408,11 @@ people:
   former_observed_at: '2026-10-21'
   needs_review: false
   former_collaboration:
-    checked_at: '2026-11-06'
-    window_start: '2024-11-06'
+    checked_at: '2026-11-09'
+    window_start: '2024-11-09'
     recent_months: 24
-    shared_papers: 21
-    recent_shared_papers: 15
+    shared_papers: 22
+    recent_shared_papers: 16
     last_collaboration_date: '2026-07-01'
     followup_until: '2028-07-01'
     current_coauthors:
@@ -5478,8 +5487,8 @@ people:
   former_observed_at: '2026-10-21'
   needs_review: false
   former_collaboration:
-    checked_at: '2026-11-06'
-    window_start: '2024-11-06'
+    checked_at: '2026-11-09'
+    window_start: '2024-11-09'
     recent_months: 24
     shared_papers: 8
     recent_shared_papers: 4
@@ -5671,8 +5680,8 @@ people:
   former_observed_at: '2026-10-21'
   needs_review: false
   former_collaboration:
-    checked_at: '2026-11-06'
-    window_start: '2024-11-06'
+    checked_at: '2026-11-09'
+    window_start: '2024-11-09'
     recent_months: 24
     shared_papers: 7
     recent_shared_papers: 3
