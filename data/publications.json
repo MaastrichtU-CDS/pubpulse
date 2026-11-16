@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-13T13:43:13+00:00",
+ "generated": "2026-11-16T14:17:14+00:00",
  "group_name": "Clinical Data Science (Maastro / Maastricht University)",
  "site_url": "https://maastrichtu-cds.github.io/pubpulse/",
  "repo_url": "https://github.com/MaastrichtU-CDS/pubpulse",
@@ -11,11 +11,15 @@
   "list_name": "the pubpulse weekly list"
  },
  "last_run": {
-  "date": "2026-11-13",
+  "date": "2026-11-16",
   "baseline": false,
-  "new_count": 0,
-  "new_ids": [],
+  "new_count": 2,
+  "new_ids": [
+   "W7225888762",
+   "W7225989936"
+  ],
   "needs_review": [
+   "alexandra-afanasiuc",
    "ali-al-zein",
    "ali-zaila",
    "andrea-pradas-agujetas",
@@ -64,6 +68,25 @@
    "tracked": true,
    "tracked_until": null,
    "needs_review": false
+  },
+  {
+   "slug": "alexandra-afanasiuc",
+   "name": "Alexandra Afanasiuc",
+   "profile_url": "https://www.clinicaldatascience.nl/alexandra-afanasiuc",
+   "role": "Intern",
+   "employer": "Maastricht University",
+   "orcid": null,
+   "orcid_discovered": null,
+   "orcid_openalex": null,
+   "scholar_id": null,
+   "openalex_ids": [],
+   "match": "name",
+   "active": true,
+   "former": false,
+   "former_collaboration": null,
+   "tracked": true,
+   "tracked_until": null,
+   "needs_review": true
   },
   {
    "slug": "ali-al-zein",
@@ -1273,8 +1296,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-13",
-    "window_start": "2024-11-13",
+    "checked_at": "2026-11-16",
+    "window_start": "2024-11-16",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -1304,8 +1327,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-13",
-    "window_start": "2024-11-13",
+    "checked_at": "2026-11-16",
+    "window_start": "2024-11-16",
     "recent_months": 24,
     "shared_papers": 19,
     "recent_shared_papers": 16,
@@ -1351,8 +1374,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-13",
-    "window_start": "2024-11-13",
+    "checked_at": "2026-11-16",
+    "window_start": "2024-11-16",
     "recent_months": 24,
     "shared_papers": 16,
     "recent_shared_papers": 2,
@@ -1384,8 +1407,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-13",
-    "window_start": "2024-11-13",
+    "checked_at": "2026-11-16",
+    "window_start": "2024-11-16",
     "recent_months": 24,
     "shared_papers": 3,
     "recent_shared_papers": 3,
@@ -1418,8 +1441,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-13",
-    "window_start": "2024-11-13",
+    "checked_at": "2026-11-16",
+    "window_start": "2024-11-16",
     "recent_months": 24,
     "shared_papers": 1,
     "recent_shared_papers": 1,
@@ -1449,8 +1472,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-13",
-    "window_start": "2024-11-13",
+    "checked_at": "2026-11-16",
+    "window_start": "2024-11-16",
     "recent_months": 24,
     "shared_papers": 5,
     "recent_shared_papers": 4,
@@ -1483,8 +1506,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-13",
-    "window_start": "2024-11-13",
+    "checked_at": "2026-11-16",
+    "window_start": "2024-11-16",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -1511,8 +1534,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-13",
-    "window_start": "2024-11-13",
+    "checked_at": "2026-11-16",
+    "window_start": "2024-11-16",
     "recent_months": 24,
     "shared_papers": 1,
     "recent_shared_papers": 0,
@@ -1541,8 +1564,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-13",
-    "window_start": "2024-11-13",
+    "checked_at": "2026-11-16",
+    "window_start": "2024-11-16",
     "recent_months": 24,
     "shared_papers": 2,
     "recent_shared_papers": 1,
@@ -1571,8 +1594,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-13",
-    "window_start": "2024-11-13",
+    "checked_at": "2026-11-16",
+    "window_start": "2024-11-16",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -1599,8 +1622,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-13",
-    "window_start": "2024-11-13",
+    "checked_at": "2026-11-16",
+    "window_start": "2024-11-16",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -1627,8 +1650,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-13",
-    "window_start": "2024-11-13",
+    "checked_at": "2026-11-16",
+    "window_start": "2024-11-16",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -1655,8 +1678,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-13",
-    "window_start": "2024-11-13",
+    "checked_at": "2026-11-16",
+    "window_start": "2024-11-16",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -1683,8 +1706,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-13",
-    "window_start": "2024-11-13",
+    "checked_at": "2026-11-16",
+    "window_start": "2024-11-16",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -1713,8 +1736,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-13",
-    "window_start": "2024-11-13",
+    "checked_at": "2026-11-16",
+    "window_start": "2024-11-16",
     "recent_months": 24,
     "shared_papers": 4,
     "recent_shared_papers": 2,
@@ -1744,8 +1767,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-13",
-    "window_start": "2024-11-13",
+    "checked_at": "2026-11-16",
+    "window_start": "2024-11-16",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -1772,8 +1795,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-13",
-    "window_start": "2024-11-13",
+    "checked_at": "2026-11-16",
+    "window_start": "2024-11-16",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -1800,8 +1823,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-13",
-    "window_start": "2024-11-13",
+    "checked_at": "2026-11-16",
+    "window_start": "2024-11-16",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -1828,8 +1851,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-13",
-    "window_start": "2024-11-13",
+    "checked_at": "2026-11-16",
+    "window_start": "2024-11-16",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -1856,8 +1879,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-13",
-    "window_start": "2024-11-13",
+    "checked_at": "2026-11-16",
+    "window_start": "2024-11-16",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -1886,8 +1909,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-13",
-    "window_start": "2024-11-13",
+    "checked_at": "2026-11-16",
+    "window_start": "2024-11-16",
     "recent_months": 24,
     "shared_papers": 9,
     "recent_shared_papers": 3,
@@ -1921,8 +1944,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-13",
-    "window_start": "2024-11-13",
+    "checked_at": "2026-11-16",
+    "window_start": "2024-11-16",
     "recent_months": 24,
     "shared_papers": 5,
     "recent_shared_papers": 0,
@@ -1951,8 +1974,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-13",
-    "window_start": "2024-11-13",
+    "checked_at": "2026-11-16",
+    "window_start": "2024-11-16",
     "recent_months": 24,
     "shared_papers": 8,
     "recent_shared_papers": 6,
@@ -1988,8 +2011,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-13",
-    "window_start": "2024-11-13",
+    "checked_at": "2026-11-16",
+    "window_start": "2024-11-16",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -2016,8 +2039,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-13",
-    "window_start": "2024-11-13",
+    "checked_at": "2026-11-16",
+    "window_start": "2024-11-16",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -2044,8 +2067,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-13",
-    "window_start": "2024-11-13",
+    "checked_at": "2026-11-16",
+    "window_start": "2024-11-16",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -2074,8 +2097,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-13",
-    "window_start": "2024-11-13",
+    "checked_at": "2026-11-16",
+    "window_start": "2024-11-16",
     "recent_months": 24,
     "shared_papers": 1,
     "recent_shared_papers": 1,
@@ -2105,8 +2128,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-13",
-    "window_start": "2024-11-13",
+    "checked_at": "2026-11-16",
+    "window_start": "2024-11-16",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -2133,8 +2156,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-13",
-    "window_start": "2024-11-13",
+    "checked_at": "2026-11-16",
+    "window_start": "2024-11-16",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -2163,8 +2186,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-13",
-    "window_start": "2024-11-13",
+    "checked_at": "2026-11-16",
+    "window_start": "2024-11-16",
     "recent_months": 24,
     "shared_papers": 8,
     "recent_shared_papers": 4,
@@ -2194,8 +2217,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-13",
-    "window_start": "2024-11-13",
+    "checked_at": "2026-11-16",
+    "window_start": "2024-11-16",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -2222,8 +2245,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-13",
-    "window_start": "2024-11-13",
+    "checked_at": "2026-11-16",
+    "window_start": "2024-11-16",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -2250,8 +2273,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-13",
-    "window_start": "2024-11-13",
+    "checked_at": "2026-11-16",
+    "window_start": "2024-11-16",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -2280,8 +2303,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-13",
-    "window_start": "2024-11-13",
+    "checked_at": "2026-11-16",
+    "window_start": "2024-11-16",
     "recent_months": 24,
     "shared_papers": 2,
     "recent_shared_papers": 0,
@@ -2310,8 +2333,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-13",
-    "window_start": "2024-11-13",
+    "checked_at": "2026-11-16",
+    "window_start": "2024-11-16",
     "recent_months": 24,
     "shared_papers": 4,
     "recent_shared_papers": 4,
@@ -2344,8 +2367,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-13",
-    "window_start": "2024-11-13",
+    "checked_at": "2026-11-16",
+    "window_start": "2024-11-16",
     "recent_months": 24,
     "shared_papers": 3,
     "recent_shared_papers": 2,
@@ -2377,8 +2400,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-13",
-    "window_start": "2024-11-13",
+    "checked_at": "2026-11-16",
+    "window_start": "2024-11-16",
     "recent_months": 24,
     "shared_papers": 1,
     "recent_shared_papers": 0,
@@ -2405,8 +2428,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-13",
-    "window_start": "2024-11-13",
+    "checked_at": "2026-11-16",
+    "window_start": "2024-11-16",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -2433,8 +2456,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-13",
-    "window_start": "2024-11-13",
+    "checked_at": "2026-11-16",
+    "window_start": "2024-11-16",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -2461,8 +2484,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-13",
-    "window_start": "2024-11-13",
+    "checked_at": "2026-11-16",
+    "window_start": "2024-11-16",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -2489,8 +2512,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-13",
-    "window_start": "2024-11-13",
+    "checked_at": "2026-11-16",
+    "window_start": "2024-11-16",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -2517,8 +2540,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-13",
-    "window_start": "2024-11-13",
+    "checked_at": "2026-11-16",
+    "window_start": "2024-11-16",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -2545,8 +2568,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-13",
-    "window_start": "2024-11-13",
+    "checked_at": "2026-11-16",
+    "window_start": "2024-11-16",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -2573,8 +2596,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-13",
-    "window_start": "2024-11-13",
+    "checked_at": "2026-11-16",
+    "window_start": "2024-11-16",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -2601,8 +2624,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-13",
-    "window_start": "2024-11-13",
+    "checked_at": "2026-11-16",
+    "window_start": "2024-11-16",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -2629,8 +2652,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-13",
-    "window_start": "2024-11-13",
+    "checked_at": "2026-11-16",
+    "window_start": "2024-11-16",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -2657,8 +2680,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-13",
-    "window_start": "2024-11-13",
+    "checked_at": "2026-11-16",
+    "window_start": "2024-11-16",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -2687,8 +2710,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-13",
-    "window_start": "2024-11-13",
+    "checked_at": "2026-11-16",
+    "window_start": "2024-11-16",
     "recent_months": 24,
     "shared_papers": 1,
     "recent_shared_papers": 1,
@@ -2720,8 +2743,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-13",
-    "window_start": "2024-11-13",
+    "checked_at": "2026-11-16",
+    "window_start": "2024-11-16",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -2748,8 +2771,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-13",
-    "window_start": "2024-11-13",
+    "checked_at": "2026-11-16",
+    "window_start": "2024-11-16",
     "recent_months": 24,
     "shared_papers": 2,
     "recent_shared_papers": 2,
@@ -2781,8 +2804,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-13",
-    "window_start": "2024-11-13",
+    "checked_at": "2026-11-16",
+    "window_start": "2024-11-16",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -2811,8 +2834,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-13",
-    "window_start": "2024-11-13",
+    "checked_at": "2026-11-16",
+    "window_start": "2024-11-16",
     "recent_months": 24,
     "shared_papers": 1,
     "recent_shared_papers": 1,
@@ -2843,8 +2866,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-13",
-    "window_start": "2024-11-13",
+    "checked_at": "2026-11-16",
+    "window_start": "2024-11-16",
     "recent_months": 24,
     "shared_papers": 4,
     "recent_shared_papers": 4,
@@ -2876,8 +2899,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-13",
-    "window_start": "2024-11-13",
+    "checked_at": "2026-11-16",
+    "window_start": "2024-11-16",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -2906,8 +2929,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-13",
-    "window_start": "2024-11-13",
+    "checked_at": "2026-11-16",
+    "window_start": "2024-11-16",
     "recent_months": 24,
     "shared_papers": 3,
     "recent_shared_papers": 1,
@@ -2936,8 +2959,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-13",
-    "window_start": "2024-11-13",
+    "checked_at": "2026-11-16",
+    "window_start": "2024-11-16",
     "recent_months": 24,
     "shared_papers": 1,
     "recent_shared_papers": 0,
@@ -2966,8 +2989,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-13",
-    "window_start": "2024-11-13",
+    "checked_at": "2026-11-16",
+    "window_start": "2024-11-16",
     "recent_months": 24,
     "shared_papers": 1,
     "recent_shared_papers": 1,
@@ -2996,8 +3019,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-13",
-    "window_start": "2024-11-13",
+    "checked_at": "2026-11-16",
+    "window_start": "2024-11-16",
     "recent_months": 24,
     "shared_papers": 1,
     "recent_shared_papers": 0,
@@ -3024,8 +3047,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-13",
-    "window_start": "2024-11-13",
+    "checked_at": "2026-11-16",
+    "window_start": "2024-11-16",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -3052,8 +3075,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-13",
-    "window_start": "2024-11-13",
+    "checked_at": "2026-11-16",
+    "window_start": "2024-11-16",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -3080,8 +3103,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-13",
-    "window_start": "2024-11-13",
+    "checked_at": "2026-11-16",
+    "window_start": "2024-11-16",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -3108,8 +3131,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-13",
-    "window_start": "2024-11-13",
+    "checked_at": "2026-11-16",
+    "window_start": "2024-11-16",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -3139,8 +3162,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-13",
-    "window_start": "2024-11-13",
+    "checked_at": "2026-11-16",
+    "window_start": "2024-11-16",
     "recent_months": 24,
     "shared_papers": 6,
     "recent_shared_papers": 4,
@@ -3169,8 +3192,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-13",
-    "window_start": "2024-11-13",
+    "checked_at": "2026-11-16",
+    "window_start": "2024-11-16",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -3197,8 +3220,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-13",
-    "window_start": "2024-11-13",
+    "checked_at": "2026-11-16",
+    "window_start": "2024-11-16",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -3225,8 +3248,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-13",
-    "window_start": "2024-11-13",
+    "checked_at": "2026-11-16",
+    "window_start": "2024-11-16",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -3253,8 +3276,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-13",
-    "window_start": "2024-11-13",
+    "checked_at": "2026-11-16",
+    "window_start": "2024-11-16",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -3283,8 +3306,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-13",
-    "window_start": "2024-11-13",
+    "checked_at": "2026-11-16",
+    "window_start": "2024-11-16",
     "recent_months": 24,
     "shared_papers": 3,
     "recent_shared_papers": 3,
@@ -3315,8 +3338,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-13",
-    "window_start": "2024-11-13",
+    "checked_at": "2026-11-16",
+    "window_start": "2024-11-16",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -3343,8 +3366,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-13",
-    "window_start": "2024-11-13",
+    "checked_at": "2026-11-16",
+    "window_start": "2024-11-16",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -3371,8 +3394,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-13",
-    "window_start": "2024-11-13",
+    "checked_at": "2026-11-16",
+    "window_start": "2024-11-16",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -3399,8 +3422,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-13",
-    "window_start": "2024-11-13",
+    "checked_at": "2026-11-16",
+    "window_start": "2024-11-16",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -3429,8 +3452,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-13",
-    "window_start": "2024-11-13",
+    "checked_at": "2026-11-16",
+    "window_start": "2024-11-16",
     "recent_months": 24,
     "shared_papers": 1,
     "recent_shared_papers": 0,
@@ -3459,8 +3482,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-13",
-    "window_start": "2024-11-13",
+    "checked_at": "2026-11-16",
+    "window_start": "2024-11-16",
     "recent_months": 24,
     "shared_papers": 3,
     "recent_shared_papers": 2,
@@ -3490,8 +3513,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-13",
-    "window_start": "2024-11-13",
+    "checked_at": "2026-11-16",
+    "window_start": "2024-11-16",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -3518,8 +3541,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-13",
-    "window_start": "2024-11-13",
+    "checked_at": "2026-11-16",
+    "window_start": "2024-11-16",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -3546,8 +3569,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-13",
-    "window_start": "2024-11-13",
+    "checked_at": "2026-11-16",
+    "window_start": "2024-11-16",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -3574,8 +3597,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-13",
-    "window_start": "2024-11-13",
+    "checked_at": "2026-11-16",
+    "window_start": "2024-11-16",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -3602,8 +3625,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-13",
-    "window_start": "2024-11-13",
+    "checked_at": "2026-11-16",
+    "window_start": "2024-11-16",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -3630,8 +3653,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-13",
-    "window_start": "2024-11-13",
+    "checked_at": "2026-11-16",
+    "window_start": "2024-11-16",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -3658,8 +3681,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-13",
-    "window_start": "2024-11-13",
+    "checked_at": "2026-11-16",
+    "window_start": "2024-11-16",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -3688,8 +3711,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-13",
-    "window_start": "2024-11-13",
+    "checked_at": "2026-11-16",
+    "window_start": "2024-11-16",
     "recent_months": 24,
     "shared_papers": 12,
     "recent_shared_papers": 10,
@@ -3729,8 +3752,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-13",
-    "window_start": "2024-11-13",
+    "checked_at": "2026-11-16",
+    "window_start": "2024-11-16",
     "recent_months": 24,
     "shared_papers": 3,
     "recent_shared_papers": 3,
@@ -3761,8 +3784,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-13",
-    "window_start": "2024-11-13",
+    "checked_at": "2026-11-16",
+    "window_start": "2024-11-16",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -3791,8 +3814,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-13",
-    "window_start": "2024-11-13",
+    "checked_at": "2026-11-16",
+    "window_start": "2024-11-16",
     "recent_months": 24,
     "shared_papers": 4,
     "recent_shared_papers": 1,
@@ -3824,8 +3847,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-13",
-    "window_start": "2024-11-13",
+    "checked_at": "2026-11-16",
+    "window_start": "2024-11-16",
     "recent_months": 24,
     "shared_papers": 2,
     "recent_shared_papers": 1,
@@ -3857,11 +3880,11 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-13",
-    "window_start": "2024-11-13",
+    "checked_at": "2026-11-16",
+    "window_start": "2024-11-16",
     "recent_months": 24,
     "shared_papers": 22,
-    "recent_shared_papers": 16,
+    "recent_shared_papers": 15,
     "last_collaboration_date": "2026-07-01",
     "followup_until": "2028-07-01",
     "current_coauthors": [
@@ -3897,8 +3920,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-13",
-    "window_start": "2024-11-13",
+    "checked_at": "2026-11-16",
+    "window_start": "2024-11-16",
     "recent_months": 24,
     "shared_papers": 8,
     "recent_shared_papers": 4,
@@ -3931,8 +3954,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-13",
-    "window_start": "2024-11-13",
+    "checked_at": "2026-11-16",
+    "window_start": "2024-11-16",
     "recent_months": 24,
     "shared_papers": 7,
     "recent_shared_papers": 3,
@@ -3949,6 +3972,244 @@
   }
  ],
  "works": [
+  {
+   "id": "W7225989936",
+   "openalex_url": "https://openalex.org/W7225989936",
+   "doi": "https://doi.org/10.2196/99117",
+   "title": "Investigating Context in How Clinicians Make Sense of AI: Qualitative Interview Study",
+   "publication_date": "2026-11-13",
+   "year": 2026,
+   "type": "article",
+   "journal": "JMIR Human Factors",
+   "source_id": "S4210199510",
+   "landing_url": "https://doi.org/10.2196/99117",
+   "is_oa": true,
+   "oa_url": "https://doi.org/10.2196/99117",
+   "license": "cc-by",
+   "pdf_url": null,
+   "authors": [
+    "Simone M.B. Mingels",
+    "Hannah Piehl",
+    "Rianne Fijten",
+    "Ricky Janssen",
+    "Bart Penders"
+   ],
+   "author_members": [
+    "simone-mingels",
+    "hannah-piehl",
+    "rianne-fijten",
+    null,
+    null
+   ],
+   "author_profiles": {
+    "simone-mingels": {
+     "openalex_id": "A5119867252",
+     "orcid": "0009-0000-9848-2391",
+     "match": "openalex",
+     "affiliations": [
+      "Maastricht University Medical Centre",
+      "Maastricht University",
+      "Department of Radiation Oncology, GROW Research Institute for Oncology and Reproduction, Maastricht University Medical Centre+, Paul-Henri Spaaklaan 1, Maastricht, Limburg, 6229 GS, The Netherlands, +31 0433881863",
+      "Maastro, Maastricht Radiation Oncology Institute, Maastricht, The Netherlands"
+     ]
+    },
+    "hannah-piehl": {
+     "openalex_id": "A5091963091",
+     "orcid": "0009-0005-1982-3909",
+     "match": "openalex",
+     "affiliations": [
+      "Maastricht University Medical Centre",
+      "Maastricht University",
+      "Department of Radiation Oncology, GROW Research Institute for Oncology and Reproduction, Maastricht University Medical Centre+, Paul-Henri Spaaklaan 1, Maastricht, Limburg, 6229 GS, The Netherlands, +31 0433881863",
+      "Maastro, Maastricht Radiation Oncology Institute, Maastricht, The Netherlands"
+     ]
+    },
+    "rianne-fijten": {
+     "openalex_id": "A5081642553",
+     "orcid": "0000-0002-1964-6317",
+     "match": "openalex",
+     "affiliations": [
+      "Maastricht University Medical Centre",
+      "Maastricht University",
+      "Department of Radiation Oncology, GROW Research Institute for Oncology and Reproduction, Maastricht University Medical Centre+, Paul-Henri Spaaklaan 1, Maastricht, Limburg, 6229 GS, The Netherlands, +31 0433881863",
+      "Maastro, Maastricht Radiation Oncology Institute, Maastricht, The Netherlands"
+     ]
+    }
+   },
+   "author_positions": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "author_count": 5,
+   "group_members": [
+    "simone-mingels",
+    "hannah-piehl",
+    "rianne-fijten"
+   ],
+   "member_affiliations": {
+    "simone-mingels": [
+     "Maastricht University Medical Centre",
+     "Maastricht University",
+     "Department of Radiation Oncology, GROW Research Institute for Oncology and Reproduction, Maastricht University Medical Centre+, Paul-Henri Spaaklaan 1, Maastricht, Limburg, 6229 GS, The Netherlands, +31 0433881863",
+     "Maastro, Maastricht Radiation Oncology Institute, Maastricht, The Netherlands"
+    ],
+    "hannah-piehl": [
+     "Maastricht University Medical Centre",
+     "Maastricht University",
+     "Department of Radiation Oncology, GROW Research Institute for Oncology and Reproduction, Maastricht University Medical Centre+, Paul-Henri Spaaklaan 1, Maastricht, Limburg, 6229 GS, The Netherlands, +31 0433881863",
+     "Maastro, Maastricht Radiation Oncology Institute, Maastricht, The Netherlands"
+    ],
+    "rianne-fijten": [
+     "Maastricht University Medical Centre",
+     "Maastricht University",
+     "Department of Radiation Oncology, GROW Research Institute for Oncology and Reproduction, Maastricht University Medical Centre+, Paul-Henri Spaaklaan 1, Maastricht, Limburg, 6229 GS, The Netherlands, +31 0433881863",
+     "Maastro, Maastricht Radiation Oncology Institute, Maastricht, The Netherlands"
+    ]
+   },
+   "affiliation_status": {
+    "simone-mingels": "verified",
+    "hannah-piehl": "verified",
+    "rianne-fijten": "verified"
+   },
+   "senior_affiliations": [
+    "Maastricht University",
+    "Care and Public Health Research Institute",
+    "Department of Health, Ethics & Society, Care and Public Health Research Institute (CAPHRI), Maastricht University, Maastricht, The Netherlands"
+   ],
+   "cited_by_count": 0,
+   "abstract": "Abstract Background AI-driven clinical decision support systems (AI-CDSS) are increasingly being introduced to enhance clinical decision-making, yet their adoption in health care remains limited. Research has examined technical, organizational, and contextual barriers to adoption, but less attention has been paid to how knowledge, values, and responsibility around AI-CDSS are constructed and negotiated in practice. Objective This study examines how clinicians and AI experts make sense of AI-CDSS by reanalyzing qualitative interview data through a feminist and constructivist science and technology studies (STS) perspective. Whereas the original study examined informational needs, this reanalysis asks how participants construct relevant knowledge, evaluate the value of AI-CDSS, and negotiate appropriate use and responsibility in clinical practice. Methods The authors conducted a reanalysis of semistructured interviews held in 2024 with clinicians (n=8) and AI experts (n=8) in the Netherlands. The original study focused on informational needs for AI-CDSS. For this analysis, a deductive coding framework based on European Commission guidelines for trustworthy AI was first applied, and the material was then inductively reorganized into 5 empirical themes. Subsequently, feminist and constructivist STS concepts were used as sensitizing concepts in an abductive analysis, and these concepts were brought into dialogue with the empirical themes to examine the sociotechnical relations underlying participants’ accounts. Results Situated knowledge shows that the informational needs of clinicians are not universal but relate to their roles and specific clinical contexts, with understanding oriented less toward technical transparency than toward actionable guidance, relevance, and integration into decision-making. Standpoint theory illuminates differences between stakeholder priorities: clinicians emphasize information on how to use and act on AI outputs within existing workflows, whereas AI experts focus more on providing technical characteristics and performance metrics. Tinkering captures how clinicians experiment with AI systems in practice to develop situated, lay forms of expertise. Situated value highlights that perceptions of an AI-CDSS’s worth are relational, with clinicians valuing novel, context-sensitive insights and developers prioritizing performance metrics. Finally, response-ability reveals how trust and accountability are largely delegated to institutional structures, while clinicians report limited legal, organizational, and structural support to respond meaningfully to uncertainty or errors when using AI-CDSS. Conclusions Reanalyzing the same interview material through an abductive STS approach makes sociotechnical dimensions visible that were not the focus of the original analysis. Rather than treating informational requirements as universal or adoption as primarily a matter of technical performance and communication, the findings show how knowledge, value, and responsibility are constituted through situated professional practices and institutional arrangements. Processes and considerations regarding how clinicians make sense of AI-CDSS are not universal but are shaped by social, cultural, and institutional contexts. This analytical perspective underscores the need for context-sensitive, multistakeholder strategies to support meaningful and responsible AI adoption in clinical practice.",
+   "verified": true,
+   "counted_members": [
+    "simone-mingels",
+    "hannah-piehl",
+    "rianne-fijten"
+   ],
+   "counted": true,
+   "listed_elsewhere": false,
+   "first_seen": "2026-11-16",
+   "journal_impact": 5.5,
+   "journal_h_index": 61
+  },
+  {
+   "id": "W7225888762",
+   "openalex_url": "https://openalex.org/W7225888762",
+   "doi": "https://doi.org/10.1007/s00520-026-11371-w",
+   "title": "Development, validation, and pilot-testing of a comprehensive patient-reported EORTC custom questionnaire for monitoring real-world tyrosine kinase toxicity in chronic myeloid leukemia",
+   "publication_date": "2026-11-12",
+   "year": 2026,
+   "type": "article",
+   "journal": "Supportive Care in Cancer",
+   "source_id": "S50055314",
+   "landing_url": "https://doi.org/10.1007/s00520-026-11371-w",
+   "is_oa": true,
+   "oa_url": "https://link.springer.com/content/pdf/10.1007/s00520-026-11371-w.pdf",
+   "license": "cc-by",
+   "pdf_url": "https://link.springer.com/content/pdf/10.1007/s00520-026-11371-w.pdf",
+   "authors": [
+    "Yolba Smit",
+    "Jacolien Timmerman",
+    "Alexander Currie",
+    "Hatem Soltan",
+    "Inger L. Abma",
+    "Jeroen J. W. M. Janssen",
+    "Eduardus F. M. Posthuma",
+    "Rianne Fijten",
+    "Ewald M. Bronkhorst",
+    "Andre L.A.J. Dekker",
+    "Rosella Hermens",
+    "Nicole M. A. Blijlevens"
+   ],
+   "author_members": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    "rianne-fijten",
+    null,
+    "andre-dekker",
+    null,
+    null
+   ],
+   "author_profiles": {
+    "rianne-fijten": {
+     "openalex_id": "A5081642553",
+     "orcid": "0000-0002-1964-6317",
+     "match": "openalex",
+     "affiliations": [
+      "Maastricht University Medical Centre",
+      "Maastro Clinic",
+      "Department of Radiation Oncology (Maastro), GROW School for Oncology, Maastricht University Medical Centre+, Maastricht, the Netherlands"
+     ]
+    },
+    "andre-dekker": {
+     "openalex_id": "A5013513157",
+     "orcid": "0000-0002-0422-7996",
+     "match": "openalex",
+     "affiliations": [
+      "Maastricht University Medical Centre",
+      "Maastro Clinic",
+      "Department of Radiation Oncology (Maastro), GROW School for Oncology, Maastricht University Medical Centre+, Maastricht, the Netherlands"
+     ]
+    }
+   },
+   "author_positions": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+   ],
+   "author_count": 12,
+   "group_members": [
+    "rianne-fijten",
+    "andre-dekker"
+   ],
+   "member_affiliations": {
+    "rianne-fijten": [
+     "Maastricht University Medical Centre",
+     "Maastro Clinic",
+     "Department of Radiation Oncology (Maastro), GROW School for Oncology, Maastricht University Medical Centre+, Maastricht, the Netherlands"
+    ],
+    "andre-dekker": [
+     "Maastricht University Medical Centre",
+     "Maastro Clinic",
+     "Department of Radiation Oncology (Maastro), GROW School for Oncology, Maastricht University Medical Centre+, Maastricht, the Netherlands"
+    ]
+   },
+   "affiliation_status": {
+    "rianne-fijten": "verified",
+    "andre-dekker": "verified"
+   },
+   "senior_affiliations": [
+    "Radboud University Medical Center",
+    "Department of Haematology, Radboud university medical center, Route 476, Nijmegen, PO Box 9101, 6500HB, The Netherlands"
+   ],
+   "cited_by_count": 0,
+   "abstract": "PURPOSE: In chronic myeloid leukemia (CML), treatment choices between tyrosine kinase inhibitors (TKIs) are guided by efficacy and tolerability, yet no instrument adequately captures tolerability from the patient perspective. As a result, TKI choice may not comprehensively take into account the prevalence and severity of what patients' experience. We therefore developed, validated, and pilot-tested a new custom questionnaire to capture real-world patients' experiences, and explored pilot data. METHODS: A mixed-methods study was conducted, following COREQ and STROBE guidelines. Development started with CML-specific items from existing instruments, followed by semi-structured sessions with purposefully sampled patients, and convenience-sampled professionals, focused on comprehensibility, comprehensiveness, relevance, acceptability, workflow, and graphics. Based on qualitative analyses, items were substituted or added from the EORTC Item library. Psychometric quantitative evaluation assessed filter question validity, redundancy, reliability, measurement error, responsiveness, scale construction, and symptom severity differences in pilot data and meta-analyses. RESULTS: A new EORTC custom questionnaire was developed, covering 50 symptoms. Seven of those symptoms are covered by scales consisting of multiple items, with a Cronbach's alpha ≥ 0.73 for each of those scales. Psychometric properties further showed fair-to-excellent reliability and positive agreement between time points ranging from 45 to 93% in test-retest, while responsiveness was indicated for half of symptoms. Twenty-four generic filter questions are available for computer adaptive testing, an option preferred by 87% of patients. For 23 issues, no existing EORTC item was available; these need to be added later. Pilot data showed that the severity of symptoms, as reported by patients, differed significantly between the three most common TKIs in a third of symptoms. These significant differences ranged from 5 to 30%. The highest difference was for swelling of the eyes or face, which was reported 30% more severe in patients on imatinib, compared to patients on nilotinib, when adjusted for age, gender, years since diagnosis, years on current treatment, and TKI-dosage. We could not adjust for comorbidity or comedication. CONCLUSION: We developed and validated an EORTC custom questionnaire and workflow to monitor 50 CML patient-reported toxicity symptoms in clinical care. Sexuality problems are excluded from pre-existing instruments, yet pilot data revealed these are prevalent and severe from patients' perspective. One-third of evaluated symptoms varied in severity by type of TKI treatment, independent from age, gender, years since diagnosis, years on current treatment, and TKI-dosage. These findings can tentatively inform shared decision-making, when switching TKIs due to intolerability.",
+   "verified": true,
+   "counted_members": [
+    "rianne-fijten",
+    "andre-dekker"
+   ],
+   "counted": true,
+   "listed_elsewhere": false,
+   "first_seen": "2026-11-16",
+   "journal_impact": 3.7,
+   "journal_h_index": 178
+  },
   {
    "id": "W7213458335",
    "openalex_url": "https://openalex.org/W7213458335",
@@ -8324,7 +8585,7 @@
     "University of Duisburg-Essen",
     "Department of Surgery, Maastricht University Medical Center+, Maastricht, the Netherlands; Department of Surgery, Institute of Nutrition and Translational Research in Metabolism (NUTRIM), Maastricht University, Maastricht, the Netherlands; Bridge Institute of Experimental Tumor Therapy (BIT), Division of Solid Tumor Translational Oncology (DKTK) and Department of Medical Oncology, West German Cancer Center, University Hospital Essen, University of Duisburg-Essen, Essen, Germany; German Cancer Consortium (DKTK), partner site Essen, a partnership between German Cancer Research Center (DKFZ) and University Hospital Essen, Essen, Germany; Department of General Visceral, Vascular and Transplantation Surgery, University Medicine Essen, Essen, Germany. Electronic address: steven.oldedamink@maastrichtuniversity.nl"
    ],
-   "cited_by_count": 1,
+   "cited_by_count": 2,
    "abstract": "INTRODUCTION: Most present-day survival-models of patients with cancer do not account for tumor-host interactions. We hypothesized that host phenotypes based on systemic inflammation and body composition are prognostic of overall survival (OS) in patients with pancreatic ductal adenocarcinoma (PDAC). METHODS: We performed a post-hoc analysis of the nationwide PORSCH-trial, including all patients undergoing pancreatoduodenectomy for PDAC. Primary outcome was OS. Body composition analysis was performed using automatic segmentation (Mosamatic™) of preoperative abdominal computed tomography scans. Low muscle mass and myosteatosis were defined using log-rank stratification of sex-standardized Z-values of skeletal muscle index and radiation attenuation, respectively. Patients were clustered in eight host phenotypes based on combinations of adverse host factors: [1] low muscle mass, [2] myosteatosis, [3] systemic inflammation (C-reactive protein >6mg/L). Their association with OS was tested using multivariable-adjusted Cox-proportional hazard-analysis. Distinct combinations of adverse host factors were stratified into low-, intermediate-, and high-risk phenotypes according to k-means clustering based on log hazard-ratio's. RESULTS: 549 patients were included. The high-risk phenotype, characterized by the presence of all adverse host factors, showed lower median OS than intermediate ([1], [2], [1 +2], [1 +3], [2 +3]) and low-risk ([3]; none) phenotypes (13.0 months [95%CI 11.4-19.3] vs. 21.9 months [95%CI 19.3-24.7] vs. 35.2 months [95%CI 29.2-45.3], respectively; p < 0.001). In multivariable analysis, host phenotypes were associated with OS (adjusted [a]HR 1.39 [95%CI 1.08-1.80, p = 0.01; aHR 2.10 [95%CI 1.53-2.88], p < 0.01, for intermediate- and high-risk respectively), independent of tumor stage. DISCUSSION: Host phenotypes based on body composition and systemic inflammation predict OS independent of tumor stage in patients with resected PDAC, underscoring the importance of tumor-host interactions for clinical survival prediction.",
    "verified": true,
    "counted_members": [
@@ -8504,7 +8765,6 @@
       "Tianjin Medical University Cancer Institute and Hospital",
       "Zhejiang Cancer Hospital",
       "Hangzhou Institute of Medicine, Chinese Academy of Sciences",
-      "Department of Radiation Oncology, Key Laboratory of Cancer Prevention and Therapy, Tianjin Medical University Cancer Institute and Hospital, National Clinical Research Center for Cancer, Tianjin's Clinical Research Center for Cancer, Tianjin, China",
       "Department of Radiation Oncology, Zhejiang Cancer Hospital, Hangzhou Institute of Medicine (HIM), Chinese Academy of Sciences, Zhejiang Key Laboratory of Particle Radiotherapy Equipment, Hangzhou, China; Department of Radiation Oncology, Key Laboratory of Cancer Prevention and Therapy, Tianjin Medical University Cancer Institute and Hospital, National Clinical Research Center for Cancer, Tianjin's Clinical Research Center for Cancer, Tianjin, China; Department of Radiation Oncology (Maastro), GROW Research Institute for Oncology and Reproduction, Maastricht University Medical Centre+, Maastricht, The Netherlands. Electronic address: zhen.zhang@maastro.nl"
      ]
     }
@@ -8549,7 +8809,6 @@
      "Tianjin Medical University Cancer Institute and Hospital",
      "Zhejiang Cancer Hospital",
      "Hangzhou Institute of Medicine, Chinese Academy of Sciences",
-     "Department of Radiation Oncology, Key Laboratory of Cancer Prevention and Therapy, Tianjin Medical University Cancer Institute and Hospital, National Clinical Research Center for Cancer, Tianjin's Clinical Research Center for Cancer, Tianjin, China",
      "Department of Radiation Oncology, Zhejiang Cancer Hospital, Hangzhou Institute of Medicine (HIM), Chinese Academy of Sciences, Zhejiang Key Laboratory of Particle Radiotherapy Equipment, Hangzhou, China; Department of Radiation Oncology, Key Laboratory of Cancer Prevention and Therapy, Tianjin Medical University Cancer Institute and Hospital, National Clinical Research Center for Cancer, Tianjin's Clinical Research Center for Cancer, Tianjin, China; Department of Radiation Oncology (Maastro), GROW Research Institute for Oncology and Reproduction, Maastricht University Medical Centre+, Maastricht, The Netherlands. Electronic address: zhen.zhang@maastro.nl"
     ]
    },
@@ -8564,7 +8823,6 @@
     "Tianjin Medical University Cancer Institute and Hospital",
     "Zhejiang Cancer Hospital",
     "Hangzhou Institute of Medicine, Chinese Academy of Sciences",
-    "Department of Radiation Oncology, Key Laboratory of Cancer Prevention and Therapy, Tianjin Medical University Cancer Institute and Hospital, National Clinical Research Center for Cancer, Tianjin's Clinical Research Center for Cancer, Tianjin, China",
     "Department of Radiation Oncology, Zhejiang Cancer Hospital, Hangzhou Institute of Medicine (HIM), Chinese Academy of Sciences, Zhejiang Key Laboratory of Particle Radiotherapy Equipment, Hangzhou, China; Department of Radiation Oncology, Key Laboratory of Cancer Prevention and Therapy, Tianjin Medical University Cancer Institute and Hospital, National Clinical Research Center for Cancer, Tianjin's Clinical Research Center for Cancer, Tianjin, China; Department of Radiation Oncology (Maastro), GROW Research Institute for Oncology and Reproduction, Maastricht University Medical Centre+, Maastricht, The Netherlands. Electronic address: zhen.zhang@maastro.nl"
    ],
    "cited_by_count": 0,
@@ -9740,7 +9998,7 @@
     "Maastricht University Medical Centre",
     "Department of Radiation Oncology (MAASTRO), GROW Research Institute for Oncology and Reproduction, Maastricht University Medical Center+, Maastricht, The Netherlands"
    ],
-   "cited_by_count": 0,
+   "cited_by_count": 1,
    "abstract": "This study applied natural language processing to identify common topics in 12,054 Dutch patient-provider messages in inflammatory bowel disease. Using the BERTopic framework, three embedding models were evaluated with topic diversity, Cv coherence, and topic assignment proportion. A lightweight Dutch-specific embedding model (RobBERT) outperformed two larger multilingual models (MPNet Sentence Transformer and QWEN3-embedding-8B). We identified 120 sentence-level topics covering medical and administrative themes. Results showed that 22% of messages did not require specialist attention, highlighting the potential of neural topic models for automated triage in digital IBD care.",
    "verified": true,
    "counted_members": [
@@ -10102,7 +10360,7 @@
     "Department of Cardiothoracic Surgery, Cardiovascular Research Institute Maastricht (CARIM), Maastricht University , Maastricht, Debyelaan 25, 6229 HX Maastricht ,",
     "Department of Cardiothoracic Surgery, Heart and Vascular Center, Maastricht University Medical Center , Maastricht ,"
    ],
-   "cited_by_count": 0,
+   "cited_by_count": 1,
    "abstract": "Abstract Aims The purpose of this subanalysis was to explore whether or not teleprehabilitation leads to worsening cardiac symptoms in patients accepted for coronary artery bypass grafting (CABG). Methods and results A subgroup of patients accepted for CABG (including off-pump and minimally invasive) who were randomized between teleprehabilitation and standard care in DCC trial were included. Teleprehabilitation patients had access to blended care supported by online modules, including nutritional support, functional exercise training, smoking cessation, inspiratory muscle training, and psychological support. All patients were weekly telemonitored for cardiac symptoms using a customized digital platform. This cohort included 155 patients. Baseline characteristics, including NYHA and CCS class, were balanced, except for shorter preoperative waiting times in weeks (15.0 [9.8–22.2] vs. 12.5 [7.0–16.0]) in the teleprehabilitation group. There was no significant difference in incidence of major adverse cardiac events in the preoperative period. There were 141 patients (77 control; 64 teleprehabilitation) with at least one symptom monitoring entry. A total of 373/1786 (21%) entries indicated worsening of cardiac symptoms. The distribution was right-skewed and did not significantly differ between the two groups. There was no statistically significant difference in time to event between control and teleprehabilitation for any cardiac symptom (P = 0.529), angina (P = 0.167), or dyspnoea (P = 0.334). Conclusion Teleprehabilitation does not lead to worsening cardiac symptoms before CABG. We postulate that teleprehabilitation, which includes low-intensity physical training, can be safely offered to patients undergoing elective CABG.",
    "verified": false,
    "counted_members": [],
@@ -13496,7 +13754,7 @@
     "leroy-volmer": "verified"
    },
    "senior_affiliations": [],
-   "cited_by_count": 4,
+   "cited_by_count": 5,
    "abstract": "Clinical deployment of automated brain MRI analysis faces a fundamental challenge: clinical data is heterogeneous and noisy, and high-quality labels are prohibitively costly to obtain. Self-supervised learning (SSL) can address this by leveraging the vast amounts of unlabeled data produced in clinical workflows to train robust \\textit{foundation models} that adapt out-of-domain with minimal supervision. However, the development of foundation models for brain MRI has been limited by small pretraining datasets and in-domain benchmarking focused on high-quality, research-grade data. To address this gap, we organized the FOMO25 challenge as a satellite event at MICCAI 2025. FOMO25 provided participants with a large pretraining dataset, FOMO60K, and evaluated models on data sourced directly from clinical workflows in few-shot and out-of-domain settings. Tasks covered infarct classification, meningioma segmentation, and brain age regression, and considered both models trained on FOMO60K (method track) and any data (open track). Nineteen foundation models from sixteen teams were evaluated using a standardized containerized pipeline. Results show that (a) self-supervised pretraining improves generalization on clinical data under domain shift, with the strongest models trained \\textit{out-of-domain} surpassing supervised baselines trained \\textit{in-domain}. (b) No single pretraining objective benefits all tasks: MAE favors segmentation, hybrid reconstruction-contrastive objectives favor classification, and (c) strong performance was achieved by small pretrained models, and improvements from scaling model size and training duration did not yield reliable benefits.",
    "verified": true,
    "counted_members": [
@@ -14143,7 +14401,7 @@
     "Maastricht University Medical Centre",
     "Department of Radiation Oncology (Maastro), Research Institute for Oncology and Reproduction (GROW), Maastricht University Medical Centre, Maastricht, Netherlands"
    ],
-   "cited_by_count": 1,
+   "cited_by_count": 2,
    "abstract": "Abstract Artificial intelligence (AI) is often presented as a transformative technology for healthcare, promising to augment clinical decision-making, streamline workflows, and enhance diagnostic precision. Yet its integration into healthcare practice is shaped by the complex and often ambiguous notion of trust . While trust in AI has become a recurring theme across disciplines, there has been little systematic analysis of different conceptualizations of the term. This paper addresses this gap through an interdisciplinary scoping review that examines how trust, trustworthiness, distrust, and mistrust are articulated in literature on AI in healthcare. Drawing on 82 publications (2015–2025) retrieved from six databases (Web of Science, Scopus, PubMed, PhilPapers, SocINDEX, and ACM Digital Library), it maps how trust is defined, measured, or problematized, and identifies the conceptual, epistemological, and disciplinary boundaries that shape these approaches. The analysis puts forward five different conceptualizations: trust as a set of designable principles , trust as an attitude or belief , trust as a binary between cognition/affect or human/technology, trust as a structural mechanism within uncertainty, and trust as a relational process embedded in socio-technical systems. These framings illuminate how trust is treated as an attribute to be engineered, a behavior to be calibrated, or a relation to be cultivated—often removed from clinical practice. Yet, across literature, trust disruptions which manifest as distrust, mistrust, overtrust, and undertrust are undertheorized and are typically framed as obstacles to overcome rather than phenomena warranting analysis in their own right. By introducing these diverging conceptualizations, the paper argues that trust in healthcare AI is less a stable condition than a dynamic negotiation that reveals power relations, uncertainties, and institutional dependencies of AI. Recognizing distrust and mistrust as analytically productive allows for a more reflexive understanding of how trust is enacted, distributed, and contested within healthcare. This review contributes to an emerging body of work that reframes trust not as a prerequisite for technological adoption but as a contested and dynamic concept.",
    "verified": true,
    "counted_members": [
@@ -17104,7 +17362,7 @@
     "Maastricht University",
     "Department of Radiation Oncology (Maastro), GROW Research Institute for Oncology and Reproduction, Maastricht University Medical Centre+, Maastricht University, Paul Henri Spaaklaan 1, Maastricht, 6229 EN, The Netherlands, +31 (0)43 38 81863"
    ],
-   "cited_by_count": 3,
+   "cited_by_count": 4,
    "abstract": "Background: Advancements in artificial intelligence (AI) are transforming health care, particularly through AI-driven clinical decision support systems (AI-CDSS) that aid in predicting disease progression and personalizing treatment. Despite their potential, adoption remains limited due to clinician concerns about algorithm misuse, misinterpretation, and lack of transparency. Objective: This qualitative study explores the informational needs and preferences of clinicians to better understand and appropriately use AI-CDSS in decision-making. In parallel, this study explores AI experts' perspectives on what information should be communicated to enable safe and appropriate use of AI-CDSS. Methods: A qualitative description design study was conducted using semistructured interviews with 16 participants (8 clinicians and 8 AI experts). Discussions focused on experiences with AI, informational needs, and feedback on existing reporting standards, including Model Cards, Model Facts, and the Transparent Reporting of a multivariable prediction model for Individual Prognosis Or Diagnosis-Artificial Intelligence (TRIPOD-AI) checklist. The transcripts were analyzed through codebook thematic analysis. Results: Four key themes were identified: (1) clinicians need clear information on training data, its origin, size, and inclusion and exclusion criteria, to judge model applicability; (2) performance metrics must go beyond the area under the curve (AUC) and be clinically relevant to support informed decisions; (3) limitations and warnings about inappropriate use should be specific and clearly communicated to prevent misuse; and (4) information should be presented in layered, customizable formats within existing clinical software, avoiding unnecessary jargon, and allowing optional deeper explanations. While each of the reviewed reporting standards offered strengths, none were considered sufficient alone. Participants recommended a combined and clinician-centered approach to information delivery. Alignment of reporting standards with clinical workflows and decision thresholds was thought to be crucial to bridge the usability gap. Conclusions: To improve AI-CDSS adoption in clinical practice, reporting standards must be designed for better clinician comprehension and usability. Enhancing transparency, particularly regarding training data and performance, can likely help clinicians assess AI-CDSS more effectively. Information should be delivered in an accessible, layered format, fitting clinical workflows. Co-creation with clinicians throughout AI-CDSS development was a cross-cutting theme, highlighting its importance in ensuring tools are not only technically sound but also practically usable. Future research should explore how to structurally report on performance and validation metrics for clinician understanding and assess the impact of information provision on AI-CDSS adoption.",
    "verified": true,
    "counted_members": [
@@ -18021,76 +18279,6 @@
    "journal_h_index": 10
   },
   {
-   "id": "W7128782423",
-   "openalex_url": "https://openalex.org/W7128782423",
-   "doi": "https://doi.org/10.1016/b978-0-443-13825-6.00360-5",
-   "title": "Adaptations",
-   "publication_date": "2026-01-01",
-   "year": 2026,
-   "type": "reference-entry",
-   "journal": "Elsevier eBooks",
-   "source_id": "S4306463230",
-   "landing_url": "https://doi.org/10.1016/b978-0-443-13825-6.00360-5",
-   "is_oa": false,
-   "oa_url": null,
-   "license": null,
-   "pdf_url": null,
-   "authors": [
-    "Willem J.M. Gerver",
-    "Bas Penders",
-    "Ralph Brecheisen"
-   ],
-   "author_members": [
-    null,
-    null,
-    "ralph-brecheisen"
-   ],
-   "author_profiles": {
-    "ralph-brecheisen": {
-     "openalex_id": "A5077645218",
-     "orcid": "0000-0001-9937-2602",
-     "match": "openalex",
-     "affiliations": [
-      "Maastricht University",
-      "Maastricht University, Maastricht, the Netherlands"
-     ]
-    }
-   },
-   "author_positions": [
-    1,
-    2,
-    3
-   ],
-   "author_count": 3,
-   "group_members": [
-    "ralph-brecheisen"
-   ],
-   "member_affiliations": {
-    "ralph-brecheisen": [
-     "Maastricht University",
-     "Maastricht University, Maastricht, the Netherlands"
-    ]
-   },
-   "affiliation_status": {
-    "ralph-brecheisen": "unspecific"
-   },
-   "senior_affiliations": [
-    "Maastricht University",
-    "Maastricht University, Maastricht, the Netherlands"
-   ],
-   "cited_by_count": 0,
-   "abstract": null,
-   "verified": false,
-   "counted_members": [
-    "ralph-brecheisen"
-   ],
-   "counted": true,
-   "listed_elsewhere": false,
-   "first_seen": "2026-10-21",
-   "journal_impact": null,
-   "journal_h_index": null
-  },
-  {
    "id": "W7125369829",
    "openalex_url": "https://openalex.org/W7125369829",
    "doi": "https://doi.org/10.1136/bmjopen-2025-112705",
@@ -18554,7 +18742,7 @@
    "pdf_url": "https://www.advancesradonc.org/article/S2452-1094(25)00275-1/pdf",
    "authors": [
     "Luca M. Heising",
-    "Thijs Ackermans",
+    "Thijs Maria Anne Ackermans",
     "Liesbeth Jorinne Boersma",
     "Carol Xiaojuan Ou",
     "Geert Bosmans",
@@ -18574,9 +18762,9 @@
    ],
    "author_profiles": {
     "thijs-ackermans": {
-     "openalex_id": null,
-     "orcid": null,
-     "match": "name",
+     "openalex_id": "A5087194448",
+     "orcid": "0000-0002-6977-1001",
+     "match": "openalex",
      "affiliations": [
       "Maastricht University Medical Centre",
       "Maastro Clinic",
@@ -19666,7 +19854,7 @@
     "Maastro Clinic",
     "Department of Radiation Oncology (Maastro), GROW Institute for Oncology and Reproduction, Maastricht University Medical Centre+, Maastricht, The Netherlands"
    ],
-   "cited_by_count": 1,
+   "cited_by_count": 2,
    "abstract": "Childhood vaccination is a cornerstone of public health, significantly reducing morbidity and mortality from vaccine-preventable diseases. However, immunization coverage remains suboptimal in many low-resource settings, including Ethiopia. Mobile health (mHealth) interventions, such as SMS reminders, have shown promise in improving healthcare service utilization, yet their effectiveness in enhancing childhood vaccination uptake remains underexplored in Ethiopia. This study assesses the impact of an mHealth intervention on childhood vaccination coverage and associated factors among mothers in the Gamo and Gofa zones of South Ethiopia. A cluster randomized controlled trial (cRCT) was conducted among 680 pregnant mothers recruited from 20 randomly selected health institutions in the Gamo and Gofa zones. Participants were assigned to either the intervention group (n = 340), which received SMS reminders and health education messages, or the control group (n = 340), which received standard care. Eligible participants were pregnant women (≥ 18 years old) with a gestational age of 16-28 weeks, literate, and able to use mobile phones. The primary outcome was childhood vaccination completion, while secondary outcomes included timely Bacillus Calmette-Guérin (BCG) vaccination at birth. Data were collected through structured interviews and analyzed using multilevel logistic regression and generalized linear mixed models. The intervention group demonstrated a significantly higher childhood vaccination completion rate (AOR = 4.80, 95% CI: 1.75-13.01, p < 0.01). Timely BCG vaccination at birth was also significantly improved in the intervention group (Log Odds = 2.19, 95% CI: 0.69-3.70, p < 0.01). Sociodemographic factors, such as maternal age, colostrum feeding, provider, and family planning, were significantly associated with vaccination uptake. The study suggests that mHealth interventions, such as SMS health information and reminders, might significantly enhance childhood vaccination coverage. Implementing mobile-based strategies could help bridge immunization gaps and support national vaccination programs. Future studies should explore the scalability of mHealth interventions in diverse settings.Clinical Trial Registration number: PACTR202211547107725; Date 22/11/2022.",
    "verified": true,
    "counted_members": [
@@ -22389,7 +22577,7 @@
     "Erasmus MC",
     "Biomedical Imaging Group Rotterdam, Department of Radiology & Nuclear Medicine, Erasmus MC - University Medical Center Rotterdam, Rotterdam, The Netherlands"
    ],
-   "cited_by_count": 3,
+   "cited_by_count": 4,
    "abstract": "While biological age scores have been shown to characterize aging by estimating chronological age based on physiological biomarkers, interactions between different age scores are largely unknown. To study this, large-scale multi-modal data are crucial. However, such data are scarce as population-based cohorts are generally restricted in sharing their data. Here, we employ federated learning to study the relationship between the two types of biological age scores: BrainAge based on brain MRI and MetaboAge based on metabolites. Using three large population-based cohorts, we trained a federated deep learning model to estimate BrainAge and compared its performance to models trained in a single cohort. The federated BrainAge model yielded significantly lower error for age prediction across the cohorts than locally trained models. Harmonizing the age interval between cohorts further improved BrainAge accuracy. Subsequently, we compared BrainAge and MetaboAge by performing association analysis and survival analysis for dementia and mortality prediction to further characterize both scores. The association analysis showed a weak association between BrainAge and MetaboAge, while the survival analysis indicated complementary predictive values for the mortality risk of the two scores. Federated learning has been shown to be a valuable technique for enabling the use of research cohorts that are restricted in data sharing. We conclude that BrainAge and MetaboAge act synergetically for the prediction of time to all-cause mortality, and both aging scores capture different aspects of the aging process. Supplementary Information: The online version contains supplementary material available at 10.1007/s41666-025-00208-6.",
    "verified": true,
    "counted_members": [
@@ -27131,7 +27319,7 @@
     "Radboud University Medical Center",
     "Department of Hematology Radboud University Medical Center  Nijmegen the Netherlands"
    ],
-   "cited_by_count": 2,
+   "cited_by_count": 3,
    "abstract": "BACKGROUND: Toxicity monitoring should be modernized to include real-world patient-reported data. However, little is known about how stakeholders view the incorporation of real-world patient-reported toxicity symptoms into guidelines. This gap hinders the development of a sustained learning healthcare environment and limits the incorporation of this data into daily care. METHODS: This qualitative study, reported according to COREQ, involved interviews with 29 plus 10 chronic myeloid leukemia (CML) patients and 18 CML clinicians, including eight hematologists/guideline developers. The interviews were audio-recorded, transcribed, and independently coded in Atlas.ti. A framework, adapted from systematically sourced literature, was used for coding. Codes were assessed as either beneficial or limiting. An expert panel of all CML guideline developers completed and prioritized the identified knowledge gaps through a RAND-modified Delphi procedure. RESULTS: Thirty-one benefits and limitations of systematically monitoring patient-reported toxicity symptoms in the real world were identified. Compared to an existing framework, novel benefits centered around the use of aggregated data: Participants viewed real-world patient-reported toxicity symptoms as a way to systematically include patients' toxicity symptoms in the guidelines; personalize guideline advice; and fill knowledge gaps. The expert panel agreed on 14 knowledge gaps in chronic myeloid leukemia care that could be addressed through such data. Novel limitations focused on the suitability, acceptance, and applicability of toxicity symptom monitoring in routine clinical practice. Participants felt that this monitoring does not establish a causal link between medication and symptoms, and it has no added value over open conversation. CONCLUSIONS: The benefits and limitations of adopting patient-reported real-world toxicity symptom monitoring need to be leveraged and addressed to ensure maximum value and uptake. Guideline developers viewed aggregated data as beneficial. The identified knowledge gaps provide concrete points of action for CML guideline development.",
    "verified": true,
    "counted_members": [
@@ -27411,7 +27599,7 @@
    "senior_affiliations": [
     "Ona, Burlington, VT, United States"
    ],
-   "cited_by_count": 26,
+   "cited_by_count": 27,
    "abstract": "Following the proposal by Tsafnat et al (2024) to converge on three open health data standards, this viewpoint offers a critical reflection on their proposed alignment of openEHR, Fast Health Interoperability Resources (FHIR), and Observational Medical Outcomes Partnership (OMOP) as default data standards for clinical care and administration, data exchange, and longitudinal analysis, respectively. We argue that open standards are a necessary but not sufficient condition to achieve health data interoperability. The ecosystem of open-source software needs to be considered when choosing an appropriate standard for a given context. We discuss two specific contexts, namely standardization of (1) health data for federated learning, and (2) health data sharing in low- and middle-income countries. Specific design principles, practical considerations, and implementation choices for these two contexts are described, based on ongoing work in both areas. In the case of federated learning, we observe convergence toward OMOP and FHIR, where the two standards can effectively be used side-by-side given the availability of mediators between the two. In the case of health information exchanges in low and middle-income countries, we see a strong convergence toward FHIR as the primary standard. We propose practical guidelines for context-specific adaptation of open health data standards.",
    "verified": true,
    "counted_members": [
@@ -27943,7 +28131,7 @@
     "Zhejiang Key Laboratory of Prevention Diagnosis and Therapy for Gastrointestinal Cancer, Hangzhou, Zhejiang, China",
     "Zhejiang Cancer Hospital,Hangzhou Institute of Medicine (HIM), Chinese Academy of Sciences, Hangzhou, Zhejiang, China jiyl@zjcc.org.cn jiangyh@zjcc.org.cn"
    ],
-   "cited_by_count": 67,
+   "cited_by_count": 68,
    "abstract": "BACKGROUND: Accurate prediction of pathologic complete response (pCR) following neoadjuvant immunotherapy combined with chemotherapy (nICT) is crucial for tailoring patient care in esophageal squamous cell carcinoma (ESCC). This study aimed to develop and validate a deep learning model using a novel voxel-level radiomics approach to predict pCR based on preoperative CT images. METHODS: In this multicenter, retrospective study, 741 patients with ESCC who underwent nICT followed by radical esophagectomy were enrolled from three institutions. Patients from one center were divided into a training set (469 patients) and an internal validation set (118 patients) while the data from the other two centers was used as external validation sets (120 and 34 patients, respectively). The deep learning model, Vision-Mamba, integrated voxel-level radiomics feature maps and CT images for pCR prediction. Additionally, other commonly used deep learning models, including 3D-ResNet and Vision Transformer, as well as traditional radiomics methods, were developed for comparison. Model performance was evaluated using accuracy, area under the curve (AUC), sensitivity, specificity, and prognostic stratification capabilities. The SHapley Additive exPlanations analysis was employed to interpret the model's predictions. RESULTS: The Vision-Mamba model demonstrated robust predictive performance in the training set (accuracy: 0.89, AUC: 0.91, sensitivity: 0.82, specificity: 0.92) and validation sets (accuracy: 0.83-0.91, AUC: 0.83-0.92, sensitivity: 0.73-0.94, specificity: 0.84-1.0). The model outperformed other deep learning models and traditional radiomics methods. The model's ability to stratify patients into high and low-risk groups was validated, showing superior prognostic stratification compared with traditional methods. SHAP provided quantitative and visual model interpretation. CONCLUSIONS: We present a voxel-level radiomics-based deep learning model to predict pCR to neoadjuvant immunotherapy combined with chemotherapy based on pretreatment diagnostic CT images with high accuracy and robustness. This model could provide a promising tool for individualized management of patients with ESCC.",
    "verified": true,
    "counted_members": [
@@ -29582,7 +29770,7 @@
     },
     "louise-de-almeida-ferreira-fonseca": {
      "openalex_id": "A5027238355",
-     "orcid": null,
+     "orcid": "0000-0001-8479-161X",
      "match": "openalex",
      "affiliations": [
       "KU Leuven",
@@ -34295,7 +34483,7 @@
     "Department of Ultrasound, Beijing Friendship Hospital, Capital Medical University, Beijing, China. 15116988424@163.com",
     "Department of Ultrasound, Beijing Friendship Hospital, Capital Medical University, Beijing, China"
    ],
-   "cited_by_count": 16,
+   "cited_by_count": 17,
    "abstract": "PURPOSE: To build an Mult-Task Learning (MTL) based Artificial Intelligence(AI) model that can simultaneously predict clinical stage, histology, grade and LNM for cervical cancer before surgery. METHODS: This retrospective and prospective cohort study was conducted from January 2001 to March 2014 for the training set and from January 2018 to November 2021 for the validation set at Beijing Chaoyang Hospital, Capital Medical University. Preoperative clinical information of cervical cancer patients was used. An Artificial Neural Network (ANN) algorithm was used to build the MTL-based AI model. Accuracy and weighted F1 scores were calculated as evaluation indicators. The performance of the MTL model was compared with Single-Task Learning (STL) models. Additionally, a Turing test was performed by 20 gynecologists and compared with this AI model. RESULTS: A total of 223 cervical cancer cases were retrospectively enrolled into the training set, and 58 cases were prospectively collected as independent validation set. The accuracy of this cervical cancer AI model constructed with ANN algorithm in predicting stage, histology, grade and LNM were 75%, 95%, 86% and 76%, respectively. And the corresponding weighted F1 score were 70%, 94%, 86%, and 76%, respectively. The average time consumption of AI simultaneously predicting stage, histology, grade and LNM for cervical cancer was 0.01s (95%CI: 0.01-0.01) per 20 patients. The mean time consumption doctor and doctor with AI were 581.1s (95%CI: 300.0-900.0) per 20 patients and 534.8s (95%CI: 255.0-720.0) per 20 patients, respectively. Except for LNM, both the accuracy and F-score of the AI model were significantly better than STL AI, doctors and AI-assisted doctors in predicting stage, grade and histology. (P < 0.05) The time consumption of AI was significantly less than that of doctors' prediction and AI-assisted doctors' results. (P < 0.05 CONCLUSION: A multi-task learning AI model can simultaneously predict stage, histology, grade, and LNM for cervical cancer preoperatively with minimal time consumption. To improve the conditions and use of the beneficiaries, the model should be integrated into routine clinical workflows, offering a decision-support tool for gynecologists. Future studies should focus on refining the model for broader clinical applications, increasing the diversity of the training datasets, and enhancing its adaptability to various clinical settings. Additionally, continuous feedback from clinical practice should be incorporated to ensure the model's accuracy and reliability, ultimately improving personalized patient care and treatment outcomes.",
    "verified": true,
    "counted_members": [
@@ -34526,7 +34714,7 @@
     "Greater Poland Cancer Center",
     "Department of Medical Physics, Greater Poland Cancer Centre, Poznan, Poland"
    ],
-   "cited_by_count": 4,
+   "cited_by_count": 5,
    "abstract": "Background: The purpose was to analyse the interrelations between planning and complexity metrics and gamma passing rates (GPRs) obtained from VMAT treatments and build the forecasting models for qualitative prediction (QD) of GPRs results. Materials and method: 802 treatment arcs from the plans prepared for the head and neck, thorax, abdomen, and pelvic cancers were analysed. The plans were verified by portal dosimetry and analysed twice using the gamma method with 3%|2mm and 2%|2mm acceptance criteria. The tolerance limit of GPR was 95%. Red, yellow, and green QDs were established for GPR examination. The interrelations were examined, as well as the analysis of effective differentiation of QD. Three models for QD forecasting based on discriminant analysis (DA), random decision forest (RDF) methods, and the hybrid model (HM) were built and evaluated. Results: Most of the interrelations were small or moderate. The exception is correlations of the join function with the average number of monitor units per control point (R = 0.893) and the beam aperture with planning target volume (R = 0.897). While many metrics allow for the effective separation of the QDs from each other, the study shows that predicting the values of the QD is possible only through multi-component forecasting models, of which the HM is the most accurate (0.894). Conclusion: Of the three models explored in this study, the HM, which uses DA methods to predict red QD and RDF methods to predict green and yellow QDs, is the most promising one.",
    "verified": true,
    "counted_members": [
@@ -35384,7 +35572,7 @@
     "Department of Radiation Oncology (Maastro), GROW School for Oncology and Reproduction, Maastricht University Medical Centre+, Maastricht, Netherlands",
     "Department of Radiation Oncology (Maastro), GROW School for Oncology and Reproduction, Maastricht University Medical Centre+, Maastricht, the Netherlands"
    ],
-   "cited_by_count": 37,
+   "cited_by_count": 38,
    "abstract": "BACKGROUND: Establishing collaborations between cohort studies has been fundamental for progress in health research. However, such collaborations are hampered by heterogeneous data representations across cohorts and legal constraints to data sharing. The first arises from a lack of consensus in standards of data collection and representation across cohort studies and is usually tackled by applying data harmonization processes. The second is increasingly important due to raised awareness for privacy protection and stricter regulations, such as the GDPR. Federated learning has emerged as a privacy-preserving alternative to transferring data between institutions through analyzing data in a decentralized manner. METHODS: In this study, we set up a federated learning infrastructure for a consortium of nine Dutch cohorts with appropriate data available to the etiology of dementia, including an extract, transform, and load (ETL) pipeline for data harmonization. Additionally, we assessed the challenges of transforming and standardizing cohort data using the Observational Medical Outcomes Partnership (OMOP) common data model (CDM) and evaluated our tool in one of the cohorts employing federated algorithms. RESULTS: We successfully applied our ETL tool and observed a complete coverage of the cohorts' data by the OMOP CDM. The OMOP CDM facilitated the data representation and standardization, but we identified limitations for cohort-specific data fields and in the scope of the vocabularies available. Specific challenges arise in a multi-cohort federated collaboration due to technical constraints in local environments, data heterogeneity, and lack of direct access to the data. CONCLUSION: In this article, we describe the solutions to these challenges and limitations encountered in our study. Our study shows the potential of federated learning as a privacy-preserving solution for multi-cohort studies that enhance reproducibility and reuse of both data and analyses.",
    "verified": true,
    "counted_members": [
@@ -36419,7 +36607,7 @@
     "rianne-fijten": "unknown"
    },
    "senior_affiliations": [],
-   "cited_by_count": 0,
+   "cited_by_count": 1,
    "abstract": null,
    "verified": false,
    "counted_members": [],
@@ -38277,7 +38465,7 @@
     "Ingham Institute",
     "South Western Sydney Clinical Campus, School of Clinical Medicine, UNSW, Sydney, New South Wales, Australia; Ingham Institute for Applied Medical Research, Liverpool, New South Wales, Australia; South Western Sydney Cancer Services, NSW Health, Sydney, New South Wales, Australia; Institute of Medical Physics, School of Physics, University of Sydney, Sydney, New South Wales, Australia"
    ],
-   "cited_by_count": 17,
+   "cited_by_count": 19,
    "abstract": "AIMS: The objective of this study was to develop a two-year overall survival model for inoperable stage I-III non-small cell lung cancer (NSCLC) patients using routine radiation oncology data over a federated (distributed) learning network and evaluate the potential of decision support for curative versus palliative radiotherapy. METHODS: A federated infrastructure of data extraction, de-identification, standardisation, image analysis, and modelling was installed for seven clinics to obtain clinical and imaging features and survival information for patients treated in 2011-2019. A logistic regression model was trained for the 2011-2016 curative patient cohort and validated for the 2017-2019 cohort. Features were selected with univariate and model-based analysis and optimised using bootstrapping. System performance was assessed by the receiver operating characteristic (ROC) and corresponding area under curve (AUC), C-index, calibration metrics and Kaplan-Meier survival curves, with risk groups defined by model probability quartiles. Decision support was evaluated using a case-control analysis using propensity matching between treatment groups. RESULTS: 1655 patient datasets were included. The overall model AUC was 0.68. Fifty-eight percent of patients treated with palliative radiotherapy had a low-to-moderate risk prediction according to the model, with survival times not significantly different (p = 0.87 and 0.061) from patients treated with curative radiotherapy classified as high-risk by the model. When survival was simulated by risk group and model-indicated treatment, there was an estimated 11% increase in survival rate at two years (p < 0.01). CONCLUSION: Federated learning over multiple institution data can be used to develop and validate decision support systems for lung cancer while quantifying the potential impact of their use in practice. This paves the way for personalised medicine, where decisions can be based more closely on individual patient details from routine care.",
    "verified": true,
    "counted_members": [
@@ -40897,7 +41085,7 @@
     "Maastricht University",
     "Clinical Data Science, Faculty of Health Medicine and Life Sciences, Maastricht University , Maastricht 6229 EN, The Netherlands"
    ],
-   "cited_by_count": 13,
+   "cited_by_count": 14,
    "abstract": "Objectives: Federated learning (FL) is a group of methodologies where statistical modelling can be performed without exchanging identifiable patient data between cooperating institutions. To realize its potential for AI development on clinical data, a number of bottlenecks need to be addressed. One of these is making data Findable-Accessible-Interoperable-Reusable (FAIR). The primary aim of this work is to show that tools making data FAIR allow consortia to collaborate on privacy-aware data exploration, data visualization, and training of models on each other's original data. Methods: We propose a \"Schema-on-Read\" FAIR-ification method that adapts for different (re)analyses without needing to change the underlying original data. The procedure involves (1) decoupling the contents of the data from its schema and database structure, (2) annotation with semantic ontologies as a metadata layer, and (3) readout using semantic queries. Open-source tools are given as Docker containers to help local investigators prepare their data on-premises. Results: We created a federated privacy-preserving visualization dashboard for case mix exploration of 5 distributed datasets with no common schema at the point of origin. We demonstrated robust and flexible prognostication model development and validation, linking together different data sources-clinical risk factors and radiomics. Conclusions: Our procedure leads to successful (re)use of data in FL-based consortia without the need to impose a common schema at every point of origin of data. Advances in knowledge: This work supports the adoption of FL within the healthcare AI community by sharing means to make data more FAIR.",
    "verified": true,
    "counted_members": [
@@ -41633,7 +41821,7 @@
     "Apollo Hospitals, Hyderabad, Telangana, India drsujoy_k@apollohospitals.com",
     "Apollo Hospitals, Hyderabad, Telangana, India"
    ],
-   "cited_by_count": 20,
+   "cited_by_count": 21,
    "abstract": "OBJECTIVE: Cardiovascular diseases (CVD) are one of the most prevalent diseases in India amounting for nearly 30% of total deaths. A dearth of research on CVD risk scores in Indian population, limited performance of conventional risk scores and inability to reproduce the initial accuracies in randomised clinical trials has led to this study on large-scale patient data. The objective is to develop an Artificial Intelligence-based Risk Score (AICVD) to predict CVD event (eg, acute myocardial infarction/acute coronary syndrome) in the next 10 years and compare the model with the Framingham Heart Risk Score (FHRS) and QRisk3. METHODS: Our study included 31 599 participants aged 18-91 years from 2009 to 2018 in six Apollo Hospitals in India. A multistep risk factors selection process using Spearman correlation coefficient and propensity score matching yielded 21 risk factors. A deep learning hazards model was built on risk factors to predict event occurrence (classification) and time to event (hazards model) using multilayered neural network. Further, the model was validated with independent retrospective cohorts of participants from India and the Netherlands and compared with FHRS and QRisk3. RESULTS: The deep learning hazards model had a good performance (area under the curve (AUC) 0.853). Validation and comparative results showed AUCs between 0.84 and 0.92 with better positive likelihood ratio (AICVD -6.16 to FHRS -2.24 and QRisk3 -1.16) and accuracy (AICVD -80.15% to FHRS 59.71% and QRisk3 51.57%). In the Netherlands cohort, AICVD also outperformed the Framingham Heart Risk Model (AUC -0.737 vs 0.707). CONCLUSIONS: This study concludes that the novel AI-based CVD Risk Score has a higher predictive performance for cardiac events than conventional risk scores in Indian population. TRIAL REGISTRATION NUMBER: CTRI/2019/07/020471.",
    "verified": true,
    "counted_members": [
