@@ -789,6 +789,22 @@ input.se-field {
   line-height: 1.7;
   margin: 10px 0 0;
 }
+.se-review {
+  margin-top: 14px;
+  padding-top: 14px;
+  border-top: 1px solid var(--line);
+}
+.se-review .button {
+  min-height: 36px;
+  padding: 8px 12px;
+  font-size: 11px;
+}
+.se-review p {
+  color: var(--muted);
+  font-size: 11px;
+  line-height: 1.7;
+  margin: 8px 0 0;
+}
 .se-workspace[data-editor="card"] .li-head,
 .se-workspace[data-editor="card"] .li-body,
 .se-workspace[data-editor="card"] .se-figure {

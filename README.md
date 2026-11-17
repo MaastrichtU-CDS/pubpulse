@@ -235,6 +235,10 @@ making a LinkedIn post for a paper, in three steps, without connecting an accoun
 3. **Edit and export**: separate *Post text* and *Card image* tabs keep the controls compact, alongside a live preview.
    Copy the post and first comment, then copy or download the 1200 × 627 PNG card. A short version for other channels
    is available under the post editor. Optional photos stay in the current browser tab.
+4. **Co-author review**: *Copy review link* (under the preview) gives a link like `social.html?id=W…#draft=…` that opens
+   the paper with this post, first comment, short version and card text filled in. Co-authors can edit and send back
+   their own link. The draft is deflate-compressed into the `#fragment`, which browsers never send to the server, so
+   nothing is stored and no account is needed; anyone holding the link can read the draft. Photos are not included.
 
 Studio edits are not stored. Papers with a pipeline draft start from it. Publication rows link to the studio.
 Preprints and datasets are not posted.
