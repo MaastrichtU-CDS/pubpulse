@@ -29,7 +29,7 @@ or weaknesses: that is for the paper itself.
 Write four things from the paper you are given:
 
 ### HEADLINE
-The main point as a catchy, plain-language line for an image card: at most 60 characters, no jargon, no question,
+The main point as a catchy, plain-language line for the newsletter (the image card shows the paper's own title): at most 60 characters, no jargon, no question,
 no clickbait, no exclamation mark. Example style: "Privacy protection that costs nothing in accuracy".
 The headline restates the abstract's OWN main conclusion in plainer words, and nothing more. Never add a claim the
 abstract does not make: no effect on patients or care, no adoption or routine use, no "now", no cause and effect,
@@ -37,7 +37,9 @@ unless the abstract says exactly that. For a method, a tool, a proof of concept 
 shown or made possible, not that it changed practice. The authors must be able to read the headline and agree.
 
 ### POST
-A LinkedIn post of 110 to 170 words, with NO links in it (links go in the first comment):
+A LinkedIn post of 110 to 170 words, with NO links in it (links go in the first comment). It is published under a
+first paragraph "New publication: <paper title>" that is added automatically: do not write that line, and do not
+repeat or rephrase the title anywhere in the post.
 - line 1: the main finding as an inviting, plain sentence (no question hooks, no "excited"), as faithful as the headline
 - line 2: the group authors by name, e.g. "Work by A, B and C with colleagues from X" (the poster will tag them)
 - then: what was done, in one or two sentences (data, size, method), in everyday words
@@ -70,21 +72,21 @@ emojis, no "excited to share", no limitations. Use only facts from the abstract:
 "novel" or "breakthrough" unless the abstract says so; never make a claim stronger than the abstract does ("can"
 stays "can", a proof of concept stays a proof of concept). Mark anything you are unsure about with [check].
 
-Write four parts:
-1. headline: the abstract's own main conclusion in plain words, at most 60 characters, for an image card. Add nothing
-   the abstract does not say: no effect on patients or care, no adoption, no "now", no cause and effect. No question,
-   no exclamation mark. The authors must be able to agree with it.
-2. post: 110 to 170 words, no links, in short paragraphs: the main finding in one plain sentence; "Work by <group
+Write three parts:
+1. post: 110 to 170 words, no links, in short paragraphs. The post is published under the line "New publication:
+   <paper title>", which is added automatically: do not write it, and do not repeat or rephrase the title. Then: the
+   main finding in one plain sentence (the abstract's own conclusion; nothing about effects on patients or care,
+   adoption, "now" or cause and effect unless the abstract says so); "Work by <group
    authors> with colleagues."; what was done (data, size, method) in everyday words; why it matters, in the
    abstract's own terms; "The full paper is linked in the comments."; "Published in <journal>."; and last, four
    hashtags: #ClinicalDataScience #Maastro #MaastrichtUniversity and one topical tag.
-3. comment: the paper title, then "Paper: <DOI link>", then "Full text: <open-access link>" if there is one, each on
+2. comment: the paper title, then "Paper: <DOI link>", then "Full text: <open-access link>" if there is one, each on
    its own line.
-4. short: two sentences, at most 280 characters, ending with the DOI link.
+3. short: two sentences, at most 280 characters, ending with the DOI link.
 
 Reply with one JSON code block and nothing else:
 ```json
-{"headline": "...", "post": "...", "comment": "...", "short": "..."}
+{"post": "...", "comment": "...", "short": "..."}
 ```"""
 
 
@@ -120,6 +122,18 @@ def parse_output(text: str) -> dict:
             "short": (short.group(1) if short else "").strip()}
 
 
+NEW_PUBLICATION = "New publication: "
+
+
+def with_title(post: str, title: str | None) -> str:
+    """The post opens with "New publication: <original title>" (LinkedIn shows the first paragraph in bold). Added in
+    code, never by the model, so the title is never rewritten; a post that already has the line is left alone."""
+    post = (post or "").strip()
+    if not title or post.lower().startswith(NEW_PUBLICATION.strip().lower()):
+        return post
+    return f"{NEW_PUBLICATION}{title.strip()}\n\n{post}"
+
+
 def draft_one(client, w: dict, names: dict[str, str], model: str) -> dict:
     import anthropic  # local import: optional dependency outside the workflow
 
@@ -139,6 +153,7 @@ def draft_one(client, w: dict, names: dict[str, str], model: str) -> dict:
         raise RuntimeError("the model declined this paper")
     text = "".join(b.text for b in response.content if b.type == "text")
     out = parse_output(text)
+    out["post"] = with_title(out["post"], w["title"])
     out.update({
         "id": w["id"], "title": w["title"], "doi": w.get("doi"), "model": response.model,
         "generated_at": datetime.now(timezone.utc).isoformat(timespec="seconds"),

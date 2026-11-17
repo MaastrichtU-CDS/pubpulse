@@ -9,7 +9,6 @@ const context = { window: {}, TextEncoder, TextDecoder, Blob, Response, Compress
 vm.runInNewContext(fs.readFileSync(path.join(__dirname, "../site/social-editor.js"), "utf8"), context);
 const { parseAnswer, buildPrompt } = context.window.PubpulseSocial;
 const answer = {
-  headline: "A useful research finding",
   post: 'A finding with "quoted text", {braces}, and a backslash \\.\n\nA second paragraph.',
   comment: "Paper title\nPaper: https://doi.org/10.1000/example",
   short: "Two short sentences. https://doi.org/10.1000/example",
@@ -36,7 +35,7 @@ test("repairs literal newlines inside strings while preserving pretty-printed JS
 test("rejects incomplete or incorrectly typed drafts instead of mixing them with previous content", () => {
   for (const invalid of [
     { post: "Only a post" },
-    { ...answer, headline: 42 },
+    { ...answer, post: 42 },
     { ...answer, comment: null },
     { ...answer, short: "   " },
     [answer],
@@ -45,13 +44,13 @@ test("rejects incomplete or incorrectly typed drafts instead of mixing them with
 });
 
 test("supports older section replies and preserves Unicode", () => {
-  const unicode = { ...answer, headline: "Maastricht’s research – déjà vu" };
+  const unicode = { ...answer, comment: "Maastricht’s research – déjà vu" };
   const sections = Object.entries(unicode).map(([key, value]) => `### ${key.toUpperCase()}\n${value}`).join("\n\n");
   assert.deepEqual(comparable(parseAnswer(sections)), unicode);
 });
 
 test("chooses the final complete reply when chat text includes an earlier example", () => {
-  const actual = { ...answer, headline: "The actual finding" };
+  const actual = { ...answer, post: "The actual finding" };
   const response = "Example:\n" + JSON.stringify(answer) + "\nYour draft:\n" + JSON.stringify(actual);
   assert.deepEqual(comparable(parseAnswer(response)), actual);
 });
@@ -69,13 +68,17 @@ test("copied prompts are the instructions once, followed by the current paper", 
 test("fallback prompts ask for the four-key JSON code block when shared instructions are absent", () => {
   const prompt = buildPrompt({ title: "Paper", authors: [], group_authors: [], link: "https://doi.org/10.1000/paper" });
   const block = prompt.match(/```json\n(.*)\n```/)[1];
-  assert.deepEqual(Object.keys(JSON.parse(block)), ["headline", "post", "comment", "short"]);
+  assert.deepEqual(Object.keys(JSON.parse(block)), ["post", "comment", "short"]);
   assert(prompt.includes("paste the abstract here"));
 });
 
 test("imports a reply given as a JSON code block with literal line breaks", () => {
-  const reply = '```json\n{"headline": "H", "post": "First.\n\nSecond.", "comment": "C", "short": "S"}\n```';
-  assert.deepEqual(comparable(parseAnswer(reply)), { headline: "H", post: "First.\n\nSecond.", comment: "C", short: "S" });
+  const reply = '```json\n{"post": "First.\n\nSecond.", "comment": "C", "short": "S"}\n```';
+  assert.deepEqual(comparable(parseAnswer(reply)), { post: "First.\n\nSecond.", comment: "C", short: "S" });
+});
+
+test("older replies with a headline still import; the headline is ignored (the card shows the original title)", () => {
+  assert.deepEqual(comparable(parseAnswer(JSON.stringify({ headline: "Catchy", ...answer }))), answer);
 });
 
 test("review links carry the whole draft, compressed, and survive the round trip", async () => {

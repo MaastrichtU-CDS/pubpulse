@@ -229,9 +229,10 @@ making a LinkedIn post for a paper, in three steps, without connecting an accoun
 1. **Choose the paper**: use its LinkedIn post link in the publication overview, or paste a DOI. Papers outside pubpulse are looked up live in OpenAlex,
    and CDS authors are recognised by their OpenAlex id or ORCID.
 2. **Create a draft**: *Copy prompt* copies the writing guidelines and selected paper, with a JSON-only output contract
-   for `headline`, `post`, `comment` and `short`. Paste it into ChatGPT or another AI chat, copy the complete reply, then
+   for `post`, `comment` and `short`. Paste it into ChatGPT or another AI chat, copy the complete reply, then
    choose *Paste & import*. If clipboard access is unavailable, open *Or paste the JSON manually* and paste it there.
-   The importer accepts raw or fenced JSON and validates all four fields before replacing the draft.
+   The importer accepts raw or fenced JSON and validates all three fields before replacing the draft (a `headline` in
+   an older reply is ignored). The studio puts "New publication: <original title>" above the imported post.
 3. **Edit and export**: separate *Post text* and *Card image* tabs keep the controls compact, alongside a live preview.
    Copy the post and first comment, then copy or download the 1200 × 627 PNG card. A short version for other channels
    is available under the post editor. Optional photos stay in the current browser tab.
@@ -246,14 +247,18 @@ Preprints and datasets are not posted.
 **Writing rules** (`SYSTEM_PROMPT` in pubpulse/social.py, shared by the pipeline and the studio): the post is an advert
 for the paper (no limitations), but every statement must be true to the abstract. The headline restates the abstract's
 own conclusion and never adds impact, adoption, "now" or causality the abstract does not state; a proof of concept
-stays a proof of concept. (Added after an author found a headline that overstated his paper.)
+stays a proof of concept. (Added after an author found a headline that overstated his paper.) The paper title is never
+rewritten: authors objected to edited titles, so the card shows the original title and every post opens with
+"New publication: <original title>", added in code (`with_title`), not by the model. The pipeline's headline is used
+only in the newsletter.
 
 ### Social posts: what goes where (design decisions)
 
-- **Card image**: one idea only. A catchy headline (max ~60 characters), a proof line "Published in <journal> · <year>",
-  a byline with the group authors, and quiet branding (eyebrow, emblem watermark, footer logos). The paper title and the
-  DOI are deliberately *not* on the card: at feed size they are unreadable and they compete with the headline.
-- **Post text**: an advert for the paper: the finding as first line, the group authors second (to tag), what/why in plain words, an invitation to read (no limitations),
+- **Card image**: the paper's original title (up to five lines; the font shrinks for long titles), a proof line
+  "Published in <journal> · <year>", a byline with the group authors, and quiet branding (eyebrow, emblem watermark,
+  footer logos). No DOI on the card. (Until November 2026 the card carried a catchy headline instead; authors preferred
+  their own title.)
+- **Post text**: opens with "New publication: <original title>" (bold on LinkedIn), then an advert for the paper: the finding, the group authors second (to tag), what/why in plain words, an invitation to read (no limitations),
   the journal last. No links in the body (LinkedIn reduces reach of posts with external links).
 - **First comment**: the full paper title, the DOI and the open-access link. That is where readers look things up.
 - **Which papers**: counted journal articles and reviews with an abstract of at least 80 words (shorter ones are

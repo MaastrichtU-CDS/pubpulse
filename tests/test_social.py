@@ -24,3 +24,11 @@ def test_user_message_contains_facts():
          "group_members": ["a"], "authors": ["X", "Y"], "author_count": 2, "doi": "https://doi.org/1", "oa_url": None, "abstract": "ABS"}
     m = user_message(w, {"a": "Ann A"})
     assert "Ann A" in m and "https://doi.org/1" in m and "ABS" in m and "Open-access link: none" in m
+
+
+def test_post_opens_with_new_publication_and_the_original_title():
+    from pubpulse.social import with_title
+    post = with_title("Main finding.\n\nMore.", "Original Paper Title")
+    assert post == "New publication: Original Paper Title\n\nMain finding.\n\nMore."
+    assert with_title(post, "Original Paper Title") == post  # never added twice
+    assert with_title("Main finding.", None) == "Main finding."

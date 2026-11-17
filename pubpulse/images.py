@@ -19,6 +19,7 @@ log = logging.getLogger(__name__)
 IMG_DIR = SOCIAL_DIR / "images"
 CARD_SIZE = (1200, 627)
 NAVY, LIGHT, ACCENT, MUTED = (0, 28, 61), (245, 247, 250), (4, 159, 216), (160, 176, 196)
+TITLE_LINES, TITLE_TOP, TITLE_ZONE = 5, 120, 270  # the title block sits between the eyebrow and the proof line (y 412)
 FONT_CANDIDATES = {
     "regular": ["/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf", "/System/Library/Fonts/Supplemental/Arial.ttf", "/Library/Fonts/Arial.ttf"],
     "bold": ["/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf", "/System/Library/Fonts/Supplemental/Arial Bold.ttf", "/Library/Fonts/Arial Bold.ttf"],
@@ -79,8 +80,8 @@ def _ellipsis(text: str, font, max_width: int, draw) -> str:
 
 
 def make_card(w: dict, names: dict[str, str], out_path: Path, group_label: str = "Clinical Data Science · Maastricht University", finding: str | None = None) -> Path:
-    """Branded 1200x627 card built for one message: a large headline (the catchy main point), one proof line
-    (journal and year), one byline (group authors), quiet branding. Title and DOI live in the post and the comment."""
+    """Branded 1200x627 card: the paper's own title (never rewritten: authors asked for it), one proof line (journal
+    and year), one byline (group authors), quiet branding. The DOI lives in the first comment."""
     from PIL import Image, ImageDraw
 
     W, H = CARD_SIZE
@@ -99,22 +100,22 @@ def make_card(w: dict, names: dict[str, str], out_path: Path, group_label: str =
     # eyebrow
     d.text((M, 64), group_label.upper(), font=_font(20, True), fill=ACCENT)
 
-    # headline: 3 lines max, size adapts
+    # title: up to 5 lines, size adapts (titles run to 250 characters), centred in the zone above the proof line
     headline = (finding or w["title"]).strip()
     width = W - 2 * M - 60
-    size = 66
+    size = 60
     while True:
         hf = _font(size, True)
         lines = _wrap(headline, hf, width, d)
-        if len(lines) <= 3 or size <= 40:
+        if (len(lines) <= TITLE_LINES and len(lines) * int(size * 1.18) <= TITLE_ZONE) or size <= 32:
             break
-        size -= 4
-    if len(lines) > 3:
-        lines = lines[:3]
+        size -= 2
+    if len(lines) > TITLE_LINES:
+        lines = lines[:TITLE_LINES]
         lines[-1] = _ellipsis(lines[-1], hf, width, d)
-    lh = int(size * 1.15)
+    lh = int(size * 1.18)
     block_h = len(lines) * lh
-    y = 150 + (3 * int(66 * 1.15) - block_h) // 2  # keep the block vertically centred in its zone
+    y = TITLE_TOP + (TITLE_ZONE - block_h) // 2
     for line in lines:
         d.text((M, y), line, font=hf, fill=LIGHT)
         y += lh
@@ -316,15 +317,6 @@ def credit_line(w: dict) -> str:
     return f"Figure from {first}{' et al.' if many else ''}, {w.get('journal') or ''} ({(w.get('publication_date') or '')[:4]}), {w.get('license', '').upper()} · {w.get('doi') or ''}"
 
 
-def main_finding(draft: dict) -> str | None:
-    """The card headline: the catchy headline when the draft has one, else the first line of the post."""
-    if draft.get("headline"):
-        return draft["headline"].strip()
-    post = (draft.get("post") or "").strip()
-    if not post:
-        return None
-    first = post.split("\n")[0].strip()
-    return first if 20 <= len(first) <= 260 else None
 
 
 def run(ids: list[str] | None = None, all_drafts: bool = False, force: bool = False) -> int:
@@ -350,7 +342,7 @@ def run(ids: list[str] | None = None, all_drafts: bool = False, force: bool = Fa
             continue
         card = IMG_DIR / f"{d['id']}-card.png"
         if force or not card.exists():
-            make_card(w, names, card, finding=main_finding(d))
+            make_card(w, names, card)
             cards += 1
         d["card"] = f"data/social/images/{card.name}"
         fig = IMG_DIR / f"{d['id']}-figure.png"

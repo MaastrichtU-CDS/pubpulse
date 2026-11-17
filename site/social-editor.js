@@ -48,13 +48,22 @@
     ].join("\n");
   }
 
-  const ANSWER_FIELDS = ["headline", "post", "comment", "short"];
+  // The card shows the paper's own title, so a reply needs no headline (one in an older reply is ignored).
+  const ANSWER_FIELDS = ["post", "comment", "short"];
+  const NEW_PUBLICATION = "New publication: ";
+  // Every post opens with "New publication: <original title>", added here and never by the chat, so the title is never
+  // rewritten. Same rule as pubpulse/social.py with_title().
+  function withTitle(post, title) {
+    const text = String(post || "").trim();
+    if (!title || text.toLowerCase().startsWith(NEW_PUBLICATION.trim().toLowerCase())) return text;
+    return `${NEW_PUBLICATION}${String(title).trim()}\n\n${text}`;
+  }
   // Used only if the site data did not bring the shared instructions.
   const FALLBACK_PROMPT = [
-    "Write a faithful, plain-language LinkedIn post (110 to 170 words, no links) about the research paper below, plus an image headline of at most 60 characters, a first comment with the title and links, and a two-sentence short version with the DOI link. Use only facts from the abstract.",
+    "Write a faithful, plain-language LinkedIn post (110 to 170 words, no links) about the research paper below, a first comment with the title and links, and a two-sentence short version with the DOI link. Use only facts from the abstract. The post is published under the line \"New publication: <paper title>\", which is added automatically: do not write it and do not rephrase the title.",
     "",
     "Reply with one JSON code block and nothing else:",
-    '```json\n{"headline": "...", "post": "...", "comment": "...", "short": "..."}\n```',
+    '```json\n{"post": "...", "comment": "...", "short": "..."}\n```',
   ].join("\n");
 
   function buildPrompt(paper, instructions = "") {
@@ -170,10 +179,10 @@
   function seedFor(paper, draft, shared) {
     const names = paper.group_authors || [];
     const seed = {
-      post: draft?.post || ["[The main finding in one plain sentence]", `Work by ${names.length ? list(names) : "[group authors]"} with colleagues.`, "[What was done, and why it matters.]", `Published in ${paper.journal || "[journal]"}.`, "#ClinicalDataScience #Maastro #MaastrichtUniversity"].join("\n\n"),
+      post: withTitle(draft?.post || ["[The main finding in one plain sentence]", `Work by ${names.length ? list(names) : "[group authors]"} with colleagues.`, "[What was done, and why it matters.]", `Published in ${paper.journal || "[journal]"}.`, "#ClinicalDataScience #Maastro #MaastrichtUniversity"].join("\n\n"), paper.title),
       comment: draft?.comment || [paper.title, `Paper: ${paper.link}`, paper.oa_url ? `Full text: ${paper.oa_url}` : ""].filter(Boolean).join("\n"),
       short: draft?.short || "",
-      headline: draft?.headline || paper.title,
+      headline: paper.title, // the original title, never rewritten
       proof: `Published in ${paper.journal || "a peer-reviewed journal"} · ${(paper.publication_date || "").slice(0, 4)}`.replace(/ · $/, ""),
       byline: names.length ? "With " + list(names) : "",
     };
@@ -201,7 +210,7 @@
             <button type="button" class="button button-small button-dark" data-act="paste-import">Paste &amp; import</button>
             <details class="se-manual"><summary>Or paste the JSON manually</summary>
               <label class="visually-hidden" for="se-answer">JSON reply from your AI chat</label>
-              <textarea class="se-answer" id="se-answer" rows="5" spellcheck="false" aria-describedby="se-import-message" placeholder='{"headline":"…","post":"…","comment":"…","short":"…"}'></textarea>
+              <textarea class="se-answer" id="se-answer" rows="5" spellcheck="false" aria-describedby="se-import-message" placeholder='{"post":"…","comment":"…","short":"…"}'></textarea>
               <button type="button" class="button button-small button-ghost" data-act="import">Import JSON</button>
             </details>
           </div>
@@ -235,7 +244,7 @@
               <button type="button" class="link se-reset" data-act="reset-text">Restore original text</button>
             </div>
             <div id="se-panel-card" role="tabpanel" aria-labelledby="se-tab-card" hidden>
-              <label class="se-label" for="se-headline">Image headline <span class="se-hcount"></span></label>
+              <label class="se-label" for="se-headline">Title on image <span class="se-hcount"></span></label>
               <input class="se-headline se-field" id="se-headline" type="text" />
               <label class="se-label" for="se-proof">Published line</label>
               <input class="se-proof se-field" id="se-proof" type="text" />
@@ -298,7 +307,7 @@
       if (!isCurrent()) return;
       const current = ++revision;
       const length = f.headline.value.trim().length;
-      q(".se-hcount").textContent = `${length} / 60 characters`;
+      q(".se-hcount").textContent = `${length} characters · the paper's original title`;
       cardBlob = null;
       exportReady(false);
       drawCard(canvas, { headline: f.headline.value, proof: f.proof.value, byline: f.byline.value, photo })
@@ -318,15 +327,15 @@
       if (!answer) {
         if (!quiet) {
           q(".se-answer").setAttribute("aria-invalid", "true");
-          message('Could not import. Copy the complete JSON reply with non-empty "headline", "post", "comment" and "short" fields. Your draft has been kept.', "error");
+          message('Could not import. Copy the complete JSON reply with non-empty "post", "comment" and "short" fields. Your draft has been kept.', "error");
         }
         return false;
       }
       q(".se-answer").removeAttribute("aria-invalid");
-      for (const key of ANSWER_FIELDS) f[key].value = answer[key];
+      for (const key of ANSWER_FIELDS) f[key].value = key === "post" ? withTitle(answer.post, paper.title) : answer[key];
       refreshText(); refreshCard(); setEditor("post");
       const flags = (ANSWER_FIELDS.map(key => answer[key]).join("\n").match(/\[check[^\]]*\]/g) || []).length;
-      message(flags ? `Draft imported. Review ${flags} marked ${flags === 1 ? "claim" : "claims"} before sharing.` : "Draft imported. The post, comment, short version and card headline are ready to edit.", "success");
+      message(flags ? `Draft imported. Review ${flags} marked ${flags === 1 ? "claim" : "claims"} before sharing.` : "Draft imported. The post, comment and short version are ready to edit.", "success");
       q(".se-import-badge").textContent = "JSON imported";
       q(".se-import-badge").classList.add("is-imported");
       q(".se-workspace").scrollIntoView({ behavior: matchMedia("(prefers-reduced-motion: reduce)").matches ? "instant" : "smooth", block: "start" });
@@ -514,18 +523,19 @@
         while (text && ctx.measureText(text + " …").width > maxW) text = text.slice(0, -1).trimEnd();
         return text + " …";
       };
-      // headline: up to 3 lines, font shrinks to fit
+      // title: up to 5 lines, font shrinks to fit (titles run to 250 characters); same layout as pubpulse/images.py
       const width = textRight - M;
-      let size = 66, lines;
+      const MAX_LINES = 5, TOP = 120, ZONE = 270;
+      let size = 60, lines;
       for (;;) {
         ctx.font = font(size, true);
         lines = wrap(card.headline.trim(), width);
-        if (lines.length <= 3 || size <= 40) break;
-        size -= 4;
+        if ((lines.length <= MAX_LINES && lines.length * Math.round(size * 1.18) <= ZONE) || size <= 32) break;
+        size -= 2;
       }
-      if (lines.length > 3) { lines = lines.slice(0, 3); lines[2] = ellipsis(lines[2], width); }
-      const lh = Math.round(size * 1.15);
-      let y = 150 + Math.floor((3 * Math.round(66 * 1.15) - lines.length * lh) / 2);
+      if (lines.length > MAX_LINES) { lines = lines.slice(0, MAX_LINES); lines[MAX_LINES - 1] = ellipsis(lines[MAX_LINES - 1], width); }
+      const lh = Math.round(size * 1.18);
+      let y = TOP + Math.floor((ZONE - lines.length * lh) / 2);
       ctx.fillStyle = "#f5f7fa";
       for (const line of lines) { ctx.fillText(line, M, y); y += lh; }
       // accent rule, proof line, byline
