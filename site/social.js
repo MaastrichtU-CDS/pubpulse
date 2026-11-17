@@ -210,7 +210,8 @@
     card.innerHTML = "";
   }
 
-  function show(paper) {
+  // shared: draft fields from a review link (#draft=…), kept in the address so a reload shows the same draft.
+  function show(paper, shared = null, sharedCode = "") {
     const draft = drafts[paper.id] || null;
     const warn = paper.type === "preprint" ? '<p class="studio-warn">This is a preprint. Preprints are not posted externally.</p>' : "";
     $("paper-card").classList.remove("hidden");
@@ -220,14 +221,15 @@
       `<h3><a href="${esc(paper.link)}" target="_blank" rel="noopener">${esc(paper.title)}</a></h3>` +
       `<p class="studio-paper-authors">CDS authors: ${esc(paper.group_authors.join(", ") || "none identified in this record")}</p>` +
       (paper.abstract ? `<details class="studio-paper-context"><summary>Abstract &amp; source details</summary><p>${esc(paper.abstract)}</p><p class="meta">${esc(paper.source)} · ${esc((paper.type || "publication").replace(/-/g, " "))}</p></details>` : '<p class="studio-warn">No abstract was found. Add the abstract in your AI chat before asking it to write the post.</p>') + warn;
-    window.PubpulseSocial.mount($("studio-editor"), paper, { draft, prompt: data.social_prompt });
+    window.PubpulseSocial.mount($("studio-editor"), paper, { draft, shared, prompt: data.social_prompt });
     const url = new URL(location.href);
     url.search = "";
+    url.hash = shared ? "draft=" + sharedCode : "";
     url.searchParams.set(paper.source === "pubpulse" ? "id" : "doi", paper.source === "pubpulse" ? paper.id : normDoi(paper.link) || paper.id);
     history.replaceState(null, "", url);
   }
 
-  async function load(query) {
+  async function load(query, sharedCode = "") {
     const version = ++lookupVersion;
     const button = $("paper-form").querySelector("button");
     button.disabled = true;
@@ -235,11 +237,11 @@
     status("Looking up the paper…", true);
     showPending();
     try {
-      const paper = await find(query);
+      const [paper, shared] = await Promise.all([find(query), sharedCode ? window.PubpulseSocial.decodeDraft(sharedCode) : null]);
       if (version !== lookupVersion) return;
       clearPending();
-      status("");
-      if (paper) show(paper);
+      status(sharedCode && !shared ? "This review link is incomplete, so its draft could not be opened. Ask for the link again and copy it in full." : "");
+      if (paper) show(paper, shared, sharedCode);
     } catch (e) {
       if (version !== lookupVersion) return;
       clearPending();
@@ -270,5 +272,6 @@
 
   const params = new URLSearchParams(location.search);
   const start = params.get("id") || params.get("doi");
-  if (start) { input.value = start; load(start); }
+  const sharedCode = new URLSearchParams(location.hash.slice(1)).get("draft") || "";
+  if (start) { input.value = start; load(start, sharedCode); }
 })();

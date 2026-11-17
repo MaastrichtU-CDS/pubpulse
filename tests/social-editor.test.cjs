@@ -4,7 +4,8 @@ const fs = require("node:fs");
 const vm = require("node:vm");
 const path = require("node:path");
 
-const context = { window: {} };
+const { TextEncoder, TextDecoder } = require("node:util");
+const context = { window: {}, TextEncoder, TextDecoder, Blob, Response, CompressionStream, DecompressionStream, btoa, atob, Uint8Array };
 vm.runInNewContext(fs.readFileSync(path.join(__dirname, "../site/social-editor.js"), "utf8"), context);
 const { parseAnswer, buildPrompt } = context.window.PubpulseSocial;
 const answer = {
@@ -75,4 +76,24 @@ test("fallback prompts ask for the four-key JSON code block when shared instruct
 test("imports a reply given as a JSON code block with literal line breaks", () => {
   const reply = '```json\n{"headline": "H", "post": "First.\n\nSecond.", "comment": "C", "short": "S"}\n```';
   assert.deepEqual(comparable(parseAnswer(reply)), { headline: "H", post: "First.\n\nSecond.", comment: "C", short: "S" });
+});
+
+test("review links carry the whole draft, compressed, and survive the round trip", async () => {
+  const { encodeDraft, decodeDraft } = context.window.PubpulseSocial;
+  const draft = { ...answer, post: answer.post + "\n\nDéjà vu – 𝗯𝗼𝗹𝗱 ✓ " + "word ".repeat(160), proof: "Published in Journal · 2026", byline: "With A and B" };
+  const code = await encodeDraft(draft);
+  assert.match(code, /^z[A-Za-z0-9_-]+$/);
+  assert(code.length < JSON.stringify(draft).length);
+  assert.deepEqual(comparable(await decodeDraft(code)), draft);
+  const plain = "j" + Buffer.from(JSON.stringify({ p: "Post", h: "Headline" })).toString("base64url");
+  assert.deepEqual(comparable(await decodeDraft(plain)), { headline: "Headline", post: "Post" });
+});
+
+test("damaged or foreign review links are rejected", async () => {
+  const { encodeDraft, decodeDraft } = context.window.PubpulseSocial;
+  const code = await encodeDraft(answer);
+  const b64 = value => "j" + Buffer.from(JSON.stringify(value)).toString("base64url");
+  for (const bad of ["", "x123", code.slice(0, code.length / 2), "z!!!", b64([1]), b64({ h: "No post" }), b64({ p: 42 }), b64({ p: "x".repeat(7000) })]) {
+    assert.equal(await decodeDraft(bad), null, bad);
+  }
 });

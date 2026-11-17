@@ -124,23 +124,67 @@
     return validateAnswer(Object.fromEntries(ANSWER_FIELDS.map(key => [key, section(key)])));
   }
 
+  // Review links: the draft travels in the link's #fragment, which browsers never send to the server, so nothing is
+  // stored anywhere. Deflate keeps a full post near 1,500 characters; "j" marks uncompressed JSON for old browsers.
+  const SHARE_KEYS = { headline: "h", post: "p", comment: "c", short: "s", proof: "r", byline: "b" };
+  const SHARE_MAX = 6000; // characters per field, far above LinkedIn's 3,000
+  const toB64u = bytes => {
+    let bin = "";
+    for (let i = 0; i < bytes.length; i += 0x8000) bin += String.fromCharCode(...bytes.subarray(i, i + 0x8000));
+    return btoa(bin).replace(/\+/g, "-").replace(/\//g, "_").replace(/=+$/, "");
+  };
+  const fromB64u = text => Uint8Array.from(atob(text.replace(/-/g, "+").replace(/_/g, "/")), c => c.charCodeAt(0));
+  const pipeBytes = (bytes, stream) => new Response(new Blob([bytes]).stream().pipeThrough(stream)).arrayBuffer().then(b => new Uint8Array(b));
+
+  async function encodeDraft(values) {
+    const short = Object.fromEntries(Object.entries(SHARE_KEYS).filter(([key]) => values[key]).map(([key, k]) => [k, String(values[key])]));
+    const bytes = new TextEncoder().encode(JSON.stringify(short));
+    if (typeof CompressionStream !== "function") return "j" + toB64u(bytes);
+    return "z" + toB64u(await pipeBytes(bytes, new CompressionStream("deflate-raw")));
+  }
+
+  // Returns the draft fields, or null for a damaged or foreign link. The text only ever goes into form fields and
+  // escaped preview HTML.
+  async function decodeDraft(code) {
+    try {
+      const text = String(code || "").trim();
+      let bytes = fromB64u(text.slice(1));
+      if (text[0] === "z") bytes = await pipeBytes(bytes, new DecompressionStream("deflate-raw"));
+      else if (text[0] !== "j") return null;
+      const raw = JSON.parse(new TextDecoder("utf-8", { fatal: true }).decode(bytes));
+      if (!raw || typeof raw !== "object" || Array.isArray(raw)) return null;
+      const draft = {};
+      for (const [key, k] of Object.entries(SHARE_KEYS)) {
+        if (raw[k] === undefined) continue;
+        if (typeof raw[k] !== "string" || raw[k].length > SHARE_MAX) return null;
+        draft[key] = raw[k];
+      }
+      return draft.post ? draft : null;
+    } catch {
+      return null;
+    }
+  }
+
   const list = xs => xs.length > 1 ? xs.slice(0, -1).join(", ") + " and " + xs[xs.length - 1] : xs[0] || "";
 
-  function seedFor(paper, draft) {
+  function seedFor(paper, draft, shared) {
     const names = paper.group_authors || [];
-    return {
-      post: draft?.post || ["[The main finding in one plain sentence]", `Work by ${names.length ? list(names) : "[group authors]"} with colleagues.`, "[What was done, and why it matters.]", `Published in ${paper.journal || "[journal]"}.`, "#ClinicalDataScience #MaastrichtUniversity"].join("\n\n"),
+    const seed = {
+      post: draft?.post || ["[The main finding in one plain sentence]", `Work by ${names.length ? list(names) : "[group authors]"} with colleagues.`, "[What was done, and why it matters.]", `Published in ${paper.journal || "[journal]"}.`, "#ClinicalDataScience #Maastro #MaastrichtUniversity"].join("\n\n"),
       comment: draft?.comment || [paper.title, `Paper: ${paper.link}`, paper.oa_url ? `Full text: ${paper.oa_url}` : ""].filter(Boolean).join("\n"),
       short: draft?.short || "",
       headline: draft?.headline || paper.title,
       proof: `Published in ${paper.journal || "a peer-reviewed journal"} · ${(paper.publication_date || "").slice(0, 4)}`.replace(/ · $/, ""),
       byline: names.length ? "With " + list(names) : "",
     };
+    for (const key of Object.keys(SHARE_KEYS)) if (typeof shared?.[key] === "string") seed[key] = shared[key];
+    return seed;
   }
 
   function mount(box, paper, opts = {}) {
     const draft = opts.draft || null;
-    const seed = seedFor(paper, draft);
+    const shared = opts.shared || null;
+    const seed = seedFor(paper, draft, shared);
     const fig = draft?.figure?.path ? draft.figure : null;
     box.innerHTML = `
       <section class="se-step se-ai" aria-labelledby="se-draft-heading">
@@ -165,7 +209,7 @@
         <p class="se-ai-msg" id="se-import-message" role="status" aria-live="polite"></p>
       </section>
       <section class="se-step se-workspace" data-editor="post" aria-labelledby="se-editor-heading">
-        <div class="se-step-heading"><h2 class="se-step-title" id="se-editor-heading"><span>3</span> Edit &amp; export</h2><span class="se-import-badge">${draft?.post ? "Existing draft" : "Ready to edit"}</span></div>
+        <div class="se-step-heading"><h2 class="se-step-title" id="se-editor-heading"><span>3</span> Edit &amp; export</h2><span class="se-import-badge${shared ? " is-imported" : ""}">${shared ? "Shared for review" : draft?.post ? "Existing draft" : "Ready to edit"}</span></div>
         <div class="se-grid">
           <div class="se-edit">
             <div class="se-tabs" role="tablist" aria-label="Edit draft">
@@ -212,6 +256,10 @@
             </div>
             <div class="se-export-actions"><button type="button" class="button button-small button-ghost" data-act="copy-card" disabled>Copy card image</button><button type="button" class="button button-small button-ghost" data-act="download" disabled>Download PNG</button>${canShareFiles() ? '<button type="button" class="button button-small button-ghost" data-act="share" disabled>Share…</button>' : ""}</div>
             <p class="se-preview-note">Copy the post and add the card image in LinkedIn. Review the draft before publishing.</p>
+            <div class="se-review">
+              <button type="button" class="button button-small button-ghost" data-act="copy-link">Copy review link</button>
+              <p>Send it to the co-authors before you post. The link opens this post, comment and card in their browser, where they can edit and send back a new link. The text travels in the link itself; nothing is stored. An added photo is not included.</p>
+            </div>
           </aside>
         </div>
       </section>`;
@@ -302,6 +350,10 @@
       setTimeout(() => { button.textContent = label; }, 3000);
     };
     setText(); setCard(); refreshText(); refreshCard();
+    if (shared) {
+      message("Shared draft for review. Check the post, the first comment and the card against the abstract. To suggest changes, edit here and use Copy review link to send your version back.", "success");
+      requestAnimationFrame(() => { if (isCurrent()) workspace.scrollIntoView({ block: "start" }); });
+    }
     f.post.addEventListener("input", refreshText);
     for (const key of ["headline", "proof", "byline"]) f[key].addEventListener("input", refreshCard);
     const answerInput = q(".se-answer");
@@ -349,6 +401,12 @@
       else if (act === "copy-post") await copy(button, linkedinText(f.post.value));
       else if (act === "copy-comment") await copy(button, f.comment.value);
       else if (act === "copy-short") await copy(button, f.short.value);
+      else if (act === "copy-link") {
+        const values = Object.fromEntries(Object.keys(SHARE_KEYS).map(key => [key, f[key].value]));
+        const link = new URL(location.href);
+        link.hash = "draft=" + await encodeDraft(values);
+        if (isCurrent()) await copy(button, link.href);
+      }
       else if (act === "copy-card" && cardBlob) await copyImage(button, Promise.resolve(cardBlob));
       else if (act === "copy-figure" && fig) await copyImage(button, fetch(fig.path).then(r => r.blob()).then(blob => blob.type === "image/png" ? blob : toPng(blob)));
       else if (act === "share" && cardBlob) {
@@ -507,5 +565,5 @@
     });
   }
 
-  window.PubpulseSocial = { mount, parseAnswer, buildPrompt, paperMessage, linkedinText };
+  window.PubpulseSocial = { mount, parseAnswer, buildPrompt, paperMessage, linkedinText, encodeDraft, decodeDraft };
 })();
