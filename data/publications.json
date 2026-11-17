@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-17T13:23:37+00:00",
+ "generated": "2026-11-17T14:10:52+00:00",
  "group_name": "Clinical Data Science (Maastro / Maastricht University)",
  "site_url": "https://maastrichtu-cds.github.io/pubpulse/",
  "repo_url": "https://github.com/MaastrichtU-CDS/pubpulse",
@@ -4249,9 +4249,8 @@
      "match": "openalex",
      "affiliations": [
       "Maastricht University Medical Centre",
-      "Maastro Clinic",
-      "Department of Radiation Oncology, GROW Research Institute for Oncology and Reproduction, Maastricht University Medical Centre+",
-      "Maastro, Maastricht Radiation Oncology Institute"
+      "Department of Radiation Oncology, GROW Research Institute for Oncology and Reproduction, Maastricht University Medical Centre+, Maastricht, Netherlands",
+      "Maastro, Maastricht Radiation Oncology Institute, Maastricht, Netherlands"
      ]
     },
     "aiara-lobo-gomes": {
@@ -4260,11 +4259,10 @@
      "match": "openalex",
      "affiliations": [
       "Maastricht University Medical Centre",
-      "Maastro Clinic",
       "RWTH Aachen University",
-      "Department of Radiation Oncology, GROW Research Institute for Oncology and Reproduction, Maastricht University Medical Centre+",
-      "Institute of Molecular Medicine, RWTH Aachen University",
-      "Maastro, Maastricht Radiation Oncology Institute"
+      "Department of Radiation Oncology, GROW Research Institute for Oncology and Reproduction, Maastricht University Medical Centre+, Maastricht, Netherlands",
+      "Institute of Molecular Medicine, RWTH Aachen University, Aachen, Germany",
+      "Maastro, Maastricht Radiation Oncology Institute, Maastricht, Netherlands"
      ]
     },
     "andre-dekker": {
@@ -4273,9 +4271,8 @@
      "match": "openalex",
      "affiliations": [
       "Maastricht University Medical Centre",
-      "Maastro Clinic",
-      "Department of Radiation Oncology, GROW Research Institute for Oncology and Reproduction, Maastricht University Medical Centre+",
-      "Maastro, Maastricht Radiation Oncology Institute"
+      "Department of Radiation Oncology, GROW Research Institute for Oncology and Reproduction, Maastricht University Medical Centre+, Maastricht, Netherlands",
+      "Maastro, Maastricht Radiation Oncology Institute, Maastricht, Netherlands"
      ]
     },
     "leonard-wee": {
@@ -4285,8 +4282,8 @@
      "affiliations": [
       "Maastricht University Medical Centre",
       "Aalborg University",
-      "Center for Clinical Data Science (CLINDA), Department of Clinical Medicine, Aalborg University",
-      "Department of Radiation Oncology, GROW Research Institute for Oncology and Reproduction, Maastricht University Medical Centre+"
+      "Center for Clinical Data Science (CLINDA), Department of Clinical Medicine, Aalborg University, Aalborg, Denmark",
+      "Department of Radiation Oncology, GROW Research Institute for Oncology and Reproduction, Maastricht University Medical Centre+, Maastricht, Netherlands"
      ]
     },
     "varsha-gouthamchand": {
@@ -4295,9 +4292,8 @@
      "match": "openalex",
      "affiliations": [
       "Maastricht University Medical Centre",
-      "Maastro Clinic",
-      "Department of Radiation Oncology, GROW Research Institute for Oncology and Reproduction, Maastricht University Medical Centre+",
-      "Maastro, Maastricht Radiation Oncology Institute"
+      "Department of Radiation Oncology, GROW Research Institute for Oncology and Reproduction, Maastricht University Medical Centre+, Maastricht, Netherlands",
+      "Maastro, Maastricht Radiation Oncology Institute, Maastricht, Netherlands"
      ]
     }
    },
@@ -4325,35 +4321,31 @@
    "member_affiliations": {
     "joshi-hogenboom": [
      "Maastricht University Medical Centre",
-     "Maastro Clinic",
-     "Department of Radiation Oncology, GROW Research Institute for Oncology and Reproduction, Maastricht University Medical Centre+",
-     "Maastro, Maastricht Radiation Oncology Institute"
+     "Department of Radiation Oncology, GROW Research Institute for Oncology and Reproduction, Maastricht University Medical Centre+, Maastricht, Netherlands",
+     "Maastro, Maastricht Radiation Oncology Institute, Maastricht, Netherlands"
     ],
     "aiara-lobo-gomes": [
      "Maastricht University Medical Centre",
-     "Maastro Clinic",
      "RWTH Aachen University",
-     "Department of Radiation Oncology, GROW Research Institute for Oncology and Reproduction, Maastricht University Medical Centre+",
-     "Institute of Molecular Medicine, RWTH Aachen University",
-     "Maastro, Maastricht Radiation Oncology Institute"
+     "Department of Radiation Oncology, GROW Research Institute for Oncology and Reproduction, Maastricht University Medical Centre+, Maastricht, Netherlands",
+     "Institute of Molecular Medicine, RWTH Aachen University, Aachen, Germany",
+     "Maastro, Maastricht Radiation Oncology Institute, Maastricht, Netherlands"
     ],
     "andre-dekker": [
      "Maastricht University Medical Centre",
-     "Maastro Clinic",
-     "Department of Radiation Oncology, GROW Research Institute for Oncology and Reproduction, Maastricht University Medical Centre+",
-     "Maastro, Maastricht Radiation Oncology Institute"
+     "Department of Radiation Oncology, GROW Research Institute for Oncology and Reproduction, Maastricht University Medical Centre+, Maastricht, Netherlands",
+     "Maastro, Maastricht Radiation Oncology Institute, Maastricht, Netherlands"
     ],
     "leonard-wee": [
      "Maastricht University Medical Centre",
      "Aalborg University",
-     "Center for Clinical Data Science (CLINDA), Department of Clinical Medicine, Aalborg University",
-     "Department of Radiation Oncology, GROW Research Institute for Oncology and Reproduction, Maastricht University Medical Centre+"
+     "Center for Clinical Data Science (CLINDA), Department of Clinical Medicine, Aalborg University, Aalborg, Denmark",
+     "Department of Radiation Oncology, GROW Research Institute for Oncology and Reproduction, Maastricht University Medical Centre+, Maastricht, Netherlands"
     ],
     "varsha-gouthamchand": [
      "Maastricht University Medical Centre",
-     "Maastro Clinic",
-     "Department of Radiation Oncology, GROW Research Institute for Oncology and Reproduction, Maastricht University Medical Centre+",
-     "Maastro, Maastricht Radiation Oncology Institute"
+     "Department of Radiation Oncology, GROW Research Institute for Oncology and Reproduction, Maastricht University Medical Centre+, Maastricht, Netherlands",
+     "Maastro, Maastricht Radiation Oncology Institute, Maastricht, Netherlands"
     ]
    },
    "affiliation_status": {
@@ -4365,9 +4357,8 @@
    },
    "senior_affiliations": [
     "Maastricht University Medical Centre",
-    "Maastro Clinic",
-    "Department of Radiation Oncology, GROW Research Institute for Oncology and Reproduction, Maastricht University Medical Centre+",
-    "Maastro, Maastricht Radiation Oncology Institute"
+    "Department of Radiation Oncology, GROW Research Institute for Oncology and Reproduction, Maastricht University Medical Centre+, Maastricht, Netherlands",
+    "Maastro, Maastricht Radiation Oncology Institute, Maastricht, Netherlands"
    ],
    "cited_by_count": 0,
    "abstract": "Introduction Rare and heterogeneous disease research increasingly relies on privacy-enhancing technologies such as federated learning (FL) to enable cross-institutional collaboration across fragmented datasets. However, data quality assurance in FL can be limited, because individual-level data are not directly accessible to researchers. While schema-dependent inspection offers a partial solution, it requires standardised schemas or resource-intensive frameworks, hindering scalability and collaboration. To address these challenges, we implemented two complementary dashboards and evaluated their interplay. Methodology We adapted a recognised data quality control framework for re-use of electronic health record (EHR) data using breast cancer records from Centre Léon Bérard into two dashboards: (1) an in-house dashboard for intra-clinic quality assessment, and (2) a federated dashboard for inter-clinic quality assessment. To evaluate detection capabilities, artificial inconsistencies were introduced into distributed datasets mirroring the in-house source. Results The in-house dashboard provided granularity and reliability, pinpointing individual-level inconsistencies, while the federated dashboard enabled cross-institutional pattern detection–trade-offs inherent to their designs. The federated system revealed ecosystem-wide trends inaccessible to single-institution tools, whereas the in-house dashboard provided local validation and thoroughness. Discussion Our findings confirm a complementary relationship: FL dashboards provide scalable, collaborative oversight but may require additional quality checks, while in-house tools ensure thoroughness at the cost of scalability. A combined model seemingly offers the optimal balance, accommodating both institution-specific needs and collaborative research requirements in evolving, multi-institutional ecosystems.",
@@ -4588,8 +4579,8 @@
      "match": "openalex",
      "affiliations": [
       "Maastricht University Medical Centre",
-      "Brightlands Institute for Smart Society (BISS)",
-      "GROW Research Institute for Oncology and Reproduction, Maastricht University Medical Centre+"
+      "Brightlands Institute for Smart Society (BISS), The Netherlands",
+      "GROW Research Institute for Oncology and Reproduction, Maastricht University Medical Centre+, Maastricht, The Netherlands"
      ]
     }
    },
@@ -4608,8 +4599,8 @@
    "member_affiliations": {
     "johan-van-soest": [
      "Maastricht University Medical Centre",
-     "Brightlands Institute for Smart Society (BISS)",
-     "GROW Research Institute for Oncology and Reproduction, Maastricht University Medical Centre+"
+     "Brightlands Institute for Smart Society (BISS), The Netherlands",
+     "GROW Research Institute for Oncology and Reproduction, Maastricht University Medical Centre+, Maastricht, The Netherlands"
     ]
    },
    "affiliation_status": {
@@ -4617,7 +4608,7 @@
    },
    "senior_affiliations": [
     "University of Bremen",
-    "Institute of Public Health and Nursing Research, University of Bremen"
+    "Institute of Public Health and Nursing Research, University of Bremen, Bremen, Germany"
    ],
    "cited_by_count": 0,
    "abstract": "INTRODUCTION: Leprosy remains a pressing global health concern, with Pakistan among countries still facing missed and delayed diagnosis. By highlighting elevated risk areas, Geographic Information Systems (GIS) are a cost-effective solution to improve leprosy case detection by guiding targeted interventions to high-risk areas. This study's purpose was to investigate the perceived GIS implementation facilitators and barriers, to support targeted interventions and advance the Zero Leprosy strategy. METHODS: Semi-structured interviews were conducted with twelve stakeholders, including local field staff, program managers, and international experts. Thematic analysis was guided by the Unified Theory of Acceptance and Use of Technology (UTAUT) and the Diffusion of Innovation Theory (DOI) to identify facilitators and barriers concerned with GIS implementation for leprosy. RESULTS: Key facilitators included an integrated multi-disease and pilot-based rollout approach, capacity building activities, offline-capable tools, and improved visibility to drive motivation. Barriers included the limited local capacity in complex GIS data analysis, hybrid digital-manual workflows, historical data lacking GPS, and ensuring feedback and ownership for staff members. CONCLUSION: GIS implementation is not only dependent on individual readiness, but also on broader external and organizational facilitators and constraints. This necessitates holistic implementation strategies that recognize the interconnectedness of different parts of the system. Internal capacity building is paramount to address statistical complexity and to build trust, ownership, and independence. As the world moves closer to achieving Zero Leprosy, integrating GIS within a multi-disease approach will be critical to making sustainable progress in combatting neglected tropical diseases.",
@@ -4746,7 +4737,7 @@
      "affiliations": [
       "Maastricht University Medical Centre",
       "Maastro Clinic",
-      "Department of Radiation Oncology (Maastro), GROW Research Institute for Oncology and Reproduction, Maastricht University Medical Centre+ , Maastricht ,"
+      "Department of Radiation Oncology (Maastro), GROW Research Institute for Oncology and Reproduction, Maastricht University Medical Centre+ , Maastricht, The Netherlands"
      ]
     },
     "rutger-van-mierlo": {
@@ -4758,10 +4749,10 @@
       "Maastricht University",
       "Zuyderland Medisch Centrum",
       "Maastro Clinic",
-      "Department of Cardiology, Cardiovascular Research Institute Maastricht (CARIM), Maastricht University , Maastricht ,",
-      "Department of Cardiology, Maastricht University Medical Centre+ (MUMC+) , Maastricht ,",
-      "Department of Cardiology, Zuyderland Medical Centre , Heerlen ,",
-      "Department of Radiation Oncology (Maastro), GROW Research Institute for Oncology and Reproduction, Maastricht University Medical Centre+ , Maastricht ,"
+      "Department of Cardiology, Cardiovascular Research Institute Maastricht (CARIM), Maastricht University , Maastricht, the Netherlands",
+      "Department of Cardiology, Maastricht University Medical Centre+ (MUMC+) , Maastricht, Netherlands",
+      "Department of Cardiology, Zuyderland Medical Centre , Heerlen, Netherlands",
+      "Department of Radiation Oncology (Maastro), GROW Research Institute for Oncology and Reproduction, Maastricht University Medical Centre+ , Maastricht, The Netherlands"
      ]
     },
     "anne-lore-bynens": {
@@ -4770,7 +4761,7 @@
      "match": "openalex",
      "affiliations": [
       "Maastricht University Medical Centre",
-      "Department of Medical Instrumentation & Information Technology (MIT), Maastricht University Medical Centre (MUMC+) , Maastricht ,"
+      "Department of Medical Instrumentation & Information Technology (MIT), Maastricht University Medical Centre (MUMC+) , Maastricht, Netherlands"
      ]
     },
     "cecile-wolfs": {
@@ -4780,7 +4771,7 @@
      "affiliations": [
       "Maastricht University Medical Centre",
       "Maastro Clinic",
-      "Department of Radiation Oncology (Maastro), GROW Research Institute for Oncology and Reproduction, Maastricht University Medical Centre+ , Maastricht ,"
+      "Department of Radiation Oncology (Maastro), GROW Research Institute for Oncology and Reproduction, Maastricht University Medical Centre+ , Maastricht, The Netherlands"
      ]
     },
     "aiara-lobo-gomes": {
@@ -4791,8 +4782,8 @@
       "Maastricht University Medical Centre",
       "Maastro Clinic",
       "RWTH Aachen University",
-      "Department of Radiation Oncology (Maastro), GROW Research Institute for Oncology and Reproduction, Maastricht University Medical Centre+ , Maastricht ,",
-      "Institute of Molecular Medicine, RWTH Aachen University , Aachen ,"
+      "Department of Radiation Oncology (Maastro), GROW Research Institute for Oncology and Reproduction, Maastricht University Medical Centre+ , Maastricht, The Netherlands",
+      "Institute of Molecular Medicine, RWTH Aachen University , Aachen, Germany"
      ]
     },
     "andre-dekker": {
@@ -4802,7 +4793,7 @@
      "affiliations": [
       "Maastricht University Medical Centre",
       "Maastro Clinic",
-      "Department of Radiation Oncology (Maastro), GROW Research Institute for Oncology and Reproduction, Maastricht University Medical Centre+ , Maastricht ,"
+      "Department of Radiation Oncology (Maastro), GROW Research Institute for Oncology and Reproduction, Maastricht University Medical Centre+ , Maastricht, The Netherlands"
      ]
     },
     "petros-kalendralis": {
@@ -4812,7 +4803,7 @@
      "affiliations": [
       "Maastricht University Medical Centre",
       "Maastro Clinic",
-      "Department of Radiation Oncology (Maastro), GROW Research Institute for Oncology and Reproduction, Maastricht University Medical Centre+ , Maastricht ,"
+      "Department of Radiation Oncology (Maastro), GROW Research Institute for Oncology and Reproduction, Maastricht University Medical Centre+ , Maastricht, The Netherlands"
      ]
     }
    },
@@ -4875,39 +4866,39 @@
     "wenjie-liang": [
      "Maastricht University Medical Centre",
      "Maastro Clinic",
-     "Department of Radiation Oncology (Maastro), GROW Research Institute for Oncology and Reproduction, Maastricht University Medical Centre+ , Maastricht ,"
+     "Department of Radiation Oncology (Maastro), GROW Research Institute for Oncology and Reproduction, Maastricht University Medical Centre+ , Maastricht, The Netherlands"
     ],
     "rutger-van-mierlo": [
      "Maastricht University Medical Centre",
      "Maastricht University",
      "Zuyderland Medisch Centrum",
      "Maastro Clinic",
-     "Department of Cardiology, Cardiovascular Research Institute Maastricht (CARIM), Maastricht University , Maastricht ,",
-     "Department of Cardiology, Maastricht University Medical Centre+ (MUMC+) , Maastricht ,",
-     "Department of Cardiology, Zuyderland Medical Centre , Heerlen ,",
-     "Department of Radiation Oncology (Maastro), GROW Research Institute for Oncology and Reproduction, Maastricht University Medical Centre+ , Maastricht ,"
+     "Department of Cardiology, Cardiovascular Research Institute Maastricht (CARIM), Maastricht University , Maastricht, the Netherlands",
+     "Department of Cardiology, Maastricht University Medical Centre+ (MUMC+) , Maastricht, Netherlands",
+     "Department of Cardiology, Zuyderland Medical Centre , Heerlen, Netherlands",
+     "Department of Radiation Oncology (Maastro), GROW Research Institute for Oncology and Reproduction, Maastricht University Medical Centre+ , Maastricht, The Netherlands"
     ],
     "cecile-wolfs": [
      "Maastricht University Medical Centre",
      "Maastro Clinic",
-     "Department of Radiation Oncology (Maastro), GROW Research Institute for Oncology and Reproduction, Maastricht University Medical Centre+ , Maastricht ,"
+     "Department of Radiation Oncology (Maastro), GROW Research Institute for Oncology and Reproduction, Maastricht University Medical Centre+ , Maastricht, The Netherlands"
     ],
     "aiara-lobo-gomes": [
      "Maastricht University Medical Centre",
      "Maastro Clinic",
      "RWTH Aachen University",
-     "Department of Radiation Oncology (Maastro), GROW Research Institute for Oncology and Reproduction, Maastricht University Medical Centre+ , Maastricht ,",
-     "Institute of Molecular Medicine, RWTH Aachen University , Aachen ,"
+     "Department of Radiation Oncology (Maastro), GROW Research Institute for Oncology and Reproduction, Maastricht University Medical Centre+ , Maastricht, The Netherlands",
+     "Institute of Molecular Medicine, RWTH Aachen University , Aachen, Germany"
     ],
     "andre-dekker": [
      "Maastricht University Medical Centre",
      "Maastro Clinic",
-     "Department of Radiation Oncology (Maastro), GROW Research Institute for Oncology and Reproduction, Maastricht University Medical Centre+ , Maastricht ,"
+     "Department of Radiation Oncology (Maastro), GROW Research Institute for Oncology and Reproduction, Maastricht University Medical Centre+ , Maastricht, The Netherlands"
     ],
     "petros-kalendralis": [
      "Maastricht University Medical Centre",
      "Maastro Clinic",
-     "Department of Radiation Oncology (Maastro), GROW Research Institute for Oncology and Reproduction, Maastricht University Medical Centre+ , Maastricht ,"
+     "Department of Radiation Oncology (Maastro), GROW Research Institute for Oncology and Reproduction, Maastricht University Medical Centre+ , Maastricht, The Netherlands"
     ]
    },
    "affiliation_status": {
@@ -6070,7 +6061,7 @@
     "Maastro Clinic",
     "Maastro;"
    ],
-   "cited_by_count": 0,
+   "cited_by_count": 1,
    "abstract": "Federated Learning (FL) offers a decentralized approach to model training, allowing for data-driven insights while safeguarding patient privacy across institutions. In the Personal Health Train (PHT) paradigm, it is the local model gradients from each institution, aggregated over a sample size of its own patients that are transmitted to a central server to be globally merged, rather than transmitting the patient data itself. However, certain attacks on a PHT infrastructure may risk compromising sensitive data. This study delves into the privacy-accuracy tradeoff in federated Cox Proportional Hazards (CoxPH) models for survival analysis by assessing two Privacy-Enhancing Techniques (PETs) added on top of the PHT approach. In one, we implemented a Discretized Cox model by grouping event times into finite bins to hide individual time-to-event data points. In another, we explored Local Differential Privacy by introducing noise to local model gradients. Our results show that both strategies can reduce these privacy risks without significantly compromising numerical accuracy, reflected in small variations of the hazard ratios and, more noticeably, in the cumulative baseline hazard curves during late follow-up. Our findings highlight the potential for enhancing privacy-preserving survival analysis within a PHT implementation and suggest practical options for multi-institutional research while reducing the exposure that could enable re-identification.",
    "verified": true,
    "counted_members": [
@@ -13997,9 +13988,9 @@
       "Zhejiang Cancer Hospital",
       "Hangzhou Institute of Medicine, Chinese Academy of Sciences",
       "Tianjin Medical University",
-      "Department of Radiation Oncology (Maastro), GROW Research Institute for Oncology and Reproduction, Maastricht University Medical Centre+",
-      "Department of Radiation Oncology, Key Laboratory of Cancer Prevention and Therapy, Tianjin Medical University Cancer Institute & Hospital, National Clinical Research Center for Cancer, Tianjin’s Clinical Research Center for Cancer",
-      "Zhejiang Key Laboratory of Particle Radiotherapy Equipment Department of Radiation Oncology, Zhejiang Cancer Hospital, Hangzhou Institute of Medicine (HIM), Chinese Academy of Sciences"
+      "Department of Radiation Oncology (Maastro), GROW Research Institute for Oncology and Reproduction, Maastricht University Medical Centre+, Maastricht, Netherlands",
+      "Department of Radiation Oncology, Key Laboratory of Cancer Prevention and Therapy, Tianjin Medical University Cancer Institute & Hospital, National Clinical Research Center for Cancer, Tianjin’s Clinical Research Center for Cancer, Tianjin, China",
+      "Zhejiang Key Laboratory of Particle Radiotherapy Equipment Department of Radiation Oncology, Zhejiang Cancer Hospital, Hangzhou Institute of Medicine (HIM), Chinese Academy of Sciences, Hangzhou, China"
      ]
     },
     "andre-dekker": {
@@ -14008,7 +13999,7 @@
      "match": "openalex",
      "affiliations": [
       "Maastricht University Medical Centre",
-      "Department of Radiation Oncology (Maastro), GROW Research Institute for Oncology and Reproduction, Maastricht University Medical Centre+"
+      "Department of Radiation Oncology (Maastro), GROW Research Institute for Oncology and Reproduction, Maastricht University Medical Centre+, Maastricht, Netherlands"
      ]
     },
     "leonard-wee": {
@@ -14017,7 +14008,7 @@
      "match": "openalex",
      "affiliations": [
       "Maastricht University Medical Centre",
-      "Department of Radiation Oncology (Maastro), GROW Research Institute for Oncology and Reproduction, Maastricht University Medical Centre+"
+      "Department of Radiation Oncology (Maastro), GROW Research Institute for Oncology and Reproduction, Maastricht University Medical Centre+, Maastricht, Netherlands"
      ]
     }
    },
@@ -14045,17 +14036,17 @@
      "Zhejiang Cancer Hospital",
      "Hangzhou Institute of Medicine, Chinese Academy of Sciences",
      "Tianjin Medical University",
-     "Department of Radiation Oncology (Maastro), GROW Research Institute for Oncology and Reproduction, Maastricht University Medical Centre+",
-     "Department of Radiation Oncology, Key Laboratory of Cancer Prevention and Therapy, Tianjin Medical University Cancer Institute & Hospital, National Clinical Research Center for Cancer, Tianjin’s Clinical Research Center for Cancer",
-     "Zhejiang Key Laboratory of Particle Radiotherapy Equipment Department of Radiation Oncology, Zhejiang Cancer Hospital, Hangzhou Institute of Medicine (HIM), Chinese Academy of Sciences"
+     "Department of Radiation Oncology (Maastro), GROW Research Institute for Oncology and Reproduction, Maastricht University Medical Centre+, Maastricht, Netherlands",
+     "Department of Radiation Oncology, Key Laboratory of Cancer Prevention and Therapy, Tianjin Medical University Cancer Institute & Hospital, National Clinical Research Center for Cancer, Tianjin’s Clinical Research Center for Cancer, Tianjin, China",
+     "Zhejiang Key Laboratory of Particle Radiotherapy Equipment Department of Radiation Oncology, Zhejiang Cancer Hospital, Hangzhou Institute of Medicine (HIM), Chinese Academy of Sciences, Hangzhou, China"
     ],
     "andre-dekker": [
      "Maastricht University Medical Centre",
-     "Department of Radiation Oncology (Maastro), GROW Research Institute for Oncology and Reproduction, Maastricht University Medical Centre+"
+     "Department of Radiation Oncology (Maastro), GROW Research Institute for Oncology and Reproduction, Maastricht University Medical Centre+, Maastricht, Netherlands"
     ],
     "leonard-wee": [
      "Maastricht University Medical Centre",
-     "Department of Radiation Oncology (Maastro), GROW Research Institute for Oncology and Reproduction, Maastricht University Medical Centre+"
+     "Department of Radiation Oncology (Maastro), GROW Research Institute for Oncology and Reproduction, Maastricht University Medical Centre+, Maastricht, Netherlands"
     ]
    },
    "affiliation_status": {
@@ -14067,7 +14058,7 @@
     "Chinese Academy of Sciences",
     "Zhejiang Cancer Hospital",
     "Hangzhou Institute of Medicine, Chinese Academy of Sciences",
-    "Zhejiang Key Laboratory of Particle Radiotherapy Equipment Department of Radiation Oncology, Zhejiang Cancer Hospital, Hangzhou Institute of Medicine (HIM), Chinese Academy of Sciences"
+    "Zhejiang Key Laboratory of Particle Radiotherapy Equipment Department of Radiation Oncology, Zhejiang Cancer Hospital, Hangzhou Institute of Medicine (HIM), Chinese Academy of Sciences, Hangzhou, China"
    ],
    "cited_by_count": 2,
    "abstract": "Background and purpose: Radiation pneumonitis (RP) is one of the major dose-limiting toxicities of thoracic radiotherapy. Although multiple studies have attempted to predict RP, robust multicenter model development is often hindered by privacy regulations and data-transfer constraints, and many existing models are primarily derived from radiotherapy-alone populations, limiting applicability to contemporary regimens that incorporate immunotherapy. Therefore, this study aimed to develop an RP prediction model within a federated learning framework, incorporating sequential transfer learning strategies to enable separate risk assessment for radiotherapy patients with and without immunotherapy. Methods: Multicenter cohorts of lung cancer patients treated with definitive thoracic radiotherapy with or without immunotherapy were retrospectively collected and stratified by immunotherapy exposure. Radiomics features were extracted from whole-lung regions on pretreatment planning CT scans to construct RP prediction models. A federated learning framework was first applied to non-immunotherapy patients to learn common features of radiation pneumonitis without sharing raw data. The pretrained federated model was then sequentially transferred to immunotherapy treatment cohorts, with targeted fine-tuning to adapt to treatment specific RP patterns. Model performance was evaluated through internal validation and independent external validation, with SHAP analysis exploring feature importance differences across treatment settings. Results: A total of 610 patients were included from five multicenter cohorts. Using patients without immunotherapy for model development, the federated baseline model showed stable discrimination in external validation across non-immunotherapy cohorts (AUC = 0.77). When this baseline model was directly applied to the immunotherapy cohort without adaptation, performance dropped markedly (AUC = 0.43). After fine-tuning on immunotherapy data, the immunotherapy-adapted model achieved improved performance within the immunotherapy cohort (AUC = 0.76) and remained robust in an independent external immunotherapy validation cohort (AUC = 0.75). Feature attribution analysis showed a shift in model coefficients between immunotherapy-treated and non-immunotherapy patients. Conclusion: A federated modeling framework with treatment adaptation improves RP risk prediction across heterogeneous treatment settings under multicenter data constraints, particularly in immunotherapy-treated patients.",
@@ -15581,9 +15572,9 @@
       "Zhejiang Cancer Hospital",
       "Hangzhou Institute of Medicine, Chinese Academy of Sciences",
       "Tianjin Medical University",
-      "Department of Radiation Oncology (Maastro), GROW Research Institute for Oncology and Reproduction, Maastricht University Medical Centre+",
-      "Department of Radiation Oncology, Key Laboratory of Cancer Prevention and Therapy, Tianjin Medical University Cancer Institute & Hospital, National Clinical Research Center for Cancer, Tianjin’s Clinical Research Center for Cancer",
-      "Department of Radiation Oncology, Zhejiang Cancer Hospital, Hangzhou Institute of Medicine (HIM), Chinese Academy of Sciences, Zhejiang Key Laboratory of Particle Radiotherapy Equipment"
+      "Department of Radiation Oncology (Maastro), GROW Research Institute for Oncology and Reproduction, Maastricht University Medical Centre+, Maastricht, Netherlands",
+      "Department of Radiation Oncology, Key Laboratory of Cancer Prevention and Therapy, Tianjin Medical University Cancer Institute & Hospital, National Clinical Research Center for Cancer, Tianjin’s Clinical Research Center for Cancer, Tianjin, China",
+      "Department of Radiation Oncology, Zhejiang Cancer Hospital, Hangzhou Institute of Medicine (HIM), Chinese Academy of Sciences, Zhejiang Key Laboratory of Particle Radiotherapy Equipment, Hangzhou, China"
      ]
     },
     "andre-dekker": {
@@ -15592,7 +15583,7 @@
      "match": "openalex",
      "affiliations": [
       "Maastricht University Medical Centre",
-      "Department of Radiation Oncology (Maastro), GROW Research Institute for Oncology and Reproduction, Maastricht University Medical Centre+"
+      "Department of Radiation Oncology (Maastro), GROW Research Institute for Oncology and Reproduction, Maastricht University Medical Centre+, Maastricht, Netherlands"
      ]
     },
     "leonard-wee": {
@@ -15601,7 +15592,7 @@
      "match": "openalex",
      "affiliations": [
       "Maastricht University Medical Centre",
-      "Department of Radiation Oncology (Maastro), GROW Research Institute for Oncology and Reproduction, Maastricht University Medical Centre+"
+      "Department of Radiation Oncology (Maastro), GROW Research Institute for Oncology and Reproduction, Maastricht University Medical Centre+, Maastricht, Netherlands"
      ]
     }
    },
@@ -15630,17 +15621,17 @@
      "Zhejiang Cancer Hospital",
      "Hangzhou Institute of Medicine, Chinese Academy of Sciences",
      "Tianjin Medical University",
-     "Department of Radiation Oncology (Maastro), GROW Research Institute for Oncology and Reproduction, Maastricht University Medical Centre+",
-     "Department of Radiation Oncology, Key Laboratory of Cancer Prevention and Therapy, Tianjin Medical University Cancer Institute & Hospital, National Clinical Research Center for Cancer, Tianjin’s Clinical Research Center for Cancer",
-     "Department of Radiation Oncology, Zhejiang Cancer Hospital, Hangzhou Institute of Medicine (HIM), Chinese Academy of Sciences, Zhejiang Key Laboratory of Particle Radiotherapy Equipment"
+     "Department of Radiation Oncology (Maastro), GROW Research Institute for Oncology and Reproduction, Maastricht University Medical Centre+, Maastricht, Netherlands",
+     "Department of Radiation Oncology, Key Laboratory of Cancer Prevention and Therapy, Tianjin Medical University Cancer Institute & Hospital, National Clinical Research Center for Cancer, Tianjin’s Clinical Research Center for Cancer, Tianjin, China",
+     "Department of Radiation Oncology, Zhejiang Cancer Hospital, Hangzhou Institute of Medicine (HIM), Chinese Academy of Sciences, Zhejiang Key Laboratory of Particle Radiotherapy Equipment, Hangzhou, China"
     ],
     "andre-dekker": [
      "Maastricht University Medical Centre",
-     "Department of Radiation Oncology (Maastro), GROW Research Institute for Oncology and Reproduction, Maastricht University Medical Centre+"
+     "Department of Radiation Oncology (Maastro), GROW Research Institute for Oncology and Reproduction, Maastricht University Medical Centre+, Maastricht, Netherlands"
     ],
     "leonard-wee": [
      "Maastricht University Medical Centre",
-     "Department of Radiation Oncology (Maastro), GROW Research Institute for Oncology and Reproduction, Maastricht University Medical Centre+"
+     "Department of Radiation Oncology (Maastro), GROW Research Institute for Oncology and Reproduction, Maastricht University Medical Centre+, Maastricht, Netherlands"
     ]
    },
    "affiliation_status": {
@@ -15652,7 +15643,7 @@
     "Chinese Academy of Sciences",
     "Zhejiang Cancer Hospital",
     "Hangzhou Institute of Medicine, Chinese Academy of Sciences",
-    "Department of Radiation Oncology, Zhejiang Cancer Hospital, Hangzhou Institute of Medicine (HIM), Chinese Academy of Sciences, Zhejiang Key Laboratory of Particle Radiotherapy Equipment"
+    "Department of Radiation Oncology, Zhejiang Cancer Hospital, Hangzhou Institute of Medicine (HIM), Chinese Academy of Sciences, Zhejiang Key Laboratory of Particle Radiotherapy Equipment, Hangzhou, China"
    ],
    "cited_by_count": 0,
    "abstract": "Background and purpose: Predicting overall survival (OS) for inoperable locally advanced non-small cell lung cancer (LA-NSCLC) treated with immune checkpoint inhibitors remains challenging due to heterogeneous clinical response. Furthermore, the application of advanced deep learning is hindered by limited immunotherapy datasets. This study aimed to develop a novel prognostic framework by integrating voxel-level deep radiomics derived from pretreatment imaging with a knowledge transfer strategy to accurately predict OS. Materials and methods: A total of 526 patients were respectively identified. A non-immunotherapy dataset from the RTOG 0617 clinical trial was used to pre-train a Vision-Mamba deep learning model to learn tumor characteristics within manually delineated tumor regions. Voxel-level radiomics feature maps were generated within tumors and integrated with CT images for dual-input co-training. Using the same dual-input, a cross-dataset transfer learning strategy was then used to adapt the pre-trained models to the immunotherapy context by fine-tuning. The model's performance was evaluated using the concordance index (C-index), time-dependent area under the receiver operating characteristic curve, Kaplan-Meier survival analysis, calibration curves, and decision curve analysis. Additionally, Gradient-weighted Class Activation Mapping (Grad-CAM) was employed to suggest a possible interpretation of the model's decision logic. Results: The proposed model demonstrated robust generalization ability. In the independent immunotherapy testing dataset, the model achieved a C-index of 0.73 (95% CI:0.63-0.82). The time-dependent AUCs for predicting 1-year and 2-year OS were 0.73 and 0.70, respectively. Calibration curves showed good agreement between predicted and observed survival probability. Stratification analysis showed distinct survival differences, with the high-risk group exhibiting significantly poorer OS compared to low-risk group (P<0.001). Conclusion: We developed a voxel-level deep radiomics framework that bridges the data gap in immunotherapy research through fine-tuning on a limited immunotherapy dataset, and subsequent validation on an independent immunotherapy testing dataset, demonstrating robust generalizability.",
@@ -21523,11 +21514,10 @@
      "orcid": null,
      "match": "openalex",
      "affiliations": [
+      "Fudan University",
       "Maastricht University Medical Centre",
       "Fudan University Shanghai Cancer Center",
       "Maastro Clinic",
-      "Department of Radiation Oncology (Maastro), GROW School for Oncology and Reproduction, Maastricht University Medical Centre+ , Maastricht 6229 ET,",
-      "Department of Radiation Oncology, Fudan University Shanghai Cancer Center , Shanghai 200032,",
       "Department of Radiation Oncology (Maastro), GROW School for Oncology and Reproduction, Maastricht University Medical Centre+, Maastricht 6229 ET, The Netherlands",
       "Department of Radiation Oncology, Fudan University Shanghai Cancer Center, Shanghai, 200032, China"
      ]
@@ -21539,7 +21529,6 @@
      "affiliations": [
       "Maastricht University Medical Centre",
       "Maastro Clinic",
-      "Department of Radiation Oncology (Maastro), GROW School for Oncology and Reproduction, Maastricht University Medical Centre+ , Maastricht 6229 ET,",
       "Department of Radiation Oncology (Maastro), GROW School for Oncology and Reproduction, Maastricht University Medical Centre+, Maastricht 6229 ET, The Netherlands"
      ]
     },
@@ -21550,7 +21539,6 @@
      "affiliations": [
       "Maastricht University Medical Centre",
       "Maastro Clinic",
-      "Department of Radiation Oncology (Maastro), GROW School for Oncology and Reproduction, Maastricht University Medical Centre+ , Maastricht 6229 ET,",
       "Department of Radiation Oncology (Maastro), GROW School for Oncology and Reproduction, Maastricht University Medical Centre+, Maastricht 6229 ET, The Netherlands"
      ]
     },
@@ -21561,7 +21549,6 @@
      "affiliations": [
       "Maastricht University Medical Centre",
       "Maastro Clinic",
-      "Department of Radiation Oncology (Maastro), GROW School for Oncology and Reproduction, Maastricht University Medical Centre+ , Maastricht 6229 ET,",
       "Department of Radiation Oncology (Maastro), GROW School for Oncology and Reproduction, Maastricht University Medical Centre+, Maastricht 6229 ET, The Netherlands"
      ]
     }
@@ -21586,30 +21573,26 @@
    ],
    "member_affiliations": {
     "shenlun-chen": [
+     "Fudan University",
      "Maastricht University Medical Centre",
      "Fudan University Shanghai Cancer Center",
      "Maastro Clinic",
-     "Department of Radiation Oncology (Maastro), GROW School for Oncology and Reproduction, Maastricht University Medical Centre+ , Maastricht 6229 ET,",
-     "Department of Radiation Oncology, Fudan University Shanghai Cancer Center , Shanghai 200032,",
      "Department of Radiation Oncology (Maastro), GROW School for Oncology and Reproduction, Maastricht University Medical Centre+, Maastricht 6229 ET, The Netherlands",
      "Department of Radiation Oncology, Fudan University Shanghai Cancer Center, Shanghai, 200032, China"
     ],
     "andre-dekker": [
      "Maastricht University Medical Centre",
      "Maastro Clinic",
-     "Department of Radiation Oncology (Maastro), GROW School for Oncology and Reproduction, Maastricht University Medical Centre+ , Maastricht 6229 ET,",
      "Department of Radiation Oncology (Maastro), GROW School for Oncology and Reproduction, Maastricht University Medical Centre+, Maastricht 6229 ET, The Netherlands"
     ],
     "leonard-wee": [
      "Maastricht University Medical Centre",
      "Maastro Clinic",
-     "Department of Radiation Oncology (Maastro), GROW School for Oncology and Reproduction, Maastricht University Medical Centre+ , Maastricht 6229 ET,",
      "Department of Radiation Oncology (Maastro), GROW School for Oncology and Reproduction, Maastricht University Medical Centre+, Maastricht 6229 ET, The Netherlands"
     ],
     "petros-kalendralis": [
      "Maastricht University Medical Centre",
      "Maastro Clinic",
-     "Department of Radiation Oncology (Maastro), GROW School for Oncology and Reproduction, Maastricht University Medical Centre+ , Maastricht 6229 ET,",
      "Department of Radiation Oncology (Maastro), GROW School for Oncology and Reproduction, Maastricht University Medical Centre+, Maastricht 6229 ET, The Netherlands"
     ]
    },
@@ -21623,7 +21606,6 @@
     "Chinese Academy of Sciences",
     "Zhejiang Cancer Hospital",
     "Hangzhou Institute of Medicine, Chinese Academy of Sciences",
-    "Department of Esophageal Surgery, Zhejiang Cancer Hospital, Hangzhou Institute of Medicine (HIM), Chinese Academy of Sciences , Hangzhou, Zhejiang 310022,",
     "Department of Esophageal Surgery, Zhejiang Cancer Hospital, Hangzhou Institute of Medicine (HIM), Chinese Academy of Sciences, Hangzhou, Zhejiang 310022, China"
    ],
    "cited_by_count": 3,
@@ -33138,8 +33120,8 @@
      "match": "openalex",
      "affiliations": [
       "Maastricht University",
-      "Department of Radiotherapy (MAASTRO), Maastricht University , Maastricht, Maastricht, 6229 ET,",
-      "GROW School for Oncology and Reproduction, Maastricht University , Maastricht, 6229 ER,"
+      "Department of Radiotherapy (MAASTRO), Maastricht University , Maastricht, Maastricht, 6229 ET, The Netherlands",
+      "GROW School for Oncology and Reproduction, Maastricht University , Maastricht, 6229 ER, The Netherlands"
      ]
     },
     "ralph-brecheisen": {
@@ -33149,8 +33131,8 @@
      "affiliations": [
       "Maastricht University Medical Centre",
       "Maastricht University",
-      "Department of Surgery, Maastricht University Medical Center , Maastricht, 6200 MD,",
-      "NUTRIM School of Nutrition and Translational Research in Metabolism, Maastricht University , Maastricht, 6229 ER,"
+      "Department of Surgery, Maastricht University Medical Center , Maastricht, 6200 MD, The Netherlands",
+      "NUTRIM School of Nutrition and Translational Research in Metabolism, Maastricht University , Maastricht, 6229 ER, The Netherlands"
      ]
     },
     "andre-dekker": {
@@ -33159,8 +33141,8 @@
      "match": "openalex",
      "affiliations": [
       "Maastricht University",
-      "Department of Radiotherapy (MAASTRO), Maastricht University , Maastricht, Maastricht, 6229 ET,",
-      "GROW School for Oncology and Reproduction, Maastricht University , Maastricht, 6229 ER,"
+      "Department of Radiotherapy (MAASTRO), Maastricht University , Maastricht, Maastricht, 6229 ET, The Netherlands",
+      "GROW School for Oncology and Reproduction, Maastricht University , Maastricht, 6229 ER, The Netherlands"
      ]
     },
     "leonard-wee": {
@@ -33169,8 +33151,8 @@
      "match": "openalex",
      "affiliations": [
       "Maastricht University",
-      "Department of Radiotherapy (MAASTRO), Maastricht University , Maastricht, Maastricht, 6229 ET,",
-      "GROW School for Oncology and Reproduction, Maastricht University , Maastricht, 6229 ER,"
+      "Department of Radiotherapy (MAASTRO), Maastricht University , Maastricht, Maastricht, 6229 ET, The Netherlands",
+      "GROW School for Oncology and Reproduction, Maastricht University , Maastricht, 6229 ER, The Netherlands"
      ]
     },
     "michal-kazmierski": {
@@ -33223,24 +33205,24 @@
    "member_affiliations": {
     "leroy-volmer": [
      "Maastricht University",
-     "Department of Radiotherapy (MAASTRO), Maastricht University , Maastricht, Maastricht, 6229 ET,",
-     "GROW School for Oncology and Reproduction, Maastricht University , Maastricht, 6229 ER,"
+     "Department of Radiotherapy (MAASTRO), Maastricht University , Maastricht, Maastricht, 6229 ET, The Netherlands",
+     "GROW School for Oncology and Reproduction, Maastricht University , Maastricht, 6229 ER, The Netherlands"
     ],
     "ralph-brecheisen": [
      "Maastricht University Medical Centre",
      "Maastricht University",
-     "Department of Surgery, Maastricht University Medical Center , Maastricht, 6200 MD,",
-     "NUTRIM School of Nutrition and Translational Research in Metabolism, Maastricht University , Maastricht, 6229 ER,"
+     "Department of Surgery, Maastricht University Medical Center , Maastricht, 6200 MD, The Netherlands",
+     "NUTRIM School of Nutrition and Translational Research in Metabolism, Maastricht University , Maastricht, 6229 ER, The Netherlands"
     ],
     "andre-dekker": [
      "Maastricht University",
-     "Department of Radiotherapy (MAASTRO), Maastricht University , Maastricht, Maastricht, 6229 ET,",
-     "GROW School for Oncology and Reproduction, Maastricht University , Maastricht, 6229 ER,"
+     "Department of Radiotherapy (MAASTRO), Maastricht University , Maastricht, Maastricht, 6229 ET, The Netherlands",
+     "GROW School for Oncology and Reproduction, Maastricht University , Maastricht, 6229 ER, The Netherlands"
     ],
     "leonard-wee": [
      "Maastricht University",
-     "Department of Radiotherapy (MAASTRO), Maastricht University , Maastricht, Maastricht, 6229 ET,",
-     "GROW School for Oncology and Reproduction, Maastricht University , Maastricht, 6229 ER,"
+     "Department of Radiotherapy (MAASTRO), Maastricht University , Maastricht, Maastricht, 6229 ET, The Netherlands",
+     "GROW School for Oncology and Reproduction, Maastricht University , Maastricht, 6229 ER, The Netherlands"
     ]
    },
    "affiliation_status": {
@@ -41377,8 +41359,7 @@
    },
    "senior_affiliations": [
     "Delft University of Technology",
-    "Department of Design, Organisation and Strategy, Faculty of Industrial Design Engineering, Delft University of Technology, Delft, The Netherlands",
-    "Department of Design, Organisation and Strategy,"
+    "Department of Design, Organisation and Strategy, Faculty of Industrial Design Engineering, Delft University of Technology, Delft, The Netherlands"
    ],
    "cited_by_count": 30,
    "abstract": "Background: Patients with cancer often have to make complex decisions about treatment, with the options varying in risk profiles and effects on survival and quality of life. Moreover, inefficient care paths make it hard for patients to participate in shared decision-making. Data-driven decision-support tools have the potential to empower patients, support personalized care, improve health outcomes and promote health equity. However, decision-support tools currently seldom consider quality of life or individual preferences, and their use in clinical practice remains limited, partly because they are not well integrated in patients’ care paths. Aim and objectives: The central aim of the 4D PICTURE project is to redesign patients’ care paths and develop and integrate evidence-based decision-support tools to improve decision-making processes in cancer care delivery. This article presents an overview of this international, interdisciplinary project. Design, methods and analysis: In co-creation with patients and other stakeholders, we will develop data-driven decision-support tools for patients with breast cancer, prostate cancer and melanoma. We will support treatment decisions by using large, high-quality datasets with state-of-the-art prognostic algorithms. We will further develop a conversation tool, the Metaphor Menu, using text mining combined with citizen science techniques and linguistics, incorporating large datasets of patient experiences, values and preferences. We will further develop a promising methodology, MetroMapping, to redesign care paths. We will evaluate MetroMapping and these integrated decision-support tools, and ensure their sustainability using the Nonadoption, Abandonment, Scale-Up, Spread, and Sustainability (NASSS) framework. We will explore the generalizability of MetroMapping and the decision-support tools for other types of cancer and across other EU member states. Ethics: Through an embedded ethics approach, we will address social and ethical issues. Discussion: Improved care paths integrating comprehensive decision-support tools have the potential to empower patients, their significant others and healthcare providers in decision-making and improve outcomes. This project will strengthen health care at the system level by improving its resilience and efficiency.",
