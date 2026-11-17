@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-17T14:10:52+00:00",
+ "generated": "2026-11-17T15:18:10+00:00",
  "group_name": "Clinical Data Science (Maastro / Maastricht University)",
  "site_url": "https://maastrichtu-cds.github.io/pubpulse/",
  "repo_url": "https://github.com/MaastrichtU-CDS/pubpulse",
@@ -5080,8 +5080,8 @@
      "affiliations": [
       "Maastricht University Medical Centre",
       "Maastricht University",
-      "Department of Philosophy, Faculty of Arts and Social Sciences, Maastricht University",
-      "Department of Radiation Oncology, GROW Research Institute for Oncology and Reproduction, Maastricht University Medical Centre+"
+      "Department of Philosophy, Faculty of Arts and Social Sciences, Maastricht University, Maastricht, Netherlands",
+      "Department of Radiation Oncology, GROW Research Institute for Oncology and Reproduction, Maastricht University Medical Centre+, Maastricht, Netherlands"
      ]
     }
    },
@@ -5096,8 +5096,8 @@
     "marine-jacquemin": [
      "Maastricht University Medical Centre",
      "Maastricht University",
-     "Department of Philosophy, Faculty of Arts and Social Sciences, Maastricht University",
-     "Department of Radiation Oncology, GROW Research Institute for Oncology and Reproduction, Maastricht University Medical Centre+"
+     "Department of Philosophy, Faculty of Arts and Social Sciences, Maastricht University, Maastricht, Netherlands",
+     "Department of Radiation Oncology, GROW Research Institute for Oncology and Reproduction, Maastricht University Medical Centre+, Maastricht, Netherlands"
     ]
    },
    "affiliation_status": {
@@ -5106,8 +5106,8 @@
    "senior_affiliations": [
     "Maastricht University Medical Centre",
     "Maastricht University",
-    "Department of Philosophy, Faculty of Arts and Social Sciences, Maastricht University",
-    "Department of Radiation Oncology, GROW Research Institute for Oncology and Reproduction, Maastricht University Medical Centre+"
+    "Department of Philosophy, Faculty of Arts and Social Sciences, Maastricht University, Maastricht, Netherlands",
+    "Department of Radiation Oncology, GROW Research Institute for Oncology and Reproduction, Maastricht University Medical Centre+, Maastricht, Netherlands"
    ],
    "cited_by_count": 0,
    "abstract": "Federated Learning (FL) usage is steadily increasing in healthcare. Offering an attractive alternative to centralized data processing, FL is often promoted as a privacy-enhancing technology (PET) because it keeps patient-level data local, exchanging only aggregated data or model updates. As such, it is frequently presented as a means of addressing the ethical, legal and societal challenges associated with the use of sensitive health data. This framing has contributed to growing policy interest in FL within initiatives such as the European Health Data Space (EHDS). This paper examines FL from an ethical, legal and societal (ELSA) perspective in the EU context, focusing on its interaction with the European data protection framework and contemporary debates on health data governance. First, it analyzes the interaction between FL architectures and the General Data Protection regulation (GDPR), showing that questions of controllership, joint responsibility, and identifiability persist despite decentralization, particularly in complex multi-institutional settings. Second, it argues that privacy-centric approaches to health data governance remain ethically insufficient because harmful inferences, discrimination, and collective harms may arise even when data remains formally anonymous. The dominant focus on reidentification risk thus reflects a narrow and individualistic conception of privacy that is poorly adapted to the contemporary data landscape of the EU. It fails to capture broader forms of harm, including group-level discrimination, inferential profiling, and structural power asymmetries. The paper concludes that, despite its framing as a PET, the use of FL alone is not sufficient to guarantee appropriate health data protection. Indeed, FL should also be approached as a distributed data-processing paradigm in which risks and benefits depend on implementation choices, institutional arrangements, and regulatory interpretation. Accordingly, FL should be situated within broader questions of data governance, including how access, accountability, and collaboration are structured and distributed across institutions.",
@@ -7477,8 +7477,8 @@
       "Homi Bhabha National Institute",
       "Tata Memorial Hospital",
       "Advanced Centre for Treatment, Research and Education in Cancer",
-      "Advanced Centre for Treatment Research and Education in Cancer",
-      "Department of Artificial Intelligence and Machine Learning, Tata Memorial Centre, Homi Bhabha National Institute (HBNI)"
+      "Advanced Centre for Treatment Research and Education in Cancer, Navi Mumbai, India",
+      "Department of Artificial Intelligence and Machine Learning, Tata Memorial Centre, Homi Bhabha National Institute (HBNI), Mumbai, India"
      ]
     }
    },
@@ -7503,8 +7503,8 @@
      "Homi Bhabha National Institute",
      "Tata Memorial Hospital",
      "Advanced Centre for Treatment, Research and Education in Cancer",
-     "Advanced Centre for Treatment Research and Education in Cancer",
-     "Department of Artificial Intelligence and Machine Learning, Tata Memorial Centre, Homi Bhabha National Institute (HBNI)"
+     "Advanced Centre for Treatment Research and Education in Cancer, Navi Mumbai, India",
+     "Department of Artificial Intelligence and Machine Learning, Tata Memorial Centre, Homi Bhabha National Institute (HBNI), Mumbai, India"
     ]
    },
    "affiliation_status": {
@@ -7514,8 +7514,8 @@
     "Homi Bhabha National Institute",
     "Tata Memorial Hospital",
     "Advanced Centre for Treatment, Research and Education in Cancer",
-    "Advanced Centre for Treatment Research and Education in Cancer",
-    "Department of Surgical Oncology, Tata Memorial Centre, Homi Bhabha National Institute (HBNI)"
+    "Advanced Centre for Treatment Research and Education in Cancer, Navi Mumbai, India",
+    "Department of Surgical Oncology, Tata Memorial Centre, Homi Bhabha National Institute (HBNI), Mumbai, India"
    ],
    "cited_by_count": 1,
    "abstract": "Introduction: This study aims to predict recurrence-free survival (RFS) and overall survival (OS), to stratify risk using radiomics, radiology semantic, clinical, and pathology models-individually and in combination-derived from pre-treatment magnetic resonance imaging (MRI), post-operative histopathology, age, and adjuvant therapy details in oral tongue squamous cell carcinoma (OTSCC), and to correlate National Comprehensive Cancer Network (NCCN) low + intermediate- and high-risk groups with the risk stratification provided by the radiomics models. The secondary objectives included predicting post-operative perineural invasion (PNI), metastatic lymph nodes, and pathological extranodal extension (pENE). Methods: This retrospective cohort study included 219 treatment-naive OTSCC patients who underwent pre-treatment MRI (January 2021-December 2022) with 2-year follow-up. Radiomics features were extracted from T1-weighted, T2-weighted, and contrast-enhanced T1-weighted (T1c) sequences. Lasso-Cox and DeepSurv models were evaluated for RFS and OS prediction, while random forest and logistic regression models were assessed for PNI, metastatic lymph nodes, and pENE prediction. Radiomics, radiology semantic, clinical, and pathology models were evaluated individually and in combination. Risk stratification was evaluated using the log-rank test. Results: Among 219 patients (mean age 46.99 ± 10.94 years), Lasso-Cox outperformed DeepSurv for RFS and OS prediction. The radiomics combined model (T1 + T2 + T1c radiomics + radiology semantic + clinical + pathology) achieved the best performance for RFS and non-inferior performance to the pathology model for OS prediction. The pre-treatment radiomics models effectively stratified the patients into high- and low-risk groups for recurrence and OS and also identified low-risk patients within the NCCN high-risk group and high-risk patients within the NCCN low + intermediate-risk group for recurrence. The T1c radiomics model demonstrated the best overall performance for predicting metastatic lymph nodes. The radiology semantic features model demonstrated the highest predictive performance for PNI and pENE. Conclusions: The radiomics combined and pre-treatment radiomics models demonstrate potential for prognostication and risk-adapted management. By identifying low-risk patients within the NCCN high-risk group and high-risk patients within the NCCN low + intermediate-risk group for recurrence, these models may support treatment de-escalation and escalation, respectively, pending prospective multicenter validation. Furthermore, prediction of metastatic lymph nodes, PNI, and pENE from pre-treatment radiomics models may inform decisions regarding elective neck dissection and guide adjuvant therapy following prospective validation.",
@@ -8969,8 +8969,8 @@
      "affiliations": [
       "Maastricht University",
       "Maastro Clinic",
-      "Maastricht University D-Lab, Department of Precision Medicine, GROW - Research Institute for Oncology and Reproduction, , Maastricht, Limburg, 6229 ER,",
-      "Maastro Clinic , Maastricht, Limburg, 6229 ET,"
+      "Maastricht University D-Lab, Department of Precision Medicine, GROW - Research Institute for Oncology and Reproduction, , Maastricht, Limburg, 6229 ER, The Netherlands",
+      "Maastro Clinic , Maastricht, Limburg, 6229 ET, The Netherlands"
      ]
     }
    },
@@ -8990,8 +8990,8 @@
     "anshu-ankolekar": [
      "Maastricht University",
      "Maastro Clinic",
-     "Maastricht University D-Lab, Department of Precision Medicine, GROW - Research Institute for Oncology and Reproduction, , Maastricht, Limburg, 6229 ER,",
-     "Maastro Clinic , Maastricht, Limburg, 6229 ET,"
+     "Maastricht University D-Lab, Department of Precision Medicine, GROW - Research Institute for Oncology and Reproduction, , Maastricht, Limburg, 6229 ER, The Netherlands",
+     "Maastro Clinic , Maastricht, Limburg, 6229 ET, The Netherlands"
     ]
    },
    "affiliation_status": {
@@ -8999,7 +8999,7 @@
    },
    "senior_affiliations": [
     "Maastricht University",
-    "Maastricht University Institute of Data Science, Department of Advanced Computing Sciences, , Maastricht, Limburg, 6229 GS,"
+    "Maastricht University Institute of Data Science, Department of Advanced Computing Sciences, , Maastricht, Limburg, 6229 GS, The Netherlands"
    ],
    "cited_by_count": 2,
    "abstract": "OBJECTIVE: Clinical AI systems and models increasingly need traceable documentation that makes intended use, performance evidence, transparency, and lifecycle status explicit, yet existing model cards, datasheets, reporting guidelines, and other documentation approaches do not consistently bring together structured clinical fields, vocabulary-linked cohort descriptions, structured performance reporting, and governed documentation history. We introduce Structured, Meaningful, Auditable, Responsible, and Transparent (SMART), a framework that adapts the model card concept into structured, lifecycle-aware documentation with OMOP integration, role-based lifecycle governance, and a blockchain-backed audit trail for verifying documentation integrity and lifecycle history. MATERIALS AND METHODS: Following a design-science-informed approach, we analyzed documentation requirements, reviewed existing approaches, implemented SMART through open-source packages and smart contracts, and evaluated it using example SMART model cards, an illustrative COPD exacerbation risk-prediction documentation case study, and blockchain-governed lifecycle experiments. RESULTS: The design process resulted in the SMART framework in which documentation provisions are reflected across Schema, Lifecycle, and Chain (ie, Blockchain) components. Evaluation showed that, in multi-party settings, documentation history remains independently verifiable because lifecycle actions are role-attributed and linked to content hashes; median testnet gas use ranged from 352 722 to 852 399 gas across the evaluated lifecycle operations. DISCUSSION: SMART positions clinical AI documentation as a shared infrastructure for preliminary model assessment, making role attribution, lifecycle state, and documentation changes more transparent and traceable over time. CONCLUSION: By providing an implementable framework, SMART illustrates how clinical AI documentation can be structured, clinically contextualized, auditable, responsible, transparent, and lifecycle-aware.",
@@ -9701,10 +9701,10 @@
       "Maastricht University Medical Centre",
       "Maastricht University",
       "Zuyderland Medisch Centrum",
-      "Department of Cardiology, Cardiovascular Research Institute Maastricht (CARIM), Maastricht University",
-      "Department of Cardiology, Maastricht University Medical Center (MUMC+)",
-      "Department of Cardiology, Zuyderland Medical Center",
-      "Department of Radiation Oncology (Maastro), Research Institute for Oncology and Reproduction (GROW), Maastricht University"
+      "Department of Cardiology, Cardiovascular Research Institute Maastricht (CARIM), Maastricht University, Maastricht, Netherlands",
+      "Department of Cardiology, Maastricht University Medical Center (MUMC+), Maastricht, Netherlands",
+      "Department of Cardiology, Zuyderland Medical Center, Heerlen, Netherlands",
+      "Department of Radiation Oncology (Maastro), Research Institute for Oncology and Reproduction (GROW), Maastricht University, Maastricht, Netherlands"
      ]
     },
     "petros-kalendralis": {
@@ -9713,7 +9713,7 @@
      "match": "openalex",
      "affiliations": [
       "Maastricht University",
-      "Department of Radiation Oncology (Maastro), Research Institute for Oncology and Reproduction (GROW), Maastricht University"
+      "Department of Radiation Oncology (Maastro), Research Institute for Oncology and Reproduction (GROW), Maastricht University, Maastricht, Netherlands"
      ]
     }
    },
@@ -9737,14 +9737,14 @@
      "Maastricht University Medical Centre",
      "Maastricht University",
      "Zuyderland Medisch Centrum",
-     "Department of Cardiology, Cardiovascular Research Institute Maastricht (CARIM), Maastricht University",
-     "Department of Cardiology, Maastricht University Medical Center (MUMC+)",
-     "Department of Cardiology, Zuyderland Medical Center",
-     "Department of Radiation Oncology (Maastro), Research Institute for Oncology and Reproduction (GROW), Maastricht University"
+     "Department of Cardiology, Cardiovascular Research Institute Maastricht (CARIM), Maastricht University, Maastricht, Netherlands",
+     "Department of Cardiology, Maastricht University Medical Center (MUMC+), Maastricht, Netherlands",
+     "Department of Cardiology, Zuyderland Medical Center, Heerlen, Netherlands",
+     "Department of Radiation Oncology (Maastro), Research Institute for Oncology and Reproduction (GROW), Maastricht University, Maastricht, Netherlands"
     ],
     "petros-kalendralis": [
      "Maastricht University",
-     "Department of Radiation Oncology (Maastro), Research Institute for Oncology and Reproduction (GROW), Maastricht University"
+     "Department of Radiation Oncology (Maastro), Research Institute for Oncology and Reproduction (GROW), Maastricht University, Maastricht, Netherlands"
     ]
    },
    "affiliation_status": {
@@ -9755,9 +9755,9 @@
     "Maastricht University Medical Centre",
     "Maastricht University",
     "Zuyderland Medisch Centrum",
-    "Department of Cardiology, Cardiovascular Research Institute Maastricht (CARIM), Maastricht University",
-    "Department of Cardiology, Maastricht University Medical Center (MUMC+)",
-    "Department of Cardiology, Zuyderland Medical Center"
+    "Department of Cardiology, Cardiovascular Research Institute Maastricht (CARIM), Maastricht University, Maastricht, Netherlands",
+    "Department of Cardiology, Maastricht University Medical Center (MUMC+), Maastricht, Netherlands",
+    "Department of Cardiology, Zuyderland Medical Center, Heerlen, Netherlands"
    ],
    "cited_by_count": 0,
    "abstract": "Introduction Low participation in cardiac rehabilitation after acute myocardial infarction remains problematic. Cardiac telerehabilitation has emerged as a strategy to improve the uptake by addressing clinical, interpersonal, logistical, and healthcare system-related barriers. In this study, our aim is to determine which patient-related characteristics could lead to non-participation in cardiac rehabilitation, as well as to the reasons for non-participation. Methods In our study, the REHAB + study, cardiac telerehabilitation was implemented in routine clinical practice. In this sub analysis, observational data were collected between November 2021 and 2024 after its implementation in Zuyderland medical center, the Netherlands. After enrolment, patients could choose to participate in center-based cardiac rehabilitation, cardiac telerehabilitation, or were non-participants. Results A total of 328 patients with recent acute myocardial infarction were included. Two hundred (61%) patients participated in center-based cardiac rehabilitation, 64 (20%) in cardiac telerehabilitation, and 64 (20%) were non-participants. Non-participants were older (69 ± 11 years) than participants in center-based cardiac rehabilitation (64 ± 10 years) or cardiac telerehabilitation (61 ± 10 years) ( p < 0.001 ). There were fewer smokers in the cardiac telerehabilitation group (18%), than center-based cardiac rehabilitation (35%) or non-participation (38%). The most common reason for non-participation was a lack of interest, or a failure to acknowledge its necessity (58%). Discussion A high proportion of our myocardial infarction population participated in either cbCR or CTR after trial enrollment. CTR offers remote-access patient education, counselling, and monitoring, which in our study was more appealing to the non-smoking population. Importantly, non-participation in cardiac rehabilitation was influenced by the aging population, mainly for lack of interest, and therefore CR programs should find ways to make their programs more appealing to the aging population. These findings support further work on patient-centered counselling and on adapting rehabilitation pathways to the needs of older patients.",
@@ -10309,8 +10309,8 @@
      "affiliations": [
       "Maastricht University Medical Centre",
       "Zuyderland Medisch Centrum",
-      "Department of Cardiology, Heart and Vascular Center, Maastricht University Medical Center , Maastricht ,",
-      "Department of Cardiology, Zuyderland Medical Center , Heerlen ,"
+      "Department of Cardiology, Heart and Vascular Center, Maastricht University Medical Center , Maastricht, the Netherlands",
+      "Department of Cardiology, Zuyderland Medical Center , Heerlen, the Netherlands"
      ]
     }
    },
@@ -10329,8 +10329,8 @@
     "rutger-van-mierlo": [
      "Maastricht University Medical Centre",
      "Zuyderland Medisch Centrum",
-     "Department of Cardiology, Heart and Vascular Center, Maastricht University Medical Center , Maastricht ,",
-     "Department of Cardiology, Zuyderland Medical Center , Heerlen ,"
+     "Department of Cardiology, Heart and Vascular Center, Maastricht University Medical Center , Maastricht, the Netherlands",
+     "Department of Cardiology, Zuyderland Medical Center , Heerlen, the Netherlands"
     ]
    },
    "affiliation_status": {
@@ -10339,8 +10339,8 @@
    "senior_affiliations": [
     "Maastricht University Medical Centre",
     "Maastricht University",
-    "Department of Cardiothoracic Surgery, Cardiovascular Research Institute Maastricht (CARIM), Maastricht University , Maastricht, Debyelaan 25, 6229 HX Maastricht ,",
-    "Department of Cardiothoracic Surgery, Heart and Vascular Center, Maastricht University Medical Center , Maastricht ,"
+    "Department of Cardiothoracic Surgery, Cardiovascular Research Institute Maastricht (CARIM), Maastricht University , Maastricht, Debyelaan 25, 6229 HX Maastricht, The Netherlands",
+    "Department of Cardiothoracic Surgery, Heart and Vascular Center, Maastricht University Medical Center , Maastricht, the Netherlands"
    ],
    "cited_by_count": 1,
    "abstract": "Abstract Aims The purpose of this subanalysis was to explore whether or not teleprehabilitation leads to worsening cardiac symptoms in patients accepted for coronary artery bypass grafting (CABG). Methods and results A subgroup of patients accepted for CABG (including off-pump and minimally invasive) who were randomized between teleprehabilitation and standard care in DCC trial were included. Teleprehabilitation patients had access to blended care supported by online modules, including nutritional support, functional exercise training, smoking cessation, inspiratory muscle training, and psychological support. All patients were weekly telemonitored for cardiac symptoms using a customized digital platform. This cohort included 155 patients. Baseline characteristics, including NYHA and CCS class, were balanced, except for shorter preoperative waiting times in weeks (15.0 [9.8–22.2] vs. 12.5 [7.0–16.0]) in the teleprehabilitation group. There was no significant difference in incidence of major adverse cardiac events in the preoperative period. There were 141 patients (77 control; 64 teleprehabilitation) with at least one symptom monitoring entry. A total of 373/1786 (21%) entries indicated worsening of cardiac symptoms. The distribution was right-skewed and did not significantly differ between the two groups. There was no statistically significant difference in time to event between control and teleprehabilitation for any cardiac symptom (P = 0.529), angina (P = 0.167), or dyspnoea (P = 0.334). Conclusion Teleprehabilitation does not lead to worsening cardiac symptoms before CABG. We postulate that teleprehabilitation, which includes low-intensity physical training, can be safely offered to patients undergoing elective CABG.",
@@ -18199,7 +18199,8 @@
      "match": "openalex",
      "affiliations": [
       "Maastricht University Medical Centre",
-      "Department of Radiation Oncology (MAASTRO), GROW Research Institute of Oncology and Reproduction, Maastricht University Medical Centre +, Maastricht, 6200 MD,"
+      "Maastro Clinic",
+      "Department of Radiation Oncology (MAASTRO), GROW Research Institute of Oncology and Reproduction, Maastricht University Medical Centre +, Maastricht, 6200 MD, The Netherlands"
      ]
     },
     "leonard-wee": {
@@ -18208,7 +18209,8 @@
      "match": "openalex",
      "affiliations": [
       "Maastricht University Medical Centre",
-      "Department of Radiation Oncology (MAASTRO), GROW Research Institute of Oncology and Reproduction, Maastricht University Medical Centre +, Maastricht, 6200 MD,"
+      "Maastro Clinic",
+      "Department of Radiation Oncology (MAASTRO), GROW Research Institute of Oncology and Reproduction, Maastricht University Medical Centre +, Maastricht, 6200 MD, The Netherlands"
      ]
     }
    },
@@ -18230,11 +18232,13 @@
    "member_affiliations": {
     "leroy-volmer": [
      "Maastricht University Medical Centre",
-     "Department of Radiation Oncology (MAASTRO), GROW Research Institute of Oncology and Reproduction, Maastricht University Medical Centre +, Maastricht, 6200 MD,"
+     "Maastro Clinic",
+     "Department of Radiation Oncology (MAASTRO), GROW Research Institute of Oncology and Reproduction, Maastricht University Medical Centre +, Maastricht, 6200 MD, The Netherlands"
     ],
     "leonard-wee": [
      "Maastricht University Medical Centre",
-     "Department of Radiation Oncology (MAASTRO), GROW Research Institute of Oncology and Reproduction, Maastricht University Medical Centre +, Maastricht, 6200 MD,"
+     "Maastro Clinic",
+     "Department of Radiation Oncology (MAASTRO), GROW Research Institute of Oncology and Reproduction, Maastricht University Medical Centre +, Maastricht, 6200 MD, The Netherlands"
     ]
    },
    "affiliation_status": {
@@ -18244,8 +18248,8 @@
    "senior_affiliations": [
     "Maastricht University",
     "Essen University Hospital",
-    "Department of General, Visceral and Transplantation Surgery, University Hospital Essen , Essen, 45147,",
-    "Department of Surgery, NUTRIM Institute of Nutrition and Translational Research in Metabolism, Maastricht University , Maastricht, 6200 MD,"
+    "Department of General, Visceral and Transplantation Surgery, University Hospital Essen , Essen, 45147, Germany",
+    "Department of Surgery, NUTRIM Institute of Nutrition and Translational Research in Metabolism, Maastricht University , Maastricht, 6200 MD, The Netherlands"
    ],
    "cited_by_count": 0,
    "abstract": "Abstract Objectives Deep learning neural network (DLNN)-based tools can automate body composition analysis for cancer cachexia research. We aimed to evaluate a DLNN tool trained on a European population of Chinese cancer patients. Methods Computed tomography (CT) images at the 3rd lumbar vertebral (L3) level of Chinese gastric cancer patients were retrospectively collected. An externally validated DLNN tool (Mosamatic) was used to segment skeletal muscle, visceral adipose tissue (VAT), and subcutaneous adipose tissue (SAT). Manual segmentation was performed using SliceOmatic software (TomoVision, version 5.0). Geometric similarity between automated and manual segmentation, and the reliability was assessed. Results The cohort comprised 203 patients with a median body mass index (BMI) of 22.2 kg/m2, and 604 CT images at L3 were collected. The median Dice Similarity Coefficient (IQR) of skeletal muscle, VAT and SAT were 0.973 (0.961-0.980), 0.980 (0.964-0.989), and 0.967 (0.945-0.977), respectively. The median Lin’s Concordance Correlation Coefficient for skeletal muscle area (0.983), VAT area (1.000), SAT area (0.998), skeletal muscle radiation attenuation (0.995), VAT radiation attenuation (0.994), and SAT radiation attenuation (0.997) demonstrated excellent reliability. Low BMI (<18.5 kg/m2) and ascites impaired the agreement between the 2 methods. The automated method showed high diagnostic concordance with manual segmentation for sarcopenia (κ = 0.843, P < .001) and myosteatosis (κ = 0.946, P < .001). Conclusions The Mosamatic tool displays excellent generalizability to analyse body compositions in Chinese gastric cancer patients and can facilitate cachexia research. Advances in knowledge The Mosamatic tool displayed excellent generalizability without recalibration to analyse body composition on the 3rd lumbar vertebral CT images in Chinese gastric cancer patients.",
@@ -23340,8 +23344,8 @@
      "match": "openalex",
      "affiliations": [
       "Maastricht University Medical Centre",
-      "Department of Radiation Oncology (MAASTRO), GROW Research Institute for Oncology and Reproduction, Maastricht University Medical Centre , Maastricht ,",
-      "Department of Radiation Oncology (MAASTRO) GROW Research Institute for Oncology and Reproduction, Maastricht University Medical Centre  Maastricht The Netherlands"
+      "Maastro Clinic",
+      "Department of Radiation Oncology (MAASTRO), GROW Research Institute for Oncology and Reproduction, Maastricht University Medical Centre , Maastricht, The Netherlands"
      ]
     },
     "andre-dekker": {
@@ -23350,8 +23354,8 @@
      "match": "openalex",
      "affiliations": [
       "Maastricht University Medical Centre",
-      "Department of Radiation Oncology (MAASTRO), GROW Research Institute for Oncology and Reproduction, Maastricht University Medical Centre , Maastricht ,",
-      "Department of Radiation Oncology (MAASTRO) GROW Research Institute for Oncology and Reproduction, Maastricht University Medical Centre  Maastricht The Netherlands"
+      "Maastro Clinic",
+      "Department of Radiation Oncology (MAASTRO), GROW Research Institute for Oncology and Reproduction, Maastricht University Medical Centre , Maastricht, The Netherlands"
      ]
     }
    },
@@ -23371,13 +23375,13 @@
    "member_affiliations": {
     "anke-bruninx": [
      "Maastricht University Medical Centre",
-     "Department of Radiation Oncology (MAASTRO), GROW Research Institute for Oncology and Reproduction, Maastricht University Medical Centre , Maastricht ,",
-     "Department of Radiation Oncology (MAASTRO) GROW Research Institute for Oncology and Reproduction, Maastricht University Medical Centre  Maastricht The Netherlands"
+     "Maastro Clinic",
+     "Department of Radiation Oncology (MAASTRO), GROW Research Institute for Oncology and Reproduction, Maastricht University Medical Centre , Maastricht, The Netherlands"
     ],
     "andre-dekker": [
      "Maastricht University Medical Centre",
-     "Department of Radiation Oncology (MAASTRO), GROW Research Institute for Oncology and Reproduction, Maastricht University Medical Centre , Maastricht ,",
-     "Department of Radiation Oncology (MAASTRO) GROW Research Institute for Oncology and Reproduction, Maastricht University Medical Centre  Maastricht The Netherlands"
+     "Maastro Clinic",
+     "Department of Radiation Oncology (MAASTRO), GROW Research Institute for Oncology and Reproduction, Maastricht University Medical Centre , Maastricht, The Netherlands"
     ]
    },
    "affiliation_status": {
@@ -23386,10 +23390,8 @@
    },
    "senior_affiliations": [
     "Maastricht University Medical Centre",
-    "Cardiology, Maastricht University Medical Centre , Maastricht ,",
-    "Department of Cardiology, CARIM, Maastricht University Medical Centre , Maastricht ,",
-    "Cardiology, Maastricht University Medical Centre  Maastricht The Netherlands",
-    "Department of Cardiology CARIM, Maastricht University Medical Centre  Maastricht The Netherlands"
+    "Cardiology, Maastricht University Medical Centre , Maastricht, The Netherlands",
+    "Department of Cardiology, CARIM, Maastricht University Medical Centre , Maastricht, The Netherlands"
    ],
    "cited_by_count": 5,
    "abstract": "AIMS: Loop diuretics are widely used in heart failure (HF) for symptom relief. Guidelines advise treating patients with the lowest possible dose of loop diuretics to maintain euvolaemia, based on expert opinion only. However, data on the safety of this practice are scarce. This analysis aims to investigate the clinical course after changing loop diuretics in stable HF patients. METHODS AND RESULTS: A post-hoc analysis from the TIME-CHF study was conducted in 622 patients. Daily loop diuretic doses were meticulously recorded, resulting in 11 035 dose evaluations assessed. The frequency of relevant events within 30 days (hospitalization, death, dose change) following an up-titration, down-titration, or no change in diuretic therapy was calculated. Risk of hospitalization and deaths 30 days after down-titration was estimated after adjusting for congestion level. At baseline the cohort consisted mostly of males (59%), with a mean age of 77 years. Patients were highly symptomatic with 76% classified as New York Heart Association class III or IV. Within 30 days after a down-titration, diuretic dose necessitated an increase in 30.4% of cases, compared with 20.7% following up-titration and 8.0% on a stable dose. Hospitalization and death were significantly more frequent following down-titration (3.4% and 2% within 30 days, respectively) than with a stable dose (1% and 0.6%, p < 0.001). Similar hospitalization rates were observed after up-titration. The risk of hospitalization doubled and of death tripled after down-titration in patients with similar congestion levels. CONCLUSIONS: There is a significant risk that reduction in diuretic dose requires restart or increase of diuretics within a short period. Additionally, there may be a significant risk associated with diuretic dose reduction. Therefore, HF patients need to be closely monitored after down-titration of loop diuretic therapy.",
@@ -28143,7 +28145,7 @@
     "Zhejiang Key Laboratory of Prevention Diagnosis and Therapy for Gastrointestinal Cancer, Hangzhou, Zhejiang, China",
     "Zhejiang Cancer Hospital,Hangzhou Institute of Medicine (HIM), Chinese Academy of Sciences, Hangzhou, Zhejiang, China jiyl@zjcc.org.cn jiangyh@zjcc.org.cn"
    ],
-   "cited_by_count": 72,
+   "cited_by_count": 73,
    "abstract": "BACKGROUND: Accurate prediction of pathologic complete response (pCR) following neoadjuvant immunotherapy combined with chemotherapy (nICT) is crucial for tailoring patient care in esophageal squamous cell carcinoma (ESCC). This study aimed to develop and validate a deep learning model using a novel voxel-level radiomics approach to predict pCR based on preoperative CT images. METHODS: In this multicenter, retrospective study, 741 patients with ESCC who underwent nICT followed by radical esophagectomy were enrolled from three institutions. Patients from one center were divided into a training set (469 patients) and an internal validation set (118 patients) while the data from the other two centers was used as external validation sets (120 and 34 patients, respectively). The deep learning model, Vision-Mamba, integrated voxel-level radiomics feature maps and CT images for pCR prediction. Additionally, other commonly used deep learning models, including 3D-ResNet and Vision Transformer, as well as traditional radiomics methods, were developed for comparison. Model performance was evaluated using accuracy, area under the curve (AUC), sensitivity, specificity, and prognostic stratification capabilities. The SHapley Additive exPlanations analysis was employed to interpret the model's predictions. RESULTS: The Vision-Mamba model demonstrated robust predictive performance in the training set (accuracy: 0.89, AUC: 0.91, sensitivity: 0.82, specificity: 0.92) and validation sets (accuracy: 0.83-0.91, AUC: 0.83-0.92, sensitivity: 0.73-0.94, specificity: 0.84-1.0). The model outperformed other deep learning models and traditional radiomics methods. The model's ability to stratify patients into high and low-risk groups was validated, showing superior prognostic stratification compared with traditional methods. SHAP provided quantitative and visual model interpretation. CONCLUSIONS: We present a voxel-level radiomics-based deep learning model to predict pCR to neoadjuvant immunotherapy combined with chemotherapy based on pretreatment diagnostic CT images with high accuracy and robustness. This model could provide a promising tool for individualized management of patients with ESCC.",
    "verified": true,
    "counted_members": [
@@ -29776,7 +29778,8 @@
      "match": "openalex",
      "affiliations": [
       "Maastricht University Medical Centre",
-      "Department of Radiation Oncology (Maastro), GROW Research Institute for Oncology and Reproduction, Maastricht University Medical Centre+ , Maastricht, 6229ER,",
+      "Maastro Clinic",
+      "Department of Radiation Oncology (Maastro), GROW Research Institute for Oncology and Reproduction, Maastricht University Medical Centre+ , Maastricht, 6229ER, The Netherlands",
       "Maastricht University Medical Centre+ Department of Radiation Oncology (Maastro), GROW Research Institute for Oncology and Reproduction, , Maastricht, The"
      ]
     },
@@ -29786,7 +29789,7 @@
      "match": "openalex",
      "affiliations": [
       "KU Leuven",
-      "Academic Center for General Practice, Department of Public Health and Primary Care, KU Leuven , Leuven, 3000,",
+      "Academic Center for General Practice, Department of Public Health and Primary Care, KU Leuven , Leuven, 3000, Belgium",
       "KU Leuven Academic Center for General Practice, Department of Public Health and Primary Care, , Leuven,"
      ]
     },
@@ -29796,7 +29799,8 @@
      "match": "openalex",
      "affiliations": [
       "Maastricht University Medical Centre",
-      "Department of Radiation Oncology (Maastro), GROW Research Institute for Oncology and Reproduction, Maastricht University Medical Centre+ , Maastricht, 6229ER,",
+      "Maastro Clinic",
+      "Department of Radiation Oncology (Maastro), GROW Research Institute for Oncology and Reproduction, Maastricht University Medical Centre+ , Maastricht, 6229ER, The Netherlands",
       "Maastricht University Medical Centre+ Department of Radiation Oncology (Maastro), GROW Research Institute for Oncology and Reproduction, , Maastricht, The"
      ]
     },
@@ -29807,8 +29811,9 @@
      "affiliations": [
       "Maastricht University Medical Centre",
       "Maastricht University",
-      "Brightlands Institute for Smart Society, Faculty of Science and Engineering, Maastricht University , Heerlen, 6411CR,",
-      "Department of Radiation Oncology (Maastro), GROW Research Institute for Oncology and Reproduction, Maastricht University Medical Centre+ , Maastricht, 6229ER,",
+      "Maastro Clinic",
+      "Brightlands Institute for Smart Society, Faculty of Science and Engineering, Maastricht University , Heerlen, 6411CR, The Netherlands",
+      "Department of Radiation Oncology (Maastro), GROW Research Institute for Oncology and Reproduction, Maastricht University Medical Centre+ , Maastricht, 6229ER, The Netherlands",
       "Maastricht University Brightlands Institute for Smart Society, Faculty of Science and Engineering, , Heerlen, The",
       "Maastricht University Medical Centre+ Department of Radiation Oncology (Maastro), GROW Research Institute for Oncology and Reproduction, , Maastricht, The"
      ]
@@ -29819,7 +29824,8 @@
      "match": "openalex",
      "affiliations": [
       "Maastricht University Medical Centre",
-      "Department of Radiation Oncology (Maastro), GROW Research Institute for Oncology and Reproduction, Maastricht University Medical Centre+ , Maastricht, 6229ER,",
+      "Maastro Clinic",
+      "Department of Radiation Oncology (Maastro), GROW Research Institute for Oncology and Reproduction, Maastricht University Medical Centre+ , Maastricht, 6229ER, The Netherlands",
       "Maastricht University Medical Centre+ Department of Radiation Oncology (Maastro), GROW Research Institute for Oncology and Reproduction, , Maastricht, The"
      ]
     },
@@ -29829,7 +29835,7 @@
      "match": "openalex",
      "affiliations": [
       "Christian Medical College, Vellore",
-      "Quantitative Imaging Research and Artificial Intelligence Lab, Department of Radiation Oncology, Unit II, Christian Medical College , Vellore, Tamil Nadu, 632004,",
+      "Quantitative Imaging Research and Artificial Intelligence Lab, Department of Radiation Oncology, Unit II, Christian Medical College , Vellore, Tamil Nadu, 632004, India",
       "Unit II, Christian Medical College Quantitative Imaging Research and Artificial Intelligence Lab, Department of Radiation Oncology, , Vellore, Tamil Nadu,"
      ]
     }
@@ -29853,25 +29859,29 @@
    "member_affiliations": {
     "varsha-gouthamchand": [
      "Maastricht University Medical Centre",
-     "Department of Radiation Oncology (Maastro), GROW Research Institute for Oncology and Reproduction, Maastricht University Medical Centre+ , Maastricht, 6229ER,",
+     "Maastro Clinic",
+     "Department of Radiation Oncology (Maastro), GROW Research Institute for Oncology and Reproduction, Maastricht University Medical Centre+ , Maastricht, 6229ER, The Netherlands",
      "Maastricht University Medical Centre+ Department of Radiation Oncology (Maastro), GROW Research Institute for Oncology and Reproduction, , Maastricht, The"
     ],
     "rianne-fijten": [
      "Maastricht University Medical Centre",
-     "Department of Radiation Oncology (Maastro), GROW Research Institute for Oncology and Reproduction, Maastricht University Medical Centre+ , Maastricht, 6229ER,",
+     "Maastro Clinic",
+     "Department of Radiation Oncology (Maastro), GROW Research Institute for Oncology and Reproduction, Maastricht University Medical Centre+ , Maastricht, 6229ER, The Netherlands",
      "Maastricht University Medical Centre+ Department of Radiation Oncology (Maastro), GROW Research Institute for Oncology and Reproduction, , Maastricht, The"
     ],
     "andre-dekker": [
      "Maastricht University Medical Centre",
      "Maastricht University",
-     "Brightlands Institute for Smart Society, Faculty of Science and Engineering, Maastricht University , Heerlen, 6411CR,",
-     "Department of Radiation Oncology (Maastro), GROW Research Institute for Oncology and Reproduction, Maastricht University Medical Centre+ , Maastricht, 6229ER,",
+     "Maastro Clinic",
+     "Brightlands Institute for Smart Society, Faculty of Science and Engineering, Maastricht University , Heerlen, 6411CR, The Netherlands",
+     "Department of Radiation Oncology (Maastro), GROW Research Institute for Oncology and Reproduction, Maastricht University Medical Centre+ , Maastricht, 6229ER, The Netherlands",
      "Maastricht University Brightlands Institute for Smart Society, Faculty of Science and Engineering, , Heerlen, The",
      "Maastricht University Medical Centre+ Department of Radiation Oncology (Maastro), GROW Research Institute for Oncology and Reproduction, , Maastricht, The"
     ],
     "leonard-wee": [
      "Maastricht University Medical Centre",
-     "Department of Radiation Oncology (Maastro), GROW Research Institute for Oncology and Reproduction, Maastricht University Medical Centre+ , Maastricht, 6229ER,",
+     "Maastro Clinic",
+     "Department of Radiation Oncology (Maastro), GROW Research Institute for Oncology and Reproduction, Maastricht University Medical Centre+ , Maastricht, 6229ER, The Netherlands",
      "Maastricht University Medical Centre+ Department of Radiation Oncology (Maastro), GROW Research Institute for Oncology and Reproduction, , Maastricht, The"
     ]
    },
@@ -29883,7 +29893,7 @@
    },
    "senior_affiliations": [
     "Christian Medical College, Vellore",
-    "Quantitative Imaging Research and Artificial Intelligence Lab, Department of Radiation Oncology, Unit II, Christian Medical College , Vellore, Tamil Nadu, 632004,",
+    "Quantitative Imaging Research and Artificial Intelligence Lab, Department of Radiation Oncology, Unit II, Christian Medical College , Vellore, Tamil Nadu, 632004, India",
     "Unit II, Christian Medical College Quantitative Imaging Research and Artificial Intelligence Lab, Department of Radiation Oncology, , Vellore, Tamil Nadu,"
    ],
    "cited_by_count": 4,
@@ -34070,7 +34080,7 @@
     "Pfizer (United States)",
     "Pfizer Inc, New York, New York, USA"
    ],
-   "cited_by_count": 8,
+   "cited_by_count": 9,
    "abstract": "Abstract Federated Learning (FL) has emerged as a promising solution to address the limitations of centralised machine learning (ML) in oncology, particularly in overcoming privacy concerns and harnessing the power of diverse, multi-center data. This systematic review synthesises current knowledge on the state-of-the-art FL in oncology, focusing on breast, lung, and prostate cancer. Distinct from previous surveys, our comprehensive review critically evaluates the real-world implementation and impact of FL on cancer care, demonstrating its effectiveness in enhancing ML generalisability, performance and data privacy in clinical settings and data. We evaluated state-of-the-art advances in FL, demonstrating its growing adoption amid tightening data privacy regulations. FL outperformed centralised ML in 15 out of the 25 studies reviewed, spanning diverse ML models and clinical applications, and facilitating integration of multi-modal information for precision medicine. Despite the current challenges identified in reproducibility, standardisation and methodology across studies, the demonstrable benefits of FL in harnessing real-world data and addressing clinical needs highlight its significant potential for advancing cancer research. We propose that future research should focus on addressing these limitations and investigating further advanced FL methods, to fully harness data diversity and realise the transformative power of cutting-edge FL in cancer care.",
    "verified": false,
    "counted_members": [],
@@ -37830,9 +37840,9 @@
    "source_id": "S4363607561",
    "landing_url": "https://doi.org/10.1117/12.3007031",
    "is_oa": true,
-   "oa_url": "https://iris.unisr.it/bitstream/20.500.11768/207479/1/unpaywall-bitstream-647164212.pdf",
+   "oa_url": "https://cris.maastrichtuniversity.nl/files/223707689/Dekker-2024-Optimizing-CycleGAN-Design-for-CBCT-to-CT-Translation.pdf",
    "license": "other-oa",
-   "pdf_url": "https://iris.unisr.it/bitstream/20.500.11768/207479/1/unpaywall-bitstream-647164212.pdf",
+   "pdf_url": null,
    "authors": [
     "Ibrahim Hadžić",
     "Suraj Pai",
@@ -41451,7 +41461,6 @@
      "match": "openalex",
      "affiliations": [
       "Maastricht University",
-      "Maastricht University, Research Institute for Nutrition and Translational Research in Metabolism NUTRIM , Maastricht,",
       "Maastricht University, Research Institute for Nutrition and Translational Research in Metabolism NUTRIM , Maastricht, The Netherlands"
      ]
     }
@@ -41491,7 +41500,6 @@
    "member_affiliations": {
     "ralph-brecheisen": [
      "Maastricht University",
-     "Maastricht University, Research Institute for Nutrition and Translational Research in Metabolism NUTRIM , Maastricht,",
      "Maastricht University, Research Institute for Nutrition and Translational Research in Metabolism NUTRIM , Maastricht, The Netherlands"
     ]
    },
@@ -41500,7 +41508,6 @@
    },
    "senior_affiliations": [
     "Erasmus MC",
-    "Erasmus University Medical Center Rotterdam, Department of Gastroenterology and Hepatology , Rotterdam,",
     "Erasmus University Medical Center Rotterdam, Department of Gastroenterology and Hepatology , Rotterdam, The Netherlands"
    ],
    "cited_by_count": 0,

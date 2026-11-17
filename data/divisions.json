@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-17T14:11:09+00:00",
+ "generated": "2026-11-17T15:18:29+00:00",
  "since_year": 2024,
  "keywords": [
   "maastro",
@@ -331,6 +331,24 @@
  ],
  "frequent_leader_min_papers": 2,
  "works": [
+  {
+   "id": "W7233934488",
+   "doi": "https://doi.org/10.1016/j.tranon.2026.103084",
+   "title": "Pharmacogenomic testing and survival in oesophageal cancer patients, a literature review and results from selected SNPs in the UK MRC OE02 trial",
+   "publication_date": "2026-11-16",
+   "year": 2026,
+   "type": "article",
+   "journal": "Translational Oncology",
+   "cited_by_count": 0,
+   "is_oa": true,
+   "author_count": 13,
+   "first_author": "Daryl Kai Ann Chia",
+   "last_author": "Heike Irmgard Grabsch",
+   "last_author_home": true,
+   "maastro": true,
+   "divisions": [],
+   "leaders": {}
+  },
   {
    "id": "W7225989936",
    "doi": "https://doi.org/10.2196/99117",
@@ -684,7 +702,7 @@
    "type": "article",
    "journal": "Lung Cancer",
    "cited_by_count": 0,
-   "is_oa": false,
+   "is_oa": true,
    "author_count": 22,
    "first_author": "Shiva Najjary",
    "last_author": "Lizza E.L. Hendriks",
@@ -954,6 +972,24 @@
    "leaders": {}
   },
   {
+   "id": "W7221635080",
+   "doi": "https://doi.org/10.1093/jnci/djag385",
+   "title": "Trends in bone health agent use and skeletal events in metastatic castration-resistant prostate cancer",
+   "publication_date": "2026-10-12",
+   "year": 2026,
+   "type": "article",
+   "journal": "JNCI Journal of the National Cancer Institute",
+   "cited_by_count": 0,
+   "is_oa": false,
+   "author_count": 11,
+   "first_author": "Kim J. M. van der Velden",
+   "last_author": "Malou C. P. Kuppen",
+   "last_author_home": true,
+   "maastro": true,
+   "divisions": [],
+   "leaders": {}
+  },
+  {
    "id": "W7128449036",
    "doi": "https://doi.org/10.1038/s41523-026-01068-y",
    "title": "Construction of personal health knowledge graphs for clinical data harmonization in breast cancer",
@@ -977,24 +1013,6 @@
      "maastricht": true
     }
    }
-  },
-  {
-   "id": "W7221635080",
-   "doi": "https://doi.org/10.1093/jnci/djag385",
-   "title": "Trends in bone health agent use and skeletal events in metastatic castration-resistant prostate cancer",
-   "publication_date": "2026-10-12",
-   "year": 2026,
-   "type": "article",
-   "journal": "JNCI Journal of the National Cancer Institute",
-   "cited_by_count": 0,
-   "is_oa": false,
-   "author_count": 11,
-   "first_author": "Kim J. M. van der Velden",
-   "last_author": "Malou C. P. Kuppen",
-   "last_author_home": true,
-   "maastro": true,
-   "divisions": [],
-   "leaders": {}
   },
   {
    "id": "W7221757932",
@@ -2171,24 +2189,6 @@
    "leaders": {}
   },
   {
-   "id": "W7204206988",
-   "doi": "https://doi.org/10.1016/j.phro.2026.101071",
-   "title": "Clinical implementation of intensity modulated proton therapy in breath-hold for mediastinal lymphoma patients using surface monitoring and nasal high-flow therapy",
-   "publication_date": "2026-08-25",
-   "year": 2026,
-   "type": "article",
-   "journal": "Physics and Imaging in Radiation Oncology",
-   "cited_by_count": 1,
-   "is_oa": true,
-   "author_count": 15,
-   "first_author": "Gloria Vilches‐Freixas",
-   "last_author": "Bastiaan D.P. Ta",
-   "last_author_home": true,
-   "maastro": true,
-   "divisions": [],
-   "leaders": {}
-  },
-  {
    "id": "W7204163944",
    "doi": "https://doi.org/10.3389/fimmu.2026.1876914",
    "title": "Microbiome-host interactions in locally advanced cervical cancer: the impact on chemoradiotherapy treatment outcomes and toxicity",
@@ -2201,6 +2201,24 @@
    "author_count": 8,
    "first_author": "Helena C. J. Schellekens",
    "last_author": "Peggy J. de Vos van Steenwijk",
+   "last_author_home": true,
+   "maastro": true,
+   "divisions": [],
+   "leaders": {}
+  },
+  {
+   "id": "W7204206988",
+   "doi": "https://doi.org/10.1016/j.phro.2026.101071",
+   "title": "Clinical implementation of intensity modulated proton therapy in breath-hold for mediastinal lymphoma patients using surface monitoring and nasal high-flow therapy",
+   "publication_date": "2026-08-25",
+   "year": 2026,
+   "type": "article",
+   "journal": "Physics and Imaging in Radiation Oncology",
+   "cited_by_count": 1,
+   "is_oa": true,
+   "author_count": 15,
+   "first_author": "Gloria Vilches‐Freixas",
+   "last_author": "Bastiaan D.P. Ta",
    "last_author_home": true,
    "maastro": true,
    "divisions": [],
@@ -2456,7 +2474,7 @@
    "type": "article",
    "journal": "Clinical Chemistry and Laboratory Medicine (CCLM)",
    "cited_by_count": 0,
-   "is_oa": false,
+   "is_oa": true,
    "author_count": 24,
    "first_author": "Jochen K. Lennerz",
    "last_author": "Tomris Özben",
@@ -4207,7 +4225,7 @@
    "year": 2026,
    "type": "article",
    "journal": "The Lancet Oncology",
-   "cited_by_count": 7,
+   "cited_by_count": 8,
    "is_oa": true,
    "author_count": 38,
    "first_author": "Joachim Widder",
@@ -4623,7 +4641,7 @@
    "year": 2026,
    "type": "article",
    "journal": "Health Policy",
-   "cited_by_count": 0,
+   "cited_by_count": 1,
    "is_oa": true,
    "author_count": 43,
    "first_author": "Charlotte Ceuppens",
@@ -6475,6 +6493,26 @@
    "leaders": {}
   },
   {
+   "id": "W7131264997",
+   "doi": "https://doi.org/10.1093/bjrai/ubaf021",
+   "title": "Independent validation of the Mosamatic deep learning automated skeletal muscle and adipose tissue segmentation tool in an external Chinese cancer patient cohort",
+   "publication_date": "2026-01-01",
+   "year": 2026,
+   "type": "article",
+   "journal": "BJR|Artificial Intelligence",
+   "cited_by_count": 0,
+   "is_oa": true,
+   "author_count": 8,
+   "first_author": "Chenfei Zhou",
+   "last_author": "Steven W.M. Olde Damink",
+   "last_author_home": false,
+   "maastro": true,
+   "divisions": [
+    "Clinical Data Science"
+   ],
+   "leaders": {}
+  },
+  {
    "id": "W7161775875",
    "doi": "https://doi.org/10.26481/dis.20260415lh",
    "title": "From black box to white coat: Bridging the AI implementation gap",
@@ -6570,26 +6608,6 @@
      "maastricht": true
     }
    }
-  },
-  {
-   "id": "W7131264997",
-   "doi": "https://doi.org/10.1093/bjrai/ubaf021",
-   "title": "Independent validation of the Mosamatic deep learning automated skeletal muscle and adipose tissue segmentation tool in an external Chinese cancer patient cohort",
-   "publication_date": "2026-01-01",
-   "year": 2026,
-   "type": "article",
-   "journal": "BJR|Artificial Intelligence",
-   "cited_by_count": 0,
-   "is_oa": true,
-   "author_count": 8,
-   "first_author": "Chenfei Zhou",
-   "last_author": "Steven W.M. Olde Damink",
-   "last_author_home": false,
-   "maastro": true,
-   "divisions": [
-    "Clinical Data Science"
-   ],
-   "leaders": {}
   },
   {
    "id": "W7135036030",
@@ -6738,7 +6756,7 @@
    "year": 2025,
    "type": "article",
    "journal": "The Lancet Oncology",
-   "cited_by_count": 80,
+   "cited_by_count": 81,
    "is_oa": true,
    "author_count": 30,
    "first_author": "Anne Sophie V M van den Heerik",
@@ -9198,24 +9216,6 @@
    "leaders": {}
   },
   {
-   "id": "W4413939355",
-   "doi": "https://doi.org/10.1016/s1470-2045(25)00326-2",
-   "title": "Primary target volume delineation for radiotherapy in nasopharyngeal carcinoma: CSTRO, CACA, CSCO, HNCIG, ESTRO, and ASTRO guidelines and contouring atlas",
-   "publication_date": "2025-09-01",
-   "year": 2025,
-   "type": "article",
-   "journal": "The Lancet Oncology",
-   "cited_by_count": 21,
-   "is_oa": true,
-   "author_count": 51,
-   "first_author": "Ling‐Long Tang",
-   "last_author": "Jun Ma",
-   "last_author_home": false,
-   "maastro": true,
-   "divisions": [],
-   "leaders": {}
-  },
-  {
    "id": "W4414035571",
    "doi": "https://doi.org/10.1016/s1470-2045(25)00327-4",
    "title": "Target volume delineation of the neck for radiotherapy in nasopharyngeal carcinoma: CSTRO, CACA, CSCO, HNCIG, ESTRO, and ASTRO guidelines and contouring atlas",
@@ -9234,6 +9234,24 @@
    "leaders": {}
   },
   {
+   "id": "W4413939355",
+   "doi": "https://doi.org/10.1016/s1470-2045(25)00326-2",
+   "title": "Primary target volume delineation for radiotherapy in nasopharyngeal carcinoma: CSTRO, CACA, CSCO, HNCIG, ESTRO, and ASTRO guidelines and contouring atlas",
+   "publication_date": "2025-09-01",
+   "year": 2025,
+   "type": "article",
+   "journal": "The Lancet Oncology",
+   "cited_by_count": 21,
+   "is_oa": true,
+   "author_count": 51,
+   "first_author": "Ling‐Long Tang",
+   "last_author": "Jun Ma",
+   "last_author_home": false,
+   "maastro": true,
+   "divisions": [],
+   "leaders": {}
+  },
+  {
    "id": "W4414614150",
    "doi": "https://doi.org/10.1093/bjs/znaf190",
    "title": "Factors influencing locoregional recurrence rates in locally advanced rectal cancer after total neoadjuvant treatment versus chemoradiotherapy in the RAPIDO trial",
@@ -9241,7 +9259,7 @@
    "year": 2025,
    "type": "article",
    "journal": "British journal of surgery",
-   "cited_by_count": 16,
+   "cited_by_count": 17,
    "is_oa": true,
    "author_count": 16,
    "first_author": "Ilaria Prata",
@@ -9945,6 +9963,31 @@
    "led_by": "Liesbeth Jorinne Boersma"
   },
   {
+   "id": "W4411961075",
+   "doi": "https://doi.org/10.1002/ejhf.3714",
+   "title": "Exploring Safety of Down-Titrating Diuretics in Heart Failure Management",
+   "publication_date": "2025-07-02",
+   "year": 2025,
+   "type": "article",
+   "journal": "European Journal of Heart Failure",
+   "cited_by_count": 5,
+   "is_oa": true,
+   "author_count": 6,
+   "first_author": "Chrit B.G. Geraeds",
+   "last_author": "Hans‐Peter Brunner‐La Rocca",
+   "last_author_home": false,
+   "maastro": true,
+   "divisions": [
+    "Clinical Data Science"
+   ],
+   "leaders": {
+    "Clinical Data Science": {
+     "position": "middle",
+     "maastricht": true
+    }
+   }
+  },
+  {
    "id": "W4411895710",
    "doi": "https://doi.org/10.1038/s41598-025-05954-6",
    "title": "Ensemble methods and partially-supervised learning for accurate and robust automatic murine organ segmentation",
@@ -9996,31 +10039,6 @@
     }
    },
    "led_by": "Iñigo Bermejo"
-  },
-  {
-   "id": "W4411961075",
-   "doi": "https://doi.org/10.1002/ejhf.3714",
-   "title": "Exploring Safety of Down-Titrating Diuretics in Heart Failure Management",
-   "publication_date": "2025-07-02",
-   "year": 2025,
-   "type": "article",
-   "journal": "European Journal of Heart Failure",
-   "cited_by_count": 5,
-   "is_oa": true,
-   "author_count": 6,
-   "first_author": "Chrit B.G. Geraeds",
-   "last_author": "Hans‐Peter Brunner‐La Rocca",
-   "last_author_home": false,
-   "maastro": true,
-   "divisions": [
-    "Clinical Data Science"
-   ],
-   "leaders": {
-    "Clinical Data Science": {
-     "position": "middle",
-     "maastricht": true
-    }
-   }
   },
   {
    "id": "W4411978917",
@@ -10886,7 +10904,7 @@
    "year": 2025,
    "type": "review",
    "journal": "Molecular and Cellular Biology",
-   "cited_by_count": 53,
+   "cited_by_count": 54,
    "is_oa": true,
    "author_count": 3,
    "first_author": "Rui Zhang",
@@ -11860,7 +11878,7 @@
    "year": 2025,
    "type": "article",
    "journal": "Journal for ImmunoTherapy of Cancer",
-   "cited_by_count": 72,
+   "cited_by_count": 73,
    "is_oa": true,
    "author_count": 16,
    "first_author": "Zhen Zhang",
@@ -12400,7 +12418,7 @@
    "year": 2025,
    "type": "review",
    "journal": "The Breast",
-   "cited_by_count": 9,
+   "cited_by_count": 10,
    "is_oa": true,
    "author_count": 30,
    "first_author": "Meritxell Arenas",
@@ -12701,6 +12719,31 @@
    "leaders": {}
   },
   {
+   "id": "W4412449917",
+   "doi": "https://doi.org/10.1093/bjrai/ubaf008",
+   "title": "Prognostic modeling in head and neck cancer: deep learning or handcrafted radiomics?",
+   "publication_date": "2025-01-01",
+   "year": 2025,
+   "type": "review",
+   "journal": "BJR|Artificial Intelligence",
+   "cited_by_count": 4,
+   "is_oa": true,
+   "author_count": 7,
+   "first_author": "Varsha Gouthamchand",
+   "last_author": "Hannah Mary T. Thomas",
+   "last_author_home": false,
+   "maastro": true,
+   "divisions": [
+    "Clinical Data Science"
+   ],
+   "leaders": {
+    "Clinical Data Science": {
+     "position": "middle",
+     "maastricht": true
+    }
+   }
+  },
+  {
    "id": "W4406852605",
    "doi": "https://doi.org/10.1016/j.phro.2025.100713",
    "title": "Accuracy-dependent dose-constraints and dose-based safety margins for organs-at-risk in radiotherapy",
@@ -12817,31 +12860,6 @@
    },
    "led_by": "Dirk De Ruysscher",
    "led_by_division": "Clinical Research"
-  },
-  {
-   "id": "W4412449917",
-   "doi": "https://doi.org/10.1093/bjrai/ubaf008",
-   "title": "Prognostic modeling in head and neck cancer: deep learning or handcrafted radiomics?",
-   "publication_date": "2025-01-01",
-   "year": 2025,
-   "type": "review",
-   "journal": "BJR|Artificial Intelligence",
-   "cited_by_count": 4,
-   "is_oa": true,
-   "author_count": 7,
-   "first_author": "Varsha Gouthamchand",
-   "last_author": "Hannah Mary T. Thomas",
-   "last_author_home": false,
-   "maastro": true,
-   "divisions": [
-    "Clinical Data Science"
-   ],
-   "leaders": {
-    "Clinical Data Science": {
-     "position": "middle",
-     "maastricht": true
-    }
-   }
   },
   {
    "id": "W4406699616",
@@ -13800,7 +13818,7 @@
    "year": 2024,
    "type": "article",
    "journal": "Nature Communications",
-   "cited_by_count": 125,
+   "cited_by_count": 126,
    "is_oa": true,
    "author_count": 20,
    "first_author": "Yuan Gao",
@@ -14640,7 +14658,7 @@
    "year": 2024,
    "type": "review",
    "journal": "BMJ",
-   "cited_by_count": 48,
+   "cited_by_count": 50,
    "is_oa": true,
    "author_count": 20,
    "first_author": "Shing Fung Lee",
@@ -15816,7 +15834,7 @@
    "year": 2024,
    "type": "article",
    "journal": "Radiotherapy and Oncology",
-   "cited_by_count": 130,
+   "cited_by_count": 131,
    "is_oa": true,
    "author_count": 18,
    "first_author": "Coen Hurkmans",
@@ -15896,7 +15914,7 @@
    "year": 2024,
    "type": "article",
    "journal": "Nature Medicine",
-   "cited_by_count": 137,
+   "cited_by_count": 138,
    "is_oa": true,
    "author_count": 25,
    "first_author": "Sarah Volinsky-Fremond",
@@ -16187,7 +16205,7 @@
    "year": 2024,
    "type": "article",
    "journal": "Annals of Surgery",
-   "cited_by_count": 24,
+   "cited_by_count": 25,
    "is_oa": true,
    "author_count": 19,
    "first_author": "Nathalie R. A. Beets",
