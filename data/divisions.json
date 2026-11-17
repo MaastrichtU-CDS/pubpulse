@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-17T12:53:03+00:00",
+ "generated": "2026-11-17T13:23:48+00:00",
  "since_year": 2024,
  "keywords": [
   "maastro",
@@ -8603,24 +8603,6 @@
    }
   },
   {
-   "id": "W4416638479",
-   "doi": "https://doi.org/10.1183/13993003.congress-2025.pa5284",
-   "title": "The effects of nandrolone on muscle wasting in a mouse model of glucocorticoid-treated ECOPD",
-   "publication_date": "2025-09-27",
-   "year": 2025,
-   "type": "conference-abstract",
-   "journal": "European Respiratory Journal",
-   "cited_by_count": 0,
-   "is_oa": false,
-   "author_count": 9,
-   "first_author": "Sandra Jessica van Krimpen",
-   "last_author": "RAMON C. J. LANGEN",
-   "last_author_home": false,
-   "maastro": true,
-   "divisions": [],
-   "leaders": {}
-  },
-  {
    "id": "W4416637383",
    "doi": "https://doi.org/10.1183/13993003.congress-2025.pa5281",
    "title": "Myostatin signaling blockade impacts on muscle wasting in a mouse model of glucocorticoid-treated ECOPD",
@@ -8633,6 +8615,24 @@
    "author_count": 9,
    "first_author": "Sandra Jessica van Krimpen",
    "last_author": "Harry R. Gosker",
+   "last_author_home": false,
+   "maastro": true,
+   "divisions": [],
+   "leaders": {}
+  },
+  {
+   "id": "W4416638479",
+   "doi": "https://doi.org/10.1183/13993003.congress-2025.pa5284",
+   "title": "The effects of nandrolone on muscle wasting in a mouse model of glucocorticoid-treated ECOPD",
+   "publication_date": "2025-09-27",
+   "year": 2025,
+   "type": "conference-abstract",
+   "journal": "European Respiratory Journal",
+   "cited_by_count": 0,
+   "is_oa": false,
+   "author_count": 9,
+   "first_author": "Sandra Jessica van Krimpen",
+   "last_author": "RAMON C. J. LANGEN",
    "last_author_home": false,
    "maastro": true,
    "divisions": [],
