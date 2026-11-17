@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#001c3d" />
+    <title>Maastro divisions · pubpulse</title>
+    <link rel="icon" type="image/svg+xml" href="assets/cds-icon.svg?v=cds-3" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico?v=cds-3" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="studio.css" />
+    <link rel="stylesheet" href="divisions.css" />
+  </head>
+  <body class="studio-page">
+    <header class="top">
+      <div class="wrap nav">
+        <a class="brand" href="./" aria-label="pubpulse home"
+          ><img src="assets/cds-icon.svg?v=cds-3" width="36" height="36" alt="" /><span
+            >pub<span class="brand-light">pulse</span><small>RESEARCH UPDATES</small></span
+          ></a
+        >
+        <nav aria-label="Main navigation">
+          <a href="./#publications">Publications</a>
+          <a href="./#stats">Statistics</a>
+          <a href="social.html">Social posts</a>
+          <a href="divisions.html" aria-current="page">Divisions</a>
+          <a class="button button-small" href="digest.html">Newsletter <span aria-hidden="true">→</span></a>
+        </nav>
+      </div>
+    </header>
+
+    <section class="studio-hero">
+      <div class="wrap">
+        <p class="eyebrow">MAASTRO RESEARCH DIVISIONS</p>
+        <h1>All Maastro publications</h1>
+        <p>
+          Every paper with a Maastro affiliation, from OpenAlex, per research division. This page stands apart from
+          the Clinical Data Science overview on the rest of pubpulse.
+        </p>
+      </div>
+    </section>
+
+    <main class="wrap dv">
+      <form class="dv-controls" id="dv-controls" aria-label="Filters">
+        <label
+          >Division
+          <select id="dv-division"><option value="">All Maastro</option></select>
+        </label>
+        <label
+          >Led by
+          <select id="dv-lead"><option value="">Anyone</option></select>
+        </label>
+        <label
+          >Year
+          <select id="dv-year"><option value="">All years</option></select>
+        </label>
+        <button type="button" class="button button-small button-ghost" id="dv-csv" disabled>Download CSV</button>
+      </form>
+
+      <p class="dv-msg" id="dv-msg" role="status" aria-live="polite">Loading…</p>
+
+      <div class="dv-table-wrap" tabindex="0" role="region" aria-labelledby="dv-caption">
+        <table class="dv-table" id="dv-table" hidden>
+          <caption id="dv-caption">Maastro papers per division</caption>
+          <thead>
+            <tr>
+              <th scope="col">Division</th>
+              <th scope="col">Leader</th>
+              <th scope="col" class="num">Papers</th>
+              <th scope="col" class="num" title="Last author listed with Maastro, GROW or Maastricht radiation oncology / radiology; the rest are collaborations led elsewhere">Maastricht-led</th>
+              <th scope="col" class="num" title="Articles, reviews, letters and editorials">Journal</th>
+              <th scope="col" class="num" title="Conference abstracts and papers">Conference</th>
+              <th scope="col" class="num">Preprints</th>
+              <th scope="col" class="num" title="Book chapters, datasets, theses and other outputs">Other</th>
+              <th scope="col" class="num" title="Papers with the division leader as first or only author">Leader first</th>
+              <th scope="col" class="num" title="Papers with the division leader as last author">Leader last</th>
+              <th scope="col" class="num">Open access</th>
+              <th scope="col" class="num">Citations</th>
+            </tr>
+          </thead>
+          <tbody id="dv-rows"></tbody>
+          <tfoot id="dv-total"></tfoot>
+        </table>
+      </div>
+
+      <div class="dv-notes">
+        <p>
+          <b>How to read this.</b> All papers where an author lists Maastro (OpenAlex's institution record, or
+          "Maastro" in the affiliation text), plus papers where a division leader lists a Maastricht affiliation
+          (<span id="dv-keywords"></span>). A paper counts for Clinical Data Science when anyone in the CDS group is on
+          it, and for another division when its leader is. Papers with neither are listed as <i>division not
+          identified</i>, with their first and last author. A paper credited to two divisions counts in both rows and
+          once in the Maastro total. When a preprint's published version is also listed, only the published version is
+          kept. Citation counts are OpenAlex's and change over time.
+        </p>
+        <p>
+          <b>Led by.</b> The last author leads a paper. A paper is <i>Maastricht-led</i> when its last author lists Maastro or
+          one of the Maastricht affiliations above; otherwise it is a collaboration led from outside Maastricht. Papers are labelled with their leader when that is a
+          division leader, or someone who is last author listed in Maastricht on at least
+          <span id="dv-min"></span> papers here.
+        </p>
+        <p id="dv-updated"></p>
+      </div>
+
+      <h2 class="dv-h2">Frequent Maastricht leaders</h2>
+      <p class="dv-notes">
+        Last authors listed in Maastricht on several of these papers, other than the division leaders. <i>No division</i> counts
+        their papers without a division leader or CDS member, the ones to trace to a division.
+      </p>
+      <div class="dv-table-wrap" tabindex="0" role="region" aria-labelledby="dv-freq-caption">
+        <table class="dv-table" id="dv-freq" hidden>
+          <caption id="dv-freq-caption">Frequent Maastricht last authors</caption>
+          <thead>
+            <tr>
+              <th scope="col">Name</th>
+              <th scope="col" class="num">Papers led</th>
+              <th scope="col" class="num">No division</th>
+              <th scope="col">Divisions on their papers</th>
+            </tr>
+          </thead>
+          <tbody id="dv-freq-rows"></tbody>
+        </table>
+      </div>
+
+      <h2 class="dv-h2" id="dv-list-heading">Papers</h2>
+      <ol class="dv-papers" id="dv-papers"></ol>
+      <button type="button" class="button button-small button-ghost" id="dv-more" hidden>Show all</button>
+      <!-- build-version -->
+    </main>
+
+    <footer class="studio-footer">
+      <div class="wrap" aria-label="Institutions">
+        <a href="https://www.maastro.nl/" target="_blank" rel="noopener"
+          ><img src="assets/maastro.svg" width="114" height="24" alt="Maastro"
+        /></a>
+        <a href="https://www.maastrichtuniversity.nl/" target="_blank" rel="noopener"
+          ><img src="assets/maastricht-university.svg" width="256" height="39" alt="Maastricht University"
+        /></a>
+        <a href="https://www.mumc.nl/" target="_blank" rel="noopener"
+          ><img src="assets/maastricht-umc.svg" width="204" height="37" alt="Maastricht UMC+"
+        /></a>
+      </div>
+    </footer>
+
+    <script src="divisions.js"></script>
+  </body>
+</html>

@@ -30,6 +30,7 @@ def main(argv: list[str] | None = None) -> int:
     s.add_argument("--skip-people", action="store_true", help="do not touch the staff page; use people.yml as is")
 
     sub.add_parser("build", help="build dist/ (website), data/feed.xml and out/ (digest email, Teams card)")
+    sub.add_parser("divisions", help="leader-level publication data for the Maastro divisions page (data/divisions.json)")
 
     sub.add_parser("send-digest", help="email out/digest.* to DIGEST_TO (and an Apps Script list, if configured) via SMTP")
     sub.add_parser("send-campaign", help="send out/digest.html as a Brevo campaign to the Brevo subscriber list")
@@ -117,6 +118,10 @@ def main(argv: list[str] | None = None) -> int:
         Path(args.result_file).write_text(message, encoding="utf-8")
         print(message)
         return 0 if changed else 3
+    if args.cmd == "divisions":
+        from .divisions import run as divisions_run
+
+        return divisions_run()
     if args.cmd in ("sync", "all"):
         from .sync import run as sync_run
 

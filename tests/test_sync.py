@@ -453,3 +453,18 @@ def test_journal_metrics_are_cached_and_survive_api_errors(tmp_path):
         def sources(self, ids): raise RuntimeError("429")
     add_journal_metrics(works, Broken(), date(2027, 1, 1), path=path)  # stale but the API fails: keep cached values
     assert works[0]["journal_impact"] == 16.8
+
+
+def test_supplement_abstracts_typed_as_articles_become_conference_abstracts():
+    from pubpulse.sync import conference_abstract_type
+    for title in ["4666 The interplay between hypoxia and neutrophils", "4293 from framework to plan",
+                  "1798: Patients' needs and experiences", "124P Assessing the prognostic value",
+                  "198eP Multimodal characterization of CCR5", "1364P Federated analysis", "Mo1804 IMAGING-BASED BODY",
+                  "P0083 Decisional needs", "OC-0123 Proffered paper"]:
+        assert conference_abstract_type({"type": "article", "title": title}) == "conference-abstract", title
+    for title in ["Decreased skeletal muscle quantity is associated", "10 years of proton therapy",
+                  "100 days after radiotherapy", "3D printing in radiotherapy", "CCR5 expression and stability"]:
+        assert conference_abstract_type({"type": "article", "title": title}) is None, title
+    # Records OpenAlex already types as something specific are left alone.
+    assert conference_abstract_type({"type": "conference-paper", "title": "276 Mind the gap"}) is None
+    assert conference_abstract_type({"type": "preprint", "title": "4666 Abstract"}) is None

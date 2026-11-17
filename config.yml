@@ -63,6 +63,30 @@ affiliation_policy: flag
 # OpenAlex work types that are never shown (supplements, errata, cover pages).
 exclude_types: [supplementary-materials, erratum, paratext]
 
+# Maastro research divisions: all Maastro-affiliated papers per division on a separate page (divisions.html,
+# `python -m pubpulse divisions`). Never part of the CDS counts, statistics or newsletter. A paper is credited to a
+# division when its leader is an author; to CDS (cds: true) also when anyone tracked by pubpulse is. Papers with
+# neither are shown as "division not identified". maastro.nl/research/organisatie refuses automated reading, so this
+# list is kept by hand: update it when a division gets a new leader. Leaders are found by ORCID.
+maastro_institution: I4210161616  # OpenAlex record of Maastro Clinic (ror.org/059wkzj26); "maastro" in the text counts too
+# "Led by" label and filter: division leaders as last author, plus anyone who is last author listed with Maastro on at
+# least this many papers (found automatically, so papers without an identified division can still be traced).
+frequent_leader_min_papers: 2
+maastro_divisions:
+  - {division: Clinical Data Science, leader: André Dekker, orcid: 0000-0002-0422-7996, cds: true}
+  - {division: Clinical Research, leader: Dirk De Ruysscher, orcid: 0000-0001-9269-6567}
+  - {division: Innovation Implementation Research, leader: Maria Jacobs, orcid: 0000-0001-8832-2378}
+  - {division: Laboratory Research, leader: Marc Vooijs, orcid: 0000-0003-1386-3027}
+  - {division: Physics Research, leader: Frank Verhaegen, orcid: 0000-0001-8470-386X}
+  - {division: Imaging Innovation Research, leader: Regina Beets-Tan, orcid: 0000-0002-8533-5090}
+# A leader's paper is a Maastricht paper when the leader's own authorship lists one of these (same matching rules as
+# institution_keywords). Beets-Tan and Jacobs also work at NKI and Tilburg University, so this filter matters.
+division_keywords:
+  - maastro
+  - grow
+  - [maastricht, radiation oncology]
+  - [maastricht, radiology]
+
 # People who disappear from the staff page keep being tracked for this many months (papers in the pipeline),
 # but during that period a paper only counts when it carries a verified group affiliation for them.
 departed_grace_months: 18

@@ -92,6 +92,10 @@ jobs:
         # manual runs read it.
         run: python -m pubpulse sync ${{ env.FULL != 'true' && '--skip-people' || '' }}
 
+      - name: Maastro division leaders (separate page, never part of the CDS counts)
+        continue-on-error: true
+        run: python -m pubpulse divisions
+
       - name: LinkedIn drafts for new verified journal papers (Claude)
         if: env.ANTHROPIC_API_KEY != ''
         continue-on-error: true

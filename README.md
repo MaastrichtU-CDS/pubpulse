@@ -261,6 +261,34 @@ stays a proof of concept. (Added after an author found a headline that overstate
 - **Figure** (only CC BY papers): the one that shows the main finding, with a plain-language caption; methods figures are
   rejected. Figure first, card second when both exist.
 
+### Maastro divisions page (all Maastro publications)
+
+[Divisions](https://maastrichtu-cds.github.io/pubpulse/divisions.html): every Maastro paper, per research division, for
+Maastro-wide reporting, with a division filter (by leader), a year filter and a CSV download. The main page stays the
+CDS overview: this page never feeds the CDS counts, statistics, newsletter or social posts.
+`python -m pubpulse divisions` (weekly workflow, after the sync) writes `data/divisions.json`.
+
+- **Scope**: every paper since `since_year` where any author lists Maastro: OpenAlex's institution record
+  (`maastro_institution`) or "maastro" in the affiliation text. Both are queried, because OpenAlex links only about
+  half of the Maastro papers to the institution record. Added to that: papers where a division leader lists a Maastricht
+  affiliation (`division_keywords`, e.g. GROW radiology), whoever else is on them.
+- **Divisions**: a paper counts for Clinical Data Science (`cds: true`) when anyone tracked by pubpulse is on it, and for
+  another division when its leader is. Papers with neither are shown as *division not identified*, with first and last
+  author, so they can be traced. Leaders are listed by hand in `config.yml` → `maastro_divisions`, with their ORCID:
+  maastro.nl refuses automated reading, so update the list when a division gets a new leader.
+- **Led by**: the last author leads a paper. *Maastricht-led* means the last author lists Maastro or a
+  `division_keywords` affiliation; the rest are collaborations led from outside Maastricht. Papers are labelled with
+  their leader when that is a division leader, or anyone who is Maastricht-listed last author on at least
+  `frequent_leader_min_papers` papers (found automatically, grouped by first name + surname). The page lists these
+  frequent leaders with how many of their papers have no division, so they can be traced to one; "Led by" is also a
+  filter.
+- **Deduplication**: works are keyed by OpenAlex id across all queries; a paper credited to several divisions counts in
+  each row and once in the Maastro total; a preprint whose published version is also there is dropped (matched by
+  title); conference abstracts in journal supplements count as conference output (same rule as the CDS data).
+- **Failures**: if any OpenAlex request fails, last week's `divisions.json` is kept as it is (an incomplete set would
+  undercount). The workflow step may fail without stopping the CDS run.
+- Budget: about 10–20 requests per run (two Maastro queries of 4–5 pages, one or two pages per leader).
+
 ### Google Scholar cross-check (monthly)
 
 Scholar has no API and forbids scraping, so pubpulse never imports from it. Once a month (and on demand via

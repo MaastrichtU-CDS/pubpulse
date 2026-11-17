@@ -483,7 +483,7 @@ def digest_page(heading: str, status: str, body: str, archive: list[str], site: 
 <a class="skip-link" href="#newsletter">Skip to newsletter</a>
 <header class="top"><div class="wrap nav">
 <a class="brand" href="{prefix}./" aria-label="pubpulse home"><img src="{prefix}assets/cds-icon.svg?v=cds-3" width="36" height="36" alt=""><span>pub<span class="brand-light">pulse</span><small>RESEARCH UPDATES</small></span></a>
-<nav aria-label="Main navigation"><a href="{prefix}./#publications">Publications</a><a href="{prefix}./#stats">Statistics</a><a href="{prefix}social.html">Social posts</a><a class="button button-small" href="{prefix}digest.html" aria-current="page">Newsletter <span aria-hidden="true">→</span></a></nav>
+<nav aria-label="Main navigation"><a href="{prefix}./#publications">Publications</a><a href="{prefix}./#stats">Statistics</a><a href="{prefix}social.html">Social posts</a><a href="{prefix}divisions.html">Divisions</a><a class="button button-small" href="{prefix}digest.html" aria-current="page">Newsletter <span aria-hidden="true">→</span></a></nav>
 </div></header>
 <section class="digest-hero"><div class="wrap digest-hero-inner"><div>
 <p class="eyebrow">THE PUBPULSE NEWSLETTER</p><h1>{html.escape(heading)}</h1><p class="digest-status">{status}</p></div>
@@ -580,16 +580,18 @@ def run(config_path: Path | None = None) -> dict:
     # makes every deploy pick up the new files immediately.
     import hashlib
     version = build_version(cfg.get("repo_url") or "")
-    for page in ("index.html", "social.html"):
+    for page in ("index.html", "social.html", "divisions.html"):
         path = DIST_DIR / page
         if not path.exists():
             continue
         html_text = path.read_text(encoding="utf-8").replace("<!-- build-version -->", version)
-        for asset in ("app.js", "style.css", "library.css", "studio.css", "social-editor.js", "social.js"):
+        for asset in ("app.js", "style.css", "library.css", "studio.css", "social-editor.js", "social.js", "divisions.js", "divisions.css"):
             if (DIST_DIR / asset).exists():
                 digest_hex = hashlib.sha1((DIST_DIR / asset).read_bytes()).hexdigest()[:10]
                 html_text = html_text.replace(f'"{asset}"', f'"{asset}?v={digest_hex}"')
         path.write_text(html_text, encoding="utf-8")
+    if (DATA_DIR / "divisions.json").exists():
+        shutil.copy(DATA_DIR / "divisions.json", DIST_DIR / "data" / "divisions.json")
     if (DATA_DIR / "scholar_check.json").exists():
         shutil.copy(DATA_DIR / "scholar_check.json", DIST_DIR / "data" / "scholar_check.json")
     pending = load_pending() if NOTIFIED_PATH.exists() else list((pubs.get("last_run") or {}).get("new_ids") or [])

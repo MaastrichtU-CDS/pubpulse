@@ -177,8 +177,32 @@ def led_by_other_group(w: dict, people: list[dict], senior_keywords: list, senio
     return None
 
 
+# Journals print conference abstract books as supplements (ESTRO in Radiotherapy and Oncology, ESMO in Annals of
+# Oncology / ESMO Open, DDW in Gastroenterology, ESGO in IJGC, …). OpenAlex types those entries as articles, but their
+# titles start with the programme's abstract code: "4666 The interplay …", "1798: …", "124P …", "198eP …", "Mo1804 …".
+ABSTRACT_CODE = re.compile(
+    r"^(?:\d{2,5}(?:eP|TiP|PD|MO|P|O)?|(?:PO|PD|OC|SP|MO|Mo|Su|Sa|Tu|We|Th|Fr|P)-?\d{2,5})[:.]?\s+(\S+)")
+# "10 years of …", "100 days …": a number that is part of an ordinary title.
+NUMBER_WORDS = {"year", "years", "month", "months", "week", "weeks", "day", "days", "hours", "patients", "cases",
+                "steps", "ways", "lessons", "questions", "reasons", "things", "tips"}
+RETYPABLE = {"article", "review", "other"}
+
+
+def conference_abstract_type(w: dict) -> str | None:
+    """'conference-abstract' for a supplement entry that OpenAlex calls an article, else None."""
+    if w.get("type") not in RETYPABLE:
+        return None
+    m = ABSTRACT_CODE.match(w.get("title") or "")
+    if not m or m.group(1).lower().strip(",.:") in NUMBER_WORDS:
+        return None
+    return "conference-abstract"
+
+
 def apply_overrides(works: list[dict], overrides: dict, people: list[dict] | None = None,
                     senior_keywords: list | None = None) -> list[dict]:
+    for w in works:
+        if (fixed := conference_abstract_type(w)):
+            w["type"] = fixed
     seniors = maastricht_seniors(works, people or [], senior_keywords or [], overrides["confirm"])
     kept = []
     for w in works:

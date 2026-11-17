@@ -1,0 +1,164 @@
+/* Maastro divisions page (divisions.html). Shell styles come from style.css and studio.css. */
+.dv {
+  padding-top: 28px;
+  padding-bottom: 48px;
+}
+.dv-controls {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px 24px;
+  margin-bottom: 18px;
+}
+.dv-controls label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  white-space: nowrap;
+}
+.dv-controls select {
+  max-width: 300px;
+}
+.dv-check input {
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+}
+.dv-hint {
+  color: var(--muted);
+  font-weight: 400;
+  font-size: 12px;
+}
+.dv-msg:empty {
+  display: none;
+}
+.dv-table-wrap {
+  overflow-x: auto;
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+}
+.dv-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+}
+.dv-table caption {
+  text-align: left;
+  font-weight: 600;
+  padding: 14px 16px 6px;
+}
+.dv-table th,
+.dv-table td {
+  padding: 10px 8px;
+  border-top: 1px solid var(--line);
+  text-align: left;
+  white-space: nowrap;
+}
+.dv-table thead th {
+  color: var(--muted);
+  font-size: 11px;
+  font-weight: 600;
+}
+.dv-table tbody th {
+  font-weight: 600;
+}
+.dv-table .num {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+.dv-table tfoot th,
+.dv-table tfoot td {
+  font-weight: 700;
+  background: var(--accent-soft);
+}
+.dv-stale {
+  font-size: 10px;
+  font-weight: 400;
+  color: var(--warn);
+  background: var(--warn-soft);
+  border-radius: 4px;
+  padding: 2px 6px;
+}
+.dv-notes {
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.7;
+  max-width: 820px;
+  margin-top: 14px;
+}
+.dv-h2 {
+  font-size: 18px;
+  margin: 32px 0 12px;
+}
+.dv-table tbody tr.is-selected th,
+.dv-table tbody tr.is-selected td {
+  background: #f4f8fc;
+}
+.dv-table .link {
+  font: inherit;
+  font-weight: 600;
+  color: var(--accent);
+  background: none;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+  text-align: left;
+}
+.dv-table .link:hover {
+  text-decoration: underline;
+}
+.dv-papers {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  margin: 0 0 14px;
+  padding: 14px 18px 6px 44px;
+  font-size: 13px;
+  line-height: 1.5;
+}
+.dv-papers li {
+  margin-bottom: 12px;
+}
+.dv-papers .meta {
+  display: block;
+  color: var(--muted);
+  font-size: 11px;
+}
+.dv-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin-top: 3px;
+}
+.dv-tag {
+  font-size: 10px;
+  color: #1b4f91;
+  background: #e3eefb;
+  border-radius: 4px;
+  padding: 1px 6px;
+}
+.dv-tag.is-none {
+  color: var(--warn);
+  background: var(--warn-soft);
+}
+.dv-tag.is-lead {
+  color: var(--new);
+  background: var(--new-soft);
+}
+.dv-tag.is-outside {
+  color: var(--muted);
+  background: #eef1f5;
+}
+.dv-table + .dv-notes,
+.dv-h2 + .dv-notes {
+  margin-top: -4px;
+  margin-bottom: 12px;
+}
+@media (max-width: 760px) {
+  .dv-controls {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
