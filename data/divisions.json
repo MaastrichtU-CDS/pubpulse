@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-17T15:18:29+00:00",
+ "generated": "2026-11-18T14:54:35+00:00",
  "since_year": 2024,
  "keywords": [
   "maastro",
@@ -331,6 +331,24 @@
  ],
  "frequent_leader_min_papers": 2,
  "works": [
+  {
+   "id": "W7235732145",
+   "doi": "https://doi.org/10.1200/jco-26-00969",
+   "title": "Partial-Breast Irradiation Versus Whole-Breast Irradiation for Low-Risk Invasive Breast Carcinoma: 5-Year Results of the Multicenter, Randomized, Phase III IRMA Trial",
+   "publication_date": "2026-11-17",
+   "year": 2026,
+   "type": "article",
+   "journal": "Journal of Clinical Oncology",
+   "cited_by_count": 0,
+   "is_oa": false,
+   "author_count": 95,
+   "first_author": "Bruno Meduri",
+   "last_author": "L. Abdach",
+   "last_author_home": false,
+   "maastro": true,
+   "divisions": [],
+   "leaders": {}
+  },
   {
    "id": "W7233934488",
    "doi": "https://doi.org/10.1016/j.tranon.2026.103084",
@@ -2018,6 +2036,24 @@
    "divisions": [],
    "leaders": {},
    "led_by": "Ilaria Rinaldi"
+  },
+  {
+   "id": "W7213286782",
+   "doi": "https://doi.org/10.1016/j.ijpt.2026.101677",
+   "title": "PROTON THERAPY DURING PREGNANCY – EXPERIMENTAL EVALUATION OF PREGDOS, AN OPEN-SOURCE MONTE CARLO TOOL FOR FETAL DOSE ASSESSMENT FROM CLINICAL PLANS",
+   "publication_date": "2026-09-01",
+   "year": 2026,
+   "type": "article",
+   "journal": "International Journal of Particle Therapy",
+   "cited_by_count": 0,
+   "is_oa": true,
+   "author_count": 8,
+   "first_author": "Marijke De Saint‐Hubert",
+   "last_author": "Niels Bassler",
+   "last_author_home": false,
+   "maastro": true,
+   "divisions": [],
+   "leaders": {}
   },
   {
    "id": "W7213265062",
@@ -13252,7 +13288,7 @@
    "year": 2024,
    "type": "article",
    "journal": "The Lancet Oncology",
-   "cited_by_count": 89,
+   "cited_by_count": 90,
    "is_oa": false,
    "author_count": 68,
    "first_author": "Icro Meattini",
