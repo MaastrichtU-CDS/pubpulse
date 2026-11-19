@@ -4,7 +4,16 @@
 <link href="https://maastrichtu-cds.github.io/pubpulse/"/>
 <link rel="self" href="https://maastrichtu-cds.github.io/pubpulse/feed.xml"/>
 <id>https://maastrichtu-cds.github.io/pubpulse/</id>
-<updated>2026-11-18T14:54:05+00:00</updated>
+<updated>2026-11-19T14:59:43+00:00</updated>
+<entry>
+<title>Participatieve en theoretische ontwikkeling van samen beslisseninterventies in de radiotherapie</title>
+<link href="https://doi.org/10.5281/zenodo.24316750"/>
+<id>https://openalex.org/W7235368459</id>
+<updated>2026-11-19T00:00:00Z</updated>
+<summary>Zenodo (CERN European Organization for Nuclear Research) · 2026-11-17 · group authors: Anniek van Hienen, Rianne Fijten
+
+Purpose: To describe the patient partnered development and of a multilevel shared decision making (SDM) programme for radiotherapy using Intervention Mapping. Methods: We applied Intervention Mapping combined with participatory design across six iterative steps: (1) assessing SDM needs through mixed methods; (2) specifying outcomes for patients, clinicians, the clinic and referrers; (3) selecting behaviour change techniques and translating them into practical applications; (4) integrating components into a coherent programme; (5) planning implementation strategies; and (6) designing an evaluation plan. A working group of seven (former) radiotherapy patients collaborated throughout, with ongoing input from clinical stakeholders. Results: The needs assessment revealed a gap between desired and experienced SDM. We defined two behavioural goals for patients and radiation oncologists—applying all SDM steps and empowering patients to accept the invitation to share decisions and three environmental goals. Sub-behaviours were formulated and linked to cognitive determinants like knowledge and attitude. These informed practical applications, including a pre-intake value-clarification tool, physician trainings and adaptations in patient-facing information materials. Effectiveness is currently evaluated through consultation observations and patient surveys. Patient partners contributed insights during &gt;10 sessions, reviewed behavioural goals, prioritised determinants, and co-developed patient-oriented interventions. Conclusion: Intervention Mapping offers a structured approach for designing SDM interventions from a behavioural perspective. Patient participation is useful and feasible by including patients in a planning team. We recommend this approach for future SDM research, particularly when aiming for long-term patient involvement.</summary>
+</entry>
 <entry>
 <title>Investigating Context in How Clinicians Make Sense of AI: Qualitative Interview Study</title>
 <link href="https://doi.org/10.2196/99117"/>
@@ -383,12 +392,5 @@ Abstract Aims The purpose of this subanalysis was to explore whether or not tele
 <summary>bioRxiv (Cold Spring Harbor Laboratory) · 2026-02-26 · group authors: Wenjie Liang
 
 Summary The spatial organization of the tumor immune microenvironment (TIME) drives hepatocellular carcinoma (HCC) prognosis but remains unquantifiable on routine H&amp;E slides. Here, we present HCCExplorer, a deep learning framework that translates H&amp;E into virtual multiplex immunofluorescence (mIF) and uses multi-modal graph learning to decode spatial survival signals. Trained on 30 H&amp;E-mIF slide pairs, HCCExplorer evaluated a 1,813-slide multi-center cohort. It achieved superior overall survival stratification over clinical indices and state-of-the-art pathology and protein foundation models, yielding a concordance index of 0.71 and a Hazard Ratio (HR) of 15.46 ( P &lt; 0.001), maintaining stability across three external cohorts. Beyond risk stratification, interpretation of model features identified M1 macrophage infiltration as a protective determinant (HR=0.40, P &lt; 0.05). Furthermore, it uncovered a protective “Containment Niche” at the invasion frontier (HR=0.02, P &lt; 0.01), featuring macrophages co-localizing with Foxp3+ Tregs and CD4+ T cells. Ultimately, HCCExplorer provides actionable, spatially-resolved biomarkers from conventional histology for precision HCC management.</summary>
-</entry>
-<entry>
-<title>Preoperative prediction of preserved renal parenchymal volume via multilevel CT feature fusion: a proof-of-concept study</title>
-<link href="https://doi.org/10.1007/s00261-026-05381-9"/>
-<id>https://openalex.org/W7130567554</id>
-<updated>2026-10-23T00:00:00Z</updated>
-<summary>Abdominal Radiology · 2026-02-20 · group authors: Wenjie Liang</summary>
 </entry>
 </feed>
