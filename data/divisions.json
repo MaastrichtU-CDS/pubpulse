@@ -1,11 +1,10 @@
 {
- "generated": "2026-11-19T15:00:02+00:00",
+ "generated": "2026-11-20T11:02:49+00:00",
  "since_year": 2024,
  "keywords": [
   "maastro",
   "grow",
-  "maastricht + radiation oncology",
-  "maastricht + radiology"
+  "maastricht + radiation oncology"
  ],
  "divisions": [
   {
@@ -370,26 +369,8 @@
    "is_oa": false,
    "author_count": 95,
    "first_author": "Bruno Meduri",
-   "last_author": "L. Abdach",
+   "last_author": "Liana Abdach",
    "last_author_home": false,
-   "maastro": true,
-   "divisions": [],
-   "leaders": {}
-  },
-  {
-   "id": "W7233934488",
-   "doi": "https://doi.org/10.1016/j.tranon.2026.103084",
-   "title": "Pharmacogenomic testing and survival in oesophageal cancer patients, a literature review and results from selected SNPs in the UK MRC OE02 trial",
-   "publication_date": "2026-11-16",
-   "year": 2026,
-   "type": "article",
-   "journal": "Translational Oncology",
-   "cited_by_count": 0,
-   "is_oa": true,
-   "author_count": 13,
-   "first_author": "Daryl Kai Ann Chia",
-   "last_author": "Heike Irmgard Grabsch",
-   "last_author_home": true,
    "maastro": true,
    "divisions": [],
    "leaders": {}
@@ -1020,7 +1001,7 @@
    "id": "W7221635080",
    "doi": "https://doi.org/10.1093/jnci/djag385",
    "title": "Trends in bone health agent use and skeletal events in metastatic castration-resistant prostate cancer",
-   "publication_date": "2026-10-12",
+   "publication_date": "2026-10-13",
    "year": 2026,
    "type": "article",
    "journal": "JNCI Journal of the National Cancer Institute",
@@ -3771,7 +3752,7 @@
    "year": 2026,
    "type": "article",
    "journal": "The Lancet Oncology",
-   "cited_by_count": 7,
+   "cited_by_count": 9,
    "is_oa": false,
    "author_count": 28,
    "first_author": "Shankar Siva",
@@ -3789,7 +3770,7 @@
    "year": 2026,
    "type": "article",
    "journal": "The Lancet Oncology",
-   "cited_by_count": 7,
+   "cited_by_count": 9,
    "is_oa": false,
    "author_count": 23,
    "first_author": "Shankar Siva",
@@ -4288,7 +4269,7 @@
    "year": 2026,
    "type": "article",
    "journal": "The Lancet Oncology",
-   "cited_by_count": 8,
+   "cited_by_count": 9,
    "is_oa": true,
    "author_count": 38,
    "first_author": "Joachim Widder",
@@ -5529,7 +5510,7 @@
    "year": 2026,
    "type": "article",
    "journal": "ESMO Open",
-   "cited_by_count": 5,
+   "cited_by_count": 6,
    "is_oa": true,
    "author_count": 31,
    "first_author": "Evert S.M. van Aken",
@@ -6507,7 +6488,7 @@
    "year": 2026,
    "type": "article",
    "journal": "The Breast",
-   "cited_by_count": 8,
+   "cited_by_count": 9,
    "is_oa": true,
    "author_count": 22,
    "first_author": "Luca Visani",
@@ -6891,31 +6872,6 @@
    }
   },
   {
-   "id": "W4417457301",
-   "doi": "https://doi.org/10.48550/arxiv.2512.13376",
-   "title": "Unlocking Generalization in Polyp Segmentation with DINO Self-Attention \"keys\"",
-   "publication_date": "2025-12-15",
-   "year": 2025,
-   "type": "preprint",
-   "journal": "arXiv (Cornell University)",
-   "cited_by_count": 0,
-   "is_oa": true,
-   "author_count": 5,
-   "first_author": "Monteiro, Carla",
-   "last_author": "Wilson Silva",
-   "last_author_home": false,
-   "maastro": false,
-   "divisions": [
-    "Imaging Innovation Research"
-   ],
-   "leaders": {
-    "Imaging Innovation Research": {
-     "position": "middle",
-     "maastricht": true
-    }
-   }
-  },
-  {
    "id": "W4417246466",
    "doi": "https://doi.org/10.1016/j.radonc.2025.111330",
    "title": "ESMO-ESTRO consensus statements on the safety of combining radiotherapy with CDK4/6, HER2, PARP, or mTOR inhibitors",
@@ -7208,7 +7164,7 @@
    "year": 2025,
    "type": "article",
    "journal": "Journal for ImmunoTherapy of Cancer",
-   "cited_by_count": 12,
+   "cited_by_count": 13,
    "is_oa": true,
    "author_count": 16,
    "first_author": "Baojia Qi",
@@ -7356,7 +7312,7 @@
    "author_count": 6,
    "first_author": "Bianca M. Dijkstra",
    "last_author": "Alida Annechien Postma",
-   "last_author_home": true,
+   "last_author_home": false,
    "maastro": true,
    "divisions": [],
    "leaders": {}
@@ -7369,7 +7325,7 @@
    "year": 2025,
    "type": "article",
    "journal": "Radiotherapy and Oncology",
-   "cited_by_count": 28,
+   "cited_by_count": 29,
    "is_oa": true,
    "author_count": 16,
    "first_author": "Ane Lindegaard Appelt",
@@ -8406,7 +8362,7 @@
    "year": 2025,
    "type": "article",
    "journal": "EClinicalMedicine",
-   "cited_by_count": 27,
+   "cited_by_count": 28,
    "is_oa": true,
    "author_count": 19,
    "first_author": "Guanchao Ye",
@@ -8666,7 +8622,7 @@
    "year": 2025,
    "type": "article",
    "journal": "Annals of Oncology",
-   "cited_by_count": 33,
+   "cited_by_count": 35,
    "is_oa": true,
    "author_count": 28,
    "first_author": "Evert S.M. van Aken",
@@ -9322,7 +9278,7 @@
    "year": 2025,
    "type": "article",
    "journal": "British journal of surgery",
-   "cited_by_count": 17,
+   "cited_by_count": 18,
    "is_oa": true,
    "author_count": 16,
    "first_author": "Ilaria Prata",
@@ -9971,7 +9927,7 @@
    "year": 2025,
    "type": "article",
    "journal": "Frontiers in Nuclear Medicine",
-   "cited_by_count": 2,
+   "cited_by_count": 3,
    "is_oa": true,
    "author_count": 6,
    "first_author": "Ashish Kumar Jha",
@@ -10687,7 +10643,7 @@
    "year": 2025,
    "type": "article",
    "journal": "Journal of NeuroInterventional Surgery",
-   "cited_by_count": 2,
+   "cited_by_count": 3,
    "is_oa": true,
    "author_count": 20,
    "first_author": "Wenjin Yang",
@@ -10967,7 +10923,7 @@
    "year": 2025,
    "type": "review",
    "journal": "Molecular and Cellular Biology",
-   "cited_by_count": 54,
+   "cited_by_count": 55,
    "is_oa": true,
    "author_count": 3,
    "first_author": "Rui Zhang",
@@ -11057,7 +11013,7 @@
    "year": 2025,
    "type": "review",
    "journal": "Radiotherapy and Oncology",
-   "cited_by_count": 37,
+   "cited_by_count": 38,
    "is_oa": true,
    "author_count": 17,
    "first_author": "Evert S.M. van Aken",
@@ -11941,7 +11897,7 @@
    "year": 2025,
    "type": "article",
    "journal": "Journal for ImmunoTherapy of Cancer",
-   "cited_by_count": 73,
+   "cited_by_count": 75,
    "is_oa": true,
    "author_count": 16,
    "first_author": "Zhen Zhang",
@@ -12238,6 +12194,32 @@
    }
   },
   {
+   "id": "W4403503010",
+   "doi": "https://doi.org/10.2196/60847",
+   "title": "Advancing Privacy-Preserving Health Care Analytics and Implementation of the Personal Health Train: Federated Deep Learning Study",
+   "publication_date": "2025-02-06",
+   "year": 2025,
+   "type": "article",
+   "journal": "JMIR AI",
+   "cited_by_count": 68,
+   "is_oa": true,
+   "author_count": 7,
+   "first_author": "Ananya Choudhury",
+   "last_author": "Johan van Soest",
+   "last_author_home": true,
+   "maastro": false,
+   "divisions": [
+    "Clinical Data Science"
+   ],
+   "leaders": {
+    "Clinical Data Science": {
+     "position": "middle",
+     "maastricht": true
+    }
+   },
+   "led_by": "Johan van Soest"
+  },
+  {
    "id": "W4407176415",
    "doi": "https://doi.org/10.3390/cancers17030530",
    "title": "Ferroptosis-Related Gene Signatures: Prognostic Role in HPV-Positive Oropharyngeal Squamous Cell Carcinoma",
@@ -12364,6 +12346,26 @@
    ],
    "leaders": {},
    "led_by": "Iñigo Bermejo"
+  },
+  {
+   "id": "W4406965862",
+   "doi": "https://doi.org/10.31219/osf.io/7skmc_v2",
+   "title": "The Epistemic Cost of Opacity: Why Medical Doctors Do Not Know when They Rely on Artificial Intelligence",
+   "publication_date": "2025-01-30",
+   "year": 2025,
+   "type": "preprint",
+   "journal": "OSF Preprints (OSF Preprints)",
+   "cited_by_count": 0,
+   "is_oa": true,
+   "author_count": 3,
+   "first_author": "Rianne Fijten",
+   "last_author": "Paul Martin Putora",
+   "last_author_home": false,
+   "maastro": true,
+   "divisions": [
+    "Clinical Data Science"
+   ],
+   "leaders": {}
   },
   {
    "id": "W4407004157",
@@ -13447,7 +13449,7 @@
    "year": 2024,
    "type": "article",
    "journal": "JCO Clinical Cancer Informatics",
-   "cited_by_count": 14,
+   "cited_by_count": 15,
    "is_oa": true,
    "author_count": 6,
    "first_author": "Rachelle Swart",
@@ -13863,7 +13865,7 @@
    "year": 2024,
    "type": "article",
    "journal": "British Journal of Oral and Maxillofacial Surgery",
-   "cited_by_count": 1,
+   "cited_by_count": 2,
    "is_oa": true,
    "author_count": 26,
    "first_author": "Dominique V.C. de Jel",
@@ -13881,7 +13883,7 @@
    "year": 2024,
    "type": "article",
    "journal": "Nature Communications",
-   "cited_by_count": 126,
+   "cited_by_count": 127,
    "is_oa": true,
    "author_count": 20,
    "first_author": "Yuan Gao",
@@ -14159,32 +14161,6 @@
     }
    },
    "led_by": "Lizza E.L. Hendriks"
-  },
-  {
-   "id": "W4403503010",
-   "doi": "https://doi.org/10.2196/60847",
-   "title": "Advancing Privacy-Preserving Health Care Analytics and Implementation of the Personal Health Train: Federated Deep Learning Study",
-   "publication_date": "2024-10-17",
-   "year": 2024,
-   "type": "article",
-   "journal": "JMIR AI",
-   "cited_by_count": 68,
-   "is_oa": true,
-   "author_count": 7,
-   "first_author": "Ananya Choudhury",
-   "last_author": "Johan van Soest",
-   "last_author_home": true,
-   "maastro": false,
-   "divisions": [
-    "Clinical Data Science"
-   ],
-   "leaders": {
-    "Clinical Data Science": {
-     "position": "middle",
-     "maastricht": true
-    }
-   },
-   "led_by": "Johan van Soest"
   },
   {
    "id": "W4403351431",
@@ -14696,7 +14672,7 @@
    "year": 2024,
    "type": "article",
    "journal": "Nature Medicine",
-   "cited_by_count": 149,
+   "cited_by_count": 150,
    "is_oa": true,
    "author_count": 20,
    "first_author": "Peter de Gooyer",
@@ -15402,7 +15378,7 @@
    "year": 2024,
    "type": "article",
    "journal": "Medical Image Analysis",
-   "cited_by_count": 112,
+   "cited_by_count": 113,
    "is_oa": true,
    "author_count": 59,
    "first_author": "Evi M. C. Huijben",
@@ -15558,7 +15534,7 @@
    "year": 2024,
    "type": "article",
    "journal": "British Journal of Cancer",
-   "cited_by_count": 18,
+   "cited_by_count": 19,
    "is_oa": true,
    "author_count": 20,
    "first_author": "Isabelle Suvaal",
@@ -15872,7 +15848,7 @@
    "year": 2024,
    "type": "article",
    "journal": "New England Journal of Medicine",
-   "cited_by_count": 578,
+   "cited_by_count": 579,
    "is_oa": true,
    "author_count": 24,
    "first_author": "Myriam Chalabi",
@@ -16261,31 +16237,6 @@
    "led_by_division": "Clinical Research"
   },
   {
-   "id": "W4395022269",
-   "doi": "https://doi.org/10.1097/sla.0000000000006305",
-   "title": "Association of Lateral Pelvic Lymph Nodes with Disease Recurrence and Organ Preservation in Patients with Distal Rectal Adenocarcinoma Treated with Total Neoadjuvant Therapy",
-   "publication_date": "2024-04-22",
-   "year": 2024,
-   "type": "article",
-   "journal": "Annals of Surgery",
-   "cited_by_count": 25,
-   "is_oa": true,
-   "author_count": 19,
-   "first_author": "Nathalie R. A. Beets",
-   "last_author": "Julio García‐Aguilar",
-   "last_author_home": false,
-   "maastro": false,
-   "divisions": [
-    "Imaging Innovation Research"
-   ],
-   "leaders": {
-    "Imaging Innovation Research": {
-     "position": "middle",
-     "maastricht": true
-    }
-   }
-  },
-  {
    "id": "W4394992709",
    "doi": "https://doi.org/10.1093/bjr/tqae061",
    "title": "Imaging in the era of risk-adapted treatment in colon cancer",
@@ -16581,7 +16532,7 @@
    "author_count": 6,
    "first_author": "Eva J I Hoeijmakers",
    "last_author": "Roel Wierts",
-   "last_author_home": true,
+   "last_author_home": false,
    "maastro": true,
    "divisions": [],
    "leaders": {}
@@ -16979,7 +16930,7 @@
    "year": 2024,
    "type": "article",
    "journal": "European Radiology",
-   "cited_by_count": 26,
+   "cited_by_count": 27,
    "is_oa": true,
    "author_count": 8,
    "first_author": "Laurens Topff",
@@ -17239,7 +17190,7 @@
    "year": 2024,
    "type": "article",
    "journal": "The Lancet Oncology",
-   "cited_by_count": 137,
+   "cited_by_count": 139,
    "is_oa": false,
    "author_count": 35,
    "first_author": "Shankar Siva",
@@ -17566,7 +17517,7 @@
    "year": 2024,
    "type": "article",
    "journal": "European Journal of Radiology",
-   "cited_by_count": 9,
+   "cited_by_count": 10,
    "is_oa": true,
    "author_count": 11,
    "first_author": "Denise J. van der Reijd",
@@ -17635,7 +17586,7 @@
    "year": 2024,
    "type": "article",
    "journal": "Radiation Oncology",
-   "cited_by_count": 19,
+   "cited_by_count": 20,
    "is_oa": true,
    "author_count": 20,
    "first_author": "Lu Yu",
@@ -17753,11 +17704,11 @@
    "id": "W4390928581",
    "doi": "https://doi.org/10.1186/s13244-023-01572-w",
    "title": "METhodological RadiomICs Score (METRICS): a quality scoring tool for radiomics research endorsed by EuSoMII",
-   "publication_date": "2024-01-16",
+   "publication_date": "2024-01-17",
    "year": 2024,
    "type": "article",
    "journal": "Insights into Imaging",
-   "cited_by_count": 366,
+   "cited_by_count": 367,
    "is_oa": true,
    "author_count": 60,
    "first_author": "Burak Koçak",
