@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-20T11:04:29+00:00",
+ "generated": "2026-11-20T14:41:46+00:00",
  "since_year": 2024,
  "keywords": [
   "maastro",
@@ -4769,6 +4769,24 @@
    "led_by": "Rianne Fijten"
   },
   {
+   "id": "W7140295177",
+   "doi": "https://doi.org/10.1093/jnci/djag085",
+   "title": "Cardiovascular disease risk after radiotherapy and anthracycline-based chemotherapy for diffuse large B-cell lymphoma",
+   "publication_date": "2026-03-25",
+   "year": 2026,
+   "type": "article",
+   "journal": "JNCI Journal of the National Cancer Institute",
+   "cited_by_count": 3,
+   "is_oa": true,
+   "author_count": 32,
+   "first_author": "Yvonne M.G. Geurts",
+   "last_author": "Michael Schaapveld",
+   "last_author_home": false,
+   "maastro": true,
+   "divisions": [],
+   "leaders": {}
+  },
+  {
    "id": "W7140271876",
    "doi": "https://doi.org/10.1088/1361-6560/ae5757",
    "title": "Assessing dosimetric uncertainties in Papillon+ contact x-ray brachytherapy for rectal cancer: impact of beam quality and tumour geometry",
@@ -4864,6 +4882,24 @@
    "leaders": {}
   },
   {
+   "id": "W7151487481",
+   "doi": "https://doi.org/10.1093/jnci/djag090",
+   "title": "Predicting long-term absolute risk of lung cancer in patients with Hodgkin lymphoma",
+   "publication_date": "2026-03-23",
+   "year": 2026,
+   "type": "article",
+   "journal": "JNCI Journal of the National Cancer Institute",
+   "cited_by_count": 0,
+   "is_oa": true,
+   "author_count": 24,
+   "first_author": "Shahin Roshani",
+   "last_author": "Michael Schaapveld",
+   "last_author_home": false,
+   "maastro": true,
+   "divisions": [],
+   "leaders": {}
+  },
+  {
    "id": "W7140029837",
    "doi": "https://doi.org/10.1016/j.tipsro.2026.100393",
    "title": "Dosimetric comparison of the shoulder region between paired photon and proton plans in breast cancer patients",
@@ -4881,42 +4917,6 @@
    "divisions": [],
    "leaders": {},
    "led_by": "Liesbeth Jorinne Boersma"
-  },
-  {
-   "id": "W7140295177",
-   "doi": "https://doi.org/10.1093/jnci/djag085",
-   "title": "Cardiovascular disease risk after radiotherapy and anthracycline-based chemotherapy for diffuse large B-cell lymphoma",
-   "publication_date": "2026-03-19",
-   "year": 2026,
-   "type": "article",
-   "journal": "JNCI Journal of the National Cancer Institute",
-   "cited_by_count": 3,
-   "is_oa": true,
-   "author_count": 32,
-   "first_author": "Yvonne M.G. Geurts",
-   "last_author": "Michael Schaapveld",
-   "last_author_home": false,
-   "maastro": true,
-   "divisions": [],
-   "leaders": {}
-  },
-  {
-   "id": "W7151487481",
-   "doi": "https://doi.org/10.1093/jnci/djag090",
-   "title": "Predicting long-term absolute risk of lung cancer in patients with Hodgkin lymphoma",
-   "publication_date": "2026-03-19",
-   "year": 2026,
-   "type": "article",
-   "journal": "JNCI Journal of the National Cancer Institute",
-   "cited_by_count": 0,
-   "is_oa": true,
-   "author_count": 24,
-   "first_author": "Shahin Roshani",
-   "last_author": "Michael Schaapveld",
-   "last_author_home": false,
-   "maastro": true,
-   "divisions": [],
-   "leaders": {}
   },
   {
    "id": "W7137993139",
@@ -7267,6 +7267,24 @@
    }
   },
   {
+   "id": "W4416910567",
+   "doi": "https://doi.org/10.1093/bjs/znaf261",
+   "title": "Delayed gastric emptying after pancreatic cancer surgery impacts time to start of adjuvant treatment but not overall survival: a post-hoc analysis of the PREOPANC-1 and -2 trials",
+   "publication_date": "2025-11-29",
+   "year": 2025,
+   "type": "article",
+   "journal": "British journal of surgery",
+   "cited_by_count": 0,
+   "is_oa": true,
+   "author_count": 63,
+   "first_author": "Bo T M Strijbos",
+   "last_author": "Ruth A.L. Willems",
+   "last_author_home": false,
+   "maastro": true,
+   "divisions": [],
+   "leaders": {}
+  },
+  {
    "id": "W4416805570",
    "doi": "https://doi.org/10.1088/1361-6560/ae25b2",
    "title": "Maximizing impact of explainable artificial intelligence in radiotherapy: a critical review",
@@ -7570,6 +7588,31 @@
    }
   },
   {
+   "id": "W4416412155",
+   "doi": "https://doi.org/10.1093/jnci/djaf323",
+   "title": "FaceAge as a biomarker for prognosis and treatment stratification in a large-scale oncology cohort",
+   "publication_date": "2025-11-19",
+   "year": 2025,
+   "type": "article",
+   "journal": "JNCI Journal of the National Cancer Institute",
+   "cited_by_count": 0,
+   "is_oa": true,
+   "author_count": 14,
+   "first_author": "Grace Clara Lee",
+   "last_author": "Raymond H. Mak",
+   "last_author_home": false,
+   "maastro": true,
+   "divisions": [
+    "Clinical Research"
+   ],
+   "leaders": {
+    "Clinical Research": {
+     "position": "middle",
+     "maastricht": true
+    }
+   }
+  },
+  {
    "id": "W4416344141",
    "doi": "https://doi.org/10.1007/s00262-025-04235-5",
    "title": "Automatically quantifying spatial heterogeneity of immune and tumor hypoxia environment and predicting disease-free survival for patients with rectal cancer",
@@ -7595,31 +7638,6 @@
    }
   },
   {
-   "id": "W4416412155",
-   "doi": "https://doi.org/10.1093/jnci/djaf323",
-   "title": "FaceAge as a biomarker for prognosis and treatment stratification in a large-scale oncology cohort",
-   "publication_date": "2025-11-15",
-   "year": 2025,
-   "type": "article",
-   "journal": "JNCI Journal of the National Cancer Institute",
-   "cited_by_count": 0,
-   "is_oa": true,
-   "author_count": 14,
-   "first_author": "Grace Clara Lee",
-   "last_author": "Raymond H. Mak",
-   "last_author_home": false,
-   "maastro": true,
-   "divisions": [
-    "Clinical Research"
-   ],
-   "leaders": {
-    "Clinical Research": {
-     "position": "middle",
-     "maastricht": true
-    }
-   }
-  },
-  {
    "id": "W4416235348",
    "doi": "https://doi.org/10.1016/j.radonc.2025.111281",
    "title": "Stereotactic radiotherapy on Parkinson’s disease induced tremors – a systematic review",
@@ -7637,24 +7655,6 @@
    "divisions": [],
    "leaders": {},
    "led_by": "Daniëlle B. P. Eekers"
-  },
-  {
-   "id": "W4416910567",
-   "doi": "https://doi.org/10.1093/bjs/znaf261",
-   "title": "Delayed gastric emptying after pancreatic cancer surgery impacts time to start of adjuvant treatment but not overall survival: a post-hoc analysis of the PREOPANC-1 and -2 trials",
-   "publication_date": "2025-11-13",
-   "year": 2025,
-   "type": "article",
-   "journal": "British journal of surgery",
-   "cited_by_count": 0,
-   "is_oa": true,
-   "author_count": 63,
-   "first_author": "Bo T M Strijbos",
-   "last_author": "Ruth A.L. Willems",
-   "last_author_home": false,
-   "maastro": true,
-   "divisions": [],
-   "leaders": {}
   },
   {
    "id": "W4416159439",
@@ -9484,7 +9484,7 @@
    "year": 2025,
    "type": "review",
    "journal": "Translational Lung Cancer Research",
-   "cited_by_count": 1,
+   "cited_by_count": 2,
    "is_oa": true,
    "author_count": 6,
    "first_author": "Francesca Rita Ogliari",
@@ -13067,6 +13067,24 @@
    }
   },
   {
+   "id": "W4405311885",
+   "doi": "https://doi.org/10.1088/1361-6560/ad9e7c",
+   "title": "Investigating the impact of the effective point of measurement for plane-parallel ionization chambers in clinical proton beams",
+   "publication_date": "2024-12-27",
+   "year": 2024,
+   "type": "article",
+   "journal": "Physics in Medicine and Biology",
+   "cited_by_count": 4,
+   "is_oa": true,
+   "author_count": 5,
+   "first_author": "Kilian‐Simon Baumann",
+   "last_author": "Hugo Palmans",
+   "last_author_home": false,
+   "maastro": true,
+   "divisions": [],
+   "leaders": {}
+  },
+  {
    "id": "W4405751649",
    "doi": "https://doi.org/10.1016/j.phro.2024.100692",
    "title": "Recommendations for reporting and evaluating proton therapy beyond dose and constant relative biological effectiveness",
@@ -13286,24 +13304,6 @@
    "author_count": 6,
    "first_author": "Diogo L. L. Leao",
    "last_author": "Milena Pavlova",
-   "last_author_home": false,
-   "maastro": true,
-   "divisions": [],
-   "leaders": {}
-  },
-  {
-   "id": "W4405311885",
-   "doi": "https://doi.org/10.1088/1361-6560/ad9e7c",
-   "title": "Investigating the impact of the effective point of measurement for plane-parallel ionization chambers in clinical proton beams",
-   "publication_date": "2024-12-12",
-   "year": 2024,
-   "type": "article",
-   "journal": "Physics in Medicine and Biology",
-   "cited_by_count": 4,
-   "is_oa": true,
-   "author_count": 5,
-   "first_author": "Kilian‐Simon Baumann",
-   "last_author": "Hugo Palmans",
    "last_author_home": false,
    "maastro": true,
    "divisions": [],
@@ -14234,7 +14234,7 @@
    "id": "W4403204451",
    "doi": "https://doi.org/10.1007/978-3-031-72744-3_5",
    "title": "Enhancing Cross-Modal Medical Image Segmentation Through Compositionality",
-   "publication_date": "2024-10-08",
+   "publication_date": "2024-10-09",
    "year": 2024,
    "type": "conference-paper",
    "journal": "Lecture notes in computer science",
@@ -15378,7 +15378,7 @@
    "year": 2024,
    "type": "article",
    "journal": "Medical Image Analysis",
-   "cited_by_count": 113,
+   "cited_by_count": 114,
    "is_oa": true,
    "author_count": 59,
    "first_author": "Evi M. C. Huijben",
@@ -15691,6 +15691,24 @@
    }
   },
   {
+   "id": "W4400103582",
+   "doi": "https://doi.org/10.1093/jnci/djae153",
+   "title": "Fecal, duodenal, and tumor microbiota composition of esophageal carcinoma patients, a longitudinal prospective cohort",
+   "publication_date": "2024-06-26",
+   "year": 2024,
+   "type": "article",
+   "journal": "JNCI Journal of the National Cancer Institute",
+   "cited_by_count": 14,
+   "is_oa": true,
+   "author_count": 12,
+   "first_author": "Tom van den Ende",
+   "last_author": "Hanneke W.M. van Laarhoven",
+   "last_author_home": false,
+   "maastro": true,
+   "divisions": [],
+   "leaders": {}
+  },
+  {
    "id": "W4400059492",
    "doi": "https://doi.org/10.1007/s00432-024-05814-2",
    "title": "Can blood-based markers predict RECIST progression in non-small cell lung cancer treated with immunotherapy?",
@@ -15715,24 +15733,6 @@
     }
    },
    "led_by": "Stefano Trebeschi"
-  },
-  {
-   "id": "W4400103582",
-   "doi": "https://doi.org/10.1093/jnci/djae153",
-   "title": "Fecal, duodenal, and tumor microbiota composition of esophageal carcinoma patients, a longitudinal prospective cohort",
-   "publication_date": "2024-06-25",
-   "year": 2024,
-   "type": "article",
-   "journal": "JNCI Journal of the National Cancer Institute",
-   "cited_by_count": 14,
-   "is_oa": true,
-   "author_count": 12,
-   "first_author": "Tom van den Ende",
-   "last_author": "Hanneke W.M. van Laarhoven",
-   "last_author_home": false,
-   "maastro": true,
-   "divisions": [],
-   "leaders": {}
   },
   {
    "id": "W4399950588",
@@ -15805,7 +15805,7 @@
    "year": 2024,
    "type": "article",
    "journal": "BMC Medical Education",
-   "cited_by_count": 8,
+   "cited_by_count": 9,
    "is_oa": true,
    "author_count": 6,
    "first_author": "Zhien Li",

@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-20T11:04:12+00:00",
+ "generated": "2026-11-20T14:41:32+00:00",
  "group_name": "Clinical Data Science (Maastro / Maastricht University)",
  "site_url": "https://maastrichtu-cds.github.io/pubpulse/",
  "repo_url": "https://github.com/MaastrichtU-CDS/pubpulse",
@@ -7035,7 +7035,7 @@
     "Department of Radiation Oncology (Maastro), GROW Research Institute for Oncology and Reproduction, Maastricht University Medical Centre+, Netherlands"
    ],
    "cited_by_count": 0,
-   "abstract": "Abstract Background and purpose Accurate identification of cardiac MRI volume orientations is essential for reliable image interpretation and for enabling downstream automated analysis pipelines. However, orientation labels and commonly assigned manually, making the process time-consuming and prone to variability. Recent advances in vision-language models offers new opportunities for automated label generation by jointly modeling visual and semantic information. Methods In this study, we systematically compare a conventional end-to-end transformer-based captioning model with a CLIPCap architecture for automated cardiac MRI view labelling. Both models were evaluated on a dataset of 1184 de-identified cardiac MR images spanning across six clinically relevant orientations: short axis, two-, three-, four-chamber views, left and right ventricular outflow tract views. The caption transformer was trained from scratch, whereas CLIPCap leveraged pretrained CLIP image embeddings combined with lightweight mapping network and a frozen language model. Results Experimental results demonstrate a substantial performance advantage from CLIPCap, which achieved an overall accuracy of 98% compared to 68% for the caption transformer. CLIPCap consistently delivered high precision and recall across all orientation classes, including those of high clinical importance, while the end-to-end transformer exhibited unstable performance and complete failure in certain views. Conclusion These findings highlight the benefits of leveraging large-scale multimodal pretrained model for medical image labeling tasks, particularly in data-limited settings. The study suggests that CLIPCap provides a more robust and clinically reliable solution for automated cardiac MRI orientation labeling, supporting its integration into efficient and scalable clinical workflows.",
+   "abstract": "Background and purpose Accurate identification of cardiac MRI volume orientations is essential for reliable image interpretation and for enabling downstream automated analysis pipelines. However, orientation labels and commonly assigned manually, making the process time-consuming and prone to variability. Recent advances in vision-language models offers new opportunities for automated label generation by jointly modeling visual and semantic information. Methods In this study, we systematically compare a conventional end-to-end transformer-based captioning model with a CLIPCap architecture for automated cardiac MRI view labelling. Both models were evaluated on a dataset of 1184 de-identified cardiac MR images spanning across six clinically relevant orientations: short axis, two-, three-, four-chamber views, left and right ventricular outflow tract views. The caption transformer was trained from scratch, whereas CLIPCap leveraged pretrained CLIP image embeddings combined with lightweight mapping network and a frozen language model. Results Experimental results demonstrate a substantial performance advantage from CLIPCap, which achieved an overall accuracy of 98% compared to 68% for the caption transformer. CLIPCap consistently delivered high precision and recall across all orientation classes, including those of high clinical importance, while the end-to-end transformer exhibited unstable performance and complete failure in certain views. Conclusion These findings highlight the benefits of leveraging large-scale multimodal pretrained model for medical image labeling tasks, particularly in data-limited settings. The study suggests that CLIPCap provides a more robust and clinically reliable solution for automated cardiac MRI orientation labeling, supporting its integration into efficient and scalable clinical workflows.",
    "verified": true,
    "counted_members": [
     "shreya-anand",
@@ -13934,7 +13934,7 @@
     "Otolaryngology Research Center, Affiliated Hospital of Guangdong Medical University, Zhanjiang, Guangdong, China"
    ],
    "cited_by_count": 0,
-   "abstract": "Abstract Inner-ear genetics has expanded rapidly, yet the supporting evidence remains dispersed across a vast literature and across resources that typically emphasise loci, variants, or expression data rather than integrated biological interpretation. Here we present the Inner Ear Knowledge Base (IEKB; https://earkb.org ), an open database that unifies curated associations, cochlear interaction evidence, candidate prioritisation, explainable support relations, and network exploration for inner-ear research. IEKB was built with an automated agent-assisted curation workflow that combines schema-constrained literature extraction, continuous human monitoring, and final expert review by inner-ear genetics researchers. By systematically analysing 250,696 PubMed-indexed records retrieved across 16,563 screened genes, IEKB curates 6,051 gene–phenotype–disease associations from 2,494 genes across 43 phenotype categories and 4,102 cochlear gene–gene interactions with pathway, cell-type, and experimental context. IEKB further includes a Bayesian “dark matter” module that prioritises 243,071 candidate gene–phenotype associations for 13,229 genes across all 43 phenotypes (global AUC-ROC = 0.8603; global AUC-PR = 0.1674), together with a supervised dark-relation layer that ranks phenotype-specific known-gene support for each candidate and a multi-entity scientific network containing nearly 4,000 entities, 28,616 deterministic edges, and 83,712 literature-derived relational links. The web resource supports interactive search, multi-parameter filtering, gene-detail pages, bibliometric exploration, domain-specific enrichment against IEKB phenotype and disease gene sets, network visualisation, bulk download in CSV, JSON, SQLite, and XLSX formats, and natural-language evidence-grounded question answering through a companion conversational interface (IEKB QA). To our knowledge, IEKB is the first openly accessible inner-ear resource that integrates curated associations, cochlear interactions, probabilistic candidate prioritisation, auditable known-gene support relations for novel candidates, and a multi-entity scientific network within a single database. All data are released without registration under the CC BY 4.0 license.",
+   "abstract": "Inner-ear genetics has expanded rapidly, yet the supporting evidence remains dispersed across a vast literature and across resources that typically emphasise loci, variants, or expression data rather than integrated biological interpretation. Here we present the Inner Ear Knowledge Base (IEKB; https://earkb.org ), an open database that unifies curated associations, cochlear interaction evidence, candidate prioritisation, explainable support relations, and network exploration for inner-ear research. IEKB was built with an automated agent-assisted curation workflow that combines schema-constrained literature extraction, continuous human monitoring, and final expert review by inner-ear genetics researchers. By systematically analysing 250,696 PubMed-indexed records retrieved across 16,563 screened genes, IEKB curates 6,051 gene–phenotype–disease associations from 2,494 genes across 43 phenotype categories and 4,102 cochlear gene–gene interactions with pathway, cell-type, and experimental context. IEKB further includes a Bayesian “dark matter” module that prioritises 243,071 candidate gene–phenotype associations for 13,229 genes across all 43 phenotypes (global AUC-ROC = 0.8603; global AUC-PR = 0.1674), together with a supervised dark-relation layer that ranks phenotype-specific known-gene support for each candidate and a multi-entity scientific network containing nearly 4,000 entities, 28,616 deterministic edges, and 83,712 literature-derived relational links. The web resource supports interactive search, multi-parameter filtering, gene-detail pages, bibliometric exploration, domain-specific enrichment against IEKB phenotype and disease gene sets, network visualisation, bulk download in CSV, JSON, SQLite, and XLSX formats, and natural-language evidence-grounded question answering through a companion conversational interface (IEKB QA). To our knowledge, IEKB is the first openly accessible inner-ear resource that integrates curated associations, cochlear interactions, probabilistic candidate prioritisation, auditable known-gene support relations for novel candidates, and a multi-entity scientific network within a single database. All data are released without registration under the CC BY 4.0 license.",
    "verified": true,
    "counted_members": [
     "xuanhe-hou"
@@ -16126,320 +16126,11 @@
    "journal_h_index": 76
   },
   {
-   "id": "W7129378262",
-   "openalex_url": "https://openalex.org/W7129378262",
-   "doi": "https://doi.org/10.1158/1557-3265.sabcs25-ps1-12-19",
-   "title": "Abstract PS1-12-19: Disease natural history and care quality assessment of hormone receptor positive / human epidermal growth factor receptor 2 negative metastatic breast cancer (HR+/HER2- mBC) - an international multicentric study",
-   "publication_date": "2026-02-17",
-   "year": 2026,
-   "type": "conference-abstract",
-   "journal": "Clinical Cancer Research",
-   "source_id": "S183149254",
-   "landing_url": "https://doi.org/10.1158/1557-3265.sabcs25-ps1-12-19",
-   "is_oa": false,
-   "oa_url": null,
-   "license": null,
-   "pdf_url": null,
-   "authors": [
-    "Stelios Theophanous",
-    "L. Revie",
-    "O. Bouissou",
-    "François P. Duhoux",
-    "Prabash Galgane Banduge",
-    "Ananya Choudhury",
-    "A. Collard",
-    "W. Hai Deng",
-    "G. Hall",
-    "R.J. Geukes Foppen",
-    "Varsha Gouthamchand",
-    "Isabella Kaczmarczyk",
-    "E. Krasniqi",
-    "Luca Licata",
-    "Aiara Lobo Gomes",
-    "L. Sanchez Gomez",
-    "Aline G. Van Maanen",
-    "G. Podevijn",
-    "Elisabeth Ross",
-    "J. Thonnard",
-    "Alexandra Thomas",
-    "C.J. Twelves",
-    "X. Fernandez",
-    "Cédric Van Marcke"
-   ],
-   "author_members": [
-    null,
-    null,
-    null,
-    null,
-    null,
-    "ananya-choudhury",
-    null,
-    null,
-    null,
-    null,
-    "varsha-gouthamchand",
-    null,
-    null,
-    null,
-    "aiara-lobo-gomes",
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null
-   ],
-   "author_profiles": {
-    "ananya-choudhury": {
-     "openalex_id": "A5024986698",
-     "orcid": "0000-0001-9847-8165",
-     "match": "openalex",
-     "affiliations": [
-      "Maastricht University",
-      "5Clinical Data Science, Maastricht University, Maastricht, NETHERLANDS"
-     ]
-    },
-    "varsha-gouthamchand": {
-     "openalex_id": "A5011282185",
-     "orcid": "0000-0002-4756-2866",
-     "match": "openalex",
-     "affiliations": [
-      "Maastricht University",
-      "5Clinical Data Science, Maastricht University, Maastricht, NETHERLANDS"
-     ]
-    },
-    "aiara-lobo-gomes": {
-     "openalex_id": "A5082702576",
-     "orcid": "0000-0003-4670-6036",
-     "match": "openalex",
-     "affiliations": [
-      "Universitätsklinikum Aachen",
-      "RWTH Aachen University",
-      "11Uniklinik, RWTH Aachen, Aachen, GERMANY"
-     ]
-    }
-   },
-   "author_positions": [
-    1,
-    2,
-    3,
-    4,
-    5,
-    6,
-    7,
-    8,
-    9,
-    10,
-    11,
-    12,
-    13,
-    14,
-    15,
-    16,
-    17,
-    18,
-    19,
-    20,
-    21,
-    22,
-    23,
-    24
-   ],
-   "author_count": 24,
-   "group_members": [
-    "ananya-choudhury",
-    "varsha-gouthamchand"
-   ],
-   "member_affiliations": {
-    "ananya-choudhury": [
-     "Maastricht University",
-     "5Clinical Data Science, Maastricht University, Maastricht, NETHERLANDS"
-    ],
-    "varsha-gouthamchand": [
-     "Maastricht University",
-     "5Clinical Data Science, Maastricht University, Maastricht, NETHERLANDS"
-    ]
-   },
-   "affiliation_status": {
-    "ananya-choudhury": "verified",
-    "varsha-gouthamchand": "verified"
-   },
-   "senior_affiliations": [
-    "Cliniques Universitaires Saint-Luc",
-    "4Medical Oncology, Cliniques universitaires Saint-Luc, Brussels, BELGIUM"
-   ],
-   "cited_by_count": 0,
-   "abstract": "Abstract Background Despite early detection and treatment, ∼30% of early-stage HR+ HER2− breast cancer (BC) patients relapse. Rebiopsy at recurrence is recommended by international guidelines when feasible, as it informs optimal treatment selection. Molecular profiling of metastatic sites is essential to reassess HER2 status and detect actionable genomic alterations such as BRCA1/2, PIK3CA, and AKT1, guiding sequencing of therapies in the metastatic setting. The DIGICORE consortium enables detailed cancer phenotyping and quality of care assessment through automated near real-time data extraction. Here, we report real-world data from HR+ HER2- mBC patients treated at five European DIGICORE centres. Methods Cohorts of HR+ (ER ≥ 10%) HER2- mBC diagnosed between 2018 and 2023 were identified at each centre. Clinical data structured to the OMOP common data model and aligned to key oncological variables in the Minimal Essential Description of Cancer framework (DIGICORE) were automatically extracted. Data were analysed using the Vantage6 federation platform (IKNL, Netherlands) via Medical Data Works (Netherlands). Subcohorts were defined by disease history (de novo vs recurrent mBC) and HER2 status (HER2-low vs HER2-zero). Only anonymous, aggregate results were shared across centres, preserving privacy. Results A total of 1175 HR+HER2- mBC patients were identified. Due to ongoing curation, analyses focus on 529 patients with deep phenotypic data. Of these patients, 33.3% were de novo metastatic (60.2% HER2-low, 33.0% HER2-zero, and 6.8% undetailed HER2-) and 66.7% were a relapse of a previous early-stage BC (62.9% HER2-low, 36.0% HER2-zero, and 1.1% undetailed HER2-). Of the latter, 78.5% of patients were rebiopsied at relapse, of which 8.1% were HER2-positive at the early stage.Amongst patients who underwent genomic testing, 16.1% carried a germline BRCA1 or BRCA2 mutation, while 50%, 4.2%, and 4.2% carried a somatic PIK3CA, AKT1 or ERBB2 mutation, respectively. Among 320 patients with known metastatic sites, 32.5% had bone-only and 67.5% visceral metastases. Conclusions This federated network enables real-world analysis of phenotypic, genotypic, and care variables for patients with HR+ HER2- mBC. Improvement of data capture and curation, as well as addition of treatment patterns to the analysis, is ongoing. Notably, 8.1% of HER2- mBC are a relapse of HER2+ early BC, highlighting the need for rebiopsy. More than half of patients could benefit from therapy targeting an actionable gene mutation. Citation Format: S. Theophanous, L. Revie, O. Bouissou, F. Duhoux, P. Galgane Banduge, A. Choudhury, A. Collard, W. Hai Deng, G. Hall, R. Foppen, V. Gouthamchand, I. Kaczmarczyk, E. Krasniqi, L. Licata, A. Lobo Gomes, L. Sanchez Gomez, A. van Maanen, G. Podevijn, E. Ross, J. Thonnard, A. Thomas, C. Twelves, X. Fernandez, C. Van Marcke. Disease natural history and care quality assessment of hormone receptor positive / human epidermal growth factor receptor 2 negative metastatic breast cancer (HR+/HER2- mBC) - an international multicentric study [abstract]. In: Proceedings of the San Antonio Breast Cancer Symposium 2025; 2025 Dec 9-12; San Antonio, TX. Philadelphia (PA): AACR; Clin Cancer Res 2026;32(4 Suppl):Abstract nr PS1-12-19.",
-   "verified": true,
-   "counted_members": [
-    "ananya-choudhury",
-    "varsha-gouthamchand"
-   ],
-   "counted": true,
-   "listed_elsewhere": false,
-   "first_seen": "2026-10-21",
-   "journal_impact": 2.3,
-   "journal_h_index": 418
-  },
-  {
-   "id": "W7128700455",
-   "openalex_url": "https://openalex.org/W7128700455",
-   "doi": "https://doi.org/10.21037/qims-2025-1405",
-   "title": "Super-resolution and habitat radiomics based computed tomography machine-learning model for prediction of lung invasive adenocarcinoma: a multi-centre study",
-   "publication_date": "2026-02-13",
-   "year": 2026,
-   "type": "article",
-   "journal": "Quantitative Imaging in Medicine and Surgery",
-   "source_id": "S2764457454",
-   "landing_url": "https://doi.org/10.21037/qims-2025-1405",
-   "is_oa": true,
-   "oa_url": "https://doi.org/10.21037/qims-2025-1405",
-   "license": "cc-by-nc-nd",
-   "pdf_url": null,
-   "authors": [
-    "Yanqing Ma",
-    "Pingshan Zhao",
-    "Haoran Chen",
-    "Huizhi Ni",
-    "Hongxian Gu",
-    "Yi Lin",
-    "Wenjie Liang"
-   ],
-   "author_members": [
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    "wenjie-liang"
-   ],
-   "author_profiles": {
-    "wenjie-liang": {
-     "openalex_id": "A5122769882",
-     "orcid": null,
-     "match": "openalex",
-     "affiliations": [
-      "First Affiliated Hospital Zhejiang University",
-      "Zhejiang University",
-      "Department of Radiology, The First Affiliated Hospital, College of Medicine, Zhejiang University, Hangzhou, China"
-     ]
-    }
-   },
-   "author_positions": [
-    1,
-    2,
-    3,
-    4,
-    5,
-    6,
-    7
-   ],
-   "author_count": 7,
-   "group_members": [
-    "wenjie-liang"
-   ],
-   "member_affiliations": {
-    "wenjie-liang": [
-     "First Affiliated Hospital Zhejiang University",
-     "Zhejiang University",
-     "Department of Radiology, The First Affiliated Hospital, College of Medicine, Zhejiang University, Hangzhou, China"
-    ]
-   },
-   "affiliation_status": {
-    "wenjie-liang": "mismatch"
-   },
-   "senior_affiliations": [
-    "First Affiliated Hospital Zhejiang University",
-    "Zhejiang University",
-    "Department of Radiology, The First Affiliated Hospital, College of Medicine, Zhejiang University, Hangzhou, China"
-   ],
-   "cited_by_count": 1,
-   "abstract": "Background: Early differentiation between invasive adenocarcinoma (IAC) and non-IAC pulmonary nodules is crucial for guiding clinical decision-making. Therefore, this study aimed to distinguish IAC from non-IAC pulmonary nodules using intra-tumor radiomics signatures, habitat radiomics analysis, and a combined nomogram by integrating generative adversarial network (GAN) based super-resolution reconstruction. Methods: 89 IAC cases; mean ± SD: 57.037±11.683 years) were included. Univariate and multivariate analyses were conducted to explore clinical characteristics. Radiomics features were extracted from intra-tumor regions and sub-regions. After feature selection, machine learning models, namely the Intra-Model and Habitat-Model, were developed. A combined nomogram integrating significant clinical factors, intra-tumor radiomics and habitat radiomics was constructed and evaluated using area under receiver operator characteristics curve (AUC), decision curve analysis (DCA), and other quantified metrics. Results: 0.875) in predicting IAC invasiveness. The combined nomogram demonstrated an incremental advancement in IAC stratification [training AUC: 0.907 (95% CI: 0.887-0.927); testing AUC: 0.895 (95% CI: 0.849-0.941)], with DCA confirming 28-34% net benefit improvement over single-modality approaches at critical thresholds (10-25% risk). Age (P<0.001) and nodule diameter (P<0.001), along with intra-tumor and habitat radiomics, were identified as key contributing factors. Conclusions: The spatially resolved habitat radiomics model exhibited higher discriminative accuracy than the classical intra-tumor radiomics model. The combined nomogram framework, which integrated intra-tumor radiomics, habitat radiomics, and significant clinical biomarkers, achieved state-of-the-art performance in IAC stratification. This framework provides a robust tool for precision therapeutic decision-making in pulmonary nodule management.",
-   "verified": false,
-   "counted_members": [],
-   "counted": false,
-   "listed_elsewhere": true,
-   "first_seen": "2026-10-23",
-   "journal_impact": 1.9,
-   "journal_h_index": 68
-  },
-  {
-   "id": "W7126265383",
-   "openalex_url": "https://openalex.org/W7126265383",
-   "doi": "https://doi.org/10.5281/zenodo.18431455",
-   "title": "MaastrichtU-CDS/atomcat2: atomCAT2_publication",
-   "publication_date": "2026-01-30",
-   "year": 2026,
-   "type": "software",
-   "journal": "Zenodo (CERN European Organization for Nuclear Research)",
-   "source_id": "S4306400562",
-   "landing_url": "https://doi.org/10.5281/zenodo.18431455",
-   "is_oa": true,
-   "oa_url": "https://doi.org/10.5281/zenodo.18431455",
-   "license": null,
-   "pdf_url": null,
-   "authors": [
-    "SteliosTheophanous",
-    "Leonard Wee"
-   ],
-   "author_members": [
-    null,
-    "leonard-wee"
-   ],
-   "author_profiles": {
-    "leonard-wee": {
-     "openalex_id": "A5004688031",
-     "orcid": "0000-0003-1612-9055",
-     "match": "openalex",
-     "affiliations": [
-      "Maastricht University",
-      "Maastricht University"
-     ]
-    }
-   },
-   "author_positions": [
-    1,
-    2
-   ],
-   "author_count": 2,
-   "group_members": [
-    "leonard-wee"
-   ],
-   "member_affiliations": {
-    "leonard-wee": [
-     "Maastricht University",
-     "Maastricht University"
-    ]
-   },
-   "affiliation_status": {
-    "leonard-wee": "unspecific"
-   },
-   "senior_affiliations": [
-    "Maastricht University",
-    "Maastricht University"
-   ],
-   "cited_by_count": 1,
-   "abstract": "Code repository for AtomCAT 2 multicentre study",
-   "verified": false,
-   "counted_members": [
-    "leonard-wee"
-   ],
-   "counted": true,
-   "listed_elsewhere": false,
-   "first_seen": "2026-10-21",
-   "journal_impact": null,
-   "journal_h_index": null
-  },
-  {
    "id": "W7133204918",
    "openalex_url": "https://openalex.org/W7133204918",
    "doi": "https://doi.org/10.1093/ije/dyag016",
    "title": "Data Resource Profile: Prostate cancer data from Clinical Practice Research Datalink linked hospital records, mortality data and cancer registry standardized to the Observational Medical Outcomes Partnership common data model (CPRD-PCa-OMOP)",
-   "publication_date": "2026-01-29",
+   "publication_date": "2026-02-18",
    "year": 2026,
    "type": "article",
    "journal": "International Journal of Epidemiology",
@@ -16778,6 +16469,315 @@
    "first_seen": "2026-10-21",
    "journal_impact": 4.7,
    "journal_h_index": 328
+  },
+  {
+   "id": "W7129378262",
+   "openalex_url": "https://openalex.org/W7129378262",
+   "doi": "https://doi.org/10.1158/1557-3265.sabcs25-ps1-12-19",
+   "title": "Abstract PS1-12-19: Disease natural history and care quality assessment of hormone receptor positive / human epidermal growth factor receptor 2 negative metastatic breast cancer (HR+/HER2- mBC) - an international multicentric study",
+   "publication_date": "2026-02-17",
+   "year": 2026,
+   "type": "conference-abstract",
+   "journal": "Clinical Cancer Research",
+   "source_id": "S183149254",
+   "landing_url": "https://doi.org/10.1158/1557-3265.sabcs25-ps1-12-19",
+   "is_oa": false,
+   "oa_url": null,
+   "license": null,
+   "pdf_url": null,
+   "authors": [
+    "Stelios Theophanous",
+    "L. Revie",
+    "O. Bouissou",
+    "François P. Duhoux",
+    "Prabash Galgane Banduge",
+    "Ananya Choudhury",
+    "A. Collard",
+    "W. Hai Deng",
+    "G. Hall",
+    "R.J. Geukes Foppen",
+    "Varsha Gouthamchand",
+    "Isabella Kaczmarczyk",
+    "E. Krasniqi",
+    "Luca Licata",
+    "Aiara Lobo Gomes",
+    "L. Sanchez Gomez",
+    "Aline G. Van Maanen",
+    "G. Podevijn",
+    "Elisabeth Ross",
+    "J. Thonnard",
+    "Alexandra Thomas",
+    "C.J. Twelves",
+    "X. Fernandez",
+    "Cédric Van Marcke"
+   ],
+   "author_members": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    "ananya-choudhury",
+    null,
+    null,
+    null,
+    null,
+    "varsha-gouthamchand",
+    null,
+    null,
+    null,
+    "aiara-lobo-gomes",
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   "author_profiles": {
+    "ananya-choudhury": {
+     "openalex_id": "A5024986698",
+     "orcid": "0000-0001-9847-8165",
+     "match": "openalex",
+     "affiliations": [
+      "Maastricht University",
+      "5Clinical Data Science, Maastricht University, Maastricht, NETHERLANDS"
+     ]
+    },
+    "varsha-gouthamchand": {
+     "openalex_id": "A5011282185",
+     "orcid": "0000-0002-4756-2866",
+     "match": "openalex",
+     "affiliations": [
+      "Maastricht University",
+      "5Clinical Data Science, Maastricht University, Maastricht, NETHERLANDS"
+     ]
+    },
+    "aiara-lobo-gomes": {
+     "openalex_id": "A5082702576",
+     "orcid": "0000-0003-4670-6036",
+     "match": "openalex",
+     "affiliations": [
+      "Universitätsklinikum Aachen",
+      "RWTH Aachen University",
+      "11Uniklinik, RWTH Aachen, Aachen, GERMANY"
+     ]
+    }
+   },
+   "author_positions": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24
+   ],
+   "author_count": 24,
+   "group_members": [
+    "ananya-choudhury",
+    "varsha-gouthamchand"
+   ],
+   "member_affiliations": {
+    "ananya-choudhury": [
+     "Maastricht University",
+     "5Clinical Data Science, Maastricht University, Maastricht, NETHERLANDS"
+    ],
+    "varsha-gouthamchand": [
+     "Maastricht University",
+     "5Clinical Data Science, Maastricht University, Maastricht, NETHERLANDS"
+    ]
+   },
+   "affiliation_status": {
+    "ananya-choudhury": "verified",
+    "varsha-gouthamchand": "verified"
+   },
+   "senior_affiliations": [
+    "Cliniques Universitaires Saint-Luc",
+    "4Medical Oncology, Cliniques universitaires Saint-Luc, Brussels, BELGIUM"
+   ],
+   "cited_by_count": 0,
+   "abstract": "Abstract Background Despite early detection and treatment, ∼30% of early-stage HR+ HER2− breast cancer (BC) patients relapse. Rebiopsy at recurrence is recommended by international guidelines when feasible, as it informs optimal treatment selection. Molecular profiling of metastatic sites is essential to reassess HER2 status and detect actionable genomic alterations such as BRCA1/2, PIK3CA, and AKT1, guiding sequencing of therapies in the metastatic setting. The DIGICORE consortium enables detailed cancer phenotyping and quality of care assessment through automated near real-time data extraction. Here, we report real-world data from HR+ HER2- mBC patients treated at five European DIGICORE centres. Methods Cohorts of HR+ (ER ≥ 10%) HER2- mBC diagnosed between 2018 and 2023 were identified at each centre. Clinical data structured to the OMOP common data model and aligned to key oncological variables in the Minimal Essential Description of Cancer framework (DIGICORE) were automatically extracted. Data were analysed using the Vantage6 federation platform (IKNL, Netherlands) via Medical Data Works (Netherlands). Subcohorts were defined by disease history (de novo vs recurrent mBC) and HER2 status (HER2-low vs HER2-zero). Only anonymous, aggregate results were shared across centres, preserving privacy. Results A total of 1175 HR+HER2- mBC patients were identified. Due to ongoing curation, analyses focus on 529 patients with deep phenotypic data. Of these patients, 33.3% were de novo metastatic (60.2% HER2-low, 33.0% HER2-zero, and 6.8% undetailed HER2-) and 66.7% were a relapse of a previous early-stage BC (62.9% HER2-low, 36.0% HER2-zero, and 1.1% undetailed HER2-). Of the latter, 78.5% of patients were rebiopsied at relapse, of which 8.1% were HER2-positive at the early stage.Amongst patients who underwent genomic testing, 16.1% carried a germline BRCA1 or BRCA2 mutation, while 50%, 4.2%, and 4.2% carried a somatic PIK3CA, AKT1 or ERBB2 mutation, respectively. Among 320 patients with known metastatic sites, 32.5% had bone-only and 67.5% visceral metastases. Conclusions This federated network enables real-world analysis of phenotypic, genotypic, and care variables for patients with HR+ HER2- mBC. Improvement of data capture and curation, as well as addition of treatment patterns to the analysis, is ongoing. Notably, 8.1% of HER2- mBC are a relapse of HER2+ early BC, highlighting the need for rebiopsy. More than half of patients could benefit from therapy targeting an actionable gene mutation. Citation Format: S. Theophanous, L. Revie, O. Bouissou, F. Duhoux, P. Galgane Banduge, A. Choudhury, A. Collard, W. Hai Deng, G. Hall, R. Foppen, V. Gouthamchand, I. Kaczmarczyk, E. Krasniqi, L. Licata, A. Lobo Gomes, L. Sanchez Gomez, A. van Maanen, G. Podevijn, E. Ross, J. Thonnard, A. Thomas, C. Twelves, X. Fernandez, C. Van Marcke. Disease natural history and care quality assessment of hormone receptor positive / human epidermal growth factor receptor 2 negative metastatic breast cancer (HR+/HER2- mBC) - an international multicentric study [abstract]. In: Proceedings of the San Antonio Breast Cancer Symposium 2025; 2025 Dec 9-12; San Antonio, TX. Philadelphia (PA): AACR; Clin Cancer Res 2026;32(4 Suppl):Abstract nr PS1-12-19.",
+   "verified": true,
+   "counted_members": [
+    "ananya-choudhury",
+    "varsha-gouthamchand"
+   ],
+   "counted": true,
+   "listed_elsewhere": false,
+   "first_seen": "2026-10-21",
+   "journal_impact": 2.3,
+   "journal_h_index": 418
+  },
+  {
+   "id": "W7128700455",
+   "openalex_url": "https://openalex.org/W7128700455",
+   "doi": "https://doi.org/10.21037/qims-2025-1405",
+   "title": "Super-resolution and habitat radiomics based computed tomography machine-learning model for prediction of lung invasive adenocarcinoma: a multi-centre study",
+   "publication_date": "2026-02-13",
+   "year": 2026,
+   "type": "article",
+   "journal": "Quantitative Imaging in Medicine and Surgery",
+   "source_id": "S2764457454",
+   "landing_url": "https://doi.org/10.21037/qims-2025-1405",
+   "is_oa": true,
+   "oa_url": "https://doi.org/10.21037/qims-2025-1405",
+   "license": "cc-by-nc-nd",
+   "pdf_url": null,
+   "authors": [
+    "Yanqing Ma",
+    "Pingshan Zhao",
+    "Haoran Chen",
+    "Huizhi Ni",
+    "Hongxian Gu",
+    "Yi Lin",
+    "Wenjie Liang"
+   ],
+   "author_members": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    "wenjie-liang"
+   ],
+   "author_profiles": {
+    "wenjie-liang": {
+     "openalex_id": "A5122769882",
+     "orcid": null,
+     "match": "openalex",
+     "affiliations": [
+      "First Affiliated Hospital Zhejiang University",
+      "Zhejiang University",
+      "Department of Radiology, The First Affiliated Hospital, College of Medicine, Zhejiang University, Hangzhou, China"
+     ]
+    }
+   },
+   "author_positions": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+   ],
+   "author_count": 7,
+   "group_members": [
+    "wenjie-liang"
+   ],
+   "member_affiliations": {
+    "wenjie-liang": [
+     "First Affiliated Hospital Zhejiang University",
+     "Zhejiang University",
+     "Department of Radiology, The First Affiliated Hospital, College of Medicine, Zhejiang University, Hangzhou, China"
+    ]
+   },
+   "affiliation_status": {
+    "wenjie-liang": "mismatch"
+   },
+   "senior_affiliations": [
+    "First Affiliated Hospital Zhejiang University",
+    "Zhejiang University",
+    "Department of Radiology, The First Affiliated Hospital, College of Medicine, Zhejiang University, Hangzhou, China"
+   ],
+   "cited_by_count": 1,
+   "abstract": "Background: Early differentiation between invasive adenocarcinoma (IAC) and non-IAC pulmonary nodules is crucial for guiding clinical decision-making. Therefore, this study aimed to distinguish IAC from non-IAC pulmonary nodules using intra-tumor radiomics signatures, habitat radiomics analysis, and a combined nomogram by integrating generative adversarial network (GAN) based super-resolution reconstruction. Methods: 89 IAC cases; mean ± SD: 57.037±11.683 years) were included. Univariate and multivariate analyses were conducted to explore clinical characteristics. Radiomics features were extracted from intra-tumor regions and sub-regions. After feature selection, machine learning models, namely the Intra-Model and Habitat-Model, were developed. A combined nomogram integrating significant clinical factors, intra-tumor radiomics and habitat radiomics was constructed and evaluated using area under receiver operator characteristics curve (AUC), decision curve analysis (DCA), and other quantified metrics. Results: 0.875) in predicting IAC invasiveness. The combined nomogram demonstrated an incremental advancement in IAC stratification [training AUC: 0.907 (95% CI: 0.887-0.927); testing AUC: 0.895 (95% CI: 0.849-0.941)], with DCA confirming 28-34% net benefit improvement over single-modality approaches at critical thresholds (10-25% risk). Age (P<0.001) and nodule diameter (P<0.001), along with intra-tumor and habitat radiomics, were identified as key contributing factors. Conclusions: The spatially resolved habitat radiomics model exhibited higher discriminative accuracy than the classical intra-tumor radiomics model. The combined nomogram framework, which integrated intra-tumor radiomics, habitat radiomics, and significant clinical biomarkers, achieved state-of-the-art performance in IAC stratification. This framework provides a robust tool for precision therapeutic decision-making in pulmonary nodule management.",
+   "verified": false,
+   "counted_members": [],
+   "counted": false,
+   "listed_elsewhere": true,
+   "first_seen": "2026-10-23",
+   "journal_impact": 1.9,
+   "journal_h_index": 68
+  },
+  {
+   "id": "W7126265383",
+   "openalex_url": "https://openalex.org/W7126265383",
+   "doi": "https://doi.org/10.5281/zenodo.18431455",
+   "title": "MaastrichtU-CDS/atomcat2: atomCAT2_publication",
+   "publication_date": "2026-01-30",
+   "year": 2026,
+   "type": "software",
+   "journal": "Zenodo (CERN European Organization for Nuclear Research)",
+   "source_id": "S4306400562",
+   "landing_url": "https://doi.org/10.5281/zenodo.18431455",
+   "is_oa": true,
+   "oa_url": "https://doi.org/10.5281/zenodo.18431455",
+   "license": null,
+   "pdf_url": null,
+   "authors": [
+    "SteliosTheophanous",
+    "Leonard Wee"
+   ],
+   "author_members": [
+    null,
+    "leonard-wee"
+   ],
+   "author_profiles": {
+    "leonard-wee": {
+     "openalex_id": "A5004688031",
+     "orcid": "0000-0003-1612-9055",
+     "match": "openalex",
+     "affiliations": [
+      "Maastricht University",
+      "Maastricht University"
+     ]
+    }
+   },
+   "author_positions": [
+    1,
+    2
+   ],
+   "author_count": 2,
+   "group_members": [
+    "leonard-wee"
+   ],
+   "member_affiliations": {
+    "leonard-wee": [
+     "Maastricht University",
+     "Maastricht University"
+    ]
+   },
+   "affiliation_status": {
+    "leonard-wee": "unspecific"
+   },
+   "senior_affiliations": [
+    "Maastricht University",
+    "Maastricht University"
+   ],
+   "cited_by_count": 1,
+   "abstract": "Code repository for AtomCAT 2 multicentre study",
+   "verified": false,
+   "counted_members": [
+    "leonard-wee"
+   ],
+   "counted": true,
+   "listed_elsewhere": false,
+   "first_seen": "2026-10-21",
+   "journal_impact": null,
+   "journal_h_index": null
   },
   {
    "id": "W7127147492",
@@ -21879,7 +21879,7 @@
     "Department of Surgery, NUTRIM School of Nutrition and Translational Research in Metabolism, Maastricht University, Maastricht, the Netherlands"
    ],
    "cited_by_count": 6,
-   "abstract": "ABSTRACT Background Body composition alterations such as skeletal muscle (SM) loss in cancer patients are associated with poor survival. In turn, immune cell‐driven pathways have been linked to muscle wasting. We aimed to investigate the relationship between body composition, tumour‐infiltrating lymphocytes and survival in patients with advanced lung cancer. Methods We studied 200 patients with advanced lung cancer receiving immunotherapy ( n = 81) or non‐immunotherapy regimens ( n = 119). Body composition including SM index (SMI) at baseline and longitudinal changes were assessed using computed tomography (CT) scans at the third lumbar vertebra. Associations between body composition parameters and overall survival (OS) were evaluated using Cox regression analysis. The median value of SMI, stratified by sex, was used as the cut‐off to define groups with high and low baseline SMI. Stable SMI was defined by any increase or < 2% decrease per 100 days; loss of SMI was defined by ≥ 2% decrease per 100 days. Logistic regression analysis was applied to investigate the association between SMI and peripheral circulating immune cells. Tumour‐infiltrating lymphocytes were identified by immunohistochemistry, and their relationship with SMI was evaluated. Results SMI loss was associated with shorter OS (whole cohort: HR = 2.314, 95% CI = 1.388–3.858, p = 0.001; immunotherapy cohort: HR = 3.028, 95% CI = 1.113–8.236, p = 0.03; non‐immunotherapy cohort: HR = 2.298, 95% CI = 1.191–4.435, p = 0.013). Low baseline SMI was associated with higher CD3 + T cell abundance (OR = 1.240, 95% CI = 1.080–1.424, p = 0.002) but lower CD3 + CD8 + T cell abundance (OR = 0.862, 95% CI = 0.762–0.974, p = 0.018) in peripheral blood. Subsequent SMI loss during treatment was also significantly associated with higher CD3 + T cell counts (OR = 3.414, 95% CI = 1.301–8.961, p = 0.013) and lower CD3 + CD8 + T cell abundance (OR = 0.666, 95% CI = 0.459–0.968, p = 0.033). Patients with stable SMI had a higher number of CD8 + tumour‐infiltrating lymphocytes than patients with SMI loss (15.4% vs. 7.9%, p = 0.036). Conclusion SM loss is an independent predictor for survival in patients with advanced lung cancer and is associated with reduced peripheral and tumour‐infiltrating cytotoxic T cell abundance. An inadequate antitumour immune response may contribute to metabolic tissue wasting in cancer.",
+   "abstract": "Background Body composition alterations such as skeletal muscle (SM) loss in cancer patients are associated with poor survival. In turn, immune cell‐driven pathways have been linked to muscle wasting. We aimed to investigate the relationship between body composition, tumour‐infiltrating lymphocytes and survival in patients with advanced lung cancer. Methods We studied 200 patients with advanced lung cancer receiving immunotherapy ( n = 81) or non‐immunotherapy regimens ( n = 119). Body composition including SM index (SMI) at baseline and longitudinal changes were assessed using computed tomography (CT) scans at the third lumbar vertebra. Associations between body composition parameters and overall survival (OS) were evaluated using Cox regression analysis. The median value of SMI, stratified by sex, was used as the cut‐off to define groups with high and low baseline SMI. Stable SMI was defined by any increase or < 2% decrease per 100 days; loss of SMI was defined by ≥ 2% decrease per 100 days. Logistic regression analysis was applied to investigate the association between SMI and peripheral circulating immune cells. Tumour‐infiltrating lymphocytes were identified by immunohistochemistry, and their relationship with SMI was evaluated. Results SMI loss was associated with shorter OS (whole cohort: HR = 2.314, 95% CI = 1.388–3.858, p = 0.001; immunotherapy cohort: HR = 3.028, 95% CI = 1.113–8.236, p = 0.03; non‐immunotherapy cohort: HR = 2.298, 95% CI = 1.191–4.435, p = 0.013). Low baseline SMI was associated with higher CD3 + T cell abundance (OR = 1.240, 95% CI = 1.080–1.424, p = 0.002) but lower CD3 + CD8 + T cell abundance (OR = 0.862, 95% CI = 0.762–0.974, p = 0.018) in peripheral blood. Subsequent SMI loss during treatment was also significantly associated with higher CD3 + T cell counts (OR = 3.414, 95% CI = 1.301–8.961, p = 0.013) and lower CD3 + CD8 + T cell abundance (OR = 0.666, 95% CI = 0.459–0.968, p = 0.033). Patients with stable SMI had a higher number of CD8 + tumour‐infiltrating lymphocytes than patients with SMI loss (15.4% vs. 7.9%, p = 0.036). Conclusion SM loss is an independent predictor for survival in patients with advanced lung cancer and is associated with reduced peripheral and tumour‐infiltrating cytotoxic T cell abundance. An inadequate antitumour immune response may contribute to metabolic tissue wasting in cancer.",
    "verified": false,
    "counted_members": [],
    "counted": false,
