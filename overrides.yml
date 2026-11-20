@@ -6,6 +6,7 @@ confirm:
   - W7137993139  # Cecile Wolfs, 41P osimertinib + cranial RT (ESMO Open 2026): Maastro, OpenAlex lists only MUMC
   - W4409875408  # Leonard Wee, Andre Dekker, radiomics vs semantic features (medRxiv 2025): Maastro in the PDF
   - W4416157627  # Sander Puts, Dutch metaphor extraction (Suzan Verberne, Leiden): OpenAlex wrongly lists her with GROW
+  - W4410560393  # Rianne Fijten last author, shared decision-making instruments (Radiother Oncol 2025 abstract): CDS-led, Liesbeth Boersma co-author
 
 # Papers that do NOT belong to the group (wrong person with the same name, work from another job, …).
 reject:
