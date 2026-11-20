@@ -276,7 +276,8 @@ CDS overview: this page never feeds the CDS counts, statistics, newsletter or so
 - **Scope**: every paper since `since_year` where any author lists Maastro: OpenAlex's institution record
   (`maastro_institution`) or "maastro" in the affiliation text. Both are queried, because OpenAlex links only about
   half of the Maastro papers to the institution record. Added to that: papers where a division leader lists a Maastricht
-  affiliation (`division_keywords`, e.g. GROW radiology), whoever else is on them.
+  affiliation (`division_keywords`: Maastro, GROW or Maastricht radiation oncology; hospital departments such as
+  Maastricht UMC+ radiology do not count), whoever else is on them.
 - **Divisions**: a paper counts for Clinical Data Science (`cds: true`) when anyone tracked by pubpulse is on it, and for
   another division when its leader is. Papers with neither are shown as *division not identified*, with first and last
   author, so they can be traced. Leaders are listed by hand in `config.yml` → `maastro_divisions`, with their ORCID:

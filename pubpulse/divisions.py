@@ -4,7 +4,7 @@ Separate from the CDS tracking on purpose: nothing here feeds the CDS counts, st
 
 Scope: every paper since since_year where any author lists Maastro (the OpenAlex institution record, or "maastro" in
 the affiliation text: OpenAlex links only about half of them to the institution), plus papers where a division leader
-lists a Maastricht affiliation (division_keywords; e.g. GROW radiology). Division credit: Clinical Data Science when a
+lists a Maastro / GROW affiliation (division_keywords; hospital departments do not count). Division credit: Clinical Data Science when a
 person tracked by pubpulse is on the paper; any division whose leader is on it. Papers with neither are listed as
 "division not identified" with their first and last author, so they can be traced.
 
@@ -79,7 +79,7 @@ def normalise(raw: dict, leaders: dict[str, set[str]], keywords: list, cds_ids: 
         "first_author": name(authorships[0]) if authorships else "",
         "last_author": name(authorships[-1]) if n > 1 else "",
         # The last author leads the paper; it is led from Maastricht when they list Maastro or a division keyword
-        # (GROW, Maastricht radiation oncology or radiology: the imaging division is at GROW radiology).
+        # (GROW or Maastricht radiation oncology; Maastricht UMC+ departments such as radiology are the hospital, not Maastro).
         "last_author_home": bool(authorships) and (lists_maastro(authorships[-1], institution)
                                                    or affiliation_matches(_affiliations(authorships[-1]), keywords)),
         "maastro": maastro,

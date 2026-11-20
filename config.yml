@@ -81,11 +81,11 @@ maastro_divisions:
   - {division: Imaging Innovation Research, leader: Regina Beets-Tan, orcid: 0000-0002-8533-5090}
 # A leader's paper is a Maastricht paper when the leader's own authorship lists one of these (same matching rules as
 # institution_keywords). Beets-Tan and Jacobs also work at NKI and Tilburg University, so this filter matters.
+# Hospital departments (e.g. Maastricht UMC+ radiology) are deliberately not here: they are not Maastro.
 division_keywords:
   - maastro
   - grow
   - [maastricht, radiation oncology]
-  - [maastricht, radiology]
 
 # People who disappear from the staff page keep being tracked for this many months (papers in the pipeline),
 # but during that period a paper only counts when it carries a verified group affiliation for them.
