@@ -1,21 +1,25 @@
 {
- "checked_at": "2026-11-16",
+ "checked_at": "2026-11-23",
  "people": {
   "ralph-brecheisen": {
    "name": "Ralph Brecheisen",
-   "checked_at": "2026-10-21",
+   "checked_at": "2026-11-23",
    "known_coauthors": [
     "leroy-volmer",
     "andre-dekker",
     "leonard-wee",
-    "petros-koutsouvelis"
+    "hossein-rahmani",
+    "petros-koutsouvelis",
+    "florian-van-daalen"
    ],
    "orcid_candidates": [],
    "scholar_candidates": [],
-   "errors": [],
-   "complete": true,
+   "errors": [
+    "Scholar search deferred: search budget reached or no search key configured"
+   ],
+   "complete": false,
    "orcid_decision": "known",
-   "scholar_decision": "not_found",
+   "scholar_decision": "deferred",
    "status": "no_new_confirmed_profile",
    "identifiers": {
     "orcid": "0000-0001-9937-2602",
@@ -25,17 +29,19 @@
   },
   "anshu-ankolekar": {
    "name": "Anshu Ankolekar",
-   "checked_at": "2026-10-21",
+   "checked_at": "2026-11-23",
    "known_coauthors": [
     "anniek-van-hienen",
     "rianne-fijten"
    ],
    "orcid_candidates": [],
    "scholar_candidates": [],
-   "errors": [],
-   "complete": true,
+   "errors": [
+    "Scholar search deferred: search budget reached or no search key configured"
+   ],
+   "complete": false,
    "orcid_decision": "known",
-   "scholar_decision": "not_found",
+   "scholar_decision": "deferred",
    "status": "no_new_confirmed_profile",
    "identifiers": {
     "orcid": "0000-0001-7681-1254",
@@ -45,20 +51,24 @@
   },
   "joshi-hogenboom": {
    "name": "Joshi Hogenboom",
-   "checked_at": "2026-10-21",
+   "checked_at": "2026-11-23",
    "known_coauthors": [
-    "andre-dekker",
     "leonard-wee",
+    "andre-dekker",
+    "aiara-lobo-gomes",
+    "varsha-gouthamchand",
     "johan-van-soest",
+    "ashish-jha",
     "rianne-fijten",
     "umesh-kumar-baburao-sherkhane",
     "ananya-choudhury",
-    "marine-jacquemin"
+    "marine-jacquemin",
+    "luis-sanchez-gomez"
    ],
    "orcid_candidates": [],
    "scholar_candidates": [],
    "errors": [
-    "Scholar search deferred: Profile provider request failed"
+    "Scholar search deferred: search budget reached or no search key configured"
    ],
    "complete": false,
    "orcid_decision": "known",
@@ -72,7 +82,7 @@
   },
   "leroy-volmer": {
    "name": "Leroy Volmer",
-   "checked_at": "2026-10-21",
+   "checked_at": "2026-11-23",
    "known_coauthors": [
     "andre-dekker",
     "leonard-wee",
@@ -80,15 +90,21 @@
     "petros-koutsouvelis",
     "ananya-choudhury",
     "johan-van-soest",
+    "hossein-rahmani",
+    "zhen-zang",
     "leonard-nurnberg",
-    "rianne-fijten"
+    "rianne-fijten",
+    "zhenwei-shi",
+    "aiara-lobo-gomes"
    ],
    "orcid_candidates": [],
    "scholar_candidates": [],
-   "errors": [],
-   "complete": true,
+   "errors": [
+    "Scholar search deferred: search budget reached or no search key configured"
+   ],
+   "complete": false,
    "orcid_decision": "known",
-   "scholar_decision": "not_found",
+   "scholar_decision": "deferred",
    "status": "no_new_confirmed_profile",
    "identifiers": {
     "orcid": "0009-0001-4978-4024",
@@ -307,30 +323,90 @@
   },
   "leonard-nurnberg": {
    "name": "Leonard Nürnberg",
-   "checked_at": "2026-11-16",
+   "checked_at": "2026-11-23",
    "known_coauthors": [
-    "hugo-aerts",
     "dennis-bontempi",
-    "andre-dekker",
+    "hugo-aerts",
     "fariba-tohidinezhad",
     "alberto-traverso",
-    "vasco-prudente",
+    "andre-dekker",
     "sure-pai",
-    "leroy-volmer",
-    "petros-koutsouvelis"
+    "vasco-prudente",
+    "petros-koutsouvelis",
+    "leroy-volmer"
    ],
    "orcid_candidates": [],
-   "scholar_candidates": [],
-   "errors": [
-    "Scholar search deferred: search budget reached or no search key configured"
+   "scholar_candidates": [
+    {
+     "id": "BioDnoIAAAAJ",
+     "url": "https://scholar.google.com/citations?user=BioDnoIAAAAJ",
+     "name": "Leonard Nürnberg",
+     "affiliations": "Master Student at Maastricht University",
+     "name_match": true,
+     "shared_works": [
+      {
+       "work": "W4402897784",
+       "title": "Prediction of new-onset atrial fibrillation in patients with non-small cell lung cancer treated with curative-intent conventional radiotherapy",
+       "url": "https://doi.org/10.1016/j.radonc.2024.110544",
+       "coauthors": [
+        "alberto-traverso",
+        "andre-dekker",
+        "fariba-tohidinezhad",
+        "femke-vaassen",
+        "hugo-aerts",
+        "leonard-nurnberg"
+       ]
+      },
+      {
+       "work": "W7154321941",
+       "title": "Towards Brain MRI Foundation Models for the Clinic: Findings from the FOMO25 Challenge",
+       "url": "https://doi.org/10.48550/arxiv.2604.11679",
+       "coauthors": [
+        "leonard-nurnberg",
+        "leroy-volmer",
+        "petros-koutsouvelis"
+       ]
+      },
+      {
+       "work": "W7222957496",
+       "title": "Foundation artificial intelligence models for health recognition by use of face photographs (FAHR-Face): a model development and validation study",
+       "url": "https://doi.org/10.1016/j.landig.2026.101056",
+       "coauthors": [
+        "dennis-bontempi",
+        "hugo-aerts",
+        "leonard-nurnberg",
+        "sure-pai",
+        "vasco-prudente"
+       ]
+      },
+      {
+       "work": "W4402044888",
+       "title": "1733: Factors associated with cardiac toxicity after radical radiotherapy in patients with lung cancer",
+       "url": "https://doi.org/10.1016/s0167-8140(24)02075-9",
+       "coauthors": [
+        "alberto-traverso",
+        "andre-dekker",
+        "dennis-bontempi",
+        "fariba-tohidinezhad",
+        "femke-vaassen",
+        "leonard-nurnberg"
+       ]
+      }
+     ],
+     "known_coauthors": [],
+     "coauthor_profiles": [],
+     "institution_match": true,
+     "accepted": true
+    }
    ],
-   "complete": false,
+   "errors": [],
+   "complete": true,
    "orcid_decision": "known",
-   "scholar_decision": "deferred",
-   "status": "no_new_confirmed_profile",
+   "scholar_decision": "accepted",
+   "status": "matched",
    "identifiers": {
     "orcid": "0000-0001-6544-4268",
-    "scholar_id": null
+    "scholar_id": "BioDnoIAAAAJ"
    },
    "verified_evidence": {
     "orcid": {
@@ -376,19 +452,83 @@
      "linked_verified_scholar": false,
      "institution_match": false,
      "accepted": true
+    },
+    "scholar": {
+     "checked_at": "2026-11-23",
+     "id": "BioDnoIAAAAJ",
+     "url": "https://scholar.google.com/citations?user=BioDnoIAAAAJ",
+     "name": "Leonard Nürnberg",
+     "affiliations": "Master Student at Maastricht University",
+     "name_match": true,
+     "shared_works": [
+      {
+       "work": "W4402897784",
+       "title": "Prediction of new-onset atrial fibrillation in patients with non-small cell lung cancer treated with curative-intent conventional radiotherapy",
+       "url": "https://doi.org/10.1016/j.radonc.2024.110544",
+       "coauthors": [
+        "alberto-traverso",
+        "andre-dekker",
+        "fariba-tohidinezhad",
+        "femke-vaassen",
+        "hugo-aerts",
+        "leonard-nurnberg"
+       ]
+      },
+      {
+       "work": "W7154321941",
+       "title": "Towards Brain MRI Foundation Models for the Clinic: Findings from the FOMO25 Challenge",
+       "url": "https://doi.org/10.48550/arxiv.2604.11679",
+       "coauthors": [
+        "leonard-nurnberg",
+        "leroy-volmer",
+        "petros-koutsouvelis"
+       ]
+      },
+      {
+       "work": "W7222957496",
+       "title": "Foundation artificial intelligence models for health recognition by use of face photographs (FAHR-Face): a model development and validation study",
+       "url": "https://doi.org/10.1016/j.landig.2026.101056",
+       "coauthors": [
+        "dennis-bontempi",
+        "hugo-aerts",
+        "leonard-nurnberg",
+        "sure-pai",
+        "vasco-prudente"
+       ]
+      },
+      {
+       "work": "W4402044888",
+       "title": "1733: Factors associated with cardiac toxicity after radical radiotherapy in patients with lung cancer",
+       "url": "https://doi.org/10.1016/s0167-8140(24)02075-9",
+       "coauthors": [
+        "alberto-traverso",
+        "andre-dekker",
+        "dennis-bontempi",
+        "fariba-tohidinezhad",
+        "femke-vaassen",
+        "leonard-nurnberg"
+       ]
+      }
+     ],
+     "known_coauthors": [],
+     "coauthor_profiles": [],
+     "institution_match": true,
+     "accepted": true
     }
    }
   },
   "matthijs-sloep": {
    "name": "Matthijs Sloep",
-   "checked_at": "2026-10-21",
+   "checked_at": "2026-11-23",
    "known_coauthors": [],
    "orcid_candidates": [],
    "scholar_candidates": [],
-   "errors": [],
-   "complete": true,
+   "errors": [
+    "Scholar search deferred: search budget reached or no search key configured"
+   ],
+   "complete": false,
    "orcid_decision": "known",
-   "scholar_decision": "not_found",
+   "scholar_decision": "deferred",
    "status": "no_new_confirmed_profile",
    "identifiers": {
     "orcid": "0000-0003-3602-1885",
@@ -398,36 +538,28 @@
   },
   "wenjie-liang": {
    "name": "Wenjie Liang",
-   "checked_at": "2026-10-21",
+   "checked_at": "2026-11-23",
    "known_coauthors": [
-    "andre-dekker",
     "petros-kalendralis",
-    "jikai-zhou",
+    "andre-dekker",
+    "aiara-lobo-gomes",
     "rutger-van-mierlo",
-    "anne-lore-bynens",
+    "jikai-zhou",
     "cecile-wolfs",
+    "anne-lore-bynens",
+    "fariba-tohidinezhad",
     "xuanhe-hou",
     "leonard-wee",
     "en-hu"
    ],
    "orcid_candidates": [],
-   "scholar_candidates": [
-    {
-     "id": "EEouIeIAAAAJ",
-     "url": "https://scholar.google.com/citations?user=EEouIeIAAAAJ",
-     "name": "Wenfeng Liang",
-     "affiliations": "Institute of Nuclear Physics and Chemistry, China Academy of Engineering Physics",
-     "name_match": false,
-     "shared_works": [],
-     "known_coauthors": [],
-     "institution_match": false,
-     "accepted": false
-    }
+   "scholar_candidates": [],
+   "errors": [
+    "Scholar search deferred: search budget reached or no search key configured"
    ],
-   "errors": [],
-   "complete": true,
+   "complete": false,
    "orcid_decision": "known",
-   "scholar_decision": "insufficient_evidence",
+   "scholar_decision": "deferred",
    "status": "no_new_confirmed_profile",
    "identifiers": {
     "orcid": "0009-0000-2890-7825",
@@ -437,20 +569,25 @@
   },
   "alessio-romita": {
    "name": "Alessio Romita",
-   "checked_at": "2026-10-21",
+   "checked_at": "2026-11-23",
    "known_coauthors": [
     "johan-van-soest",
     "andre-dekker",
+    "alberto-traverso",
+    "fariba-tohidinezhad",
     "ananya-choudhury",
+    "varsha-gouthamchand",
     "tim-hendriks",
     "leonard-wee"
    ],
    "orcid_candidates": [],
    "scholar_candidates": [],
-   "errors": [],
-   "complete": true,
+   "errors": [
+    "Scholar search deferred: search budget reached or no search key configured"
+   ],
+   "complete": false,
    "orcid_decision": "known",
-   "scholar_decision": "not_found",
+   "scholar_decision": "deferred",
    "status": "no_new_confirmed_profile",
    "identifiers": {
     "orcid": "0009-0003-5286-6973",
@@ -487,22 +624,24 @@
   },
   "madeline-therrien": {
    "name": "Madeline Therrien",
-   "checked_at": "2026-10-21",
+   "checked_at": "2026-11-23",
    "known_coauthors": [
     "rianne-fijten",
     "simone-mingels",
-    "anniek-van-hienen",
     "johan-van-soest",
-    "hannah-piehl",
+    "anniek-van-hienen",
     "andre-dekker",
+    "hannah-piehl",
     "ekaterina-akhmad"
    ],
    "orcid_candidates": [],
    "scholar_candidates": [],
-   "errors": [],
-   "complete": true,
+   "errors": [
+    "Scholar search deferred: search budget reached or no search key configured"
+   ],
+   "complete": false,
    "orcid_decision": "known",
-   "scholar_decision": "not_found",
+   "scholar_decision": "deferred",
    "status": "no_new_confirmed_profile",
    "identifiers": {
     "orcid": "0009-0001-0466-0722",
@@ -571,23 +710,27 @@
   },
   "simone-mingels": {
    "name": "Simone Mingels",
-   "checked_at": "2026-10-21",
+   "checked_at": "2026-11-23",
    "known_coauthors": [
     "rianne-fijten",
     "andre-dekker",
     "madeline-therrien",
+    "hannah-piehl",
     "johan-van-soest",
     "ekaterina-akhmad",
     "anniek-van-hienen",
-    "hannah-piehl",
-    "daniel-slob"
+    "aiara-lobo-gomes",
+    "daniel-slob",
+    "manon-cloots"
    ],
    "orcid_candidates": [],
    "scholar_candidates": [],
-   "errors": [],
-   "complete": true,
+   "errors": [
+    "Scholar search deferred: search budget reached or no search key configured"
+   ],
+   "complete": false,
    "orcid_decision": "known",
-   "scholar_decision": "not_found",
+   "scholar_decision": "deferred",
    "status": "no_new_confirmed_profile",
    "identifiers": {
     "orcid": "0009-0000-9848-2391",
@@ -597,19 +740,22 @@
   },
   "yomi-okegunna": {
    "name": "Yomi Okegunna",
-   "checked_at": "2026-10-21",
+   "checked_at": "2026-11-23",
    "known_coauthors": [
     "rianne-fijten",
     "andre-dekker",
-    "sander-puts",
-    "jiaxu-zhang"
+    "manon-cloots",
+    "jiaxu-zhang",
+    "sander-puts"
    ],
    "orcid_candidates": [],
    "scholar_candidates": [],
-   "errors": [],
-   "complete": true,
+   "errors": [
+    "Scholar search deferred: search budget reached or no search key configured"
+   ],
+   "complete": false,
    "orcid_decision": "known",
-   "scholar_decision": "not_found",
+   "scholar_decision": "deferred",
    "status": "no_new_confirmed_profile",
    "identifiers": {
     "orcid": "0009-0004-1105-487X",
@@ -646,19 +792,24 @@
   },
   "hannah-mary-thomas": {
    "name": "Hannah Mary Thomas",
-   "checked_at": "2026-10-21",
+   "checked_at": "2026-11-23",
    "known_coauthors": [
     "andre-dekker",
     "leonard-wee",
+    "balu-krishna-sasidharan",
     "rianne-fijten",
-    "balu-krishna-sasidharan"
+    "florian-van-daalen",
+    "louise-de-almeida-ferreira-fonseca",
+    "varsha-gouthamchand"
    ],
    "orcid_candidates": [],
    "scholar_candidates": [],
-   "errors": [],
-   "complete": true,
+   "errors": [
+    "Scholar search deferred: search budget reached or no search key configured"
+   ],
+   "complete": false,
    "orcid_decision": "known",
-   "scholar_decision": "not_found",
+   "scholar_decision": "deferred",
    "status": "no_new_confirmed_profile",
    "identifiers": {
     "orcid": "0000-0002-1454-512X",
@@ -921,20 +1072,24 @@
   },
   "rutger-van-mierlo": {
    "name": "Rutger van Mierlo",
-   "checked_at": "2026-10-21",
+   "checked_at": "2026-11-23",
    "known_coauthors": [
     "petros-kalendralis",
     "andre-dekker",
     "wenjie-liang",
     "anne-lore-bynens",
-    "cecile-wolfs"
+    "aiara-lobo-gomes",
+    "cecile-wolfs",
+    "anke-bruninx"
    ],
    "orcid_candidates": [],
    "scholar_candidates": [],
-   "errors": [],
-   "complete": true,
+   "errors": [
+    "Scholar search deferred: search budget reached or no search key configured"
+   ],
+   "complete": false,
    "orcid_decision": "known",
-   "scholar_decision": "not_found",
+   "scholar_decision": "deferred",
    "status": "no_new_confirmed_profile",
    "identifiers": {
     "orcid": "0009-0009-4156-5669",
@@ -944,23 +1099,26 @@
   },
   "ekaterina-akhmad": {
    "name": "Ekaterina Akhmad",
-   "checked_at": "2026-10-21",
+   "checked_at": "2026-11-23",
    "known_coauthors": [
-    "andre-dekker",
     "johan-van-soest",
+    "andre-dekker",
     "simone-mingels",
+    "aiara-lobo-gomes",
     "daniel-slob",
     "anniek-van-hienen",
-    "madeline-therrien",
     "rianne-fijten",
-    "hannah-piehl"
+    "hannah-piehl",
+    "madeline-therrien"
    ],
    "orcid_candidates": [],
    "scholar_candidates": [],
-   "errors": [],
-   "complete": true,
+   "errors": [
+    "Scholar search deferred: search budget reached or no search key configured"
+   ],
+   "complete": false,
    "orcid_decision": "known",
-   "scholar_decision": "not_found",
+   "scholar_decision": "deferred",
    "status": "no_new_confirmed_profile",
    "identifiers": {
     "orcid": "0000-0002-8235-9361",
@@ -1039,10 +1197,14 @@
   },
   "ivan-zhovannik": {
    "name": "Ivan Zhovannik",
-   "checked_at": "2026-10-21",
+   "checked_at": "2026-11-23",
    "known_coauthors": [
     "andre-dekker",
-    "anne-lore-bynens"
+    "aiara-lobo-gomes",
+    "anne-lore-bynens",
+    "dennis-bontempi",
+    "alberto-traverso",
+    "sure-pai"
    ],
    "orcid_candidates": [
     {
@@ -1058,10 +1220,12 @@
     }
    ],
    "scholar_candidates": [],
-   "errors": [],
-   "complete": true,
+   "errors": [
+    "Scholar search deferred: search budget reached or no search key configured"
+   ],
+   "complete": false,
    "orcid_decision": "insufficient_evidence",
-   "scholar_decision": "not_found",
+   "scholar_decision": "deferred",
    "status": "no_new_confirmed_profile",
    "identifiers": {
     "orcid": null,
@@ -1071,32 +1235,24 @@
   },
   "jikai-zhou": {
    "name": "Jikai Zhou",
-   "checked_at": "2026-10-21",
+   "checked_at": "2026-11-23",
    "known_coauthors": [
     "petros-kalendralis",
     "wenjie-liang",
     "andre-dekker",
-    "xuanhe-hou",
-    "cecile-wolfs"
+    "fariba-tohidinezhad",
+    "aiara-lobo-gomes",
+    "cecile-wolfs",
+    "xuanhe-hou"
    ],
    "orcid_candidates": [],
-   "scholar_candidates": [
-    {
-     "id": "909UbzMAAAAJ",
-     "url": "https://scholar.google.com/citations?user=909UbzMAAAAJ",
-     "name": "Zikai Zhou",
-     "affiliations": "University of Southern Mississippi",
-     "name_match": false,
-     "shared_works": [],
-     "known_coauthors": [],
-     "institution_match": false,
-     "accepted": false
-    }
+   "scholar_candidates": [],
+   "errors": [
+    "Scholar search deferred: search budget reached or no search key configured"
    ],
-   "errors": [],
-   "complete": true,
+   "complete": false,
    "orcid_decision": "known",
-   "scholar_decision": "insufficient_evidence",
+   "scholar_decision": "deferred",
    "status": "no_new_confirmed_profile",
    "identifiers": {
     "orcid": "0009-0004-8675-4635",
@@ -1144,21 +1300,24 @@
   },
   "anne-lore-bynens": {
    "name": "Anne-Lore Bynens",
-   "checked_at": "2026-10-21",
+   "checked_at": "2026-11-23",
    "known_coauthors": [
-    "rutger-van-mierlo",
-    "andre-dekker",
     "petros-kalendralis",
+    "andre-dekker",
     "wenjie-liang",
+    "aiara-lobo-gomes",
+    "rutger-van-mierlo",
     "cecile-wolfs",
     "ivan-zhovannik"
    ],
    "orcid_candidates": [],
    "scholar_candidates": [],
-   "errors": [],
-   "complete": true,
+   "errors": [
+    "Scholar search deferred: search budget reached or no search key configured"
+   ],
+   "complete": false,
    "orcid_decision": "not_found",
-   "scholar_decision": "not_found",
+   "scholar_decision": "deferred",
    "status": "no_new_confirmed_profile",
    "identifiers": {
     "orcid": null,
@@ -1168,12 +1327,13 @@
   },
   "balu-krishna-sasidharan": {
    "name": "Balu Krishna Sasidharan",
-   "checked_at": "2026-10-21",
+   "checked_at": "2026-11-23",
    "known_coauthors": [
-    "andre-dekker",
     "leonard-wee",
     "hannah-mary-thomas",
-    "rianne-fijten"
+    "andre-dekker",
+    "rianne-fijten",
+    "florian-van-daalen"
    ],
    "orcid_candidates": [
     {
@@ -1192,10 +1352,12 @@
     }
    ],
    "scholar_candidates": [],
-   "errors": [],
-   "complete": true,
+   "errors": [
+    "Scholar search deferred: search budget reached or no search key configured"
+   ],
+   "complete": false,
    "orcid_decision": "insufficient_evidence",
-   "scholar_decision": "not_found",
+   "scholar_decision": "deferred",
    "status": "no_new_confirmed_profile",
    "identifiers": {
     "orcid": null,
@@ -1205,22 +1367,24 @@
   },
   "hannah-piehl": {
    "name": "Hannah Piehl",
-   "checked_at": "2026-10-21",
+   "checked_at": "2026-11-23",
    "known_coauthors": [
     "rianne-fijten",
-    "anniek-van-hienen",
-    "johan-van-soest",
-    "madeline-therrien",
-    "andre-dekker",
     "simone-mingels",
-    "ekaterina-akhmad"
+    "johan-van-soest",
+    "anniek-van-hienen",
+    "andre-dekker",
+    "ekaterina-akhmad",
+    "madeline-therrien"
    ],
    "orcid_candidates": [],
    "scholar_candidates": [],
-   "errors": [],
-   "complete": true,
+   "errors": [
+    "Scholar search deferred: search budget reached or no search key configured"
+   ],
+   "complete": false,
    "orcid_decision": "known",
-   "scholar_decision": "not_found",
+   "scholar_decision": "deferred",
    "status": "no_new_confirmed_profile",
    "identifiers": {
     "orcid": "0009-0005-1982-3909",
@@ -1274,21 +1438,24 @@
   },
   "marine-jacquemin": {
    "name": "Marine Jacquemin",
-   "checked_at": "2026-10-21",
+   "checked_at": "2026-11-23",
    "known_coauthors": [
     "andre-dekker",
     "leonard-wee",
-    "joshi-hogenboom",
-    "ananya-choudhury",
     "rianne-fijten",
-    "johan-van-soest"
+    "ananya-choudhury",
+    "joshi-hogenboom",
+    "johan-van-soest",
+    "florian-van-daalen"
    ],
    "orcid_candidates": [],
    "scholar_candidates": [],
-   "errors": [],
-   "complete": true,
+   "errors": [
+    "Scholar search deferred: search budget reached or no search key configured"
+   ],
+   "complete": false,
    "orcid_decision": "known",
-   "scholar_decision": "not_found",
+   "scholar_decision": "deferred",
    "status": "no_new_confirmed_profile",
    "identifiers": {
     "orcid": "0009-0006-1221-7022",
@@ -1336,36 +1503,22 @@
   },
   "daniel-slob": {
    "name": "Daniel Slob",
-   "checked_at": "2026-10-21",
+   "checked_at": "2026-11-23",
    "known_coauthors": [
-    "andre-dekker",
     "johan-van-soest",
+    "andre-dekker",
     "ekaterina-akhmad",
+    "aiara-lobo-gomes",
     "simone-mingels"
    ],
    "orcid_candidates": [],
-   "scholar_candidates": [
-    {
-     "id": "JKOhEfcAAAAJ",
-     "url": "https://scholar.google.com/citations?user=JKOhEfcAAAAJ",
-     "name": "Andre Dekker",
-     "affiliations": "Professor of Clinical Data Science, MAASTRO Clinic, Maastricht University, GROW, Maastricht UMC+",
-     "name_match": false,
-     "shared_works": [],
-     "known_coauthors": [
-      "johan-van-soest",
-      "leonard-wee",
-      "petros-kalendralis",
-      "rianne-fijten"
-     ],
-     "institution_match": true,
-     "accepted": false
-    }
+   "scholar_candidates": [],
+   "errors": [
+    "Scholar search deferred: search budget reached or no search key configured"
    ],
-   "errors": [],
-   "complete": true,
+   "complete": false,
    "orcid_decision": "known",
-   "scholar_decision": "insufficient_evidence",
+   "scholar_decision": "deferred",
    "status": "no_new_confirmed_profile",
    "identifiers": {
     "orcid": "0009-0002-2084-5660",
@@ -1414,7 +1567,7 @@
   },
   "jiaxu-zhang": {
    "name": "Jiaxu Zhang",
-   "checked_at": "2026-10-21",
+   "checked_at": "2026-11-23",
    "known_coauthors": [
     "sander-puts",
     "yomi-okegunna",
@@ -1422,34 +1575,13 @@
     "andre-dekker"
    ],
    "orcid_candidates": [],
-   "scholar_candidates": [
-    {
-     "id": "rr56j-EAAAAJ",
-     "url": "https://scholar.google.com/citations?user=rr56j-EAAAAJ",
-     "name": "Jia Zhang",
-     "affiliations": "Zhongguancun Laboratory",
-     "name_match": false,
-     "shared_works": [],
-     "known_coauthors": [],
-     "institution_match": false,
-     "accepted": false
-    },
-    {
-     "id": "DJZJ8MAAAAAJ",
-     "url": "https://scholar.google.com/citations?user=DJZJ8MAAAAAJ",
-     "name": "Jia Zhang",
-     "affiliations": "PhD, ETH Zurich",
-     "name_match": false,
-     "shared_works": [],
-     "known_coauthors": [],
-     "institution_match": false,
-     "accepted": false
-    }
+   "scholar_candidates": [],
+   "errors": [
+    "Scholar search deferred: search budget reached or no search key configured"
    ],
-   "errors": [],
-   "complete": true,
+   "complete": false,
    "orcid_decision": "not_found",
-   "scholar_decision": "insufficient_evidence",
+   "scholar_decision": "deferred",
    "status": "no_new_confirmed_profile",
    "identifiers": {
     "orcid": null,
@@ -1459,18 +1591,21 @@
   },
   "meng-zhou": {
    "name": "Meng Zhou",
-   "checked_at": "2026-10-21",
+   "checked_at": "2026-11-23",
    "known_coauthors": [
-    "andre-dekker",
     "leonard-wee",
+    "zhen-zang",
+    "andre-dekker",
     "minghua-li"
    ],
    "orcid_candidates": [],
    "scholar_candidates": [],
-   "errors": [],
-   "complete": true,
+   "errors": [
+    "Scholar search deferred: search budget reached or no search key configured"
+   ],
+   "complete": false,
    "orcid_decision": "known",
-   "scholar_decision": "not_found",
+   "scholar_decision": "deferred",
    "status": "no_new_confirmed_profile",
    "identifiers": {
     "orcid": "0009-0009-9172-9115",
@@ -1519,18 +1654,22 @@
   },
   "minghua-li": {
    "name": "Minghua Li",
-   "checked_at": "2026-10-21",
+   "checked_at": "2026-11-23",
    "known_coauthors": [
-    "andre-dekker",
     "leonard-wee",
-    "meng-zhou"
+    "zhen-zang",
+    "andre-dekker",
+    "meng-zhou",
+    "yanqi-huang"
    ],
    "orcid_candidates": [],
    "scholar_candidates": [],
-   "errors": [],
-   "complete": true,
+   "errors": [
+    "Scholar search deferred: search budget reached or no search key configured"
+   ],
+   "complete": false,
    "orcid_decision": "known",
-   "scholar_decision": "not_found",
+   "scholar_decision": "deferred",
    "status": "no_new_confirmed_profile",
    "identifiers": {
     "orcid": "0000-0001-9028-418X",
@@ -1568,13 +1707,13 @@
   },
   "xuanhe-hou": {
    "name": "Xuanhe Hou",
-   "checked_at": "2026-10-21",
+   "checked_at": "2026-11-23",
    "known_coauthors": [
     "jikai-zhou",
-    "andre-dekker",
     "petros-kalendralis",
-    "wenjie-liang",
-    "cecile-wolfs"
+    "andre-dekker",
+    "cecile-wolfs",
+    "wenjie-liang"
    ],
    "orcid_candidates": [
     {
@@ -1591,23 +1730,13 @@
      "accepted": false
     }
    ],
-   "scholar_candidates": [
-    {
-     "id": "cbjhowUAAAAJ",
-     "url": "https://scholar.google.com/citations?user=cbjhowUAAAAJ",
-     "name": "Xuan Hou",
-     "affiliations": "Hainan University",
-     "name_match": false,
-     "shared_works": [],
-     "known_coauthors": [],
-     "institution_match": false,
-     "accepted": false
-    }
+   "scholar_candidates": [],
+   "errors": [
+    "Scholar search deferred: search budget reached or no search key configured"
    ],
-   "errors": [],
-   "complete": true,
+   "complete": false,
    "orcid_decision": "insufficient_evidence",
-   "scholar_decision": "insufficient_evidence",
+   "scholar_decision": "deferred",
    "status": "no_new_confirmed_profile",
    "identifiers": {
     "orcid": null,
@@ -1617,30 +1746,20 @@
   },
   "en-hu": {
    "name": "En Hu",
-   "checked_at": "2026-10-21",
+   "checked_at": "2026-11-23",
    "known_coauthors": [
-    "andre-dekker",
     "leonard-wee",
-    "wenjie-liang"
+    "wenjie-liang",
+    "andre-dekker"
    ],
    "orcid_candidates": [],
-   "scholar_candidates": [
-    {
-     "id": "_TH_cIsAAAAJ",
-     "url": "https://scholar.google.com/citations?user=_TH_cIsAAAAJ",
-     "name": "Enwen Hu",
-     "affiliations": "Beijing university of Posts and Telecommunications",
-     "name_match": false,
-     "shared_works": [],
-     "known_coauthors": [],
-     "institution_match": false,
-     "accepted": false
-    }
+   "scholar_candidates": [],
+   "errors": [
+    "Scholar search deferred: search budget reached or no search key configured"
    ],
-   "errors": [],
-   "complete": true,
+   "complete": false,
    "orcid_decision": "known",
-   "scholar_decision": "insufficient_evidence",
+   "scholar_decision": "deferred",
    "status": "no_new_confirmed_profile",
    "identifiers": {
     "orcid": "0009-0004-7193-7113",
@@ -1677,29 +1796,19 @@
   },
   "shreya-anand": {
    "name": "Shreya Anand",
-   "checked_at": "2026-10-21",
+   "checked_at": "2026-11-23",
    "known_coauthors": [
-    "andre-dekker",
-    "leonard-wee"
+    "leonard-wee",
+    "andre-dekker"
    ],
    "orcid_candidates": [],
-   "scholar_candidates": [
-    {
-     "id": "G-m3P40AAAAJ",
-     "url": "https://scholar.google.com/citations?user=G-m3P40AAAAJ",
-     "name": "Shreya Anand",
-     "affiliations": "Birla Institute of Technology Mesra",
-     "name_match": true,
-     "shared_works": [],
-     "known_coauthors": [],
-     "institution_match": false,
-     "accepted": false
-    }
+   "scholar_candidates": [],
+   "errors": [
+    "Scholar search deferred: search budget reached or no search key configured"
    ],
-   "errors": [],
-   "complete": true,
+   "complete": false,
    "orcid_decision": "not_found",
-   "scholar_decision": "insufficient_evidence",
+   "scholar_decision": "deferred",
    "status": "no_new_confirmed_profile",
    "identifiers": {
     "orcid": null,
@@ -1709,40 +1818,19 @@
   },
   "thijs-ackermans": {
    "name": "Thijs Ackermans",
-   "checked_at": "2026-10-21",
+   "checked_at": "2026-11-23",
    "known_coauthors": [
+    "geert-bosmans",
     "andre-dekker"
    ],
-   "orcid_candidates": [
-    {
-     "id": "0000-0002-6977-1001",
-     "url": "https://orcid.org/0000-0002-6977-1001",
-     "name": "Thijs Ackermans",
-     "affiliations": [],
-     "name_match": true,
-     "shared_works": [],
-     "linked_verified_scholar": false,
-     "institution_match": false,
-     "accepted": false
-    }
+   "orcid_candidates": [],
+   "scholar_candidates": [],
+   "errors": [
+    "Scholar search deferred: search budget reached or no search key configured"
    ],
-   "scholar_candidates": [
-    {
-     "id": "tUsIXNIAAAAJ",
-     "url": "https://scholar.google.com/citations?user=tUsIXNIAAAAJ",
-     "name": "Thijs Maas",
-     "affiliations": "CEO @ Onramper. Teacher of MBA course on Ethics and Regulation of Digital Innovation at Open",
-     "name_match": false,
-     "shared_works": [],
-     "known_coauthors": [],
-     "institution_match": false,
-     "accepted": false
-    }
-   ],
-   "errors": [],
-   "complete": true,
-   "orcid_decision": "insufficient_evidence",
-   "scholar_decision": "insufficient_evidence",
+   "complete": false,
+   "orcid_decision": "known",
+   "scholar_decision": "deferred",
    "status": "no_new_confirmed_profile",
    "identifiers": {
     "orcid": "0000-0002-6977-1001",
@@ -1752,20 +1840,23 @@
   },
   "tim-hendriks": {
    "name": "Tim Hendriks",
-   "checked_at": "2026-10-21",
+   "checked_at": "2026-11-23",
    "known_coauthors": [
     "johan-van-soest",
+    "andre-dekker",
     "alessio-romita",
     "ananya-choudhury",
-    "andre-dekker",
+    "varsha-gouthamchand",
     "leonard-wee"
    ],
    "orcid_candidates": [],
    "scholar_candidates": [],
-   "errors": [],
-   "complete": true,
+   "errors": [
+    "Scholar search deferred: search budget reached or no search key configured"
+   ],
+   "complete": false,
    "orcid_decision": "known",
-   "scholar_decision": "not_found",
+   "scholar_decision": "deferred",
    "status": "no_new_confirmed_profile",
    "identifiers": {
     "orcid": "0000-0003-2922-2953",
@@ -1805,7 +1896,7 @@
   },
   "ali-al-zein": {
    "name": "Ali Al Zein",
-   "checked_at": "2026-11-16",
+   "checked_at": "2026-11-23",
    "known_coauthors": [],
    "orcid_candidates": [
     {
@@ -1868,9 +1959,47 @@
      "accepted": false
     }
    ],
-   "scholar_candidates": [],
+   "scholar_candidates": [
+    {
+     "id": "NOnQjXsAAAAJ",
+     "url": "https://scholar.google.com/citations?user=NOnQjXsAAAAJ",
+     "name": "Ali Al Zein",
+     "affiliations": "University of Michigan Dearborn",
+     "name_match": true,
+     "shared_works": [],
+     "known_coauthors": [],
+     "coauthor_profiles": [],
+     "institution_match": false,
+     "accepted": false
+    },
+    {
+     "id": "7Ny7ueUAAAAJ",
+     "url": "https://scholar.google.com/citations?user=7Ny7ueUAAAAJ",
+     "name": "Ali Al Zein",
+     "affiliations": "University of Balamand",
+     "name_match": true,
+     "shared_works": [],
+     "known_coauthors": [],
+     "coauthor_profiles": [],
+     "institution_match": false,
+     "accepted": false
+    },
+    {
+     "id": "n6m0neEAAAAJ",
+     "url": "https://scholar.google.com/citations?user=n6m0neEAAAAJ",
+     "name": "Syed Salauddin Mohammad Tariq",
+     "affiliations": "Graduate Research Assistant at University of Michigan-Dearborn",
+     "name_match": false,
+     "shared_works": [],
+     "known_coauthors": [],
+     "coauthor_profiles": [],
+     "institution_match": false,
+     "accepted": false
+    }
+   ],
    "errors": [
     "More than five matching ORCID records require review",
+    "More than five matching Scholar profiles require review",
     "Scholar search deferred: search budget reached or no search key configured"
    ],
    "complete": false,
@@ -1885,7 +2014,7 @@
   },
   "ali-zaila": {
    "name": "Ali Zaila",
-   "checked_at": "2026-11-16",
+   "checked_at": "2026-11-23",
    "known_coauthors": [],
    "orcid_candidates": [
     {
@@ -1919,14 +2048,16 @@
   },
   "andrea-pradas-agujetas": {
    "name": "Andrea Pradas Agujetas",
-   "checked_at": "2026-10-21",
+   "checked_at": "2026-11-23",
    "known_coauthors": [],
    "orcid_candidates": [],
    "scholar_candidates": [],
-   "errors": [],
-   "complete": true,
+   "errors": [
+    "Scholar search deferred: search budget reached or no search key configured"
+   ],
+   "complete": false,
    "orcid_decision": "not_found",
-   "scholar_decision": "not_found",
+   "scholar_decision": "deferred",
    "status": "no_new_confirmed_profile",
    "identifiers": {
     "orcid": null,
@@ -1936,7 +2067,7 @@
   },
   "ayesha-qayyum": {
    "name": "Ayesha Qayyum",
-   "checked_at": "2026-11-16",
+   "checked_at": "2026-11-23",
    "known_coauthors": [],
    "orcid_candidates": [
     {
@@ -2014,7 +2145,7 @@
   },
   "carlos-santiago-rios": {
    "name": "Carlos Santiago Rios",
-   "checked_at": "2026-11-16",
+   "checked_at": "2026-11-23",
    "known_coauthors": [],
    "orcid_candidates": [
     {
@@ -2090,14 +2221,16 @@
   },
   "ekatarina-kondrateva": {
    "name": "Ekatarina Kondrateva",
-   "checked_at": "2026-10-21",
+   "checked_at": "2026-11-23",
    "known_coauthors": [],
    "orcid_candidates": [],
    "scholar_candidates": [],
-   "errors": [],
-   "complete": true,
+   "errors": [
+    "Scholar search deferred: search budget reached or no search key configured"
+   ],
+   "complete": false,
    "orcid_decision": "not_found",
-   "scholar_decision": "not_found",
+   "scholar_decision": "deferred",
    "status": "no_new_confirmed_profile",
    "identifiers": {
     "orcid": null,
@@ -2107,7 +2240,7 @@
   },
   "elif-sevim": {
    "name": "Elif Sevim",
-   "checked_at": "2026-11-16",
+   "checked_at": "2026-11-23",
    "known_coauthors": [],
    "orcid_candidates": [
     {
@@ -2189,7 +2322,7 @@
   },
   "farshad-jafarpour": {
    "name": "Farshad Jafarpour",
-   "checked_at": "2026-10-21",
+   "checked_at": "2026-11-23",
    "known_coauthors": [],
    "orcid_candidates": [
     {
@@ -2222,10 +2355,12 @@
     }
    ],
    "scholar_candidates": [],
-   "errors": [],
-   "complete": true,
+   "errors": [
+    "Scholar search deferred: search budget reached or no search key configured"
+   ],
+   "complete": false,
    "orcid_decision": "insufficient_evidence",
-   "scholar_decision": "not_found",
+   "scholar_decision": "deferred",
    "status": "no_new_confirmed_profile",
    "identifiers": {
     "orcid": null,
@@ -2235,7 +2370,7 @@
   },
   "fiona-zegwaard-gelink": {
    "name": "Fiona Zegwaard - Gelink",
-   "checked_at": "2026-10-21",
+   "checked_at": "2026-11-23",
    "known_coauthors": [],
    "orcid_candidates": [
     {
@@ -2253,10 +2388,12 @@
     }
    ],
    "scholar_candidates": [],
-   "errors": [],
-   "complete": true,
+   "errors": [
+    "Scholar search deferred: search budget reached or no search key configured"
+   ],
+   "complete": false,
    "orcid_decision": "insufficient_evidence",
-   "scholar_decision": "not_found",
+   "scholar_decision": "deferred",
    "status": "no_new_confirmed_profile",
    "identifiers": {
     "orcid": null,
@@ -2266,8 +2403,11 @@
   },
   "frederik-behets": {
    "name": "Frederik Behets",
-   "checked_at": "2026-10-21",
-   "known_coauthors": [],
+   "checked_at": "2026-11-23",
+   "known_coauthors": [
+    "andre-dekker",
+    "rianne-fijten"
+   ],
    "orcid_candidates": [
     {
      "id": "0009-0007-9307-0102",
@@ -2286,10 +2426,12 @@
     }
    ],
    "scholar_candidates": [],
-   "errors": [],
-   "complete": true,
+   "errors": [
+    "Scholar search deferred: search budget reached or no search key configured"
+   ],
+   "complete": false,
    "orcid_decision": "insufficient_evidence",
-   "scholar_decision": "not_found",
+   "scholar_decision": "deferred",
    "status": "no_new_confirmed_profile",
    "identifiers": {
     "orcid": null,
@@ -2299,14 +2441,16 @@
   },
   "gleb-tsikhanovich": {
    "name": "Gleb Tsikhanovich",
-   "checked_at": "2026-10-21",
+   "checked_at": "2026-11-23",
    "known_coauthors": [],
    "orcid_candidates": [],
    "scholar_candidates": [],
-   "errors": [],
-   "complete": true,
+   "errors": [
+    "Scholar search deferred: search budget reached or no search key configured"
+   ],
+   "complete": false,
    "orcid_decision": "not_found",
-   "scholar_decision": "not_found",
+   "scholar_decision": "deferred",
    "status": "no_new_confirmed_profile",
    "identifiers": {
     "orcid": null,
@@ -2316,14 +2460,16 @@
   },
   "karlien-schmeetz": {
    "name": "Karlien Schmeetz",
-   "checked_at": "2026-10-21",
+   "checked_at": "2026-11-23",
    "known_coauthors": [],
    "orcid_candidates": [],
    "scholar_candidates": [],
-   "errors": [],
-   "complete": true,
+   "errors": [
+    "Scholar search deferred: search budget reached or no search key configured"
+   ],
+   "complete": false,
    "orcid_decision": "not_found",
-   "scholar_decision": "not_found",
+   "scholar_decision": "deferred",
    "status": "no_new_confirmed_profile",
    "identifiers": {
     "orcid": null,
@@ -2333,26 +2479,16 @@
   },
   "martijn-hector": {
    "name": "Martijn Hector",
-   "checked_at": "2026-10-21",
+   "checked_at": "2026-11-23",
    "known_coauthors": [],
    "orcid_candidates": [],
-   "scholar_candidates": [
-    {
-     "id": "lTH-j4MAAAAJ",
-     "url": "https://scholar.google.com/citations?user=lTH-j4MAAAAJ",
-     "name": "Martijn Hoes",
-     "affiliations": "University of Maastricht",
-     "name_match": false,
-     "shared_works": [],
-     "known_coauthors": [],
-     "institution_match": true,
-     "accepted": false
-    }
+   "scholar_candidates": [],
+   "errors": [
+    "Scholar search deferred: search budget reached or no search key configured"
    ],
-   "errors": [],
-   "complete": true,
+   "complete": false,
    "orcid_decision": "not_found",
-   "scholar_decision": "insufficient_evidence",
+   "scholar_decision": "deferred",
    "status": "no_new_confirmed_profile",
    "identifiers": {
     "orcid": null,
@@ -2362,7 +2498,7 @@
   },
   "meltem-isik": {
    "name": "Meltem Isik",
-   "checked_at": "2026-10-21",
+   "checked_at": "2026-11-23",
    "known_coauthors": [],
    "orcid_candidates": [
     {
@@ -2389,10 +2525,12 @@
     }
    ],
    "scholar_candidates": [],
-   "errors": [],
-   "complete": true,
+   "errors": [
+    "Scholar search deferred: search budget reached or no search key configured"
+   ],
+   "complete": false,
    "orcid_decision": "insufficient_evidence",
-   "scholar_decision": "not_found",
+   "scholar_decision": "deferred",
    "status": "no_new_confirmed_profile",
    "identifiers": {
     "orcid": null,
@@ -2402,14 +2540,16 @@
   },
   "monique-roos-koekkelkoren": {
    "name": "Monique Roos-Koekkelkoren",
-   "checked_at": "2026-10-21",
+   "checked_at": "2026-11-23",
    "known_coauthors": [],
    "orcid_candidates": [],
    "scholar_candidates": [],
-   "errors": [],
-   "complete": true,
+   "errors": [
+    "Scholar search deferred: search budget reached or no search key configured"
+   ],
+   "complete": false,
    "orcid_decision": "not_found",
-   "scholar_decision": "not_found",
+   "scholar_decision": "deferred",
    "status": "no_new_confirmed_profile",
    "identifiers": {
     "orcid": null,
@@ -2419,7 +2559,7 @@
   },
   "prabash-darshanapriya-galgane-banduge": {
    "name": "Prabash Darshanapriya Galgane Banduge",
-   "checked_at": "2026-10-21",
+   "checked_at": "2026-11-23",
    "known_coauthors": [],
    "orcid_candidates": [
     {
@@ -2435,10 +2575,12 @@
     }
    ],
    "scholar_candidates": [],
-   "errors": [],
-   "complete": true,
+   "errors": [
+    "Scholar search deferred: search budget reached or no search key configured"
+   ],
+   "complete": false,
    "orcid_decision": "insufficient_evidence",
-   "scholar_decision": "not_found",
+   "scholar_decision": "deferred",
    "status": "no_new_confirmed_profile",
    "identifiers": {
     "orcid": null,
@@ -2448,7 +2590,7 @@
   },
   "tafadzwa-chaunzwa": {
    "name": "Tafadzwa Chaunzwa",
-   "checked_at": "2026-10-21",
+   "checked_at": "2026-11-23",
    "known_coauthors": [],
    "orcid_candidates": [
     {
@@ -2467,10 +2609,12 @@
     }
    ],
    "scholar_candidates": [],
-   "errors": [],
-   "complete": true,
+   "errors": [
+    "Scholar search deferred: search budget reached or no search key configured"
+   ],
+   "complete": false,
    "orcid_decision": "insufficient_evidence",
-   "scholar_decision": "not_found",
+   "scholar_decision": "deferred",
    "status": "no_new_confirmed_profile",
    "identifiers": {
     "orcid": null,
@@ -2480,14 +2624,16 @@
   },
   "varnita-mathur": {
    "name": "Varnita Mathur",
-   "checked_at": "2026-10-21",
+   "checked_at": "2026-11-23",
    "known_coauthors": [],
    "orcid_candidates": [],
    "scholar_candidates": [],
-   "errors": [],
-   "complete": true,
+   "errors": [
+    "Scholar search deferred: search budget reached or no search key configured"
+   ],
+   "complete": false,
    "orcid_decision": "not_found",
-   "scholar_decision": "not_found",
+   "scholar_decision": "deferred",
    "status": "no_new_confirmed_profile",
    "identifiers": {
     "orcid": null,
@@ -2497,7 +2643,7 @@
   },
   "vikram-baliga": {
    "name": "Vikram Baliga",
-   "checked_at": "2026-10-21",
+   "checked_at": "2026-11-23",
    "known_coauthors": [],
    "orcid_candidates": [
     {
@@ -2511,19 +2657,6 @@
       "Texas Tech University",
       "Texas A&M AgriLife",
       "Texas Tech University"
-     ],
-     "name_match": true,
-     "shared_works": [],
-     "linked_verified_scholar": false,
-     "institution_match": false,
-     "accepted": false
-    },
-    {
-     "id": "0000-0002-1765-7485",
-     "url": "https://orcid.org/0000-0002-1765-7485",
-     "name": "Vikram Baliga",
-     "affiliations": [
-      "Manipal Academy of Higher Education"
      ],
      "name_match": true,
      "shared_works": [],
@@ -2550,6 +2683,19 @@
      "accepted": false
     },
     {
+     "id": "0000-0002-1765-7485",
+     "url": "https://orcid.org/0000-0002-1765-7485",
+     "name": "Vikram Baliga",
+     "affiliations": [
+      "Manipal Academy of Higher Education"
+     ],
+     "name_match": true,
+     "shared_works": [],
+     "linked_verified_scholar": false,
+     "institution_match": false,
+     "accepted": false
+    },
+    {
      "id": "0000-0003-2291-1430",
      "url": "https://orcid.org/0000-0003-2291-1430",
      "name": "Vikram B Baliga",
@@ -2566,23 +2712,13 @@
      "accepted": false
     }
    ],
-   "scholar_candidates": [
-    {
-     "id": "sXz0JqQAAAAJ",
-     "url": "https://scholar.google.com/citations?user=sXz0JqQAAAAJ",
-     "name": "Vikram B. Baliga",
-     "affiliations": "Assistant Professor of Teaching, University of British Columbia",
-     "name_match": true,
-     "shared_works": [],
-     "known_coauthors": [],
-     "institution_match": false,
-     "accepted": false
-    }
+   "scholar_candidates": [],
+   "errors": [
+    "Scholar search deferred: search budget reached or no search key configured"
    ],
-   "errors": [],
-   "complete": true,
+   "complete": false,
    "orcid_decision": "insufficient_evidence",
-   "scholar_decision": "insufficient_evidence",
+   "scholar_decision": "deferred",
    "status": "no_new_confirmed_profile",
    "identifiers": {
     "orcid": null,
@@ -2592,7 +2728,7 @@
   },
   "yang-yao": {
    "name": "Yang Yao",
-   "checked_at": "2026-11-16",
+   "checked_at": "2026-11-23",
    "known_coauthors": [],
    "orcid_candidates": [
     {
@@ -2670,7 +2806,7 @@
   },
   "yemu-katanda": {
    "name": "Yemu Katanda",
-   "checked_at": "2026-10-21",
+   "checked_at": "2026-11-23",
    "known_coauthors": [],
    "orcid_candidates": [
     {
@@ -2691,10 +2827,12 @@
     }
    ],
    "scholar_candidates": [],
-   "errors": [],
-   "complete": true,
+   "errors": [
+    "Scholar search deferred: search budget reached or no search key configured"
+   ],
+   "complete": false,
    "orcid_decision": "insufficient_evidence",
-   "scholar_decision": "not_found",
+   "scholar_decision": "deferred",
    "status": "no_new_confirmed_profile",
    "identifiers": {
     "orcid": null,
@@ -2704,88 +2842,30 @@
   },
   "zhen-zang": {
    "name": "Zhen Zhang",
-   "checked_at": "2026-10-21",
+   "checked_at": "2026-11-23",
    "known_coauthors": [
     "andre-dekker",
     "leonard-wee",
     "zhixiang-wang",
+    "minghua-li",
     "zhenwei-shi",
     "alberto-traverso",
     "meng-zhou",
-    "minghua-li",
     "johan-van-soest",
     "leroy-volmer",
     "ananya-choudhury",
-    "petros-kalendralis",
-    "shenlun-chen"
+    "shenlun-chen",
+    "petros-kalendralis"
    ],
-   "orcid_candidates": [
-    {
-     "id": "0000-0001-6335-9529",
-     "url": "https://orcid.org/0000-0001-6335-9529",
-     "name": "Zhen Zhang",
-     "affiliations": [
-      "Maastro Clinic"
-     ],
-     "name_match": true,
-     "shared_works": [
-      {
-       "work": "W4414063075",
-       "title": "Minimum sample size calculation for radiomics-based binary outcome prediction models: Theoretical framework and practical example",
-       "url": "https://doi.org/10.1016/j.radonc.2025.111134",
-       "coauthors": [
-        "andre-dekker",
-        "leonard-wee",
-        "zhen-zang",
-        "zhixiang-wang"
-       ]
-      },
-      {
-       "work": "W4408488860",
-       "title": "Voxel-level radiomics and deep learning for predicting pathologic complete response in esophageal squamous cell carcinoma after neoadjuvant immunotherapy and chemotherapy",
-       "url": "https://doi.org/10.1136/jitc-2024-011149",
-       "coauthors": [
-        "andre-dekker",
-        "leonard-wee",
-        "zhen-zang"
-       ]
-      },
-      {
-       "work": "W4391106310",
-       "title": "A PET/CT radiomics model for predicting distant metastasis in early-stage non–small cell lung cancer patients treated with stereotactic body radiotherapy: a multicentric study",
-       "url": "https://doi.org/10.1186/s13014-024-02402-z",
-       "coauthors": [
-        "alberto-traverso",
-        "andre-dekker",
-        "leonard-wee",
-        "zhen-zang"
-       ]
-      }
-     ],
-     "linked_verified_scholar": false,
-     "institution_match": true,
-     "accepted": true
-    }
+   "orcid_candidates": [],
+   "scholar_candidates": [],
+   "errors": [
+    "Scholar search deferred: search budget reached or no search key configured"
    ],
-   "scholar_candidates": [
-    {
-     "id": "l1x_WgMAAAAJ",
-     "url": "https://scholar.google.com/citations?user=l1x_WgMAAAAJ",
-     "name": "ZHEN ZHANG",
-     "affiliations": "Upenn MS",
-     "name_match": true,
-     "shared_works": [],
-     "known_coauthors": [],
-     "coauthor_profiles": [],
-     "institution_match": false,
-     "accepted": false
-    }
-   ],
-   "errors": [],
-   "complete": true,
-   "orcid_decision": "accepted",
-   "scholar_decision": "insufficient_evidence",
-   "status": "matched",
+   "complete": false,
+   "orcid_decision": "known",
+   "scholar_decision": "deferred",
+   "status": "no_new_confirmed_profile",
    "identifiers": {
     "orcid": "0000-0001-6335-9529",
     "scholar_id": null
@@ -2842,7 +2922,7 @@
   },
   "aiara-lobo-gomes": {
    "name": "Aiara Lobo Gomes",
-   "checked_at": "2026-11-16",
+   "checked_at": "2026-11-23",
    "known_coauthors": [
     "andre-dekker",
     "leonard-wee",
@@ -2866,12 +2946,10 @@
    ],
    "orcid_candidates": [],
    "scholar_candidates": [],
-   "errors": [
-    "Scholar search deferred: search budget reached or no search key configured"
-   ],
-   "complete": false,
+   "errors": [],
+   "complete": true,
    "orcid_decision": "known",
-   "scholar_decision": "deferred",
+   "scholar_decision": "not_found",
    "status": "no_new_confirmed_profile",
    "identifiers": {
     "orcid": "0000-0003-4670-6036",
@@ -4234,25 +4312,185 @@
   },
   "fariba-tohidinezhad": {
    "name": "Fariba Tohidinezhad",
-   "checked_at": "2026-11-16",
+   "checked_at": "2026-11-23",
    "known_coauthors": [
     "andre-dekker",
     "alberto-traverso",
     "petros-kalendralis",
     "aiara-lobo-gomes",
-    "wenjie-liang",
     "jikai-zhou",
+    "wenjie-liang",
     "leonard-nurnberg",
     "wouter-van-elmpt",
-    "alessio-romita",
     "johan-van-soest",
+    "alessio-romita",
     "hugo-aerts",
     "dennis-bontempi"
    ],
    "orcid_candidates": [],
-   "scholar_candidates": [],
+   "scholar_candidates": [
+    {
+     "id": "o158yMUAAAAJ",
+     "url": "https://scholar.google.com/citations?user=o158yMUAAAAJ",
+     "name": "Fariba Tohidinezhad",
+     "affiliations": "Hilo by Aktiia",
+     "name_match": true,
+     "shared_works": [
+      {
+       "work": "W4402897784",
+       "title": "Prediction of new-onset atrial fibrillation in patients with non-small cell lung cancer treated with curative-intent conventional radiotherapy",
+       "url": "https://doi.org/10.1016/j.radonc.2024.110544",
+       "coauthors": [
+        "alberto-traverso",
+        "andre-dekker",
+        "fariba-tohidinezhad",
+        "femke-vaassen",
+        "hugo-aerts",
+        "leonard-nurnberg"
+       ]
+      },
+      {
+       "work": "W4394675050",
+       "title": "Predicting the risk of neurocognitive decline after brain irradiation in adult patients with a primary brain tumor",
+       "url": "https://doi.org/10.1093/neuonc/noae035",
+       "coauthors": [
+        "alberto-traverso",
+        "andre-dekker",
+        "fariba-tohidinezhad",
+        "femke-vaassen",
+        "wouter-van-elmpt"
+       ]
+      },
+      {
+       "work": "W7123926908",
+       "title": "Predicting Overall Survival of NSCLC Patients with Clinical, Radiomics and Deep Learning Features",
+       "url": "https://doi.org/10.1007/s10278-025-01828-5",
+       "coauthors": [
+        "aiara-lobo-gomes",
+        "andre-dekker",
+        "fariba-tohidinezhad",
+        "jikai-zhou",
+        "petros-kalendralis",
+        "wenjie-liang"
+       ]
+      },
+      {
+       "work": "W4393065851",
+       "title": "Development of an explainable AI prediction model for arm lymphoedema following breast cancer surgery and radiotherapy",
+       "url": "https://doi.org/10.1016/j.ejca.2024.113624",
+       "coauthors": [
+        "alberto-traverso",
+        "alessio-romita",
+        "andre-dekker",
+        "fariba-tohidinezhad",
+        "johan-van-soest"
+       ]
+      },
+      {
+       "work": "W4396592229",
+       "title": "Development of an ai prediction model for arm lymphoedema following breast cancer surgery and radiotherapy",
+       "url": "https://doi.org/10.1016/j.ejso.2024.108216",
+       "coauthors": [
+        "alberto-traverso",
+        "alessio-romita",
+        "andre-dekker",
+        "fariba-tohidinezhad",
+        "johan-van-soest"
+       ]
+      },
+      {
+       "work": "W7225566754",
+       "title": "1930 Integrating Clinical, Radiomics, and Deep Learning Features for 12-Month Overall Survival Prediction in NSCLC Patients Treated with Radiotherapy",
+       "url": "https://doi.org/10.1016/s0167-8140(26)03802-8",
+       "coauthors": [
+        "aiara-lobo-gomes",
+        "andre-dekker",
+        "fariba-tohidinezhad",
+        "jikai-zhou",
+        "petros-kalendralis",
+        "wenjie-liang"
+       ]
+      },
+      {
+       "work": "W4408980986",
+       "title": "231P: Prognostic factors for survival in unresectable stage III non-small cell lung cancer (NSCLC) receiving chemoradiotherapy (CRT)",
+       "url": "https://doi.org/10.1016/s1556-0864(25)00424-1",
+       "coauthors": [
+        "aiara-lobo-gomes",
+        "fariba-tohidinezhad",
+        "petros-kalendralis"
+       ]
+      },
+      {
+       "work": "W4402044888",
+       "title": "1733: Factors associated with cardiac toxicity after radical radiotherapy in patients with lung cancer",
+       "url": "https://doi.org/10.1016/s0167-8140(24)02075-9",
+       "coauthors": [
+        "alberto-traverso",
+        "andre-dekker",
+        "dennis-bontempi",
+        "fariba-tohidinezhad",
+        "femke-vaassen",
+        "leonard-nurnberg"
+       ]
+      }
+     ],
+     "known_coauthors": [],
+     "coauthor_profiles": [],
+     "institution_match": false,
+     "accepted": true
+    },
+    {
+     "id": "3yD4SFUAAAAJ",
+     "url": "https://scholar.google.com/citations?user=3yD4SFUAAAAJ",
+     "name": "Samira Peiravi",
+     "affiliations": "Emergency Medicine Specialist| MD,MS in Medical Biotechnology| Harrisburg University Alumna",
+     "name_match": false,
+     "shared_works": [],
+     "known_coauthors": [],
+     "coauthor_profiles": [],
+     "institution_match": false,
+     "accepted": false
+    },
+    {
+     "id": "x6i9FJEAAAAJ",
+     "url": "https://scholar.google.com/citations?user=x6i9FJEAAAAJ",
+     "name": "Fateme Haji Ali Asgari",
+     "affiliations": "Associate Professor at Tehran University of Medical Sciences",
+     "name_match": false,
+     "shared_works": [],
+     "known_coauthors": [],
+     "coauthor_profiles": [],
+     "institution_match": false,
+     "accepted": false
+    },
+    {
+     "id": "SDlXTWoAAAAJ",
+     "url": "https://scholar.google.com/citations?user=SDlXTWoAAAAJ",
+     "name": "Alireza Atashi",
+     "affiliations": "Tehran UMS, ACECR",
+     "name_match": false,
+     "shared_works": [],
+     "known_coauthors": [],
+     "coauthor_profiles": [],
+     "institution_match": false,
+     "accepted": false
+    },
+    {
+     "id": "72ZRRJAAAAAJ",
+     "url": "https://scholar.google.com/citations?user=72ZRRJAAAAAJ",
+     "name": "Neda Saeedian",
+     "affiliations": "Mashhad university of medical sciences",
+     "name_match": false,
+     "shared_works": [],
+     "known_coauthors": [],
+     "coauthor_profiles": [],
+     "institution_match": false,
+     "accepted": false
+    }
+   ],
    "errors": [
-    "Scholar search deferred: search budget reached or no search key configured"
+    "More than five matching Scholar profiles require review"
    ],
    "complete": false,
    "orcid_decision": "known",
@@ -4321,133 +4559,26 @@
   },
   "florian-van-daalen": {
    "name": "Florian van Daalen",
-   "checked_at": "2026-10-21",
+   "checked_at": "2026-11-23",
    "known_coauthors": [
     "andre-dekker",
     "leonard-wee",
     "hannah-mary-thomas",
-    "balu-krishna-sasidharan",
     "rianne-fijten",
+    "balu-krishna-sasidharan",
     "ralph-brecheisen",
-    "marine-jacquemin",
-    "johan-van-soest"
+    "johan-van-soest",
+    "marine-jacquemin"
    ],
-   "orcid_candidates": [
-    {
-     "id": "0000-0002-2229-8587",
-     "url": "https://orcid.org/0000-0002-2229-8587",
-     "name": "Florian van Daalen",
-     "affiliations": [
-      "Care and Public Health Research Inst.",
-      "Maastricht University"
-     ],
-     "name_match": true,
-     "shared_works": [
-      {
-       "work": "W4414601064",
-       "title": "Multinomial Classification Certainty: a new uncertainty metric for multinomial outcome prediction",
-       "url": "https://doi.org/10.1007/s13748-025-00404-w",
-       "coauthors": [
-        "andre-dekker",
-        "florian-van-daalen",
-        "leonard-wee",
-        "ralph-brecheisen"
-       ]
-      },
-      {
-       "work": "W7131779647",
-       "title": "Decoding Uncertainty Quantification for Oncology—An Illustration Using Radiomics",
-       "url": "https://doi.org/10.3390/diagnostics16050700",
-       "coauthors": [
-        "andre-dekker",
-        "balu-krishna-sasidharan",
-        "florian-van-daalen",
-        "hannah-mary-thomas",
-        "leonard-wee",
-        "rianne-fijten"
-       ]
-      },
-      {
-       "work": "W4411465141",
-       "title": "A critique of current approaches to privacy in machine learning",
-       "url": "https://doi.org/10.1007/s10676-025-09843-4",
-       "coauthors": [
-        "andre-dekker",
-        "florian-van-daalen",
-        "johan-van-soest",
-        "marine-jacquemin"
-       ]
-      },
-      {
-       "work": "W4412555313",
-       "title": "Verticox+: vertically distributed Cox proportional hazards model with improved privacy guarantees",
-       "url": "https://doi.org/10.1007/s40747-025-02022-4",
-       "coauthors": [
-        "andre-dekker",
-        "florian-van-daalen"
-       ]
-      },
-      {
-       "work": "W4407037294",
-       "title": "Lung Cancer Detection Using Bayesian Networks: A Retrospective Development and Validation Study on a Danish Population of High‐Risk Individuals",
-       "url": "https://doi.org/10.1002/cam4.70458",
-       "coauthors": [
-        "florian-van-daalen",
-        "leonard-wee"
-       ]
-      },
-      {
-       "work": "W4404828427",
-       "title": "A Bayesian Network Approach to Lung Cancer Screening: Assessing the Impact of Data Quantity, Quality, and the Combination of Data from Danish Electronic Health Records",
-       "url": "https://doi.org/10.3390/cancers16233989",
-       "coauthors": [
-        "florian-van-daalen",
-        "leonard-wee"
-       ]
-      },
-      {
-       "work": "W4403702516",
-       "title": "A Response to: A Note on \"Privacy Preserving n-Party Scalar Product Protocol\"",
-       "url": "https://doi.org/10.48550/arxiv.2409.10057",
-       "coauthors": [
-        "andre-dekker",
-        "florian-van-daalen"
-       ]
-      },
-      {
-       "work": "W4395462746",
-       "title": "VertiBayes: learning Bayesian network parameters from vertically partitioned data with missing values",
-       "url": "https://doi.org/10.1007/s40747-024-01424-0",
-       "coauthors": [
-        "andre-dekker",
-        "florian-van-daalen"
-       ]
-      }
-     ],
-     "linked_verified_scholar": false,
-     "institution_match": true,
-     "accepted": true
-    }
+   "orcid_candidates": [],
+   "scholar_candidates": [],
+   "errors": [
+    "Scholar search deferred: search budget reached or no search key configured"
    ],
-   "scholar_candidates": [
-    {
-     "id": "RJ7B8ZAAAAAJ",
-     "url": "https://scholar.google.com/citations?user=RJ7B8ZAAAAAJ",
-     "name": "Florian Schanda",
-     "affiliations": "Veoneer System Software GmbH",
-     "name_match": false,
-     "shared_works": [],
-     "known_coauthors": [],
-     "coauthor_profiles": [],
-     "institution_match": false,
-     "accepted": false
-    }
-   ],
-   "errors": [],
-   "complete": true,
-   "orcid_decision": "accepted",
-   "scholar_decision": "insufficient_evidence",
-   "status": "matched",
+   "complete": false,
+   "orcid_decision": "known",
+   "scholar_decision": "deferred",
+   "status": "no_new_confirmed_profile",
    "identifiers": {
     "orcid": "0000-0002-2229-8587",
     "scholar_id": null
@@ -4553,96 +4684,20 @@
   },
   "girma-gilano": {
    "name": "Girma Gilano",
-   "checked_at": "2026-10-21",
+   "checked_at": "2026-11-23",
    "known_coauthors": [
-    "rianne-fijten",
-    "andre-dekker"
+    "andre-dekker",
+    "rianne-fijten"
    ],
-   "orcid_candidates": [
-    {
-     "id": "0000-0002-5847-1425",
-     "url": "https://orcid.org/0000-0002-5847-1425",
-     "name": "Girma Gilano",
-     "affiliations": [
-      "University of Gondar",
-      "Arba Minch University",
-      "Arba Minch University",
-      "International Federation of Red Cross and Red Crescent Societies"
-     ],
-     "name_match": true,
-     "shared_works": [
-      {
-       "work": "W7163123298",
-       "title": "The Effect of Mobile Health Intervention on Prelacteal Feeding Among Mothers in the First Month After Birth in South Ethiopia: A Cluster-Randomized Controlled Trial",
-       "url": "https://doi.org/10.3390/nu18111795",
-       "coauthors": [
-        "andre-dekker",
-        "girma-gilano",
-        "rianne-fijten"
-       ]
-      },
-      {
-       "work": "W7110945548",
-       "title": "Effect of mHealth on Postpartum Family Planning and Its Associated Factors Among Women in South Ethiopia: A Cluster-Randomized Controlled Trial",
-       "url": "https://doi.org/10.3390/jcm14248703",
-       "coauthors": [
-        "andre-dekker",
-        "girma-gilano",
-        "rianne-fijten"
-       ]
-      },
-      {
-       "work": "W4415924457",
-       "title": "The Effect of mHealth on Exclusive Breastfeeding and Its Associated Factors Among Women in South Ethiopia: A Cluster Randomized Controlled Trial",
-       "url": "https://doi.org/10.3390/nu17213477",
-       "coauthors": [
-        "andre-dekker",
-        "girma-gilano",
-        "rianne-fijten"
-       ]
-      },
-      {
-       "work": "W4391514506",
-       "title": "Effect of mobile phone messaging on uptake of maternal and child health service in southern Ethiopia: Protocol for cluster randomized controlled trial",
-       "url": "https://doi.org/10.1016/j.nutos.2024.02.002",
-       "coauthors": [
-        "andre-dekker",
-        "girma-gilano",
-        "rianne-fijten"
-       ]
-      },
-      {
-       "work": "W4392012924",
-       "title": "The effect of mHealth on childhood vaccination in Africa: A systematic review and meta-analysis",
-       "url": "https://doi.org/10.1371/journal.pone.0294442",
-       "coauthors": [
-        "andre-dekker",
-        "girma-gilano",
-        "rianne-fijten"
-       ]
-      },
-      {
-       "work": "W4391657914",
-       "title": "The role of mHealth intervention to improve maternal and child health: A provider-based qualitative study in Southern Ethiopia",
-       "url": "https://doi.org/10.1371/journal.pone.0295539",
-       "coauthors": [
-        "andre-dekker",
-        "girma-gilano",
-        "rianne-fijten"
-       ]
-      }
-     ],
-     "linked_verified_scholar": false,
-     "institution_match": false,
-     "accepted": true
-    }
-   ],
+   "orcid_candidates": [],
    "scholar_candidates": [],
-   "errors": [],
-   "complete": true,
-   "orcid_decision": "accepted",
-   "scholar_decision": "not_found",
-   "status": "matched",
+   "errors": [
+    "Scholar search deferred: search budget reached or no search key configured"
+   ],
+   "complete": false,
+   "orcid_decision": "known",
+   "scholar_decision": "deferred",
+   "status": "no_new_confirmed_profile",
    "identifiers": {
     "orcid": "0000-0002-5847-1425",
     "scholar_id": null
@@ -5450,23 +5505,24 @@
   },
   "sure-pai": {
    "name": "Suraj Pai",
-   "checked_at": "2026-10-21",
+   "checked_at": "2026-11-23",
    "known_coauthors": [
-    "hugo-aerts",
-    "leonard-nurnberg",
-    "vasco-prudente",
     "dennis-bontempi",
+    "hugo-aerts",
+    "vasco-prudente",
     "andre-dekker",
+    "leonard-nurnberg",
     "alberto-traverso",
-    "ivan-zhovannik",
-    "ibrahim-hadzic"
+    "ivan-zhovannik"
    ],
    "orcid_candidates": [],
    "scholar_candidates": [],
-   "errors": [],
-   "complete": true,
+   "errors": [
+    "Scholar search deferred: search budget reached or no search key configured"
+   ],
+   "complete": false,
    "orcid_decision": "known",
-   "scholar_decision": "not_found",
+   "scholar_decision": "deferred",
    "status": "no_new_confirmed_profile",
    "identifiers": {
     "orcid": "0000-0001-8043-2230",
@@ -5528,111 +5584,22 @@
   },
   "zhixiang-wang": {
    "name": "Zhixiang Wang",
-   "checked_at": "2026-10-21",
+   "checked_at": "2026-11-23",
    "known_coauthors": [
     "andre-dekker",
     "zhen-zang",
     "alberto-traverso",
     "leonard-wee"
    ],
-   "orcid_candidates": [
-    {
-     "id": "0000-0002-4778-7539",
-     "url": "https://orcid.org/0000-0002-4778-7539",
-     "name": "Zhixiang Wang",
-     "affiliations": [],
-     "name_match": true,
-     "shared_works": [
-      {
-       "work": "W4417539109",
-       "title": "Interpretable multimodal radiopathomics model predicting pathological complete response to neoadjuvant chemoimmunotherapy in esophageal squamous cell carcinoma",
-       "url": "https://doi.org/10.1136/jitc-2025-013840",
-       "coauthors": [
-        "andre-dekker",
-        "leonard-wee",
-        "zhen-zang",
-        "zhixiang-wang"
-       ]
-      },
-      {
-       "work": "W4401013932",
-       "title": "A multi-Task Learning based applicable AI model simultaneously predicts stage, histology, grade and LNM for cervical cancer before surgery",
-       "url": "https://doi.org/10.1186/s12905-024-03270-1",
-       "coauthors": [
-        "alberto-traverso",
-        "andre-dekker",
-        "zhen-zang",
-        "zhixiang-wang"
-       ]
-      },
-      {
-       "work": "W4391258615",
-       "title": "Assessing the role of GPT-4 in thyroid ultrasound diagnosis and treatment recommendations: enhancing interpretability with a chain of thought approach",
-       "url": "https://doi.org/10.21037/qims-23-1180",
-       "coauthors": [
-        "alberto-traverso",
-        "andre-dekker",
-        "zhen-zang",
-        "zhixiang-wang"
-       ]
-      },
-      {
-       "work": "W4402137708",
-       "title": "Predicting axillary lymph node metastasis in breast cancer based on ultrasound radiofrequency time-series analysis",
-       "url": "https://doi.org/10.1177/02841851241268463",
-       "coauthors": [
-        "alberto-traverso",
-        "andre-dekker",
-        "zhixiang-wang"
-       ]
-      },
-      {
-       "work": "W4399466786",
-       "title": "Preoperative prediction of high-grade osteosarcoma response to neoadjuvant therapy based on a plain CT radiomics model: A dual-center study",
-       "url": "https://doi.org/10.1016/j.jbo.2024.100614",
-       "coauthors": [
-        "alberto-traverso",
-        "andre-dekker",
-        "zhixiang-wang"
-       ]
-      }
-     ],
-     "linked_verified_scholar": false,
-     "institution_match": false,
-     "accepted": true
-    }
+   "orcid_candidates": [],
+   "scholar_candidates": [],
+   "errors": [
+    "Scholar search deferred: search budget reached or no search key configured"
    ],
-   "scholar_candidates": [
-    {
-     "id": "yybzbxMAAAAJ",
-     "url": "https://scholar.google.com/citations?user=yybzbxMAAAAJ",
-     "name": "Zhixiang Wang",
-     "affiliations": "Alaya Lab | Shanda",
-     "name_match": true,
-     "shared_works": [],
-     "known_coauthors": [],
-     "coauthor_profiles": [],
-     "institution_match": false,
-     "accepted": false
-    },
-    {
-     "id": "I8MONxkAAAAJ",
-     "url": "https://scholar.google.com/citations?user=I8MONxkAAAAJ",
-     "name": "Zhixiang Wang",
-     "affiliations": "University of Alberta",
-     "name_match": true,
-     "shared_works": [],
-     "known_coauthors": [],
-     "coauthor_profiles": [],
-     "institution_match": false,
-     "accepted": false
-    }
-   ],
-   "errors": [],
-   "complete": true,
-   "orcid_decision": "accepted",
-   "scholar_decision": "insufficient_evidence",
-   "status": "matched",
+   "complete": false,
+   "orcid_decision": "known",
+   "scholar_decision": "deferred",
+   "status": "no_new_confirmed_profile",
    "identifiers": {
     "orcid": "0000-0002-4778-7539",
     "scholar_id": null
@@ -5708,97 +5675,25 @@
   },
   "vasco-prudente": {
    "name": "Vasco Prudente",
-   "checked_at": "2026-10-21",
+   "checked_at": "2026-11-23",
    "known_coauthors": [
+    "dennis-bontempi",
     "sure-pai",
     "hugo-aerts",
     "leonard-nurnberg",
-    "dennis-bontempi",
     "leonard-wee",
     "maike-imkamp",
     "andre-dekker"
    ],
-   "orcid_candidates": [
-    {
-     "id": "0000-0003-0623-1259",
-     "url": "https://orcid.org/0000-0003-0623-1259",
-     "name": "Vasco Carneiro Giraldes Prudente",
-     "affiliations": [
-      "Harvard University",
-      "Maastricht University",
-      "Mass General Brigham",
-      "Harvard University",
-      "Maastricht University"
-     ],
-     "name_match": true,
-     "shared_works": [
-      {
-       "work": "W7204178963",
-       "title": "Thymic radiation is associated with worse outcomes in patients with NSCLC",
-       "url": "https://doi.org/10.1016/j.annonc.2026.07.001",
-       "coauthors": [
-        "hugo-aerts",
-        "leonard-nurnberg",
-        "sure-pai",
-        "vasco-prudente"
-       ]
-      },
-      {
-       "work": "W7138874906",
-       "title": "Thymic health and immunotherapy outcomes in patients with cancer",
-       "url": "https://doi.org/10.1038/s41586-026-10243-x",
-       "coauthors": [
-        "hugo-aerts",
-        "leonard-nurnberg",
-        "sure-pai",
-        "vasco-prudente"
-       ]
-      },
-      {
-       "work": "W7138973475",
-       "title": "Thymic health consequences in adults",
-       "url": "https://doi.org/10.1038/s41586-026-10242-y",
-       "coauthors": [
-        "hugo-aerts",
-        "leonard-nurnberg",
-        "sure-pai",
-        "vasco-prudente"
-       ]
-      },
-      {
-       "work": "W7117708698",
-       "title": "Vulnerabilities of feature clustering in EIT radiomics",
-       "url": "https://doi.org/10.1016/j.compbiomed.2025.111438",
-       "coauthors": [
-        "leonard-wee",
-        "maike-imkamp",
-        "vasco-prudente"
-       ]
-      },
-      {
-       "work": "W4410197107",
-       "title": "FaceAge, a deep learning system to estimate biological age from face photographs to improve prognostication: a model development and validation study",
-       "url": "https://doi.org/10.1016/j.landig.2025.03.002",
-       "coauthors": [
-        "andre-dekker",
-        "dennis-bontempi",
-        "hugo-aerts",
-        "sure-pai",
-        "vasco-prudente"
-       ]
-      }
-     ],
-     "linked_verified_scholar": false,
-     "institution_match": true,
-     "accepted": true
-    }
-   ],
+   "orcid_candidates": [],
    "scholar_candidates": [],
-   "errors": [],
-   "complete": true,
-   "orcid_decision": "accepted",
-   "scholar_decision": "not_found",
-   "status": "matched",
+   "errors": [
+    "Scholar search deferred: search budget reached or no search key configured"
+   ],
+   "complete": false,
+   "orcid_decision": "known",
+   "scholar_decision": "deferred",
+   "status": "no_new_confirmed_profile",
    "identifiers": {
     "orcid": "0000-0003-0623-1259",
     "scholar_id": null
@@ -5882,83 +5777,26 @@
   },
   "dennis-bontempi": {
    "name": "Dennis Bontempi",
-   "checked_at": "2026-10-21",
+   "checked_at": "2026-11-23",
    "known_coauthors": [
     "sure-pai",
+    "andre-dekker",
     "leonard-nurnberg",
     "hugo-aerts",
-    "andre-dekker",
     "vasco-prudente",
     "alberto-traverso",
     "fariba-tohidinezhad",
-    "femke-vaassen",
-    "ivan-zhovannik",
-    "ibrahim-hadzic"
+    "ivan-zhovannik"
    ],
-   "orcid_candidates": [
-    {
-     "id": "0000-0003-0775-5679",
-     "url": "https://orcid.org/0000-0003-0775-5679",
-     "name": "Dennis Bontempi",
-     "affiliations": [
-      "Maastricht University",
-      "Mass General Brigham",
-      "University of Brescia",
-      "University of Lausanne",
-      "Universiteit Maastricht",
-      "Brigham and Women's Hospital",
-      "Università degli Studi di Brescia"
-     ],
-     "name_match": true,
-     "shared_works": [
-      {
-       "work": "W4410197107",
-       "title": "FaceAge, a deep learning system to estimate biological age from face photographs to improve prognostication: a model development and validation study",
-       "url": "https://doi.org/10.1016/j.landig.2025.03.002",
-       "coauthors": [
-        "andre-dekker",
-        "dennis-bontempi",
-        "hugo-aerts",
-        "sure-pai",
-        "vasco-prudente"
-       ]
-      },
-      {
-       "work": "W4401546164",
-       "title": "End-to-end reproducible AI pipelines in radiology using the cloud",
-       "url": "https://doi.org/10.1038/s41467-024-51202-2",
-       "coauthors": [
-        "dennis-bontempi",
-        "hugo-aerts",
-        "leonard-nurnberg",
-        "sure-pai"
-       ]
-      },
-      {
-       "work": "W4393407981",
-       "title": "Optimizing CycleGAN design for CBCT-to-CT translation: insights into 2D vs 3D modeling, patch size, and the need for tailored evaluation metrics",
-       "url": "https://doi.org/10.1117/12.3007031",
-       "coauthors": [
-        "alberto-traverso",
-        "andre-dekker",
-        "dennis-bontempi",
-        "ibrahim-hadzic",
-        "ivan-zhovannik",
-        "sure-pai"
-       ]
-      }
-     ],
-     "linked_verified_scholar": false,
-     "institution_match": true,
-     "accepted": true
-    }
-   ],
+   "orcid_candidates": [],
    "scholar_candidates": [],
-   "errors": [],
-   "complete": true,
-   "orcid_decision": "accepted",
-   "scholar_decision": "not_found",
-   "status": "matched",
+   "errors": [
+    "Scholar search deferred: search budget reached or no search key configured"
+   ],
+   "complete": false,
+   "orcid_decision": "known",
+   "scholar_decision": "deferred",
+   "status": "no_new_confirmed_profile",
    "identifiers": {
     "orcid": "0000-0003-0775-5679",
     "scholar_id": null
@@ -6025,11 +5863,11 @@
   },
   "femke-vaassen": {
    "name": "Femke Vaassen",
-   "checked_at": "2026-10-21",
+   "checked_at": "2026-11-23",
    "known_coauthors": [
     "fariba-tohidinezhad",
-    "alberto-traverso",
     "andre-dekker",
+    "alberto-traverso",
     "leonard-nurnberg",
     "wouter-van-elmpt",
     "hugo-aerts",
@@ -6051,63 +5889,13 @@
      "accepted": false
     }
    ],
-   "scholar_candidates": [
-    {
-     "id": "o158yMUAAAAJ",
-     "url": "https://scholar.google.com/citations?user=o158yMUAAAAJ",
-     "name": "Fariba Tohidinezhad",
-     "affiliations": "Hilo by Aktiia",
-     "name_match": false,
-     "shared_works": [
-      {
-       "work": "W4402897784",
-       "title": "Prediction of new-onset atrial fibrillation in patients with non-small cell lung cancer treated with curative-intent conventional radiotherapy",
-       "url": "https://doi.org/10.1016/j.radonc.2024.110544",
-       "coauthors": [
-        "alberto-traverso",
-        "andre-dekker",
-        "fariba-tohidinezhad",
-        "femke-vaassen",
-        "hugo-aerts",
-        "leonard-nurnberg"
-       ]
-      },
-      {
-       "work": "W4394675050",
-       "title": "Predicting the risk of neurocognitive decline after brain irradiation in adult patients with a primary brain tumor",
-       "url": "https://doi.org/10.1093/neuonc/noae035",
-       "coauthors": [
-        "alberto-traverso",
-        "andre-dekker",
-        "fariba-tohidinezhad",
-        "femke-vaassen",
-        "wouter-van-elmpt"
-       ]
-      },
-      {
-       "work": "W4402044888",
-       "title": "1733: Factors associated with cardiac toxicity after radical radiotherapy in patients with lung cancer",
-       "url": "https://doi.org/10.1016/s0167-8140(24)02075-9",
-       "coauthors": [
-        "alberto-traverso",
-        "andre-dekker",
-        "dennis-bontempi",
-        "fariba-tohidinezhad",
-        "femke-vaassen",
-        "leonard-nurnberg"
-       ]
-      }
-     ],
-     "known_coauthors": [],
-     "coauthor_profiles": [],
-     "institution_match": false,
-     "accepted": false
-    }
+   "scholar_candidates": [],
+   "errors": [
+    "Scholar search deferred: search budget reached or no search key configured"
    ],
-   "errors": [],
-   "complete": true,
+   "complete": false,
    "orcid_decision": "insufficient_evidence",
-   "scholar_decision": "insufficient_evidence",
+   "scholar_decision": "deferred",
    "status": "no_new_confirmed_profile",
    "identifiers": {
     "orcid": null,
@@ -6117,56 +5905,85 @@
   },
   "hossein-rahmani": {
    "name": "Hossein Rahmani",
-   "checked_at": "2026-10-21",
+   "checked_at": "2026-11-23",
    "known_coauthors": [
     "ralph-brecheisen",
     "leroy-volmer",
     "andre-dekker"
    ],
-   "orcid_candidates": [
-    {
-     "id": "0000-0003-2988-6178",
-     "url": "https://orcid.org/0000-0003-2988-6178",
-     "name": "Hossein Rahmani",
-     "affiliations": [
-      "Iran University of Science and Technology"
-     ],
-     "name_match": true,
-     "shared_works": [],
-     "linked_verified_scholar": false,
-     "institution_match": false,
-     "accepted": false
-    }
-   ],
+   "orcid_candidates": [],
    "scholar_candidates": [],
-   "errors": [],
-   "complete": true,
-   "orcid_decision": "insufficient_evidence",
-   "scholar_decision": "not_found",
+   "errors": [
+    "Scholar search deferred: search budget reached or no search key configured"
+   ],
+   "complete": false,
+   "orcid_decision": "known",
+   "scholar_decision": "deferred",
    "status": "no_new_confirmed_profile",
    "identifiers": {
-    "orcid": null,
+    "orcid": "0000-0003-1920-0371",
     "scholar_id": null
    },
-   "verified_evidence": {}
+   "verified_evidence": {
+    "orcid": {
+     "checked_at": "2026-11-23",
+     "id": "0000-0003-1920-0371",
+     "url": "https://orcid.org/0000-0003-1920-0371",
+     "name": "Hossein Rahmani",
+     "affiliations": [
+      "Shahid Beheshti University",
+      "University of Western Australia",
+      "Isfahan University of Technology",
+      "Lancaster University"
+     ],
+     "name_match": true,
+     "shared_works": [
+      {
+       "work": "W4413969900",
+       "title": "Clinical and Imaging-Based Prognostic Models for Recurrence and Local Tumor Progression Following Thermal Ablation of Hepatocellular Carcinoma: A Systematic Review",
+       "url": "https://doi.org/10.3390/cancers17162656",
+       "coauthors": [
+        "hossein-rahmani",
+        "ralph-brecheisen"
+       ]
+      },
+      {
+       "work": "W4416147748",
+       "title": "The influence of AI on surgical and ablative treatments for colorectal liver metastases: a review of the current literature",
+       "url": "https://doi.org/10.1186/s13244-025-02072-9",
+       "coauthors": [
+        "andre-dekker",
+        "hossein-rahmani",
+        "leroy-volmer",
+        "ralph-brecheisen"
+       ]
+      }
+     ],
+     "linked_verified_scholar": false,
+     "institution_match": false,
+     "accepted": true
+    }
+   }
   },
   "ashish-jha": {
    "name": "Ashish Jha",
-   "checked_at": "2026-10-21",
+   "checked_at": "2026-11-23",
    "known_coauthors": [
-    "umesh-kumar-baburao-sherkhane",
     "leonard-wee",
     "andre-dekker",
-    "joshi-hogenboom",
+    "umesh-kumar-baburao-sherkhane",
     "johan-van-soest",
+    "joshi-hogenboom",
     "varsha-gouthamchand"
    ],
    "orcid_candidates": [],
    "scholar_candidates": [],
-   "errors": [],
-   "complete": true,
+   "errors": [
+    "Scholar search deferred: search budget reached or no search key configured"
+   ],
+   "complete": false,
    "orcid_decision": "not_found",
-   "scholar_decision": "not_found",
+   "scholar_decision": "deferred",
    "status": "no_new_confirmed_profile",
    "identifiers": {
     "orcid": null,
@@ -6328,61 +6145,21 @@
   },
   "anke-bruninx": {
    "name": "Anke Bruninx",
-   "checked_at": "2026-10-21",
+   "checked_at": "2026-11-23",
    "known_coauthors": [
     "andre-dekker",
-    "petros-kalendralis",
-    "rutger-van-mierlo"
+    "rutger-van-mierlo",
+    "petros-kalendralis"
    ],
-   "orcid_candidates": [
-    {
-     "id": "0000-0002-5916-8735",
-     "url": "https://orcid.org/0000-0002-5916-8735",
-     "name": "Anke Bruninx",
-     "affiliations": [],
-     "name_match": true,
-     "shared_works": [
-      {
-       "work": "W4409360221",
-       "title": "Optimizing Cardiovascular Risk Management in Primary Care Using a Personalized eCoach Solution Enhanced by an Artificial Intelligence–Driven Clinical Prediction Model: Protocol from the Coronary Artery Disease Risk Estimation and Early Detection Consortium",
-       "url": "https://doi.org/10.2196/66068",
-       "coauthors": [
-        "andre-dekker",
-        "anke-bruninx",
-        "petros-kalendralis",
-        "rutger-van-mierlo"
-       ]
-      },
-      {
-       "work": "W4411961075",
-       "title": "Exploring Safety of Down-Titrating Diuretics in Heart Failure Management",
-       "url": "https://doi.org/10.1002/ejhf.3714",
-       "coauthors": [
-        "andre-dekker",
-        "anke-bruninx"
-       ]
-      },
-      {
-       "work": "W4411962851",
-       "title": "Development and temporal evaluation of sex-specific models to predict 4-year atherosclerotic cardiovascular disease risk based on age and neighbourhood characteristics in South Limburg, the Netherlands",
-       "url": "https://doi.org/10.1186/s41512-025-00198-4",
-       "coauthors": [
-        "andre-dekker",
-        "anke-bruninx"
-       ]
-      }
-     ],
-     "linked_verified_scholar": false,
-     "institution_match": false,
-     "accepted": true
-    }
-   ],
+   "orcid_candidates": [],
    "scholar_candidates": [],
-   "errors": [],
-   "complete": true,
-   "orcid_decision": "accepted",
-   "scholar_decision": "not_found",
-   "status": "matched",
+   "errors": [
+    "Scholar search deferred: search budget reached or no search key configured"
+   ],
+   "complete": false,
+   "orcid_decision": "known",
+   "scholar_decision": "deferred",
+   "status": "no_new_confirmed_profile",
    "identifiers": {
     "orcid": "0000-0002-5916-8735",
     "scholar_id": null
@@ -6434,19 +6211,21 @@
   },
   "shenlun-chen": {
    "name": "Shenlun Chen",
-   "checked_at": "2026-10-21",
+   "checked_at": "2026-11-23",
    "known_coauthors": [
-    "petros-kalendralis",
     "leonard-wee",
     "andre-dekker",
+    "petros-kalendralis",
     "zhen-zang"
    ],
    "orcid_candidates": [],
    "scholar_candidates": [],
-   "errors": [],
-   "complete": true,
+   "errors": [
+    "Scholar search deferred: search budget reached or no search key configured"
+   ],
+   "complete": false,
    "orcid_decision": "not_found",
-   "scholar_decision": "not_found",
+   "scholar_decision": "deferred",
    "status": "no_new_confirmed_profile",
    "identifiers": {
     "orcid": null,
@@ -6686,47 +6465,22 @@
   },
   "hajar-hasannejadasl": {
    "name": "Hajar Hasannejadasl",
-   "checked_at": "2026-10-21",
+   "checked_at": "2026-11-23",
    "known_coauthors": [
     "rianne-fijten",
     "andre-dekker",
-    "johan-van-soest",
-    "biche-osong"
+    "biche-osong",
+    "johan-van-soest"
    ],
-   "orcid_candidates": [
-    {
-     "id": "0000-0001-5262-7399",
-     "url": "https://orcid.org/0000-0001-5262-7399",
-     "name": "Hajar Hasannejadasl",
-     "affiliations": [
-      "Maastricht University"
-     ],
-     "name_match": true,
-     "shared_works": [
-      {
-       "work": "W4391787579",
-       "title": "The value of PROMs for predicting erectile dysfunction in prostate cancer patients with Bayesian network",
-       "url": "https://doi.org/10.1016/j.tipsro.2024.100234",
-       "coauthors": [
-        "andre-dekker",
-        "biche-osong",
-        "hajar-hasannejadasl",
-        "johan-van-soest",
-        "rianne-fijten"
-       ]
-      }
-     ],
-     "linked_verified_scholar": false,
-     "institution_match": true,
-     "accepted": true
-    }
-   ],
+   "orcid_candidates": [],
    "scholar_candidates": [],
-   "errors": [],
-   "complete": true,
-   "orcid_decision": "accepted",
-   "scholar_decision": "not_found",
-   "status": "matched",
+   "errors": [
+    "Scholar search deferred: search budget reached or no search key configured"
+   ],
+   "complete": false,
+   "orcid_decision": "known",
+   "scholar_decision": "deferred",
+   "status": "no_new_confirmed_profile",
    "identifiers": {
     "orcid": "0000-0001-5262-7399",
     "scholar_id": null
@@ -6763,20 +6517,22 @@
   },
   "louise-de-almeida-ferreira-fonseca": {
    "name": "Louise de Almeida Ferreira Fonseca",
-   "checked_at": "2026-10-21",
+   "checked_at": "2026-11-23",
    "known_coauthors": [
     "hannah-mary-thomas",
-    "leonard-wee",
-    "varsha-gouthamchand",
+    "rianne-fijten",
     "andre-dekker",
-    "rianne-fijten"
+    "varsha-gouthamchand",
+    "leonard-wee"
    ],
    "orcid_candidates": [],
    "scholar_candidates": [],
-   "errors": [],
-   "complete": true,
+   "errors": [
+    "Scholar search deferred: search budget reached or no search key configured"
+   ],
+   "complete": false,
    "orcid_decision": "not_found",
-   "scholar_decision": "not_found",
+   "scholar_decision": "deferred",
    "status": "no_new_confirmed_profile",
    "identifiers": {
     "orcid": null,
@@ -6786,7 +6542,7 @@
   },
   "luis-sanchez-gomez": {
    "name": "Luis Sanchez Gomez",
-   "checked_at": "2026-10-21",
+   "checked_at": "2026-11-23",
    "known_coauthors": [
     "leonard-wee",
     "joshi-hogenboom",
@@ -6795,10 +6551,12 @@
    ],
    "orcid_candidates": [],
    "scholar_candidates": [],
-   "errors": [],
-   "complete": true,
+   "errors": [
+    "Scholar search deferred: search budget reached or no search key configured"
+   ],
+   "complete": false,
    "orcid_decision": "not_found",
-   "scholar_decision": "not_found",
+   "scholar_decision": "deferred",
    "status": "no_new_confirmed_profile",
    "identifiers": {
     "orcid": null,
@@ -6808,9 +6566,10 @@
   },
   "yanqi-huang": {
    "name": "Yanqi Huang",
-   "checked_at": "2026-10-21",
+   "checked_at": "2026-11-23",
    "known_coauthors": [
     "leonard-wee",
+    "minghua-li",
     "andre-dekker"
    ],
    "orcid_candidates": [
@@ -6828,24 +6587,13 @@
      "accepted": false
     }
    ],
-   "scholar_candidates": [
-    {
-     "id": "zvypeQ8AAAAJ",
-     "url": "https://scholar.google.com/citations?user=zvypeQ8AAAAJ",
-     "name": "Yan Huang",
-     "affiliations": "PhD candidate in Department of Computer Science, University of Kentucky",
-     "name_match": false,
-     "shared_works": [],
-     "known_coauthors": [],
-     "coauthor_profiles": [],
-     "institution_match": false,
-     "accepted": false
-    }
+   "scholar_candidates": [],
+   "errors": [
+    "Scholar search deferred: search budget reached or no search key configured"
    ],
-   "errors": [],
-   "complete": true,
+   "complete": false,
    "orcid_decision": "insufficient_evidence",
-   "scholar_decision": "insufficient_evidence",
+   "scholar_decision": "deferred",
    "status": "no_new_confirmed_profile",
    "identifiers": {
     "orcid": null,
@@ -6855,7 +6603,7 @@
   },
   "aria-dianati": {
    "name": "Aria Dianati",
-   "checked_at": "2026-10-21",
+   "checked_at": "2026-11-23",
    "known_coauthors": [
     "leonard-wee",
     "andre-dekker"
@@ -6876,10 +6624,12 @@
     }
    ],
    "scholar_candidates": [],
-   "errors": [],
-   "complete": true,
+   "errors": [
+    "Scholar search deferred: search budget reached or no search key configured"
+   ],
+   "complete": false,
    "orcid_decision": "insufficient_evidence",
-   "scholar_decision": "not_found",
+   "scholar_decision": "deferred",
    "status": "no_new_confirmed_profile",
    "identifiers": {
     "orcid": null,
@@ -6889,35 +6639,157 @@
   },
   "geert-bosmans": {
    "name": "Geert Bosmans",
-   "checked_at": "2026-11-16",
+   "checked_at": "2026-11-23",
    "known_coauthors": [
-    "thijs-ackermans",
-    "andre-dekker"
+    "andre-dekker",
+    "thijs-ackermans"
    ],
    "orcid_candidates": [],
-   "scholar_candidates": [],
-   "errors": [
-    "Scholar search deferred: search budget reached or no search key configured"
+   "scholar_candidates": [
+    {
+     "id": "ruNMqBkAAAAJ",
+     "url": "https://scholar.google.com/citations?user=ruNMqBkAAAAJ",
+     "name": "Geert Bosmans",
+     "affiliations": "Maastro clinic, Maastricht",
+     "name_match": true,
+     "shared_works": [],
+     "known_coauthors": [
+      "andre-dekker"
+     ],
+     "coauthor_profiles": [
+      {
+       "slug": "andre-dekker",
+       "url": "https://scholar.google.com/citations?user=JKOhEfcAAAAJ"
+      }
+     ],
+     "institution_match": true,
+     "accepted": true
+    },
+    {
+     "id": "qTtJc0gAAAAJ",
+     "url": "https://scholar.google.com/citations?user=qTtJc0gAAAAJ",
+     "name": "Maria Jacobs",
+     "affiliations": "Professor TISEM Tilburg University",
+     "name_match": false,
+     "shared_works": [],
+     "known_coauthors": [
+      "andre-dekker",
+      "petros-kalendralis",
+      "rianne-fijten"
+     ],
+     "coauthor_profiles": [
+      {
+       "slug": "andre-dekker",
+       "url": "https://scholar.google.com/citations?user=JKOhEfcAAAAJ"
+      },
+      {
+       "slug": "petros-kalendralis",
+       "url": "https://scholar.google.com/citations?user=_iOPG9oAAAAJ"
+      },
+      {
+       "slug": "rianne-fijten",
+       "url": "https://scholar.google.com/citations?user=_q5Rkg0AAAAJ"
+      }
+     ],
+     "institution_match": false,
+     "accepted": false
+    },
+    {
+     "id": "JKOhEfcAAAAJ",
+     "url": "https://scholar.google.com/citations?user=JKOhEfcAAAAJ",
+     "name": "Andre Dekker",
+     "affiliations": "Professor of Clinical Data Science, MAASTRO Clinic, Maastricht University, GROW, Maastricht UMC+",
+     "name_match": false,
+     "shared_works": [],
+     "known_coauthors": [
+      "alberto-traverso",
+      "hugo-aerts",
+      "johan-van-soest",
+      "leonard-wee",
+      "petros-kalendralis",
+      "rianne-fijten",
+      "wouter-van-elmpt",
+      "zhenwei-shi"
+     ],
+     "coauthor_profiles": [
+      {
+       "slug": "johan-van-soest",
+       "url": "https://scholar.google.com/citations?user=zemi8wYAAAAJ"
+      },
+      {
+       "slug": "leonard-wee",
+       "url": "https://scholar.google.com/citations?user=hlhktjoAAAAJ"
+      },
+      {
+       "slug": "petros-kalendralis",
+       "url": "https://scholar.google.com/citations?user=_iOPG9oAAAAJ"
+      },
+      {
+       "slug": "rianne-fijten",
+       "url": "https://scholar.google.com/citations?user=_q5Rkg0AAAAJ"
+      },
+      {
+       "slug": "alberto-traverso",
+       "url": "https://scholar.google.com/citations?user=MvWO42oAAAAJ"
+      },
+      {
+       "slug": "hugo-aerts",
+       "url": "https://scholar.google.com/citations?user=v7G4QvIAAAAJ"
+      },
+      {
+       "slug": "wouter-van-elmpt",
+       "url": "https://scholar.google.com/citations?user=rJ8_V2EAAAAJ"
+      },
+      {
+       "slug": "zhenwei-shi",
+       "url": "https://scholar.google.com/citations?user=aeK2yRsAAAAJ"
+      }
+     ],
+     "institution_match": true,
+     "accepted": false
+    }
    ],
-   "complete": false,
+   "errors": [],
+   "complete": true,
    "orcid_decision": "not_found",
-   "scholar_decision": "deferred",
-   "status": "no_new_confirmed_profile",
+   "scholar_decision": "accepted",
+   "status": "matched",
    "identifiers": {
     "orcid": null,
-    "scholar_id": null
+    "scholar_id": "ruNMqBkAAAAJ"
    },
-   "verified_evidence": {}
+   "verified_evidence": {
+    "scholar": {
+     "checked_at": "2026-11-23",
+     "id": "ruNMqBkAAAAJ",
+     "url": "https://scholar.google.com/citations?user=ruNMqBkAAAAJ",
+     "name": "Geert Bosmans",
+     "affiliations": "Maastro clinic, Maastricht",
+     "name_match": true,
+     "shared_works": [],
+     "known_coauthors": [
+      "andre-dekker"
+     ],
+     "coauthor_profiles": [
+      {
+       "slug": "andre-dekker",
+       "url": "https://scholar.google.com/citations?user=JKOhEfcAAAAJ"
+      }
+     ],
+     "institution_match": true,
+     "accepted": true
+    }
+   }
   },
   "ibrahim-hadzic": {
    "name": "Ibrahim Hadzic",
-   "checked_at": "2026-11-16",
+   "checked_at": "2026-11-23",
    "known_coauthors": [
-    "andre-dekker",
+    "sure-pai",
     "ivan-zhovannik",
     "alberto-traverso",
-    "dennis-bontempi",
-    "sure-pai"
+    "andre-dekker",
+    "dennis-bontempi"
    ],
    "orcid_candidates": [
     {
@@ -6950,23 +6822,45 @@
   },
   "maike-imkamp": {
    "name": "Maike Imkamp",
-   "checked_at": "2026-11-16",
+   "checked_at": "2026-11-23",
    "known_coauthors": [
-    "vasco-prudente",
-    "leonard-wee"
+    "leonard-wee",
+    "vasco-prudente"
    ],
    "orcid_candidates": [],
-   "scholar_candidates": [],
-   "errors": [
-    "Scholar search deferred: search budget reached or no search key configured"
+   "scholar_candidates": [
+    {
+     "id": "Pl8eLN0AAAAJ",
+     "url": "https://scholar.google.com/citations?user=Pl8eLN0AAAAJ",
+     "name": "Maike Imkamp",
+     "affiliations": "Maastricht University",
+     "name_match": true,
+     "shared_works": [
+      {
+       "work": "W7117708698",
+       "title": "Vulnerabilities of feature clustering in EIT radiomics",
+       "url": "https://doi.org/10.1016/j.compbiomed.2025.111438",
+       "coauthors": [
+        "leonard-wee",
+        "maike-imkamp",
+        "vasco-prudente"
+       ]
+      }
+     ],
+     "known_coauthors": [],
+     "coauthor_profiles": [],
+     "institution_match": true,
+     "accepted": true
+    }
    ],
-   "complete": false,
+   "errors": [],
+   "complete": true,
    "orcid_decision": "known",
-   "scholar_decision": "deferred",
-   "status": "no_new_confirmed_profile",
+   "scholar_decision": "accepted",
+   "status": "matched",
    "identifiers": {
     "orcid": "0000-0002-3581-7948",
-    "scholar_id": null
+    "scholar_id": "Pl8eLN0AAAAJ"
    },
    "verified_evidence": {
     "orcid": {
@@ -6991,18 +6885,42 @@
      "linked_verified_scholar": false,
      "institution_match": false,
      "accepted": true
+    },
+    "scholar": {
+     "checked_at": "2026-11-23",
+     "id": "Pl8eLN0AAAAJ",
+     "url": "https://scholar.google.com/citations?user=Pl8eLN0AAAAJ",
+     "name": "Maike Imkamp",
+     "affiliations": "Maastricht University",
+     "name_match": true,
+     "shared_works": [
+      {
+       "work": "W7117708698",
+       "title": "Vulnerabilities of feature clustering in EIT radiomics",
+       "url": "https://doi.org/10.1016/j.compbiomed.2025.111438",
+       "coauthors": [
+        "leonard-wee",
+        "maike-imkamp",
+        "vasco-prudente"
+       ]
+      }
+     ],
+     "known_coauthors": [],
+     "coauthor_profiles": [],
+     "institution_match": true,
+     "accepted": true
     }
    }
   },
   "mattea-welch": {
    "name": "Mattea Welch",
-   "checked_at": "2026-11-16",
+   "checked_at": "2026-11-23",
    "known_coauthors": [
-    "andre-dekker",
+    "ananya-choudhury",
     "johan-van-soest",
     "leonard-wee",
-    "varsha-gouthamchand",
-    "ananya-choudhury"
+    "andre-dekker",
+    "varsha-gouthamchand"
    ],
    "orcid_candidates": [
     {
@@ -7033,18 +6951,16 @@
   },
   "melle-sieswerda": {
    "name": "Melle Sieswerda",
-   "checked_at": "2026-11-16",
+   "checked_at": "2026-11-23",
    "known_coauthors": [
     "andre-dekker"
    ],
    "orcid_candidates": [],
    "scholar_candidates": [],
-   "errors": [
-    "Scholar search deferred: search budget reached or no search key configured"
-   ],
-   "complete": false,
+   "errors": [],
+   "complete": true,
    "orcid_decision": "known",
-   "scholar_decision": "deferred",
+   "scholar_decision": "not_found",
    "status": "no_new_confirmed_profile",
    "identifiers": {
     "orcid": "0000-0003-2025-0771",
@@ -7082,12 +6998,12 @@
   },
   "michal-kazmierski": {
    "name": "Michal Kazmierski",
-   "checked_at": "2026-11-16",
+   "checked_at": "2026-11-23",
    "known_coauthors": [
-    "andre-dekker",
-    "leonard-wee",
+    "leroy-volmer",
     "ralph-brecheisen",
-    "leroy-volmer"
+    "leonard-wee",
+    "andre-dekker"
    ],
    "orcid_candidates": [
     {
@@ -7121,11 +7037,11 @@
   },
   "stuti-nayak": {
    "name": "Stuti Nayak",
-   "checked_at": "2026-11-16",
+   "checked_at": "2026-11-23",
    "known_coauthors": [
     "sander-puts",
-    "andre-dekker",
-    "martijn-nobel"
+    "martijn-nobel",
+    "andre-dekker"
    ],
    "orcid_candidates": [
     {
@@ -7178,7 +7094,7 @@
   },
   "abhimanyu-anand": {
    "name": "Abhimanyu Anand",
-   "checked_at": "2026-11-16",
+   "checked_at": "2026-11-23",
    "known_coauthors": [],
    "orcid_candidates": [
     {
@@ -7211,7 +7127,7 @@
   },
   "audrey-janssen": {
    "name": "Audrey Janssen",
-   "checked_at": "2026-11-16",
+   "checked_at": "2026-11-23",
    "known_coauthors": [],
    "orcid_candidates": [
     {
@@ -7244,7 +7160,7 @@
   },
   "bas-nijsten": {
    "name": "Bas Nijsten",
-   "checked_at": "2026-11-16",
+   "checked_at": "2026-11-23",
    "known_coauthors": [
     "cecile-wolfs"
    ],
@@ -7265,7 +7181,7 @@
   },
   "chaitanya-kulkarni": {
    "name": "Chaitanya Kulkarni",
-   "checked_at": "2026-11-16",
+   "checked_at": "2026-11-23",
    "known_coauthors": [],
    "orcid_candidates": [
     {
@@ -7343,7 +7259,7 @@
   },
   "chengbing-zeng": {
    "name": "Chengbing Zeng",
-   "checked_at": "2026-11-16",
+   "checked_at": "2026-11-23",
    "known_coauthors": [],
    "orcid_candidates": [
     {
@@ -7374,7 +7290,7 @@
   },
   "chinmay-rao": {
    "name": "Chinmay Rao",
-   "checked_at": "2026-11-16",
+   "checked_at": "2026-11-23",
    "known_coauthors": [],
    "orcid_candidates": [
     {
@@ -7436,7 +7352,7 @@
   },
   "chong-zhang": {
    "name": "Chong Zhang",
-   "checked_at": "2026-11-16",
+   "checked_at": "2026-11-23",
    "known_coauthors": [],
    "orcid_candidates": [
     {
@@ -7512,7 +7428,7 @@
   },
   "elisabeth-pfaehler": {
    "name": "Elisabeth Pfaehler",
-   "checked_at": "2026-11-16",
+   "checked_at": "2026-11-23",
    "known_coauthors": [],
    "orcid_candidates": [
     {
@@ -7543,7 +7459,7 @@
   },
   "emese-szakaly": {
    "name": "Emese Szakaly",
-   "checked_at": "2026-11-16",
+   "checked_at": "2026-11-23",
    "known_coauthors": [],
    "orcid_candidates": [],
    "scholar_candidates": [],
@@ -7562,7 +7478,7 @@
   },
   "emmanuel-rios": {
    "name": "Emmanuel Rios",
-   "checked_at": "2026-11-16",
+   "checked_at": "2026-11-23",
    "known_coauthors": [],
    "orcid_candidates": [
     {
@@ -7623,7 +7539,7 @@
   },
   "erik-roelofs": {
    "name": "Erik Roelofs",
-   "checked_at": "2026-11-16",
+   "checked_at": "2026-11-23",
    "known_coauthors": [],
    "orcid_candidates": [
     {
@@ -7670,7 +7586,7 @@
   },
   "esther-bloemen": {
    "name": "Esther Bloemen",
-   "checked_at": "2026-11-16",
+   "checked_at": "2026-11-23",
    "known_coauthors": [],
    "orcid_candidates": [],
    "scholar_candidates": [],
@@ -7689,7 +7605,7 @@
   },
   "francesco-cellini": {
    "name": "Francesco Cellini",
-   "checked_at": "2026-11-16",
+   "checked_at": "2026-11-23",
    "known_coauthors": [],
    "orcid_candidates": [
     {
@@ -7733,7 +7649,7 @@
   },
   "frank-dankers": {
    "name": "Frank Dankers",
-   "checked_at": "2026-11-16",
+   "checked_at": "2026-11-23",
    "known_coauthors": [],
    "orcid_candidates": [
     {
@@ -7766,7 +7682,7 @@
   },
   "gabrielle-edgecombe": {
    "name": "Gabrielle Edgecombe",
-   "checked_at": "2026-11-16",
+   "checked_at": "2026-11-23",
    "known_coauthors": [],
    "orcid_candidates": [],
    "scholar_candidates": [],
@@ -7785,7 +7701,7 @@
   },
   "geetha-mahadevaiah": {
    "name": "Geetha Mahadevaiah",
-   "checked_at": "2026-11-16",
+   "checked_at": "2026-11-23",
    "known_coauthors": [],
    "orcid_candidates": [
     {
@@ -7821,7 +7737,7 @@
   },
   "gijs-frenken": {
    "name": "Gijs Frenken",
-   "checked_at": "2026-11-16",
+   "checked_at": "2026-11-23",
    "known_coauthors": [],
    "orcid_candidates": [],
    "scholar_candidates": [],
@@ -7840,7 +7756,7 @@
   },
   "glauco-lorenzut": {
    "name": "Glauco Lorenzut",
-   "checked_at": "2026-11-16",
+   "checked_at": "2026-11-23",
    "known_coauthors": [],
    "orcid_candidates": [],
    "scholar_candidates": [],
@@ -7859,7 +7775,7 @@
   },
   "gokul-jayakumar": {
    "name": "Gokul Jayakumar",
-   "checked_at": "2026-11-16",
+   "checked_at": "2026-11-23",
    "known_coauthors": [],
    "orcid_candidates": [
     {
@@ -7916,7 +7832,7 @@
   },
   "haiming-li": {
    "name": "Haiming Li",
-   "checked_at": "2026-11-16",
+   "checked_at": "2026-11-23",
    "known_coauthors": [],
    "orcid_candidates": [
     {
@@ -7992,7 +7908,7 @@
   },
   "inigo-bermejo-delgado": {
    "name": "Inigo Bermejo Delgado",
-   "checked_at": "2026-11-16",
+   "checked_at": "2026-11-23",
    "known_coauthors": [],
    "orcid_candidates": [],
    "scholar_candidates": [],
@@ -8011,7 +7927,7 @@
   },
   "jan-super": {
    "name": "Jan Super",
-   "checked_at": "2026-11-16",
+   "checked_at": "2026-11-23",
    "known_coauthors": [],
    "orcid_candidates": [],
    "scholar_candidates": [],
@@ -8030,7 +7946,7 @@
   },
   "jasper-snel": {
    "name": "Jasper Snel",
-   "checked_at": "2026-11-16",
+   "checked_at": "2026-11-23",
    "known_coauthors": [],
    "orcid_candidates": [],
    "scholar_candidates": [],
@@ -8049,7 +7965,7 @@
   },
   "jim-bemelen": {
    "name": "Jim Bemelen",
-   "checked_at": "2026-11-16",
+   "checked_at": "2026-11-23",
    "known_coauthors": [],
    "orcid_candidates": [],
    "scholar_candidates": [],
@@ -8068,7 +7984,7 @@
   },
   "jing-jing-you": {
    "name": "Jing Jing You",
-   "checked_at": "2026-11-16",
+   "checked_at": "2026-11-23",
    "known_coauthors": [],
    "orcid_candidates": [
     {
@@ -8144,7 +8060,7 @@
   },
   "johannes-petermann": {
    "name": "Johannes Petermann",
-   "checked_at": "2026-11-16",
+   "checked_at": "2026-11-23",
    "known_coauthors": [],
    "orcid_candidates": [],
    "scholar_candidates": [],
@@ -8163,7 +8079,7 @@
   },
   "julian-posch": {
    "name": "Julian Posch",
-   "checked_at": "2026-11-16",
+   "checked_at": "2026-11-23",
    "known_coauthors": [],
    "orcid_candidates": [
     {
@@ -8217,7 +8133,7 @@
   },
   "junhua-chen": {
    "name": "Junhua Chen",
-   "checked_at": "2026-11-16",
+   "checked_at": "2026-11-23",
    "known_coauthors": [],
    "orcid_candidates": [
     {
@@ -8296,7 +8212,7 @@
   },
   "lerau-seyben": {
    "name": "Lerau Seyben",
-   "checked_at": "2026-11-16",
+   "checked_at": "2026-11-23",
    "known_coauthors": [],
    "orcid_candidates": [
     {
@@ -8327,7 +8243,7 @@
   },
   "lotte-schyns": {
    "name": "Lotte Schyns",
-   "checked_at": "2026-11-16",
+   "checked_at": "2026-11-23",
    "known_coauthors": [],
    "orcid_candidates": [],
    "scholar_candidates": [],
@@ -8346,7 +8262,7 @@
   },
   "luca-pamboer": {
    "name": "Luca Pamboer",
-   "checked_at": "2026-11-16",
+   "checked_at": "2026-11-23",
    "known_coauthors": [],
    "orcid_candidates": [],
    "scholar_candidates": [],
@@ -8365,7 +8281,7 @@
   },
   "maija-utriainen": {
    "name": "Maija Utriainen",
-   "checked_at": "2026-11-16",
+   "checked_at": "2026-11-23",
    "known_coauthors": [],
    "orcid_candidates": [],
    "scholar_candidates": [],
@@ -8384,10 +8300,10 @@
   },
   "manon-cloots": {
    "name": "Manon Cloots",
-   "checked_at": "2026-11-16",
+   "checked_at": "2026-11-23",
    "known_coauthors": [
-    "rianne-fijten",
     "andre-dekker",
+    "rianne-fijten",
     "yomi-okegunna",
     "simone-mingels"
    ],
@@ -8411,12 +8327,10 @@
     }
    ],
    "scholar_candidates": [],
-   "errors": [
-    "Scholar search deferred: search budget reached or no search key configured"
-   ],
-   "complete": false,
+   "errors": [],
+   "complete": true,
    "orcid_decision": "insufficient_evidence",
-   "scholar_decision": "deferred",
+   "scholar_decision": "not_found",
    "status": "no_new_confirmed_profile",
    "identifiers": {
     "orcid": null,
@@ -8426,7 +8340,7 @@
   },
   "marie-picquet": {
    "name": "Marie Picquet",
-   "checked_at": "2026-11-16",
+   "checked_at": "2026-11-23",
    "known_coauthors": [],
    "orcid_candidates": [],
    "scholar_candidates": [],
@@ -8445,19 +8359,17 @@
   },
   "martijn-nobel": {
    "name": "Martijn Nobel",
-   "checked_at": "2026-11-16",
+   "checked_at": "2026-11-23",
    "known_coauthors": [
     "sander-puts",
     "andre-dekker"
    ],
    "orcid_candidates": [],
    "scholar_candidates": [],
-   "errors": [
-    "Scholar search deferred: search budget reached or no search key configured"
-   ],
-   "complete": false,
+   "errors": [],
+   "complete": true,
    "orcid_decision": "not_found",
-   "scholar_decision": "deferred",
+   "scholar_decision": "not_found",
    "status": "no_new_confirmed_profile",
    "identifiers": {
     "orcid": null,
@@ -8467,7 +8379,7 @@
   },
   "michel-saleh": {
    "name": "Michel Saleh",
-   "checked_at": "2026-11-16",
+   "checked_at": "2026-11-23",
    "known_coauthors": [],
    "orcid_candidates": [],
    "scholar_candidates": [],
@@ -8486,7 +8398,7 @@
   },
   "miriam-babukhian": {
    "name": "Miriam Babukhian",
-   "checked_at": "2026-11-16",
+   "checked_at": "2026-11-23",
    "known_coauthors": [],
    "orcid_candidates": [
     {
@@ -8520,7 +8432,7 @@
   },
   "naziha-el-aissati": {
    "name": "Naziha el Aissati",
-   "checked_at": "2026-11-16",
+   "checked_at": "2026-11-23",
    "known_coauthors": [],
    "orcid_candidates": [],
    "scholar_candidates": [],
@@ -8539,7 +8451,7 @@
   },
   "nibin-moni-george": {
    "name": "Nibin Moni George",
-   "checked_at": "2026-11-16",
+   "checked_at": "2026-11-23",
    "known_coauthors": [],
    "orcid_candidates": [
     {
@@ -8570,7 +8482,7 @@
   },
   "ravindra-patil": {
    "name": "Ravindra Patil",
-   "checked_at": "2026-11-16",
+   "checked_at": "2026-11-23",
    "known_coauthors": [],
    "orcid_candidates": [
     {
@@ -8650,7 +8562,7 @@
   },
   "sanchi-bhalla": {
    "name": "Sanchi Bhalla",
-   "checked_at": "2026-11-16",
+   "checked_at": "2026-11-23",
    "known_coauthors": [],
    "orcid_candidates": [],
    "scholar_candidates": [],
@@ -8669,7 +8581,7 @@
   },
   "seok-ho-lee": {
    "name": "Seok Ho Lee",
-   "checked_at": "2026-11-16",
+   "checked_at": "2026-11-23",
    "known_coauthors": [],
    "orcid_candidates": [
     {
@@ -8749,7 +8661,7 @@
   },
   "shashank-chakravarthy": {
    "name": "Shashank Chakravarthy",
-   "checked_at": "2026-11-16",
+   "checked_at": "2026-11-23",
    "known_coauthors": [],
    "orcid_candidates": [
     {
@@ -8783,7 +8695,7 @@
   },
   "siva-teja-kakileti": {
    "name": "Siva Teja Kakileti",
-   "checked_at": "2026-11-16",
+   "checked_at": "2026-11-23",
    "known_coauthors": [],
    "orcid_candidates": [
     {
@@ -8819,7 +8731,7 @@
   },
   "sneha-nair": {
    "name": "Sneha Nair",
-   "checked_at": "2026-11-16",
+   "checked_at": "2026-11-23",
    "known_coauthors": [],
    "orcid_candidates": [
     {
@@ -8898,7 +8810,7 @@
   },
   "sonia-potalivo": {
    "name": "Sonia Potalivo",
-   "checked_at": "2026-11-16",
+   "checked_at": "2026-11-23",
    "known_coauthors": [],
    "orcid_candidates": [],
    "scholar_candidates": [],
@@ -8917,7 +8829,7 @@
   },
   "steven-petit": {
    "name": "Steven Petit",
-   "checked_at": "2026-11-16",
+   "checked_at": "2026-11-23",
    "known_coauthors": [],
    "orcid_candidates": [
     {
@@ -8959,7 +8871,7 @@
   },
   "swapneel-datta": {
    "name": "Swapneel Datta",
-   "checked_at": "2026-11-16",
+   "checked_at": "2026-11-23",
    "known_coauthors": [],
    "orcid_candidates": [],
    "scholar_candidates": [],
@@ -8978,7 +8890,7 @@
   },
   "thuyila-robinson": {
    "name": "Thuyila Robinson",
-   "checked_at": "2026-11-16",
+   "checked_at": "2026-11-23",
    "known_coauthors": [],
    "orcid_candidates": [],
    "scholar_candidates": [],
@@ -8997,7 +8909,7 @@
   },
   "tim-lustberg": {
    "name": "Tim Lustberg",
-   "checked_at": "2026-11-16",
+   "checked_at": "2026-11-23",
    "known_coauthors": [],
    "orcid_candidates": [
     {
@@ -9028,7 +8940,7 @@
   },
   "timo-deist": {
    "name": "Timo Deist",
-   "checked_at": "2026-11-16",
+   "checked_at": "2026-11-23",
    "known_coauthors": [],
    "orcid_candidates": [
     {
@@ -9059,7 +8971,7 @@
   },
   "tom-sinsel": {
    "name": "Tom Sinsel",
-   "checked_at": "2026-11-16",
+   "checked_at": "2026-11-23",
    "known_coauthors": [],
    "orcid_candidates": [],
    "scholar_candidates": [],
@@ -9078,7 +8990,7 @@
   },
   "tutku-kilicaslan": {
    "name": "Tutku Kılıçaslan",
-   "checked_at": "2026-11-16",
+   "checked_at": "2026-11-23",
    "known_coauthors": [],
    "orcid_candidates": [],
    "scholar_candidates": [],
@@ -9097,7 +9009,7 @@
   },
   "valerie-van-nielen": {
    "name": "Valerie van Nielen",
-   "checked_at": "2026-11-16",
+   "checked_at": "2026-11-23",
    "known_coauthors": [],
    "orcid_candidates": [],
    "scholar_candidates": [],
@@ -9116,7 +9028,7 @@
   },
   "vincenzo-forte": {
    "name": "Vincenzo Forte",
-   "checked_at": "2026-11-16",
+   "checked_at": "2026-11-23",
    "known_coauthors": [],
    "orcid_candidates": [
     {
@@ -9159,17 +9071,34 @@
     "scholar_id": null
    },
    "verified_evidence": {}
+  },
+  "alexandra-afanasiuc": {
+   "name": "Alexandra Afanasiuc",
+   "checked_at": "2026-11-23",
+   "known_coauthors": [],
+   "orcid_candidates": [],
+   "scholar_candidates": [],
+   "errors": [],
+   "complete": true,
+   "orcid_decision": "not_found",
+   "scholar_decision": "not_found",
+   "status": "no_new_confirmed_profile",
+   "identifiers": {
+    "orcid": null,
+    "scholar_id": null
+   },
+   "verified_evidence": {}
   }
  },
  "accepted_orcids": 0,
- "accepted_scholar": 0,
- "searches_used": 0,
- "search_budget": 0,
+ "accepted_scholar": 3,
+ "searches_used": 30,
+ "search_budget": 30,
  "coverage": {
-  "tracked_people": 90,
-  "verified_orcid_profiles": 53,
-  "scholar_profiles": 18,
-  "discovered_orcids": 35,
-  "discovered_scholar_profiles": 9
+  "tracked_people": 91,
+  "verified_orcid_profiles": 54,
+  "scholar_profiles": 21,
+  "discovered_orcids": 36,
+  "discovered_scholar_profiles": 12
  }
 }

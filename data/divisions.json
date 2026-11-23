@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-20T14:41:46+00:00",
+ "generated": "2026-11-23T16:52:49+00:00",
  "since_year": 2024,
  "keywords": [
   "maastro",
@@ -331,6 +331,78 @@
  "frequent_leader_min_papers": 2,
  "works": [
   {
+   "id": "W7237049908",
+   "doi": "https://doi.org/10.48550/arxiv.2611.25260",
+   "title": "Towards consensus on practical probabilistic evaluation metrics for clinical decision making in radiotherapy",
+   "publication_date": "2026-11-18",
+   "year": 2026,
+   "type": "preprint",
+   "journal": "arXiv (Cornell University)",
+   "cited_by_count": 0,
+   "is_oa": true,
+   "author_count": 17,
+   "first_author": "Jenneke I. de Jong",
+   "last_author": "Mischa S. Hoogeman",
+   "last_author_home": false,
+   "maastro": true,
+   "divisions": [],
+   "leaders": {}
+  },
+  {
+   "id": "W7235518533",
+   "doi": "https://doi.org/10.1016/j.annonc.2026.08.240",
+   "title": "233P Pre-planning prediction of teeth at risk of high-dose exposure in head and neck cancer radiotherapy",
+   "publication_date": "2026-11-17",
+   "year": 2026,
+   "type": "conference-abstract",
+   "journal": "Annals of Oncology",
+   "cited_by_count": 1,
+   "is_oa": false,
+   "author_count": 5,
+   "first_author": "J. Zhou",
+   "last_author": "D. Buurman",
+   "last_author_home": false,
+   "maastro": true,
+   "divisions": [],
+   "leaders": {}
+  },
+  {
+   "id": "W7234785374",
+   "doi": "https://doi.org/10.1016/j.annonc.2026.08.241",
+   "title": "234P Pretreatment prediction of radiation proctitis using a multimodal fusion transformer (MFT): Multicenter development and prospective validation",
+   "publication_date": "2026-11-17",
+   "year": 2026,
+   "type": "conference-abstract",
+   "journal": "Annals of Oncology",
+   "cited_by_count": 0,
+   "is_oa": false,
+   "author_count": 9,
+   "first_author": "M. Zhou",
+   "last_author": "J.W. Zhu",
+   "last_author_home": false,
+   "maastro": true,
+   "divisions": [],
+   "leaders": {}
+  },
+  {
+   "id": "W7234967809",
+   "doi": "https://doi.org/10.1016/j.annonc.2026.08.3174",
+   "title": "2915P Tumour-infiltrating lymphocytes are associated with tumour-negative lymph node microarchitecture in resectable oesophageal cancer: Translational analysis of the MRC OE02 trial",
+   "publication_date": "2026-11-17",
+   "year": 2026,
+   "type": "conference-abstract",
+   "journal": "Annals of Oncology",
+   "cited_by_count": 0,
+   "is_oa": true,
+   "author_count": 13,
+   "first_author": "M. Kloft",
+   "last_author": "H.I. Grabsch",
+   "last_author_home": false,
+   "maastro": true,
+   "divisions": [],
+   "leaders": {}
+  },
+  {
    "id": "W7235368459",
    "doi": "https://doi.org/10.5281/zenodo.24316750",
    "title": "Participatieve en theoretische ontwikkeling van samen beslisseninterventies in de radiotherapie",
@@ -374,6 +446,51 @@
    "maastro": true,
    "divisions": [],
    "leaders": {}
+  },
+  {
+   "id": "W7225995581",
+   "doi": "https://doi.org/10.1016/j.radonc.2026.111869",
+   "title": "Navigating treatment for De novo oligometastatic breast cancer: The Assisi think tank meeting",
+   "publication_date": "2026-11-14",
+   "year": 2026,
+   "type": "review",
+   "journal": "Radiotherapy and Oncology",
+   "cited_by_count": 0,
+   "is_oa": true,
+   "author_count": 16,
+   "first_author": "Francesca De Felice",
+   "last_author": "Orit Kaidar‐Person",
+   "last_author_home": false,
+   "maastro": true,
+   "divisions": [],
+   "leaders": {}
+  },
+  {
+   "id": "W7226008573",
+   "doi": "https://doi.org/10.1093/neuonc/noag284",
+   "title": "MGMT Protein Expression and Promoter Methylation in Glioblastoma Survival: a systematic review and meta-analysis",
+   "publication_date": "2026-11-13",
+   "year": 2026,
+   "type": "article",
+   "journal": "Neuro-Oncology",
+   "cited_by_count": 0,
+   "is_oa": false,
+   "author_count": 13,
+   "first_author": "Mike van Heumen",
+   "last_author": "Marc Vooijs",
+   "last_author_home": true,
+   "maastro": true,
+   "divisions": [
+    "Laboratory Research"
+   ],
+   "leaders": {
+    "Laboratory Research": {
+     "position": "last",
+     "maastricht": true
+    }
+   },
+   "led_by": "Marc Vooijs",
+   "led_by_division": "Laboratory Research"
   },
   {
    "id": "W7225989936",
@@ -444,33 +561,6 @@
      "maastricht": true
     }
    }
-  },
-  {
-   "id": "W7226008573",
-   "doi": "https://doi.org/10.1093/neuonc/noag284",
-   "title": "MGMT Protein Expression and Promoter Methylation in Glioblastoma Survival: a systematic review and meta-analysis",
-   "publication_date": "2026-11-12",
-   "year": 2026,
-   "type": "article",
-   "journal": "Neuro-Oncology",
-   "cited_by_count": 0,
-   "is_oa": false,
-   "author_count": 13,
-   "first_author": "Mike van Heumen",
-   "last_author": "Marc Vooijs",
-   "last_author_home": true,
-   "maastro": true,
-   "divisions": [
-    "Laboratory Research"
-   ],
-   "leaders": {
-    "Laboratory Research": {
-     "position": "last",
-     "maastricht": true
-    }
-   },
-   "led_by": "Marc Vooijs",
-   "led_by_division": "Laboratory Research"
   },
   {
    "id": "W7225773381",
@@ -553,6 +643,31 @@
    "leaders": {}
   },
   {
+   "id": "W7225340213",
+   "doi": "https://doi.org/10.1093/ehjdh/ztag176",
+   "title": "Artificial Intelligence-Assisted Semi-automated Personal Health Data Curation and Reuse for Myocardial Infarction",
+   "publication_date": "2026-11-05",
+   "year": 2026,
+   "type": "article",
+   "journal": "European Heart Journal - Digital Health",
+   "cited_by_count": 0,
+   "is_oa": true,
+   "author_count": 44,
+   "first_author": "Wenjie Liang",
+   "last_author": "Zsolt Máté",
+   "last_author_home": false,
+   "maastro": true,
+   "divisions": [
+    "Clinical Data Science"
+   ],
+   "leaders": {
+    "Clinical Data Science": {
+     "position": "middle",
+     "maastricht": true
+    }
+   }
+  },
+  {
    "id": "W7225249094",
    "doi": "https://doi.org/10.1007/s13629-026-00518-3",
    "title": "Trends in het real-worldgebruik van PSMA PET-stadiëring bij gemetastaseerd hormoongevoelig prostaatkanker: resultaten van het CAPRI-3-register",
@@ -590,31 +705,6 @@
    ],
    "leaders": {
     "Clinical Research": {
-     "position": "middle",
-     "maastricht": true
-    }
-   }
-  },
-  {
-   "id": "W7225340213",
-   "doi": "https://doi.org/10.1093/ehjdh/ztag176",
-   "title": "Artificial Intelligence-Assisted Semi-automated Personal Health Data Curation and Reuse for Myocardial Infarction",
-   "publication_date": "2026-11-03",
-   "year": 2026,
-   "type": "article",
-   "journal": "European Heart Journal - Digital Health",
-   "cited_by_count": 0,
-   "is_oa": true,
-   "author_count": 44,
-   "first_author": "Wenjie Liang",
-   "last_author": "Zsolt Máté",
-   "last_author_home": false,
-   "maastro": true,
-   "divisions": [
-    "Clinical Data Science"
-   ],
-   "leaders": {
-    "Clinical Data Science": {
      "position": "middle",
      "maastricht": true
     }
@@ -758,24 +848,6 @@
    "author_count": 5,
    "first_author": "Marta Missiaggia",
    "last_author": "Chiara La Tessa",
-   "last_author_home": false,
-   "maastro": true,
-   "divisions": [],
-   "leaders": {}
-  },
-  {
-   "id": "W7225995581",
-   "doi": "https://doi.org/10.1016/j.radonc.2026.111869",
-   "title": "Navigating treatment for De novo oligometastatic breast cancer: The Assisi think tank meeting",
-   "publication_date": "2026-11-01",
-   "year": 2026,
-   "type": "review",
-   "journal": "Radiotherapy and Oncology",
-   "cited_by_count": 0,
-   "is_oa": true,
-   "author_count": 16,
-   "first_author": "Francesca De Felice",
-   "last_author": "Orit Kaidar‐Person",
    "last_author_home": false,
    "maastro": true,
    "divisions": [],
@@ -974,6 +1046,24 @@
    "author_count": 22,
    "first_author": "F.E.C. Vande Kerckhove",
    "last_author": "Heike M. U. Peulen",
+   "last_author_home": false,
+   "maastro": true,
+   "divisions": [],
+   "leaders": {}
+  },
+  {
+   "id": "W7155037194",
+   "doi": "https://doi.org/10.1093/eurheartj/ehag338",
+   "title": "Stereotactic arrhythmia radioablation for refractory ventricular tachycardia: the STOPSTORM.eu study",
+   "publication_date": "2026-10-14",
+   "year": 2026,
+   "type": "article",
+   "journal": "European Heart Journal",
+   "cited_by_count": 15,
+   "is_oa": true,
+   "author_count": 84,
+   "first_author": "Luuk H.G. van der Pol",
+   "last_author": "Martin F. Fast",
    "last_author_home": false,
    "maastro": true,
    "divisions": [],
@@ -1256,7 +1346,7 @@
    "year": 2026,
    "type": "article",
    "journal": "Radiotherapy and Oncology",
-   "cited_by_count": 0,
+   "cited_by_count": 1,
    "is_oa": false,
    "author_count": 4,
    "first_author": "Orit Kaidar‐Person",
@@ -1269,7 +1359,7 @@
   {
    "id": "W7225110994",
    "doi": "https://doi.org/10.21037/med-26-ab023",
-   "title": "AB023. Innovation to maximize insight gained—education committee approach to better clinical decisions",
+   "title": "Innovation to maximize insight gained—education committee approach to better clinical decisions",
    "publication_date": "2026-10-01",
    "year": 2026,
    "type": "conference-abstract",
@@ -1287,7 +1377,7 @@
   {
    "id": "W7225089561",
    "doi": "https://doi.org/10.21037/med-26-ab025",
-   "title": "AB025. Deep learning model predicts recurrence in thymic epithelial tumours: a multicentre study",
+   "title": "Deep learning model predicts recurrence in thymic epithelial tumours: a multicentre study",
    "publication_date": "2026-10-01",
    "year": 2026,
    "type": "conference-abstract",
@@ -1313,7 +1403,7 @@
   {
    "id": "W7225083173",
    "doi": "https://doi.org/10.21037/med-26-ab024",
-   "title": "AB024. Mixed histology is a prognostic factor for recurrence in completely resected thymic epithelial tumours: a multicentre retrospective study",
+   "title": "Mixed histology is a prognostic factor for recurrence in completely resected thymic epithelial tumours: a multicentre retrospective study",
    "publication_date": "2026-10-01",
    "year": 2026,
    "type": "conference-abstract",
@@ -1490,7 +1580,7 @@
    "id": "W7214362475",
    "doi": "https://doi.org/10.1007/978-3-032-38062-3_6",
    "title": "Beyond Clean Test Sets: Spurious Correlations in Medical Vision-Language Models and the Role of Concept Supervision",
-   "publication_date": "2026-09-25",
+   "publication_date": "2026-09-26",
    "year": 2026,
    "type": "conference-paper",
    "journal": "Lecture notes in computer science",
@@ -1515,7 +1605,7 @@
    "id": "W7162437902",
    "doi": "https://doi.org/10.1007/978-3-032-38189-7_44",
    "title": "SAFE-Diff: Scale-Aware Attention and Feature-Dispersive Diffusion with Uncertainty Estimation for Contrast-Enhanced Breast MRI Synthesis",
-   "publication_date": "2026-09-24",
+   "publication_date": "2026-09-25",
    "year": 2026,
    "type": "conference-paper",
    "journal": "Lecture notes in computer science",
@@ -2046,24 +2136,6 @@
    "led_by": "Ilaria Rinaldi"
   },
   {
-   "id": "W7213286782",
-   "doi": "https://doi.org/10.1016/j.ijpt.2026.101677",
-   "title": "PROTON THERAPY DURING PREGNANCY – EXPERIMENTAL EVALUATION OF PREGDOS, AN OPEN-SOURCE MONTE CARLO TOOL FOR FETAL DOSE ASSESSMENT FROM CLINICAL PLANS",
-   "publication_date": "2026-09-01",
-   "year": 2026,
-   "type": "article",
-   "journal": "International Journal of Particle Therapy",
-   "cited_by_count": 0,
-   "is_oa": true,
-   "author_count": 8,
-   "first_author": "Marijke De Saint‐Hubert",
-   "last_author": "Niels Bassler",
-   "last_author_home": false,
-   "maastro": true,
-   "divisions": [],
-   "leaders": {}
-  },
-  {
    "id": "W7213265062",
    "doi": "https://doi.org/10.1016/j.ijpt.2026.101910",
    "title": "ENHANCING RADIOBIOLOGICAL DAMAGE PREDICTION AND UNDERSTANDING: A NANO AND MICRODOSIMETRY-INFORMED AI MODEL WITH ATTENTION MECHANISM",
@@ -2123,6 +2195,24 @@
      "maastricht": true
     }
    }
+  },
+  {
+   "id": "W7213286782",
+   "doi": "https://doi.org/10.1016/j.ijpt.2026.101677",
+   "title": "PROTON THERAPY DURING PREGNANCY – EXPERIMENTAL EVALUATION OF PREGDOS, AN OPEN-SOURCE MONTE CARLO TOOL FOR FETAL DOSE ASSESSMENT FROM CLINICAL PLANS",
+   "publication_date": "2026-09-01",
+   "year": 2026,
+   "type": "article",
+   "journal": "International Journal of Particle Therapy",
+   "cited_by_count": 0,
+   "is_oa": true,
+   "author_count": 8,
+   "first_author": "Marijke De Saint‐Hubert",
+   "last_author": "Niels Bassler",
+   "last_author_home": false,
+   "maastro": true,
+   "divisions": [],
+   "leaders": {}
   },
   {
    "id": "W7214287503",
@@ -2271,7 +2361,7 @@
   {
    "id": "W7203870218",
    "doi": "https://doi.org/10.1093/dote/doag077.013",
-   "title": "OA02.1. Radiation-Induced Lymphopenia During Neoadjuvant Chemoradiotherapy as Predictive Biomarker for Nivolumab Benefit in Esophageal Cancer",
+   "title": "Radiation-Induced Lymphopenia During Neoadjuvant Chemoradiotherapy as Predictive Biomarker for Nivolumab Benefit in Esophageal Cancer",
    "publication_date": "2026-08-22",
    "year": 2026,
    "type": "conference-abstract",
@@ -2285,6 +2375,25 @@
    "maastro": true,
    "divisions": [],
    "leaders": {}
+  },
+  {
+   "id": "W7203840104",
+   "doi": "https://doi.org/10.1093/neuonc/noag194",
+   "title": "ESTRO, ESNR, and EORTC consensus-based definition for MRI abnormalities after radiotherapy for intracranial central nervous system tumors",
+   "publication_date": "2026-08-20",
+   "year": 2026,
+   "type": "article",
+   "journal": "Neuro-Oncology",
+   "cited_by_count": 3,
+   "is_oa": true,
+   "author_count": 49,
+   "first_author": "Lieselotte Lauwens",
+   "last_author": "Daniëlle B. P. Eekers",
+   "last_author_home": true,
+   "maastro": true,
+   "divisions": [],
+   "leaders": {},
+   "led_by": "Daniëlle B. P. Eekers"
   },
   {
    "id": "W7203825133",
@@ -2338,23 +2447,24 @@
    "led_by": "Lizza E.L. Hendriks"
   },
   {
-   "id": "W7203840104",
-   "doi": "https://doi.org/10.1093/neuonc/noag194",
-   "title": "ESTRO, ESNR, and EORTC consensus-based definition for MRI abnormalities after radiotherapy for intracranial central nervous system tumors",
+   "id": "W7203783252",
+   "doi": "https://doi.org/10.1093/jamia/ocag117",
+   "title": "SMART: structured, meaningful, auditable, responsible, and transparent documentation for clinical AI",
    "publication_date": "2026-08-19",
    "year": 2026,
    "type": "article",
-   "journal": "Neuro-Oncology",
-   "cited_by_count": 3,
+   "journal": "Journal of the American Medical Informatics Association",
+   "cited_by_count": 2,
    "is_oa": true,
-   "author_count": 49,
-   "first_author": "Lieselotte Lauwens",
-   "last_author": "Daniëlle B. P. Eekers",
-   "last_author_home": true,
+   "author_count": 6,
+   "first_author": "Ankur Lohachab",
+   "last_author": "Visara Urovi",
+   "last_author_home": false,
    "maastro": true,
-   "divisions": [],
-   "leaders": {},
-   "led_by": "Daniëlle B. P. Eekers"
+   "divisions": [
+    "Clinical Data Science"
+   ],
+   "leaders": {}
   },
   {
    "id": "W7203733508",
@@ -2492,28 +2602,10 @@
    "leaders": {}
   },
   {
-   "id": "W7196928265",
-   "doi": "https://doi.org/10.1016/j.radonc.2026.111721",
-   "title": "Understanding retention in radiation oncology: quantitative findings from the retention survey by the ESTRO Early Career Committee",
-   "publication_date": "2026-08-06",
-   "year": 2026,
-   "type": "article",
-   "journal": "Radiotherapy and Oncology",
-   "cited_by_count": 1,
-   "is_oa": true,
-   "author_count": 15,
-   "first_author": "Dylan Callens",
-   "last_author": "Azadeh Abravan",
-   "last_author_home": false,
-   "maastro": true,
-   "divisions": [],
-   "leaders": {}
-  },
-  {
    "id": "W7197025646",
    "doi": "https://doi.org/10.1515/cclm-2026-0949",
    "title": "Unified definition of integrated diagnostics: a position statement of the EFLM",
-   "publication_date": "2026-08-06",
+   "publication_date": "2026-08-07",
    "year": 2026,
    "type": "article",
    "journal": "Clinical Chemistry and Laboratory Medicine (CCLM)",
@@ -2533,6 +2625,24 @@
      "maastricht": true
     }
    }
+  },
+  {
+   "id": "W7196928265",
+   "doi": "https://doi.org/10.1016/j.radonc.2026.111721",
+   "title": "Understanding retention in radiation oncology: quantitative findings from the retention survey by the ESTRO Early Career Committee",
+   "publication_date": "2026-08-06",
+   "year": 2026,
+   "type": "article",
+   "journal": "Radiotherapy and Oncology",
+   "cited_by_count": 1,
+   "is_oa": true,
+   "author_count": 15,
+   "first_author": "Dylan Callens",
+   "last_author": "Azadeh Abravan",
+   "last_author_home": false,
+   "maastro": true,
+   "divisions": [],
+   "leaders": {}
   },
   {
    "id": "W7172541175",
@@ -3063,7 +3173,7 @@
    "year": 2026,
    "type": "article",
    "journal": "European Urology Oncology",
-   "cited_by_count": 1,
+   "cited_by_count": 2,
    "is_oa": true,
    "author_count": 19,
    "first_author": "Joyce Greidanus",
@@ -3109,7 +3219,7 @@
    "year": 2026,
    "type": "article",
    "journal": "The Lancet Oncology",
-   "cited_by_count": 1,
+   "cited_by_count": 2,
    "is_oa": false,
    "author_count": 16,
    "first_author": "Annefleur J W Mauritz",
@@ -3283,26 +3393,6 @@
    "leaders": {}
   },
   {
-   "id": "W7203783252",
-   "doi": "https://doi.org/10.1093/jamia/ocag117",
-   "title": "SMART: structured, meaningful, auditable, responsible, and transparent documentation for clinical AI",
-   "publication_date": "2026-06-22",
-   "year": 2026,
-   "type": "article",
-   "journal": "Journal of the American Medical Informatics Association",
-   "cited_by_count": 2,
-   "is_oa": true,
-   "author_count": 6,
-   "first_author": "Ankur Lohachab",
-   "last_author": "Visara Urovi",
-   "last_author_home": false,
-   "maastro": true,
-   "divisions": [
-    "Clinical Data Science"
-   ],
-   "leaders": {}
-  },
-  {
    "id": "W7165163916",
    "doi": "https://doi.org/10.1016/j.ejro.2026.100780",
    "title": "From resistance to reliance: A human-centered analysis of the spectrum of radiologists' trust in AI",
@@ -3441,7 +3531,7 @@
    "is_oa": true,
    "author_count": 40,
    "first_author": "Mariona Oliver",
-   "last_author": "Marchetti-Deschmann Martina",
+   "last_author": "Martina Marchetti Deschmann",
    "last_author_home": false,
    "maastro": true,
    "divisions": [
@@ -3587,10 +3677,10 @@
    "year": 2026,
    "type": "article",
    "journal": "iScience",
-   "cited_by_count": 1,
+   "cited_by_count": 2,
    "is_oa": true,
    "author_count": 20,
-   "first_author": "Han Wang (254423)",
+   "first_author": "Han Wang",
    "last_author": "Chunjie Tian",
    "last_author_home": false,
    "maastro": true,
@@ -3689,7 +3779,7 @@
    "year": 2026,
    "type": "book-chapter",
    "journal": "Studies in health technology and informatics",
-   "cited_by_count": 1,
+   "cited_by_count": 2,
    "is_oa": true,
    "author_count": 10,
    "first_author": "J Zhang",
@@ -3752,7 +3842,7 @@
    "year": 2026,
    "type": "article",
    "journal": "The Lancet Oncology",
-   "cited_by_count": 9,
+   "cited_by_count": 10,
    "is_oa": false,
    "author_count": 28,
    "first_author": "Shankar Siva",
@@ -3841,7 +3931,7 @@
    "year": 2026,
    "type": "review",
    "journal": "Radiotherapy and Oncology",
-   "cited_by_count": 6,
+   "cited_by_count": 7,
    "is_oa": true,
    "author_count": 8,
    "first_author": "Esther Decabooter",
@@ -4269,7 +4359,7 @@
    "year": 2026,
    "type": "article",
    "journal": "The Lancet Oncology",
-   "cited_by_count": 9,
+   "cited_by_count": 10,
    "is_oa": true,
    "author_count": 38,
    "first_author": "Joachim Widder",
@@ -4312,6 +4402,24 @@
    }
   },
   {
+   "id": "W7236543735",
+   "doi": null,
+   "title": "Conformalized Survival Counterfactuals Prediction for General Right-Censored Data",
+   "publication_date": "2026-04-20",
+   "year": 2026,
+   "type": "conference-paper",
+   "journal": "International Conference on Learning Representations",
+   "cited_by_count": 0,
+   "is_oa": true,
+   "author_count": 5,
+   "first_author": "Sijie Ren",
+   "last_author": "Xinwei Sun",
+   "last_author_home": false,
+   "maastro": true,
+   "divisions": [],
+   "leaders": {}
+  },
+  {
    "id": "W7155014322",
    "doi": "https://doi.org/10.1016/j.radonc.2026.111541",
    "title": "Response to Russell et al.: Numerical correction and reaffirmation of commentary on the SUPREMO 10-year results",
@@ -4330,22 +4438,29 @@
    "leaders": {}
   },
   {
-   "id": "W7155037194",
-   "doi": "https://doi.org/10.1093/eurheartj/ehag338",
-   "title": "Stereotactic arrhythmia radioablation for refractory ventricular tachycardia: the STOPSTORM.eu study",
+   "id": "W7140271876",
+   "doi": "https://doi.org/10.1088/1361-6560/ae5757",
+   "title": "Assessing dosimetric uncertainties in Papillon+ contact x-ray brachytherapy for rectal cancer: impact of beam quality and tumour geometry",
    "publication_date": "2026-04-17",
    "year": 2026,
    "type": "article",
-   "journal": "European Heart Journal",
-   "cited_by_count": 15,
+   "journal": "Physics in Medicine and Biology",
+   "cited_by_count": 0,
    "is_oa": true,
-   "author_count": 84,
-   "first_author": "Luuk H.G. van der Pol",
-   "last_author": "Martin F. Fast",
+   "author_count": 11,
+   "first_author": "Dries Colson",
+   "last_author": "Brigitte Reniers",
    "last_author_home": false,
    "maastro": true,
-   "divisions": [],
-   "leaders": {}
+   "divisions": [
+    "Physics Research"
+   ],
+   "leaders": {
+    "Physics Research": {
+     "position": "middle",
+     "maastricht": true
+    }
+   }
   },
   {
    "id": "W7154479406",
@@ -4373,7 +4488,7 @@
    "year": 2026,
    "type": "preprint",
    "journal": "arXiv (Cornell University)",
-   "cited_by_count": 5,
+   "cited_by_count": 6,
    "is_oa": true,
    "author_count": 84,
    "first_author": "Asbjørn Munk",
@@ -4503,6 +4618,24 @@
      "maastricht": true
     }
    }
+  },
+  {
+   "id": "W7150841333",
+   "doi": "https://doi.org/10.1097/rli.0000000000001283",
+   "title": "It Is All About Energy-the Changing Role of X-ray Photons in Photon-counting Detector Computed Tomography: What the Radiologist Needs to Know About kV and keV",
+   "publication_date": "2026-04-06",
+   "year": 2026,
+   "type": "article",
+   "journal": "Investigative Radiology",
+   "cited_by_count": 3,
+   "is_oa": true,
+   "author_count": 5,
+   "first_author": "Eva J I Hoeijmakers",
+   "last_author": "Cécile R. L. P. N. Jeukens",
+   "last_author_home": true,
+   "maastro": true,
+   "divisions": [],
+   "leaders": {}
   },
   {
    "id": "W7150856255",
@@ -4787,29 +4920,31 @@
    "leaders": {}
   },
   {
-   "id": "W7140271876",
-   "doi": "https://doi.org/10.1088/1361-6560/ae5757",
-   "title": "Assessing dosimetric uncertainties in Papillon+ contact x-ray brachytherapy for rectal cancer: impact of beam quality and tumour geometry",
+   "id": "W7135078743",
+   "doi": "https://doi.org/10.1088/1361-6560/ae50c8",
+   "title": "Evaluation of proton range differences in photon-counting and dual-energy computed tomography across imaging doses and anthropomorphic phantom sizes",
    "publication_date": "2026-03-25",
    "year": 2026,
    "type": "article",
    "journal": "Physics in Medicine and Biology",
-   "cited_by_count": 0,
+   "cited_by_count": 1,
    "is_oa": true,
-   "author_count": 11,
-   "first_author": "Dries Colson",
-   "last_author": "Brigitte Reniers",
-   "last_author_home": false,
+   "author_count": 10,
+   "first_author": "Didier Lustermans",
+   "last_author": "Frank Verhaegen",
+   "last_author_home": true,
    "maastro": true,
    "divisions": [
     "Physics Research"
    ],
    "leaders": {
     "Physics Research": {
-     "position": "middle",
+     "position": "last",
      "maastricht": true
     }
-   }
+   },
+   "led_by": "Frank Verhaegen",
+   "led_by_division": "Physics Research"
   },
   {
    "id": "W7140165076",
@@ -4990,6 +5125,24 @@
    "leaders": {}
   },
   {
+   "id": "W7136037984",
+   "doi": "https://doi.org/10.1093/ejcts/ezag127",
+   "title": "A Network Meta-Analysis of Drainage Systems and Suction Strategies After Lung Cancer Surgery",
+   "publication_date": "2026-03-16",
+   "year": 2026,
+   "type": "review",
+   "journal": "European Journal of Cardio-Thoracic Surgery",
+   "cited_by_count": 0,
+   "is_oa": false,
+   "author_count": 13,
+   "first_author": "Lars Geenen",
+   "last_author": "Erik Robert de Loos",
+   "last_author_home": false,
+   "maastro": true,
+   "divisions": [],
+   "leaders": {}
+  },
+  {
    "id": "W7137082394",
    "doi": "https://doi.org/10.1186/s41747-026-00694-2",
    "title": "¹⁹F MRI radiomic features: in vitro and in vivo repeatability",
@@ -5060,6 +5213,58 @@
    }
   },
   {
+   "id": "W7128704343",
+   "doi": "https://doi.org/10.1088/1361-6560/ae456d",
+   "title": "Evaluation of radiological properties and anisotropy with air channels analysis in 3D-printed flexible lung-mimicking materials for radiotherapy",
+   "publication_date": "2026-03-13",
+   "year": 2026,
+   "type": "article",
+   "journal": "Physics in Medicine and Biology",
+   "cited_by_count": 0,
+   "is_oa": true,
+   "author_count": 7,
+   "first_author": "Roua Abdulrahim",
+   "last_author": "Gabriel Paiva Fonseca",
+   "last_author_home": true,
+   "maastro": true,
+   "divisions": [
+    "Physics Research"
+   ],
+   "leaders": {
+    "Physics Research": {
+     "position": "middle",
+     "maastricht": true
+    }
+   },
+   "led_by": "Gabriel Paiva Fonseca"
+  },
+  {
+   "id": "W7118740404",
+   "doi": "https://doi.org/10.2196/85228",
+   "title": "Understanding Clinicians’ Informational Needs for AI-Driven Clinical Decision Support Systems: Qualitative Interview Study",
+   "publication_date": "2026-03-12",
+   "year": 2026,
+   "type": "article",
+   "journal": "JMIR Medical Education",
+   "cited_by_count": 4,
+   "is_oa": true,
+   "author_count": 10,
+   "first_author": "Simone M.B. Mingels",
+   "last_author": "Rianne Fijten",
+   "last_author_home": true,
+   "maastro": true,
+   "divisions": [
+    "Clinical Data Science"
+   ],
+   "leaders": {
+    "Clinical Data Science": {
+     "position": "middle",
+     "maastricht": true
+    }
+   },
+   "led_by": "Rianne Fijten"
+  },
+  {
    "id": "W7135024226",
    "doi": "https://doi.org/10.1007/s10620-026-09750-8",
    "title": "Advancing Predictive Modeling of Inflammatory Bowel Disease (IBD) Flares: A Data-Driven Approach Using Lifestyle and Psychosocial Factors from a Remote Monitoring Platform",
@@ -5111,51 +5316,6 @@
    },
    "led_by": "Regina Beets-Tan",
    "led_by_division": "Imaging Innovation Research"
-  },
-  {
-   "id": "W7135078743",
-   "doi": "https://doi.org/10.1088/1361-6560/ae50c8",
-   "title": "Evaluation of proton range differences in photon-counting and dual-energy computed tomography across imaging doses and anthropomorphic phantom sizes",
-   "publication_date": "2026-03-11",
-   "year": 2026,
-   "type": "article",
-   "journal": "Physics in Medicine and Biology",
-   "cited_by_count": 1,
-   "is_oa": true,
-   "author_count": 10,
-   "first_author": "Didier Lustermans",
-   "last_author": "Frank Verhaegen",
-   "last_author_home": true,
-   "maastro": true,
-   "divisions": [
-    "Physics Research"
-   ],
-   "leaders": {
-    "Physics Research": {
-     "position": "last",
-     "maastricht": true
-    }
-   },
-   "led_by": "Frank Verhaegen",
-   "led_by_division": "Physics Research"
-  },
-  {
-   "id": "W7136037984",
-   "doi": "https://doi.org/10.1093/ejcts/ezag127",
-   "title": "A Network Meta-Analysis of Drainage Systems and Suction Strategies After Lung Cancer Surgery",
-   "publication_date": "2026-03-11",
-   "year": 2026,
-   "type": "review",
-   "journal": "European Journal of Cardio-Thoracic Surgery",
-   "cited_by_count": 0,
-   "is_oa": false,
-   "author_count": 13,
-   "first_author": "Lars Geenen",
-   "last_author": "Erik Robert de Loos",
-   "last_author_home": false,
-   "maastro": true,
-   "divisions": [],
-   "leaders": {}
   },
   {
    "id": "W7134914884",
@@ -5789,32 +5949,6 @@
    "led_by": "Liesbeth Jorinne Boersma"
   },
   {
-   "id": "W7128704343",
-   "doi": "https://doi.org/10.1088/1361-6560/ae456d",
-   "title": "Evaluation of radiological properties and anisotropy with air channels analysis in 3D-printed flexible lung-mimicking materials for radiotherapy",
-   "publication_date": "2026-02-12",
-   "year": 2026,
-   "type": "article",
-   "journal": "Physics in Medicine and Biology",
-   "cited_by_count": 0,
-   "is_oa": true,
-   "author_count": 7,
-   "first_author": "Roua Abdulrahim",
-   "last_author": "Gabriel Paiva Fonseca",
-   "last_author_home": true,
-   "maastro": true,
-   "divisions": [
-    "Physics Research"
-   ],
-   "leaders": {
-    "Physics Research": {
-     "position": "middle",
-     "maastricht": true
-    }
-   },
-   "led_by": "Gabriel Paiva Fonseca"
-  },
-  {
    "id": "W7128441089",
    "doi": "https://doi.org/10.1371/journal.pone.0342337",
    "title": "Study protocol for a multicenter phase II prospective externally controlled non-inferiority trial of hypofractionated re-irradiation in patients with recurrent high-grade glioma (RISinG)",
@@ -5858,7 +5992,7 @@
    "year": 2026,
    "type": "article",
    "journal": "Radiotherapy and Oncology",
-   "cited_by_count": 2,
+   "cited_by_count": 3,
    "is_oa": true,
    "author_count": 7,
    "first_author": "Rianne de Jong",
@@ -5867,6 +6001,39 @@
    "maastro": true,
    "divisions": [],
    "leaders": {}
+  },
+  {
+   "id": "W4416805570",
+   "doi": "https://doi.org/10.1088/1361-6560/ae25b2",
+   "title": "Maximizing impact of explainable artificial intelligence in radiotherapy: a critical review",
+   "publication_date": "2026-02-06",
+   "year": 2026,
+   "type": "review",
+   "journal": "Physics in Medicine and Biology",
+   "cited_by_count": 2,
+   "is_oa": true,
+   "author_count": 7,
+   "first_author": "Luca M. Heising",
+   "last_author": "Maria Jacobs",
+   "last_author_home": true,
+   "maastro": true,
+   "divisions": [
+    "Clinical Data Science",
+    "Innovation Implementation Research",
+    "Physics Research"
+   ],
+   "leaders": {
+    "Physics Research": {
+     "position": "middle",
+     "maastricht": true
+    },
+    "Innovation Implementation Research": {
+     "position": "last",
+     "maastricht": true
+    }
+   },
+   "led_by": "Maria Jacobs",
+   "led_by_division": "Innovation Implementation Research"
   },
   {
    "id": "W7127972347",
@@ -6296,6 +6463,24 @@
    "led_by": "Rianne Fijten"
   },
   {
+   "id": "W7119482320",
+   "doi": "https://doi.org/10.4251/wjgo.v18.i1.113440",
+   "title": "Efficacy and safety of immune checkpoint inhibitors plus chemotherapy in esophageal cancer patients with liver metastases",
+   "publication_date": "2026-01-15",
+   "year": 2026,
+   "type": "article",
+   "journal": "World Journal of Gastrointestinal Oncology",
+   "cited_by_count": 0,
+   "is_oa": true,
+   "author_count": 10,
+   "first_author": "En-Hui Dai",
+   "last_author": "Wei Feng",
+   "last_author_home": false,
+   "maastro": true,
+   "divisions": [],
+   "leaders": {}
+  },
+  {
    "id": "W7123926908",
    "doi": "https://doi.org/10.1007/s10278-025-01828-5",
    "title": "Predicting Overall Survival of NSCLC Patients with Clinical, Radiomics and Deep Learning Features",
@@ -6344,24 +6529,6 @@
      "maastricht": true
     }
    }
-  },
-  {
-   "id": "W7119482320",
-   "doi": "https://doi.org/10.4251/wjgo.v18.i1.113440",
-   "title": "Efficacy and safety of immune checkpoint inhibitors plus chemotherapy in esophageal cancer patients with liver metastases",
-   "publication_date": "2026-01-09",
-   "year": 2026,
-   "type": "article",
-   "journal": "World Journal of Gastrointestinal Oncology",
-   "cited_by_count": 0,
-   "is_oa": true,
-   "author_count": 10,
-   "first_author": "En-Hui Dai",
-   "last_author": "Wei Feng",
-   "last_author_home": false,
-   "maastro": true,
-   "divisions": [],
-   "leaders": {}
   },
   {
    "id": "W7118594845",
@@ -6423,32 +6590,6 @@
    "maastro": true,
    "divisions": [],
    "leaders": {}
-  },
-  {
-   "id": "W7118740404",
-   "doi": "https://doi.org/10.2196/85228",
-   "title": "Understanding Clinicians’ Informational Needs for AI-Driven Clinical Decision Support Systems: Qualitative Interview Study",
-   "publication_date": "2026-01-07",
-   "year": 2026,
-   "type": "article",
-   "journal": "JMIR Medical Education",
-   "cited_by_count": 4,
-   "is_oa": true,
-   "author_count": 10,
-   "first_author": "Simone M.B. Mingels",
-   "last_author": "Rianne Fijten",
-   "last_author_home": true,
-   "maastro": true,
-   "divisions": [
-    "Clinical Data Science"
-   ],
-   "leaders": {
-    "Clinical Data Science": {
-     "position": "middle",
-     "maastricht": true
-    }
-   },
-   "led_by": "Rianne Fijten"
   },
   {
    "id": "W7118461133",
@@ -6672,6 +6813,24 @@
    "leaders": {}
   },
   {
+   "id": "W7128816974",
+   "doi": "https://doi.org/10.29011/2688-996x.001087",
+   "title": "Obesity and Cancer: Inventory of Knowledge Gaps and Communication Requirements within (Preventive) Oncology",
+   "publication_date": "2025-12-31",
+   "year": 2025,
+   "type": "article",
+   "journal": "Advances in Preventive Medicine and Health Care",
+   "cited_by_count": 0,
+   "is_oa": true,
+   "author_count": 9,
+   "first_author": "Elisabeth Edwina Mariana Vrolijk",
+   "last_author": "Henrica M.J. Werner",
+   "last_author_home": true,
+   "maastro": true,
+   "divisions": [],
+   "leaders": {}
+  },
+  {
    "id": "W7117708698",
    "doi": "https://doi.org/10.1016/j.compbiomed.2025.111438",
    "title": "Vulnerabilities of feature clustering in EIT radiomics",
@@ -6699,11 +6858,29 @@
    "year": 2025,
    "type": "article",
    "journal": "Physics and Imaging in Radiation Oncology",
-   "cited_by_count": 14,
+   "cited_by_count": 15,
    "is_oa": true,
    "author_count": 42,
    "first_author": "Francesco Fracchiolla",
    "last_author": "L. Widesott",
+   "last_author_home": false,
+   "maastro": true,
+   "divisions": [],
+   "leaders": {}
+  },
+  {
+   "id": "W4417174784",
+   "doi": "https://doi.org/10.1088/1361-6560/ae2aa0",
+   "title": "Validation of Monte Carlo simulations with measurement data for fetal dose assessment in proton therapy for breast cancer",
+   "publication_date": "2025-12-30",
+   "year": 2025,
+   "type": "article",
+   "journal": "Physics in Medicine and Biology",
+   "cited_by_count": 3,
+   "is_oa": true,
+   "author_count": 11,
+   "first_author": "Jana Hohmann",
+   "last_author": "Tom Depuydt",
    "last_author_home": false,
    "maastro": true,
    "divisions": [],
@@ -6717,7 +6894,7 @@
    "year": 2025,
    "type": "review",
    "journal": "JAMA Network Open",
-   "cited_by_count": 11,
+   "cited_by_count": 12,
    "is_oa": true,
    "author_count": 18,
    "first_author": "Jonas Willmann",
@@ -6800,7 +6977,7 @@
    "year": 2025,
    "type": "article",
    "journal": "The Lancet Oncology",
-   "cited_by_count": 81,
+   "cited_by_count": 87,
    "is_oa": true,
    "author_count": 30,
    "first_author": "Anne Sophie V M van den Heerik",
@@ -6818,7 +6995,7 @@
    "year": 2025,
    "type": "article",
    "journal": "The Lancet Oncology",
-   "cited_by_count": 26,
+   "cited_by_count": 27,
    "is_oa": true,
    "author_count": 41,
    "first_author": "Martin J. van den Bent",
@@ -6836,7 +7013,7 @@
    "year": 2025,
    "type": "article",
    "journal": "Journal of Clinical Oncology",
-   "cited_by_count": 6,
+   "cited_by_count": 7,
    "is_oa": true,
    "author_count": 21,
    "first_author": "Zezhong Ye",
@@ -6870,6 +7047,24 @@
      "maastricht": true
     }
    }
+  },
+  {
+   "id": "W4417416955",
+   "doi": "https://doi.org/10.1093/jncics/pkaf116",
+   "title": "Physical activity patterns after diagnosis and survival of prognostic colorectal cancer subgroups",
+   "publication_date": "2025-12-15",
+   "year": 2025,
+   "type": "article",
+   "journal": "JNCI Cancer Spectrum",
+   "cited_by_count": 1,
+   "is_oa": true,
+   "author_count": 30,
+   "first_author": "Karel C. Smit",
+   "last_author": "Anne Maria May",
+   "last_author_home": false,
+   "maastro": true,
+   "divisions": [],
+   "leaders": {}
   },
   {
    "id": "W4417246466",
@@ -6941,24 +7136,6 @@
    }
   },
   {
-   "id": "W4417174784",
-   "doi": "https://doi.org/10.1088/1361-6560/ae2aa0",
-   "title": "Validation of Monte Carlo simulations with measurement data for fetal dose assessment in proton therapy for breast cancer",
-   "publication_date": "2025-12-09",
-   "year": 2025,
-   "type": "article",
-   "journal": "Physics in Medicine and Biology",
-   "cited_by_count": 3,
-   "is_oa": true,
-   "author_count": 11,
-   "first_author": "Jana Hohmann",
-   "last_author": "Tom Depuydt",
-   "last_author_home": false,
-   "maastro": true,
-   "divisions": [],
-   "leaders": {}
-  },
-  {
    "id": "W7110945548",
    "doi": "https://doi.org/10.3390/jcm14248703",
    "title": "Effect of mHealth on Postpartum Family Planning and Its Associated Factors Among Women in South Ethiopia: A Cluster-Randomized Controlled Trial",
@@ -6983,24 +7160,6 @@
     }
    },
    "led_by": "Rianne Fijten"
-  },
-  {
-   "id": "W4417416955",
-   "doi": "https://doi.org/10.1093/jncics/pkaf116",
-   "title": "Physical activity patterns after diagnosis and survival of prognostic colorectal cancer subgroups",
-   "publication_date": "2025-12-08",
-   "year": 2025,
-   "type": "article",
-   "journal": "JNCI Cancer Spectrum",
-   "cited_by_count": 1,
-   "is_oa": true,
-   "author_count": 30,
-   "first_author": "Karel C. Smit",
-   "last_author": "Anne Maria May",
-   "last_author_home": false,
-   "maastro": true,
-   "divisions": [],
-   "leaders": {}
   },
   {
    "id": "W4417183608",
@@ -7285,39 +7444,6 @@
    "leaders": {}
   },
   {
-   "id": "W4416805570",
-   "doi": "https://doi.org/10.1088/1361-6560/ae25b2",
-   "title": "Maximizing impact of explainable artificial intelligence in radiotherapy: a critical review",
-   "publication_date": "2025-11-28",
-   "year": 2025,
-   "type": "review",
-   "journal": "Physics in Medicine and Biology",
-   "cited_by_count": 2,
-   "is_oa": true,
-   "author_count": 7,
-   "first_author": "Luca M. Heising",
-   "last_author": "Maria Jacobs",
-   "last_author_home": true,
-   "maastro": true,
-   "divisions": [
-    "Clinical Data Science",
-    "Innovation Implementation Research",
-    "Physics Research"
-   ],
-   "leaders": {
-    "Physics Research": {
-     "position": "middle",
-     "maastricht": true
-    },
-    "Innovation Implementation Research": {
-     "position": "last",
-     "maastricht": true
-    }
-   },
-   "led_by": "Maria Jacobs",
-   "led_by_division": "Innovation Implementation Research"
-  },
-  {
    "id": "W4416740026",
    "doi": "https://doi.org/10.3390/cancers17233800",
    "title": "Non-Contrast MR T2-Weighted Imaging Is as Accurate as Contrast-Enhanced T1-Weighted Imaging in the Detection of Meningioma Growth",
@@ -7343,7 +7469,7 @@
    "year": 2025,
    "type": "article",
    "journal": "Radiotherapy and Oncology",
-   "cited_by_count": 29,
+   "cited_by_count": 30,
    "is_oa": true,
    "author_count": 16,
    "first_author": "Ane Lindegaard Appelt",
@@ -7638,29 +7764,10 @@
    }
   },
   {
-   "id": "W4416235348",
-   "doi": "https://doi.org/10.1016/j.radonc.2025.111281",
-   "title": "Stereotactic radiotherapy on Parkinson’s disease induced tremors – a systematic review",
-   "publication_date": "2025-11-13",
-   "year": 2025,
-   "type": "review",
-   "journal": "Radiotherapy and Oncology",
-   "cited_by_count": 2,
-   "is_oa": true,
-   "author_count": 12,
-   "first_author": "Laura M M de Haan",
-   "last_author": "Daniëlle B. P. Eekers",
-   "last_author_home": true,
-   "maastro": true,
-   "divisions": [],
-   "leaders": {},
-   "led_by": "Daniëlle B. P. Eekers"
-  },
-  {
    "id": "W4416159439",
    "doi": "https://doi.org/10.1007/978-3-032-07904-6_14",
    "title": "Evaluating the Predictive Value of Preoperative MRI for Erectile Dysfunction Following Radical Prostatectomy",
-   "publication_date": "2025-11-13",
+   "publication_date": "2025-11-14",
    "year": 2025,
    "type": "conference-paper",
    "journal": "Lecture notes in computer science",
@@ -7680,6 +7787,25 @@
      "maastricht": true
     }
    }
+  },
+  {
+   "id": "W4416235348",
+   "doi": "https://doi.org/10.1016/j.radonc.2025.111281",
+   "title": "Stereotactic radiotherapy on Parkinson’s disease induced tremors – a systematic review",
+   "publication_date": "2025-11-13",
+   "year": 2025,
+   "type": "review",
+   "journal": "Radiotherapy and Oncology",
+   "cited_by_count": 2,
+   "is_oa": true,
+   "author_count": 12,
+   "first_author": "Laura M M de Haan",
+   "last_author": "Daniëlle B. P. Eekers",
+   "last_author_home": true,
+   "maastro": true,
+   "divisions": [],
+   "leaders": {},
+   "led_by": "Daniëlle B. P. Eekers"
   },
   {
    "id": "W4416147748",
@@ -7725,6 +7851,33 @@
    "leaders": {}
   },
   {
+   "id": "W4415121285",
+   "doi": "https://doi.org/10.1088/1361-6560/ae128c",
+   "title": "Assessing quantitative material characteristics with low dose imaging in photon-counting and dual-energy computed tomography for radiotherapy",
+   "publication_date": "2025-11-07",
+   "year": 2025,
+   "type": "article",
+   "journal": "Physics in Medicine and Biology",
+   "cited_by_count": 7,
+   "is_oa": true,
+   "author_count": 7,
+   "first_author": "Didier Lustermans",
+   "last_author": "Frank Verhaegen",
+   "last_author_home": true,
+   "maastro": true,
+   "divisions": [
+    "Physics Research"
+   ],
+   "leaders": {
+    "Physics Research": {
+     "position": "last",
+     "maastricht": true
+    }
+   },
+   "led_by": "Frank Verhaegen",
+   "led_by_division": "Physics Research"
+  },
+  {
    "id": "W4415975161",
    "doi": "https://doi.org/10.1016/j.radonc.2025.111267",
    "title": "Cardiac safety of ultra-hypofractionated whole breast irradiation: Results from the SAFE-FORWARD observational prospective cohort study",
@@ -7751,7 +7904,7 @@
    "year": 2025,
    "type": "article",
    "journal": "Nutrients",
-   "cited_by_count": 8,
+   "cited_by_count": 9,
    "is_oa": true,
    "author_count": 3,
    "first_author": "Girma Gilano",
@@ -7795,7 +7948,7 @@
    "year": 2025,
    "type": "article",
    "journal": "European Respiratory Journal",
-   "cited_by_count": 44,
+   "cited_by_count": 46,
    "is_oa": true,
    "author_count": 36,
    "first_author": "Alessandro Brunelli",
@@ -7840,7 +7993,7 @@
   {
    "id": "W4416141488",
    "doi": "https://doi.org/10.1093/neuonc/noaf201.0414",
-   "title": "RADT-45. THE MULTICENTER SOPRANO STUDY: OUTCOMES OF PATIENTS WITH IDH-MUTATED WHO GRADE 2 AND 3 GLIOMA TREATED WITH PROTON OR PHOTON RADIOTHERAPY",
+   "title": "THE MULTICENTER SOPRANO STUDY: OUTCOMES OF PATIENTS WITH IDH-MUTATED WHO GRADE 2 AND 3 GLIOMA TREATED WITH PROTON OR PHOTON RADIOTHERAPY",
    "publication_date": "2025-11-01",
    "year": 2025,
    "type": "conference-abstract",
@@ -7858,7 +8011,7 @@
   {
    "id": "W4416140799",
    "doi": "https://doi.org/10.1093/neuonc/noaf201.0540",
-   "title": "CTNI-44. HYPOFRACTIONATED CHEMORADIATION FOR NEWLY DIAGNOSED GLIOBLASTOMA: A MULTICENTER RANDOMIZED CLINICAL TRIAL IN THE NETHERLANDS",
+   "title": "HYPOFRACTIONATED CHEMORADIATION FOR NEWLY DIAGNOSED GLIOBLASTOMA: A MULTICENTER RANDOMIZED CLINICAL TRIAL IN THE NETHERLANDS",
    "publication_date": "2025-11-01",
    "year": 2025,
    "type": "conference-abstract",
@@ -7876,7 +8029,7 @@
   {
    "id": "W4416139909",
    "doi": "https://doi.org/10.1093/neuonc/noaf201.1524",
-   "title": "QOL-23. Patient Reported Outcome Measures and Quality of Life from a randomized clinical trial for hypofractionated versus normofractionated chemoradiation for glioblastoma",
+   "title": "Patient Reported Outcome Measures and Quality of Life from a randomized clinical trial for hypofractionated versus normofractionated chemoradiation for glioblastoma",
    "publication_date": "2025-11-01",
    "year": 2025,
    "type": "conference-abstract",
@@ -8234,7 +8387,7 @@
    "year": 2025,
    "type": "article",
    "journal": "Lung Cancer",
-   "cited_by_count": 17,
+   "cited_by_count": 18,
    "is_oa": true,
    "author_count": 54,
    "first_author": "Mariana Brandão",
@@ -8250,33 +8403,6 @@
      "maastricht": true
     }
    }
-  },
-  {
-   "id": "W4415121285",
-   "doi": "https://doi.org/10.1088/1361-6560/ae128c",
-   "title": "Assessing quantitative material characteristics with low dose imaging in photon-counting and dual-energy computed tomography for radiotherapy",
-   "publication_date": "2025-10-13",
-   "year": 2025,
-   "type": "article",
-   "journal": "Physics in Medicine and Biology",
-   "cited_by_count": 7,
-   "is_oa": true,
-   "author_count": 7,
-   "first_author": "Didier Lustermans",
-   "last_author": "Frank Verhaegen",
-   "last_author_home": true,
-   "maastro": true,
-   "divisions": [
-    "Physics Research"
-   ],
-   "leaders": {
-    "Physics Research": {
-     "position": "last",
-     "maastricht": true
-    }
-   },
-   "led_by": "Frank Verhaegen",
-   "led_by_division": "Physics Research"
   },
   {
    "id": "W4415105545",
@@ -8640,24 +8766,6 @@
    }
   },
   {
-   "id": "W4416638479",
-   "doi": "https://doi.org/10.1183/13993003.congress-2025.pa5284",
-   "title": "The effects of nandrolone on muscle wasting in a mouse model of glucocorticoid-treated ECOPD",
-   "publication_date": "2025-09-27",
-   "year": 2025,
-   "type": "conference-abstract",
-   "journal": "European Respiratory Journal",
-   "cited_by_count": 0,
-   "is_oa": false,
-   "author_count": 9,
-   "first_author": "Sandra Jessica van Krimpen",
-   "last_author": "RAMON C. J. LANGEN",
-   "last_author_home": false,
-   "maastro": true,
-   "divisions": [],
-   "leaders": {}
-  },
-  {
    "id": "W4416637383",
    "doi": "https://doi.org/10.1183/13993003.congress-2025.pa5281",
    "title": "Myostatin signaling blockade impacts on muscle wasting in a mouse model of glucocorticoid-treated ECOPD",
@@ -8670,6 +8778,24 @@
    "author_count": 9,
    "first_author": "Sandra Jessica van Krimpen",
    "last_author": "Harry R. Gosker",
+   "last_author_home": false,
+   "maastro": true,
+   "divisions": [],
+   "leaders": {}
+  },
+  {
+   "id": "W4416638479",
+   "doi": "https://doi.org/10.1183/13993003.congress-2025.pa5284",
+   "title": "The effects of nandrolone on muscle wasting in a mouse model of glucocorticoid-treated ECOPD",
+   "publication_date": "2025-09-27",
+   "year": 2025,
+   "type": "conference-abstract",
+   "journal": "European Respiratory Journal",
+   "cited_by_count": 0,
+   "is_oa": false,
+   "author_count": 9,
+   "first_author": "Sandra Jessica van Krimpen",
+   "last_author": "RAMON C. J. LANGEN",
    "last_author_home": false,
    "maastro": true,
    "divisions": [],
@@ -8814,7 +8940,7 @@
    "year": 2025,
    "type": "article",
    "journal": "The Lancet Oncology",
-   "cited_by_count": 63,
+   "cited_by_count": 65,
    "is_oa": true,
    "author_count": 29,
    "first_author": "Cathalijne Post",
@@ -8858,7 +8984,7 @@
    "year": 2025,
    "type": "article",
    "journal": "JAMA Otolaryngology–Head & Neck Surgery",
-   "cited_by_count": 2,
+   "cited_by_count": 3,
    "is_oa": true,
    "author_count": 43,
    "first_author": "Mantegh Sethi",
@@ -8900,7 +9026,7 @@
    "title": "Artificial intelligence for diagnosis and prognosis of thymic epithelial tumors: a systematic review",
    "publication_date": "2025-09-01",
    "year": 2025,
-   "type": "article",
+   "type": "review",
    "journal": "Mediastinum",
    "cited_by_count": 5,
    "is_oa": true,
@@ -8965,7 +9091,7 @@
   {
    "id": "W4414569954",
    "doi": "https://doi.org/10.21037/med-25-ab040",
-   "title": "AB040. Subclinical myasthenia gravis after thymectomy: a 20-year retrospective cohort study",
+   "title": "Subclinical myasthenia gravis after thymectomy: a 20-year retrospective cohort study",
    "publication_date": "2025-09-01",
    "year": 2025,
    "type": "conference-abstract",
@@ -8983,7 +9109,7 @@
   {
    "id": "W4414570054",
    "doi": "https://doi.org/10.21037/med-25-ab002",
-   "title": "AB002. Histopathological heterogeneity in resected thymomas",
+   "title": "Histopathological heterogeneity in resected thymomas",
    "publication_date": "2025-09-01",
    "year": 2025,
    "type": "conference-abstract",
@@ -9001,7 +9127,7 @@
   {
    "id": "W4414570226",
    "doi": "https://doi.org/10.21037/med-25-ab003",
-   "title": "AB003. Optimizing postoperative proton radiotherapy in thymic epithelial tumors: added value of breath hold?",
+   "title": "Optimizing postoperative proton radiotherapy in thymic epithelial tumors: added value of breath hold?",
    "publication_date": "2025-09-01",
    "year": 2025,
    "type": "conference-abstract",
@@ -9140,7 +9266,7 @@
   {
    "id": "W4414570250",
    "doi": "https://doi.org/10.21037/med-25-ab034",
-   "title": "AB034. Weakly supervised artificial intelligence-based subtyping of thymic epithelial tumors using H&E whole slide images",
+   "title": "Weakly supervised artificial intelligence-based subtyping of thymic epithelial tumors using H&E whole slide images",
    "publication_date": "2025-09-01",
    "year": 2025,
    "type": "conference-abstract",
@@ -9183,7 +9309,7 @@
   {
    "id": "W4414570392",
    "doi": "https://doi.org/10.21037/med-25-ab036",
-   "title": "AB036. Trends in thymic epithelial tumor patients in the Netherlands: a population-based study",
+   "title": "Trends in thymic epithelial tumor patients in the Netherlands: a population-based study",
    "publication_date": "2025-09-01",
    "year": 2025,
    "type": "conference-abstract",
@@ -9278,7 +9404,7 @@
    "year": 2025,
    "type": "article",
    "journal": "British journal of surgery",
-   "cited_by_count": 18,
+   "cited_by_count": 19,
    "is_oa": true,
    "author_count": 16,
    "first_author": "Ilaria Prata",
@@ -9328,7 +9454,7 @@
    "year": 2025,
    "type": "article",
    "journal": "Annals of Oncology",
-   "cited_by_count": 227,
+   "cited_by_count": 240,
    "is_oa": true,
    "author_count": 18,
    "first_author": "Alona Zer",
@@ -9423,6 +9549,31 @@
    "maastro": true,
    "divisions": [],
    "leaders": {}
+  },
+  {
+   "id": "W4409360221",
+   "doi": "https://doi.org/10.2196/66068",
+   "title": "Optimizing Cardiovascular Risk Management in Primary Care Using a Personalized eCoach Solution Enhanced by an Artificial Intelligence–Driven Clinical Prediction Model: Protocol from the Coronary Artery Disease Risk Estimation and Early Detection Consortium",
+   "publication_date": "2025-08-08",
+   "year": 2025,
+   "type": "article",
+   "journal": "JMIR Research Protocols",
+   "cited_by_count": 4,
+   "is_oa": true,
+   "author_count": 10,
+   "first_author": "Rutger F. R. van Mierlo",
+   "last_author": "Laura M. J. Hochstenbach",
+   "last_author_home": false,
+   "maastro": true,
+   "divisions": [
+    "Clinical Data Science"
+   ],
+   "leaders": {
+    "Clinical Data Science": {
+     "position": "middle",
+     "maastricht": true
+    }
+   }
   },
   {
    "id": "W4413055112",
@@ -9554,7 +9705,7 @@
    "year": 2025,
    "type": "article",
    "journal": "Journal of Healthcare Informatics Research",
-   "cited_by_count": 4,
+   "cited_by_count": 5,
    "is_oa": true,
    "author_count": 22,
    "first_author": "Pedro Mateus",
@@ -10346,7 +10497,7 @@
    "year": 2025,
    "type": "article",
    "journal": "Annals of Oncology",
-   "cited_by_count": 36,
+   "cited_by_count": 35,
    "is_oa": true,
    "author_count": 6,
    "first_author": "Lizza E.L. Hendriks",
@@ -10531,7 +10682,7 @@
    "year": 2025,
    "type": "article",
    "journal": "Annals of Oncology",
-   "cited_by_count": 46,
+   "cited_by_count": 49,
    "is_oa": true,
    "author_count": 25,
    "first_author": "Yanqi Huang",
@@ -10579,7 +10730,7 @@
    "year": 2025,
    "type": "article",
    "journal": "Radiology",
-   "cited_by_count": 13,
+   "cited_by_count": 15,
    "is_oa": true,
    "author_count": 25,
    "first_author": "Laurens Topff",
@@ -10606,7 +10757,7 @@
    "year": 2025,
    "type": "review",
    "journal": "CA A Cancer Journal for Clinicians",
-   "cited_by_count": 53,
+   "cited_by_count": 54,
    "is_oa": true,
    "author_count": 22,
    "first_author": "Arnaud Beddok",
@@ -10615,6 +10766,31 @@
    "maastro": true,
    "divisions": [],
    "leaders": {}
+  },
+  {
+   "id": "W4404990804",
+   "doi": "https://doi.org/10.1093/jamia/ocaf074",
+   "title": "Multimodal integration of longitudinal noninvasive diagnostics for survival prediction in immunotherapy using deep learning",
+   "publication_date": "2025-05-26",
+   "year": 2025,
+   "type": "article",
+   "journal": "Journal of the American Medical Informatics Association",
+   "cited_by_count": 23,
+   "is_oa": true,
+   "author_count": 7,
+   "first_author": "Melda Yeghaian",
+   "last_author": "Marcel A. J. van Gerven",
+   "last_author_home": false,
+   "maastro": false,
+   "divisions": [
+    "Imaging Innovation Research"
+   ],
+   "leaders": {
+    "Imaging Innovation Research": {
+     "position": "middle",
+     "maastricht": true
+    }
+   }
   },
   {
    "id": "W4410711590",
@@ -10693,7 +10869,9 @@
    "last_author": "Tian, Chunjie",
    "last_author_home": false,
    "maastro": true,
-   "divisions": [],
+   "divisions": [
+    "Clinical Data Science"
+   ],
    "leaders": {}
   },
   {
@@ -10704,7 +10882,7 @@
    "year": 2025,
    "type": "book-chapter",
    "journal": "Studies in health technology and informatics",
-   "cited_by_count": 4,
+   "cited_by_count": 5,
    "is_oa": true,
    "author_count": 4,
    "first_author": "Johan van Soest",
@@ -10776,6 +10954,33 @@
    "led_by": "Johan van Soest"
   },
   {
+   "id": "W4410022964",
+   "doi": "https://doi.org/10.1088/1361-6560/add3ba",
+   "title": "Evaluating photon-counting computed tomography for quantitative material characteristics and material differentiation in radiotherapy",
+   "publication_date": "2025-05-13",
+   "year": 2025,
+   "type": "article",
+   "journal": "Physics in Medicine and Biology",
+   "cited_by_count": 11,
+   "is_oa": true,
+   "author_count": 7,
+   "first_author": "Didier Lustermans",
+   "last_author": "Frank Verhaegen",
+   "last_author_home": true,
+   "maastro": true,
+   "divisions": [
+    "Physics Research"
+   ],
+   "leaders": {
+    "Physics Research": {
+     "position": "last",
+     "maastricht": true
+    }
+   },
+   "led_by": "Frank Verhaegen",
+   "led_by_division": "Physics Research"
+  },
+  {
    "id": "W4410286317",
    "doi": "https://doi.org/10.1016/j.ajhg.2025.04.005",
    "title": "Reannotation of cancer mutations based on expressed RNA transcripts reveals functional non-coding mutations in melanoma",
@@ -10801,7 +11006,7 @@
    "year": 2025,
    "type": "review",
    "journal": "Radiotherapy and Oncology",
-   "cited_by_count": 12,
+   "cited_by_count": 13,
    "is_oa": true,
    "author_count": 20,
    "first_author": "Lieselotte Lauwens",
@@ -10820,7 +11025,7 @@
    "year": 2025,
    "type": "article",
    "journal": "Frontiers in Oncology",
-   "cited_by_count": 3,
+   "cited_by_count": 46,
    "is_oa": true,
    "author_count": 6,
    "first_author": "Ester Jääskeläinen",
@@ -10857,7 +11062,7 @@
    "year": 2025,
    "type": "article",
    "journal": "The Lancet Digital Health",
-   "cited_by_count": 63,
+   "cited_by_count": 64,
    "is_oa": true,
    "author_count": 22,
    "first_author": "Dennis Bontempi",
@@ -10887,7 +11092,7 @@
    "year": 2025,
    "type": "article",
    "journal": "JAMA Otolaryngology–Head & Neck Surgery",
-   "cited_by_count": 29,
+   "cited_by_count": 31,
    "is_oa": true,
    "author_count": 29,
    "first_author": "Shao Hui Huang",
@@ -10923,7 +11128,7 @@
    "year": 2025,
    "type": "review",
    "journal": "Molecular and Cellular Biology",
-   "cited_by_count": 55,
+   "cited_by_count": 57,
    "is_oa": true,
    "author_count": 3,
    "first_author": "Rui Zhang",
@@ -10941,31 +11146,23 @@
    }
   },
   {
-   "id": "W4410022964",
-   "doi": "https://doi.org/10.1088/1361-6560/add3ba",
-   "title": "Evaluating photon-counting computed tomography for quantitative material characteristics and material differentiation in radiotherapy",
-   "publication_date": "2025-05-02",
+   "id": "W4410063014",
+   "doi": "https://doi.org/10.1093/neuonc/noaf114",
+   "title": "Radiotherapy-induced neurocognitive decline among adult intracranial tumor patients: A voxel-based approach",
+   "publication_date": "2025-05-04",
    "year": 2025,
    "type": "article",
-   "journal": "Physics in Medicine and Biology",
-   "cited_by_count": 11,
+   "journal": "Neuro-Oncology",
+   "cited_by_count": 7,
    "is_oa": true,
-   "author_count": 7,
-   "first_author": "Didier Lustermans",
-   "last_author": "Frank Verhaegen",
+   "author_count": 12,
+   "first_author": "Charlotte Sleurs",
+   "last_author": "Daniëlle B. P. Eekers",
    "last_author_home": true,
    "maastro": true,
-   "divisions": [
-    "Physics Research"
-   ],
-   "leaders": {
-    "Physics Research": {
-     "position": "last",
-     "maastricht": true
-    }
-   },
-   "led_by": "Frank Verhaegen",
-   "led_by_division": "Physics Research"
+   "divisions": [],
+   "leaders": {},
+   "led_by": "Daniëlle B. P. Eekers"
   },
   {
    "id": "W4410588726",
@@ -11031,6 +11228,25 @@
    }
   },
   {
+   "id": "W4410373149",
+   "doi": "https://doi.org/10.1093/bjs/znaf031",
+   "title": "Three-year patient-reported outcomes of the BOOG 2013-08 RCT evaluating omission of sentinel lymph node biopsy in early-stage breast cancer patients treated with breast conserving surgery: Impact of personality traits on health-related quality of life",
+   "publication_date": "2025-04-30",
+   "year": 2025,
+   "type": "article",
+   "journal": "British journal of surgery",
+   "cited_by_count": 14,
+   "is_oa": true,
+   "author_count": 20,
+   "first_author": "Veerle Marieke Wintraecken",
+   "last_author": "Marjolein L. Smidt",
+   "last_author_home": true,
+   "maastro": true,
+   "divisions": [],
+   "leaders": {},
+   "led_by": "Marjolein L. Smidt"
+  },
+  {
    "id": "W4409919755",
    "doi": "https://doi.org/10.1016/j.eswa.2025.127727",
    "title": "Multi-phase feature-aligned fusion model for automated colorectal cancer segmentation in contrast-enhanced CT scans",
@@ -11047,31 +11263,6 @@
    "maastro": true,
    "divisions": [],
    "leaders": {}
-  },
-  {
-   "id": "W4404990804",
-   "doi": "https://doi.org/10.1093/jamia/ocaf074",
-   "title": "Multimodal integration of longitudinal noninvasive diagnostics for survival prediction in immunotherapy using deep learning",
-   "publication_date": "2025-04-29",
-   "year": 2025,
-   "type": "article",
-   "journal": "Journal of the American Medical Informatics Association",
-   "cited_by_count": 23,
-   "is_oa": true,
-   "author_count": 7,
-   "first_author": "Melda Yeghaian",
-   "last_author": "Marcel A. J. van Gerven",
-   "last_author_home": false,
-   "maastro": false,
-   "divisions": [
-    "Imaging Innovation Research"
-   ],
-   "leaders": {
-    "Imaging Innovation Research": {
-     "position": "middle",
-     "maastricht": true
-    }
-   }
   },
   {
    "id": "W4409851838",
@@ -11097,25 +11288,6 @@
      "maastricht": true
     }
    }
-  },
-  {
-   "id": "W4410063014",
-   "doi": "https://doi.org/10.1093/neuonc/noaf114",
-   "title": "Radiotherapy-induced neurocognitive decline among adult intracranial tumor patients: A voxel-based approach",
-   "publication_date": "2025-04-25",
-   "year": 2025,
-   "type": "article",
-   "journal": "Neuro-Oncology",
-   "cited_by_count": 6,
-   "is_oa": true,
-   "author_count": 12,
-   "first_author": "Charlotte Sleurs",
-   "last_author": "Daniëlle B. P. Eekers",
-   "last_author_home": true,
-   "maastro": true,
-   "divisions": [],
-   "leaders": {},
-   "led_by": "Daniëlle B. P. Eekers"
   },
   {
    "id": "W4409785141",
@@ -11248,6 +11420,31 @@
    "leaders": {}
   },
   {
+   "id": "W4408488651",
+   "doi": "https://doi.org/10.2196/66616",
+   "title": "Data Interoperability in Context: The Importance of Open-Source Implementations When Choosing Open Standards",
+   "publication_date": "2025-04-15",
+   "year": 2025,
+   "type": "article",
+   "journal": "Journal of Medical Internet Research",
+   "cited_by_count": 29,
+   "is_oa": true,
+   "author_count": 6,
+   "first_author": "Daniel Kapitan",
+   "last_author": "Matt Berg",
+   "last_author_home": false,
+   "maastro": true,
+   "divisions": [
+    "Clinical Data Science"
+   ],
+   "leaders": {
+    "Clinical Data Science": {
+     "position": "middle",
+     "maastricht": true
+    }
+   }
+  },
+  {
    "id": "W4409464283",
    "doi": "https://doi.org/10.1016/j.prro.2025.03.009",
    "title": "Implantable Rectal Spacers in Prostate Cancer Radiation Therapy: A Systematic Review",
@@ -11297,7 +11494,7 @@
    "id": "W4409392018",
    "doi": "https://doi.org/10.1007/978-3-031-84525-3_9",
    "title": "A Radiological-Based Coordinate System for the Human Body: A Proof-of-Concept",
-   "publication_date": "2025-04-12",
+   "publication_date": "2025-04-13",
    "year": 2025,
    "type": "conference-paper",
    "journal": "Lecture notes in computer science",
@@ -11318,31 +11515,6 @@
     }
    },
    "led_by": "Stefano Trebeschi"
-  },
-  {
-   "id": "W4409360221",
-   "doi": "https://doi.org/10.2196/66068",
-   "title": "Optimizing Cardiovascular Risk Management in Primary Care Using a Personalized eCoach Solution Enhanced by an Artificial Intelligence–Driven Clinical Prediction Model: Protocol from the Coronary Artery Disease Risk Estimation and Early Detection Consortium",
-   "publication_date": "2025-04-11",
-   "year": 2025,
-   "type": "article",
-   "journal": "JMIR Research Protocols",
-   "cited_by_count": 3,
-   "is_oa": true,
-   "author_count": 10,
-   "first_author": "Rutger F. R. van Mierlo",
-   "last_author": "Laura M. J. Hochstenbach",
-   "last_author_home": false,
-   "maastro": true,
-   "divisions": [
-    "Clinical Data Science"
-   ],
-   "leaders": {
-    "Clinical Data Science": {
-     "position": "middle",
-     "maastricht": true
-    }
-   }
   },
   {
    "id": "W4409341299",
@@ -11415,7 +11587,7 @@
    "year": 2025,
    "type": "article",
    "journal": "Radiotherapy and Oncology",
-   "cited_by_count": 72,
+   "cited_by_count": 73,
    "is_oa": true,
    "author_count": 14,
    "first_author": "Dirk De Ruysscher",
@@ -11476,7 +11648,7 @@
    "year": 2025,
    "type": "article",
    "journal": "Physics and Imaging in Radiation Oncology",
-   "cited_by_count": 12,
+   "cited_by_count": 13,
    "is_oa": true,
    "author_count": 15,
    "first_author": "Geert De Kerf",
@@ -11594,6 +11766,26 @@
    }
   },
   {
+   "id": "W4408388242",
+   "doi": "https://doi.org/10.1088/1361-6560/adbff1",
+   "title": "A feasibility study of automating radiotherapy planning with large language model agents",
+   "publication_date": "2025-03-21",
+   "year": 2025,
+   "type": "article",
+   "journal": "Physics in Medicine and Biology",
+   "cited_by_count": 54,
+   "is_oa": false,
+   "author_count": 11,
+   "first_author": "Qingxin Wang",
+   "last_author": "Cong Liu",
+   "last_author_home": false,
+   "maastro": true,
+   "divisions": [
+    "Clinical Data Science"
+   ],
+   "leaders": {}
+  },
+  {
    "id": "W4408744095",
    "doi": "https://doi.org/10.1093/bjr/tqaf039",
    "title": "Imaging of cancer of unknown primary: a systematic literature review of the past, present, and future",
@@ -11639,31 +11831,6 @@
    "leaders": {}
   },
   {
-   "id": "W4408488651",
-   "doi": "https://doi.org/10.2196/66616",
-   "title": "Data Interoperability in Context: The Importance of Open-Source Implementations When Choosing Open Standards",
-   "publication_date": "2025-03-16",
-   "year": 2025,
-   "type": "article",
-   "journal": "Journal of Medical Internet Research",
-   "cited_by_count": 29,
-   "is_oa": true,
-   "author_count": 6,
-   "first_author": "Daniel Kapitan",
-   "last_author": "Matt Berg",
-   "last_author_home": false,
-   "maastro": true,
-   "divisions": [
-    "Clinical Data Science"
-   ],
-   "leaders": {
-    "Clinical Data Science": {
-     "position": "middle",
-     "maastricht": true
-    }
-   }
-  },
-  {
    "id": "W4408476206",
    "doi": "https://doi.org/10.1016/j.bspc.2025.107793",
    "title": "Data-efficient federated semi-supervised learning framework via pseudo supervision refinement strategy for lung tumor segmentation",
@@ -11704,26 +11871,6 @@
    "last_author_home": false,
    "maastro": true,
    "divisions": [],
-   "leaders": {}
-  },
-  {
-   "id": "W4408388242",
-   "doi": "https://doi.org/10.1088/1361-6560/adbff1",
-   "title": "A feasibility study of automating radiotherapy planning with large language model agents",
-   "publication_date": "2025-03-12",
-   "year": 2025,
-   "type": "article",
-   "journal": "Physics in Medicine and Biology",
-   "cited_by_count": 50,
-   "is_oa": false,
-   "author_count": 11,
-   "first_author": "Qingxin Wang",
-   "last_author": "Cong Liu",
-   "last_author_home": false,
-   "maastro": true,
-   "divisions": [
-    "Clinical Data Science"
-   ],
    "leaders": {}
   },
   {
@@ -11830,7 +11977,7 @@
   {
    "id": "W4408980485",
    "doi": "https://doi.org/10.21037/map-25-ab089",
-   "title": "AB089. SOH25_AB_124. Magnetic resonance-derived radiomics to predict post-exenteration disease recurrence in advanced rectal cancer: a multi-institutional analysis",
+   "title": "SOH25_AB_124. Magnetic resonance-derived radiomics to predict post-exenteration disease recurrence in advanced rectal cancer: a multi-institutional analysis",
    "publication_date": "2025-03-01",
    "year": 2025,
    "type": "conference-abstract",
@@ -11848,7 +11995,7 @@
   {
    "id": "W4408980653",
    "doi": "https://doi.org/10.21037/map-25-ab140",
-   "title": "AB140. SOH25_AB_214. Exenterative surgery for locally-advanced or recurrent pelvic malignancies: outcomes in an Irish centre",
+   "title": "SOH25_AB_214. Exenterative surgery for locally-advanced or recurrent pelvic malignancies: outcomes in an Irish centre",
    "publication_date": "2025-03-01",
    "year": 2025,
    "type": "conference-abstract",
@@ -11897,7 +12044,7 @@
    "year": 2025,
    "type": "article",
    "journal": "Journal for ImmunoTherapy of Cancer",
-   "cited_by_count": 75,
+   "cited_by_count": 76,
    "is_oa": true,
    "author_count": 16,
    "first_author": "Zhen Zhang",
@@ -11993,7 +12140,7 @@
    "cited_by_count": 1,
    "is_oa": true,
    "author_count": 16,
-   "first_author": "Dianne Bosch",
+   "first_author": "Dianne van den Bosch",
    "last_author": "Inge M. van Oort",
    "last_author_home": false,
    "maastro": true,
@@ -12131,6 +12278,32 @@
    }
   },
   {
+   "id": "W4404667492",
+   "doi": "https://doi.org/10.2196/60095",
+   "title": "Developing an ICD-10 Coding Assistant: Pilot Study Using RoBERTa and GPT-4 for Term Extraction and Description-Based Code Selection",
+   "publication_date": "2025-02-11",
+   "year": 2025,
+   "type": "article",
+   "journal": "JMIR Formative Research",
+   "cited_by_count": 28,
+   "is_oa": true,
+   "author_count": 4,
+   "first_author": "Sander Puts",
+   "last_author": "Iñigo Bermejo",
+   "last_author_home": true,
+   "maastro": true,
+   "divisions": [
+    "Clinical Data Science"
+   ],
+   "leaders": {
+    "Clinical Data Science": {
+     "position": "middle",
+     "maastricht": true
+    }
+   },
+   "led_by": "Iñigo Bermejo"
+  },
+  {
    "id": "W4407316118",
    "doi": "https://doi.org/10.1371/journal.pone.0316716",
    "title": "MAP1LC3C repression reduces CIITA- and HLA class II expression in non-small cell lung cancer",
@@ -12201,7 +12374,7 @@
    "year": 2025,
    "type": "article",
    "journal": "JMIR AI",
-   "cited_by_count": 68,
+   "cited_by_count": 69,
    "is_oa": true,
    "author_count": 7,
    "first_author": "Ananya Choudhury",
@@ -12236,6 +12409,32 @@
    "maastro": true,
    "divisions": [],
    "leaders": {}
+  },
+  {
+   "id": "W4407099683",
+   "doi": "https://doi.org/10.1093/nop/npaf018",
+   "title": "Screening for brain metastases in patients with advanced non-small cell lung cancer and an actionable genomic alteration: A structured literature review",
+   "publication_date": "2025-02-03",
+   "year": 2025,
+   "type": "review",
+   "journal": "Neuro-Oncology Practice",
+   "cited_by_count": 3,
+   "is_oa": true,
+   "author_count": 8,
+   "first_author": "Jarno W J Huijs",
+   "last_author": "Lizza E.L. Hendriks",
+   "last_author_home": true,
+   "maastro": true,
+   "divisions": [
+    "Clinical Research"
+   ],
+   "leaders": {
+    "Clinical Research": {
+     "position": "middle",
+     "maastricht": true
+    }
+   },
+   "led_by": "Lizza E.L. Hendriks"
   },
   {
    "id": "W4407756579",
@@ -12299,32 +12498,6 @@
     }
    },
    "led_by": "Monique Maas"
-  },
-  {
-   "id": "W4407099683",
-   "doi": "https://doi.org/10.1093/nop/npaf018",
-   "title": "Screening for brain metastases in patients with advanced non-small cell lung cancer and an actionable genomic alteration: A structured literature review",
-   "publication_date": "2025-01-31",
-   "year": 2025,
-   "type": "review",
-   "journal": "Neuro-Oncology Practice",
-   "cited_by_count": 3,
-   "is_oa": true,
-   "author_count": 8,
-   "first_author": "Jarno W J Huijs",
-   "last_author": "Lizza E.L. Hendriks",
-   "last_author_home": true,
-   "maastro": true,
-   "divisions": [
-    "Clinical Research"
-   ],
-   "leaders": {
-    "Clinical Research": {
-     "position": "middle",
-     "maastricht": true
-    }
-   },
-   "led_by": "Lizza E.L. Hendriks"
   },
   {
    "id": "W4407037294",
@@ -12392,25 +12565,6 @@
     }
    },
    "led_by": "Leonard Wee"
-  },
-  {
-   "id": "W4410373149",
-   "doi": "https://doi.org/10.1093/bjs/znaf031",
-   "title": "Three-year patient-reported outcomes of the BOOG 2013-08 RCT evaluating omission of sentinel lymph node biopsy in early-stage breast cancer patients treated with breast conserving surgery: Impact of personality traits on health-related quality of life",
-   "publication_date": "2025-01-27",
-   "year": 2025,
-   "type": "article",
-   "journal": "British journal of surgery",
-   "cited_by_count": 13,
-   "is_oa": true,
-   "author_count": 20,
-   "first_author": "Veerle Marieke Wintraecken",
-   "last_author": "Marjolein L. Smidt",
-   "last_author_home": true,
-   "maastro": true,
-   "divisions": [],
-   "leaders": {},
-   "led_by": "Marjolein L. Smidt"
   },
   {
    "id": "W4406864616",
@@ -12524,28 +12678,10 @@
    }
   },
   {
-   "id": "W4406471342",
-   "doi": "https://doi.org/10.1002/lrh2.10476",
-   "title": "Moving from a registry to a learning health system: A case study of a Dutch prostate cancer registry",
-   "publication_date": "2025-01-16",
-   "year": 2025,
-   "type": "article",
-   "journal": "Learning Health Systems",
-   "cited_by_count": 1,
-   "is_oa": true,
-   "author_count": 9,
-   "first_author": "Tom Belleman",
-   "last_author": "Welmoed Kirsten van Deen",
-   "last_author_home": false,
-   "maastro": true,
-   "divisions": [],
-   "leaders": {}
-  },
-  {
    "id": "W4406482622",
    "doi": "https://doi.org/10.1007/978-3-031-77610-6_23",
    "title": "FedGS: Federated Gradient Scaling for Heterogeneous Medical Image Segmentation",
-   "publication_date": "2025-01-15",
+   "publication_date": "2025-01-17",
    "year": 2025,
    "type": "conference-paper",
    "journal": "Lecture notes in computer science",
@@ -12567,6 +12703,24 @@
    }
   },
   {
+   "id": "W4406471342",
+   "doi": "https://doi.org/10.1002/lrh2.10476",
+   "title": "Moving from a registry to a learning health system: A case study of a Dutch prostate cancer registry",
+   "publication_date": "2025-01-16",
+   "year": 2025,
+   "type": "article",
+   "journal": "Learning Health Systems",
+   "cited_by_count": 1,
+   "is_oa": true,
+   "author_count": 9,
+   "first_author": "Tom Belleman",
+   "last_author": "Welmoed Kirsten van Deen",
+   "last_author_home": false,
+   "maastro": true,
+   "divisions": [],
+   "leaders": {}
+  },
+  {
    "id": "W4406334317",
    "doi": "https://doi.org/10.1007/s13347-024-00834-9",
    "title": "The Epistemic Cost of Opacity: How the Use of Artificial Intelligence Undermines the Knowledge of Medical Doctors in High-Stakes Contexts",
@@ -12574,7 +12728,7 @@
    "year": 2025,
    "type": "article",
    "journal": "Philosophy & Technology",
-   "cited_by_count": 20,
+   "cited_by_count": 21,
    "is_oa": true,
    "author_count": 3,
    "first_author": "Eva Schmidt",
@@ -12668,7 +12822,7 @@
    "id": "W4406098043",
    "doi": "https://doi.org/10.1093/jnci/djae349",
    "title": "Association of radiation-induced normal tissue toxicity with a high genetic risk for rheumatoid arthritis",
-   "publication_date": "2025-01-05",
+   "publication_date": "2025-01-06",
    "year": 2025,
    "type": "article",
    "journal": "JNCI Journal of the National Cancer Institute",
@@ -12929,7 +13083,7 @@
   {
    "id": "W4406699616",
    "doi": "https://doi.org/10.1093/ecco-jcc/jjae190.0962",
-   "title": "P0788 Exploring topics of Dutch Inflammatory Bowel Disease patient messages for improving transmural communication efficiency: A natural language processing approach",
+   "title": "Exploring topics of Dutch Inflammatory Bowel Disease patient messages for improving transmural communication efficiency: A natural language processing approach",
    "publication_date": "2025-01-01",
    "year": 2025,
    "type": "conference-abstract",
@@ -12949,7 +13103,7 @@
   {
    "id": "W4406702439",
    "doi": "https://doi.org/10.1093/ecco-jcc/jjae190.1130",
-   "title": "P0956 Predicting Clinical Remission in Crohn’s Disease: A Comparative Study of Expert-Generated and Computer-Generated Bayesian Networks",
+   "title": "Predicting Clinical Remission in Crohn’s Disease: A Comparative Study of Expert-Generated and Computer-Generated Bayesian Networks",
    "publication_date": "2025-01-01",
    "year": 2025,
    "type": "conference-abstract",
@@ -12975,7 +13129,7 @@
   {
    "id": "W4406705129",
    "doi": "https://doi.org/10.1093/ecco-jcc/jjae190.0257",
-   "title": "P0083 Decisional needs among patients and physicians in Crohn's disease: A qualitative analysis",
+   "title": "Decisional needs among patients and physicians in Crohn's disease: A qualitative analysis",
    "publication_date": "2025-01-01",
    "year": 2025,
    "type": "conference-abstract",
@@ -13092,7 +13246,7 @@
    "year": 2024,
    "type": "article",
    "journal": "Physics and Imaging in Radiation Oncology",
-   "cited_by_count": 30,
+   "cited_by_count": 32,
    "is_oa": true,
    "author_count": 11,
    "first_author": "Armin Lühr",
@@ -13103,10 +13257,28 @@
    "leaders": {}
   },
   {
+   "id": "W4405269455",
+   "doi": "https://doi.org/10.1088/1361-6560/ad9dab",
+   "title": "Validation of the generalized stochastic microdosimetric model (GSM 2 ) over a broad range of LET and particle beam type: a unique model for accurate description of (therapy relevant) radiation qualities",
+   "publication_date": "2024-12-24",
+   "year": 2024,
+   "type": "article",
+   "journal": "Physics in Medicine and Biology",
+   "cited_by_count": 14,
+   "is_oa": true,
+   "author_count": 12,
+   "first_author": "Giulio Bordieri",
+   "last_author": "Francesco Cordoni",
+   "last_author_home": false,
+   "maastro": true,
+   "divisions": [],
+   "leaders": {}
+  },
+  {
    "id": "W4405740627",
    "doi": "https://doi.org/10.1093/neuonc/noae271",
    "title": "Hippocampal avoidance prophylactic cranial irradiation (HA-PCI) for small-cell lung cancer better preserves white matter networks compared to conventional PCI",
-   "publication_date": "2024-12-23",
+   "publication_date": "2024-12-24",
    "year": 2024,
    "type": "article",
    "journal": "Neuro-Oncology",
@@ -13229,7 +13401,7 @@
    "year": 2024,
    "type": "article",
    "journal": "Lung Cancer",
-   "cited_by_count": 76,
+   "cited_by_count": 77,
    "is_oa": true,
    "author_count": 24,
    "first_author": "Ilias Houda",
@@ -13255,7 +13427,7 @@
    "year": 2024,
    "type": "review",
    "journal": "Clinical and Translational Radiation Oncology",
-   "cited_by_count": 13,
+   "cited_by_count": 14,
    "is_oa": true,
    "author_count": 9,
    "first_author": "John M.J. Paulissen",
@@ -13317,29 +13489,11 @@
    "year": 2024,
    "type": "article",
    "journal": "The Lancet Oncology",
-   "cited_by_count": 90,
+   "cited_by_count": 91,
    "is_oa": false,
    "author_count": 68,
    "first_author": "Icro Meattini",
    "last_author": "Jure Verbancic",
-   "last_author_home": false,
-   "maastro": true,
-   "divisions": [],
-   "leaders": {}
-  },
-  {
-   "id": "W4405269455",
-   "doi": "https://doi.org/10.1088/1361-6560/ad9dab",
-   "title": "Validation of the generalized stochastic microdosimetric model (GSM 2 ) over a broad range of LET and particle beam type: a unique model for accurate description of (therapy relevant) radiation qualities",
-   "publication_date": "2024-12-11",
-   "year": 2024,
-   "type": "article",
-   "journal": "Physics in Medicine and Biology",
-   "cited_by_count": 14,
-   "is_oa": true,
-   "author_count": 12,
-   "first_author": "Giulio Bordieri",
-   "last_author": "Francesco Cordoni",
    "last_author_home": false,
    "maastro": true,
    "divisions": [],
@@ -13449,7 +13603,7 @@
    "year": 2024,
    "type": "article",
    "journal": "JCO Clinical Cancer Informatics",
-   "cited_by_count": 15,
+   "cited_by_count": 17,
    "is_oa": true,
    "author_count": 6,
    "first_author": "Rachelle Swart",
@@ -13498,7 +13652,7 @@
   {
    "id": "W4405952609",
    "doi": "https://doi.org/10.21037/med-24-ab037",
-   "title": "AB037. AI-powered differentiation of thymomas (A and B3) and thymic carcinoma using histopathological analysis of H&E whole slide images",
+   "title": "AI-powered differentiation of thymomas (A and B3) and thymic carcinoma using histopathological analysis of H&E whole slide images",
    "publication_date": "2024-12-01",
    "year": 2024,
    "type": "conference-abstract",
@@ -13528,7 +13682,7 @@
    "year": 2024,
    "type": "conference-abstract",
    "journal": "Immuno-Oncology Technology",
-   "cited_by_count": 46,
+   "cited_by_count": 47,
    "is_oa": true,
    "author_count": 20,
    "first_author": "Solange Peters",
@@ -13612,32 +13766,6 @@
     }
    },
    "led_by": "Rianne Fijten"
-  },
-  {
-   "id": "W4404667492",
-   "doi": "https://doi.org/10.2196/60095",
-   "title": "Developing an ICD-10 Coding Assistant: Pilot Study Using RoBERTa and GPT-4 for Term Extraction and Description-Based Code Selection",
-   "publication_date": "2024-11-24",
-   "year": 2024,
-   "type": "article",
-   "journal": "JMIR Formative Research",
-   "cited_by_count": 27,
-   "is_oa": true,
-   "author_count": 4,
-   "first_author": "Sander Puts",
-   "last_author": "Iñigo Bermejo",
-   "last_author_home": true,
-   "maastro": true,
-   "divisions": [
-    "Clinical Data Science"
-   ],
-   "leaders": {
-    "Clinical Data Science": {
-     "position": "middle",
-     "maastricht": true
-    }
-   },
-   "led_by": "Iñigo Bermejo"
   },
   {
    "id": "W4404631096",
@@ -13753,7 +13881,7 @@
    "year": 2024,
    "type": "article",
    "journal": "La radiologia medica",
-   "cited_by_count": 20,
+   "cited_by_count": 22,
    "is_oa": true,
    "author_count": 11,
    "first_author": "Tianchen Luo",
@@ -13944,6 +14072,31 @@
    "leaders": {}
   },
   {
+   "id": "W4403590000",
+   "doi": "https://doi.org/10.1088/1361-6560/ad897f",
+   "title": "A simulation framework for preclinical proton irradiation workflow",
+   "publication_date": "2024-11-04",
+   "year": 2024,
+   "type": "article",
+   "journal": "Physics in Medicine and Biology",
+   "cited_by_count": 1,
+   "is_oa": true,
+   "author_count": 6,
+   "first_author": "Justin Malimban",
+   "last_author": "Sytze Brandenburg",
+   "last_author_home": false,
+   "maastro": true,
+   "divisions": [
+    "Physics Research"
+   ],
+   "leaders": {
+    "Physics Research": {
+     "position": "middle",
+     "maastricht": true
+    }
+   }
+  },
+  {
    "id": "W4404607656",
    "doi": "https://doi.org/10.25030/ncs-037",
    "title": "NCS Report 37: Code of Practice and Recommendations for Stereotactic Body Radiotherapy",
@@ -13964,7 +14117,7 @@
   {
    "id": "W4404237401",
    "doi": "https://doi.org/10.1093/neuonc/noae165.0381",
-   "title": "CTNI-14. RADIOTHERAPY VERSUS TMZ FOR HIGH-RISK LOW-GRADE GLIOMA. FINAL RESULTS AFTER MEDIAN FOLLOW-UP OF 13 YEARS OF PHASE III EORTC/NCIC-CTG/TROG/MRC-CTU (EORTC 22033-26033) STUDY",
+   "title": "RADIOTHERAPY VERSUS TMZ FOR HIGH-RISK LOW-GRADE GLIOMA. FINAL RESULTS AFTER MEDIAN FOLLOW-UP OF 13 YEARS OF PHASE III EORTC/NCIC-CTG/TROG/MRC-CTU (EORTC 22033-26033) STUDY",
    "publication_date": "2024-11-01",
    "year": 2024,
    "type": "article",
@@ -14086,31 +14239,6 @@
    "led_by": "Rianne Fijten"
   },
   {
-   "id": "W4403590000",
-   "doi": "https://doi.org/10.1088/1361-6560/ad897f",
-   "title": "A simulation framework for preclinical proton irradiation workflow",
-   "publication_date": "2024-10-21",
-   "year": 2024,
-   "type": "article",
-   "journal": "Physics in Medicine and Biology",
-   "cited_by_count": 1,
-   "is_oa": true,
-   "author_count": 6,
-   "first_author": "Justin Malimban",
-   "last_author": "Sytze Brandenburg",
-   "last_author_home": false,
-   "maastro": true,
-   "divisions": [
-    "Physics Research"
-   ],
-   "leaders": {
-    "Physics Research": {
-     "position": "middle",
-     "maastricht": true
-    }
-   }
-  },
-  {
    "id": "W4403524255",
    "doi": "https://doi.org/10.1016/j.radonc.2024.110592",
    "title": "A novel lineage-tracing tool reveals that hypoxic tumor cells drive tumor relapse after radiotherapy",
@@ -14169,7 +14297,7 @@
    "publication_date": "2024-10-12",
    "year": 2024,
    "type": "article",
-   "journal": "中国科学通报：英文版",
+   "journal": "Science Bulletin",
    "cited_by_count": 14,
    "is_oa": true,
    "author_count": 13,
@@ -14213,7 +14341,7 @@
    "year": 2024,
    "type": "article",
    "journal": "American Journal of Neuroradiology",
-   "cited_by_count": 4,
+   "cited_by_count": 5,
    "is_oa": true,
    "author_count": 12,
    "first_author": "Hedda J. van der Hulst",
@@ -14256,39 +14384,47 @@
    }
   },
   {
-   "id": "W4403054292",
-   "doi": "https://doi.org/10.1016/j.ctro.2024.100871",
-   "title": "Reirradiation − still navigating uncharted waters?",
-   "publication_date": "2024-10-02",
+   "id": "W4402631254",
+   "doi": "https://doi.org/10.1088/1361-6560/ad7d5b",
+   "title": "Towards a fully automatic workflow for investigating the dynamics of lung cancer cachexia during radiotherapy using cone beam computed tomography",
+   "publication_date": "2024-10-04",
    "year": 2024,
-   "type": "review",
-   "journal": "Clinical and Translational Radiation Oncology",
-   "cited_by_count": 23,
+   "type": "article",
+   "journal": "Physics in Medicine and Biology",
+   "cited_by_count": 8,
    "is_oa": true,
-   "author_count": 13,
-   "first_author": "Nicolaus H. Andratschke",
-   "last_author": "Matthias Gückenberger",
-   "last_author_home": false,
+   "author_count": 11,
+   "first_author": "Lars H B A Daenen",
+   "last_author": "Frank Verhaegen",
+   "last_author_home": true,
    "maastro": true,
    "divisions": [
-    "Clinical Research"
+    "Clinical Data Science",
+    "Clinical Research",
+    "Physics Research"
    ],
    "leaders": {
     "Clinical Research": {
      "position": "middle",
      "maastricht": true
+    },
+    "Physics Research": {
+     "position": "last",
+     "maastricht": true
     }
-   }
+   },
+   "led_by": "Frank Verhaegen",
+   "led_by_division": "Physics Research"
   },
   {
    "id": "W4403072039",
    "doi": "https://doi.org/10.1007/978-3-031-72378-0_15",
    "title": "Ordinal Learning: Longitudinal Attention Alignment Model for Predicting Time to Future Breast Cancer Events from Mammograms",
-   "publication_date": "2024-10-02",
+   "publication_date": "2024-10-03",
    "year": 2024,
    "type": "conference-paper",
    "journal": "Lecture notes in computer science",
-   "cited_by_count": 15,
+   "cited_by_count": 16,
    "is_oa": true,
    "author_count": 12,
    "first_author": "Xin Wang",
@@ -14309,7 +14445,7 @@
    "id": "W4403071644",
    "doi": "https://doi.org/10.1007/978-3-031-72378-0_13",
    "title": "Improving Neoadjuvant Therapy Response Prediction by Integrating Longitudinal Mammogram Generation with Cross-Modal Radiological Reports: A Vision-Language Alignment-Guided Model",
-   "publication_date": "2024-10-02",
+   "publication_date": "2024-10-03",
    "year": 2024,
    "type": "conference-paper",
    "journal": "Lecture notes in computer science",
@@ -14325,6 +14461,31 @@
    ],
    "leaders": {
     "Imaging Innovation Research": {
+     "position": "middle",
+     "maastricht": true
+    }
+   }
+  },
+  {
+   "id": "W4403054292",
+   "doi": "https://doi.org/10.1016/j.ctro.2024.100871",
+   "title": "Reirradiation − still navigating uncharted waters?",
+   "publication_date": "2024-10-02",
+   "year": 2024,
+   "type": "review",
+   "journal": "Clinical and Translational Radiation Oncology",
+   "cited_by_count": 24,
+   "is_oa": true,
+   "author_count": 13,
+   "first_author": "Nicolaus H. Andratschke",
+   "last_author": "Matthias Gückenberger",
+   "last_author_home": false,
+   "maastro": true,
+   "divisions": [
+    "Clinical Research"
+   ],
+   "leaders": {
+    "Clinical Research": {
      "position": "middle",
      "maastricht": true
     }
@@ -14445,7 +14606,7 @@
    "year": 2024,
    "type": "article",
    "journal": "Radiotherapy and Oncology",
-   "cited_by_count": 6,
+   "cited_by_count": 7,
    "is_oa": true,
    "author_count": 23,
    "first_author": "Orit Kaidar‐Person",
@@ -14541,39 +14702,6 @@
    "led_by": "Alberto Traverso"
   },
   {
-   "id": "W4402631254",
-   "doi": "https://doi.org/10.1088/1361-6560/ad7d5b",
-   "title": "Towards a fully automatic workflow for investigating the dynamics of lung cancer cachexia during radiotherapy using cone beam computed tomography",
-   "publication_date": "2024-09-19",
-   "year": 2024,
-   "type": "article",
-   "journal": "Physics in Medicine and Biology",
-   "cited_by_count": 8,
-   "is_oa": true,
-   "author_count": 11,
-   "first_author": "Lars H B A Daenen",
-   "last_author": "Frank Verhaegen",
-   "last_author_home": true,
-   "maastro": true,
-   "divisions": [
-    "Clinical Data Science",
-    "Clinical Research",
-    "Physics Research"
-   ],
-   "leaders": {
-    "Clinical Research": {
-     "position": "middle",
-     "maastricht": true
-    },
-    "Physics Research": {
-     "position": "last",
-     "maastricht": true
-    }
-   },
-   "led_by": "Frank Verhaegen",
-   "led_by_division": "Physics Research"
-  },
-  {
    "id": "W4403853764",
    "doi": "https://doi.org/10.48550/arxiv.2410.01828",
    "title": "Image-to-Image Translation Based on Deep Generative Modeling for Radiotherapy Synthetic Dataset Creation",
@@ -14628,7 +14756,7 @@
    "year": 2024,
    "type": "article",
    "journal": "British Journal of Radiology",
-   "cited_by_count": 4,
+   "cited_by_count": 5,
    "is_oa": true,
    "author_count": 8,
    "first_author": "Colien Hazelaar",
@@ -14647,7 +14775,7 @@
    "year": 2024,
    "type": "article",
    "journal": "British Journal of Radiology",
-   "cited_by_count": 36,
+   "cited_by_count": 37,
    "is_oa": true,
    "author_count": 31,
    "first_author": "David P.J. van Dijk",
@@ -14672,7 +14800,7 @@
    "year": 2024,
    "type": "article",
    "journal": "Nature Medicine",
-   "cited_by_count": 150,
+   "cited_by_count": 152,
    "is_oa": true,
    "author_count": 20,
    "first_author": "Peter de Gooyer",
@@ -14697,7 +14825,7 @@
    "year": 2024,
    "type": "review",
    "journal": "BMJ",
-   "cited_by_count": 50,
+   "cited_by_count": 54,
    "is_oa": true,
    "author_count": 20,
    "first_author": "Shing Fung Lee",
@@ -14765,7 +14893,7 @@
    "year": 2024,
    "type": "article",
    "journal": "Journal for ImmunoTherapy of Cancer",
-   "cited_by_count": 75,
+   "cited_by_count": 76,
    "is_oa": true,
    "author_count": 13,
    "first_author": "Guanchao Ye",
@@ -14891,6 +15019,24 @@
    "leaders": {}
   },
   {
+   "id": "W4401478127",
+   "doi": "https://doi.org/10.1088/2057-1976/ad6dcd",
+   "title": "Deep learning with uncertainty estimation for automatic tumor segmentation in PET/CT of head and neck cancers: impact of model complexity, image processing and augmentation",
+   "publication_date": "2024-08-30",
+   "year": 2024,
+   "type": "article",
+   "journal": "Biomedical Physics & Engineering Express",
+   "cited_by_count": 12,
+   "is_oa": true,
+   "author_count": 10,
+   "first_author": "Bao Ngoc Huynh",
+   "last_author": "Cecilia Marie Futsæther",
+   "last_author_home": false,
+   "maastro": true,
+   "divisions": [],
+   "leaders": {}
+  },
+  {
    "id": "W4401998260",
    "doi": "https://doi.org/10.1007/s11060-024-04730-2",
    "title": "Initial management of newly diagnosed WHO grade 2–3 adult meningioma following surgery: results from the Dutch Brain Tumour Registry (2016–2021)",
@@ -14967,7 +15113,7 @@
    "year": 2024,
    "type": "article",
    "journal": "European Radiology Experimental",
-   "cited_by_count": 25,
+   "cited_by_count": 26,
    "is_oa": true,
    "author_count": 13,
    "first_author": "Zuhir Bodalal",
@@ -15128,22 +15274,31 @@
    "leaders": {}
   },
   {
-   "id": "W4401478127",
-   "doi": "https://doi.org/10.1088/2057-1976/ad6dcd",
-   "title": "Deep learning with uncertainty estimation for automatic tumor segmentation in PET/CT of head and neck cancers: impact of model complexity, image processing and augmentation",
-   "publication_date": "2024-08-10",
+   "id": "W4401160158",
+   "doi": "https://doi.org/10.1088/1361-6560/ad69f6",
+   "title": "Turning the attention to time-resolved EPID-images: treatment error classification with transformer multiple instance learning",
+   "publication_date": "2024-08-09",
    "year": 2024,
    "type": "article",
-   "journal": "Biomedical Physics & Engineering Express",
-   "cited_by_count": 12,
+   "journal": "Physics in Medicine and Biology",
+   "cited_by_count": 1,
    "is_oa": true,
-   "author_count": 10,
-   "first_author": "Bao Ngoc Huynh",
-   "last_author": "Cecilia Marie Futsæther",
-   "last_author_home": false,
+   "author_count": 5,
+   "first_author": "Viacheslav Iarkin",
+   "last_author": "Cecile J A Wolfs",
+   "last_author_home": true,
    "maastro": true,
-   "divisions": [],
-   "leaders": {}
+   "divisions": [
+    "Clinical Data Science",
+    "Physics Research"
+   ],
+   "leaders": {
+    "Physics Research": {
+     "position": "middle",
+     "maastricht": true
+    }
+   },
+   "led_by": "Cecile J A Wolfs"
   },
   {
    "id": "W4401419073",
@@ -15180,33 +15335,6 @@
    "maastro": true,
    "divisions": [],
    "leaders": {}
-  },
-  {
-   "id": "W4401160158",
-   "doi": "https://doi.org/10.1088/1361-6560/ad69f6",
-   "title": "Turning the attention to time-resolved EPID-images: treatment error classification with transformer multiple instance learning",
-   "publication_date": "2024-07-31",
-   "year": 2024,
-   "type": "article",
-   "journal": "Physics in Medicine and Biology",
-   "cited_by_count": 1,
-   "is_oa": true,
-   "author_count": 5,
-   "first_author": "Viacheslav Iarkin",
-   "last_author": "Cecile J A Wolfs",
-   "last_author_home": true,
-   "maastro": true,
-   "divisions": [
-    "Clinical Data Science",
-    "Physics Research"
-   ],
-   "leaders": {
-    "Physics Research": {
-     "position": "middle",
-     "maastricht": true
-    }
-   },
-   "led_by": "Cecile J A Wolfs"
   },
   {
    "id": "W4401101984",
@@ -15279,7 +15407,7 @@
    "year": 2024,
    "type": "article",
    "journal": "Radiotherapy and Oncology",
-   "cited_by_count": 8,
+   "cited_by_count": 9,
    "is_oa": true,
    "author_count": 8,
    "first_author": "Jesús Rojo-Santiago",
@@ -15421,7 +15549,7 @@
    "year": 2024,
    "type": "article",
    "journal": "Breast Cancer Research and Treatment",
-   "cited_by_count": 15,
+   "cited_by_count": 16,
    "is_oa": true,
    "author_count": 11,
    "first_author": "Orit Kaidar‐Person",
@@ -15735,6 +15863,32 @@
    "led_by": "Stefano Trebeschi"
   },
   {
+   "id": "W4399598699",
+   "doi": "https://doi.org/10.1088/1361-6560/ad580e",
+   "title": "Time-resolved clinical dose volume metrics, calculations and predictions based on source tracking measurements and uncertainties to aid treatment verification and error detection for HDR brachytherapy—a proof-of-principle study",
+   "publication_date": "2024-06-25",
+   "year": 2024,
+   "type": "article",
+   "journal": "Physics in Medicine and Biology",
+   "cited_by_count": 4,
+   "is_oa": true,
+   "author_count": 7,
+   "first_author": "T. van Wagenberg",
+   "last_author": "Gabriel Paiva Fonseca",
+   "last_author_home": true,
+   "maastro": true,
+   "divisions": [
+    "Physics Research"
+   ],
+   "leaders": {
+    "Physics Research": {
+     "position": "middle",
+     "maastricht": true
+    }
+   },
+   "led_by": "Gabriel Paiva Fonseca"
+  },
+  {
    "id": "W4399950588",
    "doi": "https://doi.org/10.1016/j.radonc.2024.110409",
    "title": "Robustness of intensity modulated proton treatment of esophageal cancer for anatomical changes and breathing motion",
@@ -15761,7 +15915,7 @@
    "year": 2024,
    "type": "review",
    "journal": "BMC Medical Informatics and Decision Making",
-   "cited_by_count": 7,
+   "cited_by_count": 9,
    "is_oa": true,
    "author_count": 6,
    "first_author": "Hemalatha Kanakarajan",
@@ -15770,32 +15924,6 @@
    "maastro": true,
    "divisions": [],
    "leaders": {}
-  },
-  {
-   "id": "W4399598699",
-   "doi": "https://doi.org/10.1088/1361-6560/ad580e",
-   "title": "Time-resolved clinical dose volume metrics, calculations and predictions based on source tracking measurements and uncertainties to aid treatment verification and error detection for HDR brachytherapy—a proof-of-principle study",
-   "publication_date": "2024-06-13",
-   "year": 2024,
-   "type": "article",
-   "journal": "Physics in Medicine and Biology",
-   "cited_by_count": 4,
-   "is_oa": true,
-   "author_count": 7,
-   "first_author": "T. van Wagenberg",
-   "last_author": "Gabriel Paiva Fonseca",
-   "last_author_home": true,
-   "maastro": true,
-   "divisions": [
-    "Physics Research"
-   ],
-   "leaders": {
-    "Physics Research": {
-     "position": "middle",
-     "maastricht": true
-    }
-   },
-   "led_by": "Gabriel Paiva Fonseca"
   },
   {
    "id": "W4399516597",
@@ -15848,7 +15976,7 @@
    "year": 2024,
    "type": "article",
    "journal": "New England Journal of Medicine",
-   "cited_by_count": 579,
+   "cited_by_count": 589,
    "is_oa": true,
    "author_count": 24,
    "first_author": "Myriam Chalabi",
@@ -15873,7 +16001,7 @@
    "year": 2024,
    "type": "article",
    "journal": "Radiotherapy and Oncology",
-   "cited_by_count": 131,
+   "cited_by_count": 132,
    "is_oa": true,
    "author_count": 18,
    "first_author": "Coen Hurkmans",
@@ -15953,7 +16081,7 @@
    "year": 2024,
    "type": "article",
    "journal": "Nature Medicine",
-   "cited_by_count": 139,
+   "cited_by_count": 142,
    "is_oa": true,
    "author_count": 25,
    "first_author": "Sarah Volinsky-Fremond",
@@ -16029,6 +16157,51 @@
    "led_by": "Johan van Soest"
   },
   {
+   "id": "W4394949569",
+   "doi": "https://doi.org/10.1088/1361-6560/ad40f9",
+   "title": "Experimental comparison of cylindrical and plane parallel ionization chambers for reference dosimetry in continuous and pulsed scanned proton beams",
+   "publication_date": "2024-05-08",
+   "year": 2024,
+   "type": "article",
+   "journal": "Physics in Medicine and Biology",
+   "cited_by_count": 2,
+   "is_oa": true,
+   "author_count": 10,
+   "first_author": "Gloria Vilches‐Freixas",
+   "last_author": "Ana Mónica Lourenço",
+   "last_author_home": false,
+   "maastro": true,
+   "divisions": [],
+   "leaders": {}
+  },
+  {
+   "id": "W4394623386",
+   "doi": "https://doi.org/10.1088/1361-6560/ad3cb0",
+   "title": "Image quality evaluation of a new high-performance ring-gantry cone-beam computed tomography imager",
+   "publication_date": "2024-05-07",
+   "year": 2024,
+   "type": "article",
+   "journal": "Physics in Medicine and Biology",
+   "cited_by_count": 78,
+   "is_oa": true,
+   "author_count": 7,
+   "first_author": "Didier Lustermans",
+   "last_author": "Frank Verhaegen",
+   "last_author_home": true,
+   "maastro": true,
+   "divisions": [
+    "Physics Research"
+   ],
+   "leaders": {
+    "Physics Research": {
+     "position": "last",
+     "maastricht": true
+    }
+   },
+   "led_by": "Frank Verhaegen",
+   "led_by_division": "Physics Research"
+  },
+  {
    "id": "W4396691037",
    "doi": "https://doi.org/10.1016/j.ejca.2024.114104",
    "title": "Trends in incidence, treatment, and relative survival of colorectal cancer in the Netherlands between 2000 and 2021",
@@ -16054,7 +16227,7 @@
    "year": 2024,
    "type": "article",
    "journal": "Diseases of the Colon & Rectum",
-   "cited_by_count": 44,
+   "cited_by_count": 47,
    "is_oa": true,
    "author_count": 14,
    "first_author": "Petra A. Custers",
@@ -16080,7 +16253,7 @@
    "year": 2024,
    "type": "article",
    "journal": "European Journal of Surgical Oncology",
-   "cited_by_count": 0,
+   "cited_by_count": 1,
    "is_oa": false,
    "author_count": 21,
    "first_author": "Tim Rattay",
@@ -16141,6 +16314,24 @@
    }
   },
   {
+   "id": "W4396233405",
+   "doi": "https://doi.org/10.1093/nop/npae040",
+   "title": "Controversies in neuro-oncology: Focal proton versus photon radiation therapy for adult brain tumors",
+   "publication_date": "2024-04-29",
+   "year": 2024,
+   "type": "review",
+   "journal": "Neuro-Oncology Practice",
+   "cited_by_count": 25,
+   "is_oa": true,
+   "author_count": 11,
+   "first_author": "Daniëlle B. P. Eekers",
+   "last_author": "Giuseppe Caracciolo Minniti",
+   "last_author_home": false,
+   "maastro": true,
+   "divisions": [],
+   "leaders": {}
+  },
+  {
    "id": "W4396222672",
    "doi": "https://doi.org/10.1111/codi.17002",
    "title": "Impact of the new rectal cancer definition on multimodality treatment and interhospital variability: Results from a nationwide cross‐sectional study",
@@ -16164,24 +16355,6 @@
      "maastricht": true
     }
    }
-  },
-  {
-   "id": "W4396233405",
-   "doi": "https://doi.org/10.1093/nop/npae040",
-   "title": "Controversies in neuro-oncology: Focal proton versus photon radiation therapy for adult brain tumors",
-   "publication_date": "2024-04-28",
-   "year": 2024,
-   "type": "review",
-   "journal": "Neuro-Oncology Practice",
-   "cited_by_count": 25,
-   "is_oa": true,
-   "author_count": 11,
-   "first_author": "Daniëlle B. P. Eekers",
-   "last_author": "Giuseppe Caracciolo Minniti",
-   "last_author_home": false,
-   "maastro": true,
-   "divisions": [],
-   "leaders": {}
   },
   {
    "id": "W4395462746",
@@ -16244,7 +16417,7 @@
    "year": 2024,
    "type": "review",
    "journal": "British Journal of Radiology",
-   "cited_by_count": 11,
+   "cited_by_count": 12,
    "is_oa": true,
    "author_count": 6,
    "first_author": "Max J. Lahaye",
@@ -16325,22 +16498,31 @@
    "leaders": {}
   },
   {
-   "id": "W4394949569",
-   "doi": "https://doi.org/10.1088/1361-6560/ad40f9",
-   "title": "Experimental comparison of cylindrical and plane parallel ionization chambers for reference dosimetry in continuous and pulsed scanned proton beams",
+   "id": "W4393074553",
+   "doi": "https://doi.org/10.1088/1361-6560/ad3720",
+   "title": "Dosimetric validation of SmART-RAD Monte Carlo modelling for x-ray cabinet radiobiology irradiators",
    "publication_date": "2024-04-19",
    "year": 2024,
    "type": "article",
    "journal": "Physics in Medicine and Biology",
-   "cited_by_count": 2,
+   "cited_by_count": 5,
    "is_oa": true,
-   "author_count": 10,
-   "first_author": "Gloria Vilches‐Freixas",
-   "last_author": "Ana Mónica Lourenço",
-   "last_author_home": false,
+   "author_count": 4,
+   "first_author": "Mark A. Hill",
+   "last_author": "Frank Verhaegen",
+   "last_author_home": true,
    "maastro": true,
-   "divisions": [],
-   "leaders": {}
+   "divisions": [
+    "Physics Research"
+   ],
+   "leaders": {
+    "Physics Research": {
+     "position": "last",
+     "maastricht": true
+    }
+   },
+   "led_by": "Frank Verhaegen",
+   "led_by_division": "Physics Research"
   },
   {
    "id": "W4394904953",
@@ -16412,7 +16594,7 @@
    "year": 2024,
    "type": "article",
    "journal": "European Journal of Cancer",
-   "cited_by_count": 87,
+   "cited_by_count": 91,
    "is_oa": true,
    "author_count": 72,
    "first_author": "Tiuri Ewout Kroese",
@@ -16467,31 +16649,35 @@
    }
   },
   {
-   "id": "W4394623386",
-   "doi": "https://doi.org/10.1088/1361-6560/ad3cb0",
-   "title": "Image quality evaluation of a new high-performance ring-gantry cone-beam computed tomography imager",
-   "publication_date": "2024-04-09",
+   "id": "W4394675050",
+   "doi": "https://doi.org/10.1093/neuonc/noae035",
+   "title": "Predicting the risk of neurocognitive decline after brain irradiation in adult patients with a primary brain tumor",
+   "publication_date": "2024-04-10",
    "year": 2024,
    "type": "article",
-   "journal": "Physics in Medicine and Biology",
-   "cited_by_count": 78,
+   "journal": "Neuro-Oncology",
+   "cited_by_count": 16,
    "is_oa": true,
-   "author_count": 7,
-   "first_author": "Didier Lustermans",
-   "last_author": "Frank Verhaegen",
+   "author_count": 10,
+   "first_author": "Fariba Tohidinezhad",
+   "last_author": "Alberto Traverso",
    "last_author_home": true,
    "maastro": true,
    "divisions": [
-    "Physics Research"
+    "Clinical Data Science",
+    "Clinical Research"
    ],
    "leaders": {
-    "Physics Research": {
-     "position": "last",
+    "Clinical Research": {
+     "position": "middle",
+     "maastricht": true
+    },
+    "Clinical Data Science": {
+     "position": "middle",
      "maastricht": true
     }
    },
-   "led_by": "Frank Verhaegen",
-   "led_by_division": "Physics Research"
+   "led_by": "Alberto Traverso"
   },
   {
    "id": "W4394682776",
@@ -16545,7 +16731,7 @@
    "year": 2024,
    "type": "article",
    "journal": "The Lancet Regional Health - Americas",
-   "cited_by_count": 7,
+   "cited_by_count": 8,
    "is_oa": true,
    "author_count": 6,
    "first_author": "Maria João Cardoso",
@@ -16625,7 +16811,7 @@
    "year": 2024,
    "type": "article",
    "journal": "European Journal of Surgical Oncology",
-   "cited_by_count": 12,
+   "cited_by_count": 13,
    "is_oa": true,
    "author_count": 100,
    "first_author": "Eline G M van Geffen",
@@ -16718,68 +16904,10 @@
    }
   },
   {
-   "id": "W4394675050",
-   "doi": "https://doi.org/10.1093/neuonc/noae035",
-   "title": "Predicting the risk of neurocognitive decline after brain irradiation in adult patients with a primary brain tumor",
-   "publication_date": "2024-03-25",
-   "year": 2024,
-   "type": "article",
-   "journal": "Neuro-Oncology",
-   "cited_by_count": 15,
-   "is_oa": true,
-   "author_count": 10,
-   "first_author": "Fariba Tohidinezhad",
-   "last_author": "Alberto Traverso",
-   "last_author_home": true,
-   "maastro": true,
-   "divisions": [
-    "Clinical Data Science",
-    "Clinical Research"
-   ],
-   "leaders": {
-    "Clinical Research": {
-     "position": "middle",
-     "maastricht": true
-    },
-    "Clinical Data Science": {
-     "position": "middle",
-     "maastricht": true
-    }
-   },
-   "led_by": "Alberto Traverso"
-  },
-  {
-   "id": "W4393074553",
-   "doi": "https://doi.org/10.1088/1361-6560/ad3720",
-   "title": "Dosimetric validation of SmART-RAD Monte Carlo modelling for x-ray cabinet radiobiology irradiators",
-   "publication_date": "2024-03-22",
-   "year": 2024,
-   "type": "article",
-   "journal": "Physics in Medicine and Biology",
-   "cited_by_count": 5,
-   "is_oa": true,
-   "author_count": 4,
-   "first_author": "Mark A. Hill",
-   "last_author": "Frank Verhaegen",
-   "last_author_home": true,
-   "maastro": true,
-   "divisions": [
-    "Physics Research"
-   ],
-   "leaders": {
-    "Physics Research": {
-     "position": "last",
-     "maastricht": true
-    }
-   },
-   "led_by": "Frank Verhaegen",
-   "led_by_division": "Physics Research"
-  },
-  {
    "id": "W4393026467",
    "doi": "https://doi.org/10.1007/978-3-031-48165-9_21",
    "title": "Treatment of Head and Neck Cancers with MR-Linac",
-   "publication_date": "2024-03-20",
+   "publication_date": "2024-03-21",
    "year": 2024,
    "type": "book-chapter",
    "journal": "Springer eBooks",
@@ -16876,7 +17004,7 @@
    "year": 2024,
    "type": "article",
    "journal": "Technical Innovations & Patient Support in Radiation Oncology",
-   "cited_by_count": 19,
+   "cited_by_count": 20,
    "is_oa": true,
    "author_count": 23,
    "first_author": "Michelle Leech",
@@ -16930,7 +17058,7 @@
    "year": 2024,
    "type": "article",
    "journal": "European Radiology",
-   "cited_by_count": 27,
+   "cited_by_count": 26,
    "is_oa": true,
    "author_count": 8,
    "first_author": "Laurens Topff",
@@ -16946,6 +17074,24 @@
      "maastricht": true
     }
    }
+  },
+  {
+   "id": "W4391969752",
+   "doi": "https://doi.org/10.37126/aige.v5.i1.90574",
+   "title": "Artificial intelligence for characterization of diminutive colorectal polyps: A feasibility study comparing two computer-aided diagnosis systems",
+   "publication_date": "2024-03-08",
+   "year": 2024,
+   "type": "article",
+   "journal": "Artificial Intelligence in Gastrointestinal Endoscopy",
+   "cited_by_count": 4,
+   "is_oa": true,
+   "author_count": 12,
+   "first_author": "Quirine E. W. van der Zander",
+   "last_author": "Erik J. Schoon",
+   "last_author_home": true,
+   "maastro": true,
+   "divisions": [],
+   "leaders": {}
   },
   {
    "id": "W4393065168",
@@ -17111,7 +17257,7 @@
    "year": 2024,
    "type": "article",
    "journal": "Radiotherapy and Oncology",
-   "cited_by_count": 13,
+   "cited_by_count": 14,
    "is_oa": true,
    "author_count": 7,
    "first_author": "Coen Hurkmans",
@@ -17124,10 +17270,10 @@
   {
    "id": "W4392631780",
    "doi": "https://doi.org/10.1136/ijgc-2024-esgo.932",
-   "title": "336 Randomised trial of a nurse-led sexual rehabilitation intervention after radiotherapy for women with gynaecological cancers",
+   "title": "Randomised trial of a nurse-led sexual rehabilitation intervention after radiotherapy for women with gynaecological cancers",
    "publication_date": "2024-03-01",
    "year": 2024,
-   "type": "conference-abstract",
+   "type": "article",
    "journal": "International Journal of Gynecological Cancer",
    "cited_by_count": 0,
    "is_oa": true,
@@ -17190,7 +17336,7 @@
    "year": 2024,
    "type": "article",
    "journal": "The Lancet Oncology",
-   "cited_by_count": 139,
+   "cited_by_count": 141,
    "is_oa": false,
    "author_count": 35,
    "first_author": "Shankar Siva",
@@ -17252,7 +17398,7 @@
    "year": 2024,
    "type": "review",
    "journal": "npj Precision Oncology",
-   "cited_by_count": 34,
+   "cited_by_count": 36,
    "is_oa": true,
    "author_count": 12,
    "first_author": "Marta Ligero",
@@ -17333,7 +17479,7 @@
    "year": 2024,
    "type": "article",
    "journal": "Journal of Clinical Oncology",
-   "cited_by_count": 39,
+   "cited_by_count": 40,
    "is_oa": true,
    "author_count": 25,
    "first_author": "Suzanne I.M. Neppelenbroek",
@@ -17404,7 +17550,7 @@
    "year": 2024,
    "type": "article",
    "journal": "PLoS ONE",
-   "cited_by_count": 14,
+   "cited_by_count": 15,
    "is_oa": true,
    "author_count": 3,
    "first_author": "Girma Gilano",
@@ -17447,6 +17593,31 @@
     }
    },
    "led_by": "Rianne Fijten"
+  },
+  {
+   "id": "W4391258615",
+   "doi": "https://doi.org/10.21037/qims-23-1180",
+   "title": "Assessing the role of GPT-4 in thyroid ultrasound diagnosis and treatment recommendations: enhancing interpretability with a chain of thought approach",
+   "publication_date": "2024-02-01",
+   "year": 2024,
+   "type": "article",
+   "journal": "Quantitative Imaging in Medicine and Surgery",
+   "cited_by_count": 58,
+   "is_oa": true,
+   "author_count": 6,
+   "first_author": "Zhixiang Wang",
+   "last_author": "Pengfei Sun",
+   "last_author_home": false,
+   "maastro": true,
+   "divisions": [
+    "Clinical Data Science"
+   ],
+   "leaders": {
+    "Clinical Data Science": {
+     "position": "middle",
+     "maastricht": true
+    }
+   }
   },
   {
    "id": "W4392128795",
@@ -17492,7 +17663,7 @@
    "year": 2024,
    "type": "article",
    "journal": "Journal of the National Comprehensive Cancer Network",
-   "cited_by_count": 19,
+   "cited_by_count": 22,
    "is_oa": true,
    "author_count": 9,
    "first_author": "Eline G M van Geffen",
@@ -17552,31 +17723,6 @@
    "maastro": true,
    "divisions": [],
    "leaders": {}
-  },
-  {
-   "id": "W4391258615",
-   "doi": "https://doi.org/10.21037/qims-23-1180",
-   "title": "Assessing the role of GPT-4 in thyroid ultrasound diagnosis and treatment recommendations: enhancing interpretability with a chain of thought approach",
-   "publication_date": "2024-01-26",
-   "year": 2024,
-   "type": "article",
-   "journal": "Quantitative Imaging in Medicine and Surgery",
-   "cited_by_count": 58,
-   "is_oa": true,
-   "author_count": 6,
-   "first_author": "Zhixiang Wang",
-   "last_author": "Pengfei Sun",
-   "last_author_home": false,
-   "maastro": true,
-   "divisions": [
-    "Clinical Data Science"
-   ],
-   "leaders": {
-    "Clinical Data Science": {
-     "position": "middle",
-     "maastricht": true
-    }
-   }
   },
   {
    "id": "W4391106310",
@@ -17708,7 +17854,7 @@
    "year": 2024,
    "type": "article",
    "journal": "Insights into Imaging",
-   "cited_by_count": 367,
+   "cited_by_count": 370,
    "is_oa": true,
    "author_count": 60,
    "first_author": "Burak Koçak",
@@ -17724,6 +17870,34 @@
      "maastricht": true
     }
    }
+  },
+  {
+   "id": "W4389660668",
+   "doi": "https://doi.org/10.1088/1361-6560/ad1547",
+   "title": "A 3D transfer learning approach for identifying multiple simultaneous errors during radiotherapy",
+   "publication_date": "2024-01-17",
+   "year": 2024,
+   "type": "article",
+   "journal": "Physics in Medicine and Biology",
+   "cited_by_count": 4,
+   "is_oa": true,
+   "author_count": 3,
+   "first_author": "Kars van den Berg",
+   "last_author": "Frank Verhaegen",
+   "last_author_home": true,
+   "maastro": true,
+   "divisions": [
+    "Clinical Data Science",
+    "Physics Research"
+   ],
+   "leaders": {
+    "Physics Research": {
+     "position": "last",
+     "maastricht": true
+    }
+   },
+   "led_by": "Frank Verhaegen",
+   "led_by_division": "Physics Research"
   },
   {
    "id": "W4390863761",
@@ -17916,7 +18090,7 @@
    "year": 2024,
    "type": "article",
    "journal": "Journal for ImmunoTherapy of Cancer",
-   "cited_by_count": 64,
+   "cited_by_count": 65,
    "is_oa": true,
    "author_count": 17,
    "first_author": "Junyi Li",
@@ -17934,7 +18108,7 @@
    "year": 2024,
    "type": "article",
    "journal": "Physics and Imaging in Radiation Oncology",
-   "cited_by_count": 43,
+   "cited_by_count": 44,
    "is_oa": true,
    "author_count": 7,
    "first_author": "Marta Bogowicz",
@@ -18124,7 +18298,7 @@
    "year": 2024,
    "type": "article",
    "journal": "Palliative Care and Social Practice",
-   "cited_by_count": 30,
+   "cited_by_count": 32,
    "is_oa": true,
    "author_count": 68,
    "first_author": "Judith A C Rietjens",

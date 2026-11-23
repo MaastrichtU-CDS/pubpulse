@@ -4,7 +4,34 @@
 <link href="https://maastrichtu-cds.github.io/pubpulse/"/>
 <link rel="self" href="https://maastrichtu-cds.github.io/pubpulse/feed.xml"/>
 <id>https://maastrichtu-cds.github.io/pubpulse/</id>
-<updated>2026-11-20T14:41:32+00:00</updated>
+<updated>2026-11-23T16:52:36+00:00</updated>
+<entry>
+<title>Prostate and pelvic nodal stereotactic body radiotherapy (SBRT) versus prostate-only SBRT for high-risk, localised prostate cancer (PACE-NODES): early adverse event results from an international, open-label, phase 3, randomised controlled trial</title>
+<link href="https://doi.org/10.1016/s1470-2045(26)00465-1"/>
+<id>https://openalex.org/W7237143246</id>
+<updated>2026-11-23T00:00:00Z</updated>
+<summary>The Lancet Oncology · 2026-11-01 · group authors: Ananya Choudhury
+
+BACKGROUND: Radiotherapy to the prostate and pelvic lymph nodes compared with prostate-only radiotherapy has shown benefits for high-risk prostate cancer in some studies, but evidence remains unclear. In low-risk or intermediate-risk disease, prostate-only stereotactic body radiotherapy (P-SBRT) is safe and effective. PACE-NODES aims to demonstrate safety and efficacy of prostate and pelvic nodal SBRT (PPN-SBRT) for high-risk disease. METHODS: PACE-NODES is a phase 3, open-label, randomised trial conducted at 47 hospitals in the UK, Ireland, and New Zealand. The trial recruited men aged 18 years or older, with a WHO performance status of 0-2, and with high-risk (Gleason score 8-10, stage T3a-T4, or prostate-specific antigen &gt;20 ng/mL), localised prostate adenocarcinoma, planned for at least 12 months of hormone therapy. Participants were randomly assigned (1:1), using minimisation with a random element, to P-SBRT (36·25 Gy prostate) or PPN-SBRT (36·25 Gy prostate, 25 Gy pelvic nodes) in five fractions, on alternate days. Neither participants nor researchers were masked to treatment allocation. The primary endpoint is time to biochemical or clinical failure (not yet mature). This preplanned safety analysis is on secondary endpoints, with a focus on Common Terminology Criteria for Adverse Events grade 2 or worse gastrointestinal and genitourinary adverse events within 12 weeks of treatment, analysed by treatment received. Patient-reported outcomes include Expanded Prostate Index Composite Short Form (EPIC-26), International Prostate Symptom Score (IPSS), and EQ-5D-5L. This study is registered at ClinicalTrials.gov (NCT05613023) and is ongoing. FINDINGS: Between Sept 9, 2022, and July 31, 2025, 1166 participants were recruited and randomly assigned (583 per group). The median age was 72·7 years (IQR 67·7-76·5). 18 patients did not receive radiotherapy; a further 60 (17 assigned to P-SBRT, 43 assigned to PPN-SBRT) did not receive allocated radiotherapy, mostly where planning constraints were not met. This analysis includes 555 patients receiving P-SBRT and 511 patients receiving PPN-SBRT who had completed acute follow-up. Median follow-up was 13·8 months (IQR 7·8-21·0). 118 (21·3%) of 555 patients receiving P-SBRT and 143 (28·0%) of 511 receiving PPN-SBRT had grade 2 or worse gastrointestinal events within 12 weeks (difference 6·7 percentage points [95% CI 1·6-11·9]; p=0·011; odds ratio [OR] 1·44 [95% CI 1·09-1·91]). This included grade 3 events in eight (1·4%) patients treated with P-SBRT and 11 (2·2%) treated with PPN-SBRT, and a grade 4 event in one (0·2%) patient treated with P-SBRT. 223 (40·2%) of 555 patients receiving P-SBRT and 183 (35·8%) of 511 receiving PPN-SBRT had grade 2 or worse genitourinary events (difference -4·4 percentage points [-10·2 to 1·5]; p=0·14; OR 0·83 [0·65-1·06]). This included grade 3 events in seven (1·3%) patients treated with P-SBRT and two (0·4%) treated with PPN-SBRT (no grade 4 events). Genitourinary and gastrointestinal adverse events peaked at 2 weeks and were low and similar between groups at 12 weeks. There were no treatment-related deaths. More patients receiving PPN-SBRT had important decreases in bowel function on 4-week EPIC-26 (208 [54·9%] of 379 receiving P-SBRT, 239 [65·5%] of 365 receiving PPN-SBRT). The proportion of patients reporting moderate or severe urinary symptoms on IPSS at 4 weeks was similar in those receiving P-SBRT (312 [72·4%] of 431) and those receiving PPN-SBRT (284 [71·9%] of 395), as were 4-week decreases in overall health score on EQ-5D-5L (-3·2 [99% CI -4·8 to -1·6] for P-SBRT and -2·5 [-4·1 to -0·9] for PPN-SBRT). INTERPRETATION: P-SBRT and PPN-SBRT for patients with high-risk prostate cancer were deliverable in an international multicentre trial. PPN-SBRT increased gastrointestinal but not genitourinary adverse events. Side-effects diminished rapidly, with no difference by 12 weeks. Follow-up continues for late adverse events and cancer control, which are essential for confirming a role for PPN-SBRT in this setting. FUNDING: Prostate Cancer UK.</summary>
+</entry>
+<entry>
+<title>Early Prediction of In-Hospital ICU Mortality Using Innovative First-Day Data: A Review</title>
+<link href="https://doi.org/10.48550/arxiv.2505.12344"/>
+<id>https://openalex.org/W4417300725</id>
+<updated>2026-11-23T00:00:00Z</updated>
+<summary>arXiv (Cornell University) · 2025-05-18 · group authors: Xuanhe Hou
+
+The intensive care unit (ICU) manages critically ill patients, many of whom face a high risk of mortality. Early and accurate prediction of in-hospital mortality within the first 24 hours of ICU admission is crucial for timely clinical interventions, resource optimization, and improved patient outcomes. Traditional scoring systems, while useful, often have limitations in predictive accuracy and adaptability. Objective: This review aims to systematically evaluate and benchmark innovative methodologies that leverage data available within the first day of ICU admission for predicting in-hospital mortality. We focus on advancements in machine learning, novel biomarker applications, and the integration of diverse data types.</summary>
+</entry>
+<entry>
+<title>A 3D transfer learning approach for identifying multiple simultaneous errors during radiotherapy</title>
+<link href="https://doi.org/10.1088/1361-6560/ad1547"/>
+<id>https://openalex.org/W4389660668</id>
+<updated>2026-11-23T00:00:00Z</updated>
+<summary>Physics in Medicine and Biology · 2024-01-17 · group authors: Cecile Wolfs
+
+Objective . Deep learning models, such as convolutional neural networks (CNNs), can take full dose comparison images as input and have shown promising results for error identification during treatment. Clinically, complex scenarios should be considered, with the risk of multiple anatomical and/or mechanical errors occurring simultaneously during treatment. The purpose of this study was to evaluate the capability of CNN-based error identification in this more complex scenario. Approach . For 40 lung cancer patients, clinically realistic ranges of combinations of various treatment errors within treatment plans and/or computed tomography (CT) images were simulated. Modified CT images and treatment plans were used to predict 2580 3D dose distributions, which were compared to dose distributions without errors using various gamma analysis criteria and relative dose difference as dose comparison methods. A 3D CNN capable of multilabel classification was trained to identify treatment errors at two classification levels, using dose comparison volumes as input: Level 1 (main error type, e.g. anatomical change, mechanical error) and Level 2 (error subtype, e.g. tumor regression, patient rotation). For training the CNNs, a transfer learning approach was employed. An ensemble model was also evaluated, which consisted of three separate CNNs each taking a region of interest of the dose comparison volume as input. Model performance was evaluated by calculating sample F1-scores for training and validation sets. Main results . The model had high F1-scores for Level 1 classification, but performance for Level 2 was lower, and overfitting became more apparent. Using relative dose difference instead of gamma volumes as input improved performance for Level 2 classification, whereas using an ensemble model additionally reduced overfitting. The models obtained F1-scores of 0.86 and 0.62 on an independent test set for Level 1 and Level 2, respectively. Significance . This study shows that it is possible to identify multiple errors occurring simultaneously in 3D dose verification data.</summary>
+</entry>
 <entry>
 <title>Participatieve en theoretische ontwikkeling van samen beslisseninterventies in de radiotherapie</title>
 <link href="https://doi.org/10.5281/zenodo.24316750"/>
@@ -21,7 +48,7 @@ Purpose: To describe the patient partnered development and of a multilevel share
 <updated>2026-11-16T00:00:00Z</updated>
 <summary>JMIR Human Factors · 2026-11-13 · group authors: Simone Mingels, Hannah Piehl, Rianne Fijten
 
-Abstract Background AI-driven clinical decision support systems (AI-CDSS) are increasingly being introduced to enhance clinical decision-making, yet their adoption in health care remains limited. Research has examined technical, organizational, and contextual barriers to adoption, but less attention has been paid to how knowledge, values, and responsibility around AI-CDSS are constructed and negotiated in practice. Objective This study examines how clinicians and AI experts make sense of AI-CDSS by reanalyzing qualitative interview data through a feminist and constructivist science and technology studies (STS) perspective. Whereas the original study examined informational needs, this reanalysis asks how participants construct relevant knowledge, evaluate the value of AI-CDSS, and negotiate appropriate use and responsibility in clinical practice. Methods The authors conducted a reanalysis of semistructured interviews held in 2024 with clinicians (n=8) and AI experts (n=8) in the Netherlands. The original study focused on informational needs for AI-CDSS. For this analysis, a deductive coding framework based on European Commission guidelines for trustworthy AI was first applied, and the material was then inductively reorganized into 5 empirical themes. Subsequently, feminist and constructivist STS concepts were used as sensitizing concepts in an abductive analysis, and these concepts were brought into dialogue with the empirical themes to examine the sociotechnical relations underlying participants’ accounts. Results Situated knowledge shows that the informational needs of clinicians are not universal but relate to their roles and specific clinical contexts, with understanding oriented less toward technical transparency than toward actionable guidance, relevance, and integration into decision-making. Standpoint theory illuminates differences between stakeholder priorities: clinicians emphasize information on how to use and act on AI outputs within existing workflows, whereas AI experts focus more on providing technical characteristics and performance metrics. Tinkering captures how clinicians experiment with AI systems in practice to develop situated, lay forms of expertise. Situated value highlights that perceptions of an AI-CDSS’s worth are relational, with clinicians valuing novel, context-sensitive insights and developers prioritizing performance metrics. Finally, response-ability reveals how trust and accountability are largely delegated to institutional structures, while clinicians report limited legal, organizational, and structural support to respond meaningfully to uncertainty or errors when using AI-CDSS. Conclusions Reanalyzing the same interview material through an abductive STS approach makes sociotechnical dimensions visible that were not the focus of the original analysis. Rather than treating informational requirements as universal or adoption as primarily a matter of technical performance and communication, the findings show how knowledge, value, and responsibility are constituted through situated professional practices and institutional arrangements. Processes and considerations regarding how clinicians make sense of AI-CDSS are not universal but are shaped by social, cultural, and institutional contexts. This analytical perspective underscores the need for context-sensitive, multistakeholder strategies to support meaningful and responsible AI adoption in clinical practice.</summary>
+Background AI-driven clinical decision support systems (AI-CDSS) are increasingly being introduced to enhance clinical decision-making, yet their adoption in health care remains limited. Research has examined technical, organizational, and contextual barriers to adoption, but less attention has been paid to how knowledge, values, and responsibility around AI-CDSS are constructed and negotiated in practice. Objective This study examines how clinicians and AI experts make sense of AI-CDSS by reanalyzing qualitative interview data through a feminist and constructivist science and technology studies (STS) perspective. Whereas the original study examined informational needs, this reanalysis asks how participants construct relevant knowledge, evaluate the value of AI-CDSS, and negotiate appropriate use and responsibility in clinical practice. Methods The authors conducted a reanalysis of semistructured interviews held in 2024 with clinicians (n=8) and AI experts (n=8) in the Netherlands. The original study focused on informational needs for AI-CDSS. For this analysis, a deductive coding framework based on European Commission guidelines for trustworthy AI was first applied, and the material was then inductively reorganized into 5 empirical themes. Subsequently, feminist and constructivist STS concepts were used as sensitizing concepts in an abductive analysis, and these concepts were brought into dialogue with the empirical themes to examine the sociotechnical relations underlying participants’ accounts. Results Situated knowledge shows that the informational needs of clinicians are not universal but relate to their roles and specific clinical contexts, with understanding oriented less toward technical transparency than toward actionable guidance, relevance, and integration into decision-making. Standpoint theory illuminates differences between stakeholder priorities: clinicians emphasize information on how to use and act on AI outputs within existing workflows, whereas AI experts focus more on providing technical characteristics and performance metrics. Tinkering captures how clinicians experiment with AI systems in practice to develop situated, lay forms of expertise. Situated value highlights that perceptions of an AI-CDSS’s worth are relational, with clinicians valuing novel, context-sensitive insights and developers prioritizing performance metrics. Finally, response-ability reveals how trust and accountability are largely delegated to institutional structures, while clinicians report limited legal, organizational, and structural support to respond meaningfully to uncertainty or errors when using AI-CDSS. Conclusions Reanalyzing the same interview material through an abductive STS approach makes sociotechnical dimensions visible that were not the focus of the original analysis. Rather than treating informational requirements as universal or adoption as primarily a matter of technical performance and communication, the findings show how knowledge, value, and responsibility are constituted through situated professional practices and institutional arrangements. Processes and considerations regarding how clinicians make sense of AI-CDSS are not universal but are shaped by social, cultural, and institutional contexts. This analytical perspective underscores the need for context-sensitive, multistakeholder strategies to support meaningful and responsible AI adoption in clinical practice.</summary>
 </entry>
 <entry>
 <title>Development, validation, and pilot-testing of a comprehensive patient-reported EORTC custom questionnaire for monitoring real-world tyrosine kinase toxicity in chronic myeloid leukemia</title>
@@ -42,182 +69,182 @@ PURPOSE: In chronic myeloid leukemia (CML), treatment choices between tyrosine k
 Introduction: Healthcare systems aim for continuous improvement to ensure excellent clinical outcomes, including optimized quality of life. This relies on accurate data and evaluation patient-centered as well as biomedical outcomes. This data increasingly arises from real-world data (RWD). We are using this data across a multi-national European consortium, to create a Learning Healthcare System, improve care, policy, and ultimately patients' outcomes. Methods: STRONG-AYA is an interdisciplinary community, led from the Netherlands Cancer Institute, working across frequent consensus meetings, surveys, questionnaire design, data collection, synthesis and privacy-preserving federated analysis (in Vantage6), to ethically study and apply clinical and patient-centered outcomes data to learn about healthcare systems for Adolescents and Young Adults (AYAs) diagnosed with cancer when aged 15-39. The young people themselves are at the heart of our decision-making, and we work to make our data analyses transparent. Results: A harmonized 'Core Outcome Set' was agreed with all stakeholders. We developed definitions and data science methodological approaches, aligned with Learning Healthcare System practices. We have built AYA cancer data ecosystems, at local, national and European levels, to combine informatics with lived experience, clinical and scientific interpretation, based upon initial 'use cases' of the mental health consequences and cancer survival rates. We are applying those insights in real time individual clinical care, individual patient education and support as well as service level metrics. Conclusions: The Strong-AYA Learning Healthcare System for AYA-onset cancer can empower discovery by health researchers, digital innovation, and innovative insights for patients, clinicians, managers and policymakers who aim for transformational improvements in the quality and outcomes of current clinical practice though the development of a Learning Healthcare System in AYA-onset cancer care. Sustainability is our next major challenge.</summary>
 </entry>
 <entry>
-<title>3558 Multi-Model Transcriptomic Profiling Identifies Core Gene Networks of Prostate Cancer Radioresistance</title>
+<title>Multi-Model Transcriptomic Profiling Identifies Core Gene Networks of Prostate Cancer Radioresistance</title>
 <link href="https://doi.org/10.1016/s0167-8140(26)04007-7"/>
 <id>https://openalex.org/W7225600424</id>
 <updated>2026-11-09T00:00:00Z</updated>
 <summary>Radiotherapy and Oncology · 2026-05-01 · group authors: Ananya Choudhury</summary>
 </entry>
 <entry>
-<title>4666 The interplay between the hypoxic tumour microenvironment and neutrophils in bladder cancer radiotherapy resistance</title>
+<title>The interplay between the hypoxic tumour microenvironment and neutrophils in bladder cancer radiotherapy resistance</title>
 <link href="https://doi.org/10.1016/s0167-8140(26)03922-8"/>
 <id>https://openalex.org/W7225597830</id>
 <updated>2026-11-09T00:00:00Z</updated>
 <summary>Radiotherapy and Oncology · 2026-05-01 · group authors: Ananya Choudhury</summary>
 </entry>
 <entry>
-<title>3406 Patterns and outcomes of androgen deprivation therapy duration in intermediate-risk prostate cancer</title>
+<title>Patterns and outcomes of androgen deprivation therapy duration in intermediate-risk prostate cancer</title>
 <link href="https://doi.org/10.1016/s0167-8140(26)02632-0"/>
 <id>https://openalex.org/W7225597695</id>
 <updated>2026-11-09T00:00:00Z</updated>
 <summary>Radiotherapy and Oncology · 2026-05-01 · group authors: Ananya Choudhury</summary>
 </entry>
 <entry>
-<title>3073 Impact of immobilisation on patient comfort on the MR Linac: results of a patient experience questionnaire</title>
+<title>Impact of immobilisation on patient comfort on the MR Linac: results of a patient experience questionnaire</title>
 <link href="https://doi.org/10.1016/s0167-8140(26)04116-2"/>
 <id>https://openalex.org/W7225596314</id>
 <updated>2026-11-09T00:00:00Z</updated>
 <summary>Radiotherapy and Oncology · 2026-05-01 · group authors: Ananya Choudhury</summary>
 </entry>
 <entry>
-<title>4501 Discovery and validation of whole blood microRNAs associated with late radiation toxicity in breast cancer patients</title>
+<title>Discovery and validation of whole blood microRNAs associated with late radiation toxicity in breast cancer patients</title>
 <link href="https://doi.org/10.1016/s0167-8140(26)03950-2"/>
 <id>https://openalex.org/W7225595358</id>
 <updated>2026-11-09T00:00:00Z</updated>
 <summary>Radiotherapy and Oncology · 2026-05-01 · group authors: Ananya Choudhury</summary>
 </entry>
 <entry>
-<title>3730 Vector Space Model and Statistics for Quantifying Multi-Institutional Differences in Radiation Oncology Clinical Practices</title>
+<title>Vector Space Model and Statistics for Quantifying Multi-Institutional Differences in Radiation Oncology Clinical Practices</title>
 <link href="https://doi.org/10.1016/s0167-8140(26)03682-0"/>
 <id>https://openalex.org/W7225594350</id>
 <updated>2026-11-09T00:00:00Z</updated>
 <summary>Radiotherapy and Oncology · 2026-05-01 · group authors: Petros Kalendralis, Andre Dekker</summary>
 </entry>
 <entry>
-<title>1842 A pan-cancer multi-omics meta-analysis unexpectedly associates severe hypoxia with radiotherapy benefit and enhanced extracellular matrix remodelling</title>
+<title>A pan-cancer multi-omics meta-analysis unexpectedly associates severe hypoxia with radiotherapy benefit and enhanced extracellular matrix remodelling</title>
 <link href="https://doi.org/10.1016/s0167-8140(26)03989-7"/>
 <id>https://openalex.org/W7225593325</id>
 <updated>2026-11-09T00:00:00Z</updated>
 <summary>Radiotherapy and Oncology · 2026-05-01 · group authors: Ananya Choudhury</summary>
 </entry>
 <entry>
-<title>1270 Addition of Tolinapant to standard radical chemoradiotherapy for locally advanced cervical cancer: CRAIN, a phase 1b TiTECRM dose escalation study</title>
+<title>Addition of Tolinapant to standard radical chemoradiotherapy for locally advanced cervical cancer: CRAIN, a phase 1b TiTECRM dose escalation study</title>
 <link href="https://doi.org/10.1016/s0167-8140(26)01746-9"/>
 <id>https://openalex.org/W7225592857</id>
 <updated>2026-11-09T00:00:00Z</updated>
 <summary>Radiotherapy and Oncology · 2026-05-01 · group authors: Ananya Choudhury</summary>
 </entry>
 <entry>
-<title>2563 An interpretable multimodal radiopathomics model predicting pCR to neoadjuvant chemoimmunotherapy in esophageal squamous cell carcinoma</title>
+<title>An interpretable multimodal radiopathomics model predicting pCR to neoadjuvant chemoimmunotherapy in esophageal squamous cell carcinoma</title>
 <link href="https://doi.org/10.1016/s0167-8140(26)03810-7"/>
 <id>https://openalex.org/W7225592540</id>
 <updated>2026-11-09T00:00:00Z</updated>
 <summary>Radiotherapy and Oncology · 2026-05-01 · group authors: Andre Dekker, Leonard Wee</summary>
 </entry>
 <entry>
-<title>3052 A blood leucocyte-based radiotherapy transcriptomic prognostic signature in prostate, cervical, and bladder cancer</title>
+<title>A blood leucocyte-based radiotherapy transcriptomic prognostic signature in prostate, cervical, and bladder cancer</title>
 <link href="https://doi.org/10.1016/s0167-8140(26)03993-9"/>
 <id>https://openalex.org/W7225591633</id>
 <updated>2026-11-09T00:00:00Z</updated>
 <summary>Radiotherapy and Oncology · 2026-05-01 · group authors: Ananya Choudhury</summary>
 </entry>
 <entry>
-<title>435 Decreased skeletal muscle quantity is associated with inferior overall survival in bladder cancer patients treated with radiotherapy.</title>
+<title>Decreased skeletal muscle quantity is associated with inferior overall survival in bladder cancer patients treated with radiotherapy.</title>
 <link href="https://doi.org/10.1016/s0167-8140(26)02501-6"/>
 <id>https://openalex.org/W7225590648</id>
 <updated>2026-11-09T00:00:00Z</updated>
 <summary>Radiotherapy and Oncology · 2026-05-01 · group authors: Ananya Choudhury</summary>
 </entry>
 <entry>
-<title>4057 Normal tissue genetically-adjusted radiation dose (NT_GARD) for causal inference models of late toxicity after breast cancer radiotherapy</title>
+<title>Normal tissue genetically-adjusted radiation dose (NT_GARD) for causal inference models of late toxicity after breast cancer radiotherapy</title>
 <link href="https://doi.org/10.1016/s0167-8140(26)03847-8"/>
 <id>https://openalex.org/W7225586306</id>
 <updated>2026-11-09T00:00:00Z</updated>
 <summary>Radiotherapy and Oncology · 2026-05-01 · group authors: Ananya Choudhury</summary>
 </entry>
 <entry>
-<title>994 Early PSA trajectories as a surrogate biomarker for treatment failure in low and intermediate risk prostate cancer after SBRT and variable use of ADT.</title>
+<title>Early PSA trajectories as a surrogate biomarker for treatment failure in low and intermediate risk prostate cancer after SBRT and variable use of ADT.</title>
 <link href="https://doi.org/10.1016/s0167-8140(26)02527-2"/>
 <id>https://openalex.org/W7225584293</id>
 <updated>2026-11-09T00:00:00Z</updated>
 <summary>Radiotherapy and Oncology · 2026-05-01 · group authors: Ananya Choudhury</summary>
 </entry>
 <entry>
-<title>5104 Morphometric Outlier Detection for Automated Quality Assurance of Deep Learning-Segmented Thoracic Structures</title>
+<title>Morphometric Outlier Detection for Automated Quality Assurance of Deep Learning-Segmented Thoracic Structures</title>
 <link href="https://doi.org/10.1016/s0167-8140(26)02985-3"/>
 <id>https://openalex.org/W7225581476</id>
 <updated>2026-11-09T00:00:00Z</updated>
 <summary>Radiotherapy and Oncology · 2026-05-01 · group authors: Leonard Wee</summary>
 </entry>
 <entry>
-<title>5270 Shared Decision-Making in Radiotherapy: Status Quo and Opportunities to Improve</title>
+<title>Shared Decision-Making in Radiotherapy: Status Quo and Opportunities to Improve</title>
 <link href="https://doi.org/10.1016/s0167-8140(26)04391-4"/>
 <id>https://openalex.org/W7225580725</id>
 <updated>2026-11-09T00:00:00Z</updated>
 <summary>Radiotherapy and Oncology · 2026-05-01 · group authors: Anniek van Hienen</summary>
 </entry>
 <entry>
-<title>5324 A European survey on current practices of in-house medical device software (MDSW) development, management and use in medical physics</title>
+<title>A European survey on current practices of in-house medical device software (MDSW) development, management and use in medical physics</title>
 <link href="https://doi.org/10.1016/s0167-8140(26)04426-9"/>
 <id>https://openalex.org/W7225576390</id>
 <updated>2026-11-09T00:00:00Z</updated>
 <summary>Radiotherapy and Oncology · 2026-05-01 · group authors: Andre Dekker</summary>
 </entry>
 <entry>
-<title>2819 Understanding clinicians’ informational needs for AI-driven clinical decision support systems: Qualitative interview study</title>
+<title>Understanding clinicians’ informational needs for AI-driven clinical decision support systems: Qualitative interview study</title>
 <link href="https://doi.org/10.1016/s0167-8140(26)02710-6"/>
 <id>https://openalex.org/W7225576115</id>
 <updated>2026-11-09T00:00:00Z</updated>
 <summary>Radiotherapy and Oncology · 2026-05-01 · group authors: Simone Mingels, Anniek van Hienen, Johan van Soest, Andre Dekker, Rianne Fijten</summary>
 </entry>
 <entry>
-<title>2830 Impact of rare genetic variants in muscle repair genes on post-radiotherapy toxicities in patients with breast, lung, and prostate cancers</title>
+<title>Impact of rare genetic variants in muscle repair genes on post-radiotherapy toxicities in patients with breast, lung, and prostate cancers</title>
 <link href="https://doi.org/10.1016/s0167-8140(26)03964-2"/>
 <id>https://openalex.org/W7225575262</id>
 <updated>2026-11-09T00:00:00Z</updated>
 <summary>Radiotherapy and Oncology · 2026-05-01 · group authors: Ananya Choudhury</summary>
 </entry>
 <entry>
-<title>874 Deformable registration-based accumulated dose and patient outcomes for MR-guided liver SABR</title>
+<title>Deformable registration-based accumulated dose and patient outcomes for MR-guided liver SABR</title>
 <link href="https://doi.org/10.1016/s0167-8140(26)02424-2"/>
 <id>https://openalex.org/W7225574050</id>
 <updated>2026-11-09T00:00:00Z</updated>
 <summary>Radiotherapy and Oncology · 2026-05-01 · group authors: Ananya Choudhury</summary>
 </entry>
 <entry>
-<title>4202 Early, Consistent PSA Monitoring After Prostate Radiotherapy predicts Improved Outcomes: A Multicentre Study</title>
+<title>Early, Consistent PSA Monitoring After Prostate Radiotherapy predicts Improved Outcomes: A Multicentre Study</title>
 <link href="https://doi.org/10.1016/s0167-8140(26)02664-2"/>
 <id>https://openalex.org/W7225572842</id>
 <updated>2026-11-09T00:00:00Z</updated>
 <summary>Radiotherapy and Oncology · 2026-05-01 · group authors: Ananya Choudhury</summary>
 </entry>
 <entry>
-<title>1525 PRE-ACT-01: an international, multicenter, randomized study on communicating a personalized AI-based lymphedema risk to breast cancer patients</title>
+<title>PRE-ACT-01: an international, multicenter, randomized study on communicating a personalized AI-based lymphedema risk to breast cancer patients</title>
 <link href="https://doi.org/10.1016/s0167-8140(26)01556-2"/>
 <id>https://openalex.org/W7225572772</id>
 <updated>2026-11-09T00:00:00Z</updated>
 <summary>Radiotherapy and Oncology · 2026-05-01 · group authors: Andre Dekker, Johan van Soest</summary>
 </entry>
 <entry>
-<title>2793 Conventional to ultra-hypofractionated prostate cancer radiotherapy: Does the dose to the internal anal sphincter nerve predict late bowel symptoms?</title>
+<title>Conventional to ultra-hypofractionated prostate cancer radiotherapy: Does the dose to the internal anal sphincter nerve predict late bowel symptoms?</title>
 <link href="https://doi.org/10.1016/s0167-8140(26)03819-3"/>
 <id>https://openalex.org/W7225572297</id>
 <updated>2026-11-09T00:00:00Z</updated>
 <summary>Radiotherapy and Oncology · 2026-05-01 · group authors: Andre Dekker, Leonard Wee</summary>
 </entry>
 <entry>
-<title>2257 Characterising intra and inter-fraction rectal motion for MR guided radiotherapy</title>
+<title>Characterising intra and inter-fraction rectal motion for MR guided radiotherapy</title>
 <link href="https://doi.org/10.1016/s0167-8140(26)03511-5"/>
 <id>https://openalex.org/W7225571522</id>
 <updated>2026-11-09T00:00:00Z</updated>
 <summary>Radiotherapy and Oncology · 2026-05-01 · group authors: Ananya Choudhury</summary>
 </entry>
 <entry>
-<title>4315 Development &amp; validation of a prospective radiomics-clinical signature for locoregional recurrence in locally advanced head and neck cancer</title>
+<title>Development &amp; validation of a prospective radiomics-clinical signature for locoregional recurrence in locally advanced head and neck cancer</title>
 <link href="https://doi.org/10.1016/s0167-8140(26)01979-1"/>
 <id>https://openalex.org/W7225569697</id>
 <updated>2026-11-09T00:00:00Z</updated>
 <summary>Radiotherapy and Oncology · 2026-05-01 · group authors: Leonard Wee, Andre Dekker</summary>
 </entry>
 <entry>
-<title>1930 Integrating Clinical, Radiomics, and Deep Learning Features for 12-Month Overall Survival Prediction in NSCLC Patients Treated with Radiotherapy</title>
+<title>Integrating Clinical, Radiomics, and Deep Learning Features for 12-Month Overall Survival Prediction in NSCLC Patients Treated with Radiotherapy</title>
 <link href="https://doi.org/10.1016/s0167-8140(26)03802-8"/>
 <id>https://openalex.org/W7225566754</id>
 <updated>2026-11-09T00:00:00Z</updated>
 <summary>Radiotherapy and Oncology · 2026-05-01 · group authors: Petros Kalendralis, Wenjie Liang, Andre Dekker</summary>
 </entry>
 <entry>
-<title>3788 Daily Adaptive MR-Guided RT Improves Urinary Symptoms in Prostate Cancer: A Prospective International Cohort Study (NCT04075305)</title>
+<title>Daily Adaptive MR-Guided RT Improves Urinary Symptoms in Prostate Cancer: A Prospective International Cohort Study (NCT04075305)</title>
 <link href="https://doi.org/10.1016/s0167-8140(26)02648-4"/>
 <id>https://openalex.org/W7225565886</id>
 <updated>2026-11-09T00:00:00Z</updated>
@@ -231,11 +258,20 @@ Introduction: Healthcare systems aim for continuous improvement to ensure excell
 <summary>Radiotherapy and Oncology · 2026-05-01 · group authors: Rianne Fijten, Andre Dekker</summary>
 </entry>
 <entry>
-<title>4226 Ultrahypofractionation in prostate radiotherapy -does bladder size matter?</title>
+<title>Ultrahypofractionation in prostate radiotherapy -does bladder size matter?</title>
 <link href="https://doi.org/10.1016/s0167-8140(26)02666-6"/>
 <id>https://openalex.org/W7225559926</id>
 <updated>2026-11-09T00:00:00Z</updated>
 <summary>Radiotherapy and Oncology · 2026-05-01 · group authors: Ananya Choudhury</summary>
+</entry>
+<entry>
+<title>Artificial Intelligence-Assisted Semi-automated Personal Health Data Curation and Reuse for Myocardial Infarction</title>
+<link href="https://doi.org/10.1093/ehjdh/ztag176"/>
+<id>https://openalex.org/W7225340213</id>
+<updated>2026-11-06T00:00:00Z</updated>
+<summary>European Heart Journal - Digital Health · 2026-11-05 · group authors: Wenjie Liang, Rutger van Mierlo, Cecile Wolfs, Aiara Lobo Gomes, Andre Dekker, Petros Kalendralis
+
+Background and Aims Digital applications have high potential in myocardial infarction management. This study aims to harmonize personal health data using a workflow driven by an Artificial Intelligence-assisted virtual assistant prototype, then reuse the data to facilitate the creation of standardized patient summaries and risk assessment. Methods The required configurations for data documentation and curation were developed to drive the workflow execution. With consent and data transfer agreements, data of patients with myocardial infarction were extracted from multi-source medical records, structured and ingested into the workflow. After transformation, personal health data were mapped into concrete clinical concepts connected with specific relationships defined by the reference ontology, forming source health knowledge graphs as the basic structure of personal health knowledge graphs. Then the constructed graphs were validated by using Shapes Constraint Language-based constraints, triggering the human-in-the-loop process to enhance data quality. Information queries were conducted for data reuse. Results 38 out of 45 planned patients were recruited with a signed informed consent. Thirty patients finalized the study. Overall successful data ingestion rate is approximately 83%. The average data quality score is 95.45/100. Constructed personal health knowledge graphs can be reused to represent medical information as an international patient summary and evaluate individual risk of future cardiovascular events by calculating the Second Manifestations of Arterial Disease risk score. Conclusion Our proposed workflow is feasible for semi-automated personal health data curation and secondary use. It provides a potential solution to enhance medical data interoperability, thereby facilitating risk assessment in cardiovascular diseases.</summary>
 </entry>
 <entry>
 <title>Stakeholder perspectives on implementing geographic information systems for leprosy elimination in Pakistan: A qualitative study</title>
@@ -247,16 +283,7 @@ Introduction: Healthcare systems aim for continuous improvement to ensure excell
 INTRODUCTION: Leprosy remains a pressing global health concern, with Pakistan among countries still facing missed and delayed diagnosis. By highlighting elevated risk areas, Geographic Information Systems (GIS) are a cost-effective solution to improve leprosy case detection by guiding targeted interventions to high-risk areas. This study's purpose was to investigate the perceived GIS implementation facilitators and barriers, to support targeted interventions and advance the Zero Leprosy strategy. METHODS: Semi-structured interviews were conducted with twelve stakeholders, including local field staff, program managers, and international experts. Thematic analysis was guided by the Unified Theory of Acceptance and Use of Technology (UTAUT) and the Diffusion of Innovation Theory (DOI) to identify facilitators and barriers concerned with GIS implementation for leprosy. RESULTS: Key facilitators included an integrated multi-disease and pilot-based rollout approach, capacity building activities, offline-capable tools, and improved visibility to drive motivation. Barriers included the limited local capacity in complex GIS data analysis, hybrid digital-manual workflows, historical data lacking GPS, and ensuring feedback and ownership for staff members. CONCLUSION: GIS implementation is not only dependent on individual readiness, but also on broader external and organizational facilitators and constraints. This necessitates holistic implementation strategies that recognize the interconnectedness of different parts of the system. Internal capacity building is paramount to address statistical complexity and to build trust, ownership, and independence. As the world moves closer to achieving Zero Leprosy, integrating GIS within a multi-disease approach will be critical to making sustainable progress in combatting neglected tropical diseases.</summary>
 </entry>
 <entry>
-<title>Artificial Intelligence-Assisted Semi-automated Personal Health Data Curation and Reuse for Myocardial Infarction</title>
-<link href="https://doi.org/10.1093/ehjdh/ztag176"/>
-<id>https://openalex.org/W7225340213</id>
-<updated>2026-11-06T00:00:00Z</updated>
-<summary>European Heart Journal - Digital Health · 2026-11-03 · group authors: Wenjie Liang, Rutger van Mierlo, Cecile Wolfs, Aiara Lobo Gomes, Andre Dekker, Petros Kalendralis
-
-Abstract Background and Aims Digital applications have high potential in myocardial infarction management. This study aims to harmonize personal health data using a workflow driven by an Artificial Intelligence-assisted virtual assistant prototype, then reuse the data to facilitate the creation of standardized patient summaries and risk assessment. Methods The required configurations for data documentation and curation were developed to drive the workflow execution. With consent and data transfer agreements, data of patients with myocardial infarction were extracted from multi-source medical records, structured and ingested into the workflow. After transformation, personal health data were mapped into concrete clinical concepts connected with specific relationships defined by the reference ontology, forming source health knowledge graphs as the basic structure of personal health knowledge graphs. Then the constructed graphs were validated by using Shapes Constraint Language-based constraints, triggering the human-in-the-loop process to enhance data quality. Information queries were conducted for data reuse. Results 38 out of 45 planned patients were recruited with a signed informed consent. Thirty patients finalized the study. Overall successful data ingestion rate is approximately 83%. The average data quality score is 95.45/100. Constructed personal health knowledge graphs can be reused to represent medical information as an international patient summary and evaluate individual risk of future cardiovascular events by calculating the Second Manifestations of Arterial Disease risk score. Conclusion Our proposed workflow is feasible for semi-automated personal health data curation and secondary use. It provides a potential solution to enhance medical data interoperability, thereby facilitating risk assessment in cardiovascular diseases.</summary>
-</entry>
-<entry>
-<title>AB025. Deep learning model predicts recurrence in thymic epithelial tumours: a multicentre study</title>
+<title>Deep learning model predicts recurrence in thymic epithelial tumours: a multicentre study</title>
 <link href="https://doi.org/10.21037/med-26-ab025"/>
 <id>https://openalex.org/W7225089561</id>
 <updated>2026-11-03T00:00:00Z</updated>
@@ -265,7 +292,7 @@ Abstract Background and Aims Digital applications have high potential in myocard
 BACKGROUND: Thymic epithelial tumours (TETs) are the most common primary neoplasms of the anterior mediastinum. Despite complete surgical resection (R0), a significant proportion of patients experience recurrence, highlighting the need for improved prognostic stratification. Morphological patterns recognised in clinical practice may have prognostic value, and this study applies deep learning (DL) to haematoxylin and eosin (H&amp;E) whole slide images (WSIs) to predict recurrence in TETs, assisting pathologists in risk assessment and enabling precise treatment planning. METHODS: A multicentre cohort of resected TET patients with complete (R0) resection and no distant metastasis was assembled from Erasmus Medical Centre (EMC), Maastricht University Medical Centre (MUMC+) and the TCGA public dataset, with an external validation cohort from Hospices Civils de Lyon (HCL). WSIs were annotated in QuPath and sampled at 20× magnification into 512×512 patches. HCL WSIs, stained with haematoxylin-eosin saffron, underwent Vahadane normalisation to harmonise staining across centres. Patch embeddings from a pretrained Phikon encoder were aggregated through a multi-instance learning for patient level recurrence prediction, using stratified three-fold cross-validation. GradCAM applied to the most contributing patches generated heatmaps of the areas of highest model activation. RESULTS: Recurrence occurred in 19 of 298 patients (6.4%) internally and 5 of 95 (5.3%) externally. The model achieved an Area Under the Curve (AUC) of 0.85, a balanced accuracy (BAcc) of 0.71, and sensitivity of 79% internally. Performance was preserved externally (AUC 0.70, BAcc 0.62, sensitivity 80%) despite domain shift. In true positive cases, heatmaps consistently localised to tumour tissue adjacent to fibrous septa, capsular structures and vascular interfaces, with additional focal activation in areas of increased cellular heterogeneity in tumours lacking prominent separation. CONCLUSIONS: The DL model can identify TET patients at risk of recurrence following R0 resection and demonstrates generalisability across institutions with differing tissue preparation protocols. Heatmaps corresponded to septal, capsular and perivascular structures, sites classically associated with tumour invasion and recurrence risk in TETs, suggesting the model may capture histological correlates of invasive behaviour. Future work will focus on larger datasets, multimodal architectures integrating clinical and imaging data, and further external validation.</summary>
 </entry>
 <entry>
-<title>AB024. Mixed histology is a prognostic factor for recurrence in completely resected thymic epithelial tumours: a multicentre retrospective study</title>
+<title>Mixed histology is a prognostic factor for recurrence in completely resected thymic epithelial tumours: a multicentre retrospective study</title>
 <link href="https://doi.org/10.21037/med-26-ab024"/>
 <id>https://openalex.org/W7225083173</id>
 <updated>2026-11-03T00:00:00Z</updated>
@@ -365,32 +392,5 @@ Background and Purpose: Technological advancements have the potential to mitigat
 <summary>Next research. · 2026-08-07 · group authors: En Hu
 
 Humans, as highly social organisms, maintain health through both physiological homeostasis and interactions within social environments. The immune system is central to this balance, and its dysregulation manifests in diverse pathologies. Breast cancer (BC), the most common malignancy among women, represents disrupted biological order through uncontrolled proliferation and immune escape, whereas rheumatoid arthritis (RA) reflects pathological immune hyperactivation and autoimmunity. Persistent inflammation and functional impairment in RA may influence breast cancer risk and prognosis, while breast cancer onset or treatment may exacerbate immune vulnerability. To elucidate mechanisms underlying these interconnected disease processes, we integrated large-scale genetic association analyses with single-cell and spatial transcriptomics to dissect cross-disease convergence across organ systems, cellular regulation, and molecular networks. Our multimodal framework identified shared risk loci and mapped their regulatory consequences across tissues and cell states, providing mechanistic insights into developmental and immune pathways that may underlie the intrinsic connection between breast cancer and RA.</summary>
-</entry>
-<entry>
-<title>D5.12 Causability Report and Impact on Explainability</title>
-<link href="https://doi.org/10.5281/zenodo.21220925"/>
-<id>https://openalex.org/W7167462435</id>
-<updated>2026-10-23T00:00:00Z</updated>
-<summary>Zenodo (CERN European Organization for Nuclear Research) · 2026-07-06 · group authors: Rutger van Mierlo
-
-This deliverable reports on the explainability/causability-related work done in Task 5.3 of the AIDAVA project. It briefly describes the conceptualisation of the explainability module which served as a blueprint for the explainability features implemented in the AIDAVA G2 prototype. The core emphasis of this deliverable is the formative causability evaluation of the implemented explainability features. The causability evaluation aimed to determine whether explanations were understandable, useful for users’ tasks, and free of missing or misleading information that could impair safe use. To achieve this, controlled user tests (n=6) were carried out in the causability lab using a think‑aloud protocol comprising five task‑based sessions, which covered the main explainability features of AIDAVA G2. Complementing these lab tests, explainability-related feedback was systematically collected via targeted questionnaires from curators/study nurses (n=9) participating in the AIDAVA G2 prototype assessment study in the Netherlands, Estonia, and Austria.Key findingsCausability evaluation results confirmed that the overall concept of the AIDAVA explainability module with layered information design and on-demand progressive disclosure is appropriate —users prefer concise top‑level explanations in lay language with optional deeper detail and tailoring to digital literacy.Identified strengths of the implemented explainability features included explicit “relevant part” text in human-in-the-loop (HITL) dialogues and visual highlighting of related source text which were deemed to be useful and valued when these worked as intended.Major weaknesses were confusing or misleading provenance views for International Patient Summary (IPS) entries, unclear attribution of human contributors in HITL interactions, overly technical and poorly structured descriptions of curation tools/processes, and critical safety messages buried in long global explanations.Perceived importance of explainability features varies by role and task: for test users in the lab tests (who assessed AIDAVA from point of view of patients) the most important explainability feature was the provenance of IPS entries since they wanted to understand curated results, while curators prioritized explanations that pinpoint which input triggered a HITL request and what issue the request aims to resolve since these explanations support their curation work.Recommendations for future developments to improve causability-Improve provenance: make “source” links open the source document and auto-highlight exact excerpt(s); show clear name, role and timestamp where humans entered data.-Simplify and structure explanations: default to brief, lay-language descriptions with clear “more information” links; make technical terms clickable for obtaining concise descriptions of their meaning, and provide expert-level links separately.-Make critical safety and AI-disclosure messages prominent on the pre-login and IPS screens.ConclusionThe AIDAVA G2 explainability module concept establishes a solid, principled foundation—modular, layered, and on-demand explanations—validated by formative testing. The causability evaluation identified clear, actionable improvements (provenance clarity, simplification of technical explanations, and consistent application of the principle of ‘progressive disclosure’ in all explanations) that are essential (future) steps towards a safe, trustworthy application and regulatory alignment.</summary>
-</entry>
-<entry>
-<title>Monitoring cardiac symptoms during teleprehabilitation prior to coronary artery bypass grafting: a digital cardiac counselling trial subanalysis</title>
-<link href="https://doi.org/10.1093/ehjdh/ztag076"/>
-<id>https://openalex.org/W7161732140</id>
-<updated>2026-10-23T00:00:00Z</updated>
-<summary>European Heart Journal - Digital Health · 2026-05-18 · group authors: Rutger van Mierlo
-
-Abstract Aims The purpose of this subanalysis was to explore whether or not teleprehabilitation leads to worsening cardiac symptoms in patients accepted for coronary artery bypass grafting (CABG). Methods and results A subgroup of patients accepted for CABG (including off-pump and minimally invasive) who were randomized between teleprehabilitation and standard care in DCC trial were included. Teleprehabilitation patients had access to blended care supported by online modules, including nutritional support, functional exercise training, smoking cessation, inspiratory muscle training, and psychological support. All patients were weekly telemonitored for cardiac symptoms using a customized digital platform. This cohort included 155 patients. Baseline characteristics, including NYHA and CCS class, were balanced, except for shorter preoperative waiting times in weeks (15.0 [9.8–22.2] vs. 12.5 [7.0–16.0]) in the teleprehabilitation group. There was no significant difference in incidence of major adverse cardiac events in the preoperative period. There were 141 patients (77 control; 64 teleprehabilitation) with at least one symptom monitoring entry. A total of 373/1786 (21%) entries indicated worsening of cardiac symptoms. The distribution was right-skewed and did not significantly differ between the two groups. There was no statistically significant difference in time to event between control and teleprehabilitation for any cardiac symptom (P = 0.529), angina (P = 0.167), or dyspnoea (P = 0.334). Conclusion Teleprehabilitation does not lead to worsening cardiac symptoms before CABG. We postulate that teleprehabilitation, which includes low-intensity physical training, can be safely offered to patients undergoing elective CABG.</summary>
-</entry>
-<entry>
-<title>Transforming Histology into Virtual Multiplex Immunofluorescence to Decode Prognostic Spatial Immunity in Hepatocellular Carcinoma</title>
-<link href="https://doi.org/10.64898/2026.02.25.707931"/>
-<id>https://openalex.org/W7131799079</id>
-<updated>2026-10-23T00:00:00Z</updated>
-<summary>bioRxiv (Cold Spring Harbor Laboratory) · 2026-02-26 · group authors: Wenjie Liang
-
-Summary The spatial organization of the tumor immune microenvironment (TIME) drives hepatocellular carcinoma (HCC) prognosis but remains unquantifiable on routine H&amp;E slides. Here, we present HCCExplorer, a deep learning framework that translates H&amp;E into virtual multiplex immunofluorescence (mIF) and uses multi-modal graph learning to decode spatial survival signals. Trained on 30 H&amp;E-mIF slide pairs, HCCExplorer evaluated a 1,813-slide multi-center cohort. It achieved superior overall survival stratification over clinical indices and state-of-the-art pathology and protein foundation models, yielding a concordance index of 0.71 and a Hazard Ratio (HR) of 15.46 ( P &lt; 0.001), maintaining stability across three external cohorts. Beyond risk stratification, interpretation of model features identified M1 macrophage infiltration as a protective determinant (HR=0.40, P &lt; 0.05). Furthermore, it uncovered a protective “Containment Niche” at the invasion frontier (HR=0.02, P &lt; 0.01), featuring macrophages co-localizing with Foxp3+ Tregs and CD4+ T cells. Ultimately, HCCExplorer provides actionable, spatially-resolved biomarkers from conventional histology for precision HCC management.</summary>
 </entry>
 </feed>
