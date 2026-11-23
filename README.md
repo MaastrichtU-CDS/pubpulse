@@ -107,6 +107,13 @@ for 30 days. A configurable SerpAPI search cap preserves quota for the monthly p
   (only a bare Maastricht University / MUMC+ / Radiation Oncology), other affiliation, or no affiliation data. Papers are not checked by hand. Set `affiliation_policy: require` in `config.yml` to drop
   papers without a verified group author.
 
+**Papers listing our people with another affiliation only are left out.**
+When OpenAlex lists every group member on a paper with another department or institution only (e.g. IKNL, KU Leuven,
+MUMC+ Surgery, The Christie), the paper is not collected: it is not group work, or it belongs to a namesake whom
+OpenAlex merged into the same author record. A missing affiliation, or a bare "Maastricht University" / "University of
+Maastricht" / MUMC+, is not another affiliation: those papers stay. Left-out papers are listed per run under
+`other_affiliation_only` in `data/runs.json`; a maintainer brings one back with `confirm:` in `overrides.yml`.
+
 **A paper is not mine (same name, different person).**
 A maintainer puts its OpenAlex id (the `W…` shown under the paper) in [`overrides.yml`](overrides.yml) under `reject:`. If it keeps happening, ask a maintainer to set your `openalex_id` in
 `people.yml`, or add your ORCID to the staff profile.
@@ -202,9 +209,10 @@ Pure team. With such a key, Pure could serve as an extra, validated affiliation 
 papers where a group author has a verified Maastro / GROW / Clinical Data Science / Medical Data Works affiliation, or a
 team member with no affiliation listed in OpenAlex, or that were confirmed by hand (`site.default_view` in config.yml).
 An affiliation that names nothing more specific than "Maastricht University", "MUMC+" or "Department of Radiation
-Oncology" is not verified, but it is no other affiliation either: it counts like none listed. Papers that list team
-members with another department or institution only are left out of the default view; the newsletter lists them in a section
-of their own. *Verified affiliation only* remains as a stricter filter.
+Oncology" is not verified, but it is no other affiliation either: it counts like none listed. Papers that list every
+team member with another department or institution only are not collected at all; papers led by another Maastricht group
+are left out of the default view and get a newsletter section of their own. *Verified affiliation only* remains as a
+stricter filter.
 
 **Senior vs non-senior needs no upkeep.** It follows each person's role on the CDS staff page: professors,
 researchers and postdocs (including visiting researchers) are senior; PhD students, interns and support staff are not.
@@ -311,7 +319,7 @@ pubpulse is a first setup. Everything it shows is produced by simple rules, not 
 - **Who is a member** comes from scraping the group's staff page; identities come from ORCIDs on the profiles or, for
   people without one, from a name match with a group affiliation.
 - **What counts** follows the team-window rule: current members' papers count with a verified group affiliation or
-  with no affiliation listed (not when another institution is listed), former members' papers only with a verified
+  with no affiliation listed (papers listing them with another institution only are left out), former members' papers only with a verified
   group affiliation, plus a short list of named exceptions whose papers always need a verified affiliation.
 
 Known limits of this logic, discussed internally:
@@ -327,8 +335,9 @@ contain mistakes. Treat the overview as internal and indicative, not as a report
 ### The team-window rule
 
 A paper counts when a group author has a verified group affiliation, or when a group member was in the team at
-publication time and OpenAlex lists no affiliation for them. A member listed with another institution only (for
-example a second appointment elsewhere) does not count; confirm such a paper by hand if it should. Former staff count
+publication time and OpenAlex lists no affiliation for them. A paper listing every group member with another
+institution only (for example a second appointment elsewhere) is left out; confirm such a paper by hand if it should
+count. Former staff count
 only with a verified group affiliation. **Another group's paper:** when a lead of another Maastricht group is on the paper, anywhere in the author list,
 it is that group's paper and does not count. A lead is someone outside CDS who is last author with Maastro or GROW
 on this paper or on any other paper in the archive (papers confirmed by hand excepted). The paper still counts when a

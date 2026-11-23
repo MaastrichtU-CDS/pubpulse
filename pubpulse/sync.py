@@ -250,10 +250,10 @@ def _split_affiliations(affiliations: list[str]) -> list[str]:
 
 
 # Words an affiliation may consist of and still name no specific department or institution: a bare "Maastricht
-# University", "MUMC+" or "Department of Radiation Oncology", with address parts. These are not a clear other
+# University" (or "University of Maastricht"), "MUMC+" or "Department of Radiation Oncology", with address parts. These are not a clear other
 # affiliation, so they count like no affiliation listed.
 _UNSPECIFIC_WORDS = {
-    "maastricht", "university", "universiteit", "univ", "medical", "medisch", "centre", "center", "centrum", "ctr",
+    "maastricht", "university", "universiteit", "univ", "of", "medical", "medisch", "centre", "center", "centrum", "ctr",
     "mumc", "umc", "the", "netherlands", "nederland", "limburg", "p", "o", "po", "box", "paul", "henri", "spaaklaan",
     "spakalaan",
 }
@@ -605,7 +605,7 @@ def normalise_work(raw: dict, people: list[dict], keywords: list[str] | None = N
 def fetch_works(
     people: list[dict], client: OpenAlex, since_year: int, today: date,
     keywords: list[str] | None = None, policy: str = "flag", exclude_types: list[str] | None = None,
-    grace_months: int = 0,
+    grace_months: int = 0, confirmed=frozenset(), elsewhere_only: list | None = None,
 ) -> tuple[dict[str, dict], list[str]]:
     """Return {work_id: normalised work} for all tracked people, plus a list of per-person errors.
 
@@ -615,6 +615,9 @@ def fetch_works(
     - policy 'flag' keeps every paper and marks whether any group member has a verified affiliation;
       policy 'require' drops papers without one
     - types in exclude_types are skipped
+    - a paper on which every group member is clearly listed with another affiliation ('mismatch': another department
+      or institution, none of ours) is dropped, unless confirmed; it is not group work, or a namesake's paper in a
+      merged OpenAlex record. Dropped papers are appended to elsewhere_only
     """
     works: dict[str, dict] = {}
     errors: list[str] = []
@@ -715,6 +718,18 @@ def fetch_works(
         log.info("dropped %d works attributed only to name-matched or departed people without a verified affiliation", dropped_name)
     if dropped_policy:
         log.info("affiliation policy 'require': dropped %d unverified works", dropped_policy)
+    removed = []
+    for wid, w in list(works.items()):
+        status = w["affiliation_status"]
+        if wid in confirmed or not status or any(s != "mismatch" for s in status.values()):
+            continue
+        works.pop(wid)
+        removed.append({"work": wid, "title": w.get("title"),
+                        "affiliations": {m: w["member_affiliations"].get(m) or [] for m in status}})
+    if removed:
+        log.info("left out %d works listing every group member with another affiliation only (see runs.json)", len(removed))
+    if elsewhere_only is not None:
+        elsewhere_only.extend(removed)
     return works, errors
 
 
@@ -837,10 +852,11 @@ def run(dry_run: bool = False, skip_people: bool = False, config_path: Path = CO
     )
     import os
     overrides = merge_review_decisions(load_overrides(), fetch_review_decisions(os.environ.get("REVIEW_SHEET_URL"), os.environ.get("REVIEW_SHEET_KEY")))
+    elsewhere_only: list[dict] = []
     fetched, errors = fetch_works(
         people, client, int(cfg.get("since_year", 2024)), today,
         keywords=keywords, policy=cfg.get("affiliation_policy", "flag"), exclude_types=cfg.get("exclude_types"),
-        grace_months=grace,
+        grace_months=grace, confirmed=overrides["confirm"], elsewhere_only=elsewhere_only,
     )
 
     enrich_people_from_works(people, fetched.values(), cfg.get("author_match_keywords") or keywords)
@@ -866,6 +882,7 @@ def run(dry_run: bool = False, skip_people: bool = False, config_path: Path = CO
         "new_count": 0 if baseline else len(new_ids),
         "new_ids": [] if baseline else new_ids,
         "needs_review": unresolved,
+        "other_affiliation_only": elsewhere_only,
         "people_changes": people_changes,
         "errors": errors,
     }

@@ -208,7 +208,8 @@ def build_digest(pubs: dict, cfg: dict, pending_ids: list[str] | None = None, is
     ref_day = issue_date or last.get("date")
     recent, _older = split_recent(all_items, recent_days, ref_day)
     # The newsletter follows the team-window rule (verified group affiliation, or a team member with no other
-    # affiliation listed); papers listing team members with another institution only get a section of their own.
+    # affiliation listed); papers led by another Maastricht group get a section of their own. Papers listing every team
+    # member with another institution only are not in the collection at all (sync.fetch_works).
     counted = lambda w: bool(w.get("counted", w.get("verified", True)))  # noqa: E731
     skip_types = set(dg.get("exclude_types", ["dataset"]))  # data deposits are not news; they stay on the website
     recent = [w for w in recent if w.get("type") not in skip_types]
@@ -217,7 +218,7 @@ def build_digest(pubs: dict, cfg: dict, pending_ids: list[str] | None = None, is
     # Papers with a LinkedIn draft (headline and card) lead the issue.
     items.sort(key=lambda w: _draft_for(w) is None)
     # Sections, so nothing looks like a mistake: last week's papers; earlier ones (within recent_days) that OpenAlex
-    # only listed now; and papers on which our team members are listed with another institution only.
+    # only listed now; and papers led by another group.
     week_cutoff = recent_cutoff(7, ref_day)
     this_week = [w for w in items if (w.get("publication_date") or "") >= week_cutoff]
     earlier = [w for w in items if (w.get("publication_date") or "") < week_cutoff]
@@ -225,12 +226,12 @@ def build_digest(pubs: dict, cfg: dict, pending_ids: list[str] | None = None, is
     sections = [(title, note, ws) for title, note, ws in (
         ("Published last week", "", this_week),
         ("Published earlier, only now listed", f"Published in the past {recent_days} days; these reached OpenAlex, our source, only this week.", earlier),
-        ("Also by team members, with another group or affiliation", "On these papers OpenAlex lists our team members with another institution only, or the senior author leads another group.", elsewhere),
+        ("Also by team members, led by another group", "On these papers the senior author leads another Maastricht group.", elsewhere),
     ) if ws]
     breakdown = ", ".join(x for x in (
         f"{len(this_week)} published last week" if this_week else "",
         f"{len(earlier)} published earlier and only now listed in OpenAlex" if earlier else "",
-        f"{len(elsewhere)} with another group or affiliation" if elsewhere else "",
+        f"{len(elsewhere)} led by another group" if elsewhere else "",
     ) if x)
     site = cfg.get("site_url", "")
     group = cfg.get("group_name", "the group")

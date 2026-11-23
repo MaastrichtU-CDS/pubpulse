@@ -9,9 +9,10 @@ repo_url: https://github.com/MaastrichtU-CDS/pubpulse
 site:
   # verified = only papers where a group author has a verified group affiliation (strictest)
   # counted  = team-window rule: a verified group affiliation, or for team members no other affiliation listed (none,
-  #            or only a bare Maastricht University / MUMC+ / Radiation Oncology); papers listing another department or
-  #            institution only are left out; all = everything
-  # The newsletter uses the team-window rule and lists "another institution only" papers in a section of their own.
+  #            or only a bare Maastricht University / MUMC+ / Radiation Oncology); all = everything
+  # Papers listing every group member with another department or institution only are never collected (confirm: in
+  # overrides.yml brings one back). The newsletter uses the team-window rule and lists papers led by another group in a
+  # section of their own.
   default_view: counted
   default_include_preprints: false  # hide preprints unless switched on
 

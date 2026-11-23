@@ -137,8 +137,8 @@ def test_departed_person_counts_only_verified_papers():
         return {"author": {"id": f"https://openalex.org/{aid}", "display_name": aid}, "institutions": [{"display_name": i} for i in insts]}
     client = _FakeClient({"authorships.author.id:A1": [_raw("W1", [auth("A1", ["Maastro Clinic"])]), _raw("W2", [auth("A1", ["Elsewhere"])])]})
     works, _ = fetch_works(people, client, 2024, date(2026, 10, 21), keywords=KW, grace_months=18)
-    assert set(works) == {"W1", "W2"} and works["W1"]["counted"] is True  # within the grace period: still tracked
-    assert works["W2"]["counted"] is False  # listed with another institution only
+    assert set(works) == {"W1"} and works["W1"]["counted"] is True  # within the grace period: still tracked
+    # W2 lists them with another institution only: left out
     works, _ = fetch_works(people, client, 2024, date(2028, 10, 21), keywords=KW, grace_months=18)
     assert works == {}  # grace period over
 
@@ -350,8 +350,8 @@ def test_counted_for_team_members_without_another_affiliation():
     w_in_mismatch = _raw("W3", [auth("A1", ["Elsewhere"])]); w_in_mismatch["publication_date"] = "2025-06-01"
     client = _FakeClient({"authorships.author.id:A1": [w_in_unknown, w_in_mismatch]})
     works, _ = fetch_works(people, client, 2024, date(2026, 10, 23), keywords=KW)
-    # in team: no affiliation listed counts; listed with another institution only does not
-    assert works["W2"]["counted"] is True and works["W3"]["counted"] is False
+    # in team: no affiliation listed counts; listed with another institution only is left out
+    assert works["W2"]["counted"] is True and "W3" not in works
 
 
 def test_bare_maastricht_affiliation_is_not_another_affiliation_and_grow_alone_verifies():
@@ -363,6 +363,7 @@ def test_bare_maastricht_affiliation_is_not_another_affiliation_and_grow_alone_v
         return {"author": {"id": f"https://openalex.org/{aid}", "display_name": aid}, "institutions": [{"display_name": i} for i in insts]}
     client = _FakeClient({"authorships.author.id:A1": [
         _raw("W1", [auth("A1", ["Maastricht University", "Maastricht University, P.O. Box 616, 6200MD Maastricht, The Netherlands"])]),
+        _raw("W13", [auth("A1", ["University of Maastricht  Maastricht the\xa0Netherlands"])]),
         _raw("W2", [auth("A1", ["KU Leuven"])]),
         _raw("W3", [auth("A1", ["5GROW School for Oncology and Reproduction"])]),
         _raw("W11", [auth("A1", ["Department of Radiation Oncology, GROW Research Institute for Oncology and Reproduction, "
@@ -376,14 +377,15 @@ def test_bare_maastricht_affiliation_is_not_another_affiliation_and_grow_alone_v
         _raw("W9", [auth("A1", ["Radiology and Nuclear Medicine, GROW & CARIM, Maastricht University"])]),
         _raw("W10", [auth("A1", ["Departments of Radiation Oncology and Radiology, Harvard Medical School, Boston; "
                                   "Department of Radiology and Nuclear Medicine, Maastricht University Medical Center"])])]})
+    elsewhere = []
     works, _ = fetch_works(people, client, 2024, date(2026, 10, 30),
-                           keywords=["maastro", {"school": "grow"}, ["maastricht", "radiation oncology"]])
-    for wid in ("W1", "W5"):  # names no department or institution beyond Maastricht University / Radiation Oncology
+                           keywords=["maastro", {"school": "grow"}, ["maastricht", "radiation oncology"]], elsewhere_only=elsewhere)
+    for wid in ("W1", "W5", "W13"):  # names no department or institution beyond Maastricht University / Radiation Oncology
         assert works[wid]["affiliation_status"]["m"] == "unspecific"
         assert works[wid]["counted"] is True and works[wid]["listed_elsewhere"] is False
-    for wid in ("W2", "W4", "W6", "W7", "W8", "W9", "W10"):  # another institution or department; "growth" is not GROW
-        assert works[wid]["affiliation_status"]["m"] == "mismatch"
-        assert works[wid]["counted"] is False and works[wid]["listed_elsewhere"] is True
+    # another institution or department ("growth" is not GROW): clearly another affiliation, left out
+    assert sorted(e["work"] for e in elsewhere) == sorted(["W2", "W4", "W6", "W7", "W8", "W9", "W10"])
+    assert not set(works) & {e["work"] for e in elsewhere}
     for wid in ("W3", "W11", "W12"):  # GROW without another department, or with our own (the official affiliation)
         assert works[wid]["affiliation_status"]["m"] == "verified" and works[wid]["counted"] is True
 
@@ -468,3 +470,29 @@ def test_supplement_abstracts_typed_as_articles_become_conference_abstracts():
     # Records OpenAlex already types as something specific are left alone.
     assert conference_abstract_type({"type": "conference-paper", "title": "276 Mind the gap"}) is None
     assert conference_abstract_type({"type": "preprint", "title": "4666 Abstract"}) is None
+
+
+def test_papers_listing_every_group_member_with_another_affiliation_are_left_out():
+    from datetime import date
+    from pubpulse.sync import fetch_works
+
+    people = [{"slug": "a", "name": "A", "orcid": "0000-0001-0000-0001", "openalex_ids": ["A1"]},
+              {"slug": "b", "name": "B", "orcid": "0000-0001-0000-0002", "openalex_ids": ["A2"]}]
+    def auth(aid, affs):
+        return {"author": {"id": f"https://openalex.org/{aid}", "display_name": aid},
+                "institutions": [{"display_name": x} for x in affs]}
+    christie = ["The Christie NHS Foundation Trust"]
+    client = _FakeClient({"authorships.author.id:A1": [
+        _raw("W1", [auth("A1", christie)]),  # a namesake in a merged OpenAlex record
+        _raw("W2", [auth("A1", christie), auth("A2", ["Elsewhere University"])]),  # every group member elsewhere
+        _raw("W3", [auth("A1", christie), auth("A2", ["Maastro Clinic"])]),  # one of ours on it
+        _raw("W4", [auth("A1", christie), auth("A2", [])]),  # the other's affiliation is missing
+        _raw("W5", [auth("A1", christie)]),  # confirmed by hand
+    ]})
+    elsewhere = []
+    works, _ = fetch_works(people, client, 2024, date(2026, 11, 23), keywords=["maastro"], confirmed={"W5"},
+                           elsewhere_only=elsewhere)
+    assert set(works) == {"W3", "W4", "W5"}
+    assert [e["work"] for e in elsewhere] == ["W1", "W2"]
+    assert elsewhere[0] == {"work": "W1", "title": "T", "affiliations": {"a": christie}}
+    assert works["W3"]["counted"] is True and works["W4"]["counted"] is True

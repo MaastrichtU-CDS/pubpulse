@@ -131,8 +131,7 @@ def write_xlsx(pubs: dict, cfg: dict, path: Path) -> Path:
         "",
         "Team-window rule (column 'Counted (team-window rule)'): a paper counts when a group author has a verified group affiliation, or when a "
         "group member was in the team at publication time and OpenAlex lists no other affiliation for them (none, or only a bare Maastricht University / MUMC+ / Radiation Oncology). "
-        "Listed with another institution only: "
-        "not counted. Outside the team window, and for people matched by name only, a verified group affiliation is required.",
+        "Papers listing every group member with another department or institution only are left out of the collection, unless confirmed by hand. Outside the team window, and for people matched by name only, a verified group affiliation is required.",
         "Verified group affiliation: the authorship carries Maastro, GROW, Clinical Data Science or Medical Data Works (GROW only without another department named).",
         "Affiliation status per author: verified / unspecific (only a bare Maastricht University, MUMC+ or Radiation Oncology) / mismatch (another department or institution recorded) / unknown (OpenAlex has no affiliation for this authorship).",
         "Manual decisions (overrides.yml): confirmed = counted by hand; rejected papers are not in this file.",
