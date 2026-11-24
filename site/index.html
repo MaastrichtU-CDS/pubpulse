@@ -474,6 +474,24 @@
                     <option value="impact">Journal impact</option>
                   </select>
                 </div>
+                <details class="export-control" id="export-control">
+                  <summary>Export <span aria-hidden="true">↓</span></summary>
+                  <div class="export-menu">
+                    <p id="export-note">Exports every publication in this list (all pages), with the current filters.</p>
+                    <button type="button" data-export="docx">
+                      <b>Word</b> (.docx)<span>Publication list per type for a thesis or CV, your name in bold</span>
+                    </button>
+                    <button type="button" data-export="copy">
+                      <b>Copy list</b><span>The same list as text, to paste into a document or e-mail</span>
+                    </button>
+                    <button type="button" data-export="ris">
+                      <b>RIS</b> (.ris)<span>Import into EndNote, Zotero or Mendeley</span>
+                    </button>
+                    <button type="button" data-export="bib">
+                      <b>BibTeX</b> (.bib)<span>For LaTeX</span>
+                    </button>
+                  </div>
+                </details>
               </div>
             </div>
             <p class="author-legend">
@@ -678,6 +696,7 @@
       </p>
     </dialog>
     <script src="vendor/tom-select-2.6.2.min.js"></script>
+    <script src="references.js"></script>
     <script src="app.js"></script>
   </body>
 </html>

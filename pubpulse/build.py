@@ -586,7 +586,7 @@ def run(config_path: Path | None = None) -> dict:
         if not path.exists():
             continue
         html_text = path.read_text(encoding="utf-8").replace("<!-- build-version -->", version)
-        for asset in ("app.js", "style.css", "library.css", "studio.css", "social-editor.js", "social.js", "divisions.js", "divisions.css"):
+        for asset in ("app.js", "references.js", "style.css", "library.css", "studio.css", "social-editor.js", "social.js", "divisions.js", "divisions.css"):
             if (DIST_DIR / asset).exists():
                 digest_hex = hashlib.sha1((DIST_DIR / asset).read_bytes()).hexdigest()[:10]
                 html_text = html_text.replace(f'"{asset}"', f'"{asset}?v={digest_hex}"')

@@ -583,6 +583,8 @@ def normalise_work(raw: dict, people: list[dict], keywords: list[str] | None = N
         "type": raw.get("type"),
         "journal": source.get("display_name"),
         "source_id": short_id(source.get("id")),
+        # Volume, issue and pages for reference exports (thesis publication lists).
+        "biblio": {k: v for k, v in (raw.get("biblio") or {}).items() if k in ("volume", "issue", "first_page", "last_page") and v},
         "landing_url": loc.get("landing_page_url"),
         "is_oa": bool(oa.get("is_oa")),
         "oa_url": oa.get("oa_url"),

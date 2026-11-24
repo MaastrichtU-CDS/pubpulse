@@ -124,6 +124,16 @@ configured, follow the link and complete the list provider’s joining steps. Ot
 add your email address to the group mailing list. The digest arrives on Mondays, only when there are new papers.
 To leave, use the website’s **Unsubscribe** link when available, or contact a maintainer.
 
+**How do I export my publications (thesis, CV)?**
+On the website, select yourself under *Researchers*, then use **Export** above the list. For everything pubpulse has
+on you, choose *All papers* and *Include preprints* first; the menu says how many of your papers the current filters
+leave out. Formats: **Word** (.docx, a numbered publication list per type: journal articles, reviews, conference
+papers and abstracts, book chapters, preprints, datasets; Vancouver style, your name in bold), **Copy list** (the same
+list on the clipboard; pasting into Word or an e-mail keeps the headings, bold and italics), **RIS** (import into
+EndNote, Zotero or Mendeley) and **BibTeX** (LaTeX). The export covers only what pubpulse
+collects: papers from 2024 onwards, from OpenAlex. Check every reference against the published version; for older
+papers, export from ORCID or Google Scholar.
+
 **Can I follow the RSS feed?**
 Yes, but not in most Outlooks any more: the new Outlook for Windows and Outlook for Mac have no RSS support; only
 classic Outlook for Windows still has *RSS Feeds → Add a New RSS Feed*. Alternatives: a free reader such as
@@ -375,6 +385,7 @@ python -m pubpulse build              # dist/ (site), data/feed.xml, out/digest.
 python -m http.server -d dist 8000    # open http://localhost:8000
 pytest
 node --test tests/social-editor.test.cjs  # social prompt and JSON-import checks
+node --test tests/references.test.cjs     # Word / RIS / BibTeX export checks
 ```
 
 ### Why OpenAlex and not ORCID or Google Scholar

@@ -29,7 +29,9 @@ def test_normalise_work_matches_members_and_verifies_affiliations():
          "institutions": [{"display_name": "Harvard University"}], "raw_affiliation_strings": ["Harvard"]},
         {"author": {"id": "https://openalex.org/A999", "orcid": None, "display_name": "Other"}, "institutions": []},
     ])
+    raw["biblio"] = {"volume": "27", "issue": "11", "first_page": "1450", "last_page": None}
     w = normalise_work(raw, PEOPLE, KW)
+    assert w["biblio"] == {"volume": "27", "issue": "11", "first_page": "1450"}
     assert w["id"] == "W1" and w["group_members"] == ["jvs", "sp"] and w["author_count"] == 3
     assert w["affiliation_status"] == {"jvs": "verified", "sp": "mismatch"}
     assert w["member_affiliations"]["sp"] == ["Harvard University", "Harvard"]

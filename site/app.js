@@ -72,6 +72,7 @@
   const PAGE_SIZES = [20, 50, 100];
   const DEFAULT_PAGE_SIZE = 20;
   let lastResultsKey = null;
+  let currentItems = []; // every publication in the current list (all pages), in list order: what Export writes
   let state = readHash();
 
   function readHash() {
@@ -453,6 +454,15 @@
         update();
       });
       $("reset").addEventListener("click", () => resetAll());
+      document.querySelectorAll("[data-export]").forEach((button) =>
+        button.addEventListener("click", () => {
+          if (button.dataset.export === "copy") copyList(button);
+          else {
+            exportReferences(button.dataset.export);
+            $("export-control").open = false;
+          }
+        }),
+      );
       $("show-all").addEventListener("click", () => resetAll(true));
       const tabs = [["list", $("tab-list")], ["stats", $("tab-stats")]];
       tabs.forEach(([view, tab], i) => {
@@ -1338,6 +1348,8 @@
     els.count.textContent = items.length > state.pageSize
       ? `${start + 1}–${end} of ${total} publications`
       : `${total} ${items.length === 1 ? "publication" : "publications"}`;
+    currentItems = items;
+    renderExportNote();
     renderSelectedProfiles();
     els.list.start = start + 1;
     els.list.innerHTML = items.slice(start, end).map(render).join("");
@@ -1356,6 +1368,82 @@
         });
       }),
     );
+  }
+
+  function selectedPeople() {
+    return state.people.map((slug) => data.peopleBySlug[slug]).filter(Boolean);
+  }
+
+  function renderExportNote() {
+    const n = currentItems.length;
+    const control = $("export-control");
+    control.classList.toggle("hidden", !n);
+    const people = selectedPeople();
+    const whose = people.length === 1 ? ` by ${people[0].name}` : "";
+    let note = `Exports the ${n} ${n === 1 ? "publication" : "publications"}${whose} in this list (all pages), with the current filters.`;
+    if (people.length === 1) {
+      const all = data.works.filter((w) => workMembers(w).includes(people[0].slug)).length;
+      if (all > n) note += ` ${all} in the whole collection: choose “All papers”, include preprints and clear other filters to export all.`;
+    }
+    $("export-note").textContent = note;
+  }
+
+  // Title, note and highlighted authors of an exported publication list.
+  function listOptions() {
+    const people = selectedPeople();
+    const title = people.length
+      ? `Publications of ${people.map((p) => p.name).join(", ")}`
+      : `Publications · ${data.group_name || "pubpulse"}`;
+    const note = `${currentItems.length} ${currentItems.length === 1 ? "publication" : "publications"} exported from pubpulse (${location.origin}${location.pathname}) on ${new Date().toLocaleDateString("en-GB", { day: "numeric", month: "long", year: "numeric" })}. Source: OpenAlex. Check every reference against the published version.`;
+    // Bold the selected researchers; without a selection, every group member.
+    const highlight = people.length
+      ? people.map((p) => p.slug)
+      : [...new Set(currentItems.flatMap((w) => (w.author_members || []).filter(Boolean)))];
+    return { title, note, highlight };
+  }
+
+  async function copyList(button) {
+    const R = window.PubpulseReferences;
+    if (!R || !currentItems.length) return;
+    const options = listOptions();
+    const plain = R.text(currentItems, options);
+    const label = button.querySelector("b");
+    try {
+      if (window.ClipboardItem && navigator.clipboard?.write) {
+        // HTML keeps headings, bold and italics when pasted into Word, Outlook or Google Docs.
+        await navigator.clipboard.write([new ClipboardItem({
+          "text/html": new Blob([R.html(currentItems, options)], { type: "text/html" }),
+          "text/plain": new Blob([plain], { type: "text/plain" }),
+        })]);
+      } else {
+        await navigator.clipboard.writeText(plain);
+      }
+      label.textContent = `Copied ${currentItems.length} ✓`;
+    } catch {
+      label.textContent = "Copy failed: use Word";
+    }
+    setTimeout(() => { label.textContent = "Copy list"; }, 2500);
+  }
+
+  function exportReferences(format) {
+    const R = window.PubpulseReferences;
+    if (!R || !currentItems.length) return;
+    const people = selectedPeople();
+    const stamp = new Date().toISOString().slice(0, 10);
+    const who = people.length === 1 ? people[0].slug : people.length ? "selected-researchers" : "publications";
+    const { title, note, highlight } = listOptions();
+    const blob = format === "bib"
+      ? new Blob([R.bibtex(currentItems)], { type: "application/x-bibtex;charset=utf-8" })
+      : format === "ris"
+        ? new Blob([R.ris(currentItems)], { type: "application/x-research-info-systems;charset=utf-8" })
+        : new Blob([R.docx(currentItems, { title, note, highlight })], { type: R.DOCX_TYPE });
+    const link = document.createElement("a");
+    link.href = URL.createObjectURL(blob);
+    link.download = `pubpulse-${who}-${stamp}.${format}`;
+    document.body.append(link);
+    link.click();
+    link.remove();
+    setTimeout(() => URL.revokeObjectURL(link.href), 1000);
   }
 
   // Structured abstracts arrive from OpenAlex as one run of text; restore the section labels as bold paragraphs.
