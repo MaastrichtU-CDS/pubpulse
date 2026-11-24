@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-23T17:29:36+00:00",
+ "generated": "2026-11-24T10:34:15+00:00",
  "group_name": "Clinical Data Science (Maastro / Maastricht University)",
  "site_url": "https://maastrichtu-cds.github.io/pubpulse/",
  "repo_url": "https://github.com/MaastrichtU-CDS/pubpulse",
@@ -11,7 +11,7 @@
   "list_name": "the pubpulse weekly list"
  },
  "last_run": {
-  "date": "2026-11-23",
+  "date": "2026-11-24",
   "baseline": false,
   "new_count": 0,
   "new_ids": [],
@@ -1292,8 +1292,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-23",
-    "window_start": "2024-11-23",
+    "checked_at": "2026-11-24",
+    "window_start": "2024-11-24",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -1323,8 +1323,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-23",
-    "window_start": "2024-11-23",
+    "checked_at": "2026-11-24",
+    "window_start": "2024-11-24",
     "recent_months": 24,
     "shared_papers": 19,
     "recent_shared_papers": 16,
@@ -1370,8 +1370,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-23",
-    "window_start": "2024-11-23",
+    "checked_at": "2026-11-24",
+    "window_start": "2024-11-24",
     "recent_months": 24,
     "shared_papers": 16,
     "recent_shared_papers": 2,
@@ -1403,8 +1403,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-23",
-    "window_start": "2024-11-23",
+    "checked_at": "2026-11-24",
+    "window_start": "2024-11-24",
     "recent_months": 24,
     "shared_papers": 3,
     "recent_shared_papers": 3,
@@ -1437,8 +1437,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-23",
-    "window_start": "2024-11-23",
+    "checked_at": "2026-11-24",
+    "window_start": "2024-11-24",
     "recent_months": 24,
     "shared_papers": 1,
     "recent_shared_papers": 1,
@@ -1468,8 +1468,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-23",
-    "window_start": "2024-11-23",
+    "checked_at": "2026-11-24",
+    "window_start": "2024-11-24",
     "recent_months": 24,
     "shared_papers": 5,
     "recent_shared_papers": 4,
@@ -1502,8 +1502,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-23",
-    "window_start": "2024-11-23",
+    "checked_at": "2026-11-24",
+    "window_start": "2024-11-24",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -1530,8 +1530,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-23",
-    "window_start": "2024-11-23",
+    "checked_at": "2026-11-24",
+    "window_start": "2024-11-24",
     "recent_months": 24,
     "shared_papers": 1,
     "recent_shared_papers": 0,
@@ -1560,8 +1560,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-23",
-    "window_start": "2024-11-23",
+    "checked_at": "2026-11-24",
+    "window_start": "2024-11-24",
     "recent_months": 24,
     "shared_papers": 2,
     "recent_shared_papers": 1,
@@ -1590,8 +1590,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-23",
-    "window_start": "2024-11-23",
+    "checked_at": "2026-11-24",
+    "window_start": "2024-11-24",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -1618,8 +1618,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-23",
-    "window_start": "2024-11-23",
+    "checked_at": "2026-11-24",
+    "window_start": "2024-11-24",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -1646,8 +1646,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-23",
-    "window_start": "2024-11-23",
+    "checked_at": "2026-11-24",
+    "window_start": "2024-11-24",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -1674,8 +1674,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-23",
-    "window_start": "2024-11-23",
+    "checked_at": "2026-11-24",
+    "window_start": "2024-11-24",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -1702,8 +1702,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-23",
-    "window_start": "2024-11-23",
+    "checked_at": "2026-11-24",
+    "window_start": "2024-11-24",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -1732,8 +1732,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-23",
-    "window_start": "2024-11-23",
+    "checked_at": "2026-11-24",
+    "window_start": "2024-11-24",
     "recent_months": 24,
     "shared_papers": 4,
     "recent_shared_papers": 2,
@@ -1763,8 +1763,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-23",
-    "window_start": "2024-11-23",
+    "checked_at": "2026-11-24",
+    "window_start": "2024-11-24",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -1791,8 +1791,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-23",
-    "window_start": "2024-11-23",
+    "checked_at": "2026-11-24",
+    "window_start": "2024-11-24",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -1819,8 +1819,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-23",
-    "window_start": "2024-11-23",
+    "checked_at": "2026-11-24",
+    "window_start": "2024-11-24",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -1847,8 +1847,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-23",
-    "window_start": "2024-11-23",
+    "checked_at": "2026-11-24",
+    "window_start": "2024-11-24",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -1875,8 +1875,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-23",
-    "window_start": "2024-11-23",
+    "checked_at": "2026-11-24",
+    "window_start": "2024-11-24",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -1905,8 +1905,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-23",
-    "window_start": "2024-11-23",
+    "checked_at": "2026-11-24",
+    "window_start": "2024-11-24",
     "recent_months": 24,
     "shared_papers": 9,
     "recent_shared_papers": 3,
@@ -1940,8 +1940,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-23",
-    "window_start": "2024-11-23",
+    "checked_at": "2026-11-24",
+    "window_start": "2024-11-24",
     "recent_months": 24,
     "shared_papers": 5,
     "recent_shared_papers": 0,
@@ -1970,8 +1970,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-23",
-    "window_start": "2024-11-23",
+    "checked_at": "2026-11-24",
+    "window_start": "2024-11-24",
     "recent_months": 24,
     "shared_papers": 8,
     "recent_shared_papers": 6,
@@ -2007,8 +2007,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-23",
-    "window_start": "2024-11-23",
+    "checked_at": "2026-11-24",
+    "window_start": "2024-11-24",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -2035,8 +2035,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-23",
-    "window_start": "2024-11-23",
+    "checked_at": "2026-11-24",
+    "window_start": "2024-11-24",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -2063,8 +2063,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-23",
-    "window_start": "2024-11-23",
+    "checked_at": "2026-11-24",
+    "window_start": "2024-11-24",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -2093,8 +2093,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-23",
-    "window_start": "2024-11-23",
+    "checked_at": "2026-11-24",
+    "window_start": "2024-11-24",
     "recent_months": 24,
     "shared_papers": 1,
     "recent_shared_papers": 1,
@@ -2124,8 +2124,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-23",
-    "window_start": "2024-11-23",
+    "checked_at": "2026-11-24",
+    "window_start": "2024-11-24",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -2152,8 +2152,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-23",
-    "window_start": "2024-11-23",
+    "checked_at": "2026-11-24",
+    "window_start": "2024-11-24",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -2182,8 +2182,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-23",
-    "window_start": "2024-11-23",
+    "checked_at": "2026-11-24",
+    "window_start": "2024-11-24",
     "recent_months": 24,
     "shared_papers": 8,
     "recent_shared_papers": 4,
@@ -2213,8 +2213,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-23",
-    "window_start": "2024-11-23",
+    "checked_at": "2026-11-24",
+    "window_start": "2024-11-24",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -2241,8 +2241,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-23",
-    "window_start": "2024-11-23",
+    "checked_at": "2026-11-24",
+    "window_start": "2024-11-24",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -2269,8 +2269,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-23",
-    "window_start": "2024-11-23",
+    "checked_at": "2026-11-24",
+    "window_start": "2024-11-24",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -2299,8 +2299,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-23",
-    "window_start": "2024-11-23",
+    "checked_at": "2026-11-24",
+    "window_start": "2024-11-24",
     "recent_months": 24,
     "shared_papers": 2,
     "recent_shared_papers": 0,
@@ -2331,8 +2331,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-23",
-    "window_start": "2024-11-23",
+    "checked_at": "2026-11-24",
+    "window_start": "2024-11-24",
     "recent_months": 24,
     "shared_papers": 4,
     "recent_shared_papers": 4,
@@ -2365,8 +2365,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-23",
-    "window_start": "2024-11-23",
+    "checked_at": "2026-11-24",
+    "window_start": "2024-11-24",
     "recent_months": 24,
     "shared_papers": 3,
     "recent_shared_papers": 2,
@@ -2398,8 +2398,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-23",
-    "window_start": "2024-11-23",
+    "checked_at": "2026-11-24",
+    "window_start": "2024-11-24",
     "recent_months": 24,
     "shared_papers": 1,
     "recent_shared_papers": 0,
@@ -2426,8 +2426,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-23",
-    "window_start": "2024-11-23",
+    "checked_at": "2026-11-24",
+    "window_start": "2024-11-24",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -2454,8 +2454,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-23",
-    "window_start": "2024-11-23",
+    "checked_at": "2026-11-24",
+    "window_start": "2024-11-24",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -2482,8 +2482,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-23",
-    "window_start": "2024-11-23",
+    "checked_at": "2026-11-24",
+    "window_start": "2024-11-24",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -2510,8 +2510,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-23",
-    "window_start": "2024-11-23",
+    "checked_at": "2026-11-24",
+    "window_start": "2024-11-24",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -2538,8 +2538,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-23",
-    "window_start": "2024-11-23",
+    "checked_at": "2026-11-24",
+    "window_start": "2024-11-24",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -2566,8 +2566,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-23",
-    "window_start": "2024-11-23",
+    "checked_at": "2026-11-24",
+    "window_start": "2024-11-24",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -2594,8 +2594,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-23",
-    "window_start": "2024-11-23",
+    "checked_at": "2026-11-24",
+    "window_start": "2024-11-24",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -2622,8 +2622,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-23",
-    "window_start": "2024-11-23",
+    "checked_at": "2026-11-24",
+    "window_start": "2024-11-24",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -2650,8 +2650,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-23",
-    "window_start": "2024-11-23",
+    "checked_at": "2026-11-24",
+    "window_start": "2024-11-24",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -2678,8 +2678,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-23",
-    "window_start": "2024-11-23",
+    "checked_at": "2026-11-24",
+    "window_start": "2024-11-24",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -2708,8 +2708,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-23",
-    "window_start": "2024-11-23",
+    "checked_at": "2026-11-24",
+    "window_start": "2024-11-24",
     "recent_months": 24,
     "shared_papers": 1,
     "recent_shared_papers": 1,
@@ -2741,8 +2741,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-23",
-    "window_start": "2024-11-23",
+    "checked_at": "2026-11-24",
+    "window_start": "2024-11-24",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -2771,8 +2771,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-23",
-    "window_start": "2024-11-23",
+    "checked_at": "2026-11-24",
+    "window_start": "2024-11-24",
     "recent_months": 24,
     "shared_papers": 2,
     "recent_shared_papers": 2,
@@ -2804,8 +2804,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-23",
-    "window_start": "2024-11-23",
+    "checked_at": "2026-11-24",
+    "window_start": "2024-11-24",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -2834,8 +2834,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-23",
-    "window_start": "2024-11-23",
+    "checked_at": "2026-11-24",
+    "window_start": "2024-11-24",
     "recent_months": 24,
     "shared_papers": 1,
     "recent_shared_papers": 1,
@@ -2866,8 +2866,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-23",
-    "window_start": "2024-11-23",
+    "checked_at": "2026-11-24",
+    "window_start": "2024-11-24",
     "recent_months": 24,
     "shared_papers": 4,
     "recent_shared_papers": 4,
@@ -2899,8 +2899,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-23",
-    "window_start": "2024-11-23",
+    "checked_at": "2026-11-24",
+    "window_start": "2024-11-24",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -2929,8 +2929,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-23",
-    "window_start": "2024-11-23",
+    "checked_at": "2026-11-24",
+    "window_start": "2024-11-24",
     "recent_months": 24,
     "shared_papers": 3,
     "recent_shared_papers": 1,
@@ -2959,8 +2959,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-23",
-    "window_start": "2024-11-23",
+    "checked_at": "2026-11-24",
+    "window_start": "2024-11-24",
     "recent_months": 24,
     "shared_papers": 1,
     "recent_shared_papers": 0,
@@ -2989,8 +2989,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-23",
-    "window_start": "2024-11-23",
+    "checked_at": "2026-11-24",
+    "window_start": "2024-11-24",
     "recent_months": 24,
     "shared_papers": 1,
     "recent_shared_papers": 1,
@@ -3019,8 +3019,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-23",
-    "window_start": "2024-11-23",
+    "checked_at": "2026-11-24",
+    "window_start": "2024-11-24",
     "recent_months": 24,
     "shared_papers": 1,
     "recent_shared_papers": 0,
@@ -3047,8 +3047,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-23",
-    "window_start": "2024-11-23",
+    "checked_at": "2026-11-24",
+    "window_start": "2024-11-24",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -3075,8 +3075,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-23",
-    "window_start": "2024-11-23",
+    "checked_at": "2026-11-24",
+    "window_start": "2024-11-24",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -3103,8 +3103,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-23",
-    "window_start": "2024-11-23",
+    "checked_at": "2026-11-24",
+    "window_start": "2024-11-24",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -3131,8 +3131,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-23",
-    "window_start": "2024-11-23",
+    "checked_at": "2026-11-24",
+    "window_start": "2024-11-24",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -3162,8 +3162,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-23",
-    "window_start": "2024-11-23",
+    "checked_at": "2026-11-24",
+    "window_start": "2024-11-24",
     "recent_months": 24,
     "shared_papers": 6,
     "recent_shared_papers": 4,
@@ -3192,8 +3192,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-23",
-    "window_start": "2024-11-23",
+    "checked_at": "2026-11-24",
+    "window_start": "2024-11-24",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -3220,8 +3220,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-23",
-    "window_start": "2024-11-23",
+    "checked_at": "2026-11-24",
+    "window_start": "2024-11-24",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -3248,8 +3248,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-23",
-    "window_start": "2024-11-23",
+    "checked_at": "2026-11-24",
+    "window_start": "2024-11-24",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -3276,8 +3276,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-23",
-    "window_start": "2024-11-23",
+    "checked_at": "2026-11-24",
+    "window_start": "2024-11-24",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -3306,8 +3306,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-23",
-    "window_start": "2024-11-23",
+    "checked_at": "2026-11-24",
+    "window_start": "2024-11-24",
     "recent_months": 24,
     "shared_papers": 3,
     "recent_shared_papers": 3,
@@ -3338,8 +3338,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-23",
-    "window_start": "2024-11-23",
+    "checked_at": "2026-11-24",
+    "window_start": "2024-11-24",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -3366,8 +3366,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-23",
-    "window_start": "2024-11-23",
+    "checked_at": "2026-11-24",
+    "window_start": "2024-11-24",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -3394,8 +3394,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-23",
-    "window_start": "2024-11-23",
+    "checked_at": "2026-11-24",
+    "window_start": "2024-11-24",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -3422,8 +3422,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-23",
-    "window_start": "2024-11-23",
+    "checked_at": "2026-11-24",
+    "window_start": "2024-11-24",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -3452,8 +3452,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-23",
-    "window_start": "2024-11-23",
+    "checked_at": "2026-11-24",
+    "window_start": "2024-11-24",
     "recent_months": 24,
     "shared_papers": 1,
     "recent_shared_papers": 0,
@@ -3482,8 +3482,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-23",
-    "window_start": "2024-11-23",
+    "checked_at": "2026-11-24",
+    "window_start": "2024-11-24",
     "recent_months": 24,
     "shared_papers": 3,
     "recent_shared_papers": 2,
@@ -3513,8 +3513,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-23",
-    "window_start": "2024-11-23",
+    "checked_at": "2026-11-24",
+    "window_start": "2024-11-24",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -3541,8 +3541,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-23",
-    "window_start": "2024-11-23",
+    "checked_at": "2026-11-24",
+    "window_start": "2024-11-24",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -3569,8 +3569,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-23",
-    "window_start": "2024-11-23",
+    "checked_at": "2026-11-24",
+    "window_start": "2024-11-24",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -3597,8 +3597,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-23",
-    "window_start": "2024-11-23",
+    "checked_at": "2026-11-24",
+    "window_start": "2024-11-24",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -3625,8 +3625,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-23",
-    "window_start": "2024-11-23",
+    "checked_at": "2026-11-24",
+    "window_start": "2024-11-24",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -3653,8 +3653,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-23",
-    "window_start": "2024-11-23",
+    "checked_at": "2026-11-24",
+    "window_start": "2024-11-24",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -3681,8 +3681,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-23",
-    "window_start": "2024-11-23",
+    "checked_at": "2026-11-24",
+    "window_start": "2024-11-24",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -3711,8 +3711,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-23",
-    "window_start": "2024-11-23",
+    "checked_at": "2026-11-24",
+    "window_start": "2024-11-24",
     "recent_months": 24,
     "shared_papers": 12,
     "recent_shared_papers": 10,
@@ -3752,8 +3752,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-23",
-    "window_start": "2024-11-23",
+    "checked_at": "2026-11-24",
+    "window_start": "2024-11-24",
     "recent_months": 24,
     "shared_papers": 3,
     "recent_shared_papers": 3,
@@ -3784,8 +3784,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-23",
-    "window_start": "2024-11-23",
+    "checked_at": "2026-11-24",
+    "window_start": "2024-11-24",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -3814,8 +3814,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-23",
-    "window_start": "2024-11-23",
+    "checked_at": "2026-11-24",
+    "window_start": "2024-11-24",
     "recent_months": 24,
     "shared_papers": 4,
     "recent_shared_papers": 1,
@@ -3847,8 +3847,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-23",
-    "window_start": "2024-11-23",
+    "checked_at": "2026-11-24",
+    "window_start": "2024-11-24",
     "recent_months": 24,
     "shared_papers": 2,
     "recent_shared_papers": 1,
@@ -3880,8 +3880,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-23",
-    "window_start": "2024-11-23",
+    "checked_at": "2026-11-24",
+    "window_start": "2024-11-24",
     "recent_months": 24,
     "shared_papers": 22,
     "recent_shared_papers": 15,
@@ -3920,8 +3920,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-23",
-    "window_start": "2024-11-23",
+    "checked_at": "2026-11-24",
+    "window_start": "2024-11-24",
     "recent_months": 24,
     "shared_papers": 8,
     "recent_shared_papers": 4,
@@ -3954,8 +3954,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-23",
-    "window_start": "2024-11-23",
+    "checked_at": "2026-11-24",
+    "window_start": "2024-11-24",
     "recent_months": 24,
     "shared_papers": 7,
     "recent_shared_papers": 3,
@@ -3982,6 +3982,7 @@
    "type": "article",
    "journal": "Zenodo (CERN European Organization for Nuclear Research)",
    "source_id": "S4306400562",
+   "biblio": {},
    "landing_url": "https://doi.org/10.5281/zenodo.24316750",
    "is_oa": true,
    "oa_url": "https://doi.org/10.5281/zenodo.24316750",
@@ -4087,6 +4088,11 @@
    "type": "article",
    "journal": "JMIR Human Factors",
    "source_id": "S4210199510",
+   "biblio": {
+    "volume": "13",
+    "first_page": "e99117",
+    "last_page": "e99117"
+   },
    "landing_url": "https://doi.org/10.2196/99117",
    "is_oa": true,
    "oa_url": "https://doi.org/10.2196/99117",
@@ -4202,6 +4208,11 @@
    "type": "article",
    "journal": "Supportive Care in Cancer",
    "source_id": "S50055314",
+   "biblio": {
+    "volume": "34",
+    "issue": "12",
+    "first_page": "1220"
+   },
    "landing_url": "https://doi.org/10.1007/s00520-026-11371-w",
    "is_oa": true,
    "oa_url": "https://link.springer.com/content/pdf/10.1007/s00520-026-11371-w.pdf",
@@ -4319,6 +4330,10 @@
    "type": "article",
    "journal": "Frontiers in Applied Mathematics and Statistics",
    "source_id": "S2597085352",
+   "biblio": {
+    "volume": "12",
+    "first_page": "1981705"
+   },
    "landing_url": "https://doi.org/10.3389/fams.2026.1981705",
    "is_oa": true,
    "oa_url": "https://www.frontiersin.org/journals/applied-mathematics-and-statistics/articles/10.3389/fams.2026.1981705/pdf",
@@ -4494,6 +4509,11 @@
    "type": "article",
    "journal": "Journal of Cancer Policy",
    "source_id": "S2764631794",
+   "biblio": {
+    "volume": "50",
+    "first_page": "100834",
+    "last_page": "100834"
+   },
    "landing_url": "https://doi.org/10.1016/j.jcpo.2026.100834",
    "is_oa": true,
    "oa_url": "https://doi.org/10.2139/ssrn.7322264",
@@ -4576,6 +4596,12 @@
    "type": "article",
    "journal": "Learning Health Systems",
    "source_id": "S4210230988",
+   "biblio": {
+    "volume": "11",
+    "issue": "1",
+    "first_page": "e70132",
+    "last_page": "e70132"
+   },
    "landing_url": "https://doi.org/10.1002/lrh2.70132",
    "is_oa": true,
    "oa_url": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1002/lrh2.70132",
@@ -4661,6 +4687,9 @@
    "type": "article",
    "journal": "European Heart Journal - Digital Health",
    "source_id": "S4210220198",
+   "biblio": {
+    "first_page": "ztag176"
+   },
    "landing_url": "https://doi.org/10.1093/ehjdh/ztag176",
    "is_oa": true,
    "oa_url": "https://doi.org/10.1093/ehjdh/ztag176",
@@ -4966,6 +4995,12 @@
    "type": "article",
    "journal": "PLoS ONE",
    "source_id": "S202381698",
+   "biblio": {
+    "volume": "21",
+    "issue": "11",
+    "first_page": "e0360428",
+    "last_page": "e0360428"
+   },
    "landing_url": "https://doi.org/10.1371/journal.pone.0360428",
    "is_oa": true,
    "oa_url": "https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0360428&type=printable",
@@ -5047,6 +5082,7 @@
    "type": "preprint",
    "journal": "bioRxiv (Cold Spring Harbor Laboratory)",
    "source_id": "S4306402567",
+   "biblio": {},
    "landing_url": "https://doi.org/10.64898/2026.10.24.761586",
    "is_oa": true,
    "oa_url": "https://doi.org/10.64898/2026.10.24.761586",
@@ -5171,6 +5207,11 @@
    "type": "article",
    "journal": "Frontiers in Big Data",
    "source_id": "S4210201220",
+   "biblio": {
+    "volume": "9",
+    "first_page": "1910002",
+    "last_page": "1910002"
+   },
    "landing_url": "https://doi.org/10.3389/fdata.2026.1910002",
    "is_oa": true,
    "oa_url": "https://www.frontiersin.org/journals/big-data/articles/10.3389/fdata.2026.1910002/pdf",
@@ -5241,6 +5282,7 @@
    "type": "article",
    "journal": "European Radiology",
    "source_id": "S4819472",
+   "biblio": {},
    "landing_url": "https://doi.org/10.1007/s00330-026-12971-0",
    "is_oa": true,
    "oa_url": "https://link.springer.com/content/pdf/10.1007/s00330-026-12971-0.pdf",
@@ -5354,6 +5396,7 @@
    "type": "dataset",
    "journal": "Zenodo (CERN European Organization for Nuclear Research)",
    "source_id": "S4306400562",
+   "biblio": {},
    "landing_url": "https://doi.org/10.5281/zenodo.23629826",
    "is_oa": true,
    "oa_url": "https://doi.org/10.5281/zenodo.23629826",
@@ -5475,6 +5518,7 @@
    "type": "dataset",
    "journal": "Zenodo (CERN European Organization for Nuclear Research)",
    "source_id": "S4306400562",
+   "biblio": {},
    "landing_url": "https://doi.org/10.5281/zenodo.23629834",
    "is_oa": true,
    "oa_url": "https://doi.org/10.5281/zenodo.23629834",
@@ -5596,6 +5640,7 @@
    "type": "article",
    "journal": "npj Breast Cancer",
    "source_id": "S4210207747",
+   "biblio": {},
    "landing_url": "https://doi.org/10.1038/s41523-026-01068-y",
    "is_oa": true,
    "oa_url": "https://www.nature.com/articles/s41523-026-01068-y_reference.pdf",
@@ -5891,6 +5936,11 @@
    "type": "review",
    "journal": "JMIR AI",
    "source_id": "S4387286577",
+   "biblio": {
+    "volume": "5",
+    "first_page": "e92329",
+    "last_page": "e92329"
+   },
    "landing_url": "https://doi.org/10.2196/92329",
    "is_oa": true,
    "oa_url": "https://doi.org/10.2196/92329",
@@ -6069,6 +6119,10 @@
    "type": "article",
    "journal": "Frontiers in Applied Mathematics and Statistics",
    "source_id": "S2597085352",
+   "biblio": {
+    "volume": "12",
+    "first_page": "1917462"
+   },
    "landing_url": "https://doi.org/10.3389/fams.2026.1917462",
    "is_oa": true,
    "oa_url": "https://www.frontiersin.org/journals/applied-mathematics-and-statistics/articles/10.3389/fams.2026.1917462/pdf",
@@ -6196,6 +6250,7 @@
    "type": "preprint",
    "journal": null,
    "source_id": null,
+   "biblio": {},
    "landing_url": "https://doi.org/10.2196/preprints.113359",
    "is_oa": false,
    "oa_url": null,
@@ -6308,6 +6363,11 @@
    "type": "review",
    "journal": "Medical Oncology",
    "source_id": "S204953464",
+   "biblio": {
+    "volume": "43",
+    "issue": "11",
+    "first_page": "303"
+   },
    "landing_url": "https://doi.org/10.1007/s12032-026-03426-z",
    "is_oa": true,
    "oa_url": "https://link.springer.com/content/pdf/10.1007/s12032-026-03426-z.pdf",
@@ -6419,6 +6479,7 @@
    "type": "preprint",
    "journal": "medRxiv",
    "source_id": "S3005729997",
+   "biblio": {},
    "landing_url": "https://doi.org/10.64898/2026.10.01.26364470",
    "is_oa": true,
    "oa_url": "https://www.medrxiv.org/content/medrxiv/early/2026/10/02/2026.10.01.26364470.full.pdf",
@@ -6558,6 +6619,11 @@
    "type": "conference-abstract",
    "journal": "Mediastinum",
    "source_id": "S4210216771",
+   "biblio": {
+    "volume": "10",
+    "first_page": "AB025",
+    "last_page": "AB025"
+   },
    "landing_url": "https://doi.org/10.21037/med-26-ab025",
    "is_oa": true,
    "oa_url": "https://doi.org/10.21037/med-26-ab025",
@@ -6661,6 +6727,11 @@
    "type": "conference-abstract",
    "journal": "Mediastinum",
    "source_id": "S4210216771",
+   "biblio": {
+    "volume": "10",
+    "first_page": "AB024",
+    "last_page": "AB024"
+   },
    "landing_url": "https://doi.org/10.21037/med-26-ab024",
    "is_oa": true,
    "oa_url": "https://doi.org/10.21037/med-26-ab024",
@@ -6764,6 +6835,10 @@
    "type": "article",
    "journal": "The Lancet Digital Health",
    "source_id": "S4210237014",
+   "biblio": {
+    "first_page": "101056",
+    "last_page": "101056"
+   },
    "landing_url": "https://doi.org/10.1016/j.landig.2026.101056",
    "is_oa": true,
    "oa_url": "https://www.thelancet.com/pdfs/journals/landig/PIIS2589-7500(26)00079-8.pdf",
@@ -6949,6 +7024,12 @@
    "type": "article",
    "journal": "World Journal of Radiology",
    "source_id": "S175033026",
+   "biblio": {
+    "volume": "18",
+    "issue": "9",
+    "first_page": "123720",
+    "last_page": "123720"
+   },
    "landing_url": "https://doi.org/10.4329/wjr.123720",
    "is_oa": true,
    "oa_url": "https://www.f6publishing.com/Forms/Main/DownloadFile.aspx?type=m&typeid=2&id=123720&filepath=8E31D0401EB18CD6271A9142AB7E05E369D96C985907EB5F5BD6BB074ECFE6DD9DE1F9CFC3C348E0",
@@ -7045,6 +7126,7 @@
    "type": "preprint",
    "journal": "medRxiv",
    "source_id": "S3005729997",
+   "biblio": {},
    "landing_url": "https://doi.org/10.64898/2026.09.24.26363914",
    "is_oa": true,
    "oa_url": "https://www.medrxiv.org/content/medrxiv/early/2026/09/27/2026.09.24.26363914.full.pdf",
@@ -7159,6 +7241,11 @@
    "type": "article",
    "journal": "ESMO Real World Data and Digital Oncology",
    "source_id": "S4389157630",
+   "biblio": {
+    "volume": "14",
+    "first_page": "100764",
+    "last_page": "100764"
+   },
    "landing_url": "https://doi.org/10.1016/j.esmorw.2026.100764",
    "is_oa": true,
    "oa_url": "https://www.esmorwd.org/article/S2949-8201(26)00083-4/pdf",
@@ -7366,6 +7453,11 @@
    "type": "review",
    "journal": "Clinical and Translational Radiation Oncology",
    "source_id": "S2898297225",
+   "biblio": {
+    "volume": "62",
+    "first_page": "101282",
+    "last_page": "101282"
+   },
    "landing_url": "https://doi.org/10.1016/j.ctro.2026.101282",
    "is_oa": true,
    "oa_url": "https://www.ctro.science/article/S2405-6308(26)00177-1/pdf",
@@ -7544,6 +7636,12 @@
    "type": "article",
    "journal": "International Journal of Radiation Oncology*Biology*Physics",
    "source_id": "S110533041",
+   "biblio": {
+    "volume": "126",
+    "issue": "1",
+    "first_page": "S214",
+    "last_page": "S214"
+   },
    "landing_url": "https://doi.org/10.1016/j.ijrobp.2026.06.453",
    "is_oa": false,
    "oa_url": null,
@@ -7684,6 +7782,9 @@
    "type": "article",
    "journal": "Physica Medica",
    "source_id": "S138998826",
+   "biblio": {
+    "volume": "149"
+   },
    "landing_url": "https://doi.org/10.1016/j.ejmp.2026.106097",
    "is_oa": false,
    "oa_url": null,
@@ -7764,6 +7865,9 @@
    "type": "article",
    "journal": "Physica Medica",
    "source_id": "S138998826",
+   "biblio": {
+    "volume": "149"
+   },
    "landing_url": "https://doi.org/10.1016/j.ejmp.2026.106127",
    "is_oa": false,
    "oa_url": null,
@@ -7852,6 +7956,11 @@
    "type": "article",
    "journal": "International Journal of Particle Therapy",
    "source_id": "S4210219142",
+   "biblio": {
+    "volume": "21",
+    "first_page": "101350",
+    "last_page": "101350"
+   },
    "landing_url": "https://doi.org/10.1016/j.ijpt.2026.101350",
    "is_oa": true,
    "oa_url": "https://www.sciencedirect.com/science/article/pii/S2331518026000533/pdf",
@@ -7986,6 +8095,12 @@
    "type": "article",
    "journal": "Journal of the American Medical Informatics Association",
    "source_id": "S129839026",
+   "biblio": {
+    "volume": "33",
+    "issue": "10",
+    "first_page": "1921",
+    "last_page": "1933"
+   },
    "landing_url": "https://doi.org/10.1093/jamia/ocag117",
    "is_oa": true,
    "oa_url": "https://doi.org/10.1093/jamia/ocag117",
@@ -8069,6 +8184,11 @@
    "type": "article",
    "journal": "Next research.",
    "source_id": "S4404663819",
+   "biblio": {
+    "volume": "12",
+    "first_page": "102285",
+    "last_page": "102285"
+   },
    "landing_url": "https://doi.org/10.1016/j.nexres.2026.102285",
    "is_oa": true,
    "oa_url": "https://www.sciencedirect.com/science/article/pii/S3050475926009796/pdf",
@@ -8138,6 +8258,11 @@
    "type": "article",
    "journal": "Scientific Reports",
    "source_id": "S196734849",
+   "biblio": {
+    "volume": "16",
+    "issue": "1",
+    "first_page": "33256"
+   },
    "landing_url": "https://doi.org/10.1038/s41598-026-62420-7",
    "is_oa": true,
    "oa_url": "https://www.nature.com/articles/s41598-026-62420-7_reference.pdf",
@@ -8246,6 +8371,7 @@
    "type": "preprint",
    "journal": null,
    "source_id": null,
+   "biblio": {},
    "landing_url": "https://osf.io/3px7e",
    "is_oa": true,
    "oa_url": "https://doi.org/10.17605/osf.io/3px7e",
@@ -8314,6 +8440,11 @@
    "type": "article",
    "journal": "European Journal of Cancer",
    "source_id": "S16731738",
+   "biblio": {
+    "volume": "245",
+    "first_page": "116933",
+    "last_page": "116933"
+   },
    "landing_url": "https://doi.org/10.1016/j.ejca.2026.116933",
    "is_oa": true,
    "oa_url": "https://www.ejcancer.com/article/S0959-8049(26)00714-8/pdf",
@@ -8495,6 +8626,7 @@
    "type": "article",
    "journal": "Zenodo (CERN European Organization for Nuclear Research)",
    "source_id": "S4306400562",
+   "biblio": {},
    "landing_url": "https://doi.org/10.5281/zenodo.21220925",
    "is_oa": true,
    "oa_url": "https://doi.org/10.5281/zenodo.21220925",
@@ -8574,6 +8706,7 @@
    "type": "article",
    "journal": "International Journal of Radiation Oncology*Biology*Physics",
    "source_id": "S110533041",
+   "biblio": {},
    "landing_url": "https://doi.org/10.1016/j.ijrobp.2026.06.3083",
    "is_oa": false,
    "oa_url": null,
@@ -8737,6 +8870,11 @@
    "type": "book-chapter",
    "journal": "Studies in health technology and informatics",
    "source_id": "S4210179765",
+   "biblio": {
+    "volume": "338",
+    "first_page": "756",
+    "last_page": "757"
+   },
    "landing_url": "https://doi.org/10.3233/shti260947",
    "is_oa": true,
    "oa_url": "https://doi.org/10.3233/shti260947",
@@ -8846,6 +8984,11 @@
    "type": "article",
    "journal": "Clinical Nutrition Open Science",
    "source_id": "S4210227373",
+   "biblio": {
+    "volume": "68",
+    "first_page": "100691",
+    "last_page": "100691"
+   },
    "landing_url": "https://doi.org/10.1016/j.nutos.2026.100691",
    "is_oa": true,
    "oa_url": "https://www.clinicalnutritionopenscience.com/article/S2667-2685(26)00067-7/pdf",
@@ -8933,6 +9076,12 @@
    "type": "article",
    "journal": "Journal of the American Academy of Dermatology",
    "source_id": "S58727509",
+   "biblio": {
+    "volume": "95",
+    "issue": "4",
+    "first_page": "1182",
+    "last_page": "1184"
+   },
    "landing_url": "https://doi.org/10.1016/j.jaad.2026.06.047",
    "is_oa": true,
    "oa_url": "https://doi.org/10.1016/j.jaad.2026.06.047",
@@ -9114,6 +9263,7 @@
    "type": "article",
    "journal": "Information Systems Journal",
    "source_id": "S92260147",
+   "biblio": {},
    "landing_url": "https://doi.org/10.1111/isj.70049",
    "is_oa": true,
    "oa_url": "https://doi.org/10.1111/isj.70049",
@@ -9199,6 +9349,12 @@
    "type": "article",
    "journal": "Nutrients",
    "source_id": "S110785341",
+   "biblio": {
+    "volume": "18",
+    "issue": "11",
+    "first_page": "1795",
+    "last_page": "1795"
+   },
    "landing_url": "https://doi.org/10.3390/nu18111795",
    "is_oa": true,
    "oa_url": "https://doi.org/10.3390/nu18111795",
@@ -9294,6 +9450,12 @@
    "type": "article",
    "journal": "iScience",
    "source_id": "S2898358376",
+   "biblio": {
+    "volume": "29",
+    "issue": "6",
+    "first_page": "116135",
+    "last_page": "116135"
+   },
    "landing_url": "https://doi.org/10.1016/j.isci.2026.116135",
    "is_oa": true,
    "oa_url": "https://doi.org/10.1016/j.isci.2026.116135",
@@ -9416,6 +9578,11 @@
    "type": "article",
    "journal": "Frontiers in Rehabilitation Sciences",
    "source_id": "S4210195722",
+   "biblio": {
+    "volume": "7",
+    "first_page": "1844025",
+    "last_page": "1844025"
+   },
    "landing_url": "https://doi.org/10.3389/fresc.2026.1844025",
    "is_oa": true,
    "oa_url": "https://www.frontiersin.org/journals/rehabilitation-sciences/articles/10.3389/fresc.2026.1844025/pdf",
@@ -9531,6 +9698,11 @@
    "type": "book-chapter",
    "journal": "Studies in health technology and informatics",
    "source_id": "S4210179765",
+   "biblio": {
+    "volume": "336",
+    "first_page": "1060",
+    "last_page": "1061"
+   },
    "landing_url": "https://doi.org/10.3233/shti260350",
    "is_oa": true,
    "oa_url": "https://doi.org/10.3233/shti260350",
@@ -9686,6 +9858,11 @@
    "type": "book-chapter",
    "journal": "Studies in health technology and informatics",
    "source_id": "S4210179765",
+   "biblio": {
+    "volume": "336",
+    "first_page": "1277",
+    "last_page": "1281"
+   },
    "landing_url": "https://doi.org/10.3233/shti260404",
    "is_oa": true,
    "oa_url": "https://doi.org/10.3233/shti260404",
@@ -9883,6 +10060,7 @@
    "type": "article",
    "journal": "Zenodo (CERN European Organization for Nuclear Research)",
    "source_id": "S4306400562",
+   "biblio": {},
    "landing_url": "https://doi.org/10.5281/zenodo.20340069",
    "is_oa": true,
    "oa_url": "https://doi.org/10.5281/zenodo.20340069",
@@ -9962,6 +10140,7 @@
    "type": "preprint",
    "journal": "OSF Preprints (OSF Preprints)",
    "source_id": "S4306401127",
+   "biblio": {},
    "landing_url": "https://osf.io/4x8q5",
    "is_oa": false,
    "oa_url": null,
@@ -10053,6 +10232,11 @@
    "type": "article",
    "journal": "Radiotherapy and Oncology",
    "source_id": "S144507673",
+   "biblio": {
+    "volume": "218",
+    "first_page": "S2635",
+    "last_page": "S2636"
+   },
    "landing_url": "https://doi.org/10.1016/s0167-8140(26)04007-7",
    "is_oa": false,
    "oa_url": null,
@@ -10153,6 +10337,11 @@
    "type": "article",
    "journal": "Radiotherapy and Oncology",
    "source_id": "S144507673",
+   "biblio": {
+    "volume": "218",
+    "first_page": "S2556",
+    "last_page": "S2557"
+   },
    "landing_url": "https://doi.org/10.1016/s0167-8140(26)03922-8",
    "is_oa": false,
    "oa_url": null,
@@ -10238,6 +10427,11 @@
    "type": "article",
    "journal": "Radiotherapy and Oncology",
    "source_id": "S144507673",
+   "biblio": {
+    "volume": "218",
+    "first_page": "S1262",
+    "last_page": "S1263"
+   },
    "landing_url": "https://doi.org/10.1016/s0167-8140(26)02632-0",
    "is_oa": false,
    "oa_url": null,
@@ -10302,6 +10496,11 @@
    "type": "article",
    "journal": "Radiotherapy and Oncology",
    "source_id": "S144507673",
+   "biblio": {
+    "volume": "218",
+    "first_page": "S2736",
+    "last_page": "S2737"
+   },
    "landing_url": "https://doi.org/10.1016/s0167-8140(26)04116-2",
    "is_oa": false,
    "oa_url": null,
@@ -10396,6 +10595,11 @@
    "type": "article",
    "journal": "Radiotherapy and Oncology",
    "source_id": "S144507673",
+   "biblio": {
+    "volume": "218",
+    "first_page": "S2583",
+    "last_page": "S2584"
+   },
    "landing_url": "https://doi.org/10.1016/s0167-8140(26)03950-2",
    "is_oa": false,
    "oa_url": null,
@@ -10508,6 +10712,11 @@
    "type": "article",
    "journal": "Radiotherapy and Oncology",
    "source_id": "S144507673",
+   "biblio": {
+    "volume": "218",
+    "first_page": "S2310",
+    "last_page": "S2310"
+   },
    "landing_url": "https://doi.org/10.1016/s0167-8140(26)03682-0",
    "is_oa": false,
    "oa_url": null,
@@ -10588,6 +10797,11 @@
    "type": "article",
    "journal": "Radiotherapy and Oncology",
    "source_id": "S144507673",
+   "biblio": {
+    "volume": "218",
+    "first_page": "S2617",
+    "last_page": "S2618"
+   },
    "landing_url": "https://doi.org/10.1016/s0167-8140(26)03989-7",
    "is_oa": false,
    "oa_url": null,
@@ -10709,6 +10923,11 @@
    "type": "article",
    "journal": "Radiotherapy and Oncology",
    "source_id": "S144507673",
+   "biblio": {
+    "volume": "218",
+    "first_page": "S417",
+    "last_page": "S419"
+   },
    "landing_url": "https://doi.org/10.1016/s0167-8140(26)01746-9",
    "is_oa": false,
    "oa_url": null,
@@ -10818,6 +11037,11 @@
    "type": "article",
    "journal": "Radiotherapy and Oncology",
    "source_id": "S144507673",
+   "biblio": {
+    "volume": "218",
+    "first_page": "S2442",
+    "last_page": "S2442"
+   },
    "landing_url": "https://doi.org/10.1016/s0167-8140(26)03810-7",
    "is_oa": false,
    "oa_url": null,
@@ -10901,6 +11125,11 @@
    "type": "article",
    "journal": "Radiotherapy and Oncology",
    "source_id": "S144507673",
+   "biblio": {
+    "volume": "218",
+    "first_page": "S2620",
+    "last_page": "S2621"
+   },
    "landing_url": "https://doi.org/10.1016/s0167-8140(26)03993-9",
    "is_oa": false,
    "oa_url": null,
@@ -11001,6 +11230,11 @@
    "type": "article",
    "journal": "Radiotherapy and Oncology",
    "source_id": "S144507673",
+   "biblio": {
+    "volume": "218",
+    "first_page": "S1139",
+    "last_page": "S1139"
+   },
    "landing_url": "https://doi.org/10.1016/s0167-8140(26)02501-6",
    "is_oa": false,
    "oa_url": null,
@@ -11071,6 +11305,11 @@
    "type": "article",
    "journal": "Radiotherapy and Oncology",
    "source_id": "S144507673",
+   "biblio": {
+    "volume": "218",
+    "first_page": "S2481",
+    "last_page": "S2482"
+   },
    "landing_url": "https://doi.org/10.1016/s0167-8140(26)03847-8",
    "is_oa": false,
    "oa_url": null,
@@ -11195,6 +11434,11 @@
    "type": "article",
    "journal": "Radiotherapy and Oncology",
    "source_id": "S144507673",
+   "biblio": {
+    "volume": "218",
+    "first_page": "S1163",
+    "last_page": "S1164"
+   },
    "landing_url": "https://doi.org/10.1016/s0167-8140(26)02527-2",
    "is_oa": false,
    "oa_url": null,
@@ -11298,6 +11542,11 @@
    "type": "article",
    "journal": "Radiotherapy and Oncology",
    "source_id": "S144507673",
+   "biblio": {
+    "volume": "218",
+    "first_page": "S1619",
+    "last_page": "S1620"
+   },
    "landing_url": "https://doi.org/10.1016/s0167-8140(26)02985-3",
    "is_oa": false,
    "oa_url": null,
@@ -11368,6 +11617,11 @@
    "type": "article",
    "journal": "Radiotherapy and Oncology",
    "source_id": "S144507673",
+   "biblio": {
+    "volume": "218",
+    "first_page": "S2986",
+    "last_page": "S2986"
+   },
    "landing_url": "https://doi.org/10.1016/s0167-8140(26)04391-4",
    "is_oa": false,
    "oa_url": null,
@@ -11423,6 +11677,11 @@
    "type": "article",
    "journal": "Radiotherapy and Oncology",
    "source_id": "S144507673",
+   "biblio": {
+    "volume": "218",
+    "first_page": "S3002",
+    "last_page": "S3003"
+   },
    "landing_url": "https://doi.org/10.1016/s0167-8140(26)04426-9",
    "is_oa": false,
    "oa_url": null,
@@ -11511,6 +11770,11 @@
    "type": "article",
    "journal": "Radiotherapy and Oncology",
    "source_id": "S144507673",
+   "biblio": {
+    "volume": "218",
+    "first_page": "S1334",
+    "last_page": "S1335"
+   },
    "landing_url": "https://doi.org/10.1016/s0167-8140(26)02710-6",
    "is_oa": false,
    "oa_url": null,
@@ -11651,6 +11915,11 @@
    "type": "article",
    "journal": "Radiotherapy and Oncology",
    "source_id": "S144507673",
+   "biblio": {
+    "volume": "218",
+    "first_page": "S2594",
+    "last_page": "S2595"
+   },
    "landing_url": "https://doi.org/10.1016/s0167-8140(26)03964-2",
    "is_oa": false,
    "oa_url": null,
@@ -11778,6 +12047,11 @@
    "type": "article",
    "journal": "Radiotherapy and Oncology",
    "source_id": "S144507673",
+   "biblio": {
+    "volume": "218",
+    "first_page": "S1070",
+    "last_page": "S1071"
+   },
    "landing_url": "https://doi.org/10.1016/s0167-8140(26)02424-2",
    "is_oa": false,
    "oa_url": null,
@@ -11869,6 +12143,11 @@
    "type": "article",
    "journal": "Radiotherapy and Oncology",
    "source_id": "S144507673",
+   "biblio": {
+    "volume": "218",
+    "first_page": "S1291",
+    "last_page": "S1292"
+   },
    "landing_url": "https://doi.org/10.1016/s0167-8140(26)02664-2",
    "is_oa": false,
    "oa_url": null,
@@ -11951,6 +12230,11 @@
    "type": "article",
    "journal": "Radiotherapy and Oncology",
    "source_id": "S144507673",
+   "biblio": {
+    "volume": "218",
+    "first_page": "S242",
+    "last_page": "S243"
+   },
    "landing_url": "https://doi.org/10.1016/s0167-8140(26)01556-2",
    "is_oa": false,
    "oa_url": null,
@@ -12085,6 +12369,11 @@
    "type": "article",
    "journal": "Radiotherapy and Oncology",
    "source_id": "S144507673",
+   "biblio": {
+    "volume": "218",
+    "first_page": "S2451",
+    "last_page": "S2452"
+   },
    "landing_url": "https://doi.org/10.1016/s0167-8140(26)03819-3",
    "is_oa": false,
    "oa_url": null,
@@ -12168,6 +12457,11 @@
    "type": "article",
    "journal": "Radiotherapy and Oncology",
    "source_id": "S144507673",
+   "biblio": {
+    "volume": "218",
+    "first_page": "S2136",
+    "last_page": "S2136"
+   },
    "landing_url": "https://doi.org/10.1016/s0167-8140(26)03511-5",
    "is_oa": false,
    "oa_url": null,
@@ -12256,6 +12550,11 @@
    "type": "article",
    "journal": "Radiotherapy and Oncology",
    "source_id": "S144507673",
+   "biblio": {
+    "volume": "218",
+    "first_page": "S655",
+    "last_page": "S656"
+   },
    "landing_url": "https://doi.org/10.1016/s0167-8140(26)01979-1",
    "is_oa": false,
    "oa_url": null,
@@ -12372,6 +12671,11 @@
    "type": "article",
    "journal": "Radiotherapy and Oncology",
    "source_id": "S144507673",
+   "biblio": {
+    "volume": "218",
+    "first_page": "S2433",
+    "last_page": "S2434"
+   },
    "landing_url": "https://doi.org/10.1016/s0167-8140(26)03802-8",
    "is_oa": false,
    "oa_url": null,
@@ -12489,6 +12793,11 @@
    "type": "article",
    "journal": "Radiotherapy and Oncology",
    "source_id": "S144507673",
+   "biblio": {
+    "volume": "218",
+    "first_page": "S1275",
+    "last_page": "S1276"
+   },
    "landing_url": "https://doi.org/10.1016/s0167-8140(26)02648-4",
    "is_oa": false,
    "oa_url": null,
@@ -12616,6 +12925,11 @@
    "type": "conference-abstract",
    "journal": "Radiotherapy and Oncology",
    "source_id": "S144507673",
+   "biblio": {
+    "volume": "218",
+    "first_page": "S1427",
+    "last_page": "S1428"
+   },
    "landing_url": "https://doi.org/10.1016/s0167-8140(26)02802-1",
    "is_oa": false,
    "oa_url": null,
@@ -12702,6 +13016,11 @@
    "type": "article",
    "journal": "Radiotherapy and Oncology",
    "source_id": "S144507673",
+   "biblio": {
+    "volume": "218",
+    "first_page": "S1293",
+    "last_page": "S1294"
+   },
    "landing_url": "https://doi.org/10.1016/s0167-8140(26)02666-6",
    "is_oa": false,
    "oa_url": null,
@@ -12796,6 +13115,10 @@
    "type": "conference-paper",
    "journal": "Language Resources and Evaluation Conference (LREC)",
    "source_id": "S7407088301",
+   "biblio": {
+    "first_page": "82",
+    "last_page": "95"
+   },
    "landing_url": "https://doi.org/10.63317/2fxa2v4tn93y",
    "is_oa": true,
    "oa_url": "http://www.lrec-conf.org/proceedings/lrec2026/workshops/cl4health/pdf/2026.cl4health-1.8.pdf",
@@ -12873,6 +13196,11 @@
    "type": "article",
    "journal": "European Journal of Surgical Oncology",
    "source_id": "S158473028",
+   "biblio": {
+    "volume": "52",
+    "first_page": "111688",
+    "last_page": "111688"
+   },
    "landing_url": "https://doi.org/10.1016/j.ejso.2026.111688",
    "is_oa": false,
    "oa_url": null,
@@ -13019,6 +13347,7 @@
    "type": "preprint",
    "journal": "arXiv (Cornell University)",
    "source_id": "S4306400194",
+   "biblio": {},
    "landing_url": "https://arxiv.org/abs/2604.11679",
    "is_oa": true,
    "oa_url": "https://arxiv.org/pdf/2604.11679",
@@ -13359,6 +13688,7 @@
    "type": "preprint",
    "journal": "bioRxiv (Cold Spring Harbor Laboratory)",
    "source_id": "S4306402567",
+   "biblio": {},
    "landing_url": "https://doi.org/10.64898/2026.04.06.716823",
    "is_oa": true,
    "oa_url": "https://doi.org/10.64898/2026.04.06.716823",
@@ -13450,6 +13780,10 @@
    "type": "conference-paper",
    "journal": "IEEE International Symposium on Biomedical Imaging (ISBI)",
    "source_id": "S4363605129",
+   "biblio": {
+    "first_page": "1",
+    "last_page": "4"
+   },
    "landing_url": "https://doi.org/10.1109/isbi61048.2026.11515369",
    "is_oa": true,
    "oa_url": "https://arxiv.org/pdf/2511.11311",
@@ -13551,6 +13885,11 @@
    "type": "article",
    "journal": "Frontiers in Immunology",
    "source_id": "S2595292759",
+   "biblio": {
+    "volume": "17",
+    "first_page": "1793039",
+    "last_page": "1793039"
+   },
    "landing_url": "https://doi.org/10.3389/fimmu.2026.1793039",
    "is_oa": true,
    "oa_url": "https://public-pages-files-2025.frontiersin.org/journals/immunology/articles/10.3389/fimmu.2026.1793039/pdf",
@@ -13684,6 +14023,7 @@
    "type": "article",
    "journal": "ResearchEquals",
    "source_id": "S4363607032",
+   "biblio": {},
    "landing_url": "https://doi.org/10.53962/tpjy-bs2a",
    "is_oa": false,
    "oa_url": null,
@@ -13745,6 +14085,7 @@
    "type": "preprint",
    "journal": null,
    "source_id": null,
+   "biblio": {},
    "landing_url": "https://doi.org/10.2196/preprints.96200",
    "is_oa": false,
    "oa_url": null,
@@ -13828,6 +14169,12 @@
    "type": "review",
    "journal": "AI & Society",
    "source_id": "S4210190517",
+   "biblio": {
+    "volume": "41",
+    "issue": "7",
+    "first_page": "6925",
+    "last_page": "6935"
+   },
    "landing_url": "https://doi.org/10.1007/s00146-026-02997-9",
    "is_oa": true,
    "oa_url": "https://link.springer.com/content/pdf/10.1007/s00146-026-02997-9.pdf",
@@ -13917,6 +14264,7 @@
    "type": "other",
    "journal": "Research Publications (Maastricht University)",
    "source_id": "S4306402616",
+   "biblio": {},
    "landing_url": "https://cris.maastrichtuniversity.nl/en/publications/602da7ee-4c28-4dab-abaf-463e243bdce2",
    "is_oa": true,
    "oa_url": "https://cris.maastrichtuniversity.nl/en/publications/602da7ee-4c28-4dab-abaf-463e243bdce2",
@@ -13991,6 +14339,11 @@
    "type": "article",
    "journal": "Journal of Medical Internet Research",
    "source_id": "S17147534",
+   "biblio": {
+    "volume": "28",
+    "first_page": "e95090",
+    "last_page": "e95090"
+   },
    "landing_url": "https://doi.org/10.2196/95090",
    "is_oa": true,
    "oa_url": "https://doi.org/10.2196/95090",
@@ -14046,6 +14399,11 @@
    "type": "conference-abstract",
    "journal": "ESMO Open",
    "source_id": "S4210217024",
+   "biblio": {
+    "volume": "11",
+    "first_page": "106431",
+    "last_page": "106431"
+   },
    "landing_url": "https://doi.org/10.1016/j.esmoop.2026.106431",
    "is_oa": true,
    "oa_url": "https://www.esmoopen.com/article/S2059-7029(26)00373-X/pdf",
@@ -14148,6 +14506,11 @@
    "type": "conference-abstract",
    "journal": "ESMO Open",
    "source_id": "S4210217024",
+   "biblio": {
+    "volume": "11",
+    "first_page": "106348",
+    "last_page": "106348"
+   },
    "landing_url": "https://doi.org/10.1016/j.esmoop.2026.106348",
    "is_oa": true,
    "oa_url": "https://www.esmoopen.com/article/S2059-7029(26)00290-5/pdf",
@@ -14253,6 +14616,11 @@
    "type": "article",
    "journal": "Nature Communications",
    "source_id": "S64187185",
+   "biblio": {
+    "volume": "17",
+    "issue": "1",
+    "first_page": "3956"
+   },
    "landing_url": "https://doi.org/10.1038/s41467-026-70297-3",
    "is_oa": true,
    "oa_url": "https://www.nature.com/articles/s41467-026-70297-3_reference.pdf",
@@ -14557,6 +14925,12 @@
    "type": "article",
    "journal": "Digestive Diseases and Sciences",
    "source_id": "S194656152",
+   "biblio": {
+    "volume": "71",
+    "issue": "8",
+    "first_page": "3495",
+    "last_page": "3507"
+   },
    "landing_url": "https://doi.org/10.1007/s10620-026-09750-8",
    "is_oa": true,
    "oa_url": "https://link.springer.com/content/pdf/10.1007/s10620-026-09750-8.pdf",
@@ -14706,6 +15080,11 @@
    "type": "article",
    "journal": "JMIR Medical Education",
    "source_id": "S4210212741",
+   "biblio": {
+    "volume": "12",
+    "first_page": "e85228",
+    "last_page": "e85228"
+   },
    "landing_url": "https://doi.org/10.2196/85228",
    "is_oa": true,
    "oa_url": "https://doi.org/10.2196/85228",
@@ -14928,6 +15307,11 @@
    "type": "review",
    "journal": "Seizure",
    "source_id": "S45493217",
+   "biblio": {
+    "volume": "137",
+    "first_page": "121",
+    "last_page": "137"
+   },
    "landing_url": "https://doi.org/10.1016/j.seizure.2026.03.002",
    "is_oa": true,
    "oa_url": "https://www.seizure-journal.com/article/S1059-1311(26)00067-1/pdf",
@@ -15068,6 +15452,11 @@
    "type": "article",
    "journal": "PEC Innovation",
    "source_id": "S4210173023",
+   "biblio": {
+    "volume": "8",
+    "first_page": "100468",
+    "last_page": "100468"
+   },
    "landing_url": "https://doi.org/10.1016/j.pecinn.2026.100468",
    "is_oa": true,
    "oa_url": "https://doi.org/10.1016/j.pecinn.2026.100468",
@@ -15185,6 +15574,11 @@
    "type": "article",
    "journal": "Frontiers in Immunology",
    "source_id": "S2595292759",
+   "biblio": {
+    "volume": "17",
+    "first_page": "1787518",
+    "last_page": "1787518"
+   },
    "landing_url": "https://doi.org/10.3389/fimmu.2026.1787518",
    "is_oa": true,
    "oa_url": "https://public-pages-files-2025.frontiersin.org/journals/immunology/articles/10.3389/fimmu.2026.1787518/pdf",
@@ -15321,6 +15715,12 @@
    "type": "article",
    "journal": "Diagnostics",
    "source_id": "S4210172076",
+   "biblio": {
+    "volume": "16",
+    "issue": "5",
+    "first_page": "700",
+    "last_page": "700"
+   },
    "landing_url": "https://doi.org/10.3390/diagnostics16050700",
    "is_oa": true,
    "oa_url": "https://www.mdpi.com/2075-4418/16/5/700/pdf?version=1772185831",
@@ -15471,6 +15871,11 @@
    "type": "article",
    "journal": "International Journal of Epidemiology",
    "source_id": "S13389975",
+   "biblio": {
+    "volume": "55",
+    "issue": "2",
+    "first_page": "dyag016"
+   },
    "landing_url": "https://doi.org/10.1093/ije/dyag016",
    "is_oa": true,
    "oa_url": "https://doi.org/10.1093/ije/dyag016",
@@ -15816,6 +16221,12 @@
    "type": "conference-abstract",
    "journal": "Clinical Cancer Research",
    "source_id": "S183149254",
+   "biblio": {
+    "volume": "32",
+    "issue": "4_Supplement",
+    "first_page": "PS1",
+    "last_page": "12"
+   },
    "landing_url": "https://doi.org/10.1158/1557-3265.sabcs25-ps1-12-19",
    "is_oa": false,
    "oa_url": null,
@@ -15975,6 +16386,12 @@
    "type": "review",
    "journal": "Physics in Medicine and Biology",
    "source_id": "S20241394",
+   "biblio": {
+    "volume": "71",
+    "issue": "3",
+    "first_page": "03TR01",
+    "last_page": "03TR01"
+   },
    "landing_url": "https://doi.org/10.1088/1361-6560/ae25b2",
    "is_oa": true,
    "oa_url": "https://doi.org/10.1088/1361-6560/ae25b2",
@@ -16064,6 +16481,7 @@
    "type": "software",
    "journal": "Zenodo (CERN European Organization for Nuclear Research)",
    "source_id": "S4306400562",
+   "biblio": {},
    "landing_url": "https://doi.org/10.5281/zenodo.18431455",
    "is_oa": true,
    "oa_url": "https://doi.org/10.5281/zenodo.18431455",
@@ -16131,6 +16549,7 @@
    "type": "software",
    "journal": null,
    "source_id": null,
+   "biblio": {},
    "landing_url": "https://github.com/MaastrichtU-CDS/omop-converter/",
    "is_oa": true,
    "oa_url": "https://github.com/MaastrichtU-CDS/omop-converter/",
@@ -16260,6 +16679,7 @@
    "type": "article",
    "journal": "Zenodo (CERN European Organization for Nuclear Research)",
    "source_id": "S4306400562",
+   "biblio": {},
    "landing_url": "https://doi.org/10.5281/zenodo.18495622",
    "is_oa": true,
    "oa_url": "https://doi.org/10.5281/zenodo.18495622",
@@ -16343,6 +16763,7 @@
    "type": "article",
    "journal": "Zenodo (CERN European Organization for Nuclear Research)",
    "source_id": "S4306400562",
+   "biblio": {},
    "landing_url": "https://doi.org/10.5281/zenodo.18259274",
    "is_oa": true,
    "oa_url": "https://doi.org/10.5281/zenodo.18259274",
@@ -16410,6 +16831,12 @@
    "type": "article",
    "journal": "Journal of Imaging Informatics in Medicine",
    "source_id": "S62275304",
+   "biblio": {
+    "volume": "39",
+    "issue": "5",
+    "first_page": "4268",
+    "last_page": "4285"
+   },
    "landing_url": "https://doi.org/10.1007/s10278-025-01828-5",
    "is_oa": true,
    "oa_url": "https://link.springer.com/content/pdf/10.1007/s10278-025-01828-5.pdf",
@@ -16598,6 +17025,11 @@
    "type": "article",
    "journal": "Cancer Letters",
    "source_id": "S106234763",
+   "biblio": {
+    "volume": "640",
+    "first_page": "218229",
+    "last_page": "218229"
+   },
    "landing_url": "https://doi.org/10.1016/j.canlet.2025.218229",
    "is_oa": true,
    "oa_url": "https://doi.org/10.1016/j.canlet.2025.218229",
@@ -16746,6 +17178,11 @@
    "type": "article",
    "journal": "Cancer Treatment and Research Communications",
    "source_id": "S4210186504",
+   "biblio": {
+    "volume": "48",
+    "first_page": "101273",
+    "last_page": "101273"
+   },
    "landing_url": "https://doi.org/10.1016/j.ctarc.2026.101273",
    "is_oa": true,
    "oa_url": "https://doi.org/10.1016/j.ctarc.2026.101273",
@@ -16837,6 +17274,7 @@
    "type": "article",
    "journal": "Open Science Framework",
    "source_id": "S7407050956",
+   "biblio": {},
    "landing_url": "https://doi.org/10.17605/osf.io/4x8q5",
    "is_oa": true,
    "oa_url": "https://doi.org/10.17605/osf.io/4x8q5",
@@ -16928,6 +17366,7 @@
    "type": "preprint",
    "journal": null,
    "source_id": null,
+   "biblio": {},
    "landing_url": "https://osf.io/e8whs",
    "is_oa": true,
    "oa_url": "https://osf.io/e8whs",
@@ -16983,6 +17422,7 @@
    "type": "preprint",
    "journal": null,
    "source_id": null,
+   "biblio": {},
    "landing_url": "https://osf.io/5xmtd",
    "is_oa": true,
    "oa_url": "https://osf.io/5xmtd",
@@ -17038,6 +17478,11 @@
    "type": "article",
    "journal": "EJC Skin Cancer",
    "source_id": "S4387288999",
+   "biblio": {
+    "volume": "4",
+    "first_page": "100845",
+    "last_page": "100845"
+   },
    "landing_url": "https://doi.org/10.1016/j.ejcskn.2026.100845",
    "is_oa": true,
    "oa_url": "https://doi.org/10.1016/j.ejcskn.2026.100845",
@@ -17123,6 +17568,7 @@
    "type": "conference-paper",
    "journal": "Hawaii International Conference on System Sciences (HICSS)",
    "source_id": "S4210195248",
+   "biblio": {},
    "landing_url": "https://doi.org/10.24251/hicss.2026.413",
    "is_oa": true,
    "oa_url": "https://scholarspace.manoa.hawaii.edu/bitstreams/18b7af65-5c10-4396-8bd3-2c3a3d501d15/download",
@@ -17201,6 +17647,7 @@
    "type": "preprint",
    "journal": "SSRN Electronic Journal",
    "source_id": "S4210172589",
+   "biblio": {},
    "landing_url": "https://doi.org/10.2139/ssrn.6221484",
    "is_oa": true,
    "oa_url": "https://doi.org/10.2139/ssrn.6221484",
@@ -17316,6 +17763,12 @@
    "type": "article",
    "journal": "BJR|Artificial Intelligence",
    "source_id": "S5407040186",
+   "biblio": {
+    "volume": "3",
+    "issue": "1",
+    "first_page": "ubaf021",
+    "last_page": "ubaf021"
+   },
    "landing_url": "https://doi.org/10.1093/bjrai/ubaf021",
    "is_oa": true,
    "oa_url": "https://doi.org/10.1093/bjrai/ubaf021",
@@ -17423,6 +17876,12 @@
    "type": "article",
    "journal": "BMJ Open",
    "source_id": "S79054089",
+   "biblio": {
+    "volume": "16",
+    "issue": "1",
+    "first_page": "e112705",
+    "last_page": "e112705"
+   },
    "landing_url": "https://doi.org/10.1136/bmjopen-2025-112705",
    "is_oa": true,
    "oa_url": "https://doi.org/10.1136/bmjopen-2025-112705",
@@ -17566,6 +18025,12 @@
    "type": "article",
    "journal": "JCO Clinical Cancer Informatics",
    "source_id": "S4210181501",
+   "biblio": {
+    "volume": "10",
+    "issue": "1",
+    "first_page": "e2500177",
+    "last_page": "e2500177"
+   },
    "landing_url": "https://doi.org/10.1200/cci-25-00177",
    "is_oa": true,
    "oa_url": "https://ascopubs.org/doi/pdf/10.1200/CCI-25-00177",
@@ -17729,6 +18194,11 @@
    "type": "article",
    "journal": "Computers in Biology and Medicine",
    "source_id": "S44278595",
+   "biblio": {
+    "volume": "201",
+    "first_page": "111438",
+    "last_page": "111438"
+   },
    "landing_url": "https://doi.org/10.1016/j.compbiomed.2025.111438",
    "is_oa": true,
    "oa_url": "https://doi.org/10.1016/j.compbiomed.2025.111438",
@@ -17870,6 +18340,12 @@
    "type": "article",
    "journal": "Advances in Radiation Oncology",
    "source_id": "S2765008485",
+   "biblio": {
+    "volume": "11",
+    "issue": "4",
+    "first_page": "101988",
+    "last_page": "101988"
+   },
    "landing_url": "https://doi.org/10.1016/j.adro.2025.101988",
    "is_oa": true,
    "oa_url": "https://www.advancesradonc.org/article/S2452-1094(25)00275-1/pdf",
@@ -17996,6 +18472,12 @@
    "type": "review",
    "journal": "The Lancet Oncology",
    "source_id": "S116900674",
+   "biblio": {
+    "volume": "27",
+    "issue": "1",
+    "first_page": "e45",
+    "last_page": "e54"
+   },
    "landing_url": "https://doi.org/10.1016/s1470-2045(25)00533-9",
    "is_oa": true,
    "oa_url": "https://pure.eur.nl/en/publications/7ed3725d-3351-4e4e-8f95-91ebd68b290f",
@@ -18346,6 +18828,11 @@
    "type": "article",
    "journal": "Journal of Medical Internet Research",
    "source_id": "S17147534",
+   "biblio": {
+    "volume": "27",
+    "first_page": "e89205",
+    "last_page": "e89205"
+   },
    "landing_url": "https://doi.org/10.2196/89205",
    "is_oa": true,
    "oa_url": "https://doi.org/10.2196/89205",
@@ -18401,6 +18888,12 @@
    "type": "article",
    "journal": "Journal of Clinical Medicine",
    "source_id": "S2737969411",
+   "biblio": {
+    "volume": "14",
+    "issue": "24",
+    "first_page": "8703",
+    "last_page": "8703"
+   },
    "landing_url": "https://doi.org/10.3390/jcm14248703",
    "is_oa": true,
    "oa_url": "https://www.mdpi.com/2077-0383/14/24/8703/pdf?version=1765274467",
@@ -18496,6 +18989,12 @@
    "type": "article",
    "journal": "Discover Oncology",
    "source_id": "S4210213696",
+   "biblio": {
+    "volume": "17",
+    "issue": "1",
+    "first_page": "31",
+    "last_page": "31"
+   },
    "landing_url": "https://doi.org/10.1007/s12672-025-04189-1",
    "is_oa": true,
    "oa_url": "https://doi.org/10.1007/s12672-025-04189-1",
@@ -18642,6 +19141,12 @@
    "type": "article",
    "journal": "Journal for ImmunoTherapy of Cancer",
    "source_id": "S2754803477",
+   "biblio": {
+    "volume": "13",
+    "issue": "12",
+    "first_page": "e013840",
+    "last_page": "e013840"
+   },
    "landing_url": "https://doi.org/10.1136/jitc-2025-013840",
    "is_oa": true,
    "oa_url": "https://jitc.bmj.com/content/13/12/e013840.full.pdf",
@@ -18811,6 +19316,12 @@
    "type": "article",
    "journal": "Scientific Reports",
    "source_id": "S196734849",
+   "biblio": {
+    "volume": "15",
+    "issue": "1",
+    "first_page": "41668",
+    "last_page": "41668"
+   },
    "landing_url": "https://doi.org/10.1038/s41598-025-25568-2",
    "is_oa": true,
    "oa_url": "https://www.nature.com/articles/s41598-025-25568-2.pdf",
@@ -18924,6 +19435,11 @@
    "type": "article",
    "journal": "Computerized Medical Imaging and Graphics",
    "source_id": "S198823948",
+   "biblio": {
+    "volume": "126",
+    "first_page": "102663",
+    "last_page": "102663"
+   },
    "landing_url": "https://doi.org/10.1016/j.compmedimag.2025.102663",
    "is_oa": true,
    "oa_url": "https://cris.maastrichtuniversity.nl/en/publications/7e81f580-c7d6-49d5-8816-1b6b046d1a3f",
@@ -19116,6 +19632,12 @@
    "type": "article",
    "journal": "Cancer Immunology Immunotherapy",
    "source_id": "S203303425",
+   "biblio": {
+    "volume": "74",
+    "issue": "12",
+    "first_page": "380",
+    "last_page": "380"
+   },
    "landing_url": "https://doi.org/10.1007/s00262-025-04235-5",
    "is_oa": true,
    "oa_url": "https://link.springer.com/content/pdf/10.1007/s00262-025-04235-5.pdf",
@@ -19275,6 +19797,12 @@
    "type": "review",
    "journal": "Insights into Imaging",
    "source_id": "S44632665",
+   "biblio": {
+    "volume": "16",
+    "issue": "1",
+    "first_page": "253",
+    "last_page": "253"
+   },
    "landing_url": "https://doi.org/10.1186/s13244-025-02072-9",
    "is_oa": true,
    "oa_url": "https://insightsimaging.springeropen.com/counter/pdf/10.1186/s13244-025-02072-9",
@@ -19437,6 +19965,12 @@
    "type": "article",
    "journal": "Nutrients",
    "source_id": "S110785341",
+   "biblio": {
+    "volume": "17",
+    "issue": "21",
+    "first_page": "3477",
+    "last_page": "3477"
+   },
    "landing_url": "https://doi.org/10.3390/nu17213477",
    "is_oa": true,
    "oa_url": "https://www.mdpi.com/2072-6643/17/21/3477/pdf",
@@ -19543,6 +20077,12 @@
    "type": "article",
    "journal": "European Radiology",
    "source_id": "S4819472",
+   "biblio": {
+    "volume": "36",
+    "issue": "4",
+    "first_page": "2603",
+    "last_page": "2614"
+   },
    "landing_url": "https://doi.org/10.1007/s00330-025-12094-y",
    "is_oa": true,
    "oa_url": "https://cris.maastrichtuniversity.nl/en/publications/71cbfdf1-905e-46dc-b157-8092b779eb35",
@@ -19735,6 +20275,11 @@
    "type": "article",
    "journal": "Frontiers in Digital Health",
    "source_id": "S4210170686",
+   "biblio": {
+    "volume": "7",
+    "first_page": "1629413",
+    "last_page": "1629413"
+   },
    "landing_url": "https://doi.org/10.3389/fdgth.2025.1629413",
    "is_oa": true,
    "oa_url": "https://www.frontiersin.org/journals/digital-health/articles/10.3389/fdgth.2025.1629413/pdf",
@@ -19915,6 +20460,7 @@
    "type": "preprint",
    "journal": null,
    "source_id": null,
+   "biblio": {},
    "landing_url": "https://doi.org/10.2196/preprints.85870",
    "is_oa": true,
    "oa_url": "https://doi.org/10.2196/preprints.85870",
@@ -20045,6 +20591,11 @@
    "type": "article",
    "journal": "EClinicalMedicine",
    "source_id": "S2898347799",
+   "biblio": {
+    "volume": "89",
+    "first_page": "103551",
+    "last_page": "103551"
+   },
    "landing_url": "https://doi.org/10.1016/j.eclinm.2025.103551",
    "is_oa": true,
    "oa_url": "https://doi.org/10.1016/j.eclinm.2025.103551",
@@ -20204,6 +20755,10 @@
    "type": "conference-paper",
    "journal": "Research Publications (Maastricht University)",
    "source_id": "S4306402616",
+   "biblio": {
+    "volume": "52",
+    "issue": "10"
+   },
    "landing_url": "https://cris.maastrichtuniversity.nl/en/publications/25f00641-2bc3-474e-a1f2-0e46d8f57822",
    "is_oa": false,
    "oa_url": null,
@@ -20294,6 +20849,12 @@
    "type": "article",
    "journal": "Journal of Cachexia Sarcopenia and Muscle",
    "source_id": "S173726759",
+   "biblio": {
+    "volume": "16",
+    "issue": "5",
+    "first_page": "e13743",
+    "last_page": "e13743"
+   },
    "landing_url": "https://doi.org/10.1002/jcsm.13743",
    "is_oa": true,
    "oa_url": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1002/jcsm.13743",
@@ -20406,6 +20967,12 @@
    "type": "article",
    "journal": "Progress in Artificial Intelligence",
    "source_id": "S2480581173",
+   "biblio": {
+    "volume": "15",
+    "issue": "2",
+    "first_page": "259",
+    "last_page": "271"
+   },
    "landing_url": "https://doi.org/10.1007/s13748-025-00404-w",
    "is_oa": true,
    "oa_url": "https://link.springer.com/content/pdf/10.1007/s13748-025-00404-w.pdf",
@@ -20545,6 +21112,12 @@
    "type": "article",
    "journal": "British Journal of Radiology",
    "source_id": "S142542876",
+   "biblio": {
+    "volume": "99",
+    "issue": "1177",
+    "first_page": "133",
+    "last_page": "142"
+   },
    "landing_url": "https://doi.org/10.1093/bjr/tqaf239",
    "is_oa": true,
    "oa_url": "https://cris.maastrichtuniversity.nl/ws/files/282424250/Dekker-2025-Variational-autoencoder-based-deep-learning-and.pdf",
@@ -20697,6 +21270,10 @@
    "type": "book-chapter",
    "journal": "CRC Press eBooks",
    "source_id": "S4306463075",
+   "biblio": {
+    "first_page": "157",
+    "last_page": "170"
+   },
    "landing_url": "https://doi.org/10.1201/9781003527749-13",
    "is_oa": true,
    "oa_url": "https://cris.maastrichtuniversity.nl/en/publications/5c4cdd11-832d-4617-835b-35d173d6c02e",
@@ -20767,6 +21344,11 @@
    "type": "article",
    "journal": "Radiotherapy and Oncology",
    "source_id": "S144507673",
+   "biblio": {
+    "volume": "212",
+    "first_page": "111134",
+    "last_page": "111134"
+   },
    "landing_url": "https://doi.org/10.1016/j.radonc.2025.111134",
    "is_oa": true,
    "oa_url": "https://cris.maastrichtuniversity.nl/ws/files/278983024/Wee-2025-Minimum-sample-size-calculation-for.pdf",
@@ -20904,6 +21486,11 @@
    "type": "conference-abstract",
    "journal": "Annals of Oncology",
    "source_id": "S41454044",
+   "biblio": {
+    "volume": "36",
+    "first_page": "S271",
+    "last_page": "S271"
+   },
    "landing_url": "https://doi.org/10.1016/j.annonc.2025.08.631",
    "is_oa": true,
    "oa_url": "https://doi.org/10.1016/j.annonc.2025.08.631",
@@ -20996,6 +21583,12 @@
    "type": "review",
    "journal": "Cancers",
    "source_id": "S168415115",
+   "biblio": {
+    "volume": "17",
+    "issue": "16",
+    "first_page": "2656",
+    "last_page": "2656"
+   },
    "landing_url": "https://doi.org/10.3390/cancers17162656",
    "is_oa": true,
    "oa_url": "https://www.mdpi.com/2072-6694/17/16/2656/pdf?version=1755174635",
@@ -21115,6 +21708,11 @@
    "type": "article",
    "journal": "JMIR Research Protocols",
    "source_id": "S2739058702",
+   "biblio": {
+    "volume": "14",
+    "first_page": "e66068",
+    "last_page": "e66068"
+   },
    "landing_url": "https://doi.org/10.2196/66068",
    "is_oa": true,
    "oa_url": "https://s3.ca-central-1.amazonaws.com/assets.jmir.org/assets/preprints/preprint-66068-accepted.pdf",
@@ -21261,6 +21859,7 @@
    "type": "preprint",
    "journal": null,
    "source_id": null,
+   "biblio": {},
    "landing_url": "https://osf.io/z64qb",
    "is_oa": true,
    "oa_url": "https://osf.io/z64qb",
@@ -21319,6 +21918,12 @@
    "type": "article",
    "journal": "Medical Physics",
    "source_id": "S95522064",
+   "biblio": {
+    "volume": "52",
+    "issue": "8",
+    "first_page": "e18034",
+    "last_page": "e18034"
+   },
    "landing_url": "https://doi.org/10.1002/mp.18034",
    "is_oa": true,
    "oa_url": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1002/mp.18034",
@@ -21454,6 +22059,12 @@
    "type": "article",
    "journal": "Journal of Healthcare Informatics Research",
    "source_id": "S4210196546",
+   "biblio": {
+    "volume": "9",
+    "issue": "4",
+    "first_page": "606",
+    "last_page": "628"
+   },
    "landing_url": "https://doi.org/10.1007/s41666-025-00208-6",
    "is_oa": true,
    "oa_url": "https://link.springer.com/content/pdf/10.1007/s41666-025-00208-6.pdf",
@@ -21601,6 +22212,7 @@
    "type": "article",
    "journal": "Zenodo (CERN European Organization for Nuclear Research)",
    "source_id": "S4306400562",
+   "biblio": {},
    "landing_url": "https://doi.org/10.5281/zenodo.22206390",
    "is_oa": true,
    "oa_url": "https://doi.org/10.5281/zenodo.22206390",
@@ -21693,6 +22305,12 @@
    "type": "review",
    "journal": "BMC Health Services Research",
    "source_id": "S12898181",
+   "biblio": {
+    "volume": "25",
+    "issue": "1",
+    "first_page": "981",
+    "last_page": "981"
+   },
    "landing_url": "https://doi.org/10.1186/s12913-025-13152-3",
    "is_oa": true,
    "oa_url": "https://bmchealthservres.biomedcentral.com/counter/pdf/10.1186/s12913-025-13152-3",
@@ -21773,6 +22391,12 @@
    "type": "article",
    "journal": "Complex & Intelligent Systems",
    "source_id": "S3035462843",
+   "biblio": {
+    "volume": "11",
+    "issue": "9",
+    "first_page": "388",
+    "last_page": "388"
+   },
    "landing_url": "https://doi.org/10.1007/s40747-025-02022-4",
    "is_oa": true,
    "oa_url": "https://link.springer.com/content/pdf/10.1007/s40747-025-02022-4.pdf",
@@ -21873,6 +22497,11 @@
    "type": "review",
    "journal": "The Breast",
    "source_id": "S181123643",
+   "biblio": {
+    "volume": "83",
+    "first_page": "104537",
+    "last_page": "104537"
+   },
    "landing_url": "https://doi.org/10.1016/j.breast.2025.104537",
    "is_oa": true,
    "oa_url": "https://www.thebreastonline.com/article/S0960-9776(25)00554-5/pdf",
@@ -21973,6 +22602,11 @@
    "type": "article",
    "journal": "Frontiers in Nuclear Medicine",
    "source_id": "S4210199274",
+   "biblio": {
+    "volume": "5",
+    "first_page": "1611823",
+    "last_page": "1611823"
+   },
    "landing_url": "https://doi.org/10.3389/fnume.2025.1611823",
    "is_oa": true,
    "oa_url": "https://www.frontiersin.org/journals/nuclear-medicine/articles/10.3389/fnume.2025.1611823/pdf",
@@ -22103,6 +22737,12 @@
    "type": "article",
    "journal": "Diagnostic and Prognostic Research",
    "source_id": "S4210227620",
+   "biblio": {
+    "volume": "9",
+    "issue": "1",
+    "first_page": "15",
+    "last_page": "15"
+   },
    "landing_url": "https://doi.org/10.1186/s41512-025-00198-4",
    "is_oa": true,
    "oa_url": "https://diagnprognres.biomedcentral.com/counter/pdf/10.1186/s41512-025-00198-4",
@@ -22200,6 +22840,12 @@
    "type": "article",
    "journal": "European Journal of Heart Failure",
    "source_id": "S87609158",
+   "biblio": {
+    "volume": "27",
+    "issue": "8",
+    "first_page": "1393",
+    "last_page": "1399"
+   },
    "landing_url": "https://doi.org/10.1002/ejhf.3714",
    "is_oa": true,
    "oa_url": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1002/ejhf.3714",
@@ -22300,6 +22946,12 @@
    "type": "article",
    "journal": "CardioVascular and Interventional Radiology",
    "source_id": "S170712534",
+   "biblio": {
+    "volume": "48",
+    "issue": "8",
+    "first_page": "1193",
+    "last_page": "1199"
+   },
    "landing_url": "https://doi.org/10.1007/s00270-025-04093-9",
    "is_oa": true,
    "oa_url": "https://link.springer.com/content/pdf/10.1007/s00270-025-04093-9.pdf",
@@ -22480,6 +23132,12 @@
    "type": "article",
    "journal": "Ethics and Information Technology",
    "source_id": "S13096939",
+   "biblio": {
+    "volume": "27",
+    "issue": "3",
+    "first_page": "32",
+    "last_page": "32"
+   },
    "landing_url": "https://doi.org/10.1007/s10676-025-09843-4",
    "is_oa": true,
    "oa_url": "https://link.springer.com/content/pdf/10.1007/s10676-025-09843-4.pdf",
@@ -22622,6 +23280,12 @@
    "type": "article",
    "journal": "International Journal of Radiation Oncology*Biology*Physics",
    "source_id": "S110533041",
+   "biblio": {
+    "volume": "123",
+    "issue": "5",
+    "first_page": "1323",
+    "last_page": "1334"
+   },
    "landing_url": "https://doi.org/10.1016/j.ijrobp.2025.05.088",
    "is_oa": true,
    "oa_url": "https://cris.maastrichtuniversity.nl/en/publications/f7738a0c-297e-4ed6-bbc7-b789ab6106dc",
@@ -22801,6 +23465,12 @@
    "type": "article",
    "journal": "Annals of Oncology",
    "source_id": "S41454044",
+   "biblio": {
+    "volume": "36",
+    "issue": "10",
+    "first_page": "1178",
+    "last_page": "1189"
+   },
    "landing_url": "https://doi.org/10.1016/j.annonc.2025.05.537",
    "is_oa": true,
    "oa_url": "https://www.annalsofoncology.org/action/showPdf?pii=S0923753425007665",
@@ -22987,6 +23657,11 @@
    "type": "article",
    "journal": "Technical Innovations & Patient Support in Radiation Oncology",
    "source_id": "S2898444622",
+   "biblio": {
+    "volume": "34",
+    "first_page": "100319",
+    "last_page": "100319"
+   },
    "landing_url": "https://doi.org/10.1016/j.tipsro.2025.100319",
    "is_oa": true,
    "oa_url": "https://doi.org/10.1016/j.tipsro.2025.100319",
@@ -23071,6 +23746,7 @@
    "type": "preprint",
    "journal": "arXiv (Cornell University)",
    "source_id": "S4306400194",
+   "biblio": {},
    "landing_url": "http://arxiv.org/abs/2505.12344",
    "is_oa": true,
    "oa_url": "https://arxiv.org/pdf/2505.12344",
@@ -23190,6 +23866,11 @@
    "type": "review",
    "journal": "Studies in health technology and informatics",
    "source_id": "S4210179765",
+   "biblio": {
+    "volume": "327",
+    "first_page": "390",
+    "last_page": "391"
+   },
    "landing_url": "https://doi.org/10.3233/shti250351",
    "is_oa": true,
    "oa_url": "https://ebooks.iospress.nl/pdf/doi/10.3233/SHTI250351",
@@ -23347,6 +24028,11 @@
    "type": "book-chapter",
    "journal": "Studies in health technology and informatics",
    "source_id": "S4210179765",
+   "biblio": {
+    "volume": "327",
+    "first_page": "258",
+    "last_page": "262"
+   },
    "landing_url": "https://doi.org/10.3233/shti250324",
    "is_oa": true,
    "oa_url": "https://ebooks.iospress.nl/pdf/doi/10.3233/SHTI250324",
@@ -23488,6 +24174,11 @@
    "type": "book-chapter",
    "journal": "Studies in health technology and informatics",
    "source_id": "S4210179765",
+   "biblio": {
+    "volume": "327",
+    "first_page": "591",
+    "last_page": "592"
+   },
    "landing_url": "https://doi.org/10.3233/shti250407",
    "is_oa": true,
    "oa_url": "https://ebooks.iospress.nl/pdf/doi/10.3233/SHTI250407",
@@ -23624,6 +24315,12 @@
    "type": "article",
    "journal": "The Lancet Digital Health",
    "source_id": "S4210237014",
+   "biblio": {
+    "volume": "7",
+    "issue": "6",
+    "first_page": "100870",
+    "last_page": "100870"
+   },
    "landing_url": "https://doi.org/10.1016/j.landig.2025.03.002",
    "is_oa": true,
    "oa_url": "https://doi.org/10.1016/j.landig.2025.03.002",
@@ -23822,6 +24519,9 @@
    "type": "conference-paper",
    "journal": "Research Publications (Maastricht University)",
    "source_id": "S4306402616",
+   "biblio": {
+    "volume": "206"
+   },
    "landing_url": "https://cris.maastrichtuniversity.nl/en/publications/b8bec8cc-2512-4f16-a97a-56ba2d641227",
    "is_oa": false,
    "oa_url": null,
@@ -23976,6 +24676,9 @@
    "type": "conference-paper",
    "journal": "University of Groningen research database (University of Groningen / Centre for Information Technology)",
    "source_id": "S4306400420",
+   "biblio": {
+    "volume": "206"
+   },
    "landing_url": "https://hdl.handle.net/11370/0fead051-d980-447f-998e-3fa3faddadc0",
    "is_oa": false,
    "oa_url": null,
@@ -24181,6 +24884,12 @@
    "type": "article",
    "journal": "Gastroenterology",
    "source_id": "S143352558",
+   "biblio": {
+    "volume": "169",
+    "issue": "1",
+    "first_page": "S",
+    "last_page": "290"
+   },
    "landing_url": "https://doi.org/10.1016/s0016-5085(25)01611-7",
    "is_oa": true,
    "oa_url": "https://www.gastrojournal.org/article/S0016-5085(25)01611-7/pdf",
@@ -24314,6 +25023,11 @@
    "type": "article",
    "journal": "Radiotherapy and Oncology",
    "source_id": "S144507673",
+   "biblio": {
+    "volume": "206",
+    "first_page": "S2354",
+    "last_page": "S2357"
+   },
    "landing_url": "https://doi.org/10.1016/s0167-8140(25)00270-1",
    "is_oa": false,
    "oa_url": null,
@@ -24383,6 +25097,11 @@
    "type": "article",
    "journal": "Radiotherapy and Oncology",
    "source_id": "S144507673",
+   "biblio": {
+    "volume": "206",
+    "first_page": "S1033",
+    "last_page": "S1034"
+   },
    "landing_url": "https://doi.org/10.1016/s0167-8140(25)01096-5",
    "is_oa": false,
    "oa_url": null,
@@ -24547,6 +25266,11 @@
    "type": "article",
    "journal": "Radiotherapy and Oncology",
    "source_id": "S144507673",
+   "biblio": {
+    "volume": "206",
+    "first_page": "S2479",
+    "last_page": "S2480"
+   },
    "landing_url": "https://doi.org/10.1016/s0167-8140(25)01135-1",
    "is_oa": false,
    "oa_url": null,
@@ -24639,6 +25363,11 @@
    "type": "article",
    "journal": "Radiotherapy and Oncology",
    "source_id": "S144507673",
+   "biblio": {
+    "volume": "206",
+    "first_page": "S2380",
+    "last_page": "S2382"
+   },
    "landing_url": "https://doi.org/10.1016/s0167-8140(25)01292-7",
    "is_oa": true,
    "oa_url": "https://research.tilburguniversity.edu/en/publications/57161b87-570a-4ad5-be14-5ce4c16c481a",
@@ -24736,6 +25465,11 @@
    "type": "article",
    "journal": "Radiotherapy and Oncology",
    "source_id": "S144507673",
+   "biblio": {
+    "volume": "206",
+    "first_page": "S594",
+    "last_page": "S594"
+   },
    "landing_url": "https://doi.org/10.1016/s0167-8140(25)01885-7",
    "is_oa": false,
    "oa_url": null,
@@ -24819,6 +25553,11 @@
    "type": "article",
    "journal": "Radiotherapy and Oncology",
    "source_id": "S144507673",
+   "biblio": {
+    "volume": "206",
+    "first_page": "S2546",
+    "last_page": "S2548"
+   },
    "landing_url": "https://doi.org/10.1016/s0167-8140(25)01983-8",
    "is_oa": false,
    "oa_url": null,
@@ -24988,6 +25727,11 @@
    "type": "conference-abstract",
    "journal": "Clinical and Translational Radiation Oncology",
    "source_id": "S2898297225",
+   "biblio": {
+    "volume": "59",
+    "first_page": "101163",
+    "last_page": "101163"
+   },
    "landing_url": "https://doi.org/10.1016/j.ctro.2026.101163",
    "is_oa": true,
    "oa_url": "https://www.ctro.science/article/S2405-6308(26)00058-3/pdf",
@@ -25105,6 +25849,11 @@
    "type": "article",
    "journal": "Radiotherapy and Oncology",
    "source_id": "S144507673",
+   "biblio": {
+    "volume": "206",
+    "first_page": "S131",
+    "last_page": "S131"
+   },
    "landing_url": "https://doi.org/10.1016/s0167-8140(25)04146-5",
    "is_oa": false,
    "oa_url": null,
@@ -25160,6 +25909,11 @@
    "type": "article",
    "journal": "Radiotherapy and Oncology",
    "source_id": "S144507673",
+   "biblio": {
+    "volume": "206",
+    "first_page": "S2528",
+    "last_page": "S2531"
+   },
    "landing_url": "https://doi.org/10.1016/s0167-8140(25)01756-6",
    "is_oa": false,
    "oa_url": null,
@@ -25247,6 +26001,11 @@
    "type": "conference-abstract",
    "journal": "Radiotherapy and Oncology",
    "source_id": "S144507673",
+   "biblio": {
+    "volume": "206",
+    "first_page": "S2393",
+    "last_page": "S2396"
+   },
    "landing_url": "https://doi.org/10.1016/s0167-8140(25)01651-2",
    "is_oa": false,
    "oa_url": null,
@@ -25365,6 +26124,7 @@
    "type": "preprint",
    "journal": "medRxiv",
    "source_id": "S3005729997",
+   "biblio": {},
    "landing_url": "https://doi.org/10.1101/2025.04.26.25326466",
    "is_oa": true,
    "oa_url": "https://www.medrxiv.org/content/medrxiv/early/2025/04/28/2025.04.26.25326466.full.pdf",
@@ -25494,6 +26254,12 @@
    "type": "conference-abstract",
    "journal": "Cancer Research",
    "source_id": "S168522863",
+   "biblio": {
+    "volume": "85",
+    "issue": "8_Supplement_1",
+    "first_page": "3372",
+    "last_page": "3372"
+   },
    "landing_url": "https://doi.org/10.1158/1538-7445.am2025-3372",
    "is_oa": false,
    "oa_url": null,
@@ -25585,6 +26351,11 @@
    "type": "article",
    "journal": "Journal of Medical Internet Research",
    "source_id": "S17147534",
+   "biblio": {
+    "volume": "27",
+    "first_page": "e66616",
+    "last_page": "e66616"
+   },
    "landing_url": "https://doi.org/10.2196/66616",
    "is_oa": true,
    "oa_url": "https://www.jmir.org/2025/1/e66616/PDF",
@@ -25674,6 +26445,11 @@
    "type": "article",
    "journal": "Radiotherapy and Oncology",
    "source_id": "S144507673",
+   "biblio": {
+    "volume": "207",
+    "first_page": "110874",
+    "last_page": "110874"
+   },
    "landing_url": "https://doi.org/10.1016/j.radonc.2025.110874",
    "is_oa": true,
    "oa_url": "https://www.thegreenjournal.com/article/S0167-8140(25)00169-0/pdf",
@@ -25859,6 +26635,12 @@
    "type": "article",
    "journal": "Cancer Medicine",
    "source_id": "S2754843627",
+   "biblio": {
+    "volume": "14",
+    "issue": "8",
+    "first_page": "e70880",
+    "last_page": "e70880"
+   },
    "landing_url": "https://doi.org/10.1002/cam4.70880",
    "is_oa": true,
    "oa_url": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1002/cam4.70880",
@@ -25946,6 +26728,12 @@
    "type": "article",
    "journal": "Journal of Applied Clinical Medical Physics",
    "source_id": "S29972171",
+   "biblio": {
+    "volume": "26",
+    "issue": "6",
+    "first_page": "e70071",
+    "last_page": "e70071"
+   },
    "landing_url": "https://doi.org/10.1002/acm2.70071",
    "is_oa": true,
    "oa_url": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1002/acm2.70071",
@@ -26045,6 +26833,12 @@
    "type": "article",
    "journal": "Physics in Medicine and Biology",
    "source_id": "S20241394",
+   "biblio": {
+    "volume": "70",
+    "issue": "7",
+    "first_page": "075007",
+    "last_page": "075007"
+   },
    "landing_url": "https://doi.org/10.1088/1361-6560/adbff1",
    "is_oa": false,
    "oa_url": null,
@@ -26176,6 +26970,11 @@
    "type": "article",
    "journal": "Biomedical Signal Processing and Control",
    "source_id": "S8427965",
+   "biblio": {
+    "volume": "107",
+    "first_page": "107793",
+    "last_page": "107793"
+   },
    "landing_url": "https://doi.org/10.1016/j.bspc.2025.107793",
    "is_oa": true,
    "oa_url": "https://cris.maastrichtuniversity.nl/ws/files/254321047/Dekker-2025-Data-efficient-federated-semi-supervised-learning.pdf",
@@ -26322,6 +27121,12 @@
    "type": "conference-abstract",
    "journal": "Journal of Thoracic Oncology",
    "source_id": "S90745127",
+   "biblio": {
+    "volume": "20",
+    "issue": "3",
+    "first_page": "S147",
+    "last_page": "S147"
+   },
    "landing_url": "https://doi.org/10.1016/s1556-0864(25)00424-1",
    "is_oa": true,
    "oa_url": "https://www.jto.org/article/S1556-0864(25)00424-1/pdf",
@@ -26426,6 +27231,12 @@
    "type": "article",
    "journal": "Journal for ImmunoTherapy of Cancer",
    "source_id": "S2754803477",
+   "biblio": {
+    "volume": "13",
+    "issue": "3",
+    "first_page": "e011149",
+    "last_page": "e011149"
+   },
    "landing_url": "https://doi.org/10.1136/jitc-2024-011149",
    "is_oa": true,
    "oa_url": "https://jitc.bmj.com/content/13/3/e011149.full.pdf",
@@ -26579,6 +27390,12 @@
    "type": "article",
    "journal": "ESMO Open",
    "source_id": "S4210217024",
+   "biblio": {
+    "volume": "10",
+    "issue": "3",
+    "first_page": "104478",
+    "last_page": "104478"
+   },
    "landing_url": "https://doi.org/10.1016/j.esmoop.2025.104478",
    "is_oa": true,
    "oa_url": "https://doi.org/10.1016/j.esmoop.2025.104478",
@@ -26678,6 +27495,7 @@
    "type": "preprint",
    "journal": "medRxiv",
    "source_id": "S3005729997",
+   "biblio": {},
    "landing_url": "https://doi.org/10.1101/2025.02.22.25321981",
    "is_oa": true,
    "oa_url": "https://www.medrxiv.org/content/medrxiv/early/2025/02/23/2025.02.22.25321981.full.pdf",
@@ -26824,6 +27642,12 @@
    "type": "article",
    "journal": "BMC Neurology",
    "source_id": "S120289491",
+   "biblio": {
+    "volume": "25",
+    "issue": "1",
+    "first_page": "59",
+    "last_page": "59"
+   },
    "landing_url": "https://doi.org/10.1186/s12883-024-03995-4",
    "is_oa": true,
    "oa_url": "https://bmcneurol.biomedcentral.com/counter/pdf/10.1186/s12883-024-03995-4",
@@ -27019,6 +27843,11 @@
    "type": "article",
    "journal": "JMIR Formative Research",
    "source_id": "S4210234749",
+   "biblio": {
+    "volume": "9",
+    "first_page": "e60095",
+    "last_page": "e60095"
+   },
    "landing_url": "https://doi.org/10.2196/60095",
    "is_oa": true,
    "oa_url": "https://formative.jmir.org/2025/1/e60095/PDF",
@@ -27110,6 +27939,11 @@
    "type": "article",
    "journal": "JMIR AI",
    "source_id": "S4387286577",
+   "biblio": {
+    "volume": "4",
+    "first_page": "e60847",
+    "last_page": "e60847"
+   },
    "landing_url": "https://doi.org/10.2196/60847",
    "is_oa": true,
    "oa_url": "https://ai.jmir.org/2025/1/e60847/PDF",
@@ -27303,6 +28137,11 @@
    "type": "conference-abstract",
    "journal": "The Breast",
    "source_id": "S181123643",
+   "biblio": {
+    "volume": "80",
+    "first_page": "104247",
+    "last_page": "104247"
+   },
    "landing_url": "https://doi.org/10.1016/j.breast.2025.104247",
    "is_oa": true,
    "oa_url": "https://doi.org/10.1016/j.breast.2025.104247",
@@ -27422,6 +28261,12 @@
    "type": "article",
    "journal": "International Journal of Gynecological Cancer",
    "source_id": "S41026820",
+   "biblio": {
+    "volume": "35",
+    "issue": "2",
+    "first_page": "100772",
+    "last_page": "100772"
+   },
    "landing_url": "https://doi.org/10.1016/j.ijgc.2024.100772",
    "is_oa": true,
    "oa_url": "https://doi.org/10.1016/j.ijgc.2024.100772",
@@ -27509,6 +28354,12 @@
    "type": "article",
    "journal": "Cancer Medicine",
    "source_id": "S2754843627",
+   "biblio": {
+    "volume": "14",
+    "issue": "3",
+    "first_page": "e70458",
+    "last_page": "e70458"
+   },
    "landing_url": "https://doi.org/10.1002/cam4.70458",
    "is_oa": true,
    "oa_url": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1002/cam4.70458",
@@ -27612,6 +28463,7 @@
    "type": "preprint",
    "journal": "OSF Preprints (OSF Preprints)",
    "source_id": "S4306401127",
+   "biblio": {},
    "landing_url": "https://doi.org/10.31219/osf.io/7skmc_v2",
    "is_oa": true,
    "oa_url": "https://doi.org/10.31219/osf.io/7skmc_v2",
@@ -27687,6 +28539,7 @@
    "type": "preprint",
    "journal": "medRxiv",
    "source_id": "S3005729997",
+   "biblio": {},
    "landing_url": "https://doi.org/10.1101/2025.01.29.25321214",
    "is_oa": true,
    "oa_url": "https://www.medrxiv.org/content/medrxiv/early/2025/01/29/2025.01.29.25321214.full.pdf",
@@ -27924,6 +28777,12 @@
    "type": "article",
    "journal": "Radiation Oncology",
    "source_id": "S42123126",
+   "biblio": {
+    "volume": "20",
+    "issue": "1",
+    "first_page": "9",
+    "last_page": "9"
+   },
    "landing_url": "https://doi.org/10.1186/s13014-025-02583-1",
    "is_oa": true,
    "oa_url": "https://ro-journal.biomedcentral.com/counter/pdf/10.1186/s13014-025-02583-1",
@@ -28061,6 +28920,11 @@
    "type": "article",
    "journal": "Philosophy & Technology",
    "source_id": "S23735784",
+   "biblio": {
+    "volume": "38",
+    "issue": "1",
+    "first_page": "5"
+   },
    "landing_url": "https://doi.org/10.1007/s13347-024-00834-9",
    "is_oa": true,
    "oa_url": "https://link.springer.com/content/pdf/10.1007/s13347-024-00834-9.pdf",
@@ -28134,6 +28998,11 @@
    "type": "article",
    "journal": "Expert Systems with Applications",
    "source_id": "S13144211",
+   "biblio": {
+    "volume": "269",
+    "first_page": "126364",
+    "last_page": "126364"
+   },
    "landing_url": "https://www.sciencedirect.com/science/article/pii/S0957417424032317/pdf",
    "is_oa": true,
    "oa_url": "https://cris.maastrichtuniversity.nl/ws/files/242907013/Wee-2025-Label-efficient-transformer-based-framework.pdf",
@@ -28288,6 +29157,10 @@
    "type": "conference-paper",
    "journal": "Research Publications (Maastricht University)",
    "source_id": "S4306402616",
+   "biblio": {
+    "first_page": "204",
+    "last_page": "206"
+   },
    "landing_url": "https://cris.maastrichtuniversity.nl/en/publications/e6c735b5-c888-41b6-ad2a-7edc7566d68d",
    "is_oa": true,
    "oa_url": "https://cris.maastrichtuniversity.nl/en/publications/e6c735b5-c888-41b6-ad2a-7edc7566d68d",
@@ -28395,6 +29268,7 @@
    "type": "dissertation",
    "journal": "Research Publications (Maastricht University)",
    "source_id": "S4306402616",
+   "biblio": {},
    "landing_url": "https://doi.org/10.26481/dis.20250915ac",
    "is_oa": true,
    "oa_url": "https://cris.maastrichtuniversity.nl/files/271184714/c8818.pdf",
@@ -28462,6 +29336,12 @@
    "type": "review",
    "journal": "BJR|Artificial Intelligence",
    "source_id": "S5407040186",
+   "biblio": {
+    "volume": "2",
+    "issue": "1",
+    "first_page": "ubaf008",
+    "last_page": "ubaf008"
+   },
    "landing_url": "https://doi.org/10.1093/bjrai/ubaf008",
    "is_oa": true,
    "oa_url": "https://academic.oup.com/bjrai/advance-article-pdf/doi/10.1093/bjrai/ubaf008/63769619/ubaf008.pdf",
@@ -28635,6 +29515,12 @@
    "type": "conference-abstract",
    "journal": "Journal of Crohn s and Colitis",
    "source_id": "S2735960814",
+   "biblio": {
+    "volume": "19",
+    "issue": "Supplement_1",
+    "first_page": "i450",
+    "last_page": "i450"
+   },
    "landing_url": "https://doi.org/10.1093/ecco-jcc/jjae190.0257",
    "is_oa": true,
    "oa_url": "https://academic.oup.com/ecco-jcc/article-pdf/19/Supplement_1/i450/61541456/jjae190.0257.pdf",
@@ -28792,6 +29678,12 @@
    "type": "conference-abstract",
    "journal": "Journal of Crohn s and Colitis",
    "source_id": "S2735960814",
+   "biblio": {
+    "volume": "19",
+    "issue": "Supplement_1",
+    "first_page": "i1783",
+    "last_page": "i1783"
+   },
    "landing_url": "https://doi.org/10.1093/ecco-jcc/jjae190.1130",
    "is_oa": true,
    "oa_url": "https://academic.oup.com/ecco-jcc/article-pdf/19/Supplement_1/i1783/61545310/jjae190.1130.pdf",
@@ -28922,6 +29814,12 @@
    "type": "conference-abstract",
    "journal": "Journal of Crohn s and Colitis",
    "source_id": "S2735960814",
+   "biblio": {
+    "volume": "19",
+    "issue": "Supplement_1",
+    "first_page": "i1517",
+    "last_page": "i1517"
+   },
    "landing_url": "https://doi.org/10.1093/ecco-jcc/jjae190.0962",
    "is_oa": true,
    "oa_url": "https://academic.oup.com/ecco-jcc/article-pdf/19/Supplement_1/i1517/61545703/jjae190.0962.pdf",
@@ -29052,6 +29950,11 @@
    "type": "article",
    "journal": "Journal of Cancer Policy",
    "source_id": "S2764631794",
+   "biblio": {
+    "volume": "43",
+    "first_page": "100537",
+    "last_page": "100537"
+   },
    "landing_url": "https://doi.org/10.1016/j.jcpo.2024.100537",
    "is_oa": true,
    "oa_url": "https://cris.maastrichtuniversity.nl/en/publications/d00e214a-7aeb-4d0a-b63b-af48f14e2740",
@@ -29202,6 +30105,12 @@
    "type": "article",
    "journal": "JCO Clinical Cancer Informatics",
    "source_id": "S4210181501",
+   "biblio": {
+    "volume": "8",
+    "issue": "8",
+    "first_page": "e2400101",
+    "last_page": "e2400101"
+   },
    "landing_url": "https://doi.org/10.1200/cci.24.00101",
    "is_oa": true,
    "oa_url": "https://ascopubs.org/doi/pdf/10.1200/CCI.24.00101",
@@ -29303,6 +30212,12 @@
    "type": "article",
    "journal": "Journal of Neural Engineering",
    "source_id": "S32898093",
+   "biblio": {
+    "volume": "21",
+    "issue": "6",
+    "first_page": "066040",
+    "last_page": "066040"
+   },
    "landing_url": "https://doi.org/10.1088/1741-2552/ad9ad0",
    "is_oa": true,
    "oa_url": "https://doi.org/10.1088/1741-2552/ad9ad0",
@@ -29382,6 +30297,12 @@
    "type": "article",
    "journal": "JCO Clinical Cancer Informatics",
    "source_id": "S4210181501",
+   "biblio": {
+    "volume": "8",
+    "issue": "8",
+    "first_page": "e2400056",
+    "last_page": "e2400056"
+   },
    "landing_url": "https://doi.org/10.1200/cci.24.00056",
    "is_oa": true,
    "oa_url": "https://doi.org/10.1200/cci.24.00056",
@@ -29533,6 +30454,12 @@
    "type": "article",
    "journal": "Cancers",
    "source_id": "S168415115",
+   "biblio": {
+    "volume": "16",
+    "issue": "23",
+    "first_page": "3989",
+    "last_page": "3989"
+   },
    "landing_url": "https://doi.org/10.3390/cancers16233989",
    "is_oa": true,
    "oa_url": "https://www.mdpi.com/2072-6694/16/23/3989/pdf?version=1732775138",
@@ -29642,6 +30569,11 @@
    "type": "article",
    "journal": "Clinical and Translational Radiation Oncology",
    "source_id": "S2898297225",
+   "biblio": {
+    "volume": "50",
+    "first_page": "100897",
+    "last_page": "100897"
+   },
    "landing_url": "https://doi.org/10.1016/j.ctro.2024.100897",
    "is_oa": true,
    "oa_url": "https://www.ctro.science/article/S2405-6308(24)00174-5/pdf",
@@ -29734,6 +30666,11 @@
    "type": "article",
    "journal": "Clinical Nutrition ESPEN",
    "source_id": "S2764915710",
+   "biblio": {
+    "volume": "65",
+    "first_page": "134",
+    "last_page": "143"
+   },
    "landing_url": "https://doi.org/10.1016/j.clnesp.2024.11.004",
    "is_oa": true,
    "oa_url": "https://www.clinicalnutritionespen.com/article/S2405-4577(24)01513-4/pdf",
@@ -29871,6 +30808,11 @@
    "type": "article",
    "journal": "ESMO Real World Data and Digital Oncology",
    "source_id": "S4389157630",
+   "biblio": {
+    "volume": "6",
+    "first_page": "100089",
+    "last_page": "100089"
+   },
    "landing_url": "https://doi.org/10.1016/j.esmorw.2024.100089",
    "is_oa": true,
    "oa_url": "https://www.esmorwd.org/article/S2949-8201(24)00067-5/pdf",
@@ -30030,6 +30972,12 @@
    "type": "article",
    "journal": "La radiologia medica",
    "source_id": "S197311665",
+   "biblio": {
+    "volume": "130",
+    "issue": "1",
+    "first_page": "96",
+    "last_page": "109"
+   },
    "landing_url": "https://doi.org/10.1007/s11547-024-01919-3",
    "is_oa": true,
    "oa_url": "https://cris.maastrichtuniversity.nl/ws/files/235275252/Dekker-2024-Improved-prognostication-of-overall-survival-after-radiotherapy.pdf",
@@ -30190,6 +31138,12 @@
    "type": "review",
    "journal": "BMC Pregnancy and Childbirth",
    "source_id": "S123732490",
+   "biblio": {
+    "volume": "24",
+    "issue": "1",
+    "first_page": "690",
+    "last_page": "690"
+   },
    "landing_url": "https://doi.org/10.1186/s12884-024-06885-2",
    "is_oa": true,
    "oa_url": "https://bmcpregnancychildbirth.biomedcentral.com/counter/pdf/10.1186/s12884-024-06885-2",
@@ -30299,6 +31253,12 @@
    "type": "review",
    "journal": "JTO Clinical and Research Reports",
    "source_id": "S4210220242",
+   "biblio": {
+    "volume": "5",
+    "issue": "12",
+    "first_page": "100740",
+    "last_page": "100740"
+   },
    "landing_url": "https://doi.org/10.1016/j.jtocrr.2024.100740",
    "is_oa": true,
    "oa_url": "https://www.jtocrr.org/article/S2666-3643(24)00110-3/pdf",
@@ -30391,6 +31351,12 @@
    "type": "article",
    "journal": "Science Bulletin",
    "source_id": "S4306542128",
+   "biblio": {
+    "volume": "69",
+    "issue": "23",
+    "first_page": "3666",
+    "last_page": "3671"
+   },
    "landing_url": "https://doi.org/10.1016/j.scib.2024.10.005",
    "is_oa": true,
    "oa_url": "https://doi.org/10.1016/j.scib.2024.10.005",
@@ -30531,6 +31497,12 @@
    "type": "article",
    "journal": "Physics in Medicine and Biology",
    "source_id": "S20241394",
+   "biblio": {
+    "volume": "69",
+    "issue": "20",
+    "first_page": "205005",
+    "last_page": "205005"
+   },
    "landing_url": "https://doi.org/10.1088/1361-6560/ad7d5b",
    "is_oa": true,
    "oa_url": "https://doi.org/10.1088/1361-6560/ad7d5b",
@@ -30634,6 +31606,7 @@
    "type": "preprint",
    "journal": "OSF Preprints (OSF Preprints)",
    "source_id": "S4306401127",
+   "biblio": {},
    "landing_url": "https://osf.io/ghjs6",
    "is_oa": true,
    "oa_url": "https://osf.io/ghjs6",
@@ -30758,6 +31731,12 @@
    "type": "article",
    "journal": "International Journal of Radiation Oncology*Biology*Physics",
    "source_id": "S110533041",
+   "biblio": {
+    "volume": "120",
+    "issue": "2",
+    "first_page": "e661",
+    "last_page": "e662"
+   },
    "landing_url": "http://dx.doi.org/10.1016/j.ijrobp.2024.07.1451",
    "is_oa": false,
    "oa_url": null,
@@ -30869,6 +31848,11 @@
    "type": "article",
    "journal": "Radiotherapy and Oncology",
    "source_id": "S144507673",
+   "biblio": {
+    "volume": "201",
+    "first_page": "110544",
+    "last_page": "110544"
+   },
    "landing_url": "https://doi.org/10.1016/j.radonc.2024.110544",
    "is_oa": true,
    "oa_url": "https://www.thegreenjournal.com/article/S0167-8140(24)03522-9/pdf",
@@ -31064,6 +32048,7 @@
    "type": "preprint",
    "journal": "arXiv (Cornell University)",
    "source_id": "S4306400194",
+   "biblio": {},
    "landing_url": "http://arxiv.org/abs/2410.01828",
    "is_oa": true,
    "oa_url": "https://arxiv.org/pdf/2410.01828",
@@ -31136,6 +32121,7 @@
    "type": "preprint",
    "journal": "Research Square",
    "source_id": "S4306525896",
+   "biblio": {},
    "landing_url": "http://dx.doi.org/10.21203/rs.3.rs-4938500/v1",
    "is_oa": true,
    "oa_url": "https://www.researchsquare.com/article/rs-4938500/latest.pdf",
@@ -31272,6 +32258,7 @@
    "type": "preprint",
    "journal": "arXiv (Cornell University)",
    "source_id": "S4306400194",
+   "biblio": {},
    "landing_url": "http://arxiv.org/abs/2409.10057",
    "is_oa": true,
    "oa_url": "https://arxiv.org/pdf/2409.10057",
@@ -31342,6 +32329,12 @@
    "type": "article",
    "journal": "British Journal of Radiology",
    "source_id": "S142542876",
+   "biblio": {
+    "volume": "97",
+    "issue": "1164",
+    "first_page": "2015",
+    "last_page": "2023"
+   },
    "landing_url": "https://doi.org/10.1093/bjr/tqae191",
    "is_oa": true,
    "oa_url": "https://doi.org/10.1093/bjr/tqae191",
@@ -31556,6 +32549,12 @@
    "type": "article",
    "journal": "Acta Radiologica",
    "source_id": "S160113820",
+   "biblio": {
+    "volume": "65",
+    "issue": "10",
+    "first_page": "1178",
+    "last_page": "1185"
+   },
    "landing_url": "https://doi.org/10.1177/02841851241268463",
    "is_oa": true,
    "oa_url": "https://cris.maastrichtuniversity.nl/en/publications/816d7ba2-218d-4dad-9570-9dec70282b24",
@@ -31690,6 +32689,11 @@
    "type": "conference-abstract",
    "journal": "Annals of Oncology",
    "source_id": "S41454044",
+   "biblio": {
+    "volume": "35",
+    "first_page": "S859",
+    "last_page": "S859"
+   },
    "landing_url": "https://doi.org/10.1016/j.annonc.2024.08.1419",
    "is_oa": true,
    "oa_url": "https://www.annalsofoncology.org/article/S0923-7534(24)02938-7/pdf",
@@ -31821,6 +32825,12 @@
    "type": "article",
    "journal": "Journal for ImmunoTherapy of Cancer",
    "source_id": "S2754803477",
+   "biblio": {
+    "volume": "12",
+    "issue": "9",
+    "first_page": "e009348",
+    "last_page": "e009348"
+   },
    "landing_url": "https://doi.org/10.1136/jitc-2024-009348",
    "is_oa": true,
    "oa_url": "https://jitc.bmj.com/content/12/9/e009348.full.pdf",
@@ -31964,6 +32974,11 @@
    "type": "conference-abstract",
    "journal": "Physica Medica",
    "source_id": "S138998826",
+   "biblio": {
+    "volume": "125",
+    "first_page": "103586",
+    "last_page": "103586"
+   },
    "landing_url": "http://dx.doi.org/10.1016/j.ejmp.2024.103586",
    "is_oa": false,
    "oa_url": null,
@@ -32050,6 +33065,12 @@
    "type": "article",
    "journal": "Physics in Medicine and Biology",
    "source_id": "S20241394",
+   "biblio": {
+    "volume": "69",
+    "issue": "16",
+    "first_page": "165030",
+    "last_page": "165030"
+   },
    "landing_url": "https://doi.org/10.1088/1361-6560/ad69f6",
    "is_oa": true,
    "oa_url": "https://doi.org/10.1088/1361-6560/ad69f6",
@@ -32128,6 +33149,11 @@
    "type": "article",
    "journal": "Frontiers in Cardiovascular Medicine",
    "source_id": "S2595413687",
+   "biblio": {
+    "volume": "11",
+    "first_page": "1387148",
+    "last_page": "1387148"
+   },
    "landing_url": "https://doi.org/10.3389/fcvm.2024.1387148",
    "is_oa": true,
    "oa_url": "https://doi.org/10.3389/fcvm.2024.1387148",
@@ -32219,6 +33245,12 @@
    "type": "article",
    "journal": "BMC Women s Health",
    "source_id": "S94788606",
+   "biblio": {
+    "volume": "24",
+    "issue": "1",
+    "first_page": "425",
+    "last_page": "425"
+   },
    "landing_url": "https://doi.org/10.1186/s12905-024-03270-1",
    "is_oa": true,
    "oa_url": "https://bmcwomenshealth.biomedcentral.com/counter/pdf/10.1186/s12905-024-03270-1",
@@ -32381,6 +33413,7 @@
    "type": "preprint",
    "journal": "Research Square",
    "source_id": "S4306525896",
+   "biblio": {},
    "landing_url": "http://dx.doi.org/10.21203/rs.3.rs-4644605/v1",
    "is_oa": true,
    "oa_url": "https://www.researchsquare.com/article/rs-4644605/latest.pdf",
@@ -32522,6 +33555,12 @@
    "type": "article",
    "journal": "Reports of Practical Oncology & Radiotherapy",
    "source_id": "S168508312",
+   "biblio": {
+    "volume": "29",
+    "issue": "3",
+    "first_page": "318",
+    "last_page": "328"
+   },
    "landing_url": "http://dx.doi.org/10.5603/rpor.101093",
    "is_oa": true,
    "oa_url": "https://journals.viamedica.pl/rpor/article/download/101093/78538",
@@ -32609,6 +33648,7 @@
    "type": "preprint",
    "journal": "Research Square",
    "source_id": "S4306525896",
+   "biblio": {},
    "landing_url": "http://dx.doi.org/10.21203/rs.3.rs-4443132/v1",
    "is_oa": true,
    "oa_url": "https://www.researchsquare.com/article/rs-4443132/latest.pdf",
@@ -32738,6 +33778,12 @@
    "type": "article",
    "journal": "Journal of Cachexia Sarcopenia and Muscle",
    "source_id": "S173726759",
+   "biblio": {
+    "volume": "15",
+    "issue": "5",
+    "first_page": "1664",
+    "last_page": "1676"
+   },
    "landing_url": "https://doi.org/10.1002/jcsm.13520",
    "is_oa": true,
    "oa_url": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1002/jcsm.13520",
@@ -32822,6 +33868,10 @@
    "type": "conference-paper",
    "journal": null,
    "source_id": null,
+   "biblio": {
+    "first_page": "A130.1",
+    "last_page": "A130"
+   },
    "landing_url": "https://doi.org/10.1136/bmjebm-2024-sdc.275",
    "is_oa": false,
    "oa_url": null,
@@ -32919,6 +33969,12 @@
    "type": "article",
    "journal": "BMC Medical Informatics and Decision Making",
    "source_id": "S107516304",
+   "biblio": {
+    "volume": "24",
+    "issue": "1",
+    "first_page": "184",
+    "last_page": "184"
+   },
    "landing_url": "http://dx.doi.org/10.1186/s12911-024-02584-2",
    "is_oa": true,
    "oa_url": "https://bmcmedinformdecismak.biomedcentral.com/counter/pdf/10.1186/s12911-024-02584-2",
@@ -33035,6 +34091,11 @@
    "type": "article",
    "journal": "Journal of bone oncology",
    "source_id": "S2764562432",
+   "biblio": {
+    "volume": "47",
+    "first_page": "100614",
+    "last_page": "100614"
+   },
    "landing_url": "https://doi.org/10.1016/j.jbo.2024.100614",
    "is_oa": true,
    "oa_url": "https://doi.org/10.1016/j.jbo.2024.100614",
@@ -33154,6 +34215,12 @@
    "type": "review",
    "journal": "JCO Clinical Cancer Informatics",
    "source_id": "S4210181501",
+   "biblio": {
+    "volume": "8",
+    "issue": "8",
+    "first_page": "e2400054",
+    "last_page": "e2400054"
+   },
    "landing_url": "https://doi.org/10.1200/cci.24.00054",
    "is_oa": true,
    "oa_url": "https://cris.maastrichtuniversity.nl/en/publications/78c8fea1-ed3f-4f1f-b037-0d8d95413768",
@@ -33248,6 +34315,11 @@
    "type": "article",
    "journal": "Journal of Biomedical Informatics",
    "source_id": "S11622463",
+   "biblio": {
+    "volume": "155",
+    "first_page": "104661",
+    "last_page": "104661"
+   },
    "landing_url": "https://doi.org/10.1016/j.jbi.2024.104661",
    "is_oa": true,
    "oa_url": "https://doi.org/10.1016/j.jbi.2024.104661",
@@ -33386,6 +34458,11 @@
    "type": "article",
    "journal": "Frontiers in Medicine",
    "source_id": "S2597052008",
+   "biblio": {
+    "volume": "11",
+    "first_page": "1365501",
+    "last_page": "1365501"
+   },
    "landing_url": "https://doi.org/10.3389/fmed.2024.1365501",
    "is_oa": true,
    "oa_url": "https://doi.org/10.3389/fmed.2024.1365501",
@@ -33491,6 +34568,12 @@
    "type": "article",
    "journal": "BMC Medical Informatics and Decision Making",
    "source_id": "S107516304",
+   "biblio": {
+    "volume": "24",
+    "issue": "1",
+    "first_page": "121",
+    "last_page": "121"
+   },
    "landing_url": "https://doi.org/10.1186/s12911-024-02526-y",
    "is_oa": true,
    "oa_url": "https://doi.org/10.1186/s12911-024-02526-y",
@@ -33621,6 +34704,11 @@
    "type": "article",
    "journal": "Radiotherapy and Oncology",
    "source_id": "S144507673",
+   "biblio": {
+    "volume": "194",
+    "first_page": "S2933",
+    "last_page": "S2934"
+   },
    "landing_url": "http://dx.doi.org/10.1016/s0167-8140(24)02126-1",
    "is_oa": false,
    "oa_url": null,
@@ -33698,6 +34786,11 @@
    "type": "article",
    "journal": "Radiotherapy and Oncology",
    "source_id": "S144507673",
+   "biblio": {
+    "volume": "194",
+    "first_page": "S4485",
+    "last_page": "S4488"
+   },
    "landing_url": "http://dx.doi.org/10.1016/s0167-8140(24)01920-0",
    "is_oa": false,
    "oa_url": null,
@@ -33785,6 +34878,11 @@
    "type": "article",
    "journal": "Radiotherapy and Oncology",
    "source_id": "S144507673",
+   "biblio": {
+    "volume": "194",
+    "first_page": "S4495",
+    "last_page": "S4498"
+   },
    "landing_url": "http://dx.doi.org/10.1016/s0167-8140(24)02092-9",
    "is_oa": false,
    "oa_url": null,
@@ -33858,6 +34956,11 @@
    "type": "article",
    "journal": "Radiotherapy and Oncology",
    "source_id": "S144507673",
+   "biblio": {
+    "volume": "194",
+    "first_page": "S2931",
+    "last_page": "S2933"
+   },
    "landing_url": "http://dx.doi.org/10.1016/s0167-8140(24)02116-9",
    "is_oa": false,
    "oa_url": null,
@@ -33944,6 +35047,11 @@
    "type": "article",
    "journal": "Radiotherapy and Oncology",
    "source_id": "S144507673",
+   "biblio": {
+    "volume": "194",
+    "first_page": "S1690",
+    "last_page": "S1693"
+   },
    "landing_url": "http://dx.doi.org/10.1016/s0167-8140(24)02075-9",
    "is_oa": false,
    "oa_url": null,
@@ -34053,6 +35161,11 @@
    "type": "article",
    "journal": "Radiotherapy and Oncology",
    "source_id": "S144507673",
+   "biblio": {
+    "volume": "194",
+    "first_page": "S2977",
+    "last_page": "S2979"
+   },
    "landing_url": "http://dx.doi.org/10.1016/s0167-8140(24)02984-0",
    "is_oa": false,
    "oa_url": null,
@@ -34180,6 +35293,11 @@
    "type": "article",
    "journal": "Radiotherapy and Oncology",
    "source_id": "S144507673",
+   "biblio": {
+    "volume": "194",
+    "first_page": "S2857",
+    "last_page": "S2860"
+   },
    "landing_url": "https://doi.org/10.1016/s0167-8140(24)02882-2",
    "is_oa": true,
    "oa_url": "https://research.tilburguniversity.edu/en/publications/870b35f8-ded2-401e-b228-406808aeac7d",
@@ -34249,6 +35367,11 @@
    "type": "article",
    "journal": "Radiotherapy and Oncology",
    "source_id": "S144507673",
+   "biblio": {
+    "volume": "194",
+    "first_page": "S2765",
+    "last_page": "S2768"
+   },
    "landing_url": "http://dx.doi.org/10.1016/s0167-8140(24)00969-1",
    "is_oa": true,
    "oa_url": "https://doi.org/10.2139/ssrn.4711097",
@@ -34324,6 +35447,11 @@
    "type": "article",
    "journal": "Radiotherapy and Oncology",
    "source_id": "S144507673",
+   "biblio": {
+    "volume": "194",
+    "first_page": "S4992",
+    "last_page": "S4994"
+   },
    "landing_url": "http://dx.doi.org/10.1016/s0167-8140(24)01347-1",
    "is_oa": false,
    "oa_url": null,
@@ -34397,6 +35525,11 @@
    "type": "article",
    "journal": "Radiotherapy and Oncology",
    "source_id": "S144507673",
+   "biblio": {
+    "volume": "194",
+    "first_page": "S4752",
+    "last_page": "S4753"
+   },
    "landing_url": "https://doi.org/10.1016/s0167-8140(24)00979-4",
    "is_oa": false,
    "oa_url": null,
@@ -34483,6 +35616,11 @@
    "type": "article",
    "journal": "Radiotherapy and Oncology",
    "source_id": "S144507673",
+   "biblio": {
+    "volume": "194",
+    "first_page": "S751",
+    "last_page": "S754"
+   },
    "landing_url": "https://doi.org/10.1016/s0167-8140(24)01011-9",
    "is_oa": false,
    "oa_url": null,
@@ -34589,6 +35727,11 @@
    "type": "article",
    "journal": "Radiotherapy and Oncology",
    "source_id": "S144507673",
+   "biblio": {
+    "volume": "194",
+    "first_page": "S4449",
+    "last_page": "S4450"
+   },
    "landing_url": "http://dx.doi.org/10.1016/s0167-8140(24)01436-1",
    "is_oa": false,
    "oa_url": null,
@@ -34659,6 +35802,11 @@
    "type": "article",
    "journal": "Radiotherapy and Oncology",
    "source_id": "S144507673",
+   "biblio": {
+    "volume": "194",
+    "first_page": "S4444",
+    "last_page": "S4446"
+   },
    "landing_url": "http://dx.doi.org/10.1016/s0167-8140(24)01382-3",
    "is_oa": false,
    "oa_url": null,
@@ -34725,6 +35873,11 @@
    "type": "article",
    "journal": "Radiotherapy and Oncology",
    "source_id": "S144507673",
+   "biblio": {
+    "volume": "194",
+    "first_page": "S4198",
+    "last_page": "S4200"
+   },
    "landing_url": "https://doi.org/10.1016/s0167-8140(24)01410-5",
    "is_oa": false,
    "oa_url": null,
@@ -34852,6 +36005,12 @@
    "type": "conference-abstract",
    "journal": "Gastroenterology",
    "source_id": "S143352558",
+   "biblio": {
+    "volume": "166",
+    "issue": "5",
+    "first_page": "S",
+    "last_page": "1119"
+   },
    "landing_url": "https://doi.org/10.1016/s0016-5085(24)03043-9",
    "is_oa": false,
    "oa_url": null,
@@ -34982,6 +36141,11 @@
    "type": "article",
    "journal": "European Journal of Surgical Oncology",
    "source_id": "S158473028",
+   "biblio": {
+    "volume": "50",
+    "first_page": "108216",
+    "last_page": "108216"
+   },
    "landing_url": "http://dx.doi.org/10.1016/j.ejso.2024.108216",
    "is_oa": false,
    "oa_url": null,
@@ -35166,6 +36330,12 @@
    "type": "article",
    "journal": "Complex & Intelligent Systems",
    "source_id": "S3035462843",
+   "biblio": {
+    "volume": "10",
+    "issue": "4",
+    "first_page": "5317",
+    "last_page": "5329"
+   },
    "landing_url": "https://doi.org/10.1007/s40747-024-01424-0",
    "is_oa": true,
    "oa_url": "https://link.springer.com/content/pdf/10.1007/s40747-024-01424-0.pdf",
@@ -35259,6 +36429,11 @@
    "type": "article",
    "journal": "Radiotherapy and Oncology",
    "source_id": "S144507673",
+   "biblio": {
+    "volume": "196",
+    "first_page": "110293",
+    "last_page": "110293"
+   },
    "landing_url": "https://doi.org/10.1016/j.radonc.2024.110293",
    "is_oa": true,
    "oa_url": "https://cris.maastrichtuniversity.nl/en/publications/b3510cce-444b-45a8-acda-0740dfea045b",
@@ -35382,6 +36557,12 @@
    "type": "article",
    "journal": "Neuro-Oncology",
    "source_id": "S106908163",
+   "biblio": {
+    "volume": "26",
+    "issue": "8",
+    "first_page": "1467",
+    "last_page": "1478"
+   },
    "landing_url": "https://doi.org/10.1093/neuonc/noae035",
    "is_oa": true,
    "oa_url": "https://academic.oup.com/neuro-oncology/advance-article-pdf/doi/10.1093/neuonc/noae035/57194911/noae035.pdf",
@@ -35565,6 +36746,12 @@
    "type": "article",
    "journal": "Scientific Reports",
    "source_id": "S196734849",
+   "biblio": {
+    "volume": "14",
+    "issue": "1",
+    "first_page": "7814",
+    "last_page": "7814"
+   },
    "landing_url": "https://doi.org/10.1038/s41598-024-58241-1",
    "is_oa": true,
    "oa_url": "https://www.nature.com/articles/s41598-024-58241-1.pdf",
@@ -35701,6 +36888,10 @@
    "type": "conference-paper",
    "journal": "SPIE Medical Imaging: Image Processing",
    "source_id": "S4363607561",
+   "biblio": {
+    "first_page": "7",
+    "last_page": "7"
+   },
    "landing_url": "https://doi.org/10.1117/12.3007031",
    "is_oa": true,
    "oa_url": "https://cris.maastrichtuniversity.nl/files/223707689/Dekker-2024-Optimizing-CycleGAN-Design-for-CBCT-to-CT-Translation.pdf",
@@ -35837,6 +37028,11 @@
    "type": "article",
    "journal": "Clinical Oncology",
    "source_id": "S190064913",
+   "biblio": {
+    "volume": "38",
+    "first_page": "103545",
+    "last_page": "103545"
+   },
    "landing_url": "https://doi.org/10.1016/j.clon.2024.03.011",
    "is_oa": true,
    "oa_url": "https://doi.org/10.1016/j.clon.2024.03.011",
@@ -35967,6 +37163,12 @@
    "type": "article",
    "journal": "Clinical Oncology",
    "source_id": "S190064913",
+   "biblio": {
+    "volume": "36",
+    "issue": "7",
+    "first_page": "e197",
+    "last_page": "e208"
+   },
    "landing_url": "https://doi.org/10.1016/j.clon.2024.03.008",
    "is_oa": true,
    "oa_url": "https://doi.org/10.1016/j.clon.2024.03.008",
@@ -36081,6 +37283,11 @@
    "type": "article",
    "journal": "European Journal of Cancer",
    "source_id": "S16731738",
+   "biblio": {
+    "volume": "200",
+    "first_page": "113624",
+    "last_page": "113624"
+   },
    "landing_url": "https://doi.org/10.1016/j.ejca.2024.113624",
    "is_oa": true,
    "oa_url": "http://www.ejcancer.com/article/S0959804924002168/pdf",
@@ -36276,6 +37483,11 @@
    "type": "article",
    "journal": "European Journal of Cancer",
    "source_id": "S16731738",
+   "biblio": {
+    "volume": "200",
+    "first_page": "113820",
+    "last_page": "113820"
+   },
    "landing_url": "https://doi.org/10.1016/j.ejca.2024.113820",
    "is_oa": true,
    "oa_url": "https://www.ejcancer.com/article/S0959-8049(24)00411-8/pdf",
@@ -36459,6 +37671,11 @@
    "type": "article",
    "journal": "International Journal of Gynecological Cancer",
    "source_id": "S41026820",
+   "biblio": {
+    "volume": "34",
+    "first_page": "A168",
+    "last_page": "A169"
+   },
    "landing_url": "https://doi.org/10.1136/ijgc-2024-esgo.318",
    "is_oa": true,
    "oa_url": "https://doi.org/10.1136/ijgc-2024-esgo.318",
@@ -36574,6 +37791,7 @@
    "type": "preprint",
    "journal": null,
    "source_id": null,
+   "biblio": {},
    "landing_url": "https://osf.io/yq324",
    "is_oa": true,
    "oa_url": "https://osf.io/yq324",
@@ -36642,6 +37860,12 @@
    "type": "article",
    "journal": "EMBO Reports",
    "source_id": "S57252141",
+   "biblio": {
+    "volume": "25",
+    "issue": "5",
+    "first_page": "2152",
+    "last_page": "2155"
+   },
    "landing_url": "https://doi.org/10.1038/s44319-024-00101-0",
    "is_oa": true,
    "oa_url": "https://www.embopress.org/action/downloadSupplement?doi=10.1038/s44319-024-00101-0&file=44319_2024_101_MOESM1_ESM.pdf",
@@ -36765,6 +37989,12 @@
    "type": "review",
    "journal": "PLoS ONE",
    "source_id": "S202381698",
+   "biblio": {
+    "volume": "19",
+    "issue": "2",
+    "first_page": "e0294442",
+    "last_page": "e0294442"
+   },
    "landing_url": "https://doi.org/10.1371/journal.pone.0294442",
    "is_oa": true,
    "oa_url": "https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0294442&type=printable",
@@ -36866,6 +38096,12 @@
    "type": "article",
    "journal": "Life",
    "source_id": "S4210200765",
+   "biblio": {
+    "volume": "14",
+    "issue": "2",
+    "first_page": "262",
+    "last_page": "262"
+   },
    "landing_url": "https://doi.org/10.3390/life14020262",
    "is_oa": true,
    "oa_url": "https://www.mdpi.com/2075-1729/14/2/262/pdf?version=1708078486",
@@ -37075,6 +38311,11 @@
    "type": "article",
    "journal": "Technical Innovations & Patient Support in Radiation Oncology",
    "source_id": "S2898444622",
+   "biblio": {
+    "volume": "31",
+    "first_page": "100234",
+    "last_page": "100234"
+   },
    "landing_url": "http://dx.doi.org/10.1016/j.tipsro.2024.100234",
    "is_oa": true,
    "oa_url": "https://www.tipsro.science/article/S2405-6324(24)00001-5/pdf",
@@ -37236,6 +38477,12 @@
    "type": "article",
    "journal": "PLoS ONE",
    "source_id": "S202381698",
+   "biblio": {
+    "volume": "19",
+    "issue": "2",
+    "first_page": "e0295539",
+    "last_page": "e0295539"
+   },
    "landing_url": "https://doi.org/10.1371/journal.pone.0295539",
    "is_oa": true,
    "oa_url": "https://doi.org/10.1371/journal.pone.0295539",
@@ -37331,6 +38578,11 @@
    "type": "article",
    "journal": "Clinical Nutrition Open Science",
    "source_id": "S4210227373",
+   "biblio": {
+    "volume": "54",
+    "first_page": "89",
+    "last_page": "99"
+   },
    "landing_url": "https://doi.org/10.1016/j.nutos.2024.02.002",
    "is_oa": true,
    "oa_url": "https://doi.org/10.1016/j.nutos.2024.02.002",
@@ -37451,6 +38703,12 @@
    "type": "article",
    "journal": "Quantitative Imaging in Medicine and Surgery",
    "source_id": "S2764457454",
+   "biblio": {
+    "volume": "14",
+    "issue": "2",
+    "first_page": "1602",
+    "last_page": "1615"
+   },
    "landing_url": "https://doi.org/10.21037/qims-23-1180",
    "is_oa": true,
    "oa_url": "https://doi.org/10.21037/qims-23-1180",
@@ -37585,6 +38843,9 @@
    "type": "article",
    "journal": "PubMed",
    "source_id": "S4306525036",
+   "biblio": {
+    "volume": "168"
+   },
    "landing_url": "https://pubmed.ncbi.nlm.nih.gov/38319310",
    "is_oa": false,
    "oa_url": null,
@@ -37658,6 +38919,12 @@
    "type": "article",
    "journal": "Radiation Oncology",
    "source_id": "S42123126",
+   "biblio": {
+    "volume": "19",
+    "issue": "1",
+    "first_page": "10",
+    "last_page": "10"
+   },
    "landing_url": "https://doi.org/10.1186/s13014-024-02402-z",
    "is_oa": true,
    "oa_url": "https://ro-journal.biomedcentral.com/counter/pdf/10.1186/s13014-024-02402-z",
@@ -37842,6 +39109,12 @@
    "type": "article",
    "journal": "Physics in Medicine and Biology",
    "source_id": "S20241394",
+   "biblio": {
+    "volume": "69",
+    "issue": "3",
+    "first_page": "035002",
+    "last_page": "035002"
+   },
    "landing_url": "https://doi.org/10.1088/1361-6560/ad1547",
    "is_oa": true,
    "oa_url": "https://doi.org/10.1088/1361-6560/ad1547",
@@ -37917,6 +39190,12 @@
    "type": "article",
    "journal": "Journal of Imaging Informatics in Medicine",
    "source_id": "S62275304",
+   "biblio": {
+    "volume": "37",
+    "issue": "1",
+    "first_page": "3",
+    "last_page": "12"
+   },
    "landing_url": "https://doi.org/10.1007/s10278-023-00913-x",
    "is_oa": true,
    "oa_url": "https://link.springer.com/content/pdf/10.1007/s10278-023-00913-x.pdf",
@@ -38032,6 +39311,12 @@
    "type": "article",
    "journal": "Nature Medicine",
    "source_id": "S203256638",
+   "biblio": {
+    "volume": "30",
+    "issue": "2",
+    "first_page": "334",
+    "last_page": "337"
+   },
    "landing_url": "https://doi.org/10.1038/s41591-023-02715-8",
    "is_oa": true,
    "oa_url": "https://cris.maastrichtuniversity.nl/en/publications/6fd0ce7f-944c-46d2-9194-0e8a10d5af5a",
@@ -38156,6 +39441,11 @@
    "type": "article",
    "journal": "Computers in Biology and Medicine",
    "source_id": "S44278595",
+   "biblio": {
+    "volume": "169",
+    "first_page": "107939",
+    "last_page": "107939"
+   },
    "landing_url": "https://doi.org/10.1016/j.compbiomed.2024.107939",
    "is_oa": true,
    "oa_url": "https://doi.org/10.1016/j.compbiomed.2024.107939",
@@ -38323,6 +39613,7 @@
    "type": "dissertation",
    "journal": "Research Publications (Maastricht University)",
    "source_id": "S4306402616",
+   "biblio": {},
    "landing_url": "https://doi.org/10.26481/dis.20241211sp",
    "is_oa": true,
    "oa_url": "https://cris.maastrichtuniversity.nl/en/publications/11f72f5b-38e9-4fca-80fb-cd1d6439cdd3",
@@ -38384,6 +39675,7 @@
    "type": "preprint",
    "journal": "SSRN Electronic Journal",
    "source_id": "S4210172589",
+   "biblio": {},
    "landing_url": "http://doi.org/10.2139/ssrn.5007884",
    "is_oa": true,
    "oa_url": "http://doi.org/10.2139/ssrn.5007884",
@@ -38494,6 +39786,7 @@
    "type": "preprint",
    "journal": "SSRN Electronic Journal",
    "source_id": "S4210172589",
+   "biblio": {},
    "landing_url": "https://doi.org/10.2139/ssrn.4974237",
    "is_oa": true,
    "oa_url": "https://doi.org/10.2139/ssrn.4974237",
@@ -38604,6 +39897,12 @@
    "type": "article",
    "journal": "BJR|Artificial Intelligence",
    "source_id": "S5407040186",
+   "biblio": {
+    "volume": "1",
+    "issue": "1",
+    "first_page": "ubae005",
+    "last_page": "ubae005"
+   },
    "landing_url": "https://doi.org/10.1093/bjrai/ubae005",
    "is_oa": true,
    "oa_url": "https://academic.oup.com/bjrai/advance-article-pdf/doi/10.1093/bjrai/ubae005/56888613/ubae005.pdf",
@@ -38779,6 +40078,11 @@
    "type": "article",
    "journal": "Palliative Care and Social Practice",
    "source_id": "S4210185979",
+   "biblio": {
+    "volume": "18",
+    "first_page": "26323524231225249",
+    "last_page": "26323524231225249"
+   },
    "landing_url": "https://doi.org/10.1177/26323524231225249",
    "is_oa": true,
    "oa_url": "https://journals.sagepub.com/doi/pdf/10.1177/26323524231225249",
@@ -39046,6 +40350,10 @@
    "type": "book-chapter",
    "journal": "Elsevier eBooks",
    "source_id": "S4306463230",
+   "biblio": {
+    "first_page": "73",
+    "last_page": "105"
+   },
    "landing_url": "https://doi.org/10.1016/b978-0-12-822000-9.00009-4",
    "is_oa": false,
    "oa_url": null,
@@ -39167,6 +40475,10 @@
    "type": "book-chapter",
    "journal": "Elsevier eBooks",
    "source_id": "S4306463230",
+   "biblio": {
+    "first_page": "137",
+    "last_page": "161"
+   },
    "landing_url": "https://doi.org/10.1016/b978-0-12-822000-9.00004-5",
    "is_oa": false,
    "oa_url": null,
@@ -39293,6 +40605,12 @@
    "type": "conference-abstract",
    "journal": "Family Medicine and Community Health",
    "source_id": "S2764498025",
+   "biblio": {
+    "volume": "12",
+    "issue": "Suppl 1",
+    "first_page": "e002340",
+    "last_page": "e002340"
+   },
    "landing_url": "https://doi.org/10.1136/fmch-2023-002340",
    "is_oa": true,
    "oa_url": "https://fmch.bmj.com/content/fmch/12/Suppl_1/e002340.full.pdf",
