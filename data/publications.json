@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-24T10:34:15+00:00",
+ "generated": "2026-11-24T16:46:44+00:00",
  "group_name": "Clinical Data Science (Maastro / Maastricht University)",
  "site_url": "https://maastrichtu-cds.github.io/pubpulse/",
  "repo_url": "https://github.com/MaastrichtU-CDS/pubpulse",
@@ -9556,7 +9556,7 @@
     "Department of Otorhinolaryngology, Affiliated Hospital of Guangdong Medical University, Zhanjiang 524000, China",
     "Guangdong Provincial Key Laboratory of Autophagy and Major Chronic Non-communicable Diseases, Institute of Nephrology, Affiliated Hospital of Guangdong Medical University, Zhanjiang 524001, China"
    ],
-   "cited_by_count": 2,
+   "cited_by_count": 3,
    "abstract": "Early identification of ICU patients at high mortality risk is essential for triage and timely intervention. We present adaptive layer fusion with intelligent attention (ALFIA), a modular architecture that jointly trains low-rank adaptation (LoRA) adapters and an adaptive layer-weighting mechanism to fuse multi-layer semantic features from a pretrained transformer backbone. ALFIA operates on text-encoded representations of the structured EHR data , in which tabular clinical variables (demographics, vital signs, laboratory values, and severity scores) are converted into standardized natural-language descriptions rather than processed as free-text clinical notes. Evaluated on the CriticalWindow-24 benchmark with MIMIC-IV and eICU cohorts, ALFIA achieves strong AUPRC while maintaining a balanced precision-recall profile. The learned embeddings can be further combined with gradient boosting (ALFIA-boost) or neural networks (ALFIA-nn) for additional gains. These findings demonstrate that text-encoded structured EHR data can support practical, generalizable early-warning models for ICU mortality risk stratification.",
    "verified": true,
    "counted_members": [
@@ -13345,7 +13345,7 @@
    "publication_date": "2026-04-13",
    "year": 2026,
    "type": "preprint",
-   "journal": "arXiv (Cornell University)",
+   "journal": "arXiv",
    "source_id": "S4306400194",
    "biblio": {},
    "landing_url": "https://arxiv.org/abs/2604.11679",
@@ -13999,7 +13999,7 @@
     "Hangzhou Institute of Medicine, Chinese Academy of Sciences",
     "Zhejiang Key Laboratory of Particle Radiotherapy Equipment Department of Radiation Oncology, Zhejiang Cancer Hospital, Hangzhou Institute of Medicine (HIM), Chinese Academy of Sciences, Hangzhou, China"
    ],
-   "cited_by_count": 2,
+   "cited_by_count": 3,
    "abstract": "Background and purpose: Radiation pneumonitis (RP) is one of the major dose-limiting toxicities of thoracic radiotherapy. Although multiple studies have attempted to predict RP, robust multicenter model development is often hindered by privacy regulations and data-transfer constraints, and many existing models are primarily derived from radiotherapy-alone populations, limiting applicability to contemporary regimens that incorporate immunotherapy. Therefore, this study aimed to develop an RP prediction model within a federated learning framework, incorporating sequential transfer learning strategies to enable separate risk assessment for radiotherapy patients with and without immunotherapy. Methods: Multicenter cohorts of lung cancer patients treated with definitive thoracic radiotherapy with or without immunotherapy were retrospectively collected and stratified by immunotherapy exposure. Radiomics features were extracted from whole-lung regions on pretreatment planning CT scans to construct RP prediction models. A federated learning framework was first applied to non-immunotherapy patients to learn common features of radiation pneumonitis without sharing raw data. The pretrained federated model was then sequentially transferred to immunotherapy treatment cohorts, with targeted fine-tuning to adapt to treatment specific RP patterns. Model performance was evaluated through internal validation and independent external validation, with SHAP analysis exploring feature importance differences across treatment settings. Results: A total of 610 patients were included from five multicenter cohorts. Using patients without immunotherapy for model development, the federated baseline model showed stable discrimination in external validation across non-immunotherapy cohorts (AUC = 0.77). When this baseline model was directly applied to the immunotherapy cohort without adaptation, performance dropped markedly (AUC = 0.43). After fine-tuning on immunotherapy data, the immunotherapy-adapted model achieved improved performance within the immunotherapy cohort (AUC = 0.76) and remained robust in an independent external immunotherapy validation cohort (AUC = 0.75). Feature attribution analysis showed a shift in model coefficients between immunotherapy-treated and non-immunotherapy patients. Conclusion: A federated modeling framework with treatment adaptation improves RP risk prediction across heterogeneous treatment settings under multicenter data constraints, particularly in immunotherapy-treated patients.",
    "verified": true,
    "counted_members": [
@@ -16460,7 +16460,7 @@
     "Department of Radiation Oncology (Maastro), GROW Research Institute for Oncology and Reproduction, Maastricht University Medical Centre+, Maastricht, The Netherlands",
     "Department of Radiation Oncology, Maastricht University Medical Centre+, Maastro Clinic, Dr. Tanslaan 12, Maastricht 6229 ET, Maastricht, 6202 AZ, NETHERLANDS"
    ],
-   "cited_by_count": 2,
+   "cited_by_count": 3,
    "abstract": "Objective. Artificial intelligence (AI) can enable automation, improve treatment accuracy, allow for a more efficient workflow, and improve the cost-effectiveness of radiotherapy (RT). To implement AI in RT, clinicians have expressed a desire to understand the AI outputs. Explainable AI (XAI) methods have been put forward as a solution, but the multidisciplinary nature of RT complicates the application of trustworthy and understandable XAI methods. The objective of this review is to analyze XAI in the RT landscape and understand how XAI can best support the diverse user groups in RT by exploring challenges and opportunities with a critical lens. Approach . We performed a review of XAI in RT, evaluating how explanations are built, validated, and embedded across the RT workflow, with attention to XAI purposes, evaluation and validation, interpretability trade-offs, and RT’s multidisciplinary context. Main results . XAI in RT serves five purposes: (1) knowledge discovery, (2) model verification, (3) model improvement, (4) clinical verification, and (5) clinical justification/actionability. Many studies favor interpretability but neglect fidelity and seldom include user-specific evaluation. Key challenges include stakeholder diversity, evaluation of XAI, cognitive bias, and causality; we also outline opportunities. Significance . By linking XAI purposes to RT tasks and highlighting challenges and opportunities, we provide actionable recommendations and a user-centric framework to guide the development, validation, and deployment of XAI in RT.",
    "verified": false,
    "counted_members": [],
@@ -23744,7 +23744,7 @@
    "publication_date": "2025-05-18",
    "year": 2025,
    "type": "preprint",
-   "journal": "arXiv (Cornell University)",
+   "journal": "arXiv",
    "source_id": "S4306400194",
    "biblio": {},
    "landing_url": "http://arxiv.org/abs/2505.12344",
@@ -28440,7 +28440,7 @@
     "Data Science Institute (DSI), Hasselt University, Hasselt, Belgium",
     "Department of Radiation Oncology (MAASTRO) GROW School for Oncology and Reproduction, Maastricht University Medical Centre+, Maastricht, the Netherlands"
    ],
-   "cited_by_count": 3,
+   "cited_by_count": 4,
    "abstract": "BACKGROUND: Lung cancer (LC) is the top cause of cancer deaths globally, prompting many countries to adopt LC screening programs. While screening typically relies on age and smoking intensity, more efficient risk models exist. We devised a Bayesian network (BN) for LC detection, testing its resilience with varying degrees of missing data and comparing it to a prior machine learning (ML) model. METHODS: We analyzed data from 9940 patients referred for LC assessment in Southern Denmark from 2009 to 2018. Variables included age, sex, smoking, and lab results. Our experiments varied missing data (0%-30%), BN structure (expert-based vs. data-driven), and discretization method (standard vs. data-driven). RESULTS: Across all missing data levels, area under the curve (AUC) remained steady, ranging from 0.737 to 0.757, compared to the ML model's AUC of 0.77. BN structure and discretization method had minimal impact on performance. BNs were well calibrated overall, with a net benefit in decision curve analysis when predicted risk exceeded 5%. CONCLUSION: BN models showed resilience with up to 30% missing values. Moreover, these BNs exhibited similar performance, calibration, and clinical utility compared to the machine learning model developed using the same dataset. Considering their effectiveness in handling missing data, BNs emerge as a relevant method for the development of future lung cancer detection models.",
    "verified": true,
    "counted_members": [
@@ -32046,7 +32046,7 @@
    "publication_date": "2024-09-17",
    "year": 2024,
    "type": "preprint",
-   "journal": "arXiv (Cornell University)",
+   "journal": "arXiv",
    "source_id": "S4306400194",
    "biblio": {},
    "landing_url": "http://arxiv.org/abs/2410.01828",
@@ -32256,7 +32256,7 @@
    "publication_date": "2024-09-16",
    "year": 2024,
    "type": "preprint",
-   "journal": "arXiv (Cornell University)",
+   "journal": "arXiv",
    "source_id": "S4306400194",
    "biblio": {},
    "landing_url": "http://arxiv.org/abs/2409.10057",
@@ -39590,7 +39590,7 @@
     "Guangdong Provincial Key Laboratory of Artificial Intelligence in Medical Image Analysis and Application, Guangzhou, 510080, China",
     "School of Medicine, South China University of Technology, Guangzhou, 510006, China"
    ],
-   "cited_by_count": 29,
+   "cited_by_count": 30,
    "abstract": "Accurate and automated segmentation of breast tumors in dynamic contrast-enhanced magnetic resonance imaging (DCE-MRI) plays a critical role in computer-aided diagnosis and treatment of breast cancer. However, this task is challenging, due to random variation in tumor sizes, shapes, appearances, and blurred boundaries of tumors caused by inherent heterogeneity of breast cancer. Moreover, the presence of ill-posed artifacts in DCE-MRI further complicate the process of tumor region annotation. To address the challenges above, we propose a scheme (named SwinHR) integrating prior DCE-MRI knowledge and temporal-spatial information of breast tumors. The prior DCE-MRI knowledge refers to hemodynamic information extracted from multiple DCE-MRI phases, which can provide pharmacokinetics information to describe metabolic changes of the tumor cells over the scanning time. The Swin Transformer with hierarchical re-parameterization large kernel architecture (H-RLK) can capture long-range dependencies within DCE-MRI while maintaining computational efficiency by a shifted window-based self-attention mechanism. The use of H-RLK can extract high-level features with a wider receptive field, which can make the model capture contextual information at different levels of abstraction. Extensive experiments are conducted in large-scale datasets to validate the effectiveness of our proposed SwinHR scheme, demonstrating its superiority over recent state-of-the-art segmentation methods. Also, a subgroup analysis split by MRI scanners, field strength, and tumor size is conducted to verify its generalization. The source code is released on (https://github.com/GDPHMediaLab/SwinHR).",
    "verified": true,
    "counted_members": [
@@ -39676,9 +39676,9 @@
    "journal": "SSRN Electronic Journal",
    "source_id": "S4210172589",
    "biblio": {},
-   "landing_url": "http://doi.org/10.2139/ssrn.5007884",
+   "landing_url": "http://dx.doi.org/10.2139/ssrn.5007884",
    "is_oa": true,
-   "oa_url": "http://doi.org/10.2139/ssrn.5007884",
+   "oa_url": "http://dx.doi.org/10.2139/ssrn.5007884",
    "license": null,
    "pdf_url": null,
    "authors": [
@@ -39714,25 +39714,37 @@
      "openalex_id": "A5004657494",
      "orcid": "0000-0003-1305-5935",
      "match": "openalex",
-     "affiliations": []
+     "affiliations": [
+      "Guangdong Academy of Medical Sciences",
+      "Guangdong Academy of Medical Sciences"
+     ]
     },
     "zhen-zang": {
      "openalex_id": "A5100390131",
      "orcid": "0000-0001-6335-9529",
      "match": "openalex",
-     "affiliations": []
+     "affiliations": [
+      "Zhejiang Cancer Hospital",
+      "Zhejiang Cancer Hospital"
+     ]
     },
     "leonard-wee": {
      "openalex_id": "A5004688031",
      "orcid": "0000-0003-1612-9055",
      "match": "openalex",
-     "affiliations": []
+     "affiliations": [
+      "Maastricht University",
+      "Maastricht University - GROW School for Oncology and Reproduction"
+     ]
     },
     "andre-dekker": {
      "openalex_id": "A5013513157",
      "orcid": "0000-0002-0422-7996",
      "match": "openalex",
-     "affiliations": []
+     "affiliations": [
+      "Maastricht University",
+      "Maastricht University"
+     ]
     }
    },
    "author_positions": [
@@ -39755,17 +39767,26 @@
     "andre-dekker"
    ],
    "member_affiliations": {
-    "leonard-wee": [],
-    "andre-dekker": []
+    "leonard-wee": [
+     "Maastricht University",
+     "Maastricht University - GROW School for Oncology and Reproduction"
+    ],
+    "andre-dekker": [
+     "Maastricht University",
+     "Maastricht University"
+    ]
    },
    "affiliation_status": {
-    "leonard-wee": "unknown",
-    "andre-dekker": "unknown"
+    "leonard-wee": "verified",
+    "andre-dekker": "unspecific"
    },
-   "senior_affiliations": [],
+   "senior_affiliations": [
+    "Guilin University of Electronic Technology",
+    "Guilin University of Electronic Technology, Guilin, China"
+   ],
    "cited_by_count": 0,
    "abstract": null,
-   "verified": false,
+   "verified": true,
    "counted_members": [
     "leonard-wee",
     "andre-dekker"

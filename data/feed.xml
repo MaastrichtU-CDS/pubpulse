@@ -4,13 +4,13 @@
 <link href="https://maastrichtu-cds.github.io/pubpulse/"/>
 <link rel="self" href="https://maastrichtu-cds.github.io/pubpulse/feed.xml"/>
 <id>https://maastrichtu-cds.github.io/pubpulse/</id>
-<updated>2026-11-24T10:34:15+00:00</updated>
+<updated>2026-11-24T16:46:44+00:00</updated>
 <entry>
 <title>Early Prediction of In-Hospital ICU Mortality Using Innovative First-Day Data: A Review</title>
 <link href="https://doi.org/10.48550/arxiv.2505.12344"/>
 <id>https://openalex.org/W4417300725</id>
 <updated>2026-11-23T00:00:00Z</updated>
-<summary>arXiv (Cornell University) · 2025-05-18 · group authors: Xuanhe Hou
+<summary>arXiv · 2025-05-18 · group authors: Xuanhe Hou
 
 The intensive care unit (ICU) manages critically ill patients, many of whom face a high risk of mortality. Early and accurate prediction of in-hospital mortality within the first 24 hours of ICU admission is crucial for timely clinical interventions, resource optimization, and improved patient outcomes. Traditional scoring systems, while useful, often have limitations in predictive accuracy and adaptability. Objective: This review aims to systematically evaluate and benchmark innovative methodologies that leverage data available within the first day of ICU admission for predicting in-hospital mortality. We focus on advancements in machine learning, novel biomarker applications, and the integration of diverse data types.</summary>
 </entry>
