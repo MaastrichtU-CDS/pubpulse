@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-24T16:46:44+00:00",
+ "generated": "2026-11-25T16:34:38+00:00",
  "group_name": "Clinical Data Science (Maastro / Maastricht University)",
  "site_url": "https://maastrichtu-cds.github.io/pubpulse/",
  "repo_url": "https://github.com/MaastrichtU-CDS/pubpulse",
@@ -11,10 +11,14 @@
   "list_name": "the pubpulse weekly list"
  },
  "last_run": {
-  "date": "2026-11-24",
+  "date": "2026-11-25",
   "baseline": false,
-  "new_count": 0,
-  "new_ids": [],
+  "new_count": 3,
+  "new_ids": [
+   "W7239553629",
+   "W7239621593",
+   "W7239366106"
+  ],
   "needs_review": [
    "alexandra-afanasiuc",
    "ali-al-zein",
@@ -1292,8 +1296,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-24",
-    "window_start": "2024-11-24",
+    "checked_at": "2026-11-25",
+    "window_start": "2024-11-25",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -1323,8 +1327,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-24",
-    "window_start": "2024-11-24",
+    "checked_at": "2026-11-25",
+    "window_start": "2024-11-25",
     "recent_months": 24,
     "shared_papers": 19,
     "recent_shared_papers": 16,
@@ -1370,8 +1374,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-24",
-    "window_start": "2024-11-24",
+    "checked_at": "2026-11-25",
+    "window_start": "2024-11-25",
     "recent_months": 24,
     "shared_papers": 16,
     "recent_shared_papers": 2,
@@ -1403,8 +1407,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-24",
-    "window_start": "2024-11-24",
+    "checked_at": "2026-11-25",
+    "window_start": "2024-11-25",
     "recent_months": 24,
     "shared_papers": 3,
     "recent_shared_papers": 3,
@@ -1437,8 +1441,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-24",
-    "window_start": "2024-11-24",
+    "checked_at": "2026-11-25",
+    "window_start": "2024-11-25",
     "recent_months": 24,
     "shared_papers": 1,
     "recent_shared_papers": 1,
@@ -1468,8 +1472,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-24",
-    "window_start": "2024-11-24",
+    "checked_at": "2026-11-25",
+    "window_start": "2024-11-25",
     "recent_months": 24,
     "shared_papers": 5,
     "recent_shared_papers": 4,
@@ -1502,8 +1506,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-24",
-    "window_start": "2024-11-24",
+    "checked_at": "2026-11-25",
+    "window_start": "2024-11-25",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -1530,8 +1534,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-24",
-    "window_start": "2024-11-24",
+    "checked_at": "2026-11-25",
+    "window_start": "2024-11-25",
     "recent_months": 24,
     "shared_papers": 1,
     "recent_shared_papers": 0,
@@ -1560,8 +1564,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-24",
-    "window_start": "2024-11-24",
+    "checked_at": "2026-11-25",
+    "window_start": "2024-11-25",
     "recent_months": 24,
     "shared_papers": 2,
     "recent_shared_papers": 1,
@@ -1590,8 +1594,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-24",
-    "window_start": "2024-11-24",
+    "checked_at": "2026-11-25",
+    "window_start": "2024-11-25",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -1618,8 +1622,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-24",
-    "window_start": "2024-11-24",
+    "checked_at": "2026-11-25",
+    "window_start": "2024-11-25",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -1646,8 +1650,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-24",
-    "window_start": "2024-11-24",
+    "checked_at": "2026-11-25",
+    "window_start": "2024-11-25",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -1674,8 +1678,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-24",
-    "window_start": "2024-11-24",
+    "checked_at": "2026-11-25",
+    "window_start": "2024-11-25",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -1702,8 +1706,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-24",
-    "window_start": "2024-11-24",
+    "checked_at": "2026-11-25",
+    "window_start": "2024-11-25",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -1732,8 +1736,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-24",
-    "window_start": "2024-11-24",
+    "checked_at": "2026-11-25",
+    "window_start": "2024-11-25",
     "recent_months": 24,
     "shared_papers": 4,
     "recent_shared_papers": 2,
@@ -1763,8 +1767,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-24",
-    "window_start": "2024-11-24",
+    "checked_at": "2026-11-25",
+    "window_start": "2024-11-25",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -1791,8 +1795,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-24",
-    "window_start": "2024-11-24",
+    "checked_at": "2026-11-25",
+    "window_start": "2024-11-25",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -1819,8 +1823,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-24",
-    "window_start": "2024-11-24",
+    "checked_at": "2026-11-25",
+    "window_start": "2024-11-25",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -1847,8 +1851,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-24",
-    "window_start": "2024-11-24",
+    "checked_at": "2026-11-25",
+    "window_start": "2024-11-25",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -1875,8 +1879,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-24",
-    "window_start": "2024-11-24",
+    "checked_at": "2026-11-25",
+    "window_start": "2024-11-25",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -1905,8 +1909,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-24",
-    "window_start": "2024-11-24",
+    "checked_at": "2026-11-25",
+    "window_start": "2024-11-25",
     "recent_months": 24,
     "shared_papers": 9,
     "recent_shared_papers": 3,
@@ -1940,8 +1944,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-24",
-    "window_start": "2024-11-24",
+    "checked_at": "2026-11-25",
+    "window_start": "2024-11-25",
     "recent_months": 24,
     "shared_papers": 5,
     "recent_shared_papers": 0,
@@ -1970,8 +1974,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-24",
-    "window_start": "2024-11-24",
+    "checked_at": "2026-11-25",
+    "window_start": "2024-11-25",
     "recent_months": 24,
     "shared_papers": 8,
     "recent_shared_papers": 6,
@@ -2007,8 +2011,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-24",
-    "window_start": "2024-11-24",
+    "checked_at": "2026-11-25",
+    "window_start": "2024-11-25",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -2035,8 +2039,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-24",
-    "window_start": "2024-11-24",
+    "checked_at": "2026-11-25",
+    "window_start": "2024-11-25",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -2063,8 +2067,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-24",
-    "window_start": "2024-11-24",
+    "checked_at": "2026-11-25",
+    "window_start": "2024-11-25",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -2093,8 +2097,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-24",
-    "window_start": "2024-11-24",
+    "checked_at": "2026-11-25",
+    "window_start": "2024-11-25",
     "recent_months": 24,
     "shared_papers": 1,
     "recent_shared_papers": 1,
@@ -2124,8 +2128,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-24",
-    "window_start": "2024-11-24",
+    "checked_at": "2026-11-25",
+    "window_start": "2024-11-25",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -2152,8 +2156,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-24",
-    "window_start": "2024-11-24",
+    "checked_at": "2026-11-25",
+    "window_start": "2024-11-25",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -2182,8 +2186,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-24",
-    "window_start": "2024-11-24",
+    "checked_at": "2026-11-25",
+    "window_start": "2024-11-25",
     "recent_months": 24,
     "shared_papers": 8,
     "recent_shared_papers": 4,
@@ -2213,8 +2217,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-24",
-    "window_start": "2024-11-24",
+    "checked_at": "2026-11-25",
+    "window_start": "2024-11-25",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -2241,8 +2245,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-24",
-    "window_start": "2024-11-24",
+    "checked_at": "2026-11-25",
+    "window_start": "2024-11-25",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -2269,8 +2273,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-24",
-    "window_start": "2024-11-24",
+    "checked_at": "2026-11-25",
+    "window_start": "2024-11-25",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -2299,8 +2303,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-24",
-    "window_start": "2024-11-24",
+    "checked_at": "2026-11-25",
+    "window_start": "2024-11-25",
     "recent_months": 24,
     "shared_papers": 2,
     "recent_shared_papers": 0,
@@ -2331,8 +2335,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-24",
-    "window_start": "2024-11-24",
+    "checked_at": "2026-11-25",
+    "window_start": "2024-11-25",
     "recent_months": 24,
     "shared_papers": 4,
     "recent_shared_papers": 4,
@@ -2365,8 +2369,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-24",
-    "window_start": "2024-11-24",
+    "checked_at": "2026-11-25",
+    "window_start": "2024-11-25",
     "recent_months": 24,
     "shared_papers": 3,
     "recent_shared_papers": 2,
@@ -2398,8 +2402,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-24",
-    "window_start": "2024-11-24",
+    "checked_at": "2026-11-25",
+    "window_start": "2024-11-25",
     "recent_months": 24,
     "shared_papers": 1,
     "recent_shared_papers": 0,
@@ -2426,8 +2430,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-24",
-    "window_start": "2024-11-24",
+    "checked_at": "2026-11-25",
+    "window_start": "2024-11-25",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -2454,8 +2458,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-24",
-    "window_start": "2024-11-24",
+    "checked_at": "2026-11-25",
+    "window_start": "2024-11-25",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -2482,8 +2486,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-24",
-    "window_start": "2024-11-24",
+    "checked_at": "2026-11-25",
+    "window_start": "2024-11-25",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -2510,8 +2514,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-24",
-    "window_start": "2024-11-24",
+    "checked_at": "2026-11-25",
+    "window_start": "2024-11-25",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -2538,8 +2542,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-24",
-    "window_start": "2024-11-24",
+    "checked_at": "2026-11-25",
+    "window_start": "2024-11-25",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -2566,8 +2570,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-24",
-    "window_start": "2024-11-24",
+    "checked_at": "2026-11-25",
+    "window_start": "2024-11-25",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -2594,8 +2598,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-24",
-    "window_start": "2024-11-24",
+    "checked_at": "2026-11-25",
+    "window_start": "2024-11-25",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -2622,8 +2626,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-24",
-    "window_start": "2024-11-24",
+    "checked_at": "2026-11-25",
+    "window_start": "2024-11-25",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -2650,8 +2654,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-24",
-    "window_start": "2024-11-24",
+    "checked_at": "2026-11-25",
+    "window_start": "2024-11-25",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -2678,8 +2682,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-24",
-    "window_start": "2024-11-24",
+    "checked_at": "2026-11-25",
+    "window_start": "2024-11-25",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -2708,8 +2712,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-24",
-    "window_start": "2024-11-24",
+    "checked_at": "2026-11-25",
+    "window_start": "2024-11-25",
     "recent_months": 24,
     "shared_papers": 1,
     "recent_shared_papers": 1,
@@ -2741,8 +2745,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-24",
-    "window_start": "2024-11-24",
+    "checked_at": "2026-11-25",
+    "window_start": "2024-11-25",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -2771,8 +2775,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-24",
-    "window_start": "2024-11-24",
+    "checked_at": "2026-11-25",
+    "window_start": "2024-11-25",
     "recent_months": 24,
     "shared_papers": 2,
     "recent_shared_papers": 2,
@@ -2804,8 +2808,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-24",
-    "window_start": "2024-11-24",
+    "checked_at": "2026-11-25",
+    "window_start": "2024-11-25",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -2834,8 +2838,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-24",
-    "window_start": "2024-11-24",
+    "checked_at": "2026-11-25",
+    "window_start": "2024-11-25",
     "recent_months": 24,
     "shared_papers": 1,
     "recent_shared_papers": 1,
@@ -2866,22 +2870,23 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-24",
-    "window_start": "2024-11-24",
+    "checked_at": "2026-11-25",
+    "window_start": "2024-11-25",
     "recent_months": 24,
-    "shared_papers": 4,
-    "recent_shared_papers": 4,
-    "last_collaboration_date": "2026-03-12",
-    "followup_until": "2028-03-12",
+    "shared_papers": 5,
+    "recent_shared_papers": 5,
+    "last_collaboration_date": "2026-04-22",
+    "followup_until": "2028-04-22",
     "current_coauthors": [
      "andre-dekker",
+     "jiaxu-zhang",
      "rianne-fijten",
      "simone-mingels",
      "yomi-okegunna"
     ]
    },
    "tracked": true,
-   "tracked_until": "2028-03-12",
+   "tracked_until": "2028-04-22",
    "needs_review": false
   },
   {
@@ -2899,8 +2904,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-24",
-    "window_start": "2024-11-24",
+    "checked_at": "2026-11-25",
+    "window_start": "2024-11-25",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -2929,8 +2934,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-24",
-    "window_start": "2024-11-24",
+    "checked_at": "2026-11-25",
+    "window_start": "2024-11-25",
     "recent_months": 24,
     "shared_papers": 3,
     "recent_shared_papers": 1,
@@ -2959,8 +2964,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-24",
-    "window_start": "2024-11-24",
+    "checked_at": "2026-11-25",
+    "window_start": "2024-11-25",
     "recent_months": 24,
     "shared_papers": 1,
     "recent_shared_papers": 0,
@@ -2989,8 +2994,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-24",
-    "window_start": "2024-11-24",
+    "checked_at": "2026-11-25",
+    "window_start": "2024-11-25",
     "recent_months": 24,
     "shared_papers": 1,
     "recent_shared_papers": 1,
@@ -3019,8 +3024,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-24",
-    "window_start": "2024-11-24",
+    "checked_at": "2026-11-25",
+    "window_start": "2024-11-25",
     "recent_months": 24,
     "shared_papers": 1,
     "recent_shared_papers": 0,
@@ -3047,8 +3052,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-24",
-    "window_start": "2024-11-24",
+    "checked_at": "2026-11-25",
+    "window_start": "2024-11-25",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -3075,8 +3080,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-24",
-    "window_start": "2024-11-24",
+    "checked_at": "2026-11-25",
+    "window_start": "2024-11-25",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -3103,8 +3108,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-24",
-    "window_start": "2024-11-24",
+    "checked_at": "2026-11-25",
+    "window_start": "2024-11-25",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -3131,8 +3136,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-24",
-    "window_start": "2024-11-24",
+    "checked_at": "2026-11-25",
+    "window_start": "2024-11-25",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -3162,8 +3167,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-24",
-    "window_start": "2024-11-24",
+    "checked_at": "2026-11-25",
+    "window_start": "2024-11-25",
     "recent_months": 24,
     "shared_papers": 6,
     "recent_shared_papers": 4,
@@ -3192,8 +3197,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-24",
-    "window_start": "2024-11-24",
+    "checked_at": "2026-11-25",
+    "window_start": "2024-11-25",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -3220,8 +3225,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-24",
-    "window_start": "2024-11-24",
+    "checked_at": "2026-11-25",
+    "window_start": "2024-11-25",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -3248,8 +3253,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-24",
-    "window_start": "2024-11-24",
+    "checked_at": "2026-11-25",
+    "window_start": "2024-11-25",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -3276,8 +3281,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-24",
-    "window_start": "2024-11-24",
+    "checked_at": "2026-11-25",
+    "window_start": "2024-11-25",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -3306,8 +3311,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-24",
-    "window_start": "2024-11-24",
+    "checked_at": "2026-11-25",
+    "window_start": "2024-11-25",
     "recent_months": 24,
     "shared_papers": 3,
     "recent_shared_papers": 3,
@@ -3338,8 +3343,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-24",
-    "window_start": "2024-11-24",
+    "checked_at": "2026-11-25",
+    "window_start": "2024-11-25",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -3366,8 +3371,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-24",
-    "window_start": "2024-11-24",
+    "checked_at": "2026-11-25",
+    "window_start": "2024-11-25",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -3394,8 +3399,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-24",
-    "window_start": "2024-11-24",
+    "checked_at": "2026-11-25",
+    "window_start": "2024-11-25",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -3422,8 +3427,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-24",
-    "window_start": "2024-11-24",
+    "checked_at": "2026-11-25",
+    "window_start": "2024-11-25",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -3452,8 +3457,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-24",
-    "window_start": "2024-11-24",
+    "checked_at": "2026-11-25",
+    "window_start": "2024-11-25",
     "recent_months": 24,
     "shared_papers": 1,
     "recent_shared_papers": 0,
@@ -3482,8 +3487,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-24",
-    "window_start": "2024-11-24",
+    "checked_at": "2026-11-25",
+    "window_start": "2024-11-25",
     "recent_months": 24,
     "shared_papers": 3,
     "recent_shared_papers": 2,
@@ -3513,8 +3518,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-24",
-    "window_start": "2024-11-24",
+    "checked_at": "2026-11-25",
+    "window_start": "2024-11-25",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -3541,8 +3546,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-24",
-    "window_start": "2024-11-24",
+    "checked_at": "2026-11-25",
+    "window_start": "2024-11-25",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -3569,8 +3574,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-24",
-    "window_start": "2024-11-24",
+    "checked_at": "2026-11-25",
+    "window_start": "2024-11-25",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -3597,8 +3602,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-24",
-    "window_start": "2024-11-24",
+    "checked_at": "2026-11-25",
+    "window_start": "2024-11-25",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -3625,8 +3630,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-24",
-    "window_start": "2024-11-24",
+    "checked_at": "2026-11-25",
+    "window_start": "2024-11-25",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -3653,8 +3658,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-24",
-    "window_start": "2024-11-24",
+    "checked_at": "2026-11-25",
+    "window_start": "2024-11-25",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -3681,8 +3686,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-24",
-    "window_start": "2024-11-24",
+    "checked_at": "2026-11-25",
+    "window_start": "2024-11-25",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -3711,8 +3716,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-24",
-    "window_start": "2024-11-24",
+    "checked_at": "2026-11-25",
+    "window_start": "2024-11-25",
     "recent_months": 24,
     "shared_papers": 12,
     "recent_shared_papers": 10,
@@ -3752,8 +3757,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-24",
-    "window_start": "2024-11-24",
+    "checked_at": "2026-11-25",
+    "window_start": "2024-11-25",
     "recent_months": 24,
     "shared_papers": 3,
     "recent_shared_papers": 3,
@@ -3784,8 +3789,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-24",
-    "window_start": "2024-11-24",
+    "checked_at": "2026-11-25",
+    "window_start": "2024-11-25",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -3814,8 +3819,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-24",
-    "window_start": "2024-11-24",
+    "checked_at": "2026-11-25",
+    "window_start": "2024-11-25",
     "recent_months": 24,
     "shared_papers": 4,
     "recent_shared_papers": 1,
@@ -3847,8 +3852,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-24",
-    "window_start": "2024-11-24",
+    "checked_at": "2026-11-25",
+    "window_start": "2024-11-25",
     "recent_months": 24,
     "shared_papers": 2,
     "recent_shared_papers": 1,
@@ -3880,8 +3885,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-24",
-    "window_start": "2024-11-24",
+    "checked_at": "2026-11-25",
+    "window_start": "2024-11-25",
     "recent_months": 24,
     "shared_papers": 22,
     "recent_shared_papers": 15,
@@ -3920,8 +3925,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-24",
-    "window_start": "2024-11-24",
+    "checked_at": "2026-11-25",
+    "window_start": "2024-11-25",
     "recent_months": 24,
     "shared_papers": 8,
     "recent_shared_papers": 4,
@@ -3954,8 +3959,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-24",
-    "window_start": "2024-11-24",
+    "checked_at": "2026-11-25",
+    "window_start": "2024-11-25",
     "recent_months": 24,
     "shared_papers": 7,
     "recent_shared_papers": 3,
@@ -4185,7 +4190,7 @@
     "Department of Health, Ethics & Society, Care and Public Health Research Institute (CAPHRI), Maastricht University, Maastricht, The Netherlands"
    ],
    "cited_by_count": 0,
-   "abstract": "Background AI-driven clinical decision support systems (AI-CDSS) are increasingly being introduced to enhance clinical decision-making, yet their adoption in health care remains limited. Research has examined technical, organizational, and contextual barriers to adoption, but less attention has been paid to how knowledge, values, and responsibility around AI-CDSS are constructed and negotiated in practice. Objective This study examines how clinicians and AI experts make sense of AI-CDSS by reanalyzing qualitative interview data through a feminist and constructivist science and technology studies (STS) perspective. Whereas the original study examined informational needs, this reanalysis asks how participants construct relevant knowledge, evaluate the value of AI-CDSS, and negotiate appropriate use and responsibility in clinical practice. Methods The authors conducted a reanalysis of semistructured interviews held in 2024 with clinicians (n=8) and AI experts (n=8) in the Netherlands. The original study focused on informational needs for AI-CDSS. For this analysis, a deductive coding framework based on European Commission guidelines for trustworthy AI was first applied, and the material was then inductively reorganized into 5 empirical themes. Subsequently, feminist and constructivist STS concepts were used as sensitizing concepts in an abductive analysis, and these concepts were brought into dialogue with the empirical themes to examine the sociotechnical relations underlying participants’ accounts. Results Situated knowledge shows that the informational needs of clinicians are not universal but relate to their roles and specific clinical contexts, with understanding oriented less toward technical transparency than toward actionable guidance, relevance, and integration into decision-making. Standpoint theory illuminates differences between stakeholder priorities: clinicians emphasize information on how to use and act on AI outputs within existing workflows, whereas AI experts focus more on providing technical characteristics and performance metrics. Tinkering captures how clinicians experiment with AI systems in practice to develop situated, lay forms of expertise. Situated value highlights that perceptions of an AI-CDSS’s worth are relational, with clinicians valuing novel, context-sensitive insights and developers prioritizing performance metrics. Finally, response-ability reveals how trust and accountability are largely delegated to institutional structures, while clinicians report limited legal, organizational, and structural support to respond meaningfully to uncertainty or errors when using AI-CDSS. Conclusions Reanalyzing the same interview material through an abductive STS approach makes sociotechnical dimensions visible that were not the focus of the original analysis. Rather than treating informational requirements as universal or adoption as primarily a matter of technical performance and communication, the findings show how knowledge, value, and responsibility are constituted through situated professional practices and institutional arrangements. Processes and considerations regarding how clinicians make sense of AI-CDSS are not universal but are shaped by social, cultural, and institutional contexts. This analytical perspective underscores the need for context-sensitive, multistakeholder strategies to support meaningful and responsible AI adoption in clinical practice.",
+   "abstract": "Background: AI-driven clinical decision support systems (AI-CDSS) are increasingly being introduced to enhance clinical decision-making, yet their adoption in health care remains limited. Research has examined technical, organizational, and contextual barriers to adoption, but less attention has been paid to how knowledge, values, and responsibility around AI-CDSS are constructed and negotiated in practice. Objective: This study examines how clinicians and AI experts make sense of AI-CDSS by reanalyzing qualitative interview data through a feminist and constructivist science and technology studies (STS) perspective. Whereas the original study examined informational needs, this reanalysis asks how participants construct relevant knowledge, evaluate the value of AI-CDSS, and negotiate appropriate use and responsibility in clinical practice. Methods: The authors conducted a reanalysis of semistructured interviews held in 2024 with clinicians (n=8) and AI experts (n=8) in the Netherlands. The original study focused on informational needs for AI-CDSS. For this analysis, a deductive coding framework based on European Commission guidelines for trustworthy AI was first applied, and the material was then inductively reorganized into 5 empirical themes. Subsequently, feminist and constructivist STS concepts were used as sensitizing concepts in an abductive analysis, and these concepts were brought into dialogue with the empirical themes to examine the sociotechnical relations underlying participants' accounts. Results: Situated knowledge shows that the informational needs of clinicians are not universal but relate to their roles and specific clinical contexts, with understanding oriented less toward technical transparency than toward actionable guidance, relevance, and integration into decision-making. Standpoint theory illuminates differences between stakeholder priorities: clinicians emphasize information on how to use and act on AI outputs within existing workflows, whereas AI experts focus more on providing technical characteristics and performance metrics. Tinkering captures how clinicians experiment with AI systems in practice to develop situated, lay forms of expertise. Situated value highlights that perceptions of an AI-CDSS's worth are relational, with clinicians valuing novel, context-sensitive insights and developers prioritizing performance metrics. Finally, response-ability reveals how trust and accountability are largely delegated to institutional structures, while clinicians report limited legal, organizational, and structural support to respond meaningfully to uncertainty or errors when using AI-CDSS. Conclusions: Reanalyzing the same interview material through an abductive STS approach makes sociotechnical dimensions visible that were not the focus of the original analysis. Rather than treating informational requirements as universal or adoption as primarily a matter of technical performance and communication, the findings show how knowledge, value, and responsibility are constituted through situated professional practices and institutional arrangements. Processes and considerations regarding how clinicians make sense of AI-CDSS are not universal but are shaped by social, cultural, and institutional contexts. This analytical perspective underscores the need for context-sensitive, multistakeholder strategies to support meaningful and responsible AI adoption in clinical practice.",
    "verified": true,
    "counted_members": [
     "simone-mingels",
@@ -5071,6 +5076,151 @@
    "first_seen": "2026-11-06",
    "journal_impact": 3.5,
    "journal_h_index": 594
+  },
+  {
+   "id": "W7239366106",
+   "openalex_url": "https://openalex.org/W7239366106",
+   "doi": "https://doi.org/10.1016/j.pec.2026.110421",
+   "title": "Comparing Patient Experiences with SDM-Q-9, CollaboRATE, and iSHAREpatient in Routine Oncology Care: A Patient-Centred Evaluation",
+   "publication_date": "2026-11-01",
+   "year": 2026,
+   "type": "article",
+   "journal": "Patient Education and Counseling",
+   "source_id": "S39041608",
+   "biblio": {
+    "first_page": "110421",
+    "last_page": "110421"
+   },
+   "landing_url": "https://doi.org/10.1016/j.pec.2026.110421",
+   "is_oa": true,
+   "oa_url": "https://doi.org/10.1016/j.pec.2026.110421",
+   "license": "cc-by",
+   "pdf_url": null,
+   "authors": [
+    "Claudia J.W. Offermann-Wulms",
+    "Anniek R. van Hienen",
+    "Anshu Ankolekar",
+    "Simone M.B. Mingels",
+    "Henricus‐Paul Cremers",
+    "Cheryl Roumen",
+    "Liesbeth Jorinne Boersma",
+    "Maria Jacobs",
+    "Rianne Fijten"
+   ],
+   "author_members": [
+    null,
+    "anniek-van-hienen",
+    "anshu-ankolekar",
+    "simone-mingels",
+    null,
+    null,
+    null,
+    null,
+    "rianne-fijten"
+   ],
+   "author_profiles": {
+    "anniek-van-hienen": {
+     "openalex_id": "A5117621657",
+     "orcid": "0009-0000-9454-6124",
+     "match": "openalex",
+     "affiliations": [
+      "Maastricht University Medical Centre",
+      "Department of Radiation Oncology (MAASTRO), GROW Research Institute for Oncology and Reproduction, Maastricht University Medical Centre+, Maastricht, the Netherlands",
+      "Maastro, Maastricht Radiation Oncology Institute, Maastricht, the Netherlands"
+     ]
+    },
+    "anshu-ankolekar": {
+     "openalex_id": "A5075943046",
+     "orcid": "0000-0001-7681-1254",
+     "match": "openalex",
+     "affiliations": [
+      "Maastricht University Medical Centre",
+      "Department of Radiation Oncology (MAASTRO), GROW Research Institute for Oncology and Reproduction, Maastricht University Medical Centre+, Maastricht, the Netherlands",
+      "Maastro, Maastricht Radiation Oncology Institute, Maastricht, the Netherlands"
+     ]
+    },
+    "simone-mingels": {
+     "openalex_id": "A5119867252",
+     "orcid": "0009-0000-9848-2391",
+     "match": "openalex",
+     "affiliations": [
+      "Maastricht University Medical Centre",
+      "Department of Radiation Oncology (MAASTRO), GROW Research Institute for Oncology and Reproduction, Maastricht University Medical Centre+, Maastricht, the Netherlands",
+      "Maastro, Maastricht Radiation Oncology Institute, Maastricht, the Netherlands"
+     ]
+    },
+    "rianne-fijten": {
+     "openalex_id": "A5081642553",
+     "orcid": "0000-0002-1964-6317",
+     "match": "openalex",
+     "affiliations": [
+      "Maastricht University Medical Centre",
+      "Department of Radiation Oncology (MAASTRO), GROW Research Institute for Oncology and Reproduction, Maastricht University Medical Centre+, Maastricht, the Netherlands",
+      "Maastro, Maastricht Radiation Oncology Institute, Maastricht, the Netherlands"
+     ]
+    }
+   },
+   "author_positions": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+   ],
+   "author_count": 9,
+   "group_members": [
+    "anniek-van-hienen",
+    "anshu-ankolekar",
+    "simone-mingels",
+    "rianne-fijten"
+   ],
+   "member_affiliations": {
+    "anniek-van-hienen": [
+     "Maastricht University Medical Centre",
+     "Department of Radiation Oncology (MAASTRO), GROW Research Institute for Oncology and Reproduction, Maastricht University Medical Centre+, Maastricht, the Netherlands",
+     "Maastro, Maastricht Radiation Oncology Institute, Maastricht, the Netherlands"
+    ],
+    "anshu-ankolekar": [
+     "Maastricht University Medical Centre",
+     "Department of Radiation Oncology (MAASTRO), GROW Research Institute for Oncology and Reproduction, Maastricht University Medical Centre+, Maastricht, the Netherlands",
+     "Maastro, Maastricht Radiation Oncology Institute, Maastricht, the Netherlands"
+    ],
+    "simone-mingels": [
+     "Maastricht University Medical Centre",
+     "Department of Radiation Oncology (MAASTRO), GROW Research Institute for Oncology and Reproduction, Maastricht University Medical Centre+, Maastricht, the Netherlands",
+     "Maastro, Maastricht Radiation Oncology Institute, Maastricht, the Netherlands"
+    ],
+    "rianne-fijten": [
+     "Maastricht University Medical Centre",
+     "Department of Radiation Oncology (MAASTRO), GROW Research Institute for Oncology and Reproduction, Maastricht University Medical Centre+, Maastricht, the Netherlands",
+     "Maastro, Maastricht Radiation Oncology Institute, Maastricht, the Netherlands"
+    ]
+   },
+   "affiliation_status": {
+    "anniek-van-hienen": "verified",
+    "anshu-ankolekar": "verified",
+    "simone-mingels": "verified",
+    "rianne-fijten": "verified"
+   },
+   "senior_affiliations": [
+    "Maastricht University Medical Centre",
+    "Department of Radiation Oncology (MAASTRO), GROW Research Institute for Oncology and Reproduction, Maastricht University Medical Centre+, Maastricht, the Netherlands",
+    "Maastro, Maastricht Radiation Oncology Institute, Maastricht, the Netherlands"
+   ],
+   "cited_by_count": 0,
+   "abstract": "Objective Shared decision-making (SDM) is preferred in oncology, yet routine evaluation in clinical practice remains challenging. This study aimed to compare patients’experiences of completing three widely used patient-reported SDM questionnaires (SDM-Q-9, CollaboRATE, and iSHAREpatient) under the same routine oncology-care conditions. Methods This multiple-methods study included 159 patients attending radiotherapy intake consultations at a large academic radiotherapy centre. Immediately after consultation, participants were randomised to complete one of three SDM questionnaires. Quantitative measures comprised the After-Scenario-Questionnaire (ASQ), (perceived ease, time investment, and support needs) completion time and clarification questions. Qualitative methods comprised think-aloud sessions followed by codebook thematic analysis. Results ASQ scores did not differ significantly between questionnaires for perceived ease, time investment, or support (p > 0.05 ). CollaboRATE was fastest to complete (mean 52 seconds), followed by SDM-Q-9 (2:17 minutes) and iSHAREpatient (3:46 minutes) (p < 0.001). iSHAREpatient generated more clarification questions than SDM-Q-9 and CollaboRATE. Qualitative findings revealed differences in patients’ completion experiences. SDM-Q-9 and iSHAREpatient prompted reflection on consultations and treatment decisions; while this may support engagement, it may also increase cognitive effort . When patients did not perceive a meaningful treatment choice, SDM-related questions were sometimes experienced as irrelevant, reflecting a mismatch between questionnaire assumptions and patients’ decision-making experiences. Conclusion SDM-Q-9 showed a favourable balance between comprehensiveness and ease of completion. CollaboRATE was the fastest to complete and may be particularly useful in time-constrained settings, whereas iSHAREpatient provided a more detailed assessment of the decision-making process. Practice implications Questionnaire selection should consider decision context, patient burden and the measurement purpose: SDM-Q-9 may be particularly useful when meaningful treatment choices are discussed, whereas CollaboRATE may be more suitable in time-constrained or predetermined decision settings, and iSHAREpatient when a more detailed exploration of the decision-making process is desired.",
+   "verified": false,
+   "counted_members": [],
+   "counted": false,
+   "listed_elsewhere": true,
+   "first_seen": "2026-11-25",
+   "other_group": "Liesbeth Jorinne Boersma",
+   "journal_impact": 2.8,
+   "journal_h_index": 247
   },
   {
    "id": "W7224572054",
@@ -6595,7 +6745,7 @@
     "Maastro, Maastricht Radiation Oncology Institute, Maastricht, The Netherlands"
    ],
    "cited_by_count": 0,
-   "abstract": "Focal cortical dysplasia (FCD) is among the leading causes of drug-resistant focal epilepsy and can be challenging to detect on routine MRI due to the subtle and heterogeneous appearance of lesions. Motivated by the scarcity of clinically representative cohorts, we investigate the feasibility of simulating FCD-like lesions in healthy MRI using a composition of hand-crafted image transformations. We develop Syn-thFCD , a phenomenological FCD simulator, and create 2,164 synthetic examples from healthy controls in the heterogeneous FOMO300k dataset. We then pretrain deep learning (DL) segmentation models on synthetic lesions and fine-tune them on real FCD cases from the University Hospital Bonn (UHB) cohort. Comprehensive evaluations show consistent improvements across simulator presets, with detection-rate gains of up to 18.5 percentage points over training from scratch and 7.4 points over self-supervised pretraining, while achieving state-of-the-art segmentation performance (0.366 DSC) on the challenging held-out UHB benchmark. These findings suggest that simulation-based synthetic data generation can bridge existing radiological knowledge and advances in DL to provide meaningful supervisory signals that could ultimately aid the detection of underrepresented and diagnostically challenging cases.",
+   "abstract": "Focal cortical dysplasia (FCD) is among the leading causes of drug-resistant focal epilepsy and can be challenging to detect on routine MRI due to the subtle and heterogeneous appearance of lesions. Motivated by the scarcity of clinically representative cohorts, we investigate the feasibility of simulating FCD-like lesions in healthy MRI using a composition of hand-crafted image transformations. We develop Syn-thFCD, a phenomenological FCD simulator, and create 2,164 synthetic examples from healthy controls in the heterogeneous FOMO300k dataset. We then pretrain deep learning (DL) segmentation models on synthetic lesions and fine-tune them on real FCD cases from the University Hospital Bonn (UHB) cohort. Comprehensive evaluations show consistent improvements across simulator presets, with detection-rate gains of up to 18.5 percentage points over training from scratch and 7.4 points over self-supervised pretraining, while achieving state-of-the-art segmentation performance (0.366 DSC) on the challenging held-out UHB benchmark. These findings suggest that simulation-based synthetic data generation can bridge existing radiological knowledge and advances in DL to provide meaningful supervisory signals that could ultimately aid the detection of underrepresented and diagnostically challenging cases.",
    "verified": true,
    "counted_members": [
     "petros-koutsouvelis",
@@ -7106,7 +7256,7 @@
     "Maastricht University Medical Centre"
    ],
    "cited_by_count": 0,
-   "abstract": "BACKGROUND Multiple software programs are available for manual or (semi-)automated liver segmentation. Although manual segmentation has traditionally been the standard, it is time-intensive and susceptible to inter-observer variability. Conversely, (semi-)automated approaches have been shown to reduce segmentation time, but the availability and use of different software tools can introduce variability in liver volumetry outcomes. AIM To evaluate the reliability of three segmentation software programs (Synapse 3D (Fujifilm), OsiriX® (Pixmea), and Syngo.via (Siemens Healthineers)) for liver volumetry. METHODS Patients (≥ 18 years) with abdominal computed tomography images without liver pathology were included. Total liver volume (TLV) and segment II/III volume – a surrogate for the future liver remnant (FLR) – were measured. Two blinded independent researchers performed volumetric assessments. The intraclass correlation coefficient (ICC) was calculated for interobserver variability for the first 30 scans between both researchers. This was also performed for intra-observer variability between the software programs in 200 randomly selected patients (52.5% male; mean age: 63.5 years). RESULTS Mean TLV’s reported by Synapse 3D, Syngo.via and OsiriX® were 1705 ± 462 mL, 1672 ± 463 mL, and 1627 ± 449 mL, respectively. Mean segment II/III volumes reported were 304 ± 115 mL, 282 ± 109 mL, and 277 ± 108 mL, respectively. The highest interobserver agreement (n = 30) was for TLV with Synapse 3D (ICC: 0.999; 95%CI: 0.998-0.999), and highest intraobserver ICC was between Synapse 3D and Syngo.via for TLV (ICC: 0.997; 95%CI: 0.985-0.999). Mean standardized FLR for Synapse 3D, Syngo.via and OsiriX® were 18.6%, 17.2%, and 16.9%, respectively. CONCLUSION Although absolute volumes varied slightly, the standardized FLR remained comparable across the software programs, indicating that all three are suitable for reliable computed tomography liver volumetry.",
+   "abstract": "BACKGROUND: Multiple software programs are available for manual or (semi-)automated liver segmentation. Although manual segmentation has traditionally been the standard, it is time-intensive and susceptible to inter-observer variability. Conversely, (semi-)automated approaches have been shown to reduce segmentation time, but the availability and use of different software tools can introduce variability in liver volumetry outcomes. AIM: To evaluate the reliability of three segmentation software programs (Synapse 3D (Fujifilm), OsiriX® (Pixmea), and Syngo.via (Siemens Healthineers)) for liver volumetry. METHODS: Patients (≥ 18 years) with abdominal computed tomography images without liver pathology were included. Total liver volume (TLV) and segment II/III volume - a surrogate for the future liver remnant (FLR) - were measured. Two blinded independent researchers performed volumetric assessments. The intraclass correlation coefficient (ICC) was calculated for interobserver variability for the first 30 scans between both researchers. This was also performed for intra-observer variability between the software programs in 200 randomly selected patients (52.5% male; mean age: 63.5 years). RESULTS: Mean TLV's reported by Synapse 3D, Syngo.via and OsiriX® were 1705 ± 462 mL, 1672 ± 463 mL, and 1627 ± 449 mL, respectively. Mean segment II/III volumes reported were 304 ± 115 mL, 282 ± 109 mL, and 277 ± 108 mL, respectively. The highest interobserver agreement (n = 30) was for TLV with Synapse 3D (ICC: 0.999; 95%CI: 0.998-0.999), and highest intraobserver ICC was between Synapse 3D and Syngo.via for TLV (ICC: 0.997; 95%CI: 0.985-0.999). Mean standardized FLR for Synapse 3D, Syngo.via and OsiriX® were 18.6%, 17.2%, and 16.9%, respectively. CONCLUSION: Although absolute volumes varied slightly, the standardized FLR remained comparable across the software programs, indicating that all three are suitable for reliable computed tomography liver volumetry.",
    "verified": false,
    "counted_members": [],
    "counted": false,
@@ -7953,7 +8103,7 @@
    "title": "HI-ROC PROJECT: TARGETING HYPOXIA WITH HEAVY IONS TO GAIN CONTROL OF RADIORESISTANT CANCERS",
    "publication_date": "2026-09-01",
    "year": 2026,
-   "type": "article",
+   "type": "conference-abstract",
    "journal": "International Journal of Particle Therapy",
    "source_id": "S4210219142",
    "biblio": {
@@ -9428,7 +9578,7 @@
     "Department of Radiation Oncology (Maastro), GROW Research Institute for Oncology and Reproduction, Maastricht University Medical Centre+, 6229 ER Maastricht, The Netherlands"
    ],
    "cited_by_count": 0,
-   "abstract": "Introduction: Prelacteal feeding, the practice of giving newborns substances other than breast milk within the first few days of life, remains a common yet harmful practice in many low- and middle-income countries, including Ethiopia. No evidence in Ethiopia indicates that mHealth can help improve prelacteal feeding. This study aimed to evaluate the effect of mobile health (mHealth) intervention on reducing prelacteal feeding practices and improving antenatal care (ANC) and postnatal care (PNC) utilization among mothers in South Ethiopia. Methods: A cluster-randomized controlled trial (CRT) was conducted in rural areas of South Ethiopia. A total of 20 clusters were selected using simple random sampling for intervention (mHealth) and control groups, each containing 340 women. Mothers in the intervention group received automated weekly SMS messages and reminders on exclusive breastfeeding, prelacteal feeding risks, ANC, and PNC. Mothers were only selected if they could read, write, and use mobile phones. Results: The mHealth intervention significantly reduced prelacteal feeding practice (AOR = 0.19, 95% CI: 0.06–0.58); p < 0.05). Higher ANC visits related to decreased prelacteal feeding (AOR = 0.28, 95% CI: 0.21–0.39; p < 0.001). The log count of ANC visit increased by 0.14 among intervention groups (IRR = 1.15, 95% CI: 1.06–1.25; p < 0.001). The PNC time was delayed 2.05 days among controls (β = −2.05, 95% CI: −2.66–−1.42; p < 0.001). Maternal and partner education, postnatal time, and ANC visits influenced prelacteal feeding. Conclusions: This finding might suggest that mHealth can reduce prelacteal feeding practices and improve maternal healthcare behaviors such as ANC attendance and timely PNC. These findings highlight the potential of mobile health interventions in promoting healthy maternal and infant practices in rural settings, where healthcare access is limited. Further research is needed to explore the long-term impacts of such interventions on maternal and child health outcomes. Multi-level analysis reduced variability. However, an unexplained variance could be reduced by including more cluster-level variables.",
+   "abstract": "Introduction: Prelacteal feeding, the practice of giving newborns substances other than breast milk within the first few days of life, remains a common yet harmful practice in many low- and middle-income countries, including Ethiopia. No evidence in Ethiopia indicates that mHealth can help improve prelacteal feeding. This study aimed to evaluate the effect of mobile health (mHealth) intervention on reducing prelacteal feeding practices and improving antenatal care (ANC) and postnatal care (PNC) utilization among mothers in South Ethiopia. Methods: A cluster-randomized controlled trial (CRT) was conducted in rural areas of South Ethiopia. A total of 20 clusters were selected using simple random sampling for intervention (mHealth) and control groups, each containing 340 women. Mothers in the intervention group received automated weekly SMS messages and reminders on exclusive breastfeeding, prelacteal feeding risks, ANC, and PNC. Mothers were only selected if they could read, write, and use mobile phones. Results: The mHealth intervention significantly reduced prelacteal feeding practice (AOR = 0.19, 95% CI: 0.06-0.58); p < 0.05). Higher ANC visits related to decreased prelacteal feeding (AOR = 0.28, 95% CI: 0.21-0.39; p < 0.001). The log count of ANC visit increased by 0.14 among intervention groups (IRR = 1.15, 95% CI: 1.06-1.25; p < 0.001). The PNC time was delayed 2.05 days among controls (β = -2.05, 95% CI: -2.66--1.42; p < 0.001). Maternal and partner education, postnatal time, and ANC visits influenced prelacteal feeding. Conclusions: This finding might suggest that mHealth can reduce prelacteal feeding practices and improve maternal healthcare behaviors such as ANC attendance and timely PNC. These findings highlight the potential of mobile health interventions in promoting healthy maternal and infant practices in rural settings, where healthcare access is limited. Further research is needed to explore the long-term impacts of such interventions on maternal and child health outcomes. Multi-level analysis reduced variability. However, an unexplained variance could be reduced by including more cluster-level variables.",
    "verified": true,
    "counted_members": [
     "andre-dekker",
@@ -9557,7 +9707,7 @@
     "Guangdong Provincial Key Laboratory of Autophagy and Major Chronic Non-communicable Diseases, Institute of Nephrology, Affiliated Hospital of Guangdong Medical University, Zhanjiang 524001, China"
    ],
    "cited_by_count": 3,
-   "abstract": "Early identification of ICU patients at high mortality risk is essential for triage and timely intervention. We present adaptive layer fusion with intelligent attention (ALFIA), a modular architecture that jointly trains low-rank adaptation (LoRA) adapters and an adaptive layer-weighting mechanism to fuse multi-layer semantic features from a pretrained transformer backbone. ALFIA operates on text-encoded representations of the structured EHR data , in which tabular clinical variables (demographics, vital signs, laboratory values, and severity scores) are converted into standardized natural-language descriptions rather than processed as free-text clinical notes. Evaluated on the CriticalWindow-24 benchmark with MIMIC-IV and eICU cohorts, ALFIA achieves strong AUPRC while maintaining a balanced precision-recall profile. The learned embeddings can be further combined with gradient boosting (ALFIA-boost) or neural networks (ALFIA-nn) for additional gains. These findings demonstrate that text-encoded structured EHR data can support practical, generalizable early-warning models for ICU mortality risk stratification.",
+   "abstract": "Early identification of ICU patients at high mortality risk is essential for triage and timely intervention. We present adaptive layer fusion with intelligent attention (ALFIA), a modular architecture that jointly trains low-rank adaptation (LoRA) adapters and an adaptive layer-weighting mechanism to fuse multi-layer semantic features from a pretrained transformer backbone. ALFIA operates on text-encoded representations of the structured EHR data, in which tabular clinical variables (demographics, vital signs, laboratory values, and severity scores) are converted into standardized natural-language descriptions rather than processed as free-text clinical notes. Evaluated on the CriticalWindow-24 benchmark with MIMIC-IV and eICU cohorts, ALFIA achieves strong AUPRC while maintaining a balanced precision-recall profile. The learned embeddings can be further combined with gradient boosting (ALFIA-boost) or neural networks (ALFIA-nn) for additional gains. These findings demonstrate that text-encoded structured EHR data can support practical, generalizable early-warning models for ICU mortality risk stratification.",
    "verified": true,
    "counted_members": [
     "xuanhe-hou"
@@ -9676,7 +9826,7 @@
     "Department of Cardiology, Zuyderland Medical Center, Heerlen, Netherlands"
    ],
    "cited_by_count": 0,
-   "abstract": "Introduction Low participation in cardiac rehabilitation after acute myocardial infarction remains problematic. Cardiac telerehabilitation has emerged as a strategy to improve the uptake by addressing clinical, interpersonal, logistical, and healthcare system-related barriers. In this study, our aim is to determine which patient-related characteristics could lead to non-participation in cardiac rehabilitation, as well as to the reasons for non-participation. Methods In our study, the REHAB + study, cardiac telerehabilitation was implemented in routine clinical practice. In this sub analysis, observational data were collected between November 2021 and 2024 after its implementation in Zuyderland medical center, the Netherlands. After enrolment, patients could choose to participate in center-based cardiac rehabilitation, cardiac telerehabilitation, or were non-participants. Results A total of 328 patients with recent acute myocardial infarction were included. Two hundred (61%) patients participated in center-based cardiac rehabilitation, 64 (20%) in cardiac telerehabilitation, and 64 (20%) were non-participants. Non-participants were older (69 ± 11 years) than participants in center-based cardiac rehabilitation (64 ± 10 years) or cardiac telerehabilitation (61 ± 10 years) ( p < 0.001 ). There were fewer smokers in the cardiac telerehabilitation group (18%), than center-based cardiac rehabilitation (35%) or non-participation (38%). The most common reason for non-participation was a lack of interest, or a failure to acknowledge its necessity (58%). Discussion A high proportion of our myocardial infarction population participated in either cbCR or CTR after trial enrollment. CTR offers remote-access patient education, counselling, and monitoring, which in our study was more appealing to the non-smoking population. Importantly, non-participation in cardiac rehabilitation was influenced by the aging population, mainly for lack of interest, and therefore CR programs should find ways to make their programs more appealing to the aging population. These findings support further work on patient-centered counselling and on adapting rehabilitation pathways to the needs of older patients.",
+   "abstract": "Introduction: Low participation in cardiac rehabilitation after acute myocardial infarction remains problematic. Cardiac telerehabilitation has emerged as a strategy to improve the uptake by addressing clinical, interpersonal, logistical, and healthcare system-related barriers. In this study, our aim is to determine which patient-related characteristics could lead to non-participation in cardiac rehabilitation, as well as to the reasons for non-participation. Methods: In our study, the REHAB + study, cardiac telerehabilitation was implemented in routine clinical practice. In this sub analysis, observational data were collected between November 2021 and 2024 after its implementation in Zuyderland medical center, the Netherlands. After enrolment, patients could choose to participate in center-based cardiac rehabilitation, cardiac telerehabilitation, or were non-participants. Results: A total of 328 patients with recent acute myocardial infarction were included. Two hundred (61%) patients participated in center-based cardiac rehabilitation, 64 (20%) in cardiac telerehabilitation, and 64 (20%) were non-participants. Non-participants were older (69 ± 11 years) than participants in center-based cardiac rehabilitation (64 ± 10 years) or cardiac telerehabilitation (61 ± 10 years) (p < 0.001). There were fewer smokers in the cardiac telerehabilitation group (18%), than center-based cardiac rehabilitation (35%) or non-participation (38%). The most common reason for non-participation was a lack of interest, or a failure to acknowledge its necessity (58%). Discussion: A high proportion of our myocardial infarction population participated in either cbCR or CTR after trial enrollment. CTR offers remote-access patient education, counselling, and monitoring, which in our study was more appealing to the non-smoking population. Importantly, non-participation in cardiac rehabilitation was influenced by the aging population, mainly for lack of interest, and therefore CR programs should find ways to make their programs more appealing to the aging population. These findings support further work on patient-centered counselling and on adapting rehabilitation pathways to the needs of older patients.",
    "verified": true,
    "counted_members": [
     "rutger-van-mierlo",
@@ -13173,7 +13323,7 @@
     "GROW -Research Institute for Oncology and Reproduction , Maastricht University Medical Centre+ , Maastricht , NL",
     "Leiden Institute of Advanced Computer Science (LIACS) , Leiden University , NL"
    ],
-   "cited_by_count": 1,
+   "cited_by_count": 3,
    "abstract": "Metaphors play an important role in communication between cancer patients and clinicians.In this work, we present the first study on automated extraction of Dutch metaphors from cancer patient interviews and online forum data using large language models (LLMs) and human validation.We develop a human-in-the-loop extraction framework combining structured prompting, automatic verification, and expert linguistic evaluation.We evaluate multiple open-source LLMs and prompting strategies, including chain-of-thought and knowledge-guided prompting.Our approach resulted in the HealthQuote.NL dataset, containing 130 validated metaphors.We analyse common model errors, including hallucination and confusion with idioms, and show that refined prompting achieved 63.2% precision.This work provides both a novel dataset and an extraction framework to support patient-centred healthcare communication and future metaphor research.We share our prompts and resources at https://github.com/4dpicture/HealthQuote.",
    "verified": true,
    "counted_members": [
@@ -13336,6 +13486,120 @@
    "first_seen": "2026-10-21",
    "journal_impact": 1.1,
    "journal_h_index": 145
+  },
+  {
+   "id": "W7239553629",
+   "openalex_url": "https://openalex.org/W7239553629",
+   "doi": null,
+   "title": "Predicting Clinical Remission in Crohn’s Disease: A Comparative Study of Expert-Generated and Computer-Generated Bayesian Networks",
+   "publication_date": "2026-04-22",
+   "year": 2026,
+   "type": "conference-paper",
+   "journal": "CEUR Workshop Proceedings",
+   "source_id": "S4210204615",
+   "biblio": {},
+   "landing_url": "https://ceur-ws.org/Vol-4196/paper_18.pdf",
+   "is_oa": true,
+   "oa_url": "https://ceur-ws.org/Vol-4196/paper_18.pdf",
+   "license": "cc-by",
+   "pdf_url": "https://ceur-ws.org/Vol-4196/paper_18.pdf",
+   "authors": [
+    "Yomi Okegunna",
+    "Maija Utriaine",
+    "M Cloots",
+    "Jiaxu Zhang",
+    "I. Heredero Bermejo",
+    "Loriane Marina Michèle Verleye",
+    "Marjolijn Duijvestein",
+    "Zlatan Mujagic",
+    "Andre L.A.J. Dekker",
+    "Marieke J. Pierik",
+    "Rianne Fijten"
+   ],
+   "author_members": [
+    "yomi-okegunna",
+    null,
+    "manon-cloots",
+    "jiaxu-zhang",
+    null,
+    null,
+    null,
+    null,
+    "andre-dekker",
+    null,
+    "rianne-fijten"
+   ],
+   "author_profiles": {
+    "yomi-okegunna": {
+     "openalex_id": "A5115981268",
+     "orcid": null,
+     "match": "openalex",
+     "affiliations": []
+    },
+    "manon-cloots": {
+     "openalex_id": "A5115984648",
+     "orcid": "0000-0002-7224-7198",
+     "match": "openalex",
+     "affiliations": []
+    },
+    "jiaxu-zhang": {
+     "openalex_id": "A5164198705",
+     "orcid": null,
+     "match": "name",
+     "affiliations": []
+    },
+    "andre-dekker": {
+     "openalex_id": "A5013513157",
+     "orcid": "0000-0002-0422-7996",
+     "match": "openalex",
+     "affiliations": []
+    },
+    "rianne-fijten": {
+     "openalex_id": "A5081642553",
+     "orcid": "0000-0002-1964-6317",
+     "match": "openalex",
+     "affiliations": []
+    }
+   },
+   "author_positions": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+   ],
+   "author_count": 11,
+   "group_members": [
+    "andre-dekker",
+    "rianne-fijten"
+   ],
+   "member_affiliations": {
+    "andre-dekker": [],
+    "rianne-fijten": []
+   },
+   "affiliation_status": {
+    "andre-dekker": "unknown",
+    "rianne-fijten": "unknown"
+   },
+   "senior_affiliations": [],
+   "cited_by_count": 0,
+   "abstract": null,
+   "verified": false,
+   "counted_members": [
+    "andre-dekker",
+    "rianne-fijten"
+   ],
+   "counted": true,
+   "listed_elsewhere": false,
+   "first_seen": "2026-11-25",
+   "journal_impact": 1.1,
+   "journal_h_index": 26
   },
   {
    "id": "W7154321941",
@@ -13759,7 +14023,7 @@
     "Otolaryngology Research Center, Affiliated Hospital of Guangdong Medical University, Zhanjiang, Guangdong, China"
    ],
    "cited_by_count": 0,
-   "abstract": "Inner-ear genetics has expanded rapidly, yet the supporting evidence remains dispersed across a vast literature and across resources that typically emphasise loci, variants, or expression data rather than integrated biological interpretation. Here we present the Inner Ear Knowledge Base (IEKB; https://earkb.org ), an open database that unifies curated associations, cochlear interaction evidence, candidate prioritisation, explainable support relations, and network exploration for inner-ear research. IEKB was built with an automated agent-assisted curation workflow that combines schema-constrained literature extraction, continuous human monitoring, and final expert review by inner-ear genetics researchers. By systematically analysing 250,696 PubMed-indexed records retrieved across 16,563 screened genes, IEKB curates 6,051 gene–phenotype–disease associations from 2,494 genes across 43 phenotype categories and 4,102 cochlear gene–gene interactions with pathway, cell-type, and experimental context. IEKB further includes a Bayesian “dark matter” module that prioritises 243,071 candidate gene–phenotype associations for 13,229 genes across all 43 phenotypes (global AUC-ROC = 0.8603; global AUC-PR = 0.1674), together with a supervised dark-relation layer that ranks phenotype-specific known-gene support for each candidate and a multi-entity scientific network containing nearly 4,000 entities, 28,616 deterministic edges, and 83,712 literature-derived relational links. The web resource supports interactive search, multi-parameter filtering, gene-detail pages, bibliometric exploration, domain-specific enrichment against IEKB phenotype and disease gene sets, network visualisation, bulk download in CSV, JSON, SQLite, and XLSX formats, and natural-language evidence-grounded question answering through a companion conversational interface (IEKB QA). To our knowledge, IEKB is the first openly accessible inner-ear resource that integrates curated associations, cochlear interactions, probabilistic candidate prioritisation, auditable known-gene support relations for novel candidates, and a multi-entity scientific network within a single database. All data are released without registration under the CC BY 4.0 license.",
+   "abstract": "Inner-ear genetics has expanded rapidly, yet the supporting evidence remains dispersed across a vast literature and across resources that typically emphasise loci, variants, or expression data rather than integrated biological interpretation. Here we present the Inner Ear Knowledge Base (IEKB; https://earkb.org), an open database that unifies curated associations, cochlear interaction evidence, candidate prioritisation, explainable support relations, and network exploration for inner-ear research. IEKB was built with an automated agent-assisted curation workflow that combines schema-constrained literature extraction, continuous human monitoring, and final expert review by inner-ear genetics researchers. By systematically analysing 250,696 PubMed-indexed records retrieved across 16,563 screened genes, IEKB curates 6,051 gene–phenotype–disease associations from 2,494 genes across 43 phenotype categories and 4,102 cochlear gene–gene interactions with pathway, cell-type, and experimental context. IEKB further includes a Bayesian “dark matter” module that prioritises 243,071 candidate gene–phenotype associations for 13,229 genes across all 43 phenotypes (global AUC-ROC = 0.8603; global AUC-PR = 0.1674), together with a supervised dark-relation layer that ranks phenotype-specific known-gene support for each candidate and a multi-entity scientific network containing nearly 4,000 entities, 28,616 deterministic edges, and 83,712 literature-derived relational links. The web resource supports interactive search, multi-parameter filtering, gene-detail pages, bibliometric exploration, domain-specific enrichment against IEKB phenotype and disease gene sets, network visualisation, bulk download in CSV, JSON, SQLite, and XLSX formats, and natural-language evidence-grounded question answering through a companion conversational interface (IEKB QA). To our knowledge, IEKB is the first openly accessible inner-ear resource that integrates curated associations, cochlear interactions, probabilistic candidate prioritisation, auditable known-gene support relations for novel candidates, and a multi-entity scientific network within a single database. All data are released without registration under the CC BY 4.0 license.",
    "verified": true,
    "counted_members": [
     "xuanhe-hou"
@@ -14242,7 +14506,7 @@
     "Department of Radiation Oncology (Maastro), Research Institute for Oncology and Reproduction (GROW), Maastricht University Medical Centre, Maastricht, Netherlands"
    ],
    "cited_by_count": 2,
-   "abstract": "Artificial intelligence (AI) is often presented as a transformative technology for healthcare, promising to augment clinical decision-making, streamline workflows, and enhance diagnostic precision. Yet its integration into healthcare practice is shaped by the complex and often ambiguous notion of trust . While trust in AI has become a recurring theme across disciplines, there has been little systematic analysis of different conceptualizations of the term. This paper addresses this gap through an interdisciplinary scoping review that examines how trust, trustworthiness, distrust, and mistrust are articulated in literature on AI in healthcare. Drawing on 82 publications (2015–2025) retrieved from six databases (Web of Science, Scopus, PubMed, PhilPapers, SocINDEX, and ACM Digital Library), it maps how trust is defined, measured, or problematized, and identifies the conceptual, epistemological, and disciplinary boundaries that shape these approaches. The analysis puts forward five different conceptualizations: trust as a set of designable principles , trust as an attitude or belief , trust as a binary between cognition/affect or human/technology, trust as a structural mechanism within uncertainty, and trust as a relational process embedded in socio-technical systems. These framings illuminate how trust is treated as an attribute to be engineered, a behavior to be calibrated, or a relation to be cultivated—often removed from clinical practice. Yet, across literature, trust disruptions which manifest as distrust, mistrust, overtrust, and undertrust are undertheorized and are typically framed as obstacles to overcome rather than phenomena warranting analysis in their own right. By introducing these diverging conceptualizations, the paper argues that trust in healthcare AI is less a stable condition than a dynamic negotiation that reveals power relations, uncertainties, and institutional dependencies of AI. Recognizing distrust and mistrust as analytically productive allows for a more reflexive understanding of how trust is enacted, distributed, and contested within healthcare. This review contributes to an emerging body of work that reframes trust not as a prerequisite for technological adoption but as a contested and dynamic concept.",
+   "abstract": "Artificial intelligence (AI) is often presented as a transformative technology for healthcare, promising to augment clinical decision-making, streamline workflows, and enhance diagnostic precision. Yet its integration into healthcare practice is shaped by the complex and often ambiguous notion of trust. While trust in AI has become a recurring theme across disciplines, there has been little systematic analysis of different conceptualizations of the term. This paper addresses this gap through an interdisciplinary scoping review that examines how trust, trustworthiness, distrust, and mistrust are articulated in literature on AI in healthcare. Drawing on 82 publications (2015-2025) retrieved from six databases (Web of Science, Scopus, PubMed, PhilPapers, SocINDEX, and ACM Digital Library), it maps how trust is defined, measured, or problematized, and identifies the conceptual, epistemological, and disciplinary boundaries that shape these approaches. The analysis puts forward five different conceptualizations: trust as a set of designable principles, trust as an attitude or belief, trust as a binary between cognition/affect or human/technology, trust as a structural mechanism within uncertainty, and trust as a relational process embedded in socio-technical systems. These framings illuminate how trust is treated as an attribute to be engineered, a behavior to be calibrated, or a relation to be cultivated-often removed from clinical practice. Yet, across literature, trust disruptions which manifest as distrust, mistrust, overtrust, and undertrust are undertheorized and are typically framed as obstacles to overcome rather than phenomena warranting analysis in their own right. By introducing these diverging conceptualizations, the paper argues that trust in healthcare AI is less a stable condition than a dynamic negotiation that reveals power relations, uncertainties, and institutional dependencies of AI. Recognizing distrust and mistrust as analytically productive allows for a more reflexive understanding of how trust is enacted, distributed, and contested within healthcare. This review contributes to an emerging body of work that reframes trust not as a prerequisite for technological adoption but as a contested and dynamic concept. Supplementary Information: The online version contains supplementary material available at 10.1007/s00146-026-02997-9.",
    "verified": true,
    "counted_members": [
     "hannah-piehl",
@@ -16461,7 +16725,7 @@
     "Department of Radiation Oncology, Maastricht University Medical Centre+, Maastro Clinic, Dr. Tanslaan 12, Maastricht 6229 ET, Maastricht, 6202 AZ, NETHERLANDS"
    ],
    "cited_by_count": 3,
-   "abstract": "Objective. Artificial intelligence (AI) can enable automation, improve treatment accuracy, allow for a more efficient workflow, and improve the cost-effectiveness of radiotherapy (RT). To implement AI in RT, clinicians have expressed a desire to understand the AI outputs. Explainable AI (XAI) methods have been put forward as a solution, but the multidisciplinary nature of RT complicates the application of trustworthy and understandable XAI methods. The objective of this review is to analyze XAI in the RT landscape and understand how XAI can best support the diverse user groups in RT by exploring challenges and opportunities with a critical lens. Approach . We performed a review of XAI in RT, evaluating how explanations are built, validated, and embedded across the RT workflow, with attention to XAI purposes, evaluation and validation, interpretability trade-offs, and RT’s multidisciplinary context. Main results . XAI in RT serves five purposes: (1) knowledge discovery, (2) model verification, (3) model improvement, (4) clinical verification, and (5) clinical justification/actionability. Many studies favor interpretability but neglect fidelity and seldom include user-specific evaluation. Key challenges include stakeholder diversity, evaluation of XAI, cognitive bias, and causality; we also outline opportunities. Significance . By linking XAI purposes to RT tasks and highlighting challenges and opportunities, we provide actionable recommendations and a user-centric framework to guide the development, validation, and deployment of XAI in RT.",
+   "abstract": "Objective.Artificial intelligence (AI) can enable automation, improve treatment accuracy, allow for a more efficient workflow, and improve the cost-effectiveness of radiotherapy (RT). To implement AI in RT, clinicians have expressed a desire to understand the AI outputs. Explainable AI (XAI) methods have been put forward as a solution, but the multidisciplinary nature of RT complicates the application of trustworthy and understandable XAI methods. The objective of this review is to analyze XAI in the RT landscape and understand how XAI can best support the diverse user groups in RT by exploring challenges and opportunities with a critical lens.Approach. We performed a review of XAI in RT, evaluating how explanations are built, validated, and embedded across the RT workflow, with attention to XAI purposes, evaluation and validation, interpretability trade-offs, and RT's multidisciplinary context.Main results. XAI in RT serves five purposes: (1) knowledge discovery, (2) model verification, (3) model improvement, (4) clinical verification, and (5) clinical justification/actionability. Many studies favor interpretability but neglect fidelity and seldom include user-specific evaluation. Key challenges include stakeholder diversity, evaluation of XAI, cognitive bias, and causality; we also outline opportunities.Significance. By linking XAI purposes to RT tasks and highlighting challenges and opportunities, we provide actionable recommendations and a user-centric framework to guide the development, validation, and deployment of XAI in RT.",
    "verified": false,
    "counted_members": [],
    "counted": false,
@@ -17854,7 +18118,7 @@
     "Department of Surgery, NUTRIM Institute of Nutrition and Translational Research in Metabolism, Maastricht University , Maastricht, 6200 MD, The Netherlands"
    ],
    "cited_by_count": 0,
-   "abstract": "Objectives Deep learning neural network (DLNN)-based tools can automate body composition analysis for cancer cachexia research. We aimed to evaluate a DLNN tool trained on a European population of Chinese cancer patients. Methods Computed tomography (CT) images at the 3rd lumbar vertebral (L3) level of Chinese gastric cancer patients were retrospectively collected. An externally validated DLNN tool (Mosamatic) was used to segment skeletal muscle, visceral adipose tissue (VAT), and subcutaneous adipose tissue (SAT). Manual segmentation was performed using SliceOmatic software (TomoVision, version 5.0). Geometric similarity between automated and manual segmentation, and the reliability was assessed. Results The cohort comprised 203 patients with a median body mass index (BMI) of 22.2 kg/m2, and 604 CT images at L3 were collected. The median Dice Similarity Coefficient (IQR) of skeletal muscle, VAT and SAT were 0.973 (0.961-0.980), 0.980 (0.964-0.989), and 0.967 (0.945-0.977), respectively. The median Lin’s Concordance Correlation Coefficient for skeletal muscle area (0.983), VAT area (1.000), SAT area (0.998), skeletal muscle radiation attenuation (0.995), VAT radiation attenuation (0.994), and SAT radiation attenuation (0.997) demonstrated excellent reliability. Low BMI (<18.5 kg/m2) and ascites impaired the agreement between the 2 methods. The automated method showed high diagnostic concordance with manual segmentation for sarcopenia (κ = 0.843, P < .001) and myosteatosis (κ = 0.946, P < .001). Conclusions The Mosamatic tool displays excellent generalizability to analyse body compositions in Chinese gastric cancer patients and can facilitate cachexia research. Advances in knowledge The Mosamatic tool displayed excellent generalizability without recalibration to analyse body composition on the 3rd lumbar vertebral CT images in Chinese gastric cancer patients.",
+   "abstract": "Objectives: Deep learning neural network (DLNN)-based tools can automate body composition analysis for cancer cachexia research. We aimed to evaluate a DLNN tool trained on a European population of Chinese cancer patients. Methods: Computed tomography (CT) images at the 3rd lumbar vertebral (L3) level of Chinese gastric cancer patients were retrospectively collected. An externally validated DLNN tool (Mosamatic) was used to segment skeletal muscle, visceral adipose tissue (VAT), and subcutaneous adipose tissue (SAT). Manual segmentation was performed using SliceOmatic software (TomoVision, version 5.0). Geometric similarity between automated and manual segmentation, and the reliability was assessed. Results: The cohort comprised 203 patients with a median body mass index (BMI) of 22.2 kg/m2, and 604 CT images at L3 were collected. The median Dice Similarity Coefficient (IQR) of skeletal muscle, VAT and SAT were 0.973 (0.961-0.980), 0.980 (0.964-0.989), and 0.967 (0.945-0.977), respectively. The median Lin's Concordance Correlation Coefficient for skeletal muscle area (0.983), VAT area (1.000), SAT area (0.998), skeletal muscle radiation attenuation (0.995), VAT radiation attenuation (0.994), and SAT radiation attenuation (0.997) demonstrated excellent reliability. Low BMI (<18.5 kg/m2) and ascites impaired the agreement between the 2 methods. The automated method showed high diagnostic concordance with manual segmentation for sarcopenia (κ = 0.843, P < .001) and myosteatosis (κ = 0.946, P < .001). Conclusions: The Mosamatic tool displays excellent generalizability to analyse body compositions in Chinese gastric cancer patients and can facilitate cachexia research. Advances in knowledge: The Mosamatic tool displayed excellent generalizability without recalibration to analyse body composition on the 3rd lumbar vertebral CT images in Chinese gastric cancer patients.",
    "verified": true,
    "counted_members": [
     "leroy-volmer",
@@ -18170,7 +18434,7 @@
     "Maastricht University;"
    ],
    "cited_by_count": 2,
-   "abstract": "PURPOSE: Rare diseases are difficult to fully capture, and regularly call for large, geographically dispersed initiatives. Such initiatives are often met with data harmonization challenges. These challenges render data incompatible and impede successful realization. The STRONG AYA project is such an initiative, specifically focusing on adolescent and young adult (AYAs) with cancer. STRONG AYA is setting up a federated data infrastructure containing data of varying format. Here, we elaborate on how we used health care-agnostic semantic web technologies to overcome such challenges. METHODS: is a tool that converts structured data into resource description framework (RDF) triples and enables semantic interoperability. As a demonstration, we mapped data that are to be included in the STRONG AYA infrastructure. RESULTS: The knowledge graphs provided a comprehensive overview of the large number of STRONG AYA concepts. The semantic terminology mapping and annotation helper allowed us to query data with incomprehensible terminologies, without changing them. Both the knowledge graphs and semantic map were made available on a Hugo webpage for increased transparency and understanding. CONCLUSION: The use of semantic web technologies, such as RDF and knowledge graphs, is a viable solution to overcome challenges regarding data interoperability and reusability for a federated AYA cancer data infrastructure without being bound to rigid standardized schemas. The linkage of semantically meaningful concepts to otherwise incomprehensible data elements demonstrates how by using these domain-agnostic technologies we made nonstandardized health care data interoperable.",
+   "abstract": "PURPOSE: Rare diseases are difficult to fully capture, and regularly call for large, geographically dispersed initiatives. Such initiatives are often met with data harmonization challenges. These challenges render data incompatible and impede successful realization. The STRONG AYA project is such an initiative, specifically focusing on adolescent and young adult (AYAs) with cancer. STRONG AYA is setting up a federated data infrastructure containing data of varying format. Here, we elaborate on how we used health care-agnostic semantic web technologies to overcome such challenges. METHODS: We structured the STRONG AYA case-mix and core outcome measures concepts and their properties as knowledge graphs. Having identified the corresponding standard terminologies, we developed a semantic map on the basis of the knowledge graphs and the here introduced annotation helper plugin for Flyover. Flyover is a tool that converts structured data into resource description framework (RDF) triples and enables semantic interoperability. As a demonstration, we mapped data that are to be included in the STRONG AYA infrastructure. RESULTS: The knowledge graphs provided a comprehensive overview of the large number of STRONG AYA concepts. The semantic terminology mapping and annotation helper allowed us to query data with incomprehensible terminologies, without changing them. Both the knowledge graphs and semantic map were made available on a Hugo webpage for increased transparency and understanding. CONCLUSION: The use of semantic web technologies, such as RDF and knowledge graphs, is a viable solution to overcome challenges regarding data interoperability and reusability for a federated AYA cancer data infrastructure without being bound to rigid standardized schemas. The linkage of semantically meaningful concepts to otherwise incomprehensible data elements demonstrates how by using these domain-agnostic technologies we made nonstandardized health care data interoperable.",
    "verified": false,
    "counted_members": [
     "joshi-hogenboom",
@@ -18967,7 +19231,7 @@
     "Department of Radiation Oncology (Maastro), GROW Institute for Oncology and Reproduction, Maastricht University Medical Centre+, 6229 ER Maastricht, The Netherlands"
    ],
    "cited_by_count": 1,
-   "abstract": "Introduction: Postpartum family planning (PPFP) is a critical strategy for improving maternal and child health by preventing unintended pregnancies and optimizing birth spacing. However, PPFP uptake remains suboptimal in Ethiopia, where sociocultural barriers, limited health information, and inadequate counseling impede progress. Mobile health (mHealth) interventions have shown promise in overcoming these challenges by delivering targeted health information directly to individuals. This study aimed to evaluate the effect of an mHealth intervention on uptake and the intention to use PPFP among postpartum women in South Ethiopia. Methods: We conducted a cluster-randomized controlled trial in randomly selected health facilities in South Ethiopia. Pregnant women from primary hospitals and health centers were selected from registers and family folders. Data were collected using face-to-face and mobile interviews and analyzed using a generalized linear mixed model (GLMM) to account for the clustering. Results: The mHealth intervention significantly increased PPFP uptake (OR = 2.89, 95% CI: 1.55–5.37) and the intention to use PPFP (AOR = 2.05, 95% CI: 1.24–3.46) compared to standard care. The predicted probability of using PPFP was 85% in the intervention group. Women who discussed family planning with their partners (AOR = 2.10, 95% CI: 1.30–3.35) had a higher probability of using PPFP, and those exposed to media (AOR = 1.58, 95% CI: 1.07–2.32) had an increased likelihood of planning to use PPFP. Conversely, limited autonomy in decision-making and delays in postnatal care attendance were associated with reduced uptake and intention to use PPFP. Conclusions: The mHealth intervention improved uptake of PPFP and increased intention to use PPFP among postpartum women in South Ethiopia. PPFP uptake was higher in the intervention group (85%) than in the control group (68%). Partner involvement, decision-making autonomy, and media exposure emerged as significant facilitators of PPFP adoption. Scaling up mHealth interventions could address unmet family planning needs, but integration with broader strategies that address sociocultural barriers and enhanced counseling is essential. Interventions must be contextually tailored and grounded in behavioral theory (HBM, TPB, and TAM) to maximize effectiveness. Future research should examine the long-term sustainability and adaptability of mHealth approaches across diverse contexts.",
+   "abstract": "Introduction: Postpartum family planning (PPFP) is a critical strategy for improving maternal and child health by preventing unintended pregnancies and optimizing birth spacing. However, PPFP uptake remains suboptimal in Ethiopia, where sociocultural barriers, limited health information, and inadequate counseling impede progress. Mobile health (mHealth) interventions have shown promise in overcoming these challenges by delivering targeted health information directly to individuals. This study aimed to evaluate the effect of an mHealth intervention on uptake and the intention to use PPFP among postpartum women in South Ethiopia. Methods: We conducted a cluster-randomized controlled trial in randomly selected health facilities in South Ethiopia. Pregnant women from primary hospitals and health centers were selected from registers and family folders. Data were collected using face-to-face and mobile interviews and analyzed using a generalized linear mixed model (GLMM) to account for the clustering. Results: The mHealth intervention significantly increased PPFP uptake (OR = 2.89, 95% CI: 1.55-5.37) and the intention to use PPFP (AOR = 2.05, 95% CI: 1.24-3.46) compared to standard care. The predicted probability of using PPFP was 85% in the intervention group. Women who discussed family planning with their partners (AOR = 2.10, 95% CI: 1.30-3.35) had a higher probability of using PPFP, and those exposed to media (AOR = 1.58, 95% CI: 1.07-2.32) had an increased likelihood of planning to use PPFP. Conversely, limited autonomy in decision-making and delays in postnatal care attendance were associated with reduced uptake and intention to use PPFP. Conclusions: The mHealth intervention improved uptake of PPFP and increased intention to use PPFP among postpartum women in South Ethiopia. PPFP uptake was higher in the intervention group (85%) than in the control group (68%). Partner involvement, decision-making autonomy, and media exposure emerged as significant facilitators of PPFP adoption. Scaling up mHealth interventions could address unmet family planning needs, but integration with broader strategies that address sociocultural barriers and enhanced counseling is essential. Interventions must be contextually tailored and grounded in behavioral theory (HBM, TPB, and TAM) to maximize effectiveness. Future research should examine the long-term sustainability and adaptability of mHealth approaches across diverse contexts.",
    "verified": true,
    "counted_members": [
     "andre-dekker",
@@ -20054,7 +20318,7 @@
     "Department of Radiation Oncology (Maastro), GROW Institute for Oncology and Reproduction, Maastricht University Medical Centre+, 6229 ER Maastricht, The Netherlands"
    ],
    "cited_by_count": 9,
-   "abstract": "Introduction: Exclusive breastfeeding (EBF) is vital for optimal infant health, reducing the risk of infections and enhancing cognitive development. Despite WHO’s recommendation of EBF for the first six months of life, global adherence remains suboptimal, particularly in low-resource settings. This study evaluates the impact of mobile health (mHealth) interventions on exclusive breastfeeding (EBF) among mothers in South Ethiopia. Methods: A cluster randomized controlled trial was conducted in the Gamo Gofa zones, South Ethiopia, involving 20 health facilities (10 intervention and 10 control). The study included 680 pregnant mothers recruited using simple random sampling from antenatal care (ANC) registers and family folders. Mothers in the intervention group received mHealth support, including breastfeeding information and reminders, while the control group received standard care. Participants were followed from the second trimester to six months postpartum. Multilevel survival analysis was applied to assess EBF duration, and multilevel logistic regression was used to evaluate complementary feeding within the first month. Results: The intervention group had a significantly higher probability of maintaining EBF at six months than the control group (AHR = 0.40, 95% CI: 0.26–0.62, p < 0.001). The secondary outcome also shows higher odds of early breastfeeding initiation in the intervention group (AOR = 4.71, 95% CI: 3.10–7.16, p < 0.001). ANC frequency was associated with a lower hazard of stopping EBF (AHR = 0.87, 95% CI: 0.79–0.97, p <0.05). The presence of diarrhea was associated with a high hazard of EBF (AHR = 1.47, 95% CI: 1.07–2.02, p < 0.05). College and above partner education was associated with high hazards of EBF (AHR = 2.41, 95% CI: 1.01–5.78, p < 0.05). The random effects variance (Var = 0.10, 95% CI: 0.01–0.07) indicated significantly lowered cluster-level variability. Conclusion and Recommendations: The mHealth intervention significantly improved EBF adherence and early breastfeeding initiation among mothers in South Ethiopia. Early breastfeeding, ANC frequency, and family size were protective factors, while high partner education and diarrhea disease increased the risk of early cessation of EBF. These findings highlight the potential of mHealth in addressing key barriers to EBF. Scaling up similar interventions, focusing on high-risk groups, could enhance adherence to WHO’s breastfeeding recommendations and improve maternal and child health outcomes in resource-limited settings.",
+   "abstract": "INTRODUCTION: Exclusive breastfeeding (EBF) is vital for optimal infant health, reducing the risk of infections and enhancing cognitive development. Despite WHO's recommendation of EBF for the first six months of life, global adherence remains suboptimal, particularly in low-resource settings. This study evaluates the impact of mobile health (mHealth) interventions on exclusive breastfeeding (EBF) among mothers in South Ethiopia. METHODS: A cluster randomized controlled trial was conducted in the Gamo Gofa zones, South Ethiopia, involving 20 health facilities (10 intervention and 10 control). The study included 680 pregnant mothers recruited using simple random sampling from antenatal care (ANC) registers and family folders. Mothers in the intervention group received mHealth support, including breastfeeding information and reminders, while the control group received standard care. Participants were followed from the second trimester to six months postpartum. Multilevel survival analysis was applied to assess EBF duration, and multilevel logistic regression was used to evaluate complementary feeding within the first month. RESULTS: The intervention group had a significantly higher probability of maintaining EBF at six months than the control group (AHR = 0.40, 95% CI: 0.26-0.62, p < 0.001). The secondary outcome also shows higher odds of early breastfeeding initiation in the intervention group (AOR = 4.71, 95% CI: 3.10-7.16, p < 0.001). ANC frequency was associated with a lower hazard of stopping EBF (AHR = 0.87, 95% CI: 0.79-0.97, p <0.05). The presence of diarrhea was associated with a high hazard of EBF (AHR = 1.47, 95% CI: 1.07-2.02, p < 0.05). College and above partner education was associated with high hazards of EBF (AHR = 2.41, 95% CI: 1.01-5.78, p < 0.05). The random effects variance (Var = 0.10, 95% CI: 0.01-0.07) indicated significantly lowered cluster-level variability. CONCLUSION AND RECOMMENDATIONS: The mHealth intervention significantly improved EBF adherence and early breastfeeding initiation among mothers in South Ethiopia. Early breastfeeding, ANC frequency, and family size were protective factors, while high partner education and diarrhea disease increased the risk of early cessation of EBF. These findings highlight the potential of mHealth in addressing key barriers to EBF. Scaling up similar interventions, focusing on high-risk groups, could enhance adherence to WHO's breastfeeding recommendations and improve maternal and child health outcomes in resource-limited settings.",
    "verified": true,
    "counted_members": [
     "girma-gilano",
@@ -20733,7 +20997,7 @@
     "Medical Research Institute, Guangdong Provincial People's Hospital (Guangdong Academy of Medical Sciences), Southern Medical University, Guangzhou, 510080, China"
    ],
    "cited_by_count": 28,
-   "abstract": "Background Neoadjuvant chemoimmunotherapy (NACI) has significantly improved survival in patients with resectable non-small cell lung cancer (NSCLC). However, with the currently available methods (PD-L1, RECIST), it is difficult to predict who will benefit from treatment before therapy and who will achieve pathological complete response (pCR) before surgery. Non-invasive methods to predict treatment response to NACI could be used to further personalize treatment. Methods In the multicenter retrospective study, we enrolled 534 patients with NSCLC who received NACI followed by surgical resection at three Chinese hospitals between January 2019 and December 2024 (193 patients from Center A, 193 patients from Center B, and 148 patients from Center C). We developed and validated Lung Cancer Neo-adjuvant Immuno-Chemotherapy Response Predictor (LC-NICER), a CT-based Artificial Intelligence (AI) system that integrates longitudinal radiomics (tumor texture), deep learning (microenvironmental context), and habitat imaging (tumor and peritumoral subregional dynamics) to predict pCR by analyzing tumor spatiotemporal heterogeneity. The LC-NICER system consists of two complementary predictive models: LC-NICER α , a pretreatment model that identifies patients likely to benefit from NACI to guide personalized therapy, and LC-NICER δ , a preoperative model that evaluates tumor regression and resection feasibility to inform surgical planning. This study is registered at ClinicalTrials.gov (NCT06285058). Findings Among the 386 patients from Center A and B, 308 were randomly assigned to the training dataset and 78 to the internal validation dataset, following an 8:2 split ratio. The 148 patients from Center C formed an independent and external test dataset. LC-NICER prediction system demonstrated excellent performance with the area under the curves (AUCs) of 0.950 (0.927–0.970) in the training cohort, 0.889 (0.796–0.961) in the internal validation cohort, and 0.870 (0.803–0.927) in the external test cohort. The LC-NICER α achieved an accuracy of 0.722 (0.668–0.772) before therapy, while LC-NICER δ showed significantly improved accuracy of 0.831 (0.800–0.861) before surgery. Notably, LC-NICER outperformed current clinical standards, with absolute accuracy improvements of 10% over PD-L1 testing (0.622 [0.564–0.683], p = 0.002) and 18% over RECIST 1.1 criteria (0.651 [0.610–0.693], p = 0.008). For easy clinical utility and research reproducibility, we developed and openly published a software. Interpretation As a non-invasive AI system for predicting NACI response in NSCLC, LC-NICER may offer future clinical personalized therapeutic strategies, accelerate adaptive clinical trials, and optimize treatment decisions, potentially reducing reliance on invasive procedures. Funding This work was supported by the Noncommunicable Chronic Diseases-National Science and Technology Major Project (2024ZD0531100, 2024ZD0531101), the National Natural Science Foundation of China (82472062, 62102103, 82473298, 82202148, 82502479), the National Key Research and Development Program of China (2023YFC2508603), the Natural Science Foundation of Guangdong Province of China (2024A1515011672), Regional Innovation and Development Joint Fund of National Natural Science Foundation of China (U22A20345), Guangdong Provincial Key Laboratory of Artificial Intelligence in Medical Image Analysis and Application (2022B1212010011).",
+   "abstract": "Background: Neoadjuvant chemoimmunotherapy (NACI) has significantly improved survival in patients with resectable non-small cell lung cancer (NSCLC). However, with the currently available methods (PD-L1, RECIST), it is difficult to predict who will benefit from treatment before therapy and who will achieve pathological complete response (pCR) before surgery. Non-invasive methods to predict treatment response to NACI could be used to further personalize treatment. Methods: In the multicenter retrospective study, we enrolled 534 patients with NSCLC who received NACI followed by surgical resection at three Chinese hospitals between January 2019 and December 2024 (193 patients from Center A, 193 patients from Center B, and 148 patients from Center C). We developed and validated Lung Cancer Neo-adjuvant Immuno-Chemotherapy Response Predictor (LC-NICER), a CT-based Artificial Intelligence (AI) system that integrates longitudinal radiomics (tumor texture), deep learning (microenvironmental context), and habitat imaging (tumor and peritumoral subregional dynamics) to predict pCR by analyzing tumor spatiotemporal heterogeneity. The LC-NICER system consists of two complementary predictive models: LC-NICERα, a pretreatment model that identifies patients likely to benefit from NACI to guide personalized therapy, and LC-NICERδ, a preoperative model that evaluates tumor regression and resection feasibility to inform surgical planning. This study is registered at ClinicalTrials.gov (NCT06285058). Findings: Among the 386 patients from Center A and B, 308 were randomly assigned to the training dataset and 78 to the internal validation dataset, following an 8:2 split ratio. The 148 patients from Center C formed an independent and external test dataset. LC-NICER prediction system demonstrated excellent performance with the area under the curves (AUCs) of 0.950 (0.927-0.970) in the training cohort, 0.889 (0.796-0.961) in the internal validation cohort, and 0.870 (0.803-0.927) in the external test cohort. The LC-NICERα achieved an accuracy of 0.722 (0.668-0.772) before therapy, while LC-NICERδ showed significantly improved accuracy of 0.831 (0.800-0.861) before surgery. Notably, LC-NICER outperformed current clinical standards, with absolute accuracy improvements of 10% over PD-L1 testing (0.622 [0.564-0.683], p = 0.002) and 18% over RECIST 1.1 criteria (0.651 [0.610-0.693], p = 0.008). For easy clinical utility and research reproducibility, we developed and openly published a software. Interpretation: As a non-invasive AI system for predicting NACI response in NSCLC, LC-NICER may offer future clinical personalized therapeutic strategies, accelerate adaptive clinical trials, and optimize treatment decisions, potentially reducing reliance on invasive procedures. Funding: This work was supported by the Noncommunicable Chronic Diseases-National Science and Technology Major Project (2024ZD0531100, 2024ZD0531101), the National Natural Science Foundation of China (82472062, 62102103, 82473298, 82202148, 82502479), the National Key Research and Development Program of China (2023YFC2508603), the Natural Science Foundation of Guangdong Province of China (2024A1515011672), Regional Innovation and Development Joint Fund of National Natural Science Foundation of China (U22A20345), Guangdong Provincial Key Laboratory of Artificial Intelligence in Medical Image Analysis and Application (2022B1212010011).",
    "verified": true,
    "counted_members": [
     "leonard-wee",
@@ -20946,7 +21210,7 @@
     "Department of Traumatology Maastricht University Medical Centre+  Maastricht The Netherlands"
    ],
    "cited_by_count": 2,
-   "abstract": "BACKGROUND: Polytrauma patients with an Injury Severity Score (ISS) ≥ 16 have a high mortality rate. Early identification of patients at risk of mortality is key. Different risk stratification models are available; however, body composition on third lumbar computed tomography (L3 CT) is not routinely used. The aim of this study is to determine the effect of CT body composition on 1-year mortality in adult polytrauma patients. METHODS: Body composition analysis (L3 CT) was performed on 593 adult polytrauma patients. The associations with 1-year mortality were assessed using uni- and multivariable logistic regression analysis. As a sensitivity analysis, 1-year mortality was analysed using Kaplan-Meier survival curves, log-rank tests and Cox regression. RESULTS: (±4.07). Comorbidities were present in 327 (55.4%) patients, with an average Charlson Comorbidity Index (CCI) of 2.07 points (±2.1). The mean ISS score was 27.59 (±11.06); 323 (54.5%) patients had an ISS ≥ 25 points. Age, CCI, ISS, skeletal muscle index and skeletal muscle radiation attenuation (OR 1.053, 5.713, 3.711, 0. 563 and 0.533, respectively; p < 0.001), subcutaneous adipose tissue radiation attenuation (SATRA OR 1.253, p = 0.028) and visceral adipose tissue index (OR 1.242, p = 0.038) were significantly associated with 1-year mortality. In multivariable logistic regression, age, ISS and SATRA remained statistically significantly associated with 1-year mortality (OR 1.062, p < 0.001; OR 4.761, p < 0.001; OR 1.396, p = 0.009). CONCLUSIONS: This study demonstrated that subcutaneous adipose tissue radiation attenuation on emergency trauma CT scans is significantly associated with 1-year mortality in adult polytrauma patients. Additionally, we found a significant effect of age and ISS on 1-year mortality. Incorporating body composition analysis could lead to a better selection of patients at risk for 1-year mortality and aid in treatment decision-making.",
+   "abstract": "BACKGROUND: Polytrauma patients with an Injury Severity Score (ISS) ≥ 16 have a high mortality rate. Early identification of patients at risk of mortality is key. Different risk stratification models are available; however, body composition on third lumbar computed tomography (L3 CT) is not routinely used. The aim of this study is to determine the effect of CT body composition on 1-year mortality in adult polytrauma patients. METHODS: Body composition analysis (L3 CT) was performed on 593 adult polytrauma patients. The associations with 1-year mortality were assessed using uni- and multivariable logistic regression analysis. As a sensitivity analysis, 1-year mortality was analysed using Kaplan-Meier survival curves, log-rank tests and Cox regression. RESULTS: The study population was predominantly male (69.5%), with a mean age of 55 (±20) years and an average BMI of 25.34 kg/m2 (±4.07). Comorbidities were present in 327 (55.4%) patients, with an average Charlson Comorbidity Index (CCI) of 2.07 points (±2.1). The mean ISS score was 27.59 (±11.06); 323 (54.5%) patients had an ISS ≥ 25 points. Age, CCI, ISS, skeletal muscle index and skeletal muscle radiation attenuation (OR 1.053, 5.713, 3.711, 0. 563 and 0.533, respectively; p < 0.001), subcutaneous adipose tissue radiation attenuation (SATRA OR 1.253, p = 0.028) and visceral adipose tissue index (OR 1.242, p = 0.038) were significantly associated with 1-year mortality. In multivariable logistic regression, age, ISS and SATRA remained statistically significantly associated with 1-year mortality (OR 1.062, p < 0.001; OR 4.761, p < 0.001; OR 1.396, p = 0.009). CONCLUSIONS: This study demonstrated that subcutaneous adipose tissue radiation attenuation on emergency trauma CT scans is significantly associated with 1-year mortality in adult polytrauma patients. Additionally, we found a significant effect of age and ISS on 1-year mortality. Incorporating body composition analysis could lead to a better selection of patients at risk for 1-year mortality and aid in treatment decision-making.",
    "verified": true,
    "counted_members": [
     "leonard-wee"
@@ -22474,7 +22738,7 @@
     "Data Science Institute, Hasselt University, Hasselt, Belgium",
     "Department of Radiation Oncology (MAASTRO), GROW School for Oncology and Reproduction, Maastricht University Medical Centre, Maastricht, The Netherlands"
    ],
-   "cited_by_count": 0,
+   "cited_by_count": 1,
    "abstract": "Federated learning allows us to run machine learning algorithms on decentralized data when data sharing is not permitted due to privacy concerns. Various models have been adapted to use in a federated setting. Among these models is Verticox, a federated implementation of Cox proportional hazards models, which can be used in a vertically partitioned setting. However, Verticox assumes that the survival outcome is known locally by all parties involved in the federated setting. Realistically speaking, this is not the case in most settings and thus would require the outcome to be shared. However, sharing the survival outcome would in many cases be a breach of privacy which federated learning aims to prevent. Our extension to Verticox, dubbed Verticox+, solves this problem by incorporating a privacy preserving 2-party scalar product protocol at different stages. This allows it to be used in scenarios where the survival outcome is not known at each party. In this article, we demonstrate that our algorithm achieves equivalent performance to the original Verticox implementation. We discuss the changes to the computational complexity and communication cost caused by our additions.",
    "verified": true,
    "counted_members": [
@@ -22716,7 +22980,7 @@
     "Homi Bhabha National Institute, BARC Training School Complex, Mumbai, Maharashtra, India"
    ],
    "cited_by_count": 3,
-   "abstract": "Background: The characterization of solitary pulmonary nodules (SPNs) as malignant or benign remains a diagnostic challenge using conventional imaging parameters. The literature suggests using combined Positron Emission Tomography (PET) and Computed Tomography (CT) to characterise a SPN. Radiomics and machine learning are other promising technologies which can be utilised to characterise the SPN. Purpose: This study explores the potential of PET radiomics signatures and machine learning algorithms to characterise the SPN. Methods: This retrospective study aimed to characterize solitary pulmonary nodules (SPNs) using PET radiomics. A total of 163 patients who underwent PET/CT imaging were included in this study. A total of 1,098 features were extracted from PET images using PyRadiomics. To optimize model performance two strategies i.e., (a) feature selection and (b) feature reduction techniques were employed, including hierarchical clustering, RFE in feature selection, and PCA in feature reduction. To address outcome class imbalance, the dataset was statistically resampled (SMOTE). A random forest models was developed using original training set (RF-Model-O & RF-PCA-Model-O) and balanced training dataset (RF-Model-B & RF-PCA-Model-B) and validated on the test datasets. Additionally, 5-fold cross-validation and bootstrap validation was also performed. The model's performance was assessed using various metrics, such as accuracy, AUC, precision, recall, and F1-score. Results: five principal components were deemed optimal using PCA. The model accuracy of RF-Model-O and RF-Model-B in the train-test validation, 5-fold cross-validation and bootstrap validation were found to be 0.8, 0.80 ± 0.07, 0.84 ± 1.11 and 0.8, 0.83 ± 0.10, 0.80 ± 0.07 in Strategy (a). Similarly, the model accuracy of RF-PCA-Model-O and RF-PCA-Model-B in the train-test validation, 5-fold cross-validation and bootstrap validation were found to be 0.84, 0.80 ± 0.07, 0.84 ± 07 and 0.74, 0.80 ± 0.08, 0.75 ± 0.08 in Strategy (b). Conclusion: The PET radiomics demonstrated excellent performance in characterizing SPNs as benign or malignant.",
+   "abstract": "Background: The characterization of solitary pulmonary nodules (SPNs) as malignant or benign remains a diagnostic challenge using conventional imaging parameters. The literature suggests using combined Positron Emission Tomography (PET) and Computed Tomography (CT) to characterise a SPN. Radiomics and machine learning are other promising technologies which can be utilised to characterise the SPN. Purpose: This study explores the potential of PET radiomics signatures and machine learning algorithms to characterise the SPN. Methods: This retrospective study aimed to characterize solitary pulmonary nodules (SPNs) using PET radiomics. A total of 163 patients who underwent PET/CT imaging were included in this study. A total of 1,098 features were extracted from PET images using PyRadiomics. To optimize model performance two strategies i.e., (a) feature selection and (b) feature reduction techniques were employed, including hierarchical clustering, RFE in feature selection, and PCA in feature reduction. To address outcome class imbalance, the dataset was statistically resampled (SMOTE). A random forest models was developed using original training set (RF-Model-O & RF-PCA-Model-O) and balanced training dataset (RF-Model-B & RF-PCA-Model-B) and validated on the test datasets. Additionally, 5-fold cross-validation and bootstrap validation was also performed. The model's performance was assessed using various metrics, such as accuracy, AUC, precision, recall, and F1-score. Results: Of the 163 patients (aged 36-76 years, mean age 58 ± 7), 117 had malignant disease and 46 had granulomatous or benign conditions. In Strategy (a), five radiomic features were identified as optimal using hierarchical clustering and RFE. In Strategy (b), five principal components were deemed optimal using PCA. The model accuracy of RF-Model-O and RF-Model-B in the train-test validation, 5-fold cross-validation and bootstrap validation were found to be 0.8, 0.80 ± 0.07, 0.84 ± 1.11 and 0.8, 0.83 ± 0.10, 0.80 ± 0.07 in Strategy (a). Similarly, the model accuracy of RF-PCA-Model-O and RF-PCA-Model-B in the train-test validation, 5-fold cross-validation and bootstrap validation were found to be 0.84, 0.80 ± 0.07, 0.84 ± 07 and 0.74, 0.80 ± 0.08, 0.75 ± 0.08 in Strategy (b). Conclusion: The PET radiomics demonstrated excellent performance in characterizing SPNs as benign or malignant.",
    "verified": true,
    "counted_members": [
     "umesh-kumar-baburao-sherkhane"
@@ -23111,7 +23375,7 @@
     "Department of Radiology and Nuclear Medicine, Maastricht University Medical Center+, Maastricht, The Netherlands",
     "GROW, School for Oncology and Reproduction, Maastricht University, Maastricht, The Netherlands"
    ],
-   "cited_by_count": 5,
+   "cited_by_count": 4,
    "abstract": "PURPOSE: The long-term objective of the Ablation-IMaging and Advanced Guidance for workflow optimization in Interventional Oncology (A-IMAGIO) project is to develop a standardized, accessible, low-complex, high-precision, end-to-end solution for treatment planning, needle guidance, and treatment evaluation for thermal liver ablation. MATERIALS AND METHODS: This is a prospective, international, multicentre, observational registry study. Patients will be included with age ≥ 18 years, diagnosed with primary or secondary liver tumours, and undergoing thermal liver ablation. A detailed dataset of medical history, baseline clinical and imaging parameters, tumour characteristics, ablation technique/parameters, treatment outcomes, periprocedural images, and adverse events, will be collected for all participants. This data will be used to develop AI algorithms for prognostic modelling and quantitative imaging analysis. Additionally, costs associated with thermal liver ablation clinical pathway will be evaluated. EXPECTED GAIN OF KNOWLEDGE: The results of this registry study are expected to provide profound insight in current variability among centres in performing thermal liver ablation, and identify best practices in order to eventually facilitate standardization and universally excellent clinical outcomes. TRIAL REGISTRATION: National Institute of Health Clinical trial database (NCT06179602) https://clinicaltrials.gov/study/NCT06179602 .",
    "verified": false,
    "counted_members": [],
@@ -26947,8 +27211,8 @@
     "Radiation Oncology Center, Affiliated Changzhou No. 2 People's Hospital of Nanjing Medical University, Changzhou, Jiangsu 213003, People's Republic of China",
     "Faculty of Business Information, Shanghai Business School, 123 Fengpu Blvd, Shanghai, 201499, CHINA"
    ],
-   "cited_by_count": 54,
-   "abstract": "Objective. Radiotherapy planning requires significant expertise to balance tumor control and organ-at-risk (OAR) sparing. Automated planning can improve both efficiency and quality. This study introduces GPT-Plan, a novel multi-agent system powered by the GPT-4 family of large language models (LLMs), for automating the iterative radiotherapy plan optimization. Approach. GPT-Plan uses LLM-driven agents, mimicking the collaborative clinical workflow of a dosimetrist and physicist, to iteratively generate and evaluate text-based radiotherapy plans based on predefined criteria. Supporting tools assist the agents by leveraging historical plans, mitigating LLM hallucinations, and balancing exploration and exploitation. Performance was evaluated on 12 lung (IMRT) and 5 cervical (VMAT) cancer cases, benchmarked against the ECHO auto-planning method and manual plans. The impact of historical plan retrieval on efficiency was also assessed. Results. For IMRT lung cancer cases, GPT-Plan generated high-quality plans, demonstrating superior target coverage and homogeneity compared to ECHO while maintaining comparable or better OAR sparing. For VMAT cervical cancer cases, plan quality was comparable to a senior physicist and consistently superior to a junior physicist, particularly for OAR sparing. Retrieving historical plans significantly reduced the number of required optimization iterations for lung cases (p < 0.01) and yielded iteration counts comparable to those of the senior physicist for cervical cases (p = 0.313). Occasional LLM hallucinations have been mitigated by self-reflection mechanisms. One limitation was the inaccuracy of vision-based LLMs in interpreting dose images. Significance. This pioneering study demonstrates the feasibility of automating radiotherapy planning using LLM-powered agents for complex treatment decision-making tasks. While challenges remain in addressing LLM limitations, ongoing advancements hold potential for further refining and expanding GPT-Plan’s capabilities.",
+   "cited_by_count": 55,
+   "abstract": "Objective.Radiotherapy planning requires significant expertise to balance tumor control and organ-at-risk (OAR) sparing. Automated planning can improve both efficiency and quality. This study introduces GPT-Plan, a novel multi-agent system powered by the GPT-4 family of large language models (LLMs), for automating the iterative radiotherapy plan optimization.Approach.GPT-Plan uses LLM-driven agents, mimicking the collaborative clinical workflow of a dosimetrist and physicist, to iteratively generate and evaluate text-based radiotherapy plans based on predefined criteria. Supporting tools assist the agents by leveraging historical plans, mitigating LLM hallucinations, and balancing exploration and exploitation. Performance was evaluated on 12 lung (IMRT) and 5 cervical (VMAT) cancer cases, benchmarked against the ECHO auto-planning method and manual plans. The impact of historical plan retrieval on efficiency was also assessed.Results.For IMRT lung cancer cases, GPT-Plan generated high-quality plans, demonstrating superior target coverage and homogeneity compared to ECHO while maintaining comparable or better OAR sparing. For VMAT cervical cancer cases, plan quality was comparable to a senior physicist and consistently superior to a junior physicist, particularly for OAR sparing. Retrieving historical plans significantly reduced the number of required optimization iterations for lung cases (p < 0.01) and yielded iteration counts comparable to those of the senior physicist for cervical cases (p = 0.313). Occasional LLM hallucinations have been mitigated by self-reflection mechanisms. One limitation was the inaccuracy of vision-based LLMs in interpreting dose images.Significance.This pioneering study demonstrates the feasibility of automating radiotherapy planning using LLM-powered agents for complex treatment decision-making tasks. While challenges remain in addressing LLM limitations, ongoing advancements hold potential for further refining and expanding GPT-Plan's capabilities.",
    "verified": true,
    "counted_members": [
     "minghua-li",
@@ -27366,7 +27630,7 @@
     "Zhejiang Key Laboratory of Prevention Diagnosis and Therapy for Gastrointestinal Cancer, Hangzhou, Zhejiang, China",
     "Zhejiang Cancer Hospital,Hangzhou Institute of Medicine (HIM), Chinese Academy of Sciences, Hangzhou, Zhejiang, China jiyl@zjcc.org.cn jiangyh@zjcc.org.cn"
    ],
-   "cited_by_count": 76,
+   "cited_by_count": 77,
    "abstract": "BACKGROUND: Accurate prediction of pathologic complete response (pCR) following neoadjuvant immunotherapy combined with chemotherapy (nICT) is crucial for tailoring patient care in esophageal squamous cell carcinoma (ESCC). This study aimed to develop and validate a deep learning model using a novel voxel-level radiomics approach to predict pCR based on preoperative CT images. METHODS: In this multicenter, retrospective study, 741 patients with ESCC who underwent nICT followed by radical esophagectomy were enrolled from three institutions. Patients from one center were divided into a training set (469 patients) and an internal validation set (118 patients) while the data from the other two centers was used as external validation sets (120 and 34 patients, respectively). The deep learning model, Vision-Mamba, integrated voxel-level radiomics feature maps and CT images for pCR prediction. Additionally, other commonly used deep learning models, including 3D-ResNet and Vision Transformer, as well as traditional radiomics methods, were developed for comparison. Model performance was evaluated using accuracy, area under the curve (AUC), sensitivity, specificity, and prognostic stratification capabilities. The SHapley Additive exPlanations analysis was employed to interpret the model's predictions. RESULTS: The Vision-Mamba model demonstrated robust predictive performance in the training set (accuracy: 0.89, AUC: 0.91, sensitivity: 0.82, specificity: 0.92) and validation sets (accuracy: 0.83-0.91, AUC: 0.83-0.92, sensitivity: 0.73-0.94, specificity: 0.84-1.0). The model outperformed other deep learning models and traditional radiomics methods. The model's ability to stratify patients into high and low-risk groups was validated, showing superior prognostic stratification compared with traditional methods. SHAP provided quantitative and visual model interpretation. CONCLUSIONS: We present a voxel-level radiomics-based deep learning model to predict pCR to neoadjuvant immunotherapy combined with chemotherapy based on pretreatment diagnostic CT images with high accuracy and robustness. This model could provide a promising tool for individualized management of patients with ESCC.",
    "verified": true,
    "counted_members": [
@@ -28258,7 +28522,7 @@
    "title": "Transcriptomics Reveals Distinct Molecular Features Of Endometrial Cancer In Obese And Non-Obese Subjects",
    "publication_date": "2025-02-01",
    "year": 2025,
-   "type": "article",
+   "type": "conference-abstract",
    "journal": "International Journal of Gynecological Cancer",
    "source_id": "S41026820",
    "biblio": {
@@ -29947,7 +30211,7 @@
    "title": "PRE-ACT: Prediction of Radiotherapy side Effects using explainable AI for patient Communication and Treatment modification",
    "publication_date": "2024-12-19",
    "year": 2024,
-   "type": "article",
+   "type": "conference-abstract",
    "journal": "Journal of Cancer Policy",
    "source_id": "S2764631794",
    "biblio": {
@@ -30191,7 +30455,7 @@
     "Tilburg University",
     "Tilburg School of Economics and Management, Tilburg University, Tilburg, the Netherlands"
    ],
-   "cited_by_count": 17,
+   "cited_by_count": 18,
    "abstract": "PURPOSE: Artificial intelligence (AI) applications in radiotherapy (RT) are expected to save time and improve quality, but implementation remains limited. Therefore, we used implementation science to develop a format for designing an implementation strategy for AI. This study aimed to (1) apply this format to develop an AI implementation strategy for our center; (2) identify insights gained to enhance AI implementation using this format; and (3) assess the feasibility and acceptability of this format to design a center-specific implementation strategy for departments aiming to implement AI. METHODS: We created an AI-implementation strategy for our own center using implementation science methods. This included a stakeholder analysis, literature review, and interviews to identify facilitators and barriers, and designed strategies to overcome the barriers. These methods were subsequently used in a workshop with teams from seven Dutch RT centers to develop their own AI-implementation plans. The applicability, appropriateness, and feasibility were evaluated by the workshop participants, and relevant insights for AI implementation were summarized. RESULTS: The stakeholder analysis identified internal (physicians, physicists, RT technicians, information technology, and education) and external (patients and representatives) stakeholders. Barriers and facilitators included concerns about opacity, privacy, data quality, legal aspects, knowledge, trust, stakeholder involvement, ethics, and multidisciplinary collaboration, all integrated into our implementation strategy. The workshop evaluation showed high acceptability (18 participants [90%]), appropriateness (17 participants [85%]), and feasibility (15 participants [75%]) of the implementation strategy. Sixteen participants fully agreed with the format. CONCLUSION: Our study highlights the need for a collaborative approach to implement AI in RT. We designed a strategy to overcome organizational challenges, improve AI integration, and enhance patient care. Workshop feedback indicates the proposed methods are useful for multiple RT centers. Insights gained by applying the methods highlight the importance of multidisciplinary collaboration in the development and implementation of AI.",
    "verified": false,
    "counted_members": [],
@@ -30275,8 +30539,8 @@
     "Institute for Imaging, Data and Communications, School of Engineering, University of Edinburgh, Edinburgh, United Kingdom",
     "Muir Maxwell Epilepsy Centre, University of Edinburgh, Edinburgh, United Kingdom"
    ],
-   "cited_by_count": 18,
-   "abstract": "Objective. Accurate seizure prediction could prove critical for improving patient safety and quality of life in drug-resistant epilepsy. While deep learning-based approaches have shown promising performance using scalp electroencephalogram (EEG) signals, the incomplete understanding and variability of the preictal state imposes challenges in identifying the optimal preictal period (OPP) for labeling the EEG segments. This study introduces novel measures to capture model behavior under different preictal definitions and proposes a data-centric deep learning methodology to identify the OPP. Approach. We trained a competent subject-specific CNN-Transformer model to detect preictal EEG segments using the open-access CHB-MIT dataset. To capture the temporal dynamics of the model’s predictions, we fitted a sigmoidal curve to the model outputs obtained from uninterrupted multi-hour EEG recordings prior to seizure onset. From this fitted curve, we derived key performance measures reflecting the timing of predictions, including classifier convergence, average error, output stability, and the transition between interictal and preictal states. These measures were then combined to compute the Continuous Input–Output Performance Ratio, a novel metric designed to comprehensively compare model behavior across different preictal definitions (60, 45, 30, and 15 min) and suggest the OPP for each patient. Main results. The CNN-Transformer model achieved state-of-the-art performance (area under the curve of 99.35% and F1-score of 97.46%) using minimally pre-processed EEG signals. The 60-minute preictal definition was associated with earlier seizure prediction, lower error in the preictal state, and reduced output fluctuations, leading to significantly higher CIOPR scores (p < 0.001). Conventional accuracy-related metrics (sensitivity, specificity, F1-score) were less sensitive to varying preictal definitions and often discordant with CIOPR findings. Cross- and intra-patient heterogeneities in the prediction times were also observed, complicating the establishment of a global preictal interval. Significance. The newly developed metrics demonstrate that varying the preictal period significantly impacts the timing of predictions in ways not captured by conventional accuracy-related metrics. Understanding this impact and the inter-seizure heterogeneities is essential for developing intelligent systems tailored to individual patient needs and for underlining practical limitations in detecting the preictal period in real-world clinical applications.",
+   "cited_by_count": 19,
+   "abstract": "Objective. Accurate seizure prediction could prove critical for improving patient safety and quality of life in drug-resistant epilepsy. While deep learning-based approaches have shown promising performance using scalp electroencephalogram (EEG) signals, the incomplete understanding and variability of the preictal state imposes challenges in identifying the optimal preictal period (OPP) for labeling the EEG segments. This study introduces novel measures to capture model behavior under different preictal definitions and proposes a data-centric deep learning methodology to identify the OPP.Approach. We trained a competent subject-specific CNN-Transformer model to detect preictal EEG segments using the open-access CHB-MIT dataset. To capture the temporal dynamics of the model's predictions, we fitted a sigmoidal curve to the model outputs obtained from uninterrupted multi-hour EEG recordings prior to seizure onset. From this fitted curve, we derived key performance measures reflecting the timing of predictions, including classifier convergence, average error, output stability, and the transition between interictal and preictal states. These measures were then combined to compute the Continuous Input-Output Performance Ratio, a novel metric designed to comprehensively compare model behavior across different preictal definitions (60, 45, 30, and 15 min) and suggest the OPP for each patient.Main results.The CNN-Transformer model achieved state-of-the-art performance (area under the curve of 99.35% andF1-score of 97.46%) using minimally pre-processed EEG signals. The 60-minute preictal definition was associated with earlier seizure prediction, lower error in the preictal state, and reduced output fluctuations, leading to significantly higher CIOPR scores (p< 0.001). Conventional accuracy-related metrics (sensitivity, specificity, F1-score) were less sensitive to varying preictal definitions and often discordant with CIOPR findings. Cross- and intra-patient heterogeneities in the prediction times were also observed, complicating the establishment of a global preictal interval.Significance. The newly developed metrics demonstrate that varying the preictal period significantly impacts the timing of predictions in ways not captured by conventional accuracy-related metrics. Understanding this impact and the inter-seizure heterogeneities is essential for developing intelligent systems tailored to individual patient needs and for underlining practical limitations in detecting the preictal period in real-world clinical applications.",
    "verified": true,
    "counted_members": [
     "petros-koutsouvelis"
@@ -30643,7 +30907,7 @@
     "Maastricht University Medical Centre",
     "Department of Radiation Oncology (MAASTRO), GROW Research Institute for Oncology and Reproduction, Maastricht University Medical Centre, Maastricht, Dr Tanslaan 12, 6229 ET, the Netherlands"
    ],
-   "cited_by_count": 8,
+   "cited_by_count": 9,
    "abstract": "Background and purpose: Shared decision-making (SDM), a collaborative process in which patients and physicians jointly determine further treatment, has been associated with numerous positive effects. However, its implementation into routine clinical practice faces challenges. In radiotherapy (RT) it may have additional challenges, since patients are referred from another oncologist, often \"to undergo RT\". The aim of this study is to understand patients' preferences and experiences regarding SDM at an academic RT clinic, and to identify targets for SDM implementation in RT. Materials and methods: We adapted an earlier survey sent out by the Dutch Cancer Patient Organizations Federation to fit the RT setting. The survey was distributed via letters and social media to (former) patients who had their intake between 2020 and 2022. Results: 1799 participants completed the survey, of whom 88,3% mentioned to always or often prefer SDM. 23,1% of participants reported experiencing a choice, and 50% of these participants experienced multiple options. The most commons reason for preferring SDM was bodily autonomy (n = 1114) and against SDM was wanting to decide themselves instead (n = 11). Participants with a higher educational attainment were more likely to prefer and experience SDM. Older participants were more likely to experience multiple options. Conclusion: Our findings reaffirm that most cancer patients prefer SDM, and extend these findings to RT. However, we found a large gap between patients' desire for SDM, and the SDM experienced in our RT institute. SDM implementation strategies are needed and should focus on overcoming RT-specific and patient-reported barriers and opportunities.",
    "verified": true,
    "counted_members": [
@@ -30951,7 +31215,7 @@
     "The Christie NHS Foundation Trust, Manchester, UK"
    ],
    "cited_by_count": 9,
-   "abstract": "Real-world data (RWD) are defined as information collected about patients as a routine part of treatment. To understand the status of RWD initiatives in oncology in the UK, an online survey and in-person workshop were conducted which aimed to characterise current perceptions of RWD, establish where real-world evidence (RWE) could support unmet clinical need, and to identify the barriers and solutions to obtaining this evidence. Self-selecting health care professionals including oncologists, physicists, radiographers, and health data researchers, as well as patient representatives, participated in an anonymous survey ( N = 55) and/or a 1-day workshop ( N = 46). The workshop consisted of introductory presentations followed by three 1 hour grouped breakout sessions. An inductive thematic analysis synthesizing the outcomes of the survey and workshop was carried out post hoc . Despite issues of perceived poor data quality and the prevalence of unstructured data, 92% of survey respondents recognised the potential of RWD to provide novel evidence. Suggested applications of RWE were validation of trial results in the general population, continuous evaluation of new technologies, decision-making in rare disease groups, and resource allocation. Barriers to progression of RWD initiatives identified were data accessibility, data quality, and prioritisation. Potential solutions include streamlining information governance processes, training staff in data science skills, and demonstrating clinical benefit. The potential of RWD to provide novel evidence is strongly recognised in the UK radiotherapy community. While barriers to progress were identified, none of them are insurmountable. To move forwards, the profile of RWE needs to be elevated to attract higher prioritisation and resourcing.",
+   "abstract": "Real-world data (RWD) are defined as information collected about patients as a routine part of treatment. To understand the status of RWD initiatives in oncology in the UK, an online survey and in-person workshop were conducted which aimed to characterise current perceptions of RWD, establish where real-world evidence (RWE) could support unmet clinical need, and to identify the barriers and solutions to obtaining this evidence. Self-selecting health care professionals including oncologists, physicists, radiographers, and health data researchers, as well as patient representatives, participated in an anonymous survey (N = 55) and/or a 1-day workshop (N = 46). The workshop consisted of introductory presentations followed by three 1 hour grouped breakout sessions. An inductive thematic analysis synthesizing the outcomes of the survey and workshop was carried out post hoc. Despite issues of perceived poor data quality and the prevalence of unstructured data, 92% of survey respondents recognised the potential of RWD to provide novel evidence. Suggested applications of RWE were validation of trial results in the general population, continuous evaluation of new technologies, decision-making in rare disease groups, and resource allocation. Barriers to progression of RWD initiatives identified were data accessibility, data quality, and prioritisation. Potential solutions include streamlining information governance processes, training staff in data science skills, and demonstrating clinical benefit. The potential of RWD to provide novel evidence is strongly recognised in the UK radiotherapy community. While barriers to progress were identified, none of them are insurmountable. To move forwards, the profile of RWE needs to be elevated to attract higher prioritisation and resourcing.",
    "verified": true,
    "counted_members": [
     "andre-dekker"
@@ -31127,6 +31391,74 @@
    "first_seen": "2026-10-21",
    "journal_impact": 4.5,
    "journal_h_index": 78
+  },
+  {
+   "id": "W7239621593",
+   "openalex_url": "https://openalex.org/W7239621593",
+   "doi": null,
+   "title": "Building a Radiation Therapy Ontology",
+   "publication_date": "2024-10-25",
+   "year": 2024,
+   "type": "conference-paper",
+   "journal": "CEUR Workshop Proceedings",
+   "source_id": "S4210204615",
+   "biblio": {},
+   "landing_url": "https://ceur-ws.org/Vol-3805/ICBO-2022_paper_4077.pdf",
+   "is_oa": true,
+   "oa_url": "https://ceur-ws.org/Vol-3805/ICBO-2022_paper_4077.pdf",
+   "license": "cc-by",
+   "pdf_url": "https://ceur-ws.org/Vol-3805/ICBO-2022_paper_4077.pdf",
+   "authors": [
+    "Phillips Mark",
+    "Andre L.A.J. Dekker",
+    "Charles Mayo",
+    "Peter Gabriel",
+    "Jonathan P. Bona"
+   ],
+   "author_members": [
+    null,
+    "andre-dekker",
+    null,
+    null,
+    null
+   ],
+   "author_profiles": {
+    "andre-dekker": {
+     "openalex_id": "A5013513157",
+     "orcid": "0000-0002-0422-7996",
+     "match": "openalex",
+     "affiliations": []
+    }
+   },
+   "author_positions": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "author_count": 5,
+   "group_members": [
+    "andre-dekker"
+   ],
+   "member_affiliations": {
+    "andre-dekker": []
+   },
+   "affiliation_status": {
+    "andre-dekker": "unknown"
+   },
+   "senior_affiliations": [],
+   "cited_by_count": 0,
+   "abstract": null,
+   "verified": false,
+   "counted_members": [
+    "andre-dekker"
+   ],
+   "counted": true,
+   "listed_elsewhere": false,
+   "first_seen": "2026-11-25",
+   "journal_impact": 1.1,
+   "journal_h_index": 26
   },
   {
    "id": "W4403636303",
@@ -31473,7 +31805,7 @@
     "Southern Medical University",
     "Department of Radiology, Guangdong Provincial People's Hospital (Guangdong Academy of Medical Sciences), Southern Medical University, Guangzhou 510080, China; Guangdong Provincial Key Laboratory of Artificial Intelligence in Medical Image Analysis and Application, Guangzhou 510080, China. Electronic address: liuzaiyi@gdph.org.cn"
    ],
-   "cited_by_count": 14,
+   "cited_by_count": 13,
    "abstract": "(c) 2024 The Authors. Published by Elsevier B.V. and Science China Press. This is an open access article under the CC BY license (http://creativecommons.org/licenses/by/4.0/).",
    "verified": true,
    "counted_members": [
@@ -31586,7 +31918,7 @@
     "Department of Radiation Oncology (Maastro), GROW Research Institute for Oncology and Reproduction, Maastricht University, Dr Tanslaan 12, Maastricht, Limburg, 6200 MD, NETHERLANDS"
    ],
    "cited_by_count": 8,
-   "abstract": "Objective. Cachexia is a devastating condition, characterized by involuntary loss of muscle mass with or without loss of adipose tissue mass. It affects more than half of patients with lung cancer, diminishing treatment effects and increasing mortality. Cone-beam computed tomography (CBCT) images, routinely acquired during radiotherapy treatment, might contain valuable anatomical information for monitoring body composition changes associated with cachexia. For this purpose, we propose an automatic artificial intelligence (AI)-based workflow, consisting of CBCT to CT conversion, followed by segmentation of pectoralis muscles. Approach. Data from 140 stage III non-small cell lung cancer patients was used. Two deep learning models, cycle-consistent generative adversarial network (CycleGAN) and contrastive unpaired translation (CUT), were used for unpaired training of CBCT to CT conversion, to generate synthetic CT (sCT) images. The no-new U-Net (nnU-Net) model was used for automatic pectoralis muscle segmentation. To evaluate tissue segmentation performance in the absence of ground truth labels, an uncertainty metric (UM) based on Monte Carlo dropout was developed and validated. Main results. Both CycleGAN and CUT restored the Hounsfield unit fidelity of the CBCT images compared to the planning CT (pCT) images and visually reduced streaking artefacts. The nnU-Net model achieved a Dice similarity coefficient (DSC) of 0.93, 0.94, 0.92 for the CT, sCT and CBCT images, respectively, on an independent test set. The UM showed a high correlation with DSC with a correlation coefficient of −0.84 for the pCT dataset and −0.89 for the sCT dataset. Significance. This paper shows a proof-of-concept for automatic AI-based monitoring of the pectoralis muscle area of lung cancer patients during radiotherapy treatment based on CBCT images, which provides an unprecedented time resolution of muscle mass loss during cachexia progression. Ultimately, the proposed workflow could provide valuable information for early intervention of cachexia, ideally resulting in improved cancer treatment outcome.",
+   "abstract": "Objective.Cachexia is a devastating condition, characterized by involuntary loss of muscle mass with or without loss of adipose tissue mass. It affects more than half of patients with lung cancer, diminishing treatment effects and increasing mortality. Cone-beam computed tomography (CBCT) images, routinely acquired during radiotherapy treatment, might contain valuable anatomical information for monitoring body composition changes associated with cachexia. For this purpose, we propose an automatic artificial intelligence (AI)-based workflow, consisting of CBCT to CT conversion, followed by segmentation of pectoralis muscles.Approach.Data from 140 stage III non-small cell lung cancer patients was used. Two deep learning models, cycle-consistent generative adversarial network (CycleGAN) and contrastive unpaired translation (CUT), were used for unpaired training of CBCT to CT conversion, to generate synthetic CT (sCT) images. The no-new U-Net (nnU-Net) model was used for automatic pectoralis muscle segmentation. To evaluate tissue segmentation performance in the absence of ground truth labels, an uncertainty metric (UM) based on Monte Carlo dropout was developed and validated.Main results.Both CycleGAN and CUT restored the Hounsfield unit fidelity of the CBCT images compared to the planning CT (pCT) images and visually reduced streaking artefacts. The nnU-Net model achieved a Dice similarity coefficient (DSC) of 0.93, 0.94, 0.92 for the CT, sCT and CBCT images, respectively, on an independent test set. The UM showed a high correlation with DSC with a correlation coefficient of -0.84 for the pCT dataset and -0.89 for the sCT dataset.Significance.This paper shows a proof-of-concept for automatic AI-based monitoring of the pectoralis muscle area of lung cancer patients during radiotherapy treatment based on CBCT images, which provides an unprecedented time resolution of muscle mass loss during cachexia progression. Ultimately, the proposed workflow could provide valuable information for early intervention of cachexia, ideally resulting in improved cancer treatment outcome.",
    "verified": false,
    "counted_members": [],
    "counted": false,
@@ -32023,7 +32355,7 @@
     "Department of Radiation Oncology (Maastro Clinic), School for Oncology and Reproduction (GROW), Maastricht University Medical Center, Maastricht, the Netherlands; School of Medicine, Libera Università Vita-Salute San Raffaele, Milan, Italy. Electronic address: traverso.alberto@hsr.it"
    ],
    "cited_by_count": 17,
-   "abstract": "Background Atrial fibrillation (AF) is an important side effect of thoracic Radiotherapy (RT), which may impair quality of life and survival. This study aimed to develop a prediction model for new-onset AF in patients with Non-Small Cell Lung Cancer (NSCLC) receiving RT alone or as a part of their multi-modal treatment. Patients and Methods Patients with stage I-IV NSCLC treated with curative-intent conventional photon RT were included. The baseline electrocardiogram (ECG) was compared with follow-up ECGs to identify the occurrence of new-onset AF. A wide range of potential clinical predictors and dose-volume measures on the whole heart and six automatically contoured cardiac substructures, including chambers and conduction nodes, were considered for statistical modeling. Internal validation with optimism-correction was performed. A nomogram was made. Results 374 patients (mean age 69 ± 10 years, 57 % male) were included. At baseline, 9.1 % of patients had AF, and 42 (11.2 %) patients developed new-onset AF. The following parameters were predictive: older age (OR=1.04, 95 % CI: 1.013–1.068), being overweight or obese (OR=1.791, 95 % CI: 1.139–2.816), alcohol use (OR=4.052, 95 % CI: 2.445–6.715), history of cardiac procedures (OR=2.329, 95 % CI: 1.287–4.215), tumor located in the upper lobe (OR=2.571, 95 % CI: 1.518–4.355), higher forced expiratory volume in 1 s (OR=0.989, 95 % CI: 0.979–0.999), higher creatinine (OR=1.008, 95 % CI: 1.002–1.014), concurrent chemotherapy (OR=3.266, 95 % CI: 1.757 to 6.07) and left atrium D max (OR=1.022, 95 % CI: 1.012–1.032). The model showed good discrimination (area under the curve = 0.80, 95 % CI: 0.76–0.84), calibration and positive net benefits. Conclusion This prediction model employs readily available predictors to identify patients at high risk of new-onset AF who could potentially benefit from active screening and timely management of post-RT AF.",
+   "abstract": "BACKGROUND: Atrial fibrillation (AF) is an important side effect of thoracic Radiotherapy (RT), which may impair quality of life and survival. This study aimed to develop a prediction model for new-onset AF in patients with Non-Small Cell Lung Cancer (NSCLC) receiving RT alone or as a part of their multi-modal treatment. PATIENTS AND METHODS: Patients with stage I-IV NSCLC treated with curative-intent conventional photon RT were included. The baseline electrocardiogram (ECG) was compared with follow-up ECGs to identify the occurrence of new-onset AF. A wide range of potential clinical predictors and dose-volume measures on the whole heart and six automatically contoured cardiac substructures, including chambers and conduction nodes, were considered for statistical modeling. Internal validation with optimism-correction was performed. A nomogram was made. RESULTS: 374 patients (mean age 69 ± 10 years, 57 % male) were included. At baseline, 9.1 % of patients had AF, and 42 (11.2 %) patients developed new-onset AF. The following parameters were predictive: older age (OR=1.04, 95 % CI: 1.013-1.068), being overweight or obese (OR=1.791, 95 % CI: 1.139-2.816), alcohol use (OR=4.052, 95 % CI: 2.445-6.715), history of cardiac procedures (OR=2.329, 95 % CI: 1.287-4.215), tumor located in the upper lobe (OR=2.571, 95 % CI: 1.518-4.355), higher forced expiratory volume in 1 s (OR=0.989, 95 % CI: 0.979-0.999), higher creatinine (OR=1.008, 95 % CI: 1.002-1.014), concurrent chemotherapy (OR=3.266, 95 % CI: 1.757 to 6.07) and left atrium Dmax (OR=1.022, 95 % CI: 1.012-1.032). The model showed good discrimination (area under the curve = 0.80, 95 % CI: 0.76-0.84), calibration and positive net benefits. CONCLUSION: This prediction model employs readily available predictors to identify patients at high risk of new-onset AF who could potentially benefit from active screening and timely management of post-RT AF.",
    "verified": true,
    "counted_members": [
     "fariba-tohidinezhad",
@@ -33129,7 +33461,7 @@
     "Department of Radiation Oncology (Maastro), GROW Research Institute for Oncology and Reproduction, Maastricht University Medical Centre+, Maastricht, The Netherlands"
    ],
    "cited_by_count": 1,
-   "abstract": "Objective. The aim of this work was to develop a novel artificial intelligence-assisted in vivo dosimetry method using time-resolved (TR) dose verification data to improve quality of external beam radiotherapy. Approach. Although threshold classification methods are commonly used in error classification, they may lead to missing errors due to the loss of information resulting from the compression of multi-dimensional electronic portal imaging device (EPID) data into one or a few numbers. Recent research has investigated the classification of errors on time-integrated (TI) in vivo EPID images, with convolutional neural networks showing promise. However, it has been observed previously that TI approaches may cancel out the error presence on γ-maps during dynamic treatments. To address this limitation, simulated TR γ-maps for each volumetric modulated arc radiotherapy angle were used to detect treatment errors caused by complex patient geometries and beam arrangements. Typically, such images can be interpreted as a set of segments where only set class labels are provided. Inspired by recent weakly supervised approaches on histopathology images, we implemented a transformer based multiple instance learning approach and utilized transfer learning from TI to TR γ-maps. Main results. The proposed algorithm performed well on classification of error type and error magnitude. The accuracy in the test set was up to 0.94 and 0.81 for 11 (error type) and 22 (error magnitude) classes of treatment errors, respectively. Significance. TR dose distributions can enhance treatment delivery decision-making, however manual data analysis is nearly impossible due to the complexity and quantity of this data. Our proposed model efficiently handles data complexity, substantially improving treatment error classification compared to models that leverage TI data.",
+   "abstract": "Objective.The aim of this work was to develop a novel artificial intelligence-assistedin vivodosimetry method using time-resolved (TR) dose verification data to improve quality of external beam radiotherapy.Approach. Although threshold classification methods are commonly used in error classification, they may lead to missing errors due to the loss of information resulting from the compression of multi-dimensional electronic portal imaging device (EPID) data into one or a few numbers. Recent research has investigated the classification of errors on time-integrated (TI)in vivoEPID images, with convolutional neural networks showing promise. However, it has been observed previously that TI approaches may cancel out the error presence onγ-maps during dynamic treatments. To address this limitation, simulated TRγ-maps for each volumetric modulated arc radiotherapy angle were used to detect treatment errors caused by complex patient geometries and beam arrangements. Typically, such images can be interpreted as a set of segments where only set class labels are provided. Inspired by recent weakly supervised approaches on histopathology images, we implemented a transformer based multiple instance learning approach and utilized transfer learning from TI to TRγ-maps.Main results. The proposed algorithm performed well on classification of error type and error magnitude. The accuracy in the test set was up to 0.94 and 0.81 for 11 (error type) and 22 (error magnitude) classes of treatment errors, respectively.Significance. TR dose distributions can enhance treatment delivery decision-making, however manual data analysis is nearly impossible due to the complexity and quantity of this data. Our proposed model efficiently handles data complexity, substantially improving treatment error classification compared to models that leverage TI data.",
    "verified": false,
    "counted_members": [],
    "counted": false,
@@ -35346,7 +35678,7 @@
     "cecile-wolfs": "unknown"
    },
    "senior_affiliations": [],
-   "cited_by_count": 0,
+   "cited_by_count": 1,
    "abstract": null,
    "verified": false,
    "counted_members": [],
@@ -36720,7 +37052,7 @@
     "Department of Radiation Oncology (Maastro Clinic), School for Oncology and Reproduction (GROW), Maastricht University Medical Center , Maastricht , The Netherlands",
     "School of Medicine, Libera Università Vita-Salute San Raffaele , Milan , Italy"
    ],
-   "cited_by_count": 16,
+   "cited_by_count": 15,
    "abstract": "BACKGROUND: Deterioration of neurocognitive function in adult patients with a primary brain tumor is the most concerning side effect of radiotherapy. This study aimed to develop and evaluate normal-tissue complication probability (NTCP) models using clinical and dose-volume measures for 6-month, 1-year, and 2-year Neurocognitive Decline (ND) postradiotherapy. METHODS: A total of 219 patients with a primary brain tumor treated with radical photon and/or proton radiotherapy (RT) between 2019 and 2022 were included. Controlled oral word association test, Hopkins verbal learning test-revised, and trail making test were used to objectively measure ND. A comprehensive set of potential clinical and dose-volume measures on several brain structures were considered for statistical modeling. Clinical, dose-volume and combined models were constructed and internally tested in terms of discrimination (area under the curve, AUC), calibration (mean absolute error, MAE), and net benefit. RESULTS: Fifty percent, 44.5%, and 42.7% of the patients developed ND at 6-month, 1-year, and 2-year time points, respectively. The following predictors were included in the combined model for 6-month ND: age at radiotherapy > 56 years (OR = 5.71), overweight (OR = 0.49), obesity (OR = 0.35), chemotherapy (OR = 2.23), brain V20 Gy ≥ 20% (OR = 3.53), brainstem volume ≥ 26 cc (OR = 0.39), and hypothalamus volume ≥ 0.5 cc (OR = 0.4). Decision curve analysis showed that the combined models had the highest net benefits at 6-month (AUC = 0.79, MAE = 0.021), 1-year (AUC = 0.72, MAE = 0.027), and 2-year (AUC = 0.69, MAE = 0.038) time points. CONCLUSIONS: The proposed NTCP models use easy-to-obtain predictors to identify patients at high risk of ND after brain RT. These models can potentially provide a base for RT-related decisions and post-therapy neurocognitive rehabilitation interventions.",
    "verified": true,
    "counted_members": [
@@ -38451,8 +38783,8 @@
     "Maastricht University Medical Centre",
     "Department of Radiation Oncology (MAASTRO), Department of Radiation Oncology (MAASTRO), GROW School for Oncology and Reproduction, Maastricht University Medical Centre, Maastricht, the Netherlands"
    ],
-   "cited_by_count": 3,
-   "abstract": "Purpose: This study aims to develop and externally validate a clinically plausible Bayesian network structure to predict one-year erectile dysfunction in prostate cancer patients by combining expert knowledge with evidence from data using clinical and Patient-reported outcome measures (PROMs) data. In addition, compare and contrast structures that stem from PROM information and routine clinical data. Summary of background: For men with localized prostate cancer, choosing the optimal treatment can be challenging since each option comes with different side effects, such as erectile dysfunction, which negatively impacts their quality of life. Our previous findings demonstrate that logistic regression models are able to identify patients at high risk of erectile dysfunction. However, methods such as Bayesian networks may be more successful, as they intricately represent the causal relations between the variables. Patients and methods: 946 prostate cancer patients from 65 Dutch hospitals were considered to develop the Bayesian network structure. Continuous variables were discretized before analysis based on expert opinions and literature. Patients with missing information and variables with more than 25% of missing information were excluded. Prostate cancer treating physicians first determined the relationships (arcs) between the available variables. The structures were then modified based on algorithmically derived structures using the hill-climbing algorithm. Structural Performance was evaluated based on the area under the curve (AUC) values and calibration plots on the training and test data. Results: 45 %). The final cohort was reduced to 505 and 216 after excluding 157 and 68 patients with missing information, respectively. The AUC of the PROM structure was better than the clinical structure in both the train and test data. The structure that combined both sources of information had an AUC value of 0.94 (0.92 - 0.96) and 0.84171 (0.77 91) in the train and test data, respectively. Conclusion: Bayesian network structures derived from PROM information by complimenting expert knowledge with evidence from the data produce a clinically plausible structure that is more performant than structures from clinical data. Our study supports the growing global recognition of incorporating the patient's perspective in outcomes research for better decision-making and optimal outcomes. However, a structure that combines both sources of information gives a more holistic view of the patient with actionable insights and improved discriminative power.",
+   "cited_by_count": 2,
+   "abstract": "Purpose: This study aims to develop and externally validate a clinically plausible Bayesian network structure to predict one-year erectile dysfunction in prostate cancer patients by combining expert knowledge with evidence from data using clinical and Patient-reported outcome measures (PROMs) data. In addition, compare and contrast structures that stem from PROM information and routine clinical data. Summary of background: For men with localized prostate cancer, choosing the optimal treatment can be challenging since each option comes with different side effects, such as erectile dysfunction, which negatively impacts their quality of life. Our previous findings demonstrate that logistic regression models are able to identify patients at high risk of erectile dysfunction. However, methods such as Bayesian networks may be more successful, as they intricately represent the causal relations between the variables. Patients and methods: 946 prostate cancer patients from 65 Dutch hospitals were considered to develop the Bayesian network structure. Continuous variables were discretized before analysis based on expert opinions and literature. Patients with missing information and variables with more than 25% of missing information were excluded. Prostate cancer treating physicians first determined the relationships (arcs) between the available variables. The structures were then modified based on algorithmically derived structures using the hill-climbing algorithm. Structural Performance was evaluated based on the area under the curve (AUC) values and calibration plots on the training and test data. Results: BMI and prostate volume via MRI were excluded from this analysis due to their high percentage of missingness (>45 %). The final cohort was reduced to 505 and 216 after excluding 157 and 68 patients with missing information, respectively. The AUC of the PROM structure was better than the clinical structure in both the train and test data. The structure that combined both sources of information had an AUC value of 0.94 (0.92 - 0.96) and 0.84171 (0.77 91) in the train and test data, respectively. Conclusion: Bayesian network structures derived from PROM information by complimenting expert knowledge with evidence from the data produce a clinically plausible structure that is more performant than structures from clinical data. Our study supports the growing global recognition of incorporating the patient's perspective in outcomes research for better decision-making and optimal outcomes. However, a structure that combines both sources of information gives a more holistic view of the patient with actionable insights and improved discriminative power.",
    "verified": true,
    "counted_members": [
     "biche-osong",
@@ -38818,7 +39150,7 @@
     "Beijing Friendship Hospital",
     "Department of Ultrasound, Beijing Friendship Hospital, Capital Medical University, Beijing, China"
    ],
-   "cited_by_count": 58,
+   "cited_by_count": 57,
    "abstract": "Background: As artificial intelligence (AI) becomes increasingly prevalent in the medical field, the effectiveness of AI-generated medical reports in disease diagnosis remains to be evaluated. ChatGPT is a large language model developed by open AI with a notable capacity for text abstraction and comprehension. This study aimed to explore the capabilities, limitations, and potential of Generative Pre-trained Transformer (GPT)-4 in analyzing thyroid cancer ultrasound reports, providing diagnoses, and recommending treatment plans. Methods: Using 109 diverse thyroid cancer cases, we evaluated GPT-4's performance by comparing its generated reports to those from doctors with various levels of experience. We also conducted a Turing Test and a consistency analysis. To enhance the interpretability of the model, we applied the Chain of Thought (CoT) method to deconstruct the decision-making chain of the GPT model. Results: GPT-4 demonstrated proficiency in report structuring, professional terminology, and clarity of expression, but showed limitations in diagnostic accuracy. In addition, our consistency analysis highlighted certain discrepancies in the AI's performance. The CoT method effectively enhanced the interpretability of the AI's decision-making process. Conclusions: GPT-4 exhibits potential as a supplementary tool in healthcare, especially for generating thyroid gland diagnostic reports. Our proposed online platform, \"ThyroAIGuide\", alongside the CoT method, underscores the potential of AI to augment diagnostic processes, elevate healthcare accessibility, and advance patient education. However, the journey towards fully integrating AI into healthcare is ongoing, requiring continuous research, development, and careful monitoring by medical professionals to ensure patient safety and quality of care.",
    "verified": true,
    "counted_members": [
@@ -38837,7 +39169,7 @@
    "id": "W4394760459",
    "openalex_url": "https://openalex.org/W4394760459",
    "doi": null,
-   "title": "[Implementing new interventions and indications: the possible role for real world data].",
+   "title": "Implementing new interventions and indications: the possible role for real world data",
    "publication_date": "2024-01-22",
    "year": 2024,
    "type": "article",
@@ -39170,7 +39502,7 @@
     "Department of Radiation Oncology, Maastricht University Medical Centre+, Maastro Clinic, Dr. Tanslaan 12, Maastricht 6229 ET, Maastricht, 6202 AZ, NETHERLANDS"
    ],
    "cited_by_count": 4,
-   "abstract": "Objective . Deep learning models, such as convolutional neural networks (CNNs), can take full dose comparison images as input and have shown promising results for error identification during treatment. Clinically, complex scenarios should be considered, with the risk of multiple anatomical and/or mechanical errors occurring simultaneously during treatment. The purpose of this study was to evaluate the capability of CNN-based error identification in this more complex scenario. Approach . For 40 lung cancer patients, clinically realistic ranges of combinations of various treatment errors within treatment plans and/or computed tomography (CT) images were simulated. Modified CT images and treatment plans were used to predict 2580 3D dose distributions, which were compared to dose distributions without errors using various gamma analysis criteria and relative dose difference as dose comparison methods. A 3D CNN capable of multilabel classification was trained to identify treatment errors at two classification levels, using dose comparison volumes as input: Level 1 (main error type, e.g. anatomical change, mechanical error) and Level 2 (error subtype, e.g. tumor regression, patient rotation). For training the CNNs, a transfer learning approach was employed. An ensemble model was also evaluated, which consisted of three separate CNNs each taking a region of interest of the dose comparison volume as input. Model performance was evaluated by calculating sample F1-scores for training and validation sets. Main results . The model had high F1-scores for Level 1 classification, but performance for Level 2 was lower, and overfitting became more apparent. Using relative dose difference instead of gamma volumes as input improved performance for Level 2 classification, whereas using an ensemble model additionally reduced overfitting. The models obtained F1-scores of 0.86 and 0.62 on an independent test set for Level 1 and Level 2, respectively. Significance . This study shows that it is possible to identify multiple errors occurring simultaneously in 3D dose verification data.",
+   "abstract": "Objective. Deep learning models, such as convolutional neural networks (CNNs), can take full dose comparison images as input and have shown promising results for error identification during treatment. Clinically, complex scenarios should be considered, with the risk of multiple anatomical and/or mechanical errors occurring simultaneously during treatment. The purpose of this study was to evaluate the capability of CNN-based error identification in this more complex scenario.Approach. For 40 lung cancer patients, clinically realistic ranges of combinations of various treatment errors within treatment plans and/or computed tomography (CT) images were simulated. Modified CT images and treatment plans were used to predict 2580 3D dose distributions, which were compared to dose distributions without errors using various gamma analysis criteria and relative dose difference as dose comparison methods. A 3D CNN capable of multilabel classification was trained to identify treatment errors at two classification levels, using dose comparison volumes as input: Level 1 (main error type, e.g. anatomical change, mechanical error) and Level 2 (error subtype, e.g. tumor regression, patient rotation). For training the CNNs, a transfer learning approach was employed. An ensemble model was also evaluated, which consisted of three separate CNNs each taking a region of interest of the dose comparison volume as input. Model performance was evaluated by calculating sample F1-scores for training and validation sets.Main results. The model had high F1-scores for Level 1 classification, but performance for Level 2 was lower, and overfitting became more apparent. Using relative dose difference instead of gamma volumes as input improved performance for Level 2 classification, whereas using an ensemble model additionally reduced overfitting. The models obtained F1-scores of 0.86 and 0.62 on an independent test set for Level 1 and Level 2, respectively.Significance. This study shows that it is possible to identify multiple errors occurring simultaneously in 3D dose verification data.",
    "verified": false,
    "counted_members": [],
    "counted": false,
@@ -40350,7 +40682,7 @@
     "Department of Design, Organisation and Strategy, Faculty of Industrial Design Engineering, Delft University of Technology, Delft, The Netherlands"
    ],
    "cited_by_count": 32,
-   "abstract": "Background: Patients with cancer often have to make complex decisions about treatment, with the options varying in risk profiles and effects on survival and quality of life. Moreover, inefficient care paths make it hard for patients to participate in shared decision-making. Data-driven decision-support tools have the potential to empower patients, support personalized care, improve health outcomes and promote health equity. However, decision-support tools currently seldom consider quality of life or individual preferences, and their use in clinical practice remains limited, partly because they are not well integrated in patients’ care paths. Aim and objectives: The central aim of the 4D PICTURE project is to redesign patients’ care paths and develop and integrate evidence-based decision-support tools to improve decision-making processes in cancer care delivery. This article presents an overview of this international, interdisciplinary project. Design, methods and analysis: In co-creation with patients and other stakeholders, we will develop data-driven decision-support tools for patients with breast cancer, prostate cancer and melanoma. We will support treatment decisions by using large, high-quality datasets with state-of-the-art prognostic algorithms. We will further develop a conversation tool, the Metaphor Menu, using text mining combined with citizen science techniques and linguistics, incorporating large datasets of patient experiences, values and preferences. We will further develop a promising methodology, MetroMapping, to redesign care paths. We will evaluate MetroMapping and these integrated decision-support tools, and ensure their sustainability using the Nonadoption, Abandonment, Scale-Up, Spread, and Sustainability (NASSS) framework. We will explore the generalizability of MetroMapping and the decision-support tools for other types of cancer and across other EU member states. Ethics: Through an embedded ethics approach, we will address social and ethical issues. Discussion: Improved care paths integrating comprehensive decision-support tools have the potential to empower patients, their significant others and healthcare providers in decision-making and improve outcomes. This project will strengthen health care at the system level by improving its resilience and efficiency.",
+   "abstract": "Background: Patients with cancer often have to make complex decisions about treatment, with the options varying in risk profiles and effects on survival and quality of life. Moreover, inefficient care paths make it hard for patients to participate in shared decision-making. Data-driven decision-support tools have the potential to empower patients, support personalized care, improve health outcomes and promote health equity. However, decision-support tools currently seldom consider quality of life or individual preferences, and their use in clinical practice remains limited, partly because they are not well integrated in patients' care paths. Aim and objectives: The central aim of the 4D PICTURE project is to redesign patients' care paths and develop and integrate evidence-based decision-support tools to improve decision-making processes in cancer care delivery. This article presents an overview of this international, interdisciplinary project. Design methods and analysis: In co-creation with patients and other stakeholders, we will develop data-driven decision-support tools for patients with breast cancer, prostate cancer and melanoma. We will support treatment decisions by using large, high-quality datasets with state-of-the-art prognostic algorithms. We will further develop a conversation tool, the Metaphor Menu, using text mining combined with citizen science techniques and linguistics, incorporating large datasets of patient experiences, values and preferences. We will further develop a promising methodology, MetroMapping, to redesign care paths. We will evaluate MetroMapping and these integrated decision-support tools, and ensure their sustainability using the Nonadoption, Abandonment, Scale-Up, Spread, and Sustainability (NASSS) framework. We will explore the generalizability of MetroMapping and the decision-support tools for other types of cancer and across other EU member states. Ethics: Through an embedded ethics approach, we will address social and ethical issues. Discussion: Improved care paths integrating comprehensive decision-support tools have the potential to empower patients, their significant others and healthcare providers in decision-making and improve outcomes. This project will strengthen health care at the system level by improving its resilience and efficiency.",
    "verified": true,
    "counted_members": [
     "leonard-wee"
