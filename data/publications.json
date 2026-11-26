@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-25T16:34:38+00:00",
+ "generated": "2026-11-26T16:06:58+00:00",
  "group_name": "Clinical Data Science (Maastro / Maastricht University)",
  "site_url": "https://maastrichtu-cds.github.io/pubpulse/",
  "repo_url": "https://github.com/MaastrichtU-CDS/pubpulse",
@@ -11,13 +11,15 @@
   "list_name": "the pubpulse weekly list"
  },
  "last_run": {
-  "date": "2026-11-25",
+  "date": "2026-11-26",
   "baseline": false,
-  "new_count": 3,
+  "new_count": 5,
   "new_ids": [
-   "W7239553629",
-   "W7239621593",
-   "W7239366106"
+   "W7225885787",
+   "W7234785374",
+   "W7234893871",
+   "W7235700746",
+   "W7235745647"
   ],
   "needs_review": [
    "alexandra-afanasiuc",
@@ -1296,8 +1298,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-25",
-    "window_start": "2024-11-25",
+    "checked_at": "2026-11-26",
+    "window_start": "2024-11-26",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -1327,8 +1329,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-25",
-    "window_start": "2024-11-25",
+    "checked_at": "2026-11-26",
+    "window_start": "2024-11-26",
     "recent_months": 24,
     "shared_papers": 19,
     "recent_shared_papers": 16,
@@ -1374,20 +1376,20 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-25",
-    "window_start": "2024-11-25",
+    "checked_at": "2026-11-26",
+    "window_start": "2024-11-26",
     "recent_months": 24,
-    "shared_papers": 16,
-    "recent_shared_papers": 2,
-    "last_collaboration_date": "2025-04-21",
-    "followup_until": "2027-04-21",
+    "shared_papers": 17,
+    "recent_shared_papers": 3,
+    "last_collaboration_date": "2026-11-01",
+    "followup_until": "2028-11-01",
     "current_coauthors": [
      "andre-dekker",
      "johan-van-soest"
     ]
    },
    "tracked": true,
-   "tracked_until": "2027-04-21",
+   "tracked_until": "2028-11-01",
    "needs_review": false
   },
   {
@@ -1407,8 +1409,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-25",
-    "window_start": "2024-11-25",
+    "checked_at": "2026-11-26",
+    "window_start": "2024-11-26",
     "recent_months": 24,
     "shared_papers": 3,
     "recent_shared_papers": 3,
@@ -1441,8 +1443,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-25",
-    "window_start": "2024-11-25",
+    "checked_at": "2026-11-26",
+    "window_start": "2024-11-26",
     "recent_months": 24,
     "shared_papers": 1,
     "recent_shared_papers": 1,
@@ -1472,8 +1474,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-25",
-    "window_start": "2024-11-25",
+    "checked_at": "2026-11-26",
+    "window_start": "2024-11-26",
     "recent_months": 24,
     "shared_papers": 5,
     "recent_shared_papers": 4,
@@ -1506,8 +1508,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-25",
-    "window_start": "2024-11-25",
+    "checked_at": "2026-11-26",
+    "window_start": "2024-11-26",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -1534,8 +1536,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-25",
-    "window_start": "2024-11-25",
+    "checked_at": "2026-11-26",
+    "window_start": "2024-11-26",
     "recent_months": 24,
     "shared_papers": 1,
     "recent_shared_papers": 0,
@@ -1564,8 +1566,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-25",
-    "window_start": "2024-11-25",
+    "checked_at": "2026-11-26",
+    "window_start": "2024-11-26",
     "recent_months": 24,
     "shared_papers": 2,
     "recent_shared_papers": 1,
@@ -1594,8 +1596,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-25",
-    "window_start": "2024-11-25",
+    "checked_at": "2026-11-26",
+    "window_start": "2024-11-26",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -1622,8 +1624,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-25",
-    "window_start": "2024-11-25",
+    "checked_at": "2026-11-26",
+    "window_start": "2024-11-26",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -1650,8 +1652,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-25",
-    "window_start": "2024-11-25",
+    "checked_at": "2026-11-26",
+    "window_start": "2024-11-26",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -1678,8 +1680,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-25",
-    "window_start": "2024-11-25",
+    "checked_at": "2026-11-26",
+    "window_start": "2024-11-26",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -1706,8 +1708,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-25",
-    "window_start": "2024-11-25",
+    "checked_at": "2026-11-26",
+    "window_start": "2024-11-26",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -1736,8 +1738,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-25",
-    "window_start": "2024-11-25",
+    "checked_at": "2026-11-26",
+    "window_start": "2024-11-26",
     "recent_months": 24,
     "shared_papers": 4,
     "recent_shared_papers": 2,
@@ -1767,8 +1769,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-25",
-    "window_start": "2024-11-25",
+    "checked_at": "2026-11-26",
+    "window_start": "2024-11-26",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -1795,8 +1797,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-25",
-    "window_start": "2024-11-25",
+    "checked_at": "2026-11-26",
+    "window_start": "2024-11-26",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -1823,8 +1825,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-25",
-    "window_start": "2024-11-25",
+    "checked_at": "2026-11-26",
+    "window_start": "2024-11-26",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -1851,8 +1853,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-25",
-    "window_start": "2024-11-25",
+    "checked_at": "2026-11-26",
+    "window_start": "2024-11-26",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -1879,8 +1881,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-25",
-    "window_start": "2024-11-25",
+    "checked_at": "2026-11-26",
+    "window_start": "2024-11-26",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -1909,8 +1911,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-25",
-    "window_start": "2024-11-25",
+    "checked_at": "2026-11-26",
+    "window_start": "2024-11-26",
     "recent_months": 24,
     "shared_papers": 9,
     "recent_shared_papers": 3,
@@ -1944,8 +1946,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-25",
-    "window_start": "2024-11-25",
+    "checked_at": "2026-11-26",
+    "window_start": "2024-11-26",
     "recent_months": 24,
     "shared_papers": 5,
     "recent_shared_papers": 0,
@@ -1974,8 +1976,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-25",
-    "window_start": "2024-11-25",
+    "checked_at": "2026-11-26",
+    "window_start": "2024-11-26",
     "recent_months": 24,
     "shared_papers": 8,
     "recent_shared_papers": 6,
@@ -2011,8 +2013,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-25",
-    "window_start": "2024-11-25",
+    "checked_at": "2026-11-26",
+    "window_start": "2024-11-26",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -2039,8 +2041,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-25",
-    "window_start": "2024-11-25",
+    "checked_at": "2026-11-26",
+    "window_start": "2024-11-26",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -2067,8 +2069,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-25",
-    "window_start": "2024-11-25",
+    "checked_at": "2026-11-26",
+    "window_start": "2024-11-26",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -2097,8 +2099,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-25",
-    "window_start": "2024-11-25",
+    "checked_at": "2026-11-26",
+    "window_start": "2024-11-26",
     "recent_months": 24,
     "shared_papers": 1,
     "recent_shared_papers": 1,
@@ -2128,8 +2130,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-25",
-    "window_start": "2024-11-25",
+    "checked_at": "2026-11-26",
+    "window_start": "2024-11-26",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -2156,8 +2158,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-25",
-    "window_start": "2024-11-25",
+    "checked_at": "2026-11-26",
+    "window_start": "2024-11-26",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -2186,8 +2188,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-25",
-    "window_start": "2024-11-25",
+    "checked_at": "2026-11-26",
+    "window_start": "2024-11-26",
     "recent_months": 24,
     "shared_papers": 8,
     "recent_shared_papers": 4,
@@ -2217,8 +2219,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-25",
-    "window_start": "2024-11-25",
+    "checked_at": "2026-11-26",
+    "window_start": "2024-11-26",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -2245,8 +2247,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-25",
-    "window_start": "2024-11-25",
+    "checked_at": "2026-11-26",
+    "window_start": "2024-11-26",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -2273,8 +2275,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-25",
-    "window_start": "2024-11-25",
+    "checked_at": "2026-11-26",
+    "window_start": "2024-11-26",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -2303,8 +2305,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-25",
-    "window_start": "2024-11-25",
+    "checked_at": "2026-11-26",
+    "window_start": "2024-11-26",
     "recent_months": 24,
     "shared_papers": 2,
     "recent_shared_papers": 0,
@@ -2335,8 +2337,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-25",
-    "window_start": "2024-11-25",
+    "checked_at": "2026-11-26",
+    "window_start": "2024-11-26",
     "recent_months": 24,
     "shared_papers": 4,
     "recent_shared_papers": 4,
@@ -2369,8 +2371,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-25",
-    "window_start": "2024-11-25",
+    "checked_at": "2026-11-26",
+    "window_start": "2024-11-26",
     "recent_months": 24,
     "shared_papers": 3,
     "recent_shared_papers": 2,
@@ -2402,8 +2404,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-25",
-    "window_start": "2024-11-25",
+    "checked_at": "2026-11-26",
+    "window_start": "2024-11-26",
     "recent_months": 24,
     "shared_papers": 1,
     "recent_shared_papers": 0,
@@ -2430,8 +2432,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-25",
-    "window_start": "2024-11-25",
+    "checked_at": "2026-11-26",
+    "window_start": "2024-11-26",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -2458,8 +2460,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-25",
-    "window_start": "2024-11-25",
+    "checked_at": "2026-11-26",
+    "window_start": "2024-11-26",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -2486,8 +2488,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-25",
-    "window_start": "2024-11-25",
+    "checked_at": "2026-11-26",
+    "window_start": "2024-11-26",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -2514,8 +2516,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-25",
-    "window_start": "2024-11-25",
+    "checked_at": "2026-11-26",
+    "window_start": "2024-11-26",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -2542,8 +2544,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-25",
-    "window_start": "2024-11-25",
+    "checked_at": "2026-11-26",
+    "window_start": "2024-11-26",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -2570,8 +2572,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-25",
-    "window_start": "2024-11-25",
+    "checked_at": "2026-11-26",
+    "window_start": "2024-11-26",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -2598,8 +2600,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-25",
-    "window_start": "2024-11-25",
+    "checked_at": "2026-11-26",
+    "window_start": "2024-11-26",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -2626,8 +2628,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-25",
-    "window_start": "2024-11-25",
+    "checked_at": "2026-11-26",
+    "window_start": "2024-11-26",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -2654,8 +2656,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-25",
-    "window_start": "2024-11-25",
+    "checked_at": "2026-11-26",
+    "window_start": "2024-11-26",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -2682,8 +2684,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-25",
-    "window_start": "2024-11-25",
+    "checked_at": "2026-11-26",
+    "window_start": "2024-11-26",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -2712,8 +2714,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-25",
-    "window_start": "2024-11-25",
+    "checked_at": "2026-11-26",
+    "window_start": "2024-11-26",
     "recent_months": 24,
     "shared_papers": 1,
     "recent_shared_papers": 1,
@@ -2745,8 +2747,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-25",
-    "window_start": "2024-11-25",
+    "checked_at": "2026-11-26",
+    "window_start": "2024-11-26",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -2775,8 +2777,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-25",
-    "window_start": "2024-11-25",
+    "checked_at": "2026-11-26",
+    "window_start": "2024-11-26",
     "recent_months": 24,
     "shared_papers": 2,
     "recent_shared_papers": 2,
@@ -2808,8 +2810,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-25",
-    "window_start": "2024-11-25",
+    "checked_at": "2026-11-26",
+    "window_start": "2024-11-26",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -2838,8 +2840,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-25",
-    "window_start": "2024-11-25",
+    "checked_at": "2026-11-26",
+    "window_start": "2024-11-26",
     "recent_months": 24,
     "shared_papers": 1,
     "recent_shared_papers": 1,
@@ -2870,13 +2872,13 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-25",
-    "window_start": "2024-11-25",
+    "checked_at": "2026-11-26",
+    "window_start": "2024-11-26",
     "recent_months": 24,
-    "shared_papers": 5,
-    "recent_shared_papers": 5,
-    "last_collaboration_date": "2026-04-22",
-    "followup_until": "2028-04-22",
+    "shared_papers": 4,
+    "recent_shared_papers": 4,
+    "last_collaboration_date": "2026-03-12",
+    "followup_until": "2028-03-12",
     "current_coauthors": [
      "andre-dekker",
      "jiaxu-zhang",
@@ -2886,7 +2888,7 @@
     ]
    },
    "tracked": true,
-   "tracked_until": "2028-04-22",
+   "tracked_until": "2028-03-12",
    "needs_review": false
   },
   {
@@ -2904,8 +2906,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-25",
-    "window_start": "2024-11-25",
+    "checked_at": "2026-11-26",
+    "window_start": "2024-11-26",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -2934,8 +2936,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-25",
-    "window_start": "2024-11-25",
+    "checked_at": "2026-11-26",
+    "window_start": "2024-11-26",
     "recent_months": 24,
     "shared_papers": 3,
     "recent_shared_papers": 1,
@@ -2964,8 +2966,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-25",
-    "window_start": "2024-11-25",
+    "checked_at": "2026-11-26",
+    "window_start": "2024-11-26",
     "recent_months": 24,
     "shared_papers": 1,
     "recent_shared_papers": 0,
@@ -2994,8 +2996,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-25",
-    "window_start": "2024-11-25",
+    "checked_at": "2026-11-26",
+    "window_start": "2024-11-26",
     "recent_months": 24,
     "shared_papers": 1,
     "recent_shared_papers": 1,
@@ -3024,8 +3026,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-25",
-    "window_start": "2024-11-25",
+    "checked_at": "2026-11-26",
+    "window_start": "2024-11-26",
     "recent_months": 24,
     "shared_papers": 1,
     "recent_shared_papers": 0,
@@ -3052,8 +3054,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-25",
-    "window_start": "2024-11-25",
+    "checked_at": "2026-11-26",
+    "window_start": "2024-11-26",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -3080,8 +3082,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-25",
-    "window_start": "2024-11-25",
+    "checked_at": "2026-11-26",
+    "window_start": "2024-11-26",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -3108,8 +3110,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-25",
-    "window_start": "2024-11-25",
+    "checked_at": "2026-11-26",
+    "window_start": "2024-11-26",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -3136,8 +3138,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-25",
-    "window_start": "2024-11-25",
+    "checked_at": "2026-11-26",
+    "window_start": "2024-11-26",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -3167,8 +3169,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-25",
-    "window_start": "2024-11-25",
+    "checked_at": "2026-11-26",
+    "window_start": "2024-11-26",
     "recent_months": 24,
     "shared_papers": 6,
     "recent_shared_papers": 4,
@@ -3197,8 +3199,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-25",
-    "window_start": "2024-11-25",
+    "checked_at": "2026-11-26",
+    "window_start": "2024-11-26",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -3225,8 +3227,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-25",
-    "window_start": "2024-11-25",
+    "checked_at": "2026-11-26",
+    "window_start": "2024-11-26",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -3253,8 +3255,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-25",
-    "window_start": "2024-11-25",
+    "checked_at": "2026-11-26",
+    "window_start": "2024-11-26",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -3281,8 +3283,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-25",
-    "window_start": "2024-11-25",
+    "checked_at": "2026-11-26",
+    "window_start": "2024-11-26",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -3311,8 +3313,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-25",
-    "window_start": "2024-11-25",
+    "checked_at": "2026-11-26",
+    "window_start": "2024-11-26",
     "recent_months": 24,
     "shared_papers": 3,
     "recent_shared_papers": 3,
@@ -3343,8 +3345,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-25",
-    "window_start": "2024-11-25",
+    "checked_at": "2026-11-26",
+    "window_start": "2024-11-26",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -3371,8 +3373,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-25",
-    "window_start": "2024-11-25",
+    "checked_at": "2026-11-26",
+    "window_start": "2024-11-26",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -3399,8 +3401,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-25",
-    "window_start": "2024-11-25",
+    "checked_at": "2026-11-26",
+    "window_start": "2024-11-26",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -3427,8 +3429,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-25",
-    "window_start": "2024-11-25",
+    "checked_at": "2026-11-26",
+    "window_start": "2024-11-26",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -3457,8 +3459,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-25",
-    "window_start": "2024-11-25",
+    "checked_at": "2026-11-26",
+    "window_start": "2024-11-26",
     "recent_months": 24,
     "shared_papers": 1,
     "recent_shared_papers": 0,
@@ -3487,8 +3489,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-25",
-    "window_start": "2024-11-25",
+    "checked_at": "2026-11-26",
+    "window_start": "2024-11-26",
     "recent_months": 24,
     "shared_papers": 3,
     "recent_shared_papers": 2,
@@ -3518,8 +3520,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-25",
-    "window_start": "2024-11-25",
+    "checked_at": "2026-11-26",
+    "window_start": "2024-11-26",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -3546,8 +3548,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-25",
-    "window_start": "2024-11-25",
+    "checked_at": "2026-11-26",
+    "window_start": "2024-11-26",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -3574,8 +3576,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-25",
-    "window_start": "2024-11-25",
+    "checked_at": "2026-11-26",
+    "window_start": "2024-11-26",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -3602,8 +3604,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-25",
-    "window_start": "2024-11-25",
+    "checked_at": "2026-11-26",
+    "window_start": "2024-11-26",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -3630,8 +3632,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-25",
-    "window_start": "2024-11-25",
+    "checked_at": "2026-11-26",
+    "window_start": "2024-11-26",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -3658,8 +3660,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-25",
-    "window_start": "2024-11-25",
+    "checked_at": "2026-11-26",
+    "window_start": "2024-11-26",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -3686,8 +3688,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-25",
-    "window_start": "2024-11-25",
+    "checked_at": "2026-11-26",
+    "window_start": "2024-11-26",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -3716,8 +3718,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-25",
-    "window_start": "2024-11-25",
+    "checked_at": "2026-11-26",
+    "window_start": "2024-11-26",
     "recent_months": 24,
     "shared_papers": 12,
     "recent_shared_papers": 10,
@@ -3757,8 +3759,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-25",
-    "window_start": "2024-11-25",
+    "checked_at": "2026-11-26",
+    "window_start": "2024-11-26",
     "recent_months": 24,
     "shared_papers": 3,
     "recent_shared_papers": 3,
@@ -3789,8 +3791,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-25",
-    "window_start": "2024-11-25",
+    "checked_at": "2026-11-26",
+    "window_start": "2024-11-26",
     "recent_months": 24,
     "shared_papers": 0,
     "recent_shared_papers": 0,
@@ -3819,8 +3821,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-25",
-    "window_start": "2024-11-25",
+    "checked_at": "2026-11-26",
+    "window_start": "2024-11-26",
     "recent_months": 24,
     "shared_papers": 4,
     "recent_shared_papers": 1,
@@ -3852,8 +3854,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-25",
-    "window_start": "2024-11-25",
+    "checked_at": "2026-11-26",
+    "window_start": "2024-11-26",
     "recent_months": 24,
     "shared_papers": 2,
     "recent_shared_papers": 1,
@@ -3885,8 +3887,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-25",
-    "window_start": "2024-11-25",
+    "checked_at": "2026-11-26",
+    "window_start": "2024-11-26",
     "recent_months": 24,
     "shared_papers": 22,
     "recent_shared_papers": 15,
@@ -3895,6 +3897,7 @@
     "current_coauthors": [
      "ananya-choudhury",
      "andre-dekker",
+     "hannah-mary-thomas",
      "johan-van-soest",
      "leonard-wee",
      "leroy-volmer",
@@ -3925,8 +3928,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-25",
-    "window_start": "2024-11-25",
+    "checked_at": "2026-11-26",
+    "window_start": "2024-11-26",
     "recent_months": 24,
     "shared_papers": 8,
     "recent_shared_papers": 4,
@@ -3959,8 +3962,8 @@
    "active": false,
    "former": true,
    "former_collaboration": {
-    "checked_at": "2026-11-25",
-    "window_start": "2024-11-25",
+    "checked_at": "2026-11-26",
+    "window_start": "2024-11-26",
     "recent_months": 24,
     "shared_papers": 7,
     "recent_shared_papers": 3,
@@ -3977,6 +3980,190 @@
   }
  ],
  "works": [
+  {
+   "id": "W7235745647",
+   "openalex_url": "https://openalex.org/W7235745647",
+   "doi": "https://doi.org/10.1016/j.annonc.2026.08.390",
+   "title": "294P Validation of deep learning-based segmentation models for brain metastases",
+   "publication_date": "2026-11-17",
+   "year": 2026,
+   "type": "conference-abstract",
+   "journal": "Annals of Oncology",
+   "source_id": "S41454044",
+   "biblio": {
+    "volume": "37",
+    "first_page": "S484",
+    "last_page": "S485"
+   },
+   "landing_url": "https://doi.org/10.1016/j.annonc.2026.08.390",
+   "is_oa": true,
+   "oa_url": "https://www.annalsofoncology.org/article/S0923-7534(26)01888-0/pdf",
+   "license": null,
+   "pdf_url": "https://www.annalsofoncology.org/article/S0923-7534(26)01888-0/pdf",
+   "authors": [
+    "W. Liang",
+    "J. Zhou",
+    "Hemalatha Kanakarajan",
+    "Wouter De Baene",
+    "Andre L.A.J. Dekker",
+    "A. Lobo Gomes",
+    "P. Kalendralis"
+   ],
+   "author_members": [
+    null,
+    null,
+    null,
+    null,
+    "andre-dekker",
+    null,
+    null
+   ],
+   "author_profiles": {
+    "andre-dekker": {
+     "openalex_id": "A5013513157",
+     "orcid": "0000-0002-0422-7996",
+     "match": "openalex",
+     "affiliations": [
+      "Maastricht University",
+      "Department of Radiation Oncology, Maastricht University, Maastricht, Netherlands"
+     ]
+    }
+   },
+   "author_positions": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+   ],
+   "author_count": 7,
+   "group_members": [
+    "andre-dekker"
+   ],
+   "member_affiliations": {
+    "andre-dekker": [
+     "Maastricht University",
+     "Department of Radiation Oncology, Maastricht University, Maastricht, Netherlands"
+    ]
+   },
+   "affiliation_status": {
+    "andre-dekker": "unspecific"
+   },
+   "senior_affiliations": [
+    "Maastricht University",
+    "Department of Radiation Oncology, Maastricht University, Maastricht, Netherlands"
+   ],
+   "cited_by_count": 0,
+   "abstract": null,
+   "verified": false,
+   "counted_members": [
+    "andre-dekker"
+   ],
+   "counted": true,
+   "listed_elsewhere": false,
+   "first_seen": "2026-11-26",
+   "journal_impact": 1.7,
+   "journal_h_index": 406
+  },
+  {
+   "id": "W7235700746",
+   "openalex_url": "https://openalex.org/W7235700746",
+   "doi": "https://doi.org/10.1016/j.annonc.2026.08.439",
+   "title": "345P CT-based quantification of intratumoral heterogeneity reveals the spatial context of CCR5 prognostic significance for non–small cell lung cancer",
+   "publication_date": "2026-11-17",
+   "year": 2026,
+   "type": "conference-abstract",
+   "journal": "Annals of Oncology",
+   "source_id": "S41454044",
+   "biblio": {
+    "volume": "37",
+    "first_page": "S503",
+    "last_page": "S503"
+   },
+   "landing_url": "https://doi.org/10.1016/j.annonc.2026.08.439",
+   "is_oa": true,
+   "oa_url": "https://www.annalsofoncology.org/article/S0923-7534(26)01937-X/pdf",
+   "license": null,
+   "pdf_url": "https://www.annalsofoncology.org/article/S0923-7534(26)01937-X/pdf",
+   "authors": [
+    "E. Hu",
+    "P. Qiu",
+    "C. Quan",
+    "Andre L.A.J. Dekker",
+    "Leonard Wee"
+   ],
+   "author_members": [
+    null,
+    null,
+    null,
+    "andre-dekker",
+    "leonard-wee"
+   ],
+   "author_profiles": {
+    "andre-dekker": {
+     "openalex_id": "A5013513157",
+     "orcid": "0000-0002-0422-7996",
+     "match": "openalex",
+     "affiliations": [
+      "Maastricht University",
+      "Department of Radiation Oncology, Maastricht University, Maastricht, Netherlands"
+     ]
+    },
+    "leonard-wee": {
+     "openalex_id": "A5004688031",
+     "orcid": "0000-0003-1612-9055",
+     "match": "openalex",
+     "affiliations": [
+      "Maastricht University",
+      "Department of Radiation Oncology, Maastricht University, Maastricht, Netherlands"
+     ]
+    }
+   },
+   "author_positions": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "author_count": 5,
+   "group_members": [
+    "andre-dekker",
+    "leonard-wee"
+   ],
+   "member_affiliations": {
+    "andre-dekker": [
+     "Maastricht University",
+     "Department of Radiation Oncology, Maastricht University, Maastricht, Netherlands"
+    ],
+    "leonard-wee": [
+     "Maastricht University",
+     "Department of Radiation Oncology, Maastricht University, Maastricht, Netherlands"
+    ]
+   },
+   "affiliation_status": {
+    "andre-dekker": "unspecific",
+    "leonard-wee": "unspecific"
+   },
+   "senior_affiliations": [
+    "Maastricht University",
+    "Department of Radiation Oncology, Maastricht University, Maastricht, Netherlands"
+   ],
+   "cited_by_count": 0,
+   "abstract": null,
+   "verified": false,
+   "counted_members": [
+    "andre-dekker",
+    "leonard-wee"
+   ],
+   "counted": true,
+   "listed_elsewhere": false,
+   "first_seen": "2026-11-26",
+   "journal_impact": 1.7,
+   "journal_h_index": 406
+  },
   {
    "id": "W7235368459",
    "openalex_url": "https://openalex.org/W7235368459",
@@ -4082,6 +4269,212 @@
    "first_seen": "2026-11-19",
    "journal_impact": null,
    "journal_h_index": null
+  },
+  {
+   "id": "W7234893871",
+   "openalex_url": "https://openalex.org/W7234893871",
+   "doi": "https://doi.org/10.1016/j.annonc.2026.08.242",
+   "title": "235P MDT-style multi-agent workflow for integrating multi-source clinical reports in rectal cancer response assessment",
+   "publication_date": "2026-11-17",
+   "year": 2026,
+   "type": "conference-abstract",
+   "journal": "Annals of Oncology",
+   "source_id": "S41454044",
+   "biblio": {
+    "volume": "37",
+    "first_page": "S465",
+    "last_page": "S465"
+   },
+   "landing_url": "https://doi.org/10.1016/j.annonc.2026.08.242",
+   "is_oa": true,
+   "oa_url": "https://www.annalsofoncology.org/article/S0923-7534(26)01740-0/pdf",
+   "license": null,
+   "pdf_url": "https://www.annalsofoncology.org/article/S0923-7534(26)01740-0/pdf",
+   "authors": [
+    "M. Li",
+    "S.C. Chen",
+    "Andre L.A.J. Dekker",
+    "Y. Huang",
+    "Leonard Wee"
+   ],
+   "author_members": [
+    null,
+    null,
+    "andre-dekker",
+    null,
+    "leonard-wee"
+   ],
+   "author_profiles": {
+    "andre-dekker": {
+     "openalex_id": "A5013513157",
+     "orcid": "0000-0002-0422-7996",
+     "match": "openalex",
+     "affiliations": [
+      "Maastricht University",
+      "Clinical Data Science, University of Maastricht, Maastricht, Netherlands"
+     ]
+    },
+    "leonard-wee": {
+     "openalex_id": "A5004688031",
+     "orcid": "0000-0003-1612-9055",
+     "match": "openalex",
+     "affiliations": [
+      "Maastricht University",
+      "Clinical Data Science, University of Maastricht, Maastricht, Netherlands"
+     ]
+    }
+   },
+   "author_positions": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "author_count": 5,
+   "group_members": [
+    "andre-dekker",
+    "leonard-wee"
+   ],
+   "member_affiliations": {
+    "andre-dekker": [
+     "Maastricht University",
+     "Clinical Data Science, University of Maastricht, Maastricht, Netherlands"
+    ],
+    "leonard-wee": [
+     "Maastricht University",
+     "Clinical Data Science, University of Maastricht, Maastricht, Netherlands"
+    ]
+   },
+   "affiliation_status": {
+    "andre-dekker": "verified",
+    "leonard-wee": "verified"
+   },
+   "senior_affiliations": [
+    "Maastricht University",
+    "Clinical Data Science, University of Maastricht, Maastricht, Netherlands"
+   ],
+   "cited_by_count": 0,
+   "abstract": null,
+   "verified": true,
+   "counted_members": [
+    "andre-dekker",
+    "leonard-wee"
+   ],
+   "counted": true,
+   "listed_elsewhere": false,
+   "first_seen": "2026-11-26",
+   "journal_impact": 1.7,
+   "journal_h_index": 406
+  },
+  {
+   "id": "W7234785374",
+   "openalex_url": "https://openalex.org/W7234785374",
+   "doi": "https://doi.org/10.1016/j.annonc.2026.08.241",
+   "title": "234P Pretreatment prediction of radiation proctitis using a multimodal fusion transformer (MFT): Multicenter development and prospective validation",
+   "publication_date": "2026-11-17",
+   "year": 2026,
+   "type": "conference-abstract",
+   "journal": "Annals of Oncology",
+   "source_id": "S41454044",
+   "biblio": {
+    "volume": "37",
+    "first_page": "S464",
+    "last_page": "S464"
+   },
+   "landing_url": "https://doi.org/10.1016/j.annonc.2026.08.241",
+   "is_oa": true,
+   "oa_url": "https://www.annalsofoncology.org/article/S0923-7534(26)01739-4/pdf",
+   "license": null,
+   "pdf_url": "https://www.annalsofoncology.org/article/S0923-7534(26)01739-4/pdf",
+   "authors": [
+    "M. Zhou",
+    "Qian Cao",
+    "W. Shang",
+    "Z.J. Zhang",
+    "P. Zhao",
+    "C. Hong",
+    "Andre L.A.J. Dekker",
+    "Leonard Wee",
+    "J.W. Zhu"
+   ],
+   "author_members": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    "andre-dekker",
+    "leonard-wee",
+    null
+   ],
+   "author_profiles": {
+    "andre-dekker": {
+     "openalex_id": "A5013513157",
+     "orcid": "0000-0002-0422-7996",
+     "match": "openalex",
+     "affiliations": [
+      "Maastro Clinic",
+      "Clinical Data Science, Maastro Clinic, Maastricht, Netherlands"
+     ]
+    },
+    "leonard-wee": {
+     "openalex_id": "A5004688031",
+     "orcid": "0000-0003-1612-9055",
+     "match": "openalex",
+     "affiliations": [
+      "Maastricht University",
+      "Department of Clinical Data Science, Univerity of Maastricht, Maastricht, Netherlands"
+     ]
+    }
+   },
+   "author_positions": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+   ],
+   "author_count": 9,
+   "group_members": [
+    "andre-dekker",
+    "leonard-wee"
+   ],
+   "member_affiliations": {
+    "andre-dekker": [
+     "Maastro Clinic",
+     "Clinical Data Science, Maastro Clinic, Maastricht, Netherlands"
+    ],
+    "leonard-wee": [
+     "Maastricht University",
+     "Department of Clinical Data Science, Univerity of Maastricht, Maastricht, Netherlands"
+    ]
+   },
+   "affiliation_status": {
+    "andre-dekker": "verified",
+    "leonard-wee": "verified"
+   },
+   "senior_affiliations": [
+    "Zhejiang Cancer Hospital",
+    "Radiation Oncology, Zhejiang Cancer Hospital - Cancer Research Institute, Hangzhou, China"
+   ],
+   "cited_by_count": 0,
+   "abstract": null,
+   "verified": true,
+   "counted_members": [
+    "andre-dekker",
+    "leonard-wee"
+   ],
+   "counted": true,
+   "listed_elsewhere": false,
+   "first_seen": "2026-11-26",
+   "journal_impact": 1.7,
+   "journal_h_index": 406
   },
   {
    "id": "W7225989936",
@@ -4232,7 +4625,7 @@
     "Jeroen J. W. M. Janssen",
     "Eduardus F. M. Posthuma",
     "Rianne Fijten",
-    "Ewald M. Bronkhorst",
+    "Ewald Maria Bronkhorst",
     "Andre L.A.J. Dekker",
     "Rosella Hermens",
     "Nicole M. A. Blijlevens"
@@ -4501,8 +4894,8 @@
    "counted": true,
    "listed_elsewhere": false,
    "first_seen": "2026-10-21",
-   "journal_impact": 2.7,
-   "journal_h_index": 37
+   "journal_impact": 3.2,
+   "journal_h_index": 43
   },
   {
    "id": "W7203935885",
@@ -4527,7 +4920,7 @@
    "authors": [
     "Daniel Berger",
     "Charles S. Mayo",
-    "Amanda Caissie",
+    "Amanda L. Caissie",
     "Katie L. Spencer",
     "Yolande N. Lievens",
     "Andre L.A.J. Dekker",
@@ -4588,8 +4981,8 @@
    "counted": true,
    "listed_elsewhere": false,
    "first_seen": "2026-10-21",
-   "journal_impact": 1.7,
-   "journal_h_index": 30
+   "journal_impact": 2.0,
+   "journal_h_index": 34
   },
   {
    "id": "W7225564519",
@@ -4614,7 +5007,7 @@
    "pdf_url": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1002/lrh2.70132",
    "authors": [
     "Dan Stark",
-    "Oana Lindner",
+    "Oana C. Lindner",
     "Simone Hanebaum",
     "Nicola Hughes",
     "Urška Košir",
@@ -4708,7 +5101,7 @@
     "Markus Kreuzthaler",
     "Martin Benedikt",
     "Ensar Emir Erol",
-    "Omer Durukan Kilic",
+    "Ömer Durukan Kılıç",
     "Katerina Serafimova",
     "Todor Primov",
     "Svetla Boytcheva",
@@ -4987,8 +5380,8 @@
    "counted": true,
    "listed_elsewhere": false,
    "first_seen": "2026-11-06",
-   "journal_impact": 3.3,
-   "journal_h_index": 37
+   "journal_impact": 6.3,
+   "journal_h_index": 44
   },
   {
    "id": "W7225339278",
@@ -5074,8 +5467,8 @@
    "counted": true,
    "listed_elsewhere": false,
    "first_seen": "2026-11-06",
-   "journal_impact": 3.5,
-   "journal_h_index": 594
+   "journal_impact": 4.4,
+   "journal_h_index": 656
   },
   {
    "id": "W7239366106",
@@ -5221,6 +5614,126 @@
    "other_group": "Liesbeth Jorinne Boersma",
    "journal_impact": 2.8,
    "journal_h_index": 247
+  },
+  {
+   "id": "W7225885787",
+   "openalex_url": "https://openalex.org/W7225885787",
+   "doi": "https://doi.org/10.1016/j.esmorw.2026.100965",
+   "title": "148P Privacy-preserving pan-European oncology benchmarking in the DigiONE network using federated real-world data: The DigiACT s",
+   "publication_date": "2026-11-01",
+   "year": 2026,
+   "type": "conference-abstract",
+   "journal": "ESMO Real World Data and Digital Oncology",
+   "source_id": "S4389157630",
+   "biblio": {
+    "volume": "14",
+    "first_page": "100965",
+    "last_page": "100965"
+   },
+   "landing_url": "https://doi.org/10.1016/j.esmorw.2026.100965",
+   "is_oa": true,
+   "oa_url": "https://www.esmorwd.org/article/S2949-8201(26)00284-5/pdf",
+   "license": "cc-by-nc-nd",
+   "pdf_url": "https://www.esmorwd.org/article/S2949-8201(26)00284-5/pdf",
+   "authors": [
+    "Alberto Traverso",
+    "Andre L.A.J. Dekker",
+    "M. Detrait",
+    "B. Gozlinski",
+    "M. Koch",
+    "L. Korgvee",
+    "L. Revie",
+    "M. Rosinska",
+    "K. Sablauskas",
+    "L. Sanchez Gomez",
+    "Thorsten Schlomm",
+    "J. Thonnard",
+    "Michal Uher",
+    "X.M. Fernandez",
+    "Giovanni Tonon"
+   ],
+   "author_members": [
+    "alberto-traverso",
+    "andre-dekker",
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   "author_profiles": {
+    "alberto-traverso": {
+     "openalex_id": "A5008606043",
+     "orcid": "0000-0001-6183-4429",
+     "match": "openalex",
+     "affiliations": [
+      "IRCCS Ospedale San Raffaele",
+      "Department of Medical Oncology, IRCCS Ospedale San Raffaele, Milan, Italy"
+     ]
+    },
+    "andre-dekker": {
+     "openalex_id": "A5013513157",
+     "orcid": "0000-0002-0422-7996",
+     "match": "openalex",
+     "affiliations": [
+      "Maastro Clinic",
+      "Department of Clinical Data Science, Maastro Clinic, Maastricht, Netherlands"
+     ]
+    }
+   },
+   "author_positions": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15
+   ],
+   "author_count": 15,
+   "group_members": [
+    "andre-dekker"
+   ],
+   "member_affiliations": {
+    "andre-dekker": [
+     "Maastro Clinic",
+     "Department of Clinical Data Science, Maastro Clinic, Maastricht, Netherlands"
+    ]
+   },
+   "affiliation_status": {
+    "andre-dekker": "verified"
+   },
+   "senior_affiliations": [
+    "IRCCS Ospedale San Raffaele",
+    "Experimental Oncology Dept., IRCCS Ospedale San Raffaele, Milan, Italy"
+   ],
+   "cited_by_count": 0,
+   "abstract": "Cross-border oncology research is limited by data heterogeneity, governance and centre digital maturity. We assessed whether federated analytics could enable privacy-preserving benchmarking of cancer burden, patient characteristics and diagnosis-to-treatment intervals across European cancer centres.",
+   "verified": true,
+   "counted_members": [
+    "andre-dekker"
+   ],
+   "counted": true,
+   "listed_elsewhere": false,
+   "first_seen": "2026-11-26",
+   "journal_impact": 2.9,
+   "journal_h_index": 15
   },
   {
    "id": "W7224572054",
@@ -5533,8 +6046,8 @@
    "counted": true,
    "listed_elsewhere": false,
    "first_seen": "2026-10-30",
-   "journal_impact": 5.3,
-   "journal_h_index": 212
+   "journal_impact": 5.8,
+   "journal_h_index": 224
   },
   {
    "id": "W7223572531",
@@ -6073,8 +6586,8 @@
    "counted": true,
    "listed_elsewhere": false,
    "first_seen": "2026-10-21",
-   "journal_impact": 6.3,
-   "journal_h_index": 77
+   "journal_impact": 9.5,
+   "journal_h_index": 84
   },
   {
    "id": "W7221757932",
@@ -6256,8 +6769,8 @@
    "counted": true,
    "listed_elsewhere": false,
    "first_seen": "2026-10-21",
-   "journal_impact": 7.0,
-   "journal_h_index": 29
+   "journal_impact": 10.9,
+   "journal_h_index": 39
   },
   {
    "id": "W7220851390",
@@ -6387,8 +6900,8 @@
    "counted": true,
    "listed_elsewhere": false,
    "first_seen": "2026-10-21",
-   "journal_impact": 2.7,
-   "journal_h_index": 37
+   "journal_impact": 3.2,
+   "journal_h_index": 43
   },
   {
    "id": "W7220661096",
@@ -6616,8 +7129,8 @@
    "counted": true,
    "listed_elsewhere": false,
    "first_seen": "2026-10-21",
-   "journal_impact": 4.7,
-   "journal_h_index": 109
+   "journal_impact": 5.4,
+   "journal_h_index": 115
   },
   {
    "id": "W7215768157",
@@ -7001,7 +7514,7 @@
     "Leonard Nürnberg",
     "Dennis Bontempi",
     "Danielle S. Bitterman",
-    "Paul Catalano",
+    "Paul J. Catalano",
     "Vasco Prudente",
     "Dmitrii Glubokov",
     "Andrew Warrington",
@@ -7161,8 +7674,8 @@
    "counted": true,
    "listed_elsewhere": false,
    "first_seen": "2026-10-21",
-   "journal_impact": 16.8,
-   "journal_h_index": 132
+   "journal_impact": 20.3,
+   "journal_h_index": 146
   },
   {
    "id": "W7204170550",
@@ -7263,8 +7776,8 @@
    "listed_elsewhere": true,
    "first_seen": "2026-10-21",
    "other_group": "Christiaan van der Leij",
-   "journal_impact": 1.7,
-   "journal_h_index": 65
+   "journal_impact": 1.8,
+   "journal_h_index": 73
   },
   {
    "id": "W7214534901",
@@ -7590,8 +8103,8 @@
    "counted": true,
    "listed_elsewhere": false,
    "first_seen": "2026-10-21",
-   "journal_impact": 0.9,
-   "journal_h_index": 11
+   "journal_impact": 2.9,
+   "journal_h_index": 15
   },
   {
    "id": "W7210292216",
@@ -7611,7 +8124,7 @@
    "landing_url": "https://doi.org/10.1016/j.ctro.2026.101282",
    "is_oa": true,
    "oa_url": "https://www.ctro.science/article/S2405-6308(26)00177-1/pdf",
-   "license": "cc-by-nc-nd",
+   "license": "cc-by",
    "pdf_url": "https://www.ctro.science/article/S2405-6308(26)00177-1/pdf",
    "authors": [
     "Jikai Zhou",
@@ -7773,8 +8286,8 @@
    "counted": true,
    "listed_elsewhere": false,
    "first_seen": "2026-10-21",
-   "journal_impact": 1.9,
-   "journal_h_index": 47
+   "journal_impact": 4.0,
+   "journal_h_index": 54
   },
   {
    "id": "W7214349590",
@@ -7919,8 +8432,8 @@
    "counted": true,
    "listed_elsewhere": false,
    "first_seen": "2026-10-21",
-   "journal_impact": 0.8,
-   "journal_h_index": 346
+   "journal_impact": 1.1,
+   "journal_h_index": 362
   },
   {
    "id": "W7214123401",
@@ -8002,8 +8515,8 @@
    "counted": true,
    "listed_elsewhere": false,
    "first_seen": "2026-10-21",
-   "journal_impact": 0.5,
-   "journal_h_index": 87
+   "journal_impact": 0.8,
+   "journal_h_index": 96
   },
   {
    "id": "W7214084622",
@@ -8093,8 +8606,8 @@
    "counted": true,
    "listed_elsewhere": false,
    "first_seen": "2026-10-21",
-   "journal_impact": 0.5,
-   "journal_h_index": 87
+   "journal_impact": 0.8,
+   "journal_h_index": 96
   },
   {
    "id": "W7213285668",
@@ -8232,8 +8745,8 @@
    "counted": true,
    "listed_elsewhere": false,
    "first_seen": "2026-10-21",
-   "journal_impact": 0.1,
-   "journal_h_index": 31
+   "journal_impact": 0.2,
+   "journal_h_index": 34
   },
   {
    "id": "W7203783252",
@@ -8321,8 +8834,8 @@
    "counted": true,
    "listed_elsewhere": false,
    "first_seen": "2026-10-21",
-   "journal_impact": 11.8,
-   "journal_h_index": 232
+   "journal_impact": 10.9,
+   "journal_h_index": 251
   },
   {
    "id": "W7201896454",
@@ -8395,8 +8908,8 @@
    "counted": true,
    "listed_elsewhere": false,
    "first_seen": "2026-10-23",
-   "journal_impact": 1.6,
-   "journal_h_index": 19
+   "journal_impact": 3.3,
+   "journal_h_index": 25
   },
   {
    "id": "W7170077899",
@@ -8427,7 +8940,7 @@
     "C. Marenghi",
     "Fabio Badenchini",
     "B. Avuzzi",
-    "M. Catanzaro",
+    "Mario Achille Catanzaro",
     "Nicola Nicolai",
     "B. Noris Chiorda",
     "Silvia Stagni",
@@ -8508,8 +9021,8 @@
    "counted": true,
    "listed_elsewhere": false,
    "first_seen": "2026-10-21",
-   "journal_impact": 5.3,
-   "journal_h_index": 463
+   "journal_impact": 6.6,
+   "journal_h_index": 490
   },
   {
    "id": "W7168088179",
@@ -8763,8 +9276,8 @@
    "counted": true,
    "listed_elsewhere": false,
    "first_seen": "2026-10-21",
-   "journal_impact": 3.1,
-   "journal_h_index": 298
+   "journal_impact": 3.3,
+   "journal_h_index": 315
   },
   {
    "id": "W7167462435",
@@ -8917,8 +9430,8 @@
      ]
     },
     "leonard-wee": {
-     "openalex_id": "A5159167140",
-     "orcid": null,
+     "openalex_id": "A5004688031",
+     "orcid": "0000-0003-1612-9055",
      "match": "openalex",
      "affiliations": [
       "Maastricht University Medical Centre",
@@ -9007,8 +9520,8 @@
    "counted": true,
    "listed_elsewhere": false,
    "first_seen": "2026-10-21",
-   "journal_impact": 0.8,
-   "journal_h_index": 346
+   "journal_impact": 1.1,
+   "journal_h_index": 362
   },
   {
    "id": "W7167038328",
@@ -9213,8 +9726,8 @@
    "counted": true,
    "listed_elsewhere": false,
    "first_seen": "2026-10-21",
-   "journal_impact": 1.6,
-   "journal_h_index": 18
+   "journal_impact": 2.7,
+   "journal_h_index": 25
   },
   {
    "id": "W7164753874",
@@ -9400,8 +9913,8 @@
    "counted": true,
    "listed_elsewhere": false,
    "first_seen": "2026-10-21",
-   "journal_impact": 1.1,
-   "journal_h_index": 324
+   "journal_impact": 1.3,
+   "journal_h_index": 342
   },
   {
    "id": "W7163696873",
@@ -9486,8 +9999,8 @@
    "counted": true,
    "listed_elsewhere": false,
    "first_seen": "2026-10-21",
-   "journal_impact": 9.1,
-   "journal_h_index": 141
+   "journal_impact": 10.3,
+   "journal_h_index": 165
   },
   {
    "id": "W7163123298",
@@ -9587,8 +10100,8 @@
    "counted": true,
    "listed_elsewhere": false,
    "first_seen": "2026-10-21",
-   "journal_impact": 6.6,
-   "journal_h_index": 331
+   "journal_impact": 8.0,
+   "journal_h_index": 375
   },
   {
    "id": "W7163517376",
@@ -9715,8 +10228,8 @@
    "counted": true,
    "listed_elsewhere": false,
    "first_seen": "2026-10-21",
-   "journal_impact": 4.9,
-   "journal_h_index": 141
+   "journal_impact": 5.6,
+   "journal_h_index": 155
   },
   {
    "id": "W7162143175",
@@ -9835,8 +10348,8 @@
    "counted": true,
    "listed_elsewhere": false,
    "first_seen": "2026-10-21",
-   "journal_impact": 2.4,
-   "journal_h_index": 32
+   "journal_impact": 3.6,
+   "journal_h_index": 40
   },
   {
    "id": "W7161960653",
@@ -10475,7 +10988,7 @@
    "listed_elsewhere": false,
    "first_seen": "2026-11-09",
    "journal_impact": 0.8,
-   "journal_h_index": 226
+   "journal_h_index": 239
   },
   {
    "id": "W7225597830",
@@ -10565,7 +11078,7 @@
    "listed_elsewhere": false,
    "first_seen": "2026-11-09",
    "journal_impact": 0.8,
-   "journal_h_index": 226
+   "journal_h_index": 239
   },
   {
    "id": "W7225597695",
@@ -10634,7 +11147,7 @@
    "listed_elsewhere": false,
    "first_seen": "2026-11-09",
    "journal_impact": 0.8,
-   "journal_h_index": 226
+   "journal_h_index": 239
   },
   {
    "id": "W7225596314",
@@ -10733,7 +11246,7 @@
    "listed_elsewhere": false,
    "first_seen": "2026-11-09",
    "journal_impact": 0.8,
-   "journal_h_index": 226
+   "journal_h_index": 239
   },
   {
    "id": "W7225595358",
@@ -10850,7 +11363,7 @@
    "listed_elsewhere": false,
    "first_seen": "2026-11-09",
    "journal_impact": 0.8,
-   "journal_h_index": 226
+   "journal_h_index": 239
   },
   {
    "id": "W7225594350",
@@ -10935,7 +11448,7 @@
    "listed_elsewhere": false,
    "first_seen": "2026-11-09",
    "journal_impact": 0.8,
-   "journal_h_index": 226
+   "journal_h_index": 239
   },
   {
    "id": "W7225593325",
@@ -11061,7 +11574,7 @@
    "listed_elsewhere": false,
    "first_seen": "2026-11-09",
    "journal_impact": 0.8,
-   "journal_h_index": 226
+   "journal_h_index": 239
   },
   {
    "id": "W7225592857",
@@ -11175,7 +11688,7 @@
    "listed_elsewhere": false,
    "first_seen": "2026-11-09",
    "journal_impact": 0.8,
-   "journal_h_index": 226
+   "journal_h_index": 239
   },
   {
    "id": "W7225592540",
@@ -11263,7 +11776,7 @@
    "listed_elsewhere": false,
    "first_seen": "2026-11-09",
    "journal_impact": 0.8,
-   "journal_h_index": 226
+   "journal_h_index": 239
   },
   {
    "id": "W7225591633",
@@ -11368,7 +11881,7 @@
    "listed_elsewhere": false,
    "first_seen": "2026-11-09",
    "journal_impact": 0.8,
-   "journal_h_index": 226
+   "journal_h_index": 239
   },
   {
    "id": "W7225590648",
@@ -11443,7 +11956,7 @@
    "listed_elsewhere": false,
    "first_seen": "2026-11-09",
    "journal_impact": 0.8,
-   "journal_h_index": 226
+   "journal_h_index": 239
   },
   {
    "id": "W7225586306",
@@ -11572,7 +12085,7 @@
    "listed_elsewhere": false,
    "first_seen": "2026-11-09",
    "journal_impact": 0.8,
-   "journal_h_index": 226
+   "journal_h_index": 239
   },
   {
    "id": "W7225584293",
@@ -11680,7 +12193,7 @@
    "listed_elsewhere": false,
    "first_seen": "2026-11-09",
    "journal_impact": 0.8,
-   "journal_h_index": 226
+   "journal_h_index": 239
   },
   {
    "id": "W7225581476",
@@ -11755,7 +12268,7 @@
    "listed_elsewhere": false,
    "first_seen": "2026-11-09",
    "journal_impact": 0.8,
-   "journal_h_index": 226
+   "journal_h_index": 239
   },
   {
    "id": "W7225580725",
@@ -11815,7 +12328,7 @@
    "listed_elsewhere": false,
    "first_seen": "2026-11-09",
    "journal_impact": 0.8,
-   "journal_h_index": 226
+   "journal_h_index": 239
   },
   {
    "id": "W7225576390",
@@ -11908,7 +12421,7 @@
    "listed_elsewhere": false,
    "first_seen": "2026-11-09",
    "journal_impact": 0.8,
-   "journal_h_index": 226
+   "journal_h_index": 239
   },
   {
    "id": "W7225576115",
@@ -12053,7 +12566,7 @@
    "listed_elsewhere": false,
    "first_seen": "2026-11-09",
    "journal_impact": 0.8,
-   "journal_h_index": 226
+   "journal_h_index": 239
   },
   {
    "id": "W7225575262",
@@ -12185,7 +12698,7 @@
    "listed_elsewhere": false,
    "first_seen": "2026-11-09",
    "journal_impact": 0.8,
-   "journal_h_index": 226
+   "journal_h_index": 239
   },
   {
    "id": "W7225574050",
@@ -12281,7 +12794,7 @@
    "listed_elsewhere": false,
    "first_seen": "2026-11-09",
    "journal_impact": 0.8,
-   "journal_h_index": 226
+   "journal_h_index": 239
   },
   {
    "id": "W7225572842",
@@ -12368,7 +12881,7 @@
    "listed_elsewhere": false,
    "first_seen": "2026-11-09",
    "journal_impact": 0.8,
-   "journal_h_index": 226
+   "journal_h_index": 239
   },
   {
    "id": "W7225572772",
@@ -12507,7 +13020,7 @@
    "listed_elsewhere": false,
    "first_seen": "2026-11-09",
    "journal_impact": 0.8,
-   "journal_h_index": 226
+   "journal_h_index": 239
   },
   {
    "id": "W7225572297",
@@ -12595,7 +13108,7 @@
    "listed_elsewhere": false,
    "first_seen": "2026-11-09",
    "journal_impact": 0.8,
-   "journal_h_index": 226
+   "journal_h_index": 239
   },
   {
    "id": "W7225571522",
@@ -12688,7 +13201,7 @@
    "listed_elsewhere": false,
    "first_seen": "2026-11-09",
    "journal_impact": 0.8,
-   "journal_h_index": 226
+   "journal_h_index": 239
   },
   {
    "id": "W7225569697",
@@ -12809,7 +13322,7 @@
    "listed_elsewhere": false,
    "first_seen": "2026-11-09",
    "journal_impact": 0.8,
-   "journal_h_index": 226
+   "journal_h_index": 239
   },
   {
    "id": "W7225566754",
@@ -12931,7 +13444,7 @@
    "listed_elsewhere": false,
    "first_seen": "2026-11-09",
    "journal_impact": 0.8,
-   "journal_h_index": 226
+   "journal_h_index": 239
   },
   {
    "id": "W7225565886",
@@ -13063,7 +13576,7 @@
    "listed_elsewhere": false,
    "first_seen": "2026-11-09",
    "journal_impact": 0.8,
-   "journal_h_index": 226
+   "journal_h_index": 239
   },
   {
    "id": "W7225565170",
@@ -13154,7 +13667,7 @@
    "listed_elsewhere": false,
    "first_seen": "2026-11-09",
    "journal_impact": 0.8,
-   "journal_h_index": 226
+   "journal_h_index": 239
   },
   {
    "id": "W7225559926",
@@ -13253,7 +13766,7 @@
    "listed_elsewhere": false,
    "first_seen": "2026-11-09",
    "journal_impact": 0.8,
-   "journal_h_index": 226
+   "journal_h_index": 239
   },
   {
    "id": "W4416157627",
@@ -13484,122 +13997,8 @@
    "counted": true,
    "listed_elsewhere": false,
    "first_seen": "2026-10-21",
-   "journal_impact": 1.1,
-   "journal_h_index": 145
-  },
-  {
-   "id": "W7239553629",
-   "openalex_url": "https://openalex.org/W7239553629",
-   "doi": null,
-   "title": "Predicting Clinical Remission in Crohn’s Disease: A Comparative Study of Expert-Generated and Computer-Generated Bayesian Networks",
-   "publication_date": "2026-04-22",
-   "year": 2026,
-   "type": "conference-paper",
-   "journal": "CEUR Workshop Proceedings",
-   "source_id": "S4210204615",
-   "biblio": {},
-   "landing_url": "https://ceur-ws.org/Vol-4196/paper_18.pdf",
-   "is_oa": true,
-   "oa_url": "https://ceur-ws.org/Vol-4196/paper_18.pdf",
-   "license": "cc-by",
-   "pdf_url": "https://ceur-ws.org/Vol-4196/paper_18.pdf",
-   "authors": [
-    "Yomi Okegunna",
-    "Maija Utriaine",
-    "M Cloots",
-    "Jiaxu Zhang",
-    "I. Heredero Bermejo",
-    "Loriane Marina Michèle Verleye",
-    "Marjolijn Duijvestein",
-    "Zlatan Mujagic",
-    "Andre L.A.J. Dekker",
-    "Marieke J. Pierik",
-    "Rianne Fijten"
-   ],
-   "author_members": [
-    "yomi-okegunna",
-    null,
-    "manon-cloots",
-    "jiaxu-zhang",
-    null,
-    null,
-    null,
-    null,
-    "andre-dekker",
-    null,
-    "rianne-fijten"
-   ],
-   "author_profiles": {
-    "yomi-okegunna": {
-     "openalex_id": "A5115981268",
-     "orcid": null,
-     "match": "openalex",
-     "affiliations": []
-    },
-    "manon-cloots": {
-     "openalex_id": "A5115984648",
-     "orcid": "0000-0002-7224-7198",
-     "match": "openalex",
-     "affiliations": []
-    },
-    "jiaxu-zhang": {
-     "openalex_id": "A5164198705",
-     "orcid": null,
-     "match": "name",
-     "affiliations": []
-    },
-    "andre-dekker": {
-     "openalex_id": "A5013513157",
-     "orcid": "0000-0002-0422-7996",
-     "match": "openalex",
-     "affiliations": []
-    },
-    "rianne-fijten": {
-     "openalex_id": "A5081642553",
-     "orcid": "0000-0002-1964-6317",
-     "match": "openalex",
-     "affiliations": []
-    }
-   },
-   "author_positions": [
-    1,
-    2,
-    3,
-    4,
-    5,
-    6,
-    7,
-    8,
-    9,
-    10,
-    11
-   ],
-   "author_count": 11,
-   "group_members": [
-    "andre-dekker",
-    "rianne-fijten"
-   ],
-   "member_affiliations": {
-    "andre-dekker": [],
-    "rianne-fijten": []
-   },
-   "affiliation_status": {
-    "andre-dekker": "unknown",
-    "rianne-fijten": "unknown"
-   },
-   "senior_affiliations": [],
-   "cited_by_count": 0,
-   "abstract": null,
-   "verified": false,
-   "counted_members": [
-    "andre-dekker",
-    "rianne-fijten"
-   ],
-   "counted": true,
-   "listed_elsewhere": false,
-   "first_seen": "2026-11-25",
-   "journal_impact": 1.1,
-   "journal_h_index": 26
+   "journal_impact": 1.0,
+   "journal_h_index": 156
   },
   {
    "id": "W7154321941",
@@ -13637,7 +14036,7 @@
     "Bhakti Baheti",
     "Jaume Banús",
     "Kamil Barbierik",
-    "Christoph Brune",
+    "Christoph Brüne",
     "步岩松",
     "Baptiste Callard",
     "Yuhan Chen",
@@ -14274,8 +14673,8 @@
    "counted": true,
    "listed_elsewhere": false,
    "first_seen": "2026-10-21",
-   "journal_impact": 5.6,
-   "journal_h_index": 351
+   "journal_impact": 7.9,
+   "journal_h_index": 384
   },
   {
    "id": "W7147546841",
@@ -14336,7 +14735,7 @@
    "counted": true,
    "listed_elsewhere": false,
    "first_seen": "2026-10-21",
-   "journal_impact": 0.0,
+   "journal_impact": 0.1,
    "journal_h_index": 4
   },
   {
@@ -14515,8 +14914,8 @@
    "counted": true,
    "listed_elsewhere": false,
    "first_seen": "2026-10-21",
-   "journal_impact": 5.4,
-   "journal_h_index": 101
+   "journal_impact": 9.8,
+   "journal_h_index": 127
   },
   {
    "id": "W7155562840",
@@ -14650,8 +15049,8 @@
    "counted": true,
    "listed_elsewhere": false,
    "first_seen": "2026-10-21",
-   "journal_impact": 9.3,
-   "journal_h_index": 286
+   "journal_impact": 12.8,
+   "journal_h_index": 327
   },
   {
    "id": "W7138207194",
@@ -14681,7 +15080,7 @@
     "Safiye Dursun",
     "Murillo Bellezzo",
     "Juliette H. R. J. Degens",
-    "B. van den Borne",
+    "Ben van den Borne",
     "M. Youssef-El-Soud",
     "Michelle Steens",
     "Cordula C. M. Pitz",
@@ -14757,8 +15156,8 @@
    "listed_elsewhere": true,
    "first_seen": "2026-10-21",
    "other_group": "Lizza E.L. Hendriks",
-   "journal_impact": 1.8,
-   "journal_h_index": 99
+   "journal_impact": 2.2,
+   "journal_h_index": 108
   },
   {
    "id": "W7137993139",
@@ -14783,8 +15182,8 @@
    "authors": [
     "Jarno W J Huijs",
     "Janna Josephus Anna Oda Schoenmaekers",
-    "A J Van Der Wekken",
-    "MS Paats",
+    "Anthonie J. van der Wekken",
+    "Marthe S. Paats",
     "Cecile J A Wolfs",
     "Jeanette B. Dijkstra",
     "Martinus P. G. Broen",
@@ -14867,8 +15266,8 @@
    "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "manual": "confirmed",
-   "journal_impact": 1.8,
-   "journal_h_index": 99
+   "journal_impact": 2.2,
+   "journal_h_index": 108
   },
   {
    "id": "W7135402538",
@@ -15176,8 +15575,8 @@
    "counted": true,
    "listed_elsewhere": false,
    "first_seen": "2026-10-21",
-   "journal_impact": 18.6,
-   "journal_h_index": 746
+   "journal_impact": 20.7,
+   "journal_h_index": 791
   },
   {
    "id": "W7135024226",
@@ -15331,8 +15730,8 @@
    "counted": true,
    "listed_elsewhere": false,
    "first_seen": "2026-10-21",
-   "journal_impact": 2.0,
-   "journal_h_index": 204
+   "journal_impact": 2.5,
+   "journal_h_index": 215
   },
   {
    "id": "W7118740404",
@@ -15558,8 +15957,8 @@
    "counted": true,
    "listed_elsewhere": false,
    "first_seen": "2026-10-21",
-   "journal_impact": 8.8,
-   "journal_h_index": 67
+   "journal_impact": 21.9,
+   "journal_h_index": 76
   },
   {
    "id": "W7134240562",
@@ -15703,8 +16102,8 @@
    "counted": true,
    "listed_elsewhere": false,
    "first_seen": "2026-10-21",
-   "journal_impact": 2.6,
-   "journal_h_index": 124
+   "journal_impact": 3.3,
+   "journal_h_index": 137
   },
   {
    "id": "W7134113797",
@@ -15825,8 +16224,8 @@
    "counted": true,
    "listed_elsewhere": false,
    "first_seen": "2026-10-21",
-   "journal_impact": 2.7,
-   "journal_h_index": 19
+   "journal_impact": 3.3,
+   "journal_h_index": 23
   },
   {
    "id": "W7133359853",
@@ -15966,8 +16365,8 @@
    "counted": true,
    "listed_elsewhere": false,
    "first_seen": "2026-10-21",
-   "journal_impact": 5.6,
-   "journal_h_index": 351
+   "journal_impact": 7.9,
+   "journal_h_index": 384
   },
   {
    "id": "W7131779647",
@@ -16122,8 +16521,8 @@
    "counted": true,
    "listed_elsewhere": false,
    "first_seen": "2026-10-21",
-   "journal_impact": 4.0,
-   "journal_h_index": 129
+   "journal_impact": 6.0,
+   "journal_h_index": 149
   },
   {
    "id": "W7133204918",
@@ -16472,8 +16871,8 @@
    "counted": true,
    "listed_elsewhere": false,
    "first_seen": "2026-10-21",
-   "journal_impact": 4.7,
-   "journal_h_index": 328
+   "journal_impact": 5.7,
+   "journal_h_index": 347
   },
   {
    "id": "W7129378262",
@@ -16509,7 +16908,7 @@
     "R.J. Geukes Foppen",
     "Varsha Gouthamchand",
     "Isabella Kaczmarczyk",
-    "E. Krasniqi",
+    "Eriseld Krasniqi",
     "Luca Licata",
     "Aiara Lobo Gomes",
     "L. Sanchez Gomez",
@@ -16520,7 +16919,7 @@
     "Alexandra Thomas",
     "C.J. Twelves",
     "X. Fernandez",
-    "Cédric Van Marcke"
+    "Cédric van Marcke"
    ],
    "author_members": [
     null,
@@ -16637,8 +17036,8 @@
    "counted": true,
    "listed_elsewhere": false,
    "first_seen": "2026-10-21",
-   "journal_impact": 2.3,
-   "journal_h_index": 418
+   "journal_impact": 7.0,
+   "journal_h_index": 444
   },
   {
    "id": "W4416805570",
@@ -16732,8 +17131,8 @@
    "listed_elsewhere": true,
    "first_seen": "2026-10-21",
    "other_group": "Maria Jacobs",
-   "journal_impact": 2.9,
-   "journal_h_index": 266
+   "journal_impact": 4.0,
+   "journal_h_index": 288
   },
   {
    "id": "W7126265383",
@@ -17276,8 +17675,8 @@
    "counted": true,
    "listed_elsewhere": false,
    "first_seen": "2026-10-21",
-   "journal_impact": 3.9,
-   "journal_h_index": 101
+   "journal_impact": 5.5,
+   "journal_h_index": 110
   },
   {
    "id": "W7118461133",
@@ -17429,8 +17828,8 @@
    "counted": true,
    "listed_elsewhere": false,
    "first_seen": "2026-10-21",
-   "journal_impact": 10.7,
-   "journal_h_index": 265
+   "journal_impact": 11.0,
+   "journal_h_index": 283
   },
   {
    "id": "W7165009837",
@@ -17525,8 +17924,8 @@
    "listed_elsewhere": true,
    "first_seen": "2026-10-21",
    "other_group": "Henrica M.J. Werner",
-   "journal_impact": 1.3,
-   "journal_h_index": 38
+   "journal_impact": 4.9,
+   "journal_h_index": 45
   },
   {
    "id": "W7163925115",
@@ -17819,8 +18218,8 @@
    "counted": true,
    "listed_elsewhere": false,
    "first_seen": "2026-10-21",
-   "journal_impact": 0.2,
-   "journal_h_index": 6
+   "journal_impact": 0.3,
+   "journal_h_index": 8
   },
   {
    "id": "W7154306555",
@@ -18127,8 +18526,8 @@
    "counted": true,
    "listed_elsewhere": false,
    "first_seen": "2026-10-21",
-   "journal_impact": 5.8,
-   "journal_h_index": 10
+   "journal_impact": 11.2,
+   "journal_h_index": 14
   },
   {
    "id": "W7125369829",
@@ -18276,8 +18675,8 @@
    "counted": true,
    "listed_elsewhere": false,
    "first_seen": "2026-10-21",
-   "journal_impact": 2.7,
-   "journal_h_index": 241
+   "journal_impact": 3.7,
+   "journal_h_index": 275
   },
   {
    "id": "W7124178724",
@@ -18445,8 +18844,8 @@
    "counted": true,
    "listed_elsewhere": false,
    "first_seen": "2026-10-21",
-   "journal_impact": 2.8,
-   "journal_h_index": 56
+   "journal_impact": 4.5,
+   "journal_h_index": 61
   },
   {
    "id": "W7117708698",
@@ -18591,8 +18990,8 @@
    "counted": true,
    "listed_elsewhere": false,
    "first_seen": "2026-10-21",
-   "journal_impact": 8.9,
-   "journal_h_index": 189
+   "journal_impact": 9.8,
+   "journal_h_index": 208
   },
   {
    "id": "W7117241713",
@@ -18723,8 +19122,8 @@
    "counted": true,
    "listed_elsewhere": false,
    "first_seen": "2026-10-21",
-   "journal_impact": 1.7,
-   "journal_h_index": 52
+   "journal_impact": 3.0,
+   "journal_h_index": 56
   },
   {
    "id": "W7116904976",
@@ -19079,8 +19478,8 @@
    "counted": true,
    "listed_elsewhere": false,
    "first_seen": "2026-10-21",
-   "journal_impact": 12.8,
-   "journal_h_index": 521
+   "journal_impact": 13.5,
+   "journal_h_index": 552
   },
   {
    "id": "W4417466616",
@@ -19139,8 +19538,8 @@
    "counted": true,
    "listed_elsewhere": false,
    "first_seen": "2026-10-21",
-   "journal_impact": 9.3,
-   "journal_h_index": 286
+   "journal_impact": 12.8,
+   "journal_h_index": 327
   },
   {
    "id": "W7110945548",
@@ -19240,8 +19639,8 @@
    "counted": true,
    "listed_elsewhere": false,
    "first_seen": "2026-10-21",
-   "journal_impact": 4.0,
-   "journal_h_index": 188
+   "journal_impact": 4.8,
+   "journal_h_index": 214
   },
   {
    "id": "W4416897111",
@@ -19392,8 +19791,8 @@
    "counted": true,
    "listed_elsewhere": false,
    "first_seen": "2026-10-21",
-   "journal_impact": 2.5,
-   "journal_h_index": 36
+   "journal_impact": 3.4,
+   "journal_h_index": 43
   },
   {
    "id": "W4417539109",
@@ -19567,8 +19966,8 @@
    "counted": true,
    "listed_elsewhere": false,
    "first_seen": "2026-10-21",
-   "journal_impact": 10.2,
-   "journal_h_index": 184
+   "journal_impact": 2.9,
+   "journal_h_index": 198
   },
   {
    "id": "W4416575024",
@@ -19686,8 +20085,8 @@
    "counted": true,
    "listed_elsewhere": false,
    "first_seen": "2026-10-21",
-   "journal_impact": 5.3,
-   "journal_h_index": 463
+   "journal_impact": 6.6,
+   "journal_h_index": 490
   },
   {
    "id": "W4416373305",
@@ -19883,8 +20282,8 @@
    "counted": true,
    "listed_elsewhere": false,
    "first_seen": "2026-10-21",
-   "journal_impact": 6.3,
-   "journal_h_index": 119
+   "journal_impact": 7.8,
+   "journal_h_index": 128
   },
   {
    "id": "W4416344141",
@@ -20048,8 +20447,8 @@
    "counted": true,
    "listed_elsewhere": false,
    "first_seen": "2026-10-21",
-   "journal_impact": 5.8,
-   "journal_h_index": 164
+   "journal_impact": 6.4,
+   "journal_h_index": 176
   },
   {
    "id": "W4416147748",
@@ -20216,8 +20615,8 @@
    "counted": true,
    "listed_elsewhere": false,
    "first_seen": "2026-10-21",
-   "journal_impact": 6.4,
-   "journal_h_index": 106
+   "journal_impact": 7.0,
+   "journal_h_index": 119
   },
   {
    "id": "W4415924457",
@@ -20328,8 +20727,8 @@
    "counted": true,
    "listed_elsewhere": false,
    "first_seen": "2026-10-21",
-   "journal_impact": 6.6,
-   "journal_h_index": 331
+   "journal_impact": 8.0,
+   "journal_h_index": 375
   },
   {
    "id": "W4415710214",
@@ -20526,8 +20925,8 @@
    "counted": true,
    "listed_elsewhere": false,
    "first_seen": "2026-10-21",
-   "journal_impact": 5.3,
-   "journal_h_index": 212
+   "journal_impact": 5.8,
+   "journal_h_index": 224
   },
   {
    "id": "W4415296675",
@@ -20711,8 +21110,8 @@
    "counted": true,
    "listed_elsewhere": false,
    "first_seen": "2026-10-21",
-   "journal_impact": 5.1,
-   "journal_h_index": 66
+   "journal_impact": 8.8,
+   "journal_h_index": 81
   },
   {
    "id": "W4415259680",
@@ -21006,8 +21405,8 @@
    "counted": true,
    "listed_elsewhere": false,
    "first_seen": "2026-10-21",
-   "journal_impact": 12.6,
-   "journal_h_index": 150
+   "journal_impact": 15.5,
+   "journal_h_index": 165
   },
   {
    "id": "W7149233765",
@@ -21033,7 +21432,7 @@
     "Olivera Ciraj‐Bjelac",
     "Andre L.A.J. Dekker",
     "Q. J. Wu",
-    "J. Damilakis",
+    "John E. Damilakis",
     "R. Padovani",
     "S. Di Gioia",
     "M. Carrara"
@@ -21218,8 +21617,8 @@
    "counted": true,
    "listed_elsewhere": false,
    "first_seen": "2026-10-21",
-   "journal_impact": 7.8,
-   "journal_h_index": 150
+   "journal_impact": 9.8,
+   "journal_h_index": 162
   },
   {
    "id": "W4414601064",
@@ -21363,8 +21762,8 @@
    "counted": true,
    "listed_elsewhere": false,
    "first_seen": "2026-10-21",
-   "journal_impact": 2.8,
-   "journal_h_index": 39
+   "journal_impact": 6.2,
+   "journal_h_index": 43
   },
   {
    "id": "W4414530902",
@@ -21521,8 +21920,8 @@
    "counted": true,
    "listed_elsewhere": false,
    "first_seen": "2026-10-21",
-   "journal_impact": 2.8,
-   "journal_h_index": 178
+   "journal_impact": 4.5,
+   "journal_h_index": 190
   },
   {
    "id": "W4414472196",
@@ -21738,7 +22137,7 @@
    "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": 0.8,
-   "journal_h_index": 226
+   "journal_h_index": 239
   },
   {
    "id": "W4415940992",
@@ -21835,7 +22234,7 @@
    "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": 1.7,
-   "journal_h_index": 387
+   "journal_h_index": 406
   },
   {
    "id": "W4413969900",
@@ -21959,8 +22358,8 @@
    "listed_elsewhere": true,
    "first_seen": "2026-10-21",
    "other_group": "Christiaan van der Leij",
-   "journal_impact": 5.5,
-   "journal_h_index": 220
+   "journal_impact": 6.2,
+   "journal_h_index": 243
   },
   {
    "id": "W4409360221",
@@ -22110,8 +22509,8 @@
    "counted": true,
    "listed_elsewhere": false,
    "first_seen": "2026-10-21",
-   "journal_impact": 1.6,
-   "journal_h_index": 62
+   "journal_impact": 2.6,
+   "journal_h_index": 71
   },
   {
    "id": "W7168102189",
@@ -22310,8 +22709,8 @@
    "counted": true,
    "listed_elsewhere": false,
    "first_seen": "2026-10-21",
-   "journal_impact": 3.0,
-   "journal_h_index": 270
+   "journal_impact": 3.7,
+   "journal_h_index": 288
   },
   {
    "id": "W4412748795",
@@ -22463,8 +22862,8 @@
    "counted": true,
    "listed_elsewhere": false,
    "first_seen": "2026-10-21",
-   "journal_impact": 7.3,
-   "journal_h_index": 34
+   "journal_impact": 8.5,
+   "journal_h_index": 38
   },
   {
    "id": "W7204787670",
@@ -22642,8 +23041,8 @@
    "listed_elsewhere": true,
    "first_seen": "2026-10-21",
    "other_group": "Liesbeth Jorinne Boersma",
-   "journal_impact": 4.0,
-   "journal_h_index": 217
+   "journal_impact": 5.7,
+   "journal_h_index": 251
   },
   {
    "id": "W4412555313",
@@ -22748,8 +23147,8 @@
    "counted": true,
    "listed_elsewhere": false,
    "first_seen": "2026-10-21",
-   "journal_impact": 5.5,
-   "journal_h_index": 91
+   "journal_impact": 6.8,
+   "journal_h_index": 101
   },
   {
    "id": "W4412447233",
@@ -22853,8 +23252,8 @@
    "counted": true,
    "listed_elsewhere": false,
    "first_seen": "2026-10-21",
-   "journal_impact": 2.4,
-   "journal_h_index": 128
+   "journal_impact": 2.1,
+   "journal_h_index": 138
   },
   {
    "id": "W4412041683",
@@ -22988,8 +23387,8 @@
    "counted": true,
    "listed_elsewhere": false,
    "first_seen": "2026-10-21",
-   "journal_impact": 3.9,
-   "journal_h_index": 18
+   "journal_impact": 3.6,
+   "journal_h_index": 21
   },
   {
    "id": "W4411962851",
@@ -23091,8 +23490,8 @@
    "counted": true,
    "listed_elsewhere": false,
    "first_seen": "2026-10-21",
-   "journal_impact": 5.3,
-   "journal_h_index": 35
+   "journal_impact": 6.1,
+   "journal_h_index": 38
   },
   {
    "id": "W4411961075",
@@ -23197,8 +23596,8 @@
    "counted": true,
    "listed_elsewhere": false,
    "first_seen": "2026-10-21",
-   "journal_impact": 3.1,
-   "journal_h_index": 222
+   "journal_impact": 6.8,
+   "journal_h_index": 238
   },
   {
    "id": "W4411541582",
@@ -23383,8 +23782,8 @@
    "listed_elsewhere": true,
    "first_seen": "2026-10-21",
    "other_group": "Christiaan van der Leij",
-   "journal_impact": 2.4,
-   "journal_h_index": 120
+   "journal_impact": 2.3,
+   "journal_h_index": 124
   },
   {
    "id": "W4411465141",
@@ -23531,8 +23930,8 @@
    "counted": true,
    "listed_elsewhere": false,
    "first_seen": "2026-10-21",
-   "journal_impact": 10.8,
-   "journal_h_index": 106
+   "journal_impact": 12.3,
+   "journal_h_index": 124
   },
   {
    "id": "W4411315279",
@@ -23716,8 +24115,8 @@
    "counted": true,
    "listed_elsewhere": false,
    "first_seen": "2026-10-21",
-   "journal_impact": 0.8,
-   "journal_h_index": 346
+   "journal_impact": 1.1,
+   "journal_h_index": 362
   },
   {
    "id": "W4411020962",
@@ -23909,7 +24308,7 @@
    "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": 1.7,
-   "journal_h_index": 387
+   "journal_h_index": 406
   },
   {
    "id": "W4411024156",
@@ -23997,8 +24396,8 @@
    "counted": true,
    "listed_elsewhere": false,
    "first_seen": "2026-10-27",
-   "journal_impact": 1.3,
-   "journal_h_index": 27
+   "journal_impact": 2.3,
+   "journal_h_index": 31
   },
   {
    "id": "W4417300725",
@@ -24770,8 +25169,8 @@
    "counted": true,
    "listed_elsewhere": false,
    "first_seen": "2026-10-21",
-   "journal_impact": 16.8,
-   "journal_h_index": 132
+   "journal_impact": 20.3,
+   "journal_h_index": 146
   },
   {
    "id": "W7223167501",
@@ -24958,7 +25357,7 @@
     "Emiliano Spezi",
     "R. Jena",
     "Gareth J. Price",
-    "Hannah M. Thomas",
+    "Hannah Mary T. Thomas",
     "Zhen Zhang",
     "Robin Wijsman",
     "Andrea Damiani",
@@ -24984,7 +25383,7 @@
     null,
     null,
     null,
-    null,
+    "hannah-mary-thomas",
     "zhen-zang",
     null,
     null,
@@ -25037,6 +25436,15 @@
       "Maastricht University Medical Centre",
       "Maastricht University Medical Center",
       "Medical Data Works BV"
+     ]
+    },
+    "hannah-mary-thomas": {
+     "openalex_id": "A5035477951",
+     "orcid": "0000-0002-1454-512X",
+     "match": "openalex",
+     "affiliations": [
+      "Christian Medical College, Vellore",
+      "Christian Medical College, Vellore"
      ]
     },
     "zhen-zang": {
@@ -25274,8 +25682,8 @@
    "counted": true,
    "listed_elsewhere": false,
    "first_seen": "2026-10-21",
-   "journal_impact": 0.7,
-   "journal_h_index": 586
+   "journal_impact": 1.0,
+   "journal_h_index": 615
   },
   {
    "id": "W4410561440",
@@ -25349,7 +25757,7 @@
    "first_seen": "2026-10-21",
    "other_group": "Liesbeth Jorinne Boersma",
    "journal_impact": 0.8,
-   "journal_h_index": 226
+   "journal_h_index": 239
   },
   {
    "id": "W4410560954",
@@ -25518,7 +25926,7 @@
    "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": 0.8,
-   "journal_h_index": 226
+   "journal_h_index": 239
   },
   {
    "id": "W4410560532",
@@ -25615,7 +26023,7 @@
    "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": 0.8,
-   "journal_h_index": 226
+   "journal_h_index": 239
   },
   {
    "id": "W4410560393",
@@ -25717,7 +26125,7 @@
    "first_seen": "2026-10-21",
    "manual": "confirmed",
    "journal_impact": 0.8,
-   "journal_h_index": 226
+   "journal_h_index": 239
   },
   {
    "id": "W4410559529",
@@ -25805,7 +26213,7 @@
    "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": 0.8,
-   "journal_h_index": 226
+   "journal_h_index": 239
   },
   {
    "id": "W4410559475",
@@ -25979,7 +26387,7 @@
    "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": 0.8,
-   "journal_h_index": 226
+   "journal_h_index": 239
   },
   {
    "id": "W4410559299",
@@ -26100,8 +26508,8 @@
    "counted": true,
    "listed_elsewhere": false,
    "first_seen": "2026-10-21",
-   "journal_impact": 1.9,
-   "journal_h_index": 47
+   "journal_impact": 4.0,
+   "journal_h_index": 54
   },
   {
    "id": "W4410558170",
@@ -26161,7 +26569,7 @@
    "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": 0.8,
-   "journal_h_index": 226
+   "journal_h_index": 239
   },
   {
    "id": "W4410548159",
@@ -26253,7 +26661,7 @@
    "first_seen": "2026-10-21",
    "other_group": "Frank Verhaegen",
    "journal_impact": 0.8,
-   "journal_h_index": 226
+   "journal_h_index": 239
   },
   {
    "id": "W4410548081",
@@ -26376,7 +26784,7 @@
    "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": 0.8,
-   "journal_h_index": 226
+   "journal_h_index": 239
   },
   {
    "id": "W4409875408",
@@ -26602,8 +27010,8 @@
    "counted": true,
    "listed_elsewhere": false,
    "first_seen": "2026-10-21",
-   "journal_impact": 0.6,
-   "journal_h_index": 469
+   "journal_impact": 0.7,
+   "journal_h_index": 503
   },
   {
    "id": "W4408488651",
@@ -26696,8 +27104,8 @@
    "counted": true,
    "listed_elsewhere": false,
    "first_seen": "2026-10-21",
-   "journal_impact": 9.3,
-   "journal_h_index": 286
+   "journal_impact": 12.8,
+   "journal_h_index": 327
   },
   {
    "id": "W4409187386",
@@ -26887,7 +27295,7 @@
    "first_seen": "2026-10-21",
    "other_group": "Liesbeth Jorinne Boersma",
    "journal_impact": 0.8,
-   "journal_h_index": 226
+   "journal_h_index": 239
   },
   {
    "id": "W4409543637",
@@ -26979,8 +27387,8 @@
    "counted": true,
    "listed_elsewhere": false,
    "first_seen": "2026-10-21",
-   "journal_impact": 3.9,
-   "journal_h_index": 122
+   "journal_impact": 4.0,
+   "journal_h_index": 132
   },
   {
    "id": "W4409058896",
@@ -27084,8 +27492,8 @@
    "listed_elsewhere": true,
    "first_seen": "2026-10-21",
    "other_group": "Frank Verhaegen",
-   "journal_impact": 2.4,
-   "journal_h_index": 81
+   "journal_impact": 2.7,
+   "journal_h_index": 87
   },
   {
    "id": "W4408388242",
@@ -27221,8 +27629,8 @@
    "counted": true,
    "listed_elsewhere": false,
    "first_seen": "2026-10-23",
-   "journal_impact": 2.9,
-   "journal_h_index": 266
+   "journal_impact": 4.0,
+   "journal_h_index": 288
   },
   {
    "id": "W4408476206",
@@ -27372,8 +27780,8 @@
    "counted": true,
    "listed_elsewhere": false,
    "first_seen": "2026-10-21",
-   "journal_impact": 5.2,
-   "journal_h_index": 154
+   "journal_impact": 8.9,
+   "journal_h_index": 168
   },
   {
    "id": "W4408980986",
@@ -27482,8 +27890,8 @@
    "listed_elsewhere": true,
    "first_seen": "2026-10-21",
    "other_group": "Lizza E.L. Hendriks",
-   "journal_impact": 1.0,
-   "journal_h_index": 222
+   "journal_impact": 1.4,
+   "journal_h_index": 235
   },
   {
    "id": "W4408488860",
@@ -27641,8 +28049,8 @@
    "counted": true,
    "listed_elsewhere": false,
    "first_seen": "2026-10-21",
-   "journal_impact": 10.2,
-   "journal_h_index": 184
+   "journal_impact": 2.9,
+   "journal_h_index": 198
   },
   {
    "id": "W4407870885",
@@ -27746,8 +28154,8 @@
    "counted": true,
    "listed_elsewhere": false,
    "first_seen": "2026-10-21",
-   "journal_impact": 1.8,
-   "journal_h_index": 99
+   "journal_impact": 2.2,
+   "journal_h_index": 108
   },
   {
    "id": "W4407897666",
@@ -28094,8 +28502,8 @@
    "counted": true,
    "listed_elsewhere": false,
    "first_seen": "2026-10-21",
-   "journal_impact": 2.5,
-   "journal_h_index": 122
+   "journal_impact": 3.9,
+   "journal_h_index": 131
   },
   {
    "id": "W4404667492",
@@ -28180,7 +28588,7 @@
     "Data Science Institute (DSI), Hasselt University, Belgium",
     "Department of Radiation Oncology (Maastro), GROW Research Institute for Oncology and Reproduction, Maastricht University Medical Centre+, P.O. Box 616, Maastricht, 6200 MD, Netherlands, 31 43 38 81863"
    ],
-   "cited_by_count": 28,
+   "cited_by_count": 29,
    "abstract": "Background: The International Classification of Diseases (ICD), developed by the World Health Organization, standardizes health condition coding to support health care policy, research, and billing, but artificial intelligence automation, while promising, still underperforms compared with human accuracy and lacks the explainability needed for adoption in medical settings. Objective: The potential of large language models for assisting medical coders in the ICD-10 coding was explored through the development of a computer-assisted coding system. This study aimed to augment human coding by initially identifying lead terms and using retrieval-augmented generation (RAG)-based methods for computer-assisted coding enhancement. Methods: The explainability dataset from the CodiEsp challenge (CodiEsp-X) was used, featuring 1000 Spanish clinical cases annotated with ICD-10 codes. A new dataset, CodiEsp-X-lead, was generated using GPT-4 to replace full-textual evidence annotations with lead term annotations. A Robustly Optimized BERT (Bidirectional Encoder Representations from Transformers) Pretraining Approach transformer model was fine-tuned for named entity recognition to extract lead terms. GPT-4 was subsequently employed to generate code descriptions from the extracted textual evidence. Using a RAG approach, ICD codes were assigned to the lead terms by querying a vector database of ICD code descriptions with OpenAI's text-embedding-ada-002 model. Results: The fine-tuned Robustly Optimized BERT Pretraining Approach achieved an overall F1-score of 0.80 for ICD lead term extraction on the new CodiEsp-X-lead dataset. GPT-4-generated code descriptions reduced retrieval failures in the RAG approach by approximately 5% for both diagnoses and procedures. However, the overall explainability F1-score for the CodiEsp-X task was limited to 0.305, significantly lower than the state-of-the-art F1-score of 0.633. The diminished performance was partly due to the reliance on code descriptions, as some ICD codes lacked descriptions, and the approach did not fully align with the medical coder's workflow. Conclusions: While lead term extraction showed promising results, the subsequent RAG-based code assignment using GPT-4 and code descriptions was less effective. Future research should focus on refining the approach to more closely mimic the medical coder's workflow, potentially integrating the alphabetic index and official coding guidelines, rather than relying solely on code descriptions. This alignment may enhance system accuracy and better support medical coders in practice.",
    "verified": true,
    "counted_members": [
@@ -28190,8 +28598,8 @@
    "counted": true,
    "listed_elsewhere": false,
    "first_seen": "2026-10-21",
-   "journal_impact": 2.9,
-   "journal_h_index": 54
+   "journal_impact": 4.0,
+   "journal_h_index": 65
   },
   {
    "id": "W4403503010",
@@ -28388,8 +28796,8 @@
    "counted": true,
    "listed_elsewhere": false,
    "first_seen": "2026-10-21",
-   "journal_impact": 7.0,
-   "journal_h_index": 29
+   "journal_impact": 10.9,
+   "journal_h_index": 39
   },
   {
    "id": "W4408296281",
@@ -28512,8 +28920,8 @@
    "counted": true,
    "listed_elsewhere": false,
    "first_seen": "2026-10-21",
-   "journal_impact": 2.4,
-   "journal_h_index": 128
+   "journal_impact": 2.1,
+   "journal_h_index": 138
   },
   {
    "id": "W4407619882",
@@ -28605,8 +29013,8 @@
    "listed_elsewhere": true,
    "first_seen": "2026-10-21",
    "other_group": "Henrica M.J. Werner",
-   "journal_impact": 0.6,
-   "journal_h_index": 125
+   "journal_impact": 0.8,
+   "journal_h_index": 135
   },
   {
    "id": "W4407037294",
@@ -28714,8 +29122,8 @@
    "counted": true,
    "listed_elsewhere": false,
    "first_seen": "2026-10-21",
-   "journal_impact": 3.9,
-   "journal_h_index": 122
+   "journal_impact": 4.0,
+   "journal_h_index": 132
   },
   {
    "id": "W4406965862",
@@ -29171,8 +29579,8 @@
    "counted": true,
    "listed_elsewhere": false,
    "first_seen": "2026-10-21",
-   "journal_impact": 3.6,
-   "journal_h_index": 115
+   "journal_impact": 4.4,
+   "journal_h_index": 125
   },
   {
    "id": "W4406334317",
@@ -29249,8 +29657,8 @@
    "counted": true,
    "listed_elsewhere": false,
    "first_seen": "2026-10-21",
-   "journal_impact": 5.2,
-   "journal_h_index": 85
+   "journal_impact": 8.7,
+   "journal_h_index": 104
   },
   {
    "id": "W4406063103",
@@ -29408,28 +29816,28 @@
    "counted": true,
    "listed_elsewhere": false,
    "first_seen": "2026-10-21",
-   "journal_impact": 7.9,
-   "journal_h_index": 352
+   "journal_impact": 13.2,
+   "journal_h_index": 390
   },
   {
    "id": "W7164979543",
    "openalex_url": "https://openalex.org/W7164979543",
    "doi": null,
-   "title": "Predicting Clinical Remission in Crohn’s Disease:A Comparative Study of Expert-Generated and Computer-Generated Bayesian Networks",
+   "title": "Predicting Clinical Remission in Crohn’s Disease: A Comparative Study of Expert-Generated and Computer-Generated Bayesian Networks",
    "publication_date": "2025-01-01",
    "year": 2025,
    "type": "conference-paper",
-   "journal": "Research Publications (Maastricht University)",
-   "source_id": "S4306402616",
+   "journal": "CEUR Workshop Proceedings",
+   "source_id": "S4210204615",
    "biblio": {
     "first_page": "204",
     "last_page": "206"
    },
-   "landing_url": "https://cris.maastrichtuniversity.nl/en/publications/e6c735b5-c888-41b6-ad2a-7edc7566d68d",
+   "landing_url": "https://ceur-ws.org/Vol-4196/paper_18.pdf",
    "is_oa": true,
-   "oa_url": "https://cris.maastrichtuniversity.nl/en/publications/e6c735b5-c888-41b6-ad2a-7edc7566d68d",
+   "oa_url": "https://ceur-ws.org/Vol-4196/paper_18.pdf",
    "license": "cc-by",
-   "pdf_url": null,
+   "pdf_url": "https://ceur-ws.org/Vol-4196/paper_18.pdf",
    "authors": [
     "Yomi Okegunna",
     "Maija Utriaine",
@@ -29447,7 +29855,7 @@
     "yomi-okegunna",
     null,
     "manon-cloots",
-    null,
+    "jiaxu-zhang",
     null,
     null,
     null,
@@ -29467,6 +29875,12 @@
      "openalex_id": "A5115984648",
      "orcid": "0000-0002-7224-7198",
      "match": "openalex",
+     "affiliations": []
+    },
+    "jiaxu-zhang": {
+     "openalex_id": "A5076548714",
+     "orcid": null,
+     "match": "name",
      "affiliations": []
     },
     "andre-dekker": {
@@ -29519,8 +29933,8 @@
    "counted": true,
    "listed_elsewhere": false,
    "first_seen": "2026-10-21",
-   "journal_impact": null,
-   "journal_h_index": null
+   "journal_impact": 1.1,
+   "journal_h_index": 26
   },
   {
    "id": "W4413375862",
@@ -29766,8 +30180,8 @@
    "counted": true,
    "listed_elsewhere": false,
    "first_seen": "2026-10-21",
-   "journal_impact": 5.8,
-   "journal_h_index": 10
+   "journal_impact": 11.2,
+   "journal_h_index": 14
   },
   {
    "id": "W4406705129",
@@ -29929,8 +30343,8 @@
    "counted": true,
    "listed_elsewhere": false,
    "first_seen": "2026-10-21",
-   "journal_impact": 1.3,
-   "journal_h_index": 152
+   "journal_impact": 1.5,
+   "journal_h_index": 164
   },
   {
    "id": "W4406702439",
@@ -30065,8 +30479,8 @@
    "counted": true,
    "listed_elsewhere": false,
    "first_seen": "2026-10-21",
-   "journal_impact": 1.3,
-   "journal_h_index": 152
+   "journal_impact": 1.5,
+   "journal_h_index": 164
   },
   {
    "id": "W4406699616",
@@ -30201,8 +30615,8 @@
    "counted": true,
    "listed_elsewhere": false,
    "first_seen": "2026-10-21",
-   "journal_impact": 1.3,
-   "journal_h_index": 152
+   "journal_impact": 1.5,
+   "journal_h_index": 164
   },
   {
    "id": "W4405585841",
@@ -30356,8 +30770,8 @@
    "counted": true,
    "listed_elsewhere": false,
    "first_seen": "2026-10-21",
-   "journal_impact": 1.7,
-   "journal_h_index": 30
+   "journal_impact": 2.0,
+   "journal_h_index": 34
   },
   {
    "id": "W4405623126",
@@ -30463,8 +30877,8 @@
    "listed_elsewhere": true,
    "first_seen": "2026-10-21",
    "other_group": "Liesbeth Jorinne Boersma",
-   "journal_impact": 2.8,
-   "journal_h_index": 56
+   "journal_impact": 4.5,
+   "journal_h_index": 61
   },
   {
    "id": "W4405046242",
@@ -30539,7 +30953,7 @@
     "Institute for Imaging, Data and Communications, School of Engineering, University of Edinburgh, Edinburgh, United Kingdom",
     "Muir Maxwell Epilepsy Centre, University of Edinburgh, Edinburgh, United Kingdom"
    ],
-   "cited_by_count": 19,
+   "cited_by_count": 20,
    "abstract": "Objective. Accurate seizure prediction could prove critical for improving patient safety and quality of life in drug-resistant epilepsy. While deep learning-based approaches have shown promising performance using scalp electroencephalogram (EEG) signals, the incomplete understanding and variability of the preictal state imposes challenges in identifying the optimal preictal period (OPP) for labeling the EEG segments. This study introduces novel measures to capture model behavior under different preictal definitions and proposes a data-centric deep learning methodology to identify the OPP.Approach. We trained a competent subject-specific CNN-Transformer model to detect preictal EEG segments using the open-access CHB-MIT dataset. To capture the temporal dynamics of the model's predictions, we fitted a sigmoidal curve to the model outputs obtained from uninterrupted multi-hour EEG recordings prior to seizure onset. From this fitted curve, we derived key performance measures reflecting the timing of predictions, including classifier convergence, average error, output stability, and the transition between interictal and preictal states. These measures were then combined to compute the Continuous Input-Output Performance Ratio, a novel metric designed to comprehensively compare model behavior across different preictal definitions (60, 45, 30, and 15 min) and suggest the OPP for each patient.Main results.The CNN-Transformer model achieved state-of-the-art performance (area under the curve of 99.35% andF1-score of 97.46%) using minimally pre-processed EEG signals. The 60-minute preictal definition was associated with earlier seizure prediction, lower error in the preictal state, and reduced output fluctuations, leading to significantly higher CIOPR scores (p< 0.001). Conventional accuracy-related metrics (sensitivity, specificity, F1-score) were less sensitive to varying preictal definitions and often discordant with CIOPR findings. Cross- and intra-patient heterogeneities in the prediction times were also observed, complicating the establishment of a global preictal interval.Significance. The newly developed metrics demonstrate that varying the preictal period significantly impacts the timing of predictions in ways not captured by conventional accuracy-related metrics. Understanding this impact and the inter-seizure heterogeneities is essential for developing intelligent systems tailored to individual patient needs and for underlining practical limitations in detecting the preictal period in real-world clinical applications.",
    "verified": true,
    "counted_members": [
@@ -30548,8 +30962,8 @@
    "counted": true,
    "listed_elsewhere": false,
    "first_seen": "2026-10-21",
-   "journal_impact": 4.4,
-   "journal_h_index": 165
+   "journal_impact": 5.6,
+   "journal_h_index": 180
   },
   {
    "id": "W4404946484",
@@ -30705,8 +31119,8 @@
    "counted": true,
    "listed_elsewhere": false,
    "first_seen": "2026-10-21",
-   "journal_impact": 2.8,
-   "journal_h_index": 56
+   "journal_impact": 4.5,
+   "journal_h_index": 61
   },
   {
    "id": "W4404828427",
@@ -30820,8 +31234,8 @@
    "counted": true,
    "listed_elsewhere": false,
    "first_seen": "2026-10-21",
-   "journal_impact": 5.5,
-   "journal_h_index": 220
+   "journal_impact": 6.2,
+   "journal_h_index": 243
   },
   {
    "id": "W4404657536",
@@ -30917,8 +31331,8 @@
    "counted": true,
    "listed_elsewhere": false,
    "first_seen": "2026-10-21",
-   "journal_impact": 1.9,
-   "journal_h_index": 47
+   "journal_impact": 4.0,
+   "journal_h_index": 54
   },
   {
    "id": "W4404553502",
@@ -31059,8 +31473,8 @@
    "counted": true,
    "listed_elsewhere": false,
    "first_seen": "2026-10-21",
-   "journal_impact": 1.1,
-   "journal_h_index": 65
+   "journal_impact": 0.9,
+   "journal_h_index": 75
   },
   {
    "id": "W4404466292",
@@ -31223,8 +31637,8 @@
    "counted": true,
    "listed_elsewhere": false,
    "first_seen": "2026-10-21",
-   "journal_impact": 0.9,
-   "journal_h_index": 11
+   "journal_impact": 2.9,
+   "journal_h_index": 15
   },
   {
    "id": "W4404373392",
@@ -31389,8 +31803,8 @@
    "counted": true,
    "listed_elsewhere": false,
    "first_seen": "2026-10-21",
-   "journal_impact": 4.5,
-   "journal_h_index": 78
+   "journal_impact": 5.7,
+   "journal_h_index": 83
   },
   {
    "id": "W7239621593",
@@ -31427,7 +31841,10 @@
      "openalex_id": "A5013513157",
      "orcid": "0000-0002-0422-7996",
      "match": "openalex",
-     "affiliations": []
+     "affiliations": [
+      "Maastricht University Medical Centre",
+      "Maastricht University Medical Centre+ , Maastricht , The Netherlands"
+     ]
     }
    },
    "author_positions": [
@@ -31442,14 +31859,19 @@
     "andre-dekker"
    ],
    "member_affiliations": {
-    "andre-dekker": []
+    "andre-dekker": [
+     "Maastricht University Medical Centre",
+     "Maastricht University Medical Centre+ , Maastricht , The Netherlands"
+    ]
    },
    "affiliation_status": {
-    "andre-dekker": "unknown"
+    "andre-dekker": "unspecific"
    },
-   "senior_affiliations": [],
+   "senior_affiliations": [
+    "University of Arkansas , Little Rock , AR , USA"
+   ],
    "cited_by_count": 0,
-   "abstract": null,
+   "abstract": "This poster reports on our ongoing work to develop a Radiation Therapy Ontology (RTO) designed according to OBO Foundry principles.This work aims to produce an ontology describing the domain of radiation therapy concerned primarily with the processes and equipment used to deliver therapeutic radiation in a clinical setting.Currently in radiation oncology, around 3% of patients are enrolled in clinical trials.Major hurdles to involving more patients include the work required to identify potential enrollees, collecting the data, and transforming data to meet protocol requirements.Axiomatically rich ontologies are uniquely positioned to serve as a bridge between the precision needed in clinical trials and the reality of electronic health records.This work is also motivated by the recent push for standardization in radiation oncology, and the realization that progress in clinical practice requires better access to clinical data.RTO aims to be useful in bridging institutional and clinical practice differences.The proliferation of standard terminologies can be at odds with each other and with existing data labels.Currently, nearly all patient data are in relational databases with no overall uniformity with respect to schemas, tables, column names and value sets.The structure of these databases is most often controlled by the vendors, and in those cases where institutions tailor the names and variables, there are no fixed standards.The upshot is that one must expect that for nearly every application, some transformation of the data will be needed.",
    "verified": false,
    "counted_members": [
     "andre-dekker"
@@ -31572,8 +31994,8 @@
    "counted": true,
    "listed_elsewhere": false,
    "first_seen": "2026-10-21",
-   "journal_impact": 3.0,
-   "journal_h_index": 171
+   "journal_impact": 5.7,
+   "journal_h_index": 199
   },
   {
    "id": "W4403499228",
@@ -31670,8 +32092,8 @@
    "listed_elsewhere": true,
    "first_seen": "2026-10-21",
    "other_group": "Lizza E.L. Hendriks",
-   "journal_impact": 1.8,
-   "journal_h_index": 33
+   "journal_impact": 3.6,
+   "journal_h_index": 39
   },
   {
    "id": "W4403351431",
@@ -31816,8 +32238,8 @@
    "counted": true,
    "listed_elsewhere": false,
    "first_seen": "2026-10-21",
-   "journal_impact": 9.2,
-   "journal_h_index": 163
+   "journal_impact": 9.9,
+   "journal_h_index": 166
   },
   {
    "id": "W4402631254",
@@ -31925,8 +32347,8 @@
    "listed_elsewhere": true,
    "first_seen": "2026-10-21",
    "other_group": "Frank Verhaegen",
-   "journal_impact": 2.9,
-   "journal_h_index": 266
+   "journal_impact": 4.0,
+   "journal_h_index": 288
   },
   {
    "id": "W7160743429",
@@ -32167,8 +32589,8 @@
    "counted": true,
    "listed_elsewhere": false,
    "first_seen": "2026-10-21",
-   "journal_impact": 0.8,
-   "journal_h_index": 346
+   "journal_impact": 1.1,
+   "journal_h_index": 362
   },
   {
    "id": "W4402897784",
@@ -32368,7 +32790,7 @@
    "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": 0.8,
-   "journal_h_index": 226
+   "journal_h_index": 239
   },
   {
    "id": "W4403853764",
@@ -32858,7 +33280,7 @@
    },
    "senior_affiliations": [],
    "cited_by_count": 37,
-   "abstract": "Objectives Body composition assessment using CT images at the L3-level is increasingly applied in cancer research and has been shown to be strongly associated with long-term survival. Robust high-throughput automated segmentation is key to assess large patient cohorts and to support implementation of body composition analysis into routine clinical practice. We trained and externally validated a deep learning neural network (DLNN) to automatically segment L3-CT images. Methods Expert-drawn segmentations of visceral and subcutaneous adipose tissue (VAT/SAT) and skeletal muscle (SM) of L3-CT-images of 3187 patients undergoing abdominal surgery were used to train a DLNN. The external validation cohort was comprised of 2535 patients with abdominal cancer. DLNN performance was evaluated with (geometric) dice similarity (DS) and Lin’s concordance correlation coefficient. Results There was a strong concordance between automatic and manual segmentations with median DS for SM, VAT, and SAT of 0.97 (IQR: 0.95-0.98), 0.98 (IQR: 0.95-0.98), and 0.95 (IQR: 0.92-0.97), respectively. Concordance correlations were excellent: SM 0.964 (0.959-0.968), VAT 0.998 (0.998-0.998), and SAT 0.992 (0.991-0.993). Bland-Altman metrics indicated only small and clinically insignificant systematic offsets; SM radiodensity: 0.23 Hounsfield units (0.5%), SM: 1.26 cm2.m−2 (2.8%), VAT: −1.02 cm2.m−2 (1.7%), and SAT: 3.24 cm2.m−2 (4.6%). Conclusion A robustly-performing and independently externally validated DLNN for automated body composition analysis was developed. Advances in knowledge This DLNN was successfully trained and externally validated on several large patient cohorts. The trained algorithm could facilitate large-scale population studies and implementation of body composition analysis into clinical practice.",
+   "abstract": "OBJECTIVES: Body composition assessment using CT images at the L3-level is increasingly applied in cancer research and has been shown to be strongly associated with long-term survival. Robust high-throughput automated segmentation is key to assess large patient cohorts and to support implementation of body composition analysis into routine clinical practice. We trained and externally validated a deep learning neural network (DLNN) to automatically segment L3-CT images. METHODS: Expert-drawn segmentations of visceral and subcutaneous adipose tissue (VAT/SAT) and skeletal muscle (SM) of L3-CT-images of 3187 patients undergoing abdominal surgery were used to train a DLNN. The external validation cohort was comprised of 2535 patients with abdominal cancer. DLNN performance was evaluated with (geometric) dice similarity (DS) and Lin's concordance correlation coefficient. RESULTS: There was a strong concordance between automatic and manual segmentations with median DS for SM, VAT, and SAT of 0.97 (IQR: 0.95-0.98), 0.98 (IQR: 0.95-0.98), and 0.95 (IQR: 0.92-0.97), respectively. Concordance correlations were excellent: SM 0.964 (0.959-0.968), VAT 0.998 (0.998-0.998), and SAT 0.992 (0.991-0.993). Bland-Altman metrics indicated only small and clinically insignificant systematic offsets; SM radiodensity: 0.23 Hounsfield units (0.5%), SM: 1.26 cm2.m-2 (2.8%), VAT: -1.02 cm2.m-2 (1.7%), and SAT: 3.24 cm2.m-2 (4.6%). CONCLUSION: A robustly-performing and independently externally validated DLNN for automated body composition analysis was developed. ADVANCES IN KNOWLEDGE: This DLNN was successfully trained and externally validated on several large patient cohorts. The trained algorithm could facilitate large-scale population studies and implementation of body composition analysis into clinical practice.",
    "verified": true,
    "counted_members": [
     "leroy-volmer",
@@ -32868,8 +33290,8 @@
    "counted": true,
    "listed_elsewhere": false,
    "first_seen": "2026-10-21",
-   "journal_impact": 2.8,
-   "journal_h_index": 178
+   "journal_impact": 4.5,
+   "journal_h_index": 190
   },
   {
    "id": "W4402137708",
@@ -32997,7 +33419,7 @@
     "Department of Radiation Oncology (Maastro), GROW-School for Oncology and Reproduction, Maastricht University Medical Centre+, Maastricht, The Netherlands",
     "Department of Ultrasound, Beijing Friendship Hospital, Capital Medical University, Beijing, PR China"
    ],
-   "cited_by_count": 3,
+   "cited_by_count": 4,
    "abstract": "BACKGROUND: The status of axillary lymph nodes (ALN) plays a critical role in the management of patients with breast cancer. It is an urgent demand to develop highly accurate, non-invasive methods for predicting ALN status. PURPOSE: To evaluate the efficacy of ultrasound radiofrequency (URF) time-series parameters, in combination with clinical data, in predicting ALN metastasis in patients with breast cancer. MATERIAL AND METHODS: We prospectively gathered clinicopathologic and ultrasonic data from patients diagnosed with breast cancer. Various machine-learning (ML) models were developed using all available features to determine the most efficient diagnostic model. Subsequently, distinct prediction models were created using the optimal ML model, and their diagnostic performances were evaluated and compared. RESULTS: The study encompassed 240 patients, of whom 88 had lymph node metastases. A leave-one-out cross-validation (LOOCV) method was used to split the entire dataset into training and testing subsets. The random forest ML model outperformed the other algorithms, with an area under the curve (AUC) of 0.92. Prediction models based on clinical, ultrasonic, URF parameters, clinical + ultrasonic, clinical + URF, and ultrasonic + URF parameters had AUCs of 0.56, 0.79, 0.78, 0.90, 0.80, and 0.84, respectively, in the testing set. The comprehensive diagnostic model (clinical + ultrasonic + URF parameters) demonstrated strong diagnostic capability, with an AUC of 0.94 in the testing set, exceeding any single prediction model. CONCLUSION: The combined model (clinical + ultrasonic + URF parameters) could be used preoperatively to predict lymph node status, offering valuable input for the design of individualized surgical approaches.",
    "verified": true,
    "counted_members": [
@@ -33009,7 +33431,7 @@
    "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": 1.4,
-   "journal_h_index": 101
+   "journal_h_index": 111
   },
   {
    "id": "W4402560604",
@@ -33037,16 +33459,16 @@
     "Lizza E.L. Hendriks",
     "F.R. Ogliari",
     "F. Acker",
-    "E. Bolton",
+    "Edward Bolton",
     "O. Bouissou",
     "J. Brash",
-    "A-L. Bynens",
+    "Anne-Lore Bynens",
     "Sue Cheeseman",
     "Hayley M. Fenton",
     "Prabash Galgane Banduge",
     "T. Goering",
     "Aiara Lobo Gomes",
-    "R. McDonald",
+    "Rosie McDonald",
     "E. Ross",
     "L. Sanchez Gomez",
     "Stelios Theophanous",
@@ -33062,7 +33484,7 @@
     null,
     null,
     null,
-    null,
+    "anne-lore-bynens",
     null,
     null,
     null,
@@ -33076,6 +33498,15 @@
     null
    ],
    "author_profiles": {
+    "anne-lore-bynens": {
+     "openalex_id": "A5120041081",
+     "orcid": null,
+     "match": "openalex",
+     "affiliations": [
+      "Maastricht University Medical Centre",
+      "Clinical Data Science, Maastricht University Medical Center, Maastricht, Netherlands"
+     ]
+    },
     "aiara-lobo-gomes": {
      "openalex_id": "A5082702576",
      "orcid": "0000-0003-4670-6036",
@@ -33117,10 +33548,15 @@
    ],
    "author_count": 20,
    "group_members": [
+    "anne-lore-bynens",
     "aiara-lobo-gomes",
     "ivan-zhovannik"
    ],
    "member_affiliations": {
+    "anne-lore-bynens": [
+     "Maastricht University Medical Centre",
+     "Clinical Data Science, Maastricht University Medical Center, Maastricht, Netherlands"
+    ],
     "aiara-lobo-gomes": [
      "Department of Radiation Oncology (Maastro), GROW Research Institute for Oncology and Reproduction, Maastricht, Netherlands"
     ],
@@ -33129,6 +33565,7 @@
     ]
    },
    "affiliation_status": {
+    "anne-lore-bynens": "verified",
     "aiara-lobo-gomes": "verified",
     "ivan-zhovannik": "verified"
    },
@@ -33136,7 +33573,7 @@
     "University of Oslo",
     "Oncology Department, University of Oslo, Institute of Clinical medicine, Oslo, Norway"
    ],
-   "cited_by_count": 1,
+   "cited_by_count": 2,
    "abstract": null,
    "verified": false,
    "counted_members": [],
@@ -33145,7 +33582,7 @@
    "first_seen": "2026-10-21",
    "other_group": "Lizza E.L. Hendriks",
    "journal_impact": 1.7,
-   "journal_h_index": 387
+   "journal_h_index": 406
   },
   {
    "id": "W4402246190",
@@ -33293,8 +33730,8 @@
    "counted": true,
    "listed_elsewhere": false,
    "first_seen": "2026-10-21",
-   "journal_impact": 10.2,
-   "journal_h_index": 184
+   "journal_impact": 2.9,
+   "journal_h_index": 198
   },
   {
    "id": "W4402225566",
@@ -33384,8 +33821,8 @@
    "counted": true,
    "listed_elsewhere": false,
    "first_seen": "2026-10-21",
-   "journal_impact": 0.5,
-   "journal_h_index": 87
+   "journal_impact": 0.8,
+   "journal_h_index": 96
   },
   {
    "id": "W4401160158",
@@ -33468,8 +33905,8 @@
    "listed_elsewhere": true,
    "first_seen": "2026-10-21",
    "other_group": "Frank Verhaegen",
-   "journal_impact": 2.9,
-   "journal_h_index": 266
+   "journal_impact": 4.0,
+   "journal_h_index": 288
   },
   {
    "id": "W4401101984",
@@ -33564,8 +34001,8 @@
    "counted": true,
    "listed_elsewhere": false,
    "first_seen": "2026-10-23",
-   "journal_impact": 2.5,
-   "journal_h_index": 116
+   "journal_impact": 3.7,
+   "journal_h_index": 132
   },
   {
    "id": "W4401013932",
@@ -33732,8 +34169,8 @@
    "counted": true,
    "listed_elsewhere": false,
    "first_seen": "2026-10-21",
-   "journal_impact": 3.7,
-   "journal_h_index": 106
+   "journal_impact": 5.7,
+   "journal_h_index": 128
   },
   {
    "id": "W4400977602",
@@ -33967,8 +34404,8 @@
    "counted": true,
    "listed_elsewhere": false,
    "first_seen": "2026-10-21",
-   "journal_impact": 1.2,
-   "journal_h_index": 45
+   "journal_impact": 2.2,
+   "journal_h_index": 49
   },
   {
    "id": "W4400874258",
@@ -34187,8 +34624,8 @@
    "listed_elsewhere": true,
    "first_seen": "2026-10-21",
    "other_group": "Frank Verhaegen",
-   "journal_impact": 7.8,
-   "journal_h_index": 150
+   "journal_impact": 9.8,
+   "journal_h_index": 162
   },
   {
    "id": "W4400453456",
@@ -34410,8 +34847,8 @@
    "counted": true,
    "listed_elsewhere": false,
    "first_seen": "2026-10-21",
-   "journal_impact": 6.7,
-   "journal_h_index": 145
+   "journal_impact": 9.9,
+   "journal_h_index": 162
   },
   {
    "id": "W4399466786",
@@ -34534,8 +34971,8 @@
    "counted": true,
    "listed_elsewhere": false,
    "first_seen": "2026-10-21",
-   "journal_impact": 3.6,
-   "journal_h_index": 52
+   "journal_impact": 3.4,
+   "journal_h_index": 56
   },
   {
    "id": "W4400183108",
@@ -34634,8 +35071,8 @@
    "counted": true,
    "listed_elsewhere": false,
    "first_seen": "2026-10-21",
-   "journal_impact": 2.8,
-   "journal_h_index": 56
+   "journal_impact": 4.5,
+   "journal_h_index": 61
   },
   {
    "id": "W4399030346",
@@ -34777,8 +35214,8 @@
    "counted": true,
    "listed_elsewhere": false,
    "first_seen": "2026-10-21",
-   "journal_impact": 7.3,
-   "journal_h_index": 169
+   "journal_impact": 8.6,
+   "journal_h_index": 188
   },
   {
    "id": "W4396935494",
@@ -34878,7 +35315,7 @@
     "Maastricht University",
     "Department of Advanced Computing Sciences, Institute of Data Science, Maastricht University, Maastricht, Netherlands"
    ],
-   "cited_by_count": 24,
+   "cited_by_count": 25,
    "abstract": "The emerging European Health Data Space (EHDS) Regulation opens new prospects for large-scale sharing and re-use of health data. Yet, the proposed regulation suffers from two important limitations: it is designed to benefit the whole population with limited consideration for individuals, and the generation of secondary datasets from heterogeneous, unlinked patient data will remain burdensome. AIDAVA, a Horizon Europe project that started in September 2022, proposes to address both shortcomings by providing patients with an AI-based virtual assistant that maximises automation in the integration and transformation of their health data into an interoperable, longitudinal health record. This personal record can then be used to inform patient-related decisions at the point of care, whether this is the usual point of care or a possible cross-border point of care. The personal record can also be used to generate population datasets for research and policymaking. The proposed solution will enable a much-needed paradigm shift in health data management, implementing a 'curate once at patient level, use many times' approach, primarily for the benefit of patients and their care providers, but also for more efficient generation of high-quality secondary datasets. After 15 months, the project shows promising preliminary results in achieving automation in the integration and transformation of heterogeneous data of each individual patient, once the content of the data sources managed by the data holders has been formally described. Additionally, the conceptualization phase of the project identified a set of recommendations for the development of a patient-centric EHDS, significantly facilitating the generation of data for secondary use.",
    "verified": true,
    "counted_members": [
@@ -34887,8 +35324,8 @@
    "counted": true,
    "listed_elsewhere": false,
    "first_seen": "2026-10-21",
-   "journal_impact": 2.6,
-   "journal_h_index": 148
+   "journal_impact": 4.7,
+   "journal_h_index": 171
   },
   {
    "id": "W4396774731",
@@ -35023,8 +35460,8 @@
    "counted": true,
    "listed_elsewhere": false,
    "first_seen": "2026-10-21",
-   "journal_impact": 6.7,
-   "journal_h_index": 145
+   "journal_impact": 9.9,
+   "journal_h_index": 162
   },
   {
    "id": "W4402047492",
@@ -35106,7 +35543,7 @@
    "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": 0.8,
-   "journal_h_index": 226
+   "journal_h_index": 239
   },
   {
    "id": "W4402045963",
@@ -35198,7 +35635,7 @@
    "first_seen": "2026-10-21",
    "other_group": "Frank Verhaegen",
    "journal_impact": 0.8,
-   "journal_h_index": 226
+   "journal_h_index": 239
   },
   {
    "id": "W4402045182",
@@ -35276,7 +35713,7 @@
    "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": 0.8,
-   "journal_h_index": 226
+   "journal_h_index": 239
   },
   {
    "id": "W4402045107",
@@ -35367,7 +35804,7 @@
    "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": 0.8,
-   "journal_h_index": 226
+   "journal_h_index": 239
   },
   {
    "id": "W4402044888",
@@ -35481,7 +35918,7 @@
    "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": 0.8,
-   "journal_h_index": 226
+   "journal_h_index": 239
   },
   {
    "id": "W4402044385",
@@ -35613,7 +36050,7 @@
    "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": 0.8,
-   "journal_h_index": 226
+   "journal_h_index": 239
   },
   {
    "id": "W4402044246",
@@ -35687,7 +36124,7 @@
    "first_seen": "2026-10-21",
    "other_group": "Frank Verhaegen",
    "journal_impact": 0.8,
-   "journal_h_index": 226
+   "journal_h_index": 239
   },
   {
    "id": "W4402037835",
@@ -35767,7 +36204,7 @@
    "first_seen": "2026-10-21",
    "other_group": "Liesbeth Jorinne Boersma",
    "journal_impact": 0.8,
-   "journal_h_index": 226
+   "journal_h_index": 239
   },
   {
    "id": "W4402037750",
@@ -35845,7 +36282,7 @@
    "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": 0.8,
-   "journal_h_index": 226
+   "journal_h_index": 239
   },
   {
    "id": "W4402037646",
@@ -35936,7 +36373,7 @@
    "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": 0.8,
-   "journal_h_index": 226
+   "journal_h_index": 239
   },
   {
    "id": "W4402037306",
@@ -36047,7 +36484,7 @@
    "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": 0.8,
-   "journal_h_index": 226
+   "journal_h_index": 239
   },
   {
    "id": "W4402036664",
@@ -36122,7 +36559,7 @@
    "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": 0.8,
-   "journal_h_index": 226
+   "journal_h_index": 239
   },
   {
    "id": "W4402036376",
@@ -36193,7 +36630,7 @@
    "first_seen": "2026-10-21",
    "other_group": "Maria Jacobs",
    "journal_impact": 0.8,
-   "journal_h_index": 226
+   "journal_h_index": 239
   },
   {
    "id": "W4402036321",
@@ -36325,7 +36762,7 @@
    "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": 0.8,
-   "journal_h_index": 226
+   "journal_h_index": 239
   },
   {
    "id": "W4396644957",
@@ -36460,8 +36897,8 @@
    "counted": true,
    "listed_elsewhere": false,
    "first_seen": "2026-10-21",
-   "journal_impact": 0.7,
-   "journal_h_index": 586
+   "journal_impact": 1.0,
+   "journal_h_index": 615
   },
   {
    "id": "W4396592229",
@@ -36649,8 +37086,8 @@
    "counted": true,
    "listed_elsewhere": false,
    "first_seen": "2026-10-21",
-   "journal_impact": 1.1,
-   "journal_h_index": 145
+   "journal_impact": 1.0,
+   "journal_h_index": 156
   },
   {
    "id": "W4395462746",
@@ -36748,8 +37185,8 @@
    "counted": true,
    "listed_elsewhere": false,
    "first_seen": "2026-10-21",
-   "journal_impact": 5.5,
-   "journal_h_index": 91
+   "journal_impact": 6.8,
+   "journal_h_index": 101
   },
   {
    "id": "W4394990010",
@@ -36877,7 +37314,7 @@
    "listed_elsewhere": false,
    "first_seen": "2026-10-21",
    "journal_impact": 0.8,
-   "journal_h_index": 226
+   "journal_h_index": 239
   },
   {
    "id": "W4394675050",
@@ -37065,8 +37502,8 @@
    "counted": true,
    "listed_elsewhere": false,
    "first_seen": "2026-10-21",
-   "journal_impact": 1.2,
-   "journal_h_index": 216
+   "journal_impact": 1.1,
+   "journal_h_index": 230
   },
   {
    "id": "W4393900373",
@@ -37207,8 +37644,8 @@
    "counted": true,
    "listed_elsewhere": false,
    "first_seen": "2026-10-21",
-   "journal_impact": 5.3,
-   "journal_h_index": 463
+   "journal_impact": 6.6,
+   "journal_h_index": 490
   },
   {
    "id": "W4393407981",
@@ -37482,8 +37919,8 @@
    "counted": true,
    "listed_elsewhere": false,
    "first_seen": "2026-10-21",
-   "journal_impact": 1.3,
-   "journal_h_index": 112
+   "journal_impact": 1.5,
+   "journal_h_index": 117
   },
   {
    "id": "W4392883648",
@@ -37602,8 +38039,8 @@
    "counted": true,
    "listed_elsewhere": false,
    "first_seen": "2026-10-21",
-   "journal_impact": 1.3,
-   "journal_h_index": 112
+   "journal_impact": 1.5,
+   "journal_h_index": 117
   },
   {
    "id": "W4393065851",
@@ -37802,8 +38239,8 @@
    "counted": true,
    "listed_elsewhere": false,
    "first_seen": "2026-10-21",
-   "journal_impact": 3.1,
-   "journal_h_index": 298
+   "journal_impact": 3.3,
+   "journal_h_index": 315
   },
   {
    "id": "W4393065168",
@@ -37990,8 +38427,8 @@
    "counted": true,
    "listed_elsewhere": false,
    "first_seen": "2026-10-21",
-   "journal_impact": 3.1,
-   "journal_h_index": 298
+   "journal_impact": 3.3,
+   "journal_h_index": 315
   },
   {
    "id": "W4392634632",
@@ -38110,8 +38547,8 @@
    "listed_elsewhere": true,
    "first_seen": "2026-10-21",
    "other_group": "Henrica M.J. Werner",
-   "journal_impact": 0.6,
-   "journal_h_index": 125
+   "journal_impact": 0.8,
+   "journal_h_index": 135
   },
   {
    "id": "W7126163660",
@@ -38308,8 +38745,8 @@
    "counted": true,
    "listed_elsewhere": false,
    "first_seen": "2026-10-21",
-   "journal_impact": 5.6,
-   "journal_h_index": 252
+   "journal_impact": 6.3,
+   "journal_h_index": 273
   },
   {
    "id": "W4392012924",
@@ -38405,7 +38842,7 @@
     "Maastricht University Medical Centre",
     "Department of Radiation Oncology [Maastro], GROW School for Oncology and Developmental Biology, Maastricht University Medical Centre+, Maastricht, The Netherlands"
    ],
-   "cited_by_count": 20,
+   "cited_by_count": 21,
    "abstract": "INTRODUCTION: Vaccine-preventable diseases are the public health problems in Africa, although vaccination is an available, safe, simple, and effective method prevention. Technologies such as mHealth may provide maternal access to health information and support decisions on childhood vaccination. Many studies on the role of mHealth in vaccination decisions have been conducted in Africa, but the evidence needs to provide conclusive information to support mHealth introduction. This study provides essential information to assist planning and policy decisions regarding the use of mHealth for childhood vaccination. METHODS: We conducted a systematic review and meta-analysis for studies applying mHealth in Africa for vaccination decisions following the Preferred Reporting Items for Systematic and Meta-Analysis [PRISMA] guideline. Databases such as CINAHL, EMBASE, PubMed, PsycINFO, Scopus, Web of Science, Google Scholar, Global Health, HINARI, and Cochrane Library were included. We screened studies in Endnote X20 and performed the analysis using Revman 5.4.1. RESULTS: The database search yielded 1,365 articles [14 RCTs and 4 quasi-experiments] with 21,070 participants satisfied all eligibility criteria. The meta-analysis showed that mHealth has an OR of 2.15 [95% CI: 1.70-2.72; P<0.001; I2 = 90%] on vaccination rates. The subgroup analysis showed that regional differences cause heterogeneity. Funnel plots and Harbord tests showed the absence of publication bias, while the GRADE scale showed a moderate-quality body of evidence. CONCLUSION: Although heterogeneous, this systematic review and meta-analysis showed that the application of mHealth could potentially improve childhood vaccination in Africa. It increased childhood vaccination by more than double [2.15 times] among children whose mothers are motivated by mHealth services. MHealth is more effective in less developed regions and when an additional incentive party with the messaging system. However, it can be provided at a comparably low cost based on the development level of regions and can be established as a routine service in Africa. REGISTRATION: PROSPERO: CRD42023415956.",
    "verified": true,
    "counted_members": [
@@ -38415,8 +38852,8 @@
    "counted": true,
    "listed_elsewhere": false,
    "first_seen": "2026-10-21",
-   "journal_impact": 3.5,
-   "journal_h_index": 594
+   "journal_impact": 4.4,
+   "journal_h_index": 656
   },
   {
    "id": "W4391879491",
@@ -38630,8 +39067,8 @@
    "counted": true,
    "listed_elsewhere": false,
    "first_seen": "2026-10-21",
-   "journal_impact": 3.9,
-   "journal_h_index": 109
+   "journal_impact": 5.6,
+   "journal_h_index": 130
   },
   {
    "id": "W4391787579",
@@ -38796,8 +39233,8 @@
    "counted": true,
    "listed_elsewhere": false,
    "first_seen": "2026-10-21",
-   "journal_impact": 1.3,
-   "journal_h_index": 27
+   "journal_impact": 2.3,
+   "journal_h_index": 31
   },
   {
    "id": "W4391657914",
@@ -38897,8 +39334,8 @@
    "counted": true,
    "listed_elsewhere": false,
    "first_seen": "2026-10-21",
-   "journal_impact": 3.5,
-   "journal_h_index": 594
+   "journal_impact": 4.4,
+   "journal_h_index": 656
   },
   {
    "id": "W4391514506",
@@ -39022,8 +39459,8 @@
    "counted": true,
    "listed_elsewhere": false,
    "first_seen": "2026-10-21",
-   "journal_impact": 1.6,
-   "journal_h_index": 18
+   "journal_impact": 2.7,
+   "journal_h_index": 25
   },
   {
    "id": "W4391258615",
@@ -39162,8 +39599,8 @@
    "counted": true,
    "listed_elsewhere": false,
    "first_seen": "2026-10-21",
-   "journal_impact": 1.9,
-   "journal_h_index": 68
+   "journal_impact": 3.0,
+   "journal_h_index": 72
   },
   {
    "id": "W4394760459",
@@ -39428,8 +39865,8 @@
    "counted": true,
    "listed_elsewhere": false,
    "first_seen": "2026-10-21",
-   "journal_impact": 3.6,
-   "journal_h_index": 115
+   "journal_impact": 4.4,
+   "journal_h_index": 125
   },
   {
    "id": "W4389660668",
@@ -39509,8 +39946,8 @@
    "listed_elsewhere": true,
    "first_seen": "2026-11-23",
    "other_group": "Frank Verhaegen",
-   "journal_impact": 2.9,
-   "journal_h_index": 266
+   "journal_impact": 4.0,
+   "journal_h_index": 288
   },
   {
    "id": "W4390788550",
@@ -39630,8 +40067,8 @@
    "counted": true,
    "listed_elsewhere": false,
    "first_seen": "2026-10-21",
-   "journal_impact": 3.9,
-   "journal_h_index": 101
+   "journal_impact": 5.5,
+   "journal_h_index": 110
   },
   {
    "id": "W4390706463",
@@ -39750,7 +40187,7 @@
     "IRCCS Ospedale San Raffaele, Milan, Italy",
     "Università Vita-Salute San Raffaele, Milan, Italy"
    ],
-   "cited_by_count": 22,
+   "cited_by_count": 23,
    "abstract": null,
    "verified": true,
    "counted_members": [
@@ -39760,8 +40197,8 @@
    "counted": true,
    "listed_elsewhere": false,
    "first_seen": "2026-10-21",
-   "journal_impact": 33.5,
-   "journal_h_index": 763
+   "journal_impact": 31.7,
+   "journal_h_index": 815
   },
   {
    "id": "W4390571430",
@@ -39932,8 +40369,8 @@
    "counted": true,
    "listed_elsewhere": false,
    "first_seen": "2026-10-21",
-   "journal_impact": 8.9,
-   "journal_h_index": 189
+   "journal_impact": 9.8,
+   "journal_h_index": 208
   },
   {
    "id": "W4407149364",
@@ -40418,8 +40855,8 @@
    "counted": true,
    "listed_elsewhere": false,
    "first_seen": "2026-10-21",
-   "journal_impact": 5.8,
-   "journal_h_index": 10
+   "journal_impact": 11.2,
+   "journal_h_index": 14
   },
   {
    "id": "W4391758744",
@@ -40690,8 +41127,8 @@
    "counted": true,
    "listed_elsewhere": false,
    "first_seen": "2026-10-21",
-   "journal_impact": 1.8,
-   "journal_h_index": 24
+   "journal_impact": 4.2,
+   "journal_h_index": 32
   },
   {
    "id": "W4391065113",
@@ -41029,8 +41466,8 @@
    "counted": true,
    "listed_elsewhere": false,
    "first_seen": "2026-10-21",
-   "journal_impact": 3.7,
-   "journal_h_index": 33
+   "journal_impact": 6.1,
+   "journal_h_index": 38
   }
  ]
 }

@@ -4,7 +4,44 @@
 <link href="https://maastrichtu-cds.github.io/pubpulse/"/>
 <link rel="self" href="https://maastrichtu-cds.github.io/pubpulse/feed.xml"/>
 <id>https://maastrichtu-cds.github.io/pubpulse/</id>
-<updated>2026-11-25T16:34:38+00:00</updated>
+<updated>2026-11-26T16:06:58+00:00</updated>
+<entry>
+<title>294P Validation of deep learning-based segmentation models for brain metastases</title>
+<link href="https://doi.org/10.1016/j.annonc.2026.08.390"/>
+<id>https://openalex.org/W7235745647</id>
+<updated>2026-11-26T00:00:00Z</updated>
+<summary>Annals of Oncology · 2026-11-17 · group authors: Andre Dekker</summary>
+</entry>
+<entry>
+<title>345P CT-based quantification of intratumoral heterogeneity reveals the spatial context of CCR5 prognostic significance for non–small cell lung cancer</title>
+<link href="https://doi.org/10.1016/j.annonc.2026.08.439"/>
+<id>https://openalex.org/W7235700746</id>
+<updated>2026-11-26T00:00:00Z</updated>
+<summary>Annals of Oncology · 2026-11-17 · group authors: Andre Dekker, Leonard Wee</summary>
+</entry>
+<entry>
+<title>235P MDT-style multi-agent workflow for integrating multi-source clinical reports in rectal cancer response assessment</title>
+<link href="https://doi.org/10.1016/j.annonc.2026.08.242"/>
+<id>https://openalex.org/W7234893871</id>
+<updated>2026-11-26T00:00:00Z</updated>
+<summary>Annals of Oncology · 2026-11-17 · group authors: Andre Dekker, Leonard Wee</summary>
+</entry>
+<entry>
+<title>234P Pretreatment prediction of radiation proctitis using a multimodal fusion transformer (MFT): Multicenter development and prospective validation</title>
+<link href="https://doi.org/10.1016/j.annonc.2026.08.241"/>
+<id>https://openalex.org/W7234785374</id>
+<updated>2026-11-26T00:00:00Z</updated>
+<summary>Annals of Oncology · 2026-11-17 · group authors: Andre Dekker, Leonard Wee</summary>
+</entry>
+<entry>
+<title>148P Privacy-preserving pan-European oncology benchmarking in the DigiONE network using federated real-world data: The DigiACT s</title>
+<link href="https://doi.org/10.1016/j.esmorw.2026.100965"/>
+<id>https://openalex.org/W7225885787</id>
+<updated>2026-11-26T00:00:00Z</updated>
+<summary>ESMO Real World Data and Digital Oncology · 2026-11-01 · group authors: Andre Dekker
+
+Cross-border oncology research is limited by data heterogeneity, governance and centre digital maturity. We assessed whether federated analytics could enable privacy-preserving benchmarking of cancer burden, patient characteristics and diagnosis-to-treatment intervals across European cancer centres.</summary>
+</entry>
 <entry>
 <title>Comparing Patient Experiences with SDM-Q-9, CollaboRATE, and iSHAREpatient in Routine Oncology Care: A Patient-Centred Evaluation</title>
 <link href="https://doi.org/10.1016/j.pec.2026.110421"/>
@@ -15,18 +52,13 @@
 Objective Shared decision-making (SDM) is preferred in oncology, yet routine evaluation in clinical practice remains challenging. This study aimed to compare patients’experiences of completing three widely used patient-reported SDM questionnaires (SDM-Q-9, CollaboRATE, and iSHAREpatient) under the same routine oncology-care conditions. Methods This multiple-methods study included 159 patients attending radiotherapy intake consultations at a large academic radiotherapy centre. Immediately after consultation, participants were randomised to complete one of three SDM questionnaires. Quantitative measures comprised the After-Scenario-Questionnaire (ASQ), (perceived ease, time investment, and support needs) completion time and clarification questions. Qualitative methods comprised think-aloud sessions followed by codebook thematic analysis. Results ASQ scores did not differ significantly between questionnaires for perceived ease, time investment, or support (p &gt; 0.05 ). CollaboRATE was fastest to complete (mean 52 seconds), followed by SDM-Q-9 (2:17 minutes) and iSHAREpatient (3:46 minutes) (p &lt; 0.001). iSHAREpatient generated more clarification questions than SDM-Q-9 and CollaboRATE. Qualitative findings revealed differences in patients’ completion experiences. SDM-Q-9 and iSHAREpatient prompted reflection on consultations and treatment decisions; while this may support engagement, it may also increase cognitive effort . When patients did not perceive a meaningful treatment choice, SDM-related questions were sometimes experienced as irrelevant, reflecting a mismatch between questionnaire assumptions and patients’ decision-making experiences. Conclusion SDM-Q-9 showed a favourable balance between comprehensiveness and ease of completion. CollaboRATE was the fastest to complete and may be particularly useful in time-constrained settings, whereas iSHAREpatient provided a more detailed assessment of the decision-making process. Practice implications Questionnaire selection should consider decision context, patient burden and the measurement purpose: SDM-Q-9 may be particularly useful when meaningful treatment choices are discussed, whereas CollaboRATE may be more suitable in time-constrained or predetermined decision settings, and iSHAREpatient when a more detailed exploration of the decision-making process is desired.</summary>
 </entry>
 <entry>
-<title>Predicting Clinical Remission in Crohn’s Disease: A Comparative Study of Expert-Generated and Computer-Generated Bayesian Networks</title>
-<link href="https://ceur-ws.org/Vol-4196/paper_18.pdf"/>
-<id>https://openalex.org/W7239553629</id>
-<updated>2026-11-25T00:00:00Z</updated>
-<summary>CEUR Workshop Proceedings · 2026-04-22 · group authors: Andre Dekker, Rianne Fijten</summary>
-</entry>
-<entry>
 <title>Building a Radiation Therapy Ontology</title>
 <link href="https://ceur-ws.org/Vol-3805/ICBO-2022_paper_4077.pdf"/>
 <id>https://openalex.org/W7239621593</id>
 <updated>2026-11-25T00:00:00Z</updated>
-<summary>CEUR Workshop Proceedings · 2024-10-25 · group authors: Andre Dekker</summary>
+<summary>CEUR Workshop Proceedings · 2024-10-25 · group authors: Andre Dekker
+
+This poster reports on our ongoing work to develop a Radiation Therapy Ontology (RTO) designed according to OBO Foundry principles.This work aims to produce an ontology describing the domain of radiation therapy concerned primarily with the processes and equipment used to deliver therapeutic radiation in a clinical setting.Currently in radiation oncology, around 3% of patients are enrolled in clinical trials.Major hurdles to involving more patients include the work required to identify potential enrollees, collecting the data, and transforming data to meet protocol requirements.Axiomatically rich ontologies are uniquely positioned to serve as a bridge between the precision needed in clinical trials and the reality of electronic health records.This work is also motivated by the recent push for standardization in radiation oncology, and the realization that progress in clinical practice requires better access to clinical data.RTO aims to be useful in bridging institutional and clinical practice differences.The proliferation of standard terminologies can be at odds with each other and with existing data labels.Currently, nearly all patient data are in relational databases with no overall uniformity with respect to schemas, tables, column names and value sets.The structure of these databases is most often controlled by the vendors, and in those cases where institutions tailor the names and variables, there are no fixed standards.The upshot is that one must expect that for nearly every application, some transformation of the data will be needed.</summary>
 </entry>
 <entry>
 <title>Early Prediction of In-Hospital ICU Mortality Using Innovative First-Day Data: A Review</title>
@@ -356,41 +388,5 @@ Inner-ear genetics has expanded rapidly, yet the supporting evidence remains dis
 <id>https://openalex.org/W7223167501</id>
 <updated>2026-10-29T00:00:00Z</updated>
 <summary>Research Publications (Maastricht University) · 2025-05-01 · group authors: Joshi Hogenboom, Andre Dekker, Johan van Soest, Leonard Wee</summary>
-</entry>
-<entry>
-<title>Brain state locks silent memories in a trained fly connectome: Core data and models</title>
-<link href="https://doi.org/10.5281/zenodo.23629826"/>
-<id>https://openalex.org/W7223572531</id>
-<updated>2026-10-27T00:00:00Z</updated>
-<summary>Zenodo (CERN European Organization for Nuclear Research) · 2026-10-25 · group authors: Xuanhe Hou
-
-Every file that the paper's analysis, renders, figure builds and writing scripts read; the models, configurations, logs and results of every training run and evaluation in Table S3; and the published result tables, figures, videos, figure source data and supplemental tables. Unpack the archives into the code release; MANIFEST.csv lists every file with its SHA-256, and verify_deposit.py checks and unpacks them. See README.md. Funding: This work was supported by the National Natural Science Foundation of China (grant nos. 82160215, 81660174, and 82271169); the Guangdong Provincial Key Laboratory of Autophagy and Major Chronic Non-communicable Diseases (grant no. 2022B1212030003); the Research Startup Funds for High-level Talents in the Affiliated Hospital of Guangdong Medical University (grant no. GCC20220013); the College Students' Innovative Entrepreneurial Training Plan Program (grant no. S202510571025); and the 2025 Artificial Intelligence-Enabled Medical Device Innovation Task (Open Competition Mechanism, project no. 2025-AISJK-02007).</summary>
-</entry>
-<entry>
-<title>Brain state locks silent memories in a trained fly connectome: Extended data and validation records</title>
-<link href="https://doi.org/10.5281/zenodo.23629834"/>
-<id>https://openalex.org/W7223550845</id>
-<updated>2026-10-27T00:00:00Z</updated>
-<summary>Zenodo (CERN European Organization for Nuclear Research) · 2026-10-25 · group authors: Xuanhe Hou
-
-The verification replays, behavior features of every training update and dense recordings that no analysis of the paper reads, completing the run folders of part 1. See README.md. Funding: This work was supported by the National Natural Science Foundation of China (grant nos. 82160215, 81660174, and 82271169); the Guangdong Provincial Key Laboratory of Autophagy and Major Chronic Non-communicable Diseases (grant no. 2022B1212030003); the Research Startup Funds for High-level Talents in the Affiliated Hospital of Guangdong Medical University (grant no. GCC20220013); the College Students' Innovative Entrepreneurial Training Plan Program (grant no. S202510571025); and the 2025 Artificial Intelligence-Enabled Medical Device Innovation Task (Open Competition Mechanism, project no. 2025-AISJK-02007).</summary>
-</entry>
-<entry>
-<title>The impact of digital tools and the expected digital transformation in radiotherapy on Dutch radiation therapists (RTTs)</title>
-<link href="https://doi.org/10.1016/j.tipsro.2025.100319"/>
-<id>https://openalex.org/W4411024156</id>
-<updated>2026-10-27T00:00:00Z</updated>
-<summary>Technical Innovations &amp; Patient Support in Radiation Oncology · 2025-06-01 · group authors: Thijs Ackermans
-
-Background and Purpose: Technological advancements have the potential to mitigate RTT shortages, burnout levels, and turnover rates. However, it is unclear if RTTs currently experience technostress (stress or anxiety from being overwhelmed by technology) and how extensive digital tool usage impacts key job performance indicators (e.g., job engagement, satisfaction, and turnover intentions). This study investigates the impact of digital tools used and expected digital transformation on RTTs' technostress and key job performance indicators. Materials and Methods: A survey was distributed to RTTs across all Dutch radiotherapy centers, resulting in 265 respondents. The survey included validated questionnaires on digital tool use, technostress, job autonomy, innovative work behavior and job performance indicators. Relationships were assessed using linear regression models and paired samples T-tests (p &lt; 0.05). Results: The number of digital tools used had no significant effect (p &lt; 0.05) on key job performance indicators and was not related to technostress. Technostress negatively impacted key job performance indicators, but explained less than 7 % of the variance. Other factors, such as job autonomy, had a greater influence. When presented with a description of the future perspective of their job role after the expected digital transformation, RTTs reported small declines in key job performance indicators. Conclusion: Current RTT performance is not affected by the number of digital tools used, as RTTs are used to working with digital tools. RTTs showed no technostress. After the predicted digital transformation RTTs remained satisfied and engaged. Ensuring RTTs feel skilled and empowered with decision-making authority is crucial before introducing new digital tools.</summary>
-</entry>
-<entry>
-<title>Cross-disease multi-omics integration reveals shared mechanisms driving the breast cancer-rheumatoid arthritis association</title>
-<link href="https://doi.org/10.1016/j.nexres.2026.102285"/>
-<id>https://openalex.org/W7201896454</id>
-<updated>2026-10-23T00:00:00Z</updated>
-<summary>Next research. · 2026-08-07 · group authors: En Hu
-
-Humans, as highly social organisms, maintain health through both physiological homeostasis and interactions within social environments. The immune system is central to this balance, and its dysregulation manifests in diverse pathologies. Breast cancer (BC), the most common malignancy among women, represents disrupted biological order through uncontrolled proliferation and immune escape, whereas rheumatoid arthritis (RA) reflects pathological immune hyperactivation and autoimmunity. Persistent inflammation and functional impairment in RA may influence breast cancer risk and prognosis, while breast cancer onset or treatment may exacerbate immune vulnerability. To elucidate mechanisms underlying these interconnected disease processes, we integrated large-scale genetic association analyses with single-cell and spatial transcriptomics to dissect cross-disease convergence across organ systems, cellular regulation, and molecular networks. Our multimodal framework identified shared risk loci and mapped their regulatory consequences across tissues and cell states, providing mechanistic insights into developmental and immune pathways that may underlie the intrinsic connection between breast cancer and RA.</summary>
 </entry>
 </feed>
