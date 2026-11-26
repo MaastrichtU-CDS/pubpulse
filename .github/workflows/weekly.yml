@@ -36,7 +36,7 @@ jobs:
     runs-on: ubuntu-latest
     environment:
       name: github-pages
-      url: ${{ steps.deploy.outputs.page_url }}
+      url: ${{ steps.deploy.outputs.page_url || steps.deploy_retry.outputs.page_url }}
     env:
       OPENALEX_API_KEY: ${{ secrets.OPENALEX_API_KEY }}
       SERPAPI_KEY: ${{ secrets.SERPAPI_KEY }}
@@ -144,7 +144,17 @@ jobs:
         with:
           path: dist
 
+      # actions/deploy-pages can miss an artifact that was uploaded a moment earlier (upstream issue
+      # actions/deploy-pages#451): retry once after a pause. A re-run of the job would not help, it uploads a
+      # second artifact. If the retry fails too, the job fails as before.
       - id: deploy
+        uses: actions/deploy-pages@v4
+        continue-on-error: true
+      - name: Wait before retrying the deployment
+        if: steps.deploy.outcome == 'failure'
+        run: sleep 20
+      - id: deploy_retry
+        if: steps.deploy.outcome == 'failure'
         uses: actions/deploy-pages@v4
 
       - name: Email digest to the Brevo subscriber list (campaign)
