@@ -5848,5 +5848,392 @@
   ],
   "people_changes": {},
   "errors": []
+ },
+ {
+  "date": "2026-11-27",
+  "timestamp": "2026-11-27T15:55:13+00:00",
+  "baseline": false,
+  "people_active": 61,
+  "people_tracked": 67,
+  "works_total": 295,
+  "unverified_total": 114,
+  "counted_total": 266,
+  "new_count": 0,
+  "new_ids": [],
+  "needs_review": [
+   "alexandra-afanasiuc",
+   "ali-al-zein",
+   "ali-zaila",
+   "andrea-pradas-agujetas",
+   "ayesha-qayyum",
+   "balu-krishna-sasidharan",
+   "ekatarina-kondrateva",
+   "elif-sevim",
+   "farshad-jafarpour",
+   "fiona-zegwaard-gelink",
+   "frederik-behets",
+   "gleb-tsikhanovich",
+   "karlien-schmeetz",
+   "martijn-hector",
+   "meltem-isik",
+   "monique-roos-koekkelkoren",
+   "prabash-darshanapriya-galgane-banduge",
+   "tafadzwa-chaunzwa",
+   "varnita-mathur",
+   "vikram-baliga",
+   "yang-yao",
+   "yemu-katanda",
+   "ashish-jha",
+   "carlos-santiago-rios"
+  ],
+  "other_affiliation_only": [
+   {
+    "work": "W7237143246",
+    "title": "Prostate and pelvic nodal stereotactic body radiotherapy (SBRT) versus prostate-only SBRT for high-risk, localised prostate cancer (PACE-NODES): early adverse event results from an international, open-label, phase 3, randomised controlled trial",
+    "affiliations": {
+     "ananya-choudhury": [
+      "University of Manchester",
+      "The Christie NHS Foundation Trust",
+      "The Christie NHS Foundation Trust, The Christie, Manchester, UK; Division of Cancer Sciences, University of Manchester, Manchester, UK"
+     ]
+    }
+   },
+   {
+    "work": "W7225883181",
+    "title": "227P Increasing outpatient capacity through electronic patient-reported outcome measure (ePROM) led virtual follow-up in prostate cancer",
+    "affiliations": {
+     "ananya-choudhury": [
+      "The Christie Hospital",
+      "The Christie NHS Foundation Trust",
+      "Urology, The Christie NHS Foundation Trust, Manchester, United Kingdom"
+     ]
+    }
+   },
+   {
+    "work": "W4396854099",
+    "title": "Using artificial intelligence and predictive modelling to enable learning healthcare systems (LHS) for pandemic preparedness",
+    "affiliations": {
+     "anshu-ankolekar": [
+      "Maastricht University Medical Centre",
+      "Department of Precision Medicine, GROW School for Oncology, Maastricht University Medical Centre+, Maastricht, the Netherlands"
+     ]
+    }
+   },
+   {
+    "work": "W4410780749",
+    "title": "Advancing breast, lung and prostate cancer research with federated learning. A systematic review",
+    "affiliations": {
+     "anshu-ankolekar": [
+      "Maastricht University",
+      "Department of Precision Medicine, GROW Research Institute for Oncology and Reproduction, Maastricht University, Maastricht, the Netherlands. a.ankolekar@maastrichtuniversity.nl"
+     ]
+    }
+   },
+   {
+    "work": "W4408929399",
+    "title": "Impact of Digital Health on Patient-Provider Relationships in Respiratory Secondary Care Based on Qualitative and Quantitative Evidence: Systematic Review",
+    "affiliations": {
+     "anshu-ankolekar": [
+      "Maastricht University",
+      "The D-Lab, Department of Precision Medicine, GROW - Research Institute for Oncology and Reproduction, Maastricht University, Maastricht, The Netherlands"
+     ]
+    }
+   },
+   {
+    "work": "W4393091462",
+    "title": "Improving shared decision making for lung cancer treatment by developing and validating an open-source web based patient decision aid for stage I–II non-small cell lung cancer",
+    "affiliations": {
+     "anshu-ankolekar": [
+      "Maastricht University",
+      "The D-Lab, Department of Precision Medicine, GROW-School for Oncology, Maastricht University, Maastricht, Netherlands",
+      "The D-Lab, Department of Precision Medicine, GROW-School for Oncology, Maastricht University, Netherlands"
+     ]
+    }
+   },
+   {
+    "work": "W4414109505",
+    "title": "Improving Patient Engagement in Phase 2 Clinical Trials With a Trial-Specific Patient Decision Aid: Development and Usability Study",
+    "affiliations": {
+     "anshu-ankolekar": [
+      "Maastricht University Medical Centre",
+      "Maastricht University",
+      "The D-Lab, Department of Precision Medicine, GROW - Research Institute for Oncology and Reproduction, Maastricht University Medical Centre, Maastricht, The Netherlands",
+      "Department of Precision Medicine, Faculty of Health, Medicine and Life Sciences, Maastricht University, Maastricht, The Netherlands"
+     ]
+    }
+   },
+   {
+    "work": "W4402386352",
+    "title": "Advancing oncology with federated learning: transcending boundaries in breast, lung, and prostate cancer. A systematic review",
+    "affiliations": {
+     "anshu-ankolekar": [
+      "Maastricht University",
+      "Department of Precision Medicine, GROW Research Institute for Oncology and Reproduction, Maastricht University, Maastricht, the Netherlands"
+     ]
+    }
+   },
+   {
+    "work": "W4404104648",
+    "title": "Impact of digital health on the patient-provider relationship in respiratory secondary care settings: a mixed methods systematic review from IHI DRAGON/CONNECT CRC",
+    "affiliations": {
+     "anshu-ankolekar": [
+      "Maastricht University",
+      "5Department of Precision Medicine, GROW—School for Oncology and Reproduction, Maastricht University, Maastricht, Netherlands"
+     ]
+    }
+   },
+   {
+    "work": "W4401820505",
+    "title": "Development and Implementation of Clinical Decision Algorithms for Oncology",
+    "affiliations": {
+     "matthijs-sloep": [
+      "Netherlands Comprehensive Cancer Organisation",
+      "Department of Research and Development, Netherlands Comprehensive Cancer Organization (IKNL), Utrecht, The Netherlands"
+     ]
+    }
+   },
+   {
+    "work": "W7166677609",
+    "title": "The Essential Components and Critical Conditions for Success in a Learning Health System in Oncology",
+    "affiliations": {
+     "matthijs-sloep": [
+      "Netherlands Comprehensive Cancer Organisation",
+      "Department of Research and Development, Netherlands Comprehensive Cancer Organization (IKNL), Utrecht, the Netherlands"
+     ]
+    }
+   },
+   {
+    "work": "W4401823322",
+    "title": "Development and Implementation of Semantic Information Standards for Oncology",
+    "affiliations": {
+     "matthijs-sloep": [
+      "Netherlands Comprehensive Cancer Organisation",
+      "Department of Research and Development, Netherlands Comprehensive Cancer Organization (IKNL), Utrecht, The Netherlands"
+     ]
+    }
+   },
+   {
+    "work": "W4410447772",
+    "title": "Integrating Real-World Data and Computational Guidelines: Designing a Dashboard for Nationwide Evaluation of Molecular Diagnostics in Oncology",
+    "affiliations": {
+     "matthijs-sloep": [
+      "Netherlands Comprehensive Cancer Organisation",
+      "Department of Research and Development, IKNL, Utrecht, the Netherlands"
+     ]
+    }
+   },
+   {
+    "work": "W7164664321",
+    "title": "Beyond classical models: LLM-driven survival analysis for breast cancer prognosis using European cancer registry data",
+    "affiliations": {
+     "matthijs-sloep": [
+      "Netherlands Comprehensive Cancer Organisation",
+      "Netherlands Comprehensive Cancer Organisation (IKNL), Department of Research and Development, Utrecht, The Netherlands"
+     ]
+    }
+   },
+   {
+    "work": "W7207521777",
+    "title": "Identifying Differences in Cancer Registry Data: A Data-Driven Approach to Analyze Data Comparability",
+    "affiliations": {
+     "matthijs-sloep": [
+      "Netherlands Comprehensive Cancer Organisation",
+      "IKNL Netherlands Comprehensive Cancer Organisation , Netherlands"
+     ]
+    }
+   },
+   {
+    "work": "W7207744302",
+    "title": "Every cancer patient counts: strengthening European population-based cancer registries to improve cancer control",
+    "affiliations": {
+     "matthijs-sloep": [
+      "Netherlands Comprehensive Cancer Organisation",
+      "Department of Research & Development, Netherlands Comprehensive Cancer Organisation (IKNL), Utrecht, the Netherlands"
+     ]
+    }
+   },
+   {
+    "work": "W7213460943",
+    "title": "CancerWatch: accelerating Europe’s cancer intelligence",
+    "affiliations": {
+     "matthijs-sloep": [
+      "Netherlands Comprehensive Cancer Organisation",
+      "Department of Research & Development, Netherlands Comprehensive Cancer Organisation (IKNL), Utrecht, The Netherlands"
+     ]
+    }
+   },
+   {
+    "work": "W4401305645",
+    "title": "Validation of an automated segmentation method for body composition analysis in colorectal cancer patients using diagnostic abdominal computed tomography images",
+    "affiliations": {
+     "ralph-brecheisen": [
+      "Maastricht University Medical Centre",
+      "Department of Surgery, NUTRIM School of Nutrition and Translational Research in Metabolism, Maastricht University Medical Centre+, Maastricht, the Netherlands"
+     ]
+    }
+   },
+   {
+    "work": "W4414138156",
+    "title": "Loss of Skeletal Muscle Mass Is Associated With Reduced Cytotoxic T Cell Abundance and Poor Survival in Advanced Lung Cancer",
+    "affiliations": {
+     "ralph-brecheisen": [
+      "Maastricht University",
+      "Department of Surgery, NUTRIM School of Nutrition and Translational Research in Metabolism, Maastricht University, Maastricht, the Netherlands"
+     ]
+    }
+   },
+   {
+    "work": "W4410221621",
+    "title": "The role of body composition and pulmonary function in predicting long-term survival after lung cancer surgery",
+    "affiliations": {
+     "ralph-brecheisen": [
+      "Maastricht University Medical Centre",
+      "Maastricht University",
+      "Department of Surgery, Maastricht University Medical Center, Maastricht, the Netherlands; NUTRIM-School of Nutrition and Translational Research in Metabolism, Maastricht University, Maastricht, the Netherlands"
+     ]
+    }
+   },
+   {
+    "work": "W4412822927",
+    "title": "Preoperative Body Composition Parameters Are Associated With Postoperative Outcomes in Patients With Crohn’s Disease",
+    "affiliations": {
+     "ralph-brecheisen": [
+      "Maastricht University Medical Centre",
+      "Department of Surgery, Maastricht University Medical Center+, Maastricht, the Netherlands"
+     ]
+    }
+   },
+   {
+    "work": "W4391161867",
+    "title": "Imaging-based preoperative body composition is associated with the risk of postoperative complications and postoperative endoscopic recurrence in patients with Crohn’s disease",
+    "affiliations": {
+     "ralph-brecheisen": [
+      "Maastricht University",
+      "Maastricht University, Research Institute for Nutrition and Translational Research in Metabolism NUTRIM , Maastricht, The Netherlands"
+     ]
+    }
+   },
+   {
+    "work": "W4406704216",
+    "title": "Preoperative body composition parameters are associated with postoperative complications and endoscopic postoperative recurrence in patients with Crohn’s disease",
+    "affiliations": {
+     "ralph-brecheisen": [
+      "Maastricht University Medical Centre",
+      "Maastricht University Medical Center+, Department of Surgery , Maastricht, The Netherlands"
+     ]
+    }
+   },
+   {
+    "work": "W7138886965",
+    "title": "Subcutaneous adipose tissue radiation attenuation is associated with chemotoxicity and survival in metastatic colorectal cancer",
+    "affiliations": {
+     "ralph-brecheisen": [
+      "Maastricht University",
+      "Department of Surgery, NUTRIM School of Nutrition and Translational research in Metabolism, Maastricht University, Maastricht, the Netherlands"
+     ]
+    }
+   },
+   {
+    "work": "W7147705841",
+    "title": "The association between preoperative computed tomography -determined muscle characteristics and postoperative recovery in physical functioning and physical performance in patients undergoing gastrointestinal or lung cancer surgery",
+    "affiliations": {
+     "ralph-brecheisen": [
+      "Maastricht University Medical Centre",
+      "Maastricht University",
+      "NUTRIM School of Nutrition and Translational Research in Metabolism, Maastricht University, Maastricht, the Netherlands; Maastricht University Medical Center, Department of surgery, Maastricht, The Netherlands"
+     ]
+    }
+   },
+   {
+    "work": "W7223577526",
+    "title": "A Body Composition-based Formula for Estimating Total Liver Volume",
+    "affiliations": {
+     "ralph-brecheisen": [
+      "Maastricht University Medical Centre",
+      "Maastricht University",
+      "Maastricht University Medical Center+, Department of Surgery, Maastricht, Netherlands",
+      "Maastricht University, NUTRIM School of Nutrition and Translational Research in Metabolism, Maastricht, Netherlands"
+     ]
+    }
+   },
+   {
+    "work": "W7161732140",
+    "title": "Monitoring cardiac symptoms during teleprehabilitation prior to coronary artery bypass grafting: a digital cardiac counselling trial subanalysis",
+    "affiliations": {
+     "rutger-van-mierlo": [
+      "Maastricht University Medical Centre",
+      "Zuyderland Medisch Centrum",
+      "Department of Cardiology, Heart and Vascular Center, Maastricht University Medical Center , Maastricht, the Netherlands",
+      "Department of Cardiology, Zuyderland Medical Center , Heerlen, the Netherlands"
+     ]
+    }
+   },
+   {
+    "work": "W4399730398",
+    "title": "Placement of ilio-sacral screws in fusionless technique for pediatric neuromuscular scoliosis utilizing planning software, in conjunction with intraoperative navigation, results in a safer optimal screw: a CT-based study",
+    "affiliations": {
+     "thijs-ackermans": [
+      "KU Leuven",
+      "Institute for Orthopaedic Research and Training (IORT), Department of Development and Regeneration, KU Leuven, Belgium"
+     ]
+    }
+   },
+   {
+    "work": "W4411593465",
+    "title": "Postoperative forward flexion loss in Adolescent Idiopathic Scoliosis: How it relates to the lowest instrumented vertebra and function",
+    "affiliations": {
+     "thijs-ackermans": [
+      "KU Leuven",
+      "Institute for Orthopaedic Research and Training (IORT), Department of Development and Regeneration, KU Leuven, Herestraat 49, Leuven 3000, Belgium. Electronic address: thijs.ackermans@maastrichtuniversity.nl"
+     ]
+    }
+   },
+   {
+    "work": "W7207779766",
+    "title": "MRI radiomics-based predictive modeling for risk stratification and prognostication in oral tongue carcinoma",
+    "affiliations": {
+     "umesh-kumar-baburao-sherkhane": [
+      "Homi Bhabha National Institute",
+      "Tata Memorial Hospital",
+      "Advanced Centre for Treatment, Research and Education in Cancer",
+      "Advanced Centre for Treatment Research and Education in Cancer, Navi Mumbai, India",
+      "Department of Artificial Intelligence and Machine Learning, Tata Memorial Centre, Homi Bhabha National Institute (HBNI), Mumbai, India"
+     ]
+    }
+   },
+   {
+    "work": "W7128700455",
+    "title": "Super-resolution and habitat radiomics based computed tomography machine-learning model for prediction of lung invasive adenocarcinoma: a multi-centre study",
+    "affiliations": {
+     "wenjie-liang": [
+      "First Affiliated Hospital Zhejiang University",
+      "Zhejiang University",
+      "Department of Radiology, The First Affiliated Hospital, College of Medicine, Zhejiang University, Hangzhou, China"
+     ]
+    }
+   },
+   {
+    "work": "W7130567554",
+    "title": "Preoperative prediction of preserved renal parenchymal volume via multilevel CT feature fusion: a proof-of-concept study",
+    "affiliations": {
+     "wenjie-liang": [
+      "Guangzhou University",
+      "School of Mechanical and Electrical Engineering, Guangzhou University, Guangzhou, China"
+     ]
+    }
+   },
+   {
+    "work": "W7131799079",
+    "title": "Transforming Histology into Virtual Multiplex Immunofluorescence to Decode Prognostic Spatial Immunity in Hepatocellular Carcinoma",
+    "affiliations": {
+     "wenjie-liang": [
+      "First Affiliated Hospital Zhejiang University",
+      "Department of Radiology, the First Affiliated Hospital, Zhejiang University School of Medicine, Hangzhou, China"
+     ]
+    }
+   }
+  ],
+  "people_changes": {},
+  "errors": []
  }
 ]
